@@ -1,0 +1,2 @@
+room = "Gallery"
+print(room)

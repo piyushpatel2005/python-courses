@@ -1,0 +1,10 @@
+blocks:
+  - index: 0
+    expected_output: |-
+      Serve cup 1
+      Serve cup 3
+      Serve cup 4
+  - index: 1
+    expected_output: |-
+      Set out tray 1
+      Set out tray 2
