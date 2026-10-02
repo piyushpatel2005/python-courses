@@ -1,5 +1,5 @@
-raw_notice = "  HALL CLOSED  "
+raw_notice = "  BEACON DIM  "
 notice = None
-open_notice = None
-is_hall_notice = None
-print(notice, open_notice, is_hall_notice)
+lit_notice = None
+is_beacon_notice = None
+print(notice, lit_notice, is_beacon_notice)

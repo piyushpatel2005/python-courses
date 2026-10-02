@@ -1,6 +1,6 @@
-packet_name = "Basil seeds"
-packet_count = 6
-packet_price = 1.75
-print(packet_name, type(packet_name).__name__)
-print(packet_count, type(packet_count).__name__)
-print(packet_price, type(packet_price).__name__)
+supply_name = "Glow moss"
+supply_count = 6
+supply_weight = 1.75
+print(supply_name, type(supply_name).__name__)
+print(supply_count, type(supply_count).__name__)
+print(supply_weight, type(supply_weight).__name__)

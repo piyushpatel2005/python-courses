@@ -1,17 +1,17 @@
-def seat_total(seat_counts):
-    # Add the counts with a loop; an empty list totals zero.
+def energy_total(shard_energy):
+    # Add the energy with a loop; an empty list totals zero.
     pass
 
 
-def remaining_seats(capacity, reserved):
-    # Return zero if the workshop is full or overbooked.
+def energy_needed(target, gathered):
+    # Return zero if the beacon target is reached or exceeded.
     pass
 
 
-def workshop_report(name, capacity, seat_counts):
-    # Return "<name>: <reserved> reserved, <available> available".
+def beacon_report(name, target, shard_energy):
+    # Return "<name>: <gathered> energy, <needed> needed".
     pass
 
 
-print("Workshop seating report")
-print(workshop_report("Ceramics", 8, [2, 1]))
+print("Final beacon report")
+print(beacon_report("North Beacon", 8, [2, 1]))

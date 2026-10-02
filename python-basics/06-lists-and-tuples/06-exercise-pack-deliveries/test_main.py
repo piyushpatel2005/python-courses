@@ -9,7 +9,7 @@ import solution
 def _variant():
     with open(solution.__file__, encoding="utf-8") as source_file:
         tree = ast.parse(source_file.read())
-    replacements = {'deliveries': ['Maple', 'Willow', 'Fir', 'Ash']}
+    replacements = {'checkpoints': ['Fork', 'Arch', 'Gate', 'Summit']}
     for node in tree.body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
             name = node.targets[0].id
@@ -35,15 +35,15 @@ def _uses(technique):
     return False
 
 def test_01():
-    """Set today to a slice of the first three deliveries."""
-    assert today == ["Oak", "Elm", "Pine"], "Set today to a slice of the first three deliveries."
+    """Set today to a slice of the first three checkpoints."""
+    assert today == ["Pass", "Bridge", "Beacon"], "Set today to a slice of the first three checkpoints."
     assert _uses('Slice'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('today == ["Maple", "Willow", "Fir"]', varied), "Check this task with a different input too."
+    assert eval('today == ["Fork", "Arch", "Gate"]', varied), "Check this task with a different input too."
 
 def test_02():
-    """Loop over the first three deliveries and append To <name> strings to labels."""
-    assert labels == ["To Oak", "To Elm", "To Pine"], "Loop over the first three deliveries and append To <name> strings to labels."
+    """Loop over the first three checkpoints and append For <name> strings to labels."""
+    assert labels == ["For Pass", "For Bridge", "For Beacon"], "Loop over the first three checkpoints and append For <name> strings to labels."
     assert _uses('For'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('labels == ["To Maple", "To Willow", "To Fir"]', varied), "Check this task with a different input too."
+    assert eval('labels == ["For Fork", "For Arch", "For Gate"]', varied), "Check this task with a different input too."

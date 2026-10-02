@@ -1,6 +1,6 @@
-ticket = 1
-checked = 0
-while ticket <= 3:
-    checked += 1
-    ticket += 1
-print(checked)
+pulse = 1
+charged = 0
+while pulse <= 3:
+    charged += 1
+    pulse += 1
+print(charged)

@@ -17,5 +17,5 @@ def _uses_name(node, name):
     return any(isinstance(part, _ast.Name) and part.id == name for part in _ast.walk(node))
 
 def test_order_text():
-    """Convert the updated order text to calculate 17 items"""
-    assert order_text == "15" and items == 17 and any(isinstance(n, _ast.Call) and isinstance(n.func, _ast.Name) and n.func.id == "int" and _uses_name(n, "order_text") for n in _ast.walk(_assignment("items"))), "Change the quoted number to '15'"
+    """Convert the updated order text to calculate 17 shards"""
+    assert shard_text == "15" and shards == 17 and any(isinstance(n, _ast.Call) and isinstance(n.func, _ast.Name) and n.func.id == "int" and _uses_name(n, "shard_text") for n in _ast.walk(_assignment("shards"))), "Change the quoted number to '15'"

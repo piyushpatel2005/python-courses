@@ -1,21 +1,21 @@
 ---
-title: "Exercise: Recover Ticket Counts"
-slug: exercise-ticket-counts
+title: 'Exercise: Label Beacon Charge'
+slug: exercise-charge-counts
 order: 2
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Convert ticket quantities and handle bad input without hiding other errors.
-seo_title: "Exercise: Recover Ticket Counts | Python Basics"
-seo_description: Convert ticket quantities and handle bad input without hiding other errors.
+summary: 'Convert valid charge text and recover from invalid values.'
+seo_title: 'Exercise: Label Beacon Charge | Python Basics'
+seo_description: 'Convert valid charge text and recover from invalid values.'
 seo_keywords: [python try except exercise, traceback, ValueError]
 ---
 
-A ticket spreadsheet sometimes contains `"many"` instead of digits. The prior demo caught a specific conversion failure; now use it for a different function. `IndexError` from a bad list index or `NameError` from a typo would not be fixed by catching `ValueError`, so do not use a bare `except`.
+Ari must label the shrine charge even when a reading is blurred. Reuse the preceding `try`/`except ValueError` pattern; a bare `except` could hide unrelated mistakes.
 
-Edit `main.py`, Run to compare both sample labels, then Submit. The starter supplies the labels; each helper is independently testable.
+Edit `main.py`, **Run** to compare valid and faded readings, then **Submit**. The two helpers are checked separately.
 
 ## Your Tasks
 
-1. Complete `ticket_count(text)` to return `int(text)` for valid integer text and `0` for text that raises `ValueError`, using `try`/`except ValueError`.
-2. Complete `ticket_label(text)` to return `"Tickets: <count>"` using `ticket_count(text)`.
+1. Complete `charge_value(text)` to return `int(text)` or `0` when it raises `ValueError`, using `try`/`except ValueError`.
+2. Complete `charge_label(text)` to return `"Charge: <count>"` using `charge_value(text)`.

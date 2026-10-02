@@ -1,25 +1,22 @@
 ---
-title: Change a Playlist
+title: "Change a Gear List: Demo"
 slug: change-a-playlist
 order: 3
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Mutate a Python list with index assignment and append.
-seo_title: Change a Playlist | Python Basics
-seo_description: Mutate a Python list with index assignment and append with an editable
-  Python example and checked task.
-seo_keywords:
-- python list-mutation
-- beginner list-mutation exercise
+summary: Replace an item in a mutable gear list.
+seo_title: "Change a Gear List: Demo | Python Basics"
+seo_description: Replace an item in a mutable gear list.
+seo_keywords: [python basics, lists and tuples, lantern atlas]
 ---
 
-Unlike a string, a list is mutable: `songs[0] = "..."` replaces one item. `songs.append("...")` adds to the end; `remove(value)` removes the first matching item and `pop()` removes and returns the last. These methods change the original list.
+# Change a Gear List: Demo
 
-This is an editable worked demo. Edit `main.py`, press **Run** to compare the result, then **Submit** to check your small change. The next lesson transfers the idea to a different setting.
+Unlike a string, a list can change in place. `gear[0] = "..."` replaces an item; `append(value)` adds one, `remove(value)` removes a match, and `pop()` takes the last. Ari swaps a faulty item before climbing.
 
-Change the first song to `Dawn`, not the last one. Run should show a list beginning with Dawn; then Submit.
+In `main.py`, change the assignment to replace the first item with `Lantern`, not the last. Run to see the changed list, then Submit.
 
 ## Your Task
 
-1. Replace the first item in `songs` with `Dawn`.
+1. Replace the first item in `gear` with `Lantern`.

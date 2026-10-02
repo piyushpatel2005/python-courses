@@ -1,2 +1,2 @@
-visitor = "Ivy"  # prefilled response; do not call input() in this browser lesson
-print(f"Seat for {visitor}")
+pathfinder = "Ari"  # prefilled response; do not call input() in this browser lesson
+print(f"Gear ready for {pathfinder}")

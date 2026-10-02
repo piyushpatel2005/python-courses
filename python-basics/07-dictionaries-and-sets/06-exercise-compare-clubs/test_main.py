@@ -9,7 +9,7 @@ import solution
 def _variant():
     with open(solution.__file__, encoding="utf-8") as source_file:
         tree = ast.parse(source_file.read())
-    replacements = {'morning_names': ['Eve', 'Eve', 'Finn', 'Gus'], 'evening_names': ['Gus', 'Hal']}
+    replacements = {'ari_stops': ['Arch', 'Arch', 'Vale', 'Pass'], 'scout_stops': ['Pass', 'Dune']}
     for node in tree.body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
             name = node.targets[0].id
@@ -35,22 +35,22 @@ def _uses(technique):
     return False
 
 def test_01():
-    """Set morning to a set of names from morning_names."""
-    assert morning == {"Ada", "Bo", "Cy"}, "Set morning to a set of names from morning_names."
+    """Set ari_route to a set of names from ari_stops."""
+    assert ari_route == {"Ridge", "Cove", "Grove"}, "Set ari_route to a set of names from ari_stops."
     assert _uses('set'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('morning == {"Eve", "Finn", "Gus"}', varied), "Check this task with a different input too."
+    assert eval('ari_route == {"Arch", "Vale", "Pass"}', varied), "Check this task with a different input too."
 
 def test_02():
-    """Set shared to the intersection of morning and the evening names."""
-    assert shared == {"Bo"}, "Set shared to the intersection of morning and the evening names."
+    """Set overlap to the intersection of ari_route and the scout_stops."""
+    assert overlap == {"Cove"}, "Set overlap to the intersection of ari_route and the scout_stops."
     assert _uses('BitAnd'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('shared == {"Gus"}', varied), "Check this task with a different input too."
+    assert eval('overlap == {"Pass"}', varied), "Check this task with a different input too."
 
 def test_03():
-    """Set morning_only to the difference of the morning and evening names."""
-    assert morning_only == {"Ada", "Cy"}, "Set morning_only to the difference of the morning and evening names."
+    """Set ari_only to the difference of the ari_route and scout_stops."""
+    assert ari_only == {"Ridge", "Grove"}, "Set ari_only to the difference of the ari_route and scout_stops."
     assert _uses('Sub'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('morning_only == {"Eve", "Finn"}', varied), "Check this task with a different input too."
+    assert eval('ari_only == {"Arch", "Vale"}', varied), "Check this task with a different input too."

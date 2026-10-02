@@ -1,26 +1,23 @@
 ---
-title: 'Exercise: Write a Receipt'
+title: 'Exercise: Count Cache Marks'
 slug: exercise-write-receipt
 order: 4
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Loop over dictionary items and compute a total.
-seo_title: 'Exercise: Write a Receipt | Python Basics'
-seo_description: Loop over dictionary items and compute a total with an editable Python
-  example and checked task.
+summary: 'Build cache labels and sum marks from a dictionary.'
+seo_title: 'Exercise: Count Cache Marks | Python Basics'
+seo_description: 'Build cache labels and sum marks from a dictionary.'
 seo_keywords:
 - python dictionary-loop
 - beginner dictionary-loop exercise
 ---
 
-The plant stall stores names and prices in a dictionary. The earlier demo collected keys; this time prepare individual receipt lines and a running sum.
+Ari needs a cache ledger. The earlier map demo collected keys; here each entry becomes a label, and the marks become a total. Use `.items()` for pairs and `.values()` for just the counts.
 
-This is a separate exercise. Edit `main.py`, press **Run** to inspect the output, then **Submit** to check the numbered tasks.
-
-Run to inspect both checkpoints, then Submit.
+Edit `main.py`, **Run** to see the labels and sum, then **Submit**.
 
 ## Your Tasks
 
-1. Loop over `plants.items()` and append each `<name>: $<price>` string to `lines`.
-2. Loop over `plants.values()` and add each price to `total`.
+1. Loop over `caches.items()` and append each `<landmark>: <marks> marks` label to `lines`.
+2. Loop over `caches.values()` and add each count to `total_marks`.

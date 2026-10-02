@@ -1,22 +1,22 @@
-def seat_total(seat_counts):
+def energy_total(shard_energy):
     total = 0
-    for count in seat_counts:
-        total += count
+    for amount in shard_energy:
+        total += amount
     return total
 
 
-def remaining_seats(capacity, reserved):
-    seats = capacity - reserved
-    if seats > 0:
-        return seats
+def energy_needed(target, gathered):
+    needed = target - gathered
+    if needed > 0:
+        return needed
     return 0
 
 
-def workshop_report(name, capacity, seat_counts):
-    reserved = seat_total(seat_counts)
-    available = remaining_seats(capacity, reserved)
-    return f"{name}: {reserved} reserved, {available} available"
+def beacon_report(name, target, shard_energy):
+    gathered = energy_total(shard_energy)
+    needed = energy_needed(target, gathered)
+    return f"{name}: {gathered} energy, {needed} needed"
 
 
-print("Workshop seating report")
-print(workshop_report("Ceramics", 8, [2, 1]))
+print("Final beacon report")
+print(beacon_report("North Beacon", 8, [2, 1]))

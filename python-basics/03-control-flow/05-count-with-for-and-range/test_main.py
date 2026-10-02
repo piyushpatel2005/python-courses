@@ -1,4 +1,4 @@
 from solution import *
 
-def test_one_more_stall():
-    assert labels == "Stall 1 | Stall 2 | Stall 3 | Stall 4 | ", "Include stall 4 in the labels"
+def test_one_more_marker():
+    assert labels == "Marker 1 | Marker 2 | Marker 3 | Marker 4 | ", "Include marker 4 in the labels"

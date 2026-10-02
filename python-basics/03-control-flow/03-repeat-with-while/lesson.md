@@ -1,26 +1,22 @@
 ---
-title: Repeat with while
+title: "Demo: Pulse a Beacon with while"
 slug: repeat-with-while
 order: 3
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: Update a counter so a while loop finishes.
-seo_title: Repeat with while | Python Basics
-seo_description: Update a counter so a while loop finishes. Practice Python control
-  flow in an editable browser lesson.
-seo_keywords:
-- python while loop
-- counter
-- bounded loop
+summary: "Watch a bounded countdown restore a beacon."
+seo_title: "Demo: Pulse a Beacon with while | Python Basics"
+seo_description: "Watch a bounded countdown restore a beacon."
+seo_keywords: [python basics, control flow, lantern atlas]
 ---
 
-# Repeat with while
+A beacon pulses while its counter is positive. `while` checks before every turn; the indented body decrements `pulses` so it stops. The starter prints `Pulse 3`, `Pulse 2`, `Pulse 1`, then `Beacon steady`.
 
-A greenhouse misting timer ticks while its countdown stays positive. `while` tests its condition **before** each turn. Inside the indented loop, reduce `seconds` so the condition eventually becomes false. The starter prints `Mist 3`, `Mist 2`, `Mist 1`, then `Done`.
+![While loop flowchart showing condition, body, and exit](while-loop-flow.svg "Check before each turn")
 
-Change the starting `seconds` from `3` to `4`. Press **Run** to see one extra `Mist 4` line before the original three and `Done`; press **Submit** to check your edit. Never remove the decrement: a loop that never changes its condition can run forever.
+Change only the starting `pulses` from `3` to `4` in **main.py**. Press **Run** for an extra `Pulse 4`, then **Submit**. Never remove the decrement or the loop may not end.
 
-## Your Task
+## Your Tasks
 
-1. Set the starting `seconds` to `4` so the countdown includes `Mist 4`.
+1. Start `pulses` at `4`.

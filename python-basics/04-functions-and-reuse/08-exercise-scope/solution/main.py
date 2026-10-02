@@ -1,8 +1,8 @@
-price = 20
+energy = 20
 
-def sale_price():
-    price = 15
-    return price
+def pulse_energy():
+    energy = 15
+    return energy
 
-print(sale_price())
-print(price)
+print(pulse_energy())
+print(energy)

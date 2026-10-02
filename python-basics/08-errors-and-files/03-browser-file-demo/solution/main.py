@@ -1,6 +1,6 @@
-note = "Check the north door"
-with open("shift-note.txt", "w", encoding="utf-8") as file:
+note = "Light the east beacon"
+with open("shrine-note.txt", "w", encoding="utf-8") as file:
     file.write(note)
-with open("shift-note.txt", "r", encoding="utf-8") as file:
+with open("shrine-note.txt", "r", encoding="utf-8") as file:
     saved_note = file.read()
 print(saved_note)

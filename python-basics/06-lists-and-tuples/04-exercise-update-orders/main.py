@@ -1,5 +1,5 @@
-orders = ["tea", "cofee", "cake"]
+gear = ["rope", "torhc", "spent shard"]
 # Fix the typo at index 1.
-# Append "water".
-# Remove "cake" by value.
-print(orders)
+# Append "lens".
+# Remove "spent shard" by value.
+print(gear)

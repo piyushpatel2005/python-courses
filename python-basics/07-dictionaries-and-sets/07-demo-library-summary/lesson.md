@@ -1,25 +1,22 @@
 ---
-title: 'Demo: Summarize Library Visits'
+title: 'Demo: Summarize Beacon Finds'
 slug: demo-library-summary
 order: 7
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Combine a list of records, dictionary counts, and unique names.
-seo_title: 'Demo: Summarize Library Visits | Python Basics'
-seo_description: Combine a list of records, dictionary counts, and unique names with
-  an editable Python example and checked task.
+summary: 'Combine map records, dictionary counts, and distinct locations.'
+seo_title: 'Demo: Summarize Beacon Finds | Python Basics'
+seo_description: 'Combine map records, dictionary counts, and distinct locations.'
 seo_keywords:
 - python collections-project
 - beginner collections-project exercise
 ---
 
-The library logs visits as a list of dictionaries. Each record has a `name` and `room`; duplicate names represent repeat visits. Read fields by key in a loop, use `counts.get(room, 0) + 1` to count visits, and use `set(names)` for distinct people. This integrates the earlier dictionary and set lessons in a runnable project.
+Ari’s finds are a list of dictionaries. Each record has a `location` and a `beacon`; the same location can appear twice. A loop collects locations, `.get(beacon, 0) + 1` counts finds by beacon, and a set counts distinct locations.
 
-This is an editable worked demo. Edit `main.py`, press **Run** to compare the result, then **Submit** to check your small change. The next lesson transfers the idea to a different setting.
-
-Change the final `people` value to count unique names instead of all visits. Run should print `2 visitors`; then Submit.
+Edit `main.py`, **Run** to see `2 locations` instead of `3`, then **Submit**. The next mission uses new treasure records.
 
 ## Your Task
 
-1. Set `people` to the count of distinct names in `names`.
+1. Set `places` to the number of distinct values in `locations`.

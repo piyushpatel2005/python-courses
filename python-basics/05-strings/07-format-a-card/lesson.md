@@ -1,25 +1,24 @@
 ---
-title: Format a Card with an f-String
+title: "Format a Route Card: Demo"
 slug: format-a-card
 order: 7
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Insert variables and format a decimal in a Python f-string.
-seo_title: Format a Card with an f-String | Python Basics
-seo_description: Insert variables and format a decimal in a Python f-string with an
-  editable Python example and checked task.
-seo_keywords:
-- python f-strings
-- beginner f-strings exercise
+summary: Format a decoded route card with an f-string.
+seo_title: "Format a Route Card: Demo | Python Basics"
+seo_description: Format a decoded route card with an f-string.
+seo_keywords: [python basics, strings, lantern atlas]
 ---
 
-A bookstand needs a readable price card. Put `f` before the opening quote and use `{name}` to insert a variable. `{price:.2f}` displays a number with two decimal places; the original number stays unchanged. This expands on the first f-string you saw in First Steps.
+# Format a Route Card: Demo
 
-This is an editable worked demo. Edit `main.py`, press **Run** to compare the result, then **Submit** to check your small change. The next lesson transfers the idea to a different setting.
+Ari copies a cavern waypoint onto a card. An `f` before the quote lets `{name}` insert a value; `{energy:.2f}` shows two decimal places without changing the number. This builds on the f-strings from First Steps.
 
-Change the card to show the price with two decimal places. Run should print `Atlas: $7.50`; then Submit.
+![f-string parts for the cavern route card](f-string-anatomy.svg "f-string prefix, expression and two-decimal specifier")
+
+Change the f-string in `main.py` so Run prints `GLOW: 7.50 energy`; then Submit. The next sign uses different values.
 
 ## Your Task
 
-1. Set `card` with an f-string displaying `price` to two decimal places.
+1. Set `card` with an f-string displaying `energy` to two decimal places.

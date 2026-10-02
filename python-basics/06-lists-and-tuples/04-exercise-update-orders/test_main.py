@@ -9,7 +9,7 @@ import solution
 def _variant():
     with open(solution.__file__, encoding="utf-8") as source_file:
         tree = ast.parse(source_file.read())
-    replacements = {'orders': ['milk', 'cofee', 'cake']}
+    replacements = {'gear': ['map', 'torhc', 'spent shard']}
     for node in tree.body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
             name = node.targets[0].id
@@ -35,22 +35,22 @@ def _uses(technique):
     return False
 
 def test_01():
-    """Replace cofee at index 1 with coffee."""
-    assert orders[1] == "coffee", "Replace cofee at index 1 with coffee."
+    """Replace torhc at index 1 with torch."""
+    assert gear[1] == "torch", "Replace torhc at index 1 with torch."
     assert _uses('Subscript'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('orders[1] == "coffee"', varied), "Check this task with a different input too."
+    assert eval('gear[1] == "torch"', varied), "Check this task with a different input too."
 
 def test_02():
-    """Append water to orders."""
-    assert "water" in orders and orders[-1] == "water", "Append water to orders."
+    """Append lens to gear."""
+    assert "lens" in gear and gear[-1] == "lens", "Append lens to gear."
     assert _uses('append'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('"water" in orders and orders[-1] == "water"', varied), "Check this task with a different input too."
+    assert eval('"lens" in gear and gear[-1] == "lens"', varied), "Check this task with a different input too."
 
 def test_03():
-    """Remove cake from orders by value."""
-    assert "cake" not in orders, "Remove cake from orders by value."
+    """Remove spent shard from gear by value."""
+    assert "spent shard" not in gear, "Remove spent shard from gear by value."
     assert _uses('remove'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('"cake" not in orders', varied), "Check this task with a different input too."
+    assert eval('"spent shard" not in gear', varied), "Check this task with a different input too."

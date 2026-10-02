@@ -1,6 +1,6 @@
 import math
 
-def vans_needed(people):
+def lanterns_needed(sparks):
     pass
 
-print(vans_needed(13))
+print(lanterns_needed(13))

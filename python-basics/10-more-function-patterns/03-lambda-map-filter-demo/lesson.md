@@ -1,20 +1,20 @@
 ---
-title: Lambda, Map, and Filter Demo
+title: "Echo Tower: Tune the Frequencies"
 slug: lambda-map-filter-demo
 order: 3
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Edit a short lambda used to transform prices.
-seo_title: "Lambda, Map, and Filter Demo | Python Basics"
-seo_description: Edit a short lambda used to transform prices.
-seo_keywords: [python lambda, map, filter, iterators]
+summary: Use lambda, map, and filter to tune beacon frequencies.
+seo_title: "Echo Tower: Tune the Frequencies | Python Basics"
+seo_description: Use lambda, map, and filter to tune beacon frequencies.
+seo_keywords: [python lambda, map, filter, Echo Tower]
 ---
 
-A `lambda` is a small unnamed function: `lambda price: price + 2` takes a price and returns one value. `map(function, items)` applies that function to each item; `filter(function, items)` keeps items for which it returns `True`. Both produce iterators, so `list(...)` makes their results visible. A list comprehension or loop often reads better for complex work.
+Ari's receiver adds a small adjustment to each frequency, then keeps frequencies above the tower's threshold. A `lambda` is a short unnamed function. `map(function, items)` transforms each item; `filter(function, items)` keeps those meeting a condition. Both return iterators, so `list(...)` lets you see the values.
 
-The complete demo adds a fee to snack prices, then keeps prices over a threshold. Edit `main.py`: change only the fee inside the `map` lambda from `1` to `2`. Run to see `[5, 7, 9]` and `[7, 9]`, then Submit. The following exercise uses different data.
+In `main.py`, change **only** the adjustment inside the `map` lambda from `1` to `2`. Run to see `Tuned: [5, 7, 9]` and `Strong: [7, 9]`, then Submit. A loop or comprehension is often clearer for a larger operation; the next exercise uses this compact pattern on different beacon data.
 
 ## Your Task
 
-1. Change the `map` lambda to add `2` to each price; keep the `filter` rule unchanged.
+1. Change the `map` lambda to add `2` to every frequency, leaving the `filter` rule unchanged.

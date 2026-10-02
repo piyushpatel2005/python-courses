@@ -1,26 +1,23 @@
 ---
-title: 'Exercise: Read a Session Record'
+title: "Exercise: Read an Exit Checkpoint"
 slug: exercise-read-session
 order: 8
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Use tuple indexing and unpacking on a fixed schedule record.
-seo_title: 'Exercise: Read a Session Record | Python Basics'
-seo_description: Use tuple indexing and unpacking on a fixed schedule record with
-  an editable Python example and checked task.
-seo_keywords:
-- python tuples
-- beginner tuples exercise
+summary: Index and unpack a fixed exit checkpoint record.
+seo_title: "Exercise: Read an Exit Checkpoint | Python Basics"
+seo_description: Index and unpack a fixed exit checkpoint record.
+seo_keywords: [python basics, lists and tuples, lantern atlas]
 ---
 
-This session will not change during check-in, so a tuple keeps its two fields together. Apply the reservation demo to a different room and time.
+# Exercise: Read an Exit Checkpoint
 
-This is a separate exercise. Edit `main.py`, press **Run** to inspect the output, then **Submit** to check the numbered tasks.
-
-Read and unpack the supplied tuple, then Run and Submit.
+Ari's final exit checkpoint has a marker and a signal time that must travel together. Use tuple indexing for the marker, then unpack the same record into two names. Edit `main.py`, Run, then Submit.
 
 ## Your Tasks
 
-1. Set `room_name` to the first element of `session` by indexing.
-2. Unpack `session` into `room` and `start_time`.
+1. Set `marker_name` to the first element of `exit_record` by indexing.
+2. Unpack `exit_record` into `marker` and `signal_time`.
+
+With the record decoded and the gear list ready, Ari can relight the ridge beacon and unlock the exit.

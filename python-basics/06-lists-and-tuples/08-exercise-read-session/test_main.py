@@ -9,7 +9,7 @@ import solution
 def _variant():
     with open(solution.__file__, encoding="utf-8") as source_file:
         tree = ast.parse(source_file.read())
-    replacements = {'session': ('Annex', '08:15')}
+    replacements = {'exit_record': ('North Gate', '08:15')}
     for node in tree.body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
             name = node.targets[0].id
@@ -35,15 +35,28 @@ def _uses(technique):
     return False
 
 def test_01():
-    """Set room_name to the first element of session by indexing."""
-    assert room_name == "Studio", "Set room_name to the first element of session by indexing."
+    """Set marker_name to the first element of exit_record by indexing."""
+    assert marker_name == "Exit Beacon", "Set marker_name to the first element of exit_record by indexing."
     assert _uses('Subscript'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('room_name == "Annex"', varied), "Check this task with a different input too."
+    assert eval('marker_name == "North Gate"', varied), "Check this task with a different input too."
 
 def test_02():
-    """Unpack session into room and start_time."""
-    assert (room, start_time) == session, "Unpack session into room and start_time."
-    assert _uses('Tuple'), "Use the requested Python technique."
+    """Unpack exit_record into marker and signal_time."""
+    assert (marker, signal_time) == exit_record, "Unpack exit_record into marker and signal_time."
+    source_path = solution.__file__
+    assert source_path is not None
+    with open(source_path, encoding="utf-8") as source_file:
+        tree = ast.parse(source_file.read())
+    assert any(
+        isinstance(node, ast.Assign)
+        and len(node.targets) == 1
+        and isinstance(node.targets[0], (ast.Tuple, ast.List))
+        and [part.id for part in node.targets[0].elts if isinstance(part, ast.Name)] == ["marker", "signal_time"]
+        and len(node.targets[0].elts) == 2
+        and isinstance(node.value, ast.Name)
+        and node.value.id == "exit_record"
+        for node in ast.walk(tree)
+    ), "Unpack exit_record directly into marker and signal_time."
     varied = _variant()
-    assert eval('(room, start_time) == session', varied), "Check this task with a different input too."
+    assert eval('(marker, signal_time) == exit_record', varied), "Check this task with a different input too."

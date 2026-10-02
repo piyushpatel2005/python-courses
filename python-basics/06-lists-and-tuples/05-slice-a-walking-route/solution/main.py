@@ -1,5 +1,5 @@
-stops = ["Dock", "Park", "Library"]
-for stop in stops:
-    print(stop)
-morning_stops = stops[:2]
-print(morning_stops)
+checkpoints = ["Pass", "Bridge", "Beacon"]
+for checkpoint in checkpoints:
+    print(checkpoint)
+near_checkpoints = checkpoints[:2]
+print(near_checkpoints)

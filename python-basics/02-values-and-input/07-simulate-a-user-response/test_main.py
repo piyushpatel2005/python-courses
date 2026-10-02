@@ -25,6 +25,6 @@ def _output():
         exec(compile(Path(_solution.__file__).read_text(), _solution.__file__, "exec"), {})
     return output.getvalue().strip().splitlines()
 
-def test_visitor():
-    """Display the new prefilled visitor response"""
-    assert visitor == "Ivy" and _output() == ["Seat for Ivy"] and any(isinstance(n, _ast.JoinedStr) and _uses_name(n, "visitor") for n in _ast.walk(_source_tree())), "Set visitor to Ivy"
+def test_pathfinder():
+    """Display the new prefilled pathfinder response"""
+    assert pathfinder == "Ari" and _output() == ["Gear ready for Ari"] and any(isinstance(n, _ast.JoinedStr) and _uses_name(n, "pathfinder") for n in _ast.walk(_source_tree())), "Set pathfinder to Ari"

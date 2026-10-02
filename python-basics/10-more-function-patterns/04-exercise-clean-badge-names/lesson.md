@@ -1,21 +1,21 @@
 ---
-title: "Exercise: Clean Badge Names"
+title: "Echo Tower: Select Beacon Labels"
 slug: exercise-clean-badge-names
 order: 4
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Use map and filter for a short badge-name pipeline.
-seo_title: "Exercise: Clean Badge Names | Python Basics"
-seo_description: Use map and filter for a short badge-name pipeline.
-seo_keywords: [python lambda map filter exercise, badge names]
+summary: Use map and filter to prepare beacon labels.
+seo_title: "Echo Tower: Select Beacon Labels | Python Basics"
+seo_description: Use map and filter to prepare beacon labels.
+seo_keywords: [python map filter exercise, beacon labels]
 ---
 
-The demo changed prices; this job cleans attendee badge names. First transform each name to uppercase with `map` and a lambda. Then keep only names of length at least four with `filter` and another lambda. Convert each result to a list to display it. These are optional compact patterns, not requirements for the final workshop project.
+The tower's display expects uppercase beacon labels, but it has room only for labels with at least four characters. The frequency demo transformed numbers; here you transform **strings**, then filter the transformed list. `list(map(...))` and `list(filter(...))` expose the results.
 
-Edit `main.py`, Run to inspect both lists, then Submit. The two tasks have separate checkpoints; `badge_names` is already supplied.
+Edit `main.py`, Run to see the two lists, then Submit. After both steps, the Echo Tower has a clean list of labels to send toward the gate. The final game mission uses ordinary functions and loops instead of requiring these optional compact tools.
 
 ## Your Tasks
 
-1. Set `upper_names` to `list(map(...))` using a lambda that uppercases each name in `badge_names`.
-2. Set `long_names` to `list(filter(...))` using a lambda that keeps names with at least four characters from `upper_names`.
+1. Set `upper_labels` to `list(map(...))` using a lambda that uppercases each item in `beacon_labels`.
+2. Set `long_labels` to `list(filter(...))` using a lambda that keeps labels of at least four characters from `upper_labels`.

@@ -1,67 +1,69 @@
 ---
 slug: python-basics
-title: Python Basics
-description: Learn Python by writing small programs, from your first print statement to functions, collections, files, and errors.
-summary: A practice-led Python course for beginners with editable demonstrations, separate coding exercises, projects, and quizzes.
+title: "Python Basics: The Lantern Atlas"
+description: Guide Ari through the levels of The Lantern Atlas by coding messages, gate logic, abilities, inventory, saves, and a final beacon mission in Python.
+summary: A beginner Python adventure with editable demos, distinct coding challenges, level projects, and quizzes.
 language: python
 level: Beginner
 format: Guided coding, exercises, and quizzes
 sort_order: 5
 seo_title: Python Basics Course | Learn Python Programming by Doing
-seo_description: Write Python code in your browser with guided demos, coding exercises, projects, and quizzes covering Python fundamentals in order.
-seo_keywords: [python basics, learn python, beginner python course, python coding exercises]
+seo_description: Help Ari restore the beacons in an original text-based game while learning Python fundamentals through browser coding challenges, level projects, and quizzes.
+seo_keywords: [python basics, learn python, beginner python course, python game coding exercises]
 modules:
   - slug: first-steps
-    title: First Steps with Python
+    title: "Level 1: Spawn Camp — First Steps"
     sort_order: 1
   - slug: values-and-input
-    title: Values, Operators, and Input
+    title: "Level 2: Gear Forge — Values and Input"
     sort_order: 2
   - slug: control-flow
-    title: Decisions and Loops
+    title: "Level 3: Gate Trials — Decisions and Loops"
     sort_order: 3
   - slug: functions-and-reuse
-    title: Functions and Scope
+    title: "Level 4: Ability Workshop — Functions and Scope"
     sort_order: 4
   - slug: strings
-    title: Strings and Text Processing
+    title: "Level 5: Cipher Caverns — Strings"
     sort_order: 5
   - slug: lists-and-tuples
-    title: Lists and Tuples
+    title: "Level 6: Inventory Ridge — Lists and Tuples"
     sort_order: 6
   - slug: dictionaries-and-sets
-    title: Dictionaries and Sets
+    title: "Level 7: Map Archive — Dictionaries and Sets"
     sort_order: 7
   - slug: errors-and-files
-    title: Errors and Files
+    title: "Level 8: Save Shrine — Errors and Files"
     sort_order: 8
   - slug: modules-and-packages
-    title: Modules and Packages
+    title: "Level 9: Tool Library — Modules and Packages"
     sort_order: 9
   - slug: more-function-patterns
-    title: More Function Patterns
+    title: "Level 10: Echo Tower — More Function Patterns"
     sort_order: 10
   - slug: next-steps
-    title: Putting It Together
+    title: "Level 11: Exit Gate — Putting It Together"
     sort_order: 11
 ---
 
-# Python Basics
+# The Lantern Atlas
 
-Learn Python 3 by editing working examples and then solving a different, focused problem yourself. A community workshop provides practical tasks: calculate supply costs, assign seats, organize registrations, and save a note. Each section pairs short guided demos with separate exercises, gives you feedback on your code, and ends with a quiz. You can work in the browser without installing Python.
+Ari is a pathfinder in an original text-based game. The beacons along the route have gone dark; each level gives you a small piece of Python to restore the route and reach the Exit Gate. You write the game systems yourself: a first message at Spawn Camp, gear calculations, decisions at gates, reusable abilities, rune decoding, an inventory, map records, save data, and a final mission. There is no existing game engine to install or copyrighted game world to know.
 
-## Course path
+Each level introduces a concept with an editable worked demo, then lets you try a related challenge with different data. Short projects combine those skills, and each section ends with a quiz. The character and goal connect the exercises, but the code—not fictional lore—does the work.
 
-1. First Steps with Python — print, variables, types, and the editor.
-2. Values, Operators, and Input — calculate, format text, convert input values.
-3. Decisions and Loops — comparisons, conditions, `while`, `for`, `break`, and `continue`.
-4. Functions and Scope — name reusable actions, pass arguments, return values, and understand local variables.
-5. Strings and Text Processing — indexing, slicing, and methods.
-6. Lists and Tuples — ordered data, changes, iteration, and fixed records.
-7. Dictionaries and Sets — keyed records and unique items.
-8. Errors and Files — recover from bad data and read/write browser files.
-9. Modules and Packages — import reusable Python code.
-10. More Function Patterns — optional recursion and functional tools.
-11. Putting It Together — build a small program and learn the vocabulary of classes and objects without writing object-oriented code.
+## Level path
 
-Open `main.py` in a coding lesson, make the requested edit, press Run to see the output, and press Submit to check your work. Demo lessons ask for tiny changes; the following exercise uses different data so you can apply the idea yourself. The Python editor runs through Pyodide. File exercises use its temporary in-memory filesystem, not files on your computer; command-line `input()` is explained with sample values rather than an interactive prompt.
+1. Spawn Camp — print a message and give starting values names and types.
+2. Gear Forge — calculate resources, format the HUD, and convert text values.
+3. Gate Trials — compare conditions and use loops to navigate encounters.
+4. Ability Workshop — build reusable actions with functions and scope.
+5. Cipher Caverns — read, slice, clean, and format rune text.
+6. Inventory Ridge — manage ordered gear and fixed checkpoint records.
+7. Map Archive — track keyed records and unique locations.
+8. Save Shrine — recover from bad data and read/write temporary save files.
+9. Tool Library — import reusable tools and local modules.
+10. Echo Tower — explore optional recursive and functional patterns.
+11. Exit Gate — assemble the final text-based level and preview classes and objects as future vocabulary.
+
+Open `main.py` in a coding lesson, make the requested edit, press Run to see the output, then Submit to check your work. Demos ask for tiny changes; the next exercise uses different game data so you can transfer the idea. Python runs in the browser through Pyodide. Save-file exercises use its temporary in-memory filesystem, not files on your computer; command-line `input()` is discussed with sample values rather than a blocking prompt.

@@ -1,20 +1,18 @@
 ---
-title: "Exercise: Calculate a Bus Cost"
+title: "Exercise: Price a Cache Route"
 slug: exercise-calculate-bus-cost
 order: 2
 language: python
 lesson_type: coding
-summary: Compute the cost and remaining seats for a group trip.
-seo_title: "Exercise: Calculate a Bus Cost | Python Basics"
-seo_description: Compute the cost and remaining seats for a group trip.
-seo_keywords: [python multiplication exercise, subtraction exercise, numeric calculation]
+summary: "Multiply energy cost and subtract used pack slots."
+seo_title: "Exercise: Price a Cache Route | Python Basics"
+seo_description: "Multiply energy cost and subtract used pack slots."
+seo_keywords: [python basics, values and input, lantern atlas]
 ---
 
-A neighborhood trip books seats on a shuttle. The given values are 3 riders per group, 7 groups, 25 seats, and $4 per rider. Multiplication finds the ticket total; subtraction finds unfilled seats. The starter prints both results, so complete the two `TODO` calculations rather than adding output code.
-
-Edit `main.py`, press **Run** to see both figures, then **Submit**. Solve each calculation separately.
+Ari plans a different forge purchase: three points per cache across seven caches, four energy per point, and 25 pack slots. The starter prints cost and remaining slots. Complete the two assignments in **main.py** using supplied variables. Press **Run** and **Submit**.
 
 ## Your Tasks
 
-1. Calculate `fare_total` as the total fare for all riders using the supplied variables.
-2. Calculate `open_seats` as shuttle capacity minus the number of riders using the supplied variables.
+1. Calculate `energy_cost` by multiplying `points_per_cache`, `caches`, and `energy_per_point`.
+2. Calculate `open_slots` by subtracting collected points from `pack_slots`.

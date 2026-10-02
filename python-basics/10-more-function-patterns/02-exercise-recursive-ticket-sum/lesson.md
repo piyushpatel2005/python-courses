@@ -1,20 +1,20 @@
 ---
-title: "Exercise: Recursive Ticket Sum"
+title: "Echo Tower: Sum the Signals"
 slug: exercise-recursive-ticket-sum
 order: 2
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Write a small recursive sum with a reachable base case.
-seo_title: "Exercise: Recursive Ticket Sum | Python Basics"
-seo_description: Write a small recursive sum with a reachable base case.
-seo_keywords: [python recursive sum, base case exercise]
+summary: Combine short beacon signals with a recursive sum.
+seo_title: "Echo Tower: Sum the Signals | Python Basics"
+seo_description: Combine short beacon signals with a recursive sum.
+seo_keywords: [python recursive sum, beacon signals, base case]
 ---
 
-The demo counted down by one; this time a box holds a short list of ticket bundles. Sum the first bundle and ask the same function to sum the remainder. The empty list is the base case, and `bundles[1:]` shrinks the problem each time. Only use small lists here; a normal loop is clearer for large inputs.
+The tower now receives a short list of signal strengths. Unlike the countdown demo, this function returns **one total**: the first strength plus the total of the shorter list. An empty list contributes zero and ends the calls.
 
-Edit `main.py`, Run for the sample total, then Submit. The function name and print are supplied.
+Edit `main.py`, Run to check `Beacon signal: 6`, then Submit. The editor starts with an unfinished function; no keyboard input is needed. Use small lists here because deep recursion has a limit.
 
 ## Your Task
 
-1. Complete `bundle_total(bundles)` recursively: return `0` for an empty list; otherwise return the first number plus `bundle_total(bundles[1:])`.
+1. Complete `signal_total(signals)` recursively: return `0` for an empty list; otherwise return `signals[0] + signal_total(signals[1:])`.

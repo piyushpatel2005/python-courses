@@ -25,6 +25,6 @@ def _output():
         exec(compile(Path(_solution.__file__).read_text(), _solution.__file__, "exec"), {})
     return output.getvalue().strip().splitlines()
 
-def test_price_label():
-    """Show the updated price to two decimal places"""
-    assert price == 3.75 and _output() == ["Bread: $3.75"] and any(isinstance(n, _ast.JoinedStr) and _uses_name(n, "price") and any(isinstance(part, _ast.FormattedValue) and part.format_spec is not None for part in _ast.walk(n)) for n in _ast.walk(_source_tree())), "Change only price to 3.75"
+def test_gear_cost_label():
+    """Show the updated cost to two decimal places"""
+    assert cost == 3.75 and _output() == ["Compass: $3.75"] and any(isinstance(n, _ast.JoinedStr) and _uses_name(n, "cost") and any(isinstance(part, _ast.FormattedValue) and part.format_spec is not None for part in _ast.walk(n)) for n in _ast.walk(_source_tree())), "Change only cost to 3.75"

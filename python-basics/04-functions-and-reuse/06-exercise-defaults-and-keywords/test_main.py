@@ -1,12 +1,12 @@
-from solution import parcel_label
+from solution import ability_label
 import inspect
 
 def test_default_label():
     """An omitted mark uses a period"""
-    assert parcel_label("Bag") == "Bag."
-    assert parcel_label("Box", "?") == "Box?"
+    assert ability_label("Flare") == "Flare."
+    assert ability_label("Pulse", "?") == "Pulse?"
 
 def test_keyword_call():
     """The second call uses a named override"""
     source = inspect.getsource(__import__("solution"))
-    assert 'parcel_label("Box", mark="!")' in source
+    assert 'ability_label("Pulse", mark="!")' in source

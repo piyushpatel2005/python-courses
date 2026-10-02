@@ -1,4 +1,4 @@
 labels = ""
-for stall in range(1, 5):
-    labels += f"Stall {stall} | "
+for marker in range(1, 5):
+    labels += f"Marker {marker} | "
 print(labels)

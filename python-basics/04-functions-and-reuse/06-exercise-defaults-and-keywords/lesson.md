@@ -1,25 +1,23 @@
 ---
-title: "Exercise: Defaults and Keywords"
+title: "Exercise: Name a Beacon Ability"
 slug: exercise-defaults-and-keywords
 order: 6
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: Write an optional label suffix and call with a named argument.
-seo_title: "Exercise: Defaults and Keywords | Python Basics"
-seo_description: Write an optional label suffix and call with a named argument.
-seo_keywords: [python basics, exercise defaults and keywords, python practice]
+summary: Define a default mark and override it in a keyword call.
+seo_title: "Exercise: Name a Beacon Ability | Python Basics"
+seo_description: Define a default mark and override it in a keyword call.
+seo_keywords: [python basics, functions and reuse, lantern atlas]
 hints:
   - Add the default in the definition first; then name mark in the second call.
 ---
 
-# Exercise: Defaults and Keywords
+# Exercise: Name a Beacon Ability
 
-The demo changed a default and compared it with an explicit keyword override. Here you will write a different default for a parcel label. The two supplied print calls let you compare the ordinary label and your chosen keyword override.
+Ari labels a different ability for the beacon loadout. Give `ability_label` a default mark, then make the second call override it by keyword. The two print calls expose both outcomes. Edit `main.py`, Run, then Submit.
 
 ## Your Tasks
 
-1. Give `parcel_label` a default `mark="."` and return `name + mark`.
+1. Give `ability_label` a default `mark="."` and return `name + mark`.
 2. Change the second call to pass `mark="!"` as a keyword argument.
-
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your change.

@@ -1,19 +1,17 @@
 ---
-title: "Demo: Convert Text to Numbers"
+title: "Demo: Convert Shard Text"
 slug: convert-text-to-numbers
 order: 5
 language: python
 lesson_type: coding
-summary: Convert numeric text with int() to calculate a Python quantity.
-seo_title: "Demo: Convert Text to Numbers | Python Basics"
-seo_description: Convert numeric text with int() to calculate a Python quantity.
-seo_keywords: [python type conversion, int from string, numeric strings]
+summary: "Convert a text count before adding bonus shards."
+seo_title: "Demo: Convert Shard Text | Python Basics"
+seo_description: "Convert a text count before adding bonus shards."
+seo_keywords: [python basics, values and input, lantern atlas]
 ---
 
-Even a response that looks like a number can arrive as text. `"12" + "3"` joins strings into `"123"`; `int("12") + 3` produces `15`. `float("2.5")` reads decimal text. `str(15)` makes text from a number; `int(3.9)` truncates toward zero rather than rounding. Invalid numeric text, such as `"three"`, raises `ValueError`—use known valid values for now.
+A response can look numeric but still be text: `"12" + "3"` yields `"123"`, while `int("12") + 3` yields `15`. `float("2.5")` reads decimal text, `str(15)` makes text, and `int(3.9)` truncates instead of rounding. Invalid text raises `ValueError`. Change only `shard_text` from `"12"` to `"15"` in **main.py**. Press **Run** for `Shards: 17`, then **Submit**.
 
-A market's order count is supplied as a prefilled string. Change **only** `order_text` from `"12"` to `"15"`. Edit `main.py`, press **Run** to see `Items: 17`, then **Submit**. In the next exercise you will convert other strings yourself.
+## Your Tasks
 
-## Your Task
-
-1. Change `order_text` to the string `"15"`; the existing conversion and addition must display 17.
+1. Set `shard_text` to `"15"` and keep its `int()` conversion.

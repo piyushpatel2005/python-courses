@@ -1,7 +1,7 @@
-charge = 10
+beacon_charge = 10
 steps = 0
-while charge < 40:
-    charge += 10
+while beacon_charge < 40:
+    beacon_charge += 10
     steps += 1
-print(charge)
+print(beacon_charge)
 print(steps)

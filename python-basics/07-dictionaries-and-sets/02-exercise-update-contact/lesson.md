@@ -1,27 +1,24 @@
 ---
-title: 'Exercise: Update a Contact'
-slug: exercise-update-contact
+title: 'Exercise: Update a Map Entry'
+slug: exercise-update-map_entry
 order: 2
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Read, update, and safely look up Python dictionary fields.
-seo_title: 'Exercise: Update a Contact | Python Basics'
-seo_description: Read, update, and safely look up Python dictionary fields with an
-  editable Python example and checked task.
+summary: 'Read, update, and safely look up fields in an atlas map entry.'
+seo_title: 'Exercise: Update a Map Entry | Python Basics'
+seo_description: 'Read, update, and safely look up fields in an atlas map entry.'
 seo_keywords:
 - python dictionary-fields
 - beginner dictionary-fields exercise
 ---
 
-The library contact card has named fields. Transfer the stock-card pattern to this contact: access a known key with brackets, change a field with assignment, and use `get` for an absent key.
+Ari finds a map entry for Moss Gate. Transfer the card lookup pattern: read its landmark, record one more mark, and request an optional clue without raising `KeyError`.
 
-This is a separate exercise. Edit `main.py`, press **Run** to inspect the output, then **Submit** to check the numbered tasks.
-
-Keep the supplied card. Run to inspect all three results and Submit.
+Edit `main.py`, press **Run** to inspect the entry, then **Submit**.
 
 ## Your Tasks
 
-1. Set `visitor` to the value under `name` in `contact`.
-2. Update `contact["visits"]` to `3`.
-3. Set `phone` with `contact.get("phone", "not provided")`.
+1. Set `landmark` from `map_entry["landmark"]`.
+2. Update `map_entry["marks"]` to `3`.
+3. Set `clue` using `map_entry.get("clue", "unmarked")`.

@@ -1,21 +1,21 @@
 ---
-title: "Exercise: Save and Read a Message"
+title: 'Exercise: Save a Beacon Signal'
 slug: exercise-save-a-message
 order: 4
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Implement separate functions to write and read a temporary text file.
-seo_title: "Exercise: Save and Read a Message | Python Basics"
-seo_description: Implement separate functions to write and read a temporary text file.
+summary: 'Write and read shrine signals in a temporary browser file.'
+seo_title: 'Exercise: Save a Beacon Signal | Python Basics'
+seo_description: 'Write and read shrine signals in a temporary browser file.'
 seo_keywords: [python write read file exercise, with open]
 ---
 
-For a different shift, save a supply reminder. The preceding demo showed `with open` writing and reading a file. Here the path is `supply-reminder.txt`. You do not need terminal input or a real device file; the browser filesystem is temporary. Reading a missing file raises `FileNotFoundError`, so the supplied sample writes before it reads. Mode `"w"` replaces earlier content, while mode `"r"` only reads.
+Ari needs a separate shrine save for a beacon signal. The previous demo wrote and read one note; here you implement both actions as functions. `"w"` replaces previous contents, and `"r"` reads existing contents. The browser file is temporary and does not download to your device.
 
-Edit `main.py`, Run to view the saved reminder, then Submit. The tests write their own reminders before reading, so each task can be checked on its own.
+Edit `main.py`, **Run** to see the restored signal, then **Submit**.
 
 ## Your Tasks
 
-1. Complete `save_reminder(text)` with `with open("supply-reminder.txt", "w", encoding="utf-8")` and write `text` into the file.
-2. Complete `load_reminder()` with read mode and return the entire text from `supply-reminder.txt`.
+1. Complete `save_signal(text)` to write `text` to `shrine-save.txt` using `with open(..., "w", encoding="utf-8")`.
+2. Complete `load_signal()` to return the entire file using read mode and `with open`.

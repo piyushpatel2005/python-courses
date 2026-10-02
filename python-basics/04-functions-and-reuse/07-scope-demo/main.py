@@ -1,8 +1,8 @@
-room = "Atrium"
+energy = 20
 
-def inside_room():
-    room = "Atrium"
-    return room
+def preview_pulse():
+    energy = 20
+    return energy
 
-print(inside_room())
-print(room)
+print(preview_pulse())
+print(energy)

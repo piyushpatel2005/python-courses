@@ -1,5 +1,5 @@
 from solution import *
 
 def test_01():
-    """Loop through prices.items() and append each key to items."""
-    assert items == ["tea", "pie"], "Loop through prices.items() and append each key to items."
+    """Loop through beacon_marks.items() and append each key to landmarks."""
+    assert landmarks == ["ridge", "cove"], "Loop through beacon_marks.items() and append each key to landmarks."

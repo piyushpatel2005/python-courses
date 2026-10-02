@@ -1,26 +1,18 @@
 ---
-title: Compare and branch
+title: "Demo: Choose a Lit Route"
 slug: compare-and-branch
 order: 1
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: Read comparisons and choose one outcome with if, elif, and else.
-seo_title: Compare and branch | Python Basics
-seo_description: Read comparisons and choose one outcome with if, elif, and else.
-  Practice Python control flow in an editable browser lesson.
-seo_keywords:
-- python comparisons
-- if elif else
-- boolean expressions
+summary: "Use comparisons and branches to advise Ari at a gate."
+seo_title: "Demo: Choose a Lit Route | Python Basics"
+seo_description: "Use comparisons and branches to advise Ari at a gate."
+seo_keywords: [python basics, control flow, lantern atlas]
 ---
 
-# Compare and branch
+Level 3 is the **Gate Trials**. `signal < 8` yields `True` or `False`; `=` assigns while `==`, `!=`, `>=`, and `<=` compare. `and` requires both conditions, `or` either, and `not` reverses a boolean. Python checks `if`, `elif`, then `else`, taking the first matching branch. Colons and indentation define branches. The starter’s signal of 12 prints `Follow lit path`. Change only `signal` to `4` in **main.py**. Press **Run** for `Repair beacon`, then **Submit**.
 
-A neighborhood garden is checking the morning temperature. A comparison such as `temperature < 8` evaluates to `True` or `False`; `=` assigns, while `==` compares. `!=`, `>=`, and `<=` also compare values. Combine tests with `and` (both), `or` (either), and `not` (reverse). Python checks `if`, then `elif`, then `else`, and takes only the first matching branch. The colon and four-space indentation identify each branch.
+## Your Tasks
 
-The starter already runs: 12°C prints `Take a jacket`. In **main.py**, change `temperature` from `12` to `4`; press **Run** and look for `Wear a coat`, then press **Submit** to check your edit. Restore the original number if you want to explore other branches. The next lesson uses a different situation for you to build yourself.
-
-## Your Task
-
-1. Change `temperature` to `4` so the program chooses the coat advice.
+1. Set `signal` to `4` so Ari gets the repair hint.

@@ -3,17 +3,17 @@ from pathlib import Path
 import solution as _sol
 
 
-def test_issue_three_valid_passes():
-    """Skip the unusable ticket and stop after three passes"""
+def test_collect_three_valid_marks():
+    """Skip a damaged rune and stop after three marks."""
     tree = ast.parse(Path(_sol.__file__).read_text())
-    assert any(isinstance(node, ast.Continue) for node in ast.walk(tree)), "Skip ticket 3 using continue"
-    assert any(isinstance(node, ast.Break) for node in ast.walk(tree)), "Stop issuing passes using break"
-    assert _sol.passes == "1 2 4 ", "Issue tickets 1, 2, and 4 in order"
-    assert _sol.issued == 3, "Count only the three issued passes"
+    assert any(isinstance(node, ast.Continue) for node in ast.walk(tree)), "Skip rune 3 using continue"
+    assert any(isinstance(node, ast.Break) for node in ast.walk(tree)), "Stop collecting marks using break"
+    assert _sol.marks == "1 2 4 ", "Collect runes 1, 2, and 4 in order"
+    assert _sol.collected == 3, "Count only the three collected marks"
 
 
-def test_report_capacity():
-    """Report Full after the third pass"""
+def test_report_gate_status():
+    """Report Unlocked after the third mark."""
     tree = ast.parse(Path(_sol.__file__).read_text())
     assert any(isinstance(node, ast.If) for node in tree.body), "Use if/else after the loop"
-    assert _sol.desk_status == "Full", "Set desk_status to Full when capacity is reached"
+    assert _sol.gate_status == "Unlocked", "Set gate_status to Unlocked when enough marks are collected"

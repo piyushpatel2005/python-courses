@@ -1,4 +1,4 @@
 def announce():
-    print("Repair table open")
+    print("Beacon restored")
 
 announce()

@@ -1,4 +1,4 @@
-labels = ""
-for kit_number in range(1, 5):
-    labels += f"Kit {kit_number}; "
-print(labels)
+markers = ""
+for marker_number in range(1, 5):
+    markers += f"Marker {marker_number}; "
+print(markers)

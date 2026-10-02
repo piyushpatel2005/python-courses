@@ -1,11 +1,11 @@
-def ticket_count(text):
+def charge_value(text):
     try:
         return int(text)
     except ValueError:
         return 0
 
-def ticket_label(text):
-    return f"Tickets: {ticket_count(text)}"
+def charge_label(text):
+    return f"Charge: {charge_value(text)}"
 
-print(ticket_label("3"))
-print(ticket_label("many"))
+print(charge_label("3"))
+print(charge_label("faded"))

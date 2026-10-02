@@ -1,4 +1,4 @@
-ticket = 1
-checked = 0
-# Write your while loop here. Advance ticket on every turn.
-print(checked)
+pulse = 1
+charged = 0
+# Write your while loop here. Advance pulse on every turn.
+print(charged)

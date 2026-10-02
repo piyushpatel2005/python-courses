@@ -1,6 +1,6 @@
-tray_text = "9"
-liters_text = "1.5"
-tray_count = int(tray_text)
-liters_per_tray = float(liters_text)
-print("Trays:", tray_count)
-print("Liters per tray:", liters_per_tray)
+cell_text = "9"
+charge_text = "1.5"
+cell_count = int(cell_text)
+charge_per_cell = float(charge_text)
+print("Cells:", cell_count)
+print("Charge per cell:", charge_per_cell)

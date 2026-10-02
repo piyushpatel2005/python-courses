@@ -5,30 +5,32 @@ order: 1
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Read a Python traceback and recover from invalid workshop seat counts.
+summary: Read a traceback and recover from invalid beacon energy values.
 seo_title: Python Errors and try/except | Python Basics
-seo_description: Learn to identify Python error names and use try/except to handle invalid workshop registration counts.
+seo_description: Handle invalid energy text in The Lantern Atlas with try and except ValueError.
 seo_keywords: [python errors, traceback, try except, ValueError]
 hints:
   - Put int(text) inside try and return 0 in except ValueError.
 ---
 
-The workshop sign-up sheet has a seat count stored as text. Some entries say `"three"` instead of `"3"`. Rather than let one entry stop the report, you can return a safe count of zero.
+# Recover a beacon reading
 
-A traceback points to the line that failed and ends with an error name. `int("three")` raises `ValueError` because the text is not a valid integer. `numbers[8]` on a three-item list raises `IndexError`. A misspelled variable often raises `NameError`. A `SyntaxError` means Python could not parse the program; repair the code before it can run. Read the last line of a traceback, then inspect the indicated line.
+At the save shrine, Ari finds an energy reading stored as text. Some readings say `"unknown"` instead of `"3"`. Return zero for unreadable readings so one bad inscription does not stop the journey.
 
-This short example protects only the operation that might fail:
+A traceback points to the failed line and ends with an error name. `int("unknown")` raises `ValueError`; accessing a missing list index raises `IndexError`; a misspelled name raises `NameError`. A `SyntaxError` means Python cannot parse the code at all. Read the last line of a traceback, then inspect the indicated line.
+
+Protect only the operation that might fail:
 
 ```python
 try:
-    shelf = int("unknown")
+    flame = int("dim")
 except ValueError:
-    shelf = 0
-print(shelf)  # 0
+    flame = 0
+print(flame)  # 0
 ```
 
-`except ValueError` handles that specific error; it does not hide unrelated mistakes. Run the starter: its example labels still say `None`. After your change, valid counts show their integer values and invalid counts show `0`.
+`except ValueError` does not hide unrelated mistakes. Run `main.py`: both sample results initially say `None`. Your change should display `3` and `0`.
 
 ## Your Task
 
-1. Complete `parse_seats(text)` so valid integer text returns an `int`, and text that raises `ValueError` returns `0` using `try`/`except ValueError`.
+1. Complete `parse_energy(text)` so valid integer text returns an `int`, and text that raises `ValueError` returns `0` using `try` / `except ValueError`. Run and Submit.

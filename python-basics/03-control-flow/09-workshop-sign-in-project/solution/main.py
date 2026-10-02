@@ -1,17 +1,17 @@
-capacity = 2
-passes = ""
-issued = 0
-for ticket in range(1, 7):
-    if ticket == 2:
+gate_limit = 2
+path = ""
+steps = 0
+for tile in range(1, 7):
+    if tile == 2:
         continue
-    passes += f"{ticket} "
-    issued += 1
-    if issued == capacity:
+    path += f"{tile} "
+    steps += 1
+    if steps == gate_limit:
         break
-if issued == capacity:
-    status = "Full"
+if steps == gate_limit:
+    gate_status = "Unlocked"
 else:
-    status = "Open"
-print("Passes:", passes)
-print("Issued:", issued)
-print("Status:", status)
+    gate_status = "Sealed"
+print("Path:", path)
+print("Steps:", steps)
+print("Gate:", gate_status)

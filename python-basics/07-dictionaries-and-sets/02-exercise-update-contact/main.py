@@ -1,5 +1,5 @@
-contact = {"name": "Ivy", "visits": 2}
-visitor = None
-# Update visits to 3.
-phone = None
-print(visitor, contact, phone)
+map_entry = {"landmark": "Moss Gate", "marks": 2}
+landmark = None
+# Update marks to 3.
+clue = None
+print(landmark, map_entry, clue)

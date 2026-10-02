@@ -1,8 +1,8 @@
-event = "the art fair"
-quantity = 4
-unit_price = 2.5
-total = quantity * unit_price
-heading = f"{quantity} posters for {event}"
-payment_line = f"Due: ${total:.2f}"
-print(heading)
-print(payment_line)
+forge = "Gear Forge"
+flare_count = 4
+flare_price = 2.5
+cost = flare_count * flare_price
+gear_line = f"{flare_count} flares for {forge}"
+cost_line = f"Cost: ${cost:.2f}"
+print(gear_line)
+print(cost_line)

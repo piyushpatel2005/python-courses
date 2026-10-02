@@ -1,5 +1,5 @@
 def announce():
-    # Print the announcement here.
+    # Print the beacon announcement here.
     pass
 
 announce()

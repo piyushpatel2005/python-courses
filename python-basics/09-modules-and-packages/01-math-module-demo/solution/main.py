@@ -1,6 +1,6 @@
 import math
 
-def shelves_needed(items):
-    return math.ceil(items / 4)
+def beacons_needed(sparks):
+    return math.ceil(sparks / 4)
 
-print(shelves_needed(11))
+print(beacons_needed(11))

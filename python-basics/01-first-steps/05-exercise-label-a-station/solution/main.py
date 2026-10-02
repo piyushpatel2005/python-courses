@@ -1,4 +1,4 @@
-station = "Bike repair"
-table_number = 4
-print(station)
-print(table_number)
+beacon = "North beacon"
+beacon_number = 4
+print(beacon)
+print(beacon_number)

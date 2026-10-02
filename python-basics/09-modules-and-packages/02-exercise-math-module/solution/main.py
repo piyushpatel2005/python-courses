@@ -1,6 +1,6 @@
 import math
 
-def vans_needed(people):
-    return math.ceil(people / 6)
+def lanterns_needed(sparks):
+    return math.ceil(sparks / 6)
 
-print(vans_needed(13))
+print(lanterns_needed(13))

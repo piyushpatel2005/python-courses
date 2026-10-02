@@ -1,6 +1,6 @@
-stall = "Soup"
-servings = 3
-unit_cost = 4.25
-heading = f"{stall}: {servings} servings"
-price_line = f"Total: ${servings * unit_cost:.2f}"
-print(heading, price_line)
+route = "ECHO"
+beacons = 3
+energy_cost = 4.25
+heading = f"{route}: {beacons} beacons"
+energy_line = f"Energy: {beacons * energy_cost:.2f}"
+print(heading, energy_line)

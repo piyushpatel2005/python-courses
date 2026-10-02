@@ -1,10 +1,10 @@
-def save_reminder(text):
-    # Write text to supply-reminder.txt.
+def save_signal(text):
+    # Write text to shrine-save.txt.
     pass
 
-def load_reminder():
-    # Return the text from supply-reminder.txt.
+def load_signal():
+    # Return the text from shrine-save.txt.
     pass
 
-save_reminder("Bring extra pens")
-print("Reminder:", load_reminder())
+save_signal("Beacon restored")
+print("Signal:", load_signal())

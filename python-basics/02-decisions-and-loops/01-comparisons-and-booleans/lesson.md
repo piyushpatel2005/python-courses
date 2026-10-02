@@ -1,33 +1,33 @@
 ---
-title: Compare Workshop Supplies
+title: Compare Gate Signals
 slug: comparisons-and-booleans
 order: 1
 language: python
 lesson_type: interactive
-summary: Compare quantities and combine true-or-false checks for a workshop supply plan.
+summary: Compare beacon charge and combine boolean checks before Ari approaches a gate.
 seo_title: Python Comparisons and Booleans | Python Basics
-seo_description: Run small Python examples to learn comparison operators, True and False, and the and, or, and not operators.
+seo_description: Compare charge levels and logical conditions in The Lantern Atlas.
 seo_keywords: [python comparisons, python booleans, logical operators]
 ---
 
-# Compare workshop supplies
+# Compare gate signals
 
-Before opening the community workshop, you can check whether the art table has enough paint. A comparison returns `True` or `False` (capitalized in Python). `=` stores a value; `==` compares two values. Run this check, then try changing `paint_tubes` to `4`.
-
-```python run
-paint_tubes = 6
-print(paint_tubes >= 5)
-print(paint_tubes == 5)
-```
-
-`>` and `<` mean greater and less; `>=` and `<=` include equality. `!=` means not equal. You can combine checks: `and` needs both to be true, `or` needs at least one, and `not` reverses a boolean. Parentheses make a combined check easy to read.
+Ari reaches a gate that opens only when the nearby beacon has enough charge. A comparison returns `True` or `False` (capitalized in Python). `=` stores a value; `==` compares two values. Run this check to see how one value can pass a threshold but fail an equality test.
 
 ```python run
-markers = 8
-paper_packs = 2
-print(markers >= 6 and paper_packs >= 2)
-print(markers < 6 or paper_packs < 2)
-print(not (markers == 0))
+charge = 6
+print(charge >= 5)
+print(charge == 5)
 ```
 
-These results can guide the decisions in the next lesson. Try changing `paper_packs` to `1` and run the second block again.
+`>` and `<` mean greater and less; `>=` and `<=` include equality. `!=` means not equal. Combine checks with `and` (both), `or` (either), and `not` (reverse). Parentheses clarify a combined check.
+
+```python run
+glowstones = 8
+spare_cells = 2
+print(glowstones >= 6 and spare_cells >= 2)
+print(glowstones < 6 or spare_cells < 2)
+print(not (glowstones == 0))
+```
+
+The next trial uses those true-or-false results to choose a gate signal.

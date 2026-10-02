@@ -1,20 +1,20 @@
 ---
-title: Tracebacks and a Safe Count Demo
+title: 'Recover a Faded Beacon Reading'
 slug: traceback-and-recovery-demo
 order: 1
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Read a traceback and edit a try/except fallback for a changing count.
-seo_title: "Tracebacks and a Safe Count Demo | Python Basics"
-seo_description: Read a traceback and edit a try/except fallback for a changing count.
+summary: 'Catch ValueError when a shrine reading is not numeric.'
+seo_title: 'Recover a Faded Beacon Reading | Python Basics'
+seo_description: 'Catch ValueError when a shrine reading is not numeric.'
 seo_keywords: [python traceback, ValueError, try except]
 ---
 
-The supply desk receives a count as text. A traceback ending in `ValueError` tells you that `int("unknown")` could not convert it. Read the final line for the error type, then the indicated line for the failing operation; a `SyntaxError` must be repaired before the program can run.
+At the Save Shrine, Ari reads a beacon charge written as text. `int(text)` converts digits but raises `ValueError` for `"faded"`. Catch that specific error so an unexpected bug is not silently hidden.
 
-The complete `safe_count` function catches **only** `ValueError`; unrelated errors should still surface. Edit `main.py`: change the fallback for invalid text from `0` to `-1`. Press Run to see `-1` for `"unknown"`, then Submit. The next lesson transfers this pattern to ticket quantities.
+Edit `main.py` to change only the invalid-reading fallback from `0` to `-1`. Press **Run** to see `4` and `-1`, then **Submit**.
 
 ## Your Task
 
-1. Change only the `ValueError` fallback to `-1`; valid numeric text must still become an integer.
+1. Change only the `ValueError` fallback to `-1`; numeric text must still convert.

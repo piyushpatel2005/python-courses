@@ -1,20 +1,20 @@
 ---
-title: Recursion and a Base Case Demo
+title: "Echo Tower: The Base Case"
 slug: recursion-base-case-demo
 order: 1
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Edit a terminating recursive countdown.
-seo_title: "Recursion and a Base Case Demo | Python Basics"
-seo_description: Edit a terminating recursive countdown.
-seo_keywords: [python recursion, recursive base case, countdown]
+summary: Trace a terminating recursive beacon countdown.
+seo_title: "Echo Tower: The Base Case | Python Basics"
+seo_description: Trace a terminating recursive beacon countdown.
+seo_keywords: [python recursion, base case, Echo Tower]
 ---
 
-Sometimes a function can solve a small piece, then call itself for the rest. The **base case** stops it. `step_down(0)` returns immediately; for a positive number, each call uses a smaller number. Without a reachable base case, Python eventually raises `RecursionError`. For an ordinary list, a loop is usually simpler; here recursion is an optional pattern to recognize and practice on small values.
+Ari reaches the Echo Tower, where the first beacon needs a countdown before it can receive a signal. A recursive function calls itself with a smaller number; the **base case** stops the calls at zero. Without that stop, Python eventually raises `RecursionError`.
 
-The complete starter returns a list of numbers ending at zero. Edit `main.py`: change the sample call from `step_down(2)` to `step_down(3)`. Run to see `[3, 2, 1, 0]`, then Submit. In the next lesson, you'll build a different recursive function.
+In `main.py`, `pulse_steps(0)` returns `[0]`. Each positive step prepends its number and calls `pulse_steps(number - 1)`. Change the sample call from `pulse_steps(2)` to `pulse_steps(3)`. Run to see `Tower pulses: [3, 2, 1, 0]`, then Submit. Keep the base case. For a large list, a loop is usually simpler; this is practice tracing small recursive calls.
 
 ## Your Task
 
-1. Change the sample call to `step_down(3)` without changing the function's base case.
+1. Change the sample call to `pulse_steps(3)` without changing the base case.

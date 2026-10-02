@@ -1,7 +1,7 @@
-from solution import vans_needed
+from solution import lanterns_needed
 import math
 
-def test_vans_needed():
+def test_lanterns_needed():
     """Round up by calling math.ceil"""
     original = math.ceil
     calls = []
@@ -10,10 +10,10 @@ def test_vans_needed():
         return original(value)
     try:
         math.ceil = tracked
-        assert vans_needed(13) == 3
-        assert vans_needed(6) == 1
-        assert vans_needed(0) == 0
+        assert lanterns_needed(13) == 3
+        assert lanterns_needed(6) == 1
+        assert lanterns_needed(0) == 0
         assert len(calls) == 3, "Call math.ceil for each result."
-        assert calls[0] == 13 / 6, "Divide the people by six before rounding."
+        assert calls[0] == 13 / 6, "Divide the sparks by six before rounding."
     finally:
         math.ceil = original

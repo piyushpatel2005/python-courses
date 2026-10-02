@@ -1,19 +1,15 @@
 ---
-title: "Welcome to Python"
+title: "Level 1: Spawn Camp"
 slug: welcome-to-python
 order: 1
 language: python
 lesson_type: informational
-summary: Learn where Python runs and how to use the browser editor and Run and Submit controls.
-seo_title: "Welcome to Python | Python Basics"
-seo_description: Learn where Python runs and how to use the browser editor and Run and Submit controls.
-seo_keywords: [python 3 introduction, run python in browser, print function]
+summary: "Learn to run Python and print the first lines of Ari’s route."
+seo_title: "Level 1: Spawn Camp | Python Basics"
+seo_description: "Learn to run Python and print the first lines of Ari’s route."
+seo_keywords: [python basics, first steps, lantern atlas]
 ---
 
-# Your first program
+Ari is a pathfinder in **The Lantern Atlas**. Spawn Camp is dark. Ari must restore dim beacons to unlock the exit. In this level you print messages, name a location, and pack starting supplies.
 
-Python 3 can automate tasks, work with data, and run programs on many systems. Here you write Python in `main.py`; the browser runs it with Pyodide, so no installation or terminal setup is required. On your own computer you could install Python 3 and run `python hello.py` in a terminal. The program in a file needs `print()` to display a result; a bare expression will not display itself like it does in the interactive terminal.
-
-A **string** is text in quotes, for example `"Hello"`. `print("Hello")` displays `Hello` without quotes. Read the next editable example, change it, press **Run** to see its output, then press **Submit** to check your edit. If you see a `SyntaxError`, check parentheses and quotation marks. Every exercise that follows has a different setting from its worked example.
-
-This first section practices output, named values, and types. The next one uses those values for calculations and text from a user; later sections handle decisions and loops.
+Write Python in `main.py` and press **Run** for output. This browser runs Pyodide without installation; on your own computer, `python hello.py` runs a saved file. A bare expression in a file does not display itself: use `print()`. A **string** is quoted text: `print("Ari")` displays `Ari` without quotes. For editable tasks, press **Submit** after Run. If you see `SyntaxError`, check quotes and parentheses. The next level turns these values into a Gear Forge HUD.

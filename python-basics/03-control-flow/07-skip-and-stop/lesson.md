@@ -1,26 +1,18 @@
 ---
-title: Skip with continue, stop with break
+title: "Demo: Skip a Hazard, Stop at a Gate"
 slug: skip-and-stop
 order: 7
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: Distinguish skipping one iteration from leaving the loop.
-seo_title: Skip with continue, stop with break | Python Basics
-seo_description: Distinguish skipping one iteration from leaving the loop. Practice
-  Python control flow in an editable browser lesson.
-seo_keywords:
-- python continue
-- python break
-- loop control
+summary: "Compare continue and break along a short route."
+seo_title: "Demo: Skip a Hazard, Stop at a Gate | Python Basics"
+seo_description: "Compare continue and break along a short route."
+seo_keywords: [python basics, control flow, lantern atlas]
 ---
 
-# Skip with continue, stop with break
+Tile 2 is unstable, and tile 5 is the gate. `continue` skips the rest of one turn; `break` leaves the entire loop. The starter skips tile 2 and stops at 5. Checks occur before appending a cleared tile. Change only the skipped tile from `2` to `3` in **main.py**. Press **Run** for `Cleared 1 | Cleared 2 | Cleared 4 | `, then **Submit**. In a `while` loop, update its counter before `continue` or it may never finish.
 
-At a depot, parcel 2 is damaged and should not be loaded. `continue` skips the rest of **this turn**; `break` leaves the **whole loop**. The starter visits parcels 1 through 6, skips 2, and stops when parcel 5 is reached. It prints `Loaded 1 | Loaded 3 | Loaded 4 | `. The checks must happen before appending a label.
+## Your Tasks
 
-Edit **main.py**: change the skipped parcel from `2` to `3`. Press **Run**; the result should be `Loaded 1 | Loaded 2 | Loaded 4 | `. Then press **Submit** to check the change. Be cautious with `continue` in a `while` loop: update the counter before skipping, or the loop may never end.
-
-## Your Task
-
-1. Change the skipped parcel from `2` to `3` so the printed load includes parcel 2 but not parcel 3.
+1. Skip tile 3 instead of tile 2 while still stopping at tile 5.

@@ -1,5 +1,5 @@
-charge = 10
+beacon_charge = 10
 steps = 0
 # Add a bounded while loop here.
-print(charge)
+print(beacon_charge)
 print(steps)

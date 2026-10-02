@@ -1,6 +1,6 @@
-deliveries = ["Oak", "Elm", "Pine", "Birch"]
-today = deliveries[:3]
+checkpoints = ["Pass", "Bridge", "Beacon", "Exit"]
+today = checkpoints[:3]
 labels = []
-for destination in deliveries[:3]:
-    labels.append(f"To {destination}")
+for checkpoint in checkpoints[:3]:
+    labels.append(f"For {checkpoint}")
 print(today, labels)

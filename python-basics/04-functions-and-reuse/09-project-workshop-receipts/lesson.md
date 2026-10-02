@@ -1,25 +1,25 @@
 ---
-title: "Project: Workshop Receipts"
+title: "Project: Build an Ability Loadout"
 slug: project-workshop-receipts
 order: 9
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: Build reusable receipt calculations and a printed workshop summary.
-seo_title: "Project: Workshop Receipts | Python Basics"
-seo_description: Build reusable receipt calculations and a printed workshop summary.
-seo_keywords: [python basics, project workshop receipts, python practice]
+summary: Combine reusable energy calculation and a named loadout readout.
+seo_title: "Project: Build an Ability Loadout | Python Basics"
+seo_description: Combine reusable energy calculation and a named loadout readout.
+seo_keywords: [python basics, functions and reuse, lantern atlas]
 hints:
   - Return values from each function; the supplied print combines them.
 ---
 
-# Project: Workshop Receipts
+# Project: Build an Ability Loadout
 
-Build a tiny receipt engine for workshop supply bags. One helper calculates a bag's total, then another labels it. Unlike a one-off print, these functions can process many bags. This is the section payoff: once both tasks pass, you have a reusable two-stage program.
+Ari has restored the workshop beacon and must choose a loadout for Cipher Caverns. One ability calculates energy from charges and cost; another names the equipped ability. Both must work with new inputs, not only the visible example.
 
 ## Your Tasks
 
-1. Complete `bag_total(count, price)` so it returns their product for any bag.
-2. Complete `receipt(name, amount)` so it returns `name: $amount` using the given values.
+1. Complete `loadout_energy(charges, cost)` to return their product for any inputs.
+2. Complete `loadout_note(name, amount)` to return `name: amount energy` using the supplied values.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your change.
+Edit `main.py`, Run, then Submit. After task 1, `Loadout energy:` shows `12` even if the note is still unfinished. With both abilities working, Ari can carry the loadout into the caverns.

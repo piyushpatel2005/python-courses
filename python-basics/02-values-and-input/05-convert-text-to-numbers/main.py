@@ -1,4 +1,4 @@
-order_text = "12"
-extra = 2
-items = int(order_text) + extra
-print("Items:", items)
+shard_text = "12"
+bonus = 2
+shards = int(shard_text) + bonus
+print("Shards:", shards)

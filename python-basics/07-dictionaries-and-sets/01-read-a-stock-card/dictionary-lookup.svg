@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" role="img" aria-labelledby="title desc">
+<title id="title">Dictionary Lookup: Key to Value</title><desc id="desc">The map_card has landmark lens and marks 4. Accessing a missing key raises KeyError; map_card.get with a fallback returns the fallback.</desc>
+<rect width="800" height="340" fill="#f8fafc" rx="12"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" markerWidth="8" markerHeight="8" refX="9" refY="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#5874a0"/></marker></defs>
+<text x="400" y="35" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="700" fill="#17233c">Find a value by its key</text>
+<rect x="55" y="65" width="295" height="210" rx="12" fill="#e8f1ff" stroke="#5874a0" stroke-width="2"/>
+<text x="202" y="99" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="700" fill="#17233c">map_card</text>
+<rect x="75" y="125" width="104" height="49" rx="12" fill="#e8f1ff" stroke="#5874a0" stroke-width="2"/>
+<text x="127" y="156" text-anchor="middle" font-family="monospace" font-size="18" font-weight="400" fill="#17233c">&quot;landmark&quot;</text>
+<path d="M179 149 H216" fill="none" stroke="#5874a0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  marker-end="url(#arrow)"/>
+<rect x="216" y="125" width="115" height="49" rx="12" fill="#e5f6ea" stroke="#5874a0" stroke-width="2"/>
+<text x="273" y="156" text-anchor="middle" font-family="monospace" font-size="18" font-weight="400" fill="#17233c">&quot;lens&quot;</text>
+<rect x="75" y="199" width="104" height="49" rx="12" fill="#e8f1ff" stroke="#5874a0" stroke-width="2"/>
+<text x="127" y="230" text-anchor="middle" font-family="monospace" font-size="18" font-weight="400" fill="#17233c">&quot;marks&quot;</text>
+<path d="M179 223 H216" fill="none" stroke="#5874a0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  marker-end="url(#arrow)"/>
+<rect x="216" y="199" width="115" height="49" rx="12" fill="#e5f6ea" stroke="#5874a0" stroke-width="2"/>
+<text x="273" y="230" text-anchor="middle" font-family="monospace" font-size="18" font-weight="400" fill="#17233c">4</text>
+<rect x="395" y="65" width="350" height="210" rx="12" fill="#fff1d6" stroke="#5874a0" stroke-width="2"/>
+<text x="570" y="99" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="700" fill="#17233c">Lookup results</text>
+<text x="418" y="138" text-anchor="start" font-family="monospace" font-size="17" font-weight="400" fill="#17233c">map_card[&quot;landmark&quot;]</text>
+<text x="718" y="138" text-anchor="end" font-family="monospace" font-size="17" font-weight="700" fill="#17233c">&quot;lens&quot;</text>
+<text x="418" y="176" text-anchor="start" font-family="monospace" font-size="17" font-weight="400" fill="#17233c">map_card[&quot;marks&quot;]</text>
+<text x="718" y="176" text-anchor="end" font-family="monospace" font-size="17" font-weight="700" fill="#17233c">4</text>
+<text x="418" y="214" text-anchor="start" font-family="monospace" font-size="17" font-weight="400" fill="#17233c">map_card[&quot;missing&quot;]</text>
+<text x="718" y="214" text-anchor="end" font-family="monospace" font-size="17" font-weight="700" fill="#17233c">KeyError</text>
+<text x="418" y="252" text-anchor="start" font-family="monospace" font-size="15" font-weight="400" fill="#17233c">map_card.get(&quot;aisle&quot;, &quot;?&quot;)</text>
+<text x="718" y="252" text-anchor="end" font-family="monospace" font-size="17" font-weight="700" fill="#17233c">&quot;?&quot;</text>
+<text x="400" y="318" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="400" fill="#455777">get() returns its fallback only when the key is absent.</text>
+</svg>

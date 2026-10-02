@@ -1,19 +1,17 @@
 ---
-title: "Demo: Format a Message"
+title: "Demo: Format a Gear Label"
 slug: format-a-message
 order: 3
 language: python
 lesson_type: coding
-summary: Edit one value in a Python f-string and observe the changed message.
-seo_title: "Demo: Format a Message | Python Basics"
-seo_description: Edit one value in a Python f-string and observe the changed message.
-seo_keywords: [python f strings, python format decimals, string interpolation]
+summary: "Use a two-decimal f-string to display a gear cost."
+seo_title: "Demo: Format a Gear Label | Python Basics"
+seo_description: "Use a two-decimal f-string to display a gear cost."
+seo_keywords: [python basics, values and input, lantern atlas]
 ---
 
-A bakery displays its daily special. Text can be joined with `+`, but joining numbers that way requires `str(number)`. An **f-string** starts with `f` before the quotes and inserts values at `{name}`. It handles numbers and text in one readable line. In `{price:.2f}`, `.2f` displays a decimal with two places; it does not change the numeric `price`.
+An **f-string** starts with `f` before the quotes and inserts a value at `{name}`. `{cost:.2f}` displays two decimals without changing the numeric cost. Joining text and numbers with `+` would require `str(number)`. In **main.py**, change only `cost` from `2.5` to `3.75`. Press **Run** for `Compass: $3.75`, then **Submit**.
 
-The program already works. Change **only** the numeric `price` from `2.5` to `3.75`. Edit `main.py`, press **Run** to see `Bread: $3.75`, then **Submit**. Next, write a label with different data.
+## Your Tasks
 
-## Your Task
-
-1. Set `price` to `3.75` and keep the formatted label.
+1. Set `cost` to `3.75` and keep the formatted label.

@@ -1,24 +1,22 @@
 ---
-title: "Import Math: Demo"
+title: 'Demo: Calculate Beacon Capacity'
 slug: math-module-demo
 order: 1
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: Use a standard-library module and change a calculation.
-seo_title: "Import Math: Demo | Python Basics"
-seo_description: Use a standard-library module and change a calculation.
+summary: 'Use math.ceil to round up a beacon capacity calculation.'
+seo_title: 'Demo: Calculate Beacon Capacity | Python Basics'
+seo_description: 'Use math.ceil to round up a beacon capacity calculation.'
 seo_keywords: [python basics, math module demo, python practice]
 hints:
   - Change the number in the bottom call, not the divisor.
 ---
 
-# Import Math: Demo
+In the Tool Library, Ari calculates how many beacons hold a pile of sparks. `math` is a standard-library module; `math.ceil` rounds upward, so a partial group needs another beacon. Each beacon holds four sparks.
 
-A module groups reusable Python definitions in a file. `math` is in Python's standard library: no installation needed. `math.ceil` rounds upward to a whole number. This shelf example starts with four units per shelf; change the item count in the call from `9` to `11` and Run to see three shelves. The following exercise uses a different packing problem.
+Edit the last call in `main.py` from `8` to `11`, **Run** to see the result change from `2` to `3`, then **Submit**. The next exercise uses a different tool and capacity.
 
-## Your Tasks
+## Your Task
 
-1. Change the argument passed to `shelves_needed` in the print call to `11`.
-
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your change.
+1. Change the final `beacons_needed` call to use `11` sparks.

@@ -1,25 +1,22 @@
 ---
-title: Read a Fixed Tuple Record
+title: "Read a Fixed Checkpoint Record: Demo"
 slug: read-a-fixed-record
 order: 7
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Create and unpack a Python tuple.
-seo_title: Read a Fixed Tuple Record | Python Basics
-seo_description: Create and unpack a Python tuple with an editable Python example
-  and checked task.
-seo_keywords:
-- python tuples
-- beginner tuples exercise
+summary: Index and unpack an unchanging checkpoint tuple.
+seo_title: "Read a Fixed Checkpoint Record: Demo | Python Basics"
+seo_description: Index and unpack an unchanging checkpoint tuple.
+seo_keywords: [python basics, lists and tuples, lantern atlas]
 ---
 
-A tuple is an ordered, fixed sequence written with parentheses. Its indexed elements can be read, but assigning `record[0] = ...` raises `TypeError`. `room, time = record` unpacks two values into two names. A one-item tuple needs a comma: `(42,)`.
+# Read a Fixed Checkpoint Record: Demo
 
-This is an editable worked demo. Edit `main.py`, press **Run** to compare the result, then **Submit** to check your small change. The next lesson transfers the idea to a different setting.
+A checkpoint record keeps its marker and time together as a tuple. A tuple is ordered but fixed: assigning to `record[0]` raises `TypeError`. `marker, time = record` unpacks two values; a one-item tuple needs a comma, such as `(42,)`.
 
-Change `room` to read the first part of this fixed reservation; Run should show `Blue`; then Submit.
+The supplied second print shows both unpacked fields. Change `marker` in `main.py` to read the first part. Run should show `Blue Beacon`, then `Checkpoint: Blue Beacon 09:00`; Submit to check.
 
 ## Your Task
 
-1. Set `room` to the first element of `reservation`.
+1. Set `marker` to the first element of `checkpoint_record`.

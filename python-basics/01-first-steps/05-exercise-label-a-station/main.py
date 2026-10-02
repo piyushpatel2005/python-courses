@@ -1,4 +1,4 @@
-station = "TODO"
-table_number = 0
-print(station)
-print(table_number)
+beacon = "TODO"
+beacon_number = 0
+print(beacon)
+print(beacon_number)

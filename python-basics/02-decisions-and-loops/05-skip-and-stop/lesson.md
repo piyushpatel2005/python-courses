@@ -1,33 +1,33 @@
 ---
-title: Skip and Stop a Loop
+title: Skip and Stop a Gate Trial
 slug: skip-and-stop
 order: 5
 language: python
 lesson_type: interactive
-summary: See how continue skips one loop turn while break ends the loop entirely.
+summary: See how continue skips a blocked rune while break ends a gate trial.
 seo_title: Python break and continue Examples | Python Basics
-seo_description: Run beginner Python loops to observe the difference between skipping a turn with continue and ending a loop with break.
+seo_description: Run Python loops that skip a blocked rune or stop after enough gate keys.
 seo_keywords: [python break, python continue, loop control]
 ---
 
-# Skip and stop a loop
+# Skip and stop a gate trial
 
-The workshop's tea table has one cup with a cracked handle. `continue` skips the rest of **that turn** and moves to the next number. Run this block and then change `cup == 2` to `cup == 3`.
+One rune on Ari’s path is cracked. `continue` skips the rest of **that turn** and moves to the next rune. Run this block to see which runes remain.
 
 ```python run
-for cup in range(1, 5):
-    if cup == 2:
+for rune in range(1, 5):
+    if rune == 2:
         continue
-    print("Serve cup", cup)
+    print("Trace rune", rune)
 ```
 
-Now the volunteers need only two serving trays. `break` ends the **entire loop**, even though `range` has more numbers waiting. Run it, then try changing the limit to `3`.
+The gate needs only two keys. `break` ends the **entire loop**, even if `range` has more values waiting.
 
 ```python run
-for tray in range(1, 6):
-    if tray > 2:
+for key in range(1, 6):
+    if key > 2:
         break
-    print("Set out tray", tray)
+    print("Collect key", key)
 ```
 
-In the mini-project, you will skip a ticket that cannot be used and stop once all places are filled. With a `while` loop, take extra care that a `continue` does not skip its counter update forever.
+In the next trial you will skip a damaged rune and stop once the gate has enough marks. In a `while` loop, be careful not to skip its counter update with `continue`.

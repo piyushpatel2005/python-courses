@@ -1,5 +1,5 @@
 from solution import *
 
 def test_01():
-    """Set morning_stops to a slice of the first two stops."""
-    assert morning_stops == ["Dock", "Park"], "Set morning_stops to a slice of the first two stops."
+    """Set near_checkpoints to a slice of the first two checkpoints."""
+    assert near_checkpoints == ["Pass", "Bridge"], "Set near_checkpoints to a slice of the first two checkpoints."

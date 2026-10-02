@@ -1,27 +1,22 @@
 ---
-title: 'Exercise: Build a Queue'
+title: "Exercise: Build a Gear Queue"
 slug: exercise-build-queue
 order: 2
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Create a list and index its first and last items.
-seo_title: 'Exercise: Build a Queue | Python Basics'
-seo_description: Create a list and index its first and last items with an editable
-  Python example and checked task.
-seo_keywords:
-- python list-indexing
-- beginner list-indexing exercise
+summary: Build a gear list and read its first and last items.
+seo_title: "Exercise: Build a Gear Queue | Python Basics"
+seo_description: Build a gear list and read its first and last items.
+seo_keywords: [python basics, lists and tuples, lantern atlas]
 ---
 
-The clinic needs a waiting queue. Unlike the supply demo, you will build the list yourself; its order matters.
+# Exercise: Build a Gear Queue
 
-This is a separate exercise. Edit `main.py`, press **Run** to inspect the output, then **Submit** to check the numbered tasks.
-
-Create the list and its two labels, then Run and Submit.
+Ari lines up equipment for the final ridge crossing. The demo selected the last piece; now create a list and read both ends by index. Edit `main.py`, Run, then Submit.
 
 ## Your Tasks
 
-1. Set `queue` to a list containing `Uma`, `Jae`, `Sol` in that order.
-2. Set `next_person` to the first item of `queue`.
-3. Set `last_person` to the last item of `queue`.
+1. Set `queue` to a list containing `rope`, `torch`, `compass` in that order.
+2. Set `first_gear` to the first item of `queue`.
+3. Set `last_gear` to the last item of `queue`.

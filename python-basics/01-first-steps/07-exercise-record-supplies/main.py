@@ -1,6 +1,6 @@
-packet_name = "TODO"
-packet_count = 0
-packet_price = 0.0
-print(packet_name, type(packet_name).__name__)
-print(packet_count, type(packet_count).__name__)
-print(packet_price, type(packet_price).__name__)
+supply_name = "TODO"
+supply_count = 0
+supply_weight = 0.0
+print(supply_name, type(supply_name).__name__)
+print(supply_count, type(supply_count).__name__)
+print(supply_weight, type(supply_weight).__name__)

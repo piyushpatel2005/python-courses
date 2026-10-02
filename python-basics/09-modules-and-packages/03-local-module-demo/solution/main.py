@@ -1,5 +1,5 @@
-with open("route_rules.py", "w") as module_file:
-    module_file.write("def travel_minutes(stops):\n    return stops * 5\n")
+with open("beacon_rules.py", "w") as module_file:
+    module_file.write("def signal_strength(marks):\n    return marks * 5\n")
 
-from route_rules import travel_minutes
-print(travel_minutes(3))
+from beacon_rules import signal_strength
+print(signal_strength(3))

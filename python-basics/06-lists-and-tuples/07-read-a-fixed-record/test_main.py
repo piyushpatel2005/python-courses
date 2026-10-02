@@ -1,5 +1,5 @@
 from solution import *
 
 def test_01():
-    """Set room to the first element of reservation."""
-    assert room == "Blue", "Set room to the first element of reservation."
+    """Set marker to the first element of checkpoint_record."""
+    assert marker == "Blue Beacon", "Set marker to the first element of checkpoint_record."

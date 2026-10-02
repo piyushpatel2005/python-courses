@@ -1,9 +1,9 @@
-temperature = 4
-raining = False
-if temperature < 8:
-    advice = "Wear a coat"
-elif temperature < 16 and not raining:
-    advice = "Take a jacket"
+signal = 4
+foggy = False
+if signal < 8:
+    route_hint = "Repair beacon"
+elif signal < 16 and not foggy:
+    route_hint = "Follow lit path"
 else:
-    advice = "Travel light"
-print(advice)
+    route_hint = "Scout ahead"
+print(route_hint)

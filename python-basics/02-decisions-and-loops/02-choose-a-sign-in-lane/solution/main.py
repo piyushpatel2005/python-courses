@@ -1,8 +1,8 @@
-seats_left = 2
-if seats_left == 0:
-    lane = "Waitlist"
-elif seats_left < 4:
-    lane = "Last seats"
+charge_left = 2
+if charge_left == 0:
+    gate_signal = "Sealed"
+elif charge_left < 4:
+    gate_signal = "Flickering"
 else:
-    lane = "Open"
-print(lane)
+    gate_signal = "Open"
+print(gate_signal)

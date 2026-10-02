@@ -1,27 +1,22 @@
 ---
-title: 'Exercise: Standardize a Notice'
+title: "Exercise: Decode a Rune Notice"
 slug: exercise-clean-notice
 order: 6
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Use strip, replace, and startswith on real notice text.
-seo_title: 'Exercise: Standardize a Notice | Python Basics'
-seo_description: Use strip, replace, and startswith on real notice text with an editable
-  Python example and checked task.
-seo_keywords:
-- python methods
-- beginner methods exercise
+summary: Clean a rune notice, replace its state, and check its prefix.
+seo_title: "Exercise: Decode a Rune Notice | Python Basics"
+seo_description: Clean a rune notice, replace its state, and check its prefix.
+seo_keywords: [python basics, strings, lantern atlas]
 ---
 
-The hall signs were typed inconsistently. The preceding message demo chained methods; here a notice needs cleanup before a prefix check. `replace()` returns a new string and `startswith()` checks the cleaned result.
+# Exercise: Decode a Rune Notice
 
-This is a separate exercise. Edit `main.py`, press **Run** to inspect the output, then **Submit** to check the numbered tasks.
-
-Correct the sign without changing `raw_notice`.
+Ari needs a readable route status from the cavern wall. First normalize the rune text, then produce a restored-state message and check whether it belongs to a beacon. Keep `raw_notice` unchanged. Edit `main.py`, Run, then Submit.
 
 ## Your Tasks
 
 1. Set `notice` to the stripped, lowercased `raw_notice`.
-2. Set `open_notice` to `notice` with `closed` replaced by `open`.
-3. Set `is_hall_notice` to whether `notice` starts with `hall`.
+2. Set `lit_notice` to `notice` with `dim` replaced by `lit`.
+3. Set `is_beacon_notice` to whether `notice` starts with `beacon`.

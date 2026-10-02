@@ -1,6 +1,6 @@
-plants = 23
-per_tray = 4
-trays = plants // per_tray
-loose = plants % per_tray
-print("Trays:", trays)
-print("Loose plants:", loose)
+shards = 23
+per_lamp = 4
+lamps = shards // per_lamp
+spare = shards % per_lamp
+print("Lamps:", lamps)
+print("Spare shards:", spare)

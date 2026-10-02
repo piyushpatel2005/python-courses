@@ -1,5 +1,5 @@
-def badge(name, suffix="."):
+def ability_mark(name, suffix="."):
     return name + suffix
 
-print(badge("Jo"))
-print(badge("Jo", suffix="!"))
+print(ability_mark("Glow"))
+print(ability_mark("Glow", suffix="!"))

@@ -9,7 +9,7 @@ import solution
 def _variant():
     with open(solution.__file__, encoding="utf-8") as source_file:
         tree = ast.parse(source_file.read())
-    replacements = {'badge': 'EAST-9'}
+    replacements = {'badge': 'GLOW-9'}
     for node in tree.body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
             name = node.targets[0].id
@@ -36,10 +36,10 @@ def _uses(technique):
 
 def test_01():
     """Set first_mark to the first character of badge."""
-    assert first_mark == "N", "Set first_mark to the first character of badge."
+    assert first_mark == "E", "Set first_mark to the first character of badge."
     assert _uses('Subscript'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('first_mark == "E"', varied), "Check this task with a different input too."
+    assert eval('first_mark == "G"', varied), "Check this task with a different input too."
 
 def test_02():
     """Set last_mark to the last character of badge."""

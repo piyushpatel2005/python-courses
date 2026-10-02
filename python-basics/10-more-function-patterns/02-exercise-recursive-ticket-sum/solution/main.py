@@ -1,6 +1,6 @@
-def bundle_total(bundles):
-    if not bundles:
+def signal_total(signals):
+    if not signals:
         return 0
-    return bundles[0] + bundle_total(bundles[1:])
+    return signals[0] + signal_total(signals[1:])
 
-print("Tickets:", bundle_total([2, 3, 1]))
+print("Beacon signal:", signal_total([2, 3, 1]))

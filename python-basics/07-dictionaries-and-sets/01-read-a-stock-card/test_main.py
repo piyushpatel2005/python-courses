@@ -1,5 +1,5 @@
 from solution import *
 
 def test_01():
-    """Read card['item'] into item."""
-    assert item == "paper", "Read card['item'] into item."
+    """Read map_card['landmark'] into landmark."""
+    assert landmark == "lens", "Read map_card['landmark'] into landmark."

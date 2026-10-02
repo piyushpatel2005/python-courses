@@ -1,4 +1,4 @@
-# The current number of seats is supplied by the sign-in desk.
-seats_left = 2
-lane = "Not set"  # Replace this line with your conditional branches.
-print(lane)
+# The gate supplies its current charge.
+charge_left = 2
+gate_signal = "Not set"  # Replace this line with conditional branches.
+print(gate_signal)

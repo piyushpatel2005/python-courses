@@ -1,5 +1,5 @@
-seconds = 4
-while seconds > 0:
-    print("Mist", seconds)
-    seconds -= 1
-print("Done")
+pulses = 4
+while pulses > 0:
+    print("Pulse", pulses)
+    pulses -= 1
+print("Beacon steady")

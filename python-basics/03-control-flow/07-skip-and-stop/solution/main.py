@@ -1,8 +1,8 @@
-loaded = ""
-for parcel in range(1, 7):
-    if parcel == 3:
+cleared = ""
+for tile in range(1, 7):
+    if tile == 3:
         continue
-    if parcel == 5:
+    if tile == 5:
         break
-    loaded += f"Loaded {parcel} | "
-print(loaded)
+    cleared += f"Cleared {tile} | "
+print(cleared)

@@ -1,5 +1,5 @@
-def parcel_label(name, mark):
+def ability_label(name, mark):
     pass
 
-print(parcel_label("Box", "."))
-print(parcel_label("Box", "."))
+print(ability_label("Pulse", "."))
+print(ability_label("Pulse", "."))

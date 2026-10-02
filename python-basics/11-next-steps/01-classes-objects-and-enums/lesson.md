@@ -1,16 +1,18 @@
 ---
-title: Classes, Objects, and Enums to Recognize
+title: "Exit Gate: Reading Object Vocabulary"
 slug: classes-objects-and-enums
 order: 1
 language: python
 lesson_type: informational
 runtime: pyodide
-summary: Recognize class, object, attribute, method, and enum vocabulary without implementing OOP.
-seo_title: Python OOP and Enum Vocabulary | Python Basics
-seo_description: Recognize class, object, attribute, method, and enum vocabulary without writing classes.
-seo_keywords: [python class concept, object vocabulary, attribute method, enum concept]
+summary: Recognize classes, objects, attributes, methods, and enums without implementing them.
+seo_title: "Exit Gate: Reading Object Vocabulary | Python Basics"
+seo_description: Recognize classes, objects, attributes, methods, and enums without implementing them.
+seo_keywords: [python class object vocabulary, attribute, enum]
 ---
 
-A workshop might eventually keep one registration record with both data and actions. In that style, a **class** describes a kind of record; an **object** is one individual value created from it. An **attribute** is data on an object, and a **method** is an action called on it. You already use methods on built-in objects: `"badge".upper()` calls a string method and returns `"BADGE"`. Reading `record.name` in someone else's program would access an attribute. We are **not** asking you to write a `class`, constructor, or inheritance relationship here.
+At the Exit Gate, Ari finds an old maintenance note describing beacon **objects**. You only need to read the note, not write a class for the final mission.
 
-An **enum** gives a fixed set of named choices, such as `OPEN`, `FULL`, and `CANCELLED`. Python's `enum` module defines these with class syntax, so this course treats enums as reading vocabulary only; for your project, ordinary strings, dictionaries, conditions, and functions are sufficient. Similarly, the optional recursion and lambda patterns from the previous section are not prerequisites. Next, build the board with the fundamentals you already practiced.
+A **class** describes a kind of value; an **object** is one individual value of that kind. An **attribute** is data attached to an object, and a **method** is an action called on it. You already call methods on built-in objects: `"north".upper()` returns `"NORTH"`. In another program, `beacon.name` could access an attribute. This mission instead stores beacon names and thresholds in a dictionary.
+
+An **enum** names a fixed set of choices, such as `DIM` and `LIT`. Python defines custom enums with class syntax, but you do not need to write enums, constructors, inheritance, or custom classes here. Next, restore the beacons with the functions, conditions, loops, strings, lists, and dictionaries you have already used.

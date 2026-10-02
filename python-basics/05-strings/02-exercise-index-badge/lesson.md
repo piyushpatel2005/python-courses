@@ -1,24 +1,19 @@
 ---
-title: 'Exercise: Read Badge Edges'
+title: "Exercise: Read Rune Edges"
 slug: exercise-index-badge
 order: 2
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Practice positive and negative string indexes on a new badge.
-seo_title: 'Exercise: Read Badge Edges | Python Basics'
-seo_description: Practice positive and negative string indexes on a new badge with
-  an editable Python example and checked task.
-seo_keywords:
-- python indexing
-- beginner indexing exercise
+summary: Use string indexes to inspect both ends of a route rune.
+seo_title: "Exercise: Read Rune Edges | Python Basics"
+seo_description: Use string indexes to inspect both ends of a route rune.
+seo_keywords: [python basics, strings, lantern atlas]
 ---
 
-The gate prints the first and last characters of a different badge. The preceding hall-code demo showed where zero and negative one point; now use them on a badge.
+# Exercise: Read Rune Edges
 
-This is a separate exercise. Edit `main.py`, press **Run** to inspect the output, then **Submit** to check the numbered tasks.
-
-Build the edge labels without changing the supplied badge.
+The next cavern sign carries a different rune, `EMBER-7`. Use zero and negative one to read its edges without changing the supplied string. Edit `main.py`, Run to see both symbols, then Submit.
 
 ## Your Tasks
 

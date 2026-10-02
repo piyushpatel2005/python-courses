@@ -1,27 +1,19 @@
 ---
-title: 'Exercise: Choose a shelf sign'
+title: "Exercise: Check Gate Signal"
 slug: exercise-compare-and-branch
 order: 2
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: Compare remaining library copies and choose a shelf sign.
-seo_title: 'Exercise: Choose a shelf sign | Python Basics'
-seo_description: Compare remaining library copies and choose a shelf sign. Practice
-  Python control flow in an editable browser lesson.
-seo_keywords:
-- python comparison exercise
-- python if elif else
-- library stock
+summary: "Choose a gate status from its remaining sparks."
+seo_title: "Exercise: Check Gate Signal | Python Basics"
+seo_description: "Choose a gate status from its remaining sparks."
+seo_keywords: [python basics, control flow, lantern atlas]
 ---
 
-# Exercise: Choose a shelf sign
-
-The garden forecast used temperature; now a library uses its remaining copies. The starter supplies `copies_left` and the print lines. First compute a boolean comparison. Then use it to select exactly one sign: no copies means `Unavailable`; fewer than three means `Almost gone`; otherwise `Available`. An `if` chain evaluates branches from top to bottom; always check zero first.
-
-Edit **main.py**, press **Run** to see `True` and `Almost gone` on separate lines for two copies, then press **Submit** to check each task.
+The route demo used a signal reading; this gate uses **sparks left**. Compute a boolean for fewer than three sparks. Choose `Sealed` for zero, `Fading` for a low signal, and `Open` otherwise. Check zero first. Edit **main.py**, press **Run** for `True` and `Fading`, then **Submit**.
 
 ## Your Tasks
 
-1. Set `low_stock` using the comparison `copies_left < 3`, so two copies prints `True`.
-2. Replace the placeholder sign with an `if` / `elif` / `else` chain choosing `Unavailable` for zero copies, `Almost gone` when `low_stock` is true, and `Available` otherwise. The supplied print should say `Almost gone` for two copies.
+1. Set `low_signal` using `sparks_left < 3`.
+2. Use `if` / `elif` / `else` to set `gate_status` to `Sealed` for zero, `Fading` when `low_signal` is true, or `Open` otherwise.

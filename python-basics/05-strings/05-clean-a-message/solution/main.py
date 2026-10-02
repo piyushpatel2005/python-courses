@@ -1,3 +1,3 @@
-message = "  Gate Open  "
+message = "  Beacon Dim  "
 cleaned = message.strip().lower()
 print(cleaned)

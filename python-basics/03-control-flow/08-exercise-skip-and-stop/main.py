@@ -1,6 +1,6 @@
-capacity = 3
-admitted = ""
-count = 0
-# Loop over visitor numbers 1 through 8.
-print(admitted)
-print(count)
+route_limit = 3
+safe_tiles = ""
+cleared_count = 0
+# Loop over tile numbers 1 through 8.
+print(safe_tiles)
+print(cleared_count)

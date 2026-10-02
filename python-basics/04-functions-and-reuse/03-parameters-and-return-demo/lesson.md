@@ -1,24 +1,26 @@
 ---
-title: "Parameters and Return: Demo"
+title: "Pass Energy and Return a Result: Demo"
 slug: parameters-and-return-demo
 order: 3
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: Pass an argument into a function and return a reusable number.
-seo_title: "Parameters and Return: Demo | Python Basics"
-seo_description: Pass an argument into a function and return a reusable number.
-seo_keywords: [python basics, parameters and return demo, python practice]
+summary: Pass energy to a function and return the boosted amount.
+seo_title: "Pass Energy and Return a Result: Demo | Python Basics"
+seo_description: Pass energy to a function and return the boosted amount.
+seo_keywords: [python basics, functions and reuse, lantern atlas]
 hints:
-  - Change only the number inside ticket_total(...).
+  - Change only the number inside boost_energy(...).
 ---
 
-# Parameters and Return: Demo
+# Pass Energy and Return a Result: Demo
 
-A parameter is a local name for the argument supplied at a call. `return` gives the result back, so the caller can print it or calculate further. Here a ticket price gets a service charge. Change the call from `ticket_total(10)` to `ticket_total(12)` and notice the new total. The next exercise changes the function itself.
+An ability takes an **argument** at its call. The parameter `energy` receives that value locally, and `return` sends the boosted amount back. Ari tries a two-point boost at the workshop.
+
+![Energy entering an ability and its result returning](function-call.svg "Function call: argument, parameter, return")
+
+In `main.py`, change `boost_energy(10)` to `boost_energy(12)`. Run to see `14`, then Submit. The next exercise writes a different calculation.
 
 ## Your Tasks
 
 1. Change the argument in the supplied print call to `12`, producing `14`.
-
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your change.

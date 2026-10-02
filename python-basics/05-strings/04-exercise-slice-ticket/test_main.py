@@ -9,7 +9,7 @@ import solution
 def _variant():
     with open(solution.__file__, encoding="utf-8") as source_file:
         tree = ast.parse(source_file.read())
-    replacements = {'ticket': 'ZOO:9876'}
+    replacements = {'ticket': 'ORB:9876'}
     for node in tree.body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
             name = node.targets[0].id
@@ -35,11 +35,11 @@ def _uses(technique):
     return False
 
 def test_01():
-    """Set venue to the first three characters of ticket."""
-    assert venue == "PIE", "Set venue to the first three characters of ticket."
+    """Set route_name to the first three characters of ticket."""
+    assert route_name == "ARC", "Set route_name to the first three characters of ticket."
     assert _uses('Slice'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('venue == "ZOO"', varied), "Check this task with a different input too."
+    assert eval('route_name == "ORB"', varied), "Check this task with a different input too."
 
 def test_02():
     """Set number to the four characters after the colon using a slice."""

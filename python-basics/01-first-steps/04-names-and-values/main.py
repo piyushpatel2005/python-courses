@@ -1,2 +1,2 @@
-room = "Studio"
+room = "Spawn Camp"
 print(room)

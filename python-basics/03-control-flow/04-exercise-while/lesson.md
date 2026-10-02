@@ -1,26 +1,18 @@
 ---
-title: 'Exercise: Charge a device'
+title: "Exercise: Recharge the Beacon"
 slug: exercise-while
 order: 4
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: Use a bounded while loop to count charging steps.
-seo_title: 'Exercise: Charge a device | Python Basics'
-seo_description: Use a bounded while loop to count charging steps. Practice Python
-  control flow in an editable browser lesson.
-seo_keywords:
-- python while exercise
-- charge counter
-- loops
+summary: "Use a bounded while loop to raise beacon charge."
+seo_title: "Exercise: Recharge the Beacon | Python Basics"
+seo_description: "Use a bounded while loop to raise beacon charge."
+seo_keywords: [python basics, control flow, lantern atlas]
 ---
 
-# Exercise: Charge a device
+The pulse demo counted down; this beacon charges **up** from 10 to 40 in steps of 10. `while beacon_charge < 40` stops before another turn at 40. The starter gives the charge and a step counter. Add the loop in **main.py**, press **Run** for `40` and `3`, then **Submit**.
 
-The misting timer counted down. Here a portable radio charges **up** from 10% to 40% in 10-point steps. `while charge < 40` stops before a turn starting at 40. The starter supplies the starting charge and a counter.
+## Your Tasks
 
-Edit **main.py**, press **Run** to see `40` and `3` on separate lines, then press **Submit**.
-
-## Your Task
-
-1. Add a `while` loop that increases `charge` by 10 and `steps` by 1 each turn until charge reaches 40. The supplied print lines should show a 40% charge after three steps.
+1. Add a `while` loop that raises `beacon_charge` by 10 and `steps` by 1 until charge reaches 40.

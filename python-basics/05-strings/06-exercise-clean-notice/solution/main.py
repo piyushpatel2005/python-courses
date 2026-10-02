@@ -1,5 +1,5 @@
-raw_notice = "  HALL CLOSED  "
+raw_notice = "  BEACON DIM  "
 notice = raw_notice.strip().lower()
-open_notice = notice.replace("closed", "open")
-is_hall_notice = notice.startswith("hall")
-print(notice, open_notice, is_hall_notice)
+lit_notice = notice.replace("dim", "lit")
+is_beacon_notice = notice.startswith("beacon")
+print(notice, lit_notice, is_beacon_notice)

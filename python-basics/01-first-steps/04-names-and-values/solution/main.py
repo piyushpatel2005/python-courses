@@ -1,2 +1,2 @@
-room = "Gallery"
+room = "Beacon Ridge"
 print(room)

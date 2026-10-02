@@ -1,3 +1,3 @@
-item = "Bread"
-price = 2.5
-print(f"{item}: ${price:.2f}")
+gear = "Compass"
+cost = 2.5
+print(f"{gear}: ${cost:.2f}")

@@ -1,20 +1,18 @@
 ---
-title: "Exercise: Format an Invoice"
+title: "Exercise: Format Forge Readouts"
 slug: exercise-format-an-invoice
 order: 4
 language: python
 lesson_type: coding
-summary: Use f-strings to produce a readable invoice line and formatted total.
-seo_title: "Exercise: Format an Invoice | Python Basics"
-seo_description: Use f-strings to produce a readable invoice line and formatted total.
-seo_keywords: [python f string exercise, format currency, invoice strings]
+summary: "Build two f-string HUD lines from live gear values."
+seo_title: "Exercise: Format Forge Readouts | Python Basics"
+seo_description: "Build two f-string HUD lines from live gear values."
+seo_keywords: [python basics, values and input, lantern atlas]
 ---
 
-A print shop needs a compact invoice for posters. The starter already calculates `total`; change only the placeholder message assignments. Prefix each string with `f` so braces insert live variable values. Use `{total:.2f}` to show two decimal places in the price. The supplied print calls display your messages.
-
-Edit `main.py`, press **Run** to inspect the two invoice lines, then **Submit**.
+Unlike the compass demo, Ari needs a count line and a computed cost line. The starter calculates `cost` and provides print calls. Replace only the placeholder assignments in **main.py**. Press **Run** to read the HUD, then **Submit**.
 
 ## Your Tasks
 
-1. Set `heading` with an f-string to `4 posters for the art fair`, using `quantity` and `event`.
-2. Set `payment_line` with an f-string to `Due: $10.00`, using `total` formatted to two decimal places.
+1. Set `gear_line` with an f-string using `flare_count` and `forge`: `4 flares for Gear Forge`.
+2. Set `cost_line` with an f-string using `cost` to two decimals: `Cost: $10.00`.
