@@ -13,9 +13,9 @@ def _output():
 def test_first_line():
     """Print the lantern map prompt first"""
     lines = _output()
-    assert len(lines) >= 1 and lines[0] == "The lantern map is open", "Print the first map line"
+    assert len(lines) >= 1 and lines[0] == "The lantern map is open", "Print the first map line exactly as given"
 
 def test_second_line():
     """Print the beacon reminder second"""
     lines = _output()
-    assert len(lines) >= 2 and lines[1] == "Find the first beacon", "Add a second print call below the first"
+    assert len(lines) >= 2 and lines[1] == "Find the first beacon", "Print the second map line exactly as given"

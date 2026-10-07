@@ -10,7 +10,9 @@ seo_description: "Write two separate output lines for Ari’s opening route."
 seo_keywords: [python basics, first steps, lantern atlas]
 ---
 
-Ari needs two map prompts. Each `print()` starts a new line; a `#` comment is a note and produces no output. Add the lines in **main.py**. Press **Run** to see their order and **Submit** to check them.
+Adi needs two map prompts. Each `print()` starts a new line. A line starting with `#` is a note and it produces no output.
+
+Add the lines in the code editor. Press **Run** to see their order and **Submit** to check them.
 
 ## Your Tasks
 
