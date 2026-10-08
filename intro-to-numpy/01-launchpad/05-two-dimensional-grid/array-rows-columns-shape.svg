@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 390" role="img" aria-labelledby="title desc">
+  <title id="title">Two rows, three columns: shape (2, 3)</title>
+  <desc id="desc">A two-by-three grid of six readings. Row indices are zero and one; column indices are zero, one, and two. Brackets show the counts of two rows and three columns, while shape (2, 3) sits below.</desc>
+  <rect width="740" height="390" rx="22" fill="#fcfaf3"/>
+  <text x="36" y="48" font-family="Comic Sans MS, cursive" font-size="26" font-weight="bold" fill="#26384a">Sky grid, seen from above</text>
+  <text x="252" y="92" font-family="Comic Sans MS, cursive" font-size="19" fill="#26384a">column 0</text>
+  <text x="385" y="92" font-family="Comic Sans MS, cursive" font-size="19" fill="#26384a">column 1</text>
+  <text x="518" y="92" font-family="Comic Sans MS, cursive" font-size="19" fill="#26384a">column 2</text>
+  <text x="54" y="161" font-family="Comic Sans MS, cursive" font-size="21" fill="#26384a">row 0</text>
+  <text x="54" y="259" font-family="Comic Sans MS, cursive" font-size="21" fill="#26384a">row 1</text>
+  <g stroke="#36506b" stroke-width="3" stroke-linejoin="round" fill="#b8dfef">
+    <rect x="236" y="115" width="118" height="82" rx="13" transform="rotate(-0.6 295 156)"/>
+    <rect x="369" y="115" width="118" height="82" rx="13" transform="rotate(0.4 428 156)"/>
+    <rect x="502" y="115" width="118" height="82" rx="13" transform="rotate(-0.3 561 156)"/>
+    <rect x="236" y="215" width="118" height="82" rx="13" transform="rotate(0.3 295 256)"/>
+    <rect x="369" y="215" width="118" height="82" rx="13" transform="rotate(-0.5 428 256)"/>
+    <rect x="502" y="215" width="118" height="82" rx="13" transform="rotate(0.5 561 256)"/>
+  </g>
+  <g font-family="Comic Sans MS, cursive" font-size="28" fill="#20374b" text-anchor="middle">
+    <text x="295" y="166">12</text><text x="428" y="166">15</text><text x="561" y="166">18</text>
+    <text x="295" y="266">21</text><text x="428" y="266">24</text><text x="561" y="266">27</text>
+  </g>
+  <path d="M210 115 Q198 115 198 129 L198 281 Q198 297 210 297" fill="none" stroke="#c45348" stroke-width="4" stroke-linecap="round"/>
+  <path d="M236 318 Q236 330 250 330 L605 330 Q620 330 620 318" fill="none" stroke="#4a7c64" stroke-width="4" stroke-linecap="round"/>
+  <text x="41" y="352" font-family="Comic Sans MS, cursive" font-size="21" fill="#a23f3a">2 rows</text>
+  <text x="364" y="359" font-family="Comic Sans MS, cursive" font-size="21" fill="#326849">3 columns</text>
+  <text x="552" y="358" font-family="Comic Sans MS, cursive" font-size="21" font-weight="bold" fill="#26384a">shape (2, 3)</text>
+</svg>

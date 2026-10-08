@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 290" role="img" aria-labelledby="title desc">
+<title id="title">Fold and unroll six sensor readings</title>
+<desc id="desc">A six-element strip folds into a two-row three-column grid; a separate arrow shows the grid unrolled into six elements. The number of readings stays six.</desc>
+<rect width="960" height="290" rx="20" fill="#fcfaf2"/>
+<text x="36" y="42" fill="#243448" font-family="Comic Sans MS, cursive" font-size="24" font-weight="bold">Pocket Observatory · same six readings, new shape</text>
+<g fill="#e3efff" stroke="#385a80" stroke-width="2.5" stroke-linejoin="round">
+<rect x="34" y="97" width="42" height="51" rx="6" transform="rotate(-1 55 123)"/><rect x="78" y="97" width="42" height="51" rx="6" transform="rotate(1 99 123)"/><rect x="122" y="97" width="42" height="51" rx="6"/><rect x="166" y="97" width="42" height="51" rx="6" transform="rotate(-1 187 123)"/><rect x="210" y="97" width="42" height="51" rx="6"/><rect x="254" y="97" width="42" height="51" rx="6" transform="rotate(1 275 123)"/>
+</g>
+<g fill="#243448" font-family="Comic Sans MS, cursive" font-size="21" text-anchor="middle"><text x="55" y="130">4</text><text x="99" y="130">7</text><text x="143" y="130">2</text><text x="187" y="130">8</text><text x="231" y="130">5</text><text x="275" y="130">9</text></g>
+<text x="151" y="182" text-anchor="middle" fill="#243448" font-family="Comic Sans MS, cursive" font-size="19">strip (6,)</text>
+<path d="M307 122 Q338 113 361 122" fill="none" stroke="#385a80" stroke-width="3" stroke-linecap="round"/><path d="M360 122 l-11 -7 m11 7 l-11 7" fill="none" stroke="#385a80" stroke-width="3" stroke-linecap="round"/>
+<g fill="#c9f2d4" stroke="#38705c" stroke-width="2.5"><rect x="380" y="78" width="53" height="49" rx="6" transform="rotate(-1 406 102)"/><rect x="437" y="78" width="53" height="49" rx="6"/><rect x="494" y="78" width="53" height="49" rx="6"/><rect x="380" y="132" width="53" height="49" rx="6"/><rect x="437" y="132" width="53" height="49" rx="6" transform="rotate(1 463 156)"/><rect x="494" y="132" width="53" height="49" rx="6"/></g>
+<g fill="#243448" font-family="Comic Sans MS, cursive" font-size="21" text-anchor="middle"><text x="406" y="110">4</text><text x="463" y="110">7</text><text x="520" y="110">2</text><text x="406" y="164">8</text><text x="463" y="164">5</text><text x="520" y="164">9</text></g>
+<text x="463" y="215" text-anchor="middle" fill="#243448" font-family="Comic Sans MS, cursive" font-size="19">grid (2, 3)</text>
+<path d="M561 122 Q586 113 610 122" fill="none" stroke="#38705c" stroke-width="3" stroke-linecap="round"/><path d="M609 122 l-11 -7 m11 7 l-11 7" fill="none" stroke="#38705c" stroke-width="3" stroke-linecap="round"/>
+<g fill="#ffe9bf" stroke="#94663b" stroke-width="2.5"><rect x="631" y="97" width="42" height="51" rx="6"/><rect x="675" y="97" width="42" height="51" rx="6"/><rect x="719" y="97" width="42" height="51" rx="6"/><rect x="763" y="97" width="42" height="51" rx="6"/><rect x="807" y="97" width="42" height="51" rx="6"/><rect x="851" y="97" width="42" height="51" rx="6"/></g>
+<g fill="#243448" font-family="Comic Sans MS, cursive" font-size="21" text-anchor="middle"><text x="652" y="130">4</text><text x="696" y="130">7</text><text x="740" y="130">2</text><text x="784" y="130">8</text><text x="828" y="130">5</text><text x="872" y="130">9</text></g>
+<text x="762" y="182" text-anchor="middle" fill="#243448" font-family="Comic Sans MS, cursive" font-size="19">unrolled (6,)</text>
+<text x="480" y="265" text-anchor="middle" fill="#455565" font-family="Comic Sans MS, cursive" font-size="18">reshape and ravel change the layout; size remains 6</text>
+</svg>
