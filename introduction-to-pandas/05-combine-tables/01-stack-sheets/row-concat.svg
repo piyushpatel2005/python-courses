@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 305" role="img" aria-label="Stack rows">
+<title>Stack Rows</title>
+<desc>Morning and evening table rows become a combined table with a new sequential index.</desc>
+<rect width="860" height="305" rx="18" fill="#101a30"/>
+<text x="35" y="43" fill="#f4f7fd" font-family="Arial,sans-serif" font-size="24" font-weight="bold">Stack rows</text>
+<rect x="40" y="65" width="230" height="215" rx="12" fill="#203551" stroke="#6888ac"/>
+<text x="55" y="98" fill="#8ce4d3" font-family="Arial,sans-serif" font-size="16" font-weight="bold">Morning</text>
+<text x="55" y="138" fill="#f4f7fd" font-family="monospace" font-size="15">0 Lark 2</text>
+<rect x="315" y="65" width="230" height="215" rx="12" fill="#203551" stroke="#6888ac"/>
+<text x="330" y="98" fill="#8ce4d3" font-family="Arial,sans-serif" font-size="16" font-weight="bold">Evening</text>
+<text x="330" y="138" fill="#f4f7fd" font-family="monospace" font-size="15">0 Moss 4</text>
+<rect x="590" y="65" width="230" height="215" rx="12" fill="#203551" stroke="#6888ac"/>
+<text x="605" y="98" fill="#8ce4d3" font-family="Arial,sans-serif" font-size="16" font-weight="bold">Combined, new index</text>
+<text x="605" y="138" fill="#f4f7fd" font-family="monospace" font-size="15">0 Lark 2</text>
+<text x="605" y="171" fill="#f4f7fd" font-family="monospace" font-size="15">1 Moss 4</text>
+</svg>

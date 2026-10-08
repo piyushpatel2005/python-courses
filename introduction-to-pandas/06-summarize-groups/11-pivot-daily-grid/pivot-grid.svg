@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 305" role="img" aria-label="Pivot zone by day">
+<title>Pivot Zone by Day</title>
+<desc>Sales for north and south zones are arranged by Friday and Saturday in a filled grid.</desc>
+<rect width="860" height="305" rx="18" fill="#101a30"/>
+<text x="35" y="43" fill="#f4f7fd" font-family="Arial,sans-serif" font-size="24" font-weight="bold">Pivot zone by day</text>
+<rect x="40" y="65" width="230" height="215" rx="12" fill="#203551" stroke="#6888ac"/>
+<text x="55" y="98" fill="#8ce4d3" font-family="Arial,sans-serif" font-size="16" font-weight="bold">Sales</text>
+<text x="55" y="138" fill="#f4f7fd" font-family="monospace" font-size="15">N Fri 5</text>
+<text x="55" y="171" fill="#f4f7fd" font-family="monospace" font-size="15">N Sat 3</text>
+<text x="55" y="204" fill="#f4f7fd" font-family="monospace" font-size="15">S Fri 8</text>
+<rect x="315" y="65" width="230" height="215" rx="12" fill="#203551" stroke="#6888ac"/>
+<text x="330" y="98" fill="#8ce4d3" font-family="Arial,sans-serif" font-size="16" font-weight="bold">Days</text>
+<text x="330" y="138" fill="#f4f7fd" font-family="monospace" font-size="15">Fri</text>
+<text x="330" y="171" fill="#f4f7fd" font-family="monospace" font-size="15">Sat</text>
+<rect x="590" y="65" width="230" height="215" rx="12" fill="#203551" stroke="#6888ac"/>
+<text x="605" y="98" fill="#8ce4d3" font-family="Arial,sans-serif" font-size="16" font-weight="bold">Filled grid</text>
+<text x="605" y="138" fill="#f4f7fd" font-family="monospace" font-size="15">N  5  3</text>
+<text x="605" y="171" fill="#f4f7fd" font-family="monospace" font-size="15">S  8  0</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" role="img" aria-labelledby="title desc">
+<title id="title">Label and position windows</title>
+<desc id="desc">Two side-by-side three-row tables. The label window from early to mid includes both rows. The position window from zero to two also includes two rows but excludes position two.</desc>
+<rect width="820" height="300" rx="20" fill="#101c30"/>
+<text x="28" y="38" font-family="sans-serif" font-weight="bold" font-size="23" fill="#ffffff">Two ways to select the first two rows</text>
+<text x="32" y="79" font-family="monospace" font-size="17" fill="#9de9d2">.loc["early":"mid"]</text>
+<text x="434" y="79" font-family="monospace" font-size="17" fill="#c6bcff">.iloc[0:2]</text>
+<rect x="28" y="101" width="362" height="46" rx="8" fill="#147d70"/><rect x="28" y="151" width="362" height="46" rx="8" fill="#147d70"/><rect x="28" y="201" width="362" height="46" rx="8" fill="#34445c"/>
+<rect x="430" y="101" width="362" height="46" rx="8" fill="#51478a"/><rect x="430" y="151" width="362" height="46" rx="8" fill="#51478a"/><rect x="430" y="201" width="362" height="46" rx="8" fill="#34445c"/>
+<g font-family="sans-serif" font-size="17" fill="#ffffff"><text x="48" y="130">early</text><text x="48" y="180">mid  ← end label included</text><text x="48" y="230">late</text><text x="450" y="130">0  •  early</text><text x="450" y="180">1  •  mid</text><text x="450" y="230">2  •  late (stop excluded)</text></g>
+<text x="30" y="279" font-family="sans-serif" font-size="15" fill="#bed1e5">Highlighted rows are returned; gray rows are not.</text>
+</svg>
