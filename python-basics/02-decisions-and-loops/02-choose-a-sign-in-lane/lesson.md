@@ -6,7 +6,7 @@ language: python
 lesson_type: coding
 summary: Use if, elif, and else to choose a gate signal from its remaining charge.
 seo_title: Python if, elif, else Exercise | Python Basics
-seo_description: Practice conditional branches while Ari checks a beacon gate.
+seo_description: Practice conditional branches while Adi checks a beacon gate.
 seo_keywords: [python if else, python elif, python conditions]
 hints:
   - Start with the most restrictive case, charge_left == 0, then test for a small positive charge.
@@ -14,7 +14,7 @@ hints:
 
 # Choose a gate signal
 
-Ari needs one message from the beacon gate before crossing. In a different room, a lantern might be checked like this:
+Adi needs one message from the beacon gate before crossing. In a different room, a lantern might be checked like this:
 
 ```python
 wicks = 2

@@ -5,9 +5,9 @@ order: 2
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Write and read Ari’s shrine note in a temporary browser file.
+summary: Write and read Adi’s shrine note in a temporary browser file.
 seo_title: Python File Handling in Pyodide | Python Basics
-seo_description: Practice with open for Ari’s save-shrine note in Pyodide’s in-memory filesystem.
+seo_description: Practice with open for Adi’s save-shrine note in Pyodide’s in-memory filesystem.
 seo_keywords: [python file handling, with open, pyodide filesystem, read write file]
 hints:
   - Use with open("atlas-save.txt", "w") as file: and file.write(text).
@@ -16,7 +16,7 @@ hints:
 
 # Save a note at the shrine
 
-Ari records a clue at the save shrine before the final beacon mission. Python can write and read a text file. **Here `open()` uses Pyodide's in-memory browser filesystem, not your computer's local files.** The note can disappear when the runner resets; this lesson does not download or edit a file on your device.
+Adi records a clue at the save shrine before the final beacon mission. Python can write and read a text file. **Here `open()` uses Pyodide's in-memory browser filesystem, not your computer's local files.** The note can disappear when the runner resets; this lesson does not download or edit a file on your device.
 
 `open(path, "w")` creates or overwrites a file; `open(path, "r")` reads an existing file. `with` closes the file when its block ends. A different clue might be saved like this:
 

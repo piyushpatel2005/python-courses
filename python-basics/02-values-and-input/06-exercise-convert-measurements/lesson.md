@@ -10,7 +10,7 @@ seo_description: "Parse prefilled whole and decimal gear readings."
 seo_keywords: [python basics, values and input, lantern atlas]
 ---
 
-Ari receives `"9"` cells and `"1.5"` charge per cell as text. The prefilled strings stand in for user responses, so **Run** never waits for a prompt. Convert with `int()` and `float()` without replacing the source text. Edit **main.py**, press **Run**, then **Submit**.
+Adi receives `"9"` cells and `"1.5"` charge per cell as text. The prefilled strings stand in for user responses, so **Run** never waits for a prompt. Convert with `int()` and `float()` without replacing the source text. Edit **main.py**, press **Run**, then **Submit**.
 
 ## Your Tasks
 

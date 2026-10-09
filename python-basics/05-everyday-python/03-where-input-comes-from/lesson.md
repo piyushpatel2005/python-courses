@@ -5,7 +5,7 @@ order: 3
 language: python
 lesson_type: informational
 runtime: pyodide
-summary: Understand terminal input and why Ari’s browser missions use supplied values.
+summary: Understand terminal input and why Adi’s browser missions use supplied values.
 seo_title: Python input() and Browser Exercises | Python Basics
 seo_description: Learn why Python input returns text and why Pyodide missions use provided values.
 seo_keywords: [python input, input returns string, pyodide browser, command line]
@@ -13,7 +13,7 @@ seo_keywords: [python input, input returns string, pyodide browser, command line
 
 # Where input comes from
 
-In a terminal version of The Lantern Atlas, a player could type Ari’s next move. Python's `input()` displays a prompt, pauses for a line, and returns **text** (`str`), even when the player types digits.
+In a terminal version of The Lantern Atlas, a player could type Adi’s next move. Python's `input()` displays a prompt, pauses for a line, and returns **text** (`str`), even when the player types digits.
 
 This is an **illustration for a terminal program, not a runnable browser exercise**:
 

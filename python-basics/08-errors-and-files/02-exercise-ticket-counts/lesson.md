@@ -11,7 +11,7 @@ seo_description: 'Convert valid charge text and recover from invalid values.'
 seo_keywords: [python try except exercise, traceback, ValueError]
 ---
 
-Ari must label the shrine charge even when a reading is blurred. Reuse the preceding `try`/`except ValueError` pattern; a bare `except` could hide unrelated mistakes.
+Adi must label the shrine charge even when a reading is blurred. Reuse the preceding `try`/`except ValueError` pattern; a bare `except` could hide unrelated mistakes.
 
 Edit `main.py`, **Run** to compare valid and faded readings, then **Submit**. The two helpers are checked separately.
 

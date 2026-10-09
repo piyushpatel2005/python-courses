@@ -13,7 +13,7 @@ seo_keywords: [python basics, strings, lantern atlas]
 
 # Exercise: Decode a Rune Notice
 
-Ari needs a readable route status from the cavern wall. First normalize the rune text, then produce a restored-state message and check whether it belongs to a beacon. Keep `raw_notice` unchanged. Edit `main.py`, Run, then Submit.
+Adi needs a readable route status from the cavern wall. First normalize the rune text, then produce a restored-state message and check whether it belongs to a beacon. Keep `raw_notice` unchanged. Edit `main.py`, Run, then Submit.
 
 ## Your Tasks
 

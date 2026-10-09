@@ -4,7 +4,7 @@ slug: number-supply-kits
 order: 4
 language: python
 lesson_type: coding
-summary: Use for and range to label four markers on Ari’s beacon trail.
+summary: Use for and range to label four markers on Adi’s beacon trail.
 seo_title: Python for Loop and range Exercise | Python Basics
 seo_description: Practice Python for loops and range with numbered beacon markers.
 seo_keywords: [python for loop, python range, loop labels]
@@ -14,7 +14,7 @@ hints:
 
 # Number beacon markers
 
-Ari lays numbered markers along the route. When the number of repetitions is known, `for` can walk through a `range`. For example, a separate cave has three crystals:
+Adi lays numbered markers along the route. When the number of repetitions is known, `for` can walk through a `range`. For example, a separate cave has three crystals:
 
 ```python
 for crystal in range(1, 4):

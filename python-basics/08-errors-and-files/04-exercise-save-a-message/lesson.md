@@ -11,7 +11,7 @@ seo_description: 'Write and read shrine signals in a temporary browser file.'
 seo_keywords: [python write read file exercise, with open]
 ---
 
-Ari needs a separate shrine save for a beacon signal. The previous demo wrote and read one note; here you implement both actions as functions. `"w"` replaces previous contents, and `"r"` reads existing contents. The browser file is temporary and does not download to your device.
+Adi needs a separate shrine save for a beacon signal. The previous demo wrote and read one note; here you implement both actions as functions. `"w"` replaces previous contents, and `"r"` reads existing contents. The browser file is temporary and does not download to your device.
 
 Edit `main.py`, **Run** to see the restored signal, then **Submit**.
 

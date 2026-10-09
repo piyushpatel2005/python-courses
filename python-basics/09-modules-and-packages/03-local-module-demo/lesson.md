@@ -13,7 +13,7 @@ hints:
   - Change only the argument to the final imported-function call.
 ---
 
-Ari finds a beacon rule written in another `.py` file. The supplied setup creates `beacon_rules.py` in the browser’s temporary filesystem, then imports `signal_strength`. A regular project would keep that module beside `main.py`; here the single-file runner generates it before the import.
+Adi finds a beacon rule written in another `.py` file. The supplied setup creates `beacon_rules.py` in the browser’s temporary filesystem, then imports `signal_strength`. A regular project would keep that module beside `main.py`; here the single-file runner generates it before the import.
 
 Edit the final call in `main.py` from `2` to `3` marks, **Run** to see `15`, then **Submit**.
 

@@ -15,7 +15,7 @@ hints:
 
 # Default Ability Marks: Demo
 
-At the workshop, an ability label gets a default mark when Ari omits that argument. `ability_mark("Glow", suffix="!")` overrides it by name. The first call uses the default; the second uses `!`.
+At the workshop, an ability label gets a default mark when Adi omits that argument. `ability_mark("Glow", suffix="!")` overrides it by name. The first call uses the default; the second uses `!`.
 
 Edit the default in `main.py` from `.` to `?`. Run: the first line becomes `Glow?`, while the keyword call remains `Glow!`. Then Submit.
 

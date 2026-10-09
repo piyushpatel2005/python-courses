@@ -15,7 +15,7 @@ hints:
 
 # Define a Beacon Ability: Demo
 
-Ari reaches the first dim beacon in the Ability Workshop. A function stores an action under a name: `def welcome():` defines it, and `welcome()` runs it. In `main.py`, change the printed destination from `North Beacon` to `East Beacon`. Run to see the new announcement, then Submit.
+Adi reaches the first dim beacon in the Ability Workshop. A function stores an action under a name: `def welcome():` defines it, and `welcome()` runs it. In `main.py`, change the printed destination from `North Beacon` to `East Beacon`. Run to see the new announcement, then Submit.
 
 ## Your Tasks
 

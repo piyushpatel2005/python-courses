@@ -15,7 +15,7 @@ hints:
 
 # Exercise: Spend Local Energy
 
-Ari tests a pulse without spending the workshop's stored energy. Assign a local value inside the function and return it; the outer value remains available for later beacons. Edit `main.py`, Run to compare both printed numbers, then Submit.
+Adi tests a pulse without spending the workshop's stored energy. Assign a local value inside the function and return it; the outer value remains available for later beacons. Edit `main.py`, Run to compare both printed numbers, then Submit.
 
 ## Your Tasks
 

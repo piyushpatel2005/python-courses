@@ -15,7 +15,7 @@ hints:
 
 # Exercise: Combine Beacon Energy
 
-Ari must combine a charged shard with stored energy before entering the cavern. Like the boost demo, return a result so other abilities can reuse it. The supplied call prints the outcome. Edit `main.py`, Run, then Submit.
+Adi must combine a charged shard with stored energy before entering the cavern. Like the boost demo, return a result so other abilities can reuse it. The supplied call prints the outcome. Edit `main.py`, Run, then Submit.
 
 ## Your Tasks
 

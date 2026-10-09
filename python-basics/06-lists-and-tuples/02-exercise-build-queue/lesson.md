@@ -13,7 +13,7 @@ seo_keywords: [python basics, lists and tuples, lantern atlas]
 
 # Exercise: Build a Gear Queue
 
-Ari lines up equipment for the final ridge crossing. The demo selected the last piece; now create a list and read both ends by index. Edit `main.py`, Run, then Submit.
+Adi lines up equipment for the final ridge crossing. The demo selected the last piece; now create a list and read both ends by index. Edit `main.py`, Run, then Submit.
 
 ## Your Tasks
 

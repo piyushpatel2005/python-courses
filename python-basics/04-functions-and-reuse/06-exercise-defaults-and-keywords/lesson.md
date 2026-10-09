@@ -15,7 +15,7 @@ hints:
 
 # Exercise: Name a Beacon Ability
 
-Ari labels a different ability for the beacon loadout. Give `ability_label` a default mark, then make the second call override it by keyword. The two print calls expose both outcomes. Edit `main.py`, Run, then Submit.
+Adi labels a different ability for the beacon loadout. Give `ability_label` a default mark, then make the second call override it by keyword. The two print calls expose both outcomes. Edit `main.py`, Run, then Submit.
 
 ## Your Tasks
 

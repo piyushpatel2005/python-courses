@@ -12,7 +12,7 @@ seo_keywords: [python break, python continue, loop control]
 
 # Skip and stop a gate trial
 
-One rune on Ari’s path is cracked. `continue` skips the rest of **that turn** and moves to the next rune. Run this block to see which runes remain.
+One rune on Adi’s path is cracked. `continue` skips the rest of **that turn** and moves to the next rune. Run this block to see which runes remain.
 
 ```python run
 for rune in range(1, 5):

@@ -15,7 +15,7 @@ hints:
 
 # Recover a beacon reading
 
-At the save shrine, Ari finds an energy reading stored as text. Some readings say `"unknown"` instead of `"3"`. Return zero for unreadable readings so one bad inscription does not stop the journey.
+At the save shrine, Adi finds an energy reading stored as text. Some readings say `"unknown"` instead of `"3"`. Return zero for unreadable readings so one bad inscription does not stop the journey.
 
 A traceback points to the failed line and ends with an error name. `int("unknown")` raises `ValueError`; accessing a missing list index raises `IndexError`; a misspelled name raises `NameError`. A `SyntaxError` means Python cannot parse the code at all. Read the last line of a traceback, then inspect the indicated line.
 

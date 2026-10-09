@@ -4,7 +4,7 @@ slug: comparisons-and-booleans
 order: 1
 language: python
 lesson_type: interactive
-summary: Compare beacon charge and combine boolean checks before Ari approaches a gate.
+summary: Compare beacon charge and combine boolean checks before Adi approaches a gate.
 seo_title: Python Comparisons and Booleans | Python Basics
 seo_description: Compare charge levels and logical conditions in The Lantern Atlas.
 seo_keywords: [python comparisons, python booleans, logical operators]
@@ -12,7 +12,7 @@ seo_keywords: [python comparisons, python booleans, logical operators]
 
 # Compare gate signals
 
-Ari reaches a gate that opens only when the nearby beacon has enough charge. A comparison returns `True` or `False` (capitalized in Python). `=` stores a value; `==` compares two values. Run this check to see how one value can pass a threshold but fail an equality test.
+Adi reaches a gate that opens only when the nearby beacon has enough charge. A comparison returns `True` or `False` (capitalized in Python). `=` stores a value; `==` compares two values. Run this check to see how one value can pass a threshold but fail an equality test.
 
 ```python run
 charge = 6

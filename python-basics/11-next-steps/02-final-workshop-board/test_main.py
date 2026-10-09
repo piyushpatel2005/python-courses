@@ -48,7 +48,7 @@ def test_play_mission():
     beacons = {"NORTH": 3, "SOUTH": 2}
     assert play_mission(beacons, ["north:2", "NORTH:1", "south:2"]) == [
         "NORTH: 3/3", "SOUTH: 2/2",
-        "Exit Gate: OPEN - Ari leaves the Lantern Atlas with every beacon bright."]
+        "Exit Gate: OPEN - Adi leaves the Lantern Atlas with every beacon bright."]
     assert play_mission(beacons, ["north:3", "south:1"]) == [
         "NORTH: 3/3", "SOUTH: 1/2",
         "Exit Gate: LOCKED - Restore every beacon to continue."]
@@ -59,7 +59,7 @@ def test_play_mission():
         namespace["charge_beacons"] = lambda beacons, commands: {"NORTH": 7}
         namespace["gate_open"] = lambda beacons, charges: charges["NORTH"] == 7
         assert play_mission({"NORTH": 9}, ["probe"]) == [
-            "NORTH: 7/9", "Exit Gate: OPEN - Ari leaves the Lantern Atlas with every beacon bright."], (
+            "NORTH: 7/9", "Exit Gate: OPEN - Adi leaves the Lantern Atlas with every beacon bright."], (
             "Reuse charge_beacons and gate_open inside play_mission.")
     finally:
         namespace["charge_beacons"], namespace["gate_open"] = original_charge, original_gate

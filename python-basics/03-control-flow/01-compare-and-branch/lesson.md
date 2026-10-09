@@ -5,9 +5,9 @@ order: 1
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: "Use comparisons and branches to advise Ari at a gate."
+summary: "Use comparisons and branches to advise Adi at a gate."
 seo_title: "Demo: Choose a Lit Route | Python Basics"
-seo_description: "Use comparisons and branches to advise Ari at a gate."
+seo_description: "Use comparisons and branches to advise Adi at a gate."
 seo_keywords: [python basics, control flow, lantern atlas]
 ---
 
@@ -15,4 +15,4 @@ Level 3 is the **Gate Trials**. `signal < 8` yields `True` or `False`; `=` assig
 
 ## Your Tasks
 
-1. Set `signal` to `4` so Ari gets the repair hint.
+1. Set `signal` to `4` so Adi gets the repair hint.

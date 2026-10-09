@@ -13,7 +13,7 @@ seo_keywords: [python basics, strings, lantern atlas]
 
 # Format a Route Card: Demo
 
-Ari copies a cavern waypoint onto a card. An `f` before the quote lets `{name}` insert a value; `{energy:.2f}` shows two decimal places without changing the number. This builds on the f-strings from First Steps.
+Adi copies a cavern waypoint onto a card. An `f` before the quote lets `{name}` insert a value; `{energy:.2f}` shows two decimal places without changing the number. This builds on the f-strings from First Steps.
 
 ![f-string parts for the cavern route card](f-string-anatomy.svg "f-string prefix, expression and two-decimal specifier")
 

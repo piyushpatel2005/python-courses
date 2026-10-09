@@ -13,7 +13,7 @@ seo_keywords:
 - beginner collections-project exercise
 ---
 
-Ari’s finds are a list of dictionaries. Each record has a `location` and a `beacon`; the same location can appear twice. A loop collects locations, `.get(beacon, 0) + 1` counts finds by beacon, and a set counts distinct locations.
+Adi’s finds are a list of dictionaries. Each record has a `location` and a `beacon`; the same location can appear twice. A loop collects locations, `.get(beacon, 0) + 1` counts finds by beacon, and a set counts distinct locations.
 
 Edit `main.py`, **Run** to see `2 locations` instead of `3`, then **Submit**. The next mission uses new treasure records.
 

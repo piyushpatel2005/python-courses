@@ -7,7 +7,7 @@ lesson_type: informational
 runtime: pyodide
 summary: Distinguish a beacon class blueprint from individual beacon objects.
 seo_title: Python Classes and Objects Concept | Python Basics
-seo_description: Introduce Python class, object, attribute, and method vocabulary using Ari’s beacons.
+seo_description: Introduce Python class, object, attribute, and method vocabulary using Adi’s beacons.
 seo_keywords: [python classes, python objects, oop introduction, attributes methods]
 ---
 

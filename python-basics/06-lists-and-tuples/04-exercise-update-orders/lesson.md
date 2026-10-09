@@ -5,15 +5,15 @@ order: 4
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Replace, append, and remove items in Ari’s mutable loadout.
+summary: Replace, append, and remove items in Adi’s mutable loadout.
 seo_title: "Exercise: Repair the Loadout | Python Basics"
-seo_description: Replace, append, and remove items in Ari’s mutable loadout.
+seo_description: Replace, append, and remove items in Adi’s mutable loadout.
 seo_keywords: [python basics, lists and tuples, lantern atlas]
 ---
 
 # Exercise: Repair the Loadout
 
-Ari's gear has a typo and a spent item. Correct the middle item, add a fresh lens, and remove the spent shard **by value**. Each change affects the same list. Edit `main.py`, Run, then Submit.
+Adi's gear has a typo and a spent item. Correct the middle item, add a fresh lens, and remove the spent shard **by value**. Each change affects the same list. Edit `main.py`, Run, then Submit.
 
 ## Your Tasks
 

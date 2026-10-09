@@ -15,7 +15,7 @@ hints:
 
 # Pass Energy and Return a Result: Demo
 
-An ability takes an **argument** at its call. The parameter `energy` receives that value locally, and `return` sends the boosted amount back. Ari tries a two-point boost at the workshop.
+An ability takes an **argument** at its call. The parameter `energy` receives that value locally, and `return` sends the boosted amount back. Adi tries a two-point boost at the workshop.
 
 ![Energy entering an ability and its result returning](function-call.svg "Function call: argument, parameter, return")
 

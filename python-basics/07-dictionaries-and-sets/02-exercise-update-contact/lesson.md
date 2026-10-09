@@ -13,7 +13,7 @@ seo_keywords:
 - beginner dictionary-fields exercise
 ---
 
-Ari finds a map entry for Moss Gate. Transfer the card lookup pattern: read its landmark, record one more mark, and request an optional clue without raising `KeyError`.
+Adi finds a map entry for Moss Gate. Transfer the card lookup pattern: read its landmark, record one more mark, and request an optional clue without raising `KeyError`.
 
 Edit `main.py`, press **Run** to inspect the entry, then **Submit**.
 

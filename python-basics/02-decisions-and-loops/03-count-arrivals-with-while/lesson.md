@@ -4,7 +4,7 @@ slug: count-arrivals-with-while
 order: 3
 language: python
 lesson_type: coding
-summary: Write a bounded while loop to count the pulses that charge Ari’s gate.
+summary: Write a bounded while loop to count the pulses that charge Adi’s gate.
 seo_title: Python while Loop Exercise | Python Basics
 seo_description: Practice a terminating Python while loop with beacon pulses.
 seo_keywords: [python while loop, counter loop, beginner python loops]

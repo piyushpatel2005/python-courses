@@ -15,7 +15,7 @@ hints:
 
 # Exercise: Activate a Beacon
 
-The demo called a completed ability. Now Ari needs a new announcement when a beacon lights. Replace `pass` inside `announce()`; the supplied call provides the checkpoint. Run `main.py`, then Submit.
+The demo called a completed ability. Now Adi needs a new announcement when a beacon lights. Replace `pass` inside `announce()`; the supplied call provides the checkpoint. Run `main.py`, then Submit.
 
 ## Your Tasks
 

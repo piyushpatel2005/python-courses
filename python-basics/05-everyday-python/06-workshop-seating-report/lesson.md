@@ -5,7 +5,7 @@ order: 6
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Combine loops, functions, and conditions to report the energy Ari needs to restore a beacon.
+summary: Combine loops, functions, and conditions to report the energy Adi needs to restore a beacon.
 seo_title: "Python Beginner Mini Project: Beacon Energy | Python Basics"
 seo_description: Build a final Lantern Atlas beacon report with loops, functions, and formatted text.
 seo_keywords: [python mini project, beginner python exercise, loops, functions, f strings]
@@ -17,7 +17,7 @@ hints:
 
 # Final mission: restore the beacon
 
-Ari reaches the final beacon. Add the energy from collected shards, calculate how much more energy the beacon can hold, and show a one-line status before unlocking the exit. No terminal prompts, device files, classes, recursion, or enums are required.
+Adi reaches the final beacon. Add the energy from collected shards, calculate how much more energy the beacon can hold, and show a one-line status before unlocking the exit. No terminal prompts, device files, classes, recursion, or enums are required.
 
 For a different part of the map, the same loop pattern can count cave crystals:
 
@@ -39,4 +39,4 @@ The starter supplies function names and sample data. Work from the first helper 
 2. Complete `energy_needed(target, gathered)` to return `target - gathered` when positive, or `0` when the target is reached or exceeded.
 3. Complete `beacon_report(name, target, shard_energy)` using your two helpers to return `"<name>: <gathered> energy, <needed> needed"` with actual values. Run and Submit.
 
-The restored beacon lights Ari’s exit route.
+The restored beacon lights Adi’s exit route.

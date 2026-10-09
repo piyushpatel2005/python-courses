@@ -13,7 +13,7 @@ seo_keywords: [python basics, strings, lantern atlas]
 
 # Exercise: Decode Route Fields
 
-Ari finds a second sign with a three-letter route and a four-digit beacon number. The colon at index 3 separates them. Keep the sign unchanged; use slices to decode both fields. Edit `main.py`, Run, then Submit.
+Adi finds a second sign with a three-letter route and a four-digit beacon number. The colon at index 3 separates them. Keep the sign unchanged; use slices to decode both fields. Edit `main.py`, Run, then Submit.
 
 ## Your Tasks
 

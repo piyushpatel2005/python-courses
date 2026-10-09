@@ -11,7 +11,7 @@ seo_description: Recognize classes, objects, attributes, methods, and enums with
 seo_keywords: [python class object vocabulary, attribute, enum]
 ---
 
-At the Exit Gate, Ari finds an old maintenance note describing beacon **objects**. You only need to read the note, not write a class for the final mission.
+At the Exit Gate, Adi finds an old maintenance note describing beacon **objects**. You only need to read the note, not write a class for the final mission.
 
 A **class** describes a kind of value; an **object** is one individual value of that kind. An **attribute** is data attached to an object, and a **method** is an action called on it. You already call methods on built-in objects: `"north".upper()` returns `"NORTH"`. In another program, `beacon.name` could access an attribute. This mission instead stores beacon names and thresholds in a dictionary.
 

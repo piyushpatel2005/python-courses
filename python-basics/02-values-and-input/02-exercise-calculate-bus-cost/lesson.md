@@ -10,7 +10,7 @@ seo_description: "Multiply energy cost and subtract used pack slots."
 seo_keywords: [python basics, values and input, lantern atlas]
 ---
 
-Ari plans a different forge purchase: three points per cache across seven caches, four energy per point, and 25 pack slots. The starter prints cost and remaining slots. Complete the two assignments in **main.py** using supplied variables. Press **Run** and **Submit**.
+Adi plans a different forge purchase: three points per cache across seven caches, four energy per point, and 25 pack slots. The starter prints cost and remaining slots. Complete the two assignments in **main.py** using supplied variables. Press **Run** and **Submit**.
 
 ## Your Tasks
 

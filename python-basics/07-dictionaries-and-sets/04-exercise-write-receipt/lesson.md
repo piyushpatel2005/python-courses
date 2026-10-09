@@ -13,7 +13,7 @@ seo_keywords:
 - beginner dictionary-loop exercise
 ---
 
-Ari needs a cache ledger. The earlier map demo collected keys; here each entry becomes a label, and the marks become a total. Use `.items()` for pairs and `.values()` for just the counts.
+Adi needs a cache ledger. The earlier map demo collected keys; here each entry becomes a label, and the marks become a total. Use `.items()` for pairs and `.values()` for just the counts.
 
 Edit `main.py`, **Run** to see the labels and sum, then **Submit**.
 

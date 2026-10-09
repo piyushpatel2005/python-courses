@@ -13,7 +13,7 @@ hints:
   - Use from shrine_rules import seal_count; then call seal_count(runes).
 ---
 
-Ari needs seals for shrine runes. The supplied setup writes `shrine_rules.py` in the temporary browser filesystem; it defines `seal_count` for groups of four. Import the helper after the setup and delegate to it. On a local machine that file would live beside `main.py`.
+Adi needs seals for shrine runes. The supplied setup writes `shrine_rules.py` in the temporary browser filesystem; it defines `seal_count` for groups of four. Import the helper after the setup and delegate to it. On a local machine that file would live beside `main.py`.
 
 Edit `main.py`, **Run** to see `3` seals for nine runes, then **Submit**.
 

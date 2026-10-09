@@ -15,7 +15,7 @@ hints:
 
 # Local Energy Scope: Demo
 
-Names assigned inside a function are local to that call. Ari's stored `energy` and the temporary `energy` inside `preview_pulse()` can differ without overwriting one another. Run the starter: both lines show `20`. Change only the inner assignment to `15`; Run should show `15` then `20`. Submit to check.
+Names assigned inside a function are local to that call. Adi's stored `energy` and the temporary `energy` inside `preview_pulse()` can differ without overwriting one another. Run the starter: both lines show `20`. Change only the inner assignment to `15`; Run should show `15` then `20`. Submit to check.
 
 ## Your Tasks
 

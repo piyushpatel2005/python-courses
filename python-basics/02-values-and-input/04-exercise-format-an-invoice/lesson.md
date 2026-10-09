@@ -10,7 +10,7 @@ seo_description: "Build two f-string HUD lines from live gear values."
 seo_keywords: [python basics, values and input, lantern atlas]
 ---
 
-Unlike the compass demo, Ari needs a count line and a computed cost line. The starter calculates `cost` and provides print calls. Replace only the placeholder assignments in **main.py**. Press **Run** to read the HUD, then **Submit**.
+Unlike the compass demo, Adi needs a count line and a computed cost line. The starter calculates `cost` and provides print calls. Replace only the placeholder assignments in **main.py**. Press **Run** to read the HUD, then **Submit**.
 
 ## Your Tasks
 

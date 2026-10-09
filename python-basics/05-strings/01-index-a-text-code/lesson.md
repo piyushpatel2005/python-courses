@@ -13,7 +13,7 @@ seo_keywords: [python basics, strings, lantern atlas]
 
 # Read a Rune Code: Demo
 
-Ari carries the workshop loadout into Cipher Caverns. Route signs are strings; `code[0]` reads the first symbol and `code[-1]` the last. Indexes start at zero, and `len(code)` counts characters. A missing single index raises `IndexError`; strings cannot be changed by index.
+Adi carries the workshop loadout into Cipher Caverns. Route signs are strings; `code[0]` reads the first symbol and `code[-1]` the last. Indexes start at zero, and `len(code)` counts characters. A missing single index raises `IndexError`; strings cannot be changed by index.
 
 Edit `last` in `main.py` to use a negative index. Run should show `N R`, then Submit. The next sign uses a different code.
 

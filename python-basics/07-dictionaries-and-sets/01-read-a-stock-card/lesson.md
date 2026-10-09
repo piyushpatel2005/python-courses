@@ -13,7 +13,7 @@ seo_keywords:
 - beginner dictionary-fields exercise
 ---
 
-Ari opens the Map Archive. Each map card has a named landmark and a count of marks. Dictionary keys let Ari retrieve a field without guessing its position. `map_card["landmark"]` reads a known key; assigning `map_card["marks"]` changes a value. An absent key raises `KeyError`, while `.get("route", "unknown")` gives a safe fallback.
+Adi opens the Map Archive. Each map card has a named landmark and a count of marks. Dictionary keys let Adi retrieve a field without guessing its position. `map_card["landmark"]` reads a known key; assigning `map_card["marks"]` changes a value. An absent key raises `KeyError`, while `.get("route", "unknown")` gives a safe fallback.
 
 ![Map card key-to-value lookup and missing-key fallback](dictionary-lookup.svg)
 

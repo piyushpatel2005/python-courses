@@ -1,4 +1,4 @@
-player_text = "Ari"
+player_text = "Adi"
 flares_text = "3"
 flare_cost = 6.0
 flare_count = 0  # TODO: convert flares_text

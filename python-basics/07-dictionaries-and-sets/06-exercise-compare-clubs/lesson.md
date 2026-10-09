@@ -5,15 +5,15 @@ order: 6
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: 'Find common and Ari-only stops with set operations.'
+summary: 'Find common and Adi-only stops with set operations.'
 seo_title: 'Exercise: Compare Atlas Routes | Python Basics'
-seo_description: 'Find common and Ari-only stops with set operations.'
+seo_description: 'Find common and Adi-only stops with set operations.'
 seo_keywords:
 - python sets
 - beginner sets exercise
 ---
 
-Ari and a scout explored overlapping routes. Convert Ari’s list to a set to remove repeats. Convert the scout’s list too before using `&` to find shared stops or `-` to keep only Ari’s. Sort the printed sets to make the checkpoint predictable.
+Adi and a scout explored overlapping routes. Convert Adi’s list to a set to remove repeats. Convert the scout’s list too before using `&` to find shared stops or `-` to keep only Adi’s. Sort the printed sets to make the checkpoint predictable.
 
 Edit `main.py`, **Run** to inspect the three groups, then **Submit**.
 
