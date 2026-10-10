@@ -16,10 +16,14 @@ seo_keywords:
   - import and convert
 ---
 
-The Pocket Observatory toolkit needs one more small adjustment. `np.array(values)` makes a new `ndarray`; the original list remains a list. Edit the last scoreboard entry in `main.py` to see the array change.
+The arcade scoreboard has three scores. The line `np.array([4, 6, 9])` starts with a Python list and creates a NumPy array containing those values.
 
-The editable `main.py` is a worked example in a different setting. Edit it, press **Run** to inspect the changed output, then **Submit** to check your change.
+The list goes inside square brackets; the function call goes inside parentheses. Keep both pairs as you edit. `print(scores.tolist())` converts the array back to a list just for display.
+
+Run the starter in `main.py`. It prints `[4, 6, 9]`.
 
 ## Your Task
 
-1. Change the last arcade score from 9 to 12 in the array.
+1. Change the last score from `9` to `12` inside `np.array(...)`.
+
+Leave the first two scores unchanged. Run again to see `[4, 6, 12]`, then Submit. The next exercise will accept a supplied list rather than use a fixed scoreboard.

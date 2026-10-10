@@ -2,10 +2,10 @@
   <title id="title">Two rows, three columns: shape (2, 3)</title>
   <desc id="desc">A two-by-three grid of six readings. Row indices are zero and one; column indices are zero, one, and two. Brackets show the counts of two rows and three columns, while shape (2, 3) sits below.</desc>
   <rect width="740" height="390" rx="22" fill="#fcfaf3"/>
-  <text x="36" y="48" font-family="Comic Sans MS, cursive" font-size="26" font-weight="bold" fill="#26384a">Sky grid, seen from above</text>
-  <text x="252" y="92" font-family="Comic Sans MS, cursive" font-size="19" fill="#26384a">column 0</text>
-  <text x="385" y="92" font-family="Comic Sans MS, cursive" font-size="19" fill="#26384a">column 1</text>
-  <text x="518" y="92" font-family="Comic Sans MS, cursive" font-size="19" fill="#26384a">column 2</text>
+  <text x="370" y="48" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="26" font-weight="bold" fill="#26384a">Sky grid, seen from above</text>
+  <text x="295" y="92" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="19" fill="#26384a">column 0</text>
+  <text x="428" y="92" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="19" fill="#26384a">column 1</text>
+  <text x="561" y="92" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="19" fill="#26384a">column 2</text>
   <text x="54" y="161" font-family="Comic Sans MS, cursive" font-size="21" fill="#26384a">row 0</text>
   <text x="54" y="259" font-family="Comic Sans MS, cursive" font-size="21" fill="#26384a">row 1</text>
   <g stroke="#36506b" stroke-width="3" stroke-linejoin="round" fill="#b8dfef">

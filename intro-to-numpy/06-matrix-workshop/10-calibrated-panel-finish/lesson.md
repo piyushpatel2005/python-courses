@@ -5,18 +5,22 @@ order: 10
 language: python
 lesson_type: coding
 pyodide_packages: [numpy]
-summary: "Project: report calibrated peaks with NumPy arrays."
+summary: 'Continue the panel project with a maximum reading for each derived channel.'
 seo_title: "Project: report calibrated peaks | Intro to NumPy"
-seo_description: "Practice project: report calibrated peaks in a runnable NumPy lesson."
+seo_description: 'Continue the panel project with a maximum reading for each derived channel.'
 seo_keywords: [numpy, arrays, matrices]
 hints:
-  - Read the shape of the input and the requested result before choosing an axis.
+  - calibrated_channels puts channels in rows, so axis=1 reduces across nights.
 ---
 
-Continue the calibrated panel from the previous lesson: its finished `calibrated_channels` function and sample grid are already in the starter. Add a peak reading for each derived channel. Before transposing, the transformed output has nights in rows; reduce down the night axis (`axis=0`) to retain one maximum per channel.
+Keep the same panel and calibration from the previous lesson. Both finished helpers are already in `main.py`, and the first print shows the calibrated channel rows.
 
-Type the technique in `main.py`, press Run to inspect the result, then Submit.
+Add one peak reading for each channel. Call `calibrated_channels` to get the channel-by-night array, then use `np.max(..., axis=1)` to reduce across the nights. This leaves one maximum for each channel row. If you worked with the untransposed matrix product instead, the night axis would be `axis=0`.
+
+Run the starter to see the existing channel table. Fill in `channel_peaks`, Run again to see the peaks beside it, then Submit.
 
 ## Your Task
 
-1. Implement `channel_peaks(grid, calibration)` using matrix multiplication followed by a column-wise maximum.
+1. Implement `channel_peaks(grid, calibration)` to return the maximum across each row of the calibrated channel table.
+
+The panel now has a calibration table and a peak summary. Next, you will change how a flat packet is arranged without changing its readings.

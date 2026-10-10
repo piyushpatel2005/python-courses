@@ -17,12 +17,16 @@ seo_keywords:
   - exercise dtypes and astype
 ---
 
-The station needs three views of the same readings: on/off flags, text labels, and complex values. Convert one numeric array with `astype(bool)`, `astype(str)`, and `astype(complex)`; each call returns a new array. Their `dtype.kind` values are `b`, `U`, and `c` respectively.
+The same readings can be useful as on/off flags, text labels, or complex values. Each conversion makes a separate array; changing it will not change the original readings.
 
-The starter's `typed_feeds` returns `None`. Edit `main.py`, press **Run** to inspect the three arrays, then **Submit** to check other readings.
+The starter creates `values` from the supplied readings and returns three unfinished slots. Use `values.astype(...)` for each conversion. Boolean conversion maps zero to `False` and every nonzero value to `True`; conversion to complex adds an imaginary part of zero.
 
 ## Your Tasks
 
-1. Make `typed_feeds(readings)` first create a NumPy array, then return its Boolean, string, and complex conversions in that order using `astype`.
+1. Set `flags` to the Boolean conversion of `values`.
+2. Set `labels` to the string conversion of `values`.
+3. Set `complex_values` to the complex conversion of `values`.
 
-The toolkit can now build grids, replay test observations, and label their values. Take the module quiz to check which constructor fits a new feed.
+Edit `main.py`, press **Run** to inspect the arrays, then **Submit** to check each conversion on other readings.
+
+You can now generate arrays and choose their element types. After the quiz, you will select individual readings and smaller regions from these arrays.

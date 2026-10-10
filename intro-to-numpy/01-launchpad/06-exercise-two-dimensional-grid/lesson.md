@@ -17,10 +17,14 @@ seo_keywords:
   - exercise two dimensional grid
 ---
 
-The station sends nested rows instead of the sound board's fixed grid. Convert any rectangular set of rows to an array: the result's shape should be `(rows, columns)`.
+The station now sends several rows at once. Each row contains the same number of readings, but different stations can have different grid sizes.
 
-The starter's `station_grid` returns `None`. Edit `main.py`, press **Run** to see a grid instead of `None`, then **Submit** to check other row sizes.
+Use the incoming `rows` value rather than rebuilding the sample grid. NumPy will preserve the nesting when it creates the array.
 
 ## Your Tasks
 
-1. Make `station_grid(rows)` convert nested station rows into a NumPy array.
+1. Make `station_grid(rows)` return a NumPy array of the supplied nested rows.
+
+Replace `return None` in `main.py`, then Run. The sample should display two rows: `5 6` and `7 8`. Submit also checks a wider grid.
+
+For this exercise, the input is already rectangular. You don't need to add checks for uneven row lengths.

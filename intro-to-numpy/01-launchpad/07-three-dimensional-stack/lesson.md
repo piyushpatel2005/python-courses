@@ -16,10 +16,16 @@ seo_keywords:
   - three dimensional stack
 ---
 
-The scoreboard now stores snapshots over time. An outer list groups frames; each frame contains rows; each row contains columns. For two frames of one row and two columns, `shape` is `(2, 1, 2)`.
+A scoreboard can keep a snapshot of its grid at each moment. One snapshot is a **frame**. A list of equally shaped frames creates a three-dimensional array.
 
-Edit the array literal in `main.py`, press **Run** to see the frame count change from 2 to 3, then **Submit**.
+Read the nesting from the outside in: **frames → rows → values in each row**. The starter has two frames, each with two rows and two columns, so its shape is `(2, 2, 2)`.
+
+![Two numbered frames, each containing a two-by-two grid; the shape counts frames, rows, and columns in that order](frame-row-column-stack.svg)
+
+A third dimension doesn't have to mean physical depth. Here it records which moment the frame came from.
 
 ## Your Task
 
-1. Add the scoreboard frame `[[9, 8], [7, 6]]` as a third nested list inside `np.array`.
+1. Add `[[9, 8], [7, 6]]` as the third frame in `frames`.
+
+Keep the first two frames and place the new frame at the same nesting level. Run `main.py` to see `(3, 2, 2)`: the frame count changes, while the row and column counts stay the same. Submit to check the stack.

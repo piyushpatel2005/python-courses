@@ -15,15 +15,17 @@ seo_keywords:
   - array shape
   - read a tiny csv
 hints:
-  - Read the shape of each intermediate array before editing another line.
+  - Match delimiter to the commas in csv_text; keep dtype=int for these whole numbers.
 ---
 
 # Read a tiny CSV
 
-An incoming sample arrives as CSV text: each line is a row and each comma separates columns. `np.genfromtxt` reads a file-like object with a delimiter; `StringIO` gives us that object **in memory**. No external URL or persistent browser file is needed. `dtype=int` keeps these whole-number readings numeric; without a deliberate dtype, parsing may produce a different numeric type.
+A small sensor packet arrives as CSV text. Each line is a row, and each comma separates two readings. `np.genfromtxt` can read this text through a file-like object. `StringIO(csv_text)` supplies that object in memory, so you do not need a file on disk or an external URL.
 
-Run the starter first: the mismatched semicolon delimiter treats each comma-separated line as an invalid integer, producing `-1` placeholders instead of two columns. In `main.py`, change **only** `delimiter=";"` to `delimiter=","`. Run again to see the two-column grid, then Submit.
+The `delimiter` argument tells NumPy where one field ends and the next begins. `dtype=int` asks for whole-number readings; the default would be floating point. These examples contain only numeric rows, with no header or missing fields.
+
+Run `main.py` before editing it. The incorrect semicolon delimiter makes each comma-separated line an invalid integer field, so the starter shows `-1` placeholders instead of two columns. Change the delimiter, Run again, and compare the shape and values. Submit when you can see the two-by-two grid.
 
 ## Your Tasks
 
-1. Use a comma delimiter so `np.genfromtxt` reads the two-column CSV.
+1. Set the `np.genfromtxt` delimiter to a comma so `readings` contains the two-column CSV data.

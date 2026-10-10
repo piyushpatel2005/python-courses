@@ -6,25 +6,24 @@ language: python
 lesson_type: coding
 pyodide_packages:
   - numpy
-summary: An observation tool reports a periodic signal and the log of strictly positive
-  intensities.
+summary: "Calculate sine values and natural logarithms as separate report results."
 seo_title: 'Exercise: transform a light curve | NumPy'
-seo_description: An observation tool reports a periodic signal and the log of strictly
-  positive intensities. Practice NumPy in the browser.
+seo_description: "Calculate sine values and natural logarithms as separate report results."
 seo_keywords:
   - NumPy
   - Python
   - numpy functions
 hints:
-  - Use NumPy functions directly on whole arrays; angles are in radians.
+  - 'Replace each named placeholder without changing the supplied tuple return.'
 ---
 
-An observation tool reports a periodic signal and the log of strictly positive intensities.
+A light-curve report needs two separate transformations: sine values for its angles and natural logarithms for its positive intensities.
 
-Use the preceding editable example as a pattern, but solve this new data task in `main.py`.
+The starter already returns a tuple in the right order. Replace one `None` at a time; leave the return line in place.
 
 ## Your Tasks
 
-1. Return a tuple of `np.sin(angles)` and `np.log(intensities)`; all given intensities are positive.
+1. Set `sine_values` to `np.sin(angles)` inside `transform`.
+2. Set `log_values` to `np.log(intensities)` inside `transform`.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check each task.
+Run `main.py` after each change. The sample eventually prints sine values near `[0.5 -1.]` and logarithms `[2. 3.]`. Submit to check each transformation.

@@ -7,24 +7,26 @@ lesson_type: coding
 runtime: pyodide
 pyodide_packages:
   - numpy
-summary: Add singleton axes without duplicating data.
+summary: Prepare row and column inputs by adding an axis of length one.
 seo_title: 'Exercise: align calibration | Intro to NumPy'
-seo_description: Add singleton axes without duplicating data.
+seo_description: Prepare row and column inputs by adding an axis of length one.
 seo_keywords:
   - numpy
   - array shape
   - exercise align calibration
 hints:
-  - Read the shape of each intermediate array before editing another line.
+  - Check that the inserted dimension is 1, while the other dimension keeps the input length.
 ---
 
 # Exercise: align calibration
 
-A separate sensor has four offsets. The comparison routine expects a column for row offsets and a row for time offsets. `np.newaxis` inserts an axis of length one; it does not repeat the underlying readings. These shapes let NumPy broadcast the two arrays against each other.
+A second sensor has four row offsets, while a timer supplies three time offsets. Prepare the shapes separately before combining them: row offsets need a column, and time offsets need a row.
 
-Edit `main.py`, Run to inspect both shapes, then Submit.
+Use `np.newaxis` rather than duplicating the readings. The sample shapes should be `(4, 1)` and `(1, 3)`. These shapes can broadcast together to make a four-by-three comparison, but this exercise only asks you to prepare the two inputs.
+
+Edit the helpers in `main.py`. Run after each change to check its printed shape, then Submit. The checks also try shorter arrays.
 
 ## Your Tasks
 
-1. Return `offsets[:, np.newaxis]` from `as_column(offsets)`.
-2. Return `ticks[np.newaxis, :]` from `as_row(ticks)`.
+1. Implement `as_column(offsets)` with `np.newaxis` to return a column containing the offsets.
+2. Implement `as_row(ticks)` with `np.newaxis` to return one row containing the ticks.

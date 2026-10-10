@@ -15,16 +15,18 @@ seo_keywords:
   - array shape
   - exercise audit a view
 hints:
-  - Read the shape of each intermediate array before editing another line.
+  - Compare grid with each flattened scan, not just with the transpose.
 ---
 
 # Exercise: audit a view
 
-The camera grid needs two scan orders. `grid.ravel()` follows the rows, while `grid.T.ravel()` follows the columns. Neither order by itself proves that storage is shared. Test each produced array with `np.shares_memory` rather than assuming a transpose or reshape always copies or always shares.
+The camera offers two ways to scan a frame. `grid.ravel()` follows the rows. `grid.T.ravel()` first exchanges rows and columns, so its flat result follows the original columns. For the supplied camera, the column scan begins `2, 1, 5, 4`.
 
-In `main.py`, Run to compare orders and flags; Submit to check your functions with other rectangular grids.
+The order tells you which reading comes next; it does not tell you whether the result shares storage. Flattening a transposed grid can require a copy. Check each final scan against `grid` with `np.shares_memory` instead of deciding from its shape.
+
+In `main.py`, the two scan arrays are already prepared inside `audit_scans`. Return their measured sharing flags in row-scan, column-scan order. Run to compare the values and flags, then Submit. A test uses a transposed input too, so fixed flags will not work.
 
 ## Your Tasks
 
-1. Return the readings in column-first order with `column_scan(grid)`.
-2. Return a pair of actual sharing flags `(row_shared, column_shared)` from `audit_scans(grid)` for `grid.ravel()` and `grid.T.ravel()`.
+1. Implement `column_scan(grid)` to return a flat array in column-first order.
+2. Implement `audit_scans(grid)` to return the actual pair `(row_shared, column_shared)` for the two supplied scans.

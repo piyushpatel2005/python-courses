@@ -1,12 +1,16 @@
 import numpy as np
 
+def transform_panel(grid, calibration):
+    """Return 2D matrix multiplication."""
+    return grid @ calibration
+
 def calibrated_channels(grid, calibration):
     """Return calibrated measurements with channels in rows."""
-    return (grid @ calibration).T
+    return transform_panel(grid, calibration).T
 
 def channel_peaks(grid, calibration):
     """Return maximum calibrated reading for each output channel."""
-    return np.max(grid @ calibration, axis=0)
+    return np.max(calibrated_channels(grid, calibration), axis=1)
 
 panel = np.array([[2, 4], [5, 1]])
 calibration = np.array([[1, 2, 0], [0, 1, 3]])

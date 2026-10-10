@@ -8,19 +8,20 @@ pyodide_packages:
   - numpy
 summary: '`a[start:stop:step]` includes `start` and excludes `stop`.'
 seo_title: Cut a stepped window | NumPy
-seo_description: '`a[start:stop:step]` includes `start` and excludes `stop`. Practice
-  NumPy in the browser.'
+seo_description: Trace a stepped slice through indexed cells and replace only the selected readings.
 seo_keywords:
   - NumPy
   - Python
   - stepped slices
 hints:
-  - The stop `-1` excludes the final item; step `2` skips one item each time.
+  - Keep the slice `1:6:2`; change only the value after `=`.
 ---
 
 A meter records regular samples, but you only need every other one.
 
-`a[start:stop:step]` includes `start` and excludes `stop`. Assigning through a slice changes the original array; NumPy can fill several slots with one scalar.
+`a[start:stop:step]` includes `start` and excludes `stop`. In `pulses[1:6:2]`, start at index `1`, advance by `2`, and stop before `6`: you select indices `1`, `3`, and `5`. A slice leaves out any positions outside the array.
+
+On the left of `=`, the slice chooses which original slots to change. One scalar value fills all those slots. The starter prints `window` before that assignment, so its first output shows the original selected values. A NumPy slice shares storage with its source; `window` itself also changes after the assignment. The views lesson will make that sharing visible.
 
 ![Stepped slice selects alternating indexed cells in a NumPy array](array-slice-window.svg)
 

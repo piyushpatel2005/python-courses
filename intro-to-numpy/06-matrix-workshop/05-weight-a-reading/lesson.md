@@ -5,18 +5,20 @@ order: 5
 language: python
 lesson_type: coding
 pyodide_packages: [numpy]
-summary: "Weight a reading with NumPy arrays."
+summary: 'Combine paired readings and weights into one total with np.dot.'
 seo_title: "Weight a reading | Intro to NumPy"
-seo_description: "Practice weight a reading in a runnable NumPy lesson."
+seo_description: 'Combine paired readings and weights into one total with np.dot.'
 seo_keywords: [numpy, arrays, matrices]
 hints:
-  - Read the shape of the input and the requested result before choosing an axis.
+  - Replace the whole expression readings * weights with a call to np.dot.
 ---
 
-A 1D dot product pairs readings and calibration weights, multiplies each pair, and sums. Unlike `*`, it returns one combined value. For these readings, the dot product is `2×3 + 4×1 + 6×2 = 22`. Elementwise `*` produces `[6, 4, 12]` instead.
+Some instruments contribute more to a combined reading than others. A weight tells us how much each reading contributes. A 1D dot product multiplies corresponding readings and weights, then adds those products into one number. The two input arrays must have the same length.
 
-Run `main.py` first, make the small edit, then Submit.
+For the starter data, `2×3 + 4×1 + 6×2` gives `22`. By comparison, `readings * weights` stops at the separate products `[6 4 12]`. Use `np.dot(readings, weights)` when you want their combined total.
+
+Run the starter to see those separate products. Edit `main.py`, Run again to see one number, then Submit.
 
 ## Your Task
 
-1. Change `*` to `np.dot(readings, weights)` to print the single weighted total 22.
+1. Set `weighted` to `np.dot(readings, weights)` to compute the single weighted total.

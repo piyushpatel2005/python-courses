@@ -15,15 +15,17 @@ seo_keywords:
   - array shape
   - trace shared readings
 hints:
-  - Read the shape of each intermediate array before editing another line.
+  - Check the actual raw and card arrays with the supplied shares_memory call.
 ---
 
 # Trace shared readings
 
-The observatory keeps a raw sensor strip and a display card. A reshape **may** be a view, but sometimes it requires a copy, especially after changing traversal order. Do not assume either outcome: `np.shares_memory(a, b)` checks the actual arrays. `grid.T.ravel()` reads down the original columns and can require its own storage.
+A new shape does not necessarily mean new storage. The observatory can keep a raw strip and a reshaped display card that both refer to the same readings. When two arrays share data, changing a shared reading through one array can affect the other.
 
-This contiguous strip is a known shared-memory example. In `main.py`, change the **one** reshape argument from `(2, 3)` to `(3, 2)`. Run and look at the shape and sharing flag, then Submit. The true flag here is an observation, not a guarantee for all reshapes.
+A reshape returns a view when the layout allows it, but sometimes it needs a copy. `np.shares_memory(a, b)` checks whether these two arrays actually overlap in memory. To make an independent backup deliberately, use `.copy()`, as you did when working with slices.
+
+The starter's consecutive values form a simple shared-storage example. Change the card shape in `main.py` and Run. The shape should change while the sharing flag stays `True`. That result describes this pair of arrays, not every possible reshape.
 
 ## Your Tasks
 
-1. Change the card shape to `(3, 2)`. The supplied `np.shares_memory` check will show whether this particular card shares storage.
+1. Reshape `raw` into a `(3, 2)` card. Leave the supplied sharing check in place to inspect the result, then Submit.

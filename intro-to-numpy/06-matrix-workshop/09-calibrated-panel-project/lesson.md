@@ -5,18 +5,20 @@ order: 9
 language: python
 lesson_type: coding
 pyodide_packages: [numpy]
-summary: "Project: calibrate the panel with NumPy arrays."
+summary: 'Build on the matrix-product helper to display one calibrated channel per row.'
 seo_title: "Project: calibrate the panel | Intro to NumPy"
-seo_description: "Practice project: calibrate the panel in a runnable NumPy lesson."
+seo_description: 'Build on the matrix-product helper to display one calibrated channel per row.'
 seo_keywords: [numpy, arrays, matrices]
 hints:
-  - Read the shape of the input and the requested result before choosing an axis.
+  - Call the supplied transform_panel helper, then transpose its result.
 ---
 
-Apply a shared calibration matrix to every night’s sensor readings. Then put derived channels in rows for a technician who scans one channel at a time. 
+The Pocket Observatory needs a calibrated panel that a technician can scan one channel at a time. The starter carries forward the finished `transform_panel` function from the previous exercise. A new sample has two sensor channels and a calibration that produces three derived channels.
 
-Type the technique in `main.py`, press Run to inspect the result, then Submit.
+The supplied helper already returns nights in rows and derived channels in columns. Your change is to turn that result so each channel has its own row. For this sample, shape `(2, 3)` becomes `(3, 2)`.
+
+Edit `calibrated_channels` in `main.py`. Run to inspect the channel rows, then Submit. Leave the supplied helper in place; the next lesson will build on both functions.
 
 ## Your Task
 
-1. Implement `calibrated_channels(grid, calibration)` by matrix-multiplying, then transposing the result.
+1. Implement `calibrated_channels(grid, calibration)` by transposing the result of the supplied `transform_panel` helper.

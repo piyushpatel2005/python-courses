@@ -5,18 +5,20 @@ order: 5
 language: python
 lesson_type: coding
 pyodide_packages: [numpy]
-summary: "Keep a running tally with NumPy arrays."
+summary: "Keep the cumulative sighting count after each interval."
 seo_title: "Keep a running tally | Intro to NumPy"
-seo_description: "Practice keep a running tally in a runnable NumPy lesson."
+seo_description: "Keep the cumulative sighting count after each interval."
 seo_keywords: [numpy, arrays, statistics]
 hints:
-  - Read the shape of the input and the requested result before choosing an axis.
+  - '`cumsum` keeps intermediate totals instead of only the last one.'
 ---
 
-The telescope counts sightings in successive intervals. `cumsum` keeps every intermediate total instead of only the final sum. 
+The telescope counts sightings in successive intervals. A sum tells you the final count; `np.cumsum` keeps the count after each interval.
 
-Run `main.py` first, make the small edit, then Submit.
+For `[3, 1, 4, 2]`, the running totals are `3`, `3 + 1`, `3 + 1 + 4`, and `3 + 1 + 4 + 2`. This 1D cumulative result has the same length as its input, unlike a single total.
 
 ## Your Task
 
-1. Replace `np.sum` with `np.cumsum` to show `[3 4 8 10]`.
+1. Replace `np.sum` with `np.cumsum` in `running`.
+
+Run `main.py` to see `[3 4 8 10]`, then Submit.

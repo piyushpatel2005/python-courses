@@ -16,10 +16,12 @@ seo_keywords:
   - zeros and ones
 ---
 
-An arcade panel needs blank cells and lit cells. `np.zeros((rows, columns))` fills a grid with zeros; `np.ones((rows, columns))` fills one with ones. These constructors default to floating-point values; you can choose a dtype explicitly later.
+An arcade panel needs blank cells and lit cells. `np.zeros((rows, columns))` fills a grid with zeros; `np.ones((rows, columns))` fills one with ones. The inner parentheses hold the shape tuple `(rows, columns)`; the outer parentheses call the function. These constructors default to floating-point values; for whole-number cells, you can pass `dtype=int`. The later dtype lesson explains conversions.
+
+The supplied `on.sum()` adds the lit cells, and `int(...)` prints that total as a whole number. You will use sums yourself in the statistics module.
 
 Edit `main.py`, press **Run** to see the blank panel grow from `(2, 4)` to `(3, 4)` while the lit panel stays at eight cells, then **Submit**.
 
 ## Your Task
 
-1. Make the blank arcade panel 3 rows by 4 columns; leave the active panel alone.
+1. Set the shape in `blank` to `(3, 4)`.

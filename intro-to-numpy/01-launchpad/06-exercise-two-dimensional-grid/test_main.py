@@ -1,8 +1,11 @@
-from solution import *
+from solution import station_grid
 import numpy as np
 
+
 def test_station_grid():
-    """Nested rows become a two-dimensional grid"""
-    grid = station_grid([[5, 6], [7, 8]])
-    assert isinstance(grid, np.ndarray) and grid.shape == (2, 2)
-    assert station_grid([[1, 2, 3], [4, 5, 6]]).tolist() == [[1, 2, 3], [4, 5, 6]]
+    """Convert rectangular rows without changing their layout"""
+    for rows in ([[5, 6], [7, 8]], [[1, 2, 3], [4, 5, 6]]):
+        grid = station_grid(rows)
+        assert isinstance(grid, np.ndarray), "Return the NumPy array you create from rows."
+        assert grid.shape == (len(rows), len(rows[0])), "Preserve the incoming row and column counts."
+        assert grid.tolist() == rows, "Use the supplied rows so the readings stay unchanged."

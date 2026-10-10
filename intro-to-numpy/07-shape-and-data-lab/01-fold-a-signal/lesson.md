@@ -15,17 +15,21 @@ seo_keywords:
   - array shape
   - fold a signal
 hints:
-  - Read the shape of each intermediate array before editing another line.
+  - The two dimensions must multiply to signal.size; three rows need two columns here.
 ---
 
 # Fold a signal
 
-The Pocket Observatory receives six light readings in a single strip. The starter folds them into two rows; you will change it to three rows. `reshape` changes the dimensions, not the number of readings: the product of the dimensions must equal `size`. `ravel()` reads the rows back into a flat sequence in row-major order by default.
+The previous panel already had rows and columns. This time, the Pocket Observatory receives six light readings in one flat strip. Arrange those readings into a card without adding or removing any.
 
-![A six-reading strip folds into a two-by-three grid, then unrolls into a six-reading strip](signal-shape-fold.svg)
+`reshape` changes the dimensions while keeping the reading order. The starter's `signal.reshape(2, 3)` fills two rows of three, left to right. The product of the requested dimensions must equal `signal.size`; six values cannot fill a `(4, 2)` card.
 
-Edit the **one** shape argument in `main.py` from `(2, 3)` to `(3, 2)`. Press Run: the displayed shape should become `(3, 2)` and its size stay 6. Then Submit. A `(4, 2)` shape would fail because eight slots cannot hold six values.
+![Six readings fold into two rows of three, then ravel returns them to the original flat order](signal-shape-fold.svg)
+
+The supplied `ravel()` call reads the card back into one dimension. Its default row-major order means it finishes one row before starting the next. Unlike transpose, reshape does not exchange the roles of existing rows and columns.
+
+Edit the dimensions in `main.py`, then Run. Check that the card has three rows, its size is still 6, and the unrolled readings have not changed. Submit after that comparison.
 
 ## Your Tasks
 
-1. Change the `reshape` dimensions to `(3, 2)`; keep all six readings.
+1. Change the `card` reshape dimensions to `(3, 2)`, keeping all six readings in their original order.

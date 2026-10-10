@@ -16,14 +16,21 @@ seo_keywords:
   - two dimensional grid
 ---
 
-The sound board records levels in rows. Each inner list is one row; for a rectangular grid, `shape` reports `(rows, columns)`. The diagram below shows which direction each count describes.
+A sound board has rows of readings. To make a two-dimensional array, put one list per row inside an outer list:
 
-In `main.py`, add one row to the arcade sound board. Press **Run** and watch its shape change from `(2, 2)` to `(3, 2)`, then **Submit**.
+```python
+[[1, 2],
+ [4, 5]]
+```
 
-Here is a separate example: two rows of three readings have shape `(2, 3)`. The diagram labels **indices** starting at 0, but `shape` reports the **counts** of rows and columns.
+Every row in this rectangular grid needs the same number of values. In `main.py`, `np.array(...)` converts those nested lists into an array. Its `shape` is `(2, 2)`: two rows, each with two columns.
 
-![Two rows and three columns in a grid, with shape (2, 3)](array-rows-columns-shape.svg)
+The separate sky-grid example below has two rows and three columns. Notice the difference between an **index**, which starts at zero, and a **count**, which tells you how many items there are.
+
+![A grid with row indexes 0 and 1, column indexes 0 through 2, and shape (2, 3)](array-rows-columns-shape.svg)
 
 ## Your Task
 
-1. Add `[7, 8]` as the sound board’s third row.
+1. Add `[7, 8]` as the sound board's third row inside `np.array(...)`.
+
+Keep the existing two rows. Run `main.py`: the shape should change from `(2, 2)` to `(3, 2)`. You added a row, but each row still has two columns. Submit to check the grid.

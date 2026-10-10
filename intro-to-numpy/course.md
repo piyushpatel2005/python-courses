@@ -36,14 +36,34 @@ modules:
 
 # Pocket Observatory
 
-A pocket observatory collects tiny streams of readings: sky-brightness grids, sound levels, calibration weights, and event counts. Your job is to make the readings useful. One mission asks you to find a signal in a matrix; another asks you to correct an entire row without a Python loop. The examples change settings so you learn the NumPy idea, not a single dataset.
+Your observatory has readings to make sense of: a grid of sky brightness, a set of sound levels, and counts collected over time. You'll use NumPy to organise those values and work on many of them at once.
 
-This course turns NumPy concepts into beginner-sized steps. You will create arrays from lists and constructors; inspect dimension, shape, size, and dtype; make reproducible random data; index, slice, mask, and distinguish views from copies; apply vectorized arithmetic and broadcasting; reduce along axes and compute statistics; sort, transpose, and multiply matrices; reshape, add axes, repeat, tile, and read small CSV fixtures. The last lab brings several of these together.
+You don't need astronomy knowledge. The examples use small datasets you can inspect by eye. Some demonstrations visit an arcade or a sound board; the following exercise uses different data so you can practise the idea rather than copy an answer.
 
-Each concept has a short working example you can edit in `main.py` and a nearby exercise where you write new code on different data. Run shows your program's output; Submit Code checks each numbered task. Interactive orientation blocks have a Run button but are not a substitute for typing in the editor. Section quizzes check understanding after the practice.
+## Before you start
 
-## Start here
+You should be comfortable with Python variables, lists, loops, functions, and indexing. We'll explain NumPy's array layouts and operations as we meet them. Nothing needs to be installed to use the course editor.
 
-You should know Python variables, lists, loops, functions, and indexing. Open a lesson, edit `main.py`, and Run your code. `import numpy as np` gives your program the NumPy tools used throughout the course.
+## How you'll practise
 
-Outputs use small, deterministic fixtures; random-number exercises use an explicit seed. Since default integer types can vary by environment, the lessons check intended values and dtype kinds rather than relying on a particular integer width. All examples use ordinary Python code you can run in the editor; notebook-only shortcuts are replaced by focused tasks.
+Most topics begin with a working `main.py` and one small change to make. The next exercise asks you to write a related operation yourself.
+
+- **Run** shows your program's output. Compare it with the checkpoint in the lesson.
+- **Submit** checks the numbered tasks. You can submit partly finished work to see which steps are working.
+- A section quiz checks the ideas you've just practised.
+
+The opening runnable examples are for reading and comparison. After those, you'll spend most of your time editing code. Projects bring several earlier skills together without requiring a new dataset or external service.
+
+## The course path
+
+1. **Launchpad:** turn lists into arrays, build grids and stacks, and read their shapes.
+2. **Array Factory:** generate sequences and starter grids, then choose suitable number types.
+3. **Find the Signal:** select readings and see when a slice shares its original data.
+4. **Tune the Signal:** apply arithmetic and corrections across arrays of compatible shapes.
+5. **Read the Patterns:** reduce rows or columns to totals and describe a set of readings.
+6. **Point the Array:** transpose grids and combine measurements with matrix operations.
+7. **Observation Lab:** rearrange shapes, read a small CSV, and put the tools together in a final project.
+
+Random examples use a seed so you can repeat an experiment. Other examples use fixed inputs. You won't need to guess which readings a task started with.
+
+Begin with **What is NumPy?** You'll compare a familiar Python loop with an array calculation that produces the same result.

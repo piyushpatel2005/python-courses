@@ -2,6 +2,9 @@ import numpy as np
 
 def typed_feeds(readings):
     values = np.array(readings)
-    return (values.astype(bool), values.astype(str), values.astype(complex))
+    flags = values.astype(bool)
+    labels = values.astype(str)
+    complex_values = values.astype(complex)
+    return flags, labels, complex_values
 
 print(typed_feeds([0, 2]))

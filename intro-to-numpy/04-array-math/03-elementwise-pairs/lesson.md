@@ -6,25 +6,23 @@ language: python
 lesson_type: coding
 pyodide_packages:
   - numpy
-summary: When arrays have the same shape, `a + b`, `a - b`, and `a * b` pair entries
-  at matching positions.
+summary: "Add arrays by pairing readings at matching positions."
 seo_title: Combine matching readings | NumPy
-seo_description: When arrays have the same shape, `a + b`, `a - b`, and `a * b` pair
-  entries at matching positions. Practice NumPy in the browser.
+seo_description: "Add arrays by pairing readings at matching positions."
 seo_keywords:
   - NumPy
   - Python
   - elementwise pairs
 hints:
-  - Do not use `sum`; subtract the arrays directly.
+  - 'Add matching positions; do not reduce the arrays to a total.'
 ---
 
-Two instruments measure at the same times.
+Two instruments measure at the same times. Instead of combining an array with one scalar, you can combine two arrays of the same shape.
 
-When arrays have the same shape, `a + b`, `a - b`, and `a * b` pair entries at matching positions. `*` is elementwise multiplication, not matrix multiplication.
+`a + b`, `a - b`, and `a * b` pair entries at matching positions. For example, the first result of `left + right` is `4 + 1`. `*` also works element by element; it is not matrix multiplication, which comes later.
 
 ## Your Task
 
-1. Change `-` to `+`; Run shows each matching pair added.
+1. Change subtraction to addition in `combined`.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check the change.
+Run `main.py` to see `[5 10 15]`, then Submit.

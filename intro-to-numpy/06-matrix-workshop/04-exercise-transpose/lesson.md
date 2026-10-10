@@ -5,18 +5,20 @@ order: 4
 language: python
 lesson_type: coding
 pyodide_packages: [numpy]
-summary: "Turn a scoreboard with NumPy arrays."
+summary: 'Return a scoreboard with rounds in rows and players in columns.'
 seo_title: "Turn a scoreboard | Intro to NumPy"
-seo_description: "Practice turn a scoreboard in a runnable NumPy lesson."
+seo_description: 'Return a scoreboard with rounds in rows and players in columns.'
 seo_keywords: [numpy, arrays, matrices]
 hints:
-  - Read the shape of the input and the requested result before choosing an axis.
+  - Transpose scores itself, not the sample array in the print call.
 ---
 
-Rows represent players; columns represent rounds. Turn the board so each row represents one round. 
+A scoreboard stores players in rows and rounds in columns. The announcer wants one row per round, with each player's score beside the others.
 
-Type the technique in `main.py`, press Run to inspect the result, then Submit.
+Use the transpose you just tried, but apply it to the `scores` parameter. The sample has two players and three rounds, so the returned board should have three rows and two columns. Its first row will be `[2 4]`.
+
+Replace the unfinished return in `main.py`. Run to inspect the whole board, then Submit to check another board too.
 
 ## Your Task
 
-1. Implement `rounds_first(scores)` by transposing the array.
+1. Implement `rounds_first(scores)` by returning the transposed array.

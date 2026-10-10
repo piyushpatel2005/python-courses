@@ -8,19 +8,20 @@ pyodide_packages:
   - numpy
 summary: A comparison such as `readings > 20` returns a boolean array.
 seo_title: Mark noisy readings | NumPy
-seo_description: A comparison such as `readings > 20` returns a boolean array. Practice
-  NumPy in the browser.
+seo_description: Turn a comparison into a Boolean mask and replace the readings it flags.
 seo_keywords:
   - NumPy
   - Python
   - boolean selection
 hints:
-  - Select with `cleaned[cleaned < threshold]` on the left side of `=`.
+  - Keep `readings[flagged]` on the left; change only its replacement value.
 ---
 
 A sensor flags any reading beyond a safe limit.
 
-A comparison such as `readings > 20` returns a boolean array. Use it inside brackets to select matching values or on the left of `=` to replace them. The mask must match the readings shape.
+A comparison such as `readings > 20` checks every value and returns a Boolean array, called a **mask**. For this example it is `[False, True, False, True]`: the `True` positions identify `24` and `31`. A reading of exactly `20` would not be flagged.
+
+For these one-dimensional readings, the mask has the same length as the array. `readings[flagged]` gathers matching values into a new array. Used directly on the left of `=`, as in the starter, it replaces those slots in `readings` itself. Saving the gathered result and editing it later would only change that separate copy.
 
 ## Your Task
 

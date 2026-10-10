@@ -5,21 +5,27 @@ order: 3
 language: python
 lesson_type: coding
 pyodide_packages: [numpy]
-summary: "Choose an axis with NumPy arrays."
+summary: "Choose which grid dimension to reduce for night or sensor totals."
 seo_title: "Choose an axis | Intro to NumPy"
-seo_description: "Practice choose an axis in a runnable NumPy lesson."
+seo_description: "Choose which grid dimension to reduce for night or sensor totals."
 seo_keywords: [numpy, arrays, statistics]
 hints:
-  - Read the shape of the input and the requested result before choosing an axis.
+  - 'For one result per night, reduce across that night’s sensor columns.'
 ---
 
-A grid has rows for nights and columns for sensors. `axis=0` collapses rows to give one total per sensor; `axis=1` collapses columns to give one total per night. Think **which axis disappears**: `axis=0` reduces the row dimension and retains columns; `axis=1` reduces columns and retains rows.
+A grid has rows for nights and columns for sensors. With no `axis` argument, `np.sum(grid)` adds every cell into one total. An axis lets you keep separate totals for one dimension.
 
-![Two nights as rows, three sensors as columns; axis 0 collapses nights into three sensor totals while axis 1 collapses sensors into two night totals](axes-rows-columns.svg)
+For shape `(2, 3)`, axis 0 is the two-row dimension and axis 1 is the three-column dimension. A reduction removes the dimension you name:
 
+- `axis=0` adds down the nights, leaving three sensor totals, shape `(3,)`.
+- `axis=1` adds across the sensors, leaving two night totals, shape `(2,)`.
 
-Run `main.py` first, make the small edit, then Submit.
+![Axis 0 gives sensor totals 6, 6, 9; axis 1 gives night totals 10, 11](axes-rows-columns.svg)
+
+Read the first night across: `2 + 5 + 3` gives 10. That is one output per row, so it is the column dimension, axis 1, that disappears.
 
 ## Your Task
 
-1. Change the axis to `1` to print `[10 11]`, one total per night.
+1. Change the axis in `night_totals` from `0` to `1`.
+
+Run `main.py` to see `[10 11]`, then Submit.

@@ -15,15 +15,32 @@ seo_keywords:
   - array shape
   - stamp a pattern
 hints:
-  - Read the shape of each intermediate array before editing another line.
+  - The repeat count controls adjacent copies of each value, not copies of the whole sequence.
 ---
 
 # Stamp a pattern
 
-The Pocket Observatory prints short exposure schedules. `np.repeat([2, 5], 2)` gives `[2, 2, 5, 5]`: each element is copied next to itself. `np.tile([2, 5], 2)` gives `[2, 5, 2, 5]`: the entire pattern is copied. Both grow the array; `np.newaxis` does not.
+An exposure schedule can hold a setting for several frames or cycle through a set of settings. Those are different orders, even when they use the same values.
 
-The starter repeats each value twice. Change **only** the count in `np.repeat` from `2` to `3`. Run to see three adjacent copies of each value; Submit to check the resulting array.
+`np.repeat([2, 5], 2)` gives `[2, 2, 5, 5]`: it repeats each value beside itself. `np.tile([2, 5], 2)` gives `[2, 5, 2, 5]`: it copies the whole pattern. Unlike `np.newaxis`, these operations increase the number of values when the repeat count is greater than one.
+
+The same idea works on a column. In `np.repeat(column, 2, axis=0)`, `axis=0` selects whole rows to repeat. Without an axis, `repeat` flattens its input first. For tiling a 2D array, a pair such as `(1, 2)` means one copy in the row direction and two copies in the column direction:
+
+```python
+import numpy as np
+
+column = np.array([[3], [8]])
+held = np.repeat(column, 2, axis=0)
+paired = np.tile(held, (1, 2))
+print(paired)
+# [[3 3]
+#  [3 3]
+#  [8 8]
+#  [8 8]]
+```
+
+For now, keep the editable example one-dimensional. In `main.py`, change the repeat count from `2` to `3`, then Run. Compare the three adjacent copies of each value with the unchanged cycling pattern. Submit to check `held`.
 
 ## Your Tasks
 
-1. Repeat each exposure value three times. The supplied tiled comparison shows how the other operation differs.
+1. Use `np.repeat` to repeat each exposure value three times in `held`.

@@ -1,6 +1,8 @@
 import numpy as np
 
 def transform(angles, intensities):
-    return np.sin(angles), np.log(intensities)
+    sine_values = np.sin(angles)
+    log_values = np.log(intensities)
+    return sine_values, log_values
 
-print(transform(np.array([0.0, np.pi / 2]), np.array([1.0, np.e])))
+print(transform(np.array([np.pi / 6, -np.pi / 2]), np.array([np.e ** 2, np.e ** 3])))

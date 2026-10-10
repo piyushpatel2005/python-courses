@@ -9,8 +9,7 @@ pyodide_packages:
 summary: A different receiver wants its last reading first, followed by its second
   reading.
 seo_title: 'Exercise: choose a signal pair | NumPy'
-seo_description: A different receiver wants its last reading first, followed by its
-  second reading. Practice NumPy in the browser.
+seo_description: Return the last and second readings from arrays of different lengths using an index list.
 seo_keywords:
   - NumPy
   - Python
@@ -21,10 +20,10 @@ hints:
 
 A different receiver wants its last reading first, followed by its second reading.
 
-Use the preceding editable example as a pattern, but solve this new data task in `main.py`.
+The `readings` argument is already a one-dimensional NumPy array with at least two items. Use `-1` for its last item even when its length changes; do not type the example values into your answer.
 
 ## Your Tasks
 
 1. Make `choose_pair(readings)` use a list of indices to return an array containing the last reading, then the second reading.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check each task.
+Edit `main.py` and press **Run** to see the requested pair. **Submit** checks that your indices also work on a longer array.

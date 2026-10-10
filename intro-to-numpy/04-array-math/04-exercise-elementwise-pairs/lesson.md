@@ -6,24 +6,21 @@ language: python
 lesson_type: coding
 pyodide_packages:
   - numpy
-summary: A pair of rooftop sensors needs a per-reading difference, not one total.
+summary: "Find one difference for each pair of sensor readings."
 seo_title: 'Exercise: find sensor agreement | NumPy'
-seo_description: A pair of rooftop sensors needs a per-reading difference, not one
-  total. Practice NumPy in the browser.
+seo_description: "Find one difference for each pair of sensor readings."
 seo_keywords:
   - NumPy
   - Python
   - elementwise pairs
 hints:
-  - Do not use `sum`; subtract the arrays directly.
+  - 'Subtract reference readings from primary readings, in that order.'
 ---
 
-A pair of rooftop sensors needs a per-reading difference, not one total.
+A pair of rooftop sensors needs one difference per reading, not a single total. The primary and reference arrays have matching shapes.
 
-Use the preceding editable example as a pattern, but solve this new data task in `main.py`.
+## Your Task
 
-## Your Tasks
+1. In `difference`, return the NumPy array `primary - reference`.
 
-1. Return `primary - reference` as a NumPy array with one difference per reading.
-
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check each task.
+Edit `main.py`, Run to check `[6 2 3]`, then Submit. A negative difference means the primary reading is lower than its reference.

@@ -6,26 +6,23 @@ language: python
 lesson_type: coding
 pyodide_packages:
   - numpy
-summary: NumPy applies arithmetic with a scalar to each element without a Python loop;
-  the original array remains unchanged when you make a new result.
+summary: "Apply one gain and offset to every reading while keeping the raw array unchanged."
 seo_title: Scale every reading | NumPy
-seo_description: NumPy applies arithmetic with a scalar to each element without a
-  Python loop; the original array remains unchanged when you make a new result. Practice
-  NumPy in the browser.
+seo_description: "Apply one gain and offset to every reading while keeping the raw array unchanged."
 seo_keywords:
   - NumPy
   - Python
   - scalar arithmetic
 hints:
-  - Apply the multiplication before the addition.
+  - 'Multiplication happens before addition in `raw * 2 + offset`.'
 ---
 
-A detector needs an offset applied to all temperature readings.
+You have selected readings with slices. Now correct a whole temperature series without changing the raw record.
 
-NumPy applies arithmetic with a scalar to each element without a Python loop; the original array remains unchanged when you make a new result.
+A **scalar** is one number. In `raw * 2 + 1`, NumPy doubles every element, then adds 1 to each result. This makes a new array, unlike editing a slice view in the previous section.
 
 ## Your Task
 
-1. Change only the offset to `4`; Run should print `[10 14 18]`.
+1. Change the offset in `corrected` from `1` to `4`.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check the change.
+Edit `main.py`, then Run: `[10 14 18]` should appear. Submit to check your change.

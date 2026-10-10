@@ -16,10 +16,14 @@ seo_keywords:
   - exercise import and convert
 ---
 
-Now apply the pattern to a fresh station feed. `np.array(values)` makes a new `ndarray`; the original list remains a list. The sample call at the bottom of `main.py` prints your function's result.
+A station sends its readings as a Python list. Write a small function that converts whichever list it receives into a NumPy array.
 
-The starter returns `None` so it runs, but Submit will fail until you complete `make_feed`. Edit `main.py`, press **Run** for a quick check, then **Submit**.
+The parameter `values` holds the incoming list. Use it in the conversion rather than writing the sample numbers inside the function. The supplied print call lets you check the result.
 
 ## Your Tasks
 
-1. Make `make_feed(values)` return a NumPy array containing the supplied list values.
+1. Make `make_feed(values)` return a NumPy array containing the supplied values.
+
+Replace `return None` in `main.py`. Run should show `[11 14 17]` instead of `None`, then Submit checks another feed too.
+
+NumPy's usual array display separates these values with spaces, not commas. That's a display difference, not a missing value. The original Python list remains a list.

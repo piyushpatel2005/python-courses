@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="390" viewBox="0 0 760 390" role="img" aria-labelledby="title desc">
+<title id="title">Rows First, Then Columns</title>
+<desc id="desc">The grid has row 0 with 8, 3, 5 and row 1 with 4, 7, 9. Column 1 contains 3 and 7. The darker outlined cell at row 1, column 1 is 7. All indices start at zero.</desc>
+<rect width="760" height="390" rx="12" fill="#fffdf6"/>
+<g font-family="Trebuchet MS, sans-serif" fill="#12233a" text-anchor="middle">
+<text x="380" y="42" font-size="25" font-weight="bold">Rows First, Then Columns</text>
+<text x="380" y="77" font-size="18">grid[row, column] — both indices start at 0</text>
+<text x="250" y="121" font-size="18">column 0</text><text x="380" y="121" font-size="18">column 1</text><text x="510" y="121" font-size="18">column 2</text>
+<text x="125" y="178" font-size="18">row 0</text><text x="125" y="264" font-size="18">row 1</text>
+</g>
+<g stroke="#36546d" stroke-width="2">
+<rect x="190" y="140" width="120" height="64" rx="7" fill="#edf1f5"/>
+<rect x="320" y="140" width="120" height="64" rx="7" fill="#c3fae8"/>
+<rect x="450" y="140" width="120" height="64" rx="7" fill="#edf1f5"/>
+<rect x="190" y="226" width="120" height="64" rx="7" fill="#edf1f5"/>
+<rect x="320" y="226" width="120" height="64" rx="7" fill="#c3fae8" stroke="#146650" stroke-width="5"/>
+<rect x="450" y="226" width="120" height="64" rx="7" fill="#edf1f5"/>
+</g>
+<g font-family="monospace" font-size="25" fill="#12233a" text-anchor="middle">
+<text x="250" y="181">8</text><text x="380" y="181">3</text><text x="510" y="181">5</text>
+<text x="250" y="267">4</text><text x="380" y="267">7</text><text x="510" y="267">9</text>
+</g>
+<g font-family="Trebuchet MS, sans-serif" fill="#12233a" text-anchor="middle" font-size="18">
+<text x="380" y="330">grid[:, 1] selects the green column: [3, 7]</text>
+<text x="380" y="362">grid[1, 1] selects the outlined cell: 7</text>
+</g></svg>

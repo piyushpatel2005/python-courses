@@ -5,17 +5,19 @@ order: 6
 language: python
 lesson_type: coding
 pyodide_packages: [numpy]
-summary: "Compute a weighted score with NumPy arrays."
+summary: 'Use a dot product to compute a weighted score for different input arrays.'
 seo_title: "Compute a weighted score | Intro to NumPy"
-seo_description: "Practice compute a weighted score in a runnable NumPy lesson."
+seo_description: 'Use a dot product to compute a weighted score for different input arrays.'
 seo_keywords: [numpy, arrays, matrices]
 hints:
-  - Read the shape of the input and the requested result before choosing an axis.
+  - np.dot takes the score array and the equally long weight array as its two arguments.
 ---
 
-An arcade blends three round scores into one ranking with a weight for each round. 
+An arcade combines round scores into one ranking. Each round has its own weight, so a high score in a heavily weighted round contributes more to the total.
 
-Type the technique in `main.py`, press Run to inspect the result, then Submit.
+The supplied arrays are one-dimensional and have matching lengths. Return their dot product as a single number, not an array of separate products. For the sample, the contributions are `5×2`, `2×3`, and `4×1`.
+
+Write the return in `main.py`. Run to see the combined score, then Submit; the checks also use a shorter pair of arrays.
 
 ## Your Task
 

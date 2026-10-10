@@ -15,16 +15,33 @@ seo_keywords:
   - array shape
   - exercise save and read csv
 hints:
-  - Read the shape of each intermediate array before editing another line.
+  - Write with np.savetxt(buffer, grid, delimiter=",", fmt="%d"); read with ndmin=2.
 ---
 
 # Exercise: save and read CSV
 
-The weather sensor has a different grid. `np.savetxt` writes rows to a file-like object, and `np.genfromtxt` reads them back. Use `StringIO` for both directions: create the buffer, write into it, then read from fresh `StringIO(text)` (or rewind it with `seek(0)`). The result is plain CSV text, not a download saved outside this lesson.
+The weather sensor needs to send a grid as text and recover it later. Write two helpers so you can check each direction on its own.
 
-Edit `main.py`, Run to inspect the text and recovered rows, then Submit. Keep `fmt="%d"` so the sample uses whole numbers.
+`StringIO()` creates an empty text buffer. `np.savetxt(buffer, values, delimiter=",", fmt="%d")` writes numeric rows into it. Here, `fmt="%d"` writes whole numbers, and `buffer.getvalue()` returns the finished string, including a newline after each row.
+
+For example, this separate one-row grid becomes the text `'8,1\n'`:
+
+```python
+from io import StringIO
+import numpy as np
+
+buffer = StringIO()
+np.savetxt(buffer, np.array([[8, 1]]), delimiter=",", fmt="%d")
+text = buffer.getvalue()
+print(repr(text))
+print(np.genfromtxt(StringIO(text), delimiter=",", dtype=int, ndmin=2))
+```
+
+When reading, `ndmin=2` keeps at least two dimensions. Without it, a one-row CSV usually becomes a one-dimensional array rather than a grid. A fresh `StringIO(text)` starts reading at the beginning; if you reuse the written buffer instead, rewind it with `buffer.seek(0)` first.
+
+The buffer is temporary practice data created by your code, not a downloaded or saved file. Edit `main.py`, Run after each helper, then Submit. The supplied `repr(text)` print makes newline characters visible.
 
 ## Your Tasks
 
-1. Return comma-separated, newline-terminated whole-number CSV text from `save_grid(grid)` using `np.savetxt` and `StringIO`.
-2. Return a two-dimensional integer array from `read_grid(text)` using `np.genfromtxt` and `StringIO` (including one-row inputs).
+1. Implement `save_grid(grid)` with `np.savetxt` and `StringIO` to return comma-separated integer CSV text ending in a newline.
+2. Implement `read_grid(text)` with `np.genfromtxt` and `StringIO` to return a two-dimensional integer array, including for one-row inputs.

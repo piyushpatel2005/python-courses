@@ -5,18 +5,21 @@ order: 11
 language: python
 lesson_type: coding
 pyodide_packages: [numpy]
-summary: "Project: read the panel with NumPy arrays."
+summary: "Build the panel report with night totals and sensor means."
 seo_title: "Project: read the panel | Intro to NumPy"
-seo_description: "Practice project: read the panel in a runnable NumPy lesson."
+seo_description: "Build the panel report with night totals and sensor means."
 seo_keywords: [numpy, arrays, statistics]
 hints:
-  - Read the shape of the input and the requested result before choosing an axis.
+  - 'Means accept an `axis` argument too; a sensor history runs down a column.'
 ---
 
-The pocket observatory has one night per row and one sensor per column. Build the first half of its report: total light per night and average reading per sensor. 
+The Pocket Observatory needs a report for a grid with one night per row and one sensor per column. Start with total light per night and average reading per sensor.
 
-Type the technique in `main.py`, press Run to inspect the result, then Submit.
+`np.mean` accepts `axis` just as `np.sum` does. Choose the dimension to collapse: totals per night need axis 1, while means per sensor need axis 0. Fill the two placeholders; the tuple and sample print are supplied.
 
-## Your Task
+## Your Tasks
 
-1. Implement `panel_basics(grid)` with row totals and column means, returning them in that order.
+1. Set `night_totals` to the sum of each row in `grid`.
+2. Set `sensor_means` to the mean of each column in `grid`.
+
+Run `main.py`: expect night totals `[12 18]` and sensor means `[6. 4.5 4.5]`. Submit, then continue with the same panel in the next lesson.

@@ -16,7 +16,7 @@ seo_keywords:
   - exercise arange and linspace
 ---
 
-The station needs two kinds of schedule: stepped sample times with an excluded stop, and evenly spaced calibration marks with included endpoints. Use the two constructors from the arcade demo on new inputs.
+The station needs two kinds of schedule: stepped sample times with an excluded stop, and evenly spaced calibration marks with included endpoints. Use the two constructors from the preceding demo on new inputs. The sample times use integer steps; calibration counts will be at least two.
 
 Both starter functions return `None`. Edit `main.py`, press **Run** to see both schedules, then **Submit** to check other starts, stops, and counts.
 

@@ -6,27 +6,24 @@ language: python
 lesson_type: coding
 pyodide_packages:
   - numpy
-summary: A sensor grid receives one baseline per row. The toolkit should also report
-  incompatible input without crashing.
+summary: "Correct each grid row and detect incompatible broadcasting shapes."
 seo_title: 'Exercise: calibrate rows and reject bad shapes | NumPy'
-seo_description: A sensor grid receives one baseline per row. The toolkit should also
-  report incompatible input without crashing. Practice NumPy in the browser.
+seo_description: "Correct each grid row and detect incompatible broadcasting shapes."
 seo_keywords:
   - NumPy
   - Python
   - column broadcast
 hints:
-  - A `(rows, 1)` column expands across columns; wrap only the attempted operation in
-    `try`.
+  - 'Keep the correction and the error check separate; only the correction adds an axis.'
 ---
 
-A sensor grid receives one baseline per row. The toolkit should also report incompatible input without crashing.
+The observatory toolkit now needs one correction per row and a small check for incompatible inputs. These are separate functions: the shape check tests the arrays it receives without reshaping them.
 
-Use the preceding editable example as a pattern, but solve this new data task in `main.py`.
+Use `baselines[:, np.newaxis]` for the correction. In the compatibility check, put only `grid + offsets` inside `try`; catch `ValueError`, then return `False` after the `except` block when addition succeeds.
 
 ## Your Tasks
 
-1. Use `[:, np.newaxis]` to subtract one entry of `baselines` from every column in its matching row.
-2. In `incompatible`, try `grid + offsets`; return `True` on `ValueError` and `False` when it succeeds.
+1. In `row_correction`, subtract `baselines[:, np.newaxis]` from `grid`.
+2. In `incompatible`, return `True` if `grid + offsets` raises `ValueError`, or `False` if it succeeds.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check each task.
+Run `main.py` after each edit, then Submit. You can now calibrate whole grids; the next section turns those grids into totals and statistics.

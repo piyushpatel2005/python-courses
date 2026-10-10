@@ -16,10 +16,21 @@ seo_keywords:
   - exercise inspect array metadata
 ---
 
-The observation labeler must work for both grids and stacks. Report `ndim` (axes), `shape` (length of each axis), `size` (all values), and `len` (first-axis length).
+Write a label for an observation without assuming its layout. The input is already a NumPy array, so you don't need to convert it again.
 
-The starter's `describe_observation` returns `None`. Edit `main.py`, press **Run** to inspect its tuple for the sample grid, then **Submit** to check a stack too.
+Return one tuple containing these four pieces of information, in order:
+
+- the number of axes;
+- the shape tuple;
+- the total number of elements;
+- the length of the first axis.
+
+Use the attributes from the previous lesson. `len(observation)` is a function call; the attributes don't need parentheses. The inputs here are arrays with at least one axis, not scalar arrays.
 
 ## Your Tasks
 
-1. Make `describe_observation(observation)` return `(ndim, shape, size, len(observation))` in that order.
+1. Complete `describe_observation(observation)` so it returns the four-part tuple described above.
+
+Run `main.py` to inspect `(2, (2, 3), 6, 2)` for the sample grid, then Submit to check other layouts.
+
+You can now create an array and describe its structure. After the quiz, you'll generate regular sequences and starter grids without typing every value by hand.

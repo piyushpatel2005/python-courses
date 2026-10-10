@@ -8,8 +8,7 @@ pyodide_packages:
   - numpy
 summary: Index `0` is the first item; negative indices count backward.
 seo_title: Pick readings by position | NumPy
-seo_description: Index `0` is the first item; negative indices count backward. Practice
-  NumPy in the browser.
+seo_description: Gather selected array positions in a chosen order, including positions counted from the end.
 seo_keywords:
   - NumPy
   - Python
@@ -20,7 +19,9 @@ hints:
 
 A receiver stores five sky brightness samples in arrival order.
 
-Index `0` is the first item; negative indices count backward. A list of indices such as `samples[[0, 2]]` gathers values in the order you request and creates a separate array.
+As with Python lists, index `0` is the first item and `-1` is the last. A single index, such as `samples[0]`, returns one value.
+
+To gather several positions, put a list inside the array brackets. In `samples[[0, 2]]`, the inner brackets form the list of positions; the outer brackets select from `samples`. This is called **fancy indexing** (or advanced indexing). It preserves your requested order and returns a separate array. You will compare that copy with a slice view later.
 
 ## Your Task
 

@@ -18,15 +18,23 @@ seo_keywords:
   - what is numpy
 ---
 
+The Pocket Observatory records measurements from small sensors. For one reading, ordinary Python arithmetic is enough. For a whole set of readings, NumPy lets you describe the calculation once and apply it to every value.
 
-The Pocket Observatory receives repeated sensor readings. NumPy stores a grid of values in an `ndarray`, so you can express the same operation across all readings without writing a Python loop. It is useful for large, consistently typed numeric data; a short mixed list or a one-off tally may be simpler as a Python list. NumPy is not automatically faster for every tiny job, and converting data has a cost.
+NumPy is a Python library. Its main container is an **array**, also called an `ndarray`. An array can hold a line of readings, a grid, or a stack of grids. We'll build those layouts one at a time.
 
-Each **Run** block stands alone. Run both and compare the output:
+Here are two ways to add a correction of `2` to three readings. Each **Run** block stands alone.
+
+First, a Python list and a loop:
 
 ```python run
 readings = [3, 5, 7]
-print([reading + 2 for reading in readings])
+corrected = []
+for reading in readings:
+    corrected.append(reading + 2)
+print(corrected)
 ```
+
+Now, a NumPy array:
 
 ```python run
 import numpy as np
@@ -34,4 +42,8 @@ readings = np.array([3, 5, 7])
 print((readings + 2).tolist())
 ```
 
-Both produce the same values. The second addition is **vectorized**: NumPy applies it element by element. `.tolist()` only makes the printed form easy to compare; the arithmetic happened on an array. You will build one yourself next.
+Both print `[5, 7, 9]`. The array calculation is **vectorized**: `+ 2` applies to each element, without a loop in your code. `.tolist()` converts the result to a Python list for display so the two outputs are easy to compare.
+
+An array is useful when you have regular numerical data and want to calculate across it. A short list of mixed items may be simpler to keep as a list. NumPy isn't automatically faster for every small job, and converting data takes work too.
+
+Next, we'll look at the import line. Then you'll edit and build arrays yourself.

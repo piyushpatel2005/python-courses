@@ -6,24 +6,23 @@ language: python
 lesson_type: coding
 pyodide_packages:
   - numpy
-summary: Another map has a per-column background level shared by all of its rows.
+summary: "Subtract per-column background levels from a horizon map."
 seo_title: 'Exercise: correct a horizon map | NumPy'
-seo_description: Another map has a per-column background level shared by all of its
-  rows. Practice NumPy in the browser.
+seo_description: "Subtract per-column background levels from a horizon map."
 seo_keywords:
   - NumPy
   - Python
   - row broadcast
 hints:
-  - The vector length must match the grid’s final dimension.
+  - 'Subtract the 1D offsets directly; NumPy reuses them on each row.'
 ---
 
-Another map has a per-column background level shared by all of its rows.
+A horizon map has a background level for each column, shared by every row. Subtract those levels to reveal the corrected readings.
 
-Use the preceding editable example as a pattern, but solve this new data task in `main.py`.
+`offsets` is a 1D array whose length matches `grid.shape[1]`. Its first value applies to the first column in every row, not to the first row alone.
 
-## Your Tasks
+## Your Task
 
-1. Return the array obtained by subtracting `offsets` from each row of `grid` using broadcasting.
+1. In `remove_background`, return `grid - offsets` using broadcasting.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check each task.
+Run `main.py` to check the rows `[10 20]` and `[12 24]`, then Submit.

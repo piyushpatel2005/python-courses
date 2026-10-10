@@ -6,26 +6,24 @@ language: python
 lesson_type: coding
 pyodide_packages:
   - numpy
-summary: A telescope must identify measurements inside caller-supplied lower and upper
-  limits.
+summary: "Build a window mask and compare it with an expected boolean array."
 seo_title: 'Exercise: flag an observation window | NumPy'
-seo_description: A telescope must identify measurements inside caller-supplied lower
-  and upper limits. Practice NumPy in the browser.
+seo_description: "Build a window mask and compare it with an expected boolean array."
 seo_keywords:
   - NumPy
   - Python
   - logical comparisons
 hints:
-  - Put each comparison in parentheses and join them with `&`.
+  - 'Build the mask first, then compare it with `expected` using `np.array_equal`.'
 ---
 
-A telescope must identify measurements inside caller-supplied lower and upper limits.
+A telescope accepts measurements inside caller-supplied limits. Keep the lower and upper endpoints: a reading exactly on either limit is still usable.
 
-Use the preceding editable example as a pattern, but solve this new data task in `main.py`.
+The first function builds a mask. The second checks that mask against an expected array; it should return one boolean, not another mask. Finish the first task before using it in the second.
 
 ## Your Tasks
 
-1. Return a boolean array selecting all readings between `low` and `high`, including both endpoints.
-2. Make `matches_window(readings, expected, low, high)` return a single boolean: whether the mask from `in_window` exactly equals the expected boolean array, including its shape.
+1. In `in_window`, return a boolean NumPy array for readings from `low` through `high`, using parenthesized comparisons joined by `&`.
+2. In `matches_window`, use `np.array_equal` to compare the `in_window` result with `expected`.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check each task.
+Run `main.py` after each edit. The completed sample prints a mask, then `True`. Submit to check the two results separately.

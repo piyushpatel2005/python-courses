@@ -16,10 +16,14 @@ seo_keywords:
   - exercise seeded random samples
 ---
 
-The station needs three synchronized sample feeds. Create **one** local generator per call; its draws form a sequence, so drawing integers, then uniform fractions, then normal noise in that order matters. `uniform(0, 1)` samples between 0 and 1; `normal(0, 1)` samples from a distribution centered on 0 with standard deviation 1.
+Build three test feeds: event counts, uniform fractions, and normally distributed noise. The starter creates one seeded generator per function call and returns a tuple with a place for each feed. Replace one `None` at a time; the print call works even while some feeds are unfinished.
 
-The starter's `simulate_feeds` returns `None`. Edit `main.py`, press **Run** to see the three arrays, then **Submit** to check replay with another seed and length.
+Use the supplied `rng` for every draw. Keep the order shown: integers, then uniform fractions, then normal noise. Creating a new generator for each line would restart the sequence and change the results.
 
 ## Your Tasks
 
-1. Make `simulate_feeds(seed, count)` create one `np.random.default_rng(seed)`, draw `integers(0, 10, size=count)`, then `uniform(0, 1, size=count)`, then `normal(0, 1, size=count)`, and return the three arrays in that order.
+1. Set `counts` to `rng.integers(0, 10, size=count)`.
+2. Set `fractions` to `rng.uniform(0, 1, size=count)`.
+3. Set `noise` to `rng.normal(0, 1, size=count)`.
+
+Edit `main.py`, press **Run** to inspect the three feeds, then **Submit** to check another seed and length. Each slot is checked separately, so you can check your progress after the first draw.

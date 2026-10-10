@@ -16,10 +16,12 @@ seo_keywords:
   - exercise three dimensional stack
 ---
 
-Sky snapshots arrive as nested lists: frames contain rows, and rows contain pixel values. Unlike the fixed scoreboard, your function must accept different numbers of frames and rows.
+The sky camera also sends frames, but its grids can have different dimensions from the scoreboard's grids. Your function should preserve the structure it receives.
 
-The starter's `sky_stack` returns `None`. Edit `main.py`, press **Run** to see the snapshot array, then **Submit** to check other grid sizes.
+Within one input stack, every frame has the same shape. The sample contains two frames of one row and two columns: `(2, 1, 2)`.
 
 ## Your Tasks
 
-1. Make `sky_stack(snapshots)` return a three-dimensional array of the supplied grids.
+1. Make `sky_stack(snapshots)` return a NumPy array of the supplied frames.
+
+Replace `return None` in `main.py`. Run to see the two frames, separated by an extra pair of brackets in the output. Submit checks their values and another stack size. No extra frame needs to be added here.

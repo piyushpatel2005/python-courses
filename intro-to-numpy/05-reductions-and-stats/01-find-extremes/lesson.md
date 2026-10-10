@@ -5,18 +5,22 @@ order: 1
 language: python
 lesson_type: coding
 pyodide_packages: [numpy]
-summary: "Find the loudest reading with NumPy arrays."
+summary: "Distinguish a maximum reading from its zero-based position."
 seo_title: "Find the loudest reading | Intro to NumPy"
-seo_description: "Practice find the loudest reading in a runnable NumPy lesson."
+seo_description: "Distinguish a maximum reading from its zero-based position."
 seo_keywords: [numpy, arrays, statistics]
 hints:
-  - Read the shape of the input and the requested result before choosing an axis.
+  - '`max` gives a reading; `argmax` gives its zero-based position.'
 ---
 
-An arcade sound meter recorded three moments. A reduction compresses the readings to one answer; `argmax` instead gives the zero-based position. `np.sum`, `np.min`, and `np.max` return values; `np.argmin` and `np.argmax` return positions. Ties choose the first position.
+You can now correct a whole array. A **reduction** goes the other way: it turns several readings into a summary value.
 
-Run `main.py` first, make the small edit, then Submit.
+An arcade sound meter recorded `[42, 68, 51]`. `np.sum(readings)` adds all three values, `np.min(readings)` finds the smallest, and `np.max(readings)` finds the largest.
+
+`np.argmin(readings)` and `np.argmax(readings)` return zero-based positions instead of values. Here the maximum is 68 at position 1. If an extreme occurs more than once, its first position wins. We use one-dimensional arrays for these position checks.
 
 ## Your Task
 
-1. Change `np.min` to `np.max` so the display shows 68.
+1. Change `np.min` to `np.max` in `loudest`.
+
+Edit `main.py`, Run to see `68`, then Submit.
