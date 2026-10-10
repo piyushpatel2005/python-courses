@@ -19,8 +19,11 @@ STALLS_CSV = (
 
 
 def read_tables(sales_text, stalls_text):
-    # Read both supplied CSV strings.
-    return pd.DataFrame(), pd.DataFrame()
+    # Task 1: Read sales.
+    sales_frame = pd.DataFrame()
+    # Task 2: Read the directory.
+    stalls_frame = pd.DataFrame()
+    return sales_frame, stalls_frame
 
 sales, stalls = read_tables(SALES_CSV, STALLS_CSV)
 print("sales rows:", len(sales), "stalls:", len(stalls))

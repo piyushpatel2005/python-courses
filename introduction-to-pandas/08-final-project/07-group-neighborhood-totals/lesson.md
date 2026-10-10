@@ -5,26 +5,29 @@ order: 7
 language: python
 lesson_type: coding
 pyodide_packages:
-- pandas
+  - pandas
 summary: Aggregate units and revenue by neighborhood in a tidy report.
 seo_title: Group neighborhood totals | Introduction to Pandas
 seo_description: Aggregate units and revenue by neighborhood in a tidy report.
 seo_keywords:
-- pandas
-- community market report
-- groupby
-- aggregate
+  - pandas
+  - community market report
+  - groupby
+  - aggregate
 hints:
-- Read the previous completed function above the new stub; Run for a checkpoint, then
-  Submit.
+  - "Use groupby(\"neighborhood\", as_index=False, dropna=False), select both amount columns, and sum."
 ---
 
 # Group neighborhood totals
 
-The joined rows are ready for a neighborhood report. `groupby("neighborhood", as_index=False)` keeps the group label as a real column, but **drops missing labels by default**. Add `dropna=False` to keep sales from unknown stalls in their own group. For example, `pd.DataFrame({"neighborhood": ["North", None], "units": [2, 3]}).groupby("neighborhood", dropna=False)["units"].sum()` includes both North's 2 units and the missing-label group's 3 units. Without `dropna=False`, those 3 units disappear from the report. Sum both `units` and `revenue`, order neighborhoods alphabetically, and put missing labels last.
+The joined rows can now become a neighborhood report. Group by `neighborhood` and sum `units` and `revenue`. `as_index=False` keeps the neighborhood label as a column, ready for export.
 
-The preceding join is present above the new stub. Edit `total_by_neighborhood`; Run to see a small report, then Submit on changing group sizes.
+A left join can leave a neighborhood missing. `groupby` drops missing group labels by default, which would hide that sale's contribution. Use `dropna=False` to keep an unknown-neighborhood group. For example, North with 2 units and a missing neighborhood with 3 units must contribute two groups, not just North's 2.
+
+Sort the report by neighborhood, with missing labels last, and reset the row index. This gives readers a predictable order without inventing a name for an unknown stall.
+
+Edit `total_by_neighborhood` in `main.py`. Run should produce North with 3 units and 7.5 revenue, then South with 4 units and 16.0 revenue. Submit also checks repeated neighborhoods and missing labels.
 
 ## Your Tasks
 
-1. Implement `total_by_neighborhood(joined)` to return a reset-index DataFrame with exactly `neighborhood`, `units`, `revenue`, summing values for each neighborhood, including missing labels, sorted by neighborhood with missing labels last.
+1. Implement `total_by_neighborhood(joined)` to return a reset-index DataFrame with `neighborhood`, `units`, and `revenue`, summed by neighborhood and sorted alphabetically with the missing-label group last.

@@ -5,19 +5,23 @@ order: 1
 language: python
 lesson_type: coding
 pyodide_packages: [pandas]
-summary: "DataFrame columns and records for a community market data desk."
+summary: "Build the same labeled table from columns and from row records."
 seo_title: "Build a market table | Pandas for beginners"
-seo_description: "DataFrame columns and records for a community market data desk."
+seo_description: "Build the same labeled table from columns and from row records."
 seo_keywords: ["pandas", "Python data analysis", "dataframe columns and records"]
 ---
-A **DataFrame** is a table with row labels and column names. One way to build it is a dictionary whose keys become columns; each list supplies a column of the same length. A list of row dictionaries also works: each dictionary supplies one record. Change the second stall count in both versions so they still represent the same table.
 
-The picture shows the starting table. Read each row across to pair a stall with its visitor count.
+A Series gave us one sequence of counts. The desk now needs stall names and visitor counts together. A **DataFrame** is a table with an index for its rows and names for its columns.
 
-![DataFrame columns and records diagram showing labeled data](dataframe-grid.svg)
+The starter builds the same table in two ways. In `stalls`, dictionary keys become column names and each list supplies a whole column. Those lists must have the same length. In `records`, each dictionary supplies one row: its keys name the columns and its values fill that row.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your work.
+![Two rows pair tea with 4 visitors and bread with 6; row labels are separate from both columns](dataframe-grid.svg)
 
-## Your Task
+The picture shows the starting values. Correct bread's count once in each input format. You can run and submit after the first correction; the second table can wait until task 2.
 
-1. Change the bread visitor count from 6 to 9 in both `stalls` and `records`.
+## Your Tasks
+
+1. Change bread's visitor count from `6` to `9` in the column-based `stalls` table.
+2. Change bread's visitor count from `6` to `9` in the row-based `records` table.
+
+Edit `main.py`, **Run**, and compare the two printed tables. Once both show bread with `9` visitors, **Submit** checks each table separately.

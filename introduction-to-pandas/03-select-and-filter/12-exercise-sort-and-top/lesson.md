@@ -1,19 +1,27 @@
 ---
-title: "Exercise: rank pickup points"
+title: 'Exercise: rank pickup points'
 slug: exercise-sort-and-top
 order: 12
 language: python
 lesson_type: coding
-pyodide_packages: [pandas]
-summary: "Sort a full table and return a requested number of largest values."
-seo_title: "Exercise: rank pickup points | Introduction to Pandas"
-seo_description: "Sort a full table and return a requested number of largest values."
-seo_keywords: [pandas, python, data selection]
+pyodide_packages:
+  - pandas
+summary: Sort a full table and return a requested number of largest values.
+seo_title: 'Exercise: rank pickup points | Introduction to Pandas'
+seo_description: Sort a full table and return a requested number of largest values.
+seo_keywords:
+  - pandas
+  - python
+  - data selection
+hints:
+  - Use descending sort_values for the full ranking and nlargest(count, "visits") for the short list.
 ---
 
-The pickup team wants an ordered list of all points and a short list for the whiteboard. Use the supplied `visits` column and preserve original row labels. The full ranking includes tied values; the short list returns exactly `count` rows (or all available rows if fewer), so a tie at the cutoff does not add extra rows. Both functions should accept other tables; `top_points` must also accept different values of `count`.
+The pickup team wants a full ranking and a short whiteboard list. Use the `visits` column for both, but keep these as separate functions so each view can be requested independently.
 
-You can now select, filter, and rank the market's records without editing the input table.
+Keep all columns and original labels, and leave the input unchanged. `count` is nonnegative. A short list may contain fewer rows only when fewer are available. At a tied cutoff, nlargest keeps the earlier tied rows by default rather than adding extra rows. The full ranking need not choose a particular order within ties.
+
+After task 1, Run should show Yard, Gate, Hall. After task 2, the second table should show Yard and Gate. The desk can now choose and rank records; the next section checks whether those records are usable.
 
 ## Your Tasks
 

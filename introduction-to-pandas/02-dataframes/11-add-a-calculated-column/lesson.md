@@ -5,15 +5,18 @@ order: 11
 language: python
 lesson_type: coding
 pyodide_packages: [pandas]
-summary: "DataFrame new columns for a community market data desk."
+summary: "Calculate a new column from two existing numeric columns."
 seo_title: "Add a calculated column | Pandas for beginners"
-seo_description: "DataFrame new columns for a community market data desk."
+seo_description: "Calculate a new column from two existing numeric columns."
 seo_keywords: ["pandas", "Python data analysis", "dataframe new columns"]
 ---
-A new column can be calculated from existing columns. Assigning `table["total"] = table["sold"] * table["price"]` multiplies each row’s values. Correct the price of the second stall and see its new total.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your work.
+The report needs a total for each stall: units sold multiplied by price. Selecting `table["sold"]` and `table["price"]` gives two Series with the same index, so multiplying them pairs values from the same rows.
+
+Assigning that result to `table["total"]` adds a new column. Unlike the previews you returned earlier, this assignment changes `table` itself. The starter already contains the calculation; you only need to correct one input price.
 
 ## Your Task
 
-1. Change the second `price` from 2 to 4 so the second `total` becomes 24.
+1. Change the second value in the `price` input list from `2` to `4`, leaving the calculated-column expression in place.
+
+Edit `main.py` and **Run**. The first total stays `15`; the second becomes `24`, because `6 * 4 = 24`. Then **Submit**.

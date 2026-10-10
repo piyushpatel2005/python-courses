@@ -5,21 +5,25 @@ order: 6
 language: python
 lesson_type: coding
 pyodide_packages:
-- pandas
-summary: The payment register covers only some reservations.
+  - pandas
+summary: "Attach payment status without dropping unmatched reservations."
 seo_title: 'Exercise: Match payments | Introduction to Pandas'
-seo_description: The payment register covers only some reservations.
+seo_description: "Attach payment status without dropping unmatched reservations."
 seo_keywords:
-- pandas
-- exercise match payments
-- community market data
+  - pandas
+  - exercise match payments
+  - community market data
+hints:
+  - 'Use a.merge(b, ...) with ticket as the key and a left merge.'
 ---
 
 # Exercise: Match payments
 
-The payment register covers only some reservations. Preserve all left-side reservations so an unpaid ticket remains visible.
+The payment register contains T4 but has no record for T5. Keep both reservations so the desk can follow up on T5. A missing payment record means the status is unknown; it is not the same as a recorded `False` value.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your change.
+Match the `ticket` column with a left merge. In the printed result, T4 has its recorded `True` status and T5 has a missing `paid` cell. The payment keys supplied here are unique.
+
+Edit `main.py`, press **Run** to inspect the result, then **Submit** to check each task.
 
 ## Your Tasks
 

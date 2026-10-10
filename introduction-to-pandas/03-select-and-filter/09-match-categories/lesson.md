@@ -1,19 +1,27 @@
 ---
-title: "Match a list of categories"
+title: Match a list of categories
 slug: match-categories
 order: 9
 language: python
 lesson_type: coding
-pyodide_packages: [pandas]
-summary: "Use isin for several allowed labels and query for a compact expression."
-seo_title: "Match a list of categories | Introduction to Pandas"
-seo_description: "Use isin for several allowed labels and query for a compact expression."
-seo_keywords: [pandas, python, data selection]
+pyodide_packages:
+  - pandas
+summary: Use isin for several allowed labels and query for a compact expression.
+seo_title: Match a list of categories | Introduction to Pandas
+seo_description: Use isin for several allowed labels and query for a compact expression.
+seo_keywords:
+  - pandas
+  - python
+  - data selection
+hints:
+  - Add the second string to the existing list passed to isin.
 ---
 
-The weekly list contains several produce categories. `.isin(["fruit", "bakery"])` builds a mask for any of those labels. For simple column names, `frame.query("category == 'fruit'")` is another readable filter; `.isin` is especially convenient when the allowed choices arrive as a variable.
+The weekly list needs both fruit and bakery stalls. Rather than writing one equality comparison for every category, use `.isin(["fruit", "bakery"])`. It produces a True/False Series for membership in that collection; `.loc` uses the Series to select rows. Matching is exact, including spelling and case.
 
-The starter's `result` keeps just fruit. Add `"bakery"` to the allowed list in that expression. The separate `fruit_only` line shows the equivalent single-category query.
+The supplied `fruit_only` line also shows `query("category == 'fruit'")`. Inside that expression, category refers to a column. You do not need to change it; the task practices isin, which works conveniently with a list of allowed names.
+
+Add bakery to the list used by `result`. Run should still print Pear alone first, followed by Pear and Loaf. Soap remains outside the selected categories.
 
 ## Your Tasks
 

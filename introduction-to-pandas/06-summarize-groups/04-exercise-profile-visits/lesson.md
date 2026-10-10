@@ -5,22 +5,27 @@ order: 4
 language: python
 lesson_type: coding
 pyodide_packages:
-- pandas
-summary: A separate log has blank type labels and unrecorded visitor counts.
+  - pandas
+summary: "Describe visitor counts and tally stall types, including missing labels."
 seo_title: 'Exercise: Profile stall visits | Introduction to Pandas'
-seo_description: A separate log has blank type labels and unrecorded visitor counts.
+seo_description: "Describe visitor counts and tally stall types, including missing labels."
 seo_keywords:
-- pandas
-- exercise profile visits
-- community market data
+  - pandas
+  - exercise profile visits
+  - community market data
+hints:
+  - 'Use describe() on visitors and value_counts(dropna=False) on type.'
 ---
 
 # Exercise: Profile stall visits
 
-A separate log has blank type labels and unrecorded visitor counts. A numeric description and a category tally answer different questions. Preserve missing category labels in the latter.
+The visit log has two gaps: an unknown visitor count for Art and an unknown type label on another row. A numeric description should ignore the missing visitor count, while the type tally should show the missing label as its own entry.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your change.
+The function returns two Series in a tuple. Fill the first slot with the description, then the second with the label counts. For the supplied data, the description has 2 known visitor counts and a mean of 14. The type tally includes all three rows.
+
+Edit `main.py`, press **Run** to inspect the result, then **Submit** to check each task.
 
 ## Your Tasks
 
-1. Complete `visit_profile(a)` to return a numeric `visitors` description and `type` frequencies including missing labels.
+1. Return the numeric visitors description in the first tuple slot.
+2. Return type frequencies, including missing labels, in the second tuple slot.

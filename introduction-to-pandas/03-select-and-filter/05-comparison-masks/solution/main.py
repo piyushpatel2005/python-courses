@@ -6,4 +6,5 @@ def select_stalls(frame):
     return mask, frame.loc[mask]
 
 mask, result = select_stalls(stock)
+print(mask)
 print(result)

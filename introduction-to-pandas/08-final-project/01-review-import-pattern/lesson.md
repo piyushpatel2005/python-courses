@@ -5,26 +5,27 @@ order: 1
 language: python
 lesson_type: coding
 pyodide_packages:
-- pandas
+  - pandas
 summary: Review in-memory CSV import before building the market report.
 seo_title: 'Warm-up: read a ticket sheet | Introduction to Pandas'
 seo_description: Review in-memory CSV import before building the market report.
 seo_keywords:
-- pandas
-- community market report
-- StringIO
-- read_csv
+  - pandas
+  - community market report
+  - StringIO
+  - read_csv
 hints:
-- Read the previous completed function above the new stub; Run for a checkpoint, then
-  Submit.
+  - "Match the separator to the comma in workshop,tickets."
 ---
 
 # Warm-up: read a ticket sheet
 
-Before the market report, rehearse the input boundary on a different table: a workshop ticket sheet. `StringIO` turns CSV text into something `pd.read_csv` can read. The header becomes column names, and tickets stay numeric.
+Before starting the market report, check the import pattern on a workshop ticket sheet. `StringIO` gives `pd.read_csv` a file-like view of the supplied text; the header names the columns, and the ticket counts become numbers.
 
-The starter uses the wrong separator. In `main.py`, change only `sep=";"` to `sep=","`. Run to see distinct `workshop` and `tickets` columns, then Submit. Next you will use the same pattern with market sales and a stall directory.
+In `main.py`, change only `sep=";"` to `sep=","` inside `read_tickets`. Run should show Pottery with 7 tickets and Printing with 4, rather than one combined column. Submit checks another sheet.
+
+This warm-up stands alone. The next lesson starts a continuing project with sales and a stall directory.
 
 ## Your Tasks
 
-1. Make `read_tickets(text)` split the two comma-separated columns for any supplied ticket sheet.
+1. Make `read_tickets(text)` return the two-column DataFrame from any supplied comma-separated ticket sheet.

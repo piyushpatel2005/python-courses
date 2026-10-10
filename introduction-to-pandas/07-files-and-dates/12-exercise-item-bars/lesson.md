@@ -5,24 +5,26 @@ order: 12
 language: python
 lesson_type: coding
 pyodide_packages:
-- pandas
+  - pandas
 summary: Group item counts and show sorted totals as readable text bars.
 seo_title: 'Exercise: chart item totals | Introduction to Pandas'
 seo_description: Group item counts and show sorted totals as readable text bars.
 seo_keywords:
-- pandas
-- text visualization
-- groupby item totals
+  - pandas
+  - text visualization
+  - groupby item totals
 hints:
-- Use the example above the task and check the printed result before submitting.
+  - "Create a grouped totals Series first, then iterate over totals.items() to format the bars."
 ---
 
 # Exercise: chart item totals
 
-The sales desk has rows rather than an already-grouped Series. Sum `units` by `item`, then format the alphabetical totals with one `#` per unit. This produces a tiny visualization that works in plain output.
+The sales desk now sends individual rows, so repeated items need to be combined before you draw their bars. The sample contains Jam twice; its two counts should become a single bar.
 
-Edit `main.py`, Run to compare item lengths, then Submit. The tests reorder rows, repeat an item, and add a new item, so compute from the supplied DataFrame.
+Group by `item`, sum `units`, and use `sort_index()` on the resulting Series to put item labels in alphabetical order. Then use the formatting pattern from the previous lesson. Inputs contain nonnegative whole-number counts without missing values; each mark still means one unit.
+
+Edit `item_bars` in `main.py`. Run should show `Jam: #####` followed by `Tea: #`. Submit changes the row order and repeats a different item. This is the last small report before you combine reading, cleaning, and reporting in the market project.
 
 ## Your Tasks
 
-1. Implement `item_bars(frame)` to return alphabetical `item: ###` lines after summing `units` for each item, using one `#` per unit.
+1. Implement `item_bars(frame)` to return alphabetical `item: ###` lines from summed `units` per item, with one `#` per unit.

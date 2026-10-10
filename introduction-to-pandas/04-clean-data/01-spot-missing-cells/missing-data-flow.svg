@@ -1,9 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 335" role="img" aria-labelledby="title desc">
-<title id="title">Missing email determines which records remain</title>
-<desc id="desc">A sign-up table, missing-cell check, and contact list appear in three panels. Ada has a missing optional note and remains; Bea has a missing required email and is removed; Cy remains.</desc>
-<rect width="850" height="335" rx="20" fill="#101c30"/>
-<text x="25" y="41" font-family="sans-serif" font-size="23" font-weight="bold" fill="#ffffff">Keep sign-ups with an email</text>
-<g font-family="sans-serif" font-size="16" font-weight="bold" fill="#bed1e5"><text x="28" y="84">SIGN-UPS</text><text x="322" y="84">EMAIL MISSING?</text><text x="599" y="84">CONTACT LIST</text></g>
-<g font-family="monospace" font-size="17" fill="#ffffff"><rect x="25" y="103" width="265" height="51" rx="8" fill="#147d70"/><text x="39" y="122">Ada  email ✓</text><text x="39" y="146">note missing</text><rect x="25" y="159" width="265" height="51" rx="8" fill="#674050"/><text x="39" y="191">Bea  email missing</text><rect x="25" y="215" width="265" height="51" rx="8" fill="#147d70"/><text x="39" y="247">Cy   email ✓</text><rect x="318" y="103" width="238" height="51" rx="8" fill="#147d70"/><text x="337" y="135">Ada  False</text><rect x="318" y="159" width="238" height="51" rx="8" fill="#674050"/><text x="337" y="191">Bea  True</text><rect x="318" y="215" width="238" height="51" rx="8" fill="#147d70"/><text x="337" y="247">Cy   False</text><rect x="589" y="103" width="232" height="51" rx="8" fill="#147d70"/><text x="609" y="135">Ada  retained</text><rect x="589" y="215" width="232" height="51" rx="8" fill="#147d70"/><text x="609" y="247">Cy   retained</text></g>
-<text x="27" y="305" font-family="sans-serif" font-size="16" fill="#bed1e5">A missing note is allowed; a missing email is not.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" role="img" aria-labelledby="title desc">
+<title id="title">Require an Email, Allow a Missing Note</title><desc id="desc">Ada has an email and missing optional note and stays. Bea has a missing email and is dropped. Cy has an email and stays. isna reports missing cells while dropna subset email selects rows.</desc>
+<rect width="900" height="380" rx="16" fill="#101c30"/>
+<text x="450.0" y="37" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#ffffff">Require an Email, Allow a Missing Note</text>
+<text x="157.33333333333334" y="83" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#bed1e5">Sign-ups</text>
+<rect x="24.0" y="105" width="266.6666666666667" height="46" rx="7" fill="#147d70"/>
+<text x="157.33333333333334" y="134" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">a: Ada / note missing</text>
+<rect x="24.0" y="160" width="266.6666666666667" height="46" rx="7" fill="#674050"/>
+<text x="157.33333333333334" y="189" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">b: Bea / email missing</text>
+<rect x="24.0" y="215" width="266.6666666666667" height="46" rx="7" fill="#147d70"/>
+<text x="157.33333333333334" y="244" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">c: Cy / both present</text>
+<text x="450.0" y="83" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#bed1e5">email.isna()</text>
+<rect x="316.6666666666667" y="105" width="266.6666666666667" height="46" rx="7" fill="#147d70"/>
+<text x="450.0" y="134" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">a: False</text>
+<rect x="316.6666666666667" y="160" width="266.6666666666667" height="46" rx="7" fill="#674050"/>
+<text x="450.0" y="189" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">b: True</text>
+<rect x="316.6666666666667" y="215" width="266.6666666666667" height="46" rx="7" fill="#147d70"/>
+<text x="450.0" y="244" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">c: False</text>
+<text x="742.6666666666667" y="83" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#bed1e5">dropna: email Required</text>
+<rect x="609.3333333333334" y="105" width="266.6666666666667" height="46" rx="7" fill="#147d70"/>
+<text x="742.6666666666667" y="134" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">a: retained</text>
+<rect x="609.3333333333334" y="160" width="266.6666666666667" height="46" rx="7" fill="#674050"/>
+<text x="742.6666666666667" y="189" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">b: dropped</text>
+<rect x="609.3333333333334" y="215" width="266.6666666666667" height="46" rx="7" fill="#147d70"/>
+<text x="742.6666666666667" y="244" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">c: retained</text>
+<text x="450.0" y="303" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#bed1e5">A True missing-email decision removes that row from the result.</text>
+<text x="450.0" y="329" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#bed1e5">The required column is email; the optional note is not checked.</text>
 </svg>

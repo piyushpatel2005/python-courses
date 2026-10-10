@@ -1,19 +1,27 @@
 ---
-title: "Turn text counts into numbers"
+title: Turn text counts into numbers
 slug: convert-text-to-numbers
 order: 7
 language: python
 lesson_type: coding
-pyodide_packages: [pandas]
-summary: "Coerce invalid numeric text and choose an explicit integer fallback."
-seo_title: "Turn text counts into numbers | Introduction to Pandas"
-seo_description: "Coerce invalid numeric text and choose an explicit integer fallback."
-seo_keywords: [pandas, python, data cleaning]
+pyodide_packages:
+  - pandas
+summary: Coerce invalid numeric text and choose an explicit integer fallback.
+seo_title: Turn text counts into numbers | Introduction to Pandas
+seo_description: Coerce invalid numeric text and choose an explicit integer fallback.
+seo_keywords:
+  - pandas
+  - python
+  - data cleaning
+hints:
+  - Change fillna(-1) to fillna(0); keep conversion before the fill.
 ---
 
-The tally sheet imported counts as text. `pd.to_numeric(..., errors="coerce")` converts valid text and turns invalid entries into missing numbers instead of raising a `ValueError`. Only after choosing what missing means here can `.fillna(0).astype(int)` produce whole-number counts. Without the fallback, an ordinary integer type cannot store missing values; the nullable `Int64` type can.
+The ticket sheet contains text: "12", "oops", and "9". Text that looks numeric still needs conversion before arithmetic. `pd.to_numeric(..., errors="coerce")` turns valid numeric text into numbers and invalid text into missing values. It does not silently turn bad text into zero.
 
-The starter's report uses `-1` for bad text. Change just that fallback to `0`.
+For this report, the desk explicitly chooses zero for missing counts. `.fillna(0)` applies that rule before `.astype(int)` stores ordinary integers. Ordinary integer columns cannot hold missing values; the nullable "Int64" dtype, used next, can. These count examples contain whole numbers, not fractions to round.
+
+Change the supplied fallback from -1 to 0. Run should print 12, 0, 9. The sequence matters: convert, choose a missing-value rule, then choose the dtype.
 
 ## Your Tasks
 

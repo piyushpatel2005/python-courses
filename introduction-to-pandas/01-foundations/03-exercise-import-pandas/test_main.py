@@ -1,7 +1,7 @@
 from solution import *
 import pandas as pd
 
-def test_01_exercise_import_pandas():
-    """Make `count_card(values)` return a pandas Series containing the supplied values in order."""
-    assert isinstance(count_card([3, 8]), pd.Series) and count_card([3, 8]).tolist() == [3, 8] and count_card([]).empty
-
+def test_01_count_card():
+    """Build a Series from the supplied list, with its default index."""
+    for values in [[3, 8], [], [12], [0, 5, 11, 2]]:
+        pd.testing.assert_series_equal(count_card(values), pd.Series(values))

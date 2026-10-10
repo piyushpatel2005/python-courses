@@ -1,7 +1,6 @@
 from solution import *
 import pandas as pd
 
-def test_01_inspect_table_labels():
-    """Replace row label `unknown` with `late` in `table`."""
-    assert table.index.tolist() == ["early", "late"] and table.columns.tolist() == ["stall", "sold"] and pd.api.types.is_integer_dtype(table["sold"])
-
+def test_01_row_labels():
+    """Change unknown to late without changing the table data."""
+    pd.testing.assert_frame_equal(table, pd.DataFrame({"stall": ["tea", "honey"], "sold": [5, 8]}, index=["early", "late"]))

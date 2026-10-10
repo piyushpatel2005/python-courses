@@ -1,19 +1,27 @@
 ---
-title: "Combine two selection rules"
+title: Combine two selection rules
 slug: combine-masks
 order: 7
 language: python
 lesson_type: coding
-pyodide_packages: [pandas]
-summary: "Use parenthesized comparisons with and/or masks."
-seo_title: "Combine two selection rules | Introduction to Pandas"
-seo_description: "Use parenthesized comparisons with and/or masks."
-seo_keywords: [pandas, python, data selection]
+pyodide_packages:
+  - pandas
+summary: Combine parenthesized comparisons with & and | masks.
+seo_title: Combine two selection rules | Introduction to Pandas
+seo_description: Combine parenthesized comparisons with & and | masks.
+seo_keywords:
+  - pandas
+  - python
+  - data selection
+hints:
+  - Keep both parenthesized comparisons and change only the operator between them.
 ---
 
-The desk checks whether a stall both has enough baskets **and** sits in the east aisle. Each comparison needs parentheses: `(table["baskets"] >= 4) & (table["aisle"] == "east")`. Use `&` for both and `|` for either; ordinary Python `and`/`or` do not compare row by row.
+A stall must have enough baskets and be in the east aisle. Each rule produces a mask; combine the decisions for the same row. `&` means both decisions must be True. `|` means at least one may be True, including when both are.
 
-The starter uses `|`, so it admits stalls meeting just one rule. Change that one operator to `&`.
+Write each comparison in parentheses before combining them. For example, `(table["baskets"] >= 4) & (table["aisle"] == "east")`. Python's ordinary `and` and `or` expect one truth value, not a Series of row decisions.
+
+The starter uses `|`, so all three stalls pass one rule or the other. Change just the operator. Run should then show Fern alone: Bee has too few baskets and Oak is in the west aisle.
 
 ## Your Tasks
 

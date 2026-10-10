@@ -5,15 +5,18 @@ order: 4
 language: python
 lesson_type: coding
 pyodide_packages: [pandas]
-summary: "Series default integer index for a community market data desk."
+summary: "Distinguish default Series labels from the values beside them."
 seo_title: "Read the default index | Pandas for beginners"
-seo_description: "Series default integer index for a community market data desk."
+seo_description: "Distinguish default Series labels from the values beside them."
 seo_keywords: ["pandas", "Python data analysis", "series default integer index"]
 ---
-Without an `index=` argument, a Series numbers its positions from zero. The left side is the index; the right side contains values. Change the last value and notice that the default labels remain `0, 1, 2`.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your work.
+The receipt totals are `5`, `8`, and `7`. The numbers `0`, `1`, and `2` printed to their left are labels, not additional receipts. When you build a Series from a list without `index=`, pandas supplies these consecutive labels starting at zero.
+
+You can inspect just the labels with `receipts.index`. This is an Index object, which stores the labels separately from the values. Later, custom labels may no longer match positions, so it helps to keep the two ideas separate now.
 
 ## Your Task
 
-1. Change the last receipt total from 7 to 10 without supplying an index.
+1. Change the last value in `receipts` from `7` to `10`, keeping the automatically supplied index.
+
+Edit `main.py` and **Run**. The last row should read label `2`, value `10`; the labels should not change. **Submit** checks both the counts and the default index.

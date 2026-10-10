@@ -2,7 +2,8 @@ import pandas as pd
 
 def tidy_registrations(frame):
     cleaned = frame.copy()
-    # Rename and clean host names here.
+    # Rename host_name to host here.
+    # Strip and lowercase host values here.
     # Replace the department code here.
     return cleaned
 

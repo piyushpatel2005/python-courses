@@ -1,17 +1,27 @@
 ---
-title: "Exercise: make a vendor contact sheet"
+title: 'Exercise: make a vendor contact sheet'
 slug: exercise-choose-columns
 order: 2
 language: python
 lesson_type: coding
-pyodide_packages: [pandas]
-summary: "Return a single vendor Series and a two-column contact sheet."
-seo_title: "Exercise: make a vendor contact sheet | Introduction to Pandas"
-seo_description: "Return a single vendor Series and a two-column contact sheet."
-seo_keywords: [pandas, python, data selection]
+pyodide_packages:
+  - pandas
+summary: Return a single vendor Series and a two-column contact sheet.
+seo_title: 'Exercise: make a vendor contact sheet | Introduction to Pandas'
+seo_description: Return a single vendor Series and a two-column contact sheet.
+seo_keywords:
+  - pandas
+  - python
+  - data selection
+hints:
+  - Select the column or columns first, then call head(limit) or tail(limit).
 ---
 
-A volunteer needs a quick list of the first few vendors and a compact contact sheet of the latest entries. The preceding card showed why one bracket pair gives a Series and a list inside brackets gives a DataFrame. Combine those selections with the `head` and `tail` previews you used earlier. Keep the original row labels, and handle different roster lengths and requested limits.
+A volunteer needs two views of the vendor roster: names from the beginning and contact details from the end. Combine column selection with the `head` and `tail` methods from the previous module.
+
+A Series is the right shape for names alone. The contact sheet should stay a DataFrame, with `vendor` before `phone`, regardless of the input column order. Keep the original row labels. Here `limit` is a nonnegative count; zero returns no rows and a count larger than the roster returns all available rows.
+
+The supplied empty returns are placeholders, not steps to copy. Replace one function at a time. The two print calls already let you check each result: with limit 1, the names view shows Mina and the contact sheet shows Sol.
 
 ## Your Tasks
 

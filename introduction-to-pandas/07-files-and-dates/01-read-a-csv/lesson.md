@@ -5,27 +5,31 @@ order: 1
 language: python
 lesson_type: coding
 pyodide_packages:
-- pandas
+  - pandas
 summary: Read a comma-separated table from in-memory text with pandas read_csv.
 seo_title: Read a market CSV | Introduction to Pandas
 seo_description: Read a comma-separated table from in-memory text with pandas read_csv.
 seo_keywords:
-- pandas
-- read_csv
-- StringIO
-- CSV columns
+  - pandas
+  - read_csv
+  - StringIO
+  - CSV columns
 hints:
-- Use the example above the task and check the printed result before submitting.
+  - "The separator must match the commas in both the header and the data rows."
 ---
 
 # Read a market CSV
 
-The market sends a tiny CSV: the first row gives column names and each following row is one sale. `StringIO` wraps a string so `pd.read_csv` can treat it like a file, with no network request or saved file.
+The Community Data Desk can already summarize a table. Now the table arrives as text. **CSV** means comma-separated values: the first line names the columns, and each later line holds one row. In the sample, `Flower Cart,8` belongs under `stall,visits`. The `\n` characters in the Python string start new lines.
 
-![CSV text enters a file-like buffer and becomes a labeled DataFrame](csv-to-table.svg)
+`from io import StringIO` imports a standard Python tool. `StringIO(text)` holds text in a **buffer**, an in-memory object that a reader can use like an open file. `pd.read_csv` reads that object into a DataFrame. Passing the raw string directly would make pandas look for a file with that name instead. Create a fresh buffer for each read; a reader advances through its contents.
 
-The sample uses commas, but `load_visits` currently expects semicolons. Edit **only** its `sep` argument to `","` in `main.py`. Run to see separate `stall` and `visits` columns; Submit to check a second input too.
+![Flower Cart and Soup Stand CSV rows pass through StringIO and read_csv into two columns](csv-to-table.svg)
+
+The diagram follows the sample in `main.py`; no file is saved or downloaded.
+
+The starter expects semicolons, so Run initially shows one combined column. Change only its `sep` argument to `","` in `main.py`, then Run again. You should see separate `stall` and `visits` columns. Submit checks another sheet too.
 
 ## Your Tasks
 
-1. Make `load_visits(text)` read the comma-separated text into two correctly named columns.
+1. Make `load_visits(text)` return the two-column DataFrame read from the supplied comma-separated text.

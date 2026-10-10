@@ -1,7 +1,7 @@
 from solution import *
 import pandas as pd
 
-def test_01_exercise_custom_labels():
-    """Make `shift_card(names, counts)` return a Series whose index is `names` and whose values are `counts`."""
-    assert isinstance(shift_card(["east", "west"], [4, 9]), pd.Series) and shift_card(["east", "west"], [4, 9]).to_dict() == {"east": 4, "west": 9} and shift_card(["solo"], [13]).index.tolist() == ["solo"]
-
+def test_01_shift_card():
+    """Pair each supplied name with its count, in order."""
+    for names, values in [(["east", "west"], [4, 9]), (["solo"], [13]), (["z", "a", "m"], [8, 0, 3]), ([], [])]:
+        pd.testing.assert_series_equal(shift_card(names, values), pd.Series(values, index=names))

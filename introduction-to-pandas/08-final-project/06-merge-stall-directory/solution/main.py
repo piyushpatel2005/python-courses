@@ -18,20 +18,33 @@ STALLS_CSV = (
 )
 
 def read_tables(sales_text, stalls_text):
-    return pd.read_csv(StringIO(sales_text)), pd.read_csv(StringIO(stalls_text))
+    # Task 1: Read sales.
+    sales_frame = pd.read_csv(StringIO(sales_text))
+    # Task 2: Read the directory.
+    stalls_frame = pd.read_csv(StringIO(stalls_text))
+    return sales_frame, stalls_frame
 
 def clean_sales(sales):
-    cleaned = sales.drop_duplicates(subset="sale_id").copy()
-    cleaned["sold_at"] = pd.to_datetime(cleaned["sold_at"], errors="coerce")
+    cleaned = sales.copy()
+    # Task 1: Keep the first row for each sale ID.
+    cleaned = cleaned.drop_duplicates(subset="sale_id")
+    # Task 2: Parse dates; bad values become NaT.
+    cleaned["sold_at"] = pd.to_datetime(cleaned["sold_at"], format="%Y-%m-%d", errors="coerce")
+    # Task 3: Convert units.
     cleaned["units"] = pd.to_numeric(cleaned["units"], errors="coerce")
+    # Task 4: Convert prices.
     cleaned["unit_price"] = pd.to_numeric(cleaned["unit_price"], errors="coerce")
+    # Task 5: Remove rows without required values.
     cleaned = cleaned.dropna(subset=["sold_at", "units", "unit_price"])
+    # Task 6: Keep amounts that belong in this sales report.
     cleaned = cleaned.loc[(cleaned["units"] > 0) & (cleaned["unit_price"] >= 0)]
     return cleaned.reset_index(drop=True)
 
 def enrich_sales(cleaned):
     result = cleaned.copy()
+    # Task 1: Add revenue.
     result["revenue"] = result["units"] * result["unit_price"]
+    # Task 2: Add the day label.
     result["day"] = result["sold_at"].dt.strftime("%Y-%m-%d")
     return result
 

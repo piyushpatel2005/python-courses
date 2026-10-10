@@ -5,4 +5,5 @@ def convert_signups(frame):
     return frame.copy()
 
 sample = pd.DataFrame({"signed_on": ["2026-09-03", "2026-09-04"], "volunteer": ["Ada", "Bo"]})
-print(convert_signups(sample).dtypes)
+print("original:", sample.dtypes)
+print("converted:", convert_signups(sample).dtypes)

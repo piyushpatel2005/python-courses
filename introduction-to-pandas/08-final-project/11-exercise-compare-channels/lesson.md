@@ -5,26 +5,29 @@ order: 11
 language: python
 lesson_type: coding
 pyodide_packages:
-- pandas
+  - pandas
 summary: Reuse the finished report pipeline to compare two channel totals.
 seo_title: 'Exercise: compare two channels | Introduction to Pandas'
 seo_description: Reuse the finished report pipeline to compare two channel totals.
 seo_keywords:
-- pandas
-- community market report
-- review exercise
-- channel comparison
+  - pandas
+  - community market report
+  - review exercise
+  - channel comparison
 hints:
-- Read the previous completed function above the new stub; Run for a checkpoint, then
-  Submit.
+  - "Loop over (\"Walk-in\", \"Preorder\"), call build_report for each, and read its text before summing revenue."
 ---
 
 # Exercise: compare two channels
 
-The market coordinator asks one final review question: how much revenue came from Walk-ins versus Preorders, after the same minimum sale threshold? The `build_report` function above already handles each channel and returns CSV text. Call it for each channel, read its results with `pd.read_csv(StringIO(...))`, then add each report's `revenue` column. A channel with no qualifying sales should total zero.
+The coordinator's last question is a comparison: how much qualifying revenue came from Walk-ins and how much from Preorders? The same minimum sale threshold must apply to both.
 
-This starter includes **every earlier completed market function**. Write only the new `compare_channels` function. Run to see the sample comparison, then Submit on different sales and a higher threshold. When the values match, the community market report is ready to share as CSV text.
+`build_report` already does the filtering and reporting. Call it once for each channel, read each returned CSV string through `StringIO`, and sum that report's `revenue` column. An empty report still has headers; its revenue sum is zero. Reusing the report also keeps unknown neighborhoods in the comparison instead of losing their sales.
+
+All earlier functions are complete in `main.py`. Implement only `compare_channels`, then Run with the supplied threshold of 4. The result should be `{"Walk-in": 23.5, "Preorder": 8.0}`. Submit checks new sheets and a threshold high enough to exclude every sale.
 
 ## Your Tasks
 
-1. Implement `compare_channels(sales_text, stalls_text, min_revenue)` to return a dictionary with exactly `Walk-in` and `Preorder` keys, each holding the total revenue from that channel's `build_report` output.
+1. Implement `compare_channels(sales_text, stalls_text, min_revenue)` to return exactly the `Walk-in` and `Preorder` keys, each holding the summed revenue from that channel's `build_report` output.
+
+You now have a reusable report for the Community Data Desk: new input strings and selection arguments can produce a new CSV without rewriting the cleaning steps.

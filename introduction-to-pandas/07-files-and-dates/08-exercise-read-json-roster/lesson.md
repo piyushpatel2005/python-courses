@@ -5,23 +5,25 @@ order: 8
 language: python
 lesson_type: coding
 pyodide_packages:
-- pandas
+  - pandas
 summary: Write a function that loads variable JSON records into a DataFrame.
 seo_title: 'Exercise: load a JSON roster | Introduction to Pandas'
 seo_description: Write a function that loads variable JSON records into a DataFrame.
 seo_keywords:
-- pandas
-- read_json
-- roster JSON
+  - pandas
+  - read_json
+  - roster JSON
 hints:
-- Use the example above the task and check the printed result before submitting.
+  - "Use orient=\"records\" because the top-level JSON list contains one object per row."
 ---
 
 # Exercise: load a JSON roster
 
-The volunteer desk sends records with `name` and `shift` keys. Unlike the registry example, you need the whole DataFrame so you can inspect shifts later. The JSON is supplied as a string parameter; wrap it in `StringIO` before reading.
+The volunteer desk sends a JSON roster with `name` and `shift` keys. This time you need the whole table, not a single column. Each record supplies one volunteer's row.
 
-Edit `main.py`, Run to see the roster table, then Submit to test a different roster.
+Edit `load_roster` in `main.py`. The imports are supplied; use the incoming `text` to create a fresh `StringIO` buffer and read it with records orientation. Return the DataFrame itself.
+
+Run should show Mara on the morning shift and Luis on the evening shift. Submit uses a different roster as well, so avoid constructing those two rows by hand.
 
 ## Your Tasks
 

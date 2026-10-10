@@ -5,25 +5,27 @@ order: 7
 language: python
 lesson_type: coding
 pyodide_packages:
-- pandas
+  - pandas
 summary: Read a JSON list of records into a DataFrame using StringIO.
 seo_title: Read JSON records | Introduction to Pandas
 seo_description: Read a JSON list of records into a DataFrame using StringIO.
 seo_keywords:
-- pandas
-- read_json
-- JSON records
-- StringIO
+  - pandas
+  - read_json
+  - JSON records
+  - StringIO
 hints:
-- Use the example above the task and check the printed result before submitting.
+  - "Keep the read_json call and select name from the DataFrame it returns."
 ---
 
 # Read JSON records
 
-A stall registry may arrive as JSON rather than CSV. In a JSON list of objects, each object becomes a row and each key becomes a column. `pd.read_json(StringIO(text), orient="records")` expresses that layout explicitly.
+The stall registry uses **JSON**, a text format for structured values. Here square brackets surround a list of records; each record is an object in braces with key-value pairs such as `"name":"Honey Table"`. JSON uses double quotes around keys and text values. The outer single quotes in `main.py` belong to the Python string, not the JSON inside it.
 
-The starter already reads the text. Its `lookup_names` function returns the wrong column: change only `["stall_id"]` to `["name"]`. Run to see the names, then Submit with a different registry.
+With `orient="records"`, `pd.read_json(StringIO(text), ...)` treats each object as a row and its keys as columns. `StringIO` supplies the text as a file-like buffer, just as it did for CSV.
+
+The reader is already written. In `main.py`, change only the selected column in `lookup_names` from `"stall_id"` to `"name"`. Run should display Honey Table and Clay Corner instead of S1 and S2. Submit checks another registry.
 
 ## Your Tasks
 
-1. Make `lookup_names(text)` read JSON records and return the `name` Series instead of the IDs.
+1. Make `lookup_names(text)` read the JSON records and return their `name` Series instead of their IDs.

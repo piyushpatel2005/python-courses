@@ -1,21 +1,31 @@
 ---
-title: "Project: prepare a market log"
+title: 'Project: prepare a market log'
 slug: exercise-clean-market-log
 order: 12
 language: python
 lesson_type: coding
-pyodide_packages: [pandas]
-summary: "Clean a market log in seven small, testable steps."
-seo_title: "Project: prepare a market log | Introduction to Pandas"
-seo_description: "Clean a market log in seven small, testable steps."
-seo_keywords: [pandas, python, data cleaning]
+pyodide_packages:
+  - pandas
+summary: Clean a market log in seven small, testable steps.
+seo_title: 'Project: prepare a market log | Introduction to Pandas'
+seo_description: Clean a market log in seven small, testable steps.
+seo_keywords:
+  - pandas
+  - python
+  - data cleaning
+hints:
+  - Work through the functions in order; keep a copy before replacing a column or assigning with loc.
 ---
 
-The market desk receives a log with padded seller names, text quantities, missing categories, and repeated visits. Build seven small functions, then read the printed pipeline. Each stage accepts a table and returns a new one, so the input stays available for auditing.
+The desk receives a log with padded seller names, text quantities, missing categories, and repeated visits. Build a small cleaning pipeline without overwriting that raw record. Each function accepts a table and returns a new one; the supplied print code connects them.
 
-First rename `seller_name` to `seller`, tidy the names, convert `units` with invalid text coerced to missing nullable integers, and drop rows without a seller or numeric units. Next fill missing categories with `unassigned` and retain the **last** row for each `seller`/`day` pair. Finally use `.loc` on a copy to mark rows whose units reach the supplied cutoff. Keep every remaining column and original index; do not reset the index. Each function can be checked on its own, even before the whole pipeline works.
+Order matters. Rename the seller header before selecting it. Clean names before comparing seller/day pairs, or MINA and Mina would count as different sellers. Convert units before dropping missing numbers, or "unknown" would still be ordinary text. For this log, valid counts are whole numbers.
 
-You now have a reusable cleaning pipeline for the market desk's next delivery, not just the printed result.
+After removing rows missing seller or units, fill only missing categories. Keep the last occurrence of each seller/day pair; input order represents revision order here, not sorted date order. Finally mark qualifying rows ready with one loc assignment on a copy. Leave other statuses, columns, and row labels alone. Empty text is not automatically missing.
+
+Each function is checked separately on suitable input, so task 1 can pass before task 2 is written. The supplied Run pipeline waits for the seller header and numeric units before using them. At the end it should show only revised: seller mina, units 7, category veg, status ready. The raw first row is superseded and the unusable row has no numeric units.
+
+This gives the desk a cleaned table ready for the next section, where separate tables will be combined.
 
 ## Your Tasks
 

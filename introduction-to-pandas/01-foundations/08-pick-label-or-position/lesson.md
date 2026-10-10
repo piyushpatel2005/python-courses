@@ -5,15 +5,20 @@ order: 8
 language: python
 lesson_type: coding
 pyodide_packages: [pandas]
-summary: "Series loc and iloc for a community market data desk."
+summary: "Choose the first Series value by position, even with numeric labels."
 seo_title: "Pick a label or a position | Pandas for beginners"
-seo_description: "Series loc and iloc for a community market data desk."
+seo_description: "Choose the first Series value by position, even with numeric labels."
 seo_keywords: ["pandas", "Python data analysis", "series loc and iloc"]
 ---
-`loc` asks for an index **label**; `iloc` asks for an integer **position**. In this card, label `20` belongs to the first value, so `card.loc[20]` and `card.iloc[1]` select different counts. Change the lookup in `first_count` to inspect the first count in any supplied Series, regardless of its labels.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your work.
+This card has labels `20`, `10`, and `30`, but its positions are still `0`, `1`, and `2`.
+
+Use `.loc[label]` to ask for a label and `.iloc[position]` to ask for a position. Both use square brackets. On this card, `card.loc[20]` is `7`, while `card.iloc[1]` is `14`. An integer label is still a label: `20` does not mean the twenty-first row.
+
+The supplied function currently picks the second value. Change its position so it picks the first, even when a different card is passed in.
 
 ## Your Task
 
-1. Change `first_count(values)` to select the first value by position with `iloc`.
+1. Change `first_count(values)` to return the first value by position using `iloc`.
+
+Edit `main.py`, then **Run**. The printed value should change from `14` to `7`. **Submit** tries other values and label orders.

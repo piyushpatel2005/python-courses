@@ -1,7 +1,6 @@
 from solution import *
 import pandas as pd
 
-def test_01_a_desk_for_labeled_data():
-    """Change the `bread` stall count from 8 to 11."""
-    assert isinstance(counts, pd.Series) and counts.to_dict() == {"bread": 11, "flowers": 5}
-
+def test_01_bread_count():
+    """Change bread to 11 and keep flowers at 5."""
+    pd.testing.assert_series_equal(counts, pd.Series([11, 5], index=["bread", "flowers"]))

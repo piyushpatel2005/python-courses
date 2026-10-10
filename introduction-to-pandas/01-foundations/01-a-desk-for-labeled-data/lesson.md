@@ -5,19 +5,22 @@ order: 1
 language: python
 lesson_type: coding
 pyodide_packages: [pandas]
-summary: "Pandas orientation for a community market data desk."
+summary: "Pair stall names with counts in your first pandas Series."
 seo_title: "A desk for labeled data | Pandas for beginners"
-seo_description: "Pandas orientation for a community market data desk."
+seo_description: "Pair stall names with counts in your first pandas Series."
 seo_keywords: ["pandas", "Python data analysis", "pandas orientation"]
 ---
-A community market desk records stall counts by name, not just by position. A **Series** pairs each value with an index label; a **DataFrame** adds named columns. This first card is a Series. The numbers are counts, while the names tell us which stalls they belong to. Change one count before you meet the import pattern in the next lesson.
 
-The picture shows the starting card. Follow a row across to pair its label and count.
+Welcome to the Community Data Desk. A volunteer has recorded 8 visitors at the bread stall and 5 at the flower stall. We need to keep each count beside the right name.
 
-![Pandas orientation diagram showing labeled data](series-labels.svg)
+A **Series** holds one sequence of values with an **index**: the labels that identify those values. In `main.py`, `[8, 5]` supplies the counts and `index=["bread", "flowers"]` supplies their labels, in matching order. The import and printing code are ready for you; we will read the import in the next lesson.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your work.
+![A Series pairs bread with 8 and flowers with 5](series-labels.svg)
+
+Run the starter and read across each row. The picture shows that starting state. After your edit, the bread row should show `11`; the flowers row should still show `5`. The `dtype` line describes the stored values, not another stall.
 
 ## Your Task
 
-1. Change the `bread` stall count from 8 to 11.
+1. Change the first value in `counts` from `8` to `11`, leaving the labels and the other count unchanged.
+
+Edit `main.py`, use **Run** to see the new count, then **Submit** to check it.

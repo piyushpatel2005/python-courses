@@ -5,25 +5,27 @@ order: 9
 language: python
 lesson_type: coding
 pyodide_packages:
-- pandas
+  - pandas
 summary: Use to_csv(index=False) to omit the DataFrame row index.
 seo_title: Export CSV without an index | Introduction to Pandas
 seo_description: Use to_csv(index=False) to omit the DataFrame row index.
 seo_keywords:
-- pandas
-- to_csv
-- index False
-- CSV export
+  - pandas
+  - to_csv
+  - index False
+  - CSV export
 hints:
-- Use the example above the task and check the printed result before submitting.
+  - "The index option controls row labels; it does not remove the guest column."
 ---
 
 # Export CSV without an index
 
-A shared report should contain the columns readers asked for, not the temporary row numbers used in analysis. `frame.to_csv(index=False)` writes the header and rows as text, leaving out the index. A string return value means there is no file to manage.
+The guest list is ready to share. Its row index helped you select records, but it is not one of the columns the coordinator requested.
 
-Change only `index=True` to `index=False` in `make_guest_csv(frame)`. Run and inspect the first line: it should be `guest,tickets`, not start with an empty index column. Submit to test changed names and counts.
+`frame.to_csv()` returns CSV text when you do not supply a destination. It includes the index by default; `index=False` leaves it out while keeping the column headers. Nothing is written to a saved file in this lesson.
+
+Change only `index=True` to `index=False` in `make_guest_csv` in `main.py`. Run and inspect the first line: it should be `guest,tickets`, with no leading comma or extra row numbers. Submit also tries an index that starts at 40.
 
 ## Your Tasks
 
-1. Make `make_guest_csv(frame)` return CSV text with no index column and with the caller's data intact.
+1. Make `make_guest_csv(frame)` return CSV text containing the caller's columns and values but no index column.

@@ -11,3 +11,6 @@ def test_01_roundtrip():
         assert text.splitlines()[0] == "product,units"
         assert list(restored.columns) == ["product", "units"]
         pd.testing.assert_frame_equal(restored, frame.reset_index(drop=True))
+
+        from io import StringIO
+        pd.testing.assert_frame_equal(pd.read_csv(StringIO(text)), restored)

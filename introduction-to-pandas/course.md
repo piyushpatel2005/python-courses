@@ -38,10 +38,32 @@ modules:
 
 # Your community data desk
 
-A small community market keeps track of stalls, orders, and event days. The numbers are useful only after you can find the right rows, fix incomplete records, and explain what happened. In this course, you will build those skills one short program at a time.
+A community market records its stalls, orders, and event days. One sheet has the sales; another has the stall names. Some records are incomplete. You'll use pandas to bring these records together and answer questions such as which stalls sold the most and how sales changed from day to day.
 
-Start with a one-dimensional Series and a two-dimensional DataFrame. Then select rows by label and position, filter and sort data, clean missing or inconsistent values, combine tables, summarize groups, and work with small CSV and JSON samples. The final project turns a set of records into a report you can share.
+The tables stay small enough to check by eye. Before trusting a calculation, you'll be able to point to the rows it used.
 
-You should already be comfortable with Python variables, lists, dictionaries, functions, and `import`. You do not need any statistics or spreadsheet experience. Each working example invites a small change; its following exercise asks you to type a solution on different data. Edit `main.py`, use **Run** to see the result, and **Submit** for feedback. At the end of each section, check your understanding with a short quiz.
+## Before you begin
 
-The examples use small, self-contained datasets so you can focus on the behavior of the code and repeat an experiment whenever you want. We use the customary `import pandas as pd` spelling throughout.
+You should be comfortable with Python variables, lists, dictionaries, functions, and `import`. You don't need spreadsheet or statistics experience. We'll explain the table vocabulary and calculations as they appear.
+
+The course editor is ready to run the supplied examples. You don't need to download market data or install a package to start. The import `import pandas as pd` gives pandas its usual short name, `pd`.
+
+## How to practise
+
+Most topics start with a working example in `main.py`. Make the requested small change and use **Run** to inspect what happened. The following exercise uses different data so you can try the same idea yourself.
+
+**Submit** checks the numbered tasks. You can submit partly finished work to find out which steps are working; you don't have to finish the whole exercise first. A short quiz closes each section.
+
+When a result surprises you, compare the input and output tables. Check the row labels, column names, and values separately. Those details often explain why a selection or calculation behaved differently from what you expected.
+
+## What you'll build
+
+- Start with a **Series**, a line of values with labels, then a **DataFrame**, a table with named columns.
+- Choose rows and columns, write filters, and put results in a useful order.
+- Handle missing cells and inconsistent text without losing track of the original records.
+- Match related tables and summarise groups of rows.
+- Read and write small data samples, then work with dates.
+
+The final section brings these skills together in a market report. You'll build it in stages, checking the intermediate tables before producing the summary.
+
+Begin with the labeled-data introduction. You'll see why a row's label can matter just as much as its value.

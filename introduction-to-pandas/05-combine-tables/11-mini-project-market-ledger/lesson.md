@@ -5,21 +5,27 @@ order: 11
 language: python
 lesson_type: coding
 pyodide_packages:
-- pandas
-summary: Two delivery shifts must become one priced ledger.
+  - pandas
+summary: "Assemble delivery rows, validate price matches, and count unpriced entries."
 seo_title: 'Mini project: Assemble the market ledger | Introduction to Pandas'
-seo_description: Two delivery shifts must become one priced ledger.
+seo_description: "Assemble delivery rows, validate price matches, and count unpriced entries."
 seo_keywords:
-- pandas
-- market report
-- data analysis
+  - pandas
+  - market report
+  - data analysis
+hints:
+  - 'Use many_to_one for the price lookup, and count missing prices rather than missing products.'
 ---
 
 # Mini project: Assemble the market ledger
 
-Two delivery shifts must become one priced ledger. Keep missing prices visible, reject duplicate price keys, and count unpriced rows for follow-up.
+The Community Data Desk is ready to assemble a delivery ledger. Stack the two shifts, attach the product prices, then count the rows that still need a price. Keep the missing prices visible rather than replacing them with zero.
 
-Edit `main.py`, press **Run** to inspect the current report, then **Submit** after each checkpoint.
+Each function has its own input and can be checked independently. `add_prices` must work on any supplied delivery table, even before your stacking function is finished. For the final count, select `price`, use `isna()` to mark missing cells, and sum that Boolean Series; each `True` contributes one.
+
+The completed preview has Tea and Jam, with one unpriced row for Jam. This finishes the table-combining work; next you will turn records into group summaries.
+
+Edit `main.py`, press **Run** to inspect the result, then **Submit** to check each task.
 
 ## Your Tasks
 

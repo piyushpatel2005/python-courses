@@ -5,27 +5,37 @@ order: 3
 language: python
 lesson_type: coding
 pyodide_packages:
-- pandas
+  - pandas
 summary: Convert types, remove repeated IDs and discard unusable sales.
 seo_title: Clean the sale rows | Introduction to Pandas
 seo_description: Convert types, remove repeated IDs and discard unusable sales.
 seo_keywords:
-- pandas
-- community market report
-- drop_duplicates
-- to_numeric
-- to_datetime
+  - pandas
+  - community market report
+  - drop_duplicates
+  - to_numeric
+  - to_datetime
 hints:
-- Read the previous completed function above the new stub; Run for a checkpoint, then
-  Submit.
+  - "Assign each operation back to cleaned or its named column. Leave the copy and reset-index return in place."
 ---
 
 # Clean the sale rows
 
-The sales sheet repeats ID 2 and leaves one unit count blank. Before computing totals, discard duplicate sale IDs, convert date and numeric columns, and remove rows lacking a usable date or amount. Only positive unit counts and nonnegative prices can be counted as sales. Work on a copy: callers may still need the raw records for an audit.
+The sample repeats sale ID 2 and leaves one unit count blank. Clean these rows before multiplying amounts. The completed import is supplied; make the changes inside `clean_sales` in `main.py`.
 
-`read_tables` above is **your completed import from the previous milestone**. Edit only `clean_sales`; Run to compare raw and cleaned rows, then Submit. In the next starter, this completed cleaning function remains in place.
+The starter creates a copy and returns a fresh index. Add one cleaning operation at each task comment, then Run or Submit. Run keeps working while later comments are unfinished. The tests use separate inputs for each operation, so removing duplicates does not require date conversion to be complete.
+
+Keep the first occurrence of each `sale_id`, even if a later copy looks more usable. Convert `sold_at` with `pd.to_datetime(..., format="%Y-%m-%d", errors="coerce")`. These inputs are timezone-free year-month-day dates; a bad date becomes `NaT`. For each amount column, `pd.to_numeric(..., errors="coerce")` turns a bad numeric value into a missing value. Neither conversion drops a row by itself.
+
+After conversion, `dropna(subset=[...])` removes rows missing a required date or amount. Finally keep positive units and prices of zero or more; a free item is allowed, but a return with negative units is outside this sales report. The supplied copy protects the original sheet for an audit.
+
+Run begins at six raw and six returned rows. After duplicate removal there are five. With every task finished, the clean sale IDs are 1, 2, 4, and 5.
 
 ## Your Tasks
 
-1. Implement `clean_sales(sales)` to keep the first row for each `sale_id`, parse `sold_at` with `pd.to_datetime(..., errors="coerce")`, convert `units` and `unit_price` with `pd.to_numeric(..., errors="coerce")`, drop missing or invalid dates/amounts, retain `units > 0` and `unit_price >= 0`, and return a reset-index copy without mutating `sales`.
+1. Remove repeated `sale_id` values from `cleaned`, keeping the first occurrence.
+2. Convert `cleaned["sold_at"]` to datetimes in year-month-day format, coercing invalid values to `NaT`.
+3. Convert `cleaned["units"]` to numbers, coercing invalid values to missing.
+4. Convert `cleaned["unit_price"]` to numbers, coercing invalid values to missing.
+5. Remove rows missing any of `sold_at`, `units`, or `unit_price`.
+6. Keep only rows with `units > 0` and `unit_price >= 0`.

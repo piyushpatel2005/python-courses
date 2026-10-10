@@ -5,21 +5,25 @@ order: 8
 language: python
 lesson_type: coding
 pyodide_packages:
-- pandas
-summary: Check-ins should have one row per badge in each roster.
+  - pandas
+summary: "Match badge records while checking uniqueness on both sides."
 seo_title: 'Exercise: Validate badges | Introduction to Pandas'
-seo_description: Check-ins should have one row per badge in each roster.
+seo_description: "Match badge records while checking uniqueness on both sides."
 seo_keywords:
-- pandas
-- exercise validate badges
-- community market data
+  - pandas
+  - exercise validate badges
+  - community market data
+hints:
+  - 'Combine how="inner" with validate="one_to_one"; validation and row retention are separate choices.'
 ---
 
 # Exercise: Validate badges
 
-Check-ins should have one row per badge in each roster. A one-to-one merge rejects duplicates on either side instead of silently multiplying rows.
+Each badge should identify one check-in and one person. Unlike repeat product orders, a duplicate badge on either side is an error for this report.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your change.
+Use `validate="one_to_one"` when merging on `badge`. This checks uniqueness on both sides, but it does not require every badge to match. The requested inner merge includes only badges found in both tables. With the supplied data, E1 matches Dee and E2 matches Bo despite the reversed roster order.
+
+Edit `main.py`, press **Run** to inspect the result, then **Submit** to check each task.
 
 ## Your Tasks
 

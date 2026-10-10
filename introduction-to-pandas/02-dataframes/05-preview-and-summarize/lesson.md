@@ -5,15 +5,20 @@ order: 5
 language: python
 lesson_type: coding
 pyodide_packages: [pandas]
-summary: "head tail info describe for a community market data desk."
+summary: "Preview table rows and read a first numerical summary."
 seo_title: "Preview and summarize rows | Pandas for beginners"
-seo_description: "head tail info describe for a community market data desk."
+seo_description: "Preview table rows and read a first numerical summary."
 seo_keywords: ["pandas", "Python data analysis", "head tail info describe"]
 ---
-`head(n)` and `tail(n)` show the first and last rows. `info()` describes columns and non-missing entries; `describe()` summarizes numerical columns such as counts. Try all four in the example. Change the preview length from two rows to three.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your work.
+A long table is easier to inspect a few rows at a time. `sales.head(n)` returns the first `n` rows; `sales.tail(n)` returns the last `n`. Both keep the original row labels and leave `sales` unchanged.
+
+The starter also shows two different kinds of summary. `sales.info()` prints column names, non-missing counts, and dtypes directly, so it does not need `print(...)` around it. `sales.describe()` returns a summary table, which we print ourselves.
+
+For the numeric `sold` column, `count` is the number of non-missing values and `mean` is their average. `min` and `max` are the smallest and largest counts. The percentage rows describe positions in the sorted values, and `std` describes their spread; you do not need those statistics for this task.
 
 ## Your Task
 
-1. Set `preview` to the first three rows using `head(3)`.
+1. Set `preview` to the first three rows of `sales` using `head(3)`.
+
+Edit `main.py` and **Run**. The first printed table should include tea, bread, and jam. The later summaries still describe all four rows. **Submit** checks the preview.

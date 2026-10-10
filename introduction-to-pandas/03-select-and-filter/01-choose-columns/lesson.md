@@ -1,19 +1,27 @@
 ---
-title: "Choose columns for a stall card"
+title: Choose columns for a stall card
 slug: choose-columns
 order: 1
 language: python
 lesson_type: coding
-pyodide_packages: [pandas]
-summary: "Select one Series or several DataFrame columns from a market roster."
-seo_title: "Choose columns for a stall card | Introduction to Pandas"
-seo_description: "Select one Series or several DataFrame columns from a market roster."
-seo_keywords: [pandas, python, data selection]
+pyodide_packages:
+  - pandas
+summary: Select one Series or several DataFrame columns from a market roster.
+seo_title: Choose columns for a stall card | Introduction to Pandas
+seo_description: Select one Series or several DataFrame columns from a market roster.
+seo_keywords:
+  - pandas
+  - python
+  - data selection
+hints:
+  - Use a list of column names inside the selection brackets.
 ---
 
-The stall directory has more details than a printed card needs. `roster["stall"]` returns one column as a Series; `roster[["stall", "zone"]]` returns a two-column DataFrame. The inner brackets hold a list of column names, in the order you want them.
+The previous report added a revenue column. A printed stall card needs fewer columns, so this time you will choose what to show without changing the roster.
 
-The starter already selects one column. Change just the column list assigned to `result` so the card also includes `zone`.
+`roster["stall"]` returns a Series: one labeled column. `roster[["stall", "zone"]]` returns a DataFrame: a table with two columns. The inner brackets make a Python list of names; their order becomes the output column order. Even a list with one name returns a DataFrame.
+
+The starter supplies both forms. Edit only the list in `result`. After Run, look for Fern/east and Bee/west, with no fee column.
 
 ## Your Tasks
 

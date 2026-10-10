@@ -5,21 +5,25 @@ order: 4
 language: python
 lesson_type: coding
 pyodide_packages:
-- pandas
-summary: A fresh stock sheet and a fee sheet cover overlapping stalls.
+  - pandas
+summary: "Attach fees by stall index while keeping unmatched labels visible."
 seo_title: 'Exercise: Align fees | Introduction to Pandas'
-seo_description: A fresh stock sheet and a fee sheet cover overlapping stalls.
+seo_description: "Attach fees by stall index while keeping unmatched labels visible."
 seo_keywords:
-- pandas
-- exercise align fees
-- community market data
+  - pandas
+  - exercise align fees
+  - community market data
+hints:
+  - 'Concatenate [a, b] along axis 1; the default outer alignment retains unmatched labels.'
 ---
 
 # Exercise: Align fees
 
-A fresh stock sheet and a fee sheet cover overlapping stalls. Keep unmatched index labels visible so absent facts remain easy to inspect.
+Stock counts use stall IDs as row labels, and the fee sheet does too. Combine the columns by those labels, not by their positions.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your change.
+B2 should have 6 jars and a fee of 12. Keep A1 and C3 as well: a missing fee or stock count is something the desk still needs to investigate. Do not fill those gaps with zero.
+
+Edit `main.py`, press **Run** to inspect the result, then **Submit** to check each task.
 
 ## Your Tasks
 

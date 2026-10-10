@@ -5,15 +5,20 @@ order: 7
 language: python
 lesson_type: coding
 pyodide_packages: [pandas]
-summary: "DataFrame single and multiple column selection for a community market data desk."
+summary: "See why a column name returns a Series but a list returns a DataFrame."
 seo_title: "Select a column | Pandas for beginners"
-seo_description: "DataFrame single and multiple column selection for a community market data desk."
+seo_description: "See why a column name returns a Series but a list returns a DataFrame."
 seo_keywords: ["pandas", "Python data analysis", "dataframe single and multiple column selection"]
 ---
-`table["sold"]` selects one column as a Series. `table[["stall", "sold"]]` selects several columns as a DataFrame. Change the single-column selection to show the sold counts instead of stall names.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your work.
+The desk needs sold counts on their own. Selecting `table["sold"]` returns that column as a Series, with the table's row index still attached.
+
+A list of column names keeps the result as a DataFrame. In `table[["stall", "sold"]]`, the inner brackets make a Python list; the outer brackets select those columns. Even a one-name list, `table[["sold"]]`, returns a DataFrame. The difference is the kind of selector, not how many values the result contains.
+
+![Selecting sold by name returns a Series; selecting a list containing sold returns a one-column DataFrame](column-selection-types.svg)
 
 ## Your Task
 
-1. Set `chosen` to the `sold` column as a Series.
+1. Change `chosen` to select the `sold` column from `table` as a Series.
+
+Edit `main.py` and **Run**. The first output should contain counts `3` and `9`, with `Name: sold` beneath them. The second output remains a two-column table. Then **Submit**.

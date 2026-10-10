@@ -1,7 +1,6 @@
 from solution import *
 import pandas as pd
 
-def test_01_name_series_labels():
-    """Replace the index label `unknown` with `herbs`."""
-    assert isinstance(stalls, pd.Series) and stalls.index.tolist() == ["fruit", "herbs"] and stalls.tolist() == [12, 4]
-
+def test_01_stall_labels():
+    """Label the second count herbs without changing either value."""
+    pd.testing.assert_series_equal(stalls, pd.Series([12, 4], index=["fruit", "herbs"]))

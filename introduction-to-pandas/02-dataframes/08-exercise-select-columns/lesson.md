@@ -5,16 +5,19 @@ order: 8
 language: python
 lesson_type: coding
 pyodide_packages: [pandas]
-summary: "Select one or multiple columns for a community market data desk."
+summary: "Return one named field or an ordered selection of report columns."
 seo_title: "Exercise: Pack a report view | Pandas for beginners"
-seo_description: "Select one or multiple columns for a community market data desk."
+seo_description: "Return one named field or an ordered selection of report columns."
 seo_keywords: ["pandas", "Python data analysis", "select one or multiple columns"]
 ---
-A caller may ask for one field or a short report of several fields. The first request returns a Series; the second returns a DataFrame even if its list contains only one name. Preserve the requested column order.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your work.
+One caller wants a single field as a Series. Another wants a small table whose columns appear in a particular order. Use the requested names rather than assuming every caller wants `sold`.
+
+In `report_fields`, the `names` parameter is already a Python list. You can pass that list directly between the table's selection brackets; do not put another list around it. A list with one name must still give a DataFrame.
 
 ## Your Tasks
 
-1. Make `one_field(table, name)` return the named column as a Series.
-2. Make `report_fields(table, names)` return a DataFrame with precisely those columns in the requested order.
+1. Make `one_field(table, name)` return the named column as a Series, keeping its row labels.
+2. Make `report_fields(table, names)` return a DataFrame with exactly those columns in the requested order, keeping its row labels.
+
+Edit `main.py`, **Run**, and then **Submit**. The sample report should put `sold` before `stall`, even though the original table uses the opposite order.

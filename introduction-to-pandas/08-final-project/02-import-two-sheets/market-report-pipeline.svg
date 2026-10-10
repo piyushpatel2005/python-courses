@@ -1,22 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 260" role="img" aria-labelledby="title desc">
-<title id="title">Community market report pipeline</title>
-<desc id="desc">Two CSV input tables feed cleaning and revenue enrichment. Filtered sales join the stall directory. Neighborhood totals become an index-free CSV report. Arrows point left to right between stages.</desc>
-<rect width="940" height="260" rx="18" fill="#f7f8f3"/>
-<text x="470" y="39" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#17324b">Community Market Report</text>
-<rect x="20" y="76" width="192" height="130" rx="12" fill="#e6f2fa" stroke="#427391" stroke-width="2"/>
-<text x="116" y="122" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#17324b">Sales + stall</text>
-<text x="116" y="154" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#17324b">CSV sheets</text>
-<path d="M212 141 H250" stroke="#427391" stroke-width="3" marker-end="url(#arrow)"/>
-<rect x="254" y="76" width="192" height="130" rx="12" fill="#fff2d8" stroke="#987445" stroke-width="2"/>
-<text x="350" y="122" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#17324b">Clean dates</text>
-<text x="350" y="154" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#17324b">+ add revenue</text>
-<path d="M446 141 H484" stroke="#427391" stroke-width="3" marker-end="url(#arrow)"/>
-<rect x="488" y="76" width="192" height="130" rx="12" fill="#e8efe8" stroke="#477959" stroke-width="2"/>
-<text x="584" y="122" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#17324b">Filter sales</text>
-<text x="584" y="154" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#17324b">+ join stalls</text>
-<path d="M680 141 H718" stroke="#427391" stroke-width="3" marker-end="url(#arrow)"/>
-<rect x="722" y="76" width="198" height="130" rx="12" fill="#eceafa" stroke="#655b91" stroke-width="2"/>
-<text x="821" y="122" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#17324b">Group totals</text>
-<text x="821" y="154" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#17324b">+ export CSV</text>
-<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#427391"/></marker></defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 460" role="img" aria-labelledby="title desc">
+<title id="title">Community Market Report Pipeline</title>
+<desc id="desc">Six sample sales rows become four clean rows. Revenue is added, then the Walk-in threshold of 4 keeps IDs 1 and 5. The separate three-row stall directory feeds only the join. Grouping and export produce North 3 units 7.5 revenue and South 4 units 16 revenue.</desc>
+<rect width="940" height="460" rx="16" fill="#111827"/>
+<text x="470" y="35" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#f3f4f6">Community Market Report Pipeline</text>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#94d4cb"/></marker></defs>
+<rect x="25" y="70" width="250" height="120" rx="12" fill="#203653" stroke="#94d4cb" stroke-width="2"/>
+<text x="150" y="100" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f3f4f6">Read Sales</text>
+<text x="150" y="135" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f3f4f6">6 rows</text>
+<text x="150" y="162" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f3f4f6">ID 2 repeats</text>
+<rect x="345" y="70" width="250" height="120" rx="12" fill="#203653" stroke="#94d4cb" stroke-width="2"/>
+<text x="470" y="100" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f3f4f6">Clean + Enrich</text>
+<text x="470" y="135" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f3f4f6">IDs 1, 2, 4, 5</text>
+<text x="470" y="162" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f3f4f6">revenue = units × price</text>
+<rect x="665" y="70" width="250" height="120" rx="12" fill="#203653" stroke="#94d4cb" stroke-width="2"/>
+<text x="790" y="100" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f3f4f6">Select Sales</text>
+<text x="790" y="135" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f3f4f6">Walk-in, revenue ≥ 4</text>
+<text x="790" y="162" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f3f4f6">IDs 1 and 5</text>
+<rect x="25" y="280" width="250" height="120" rx="12" fill="#203653" stroke="#94d4cb" stroke-width="2"/>
+<text x="150" y="310" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f3f4f6">Read Directory</text>
+<text x="150" y="345" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f3f4f6">3 stalls</text>
+<text x="150" y="372" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f3f4f6">ID → name + area</text>
+<rect x="345" y="280" width="250" height="120" rx="12" fill="#203653" stroke="#94d4cb" stroke-width="2"/>
+<text x="470" y="310" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f3f4f6">Attach Stalls</text>
+<text x="470" y="345" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f3f4f6">1 → North</text>
+<text x="470" y="372" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f3f4f6">5 → South</text>
+<rect x="665" y="280" width="250" height="120" rx="12" fill="#203653" stroke="#94d4cb" stroke-width="2"/>
+<text x="790" y="310" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f3f4f6">Group + Export</text>
+<text x="790" y="345" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f3f4f6">North: 3 units, 7.5</text>
+<text x="790" y="372" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f3f4f6">South: 4 units, 16.0</text>
+<path d="M275 130 H345" fill="none" stroke="#94d4cb" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M595 130 H665" fill="none" stroke="#94d4cb" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M790 190 V235 H470 V280" fill="none" stroke="#94d4cb" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M275 340 H345" fill="none" stroke="#94d4cb" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M595 340 H665" fill="none" stroke="#94d4cb" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="470" y="438" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f3f4f6">The directory waits for the join; the exported CSV has no row-index column.</text>
 </svg>

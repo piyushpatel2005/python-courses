@@ -5,28 +5,31 @@ order: 10
 language: python
 lesson_type: coding
 pyodide_packages:
-- pandas
+  - pandas
 summary: Connect import, cleaning, enrichment, filtering, joining, grouping and CSV
   export.
 seo_title: Assemble the market report | Introduction to Pandas
 seo_description: Connect import, cleaning, enrichment, filtering, joining, grouping
   and CSV export.
 seo_keywords:
-- pandas
-- community market report
-- end-to-end report
-- pipeline
+  - pandas
+  - community market report
+  - end-to-end report
+  - pipeline
 hints:
-- Read the previous completed function above the new stub; Run for a checkpoint, then
-  Submit.
+  - "Keep stalls from read_tables for attach_stalls; pass each other result into the next helper."
 ---
 
 # Assemble the market report
 
-Every project stage now has one job. Connect them in order so a coordinator can call one function with two CSV strings, a channel, and a revenue threshold. The report still returns CSV **text**, not a saved file. The audit helper above remains available when the coordinator needs to inspect joined rows.
+Each stage is now written. Give the coordinator one function that runs them in order for new input sheets. The completed helpers stay above `build_report` in `main.py`; reuse them rather than repeating their code.
 
-Edit only `build_report` at the bottom of `main.py`. Run: on the sample, Walk-in sales of at least 4 should produce North `3,7.5` and South `4,16.0`. Submit to check fresh sales and stall directories, including a different channel and threshold.
+Start by unpacking `read_tables` into sales and stalls. Pass sales through cleaning, enrichment, and selection. The directory waits until `attach_stalls`, where it joins the selected rows. Then group and export. Local names for each intermediate table make it easier to inspect a stage if the result is surprising.
+
+The audit helper remains available for inspecting joined rows, but this function returns only CSV text. Do not put the audit dictionary into the CSV or save a file.
+
+Implement `build_report`, then Run. With Walk-in sales of at least 4, the sample produces North `3.0,7.5` and South `4.0,16.0`. Submit changes the sheets, channel, and threshold and checks that the helpers receive each other's results.
 
 ## Your Tasks
 
-1. Implement `build_report(sales_text, stalls_text, channel, min_revenue)` using the existing functions in sequence: import → clean → enrich → select → attach → group → export. Return the final CSV string.
+1. Implement `build_report(sales_text, stalls_text, channel, min_revenue)` by calling the supplied import → clean → enrich → select → attach → group → export functions in order, returning the final CSV string.

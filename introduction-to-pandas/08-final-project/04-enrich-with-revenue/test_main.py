@@ -1,15 +1,25 @@
 from solution import *
 
-def test_01_enrich_variable_rows():
-    """Compute revenue and day labels on every supplied row"""
-    for units, prices, dates, revenues in [
-        ([3, 4], [2.5, 4.0], ["2026-09-05", "2026-09-07"], [7.5, 16.0]),
-        ([5, 1], [1.25, 0.0], ["2025-01-31", "2025-02-01"], [6.25, 0.0]),
-    ]:
-        source = pd.DataFrame({"sale_id": [1, 2], "units": units, "unit_price": prices, "sold_at": pd.to_datetime(dates)})
-        original = source.copy(deep=True)
-        result = enrich_sales(source)
-        assert result.revenue.tolist() == revenues
-        assert result.day.tolist() == dates
-        assert list(result.columns) == list(source.columns) + ["revenue", "day"]
-        pd.testing.assert_frame_equal(source, original)
+
+def _cases():
+    return [pd.DataFrame({"units": [3, 4], "unit_price": [2.5, 4.0], "sold_at": pd.to_datetime(["2026-09-05", "2026-09-07"])}), pd.DataFrame({"units": [5, 1], "unit_price": [1.25, 0.0], "sold_at": pd.to_datetime(["2024-02-29", "2025-01-01"])}, index=[8, 3])]
+
+
+def _run(frame):
+    before = frame.copy(deep=True)
+    result = enrich_sales(frame)
+    pd.testing.assert_frame_equal(frame, before)
+    pd.testing.assert_frame_equal(result[frame.columns], before)
+    return result
+
+
+def test_01_revenue_column():
+    """Add row-by-row revenue without requiring the day label"""
+    for frame, values in zip(_cases(), [[7.5, 16.0], [6.25, 0.0]]):
+        assert _run(frame)["revenue"].tolist() == values
+
+
+def test_02_day_labels():
+    """Format the date label without requiring revenue"""
+    for frame, dates in zip(_cases(), [["2026-09-05", "2026-09-07"], ["2024-02-29", "2025-01-01"]]):
+        assert _run(frame)["day"].tolist() == dates

@@ -5,24 +5,26 @@ order: 11
 language: python
 lesson_type: coding
 pyodide_packages:
-- pandas
+  - pandas
 summary: Represent numeric values as a simple text bar chart without plotting tools.
 seo_title: Sketch data with text bars | Introduction to Pandas
 seo_description: Represent numeric values as a simple text bar chart without plotting
   tools.
 seo_keywords:
-- pandas
-- text bar chart
-- Series visualization
+  - pandas
+  - text bar chart
+  - Series visualization
 hints:
-- Use the example above the task and check the printed result before submitting.
+  - "Change the default scale in the function definition; leave the supplied print call alone."
 ---
 
 # Sketch data with text bars
 
-A quick text chart is enough to compare small counts. One `#` per visitor makes length meaningful; use the same unit for each row. A function that accepts a Series can handle any names and counts.
+For a few small counts, a text bar can make a comparison easier to scan. Use the same scale for every label: one `#` represents one visitor.
 
-`visit_bars` currently draws two marks per visitor. Change only `scale=2` to `scale=1`. Run: the first bar should have three marks, not six. Submit to check a different Series too.
+The supplied function loops over `counts.items()`, which yields each Series label and value together. `"#" * 3` makes `"###"`; the f-string adds the label, and `"\n".join(...)` places the bars on separate lines. The counts here are nonnegative whole numbers with no missing values. Zero gets an empty bar.
+
+In `main.py`, change only the default argument `scale=2` to `scale=1`. The supplied one-argument call uses that default. Run should show three marks for Garden and one for Kitchen, then Submit.
 
 ## Your Tasks
 
