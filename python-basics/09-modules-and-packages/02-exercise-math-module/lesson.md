@@ -13,9 +13,9 @@ hints:
   - Divide sparks by six, then round up with math.ceil.
 ---
 
-Adi now fits sparks into lanterns that each hold six. Transfer the math-module pattern, rather than copying the beacon example’s capacity. One partially filled lantern still counts.
+These lanterns each hold six sparks, rather than the four in the beacon demo. A partly filled lantern still counts, so round the division result up with `math.ceil`.
 
-Edit `main.py`, **Run** to see `3` lanterns for 13 sparks, then **Submit**.
+Complete the helper in `main.py`. Run should show `3` lanterns for thirteen sparks. Submit also checks other counts, including zero.
 
 ## Your Task
 

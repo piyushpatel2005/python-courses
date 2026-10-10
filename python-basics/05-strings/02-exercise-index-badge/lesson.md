@@ -13,9 +13,13 @@ seo_keywords: [python basics, strings, lantern atlas]
 
 # Exercise: Read Rune Edges
 
-The next cavern sign carries a different rune, `EMBER-7`. Use zero and negative one to read its edges without changing the supplied string. Edit `main.py`, Run to see both symbols, then Submit.
+The next sign reads `EMBER-7`. Extract its first and last characters without changing the supplied `badge` string.
+
+Use square brackets to read from `badge`, rather than assigning the letters directly. That way, the same code can read a different sign later.
 
 ## Your Tasks
 
-1. Set `first_mark` to the first character of `badge`.
-2. Set `last_mark` to the last character of `badge`.
+1. Set `first_mark` to the first character of `badge` using an index.
+2. Set `last_mark` to the last character of `badge` using an index.
+
+Edit `main.py`. After the first task, Run shows `E None`; `None` is the placeholder for the unfinished value. After both tasks, it should show `E 7`. Submit to check each result.

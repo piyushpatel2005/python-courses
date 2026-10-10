@@ -13,13 +13,11 @@ hints:
   - Import xml.etree.ElementTree as ET, then inspect the parsed root's tag.
 ---
 
-Adi checks whether the final Tool Library record is an atlas. The root is the outermost XML tag: `<atlas><beacon /></atlas>` has root `atlas`, not `beacon`. Use the standard-library package from the demo; no download or device file is needed.
+Check whether a Tool Library record has an `atlas` root. The root is the outermost XML tag: in `<atlas><beacon /></atlas>`, it is `atlas`, not `beacon`. Looking for the word anywhere in the text would not be enough.
 
-Edit `main.py`, **Run** to see `True`, then **Submit**.
+Use the same standard-library module as the demo. Edit `main.py` to import it and complete the check. Run should print `True` for the supplied example, then Submit.
 
 ## Your Tasks
 
 1. Import `xml.etree.ElementTree` as `ET`.
 2. Complete `is_atlas(xml_text)` to parse the text with `ET.fromstring` and return whether its root tag is `"atlas"`.
-
-Adi has a reusable tool for validating the atlas record and can leave the Tool Library.

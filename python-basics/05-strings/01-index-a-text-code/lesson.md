@@ -13,10 +13,16 @@ seo_keywords: [python basics, strings, lantern atlas]
 
 # Read a Rune Code: Demo
 
-Adi carries the workshop loadout into Cipher Caverns. Route signs are strings; `code[0]` reads the first symbol and `code[-1]` the last. Indexes start at zero, and `len(code)` counts characters. A missing single index raises `IndexError`; strings cannot be changed by index.
+The route signs in Cipher Caverns contain short text codes. You can read one character from a string by putting its position, called an **index**, in square brackets.
 
-Edit `last` in `main.py` to use a negative index. Run should show `N R`, then Submit. The next sign uses a different code.
+Python counts positions from zero. In `code = "NOVA-R"`, `code[0]` gives `N`. A negative index counts from the end: `code[-1]` gives the last character, `R`.
+
+The starter reads the first character twice. Run it to see `N N`.
 
 ## Your Task
 
 1. Set `last` to the last character of `code` using a negative index.
+
+Run `main.py` again to see `N R`, then Submit.
+
+A useful boundary to remember: `len(code)` counts the characters, but the last non-negative index is one less than that count. An index outside the string raises `IndexError`. Indexing reads a character; it can't replace a character in the original string.

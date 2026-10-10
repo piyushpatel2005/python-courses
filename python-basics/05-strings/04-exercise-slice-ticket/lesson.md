@@ -13,9 +13,13 @@ seo_keywords: [python basics, strings, lantern atlas]
 
 # Exercise: Decode Route Fields
 
-Adi finds a second sign with a three-letter route and a four-digit beacon number. The colon at index 3 separates them. Keep the sign unchanged; use slices to decode both fields. Edit `main.py`, Run, then Submit.
+The sign `ARC:2048` contains two pieces of information: a three-letter route and a four-digit beacon code. The colon at index `3` separates them.
+
+Keep `ticket` unchanged and read each piece with a slice. The beacon code should stay a string; there's no calculation to do with it here.
 
 ## Your Tasks
 
-1. Set `route_name` to the first three characters of `ticket`.
-2. Set `number` to the four characters after the colon using a slice.
+1. Set `route_name` to a slice containing the first three characters of `ticket`.
+2. Set `number` to a slice containing the four characters after the colon.
+
+Run `main.py` as you work. The first task should give `ARC None`; both tasks should give `ARC 2048`. Submit to check the two slices separately.

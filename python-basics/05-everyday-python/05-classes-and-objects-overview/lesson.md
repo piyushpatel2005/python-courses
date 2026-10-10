@@ -13,8 +13,15 @@ seo_keywords: [python classes, python objects, oop introduction, attributes meth
 
 # Classes and objects overview
 
-The Lantern Atlas has many beacons. Think of a **class** as a plan for what one beacon can contain, and an **object** as one beacon made from that plan. Two beacons might share the same plan but have different energy readings.
+The Lantern Atlas has several beacons. They all have a name and an energy reading, but those values differ from one beacon to the next.
 
-An object's **attributes** are its data, such as a beacon's name and energy. Its **methods** are actions associated with it, such as describing its glow. You have already used methods on built-in objects: `"glow".upper()` asks a string object for uppercase text.
+A **class** describes a kind of object: what data it holds and what operations it provides. A beacon class could describe those shared features. Each individual beacon would be an **object** of that class, with its own name and energy.
 
-This is vocabulary for reading future Python code, **not an exercise in writing classes**. No `class`, constructor, or inheritance is needed in the final mission. A list of energy readings and a few regular functions are enough.
+You'll see two more words when reading about objects:
+
+- **Attributes** hold an object's data, such as the beacon's name or energy.
+- **Methods** are functions associated with an object, such as one that describes the beacon's glow.
+
+You've already called a method on a built-in object. In `"glow".upper()`, the string is the object and `upper()` is the method. It returns the uppercase string `"GLOW"`.
+
+You don't need to write a class for the final mission. Its list of energy readings and ordinary functions already give you what you need. Keep these terms as a starting point for reading class-based code later; constructors and inheritance can wait until then.

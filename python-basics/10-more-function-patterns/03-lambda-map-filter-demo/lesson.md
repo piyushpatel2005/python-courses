@@ -11,9 +11,11 @@ seo_description: Use lambda, map, and filter to tune beacon frequencies.
 seo_keywords: [python lambda, map, filter, Echo Tower]
 ---
 
-Adi's receiver adds a small adjustment to each frequency, then keeps frequencies above the tower's threshold. A `lambda` is a short unnamed function. `map(function, items)` transforms each item; `filter(function, items)` keeps those meeting a condition. Both return iterators, so `list(...)` lets you see the values.
+The receiver adjusts each frequency, then keeps only strong signals. The starter uses a lambda, a short function written as a single expression. In `lambda value: value + 1`, `value` is the input and the expression after the colon supplies the result.
 
-In `main.py`, change **only** the adjustment inside the `map` lambda from `1` to `2`. Run to see `Tuned: [5, 7, 9]` and `Strong: [7, 9]`, then Submit. A loop or comprehension is often clearer for a larger operation; the next exercise uses this compact pattern on different beacon data.
+`map(function, items)` applies the function to each item. `filter(function, items)` keeps an item when the function returns a true value. Both produce iterators; wrapping them in `list(...)` collects their values so you can print them.
+
+In `main.py`, change only the adjustment in the `map` lambda from `1` to `2`. Run should show `Tuned: [5, 7, 9]` and `Strong: [7, 9]`. Leave the filter rule unchanged, then Submit. For a longer operation, a regular function or loop may be easier to read.
 
 ## Your Task
 

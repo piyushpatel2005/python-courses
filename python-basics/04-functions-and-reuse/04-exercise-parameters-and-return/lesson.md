@@ -15,8 +15,12 @@ hints:
 
 # Exercise: Combine Beacon Energy
 
-Adi must combine a charged shard with stored energy before entering the cavern. Like the boost demo, return a result so other abilities can reuse it. The supplied call prints the outcome. Edit `main.py`, Run, then Submit.
+A charged shard holds some energy, and the workshop has a reserve. Your function needs to add the two amounts so the result can be used elsewhere.
+
+The parameter names `shard` and `reserve` stand for whichever numbers the caller supplies. Use those names in your calculation rather than writing a fixed answer.
 
 ## Your Tasks
 
-1. Complete `combine_energy(shard, reserve)` to return the sum for any two numbers.
+1. Complete `combine_energy(shard, reserve)` so it returns the sum of its two inputs.
+
+Replace `pass` with your return statement. The supplied print call handles the display; you don't need a print inside the function. Run `main.py` to see `11`, then Submit to check that the function works with other numbers too.

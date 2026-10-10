@@ -16,9 +16,13 @@ hints:
 
 # Save a note at the shrine
 
-Adi records a clue at the save shrine before the final beacon mission. Python can write and read a text file. **Here `open()` uses Pyodide's in-memory browser filesystem, not your computer's local files.** The note can disappear when the runner resets; this lesson does not download or edit a file on your device.
+Adi needs to leave a clue at the save shrine. You'll write the clue to a text file, then read it back.
 
-`open(path, "w")` creates or overwrites a file; `open(path, "r")` reads an existing file. `with` closes the file when its block ends. A different clue might be saved like this:
+Files in this exercise are temporary and stay inside the browser workspace. They may disappear when the workspace resets. Writing a note here does not download a file or change files on your device.
+
+Use `open(path, "w")` to create a file or replace its contents. Use `open(path, "r")` to read an existing file. The `with` statement closes the file when you leave its indented block.
+
+Here is a separate clue saved in `cave-clue.txt`:
 
 ```python
 with open("cave-clue.txt", "w") as file:
@@ -27,9 +31,11 @@ with open("cave-clue.txt", "r") as file:
     print(file.read())  # Follow the blue glow
 ```
 
-Complete one function at a time in `main.py`. Run should show the saved clue instead of `None`.
+`file.write(text)` stores the text you give it. `file.read()` returns the file's contents as a string, including any line breaks.
+
+In `main.py`, the call to `write_note()` and the print call are already supplied. Complete the two functions in order. After the first, Run will still show `Saved clue: None`: the note is written, but `read_note()` does not return it yet. After both, Run should show `Saved clue: Follow the silver path`. Submit checks each function separately.
 
 ## Your Tasks
 
-1. Complete `write_note(text)` so it writes `text` to `atlas-save.txt` using `with open(..., "w")`.
-2. Complete `read_note()` so it reads and returns all text from `atlas-save.txt` using `with open(..., "r")`. Run and Submit.
+1. Complete `write_note(text)` to write `text` to `atlas-save.txt` using `with open(..., "w")`.
+2. Complete `read_note()` to return all the text in `atlas-save.txt` using `with open(..., "r")`.

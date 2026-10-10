@@ -11,9 +11,9 @@ seo_description: Replace, append, and remove items in Adi’s mutable loadout.
 seo_keywords: [python basics, lists and tuples, lantern atlas]
 ---
 
-# Exercise: Repair the Loadout
+This loadout has a typo, a missing lens, and a spent shard. Make each repair on the supplied `gear` list rather than replacing the list with a finished answer.
 
-Adi's gear has a typo and a spent item. Correct the middle item, add a fresh lens, and remove the spent shard **by value**. Each change affects the same list. Edit `main.py`, Run, then Submit.
+Use indexing for the typo, `append()` for the new item, and `remove()` for the spent one. Edit `main.py`; Run after each change to see its effect, then Submit.
 
 ## Your Tasks
 

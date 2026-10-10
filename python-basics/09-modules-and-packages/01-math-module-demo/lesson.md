@@ -13,9 +13,11 @@ hints:
   - Change the number in the bottom call, not the divisor.
 ---
 
-In the Tool Library, Adi calculates how many beacons hold a pile of sparks. `math` is a standard-library module; `math.ceil` rounds upward, so a partial group needs another beacon. Each beacon holds four sparks.
+The Tool Library has code you can reuse. Python's standard library includes `math`, a module of mathematical tools. `import math` makes the name `math` available; the dot in `math.ceil(...)` selects its `ceil` function.
 
-Edit the last call in `main.py` from `8` to `11`, **Run** to see the result change from `2` to `3`, then **Submit**. The next exercise uses a different tool and capacity.
+`ceil` rounds up. Each beacon holds four sparks, so eleven sparks need three beacons even though the third is only partly full.
+
+Change the final call in `main.py` from `8` to `11`. Run should change from `2` to `3`, then Submit.
 
 ## Your Task
 

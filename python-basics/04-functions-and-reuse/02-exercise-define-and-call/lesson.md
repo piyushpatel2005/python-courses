@@ -15,8 +15,12 @@ hints:
 
 # Exercise: Activate a Beacon
 
-The demo called a completed ability. Now Adi needs a new announcement when a beacon lights. Replace `pass` inside `announce()`; the supplied call provides the checkpoint. Run `main.py`, then Submit.
+A beacon has just lit up. Give it an announcement of its own.
+
+The starter already defines `announce()` and calls it at the bottom. Inside the function, `pass` is a placeholder: it lets Python accept an empty body, but it does nothing when the function runs.
 
 ## Your Tasks
 
-1. Define `announce()` to print `Beacon restored`; keep the supplied call.
+1. Replace `pass` inside `announce()` with a statement that prints `Beacon restored`.
+
+Indent your statement four spaces, just like the placeholder. Keep the supplied call below the function. When you Run `main.py`, the message should appear once. Submit to check it.

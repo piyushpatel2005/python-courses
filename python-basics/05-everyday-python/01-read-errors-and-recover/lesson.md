@@ -15,11 +15,19 @@ hints:
 
 # Recover a beacon reading
 
-At the save shrine, Adi finds an energy reading stored as text. Some readings say `"unknown"` instead of `"3"`. Return zero for unreadable readings so one bad inscription does not stop the journey.
+At the save shrine, Adi finds an energy reading stored as text. A reading of `"3"` can become a number, but `"unknown"` cannot. You'll give the game a fallback value of zero when a reading is unreadable.
 
-A traceback points to the failed line and ends with an error name. `int("unknown")` raises `ValueError`; accessing a missing list index raises `IndexError`; a misspelled name raises `NameError`. A `SyntaxError` means Python cannot parse the code at all. Read the last line of a traceback, then inspect the indicated line.
+When Python stops with an error, start at the last line of the traceback. It names the error and explains what went wrong. Then look at the line of code it points to.
 
-Protect only the operation that might fail:
+The error name helps narrow your search:
+
+- `ValueError`: a value cannot be used as requested, as with `int("unknown")`.
+- `IndexError`: a list index is out of range.
+- `NameError`: Python cannot find a name, perhaps because it was misspelled.
+
+A `SyntaxError` is different: Python cannot read the code as valid Python, so it cannot begin running it.
+
+For the unreadable energy, put the conversion inside `try` and handle `ValueError` in `except`:
 
 ```python
 try:
@@ -29,8 +37,10 @@ except ValueError:
 print(flame)  # 0
 ```
 
-`except ValueError` does not hide unrelated mistakes. Run `main.py`: both sample results initially say `None`. Your change should display `3` and `0`.
+Python tries the conversion first. If it fails with `ValueError`, the `except` block sets `flame` to zero. Other kinds of errors still surface, so you can find and fix them.
+
+Edit `main.py`. The supplied print calls currently show `None` because the function has no return value. After your change, Run should show `Valid energy: 3` and `Invalid energy: 0`. Use Submit to check the function with other readings too.
 
 ## Your Task
 
-1. Complete `parse_energy(text)` so valid integer text returns an `int`, and text that raises `ValueError` returns `0` using `try` / `except ValueError`. Run and Submit.
+1. Complete `parse_energy(text)` using `try` / `except ValueError`: return the integer from `int(text)`, or `0` if the conversion fails.

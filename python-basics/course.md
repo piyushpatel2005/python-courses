@@ -1,8 +1,8 @@
 ---
 slug: python-basics
 title: "Python Basics: The Lantern Atlas"
-description: Guide Adi through the levels of The Lantern Atlas by coding messages, gate logic, abilities, inventory, saves, and a final beacon mission in Python.
-summary: A beginner Python adventure with editable demos, distinct coding challenges, level projects, and quizzes.
+description: Learn Python by writing the messages, gear calculations, route decisions, and save data for The Lantern Atlas, a small text-based game.
+summary: Practice Python from your first print call to a text-based mission, with editable examples, coding exercises, and quizzes.
 language: python
 level: Beginner
 format: Guided coding, exercises, and quizzes
@@ -48,22 +48,24 @@ modules:
 
 # The Lantern Atlas
 
-Adi is a pathfinder in an original text-based game. The beacons along the route have gone dark. Each level gives you a small piece of Python to restore the route and reach the Exit Gate. You write the game systems yourself: a first message at Spawn Camp, gear calculations, decisions at gates, reusable abilities, rune decoding, an inventory, map records, save data, and a final mission. There is no existing game engine to install or copyrighted game world to know.
+The beacons in The Lantern Atlas have gone dark. Adi, a pathfinder, needs a route to the Exit Gate. You will write the small Python programs behind that route, beginning with a message at Spawn Camp and working toward a final text-based mission.
 
-Each level introduces a concept with an editable worked demo, then lets you try a related challenge with different data. You will slowly but surely gain skills to program your own text based game in Python. 
+You do not need programming experience or a game engine. Each level introduces an idea through a small example, gives you an editable demo, and asks you to use the idea with different data. Along the way, you will calculate gear costs, choose routes, manage an inventory, and save information.
+
+Most of the work happens in the browser. An optional lesson shows you how to run a saved Python file on your own computer, but installing Python is not required for the course.
 
 ## Level path
 
-1. Spawn Camp — Learn about creating variables and printing values on the console.
-2. Gear Forge — Calculate resources, format the HUD, and convert text values.
-3. Gate Trials — compare conditions and use loops to navigate encounters.
-4. Ability Workshop — build reusable actions with functions and scope.
-5. Cipher Caverns — read, slice, clean, and format rune text.
-6. Inventory Ridge — manage ordered gear and fixed checkpoint records.
-7. Map Archive — track keyed records and unique locations.
-8. Save Shrine — recover from bad data and read/write temporary save files.
-9. Tool Library — import reusable tools and local modules.
-10. Echo Tower — explore optional recursive and functional patterns.
-11. Exit Gate — assemble the final text-based level and preview classes and objects as future vocabulary.
+1. Spawn Camp: Name values with variables and print messages in the console.
+2. Gear Forge: Calculate resources, format a gear display, and convert text to numbers.
+3. Gate Trials: Check conditions, choose a branch, and repeat actions with loops.
+4. Ability Workshop: Write reusable actions with functions and learn where variables are available.
+5. Cipher Caverns: Read, slice, clean, and format text.
+6. Inventory Ridge: Work with ordered gear and fixed checkpoint records.
+7. Map Archive: Look up records by key and track unique locations.
+8. Save Shrine: Handle bad data and read and write temporary save files.
+9. Tool Library: Import tools and organize code in local modules.
+10. Echo Tower: Try optional recursion and functional patterns.
+11. Exit Gate: Build a final text-based level and meet classes and objects as vocabulary for future study.
 
-In each lesson, follow the instructions presented in the left lesson panel and execute your code in the code editor. Once done, you can submit your code to review your work.
+In a coding lesson, read the explanation, edit **main.py**, and use **Run** to inspect the output. **Submit** checks the numbered tasks and tells you what still needs work. Some short reading lessons have runnable examples instead of an editor. Each level ends with a quiz.

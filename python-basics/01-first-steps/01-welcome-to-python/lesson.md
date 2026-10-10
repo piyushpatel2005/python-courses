@@ -10,52 +10,44 @@ seo_description: "Learn to run Python and print the first lines of Adi’s route
 seo_keywords: [python basics, first steps, lantern atlas]
 ---
 
-Adi is a pathfinder in **The Lantern Atlas**. Spawn Camp is dark. Adi must restore dim beacons to unlock the exit. In this level, you will print messages, name a location, and pack starting supplies.
+Adi is a pathfinder in **The Lantern Atlas**, a text-based game whose beacons have gone dark. You will write the messages and small programs that help Adi find the way. At Spawn Camp, start with output, variables, and a few supplies.
 
-Let's get some basic information about Python before going into actual practice.
+## A little background
 
-### History of Python Language
+Guido van Rossum created Python in the early 1990s. This course uses Python 3. Older tutorials may use Python 2, which is no longer supported; use Python 3 examples as you learn.
 
-Python was developed in 1990 and it is now one of the most popular general-purpose languages available. This means it can be used for pretty much anything. Python has had few major rleases. Python 2.7 was widely used for a long time. However, Python Foundation decided to deprecate this version in 2020. Now, the latest major version is Python 3 and it comes with newer versions of the UNIX systems. We will learn only Python 3.
+Python is a general-purpose language. People use it for websites, data analysis and machine learning, image processing, desktop applications, networking, automation, and games. Here, a small text-based game gives us a reason to practice without needing graphics or a game engine.
 
-## What is Python used for?
+## What working in Python feels like
 
-You can use Python for various types of applications. Some of the most common ones are:
+Python code often reads closely to the steps you want a program to take. You can run a short program, inspect its output, and change one line to see what happens.
 
-- Web development
-- Machine Learning and AI
-- Image Processing
-- Game development
-- GUI development
-- Networking and System development
-- Automation
+A few features are worth knowing now. The later lessons will give you practice with them:
 
-## Why should you learn Python?
+- You can assign a value to a variable without declaring its type first. This is called **dynamic typing**; it does not mean dynamic programming, which is a different idea.
+- Python is open source and free to use. Programs can run on Windows, macOS, and Linux, though operating-system-specific code may need changes.
+- A Python interpreter runs your code. You do not normally perform a separate compilation step yourself. The usual Python implementation does compile code to an intermediate form internally, so it is more than a line-by-line translation into machine code.
+- Python manages memory automatically, including reclaiming objects that are no longer needed.
+- Its standard library and additional packages provide tools for common jobs, so you do not have to write everything yourself.
 
-There is a lot of demand for Python developer. It's become one of the essential skills for most software engineering jobs out there. With the advancements in the field of AI, data science, machine learning, etc. Python is becoming even more popular. Here are some reasons why it is the number one language.
+You do not need to memorize that list before writing your first line.
 
-1. Python has very concise and readable syntax. So, it's easier to read and understand for beginners.
-2. Dynamic Programming language: This means you do not need to specify the data type with each variable and function declaration like some of the other languages.
-3. Open source: Python is open source, so you can use it freely for any purpose.
-4. Cross-platform: This means the code written in one operating system can still work on another operating system.
-5. Interpreted language: This means during execution time, each line is interpreted to the machine language one line at a time. Other languages like C++, Java, C# are compiled languages which means they are first compiled into machine code and during execution they only use those machine code. With Python, this extra compilation step is not required.
-6. Memory management and Garbage collection: Python has built-in support for Garbage collection. That means you don't have to worry about allocating and then deallocating memory from our system. Python interpreter will take care of this.
-7. Python comes with vast library of open source packages. This means anything you want to do with Python, you can find a package for almost any type of task you want to perform.
+## Print a message
 
-## Simple Python Syntax
+`print()` displays a value in the console, the area where program output appears. Put text inside quotation marks and place it between the parentheses.
 
-Let's get started with simple printing as a first step. You can print just about anything using `print()` function. Whatever you put between the two parenthesis gets printed on the console.
-
-Click on **Run** button in below code to see the output.
+Press **Run** below. You should see `Hello there`, without quotation marks.
 
 ```python run
 print("Hello there")
 ```
 
-Whenever you want to print any text, you just need to put them in the double quotes. 
+The quotation marks tell Python where the text begins and ends. They are part of the code, not part of the message it prints.
+
+Run this example too:
 
 ```python run
 print("Hey Adi, Welcome to Spawn Camp")
 ```
 
-Next up, let's print your own message on the console.
+The next lesson gives you an editor so you can change the camp message yourself.

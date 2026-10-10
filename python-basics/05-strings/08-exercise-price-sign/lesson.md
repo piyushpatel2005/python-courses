@@ -13,11 +13,13 @@ seo_keywords: [python basics, strings, lantern atlas]
 
 # Exercise: Write a Decoded Route Sign
 
-Adi prepares a decoded sign for the exit route. Combine the supplied route name, beacon count, and cost into two readable lines. This is the cavern checkpoint before Inventory Ridge.
+Write a two-line sign for the exit route: its name and beacon count on the first line, then the total energy on the second.
+
+The supplied `energy_cost` is the cost of one beacon. Multiply it by `beacons` to calculate the total. An f-string can contain that calculation inside its braces, just as it can contain a variable name.
 
 ## Your Tasks
 
-1. Set `heading` to `ECHO: 3 beacons` with an f-string.
-2. Set `energy_line` to `Energy: 12.75` using an f-string and two-decimal formatting.
+1. Set `heading` with an f-string using `route` and `beacons`, giving `ECHO: 3 beacons`.
+2. Set `energy_line` with an f-string showing the total energy to two decimal places, giving `Energy: 12.75`.
 
-Edit `main.py`, Run to inspect both lines, then Submit. Adi can now read the route to the next beacon.
+The two print calls are ready for you. Run `main.py` to inspect each line, then Submit. You can now read, clean, and format a route sign. After the section quiz, you'll use collections to organise supplies for Inventory Ridge.

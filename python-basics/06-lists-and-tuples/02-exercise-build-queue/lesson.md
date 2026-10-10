@@ -11,9 +11,9 @@ seo_description: Build a gear list and read its first and last items.
 seo_keywords: [python basics, lists and tuples, lantern atlas]
 ---
 
-# Exercise: Build a Gear Queue
+Build a fresh gear list for the ridge crossing. This time, you'll create the list yourself and read an item from each end. Put quotes around each gear name: these are strings.
 
-Adi lines up equipment for the final ridge crossing. The demo selected the last piece; now create a list and read both ends by index. Edit `main.py`, Run, then Submit.
+Work in `main.py`. Run after each task to inspect the supplied printout, then Submit to check your progress.
 
 ## Your Tasks
 

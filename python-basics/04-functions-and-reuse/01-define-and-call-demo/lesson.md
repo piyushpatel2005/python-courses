@@ -15,8 +15,18 @@ hints:
 
 # Define a Beacon Ability: Demo
 
-Adi reaches the first dim beacon in the Ability Workshop. A function stores an action under a name: `def welcome():` defines it, and `welcome()` runs it. In `main.py`, change the printed destination from `North Beacon` to `East Beacon`. Run to see the new announcement, then Submit.
+The workshop's welcome message is an action you'll want to use again. A **function** gives that action a name, so you can run it without copying its code.
+
+Look at `main.py`:
+
+- `def welcome():` defines the function. The colon starts its body.
+- The indented `print(...)` belongs to that function.
+- `welcome()` calls the function. This is the line that makes the message appear.
+
+Defining a function doesn't run its body. Think of saving a game ability to a shortcut: you still need to activate it.
 
 ## Your Tasks
 
-1. Change the place printed by `welcome()` to `East Beacon`, keeping the call.
+1. Change the destination inside `welcome()` from `North Beacon` to `East Beacon`.
+
+Leave the supplied `welcome()` call in place. Run `main.py` to see `Welcome to the East Beacon`, then Submit to check your change. Next, you'll write the announcement inside a different function.

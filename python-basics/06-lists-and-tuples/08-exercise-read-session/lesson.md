@@ -11,13 +11,11 @@ seo_description: Index and unpack a fixed exit checkpoint record.
 seo_keywords: [python basics, lists and tuples, lantern atlas]
 ---
 
-# Exercise: Read an Exit Checkpoint
+Read the record at the ridge exit. Its marker and signal time are stored together in `exit_record`. First read just the marker by index; then unpack both values into separate names.
 
-Adi's final exit checkpoint has a marker and a signal time that must travel together. Use tuple indexing for the marker, then unpack the same record into two names. Edit `main.py`, Run, then Submit.
+Edit `main.py` and use the supplied printout to check each result with Run. Submit after each task. This is the ridge exit, not the final Exit Gate; the Map Archive comes next.
 
 ## Your Tasks
 
 1. Set `marker_name` to the first element of `exit_record` by indexing.
 2. Unpack `exit_record` into `marker` and `signal_time`.
-
-With the record decoded and the gear list ready, Adi can relight the ridge beacon and unlock the exit.

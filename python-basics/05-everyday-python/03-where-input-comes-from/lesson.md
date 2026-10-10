@@ -13,9 +13,9 @@ seo_keywords: [python input, input returns string, pyodide browser, command line
 
 # Where input comes from
 
-In a terminal version of The Lantern Atlas, a player could type Adi’s next move. Python's `input()` displays a prompt, pauses for a line, and returns **text** (`str`), even when the player types digits.
+In a terminal version of The Lantern Atlas, the player could type a hero name and an energy reading. Python's `input()` displays a prompt and waits for a line of text. It returns a string even when the player types digits.
 
-This is an **illustration for a terminal program, not a runnable browser exercise**:
+This example is for a terminal program, not the browser editor:
 
 ```python
 hero = input("Hero name: ")
@@ -24,4 +24,6 @@ energy = int(energy_text)  # Invalid text raises ValueError.
 print(f"{hero} carries {energy} energy")
 ```
 
-Do **not** copy this into the browser editor: `input()` may wait for a prompt the Pyodide runner cannot supply. Browser missions start with a value such as `energy_text = "2"`; pass it to a function, then Run or Submit. The `try` / `except ValueError` from the save-shrine lesson can handle invalid text in a real terminal game.
+Notice the separate conversion step. `input()` collects the energy as text; `int()` turns that text into a number. If the player types `unknown`, the conversion raises `ValueError`. The `try` / `except ValueError` pattern from the beacon-reading lesson could handle that case.
+
+Keep this example out of the browser editor, where a terminal prompt may not be available. The browser missions supply values such as `energy_text = "2"` instead. You can pass those values to a function and use Run or Submit without waiting for someone to type a response.

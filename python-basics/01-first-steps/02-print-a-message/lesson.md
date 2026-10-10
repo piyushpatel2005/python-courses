@@ -10,10 +10,12 @@ seo_description: "Edit one print string to announce Adi’s arrival."
 seo_keywords: [python basics, first steps, lantern atlas]
 ---
 
-The camp sign already prints `Spawn Camp is dark`. Again, remember quotation marks hold text in Python and `print()` function shows it in the console. Change only the quoted message in the code editor, then press **Run** and **Submit**. 
+The camp sign currently says `Spawn Camp is dark`. You will change that message to announce Adi's arrival.
 
-The next mission uses two new lines rather than copying this one.
+Open **main.py** in the editor. Keep `print()`, its parentheses, and the quotation marks; replace just the text between the quotes. Press **Run** to read the new message in the console, then **Submit** to check it.
 
 ## Your Tasks
 
-1. Print `Adi enters Spawn Camp`. in the console.
+1. Change the message to print `Adi enters Spawn Camp`.
+
+The following exercise asks you to write two print calls of your own.

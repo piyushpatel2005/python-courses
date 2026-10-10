@@ -13,9 +13,9 @@ seo_keywords:
 - beginner dictionary-fields exercise
 ---
 
-Adi finds a map entry for Moss Gate. Transfer the card lookup pattern: read its landmark, record one more mark, and request an optional clue without raising `KeyError`.
+The Moss Gate entry needs one more mark. Use the dictionary keys to read its landmark and update its count. Its clue is optional, so use `get()` to supply a fallback when that key is absent.
 
-Edit `main.py`, press **Run** to inspect the entry, then **Submit**.
+Make the changes in `main.py`. Run to inspect the three results, then Submit.
 
 ## Your Tasks
 

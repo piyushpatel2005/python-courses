@@ -13,9 +13,11 @@ seo_keywords:
 - beginner collections-project exercise
 ---
 
-Adi’s finds are a list of dictionaries. Each record has a `location` and a `beacon`; the same location can appear twice. A loop collects locations, `.get(beacon, 0) + 1` counts finds by beacon, and a set counts distinct locations.
+Each find is a dictionary with a `location` and a `beacon`. The list keeps all the finds, including repeated visits to one location.
 
-Edit `main.py`, **Run** to see `2 locations` instead of `3`, then **Submit**. The next mission uses new treasure records.
+Read the supplied loop in `main.py`. It collects locations and counts each beacon with `.get(beacon, 0) + 1`. For a new beacon, `get()` returns zero and the count becomes one. When that beacon appears again, its stored count of one becomes two.
+
+The last calculation counts visits rather than distinct places. Change it to count unique locations. Run should show `2 locations` instead of `3`, then Submit.
 
 ## Your Task
 

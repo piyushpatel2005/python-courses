@@ -1,5 +1,5 @@
 def ability_label(name, mark):
-    pass
+    return name + mark
 
 print(ability_label("Pulse", "."))
 print(ability_label("Pulse", "."))

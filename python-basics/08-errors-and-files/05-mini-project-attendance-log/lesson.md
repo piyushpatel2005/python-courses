@@ -11,14 +11,14 @@ seo_description: 'Recover charges, write a shrine save, and read it back.'
 seo_keywords: [python mini project, error handling, file handling]
 ---
 
-Adi gathers charge readings for the Save Shrine. Some are faded; count those as zero, then store the total in `beacon-save.txt` and read it back in the same run. Files in Pyodide are temporary, not permanent device saves. The sample needs no `input()`.
+Collect several shrine readings into one save. Some readings are faded; treat those as zero and add the valid numbers. Then write the total to `beacon-save.txt` and read it back in the same run.
 
-Edit `main.py`, **Run** to see `Charge: 5`, then **Submit** each helper in task order.
+The save is a temporary browser file. The starter supplies the readings, so you do not need `input()`.
+
+Build the helpers in `main.py` in task order and Submit after each one. Run shows `Charge: 5` once the save and read helpers work; unfinished helpers may still print `None`.
 
 ## Your Tasks
 
 1. Complete `total_charge(entries)` to add converted counts in a loop and treat `ValueError` entries as zero; an empty list totals zero.
 2. Complete `save_beacons(entries)` to write exactly `"Charge: <total>"` to `beacon-save.txt` using `total_charge` and `with open(..., "w", encoding="utf-8")`.
-3. Complete `read_beacons()` to return the whole saved file with `with open(..., "r", encoding="utf-8")`.
-
-The shrine can now recover a faded reading and restore its in-memory save before Adi enters the Tool Library.
+3. Complete `read_beacons()` to return the whole saved file using `with open(..., "r", encoding="utf-8")`.

@@ -11,13 +11,13 @@ seo_description: Read the last item of Adi’s ordered gear list.
 seo_keywords: [python basics, lists and tuples, lantern atlas]
 ---
 
-# Index a Gear List: Demo
+Welcome to Inventory Ridge. You have a route; now you need an ordered list of gear. Python lists use the same index positions you saw with strings: `0` selects the first item and `-1` selects the last.
 
-Adi arrives at Inventory Ridge with a decoded route. A list keeps gear in order: index zero is first, `-1` is last, and `len(gear)` counts items. An index beyond the list raises `IndexError`.
+`len(gear)` tells you how many items the list holds. An index outside the list raises `IndexError`.
 
 ![Positive and negative indexes on Adi's gear list](list-indexing.svg "First item at 0, last at -1")
 
-Change `last_gear` in `main.py` to select the last item. Run should print `lens`, then Submit. The next exercise builds a different list.
+The starter reads the first item. Edit `main.py` to read the last one instead. Press Run and look for `lens`, then Submit to check your change.
 
 ## Your Task
 

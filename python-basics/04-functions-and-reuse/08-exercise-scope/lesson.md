@@ -15,8 +15,12 @@ hints:
 
 # Exercise: Spend Local Energy
 
-Adi tests a pulse without spending the workshop's stored energy. Assign a local value inside the function and return it; the outer value remains available for later beacons. Edit `main.py`, Run to compare both printed numbers, then Submit.
+Preview a pulse that uses `15` energy while the workshop's stored value remains `20`.
+
+This time, the function body is yours to write. An assignment inside `pulse_energy()` creates a local variable. Return that value so the supplied print call can show it.
 
 ## Your Tasks
 
-1. Complete `pulse_energy()` with a local `energy` of `15` and return it; the outer `energy` must remain `20`.
+1. Complete `pulse_energy()` so it creates a local `energy` value of `15` and returns it.
+
+Keep the outer `energy = 20` unchanged. Run `main.py`: the first line should be `15` and the second `20`. Submit to check both values.

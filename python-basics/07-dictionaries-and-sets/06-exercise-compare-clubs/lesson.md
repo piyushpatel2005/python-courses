@@ -13,9 +13,11 @@ seo_keywords:
 - beginner sets exercise
 ---
 
-Adi and a scout explored overlapping routes. Convert Adi’s list to a set to remove repeats. Convert the scout’s list too before using `&` to find shared stops or `-` to keep only Adi’s. Sort the printed sets to make the checkpoint predictable.
+Compare Adi's route with a scout's route. The starter calls the first route `ari_stops` and the second `scout_stops`; keep those variable names as you work.
 
-Edit `main.py`, **Run** to inspect the three groups, then **Submit**.
+Convert the lists to sets before comparing them. The intersection operator `&` keeps stops in both sets. The difference operator `-` keeps stops in the left set but not the right, so the order matters.
+
+Edit `main.py`. The supplied printout sorts the sets so you can read the three groups consistently. Run, then Submit.
 
 ## Your Tasks
 

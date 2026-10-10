@@ -13,9 +13,11 @@ hints:
   - Keep the import; replace the tag inside the quoted string.
 ---
 
-The Tool Library also reads short XML labels. A package groups modules; `xml.etree.ElementTree` is a dotted path to a standard-library module. `ET.fromstring(xml_text).tag` returns the outer tag. No installation is needed.
+A package organizes related modules. The dotted name `xml.etree.ElementTree` follows that organization to a module in Python's standard library. The starter imports it `as ET`: `ET` is just a shorter name for the same module.
 
-Edit `main.py` to change `<trail />` to `<beacon />`. **Run** to see `beacon`, then **Submit**. The next exercise checks a different XML record.
+This module reads XML, a text format with tags such as `<trail />`. `ET.fromstring(xml_text)` reads the text into an object. Its `.tag` attribute gives the name of the outermost tag, such as `trail`. You do not need to install anything for this example.
+
+In `main.py`, change the final call's text from `<trail />` to `<beacon />`. Run should print `beacon`, then Submit.
 
 ## Your Task
 

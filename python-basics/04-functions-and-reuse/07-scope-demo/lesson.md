@@ -10,13 +10,19 @@ seo_title: "Local Energy Scope: Demo | Python Basics"
 seo_description: Keep temporary ability energy separate from the outer energy value.
 seo_keywords: [python basics, functions and reuse, lantern atlas]
 hints:
-  - Edit the indented room assignment only.
+  - Edit the indented energy assignment only.
 ---
 
 # Local Energy Scope: Demo
 
-Names assigned inside a function are local to that call. Adi's stored `energy` and the temporary `energy` inside `preview_pulse()` can differ without overwriting one another. Run the starter: both lines show `20`. Change only the inner assignment to `15`; Run should show `15` then `20`. Submit to check.
+The workshop has `20` energy stored. You can preview a different amount inside a function without changing that stored value.
+
+There are two assignments named `energy` in `main.py`. The indented one belongs to `preview_pulse()`: it's a **local variable**. The assignment outside the function is separate, even though it uses the same name.
+
+Run the starter. Both values happen to be `20`, so the difference isn't visible yet.
 
 ## Your Tasks
 
-1. Change the assignment inside `preview_pulse()` to `15`, leaving the outer `energy` at `20`.
+1. Change the `energy` assignment inside `preview_pulse()` to `15`.
+
+Leave the outer assignment at `20`. Run again and compare the lines: the function returns `15`, but the stored value is still `20`. Submit to check that only the local value changed.

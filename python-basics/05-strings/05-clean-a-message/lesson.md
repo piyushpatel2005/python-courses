@@ -13,10 +13,28 @@ seo_keywords: [python basics, strings, lantern atlas]
 
 # Clean a Rune Message: Demo
 
-Rune messages can have stray spaces and mixed case. `strip()` removes surrounding whitespace; `lower()` changes case. `replace(old, new)` creates a changed string, and `startswith()` checks a prefix. These methods return new results without changing the original.
+A message can contain the right words but still be awkward to compare: `"  Beacon Dim  "` has extra spaces and mixed capitalization.
 
-In `main.py`, add `.lower()` after `.strip()`. Run should print `beacon dim`, then Submit. The next sign needs a fuller cleanup.
+A string **method** is an operation called after the string, using a dot. Here are two that help:
+
+- `strip()` removes whitespace from the beginning and end.
+- `lower()` turns uppercase letters into lowercase letters.
+
+You can chain them. In `message.strip().lower()`, Python strips the spaces first, then lowercases that result. It doesn't change the original `message`.
 
 ## Your Task
 
-1. Set `cleaned` to the stripped, lowercased message.
+1. Set `cleaned` to `message` with its surrounding whitespace removed and its letters lowercased.
+
+In `main.py`, the `.strip()` call is already supplied. Add the remaining method, Run to see `beacon dim`, then Submit.
+
+Two more methods will help with the next notice. `replace(old, new)` returns a string with matching text replaced; `startswith(prefix)` returns `True` or `False`.
+
+```python run
+status = "gate closed"
+print(status.replace("closed", "open"))
+print(status.startswith("gate"))
+print(status)
+```
+
+Run this example to see `gate open`, `True`, and the unchanged `gate closed`. Replacing text creates a new string; it doesn't rewrite `status`.

@@ -11,9 +11,11 @@ seo_description: 'Convert valid charge text and recover from invalid values.'
 seo_keywords: [python try except exercise, traceback, ValueError]
 ---
 
-Adi must label the shrine charge even when a reading is blurred. Reuse the preceding `try`/`except ValueError` pattern; a bare `except` could hide unrelated mistakes.
+A charge label should still be readable when its source text is blurred. First write a helper that turns text into a number, using zero for invalid text. Then let a second helper use that result in a label.
 
-Edit `main.py`, **Run** to compare valid and faded readings, then **Submit**. The two helpers are checked separately.
+Catch `ValueError` specifically. A bare `except` can hide a different bug that you need to see.
+
+Edit `main.py` and Submit after each helper; the tests check them separately. Run shows the label examples once the second helper is complete.
 
 ## Your Tasks
 

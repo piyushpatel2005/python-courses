@@ -13,12 +13,16 @@ seo_keywords: [python basics, strings, lantern atlas]
 
 # Slice a Cavern Route: Demo
 
-Adi finds `GLOW:TRAM` carved on a route sign. `text[start:stop]` includes the start but not the stop; omitting the start begins at zero. A slice past the end is safe, unlike an invalid single index.
+One character isn't enough to read the route name in `GLOW:TRAM`. A **slice** reads a stretch of characters instead.
 
-![Stop-exclusive slice across a cavern route sign](string-slicing.svg "String slicing: start included, stop excluded")
+The pattern is `text[start:stop]`. Python includes the character at `start` and stops before the character at `stop`. Leaving out `start` means "begin at zero."
 
-Change `district` in `main.py` to slice out `GLOW`. Run should print `GLOW`; then Submit. The next task separates another sign's fields.
+![Characters at indexes zero through three form GLOW; the stop index four is excluded](string-slicing.svg "String slicing: start included, stop excluded")
+
+The starter uses `route[:2]`, so Run prints `GL`. The colon in the string is at index `4`; it doesn't belong in the route name.
 
 ## Your Task
 
-1. Slice `route` to set `district` to `"GLOW"`.
+1. Change the slice assigned to `district` so it reads `GLOW` from `route`.
+
+Run `main.py` to check that the colon is left out, then Submit. Unlike a single index, a slice can extend past the end of a string: Python returns the available characters rather than raising `IndexError`.

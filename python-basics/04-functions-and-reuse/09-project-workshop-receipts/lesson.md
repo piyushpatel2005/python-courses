@@ -15,11 +15,15 @@ hints:
 
 # Project: Build an Ability Loadout
 
-Adi has restored the workshop beacon and must choose a loadout for Cipher Caverns. One ability calculates energy from charges and cost; another names the equipped ability. Both must work with new inputs, not only the visible example.
+Before leaving the workshop, prepare a loadout for Cipher Caverns. You'll use one function to calculate its energy and another to write the label.
+
+Both functions should work with the values they receive. For example, changing the number of charges should change the total without requiring you to rewrite the function.
 
 ## Your Tasks
 
-1. Complete `loadout_energy(charges, cost)` to return their product for any inputs.
-2. Complete `loadout_note(name, amount)` to return `name: amount energy` using the supplied values.
+1. Complete `loadout_energy(charges, cost)` so it returns `charges * cost`.
+2. Complete `loadout_note(name, amount)` so it returns text in the form `name: amount energy`, using its parameters.
 
-Edit `main.py`, Run, then Submit. After task 1, `Loadout energy:` shows `12` even if the note is still unfinished. With both abilities working, Adi can carry the loadout into the caverns.
+Work in `main.py`; the print calls are already supplied. After the first task, Run should show `Loadout energy: 12`, even while the note is unfinished. After the second, it should also show `Lantern pulse: 12 energy`.
+
+Submit to check both functions. You've now built a calculation and a label that can be reused with a different loadout. In the caverns, you'll work with the text on route signs.

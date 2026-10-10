@@ -4,15 +4,15 @@ slug: exercise-print-an-announcement
 order: 3
 language: python
 lesson_type: coding
-summary: "Write two separate output lines for Ari’s opening route."
+summary: "Write two separate output lines for Adi’s opening route."
 seo_title: "Exercise: Open the Lantern Map | Python Basics"
-seo_description: "Write two separate output lines for Ari’s opening route."
+seo_description: "Write two separate output lines for Adi’s opening route."
 seo_keywords: [python basics, first steps, lantern atlas]
 ---
 
-Adi needs two map prompts. Each `print()` starts a new line. A line starting with `#` is a note and it produces no output.
+The map needs an opening message and a reminder of where to go next. Write one `print()` call for each line, in the order you want them to appear.
 
-Add the lines in the code editor. Press **Run** to see their order and **Submit** to check them.
+The lines beginning with `#` in **main.py** are comments: notes for you, not instructions Python runs. Add your code beneath them. Press **Run** to check the two output lines, then **Submit**.
 
 ## Your Tasks
 

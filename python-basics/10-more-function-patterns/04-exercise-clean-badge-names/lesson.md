@@ -11,9 +11,11 @@ seo_description: Use map and filter to prepare beacon labels.
 seo_keywords: [python map filter exercise, beacon labels]
 ---
 
-The tower's display expects uppercase beacon labels, but it has room only for labels with at least four characters. The frequency demo transformed numbers; here you transform **strings**, then filter the transformed list. `list(map(...))` and `list(filter(...))` expose the results.
+Prepare labels for the tower display. It uses uppercase text and accepts labels with at least four characters, including labels of exactly four.
 
-Edit `main.py`, Run to see the two lists, then Submit. After both steps, the Echo Tower has a clean list of labels to send toward the gate. The final game mission uses ordinary functions and loops instead of requiring these optional compact tools.
+Apply the previous pattern to strings: use `map` to uppercase the labels, then `filter` on that transformed list. Wrap each result in `list(...)` so the supplied printout can show it.
+
+Edit `main.py`, Run to compare the two lists, then Submit. These compact tools are optional; you can use ordinary functions and loops in the final mission.
 
 ## Your Tasks
 

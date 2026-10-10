@@ -17,9 +17,9 @@ hints:
 
 # Final mission: restore the beacon
 
-Adi reaches the final beacon. Add the energy from collected shards, calculate how much more energy the beacon can hold, and show a one-line status before unlocking the exit. No terminal prompts, device files, classes, recursion, or enums are required.
+Adi reaches the final beacon with a handful of energy shards. Your report will tell the player how much energy they've gathered and how much more they need to restore it.
 
-For a different part of the map, the same loop pattern can count cave crystals:
+Start with the total. In another part of the map, this function counts crystals across several pouches:
 
 ```python
 def count_crystals(pouches):
@@ -31,12 +31,16 @@ def count_crystals(pouches):
 print(count_crystals([2, 1]))  # 3
 ```
 
-The starter supplies function names and sample data. Work from the first helper to the final report. With the supplied sample, Run should end with `North Beacon: 3 energy, 5 needed`.
+The total starts at zero. Each pass through the loop adds one pouch's crystals. If the list is empty, the loop does nothing and the total stays zero. Use that same pattern for shard energy.
+
+The second helper works out the shortfall. Once the beacon has enough energy, it needs zero more, even if Adi gathered extra. The report function then calls both helpers and puts their results into one string.
+
+Edit the supplied functions in `main.py`; the sample data and print calls are already there. Work on one helper at a time and use Submit to check it. Run will still end with `None` until you complete the report function. The finished sample should end with `North Beacon: 3 energy, 5 needed`.
 
 ## Your Tasks
 
-1. Complete `energy_total(shard_energy)` to return the sum of the list using a loop (an empty list totals zero).
-2. Complete `energy_needed(target, gathered)` to return `target - gathered` when positive, or `0` when the target is reached or exceeded.
-3. Complete `beacon_report(name, target, shard_energy)` using your two helpers to return `"<name>: <gathered> energy, <needed> needed"` with actual values. Run and Submit.
+1. Complete `energy_total(shard_energy)` to add the list's values with a loop and return the total. An empty list returns `0`.
+2. Complete `energy_needed(target, gathered)` to return the shortfall, `target - gathered`, but never less than `0`.
+3. Complete `beacon_report(name, target, shard_energy)` to return `"<name>: <gathered> energy, <needed> needed"`, using your two helpers for the values.
 
-The restored beacon lights Adi’s exit route.
+The report gives Adi the next goal: collect the missing energy before leaving through the beacon's exit route.

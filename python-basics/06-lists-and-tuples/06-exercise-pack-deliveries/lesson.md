@@ -11,9 +11,9 @@ seo_description: Slice the next three checkpoints and label them in a loop.
 seo_keywords: [python basics, lists and tuples, lantern atlas]
 ---
 
-# Exercise: Pack for Checkpoints
+Only the next three checkpoints need supplies today. Take a slice of the full route, then make a delivery label for each of those stops.
 
-Only the next three ridge checkpoints need supplies today. Slice the full route into a short list, then loop to make one label for each. Edit `main.py`, Run, then Submit.
+The starter supplies an empty `labels` list and a printout. Edit `main.py`, Run to inspect your slice and labels, then Submit.
 
 ## Your Tasks
 

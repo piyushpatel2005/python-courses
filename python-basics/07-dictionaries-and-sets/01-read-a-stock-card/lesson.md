@@ -13,11 +13,13 @@ seo_keywords:
 - beginner dictionary-fields exercise
 ---
 
-Adi opens the Map Archive. Each map card has a named landmark and a count of marks. Dictionary keys let Adi retrieve a field without guessing its position. `map_card["landmark"]` reads a known key; assigning `map_card["marks"]` changes a value. An absent key raises `KeyError`, while `.get("route", "unknown")` gives a safe fallback.
+In the Map Archive, a dictionary gives each field a name. You can look up a landmark without remembering which position holds it.
+
+`map_card["landmark"]` reads a value by its key. An assignment to `map_card["marks"]` updates that field. If a key is missing, bracket lookup raises `KeyError`; `map_card.get("route", "unknown")` returns the fallback instead.
 
 ![Map card key-to-value lookup and missing-key fallback](dictionary-lookup.svg)
 
-Edit `main.py`, press **Run**, then **Submit**. The first line should change from `4` to `lens`; the later lines should show `Marks: 9` and `Route: unknown`. The next exercise uses a different map record.
+Edit `main.py` so the first line reads the landmark. Run should print `lens` instead of `4`; the supplied later lines still show `Marks: 9` and `Route: unknown`. Then Submit.
 
 ## Your Task
 

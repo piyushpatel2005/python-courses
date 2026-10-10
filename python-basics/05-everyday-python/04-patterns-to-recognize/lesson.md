@@ -13,7 +13,7 @@ seo_keywords: [python recursion, base case, python enum, beginner concepts]
 
 # Patterns to recognize
 
-A beacon sequence can repeat in smaller steps. **Recursion** means a function calls itself on a smaller problem. A *base case* stops the calls; without one, Python eventually raises `RecursionError`. This read-only example counts down:
+Some Python programs use a function that calls itself. This is called **recursion**. A beacon countdown gives us a small example to read:
 
 ```python
 def count_down(number):
@@ -22,6 +22,14 @@ def count_down(number):
     return count_down(number - 1)  # Move toward zero.
 ```
 
-For the small lists in Adi’s mission, a `for` loop is simpler. You will not need recursion in the final project.
+Imagine calling `count_down(2)`. That call asks `count_down(1)` for its result, which asks `count_down(0)`. At zero, the function returns `"Beacon ready"` rather than calling itself again. That result then returns through the waiting calls.
 
-An **enum** groups a fixed set of named choices. A beacon could have states named `DARK`, `LIT`, and `RESTORED` instead of arbitrary status strings. Python's `enum` module provides this pattern, but writing an enum uses class syntax, which is beyond this project. Keep using strings and conditionals for the final beacon report.
+The stopping condition is the **base case**. Each call needs to move toward it. This example expects a non-negative integer: starting with a negative number would keep moving away from zero until Python raises `RecursionError`.
+
+For the small lists in Adi's final mission, use a `for` loop. You don't need recursion to write the report.
+
+## Named choices with enums
+
+A beacon might be `DARK`, `LIT`, or `RESTORED`. An **enum** groups choices like these under one name, so code can refer to a defined member rather than repeatedly typing a status string.
+
+Python provides enums in the `enum` module. Defining one with class syntax is a topic for later; for this mission, strings and conditionals are enough. For now, recognize an enum as a way to name a fixed set of choices.

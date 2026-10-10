@@ -11,8 +11,10 @@ seo_description: Recognize classes, objects, attributes, methods, and enums with
 seo_keywords: [python class object vocabulary, attribute, enum]
 ---
 
-At the Exit Gate, Adi finds an old maintenance note describing beacon **objects**. You only need to read the note, not write a class for the final mission.
+The maintenance notes at the Exit Gate mention classes and objects. You only need to recognize these words here. The next mission does not ask you to write a class.
 
-A **class** describes a kind of value; an **object** is one individual value of that kind. An **attribute** is data attached to an object, and a **method** is an action called on it. You already call methods on built-in objects: `"north".upper()` returns `"NORTH"`. In another program, `beacon.name` could access an attribute. This mission instead stores beacon names and thresholds in a dictionary.
+A class describes a kind of value. An object is an individual value of that kind. An attribute is data attached to an object, and a method is a function you call on it.
 
-An **enum** names a fixed set of choices, such as `DIM` and `LIT`. Python defines custom enums with class syntax, but you do not need to write enums, constructors, inheritance, or custom classes here. Next, restore the beacons with the functions, conditions, loops, strings, lists, and dictionaries you have already used.
+You've already used methods: `"north".upper()` calls a string method and returns `"NORTH"`. In another program, `beacon.name` might read an attribute. Our final mission will keep beacon information in a dictionary instead.
+
+An enum gives names to a fixed set of choices, such as `DIM` and `LIT`. Python uses class syntax to define custom enums, but that can wait for a later course. For now, bring the functions, strings, conditions, loops, and collections you've practised to the Exit Gate.

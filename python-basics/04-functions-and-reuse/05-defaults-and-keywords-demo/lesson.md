@@ -15,10 +15,14 @@ hints:
 
 # Default Ability Marks: Demo
 
-At the workshop, an ability label gets a default mark when Adi omits that argument. `ability_mark("Glow", suffix="!")` overrides it by name. The first call uses the default; the second uses `!`.
+Most ability labels use the same ending, so you shouldn't need to supply it every time.
 
-Edit the default in `main.py` from `.` to `?`. Run: the first line becomes `Glow?`, while the keyword call remains `Glow!`. Then Submit.
+In `def ability_mark(name, suffix="."):`, the `suffix` parameter has a **default value**. Calling `ability_mark("Glow")` uses that period. Calling `ability_mark("Glow", suffix="!")` supplies a different ending by name; `suffix="!"` is a **keyword argument**.
+
+Run the starter and compare its two lines: `Glow.` and `Glow!`.
 
 ## Your Tasks
 
-1. Change the default `suffix` to `?`; keep the keyword override call.
+1. Change the default value of `suffix` from `"."` to `"?"` in the function definition.
+
+Keep both calls unchanged. Run `main.py` again: the first line should become `Glow?`, while the second stays `Glow!`. The explicit argument wins over the default. Submit to check your change.

@@ -13,9 +13,11 @@ seo_keywords:
 - beginner sets exercise
 ---
 
-Adi may revisit a beacon while searching. A set records each stop once: `set(visited_stops)` removes duplicates. Sets have no useful display order; use `sorted()` when printing them. `set()` makes an empty set, whereas `{}` makes an empty dictionary.
+A route can visit the same stop more than once. A set keeps only distinct values, so `set(visited_stops)` gives you the places visited without counting repeats.
 
-Edit `main.py` so Run prints `2` distinct stops, then **Submit**. Next, compare two routes.
+Sets do not have a dependable display order. If you want to display the values in order, use `sorted()`; this demo prints only their count. To create an empty set, use `set()`; `{}` creates an empty dictionary.
+
+Edit `main.py` to count distinct stops. Run should print `2`, then Submit.
 
 ## Your Task
 

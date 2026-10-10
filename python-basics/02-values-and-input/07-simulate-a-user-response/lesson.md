@@ -10,7 +10,13 @@ seo_description: "Use a browser-safe prefilled response as a name."
 seo_keywords: [python basics, values and input, lantern atlas]
 ---
 
-A terminal program can call `input("Name: ")`, which pauses and returns a string. This browser lesson instead uses `pathfinder = "Nia"`. Do not call blocking `input()` here. Even digits from `input()` are strings and require conversion for arithmetic. Change only the name to `"Adi"` in **main.py**. Press **Run** for `Gear ready for Adi`, then **Submit**.
+A program running in a terminal can ask for a name with `input("Name: ")`. It pauses while the person types, then returns their response as a string.
+
+These browser exercises use prefilled values instead of waiting at a prompt. In **main.py**, `pathfinder = "Nia"` stands in for a typed response. Change that value directly; do not add an `input()` call here.
+
+This distinction matters for numbers too. A terminal user who types digits still gives `input()` a string. You would convert that text with `int()` or `float()` before doing arithmetic, just as you did in the previous exercise.
+
+Keep the supplied f-string and change the name. Press **Run** to see `Gear ready for Adi`, then **Submit**.
 
 ## Your Tasks
 

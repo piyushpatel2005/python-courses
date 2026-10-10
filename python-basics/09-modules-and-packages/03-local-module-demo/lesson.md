@@ -13,9 +13,11 @@ hints:
   - Change only the argument to the final imported-function call.
 ---
 
-Adi finds a beacon rule written in another `.py` file. The supplied setup creates `beacon_rules.py` in the browser’s temporary filesystem, then imports `signal_strength`. A regular project would keep that module beside `main.py`; here the single-file runner generates it before the import.
+You can import your own code too. The supplied setup writes a short file named `beacon_rules.py`, which defines `signal_strength`. The line `from beacon_rules import signal_strength` brings that function into this program, so you can call it by name.
 
-Edit the final call in `main.py` from `2` to `3` marks, **Run** to see `15`, then **Submit**.
+In a local project, you would keep that `.py` file beside `main.py`. This browser example creates the temporary file for you before importing it. Leave that setup in place.
+
+Change only the final call in `main.py` from `2` to `3` marks. Run should show `15`, then Submit.
 
 ## Your Task
 

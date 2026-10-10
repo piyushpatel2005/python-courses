@@ -13,9 +13,9 @@ seo_keywords:
 - beginner dictionary-loop exercise
 ---
 
-Adi needs a cache ledger. The earlier map demo collected keys; here each entry becomes a label, and the marks become a total. Use `.items()` for pairs and `.values()` for just the counts.
+Make a small ledger for the cache map. Each key-value pair becomes a readable label; the numeric values also contribute to a total.
 
-Edit `main.py`, **Run** to see the labels and sum, then **Submit**.
+Use `caches.items()` in the label loop and `caches.values()` in the counting loop. The starter supplies the empty list and starting total. Edit `main.py`, Run to see both results, then Submit.
 
 ## Your Tasks
 

@@ -15,9 +15,13 @@ hints:
 
 # Exercise: Name a Beacon Ability
 
-Adi labels a different ability for the beacon loadout. Give `ability_label` a default mark, then make the second call override it by keyword. The two print calls expose both outcomes. Edit `main.py`, Run, then Submit.
+Use the same pattern to label a different ability. The supplied function already joins `name` and `mark`; your job is to make the mark optional and pass one override by name.
+
+Both print calls currently supply `"."` as a second positional argument. A default belongs in the function definition, while a keyword argument belongs in a call.
 
 ## Your Tasks
 
-1. Give `ability_label` a default `mark="."` and return `name + mark`.
+1. Give the `mark` parameter of `ability_label` the default value `"."`.
 2. Change the second call to pass `mark="!"` as a keyword argument.
+
+Run `main.py` after each change. When you're finished, the lines should be `Pulse.` and `Pulse!`. Submit also checks a call that leaves out `mark`, so it can check your default rather than just the visible output.

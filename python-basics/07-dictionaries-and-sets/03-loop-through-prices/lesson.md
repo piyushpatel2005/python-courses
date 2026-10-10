@@ -13,9 +13,11 @@ seo_keywords:
 - beginner dictionary-loop exercise
 ---
 
-The archive lists beacon marks by landmark. `beacon_marks.items()` yields each key and value together; `for landmark, marks in ...` unpacks them. `.keys()` gives keys alone and `.values()` gives values alone.
+A dictionary loop can read a key and its value together. `beacon_marks.items()` produces pairs, and `for landmark, marks in ...` unpacks each pair into two names. This is the same unpacking idea you used with tuples.
 
-Edit `main.py` so Run prints `["ridge", "cove"]` instead of the mark counts; **Submit** to check. The next exercise uses a different cache map.
+Use `.keys()` when you only need keys, or `.values()` when you only need values.
+
+The starter currently collects mark counts. Edit `main.py` to collect landmarks instead. Run should print `['ridge', 'cove']`, then Submit.
 
 ## Your Task
 

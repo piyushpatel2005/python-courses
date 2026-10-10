@@ -6,10 +6,10 @@ import io
 import solution
 
 # Replace only the supplied top-level fixtures; never replace learner logic.
-def _variant():
+def _variant(raw_notice='  BEACON FAINT  '):
     with open(solution.__file__, encoding="utf-8") as source_file:
         tree = ast.parse(source_file.read())
-    replacements = {'raw_notice': '  BEACON FAINT  '}
+    replacements = {'raw_notice': raw_notice}
     for node in tree.body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
             name = node.targets[0].id
@@ -54,3 +54,5 @@ def test_03():
     assert _uses('startswith'), "Use the requested Python technique."
     varied = _variant()
     assert eval('is_beacon_notice is True', varied), "Check this task with a different input too."
+    other_notice = _variant('  GATE DIM  ')
+    assert other_notice.get('is_beacon_notice') is False, "A notice starting with gate is not a beacon notice; check the prefix beacon."
