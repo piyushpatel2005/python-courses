@@ -1,28 +1,25 @@
 ---
-title: 'Exercise: Build a Market Roster'
+title: 'Exercise: Build the Atlas Treasure Index'
 slug: exercise-market-roster
 order: 8
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Build a practical signup summary from Python collections.
-seo_title: 'Exercise: Build a Market Roster | Python Basics'
-seo_description: Build a practical signup summary from Python collections with an
-  editable Python example and checked task.
+summary: 'Index treasure finds and visited locations in the Map Archive.'
+seo_title: 'Exercise: Build the Atlas Treasure Index | Python Basics'
+seo_description: 'Index treasure finds and visited locations in the Map Archive.'
 seo_keywords:
 - python collections-project
 - beginner collections-project exercise
 ---
 
-At the market, volunteers recorded names and activity choices. A repeat signup must count once as a person but twice as a booking. Use the library demo as a pattern with new data and a different report; all records are local browser data and no `input()` is needed.
+Build an index of the archive's treasure discoveries. A second find at the same location is another discovery, but it is not another place. You'll keep the visit order in a list, distinct places in a set, and treasure counts in a dictionary.
 
-This is a separate exercise. Edit `main.py`, press **Run** to inspect the output, then **Submit** to check the numbered tasks.
-
-Build one checkpoint at a time in `main.py`. Run to inspect the printed list, set, dictionary and report; Submit to check each task.
+Keep the supplied data. Edit `main.py` and work down the tasks, using Run to inspect each result and Submit to check it. The final report should use your calculated values, so it stays correct when the discoveries change.
 
 ## Your Tasks
 
-1. Loop over `signups` and append each name in signup order to `names`.
-2. Set `unique_names` to a set of the names in `names`.
-3. Count each signup activity in `activity_counts` using its current count (or zero) plus one.
-4. Set `report` with an f-string to `Market Hall at 10:00: 2 people, 3 bookings`.
+1. Loop over `discoveries` and append each location in discovery order to `locations`.
+2. Set `unique_locations` to a set of the values in `locations`.
+3. Count each treasure in `treasure_counts` with the current count (or zero) plus one.
+4. Build `report` with an f-string using both values in `location`, the count of `unique_locations`, and the count of `discoveries`. The supplied data should give `Map Archive at dawn: 2 places, 3 finds`.

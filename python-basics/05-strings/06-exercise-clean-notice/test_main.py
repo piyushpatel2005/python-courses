@@ -6,10 +6,10 @@ import io
 import solution
 
 # Replace only the supplied top-level fixtures; never replace learner logic.
-def _variant():
+def _variant(raw_notice='  BEACON FAINT  '):
     with open(solution.__file__, encoding="utf-8") as source_file:
         tree = ast.parse(source_file.read())
-    replacements = {'raw_notice': '  HALL BUSY  '}
+    replacements = {'raw_notice': raw_notice}
     for node in tree.body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
             name = node.targets[0].id
@@ -36,21 +36,23 @@ def _uses(technique):
 
 def test_01():
     """Set notice to the stripped, lowercased raw_notice."""
-    assert notice == "hall closed", "Set notice to the stripped, lowercased raw_notice."
+    assert notice == "beacon dim", "Set notice to the stripped, lowercased raw_notice."
     assert _uses('strip'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('notice == "hall busy"', varied), "Check this task with a different input too."
+    assert eval('notice == "beacon faint"', varied), "Check this task with a different input too."
 
 def test_02():
-    """Set open_notice to notice with closed replaced by open."""
-    assert open_notice == "hall open", "Set open_notice to notice with closed replaced by open."
+    """Set lit_notice to notice with dim replaced by lit."""
+    assert lit_notice == "beacon lit", "Set lit_notice to notice with dim replaced by lit."
     assert _uses('replace'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('open_notice == "hall busy"', varied), "Check this task with a different input too."
+    assert eval('lit_notice == "beacon faint"', varied), "Check this task with a different input too."
 
 def test_03():
-    """Set is_hall_notice to whether notice starts with hall."""
-    assert is_hall_notice is True, "Set is_hall_notice to whether notice starts with hall."
+    """Set is_beacon_notice to whether notice starts with beacon."""
+    assert is_beacon_notice is True, "Set is_beacon_notice to whether notice starts with beacon."
     assert _uses('startswith'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('is_hall_notice is True', varied), "Check this task with a different input too."
+    assert eval('is_beacon_notice is True', varied), "Check this task with a different input too."
+    other_notice = _variant('  GATE DIM  ')
+    assert other_notice.get('is_beacon_notice') is False, "A notice starting with gate is not a beacon notice; check the prefix beacon."

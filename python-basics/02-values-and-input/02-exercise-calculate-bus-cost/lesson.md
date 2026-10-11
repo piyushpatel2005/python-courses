@@ -1,20 +1,22 @@
 ---
-title: "Exercise: Calculate a Bus Cost"
+title: "Exercise: Price a Cache Route"
 slug: exercise-calculate-bus-cost
 order: 2
 language: python
 lesson_type: coding
-summary: Compute the cost and remaining seats for a group trip.
-seo_title: "Exercise: Calculate a Bus Cost | Python Basics"
-seo_description: Compute the cost and remaining seats for a group trip.
-seo_keywords: [python multiplication exercise, subtraction exercise, numeric calculation]
+summary: "Multiply energy cost and subtract used pack slots."
+seo_title: "Exercise: Price a Cache Route | Python Basics"
+seo_description: "Multiply energy cost and subtract used pack slots."
+seo_keywords: [python basics, values and input, lantern atlas]
 ---
 
-A neighborhood trip books seats on a shuttle. The given values are 3 riders per group, 7 groups, 25 seats, and $4 per rider. Multiplication finds the ticket total; subtraction finds unfilled seats. The starter prints both results, so complete the two `TODO` calculations rather than adding output code.
+Plan the cost and storage for a cache route. There are seven caches, with three points to collect in each. Each point costs four energy and occupies one pack slot; the pack has 25 slots.
 
-Edit `main.py`, press **Run** to see both figures, then **Submit**. Solve each calculation separately.
+The starter supplies those values and prints your two results. In **main.py**, replace the two zero placeholders with calculations that use the named variables. Do not type the final totals directly: the calculations should still make sense if a supplied value changes.
+
+Press **Run** to check for `Energy cost: 84` and `Open slots: 4`, then **Submit**.
 
 ## Your Tasks
 
-1. Calculate `fare_total` as the total fare for all riders using the supplied variables.
-2. Calculate `open_seats` as shuttle capacity minus the number of riders using the supplied variables.
+1. Calculate `energy_cost` by multiplying `points_per_cache`, `caches`, and `energy_per_point`.
+2. Calculate `open_slots` by subtracting the collected points (`points_per_cache` multiplied by `caches`) from `pack_slots`.

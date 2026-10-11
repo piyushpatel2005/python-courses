@@ -5,14 +5,23 @@ order: 5
 language: python
 lesson_type: informational
 runtime: pyodide
-summary: Understand the difference between a class blueprint and an individual object.
+summary: Distinguish a beacon class blueprint from individual beacon objects.
 seo_title: Python Classes and Objects Concept | Python Basics
-seo_description: Learn what class, object, attribute, and method mean without writing object-oriented code or inheritance.
+seo_description: Introduce Python class, object, attribute, and method vocabulary using Adi’s beacons.
 seo_keywords: [python classes, python objects, oop introduction, attributes methods]
 ---
 
-A workshop has many registration cards. Think of a **class** as a plan for what one card can contain, and an **object** as one particular card created from that plan. Two objects can follow the same plan but hold different participant names.
+# Classes and objects overview
 
-An object's **attributes** are its data, such as the participant name and seat count. Its **methods** are actions associated with that object, such as describing a registration. You've already used methods on built-in objects: `"hello".upper()` asks a string object to produce uppercase text.
+The Lantern Atlas has several beacons. They all have a name and an energy reading, but those values differ from one beacon to the next.
 
-This is vocabulary for reading future Python code, **not an exercise in writing classes**. You do not need `class`, constructors, inheritance, or any object-oriented syntax in this course's final project. A list of seat counts and a few regular functions are enough for the workshop report.
+A **class** describes a kind of object: what data it holds and what operations it provides. A beacon class could describe those shared features. Each individual beacon would be an **object** of that class, with its own name and energy.
+
+You'll see two more words when reading about objects:
+
+- **Attributes** hold an object's data, such as the beacon's name or energy.
+- **Methods** are functions associated with an object, such as one that describes the beacon's glow.
+
+You've already called a method on a built-in object. In `"glow".upper()`, the string is the object and `upper()` is the method. It returns the uppercase string `"GLOW"`.
+
+You don't need to write a class for the final mission. Its list of energy readings and ordinary functions already give you what you need. Keep these terms as a starting point for reading class-based code later; constructors and inheritance can wait until then.

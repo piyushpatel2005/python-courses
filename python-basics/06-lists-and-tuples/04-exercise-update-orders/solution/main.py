@@ -1,5 +1,5 @@
-orders = ["tea", "cofee", "cake"]
-orders[1] = "coffee"
-orders.append("water")
-orders.remove("cake")
-print(orders)
+gear = ["rope", "torhc", "spent shard"]
+gear[1] = "torch"
+gear.append("lens")
+gear.remove("spent shard")
+print(gear)

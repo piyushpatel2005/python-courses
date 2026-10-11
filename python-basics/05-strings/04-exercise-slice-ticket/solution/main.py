@@ -1,4 +1,4 @@
-ticket = "PIE:2048"
-venue = ticket[:3]
+ticket = "ARC:2048"
+route_name = ticket[:3]
 number = ticket[4:]
-print(venue, number)
+print(route_name, number)

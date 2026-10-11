@@ -1,20 +1,22 @@
 ---
-title: Lambda, Map, and Filter Demo
+title: "Echo Tower: Tune the Frequencies"
 slug: lambda-map-filter-demo
 order: 3
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Edit a short lambda used to transform prices.
-seo_title: "Lambda, Map, and Filter Demo | Python Basics"
-seo_description: Edit a short lambda used to transform prices.
-seo_keywords: [python lambda, map, filter, iterators]
+summary: Use lambda, map, and filter to tune beacon frequencies.
+seo_title: "Echo Tower: Tune the Frequencies | Python Basics"
+seo_description: Use lambda, map, and filter to tune beacon frequencies.
+seo_keywords: [python lambda, map, filter, Echo Tower]
 ---
 
-A `lambda` is a small unnamed function: `lambda price: price + 2` takes a price and returns one value. `map(function, items)` applies that function to each item; `filter(function, items)` keeps items for which it returns `True`. Both produce iterators, so `list(...)` makes their results visible. A list comprehension or loop often reads better for complex work.
+The receiver adjusts each frequency, then keeps only strong signals. The starter uses a lambda, a short function written as a single expression. In `lambda value: value + 1`, `value` is the input and the expression after the colon supplies the result.
 
-The complete demo adds a fee to snack prices, then keeps prices over a threshold. Edit `main.py`: change only the fee inside the `map` lambda from `1` to `2`. Run to see `[5, 7, 9]` and `[7, 9]`, then Submit. The following exercise uses different data.
+`map(function, items)` applies the function to each item. `filter(function, items)` keeps an item when the function returns a true value. Both produce iterators; wrapping them in `list(...)` collects their values so you can print them.
+
+In `main.py`, change only the adjustment in the `map` lambda from `1` to `2`. Run should show `Tuned: [5, 7, 9]` and `Strong: [7, 9]`. Leave the filter rule unchanged, then Submit. For a longer operation, a regular function or loop may be easier to read.
 
 ## Your Task
 
-1. Change the `map` lambda to add `2` to each price; keep the `filter` rule unchanged.
+1. Change the `map` lambda to add `2` to every frequency, leaving the `filter` rule unchanged.

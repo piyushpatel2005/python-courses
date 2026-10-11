@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="550" viewBox="0 0 800 550" role="img" aria-labelledby="title desc">
+<title id="title">A View Shares Cells; a Copy Does Not</title>
+<desc id="desc">After the task edit, record contains 6, 70, 8, 9. The view window equals record[1:3] and points to the same middle cells, 70 and 8. Backup is copied afterward into separate storage. Editing backup[0] to minus 1 leaves record unchanged.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10" fill="#146650"/></marker></defs>
+<rect width="800" height="550" rx="12" fill="#fffdf6"/>
+<g font-family="Trebuchet MS, sans-serif" fill="#12233a" text-anchor="middle">
+<text x="400" y="40" font-size="25" font-weight="bold">A View Shares Cells; a Copy Does Not</text>
+<text x="400" y="76" font-size="18">After the task edit: window[0] = 70</text>
+<text x="110" y="140" font-size="18">record</text>
+</g>
+<g stroke="#36546d" stroke-width="2">
+<rect x="195" y="108" width="120" height="60" rx="6" fill="#edf1f5"/>
+<rect x="325" y="108" width="120" height="60" rx="6" fill="#c3fae8"/>
+<rect x="455" y="108" width="120" height="60" rx="6" fill="#c3fae8"/>
+<rect x="585" y="108" width="120" height="60" rx="6" fill="#edf1f5"/>
+<rect x="320" y="243" width="260" height="60" rx="8" fill="#c3fae8"/>
+<rect x="325" y="413" width="120" height="60" rx="6" fill="#d0bfff"/>
+<rect x="455" y="413" width="120" height="60" rx="6" fill="#d0bfff"/>
+</g>
+<g font-family="monospace" font-size="24" fill="#12233a" text-anchor="middle">
+<text x="255" y="147">6</text><text x="385" y="147">70</text><text x="515" y="147">8</text><text x="645" y="147">9</text>
+<text x="450" y="280" font-size="18">window = record[1:3]</text>
+<text x="385" y="452">-1</text><text x="515" y="452">8</text>
+</g>
+<rect x="320" y="100" width="260" height="76" rx="8" fill="none" stroke="#146650" stroke-width="2"/>
+<path d="M450 243 V176" fill="none" stroke="#146650" stroke-width="3" marker-end="url(#arrow)"/>
+<g font-family="Trebuchet MS, sans-serif" fill="#12233a" text-anchor="middle" font-size="18">
+<text x="450" y="334">Same storage: [70, 8], not extra cells</text>
+<text x="450" y="391">backup = record[1:3].copy()</text>
+<text x="155" y="448">separate storage</text>
+<text x="400" y="511">Then backup[0] = -1 changes only the purple copy.</text>
+</g></svg>

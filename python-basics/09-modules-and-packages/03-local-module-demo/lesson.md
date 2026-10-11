@@ -1,24 +1,24 @@
 ---
-title: "Local Module: Demo"
+title: 'Demo: Import a Local Beacon Rule'
 slug: local-module-demo
 order: 3
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: Import a small module generated in the browser filesystem.
-seo_title: "Local Module: Demo | Python Basics"
-seo_description: Import a small module generated in the browser filesystem.
+summary: 'Import a reusable helper from a local Python module.'
+seo_title: 'Demo: Import a Local Beacon Rule | Python Basics'
+seo_description: 'Import a reusable helper from a local Python module.'
 seo_keywords: [python basics, local module demo, python practice]
 hints:
   - Change only the argument to the final imported-function call.
 ---
 
-# Local Module: Demo
+You can import your own code too. The supplied setup writes a short file named `beacon_rules.py`, which defines `signal_strength`. The line `from beacon_rules import signal_strength` brings that function into this program, so you can call it by name.
 
-Your own `.py` file can also be a module. This lesson keeps one editable `main.py` tab: its supplied setup writes `route_rules.py` into the browser's temporary in-memory filesystem, then imports its `travel_minutes` function. The file is not saved to your computer and will not survive a fresh session. On your machine you would keep `route_rules.py` beside `main.py`; the current lesson runner submits one active Python file, so the setup creates that local module before importing it. Change the call from 2 to 3 stops; Run and compare the result.
+In a local project, you would keep that `.py` file beside `main.py`. This browser example creates the temporary file for you before importing it. Leave that setup in place.
 
-## Your Tasks
+Change only the final call in `main.py` from `2` to `3` marks. Run should show `15`, then Submit.
 
-1. Change the argument in the final `travel_minutes` call to `3` so it prints `15`.
+## Your Task
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your change.
+1. Change the final `signal_strength` call to use `3` marks.

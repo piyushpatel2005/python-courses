@@ -1,5 +1,5 @@
-def bundle_total(bundles):
-    # Base case: empty list. Otherwise add first and recurse on the rest.
+def signal_total(signals):
+    # Empty list: zero. Otherwise add the first signal to the rest.
     pass
 
-print("Tickets:", bundle_total([2, 3, 1]))
+print("Beacon signal:", signal_total([2, 3, 1]))

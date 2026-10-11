@@ -1,6 +1,6 @@
-from solution import donation_total
+from solution import combine_energy
 
-def test_donation_total():
+def test_combine_energy():
     """The result uses both inputs"""
-    assert donation_total(8, 3) == 11
-    assert donation_total(1, 9) == 10
+    assert combine_energy(8, 3) == 11
+    assert combine_energy(1, 9) == 10

@@ -16,6 +16,6 @@ def _assignment(name):
 def _uses_name(node, name):
     return any(isinstance(part, _ast.Name) and part.id == name for part in _ast.walk(node))
 
-def test_plants():
-    """Use 23 plants for the tray calculation"""
-    assert plants == 23 and trays == 5 and loose == 3 and isinstance(_assignment("trays"), _ast.BinOp) and isinstance(_assignment("trays").op, _ast.FloorDiv) and isinstance(_assignment("loose"), _ast.BinOp) and isinstance(_assignment("loose").op, _ast.Mod) and _uses_name(_assignment("trays"), "plants") and _uses_name(_assignment("loose"), "plants"), "Change plants to 23 and leave the calculations intact"
+def test_shards():
+    """Use 23 shards for the lamp calculation"""
+    assert shards == 23 and lamps == 5 and spare == 3 and isinstance(_assignment("lamps"), _ast.BinOp) and isinstance(_assignment("lamps").op, _ast.FloorDiv) and isinstance(_assignment("spare"), _ast.BinOp) and isinstance(_assignment("spare").op, _ast.Mod) and _uses_name(_assignment("lamps"), "shards") and _uses_name(_assignment("spare"), "shards"), "Change shards to 23 and leave the calculations intact"

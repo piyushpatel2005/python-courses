@@ -1,27 +1,26 @@
 ---
-title: 'Exercise: Compare Club Groups'
+title: 'Exercise: Compare Atlas Routes'
 slug: exercise-compare-clubs
 order: 6
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Use Python set uniqueness, intersection, and difference.
-seo_title: 'Exercise: Compare Club Groups | Python Basics'
-seo_description: Use Python set uniqueness, intersection, and difference with an editable
-  Python example and checked task.
+summary: 'Find common and Adi-only stops with set operations.'
+seo_title: 'Exercise: Compare Atlas Routes | Python Basics'
+seo_description: 'Find common and Adi-only stops with set operations.'
 seo_keywords:
 - python sets
 - beginner sets exercise
 ---
 
-Two clubs need one list of shared members and another of people signed up only for the morning. Transfer the visitor demo to two groups; use `sorted()` only for display since set order is not guaranteed.
+Compare Adi's route with a scout's route. The starter calls the first route `ari_stops` and the second `scout_stops`; keep those variable names as you work.
 
-This is a separate exercise. Edit `main.py`, press **Run** to inspect the output, then **Submit** to check the numbered tasks.
+Convert the lists to sets before comparing them. The intersection operator `&` keeps stops in both sets. The difference operator `-` keeps stops in the left set but not the right, so the order matters.
 
-Run to inspect the sorted results, then Submit.
+Edit `main.py`. The supplied printout sorts the sets so you can read the three groups consistently. Run, then Submit.
 
 ## Your Tasks
 
-1. Set `morning` to a set of names from `morning_names`.
-2. Set `shared` to the intersection of `morning` and the evening names.
-3. Set `morning_only` to the difference of the morning and evening names.
+1. Set `ari_route` to a set built from `ari_stops`.
+2. Set `overlap` to the intersection of `ari_route` and `scout_stops`.
+3. Set `ari_only` to the difference between `ari_route` and `scout_stops`.

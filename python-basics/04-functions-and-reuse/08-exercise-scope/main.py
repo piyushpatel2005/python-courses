@@ -1,8 +1,8 @@
-price = 20
+energy = 20
 
-def sale_price():
-    # Create a local price and return it.
+def pulse_energy():
+    # Create a local energy and return it.
     pass
 
-print(sale_price())
-print(price)
+print(pulse_energy())
+print(energy)

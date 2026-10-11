@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" role="img" aria-labelledby="title desc">
+<title id="title">Match Each Mask Decision to Its Row Label</title><desc id="desc">Stock rows f, b, o contain five, eight, twelve crates. A Boolean Series marks f false and b and o true. loc matches labels and returns b and o in table order, even if the mask Series is reordered.</desc>
+<rect width="900" height="380" rx="16" fill="#101c30"/>
+<text x="450.0" y="37" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#ffffff">Match Each Mask Decision to Its Row Label</text>
+<text x="157.33333333333334" y="83" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#bed1e5">Stock: label / crates</text>
+<rect x="24.0" y="105" width="266.6666666666667" height="46" rx="7" fill="#34445c"/>
+<text x="157.33333333333334" y="134" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">f: Fern / 5</text>
+<rect x="24.0" y="160" width="266.6666666666667" height="46" rx="7" fill="#147d70"/>
+<text x="157.33333333333334" y="189" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">b: Bee / 8</text>
+<rect x="24.0" y="215" width="266.6666666666667" height="46" rx="7" fill="#147d70"/>
+<text x="157.33333333333334" y="244" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">o: Oak / 12</text>
+<text x="450.0" y="83" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#bed1e5">Mask: crates &gt;= 8</text>
+<rect x="316.6666666666667" y="105" width="266.6666666666667" height="46" rx="7" fill="#34445c"/>
+<text x="450.0" y="134" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">f: False</text>
+<rect x="316.6666666666667" y="160" width="266.6666666666667" height="46" rx="7" fill="#147d70"/>
+<text x="450.0" y="189" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">b: True</text>
+<rect x="316.6666666666667" y="215" width="266.6666666666667" height="46" rx="7" fill="#147d70"/>
+<text x="450.0" y="244" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">o: True</text>
+<text x="742.6666666666667" y="83" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#bed1e5">Rows Kept by loc</text>
+<rect x="609.3333333333334" y="105" width="266.6666666666667" height="46" rx="7" fill="#34445c"/>
+<text x="742.6666666666667" y="134" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">f: omitted</text>
+<rect x="609.3333333333334" y="160" width="266.6666666666667" height="46" rx="7" fill="#147d70"/>
+<text x="742.6666666666667" y="189" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">b: Bee / 8</text>
+<rect x="609.3333333333334" y="215" width="266.6666666666667" height="46" rx="7" fill="#147d70"/>
+<text x="742.6666666666667" y="244" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">o: Oak / 12</text>
+<text x="450.0" y="303" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#bed1e5">Reordered Series: o=True, f=False, b=True → the same kept rows.</text>
+<text x="450.0" y="329" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#bed1e5">The Boolean Series aligns by label; the result stays in table order.</text>
+</svg>

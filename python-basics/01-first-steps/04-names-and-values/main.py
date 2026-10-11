@@ -1,2 +1,0 @@
-room = "Studio"
-print(room)

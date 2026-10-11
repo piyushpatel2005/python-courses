@@ -1,1 +1,1 @@
-print("Welcome, neighbors!")
+print("Adi enters Spawn Camp")

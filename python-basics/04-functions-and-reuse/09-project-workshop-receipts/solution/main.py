@@ -1,7 +1,8 @@
-def bag_total(count, price):
-    return count * price
+def loadout_energy(charges, cost):
+    return charges * cost
 
-def receipt(name, amount):
-    return f"{name}: ${amount}"
+def loadout_note(name, amount):
+    return f"{name}: {amount} energy"
 
-print(receipt("Tool bag", bag_total(3, 4)))
+print("Loadout energy:", loadout_energy(3, 4))
+print(loadout_note("Lantern pulse", loadout_energy(3, 4)))

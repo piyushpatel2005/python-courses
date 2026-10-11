@@ -1,6 +1,7 @@
-stall = "Soup"
-servings = 3
-unit_cost = 4.25
+route = "ECHO"
+beacons = 3
+energy_cost = 4.25
 heading = None
-price_line = None
-print(heading, price_line)
+energy_line = None
+print(heading)
+print(energy_line)

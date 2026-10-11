@@ -1,4 +1,4 @@
-def donation_total(jars, coins):
-    return jars + coins
+def combine_energy(shard, reserve):
+    return shard + reserve
 
-print(donation_total(8, 3))
+print(combine_energy(8, 3))

@@ -1,2 +1,2 @@
-print("Reading circle starts today")
-print("Bring a book")
+print("The lantern map is open")
+print("Find the first beacon")

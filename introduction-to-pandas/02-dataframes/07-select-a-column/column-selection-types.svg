@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" role="img" aria-labelledby="title desc">
+<title id="title">A Name or a List of Names?</title><desc id="desc">table bracket sold returns a Series with values 3 and 9. Passing a list containing sold returns a DataFrame with the same values and a column header. Both keep row labels 0 and 1.</desc>
+<rect width="760" height="340" rx="18" fill="#111827"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#f9fafb">
+<text x="380" y="38" font-size="23" font-weight="bold">A Name or a List of Names?</text>
+<text x="200" y="81" font-size="19">table["sold"]</text><text x="560" y="81" font-size="19">table[["sold"]]</text>
+<rect x="60" y="101" width="280" height="175" rx="10" fill="#1e3a5f"/><rect x="420" y="101" width="280" height="175" rx="10" fill="#14532d"/>
+<text x="200" y="132" font-size="20" font-weight="bold">Series</text><text x="560" y="132" font-size="20" font-weight="bold">DataFrame</text>
+<g font-size="19"><text x="150" y="180">0</text><text x="250" y="180">3</text><text x="150" y="217">1</text><text x="250" y="217">9</text>
+<text x="600" y="170">sold</text><text x="490" y="206">0</text><text x="600" y="206">3</text><text x="490" y="243">1</text><text x="600" y="243">9</text></g>
+<text x="200" y="254" font-size="16">Name: sold</text>
+<text x="200" y="310" font-size="17">One name selects a Series</text><text x="560" y="310" font-size="17">A list keeps a table</text>
+</g></svg>

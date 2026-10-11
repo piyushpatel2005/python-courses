@@ -1,9 +1,9 @@
-with open("supply_rules.py", "w") as module_file:
-    module_file.write("def box_count(items):\n    return (items + 3) // 4\n")
+with open("shrine_rules.py", "w") as module_file:
+    module_file.write("def seal_count(runes):\n    return (runes + 3) // 4\n")
 
-# Import box_count here.
+# Import seal_count here.
 
-def order_boxes(items):
+def prepare_seals(runes):
     pass
 
-print(order_boxes(9))
+print(prepare_seals(9))

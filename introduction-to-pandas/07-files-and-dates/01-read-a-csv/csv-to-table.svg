@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 300" role="img" aria-labelledby="title desc">
+<title id="title">From CSV Text to a Table</title><desc id="desc">The actual sample rows Flower Cart 8 and Soup Stand 5 pass through an in-memory reader into two named columns.</desc>
+<rect width="920" height="300" rx="16" fill="#111827"/>
+<text x="460" y="38" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#f3f4f6">From CSV Text to a Table</text>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#94d4cb"/></marker></defs>
+<rect x="25" y="75" width="260" height="155" rx="12" fill="#203653" stroke="#94d4cb" stroke-width="2"/>
+<text x="155" y="106" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f3f4f6">CSV Text</text>
+<text x="155" y="140" text-anchor="middle" xml:space="preserve" font-family="monospace" font-size="16" fill="#f3f4f6">stall,visits</text>
+<text x="155" y="167" text-anchor="middle" xml:space="preserve" font-family="monospace" font-size="16" fill="#f3f4f6">Flower Cart,8</text>
+<text x="155" y="194" text-anchor="middle" xml:space="preserve" font-family="monospace" font-size="16" fill="#f3f4f6">Soup Stand,5</text>
+<path d="M285 152.5 H330" fill="none" stroke="#94d4cb" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="330" y="75" width="260" height="155" rx="12" fill="#493b23" stroke="#94d4cb" stroke-width="2"/>
+<text x="460" y="106" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f3f4f6">In-Memory Reader</text>
+<text x="460" y="140" text-anchor="middle" xml:space="preserve" font-family="monospace" font-size="16" fill="#f3f4f6">StringIO(text)</text>
+<text x="460" y="167" text-anchor="middle" xml:space="preserve" font-family="monospace" font-size="16" fill="#f3f4f6">pd.read_csv(...)</text>
+<path d="M590 152.5 H635" fill="none" stroke="#94d4cb" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="635" y="75" width="260" height="155" rx="12" fill="#174d39" stroke="#94d4cb" stroke-width="2"/>
+<text x="765" y="106" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f3f4f6">DataFrame</text>
+<text x="765" y="140" text-anchor="middle" xml:space="preserve" font-family="monospace" font-size="16" fill="#f3f4f6">stall       visits</text>
+<text x="765" y="167" text-anchor="middle" xml:space="preserve" font-family="monospace" font-size="16" fill="#f3f4f6">Flower Cart      8</text>
+<text x="765" y="194" text-anchor="middle" xml:space="preserve" font-family="monospace" font-size="16" fill="#f3f4f6">Soup Stand       5</text>
+<text x="460" y="267" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f3f4f6">Commas separate fields; each new line supplies a row.</text>
+</svg>

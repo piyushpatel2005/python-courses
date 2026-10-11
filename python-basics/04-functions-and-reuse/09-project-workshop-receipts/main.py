@@ -1,7 +1,8 @@
-def bag_total(count, price):
+def loadout_energy(charges, cost):
     pass
 
-def receipt(name, amount):
+def loadout_note(name, amount):
     pass
 
-print(receipt("Tool bag", bag_total(3, 4)))
+print("Loadout energy:", loadout_energy(3, 4))
+print(loadout_note("Lantern pulse", loadout_energy(3, 4)))

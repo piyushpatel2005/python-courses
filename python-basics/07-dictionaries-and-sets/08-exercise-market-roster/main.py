@@ -1,9 +1,9 @@
-signups = [{"name": "Lia", "activity": "seeds"}, {"name": "Ren", "activity": "tools"}, {"name": "Lia", "activity": "tools"}]
-location = ("Market Hall", "10:00")
-names = []
-# Append each signup name.
-unique_names = set()
-activity_counts = {}
-# Count each signup activity.
+discoveries = [{"location": "Ridge", "treasure": "chest"}, {"location": "Cove", "treasure": "compass"}, {"location": "Ridge", "treasure": "compass"}]
+location = ("Map Archive", "dawn")
+locations = []
+# Append each discovery location.
+unique_locations = set()
+treasure_counts = {}
+# Count each discovery treasure.
 report = None
-print(names, sorted(unique_names), activity_counts, report)
+print(locations, sorted(unique_locations), treasure_counts, report)

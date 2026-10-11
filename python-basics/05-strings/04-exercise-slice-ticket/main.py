@@ -1,4 +1,4 @@
-ticket = "PIE:2048"
-venue = None
+ticket = "ARC:2048"
+route_name = None
 number = None
-print(venue, number)
+print(route_name, number)

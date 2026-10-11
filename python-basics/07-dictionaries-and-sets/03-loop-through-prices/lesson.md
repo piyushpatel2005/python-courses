@@ -1,25 +1,24 @@
 ---
-title: Loop Through Dictionary Entries
-slug: loop-through-prices
+title: 'Loop Through Beacon Map Entries'
+slug: loop-through-beacon_marks
 order: 3
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Unpack key-value pairs with dictionary items().
-seo_title: Loop Through Dictionary Entries | Python Basics
-seo_description: Unpack key-value pairs with dictionary items() with an editable Python
-  example and checked task.
+summary: 'Use dictionary items() to inspect keyed beacon marks.'
+seo_title: 'Loop Through Beacon Map Entries | Python Basics'
+seo_description: 'Use dictionary items() to inspect keyed beacon marks.'
 seo_keywords:
 - python dictionary-loop
 - beginner dictionary-loop exercise
 ---
 
-To visit both keys and values, `prices.items()` yields pairs. `for item, price in prices.items():` unpacks each pair, preserving insertion order in modern Python. `prices.keys()` visits just keys; `prices.values()` visits just values. A dictionary has no numbered key positions.
+A dictionary loop can read a key and its value together. `beacon_marks.items()` produces pairs, and `for landmark, marks in ...` unpacks each pair into two names. This is the same unpacking idea you used with tuples.
 
-This is an editable worked demo. Edit `main.py`, press **Run** to compare the result, then **Submit** to check your small change. The next lesson transfers the idea to a different setting.
+Use `.keys()` when you only need keys, or `.values()` when you only need values.
 
-Change the loop to append the item name rather than its price. Run should print the two item names; then Submit.
+The starter currently collects mark counts. Edit `main.py` to collect landmarks instead. Run should print `['ridge', 'cove']`, then Submit.
 
 ## Your Task
 
-1. Loop through `prices.items()` and append each key to `items`.
+1. Loop through `beacon_marks.items()` and append each key to `landmarks`.

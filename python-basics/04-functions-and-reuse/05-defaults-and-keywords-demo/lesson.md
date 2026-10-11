@@ -1,24 +1,28 @@
 ---
-title: "Defaults and Keywords: Demo"
+title: "Default Ability Marks: Demo"
 slug: defaults-and-keywords-demo
 order: 5
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: Set a default parameter and override it with a keyword argument.
-seo_title: "Defaults and Keywords: Demo | Python Basics"
-seo_description: Set a default parameter and override it with a keyword argument.
-seo_keywords: [python basics, defaults and keywords demo, python practice]
+summary: Use a default ability mark and override it with a keyword argument.
+seo_title: "Default Ability Marks: Demo | Python Basics"
+seo_description: Use a default ability mark and override it with a keyword argument.
+seo_keywords: [python basics, functions and reuse, lantern atlas]
 hints:
   - Change the quoted suffix in the function definition, not the call.
 ---
 
-# Defaults and Keywords: Demo
+# Default Ability Marks: Demo
 
-A default supplies a value when an argument is omitted. Keywords identify which parameter receives a value, so `badge("Jo", suffix="!")` is clear at the call site. The first call omits `suffix`; the second explicitly overrides it. Change the default in the definition from `.` to `?`, then Run: the first printed line changes, while the keyword-override line stays `Jo!`.
+Most ability labels use the same ending, so you shouldn't need to supply it every time.
+
+In `def ability_mark(name, suffix="."):`, the `suffix` parameter has a **default value**. Calling `ability_mark("Glow")` uses that period. Calling `ability_mark("Glow", suffix="!")` supplies a different ending by name; `suffix="!"` is a **keyword argument**.
+
+Run the starter and compare its two lines: `Glow.` and `Glow!`.
 
 ## Your Tasks
 
-1. Change the default `suffix` to `?`; keep the explicit keyword-override call.
+1. Change the default value of `suffix` from `"."` to `"?"` in the function definition.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your change.
+Keep both calls unchanged. Run `main.py` again: the first line should become `Glow?`, while the second stays `Glow!`. The explicit argument wins over the default. Submit to check your change.

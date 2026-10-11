@@ -1,26 +1,25 @@
 ---
-title: 'Exercise: Read Badge Edges'
+title: "Exercise: Read Rune Edges"
 slug: exercise-index-badge
 order: 2
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Practice positive and negative string indexes on a new badge.
-seo_title: 'Exercise: Read Badge Edges | Python Basics'
-seo_description: Practice positive and negative string indexes on a new badge with
-  an editable Python example and checked task.
-seo_keywords:
-- python indexing
-- beginner indexing exercise
+summary: Use string indexes to inspect both ends of a route rune.
+seo_title: "Exercise: Read Rune Edges | Python Basics"
+seo_description: Use string indexes to inspect both ends of a route rune.
+seo_keywords: [python basics, strings, lantern atlas]
 ---
 
-The gate prints the first and last characters of a different badge. The preceding hall-code demo showed where zero and negative one point; now use them on a badge.
+# Exercise: Read Rune Edges
 
-This is a separate exercise. Edit `main.py`, press **Run** to inspect the output, then **Submit** to check the numbered tasks.
+The next sign reads `EMBER-7`. Extract its first and last characters without changing the supplied `badge` string.
 
-Build the edge labels without changing the supplied badge.
+Use square brackets to read from `badge`, rather than assigning the letters directly. That way, the same code can read a different sign later.
 
 ## Your Tasks
 
-1. Set `first_mark` to the first character of `badge`.
-2. Set `last_mark` to the last character of `badge`.
+1. Set `first_mark` to the first character of `badge` using an index.
+2. Set `last_mark` to the last character of `badge` using an index.
+
+Edit `main.py`. After the first task, Run shows `E None`; `None` is the placeholder for the unfinished value. After both tasks, it should show `E 7`. Submit to check each result.

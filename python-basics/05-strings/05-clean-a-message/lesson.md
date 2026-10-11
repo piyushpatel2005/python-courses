@@ -1,25 +1,40 @@
 ---
-title: Clean a Message with Methods
+title: "Clean a Rune Message: Demo"
 slug: clean-a-message
 order: 5
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Strip whitespace and normalize case with Python string methods.
-seo_title: Clean a Message with Methods | Python Basics
-seo_description: Strip whitespace and normalize case with Python string methods with
-  an editable Python example and checked task.
-seo_keywords:
-- python methods
-- beginner methods exercise
+summary: Normalize a rune message with strip and lower.
+seo_title: "Clean a Rune Message: Demo | Python Basics"
+seo_description: Normalize a rune message with strip and lower.
+seo_keywords: [python basics, strings, lantern atlas]
 ---
 
-A method follows a value and a dot. `strip()` removes surrounding whitespace, `lower()` changes case, and `replace(old, new)` replaces matching text. They return **new** strings; they do not alter the original. `startswith()` checks a prefix and returns a Boolean.
+# Clean a Rune Message: Demo
 
-This is an editable worked demo. Edit `main.py`, press **Run** to compare the result, then **Submit** to check your small change. The next lesson transfers the idea to a different setting.
+A message can contain the right words but still be awkward to compare: `"  Beacon Dim  "` has extra spaces and mixed capitalization.
 
-Change `cleaned` to remove outer spaces *and* lowercase this message. Run should print `gate open`; then Submit.
+A string **method** is an operation called after the string, using a dot. Here are two that help:
+
+- `strip()` removes whitespace from the beginning and end.
+- `lower()` turns uppercase letters into lowercase letters.
+
+You can chain them. In `message.strip().lower()`, Python strips the spaces first, then lowercases that result. It doesn't change the original `message`.
 
 ## Your Task
 
-1. Set `cleaned` to the stripped, lowercased message.
+1. Set `cleaned` to `message` with its surrounding whitespace removed and its letters lowercased.
+
+In `main.py`, the `.strip()` call is already supplied. Add the remaining method, Run to see `beacon dim`, then Submit.
+
+Two more methods will help with the next notice. `replace(old, new)` returns a string with matching text replaced; `startswith(prefix)` returns `True` or `False`.
+
+```python run
+status = "gate closed"
+print(status.replace("closed", "open"))
+print(status.startswith("gate"))
+print(status)
+```
+
+Run this example to see `gate open`, `True`, and the unchanged `gate closed`. Replacing text creates a new string; it doesn't rewrite `status`.

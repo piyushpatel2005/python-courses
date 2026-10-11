@@ -9,7 +9,7 @@ import solution
 def _variant():
     with open(solution.__file__, encoding="utf-8") as source_file:
         tree = ast.parse(source_file.read())
-    replacements = {'plants': {'basil': 7, 'thyme': 2, 'mint': 4}}
+    replacements = {'caches': {'grove': 7, 'basin': 2, 'ridge': 4}}
     for node in tree.body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
             name = node.targets[0].id
@@ -35,15 +35,15 @@ def _uses(technique):
     return False
 
 def test_01():
-    """Loop over plants.items() and append each <name>: $<price> string to lines."""
-    assert lines == ["mint: $3", "sage: $5"], "Loop over plants.items() and append each <name>: $<price> string to lines."
+    """Loop over caches.items() and append each landmark and marks label to lines."""
+    assert lines == ["ridge: 3 marks", "cove: 5 marks"], "Append each landmark and its count in marks."
     assert _uses('items'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('lines == ["basil: $7", "thyme: $2", "mint: $4"]', varied), "Check this task with a different input too."
+    assert eval('lines == ["grove: 7 marks", "basin: 2 marks", "ridge: 4 marks"]', varied), "Check this task with a different input too."
 
 def test_02():
-    """Loop over plants.values() and add each price to total."""
-    assert total == 8, "Loop over plants.values() and add each price to total."
+    """Loop over caches.values() and add each count to total_marks."""
+    assert total_marks == 8, "Loop over caches.values() and add each count to total_marks."
     assert _uses('values'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('total == 13', varied), "Check this task with a different input too."
+    assert eval('total_marks == 13', varied), "Check this task with a different input too."

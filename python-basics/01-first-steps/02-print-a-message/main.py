@@ -1,1 +1,1 @@
-print("Welcome, makers!")
+print("Spawn Camp is dark")

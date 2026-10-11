@@ -1,25 +1,28 @@
 ---
-title: Slice a Route Label
+title: "Slice a Cavern Route: Demo"
 slug: slice-a-route
 order: 3
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Extract text with Python start and stop slices.
-seo_title: Slice a Route Label | Python Basics
-seo_description: Extract text with Python start and stop slices with an editable Python
-  example and checked task.
-seo_keywords:
-- python slicing
-- beginner slicing exercise
+summary: Use a stop-exclusive slice to read a route prefix.
+seo_title: "Slice a Cavern Route: Demo | Python Basics"
+seo_description: Use a stop-exclusive slice to read a route prefix.
+seo_keywords: [python basics, strings, lantern atlas]
 ---
 
-The transport desk needs the district from `WEST:TRAM`. A slice `text[start:stop]` includes the start but excludes the stop; omitting the start means zero, omitting the stop means the end. A slice past the end is safe, unlike a single invalid index.
+# Slice a Cavern Route: Demo
 
-This is an editable worked demo. Edit `main.py`, press **Run** to compare the result, then **Submit** to check your small change. The next lesson transfers the idea to a different setting.
+One character isn't enough to read the route name in `GLOW:TRAM`. A **slice** reads a stretch of characters instead.
 
-Change `district` to slice out `WEST`; Run should print `WEST`, then Submit.
+The pattern is `text[start:stop]`. Python includes the character at `start` and stops before the character at `stop`. Leaving out `start` means "begin at zero."
+
+![Characters at indexes zero through three form GLOW; the stop index four is excluded](string-slicing.svg "String slicing: start included, stop excluded")
+
+The starter uses `route[:2]`, so Run prints `GL`. The colon in the string is at index `4`; it doesn't belong in the route name.
 
 ## Your Task
 
-1. Slice `route` to set `district` to `"WEST"`.
+1. Change the slice assigned to `district` so it reads `GLOW` from `route`.
+
+Run `main.py` to check that the colon is left out, then Submit. Unlike a single index, a slice can extend past the end of a string: Python returns the available characters rather than raising `IndexError`.

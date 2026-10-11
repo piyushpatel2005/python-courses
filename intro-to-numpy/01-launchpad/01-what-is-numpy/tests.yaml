@@ -1,0 +1,5 @@
+blocks:
+- index: 0
+  expected_output: '[5, 7, 9]'
+- index: 1
+  expected_output: '[5, 7, 9]'

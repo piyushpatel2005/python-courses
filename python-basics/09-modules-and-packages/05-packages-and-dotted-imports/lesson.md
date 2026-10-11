@@ -1,24 +1,24 @@
 ---
-title: "Packages and Dotted Imports"
+title: 'Demo: Follow a Dotted Package Import'
 slug: packages-and-dotted-imports
 order: 5
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: Use a standard-library package with a dotted import.
-seo_title: "Packages and Dotted Imports | Python Basics"
-seo_description: Use a standard-library package with a dotted import.
+summary: 'Use ElementTree from a standard-library package.'
+seo_title: 'Demo: Follow a Dotted Package Import | Python Basics'
+seo_description: 'Use ElementTree from a standard-library package.'
 seo_keywords: [python basics, packages and dotted imports, python practice]
 hints:
   - Keep the import; replace the tag inside the quoted string.
 ---
 
-# Packages and Dotted Imports
+A package organizes related modules. The dotted name `xml.etree.ElementTree` follows that organization to a module in Python's standard library. The starter imports it `as ET`: `ET` is just a shorter name for the same module.
 
-A module is a `.py` file. A package groups modules under a directory, so a dotted import can reach a module inside it. Python's standard-library `xml.etree` package contains `ElementTree`; `ET.fromstring` reads a short XML tag. No package download or pip command is needed. Change the tag passed to `ET.fromstring` from `chair` to `lamp`; Run to see the new label. This is a guided edit, not a requirement to build a package in the single-file browser workspace.
+This module reads XML, a text format with tags such as `<trail />`. `ET.fromstring(xml_text)` reads the text into an object. Its `.tag` attribute gives the name of the outermost tag, such as `trail`. You do not need to install anything for this example.
 
-## Your Tasks
+In `main.py`, change the final call's text from `<trail />` to `<beacon />`. Run should print `beacon`, then Submit.
 
-1. Change the XML tag in the supplied call from `chair` to `lamp`.
+## Your Task
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your change.
+1. Change the tag in the final `tag_name` call to `<beacon />`.

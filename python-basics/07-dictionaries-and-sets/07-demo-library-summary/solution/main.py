@@ -1,9 +1,9 @@
-visits = [{"name": "Tess", "room": "Art"}, {"name": "Tess", "room": "Math"}, {"name": "Omar", "room": "Art"}]
-names = []
-counts = {}
-for visit in visits:
-    names.append(visit["name"])
-    room = visit["room"]
-    counts[room] = counts.get(room, 0) + 1
-people = len(set(names))
-print(f"{people} visitors; {counts}")
+finds = [{"location": "Pine Pass", "beacon": "North"}, {"location": "Pine Pass", "beacon": "West"}, {"location": "Salt Cove", "beacon": "North"}]
+locations = []
+beacon_counts = {}
+for find in finds:
+    locations.append(find["location"])
+    beacon = find["beacon"]
+    beacon_counts[beacon] = beacon_counts.get(beacon, 0) + 1
+places = len(set(locations))
+print(f"{places} locations; {beacon_counts}")

@@ -1,19 +1,21 @@
 ---
-title: "Demo: Print a Message"
+title: "Demo: Light the Camp Message"
 slug: print-a-message
 order: 2
 language: python
 lesson_type: coding
-summary: Edit one Python print message and see the changed output.
-seo_title: "Demo: Print a Message | Python Basics"
-seo_description: Edit one Python print message and see the changed output.
-seo_keywords: [python print, python strings, first python program]
+summary: "Edit one print string to announce Adi’s arrival."
+seo_title: "Demo: Light the Camp Message | Python Basics"
+seo_description: "Edit one print string to announce Adi’s arrival."
+seo_keywords: [python basics, first steps, lantern atlas]
 ---
 
-The workshop entrance needs a welcome line. The working code already prints one line. In `print("Welcome, makers!")`, quotes mark the text and the parentheses pass it to `print()`.
+The camp sign currently says `Spawn Camp is dark`. You will change that message to announce Adi's arrival.
 
-Edit `main.py`: change **only** the quoted message to `"Welcome, neighbors!"`. Press **Run** and look for `Welcome, neighbors!` without quotes; press **Submit** to check it. Next you will write output for a different event.
+Open **main.py** in the editor. Keep `print()`, its parentheses, and the quotation marks; replace just the text between the quotes. Press **Run** to read the new message in the console, then **Submit** to check it.
 
-## Your Task
+## Your Tasks
 
-1. Change the greeting to print `Welcome, neighbors!`.
+1. Change the message to print `Adi enters Spawn Camp`.
+
+The following exercise asks you to write two print calls of your own.

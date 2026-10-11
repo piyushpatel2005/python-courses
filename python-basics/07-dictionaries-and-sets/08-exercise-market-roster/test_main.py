@@ -9,7 +9,7 @@ import solution
 def _variant():
     with open(solution.__file__, encoding="utf-8") as source_file:
         tree = ast.parse(source_file.read())
-    replacements = {'signups': [{'name': 'Mia', 'activity': 'bread'}, {'name': 'Oli', 'activity': 'jam'}, {'name': 'Mia', 'activity': 'jam'}, {'name': 'Pam', 'activity': 'jam'}], 'location': ('South Shed', '11:30')}
+    replacements = {'discoveries': [{'location': 'Arch', 'treasure': 'gem'}, {'location': 'Vale', 'treasure': 'scroll'}, {'location': 'Arch', 'treasure': 'scroll'}, {'location': 'Dune', 'treasure': 'scroll'}], 'location': ('Hidden Annex', 'dusk')}
     for node in tree.body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
             name = node.targets[0].id
@@ -35,29 +35,29 @@ def _uses(technique):
     return False
 
 def test_01():
-    """Loop over signups and append each name in signup order to names."""
-    assert names == ["Lia", "Ren", "Lia"], "Loop over signups and append each name in signup order to names."
+    """Loop over discoveries and append each location in discovery order to locations."""
+    assert locations == ["Ridge", "Cove", "Ridge"], "Loop over discoveries and append each location in discovery order to locations."
     assert _uses('For'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('names == ["Mia", "Oli", "Mia", "Pam"]', varied), "Check this task with a different input too."
+    assert eval('locations == ["Arch", "Vale", "Arch", "Dune"]', varied), "Check this task with a different input too."
 
 def test_02():
-    """Set unique_names to a set of the names in names."""
-    assert type(unique_names) is set and unique_names == {"Lia", "Ren"}, "Set unique_names to a set of the names in names."
+    """Set unique_locations to a set of the locations in locations."""
+    assert type(unique_locations) is set and unique_locations == {"Ridge", "Cove"}, "Set unique_locations to a set of the locations in locations."
     assert _uses('set'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('unique_names == {"Mia", "Oli", "Pam"}', varied), "Check this task with a different input too."
+    assert eval('unique_locations == {"Arch", "Vale", "Dune"}', varied), "Check this task with a different input too."
 
 def test_03():
-    """Count each signup activity in activity_counts using its current count (or zero) plus one."""
-    assert activity_counts == {"seeds": 1, "tools": 2}, "Count each signup activity in activity_counts using its current count (or zero) plus one."
+    """Count each discovery treasure in treasure_counts using its current count (or zero) plus one."""
+    assert treasure_counts == {"chest": 1, "compass": 2}, "Count each discovery treasure in treasure_counts using its current count (or zero) plus one."
     assert _uses('get'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('activity_counts == {"bread": 1, "jam": 3}', varied), "Check this task with a different input too."
+    assert eval('treasure_counts == {"gem": 1, "scroll": 3}', varied), "Check this task with a different input too."
 
 def test_04():
-    """Set report with an f-string to Market Hall at 10:00: 2 people, 3 bookings."""
-    assert report == "Market Hall at 10:00: 2 people, 3 bookings", "Set report with an f-string to Market Hall at 10:00: 2 people, 3 bookings."
+    """Set report with an f-string to Map Archive at dawn: 2 places, 3 finds."""
+    assert report == "Map Archive at dawn: 2 places, 3 finds", "Set report with an f-string to Map Archive at dawn: 2 places, 3 finds."
     assert _uses('JoinedStr'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('report == "South Shed at 11:30: 3 people, 4 bookings"', varied), "Check this task with a different input too."
+    assert eval('report == "Hidden Annex at dusk: 3 places, 4 finds"', varied), "Check this task with a different input too."

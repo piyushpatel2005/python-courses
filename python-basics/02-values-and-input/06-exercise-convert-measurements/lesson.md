@@ -1,20 +1,22 @@
 ---
-title: "Exercise: Convert Measurements"
+title: "Exercise: Convert Charge Readings"
 slug: exercise-convert-measurements
 order: 6
 language: python
 lesson_type: coding
-summary: Convert prefilled text quantities to integer and float measurements.
-seo_title: "Exercise: Convert Measurements | Python Basics"
-seo_description: Convert prefilled text quantities to integer and float measurements.
-seo_keywords: [python int conversion exercise, python float conversion, string to number]
+summary: "Parse prefilled whole and decimal gear readings."
+seo_title: "Exercise: Convert Charge Readings | Python Basics"
+seo_description: "Parse prefilled whole and decimal gear readings."
+seo_keywords: [python basics, values and input, lantern atlas]
 ---
 
-A garden has two measurements recorded as text: `"9"` seed trays and `"1.5"` liters per tray. The editor does not prompt for input; these strings stand in for values that could come from a form or a command-line user. `int()` converts whole-number text and `float()` converts decimal text. Complete both conversions without replacing the original strings.
+Two gear readings arrive as text: `"9"` cells and `"1.5"` charge per cell. Convert each to a number using the type that fits it.
 
-Edit `main.py`, press **Run** to read the numeric results, then **Submit**. The tests check the resulting types as well as values.
+The strings in **main.py** stand in for responses a person might type. They are already filled in, so **Run** does not wait for input. Leave `cell_text` and `charge_text` unchanged and replace the numeric placeholders below them.
+
+Press **Run** to check for `Cells: 9` and `Charge per cell: 1.5`, then **Submit**.
 
 ## Your Tasks
 
-1. Set `tray_count` to the integer parsed from `tray_text`.
-2. Set `liters_per_tray` to the float parsed from `liters_text`.
+1. Set `cell_count` by converting `cell_text` with `int()`.
+2. Set `charge_per_cell` by converting `charge_text` with `float()`.

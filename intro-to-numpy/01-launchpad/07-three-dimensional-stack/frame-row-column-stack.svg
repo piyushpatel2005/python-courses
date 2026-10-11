@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 440" role="img" aria-labelledby="title desc">
+  <title id="title">Read a Stack as Frames, Rows, and Columns</title>
+  <desc id="desc">Frame zero contains rows one two and three four. Frame one contains rows five six and seven eight. Each frame has two rows and two columns. The complete array has shape two, two, two: frame count, row count, column count. The frames are shown side by side for clarity, not joined into one wider grid.</desc>
+  <rect width="780" height="440" rx="22" fill="#fcfaf3"/>
+  <g font-family="Arial, sans-serif" fill="#26384a" text-anchor="middle">
+    <text x="390" y="39" font-size="25" font-weight="700">A Stack Contains Whole Frames</text>
+    <text x="390" y="68" font-size="17">Shown side by side; they remain two separate frames.</text>
+    <rect x="42" y="89" width="328" height="236" rx="16" fill="#e7f2fa" stroke="#36506b" stroke-width="2"/>
+    <rect x="410" y="89" width="328" height="236" rx="16" fill="#edf4e8" stroke="#36506b" stroke-width="2"/>
+    <text x="206" y="119" font-size="21" font-weight="700">Frame 0</text>
+    <text x="574" y="119" font-size="21" font-weight="700">Frame 1</text>
+    <text x="200" y="147" font-size="15">column 0</text>
+    <text x="300" y="147" font-size="15">column 1</text>
+    <text x="568" y="147" font-size="15">column 0</text>
+    <text x="668" y="147" font-size="15">column 1</text>
+    <text x="99" y="197" font-size="17">row 0</text>
+    <text x="99" y="260" font-size="17">row 1</text>
+    <text x="467" y="197" font-size="17">row 0</text>
+    <text x="467" y="260" font-size="17">row 1</text>
+    <g fill="#b8dfef" stroke="#36506b" stroke-width="2">
+      <rect x="155" y="161" width="90" height="56" rx="8"/>
+      <rect x="255" y="161" width="90" height="56" rx="8"/>
+      <rect x="155" y="224" width="90" height="56" rx="8"/>
+      <rect x="255" y="224" width="90" height="56" rx="8"/>
+    </g>
+    <g fill="#cce4c0" stroke="#36506b" stroke-width="2">
+      <rect x="523" y="161" width="90" height="56" rx="8"/>
+      <rect x="623" y="161" width="90" height="56" rx="8"/>
+      <rect x="523" y="224" width="90" height="56" rx="8"/>
+      <rect x="623" y="224" width="90" height="56" rx="8"/>
+    </g>
+    <g font-size="25" font-weight="700" dominant-baseline="middle">
+      <text x="200" y="189">1</text><text x="300" y="189">2</text>
+      <text x="200" y="252">3</text><text x="300" y="252">4</text>
+      <text x="568" y="189">5</text><text x="668" y="189">6</text>
+      <text x="568" y="252">7</text><text x="668" y="252">8</text>
+    </g>
+    <text x="206" y="306" font-size="17">Each frame has shape (2, 2)</text>
+    <text x="574" y="306" font-size="17">Same layout, different moment</text>
+    <rect x="125" y="345" width="530" height="72" rx="13" fill="#fff3cb" stroke="#aa8840" stroke-width="2"/>
+    <text x="390" y="375" font-size="23" font-weight="700">frames.shape = (2, 2, 2)</text>
+    <text x="390" y="402" font-size="17">Read in order: frames, rows per frame, columns per row.</text>
+  </g>
+</svg>

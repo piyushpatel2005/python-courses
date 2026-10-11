@@ -1,18 +1,30 @@
-def reserved_total(numbers):
-    # Add every reservation count with a loop.
+def parse_command(command):
+    # Split once at the colon; handle bad numbers without crashing.
     pass
 
-def available_places(capacity, reserved):
-    # Never return a negative number.
+
+def charge_beacons(beacons, commands):
+    # Begin with zero charge for each known beacon; process commands in order.
     pass
 
-def build_board(sessions):
-    # Return one report line for each session.
+
+def gate_open(beacons, charges):
+    # An empty beacon dictionary cannot open the gate.
     pass
 
-sessions = [
-    {"name": "Pottery", "capacity": 8, "reservations": [2, 3]},
-    {"name": "Drawing", "capacity": 3, "reservations": [2, 2]},
-]
-for line in build_board(sessions) or []:
-    print(line)
+
+def play_mission(beacons, commands):
+    # Build the beacon lines, then add the win or locked ending.
+    pass
+
+
+beacons = {"NORTH": 3, "SOUTH": 2}
+commands = ["north:2", "bad command", "NORTH:1", "south:2", "WEST:9"]
+report = play_mission(beacons, commands)
+if report is None:  # Supplied checkpoints work before the full game is built.
+    print("Parsed sample:", parse_command(" north:2 "))
+    print("Charged sample:", charge_beacons({"NORTH": 3}, ["north:2"]))
+    print("Gate sample:", gate_open({"NORTH": 3}, {"NORTH": 3}))
+else:
+    for line in report:
+        print(line)

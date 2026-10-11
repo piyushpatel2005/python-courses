@@ -1,8 +1,8 @@
-plants = {"mint": 3, "sage": 5}
+caches = {"ridge": 3, "cove": 5}
 lines = []
-for name, price in plants.items():
-    pass  # Append a line like "mint: $3".
-total = 0
-for price in plants.values():
-    pass  # Add each price to total.
-print(lines, total)
+for landmark, marks in caches.items():
+    pass  # Append a line like "ridge: 3 marks".
+total_marks = 0
+for marks in caches.values():
+    pass  # Add each count to total_marks.
+print(lines, total_marks)

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" role="img" aria-labelledby="title desc">
+<title id="title">Update the Intersection of Rows and One Column</title><desc id="desc">A copy of the stock table is named cleaned. The units less than three mask is true for Beans and Rice. A single loc assignment changes only their status cells to review, leaving Tea and the original stock unchanged.</desc>
+<rect width="900" height="380" rx="16" fill="#101c30"/>
+<text x="450.0" y="37" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#ffffff">Update the Intersection of Rows and One Column</text>
+<text x="157.33333333333334" y="83" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#bed1e5">stock: Original</text>
+<rect x="24.0" y="105" width="266.6666666666667" height="46" rx="7" fill="#34445c"/>
+<text x="157.33333333333334" y="134" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">b: Beans / 2 / ok</text>
+<rect x="24.0" y="160" width="266.6666666666667" height="46" rx="7" fill="#34445c"/>
+<text x="157.33333333333334" y="189" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">t: Tea / 8 / ok</text>
+<rect x="24.0" y="215" width="266.6666666666667" height="46" rx="7" fill="#34445c"/>
+<text x="157.33333333333334" y="244" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">r: Rice / 1 / ok</text>
+<text x="450.0" y="83" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#bed1e5">units &lt; 3</text>
+<rect x="316.6666666666667" y="105" width="266.6666666666667" height="46" rx="7" fill="#147d70"/>
+<text x="450.0" y="134" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">b: True</text>
+<rect x="316.6666666666667" y="160" width="266.6666666666667" height="46" rx="7" fill="#34445c"/>
+<text x="450.0" y="189" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">t: False</text>
+<rect x="316.6666666666667" y="215" width="266.6666666666667" height="46" rx="7" fill="#147d70"/>
+<text x="450.0" y="244" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">r: True</text>
+<text x="742.6666666666667" y="83" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#bed1e5">cleaned: status After</text>
+<rect x="609.3333333333334" y="105" width="266.6666666666667" height="46" rx="7" fill="#147d70"/>
+<text x="742.6666666666667" y="134" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">b: review</text>
+<rect x="609.3333333333334" y="160" width="266.6666666666667" height="46" rx="7" fill="#34445c"/>
+<text x="742.6666666666667" y="189" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">t: ok</text>
+<rect x="609.3333333333334" y="215" width="266.6666666666667" height="46" rx="7" fill="#147d70"/>
+<text x="742.6666666666667" y="244" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">r: review</text>
+<text x="450.0" y="303" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#bed1e5">cleaned = stock.copy()</text>
+<text x="450.0" y="329" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#bed1e5">cleaned.loc[cleaned["units"] &lt; 3, "status"] = "review"</text>
+<text x="450.0" y="355" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#bed1e5">Only matching status cells change; stock keeps its original values.</text>
+</svg>

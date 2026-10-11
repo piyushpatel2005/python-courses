@@ -1,25 +1,29 @@
 ---
-title: "Project: Workshop Receipts"
+title: "Project: Build an Ability Loadout"
 slug: project-workshop-receipts
 order: 9
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: Build reusable receipt calculations and a printed workshop summary.
-seo_title: "Project: Workshop Receipts | Python Basics"
-seo_description: Build reusable receipt calculations and a printed workshop summary.
-seo_keywords: [python basics, project workshop receipts, python practice]
+summary: Combine reusable energy calculation and a named loadout readout.
+seo_title: "Project: Build an Ability Loadout | Python Basics"
+seo_description: Combine reusable energy calculation and a named loadout readout.
+seo_keywords: [python basics, functions and reuse, lantern atlas]
 hints:
   - Return values from each function; the supplied print combines them.
 ---
 
-# Project: Workshop Receipts
+# Project: Build an Ability Loadout
 
-Build a tiny receipt engine for workshop supply bags. One helper calculates a bag's total, then another labels it. Unlike a one-off print, these functions can process many bags. This is the section payoff: once both tasks pass, you have a reusable two-stage program.
+Before leaving the workshop, prepare a loadout for Cipher Caverns. You'll use one function to calculate its energy and another to write the label.
+
+Both functions should work with the values they receive. For example, changing the number of charges should change the total without requiring you to rewrite the function.
 
 ## Your Tasks
 
-1. Complete `bag_total(count, price)` so it returns their product for any bag.
-2. Complete `receipt(name, amount)` so it returns `name: $amount` using the given values.
+1. Complete `loadout_energy(charges, cost)` so it returns `charges * cost`.
+2. Complete `loadout_note(name, amount)` so it returns text in the form `name: amount energy`, using its parameters.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your change.
+Work in `main.py`; the print calls are already supplied. After the first task, Run should show `Loadout energy: 12`, even while the note is unfinished. After the second, it should also show `Lantern pulse: 12 energy`.
+
+Submit to check both functions. You've now built a calculation and a label that can be reused with a different loadout. In the caverns, you'll work with the text on route signs.

@@ -1,3 +1,3 @@
-songs = ["Morning", "Evening"]
-songs[0] = "Dawn"
-print(songs)
+gear = ["Old lantern", "Spare rope"]
+gear[0] = "Lantern"
+print(gear)

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" role="img" aria-labelledby="title desc">
+<title id="title">Function Call: Argument, Parameter, Return</title><desc id="desc">Calling boost_energy(12) binds 12 to energy; return energy plus 2 produces 14 for print.</desc>
+<rect width="800" height="380" fill="#f8fafc" rx="12"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" markerWidth="8" markerHeight="8" refX="9" refY="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#5874a0"/></marker></defs>
+<text x="400" y="36" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="700" fill="#17233c">An argument enters; a result returns</text>
+<rect x="45" y="77" width="310" height="170" rx="12" fill="#e8f1ff" stroke="#5874a0" stroke-width="2"/>
+<text x="200" y="108" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#17233c">Caller</text>
+<text x="68" y="151" text-anchor="start" font-family="monospace" font-size="18" font-weight="400" fill="#17233c">print(boost_energy(12))</text>
+<rect x="445" y="77" width="310" height="170" rx="12" fill="#e5f6ea" stroke="#5874a0" stroke-width="2"/>
+<text x="600" y="108" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#17233c">Function</text>
+<text x="465" y="150" text-anchor="start" font-family="monospace" font-size="16" font-weight="400" fill="#17233c">def boost_energy(energy):</text>
+<text x="485" y="184" text-anchor="start" font-family="monospace" font-size="16" font-weight="400" fill="#17233c">return energy + 2</text>
+<path d="M355 150 H445" fill="none" stroke="#5874a0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  marker-end="url(#arrow)"/>
+<text x="400" y="137" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="700" fill="#17233c">12</text>
+<path d="M445 214 H355" fill="none" stroke="#5874a0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  marker-end="url(#arrow)"/>
+<text x="400" y="235" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="700" fill="#17233c">14</text>
+<rect x="45" y="276" width="710" height="73" rx="12" fill="#fff1d6" stroke="#5874a0" stroke-width="2"/>
+<text x="65" y="305" text-anchor="start" font-family="sans-serif" font-size="16" font-weight="400" fill="#17233c">12 is the argument; energy is the local parameter that receives it.</text>
+<text x="65" y="330" text-anchor="start" font-family="sans-serif" font-size="16" font-weight="400" fill="#17233c">return sends 14 back to the caller, so print displays 14.</text>
+</svg>

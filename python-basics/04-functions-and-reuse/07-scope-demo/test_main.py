@@ -1,6 +1,6 @@
-from solution import inside_room, room
+from solution import preview_pulse, energy
 
-def test_local_room():
-    """Only the local room changes"""
-    assert inside_room() == "Workshop"
-    assert room == "Atrium"
+def test_local_energy():
+    """Only the local energy changes"""
+    assert preview_pulse() == 15
+    assert energy == 20

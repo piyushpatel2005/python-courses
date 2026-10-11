@@ -1,5 +1,5 @@
 from solution import *
 
 def test_01():
-    """Set last_supply to the last item of supplies."""
-    assert last_supply == "tape", "Set last_supply to the last item of supplies."
+    """Set last_gear to the last item of gear."""
+    assert last_gear == "lens", "Set last_gear to the last item of gear."

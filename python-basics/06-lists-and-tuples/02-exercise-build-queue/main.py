@@ -1,4 +1,4 @@
 queue = []
-next_person = None
-last_person = None
-print(queue, next_person, last_person)
+first_gear = None
+last_gear = None
+print(queue, first_gear, last_gear)

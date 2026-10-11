@@ -1,25 +1,28 @@
 ---
-title: Index a Text Code
+title: "Read a Rune Code: Demo"
 slug: index-a-text-code
 order: 1
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Indexing a Python string from either end.
-seo_title: Index a Text Code | Python Basics
-seo_description: Indexing a Python string from either end with an editable Python
-  example and checked task.
-seo_keywords:
-- python indexing
-- beginner indexing exercise
+summary: Index the first and last symbols of a cavern rune code.
+seo_title: "Read a Rune Code: Demo | Python Basics"
+seo_description: Index the first and last symbols of a cavern rune code.
+seo_keywords: [python basics, strings, lantern atlas]
 ---
 
-A volunteer reads a label code one character at a time. `code[0]` selects the first character; `code[-1]` selects the last. Indexes start at zero. `len(code)` counts characters. A single index beyond the end raises `IndexError`. Strings cannot be changed by assigning to an index.
+# Read a Rune Code: Demo
 
-This is an editable worked demo. Edit `main.py`, press **Run** to compare the result, then **Submit** to check your small change. The next lesson transfers the idea to a different setting.
+The route signs in Cipher Caverns contain short text codes. You can read one character from a string by putting its position, called an **index**, in square brackets.
 
-Change `last` to select the final character of this different label. The visible result should be `R`; then Submit.
+Python counts positions from zero. In `code = "NOVA-R"`, `code[0]` gives `N`. A negative index counts from the end: `code[-1]` gives the last character, `R`.
+
+The starter reads the first character twice. Run it to see `N N`.
 
 ## Your Task
 
 1. Set `last` to the last character of `code` using a negative index.
+
+Run `main.py` again to see `N R`, then Submit.
+
+A useful boundary to remember: `len(code)` counts the characters, but the last non-negative index is one less than that count. An index outside the string raises `IndexError`. Indexing reads a character; it can't replace a character in the original string.

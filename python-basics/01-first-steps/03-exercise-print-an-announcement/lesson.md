@@ -1,20 +1,20 @@
 ---
-title: "Exercise: Print an Announcement"
+title: "Exercise: Open the Lantern Map"
 slug: exercise-print-an-announcement
 order: 3
 language: python
 lesson_type: coding
-summary: Write two separate print lines for a community event.
-seo_title: "Exercise: Print an Announcement | Python Basics"
-seo_description: Write two separate print lines for a community event.
-seo_keywords: [python print exercise, python comments, beginner output]
+summary: "Write two separate output lines for Adi’s opening route."
+seo_title: "Exercise: Open the Lantern Map | Python Basics"
+seo_description: "Write two separate output lines for Adi’s opening route."
+seo_keywords: [python basics, first steps, lantern atlas]
 ---
 
-A library is announcing its reading circle. Unlike the workshop greeting, this needs two separate lines. Each call to `print()` starts a new output line. The starter has comments beginning with `#`; comments are notes for you, not output.
+The map needs an opening message and a reminder of where to go next. Write one `print()` call for each line, in the order you want them to appear.
 
-Edit `main.py` and press **Run** after each line you add. Your Console should show the two lines in order. Press **Submit** to check your tasks.
+The lines beginning with `#` in **main.py** are comments: notes for you, not instructions Python runs. Add your code beneath them. Press **Run** to check the two output lines, then **Submit**.
 
 ## Your Tasks
 
-1. Print `Reading circle starts today` as the first line.
-2. Print `Bring a book` as the second line.
+1. Print `The lantern map is open` first.
+2. Print `Find the first beacon` second.

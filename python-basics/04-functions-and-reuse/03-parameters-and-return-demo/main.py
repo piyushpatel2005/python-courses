@@ -1,4 +1,4 @@
-def ticket_total(price):
-    return price + 2
+def boost_energy(energy):
+    return energy + 2
 
-print(ticket_total(10))
+print(boost_energy(10))

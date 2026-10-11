@@ -1,24 +1,28 @@
 ---
-title: "Local Scope: Demo"
+title: "Local Energy Scope: Demo"
 slug: scope-demo
 order: 7
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: Observe that a function local does not replace an outside value.
-seo_title: "Local Scope: Demo | Python Basics"
-seo_description: Observe that a function local does not replace an outside value.
-seo_keywords: [python basics, scope demo, python practice]
+summary: Keep temporary ability energy separate from the outer energy value.
+seo_title: "Local Energy Scope: Demo | Python Basics"
+seo_description: Keep temporary ability energy separate from the outer energy value.
+seo_keywords: [python basics, functions and reuse, lantern atlas]
 hints:
-  - Edit the indented room assignment only.
+  - Edit the indented energy assignment only.
 ---
 
-# Local Scope: Demo
+# Local Energy Scope: Demo
 
-Names created inside a function are local to that call. `room` outside and `room` inside the function can hold different values. Run the starter: it prints `Atrium` twice. Change only the inner assignment to `Workshop` and compare the two printed lines.
+The workshop has `20` energy stored. You can preview a different amount inside a function without changing that stored value.
+
+There are two assignments named `energy` in `main.py`. The indented one belongs to `preview_pulse()`: it's a **local variable**. The assignment outside the function is separate, even though it uses the same name.
+
+Run the starter. Both values happen to be `20`, so the difference isn't visible yet.
 
 ## Your Tasks
 
-1. Change the assignment inside `inside_room()` to `Workshop`, without changing the outer `room`.
+1. Change the `energy` assignment inside `preview_pulse()` to `15`.
 
-Edit `main.py`, press **Run** to inspect the result, then **Submit** to check your change.
+Leave the outer assignment at `20`. Run again and compare the lines: the function returns `15`, but the stored value is still `20`. Submit to check that only the local value changed.

@@ -1,5 +1,5 @@
-badge_names = ["Li", "Mara", "Jo", "Sofia"]
-upper_names = list(map(lambda name: name.upper(), badge_names))
-long_names = list(filter(lambda name: len(name) >= 4, upper_names))
-print("Upper:", upper_names)
-print("Long:", long_names)
+beacon_labels = ["N", "North", "E", "South"]
+upper_labels = list(map(lambda label: label.upper(), beacon_labels))
+long_labels = list(filter(lambda label: len(label) >= 4, upper_labels))
+print("Upper:", upper_labels)
+print("Long:", long_labels)

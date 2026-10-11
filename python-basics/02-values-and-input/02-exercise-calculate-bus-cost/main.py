@@ -1,8 +1,8 @@
-riders_per_group = 3
-groups = 7
-capacity = 25
-fare_per_rider = 4
-fare_total = 0  # TODO: multiply riders, groups, and fare
-open_seats = 0  # TODO: subtract riders from capacity
-print("Fare total:", fare_total)
-print("Open seats:", open_seats)
+points_per_cache = 3
+caches = 7
+pack_slots = 25
+energy_per_point = 4
+energy_cost = 0  # TODO: multiply points per cache, caches, and energy per point
+open_slots = 0  # TODO: subtract the points collected from pack_slots
+print("Energy cost:", energy_cost)
+print("Open slots:", open_slots)

@@ -1,19 +1,25 @@
 ---
-title: "Demo: Format a Message"
+title: "Demo: Format a Gear Label"
 slug: format-a-message
 order: 3
 language: python
 lesson_type: coding
-summary: Edit one value in a Python f-string and observe the changed message.
-seo_title: "Demo: Format a Message | Python Basics"
-seo_description: Edit one value in a Python f-string and observe the changed message.
-seo_keywords: [python f strings, python format decimals, string interpolation]
+summary: "Use a two-decimal f-string to display a gear cost."
+seo_title: "Demo: Format a Gear Label | Python Basics"
+seo_description: "Use a two-decimal f-string to display a gear cost."
+seo_keywords: [python basics, values and input, lantern atlas]
 ---
 
-A bakery displays its daily special. Text can be joined with `+`, but joining numbers that way requires `str(number)`. An **f-string** starts with `f` before the quotes and inserts values at `{name}`. It handles numbers and text in one readable line. In `{price:.2f}`, `.2f` displays a decimal with two places; it does not change the numeric `price`.
+A gear label needs text and a price on the same line. An **f-string** lets you put values into text without printing them separately.
 
-The program already works. Change **only** the numeric `price` from `2.5` to `3.75`. Edit `main.py`, press **Run** to see `Bread: $3.75`, then **Submit**. Next, write a label with different data.
+In **main.py**, notice the `f` before the opening quote. Each pair of braces marks a value to insert: `{gear}` inserts the item name, while `{cost:.2f}` inserts the cost with two digits after the decimal point. The `$` is ordinary text.
 
-## Your Task
+Run the starter to see `Compass: $2.50`. Formatting adds the displayed zero; it does not change the number stored in `cost`.
 
-1. Set `price` to `3.75` and keep the formatted label.
+You could also join strings with `+`, but a number would first need conversion with `str(number)`. An f-string handles that display work for you. Conversion gets its own lesson shortly.
+
+Keep the print call and change the cost assignment in **main.py**. Press **Run** to see `Compass: $3.75`, then **Submit**.
+
+## Your Tasks
+
+1. Set `cost` to `3.75`.

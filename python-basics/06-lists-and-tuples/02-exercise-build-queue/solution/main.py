@@ -1,4 +1,4 @@
-queue = ["Uma", "Jae", "Sol"]
-next_person = queue[0]
-last_person = queue[-1]
-print(queue, next_person, last_person)
+queue = ["rope", "torch", "compass"]
+first_gear = queue[0]
+last_gear = queue[-1]
+print(queue, first_gear, last_gear)

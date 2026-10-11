@@ -5,21 +5,25 @@ order: 3
 language: python
 lesson_type: informational
 runtime: pyodide
-summary: Understand console input and why browser exercises use provided values.
+summary: Understand terminal input and why Adi’s browser missions use supplied values.
 seo_title: Python input() and Browser Exercises | Python Basics
-seo_description: See how input() accepts text in terminal programs and why Pyodide browser lessons use ready-made values instead of blocking prompts.
+seo_description: Learn why Python input returns text and why Pyodide missions use provided values.
 seo_keywords: [python input, input returns string, pyodide browser, command line]
 ---
 
-At a command-line workshop sign-up desk, a program might ask the coordinator for a participant's name. Python's `input()` displays a prompt, pauses until someone types a line, and returns **text** (`str`), even if the person typed digits.
+# Where input comes from
 
-This is an **illustration for a terminal program, not a runnable browser exercise**:
+In a terminal version of The Lantern Atlas, the player could type a hero name and an energy reading. Python's `input()` displays a prompt and waits for a line of text. It returns a string even when the player types digits.
+
+This example is for a terminal program, not the browser editor:
 
 ```python
-name = input("Participant name: ")
-seats_text = input("Seats requested: ")
-seats = int(seats_text)  # Converts digit text; invalid text raises ValueError.
-print(f"{name} reserved {seats} seats")
+hero = input("Hero name: ")
+energy_text = input("Beacon energy: ")
+energy = int(energy_text)  # Invalid text raises ValueError.
+print(f"{hero} carries {energy} energy")
 ```
 
-Do **not** copy that snippet into the browser editor: `input()` may wait for a prompt the Pyodide lesson runner cannot supply. In these browser lessons, start with a supplied value such as `seats_text = "2"`; pass it to a function, then Run or Submit without waiting for anyone to type. The `try`/`except ValueError` from the first lesson can handle invalid numeric text if a real terminal user enters it.
+Notice the separate conversion step. `input()` collects the energy as text; `int()` turns that text into a number. If the player types `unknown`, the conversion raises `ValueError`. The `try` / `except ValueError` pattern from the beacon-reading lesson could handle that case.
+
+Keep this example out of the browser editor, where a terminal prompt may not be available. The browser missions supply values such as `energy_text = "2"` instead. You can pass those values to a function and use Run or Submit without waiting for someone to type a response.

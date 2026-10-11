@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" role="img" aria-labelledby="title desc">
+<title id="title">Labels Include the End; Positions Stop Before It</title><desc id="desc">The ledger rows early, mid, late occupy positions zero, one, two. The loc slice early through mid includes both endpoint labels. The iloc slice zero to two excludes position two.</desc>
+<rect width="900" height="380" rx="16" fill="#101c30"/>
+<text x="450.0" y="37" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#ffffff">Labels Include the End; Positions Stop Before It</text>
+<text x="230.5" y="83" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#bed1e5">loc["early":"mid"]</text>
+<rect x="24.0" y="105" width="413.0" height="46" rx="7" fill="#147d70"/>
+<text x="230.5" y="134" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">early: Fern</text>
+<rect x="24.0" y="160" width="413.0" height="46" rx="7" fill="#147d70"/>
+<text x="230.5" y="189" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">mid: Bee — included</text>
+<rect x="24.0" y="215" width="413.0" height="46" rx="7" fill="#34445c"/>
+<text x="230.5" y="244" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">late: Oak</text>
+<text x="669.5" y="83" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#bed1e5">iloc[0:2]</text>
+<rect x="463.0" y="105" width="413.0" height="46" rx="7" fill="#51478a"/>
+<text x="669.5" y="134" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">0: early — Fern</text>
+<rect x="463.0" y="160" width="413.0" height="46" rx="7" fill="#51478a"/>
+<text x="669.5" y="189" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">1: mid — Bee</text>
+<rect x="463.0" y="215" width="413.0" height="46" rx="7" fill="#34445c"/>
+<text x="669.5" y="244" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#ffffff">2: late — excluded</text>
+<text x="450.0" y="303" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#bed1e5">Both windows return the first two rows in this ledger.</text>
+<text x="450.0" y="329" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#bed1e5">Labels follow the existing index order, not alphabetical order.</text>
+</svg>
