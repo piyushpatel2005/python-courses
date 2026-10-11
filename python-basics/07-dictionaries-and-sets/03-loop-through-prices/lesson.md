@@ -1,6 +1,6 @@
 ---
 title: 'Loop Through Beacon Map Entries'
-slug: loop-through-beacon_marks
+slug: loop-through-prices
 order: 3
 language: python
 lesson_type: coding

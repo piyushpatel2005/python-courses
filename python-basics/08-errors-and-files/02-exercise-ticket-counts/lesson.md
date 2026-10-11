@@ -1,6 +1,6 @@
 ---
 title: 'Exercise: Label Beacon Charge'
-slug: exercise-charge-counts
+slug: exercise-ticket-counts
 order: 2
 language: python
 lesson_type: coding

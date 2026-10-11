@@ -1,6 +1,6 @@
 ---
 title: 'Exercise: Update a Map Entry'
-slug: exercise-update-map_entry
+slug: exercise-update-contact
 order: 2
 language: python
 lesson_type: coding
