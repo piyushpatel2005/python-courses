@@ -1,6 +1,6 @@
 ---
 title: 'Read an Atlas Map Card'
-slug: read-a-stock-map_card
+slug: read-a-stock-card
 order: 1
 language: python
 lesson_type: coding
