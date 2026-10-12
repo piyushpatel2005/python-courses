@@ -1,6 +1,6 @@
 ---
 title: 'Count Unique Atlas Stops'
-slug: count-unique-visited_stops
+slug: count-unique-visitors
 order: 5
 language: python
 lesson_type: coding
