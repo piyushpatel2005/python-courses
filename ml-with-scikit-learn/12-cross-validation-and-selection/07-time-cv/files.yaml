@@ -1,0 +1,4 @@
+files:
+  - path: main.py
+  - path: observations.csv
+    readonly: true

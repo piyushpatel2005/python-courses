@@ -1,0 +1,4 @@
+files:
+  - path: main.py
+  - path: listing-prices.csv
+    readonly: true

@@ -1,0 +1,3440 @@
+[
+  {
+    "id": "estimator-basics/xy-shapes",
+    "global_order": 1,
+    "module": "estimator-basics",
+    "directory": "01-estimator-basics/01-xy-shapes",
+    "role": "demo",
+    "title": "Arrange features and targets",
+    "prerequisites": [],
+    "task": "Return `(X, y)` from `make_xy(records)`: the first two columns form a two-dimensional feature matrix and the last column forms a one-dimensional target, in the original row order.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "dd8d43365edb055cdd6f57e5f6ac3995055e46a5f391e3787b8545fe5e5a52f8",
+    "test_sha256": "f55a1265a02c097929a89e26895c1cad27ae7a5b0aa4281d8ed92ddd7828abe9",
+    "body_words": 421
+  },
+  {
+    "id": "estimator-basics/exercise-xy-shapes",
+    "global_order": 2,
+    "module": "estimator-basics",
+    "directory": "01-estimator-basics/02-exercise-xy-shapes",
+    "role": "exercise",
+    "title": "Exercise: arrange features and targets",
+    "prerequisites": [
+      "estimator-basics/xy-shapes"
+    ],
+    "task": "Return `(X, y)` from `make_xy(records)`: the first two columns form a two-dimensional feature matrix and the last column forms a one-dimensional target, in the original row order.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "664b846e9206ce9e41b36198bd2a0492f18324e9bef91683b53f031cec0d99ac",
+    "test_sha256": "f55a1265a02c097929a89e26895c1cad27ae7a5b0aa4281d8ed92ddd7828abe9",
+    "body_words": 243
+  },
+  {
+    "id": "estimator-basics/first-fit",
+    "global_order": 3,
+    "module": "estimator-basics",
+    "directory": "01-estimator-basics/03-first-fit",
+    "role": "demo",
+    "title": "Fit an estimator",
+    "prerequisites": [
+      "estimator-basics/exercise-xy-shapes"
+    ],
+    "task": "Fit and return a `LinearRegression` with `fit_intercept=True` and `n_jobs=1`, using only the helper arguments `X_train` and `y_train`.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "41c7edcb7f4586cc1f9ecc337868876fd2fa0857fb19ccc690a8e9c1474b56a7",
+    "test_sha256": "83bf88b702a1e3f573a2f40e26c052227d81d7f8df1bfe2fab244cff5e6dbb40",
+    "body_words": 405
+  },
+  {
+    "id": "estimator-basics/exercise-first-fit",
+    "global_order": 4,
+    "module": "estimator-basics",
+    "directory": "01-estimator-basics/04-exercise-first-fit",
+    "role": "exercise",
+    "title": "Exercise: fit an estimator",
+    "prerequisites": [
+      "estimator-basics/first-fit"
+    ],
+    "task": "Fit and return a `LinearRegression` with `fit_intercept=True` and `n_jobs=1`, using only the helper arguments `X_train` and `y_train`.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "997290900117491258060cf60e3f9a9a667d55f543654437c96c9fa0f74e8d25",
+    "test_sha256": "83bf88b702a1e3f573a2f40e26c052227d81d7f8df1bfe2fab244cff5e6dbb40",
+    "body_words": 210
+  },
+  {
+    "id": "estimator-basics/new-predictions",
+    "global_order": 5,
+    "module": "estimator-basics",
+    "directory": "01-estimator-basics/05-new-predictions",
+    "role": "demo",
+    "title": "Predict new rows",
+    "prerequisites": [
+      "estimator-basics/exercise-first-fit"
+    ],
+    "task": "Return `model.predict(query)` for every row of the two-dimensional query matrix without fitting the model again.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "da657e19883e3df6a8c0c52f8fce965729b1b323adedb8e9f28409499aa17872",
+    "test_sha256": "28841d45d517e45e6c44b35f49d908fda2d3d20c0c6467a3a4167f827590aea1",
+    "body_words": 351
+  },
+  {
+    "id": "estimator-basics/exercise-new-predictions",
+    "global_order": 6,
+    "module": "estimator-basics",
+    "directory": "01-estimator-basics/06-exercise-new-predictions",
+    "role": "exercise",
+    "title": "Exercise: predict new rows",
+    "prerequisites": [
+      "estimator-basics/new-predictions"
+    ],
+    "task": "Return `model.predict(query)` for every row of the two-dimensional query matrix without fitting the model again.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "68ce6af219046f61c4b672ed44578ac1985be52ff8eaea5d14c3dd3e64b39945",
+    "test_sha256": "28841d45d517e45e6c44b35f49d908fda2d3d20c0c6467a3a4167f827590aea1",
+    "body_words": 195
+  },
+  {
+    "id": "estimator-basics/estimator-settings",
+    "global_order": 7,
+    "module": "estimator-basics",
+    "directory": "01-estimator-basics/07-estimator-settings",
+    "role": "demo",
+    "title": "Inspect estimator settings",
+    "prerequisites": [
+      "estimator-basics/exercise-new-predictions"
+    ],
+    "task": "Use `set_params` to enable `fit_intercept` on the supplied estimator and return that same estimator without fitting it or changing its other settings.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "83de4f378745ab09e97a4186b24283aaccc47aa7de6986a07e2c1a77926c4b39",
+    "test_sha256": "5ffdbbd81f8f0a435853abab43d8c89231de2aaced6ce0b31bd7baed48302a0b",
+    "body_words": 344
+  },
+  {
+    "id": "estimator-basics/exercise-estimator-settings",
+    "global_order": 8,
+    "module": "estimator-basics",
+    "directory": "01-estimator-basics/08-exercise-estimator-settings",
+    "role": "exercise",
+    "title": "Exercise: inspect estimator settings",
+    "prerequisites": [
+      "estimator-basics/estimator-settings"
+    ],
+    "task": "Use `set_params` to enable `fit_intercept` on the supplied estimator and return that same estimator without fitting it or changing its other settings.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "5d429f141d8c1fa7011fa01637de8f23e98e72a5f407ec448689686ff2666d87",
+    "test_sha256": "5ffdbbd81f8f0a435853abab43d8c89231de2aaced6ce0b31bd7baed48302a0b",
+    "body_words": 182
+  },
+  {
+    "id": "estimator-basics/transform-contract",
+    "global_order": 9,
+    "module": "estimator-basics",
+    "directory": "01-estimator-basics/09-transform-contract",
+    "role": "demo",
+    "title": "Separate fit from transform",
+    "prerequisites": [
+      "estimator-basics/exercise-estimator-settings"
+    ],
+    "task": "Transform `query` with the already fitted scaler, returning the transformed matrix without learning new statistics.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "5b7b87f2a0e78fb9f03037f74a7caf5bb924a400805f6634b5b1cffaed50c5c4",
+    "test_sha256": "3b03b94a06761bd11101fa0400553118cd84b9bda74a97dad45abad4b8d86a5f",
+    "body_words": 399
+  },
+  {
+    "id": "estimator-basics/exercise-transform-contract",
+    "global_order": 10,
+    "module": "estimator-basics",
+    "directory": "01-estimator-basics/10-exercise-transform-contract",
+    "role": "exercise",
+    "title": "Exercise: separate fit from transform",
+    "prerequisites": [
+      "estimator-basics/transform-contract"
+    ],
+    "task": "Transform `query` with the already fitted scaler, returning the transformed matrix without learning new statistics.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "ababc9f871d48b665b17c8a2c30dfaa88b908e39c41a5395e2b4dec47840f75c",
+    "test_sha256": "3b03b94a06761bd11101fa0400553118cd84b9bda74a97dad45abad4b8d86a5f",
+    "body_words": 201
+  },
+  {
+    "id": "datasets-and-quality/bundled-data",
+    "global_order": 11,
+    "module": "datasets-and-quality",
+    "directory": "02-datasets-and-quality/01-bundled-data",
+    "role": "demo",
+    "title": "Inspect bundled datasets",
+    "prerequisites": [
+      "estimator-basics/exercise-xy-shapes"
+    ],
+    "task": "Return `(X, y, feature_names, target_names)` for `rows` from the supplied dataset bundle, applying the identical row selection to `data` and `target` and retaining both metadata name lists.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "a5ad5d53d42bb419011aec0343f289103e43b46ea6dc63955b9543d8f0d4dfa7",
+    "test_sha256": "5a49c4766e22c1fc039f5316bbaf05bea3114aaf90f0e6f84c86958b6d1c6acf",
+    "body_words": 403
+  },
+  {
+    "id": "datasets-and-quality/exercise-bundled-data",
+    "global_order": 12,
+    "module": "datasets-and-quality",
+    "directory": "02-datasets-and-quality/02-exercise-bundled-data",
+    "role": "exercise",
+    "title": "Exercise: inspect bundled datasets",
+    "prerequisites": [
+      "datasets-and-quality/bundled-data"
+    ],
+    "task": "Return `(X, y, feature_names, target_names)` for `rows` from the supplied dataset bundle, applying the identical row selection to `data` and `target` and retaining both metadata name lists.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "25e03959dc173cdc81303511e3c7f65371a1d2242f490bed334c807270e36e54",
+    "test_sha256": "5a49c4766e22c1fc039f5316bbaf05bea3114aaf90f0e6f84c86958b6d1c6acf",
+    "body_words": 263
+  },
+  {
+    "id": "datasets-and-quality/synthetic-data",
+    "global_order": 13,
+    "module": "datasets-and-quality",
+    "directory": "02-datasets-and-quality/03-synthetic-data",
+    "role": "demo",
+    "title": "Generate controlled datasets",
+    "prerequisites": [
+      "datasets-and-quality/exercise-bundled-data"
+    ],
+    "task": "Make `generate(seed, n_rows)` return `make_regression` data with `n_rows` samples, two features, two informative features, noise `3.0`, and `random_state=seed`.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "43c67c0b83e4ffbf4563a69107e5bfd408e49a482f0517eb4f78469a92d0d3c3",
+    "test_sha256": "0cd0dada612cae35796ab529230c1c23f6b58bd9e13ba3aa3dc30a004b88246c",
+    "body_words": 372
+  },
+  {
+    "id": "datasets-and-quality/exercise-synthetic-data",
+    "global_order": 14,
+    "module": "datasets-and-quality",
+    "directory": "02-datasets-and-quality/04-exercise-synthetic-data",
+    "role": "exercise",
+    "title": "Exercise: generate controlled datasets",
+    "prerequisites": [
+      "datasets-and-quality/synthetic-data"
+    ],
+    "task": "Implement `generate(seed, n_rows)` using `make_classification` with `n_rows` samples, three features, two informative features, zero redundant features, two classes, and `random_state=seed`.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "c7ccc0daf156489f51ccd3a7b72fe0d01d578b869c0084eb5df2d482fea23cf2",
+    "test_sha256": "d3ece122950f3ef94c67a67c3787588f692fe879b1543b5d7dad15860c2c2334",
+    "body_words": 227
+  },
+  {
+    "id": "datasets-and-quality/data-quality",
+    "global_order": 15,
+    "module": "datasets-and-quality",
+    "directory": "02-datasets-and-quality/05-data-quality",
+    "role": "demo",
+    "title": "Audit a feature table",
+    "prerequisites": [
+      "datasets-and-quality/exercise-synthetic-data"
+    ],
+    "task": "Return the four-entry audit dictionary described above without modifying the table: missing-cell fraction, repeated full-row count after the first copy, negative amount count, and label-1 fraction.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "5a505f7795feba61da2382831e78cda2d66b6d892289720e94a2b39f1395cdd8",
+    "test_sha256": "852df33205d763ea0b0618fb10240c1beb1b1d5893ffdeb0081333ca1e43a55f",
+    "body_words": 591
+  },
+  {
+    "id": "datasets-and-quality/exercise-data-quality",
+    "global_order": 16,
+    "module": "datasets-and-quality",
+    "directory": "02-datasets-and-quality/06-exercise-data-quality",
+    "role": "exercise",
+    "title": "Exercise: audit a feature table",
+    "prerequisites": [
+      "datasets-and-quality/data-quality"
+    ],
+    "task": "Return the four-entry audit dictionary described above without modifying the table: missing-cell fraction, repeated full-row count after the first copy, negative amount count, and label-1 fraction.",
+    "files": [
+      "main.py",
+      "orders.csv"
+    ],
+    "lesson_sha256": "8528ec7e74ffb4baffa1e4063f65919e8a3ae677c32735efb922b4e61c19814f",
+    "test_sha256": "852df33205d763ea0b0618fb10240c1beb1b1d5893ffdeb0081333ca1e43a55f",
+    "body_words": 370
+  },
+  {
+    "id": "datasets-and-quality/prediction-time-features",
+    "global_order": 17,
+    "module": "datasets-and-quality",
+    "directory": "02-datasets-and-quality/07-prediction-time-features",
+    "role": "demo",
+    "title": "Exclude unavailable features",
+    "prerequisites": [
+      "datasets-and-quality/exercise-data-quality"
+    ],
+    "task": "Return a DataFrame containing only `basket_value_usd` and `item_count`, in that order and with the original row index; exclude identifiers, later outcomes, and any extra columns.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "34e71abefaa448ec47aeb60031a7a3f09d277f76a0c7305962421bee8c7c9735",
+    "test_sha256": "d0aba2c6389d384b137f9cff8c7919e09addc725b07ee3cbf380c1b7340fe7cb",
+    "body_words": 542
+  },
+  {
+    "id": "datasets-and-quality/exercise-prediction-time-features",
+    "global_order": 18,
+    "module": "datasets-and-quality",
+    "directory": "02-datasets-and-quality/08-exercise-prediction-time-features",
+    "role": "exercise",
+    "title": "Exercise: exclude unavailable features",
+    "prerequisites": [
+      "datasets-and-quality/prediction-time-features"
+    ],
+    "task": "Return a DataFrame containing only `basket_value_usd` and `item_count`, in that order and with the original row index; exclude identifiers, later outcomes, and any extra columns.",
+    "files": [
+      "main.py",
+      "orders.csv"
+    ],
+    "lesson_sha256": "d8785b5274e1397135e2ab756fc5b6ba14ed516c988a132ae56ff19643693cd4",
+    "test_sha256": "d0aba2c6389d384b137f9cff8c7919e09addc725b07ee3cbf380c1b7340fe7cb",
+    "body_words": 411
+  },
+  {
+    "id": "honest-holdouts/train-test-split",
+    "global_order": 19,
+    "module": "honest-holdouts",
+    "directory": "03-honest-holdouts/01-train-test-split",
+    "role": "demo",
+    "title": "Create a held-out test set",
+    "prerequisites": [
+      "datasets-and-quality/exercise-prediction-time-features",
+      "estimator-basics/exercise-new-predictions"
+    ],
+    "task": "Return the six outputs of one `train_test_split(ids, X, y, ...)` call with `test_size=0.25` and `random_state=17`, preserving paired row values.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "d6d5761887b28a2a53058fa3afdae6fd1c0a1a13854006a540a0e08352599c7f",
+    "test_sha256": "1ec40f5c4eb6c40351c392c9d4e3f076e1ee6a624009e20f2e68e4ad53853771",
+    "body_words": 510
+  },
+  {
+    "id": "honest-holdouts/exercise-train-test-split",
+    "global_order": 20,
+    "module": "honest-holdouts",
+    "directory": "03-honest-holdouts/02-exercise-train-test-split",
+    "role": "exercise",
+    "title": "Exercise: create a held-out test set",
+    "prerequisites": [
+      "honest-holdouts/train-test-split"
+    ],
+    "task": "Return the six outputs of one `train_test_split(ids, X, y, ...)` call with `test_size=0.25` and `random_state=17`, preserving paired row values.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "4be2120e78032dabfd6fa69754c470ecb68022c24d0dcfe3323b1cea0efff877",
+    "test_sha256": "1ec40f5c4eb6c40351c392c9d4e3f076e1ee6a624009e20f2e68e4ad53853771",
+    "body_words": 377
+  },
+  {
+    "id": "honest-holdouts/validation-split",
+    "global_order": 21,
+    "module": "honest-holdouts",
+    "directory": "03-honest-holdouts/03-validation-split",
+    "role": "demo",
+    "title": "Reserve validation data",
+    "prerequisites": [
+      "honest-holdouts/exercise-train-test-split"
+    ],
+    "task": "Return train, validation, and test IDs using two seeded splits: reserve 20% as test first, then reserve 25% of the remaining development IDs as validation; use `random_state=17` in both calls.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "f91c1ebfea635cacbb369ae2520081db6db53e7d7004227c09b1bba02a2b8b1b",
+    "test_sha256": "94da18e8e027975131f9df29a8628d245777113de3be421769e893716b64ff49",
+    "body_words": 597
+  },
+  {
+    "id": "honest-holdouts/exercise-validation-split",
+    "global_order": 22,
+    "module": "honest-holdouts",
+    "directory": "03-honest-holdouts/04-exercise-validation-split",
+    "role": "exercise",
+    "title": "Exercise: reserve validation data",
+    "prerequisites": [
+      "honest-holdouts/validation-split"
+    ],
+    "task": "Return train, validation, and test IDs using two seeded splits: reserve 20% as test first, then reserve 25% of the remaining development IDs as validation; use `random_state=17` in both calls.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "0e9839cfb1809baf6964f77b8303683ec5b69a962c13aa7f94e67fc09199484a",
+    "test_sha256": "94da18e8e027975131f9df29a8628d245777113de3be421769e893716b64ff49",
+    "body_words": 381
+  },
+  {
+    "id": "honest-holdouts/stratified-holdout",
+    "global_order": 23,
+    "module": "honest-holdouts",
+    "directory": "03-honest-holdouts/05-stratified-holdout",
+    "role": "demo",
+    "title": "Preserve class representation",
+    "prerequisites": [
+      "honest-holdouts/exercise-validation-split"
+    ],
+    "task": "Return a 25% holdout split of the IDs with `random_state=17` and `stratify=labels`; let the splitter raise `ValueError` when a class has too few observations.",
+    "files": [
+      "main.py",
+      "labels.csv"
+    ],
+    "lesson_sha256": "b958a50d4fd9de8e21404e2840b4dcec1e59a50e0c5d536a896cf1f7e3892ae0",
+    "test_sha256": "46f598dd2e3cc74202612bbbb4f99d6cf625f9ec7cda6be4741f4294b2f0a484",
+    "body_words": 525
+  },
+  {
+    "id": "honest-holdouts/exercise-stratified-holdout",
+    "global_order": 24,
+    "module": "honest-holdouts",
+    "directory": "03-honest-holdouts/06-exercise-stratified-holdout",
+    "role": "exercise",
+    "title": "Exercise: preserve class representation",
+    "prerequisites": [
+      "honest-holdouts/stratified-holdout"
+    ],
+    "task": "Return a 25% holdout split of the IDs with `random_state=17` and `stratify=labels`; let the splitter raise `ValueError` when a class has too few observations.",
+    "files": [
+      "main.py",
+      "labels.csv"
+    ],
+    "lesson_sha256": "c73e6f09c176e2776b28b0c6f9e910532a6c93a555360d41fbb6bb5fa744de8e",
+    "test_sha256": "46f598dd2e3cc74202612bbbb4f99d6cf625f9ec7cda6be4741f4294b2f0a484",
+    "body_words": 328
+  },
+  {
+    "id": "honest-holdouts/preprocessing-leakage",
+    "global_order": 25,
+    "module": "honest-holdouts",
+    "directory": "03-honest-holdouts/07-preprocessing-leakage",
+    "role": "demo",
+    "title": "Keep learned statistics inside training",
+    "prerequisites": [
+      "honest-holdouts/exercise-validation-split",
+      "estimator-basics/exercise-transform-contract"
+    ],
+    "task": "Fit a `StandardScaler` only on `train`, then return `(scaler, transformed_validation)` using that same fitted scaler to transform `validation`.",
+    "files": [
+      "main.py",
+      "training.csv",
+      "queries.csv"
+    ],
+    "lesson_sha256": "272cd4a5bc5327633e39b4db3d1b59ca0750ddcce4f5f452c7664e4e0b142a52",
+    "test_sha256": "d9cff20228ba546157c5b005c4ec908c0ea621f488710f01ba97f5bda99dd527",
+    "body_words": 539
+  },
+  {
+    "id": "honest-holdouts/exercise-preprocessing-leakage",
+    "global_order": 26,
+    "module": "honest-holdouts",
+    "directory": "03-honest-holdouts/08-exercise-preprocessing-leakage",
+    "role": "exercise",
+    "title": "Exercise: keep learned statistics inside training",
+    "prerequisites": [
+      "honest-holdouts/preprocessing-leakage"
+    ],
+    "task": "Fit a `StandardScaler` only on `train`, then return `(scaler, transformed_validation)` using that same fitted scaler to transform `validation`.",
+    "files": [
+      "main.py",
+      "training.csv",
+      "queries.csv"
+    ],
+    "lesson_sha256": "9aedf5d84d241bf24aa8aa7145e5044d523eeec6b7043c01605d7e9ad335fe8d",
+    "test_sha256": "d9cff20228ba546157c5b005c4ec908c0ea621f488710f01ba97f5bda99dd527",
+    "body_words": 316
+  },
+  {
+    "id": "honest-holdouts/holdout-baselines",
+    "global_order": 27,
+    "module": "honest-holdouts",
+    "directory": "03-honest-holdouts/09-holdout-baselines",
+    "role": "demo",
+    "title": "Measure a simple baseline",
+    "prerequisites": [
+      "honest-holdouts/exercise-preprocessing-leakage",
+      "honest-holdouts/exercise-stratified-holdout"
+    ],
+    "task": "Return a `DummyRegressor(strategy=\"mean\")` fitted only on training arguments and its validation `mean_absolute_error`, computed from predictions for `X_valid`.",
+    "files": [
+      "main.py",
+      "training.csv",
+      "validation.csv"
+    ],
+    "lesson_sha256": "de86fe4e898a367e89b050d1870b1f57317955b04668505038ea437bacdc2eb6",
+    "test_sha256": "c403597c75209f9f4823719a13afccdf45598b412f949d5069d02dbc3f6510ae",
+    "body_words": 542
+  },
+  {
+    "id": "honest-holdouts/exercise-holdout-baselines",
+    "global_order": 28,
+    "module": "honest-holdouts",
+    "directory": "03-honest-holdouts/10-exercise-holdout-baselines",
+    "role": "exercise",
+    "title": "Exercise: measure a simple baseline",
+    "prerequisites": [
+      "honest-holdouts/holdout-baselines"
+    ],
+    "task": "Return a `DummyClassifier(strategy=\"most_frequent\")` fitted only on training arguments and its validation `accuracy_score`, computed from predictions for `X_valid`.",
+    "files": [
+      "main.py",
+      "training.csv",
+      "validation.csv"
+    ],
+    "lesson_sha256": "625843e7735432ed9fd50935ab13eeacb18e43ee189f69eaccfde01fc3cd5563",
+    "test_sha256": "2d991aee7b19a1426048aebc2edd4af0876bccd83e71ca18b9f56ecd0c773223",
+    "body_words": 316
+  },
+  {
+    "id": "numeric-preprocessing/median-imputation",
+    "global_order": 29,
+    "module": "numeric-preprocessing",
+    "directory": "04-numeric-preprocessing/01-median-imputation",
+    "role": "demo",
+    "title": "Fill missing numerical values",
+    "prerequisites": [
+      "honest-holdouts/exercise-preprocessing-leakage"
+    ],
+    "task": "Fit `SimpleImputer(strategy=\"median\", keep_empty_features=True)` on `train` only and return `(imputer, imputer.transform(query))`, retaining the feature columns even if one has no observed training values.",
+    "files": [
+      "main.py",
+      "training.csv",
+      "queries.csv"
+    ],
+    "lesson_sha256": "0ef6a8f0abfca540c03b7ca409dbc3838506cc858b0fdf3973117c78b3100469",
+    "test_sha256": "1e68ec7f948b0f384063507ae23acc8e9ebe5d5b48dc346993f5ed1562832feb",
+    "body_words": 562
+  },
+  {
+    "id": "numeric-preprocessing/exercise-median-imputation",
+    "global_order": 30,
+    "module": "numeric-preprocessing",
+    "directory": "04-numeric-preprocessing/02-exercise-median-imputation",
+    "role": "exercise",
+    "title": "Exercise: fill missing numerical values",
+    "prerequisites": [
+      "numeric-preprocessing/median-imputation"
+    ],
+    "task": "Fit `SimpleImputer(strategy=\"median\", keep_empty_features=True)` on `train` only and return `(imputer, imputer.transform(query))`, retaining the feature columns even if one has no observed training values.",
+    "files": [
+      "main.py",
+      "training.csv",
+      "queries.csv"
+    ],
+    "lesson_sha256": "294e0506fec70123da3d11e9e414206acf5023db8457a773a237242af68a3884",
+    "test_sha256": "1e68ec7f948b0f384063507ae23acc8e9ebe5d5b48dc346993f5ed1562832feb",
+    "body_words": 327
+  },
+  {
+    "id": "numeric-preprocessing/missing-indicators",
+    "global_order": 31,
+    "module": "numeric-preprocessing",
+    "directory": "04-numeric-preprocessing/03-missing-indicators",
+    "role": "demo",
+    "title": "Keep missingness information",
+    "prerequisites": [
+      "numeric-preprocessing/exercise-median-imputation"
+    ],
+    "task": "Return a training-fitted median `SimpleImputer` and its query transform with `add_indicator=True` and `keep_empty_features=True`, appending missingness flags after the imputed feature columns.",
+    "files": [
+      "main.py",
+      "training.csv",
+      "queries.csv"
+    ],
+    "lesson_sha256": "79d2e94dc256617fa84c40b09ec0f34aa14b2311769e3531d8cf0760a6ee024b",
+    "test_sha256": "541137b415be0b905f43aed695cc75d1e98141bdb6e34b098d2404ad1ab06d9c",
+    "body_words": 503
+  },
+  {
+    "id": "numeric-preprocessing/exercise-missing-indicators",
+    "global_order": 32,
+    "module": "numeric-preprocessing",
+    "directory": "04-numeric-preprocessing/04-exercise-missing-indicators",
+    "role": "exercise",
+    "title": "Exercise: keep missingness information",
+    "prerequisites": [
+      "numeric-preprocessing/missing-indicators"
+    ],
+    "task": "Return a training-fitted median `SimpleImputer` and its query transform with `add_indicator=True` and `keep_empty_features=True`, appending missingness flags after the imputed feature columns.",
+    "files": [
+      "main.py",
+      "training.csv",
+      "queries.csv"
+    ],
+    "lesson_sha256": "b8404085956a172ef54dc004d1ca3b1a4e118116e5d0216b823557f094241a7f",
+    "test_sha256": "541137b415be0b905f43aed695cc75d1e98141bdb6e34b098d2404ad1ab06d9c",
+    "body_words": 337
+  },
+  {
+    "id": "numeric-preprocessing/standard-scaling",
+    "global_order": 33,
+    "module": "numeric-preprocessing",
+    "directory": "04-numeric-preprocessing/05-standard-scaling",
+    "role": "demo",
+    "title": "Standardize numerical features",
+    "prerequisites": [
+      "numeric-preprocessing/exercise-median-imputation",
+      "estimator-basics/exercise-transform-contract"
+    ],
+    "task": "Fit a default `StandardScaler` on `train` only, with both centering and standard-deviation scaling enabled, and return the scaler and its transformed query matrix.",
+    "files": [
+      "main.py",
+      "training.csv",
+      "queries.csv"
+    ],
+    "lesson_sha256": "d5bd7902018581ebd3216d9a963c069e9599f11f0a90b3be5b8ee0eeebef7fe2",
+    "test_sha256": "bbf9b1db6c8c24cc80a0bcecfd4ae70b4264f927eaba35c3dc95c081df64c5c7",
+    "body_words": 568
+  },
+  {
+    "id": "numeric-preprocessing/exercise-standard-scaling",
+    "global_order": 34,
+    "module": "numeric-preprocessing",
+    "directory": "04-numeric-preprocessing/06-exercise-standard-scaling",
+    "role": "exercise",
+    "title": "Exercise: standardize numerical features",
+    "prerequisites": [
+      "numeric-preprocessing/standard-scaling"
+    ],
+    "task": "Fit a default `StandardScaler` on `train` only, with both centering and standard-deviation scaling enabled, and return the scaler and its transformed query matrix.",
+    "files": [
+      "main.py",
+      "training.csv",
+      "queries.csv"
+    ],
+    "lesson_sha256": "46bd540f5067e0dbbe41ca249c218b59bb3b7b3084c3ef1d21e8bb5e7adfe75d",
+    "test_sha256": "bbf9b1db6c8c24cc80a0bcecfd4ae70b4264f927eaba35c3dc95c081df64c5c7",
+    "body_words": 346
+  },
+  {
+    "id": "numeric-preprocessing/minmax-scaling",
+    "global_order": 35,
+    "module": "numeric-preprocessing",
+    "directory": "04-numeric-preprocessing/07-minmax-scaling",
+    "role": "demo",
+    "title": "Rescale to a training range",
+    "prerequisites": [
+      "numeric-preprocessing/exercise-standard-scaling"
+    ],
+    "task": "Fit `MinMaxScaler(feature_range=(0, 1), clip=False)` on `train` only and return its fitted object and transformed query, allowing new values outside the training range to map outside 0\u20131.",
+    "files": [
+      "main.py",
+      "training.csv",
+      "queries.csv"
+    ],
+    "lesson_sha256": "f9f7d836893465a1e1b909200475d496fff6a9299d872c33566c18217ddf5e3e",
+    "test_sha256": "3dd72e00a098a332c1d01f98115028ed22a8521c4651bf83811cf2e980dfd9af",
+    "body_words": 567
+  },
+  {
+    "id": "numeric-preprocessing/exercise-minmax-scaling",
+    "global_order": 36,
+    "module": "numeric-preprocessing",
+    "directory": "04-numeric-preprocessing/08-exercise-minmax-scaling",
+    "role": "exercise",
+    "title": "Exercise: rescale to a training range",
+    "prerequisites": [
+      "numeric-preprocessing/minmax-scaling"
+    ],
+    "task": "Fit `MinMaxScaler(feature_range=(0, 1), clip=False)` on `train` only and return its fitted object and transformed query, allowing new values outside the training range to map outside 0\u20131.",
+    "files": [
+      "main.py",
+      "training.csv",
+      "queries.csv"
+    ],
+    "lesson_sha256": "5996a729fb58c7d5110ed387907eb3bad13dd91f6ab9dd7b586851d82f071e99",
+    "test_sha256": "3dd72e00a098a332c1d01f98115028ed22a8521c4651bf83811cf2e980dfd9af",
+    "body_words": 347
+  },
+  {
+    "id": "numeric-preprocessing/robust-scaling",
+    "global_order": 37,
+    "module": "numeric-preprocessing",
+    "directory": "04-numeric-preprocessing/09-robust-scaling",
+    "role": "demo",
+    "title": "Scale with robust statistics",
+    "prerequisites": [
+      "numeric-preprocessing/exercise-standard-scaling"
+    ],
+    "task": "Fit `RobustScaler(quantile_range=(25, 75))` only on `train` and return the fitted scaler with its query transform, retaining every query row.",
+    "files": [
+      "main.py",
+      "training.csv",
+      "queries.csv"
+    ],
+    "lesson_sha256": "9703ef83ecbe49d18e98e75aaa285a67667a57a62d5599a7588df87461bc13a3",
+    "test_sha256": "024b6a5d365cc6c5257d89ce0adce137c0ec71f4d1cdd1e4fed1bb97131c88a7",
+    "body_words": 563
+  },
+  {
+    "id": "numeric-preprocessing/exercise-robust-scaling",
+    "global_order": 38,
+    "module": "numeric-preprocessing",
+    "directory": "04-numeric-preprocessing/10-exercise-robust-scaling",
+    "role": "exercise",
+    "title": "Exercise: scale with robust statistics",
+    "prerequisites": [
+      "numeric-preprocessing/robust-scaling"
+    ],
+    "task": "Fit `RobustScaler(quantile_range=(25, 75))` only on `train` and return the fitted scaler with its query transform, retaining every query row.",
+    "files": [
+      "main.py",
+      "training.csv",
+      "queries.csv"
+    ],
+    "lesson_sha256": "873ca96838558080f53e63ef091e3698e8b16187241e026f141e2425f30ff638",
+    "test_sha256": "024b6a5d365cc6c5257d89ce0adce137c0ec71f4d1cdd1e4fed1bb97131c88a7",
+    "body_words": 318
+  },
+  {
+    "id": "categorical-preprocessing/categorical-imputation",
+    "global_order": 39,
+    "module": "categorical-preprocessing",
+    "directory": "05-categorical-preprocessing/01-categorical-imputation",
+    "role": "demo",
+    "title": "Fill missing categories",
+    "prerequisites": [
+      "numeric-preprocessing/exercise-median-imputation",
+      "datasets-and-quality/exercise-prediction-time-features"
+    ],
+    "task": "Fit a `SimpleImputer` using `missing_values=np.nan`, `strategy=\"constant\"`, `fill_value=\"missing\"`, and `keep_empty_features=True`; return it and its query transform without changing observed strings.",
+    "files": [
+      "main.py",
+      "categories.json",
+      "queries.json"
+    ],
+    "lesson_sha256": "b6ab3154dc17d97b5c196671dca420b98fb9e2781835a758b51d41821f7a141a",
+    "test_sha256": "b6498b67fea191bc2efe76cd573abac82e953753abe3b3328440c5e178e95be4",
+    "body_words": 512
+  },
+  {
+    "id": "categorical-preprocessing/exercise-categorical-imputation",
+    "global_order": 40,
+    "module": "categorical-preprocessing",
+    "directory": "05-categorical-preprocessing/02-exercise-categorical-imputation",
+    "role": "exercise",
+    "title": "Exercise: fill missing categories",
+    "prerequisites": [
+      "categorical-preprocessing/categorical-imputation"
+    ],
+    "task": "Fit a `SimpleImputer` using `missing_values=np.nan`, `strategy=\"constant\"`, `fill_value=\"missing\"`, and `keep_empty_features=True`; return it and its query transform without changing observed strings.",
+    "files": [
+      "main.py",
+      "categories.json",
+      "queries.json"
+    ],
+    "lesson_sha256": "d13f830a560f6e09f1e24436b3a90085e2d12a99f6f1b92dc0c4f9f1c2596934",
+    "test_sha256": "b6498b67fea191bc2efe76cd573abac82e953753abe3b3328440c5e178e95be4",
+    "body_words": 363
+  },
+  {
+    "id": "categorical-preprocessing/one-hot-encoding",
+    "global_order": 41,
+    "module": "categorical-preprocessing",
+    "directory": "05-categorical-preprocessing/03-one-hot-encoding",
+    "role": "demo",
+    "title": "Encode nominal categories",
+    "prerequisites": [
+      "categorical-preprocessing/exercise-categorical-imputation"
+    ],
+    "task": "Fit a dense `OneHotEncoder` on training categories with `handle_unknown=\"error\"` and `drop=None`; return `(encoder, encoded_query, names)` using `get_feature_names_out([\"category\"])`.",
+    "files": [
+      "main.py",
+      "categories.json",
+      "queries.json"
+    ],
+    "lesson_sha256": "29e9c691fe3f76c8ff80e7f874f829cb91e9a7df8ae28e9984f21c524ddb4548",
+    "test_sha256": "23567ed798fe91b234a6a8781f359bae41efeb843bd6bdd321f871922df8c20f",
+    "body_words": 511
+  },
+  {
+    "id": "categorical-preprocessing/exercise-one-hot-encoding",
+    "global_order": 42,
+    "module": "categorical-preprocessing",
+    "directory": "05-categorical-preprocessing/04-exercise-one-hot-encoding",
+    "role": "exercise",
+    "title": "Exercise: encode nominal categories",
+    "prerequisites": [
+      "categorical-preprocessing/one-hot-encoding"
+    ],
+    "task": "Fit a dense `OneHotEncoder` on training categories with `handle_unknown=\"error\"` and `drop=None`; return `(encoder, encoded_query, names)` using `get_feature_names_out([\"category\"])`.",
+    "files": [
+      "main.py",
+      "categories.json",
+      "queries.json"
+    ],
+    "lesson_sha256": "f4bec31d7e3cdcd2ed1541333828f4cd5c65c522b554392c068d1bb2c5ebea3c",
+    "test_sha256": "23567ed798fe91b234a6a8781f359bae41efeb843bd6bdd321f871922df8c20f",
+    "body_words": 351
+  },
+  {
+    "id": "categorical-preprocessing/unknown-categories",
+    "global_order": 43,
+    "module": "categorical-preprocessing",
+    "directory": "05-categorical-preprocessing/05-unknown-categories",
+    "role": "demo",
+    "title": "Handle unseen categories",
+    "prerequisites": [
+      "categorical-preprocessing/exercise-one-hot-encoding"
+    ],
+    "task": "Fit a dense `OneHotEncoder(handle_unknown=\"ignore\", drop=None)` on `train` only and return the encoder with its query transform, giving novel categories all-zero rows without extending the vocabulary.",
+    "files": [
+      "main.py",
+      "categories.json",
+      "queries.json"
+    ],
+    "lesson_sha256": "2a2d59996e7f478f9b7d9836fb2e7ce6511b99d4178a86e28cfa47b8eff9db15",
+    "test_sha256": "337bd37ecf22be5ffff40ff2aec588cda292e297bd95b9da6780383700c67d67",
+    "body_words": 536
+  },
+  {
+    "id": "categorical-preprocessing/exercise-unknown-categories",
+    "global_order": 44,
+    "module": "categorical-preprocessing",
+    "directory": "05-categorical-preprocessing/06-exercise-unknown-categories",
+    "role": "exercise",
+    "title": "Exercise: handle unseen categories",
+    "prerequisites": [
+      "categorical-preprocessing/unknown-categories"
+    ],
+    "task": "Fit a dense `OneHotEncoder(handle_unknown=\"ignore\", drop=None)` on `train` only and return the encoder with its query transform, giving novel categories all-zero rows without extending the vocabulary.",
+    "files": [
+      "main.py",
+      "categories.json",
+      "queries.json"
+    ],
+    "lesson_sha256": "22568320056f10024710191bb901ae1d29783cec49d9d30f5ec51717722fa1b2",
+    "test_sha256": "337bd37ecf22be5ffff40ff2aec588cda292e297bd95b9da6780383700c67d67",
+    "body_words": 361
+  },
+  {
+    "id": "categorical-preprocessing/ordinal-encoding",
+    "global_order": 45,
+    "module": "categorical-preprocessing",
+    "directory": "05-categorical-preprocessing/07-ordinal-encoding",
+    "role": "demo",
+    "title": "Encode ordered categories",
+    "prerequisites": [
+      "categorical-preprocessing/exercise-unknown-categories"
+    ],
+    "task": "In `encode_sizes`, replace the reversed category list with the supplied `levels` order. Return the transformed incoming rows; keep the unknown code at -1.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "39118e0ef3eb2f20ee53d73ac15d436d592359bdbe9b6b41fda8fb501f811580",
+    "test_sha256": "e51da6655879a65dde7fdf2195981d19a7c2c9c196e237f32f4c4a77bdc09841",
+    "body_words": 255
+  },
+  {
+    "id": "categorical-preprocessing/exercise-ordinal-encoding",
+    "global_order": 46,
+    "module": "categorical-preprocessing",
+    "directory": "05-categorical-preprocessing/08-exercise-ordinal-encoding",
+    "role": "exercise",
+    "title": "Exercise: encode ordered categories",
+    "prerequisites": [
+      "categorical-preprocessing/ordinal-encoding"
+    ],
+    "task": "Implement `encode_sizes(training, incoming, levels)` with an explicit ordered category list and an unknown code of -1. Return a two-dimensional numeric array in incoming-row order.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "e78f82bc9b58b7fe1d6bf7645b106c3fe015662f3f2742a0df2e452324917b7c",
+    "test_sha256": "8e1c85f755c8100a8554be3f515f0f67009ff5170286fc6351c02c6f5b4ed3ac",
+    "body_words": 137
+  },
+  {
+    "id": "categorical-preprocessing/column-transformer",
+    "global_order": 47,
+    "module": "categorical-preprocessing",
+    "directory": "05-categorical-preprocessing/09-column-transformer",
+    "role": "demo",
+    "title": "Combine column-specific transforms",
+    "prerequisites": [
+      "categorical-preprocessing/exercise-ordinal-encoding",
+      "numeric-preprocessing/exercise-standard-scaling"
+    ],
+    "task": "Replace the numeric branch passthrough with `StandardScaler()` in `route_columns`. Keep named routing and the fitted router return value.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "34b4cd9c7e6cdb87f31687b1d48e30d6679fd0b49a2286edb3894cee42415694",
+    "test_sha256": "75775a82ebf8ed73ff67ae28dc1f7fa3b377cd7e0a3c16b4205d12201a22cc4d",
+    "body_words": 383
+  },
+  {
+    "id": "categorical-preprocessing/exercise-column-transformer",
+    "global_order": 48,
+    "module": "categorical-preprocessing",
+    "directory": "05-categorical-preprocessing/10-exercise-column-transformer",
+    "role": "exercise",
+    "title": "Exercise: combine column-specific transforms",
+    "prerequisites": [
+      "categorical-preprocessing/column-transformer"
+    ],
+    "task": "Implement `route_columns(training, numeric, category)` to fit and return a `ColumnTransformer` that scales the named numeric column, densely one-hot encodes the named category with unknowns ignored, and drops unselected columns.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "cb739ccea1a69de77acfc4f975e6e9bb23f3a9c589793e38d70121bf8dcece96",
+    "test_sha256": "8a3e6c4ba83294a6fdd5636e80e1a4a44ac56ee98e8e91e847b68aa7ba81bc90",
+    "body_words": 136
+  },
+  {
+    "id": "pipelines-and-regression/pipeline",
+    "global_order": 49,
+    "module": "pipelines-and-regression",
+    "directory": "06-pipelines-and-regression/01-pipeline",
+    "role": "demo",
+    "title": "Compose preprocessing and prediction",
+    "prerequisites": [
+      "categorical-preprocessing/exercise-column-transformer",
+      "honest-holdouts/exercise-holdout-baselines"
+    ],
+    "task": "Fit the outer pipeline on the unmodified `training` table instead of filling its missing size with zero first. Let the supplied numeric branch learn its training median.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "33cf2dbd643d103b691210e6a0ec812a1e140673649192caf4589934bf01f0c5",
+    "test_sha256": "0576230dea3f894084c7e367e85d2603a47338da64d47cf7c4618085d34fa17c",
+    "body_words": 268
+  },
+  {
+    "id": "pipelines-and-regression/exercise-pipeline",
+    "global_order": 50,
+    "module": "pipelines-and-regression",
+    "directory": "06-pipelines-and-regression/02-exercise-pipeline",
+    "role": "exercise",
+    "title": "Exercise: compose preprocessing and prediction",
+    "prerequisites": [
+      "pipelines-and-regression/pipeline"
+    ],
+    "task": "Implement `fit_prices(training, target)` to fit and return an outer `Pipeline` with the supplied `preprocessor()` and a `LinearRegression(n_jobs=1)` final estimator. Pass raw training rows into `fit`.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "3f726461076f7ba1f4aadec4d470ae792bc1d504f65e012a8ac28401c1703056",
+    "test_sha256": "9ff2b1a702f1fdb73a25d691902e50ff0db0fbca73a89f6c6b1e5754991714fd",
+    "body_words": 131
+  },
+  {
+    "id": "pipelines-and-regression/linear-coefficients",
+    "global_order": 51,
+    "module": "pipelines-and-regression",
+    "directory": "06-pipelines-and-regression/03-linear-coefficients",
+    "role": "demo",
+    "title": "Read linear regression coefficients",
+    "prerequisites": [
+      "pipelines-and-regression/exercise-pipeline",
+      "estimator-basics/exercise-first-fit"
+    ],
+    "task": "Add `model.intercept_` to the coefficient contributions returned by `reconstruct`.",
+    "files": [
+      "main.py",
+      "regression-measurements.csv"
+    ],
+    "lesson_sha256": "58e1574e55616eee56d5c99fabeb733b666092aca49f115b9fa4867ee1ff5388",
+    "test_sha256": "43e952300f0b9347598fe632478505c6bf13ac87315219e0b77dd59e90d9dfc2",
+    "body_words": 429
+  },
+  {
+    "id": "pipelines-and-regression/exercise-linear-coefficients",
+    "global_order": 52,
+    "module": "pipelines-and-regression",
+    "directory": "06-pipelines-and-regression/04-exercise-linear-coefficients",
+    "role": "exercise",
+    "title": "Exercise: read linear regression coefficients",
+    "prerequisites": [
+      "pipelines-and-regression/linear-coefficients"
+    ],
+    "task": "Implement `reconstruct(model, queries)` using the fitted intercept and coefficient vector. Return one prediction per query row without calling `predict` inside the helper.",
+    "files": [
+      "main.py",
+      "regression-measurements.csv"
+    ],
+    "lesson_sha256": "eb1c9d145280c24e0f1d1012eaf8d7c69395c0546108c27a81ed699b41a589cf",
+    "test_sha256": "4880e6bd266ac37ec28b1eff190b77090abd7f009b50a47639b643e5d877f3ef",
+    "body_words": 296
+  },
+  {
+    "id": "pipelines-and-regression/mae-residuals",
+    "global_order": 53,
+    "module": "pipelines-and-regression",
+    "directory": "06-pipelines-and-regression/05-mae-residuals",
+    "role": "demo",
+    "title": "Read residuals and absolute error",
+    "prerequisites": [
+      "pipelines-and-regression/exercise-linear-coefficients",
+      "honest-holdouts/exercise-holdout-baselines"
+    ],
+    "task": "Replace the signed residual average with `mean_absolute_error(actual, predicted)`. Keep the residual vector as the first return item.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "b51300ecc7cc1d50760dc1fe1d479764d68e4b99dc437e639283c3c147d82752",
+    "test_sha256": "79b224fcdd04422e75341270fdafb788e5c784527ff885814c01e08d89543d73",
+    "body_words": 245
+  },
+  {
+    "id": "pipelines-and-regression/exercise-mae-residuals",
+    "global_order": 54,
+    "module": "pipelines-and-regression",
+    "directory": "06-pipelines-and-regression/06-exercise-mae-residuals",
+    "role": "exercise",
+    "title": "Exercise: read residuals and absolute error",
+    "prerequisites": [
+      "pipelines-and-regression/mae-residuals"
+    ],
+    "task": "Implement `error_report(actual, predicted)` to return `(residuals, mae)`, using observed minus predicted for residuals and mean absolute error for the scalar.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "62725135ff99976e8ae5804bfe28f16436181c56ad544672f01391f1dd4fe9d4",
+    "test_sha256": "985ec83a3a29583daddac2b2c1ca2f2699c29a99cdc844ba7b51ac46390d57c4",
+    "body_words": 115
+  },
+  {
+    "id": "pipelines-and-regression/rmse",
+    "global_order": 55,
+    "module": "pipelines-and-regression",
+    "directory": "06-pipelines-and-regression/07-rmse",
+    "role": "demo",
+    "title": "Measure squared-error sensitivity",
+    "prerequisites": [
+      "pipelines-and-regression/exercise-mae-residuals"
+    ],
+    "task": "Replace the mean squared error returned by `rmse_value` with `root_mean_squared_error(actual, predicted)`.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "fb173cfdb92ff23588c1010dc136623bf2e170efd4df7e231243812a4426f6df",
+    "test_sha256": "b97338547b6f7f029636858ce1eab760c85b89667a98a1b96b20b6ffa4a9bff9",
+    "body_words": 216
+  },
+  {
+    "id": "pipelines-and-regression/exercise-rmse",
+    "global_order": 56,
+    "module": "pipelines-and-regression",
+    "directory": "06-pipelines-and-regression/08-exercise-rmse",
+    "role": "exercise",
+    "title": "Exercise: measure squared-error sensitivity",
+    "prerequisites": [
+      "pipelines-and-regression/rmse"
+    ],
+    "task": "Implement `rmse_value(actual, predicted)` to return root mean squared error as a scalar in the target unit.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "6c39489714d6552cae5c7472736a95473869c3e4527dcd16fe828d4cba82f811",
+    "test_sha256": "bb3501300d9a27f257fcfd5eed675ccd3078c7852cfc9520796d6863ef9bcc18",
+    "body_words": 97
+  },
+  {
+    "id": "pipelines-and-regression/r-squared",
+    "global_order": 57,
+    "module": "pipelines-and-regression",
+    "directory": "06-pipelines-and-regression/09-r-squared",
+    "role": "demo",
+    "title": "Compare with a mean reference",
+    "prerequisites": [
+      "pipelines-and-regression/exercise-rmse"
+    ],
+    "task": "Remove the lower bound of zero in `relative_fit` so it returns `r2_score` unchanged.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "cdd602eccc006125620ceee178ec30a308c44acd4a70ca907d03c927646e5b63",
+    "test_sha256": "ea5f828605e2cb4c670bf1184bec431f5363c3e4aebbf64455d91b3150b780c2",
+    "body_words": 257
+  },
+  {
+    "id": "pipelines-and-regression/exercise-r-squared",
+    "global_order": 58,
+    "module": "pipelines-and-regression",
+    "directory": "06-pipelines-and-regression/10-exercise-r-squared",
+    "role": "exercise",
+    "title": "Exercise: compare with a mean reference",
+    "prerequisites": [
+      "pipelines-and-regression/r-squared"
+    ],
+    "task": "Implement `relative_fit(actual, predicted)` to return R-squared without clipping negative values.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "7c73d0166a93f1a725860679b77663ccb279baa95b7c53c63071864d1ec674af",
+    "test_sha256": "2906ba6b50e4dde2a4fc077c7131420ad84959763141f8cd16db30d3eb347c21",
+    "body_words": 106
+  },
+  {
+    "id": "regularized-regression/ridge",
+    "global_order": 59,
+    "module": "regularized-regression",
+    "directory": "07-regularized-regression/01-ridge",
+    "role": "demo",
+    "title": "Shrink coefficients with Ridge",
+    "prerequisites": [
+      "pipelines-and-regression/exercise-linear-coefficients",
+      "numeric-preprocessing/exercise-standard-scaling",
+      "pipelines-and-regression/exercise-r-squared"
+    ],
+    "task": "Pass the helper argument `alpha` into `Ridge` instead of hardcoding 1.0.",
+    "files": [
+      "main.py",
+      "regression-measurements.csv"
+    ],
+    "lesson_sha256": "ecb7da58a5126a1401848050309f1ac53c66c968e6af9ba62f97abc046f5007c",
+    "test_sha256": "8e78cfdec5ee6375ff8d595f37d28dcfed579660d889d8098015d25345cd4394",
+    "body_words": 447
+  },
+  {
+    "id": "regularized-regression/exercise-ridge",
+    "global_order": 60,
+    "module": "regularized-regression",
+    "directory": "07-regularized-regression/02-exercise-ridge",
+    "role": "exercise",
+    "title": "Exercise: shrink coefficients with Ridge",
+    "prerequisites": [
+      "regularized-regression/ridge"
+    ],
+    "task": "Implement `fit_ridge(training, target, alpha)` to return a training-fitted pipeline named `scale` then `ridge`, using the requested alpha.",
+    "files": [
+      "main.py",
+      "regression-measurements.csv"
+    ],
+    "lesson_sha256": "88dfe3c542b7ad5c0697bdb5f87c54f08c6e7a256f1113d0a85adbf022d1c022",
+    "test_sha256": "e0aa98ec7d2196d20c344c5f160b5f4d0f052b436cb21f2fa1858bac905b1f4b",
+    "body_words": 264
+  },
+  {
+    "id": "regularized-regression/lasso",
+    "global_order": 61,
+    "module": "regularized-regression",
+    "directory": "07-regularized-regression/03-lasso",
+    "role": "demo",
+    "title": "Produce sparse coefficients with Lasso",
+    "prerequisites": [
+      "regularized-regression/exercise-ridge"
+    ],
+    "task": "Replace the fixed Lasso alpha with the supplied `alpha` argument in `fit_lasso`.",
+    "files": [
+      "main.py",
+      "regression-measurements.csv"
+    ],
+    "lesson_sha256": "ba8517409d0827cf22f17d98ea39c86079f42ed6c379c45e947be137d00cfa13",
+    "test_sha256": "95c4eb09d5990036034ab77f530c24c798efcd74fdca2be61b4a0191e316ed73",
+    "body_words": 420
+  },
+  {
+    "id": "regularized-regression/exercise-lasso",
+    "global_order": 62,
+    "module": "regularized-regression",
+    "directory": "07-regularized-regression/04-exercise-lasso",
+    "role": "exercise",
+    "title": "Exercise: produce sparse coefficients with Lasso",
+    "prerequisites": [
+      "regularized-regression/lasso"
+    ],
+    "task": "Implement `fit_lasso(training, target, alpha)` as a fitted `scale` \u2192 `lasso` pipeline. Use the requested alpha, `max_iter=5000` and `tol=1e-6`.",
+    "files": [
+      "main.py",
+      "regression-measurements.csv"
+    ],
+    "lesson_sha256": "5a856ba9a013e14b62d433bedbf268b82a4505c4744c79fcfac2db9d2df9bd7f",
+    "test_sha256": "8e8ab08e65b63ec2b502fd8924a3f7a04b3f74369b2922a76b63ed91d0bf4613",
+    "body_words": 301
+  },
+  {
+    "id": "regularized-regression/polynomial-features",
+    "global_order": 63,
+    "module": "regularized-regression",
+    "directory": "07-regularized-regression/05-polynomial-features",
+    "role": "demo",
+    "title": "Expand a feature representation",
+    "prerequisites": [
+      "regularized-regression/exercise-ridge"
+    ],
+    "task": "Change the expansion degree from 1 to 2 in `expand_terms`; keep the bias column disabled.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "da3dd88a29da526ecbfa47b2d4f827e37c391860ca11700c11ebc5a68baf16ad",
+    "test_sha256": "c7aafbb0570fd9503d684ff92f28db32e850163db7558ea13a05f7abe650c261",
+    "body_words": 231
+  },
+  {
+    "id": "regularized-regression/exercise-polynomial-features",
+    "global_order": 64,
+    "module": "regularized-regression",
+    "directory": "07-regularized-regression/06-exercise-polynomial-features",
+    "role": "exercise",
+    "title": "Exercise: expand a feature representation",
+    "prerequisites": [
+      "regularized-regression/polynomial-features"
+    ],
+    "task": "Implement `expand_terms(training, queries)` to return the degree-two expanded query matrix and its output names. Exclude a bias column.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "3c4976280bd73d27b3884542657287b55d66cce8539d44c2e7d270617df6e4ed",
+    "test_sha256": "9c1b745286880a2c8040cb98c7eb8450a208e84d66e60d240556a8fb32b87a36",
+    "body_words": 120
+  },
+  {
+    "id": "regularized-regression/manual-selection",
+    "global_order": 65,
+    "module": "regularized-regression",
+    "directory": "07-regularized-regression/07-manual-selection",
+    "role": "demo",
+    "title": "Select settings on validation data",
+    "prerequisites": [
+      "regularized-regression/exercise-polynomial-features",
+      "honest-holdouts/exercise-validation-split"
+    ],
+    "task": "Select the candidate with minimum rather than maximum validation MAE in `select_settings`.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "60aa49a4c63438df583bb6818346171e641b01497912fe484fccc9f3ce4c2a3f",
+    "test_sha256": "9003f1f570867d2a3839ef6843194164a1d211c79e2b2a72b0daa03b9b937c10",
+    "body_words": 239
+  },
+  {
+    "id": "regularized-regression/exercise-manual-selection",
+    "global_order": 66,
+    "module": "regularized-regression",
+    "directory": "07-regularized-regression/08-exercise-manual-selection",
+    "role": "exercise",
+    "title": "Exercise: select settings on validation data",
+    "prerequisites": [
+      "regularized-regression/manual-selection"
+    ],
+    "task": "Implement `select_settings` to fit each supplied `(degree, alpha)` pipeline on training only and return `(winning_pair, errors)` in candidate order. Minimize validation MAE and resolve exact ties by first occurrence.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "caca24ec34b47a1f05215212498bfba8666471287bc1d285ddb07105803cf2f5",
+    "test_sha256": "3728f449f5373885e25eb9939839d8e654c10ae8acb687b4aab1f0b1d83ec83f",
+    "body_words": 142
+  },
+  {
+    "id": "regularized-regression/residual-patterns",
+    "global_order": 67,
+    "module": "regularized-regression",
+    "directory": "07-regularized-regression/09-residual-patterns",
+    "role": "demo",
+    "title": "Inspect residual patterns",
+    "prerequisites": [
+      "regularized-regression/exercise-manual-selection",
+      "pipelines-and-regression/exercise-mae-residuals"
+    ],
+    "task": "Correct the scatter y-values to observed minus predicted in `residual_plot`.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "cf2acf41eddec41a16c6f12c7ec001c40340c1be7f3b76e50640454ab90cba1c",
+    "test_sha256": "fb85dd964961ec40719c56cde89d1f805fa4c83ff71dc46ea9045478bbbba57f",
+    "body_words": 233
+  },
+  {
+    "id": "regularized-regression/exercise-residual-patterns",
+    "global_order": 68,
+    "module": "regularized-regression",
+    "directory": "07-regularized-regression/10-exercise-residual-patterns",
+    "role": "exercise",
+    "title": "Exercise: inspect residual patterns",
+    "prerequisites": [
+      "regularized-regression/residual-patterns"
+    ],
+    "task": "Implement `residual_plot(actual, predicted)` to return `(fig, ax)` with a scatter of predictions against observed-minus-predicted residuals and a horizontal zero reference. Label both axes in dollars.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "509ca13f9da9119dec5e219e6e1bfa2df8bcdd2156cc24bd74891b5536d3ce43",
+    "test_sha256": "a1e4e5c09cfdc9e4deac5d96314e60bfb5cadd71ab77f74ad7caea2c5f01f63f",
+    "body_words": 138
+  },
+  {
+    "id": "regression-project/regression-project-split",
+    "global_order": 69,
+    "module": "regression-project",
+    "directory": "08-regression-project/01-regression-project-split",
+    "role": "demo",
+    "title": "Freeze the regression evaluation split",
+    "prerequisites": [
+      "regularized-regression/exercise-residual-patterns",
+      "datasets-and-quality/exercise-prediction-time-features"
+    ],
+    "task": "Change the second split fraction from 0.5 to 0.25 so validation receives one quarter of development, not half.",
+    "files": [
+      "main.py",
+      "sample-parcels.csv"
+    ],
+    "lesson_sha256": "cca075b41e6311630ac62e01c238cdd0692e628184ea35c5b1155b62c9c7f2f3",
+    "test_sha256": "4c7990780d326c14eac9e8a419f6e47502616960a14eaac7797eec554e3954ea",
+    "body_words": 490
+  },
+  {
+    "id": "regression-project/exercise-regression-project-split",
+    "global_order": 70,
+    "module": "regression-project",
+    "directory": "08-regression-project/02-exercise-regression-project-split",
+    "role": "exercise",
+    "title": "Exercise: freeze the regression evaluation split",
+    "prerequisites": [
+      "regression-project/regression-project-split"
+    ],
+    "task": "Implement `make_splits(table)` using two seeded splits: reserve 20% as test, then reserve 25% of development as validation, both with `random_state=41`. Return independent DataFrame copies under `train`, `validation`, and `test`, preserving all columns and row IDs.",
+    "files": [
+      "main.py",
+      "listing-prices.csv"
+    ],
+    "lesson_sha256": "0dcaf73dbf2ccc2280e1f3b879ff172d79fa4cd9a3353b2d6cc7b47665fd61e4",
+    "test_sha256": "b8c391e7ac404cab8f69abcd17b5cd83bd19e8856ffbb7daa30add320979e766",
+    "body_words": 463
+  },
+  {
+    "id": "regression-project/regression-project-baseline",
+    "global_order": 71,
+    "module": "regression-project",
+    "directory": "08-regression-project/03-regression-project-baseline",
+    "role": "demo",
+    "title": "Record a regression baseline",
+    "prerequisites": [
+      "regression-project/exercise-regression-project-split",
+      "honest-holdouts/exercise-holdout-baselines",
+      "pipelines-and-regression/exercise-mae-residuals"
+    ],
+    "task": "Fit the mean baseline with the training row count and training target column instead of the validation table.",
+    "files": [
+      "main.py",
+      "sample-parcels.csv"
+    ],
+    "lesson_sha256": "41e7eabd94548ad5fc8c752036242078d0e5899a4868e32d2c8dc7aba9e10399",
+    "test_sha256": "7cb5ddc3f0d0d8c443d0870d108468edd6e13a9414488721d2bce995164e5177",
+    "body_words": 397
+  },
+  {
+    "id": "regression-project/exercise-regression-project-baseline",
+    "global_order": 72,
+    "module": "regression-project",
+    "directory": "08-regression-project/04-exercise-regression-project-baseline",
+    "role": "exercise",
+    "title": "Exercise: record a regression baseline",
+    "prerequisites": [
+      "regression-project/regression-project-baseline",
+      "regression-project/exercise-regression-project-split"
+    ],
+    "task": "Implement `baseline_mae(train, validation)` to fit `DummyRegressor(strategy=\"mean\")` on training prices only and return validation MAE. Use constant placeholder X arrays because this baseline ignores measurements.",
+    "files": [
+      "main.py",
+      "listing-prices.csv"
+    ],
+    "lesson_sha256": "99051cd69a619b6bc70e649557311312b4465071b11982768408167866345062",
+    "test_sha256": "596058b222509ea82c42c7aabe1c9c3940515741184bac4663bad139d999b1eb",
+    "body_words": 396
+  },
+  {
+    "id": "regression-project/regression-project-pipeline",
+    "global_order": 73,
+    "module": "regression-project",
+    "directory": "08-regression-project/05-regression-project-pipeline",
+    "role": "demo",
+    "title": "Build the regression pipeline",
+    "prerequisites": [
+      "regression-project/exercise-regression-project-baseline",
+      "numeric-preprocessing/exercise-median-imputation",
+      "regularized-regression/exercise-ridge"
+    ],
+    "task": "Change the imputer strategy from mean to median in `build_model`.",
+    "files": [
+      "main.py",
+      "sample-parcels.csv"
+    ],
+    "lesson_sha256": "89ff80ffd1355124280a6450d0932dc11a0517c4393ebcf14c8241f76073e80b",
+    "test_sha256": "e19123fd8fb069698cf6e2299490803627e055403af6887d2a7fc6a194cf4ed9",
+    "body_words": 401
+  },
+  {
+    "id": "regression-project/exercise-regression-project-pipeline",
+    "global_order": 74,
+    "module": "regression-project",
+    "directory": "08-regression-project/06-exercise-regression-project-pipeline",
+    "role": "exercise",
+    "title": "Exercise: build the regression pipeline",
+    "prerequisites": [
+      "regression-project/regression-project-pipeline",
+      "regression-project/exercise-regression-project-baseline"
+    ],
+    "task": "Implement `build_model(training, target, alpha=1.0)` as a fitted `impute` \u2192 `scale` \u2192 `ridge` pipeline: median imputation, standard scaling and Ridge with the supplied alpha. Accept only the selected feature matrix and training target.",
+    "files": [
+      "main.py",
+      "listing-prices.csv"
+    ],
+    "lesson_sha256": "0afaaf57fe93f7d6387338fda663182070dbd9753076b1a78c4f643a9e592d77",
+    "test_sha256": "bc9328c1418961fbe62fca9ce33591c5b55015025b4b4f9bc29e074a05debbd6",
+    "body_words": 414
+  },
+  {
+    "id": "regression-project/regression-project-selection",
+    "global_order": 75,
+    "module": "regression-project",
+    "directory": "08-regression-project/07-regression-project-selection",
+    "role": "demo",
+    "title": "Freeze one model setting",
+    "prerequisites": [
+      "regression-project/exercise-regression-project-pipeline",
+      "regularized-regression/exercise-manual-selection"
+    ],
+    "task": "Choose the minimum rather than maximum validation error in `choose_alpha`.",
+    "files": [
+      "main.py",
+      "sample-parcels.csv"
+    ],
+    "lesson_sha256": "5f8359b67232afa13c0d33d4ac2abfdbac6b632b965258101730791d95d75876",
+    "test_sha256": "f528536498f4981e5259511498fca5c24bc7d97b69af022b854ebdc013439fe6",
+    "body_words": 401
+  },
+  {
+    "id": "regression-project/exercise-regression-project-selection",
+    "global_order": 76,
+    "module": "regression-project",
+    "directory": "08-regression-project/08-exercise-regression-project-selection",
+    "role": "exercise",
+    "title": "Exercise: freeze one model setting",
+    "prerequisites": [
+      "regression-project/regression-project-selection",
+      "regression-project/exercise-regression-project-pipeline"
+    ],
+    "task": "Implement `choose_alpha(train, validation, alphas=ALPHAS)` to fit a fresh pipeline per alpha on training only and return `(selected_alpha, validation_errors)`. Preserve candidate order and choose the first minimum MAE.",
+    "files": [
+      "main.py",
+      "listing-prices.csv"
+    ],
+    "lesson_sha256": "da8240e16c8a47250d0e6ccd3b39c155d37b1a8f5aae8c201765a2f8974edc01",
+    "test_sha256": "5018ae7e8ee48786646c1f36c6c133bb3a3086cad1b5c05e92b117661ca3a227",
+    "body_words": 409
+  },
+  {
+    "id": "regression-project/regression-project-report",
+    "global_order": 77,
+    "module": "regression-project",
+    "directory": "08-regression-project/09-regression-project-report",
+    "role": "demo",
+    "title": "Evaluate the frozen regression model",
+    "prerequisites": [
+      "regression-project/exercise-regression-project-selection",
+      "pipelines-and-regression/exercise-rmse",
+      "pipelines-and-regression/exercise-r-squared",
+      "regularized-regression/exercise-residual-patterns"
+    ],
+    "task": "Replace the training-only development table with `pd.concat([train, validation], axis=0)` before the final refit.",
+    "files": [
+      "main.py",
+      "sample-parcels.csv"
+    ],
+    "lesson_sha256": "2cf68a2e24b645c5d4814a52ffa7b7d348200c8353b367348aed3600caa72d08",
+    "test_sha256": "c9fcc521773447c8e4c2524ced96110d08507a7fc5a37f65e956f45d179f654e",
+    "body_words": 467
+  },
+  {
+    "id": "regression-project/exercise-regression-project-report",
+    "global_order": 78,
+    "module": "regression-project",
+    "directory": "08-regression-project/10-exercise-regression-project-report",
+    "role": "exercise",
+    "title": "Exercise: evaluate the frozen regression model",
+    "prerequisites": [
+      "regression-project/regression-project-report",
+      "regression-project/exercise-regression-project-selection"
+    ],
+    "task": "Implement `final_report(train, validation, test, alpha)` to refit the frozen alpha on concatenated development rows and return the specified model, IDs, counts, predictions and final test metrics. Use test rows only for prediction and metric calculation.",
+    "files": [
+      "main.py",
+      "listing-prices.csv"
+    ],
+    "lesson_sha256": "276a0b94dfd1461a8e836902996eb3f9bb2ec557383f7e392aca3fe7275ba834",
+    "test_sha256": "9ac89a2f0a253d755222a59447e3e892afd0cdc4d23bba53b1273399410e1551",
+    "body_words": 462
+  },
+  {
+    "id": "classifiers/logistic-regression",
+    "global_order": 79,
+    "module": "classifiers",
+    "directory": "09-classifiers/01-logistic-regression",
+    "role": "demo",
+    "title": "Fit logistic regression",
+    "prerequisites": [
+      "pipelines-and-regression/exercise-pipeline",
+      "honest-holdouts/exercise-stratified-holdout"
+    ],
+    "task": "Replace the hardcoded logistic-regression C with the `C` argument in `fit_classifier`.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "e9daf90b9e84f2a60188f1cc0788da64b1b1ee7f7c9eb153f7904164f55f9ed3",
+    "test_sha256": "917a05339932b443fb3f14e92ec1a5e516d17edc03f85b22cd016c2c2bbe63a2",
+    "body_words": 365
+  },
+  {
+    "id": "classifiers/exercise-logistic-regression",
+    "global_order": 80,
+    "module": "classifiers",
+    "directory": "09-classifiers/02-exercise-logistic-regression",
+    "role": "exercise",
+    "title": "Exercise: fit logistic regression",
+    "prerequisites": [
+      "classifiers/logistic-regression"
+    ],
+    "task": "Implement `fit_classifier(training, labels, C)` as a fitted `scale` \u2192 `model` pipeline using `LogisticRegression` with the supplied C, `max_iter=1000` and `n_jobs=1`.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "eb9c77b192018152017393e90e2c9c80c566d98da4eb1f502f81247c36b9ca52",
+    "test_sha256": "e79165cb431ec55dc771eb47783049dfd98140f338125d0800aef3698f0428aa",
+    "body_words": 198
+  },
+  {
+    "id": "classifiers/knn",
+    "global_order": 81,
+    "module": "classifiers",
+    "directory": "09-classifiers/03-knn",
+    "role": "demo",
+    "title": "Classify by nearest neighbors",
+    "prerequisites": [
+      "classifiers/exercise-logistic-regression",
+      "numeric-preprocessing/exercise-standard-scaling"
+    ],
+    "task": "Use the supplied `k` instead of 1 for the neighbor count in `fit_neighbors`.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "9a18fa01037d59782bf070eb053c740a2c01eb9267e8226cd47e9a2e45ad25f1",
+    "test_sha256": "526c0904f04764fec38735f45c5144601ad08b878972fbd66e19c4cdab0fd341",
+    "body_words": 326
+  },
+  {
+    "id": "classifiers/exercise-knn",
+    "global_order": 82,
+    "module": "classifiers",
+    "directory": "09-classifiers/04-exercise-knn",
+    "role": "exercise",
+    "title": "Exercise: classify by nearest neighbors",
+    "prerequisites": [
+      "classifiers/knn"
+    ],
+    "task": "Implement `fit_neighbors(training, labels, k)` to return a fitted `scale` \u2192 `model` pipeline with `KNeighborsClassifier(n_neighbors=k, n_jobs=1)`.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "25c3038e8d200bd1551d4983b676068eac1cbc28da21018c71d7b25d70ece802",
+    "test_sha256": "65d45133ae3698374709bc9c6f93fc8654886c0e118dc7b6c999c70b0ceb5c6b",
+    "body_words": 192
+  },
+  {
+    "id": "classifiers/naive-bayes",
+    "global_order": 83,
+    "module": "classifiers",
+    "directory": "09-classifiers/05-naive-bayes",
+    "role": "demo",
+    "title": "Fit Gaussian naive Bayes",
+    "prerequisites": [
+      "classifiers/exercise-logistic-regression"
+    ],
+    "task": "Pass the supplied `priors` to `GaussianNB` in `fit_bayes` instead of using empirical priors.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "25225c54c1004faf1484dcd15fc1427bb36cd5b86e297d5fa2522bed8ce2be3e",
+    "test_sha256": "657a6279750c5d8781910498d75d3f8405d80a9572c9a961f97dea3efd0c012f",
+    "body_words": 335
+  },
+  {
+    "id": "classifiers/exercise-naive-bayes",
+    "global_order": 84,
+    "module": "classifiers",
+    "directory": "09-classifiers/06-exercise-naive-bayes",
+    "role": "exercise",
+    "title": "Exercise: fit Gaussian naive Bayes",
+    "prerequisites": [
+      "classifiers/naive-bayes"
+    ],
+    "task": "Implement `fit_bayes(training, labels, priors)` to fit and return `GaussianNB` with the supplied prior array in sorted class order.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "83bb2693b08c68e21cb3ceef54e8d0a3c3695e308868a7f5653caee0d91bc5ce",
+    "test_sha256": "9faf795ccf4227bdda1cffff2d409cda911eb885bc79f2049d333e74574a9a3c",
+    "body_words": 190
+  },
+  {
+    "id": "classifiers/linear-svm",
+    "global_order": 85,
+    "module": "classifiers",
+    "directory": "09-classifiers/07-linear-svm",
+    "role": "demo",
+    "title": "Fit a linear support-vector classifier",
+    "prerequisites": [
+      "classifiers/exercise-knn",
+      "classifiers/exercise-logistic-regression"
+    ],
+    "task": "Use the supplied C in `LinearSVC` rather than the fixed value 1.0.",
+    "files": [
+      "main.py",
+      "classification-measurements.csv"
+    ],
+    "lesson_sha256": "c708f771fc30509285ada3624011e9fa13029fedaac0f174148b86d4770ed88c",
+    "test_sha256": "190a9c746a7d7c1e325b2240279798fa8183e181d31ff4db0c1b1e938c403a54",
+    "body_words": 424
+  },
+  {
+    "id": "classifiers/exercise-linear-svm",
+    "global_order": 86,
+    "module": "classifiers",
+    "directory": "09-classifiers/08-exercise-linear-svm",
+    "role": "exercise",
+    "title": "Exercise: fit a linear support-vector classifier",
+    "prerequisites": [
+      "classifiers/linear-svm"
+    ],
+    "task": "Implement `fit_margin(training, labels, C)` to fit a `scale` \u2192 `model` pipeline with `LinearSVC(C=C, dual=\"auto\", max_iter=5000, random_state=17)`.",
+    "files": [
+      "main.py",
+      "classification-measurements.csv"
+    ],
+    "lesson_sha256": "49a68ca0c519c7bcf32866c19d97f13c13f8664a0a0e315ca8830bffa4a0cbed",
+    "test_sha256": "ca7b7d72ee57960139b7dc74e34be630cc61f559ebfa5a0ca777ea1258fadc57",
+    "body_words": 290
+  },
+  {
+    "id": "classifiers/rbf-svm",
+    "global_order": 87,
+    "module": "classifiers",
+    "directory": "09-classifiers/09-rbf-svm",
+    "role": "demo",
+    "title": "Fit a nonlinear SVM",
+    "prerequisites": [
+      "classifiers/exercise-linear-svm",
+      "regularized-regression/exercise-manual-selection"
+    ],
+    "task": "Switch the supplied candidate pipelines from a linear kernel to `kernel=\"rbf\"` in `select_rbf`.",
+    "files": [
+      "main.py",
+      "classification-measurements.csv"
+    ],
+    "lesson_sha256": "0a3e80ebe19b8074e71dc3ee9a18cc45cd7e43782663456526829ed50e0b86da",
+    "test_sha256": "341051cbca543dcdf9f8985d94b11ca070f42c71811d6edd0931599b7c14f463",
+    "body_words": 416
+  },
+  {
+    "id": "classifiers/exercise-rbf-svm",
+    "global_order": 88,
+    "module": "classifiers",
+    "directory": "09-classifiers/10-exercise-rbf-svm",
+    "role": "exercise",
+    "title": "Exercise: fit a nonlinear SVM",
+    "prerequisites": [
+      "classifiers/rbf-svm"
+    ],
+    "task": "Implement `select_rbf` to train one scaled RBF SVC per supplied `(C, gamma)` pair and return `(winning_pair, validation_accuracies)`. Maximize validation accuracy; choose the first exact tie.",
+    "files": [
+      "main.py",
+      "classification-measurements.csv"
+    ],
+    "lesson_sha256": "7c2ce3bf00a18925e7c30602cc6ea0e316879fbfdd2c66262b0e1cae18077a0b",
+    "test_sha256": "4792d727ca1334ca1f6cb3661cee8fffd2c24c3f2484643554dba83db62eee02",
+    "body_words": 285
+  },
+  {
+    "id": "classification-metrics/confusion-matrix",
+    "global_order": 89,
+    "module": "classification-metrics",
+    "directory": "10-classification-metrics/01-confusion-matrix",
+    "role": "demo",
+    "title": "Count classification outcomes",
+    "prerequisites": [
+      "classifiers/exercise-logistic-regression"
+    ],
+    "task": "In `summarize`, change `labels=labels[::-1]` to `labels=labels`.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "9464db481691c408d867b225ca2b8cde98ee3a098a94fdbbabc52dd8cde5abf3",
+    "test_sha256": "56210bc9f66747d339f5f3f038c1b4cd8d4e3c4577cd22effac9845b7b4c69ef",
+    "body_words": 411
+  },
+  {
+    "id": "classification-metrics/exercise-confusion-matrix",
+    "global_order": 90,
+    "module": "classification-metrics",
+    "directory": "10-classification-metrics/02-exercise-confusion-matrix",
+    "role": "exercise",
+    "title": "Exercise: count classification outcomes",
+    "prerequisites": [
+      "classification-metrics/confusion-matrix"
+    ],
+    "task": "Return `(matrix, accuracy)` from `summarize`, preserving the supplied label order and counting correct predictions over all rows.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "7708e5d5e6552587912dc40d99e001a72eed02e2490617944a9d4bd8cba4f982",
+    "test_sha256": "6d234a37e4aaab98950d8e0be747918fe26d0ab7d537c86ea573d56ece266337",
+    "body_words": 437
+  },
+  {
+    "id": "classification-metrics/precision-recall",
+    "global_order": 91,
+    "module": "classification-metrics",
+    "directory": "10-classification-metrics/03-precision-recall",
+    "role": "demo",
+    "title": "Separate precision and recall",
+    "prerequisites": [
+      "classification-metrics/exercise-confusion-matrix"
+    ],
+    "task": "In `measure`, change `policy = 1` to `policy = 0`.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "b48e17c3cffe3d666943a4ccc4ae5bdcd1f02d488edae1bc94a185c0b16e33cd",
+    "test_sha256": "4aeb0ba59844c79dc3d94a2525bc866d6a61741519d8220779ca57e9363fda90",
+    "body_words": 441
+  },
+  {
+    "id": "classification-metrics/exercise-precision-recall",
+    "global_order": 92,
+    "module": "classification-metrics",
+    "directory": "10-classification-metrics/04-exercise-precision-recall",
+    "role": "exercise",
+    "title": "Exercise: separate precision and recall",
+    "prerequisites": [
+      "classification-metrics/precision-recall"
+    ],
+    "task": "Implement `measure` to return `(precision, recall)` for `positive`, reporting zero when a denominator is zero.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "7f277e485e354e3371cec2b83842fa95248b8f4988a94e8fc9bc5192e79f3060",
+    "test_sha256": "24eab011b8c72503caed54188b309a392d91ded5217feec9463b1951b54cb592",
+    "body_words": 449
+  },
+  {
+    "id": "classification-metrics/f1-macro",
+    "global_order": 93,
+    "module": "classification-metrics",
+    "directory": "10-classification-metrics/05-f1-macro",
+    "role": "demo",
+    "title": "Summarize multiclass errors",
+    "prerequisites": [
+      "classification-metrics/exercise-precision-recall"
+    ],
+    "task": "In `class_report`, change `average = 'weighted'` to `average = None`.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "77a0486afae8d949ff69b27145bead3c78737723dbad96a0ef3f0597ef122156",
+    "test_sha256": "4708cae1920d84c8a21d1ef20eb1af86f962c56e32634ba28150259d016032d6",
+    "body_words": 373
+  },
+  {
+    "id": "classification-metrics/exercise-f1-macro",
+    "global_order": 94,
+    "module": "classification-metrics",
+    "directory": "10-classification-metrics/06-exercise-f1-macro",
+    "role": "exercise",
+    "title": "Exercise: summarize multiclass errors",
+    "prerequisites": [
+      "classification-metrics/f1-macro"
+    ],
+    "task": "Return per-class F1 values, their unweighted mean, and actual class supports in the supplied `labels` order.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "d322e4ed89d9638ff0cc848e236bbd6aa254352e72f4936653aa1c04a76ede7b",
+    "test_sha256": "b45e38376570e10d28c701e9e6944cd9b046b6e7e55116e12357928f84cd6e4b",
+    "body_words": 403
+  },
+  {
+    "id": "classification-metrics/thresholds",
+    "global_order": 95,
+    "module": "classification-metrics",
+    "directory": "10-classification-metrics/07-thresholds",
+    "role": "demo",
+    "title": "Choose a decision threshold",
+    "prerequisites": [
+      "classification-metrics/exercise-precision-recall",
+      "honest-holdouts/exercise-validation-split"
+    ],
+    "task": "In `choose_threshold`, change `np.asarray(scores) > threshold` to `np.asarray(scores) >= threshold`.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "6c776a16ef14f9ef95df2527ec6ef79e96dc2b5d8515a279841927d910600a1c",
+    "test_sha256": "1ec1b1b4d784cd8ea1be3f1e16d23c563d356e00b97e621be77bff8c69ee355c",
+    "body_words": 435
+  },
+  {
+    "id": "classification-metrics/exercise-thresholds",
+    "global_order": 96,
+    "module": "classification-metrics",
+    "directory": "10-classification-metrics/08-exercise-thresholds",
+    "role": "exercise",
+    "title": "Exercise: choose a decision threshold",
+    "prerequisites": [
+      "classification-metrics/thresholds"
+    ],
+    "task": "Implement the stated validation-only threshold policy in `choose_threshold`, including the inclusive boundary and deterministic fallback.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "1aef1be2aca513949162adffb14f35e2840a551c45692a4a121b2703cb2eb5e5",
+    "test_sha256": "de3beb210535d34df526a0c035b2df79601fd831d421bde2baec53e69526a446",
+    "body_words": 441
+  },
+  {
+    "id": "classification-metrics/roc-auc",
+    "global_order": 97,
+    "module": "classification-metrics",
+    "directory": "10-classification-metrics/09-roc-auc",
+    "role": "demo",
+    "title": "Measure classification ranking with ROC AUC",
+    "prerequisites": [
+      "classification-metrics/exercise-thresholds"
+    ],
+    "task": "In `rank_auc`, change `roc_auc_score(binary, np.asarray(scores) >= 0.5)` to `roc_auc_score(binary, scores)`.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "8dc1214e716f4352fc61f90e1c9ce6bdbd3017bf0061dbdb64e714db444ac785",
+    "test_sha256": "01eb930ce2390398e80cb61816ec72a21ba4a746919dd778e27c323a2e6eef65",
+    "body_words": 432
+  },
+  {
+    "id": "classification-metrics/exercise-roc-auc",
+    "global_order": 98,
+    "module": "classification-metrics",
+    "directory": "10-classification-metrics/10-exercise-roc-auc",
+    "role": "exercise",
+    "title": "Exercise: measure classification ranking with ROC AUC",
+    "prerequisites": [
+      "classification-metrics/roc-auc"
+    ],
+    "task": "Return ROC AUC from the continuous `scores` for the explicitly supplied positive label.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "45d46dfcbbb43752ec29be736ef7dc3803d503b26bbb6f4128bfae3c9b974486",
+    "test_sha256": "cde5f9a30099f3a9c063d436a38a65985f619e8299f83b2596a9a805c736c517",
+    "body_words": 460
+  },
+  {
+    "id": "classification-metrics/average-precision",
+    "global_order": 99,
+    "module": "classification-metrics",
+    "directory": "10-classification-metrics/11-average-precision",
+    "role": "demo",
+    "title": "Summarize precision-recall rankings",
+    "prerequisites": [
+      "classification-metrics/exercise-roc-auc"
+    ],
+    "task": "In `ranking_ap`, change `average_precision_score(binary, np.asarray(scores) >= 0.5)` to `average_precision_score(binary, scores)`.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "d10f7ed0823a774279fc863b133d56bb46f9bae58d56d074e8275398fc0652df",
+    "test_sha256": "94a406a96c348ca9930fd9ae38e53c208819e7ebff9e007dcffe49798a238465",
+    "body_words": 411
+  },
+  {
+    "id": "classification-metrics/exercise-average-precision",
+    "global_order": 100,
+    "module": "classification-metrics",
+    "directory": "10-classification-metrics/12-exercise-average-precision",
+    "role": "exercise",
+    "title": "Exercise: summarize precision-recall rankings",
+    "prerequisites": [
+      "classification-metrics/average-precision"
+    ],
+    "task": "Return average precision using continuous scores and the supplied positive class, without thresholding the ranking.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "1bfb19236d772cff465778452ee6d9e97beec5dcf9d731bd3a1d3556e002e0fa",
+    "test_sha256": "fbb1153cdc4655b52fd9b0497d1d00029e8a4dd5030b4e63f28dd88768d3b501",
+    "body_words": 443
+  },
+  {
+    "id": "trees-and-ensembles/decision-trees",
+    "global_order": 101,
+    "module": "trees-and-ensembles",
+    "directory": "11-trees-and-ensembles/01-decision-trees",
+    "role": "demo",
+    "title": "Trace a decision tree",
+    "prerequisites": [
+      "classification-metrics/exercise-confusion-matrix",
+      "pipelines-and-regression/exercise-mae-residuals"
+    ],
+    "task": "In `fit_tree`, change `max_depth=1` to `max_depth=2`.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "618ea72690fd86c28447a25d909453f88fa770357accf363e6a7dee7a14a30df",
+    "test_sha256": "9216b0e0eb90685718c49bade48eb5f28f4c822c77e21388b6920719bfb0dfb3",
+    "body_words": 436
+  },
+  {
+    "id": "trees-and-ensembles/exercise-decision-trees",
+    "global_order": 102,
+    "module": "trees-and-ensembles",
+    "directory": "11-trees-and-ensembles/02-exercise-decision-trees",
+    "role": "exercise",
+    "title": "Exercise: trace a decision tree",
+    "prerequisites": [
+      "trees-and-ensembles/decision-trees"
+    ],
+    "task": "Fit and return a `DecisionTreeClassifier` with depth limit 2 and seed 17 on the supplied training inputs.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "71edc8bbb2c44ec7c24baec81557010f98f138dd3b720813e6f70658445fe49a",
+    "test_sha256": "cd2c07523db550224f68e6eea9be59f5671f3228cca3b8dda20a058f5564ddb8",
+    "body_words": 440
+  },
+  {
+    "id": "trees-and-ensembles/regression-trees",
+    "global_order": 103,
+    "module": "trees-and-ensembles",
+    "directory": "11-trees-and-ensembles/03-regression-trees",
+    "role": "demo",
+    "title": "Predict leaf means",
+    "prerequisites": [
+      "trees-and-ensembles/exercise-decision-trees"
+    ],
+    "task": "In `fit_tree`, change `max_depth=1` to `max_depth=2`.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "f41d808766669efc9b3737ab4a3d675f6f275d22249c0456055ebd86f4d2d898",
+    "test_sha256": "88b490936d03bbe6d8d77cca0fa3fdb808dc6ef273a5368ec03a915b65527f5b",
+    "body_words": 403
+  },
+  {
+    "id": "trees-and-ensembles/exercise-regression-trees",
+    "global_order": 104,
+    "module": "trees-and-ensembles",
+    "directory": "11-trees-and-ensembles/04-exercise-regression-trees",
+    "role": "exercise",
+    "title": "Exercise: predict leaf means",
+    "prerequisites": [
+      "trees-and-ensembles/regression-trees"
+    ],
+    "task": "Fit and return a depth-two `DecisionTreeRegressor` with seed 17, preserving mean-target leaf predictions.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "25938699eccc689d5e04bcac6c04cf4bd78b265b42e1dc19466563732a9479b5",
+    "test_sha256": "38f9962705a8b033f642bdd700b74d2c42cf9e526fa02f2b96c941104f266c0b",
+    "body_words": 432
+  },
+  {
+    "id": "trees-and-ensembles/random-forests",
+    "global_order": 105,
+    "module": "trees-and-ensembles",
+    "directory": "11-trees-and-ensembles/05-random-forests",
+    "role": "demo",
+    "title": "Average randomized trees",
+    "prerequisites": [
+      "trees-and-ensembles/exercise-regression-trees"
+    ],
+    "task": "In `fit_forest`, change `n_estimators=1` to `n_estimators=10`.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "a7d0f8be6dde16adfd5ba0c5b375f0f206a6bb2f0430cb31d4b85f5b09a502c4",
+    "test_sha256": "c8348b6705f89c87c4de119425e82bdc020633e4297f0107623d053ae0b35a03",
+    "body_words": 400
+  },
+  {
+    "id": "trees-and-ensembles/exercise-random-forests",
+    "global_order": 106,
+    "module": "trees-and-ensembles",
+    "directory": "11-trees-and-ensembles/06-exercise-random-forests",
+    "role": "exercise",
+    "title": "Exercise: average randomized trees",
+    "prerequisites": [
+      "trees-and-ensembles/random-forests"
+    ],
+    "task": "Return a fitted regression forest with 10 trees, depth limit 3, seed 17, and `n_jobs=1`.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "a3b42c6699c8753ad135b9ca488ad34a6d6c62618fb4b5048c2653d6932f9a4f",
+    "test_sha256": "f70a117b51d75cc7aa9c19ee84eae371aa26521bc7ae6a116cd6282f32b7ee3c",
+    "body_words": 430
+  },
+  {
+    "id": "trees-and-ensembles/gradient-boosting",
+    "global_order": 107,
+    "module": "trees-and-ensembles",
+    "directory": "11-trees-and-ensembles/07-gradient-boosting",
+    "role": "demo",
+    "title": "Add trees to correct errors",
+    "prerequisites": [
+      "trees-and-ensembles/exercise-random-forests",
+      "pipelines-and-regression/exercise-mae-residuals"
+    ],
+    "task": "In `fit_boosting`, change `n_estimators=1` to `n_estimators=15`.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "55a0bef80d4dff5b1319ddc8fd50cd76d6e988de65acee1ba44abcd75823f9dd",
+    "test_sha256": "5503975cda0e249bc6131e3bde6c0a2769ee1463922b2de2e920173ad991df6f",
+    "body_words": 398
+  },
+  {
+    "id": "trees-and-ensembles/exercise-gradient-boosting",
+    "global_order": 108,
+    "module": "trees-and-ensembles",
+    "directory": "11-trees-and-ensembles/08-exercise-gradient-boosting",
+    "role": "exercise",
+    "title": "Exercise: add trees to correct errors",
+    "prerequisites": [
+      "trees-and-ensembles/gradient-boosting"
+    ],
+    "task": "Fit and return 15 boosting stages with learning rate 0.1, tree depth limit 2, and seed 17.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "314f0d1b7b84f4d4becf6c3ec96c38b7ed83335f50b3d04636e640648baf4afc",
+    "test_sha256": "2f288b2feb8dae94ab570d6e1e13b0f4aac207e6a222b44e93ce9df95970a38d",
+    "body_words": 429
+  },
+  {
+    "id": "cross-validation-and-selection/kfold",
+    "global_order": 109,
+    "module": "cross-validation-and-selection",
+    "directory": "12-cross-validation-and-selection/01-kfold",
+    "role": "demo",
+    "title": "Evaluate whole pipelines in folds",
+    "prerequisites": [
+      "pipelines-and-regression/exercise-pipeline",
+      "regularized-regression/exercise-manual-selection"
+    ],
+    "task": "In `evaluate_folds`, change `result['test_score']` to `-result['test_score']`.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "a03071c9d545352665b6d12d1c12a67beb8aff0fd448779330610b73a29e7085",
+    "test_sha256": "57bad4388ead6ee0d30910bd3cb1bf57574b1ada2fb991ec56bc3ae077165763",
+    "body_words": 543
+  },
+  {
+    "id": "cross-validation-and-selection/exercise-kfold",
+    "global_order": 110,
+    "module": "cross-validation-and-selection",
+    "directory": "12-cross-validation-and-selection/02-exercise-kfold",
+    "role": "exercise",
+    "title": "Exercise: evaluate whole pipelines in folds",
+    "prerequisites": [
+      "cross-validation-and-selection/kfold"
+    ],
+    "task": "Return `(folds, positive_mae, estimators)` from three shuffled KFold splits with seed 17 and a fresh whole pipeline in each fold.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "5964e2dc61f8aeb458dfc15e6254af88ec5298e9a4515fd4df1a64286a53ef9c",
+    "test_sha256": "6e80f02b291f5aa35ce9b79708f59ec5cce07b8c7c47e3e9e47d3312d40d6352",
+    "body_words": 437
+  },
+  {
+    "id": "cross-validation-and-selection/stratified-cv",
+    "global_order": 111,
+    "module": "cross-validation-and-selection",
+    "directory": "12-cross-validation-and-selection/03-stratified-cv",
+    "role": "demo",
+    "title": "Use stratified classification folds",
+    "prerequisites": [
+      "cross-validation-and-selection/exercise-kfold",
+      "classification-metrics/exercise-f1-macro"
+    ],
+    "task": "In `evaluate_classes`, change `scoring='accuracy'` to `scoring='f1_macro'`.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "2cb78616b2ee1dad5ea309bc9b1ea99c89143d6471f9e8b7a1414a4f7c45517d",
+    "test_sha256": "cfb34816362c35ec47bb9a70a32594a1e3d4813beaa0d0f999fa6a2481a963ff",
+    "body_words": 321
+  },
+  {
+    "id": "cross-validation-and-selection/exercise-stratified-cv",
+    "global_order": 112,
+    "module": "cross-validation-and-selection",
+    "directory": "12-cross-validation-and-selection/04-exercise-stratified-cv",
+    "role": "exercise",
+    "title": "Exercise: use stratified classification folds",
+    "prerequisites": [
+      "cross-validation-and-selection/stratified-cv"
+    ],
+    "task": "Return three seed-17 shuffled stratified folds, their macro-F1 validation scores, and fitted pipeline estimators.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "9f808950d0561ba70cbbae1d3d27555d637c38ad59e7bdb1d6efe71948d9605e",
+    "test_sha256": "357e8b7377747e903655d0dc763720b8b0ec4ea3d59d3cc8c418b3481267ebf5",
+    "body_words": 355
+  },
+  {
+    "id": "cross-validation-and-selection/group-cv",
+    "global_order": 113,
+    "module": "cross-validation-and-selection",
+    "directory": "12-cross-validation-and-selection/05-group-cv",
+    "role": "demo",
+    "title": "Keep entities out of both sides",
+    "prerequisites": [
+      "cross-validation-and-selection/exercise-stratified-cv"
+    ],
+    "task": "In `entity_folds`, change `KFold(n_splits=3, shuffle=True, random_state=17)` to `GroupKFold(n_splits=3)`.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "161ccb823aabd7736b8076fa25c0764c038fdb9a7d0e53cad3a04bce9cc1db17",
+    "test_sha256": "3a01375fe72934668777183f9aca3d1722b65d7162e218c23751da5572ddd7f0",
+    "body_words": 346
+  },
+  {
+    "id": "cross-validation-and-selection/exercise-group-cv",
+    "global_order": 114,
+    "module": "cross-validation-and-selection",
+    "directory": "12-cross-validation-and-selection/06-exercise-group-cv",
+    "role": "exercise",
+    "title": "Exercise: keep entities out of both sides",
+    "prerequisites": [
+      "cross-validation-and-selection/group-cv"
+    ],
+    "task": "Return three GroupKFold index pairs so no entity appears in both training and validation within a fold.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "a57819d929db15264f5c9594280ac4e6b51427af5abdd9c591d58e6fc97744b3",
+    "test_sha256": "379b54396c60e3bc5d378186896c83eac1fde73d5bcbb4cc28a8796b22623b1e",
+    "body_words": 353
+  },
+  {
+    "id": "cross-validation-and-selection/time-cv",
+    "global_order": 115,
+    "module": "cross-validation-and-selection",
+    "directory": "12-cross-validation-and-selection/07-time-cv",
+    "role": "demo",
+    "title": "Validate on later observations",
+    "prerequisites": [
+      "cross-validation-and-selection/exercise-group-cv"
+    ],
+    "task": "In `future_folds`, change `gap=0` to `gap=1`.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "e3864ea69aa29f74cbb243d5365c7153ef85d860e88e06982f309a90415d0a26",
+    "test_sha256": "ea6d51499b7fe12c17af7a7b036a6011d94793c4c93b84524fad9579671d8a98",
+    "body_words": 341
+  },
+  {
+    "id": "cross-validation-and-selection/exercise-time-cv",
+    "global_order": 116,
+    "module": "cross-validation-and-selection",
+    "directory": "12-cross-validation-and-selection/08-exercise-time-cv",
+    "role": "exercise",
+    "title": "Exercise: validate on later observations",
+    "prerequisites": [
+      "cross-validation-and-selection/time-cv"
+    ],
+    "task": "Return three ordered TimeSeriesSplit folds with validation size 4 and a one-row gap.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "0861b3ace026f29b7d9ff265f58fd94ce70112af8d3fa820562a227799edb3a8",
+    "test_sha256": "8993309c791a2e27f4d33b68e90c7cd907ab0f968189526f78eea2238450ba91",
+    "body_words": 370
+  },
+  {
+    "id": "cross-validation-and-selection/search-cv",
+    "global_order": 117,
+    "module": "cross-validation-and-selection",
+    "directory": "12-cross-validation-and-selection/09-search-cv",
+    "role": "demo",
+    "title": "Search a bounded parameter space",
+    "prerequisites": [
+      "cross-validation-and-selection/exercise-kfold",
+      "estimator-basics/exercise-estimator-settings",
+      "regularized-regression/exercise-ridge"
+    ],
+    "task": "In `search_model`, change `scoring='r2'` to `scoring='neg_mean_absolute_error'`.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "4813261f45e2937bfa3fbefad25ffad6d07558389acb5ed9d7a6e69197ceb023",
+    "test_sha256": "a1418903298c675efadaaf72d5528032981f13eec2015592a146efb4007fde89",
+    "body_words": 428
+  },
+  {
+    "id": "cross-validation-and-selection/exercise-search-cv",
+    "global_order": 118,
+    "module": "cross-validation-and-selection",
+    "directory": "12-cross-validation-and-selection/10-exercise-search-cv",
+    "role": "exercise",
+    "title": "Exercise: search a bounded parameter space",
+    "prerequisites": [
+      "cross-validation-and-selection/search-cv"
+    ],
+    "task": "Return a fitted GridSearchCV over Ridge alpha `[0.1, 1.0, 10.0]`, using three seed-17 shuffled folds, negative MAE, serial execution, and refitting.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "0c11d54e32a9fbeaed14cf3e964b039e19b133f0205a525f2fd569b55ed4e576",
+    "test_sha256": "60bcbdc10064ca39451e525da7ec001da869ba7f6ae54d54fe9e5a2b4a93bb92",
+    "body_words": 424
+  },
+  {
+    "id": "cross-validation-and-selection/learning-curves",
+    "global_order": 119,
+    "module": "cross-validation-and-selection",
+    "directory": "12-cross-validation-and-selection/11-learning-curves",
+    "role": "demo",
+    "title": "Vary the amount of training data",
+    "prerequisites": [
+      "cross-validation-and-selection/exercise-search-cv"
+    ],
+    "task": "In `size_curve`, change `train_scores, validation_scores` to `-train_scores, -validation_scores`.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "e94960a3dd0098ce94222277110533c2d5ee93d14f874ffc59d3269f209e8b09",
+    "test_sha256": "fc80c26847755adf14f3fcb2b386300b188fd5790cba62df15687bc8252c5600",
+    "body_words": 413
+  },
+  {
+    "id": "cross-validation-and-selection/exercise-learning-curves",
+    "global_order": 120,
+    "module": "cross-validation-and-selection",
+    "directory": "12-cross-validation-and-selection/12-exercise-learning-curves",
+    "role": "exercise",
+    "title": "Exercise: vary the amount of training data",
+    "prerequisites": [
+      "cross-validation-and-selection/learning-curves"
+    ],
+    "task": "Return actual training sizes and positive training/validation MAE matrices for fractions `[0.5, 0.75, 1.0]` across three seeded folds.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "fd74949338546345d5b2cced2fdca10d35f46597108ff505b361a1f9482d187d",
+    "test_sha256": "609c9f235e5ffb4715fa2c44d59da550518fe2e212e817ae69b86ee88f104bb0",
+    "body_words": 429
+  },
+  {
+    "id": "cross-validation-and-selection/validation-curves",
+    "global_order": 121,
+    "module": "cross-validation-and-selection",
+    "directory": "12-cross-validation-and-selection/13-validation-curves",
+    "role": "demo",
+    "title": "Vary one model setting",
+    "prerequisites": [
+      "cross-validation-and-selection/exercise-learning-curves"
+    ],
+    "task": "In `alpha_curve`, change `train_scores, validation_scores` to `-train_scores, -validation_scores`.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "ef58813fe8de115b333ccede0c3b69acf2efa17a139d7315eb6cea4c13b0b155",
+    "test_sha256": "b82a74797ba55b85921f17615ea6873be077c2589941e20a23137dbd135c21f8",
+    "body_words": 414
+  },
+  {
+    "id": "cross-validation-and-selection/exercise-validation-curves",
+    "global_order": 122,
+    "module": "cross-validation-and-selection",
+    "directory": "12-cross-validation-and-selection/14-exercise-validation-curves",
+    "role": "exercise",
+    "title": "Exercise: vary one model setting",
+    "prerequisites": [
+      "cross-validation-and-selection/validation-curves"
+    ],
+    "task": "Return ordered alphas `[0.1, 1.0, 10.0]` and positive training/validation MAE matrices from a whole-pipeline validation curve.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "146416f66e6bffe93bfa354122f7778aaa185872a619ee6d8ffa39b50a3b4960",
+    "test_sha256": "9760e2644ba9f60f810ae95ad400f3321f1a87fc1bb30951503c5de3044d3ca8",
+    "body_words": 423
+  },
+  {
+    "id": "cross-validation-and-selection/nested-cv",
+    "global_order": 123,
+    "module": "cross-validation-and-selection",
+    "directory": "12-cross-validation-and-selection/15-nested-cv",
+    "role": "demo",
+    "title": "Evaluate the model-selection procedure",
+    "prerequisites": [
+      "cross-validation-and-selection/exercise-validation-curves",
+      "cross-validation-and-selection/exercise-search-cv"
+    ],
+    "task": "In `nested_scores`, change `result['test_score']` to `-result['test_score']`.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "18a0675b425aaf346603a059990d94f24ae4be6b1e9209082bda4205748e7505",
+    "test_sha256": "c2331f9007b8ca45de398fbefc3c4569807491510bbc25023eee6fb8bf064d11",
+    "body_words": 413
+  },
+  {
+    "id": "cross-validation-and-selection/exercise-nested-cv",
+    "global_order": 124,
+    "module": "cross-validation-and-selection",
+    "directory": "12-cross-validation-and-selection/16-exercise-nested-cv",
+    "role": "exercise",
+    "title": "Exercise: evaluate the model-selection procedure",
+    "prerequisites": [
+      "cross-validation-and-selection/nested-cv"
+    ],
+    "task": "Return two outer folds, their positive MAEs, and their fitted inner searches, each comparing alpha 0.1 and 10.0 in two folds.",
+    "files": [
+      "main.py",
+      "observations.csv"
+    ],
+    "lesson_sha256": "1d928ffd55ab789fa0adf69742a5db93fac55d9ff47a56a65e22154737eb045e",
+    "test_sha256": "d001715e2be30272733b5ef521e0b7fb05acc70f81c4d62b19c124d9dbc2df4b",
+    "body_words": 431
+  },
+  {
+    "id": "mixed-classification-project/mixed-project-build",
+    "global_order": 125,
+    "module": "mixed-classification-project",
+    "directory": "13-mixed-classification-project/01-mixed-project-build",
+    "role": "demo",
+    "title": "Assemble a mixed-feature classifier",
+    "prerequisites": [
+      "cross-validation-and-selection/exercise-search-cv",
+      "categorical-preprocessing/exercise-column-transformer",
+      "classifiers/exercise-logistic-regression",
+      "categorical-preprocessing/exercise-unknown-categories"
+    ],
+    "task": "Change `handle_unknown='error'` to `handle_unknown='ignore'` in `build_model` so the analogue follows the described policy.",
+    "files": [
+      "main.py",
+      "handling.csv"
+    ],
+    "lesson_sha256": "1e6f84f6838135e9870dde0cf252f3e87f461a7b7ebc952d37152e3d6f5de70a",
+    "test_sha256": "cca62aa4d044006f7c14aef4cde72fa033ba42d26080aa57e52010ca134327ba",
+    "body_words": 364
+  },
+  {
+    "id": "mixed-classification-project/exercise-mixed-project-build",
+    "global_order": 126,
+    "module": "mixed-classification-project",
+    "directory": "13-mixed-classification-project/02-exercise-mixed-project-build",
+    "role": "exercise",
+    "title": "Exercise: assemble a mixed-feature classifier",
+    "prerequisites": [
+      "mixed-classification-project/mixed-project-build"
+    ],
+    "task": "Return an unfitted mixed preprocessing/LogisticRegression pipeline from `build_model` using the three checkout predictors and the missing/unknown policies described above.",
+    "files": [
+      "main.py",
+      "orders.csv"
+    ],
+    "lesson_sha256": "a92db7cf139200d3d97fd7e1f7bd0f499e04f6f51892b45c14cc5268da9e84d7",
+    "test_sha256": "46063e19781fde086e928614456609de142ead42361395da43c8ae851bb02fb0",
+    "body_words": 478
+  },
+  {
+    "id": "mixed-classification-project/mixed-project-tune",
+    "global_order": 127,
+    "module": "mixed-classification-project",
+    "directory": "13-mixed-classification-project/03-mixed-project-tune",
+    "role": "demo",
+    "title": "Tune with stratified folds",
+    "prerequisites": [
+      "mixed-classification-project/exercise-mixed-project-build",
+      "cross-validation-and-selection/exercise-stratified-cv",
+      "classification-metrics/exercise-f1-macro"
+    ],
+    "task": "Change `scoring='accuracy'` to `scoring='f1_macro'` in `tune_model` so the analogue follows the described policy.",
+    "files": [
+      "main.py",
+      "handling.csv"
+    ],
+    "lesson_sha256": "80317b91d51ac1069f1546c800cb120d6a735a5aa84ceb254b6cf421509bfd37",
+    "test_sha256": "bb67f6c2cb9235d740b1c84be1f1e2a7bfa44e796b0dd4d958c47b5a1ef51e37",
+    "body_words": 337
+  },
+  {
+    "id": "mixed-classification-project/exercise-mixed-project-tune",
+    "global_order": 128,
+    "module": "mixed-classification-project",
+    "directory": "13-mixed-classification-project/04-exercise-mixed-project-tune",
+    "role": "exercise",
+    "title": "Exercise: tune with stratified folds",
+    "prerequisites": [
+      "mixed-classification-project/mixed-project-tune",
+      "mixed-classification-project/exercise-mixed-project-build"
+    ],
+    "task": "Return `tune_model(train)` as the specified three-C, three-fold macro-F1 search fitted only on the supplied search-training rows.",
+    "files": [
+      "main.py",
+      "orders.csv"
+    ],
+    "lesson_sha256": "66d12d36eced351a21ee6b376894daf81143397c3323f3df3b94200ecc4935d2",
+    "test_sha256": "446f6524e9ebcb7ecdb772249c3f959cf9dee584855645a71b374b1c5fbd18e9",
+    "body_words": 431
+  },
+  {
+    "id": "mixed-classification-project/mixed-project-threshold",
+    "global_order": 129,
+    "module": "mixed-classification-project",
+    "directory": "13-mixed-classification-project/05-mixed-project-threshold",
+    "role": "demo",
+    "title": "Set an operational threshold",
+    "prerequisites": [
+      "mixed-classification-project/exercise-mixed-project-tune",
+      "classification-metrics/exercise-thresholds"
+    ],
+    "task": "Change `scores > threshold` to `scores >= threshold` in `choose_threshold` so the analogue follows the described policy.",
+    "files": [
+      "main.py",
+      "handling.csv"
+    ],
+    "lesson_sha256": "a9b7cfb983ef97f34d128928910cf3334c0970ab562f94e5b6f822538d72199a",
+    "test_sha256": "301a1723ea7304a13e738241096b768a140ffa2012e38eb3ce6b67c67012c033",
+    "body_words": 357
+  },
+  {
+    "id": "mixed-classification-project/exercise-mixed-project-threshold",
+    "global_order": 130,
+    "module": "mixed-classification-project",
+    "directory": "13-mixed-classification-project/06-exercise-mixed-project-threshold",
+    "role": "exercise",
+    "title": "Exercise: set an operational threshold",
+    "prerequisites": [
+      "mixed-classification-project/mixed-project-threshold",
+      "mixed-classification-project/exercise-mixed-project-tune"
+    ],
+    "task": "Implement `choose_threshold(model, validation)` with the stated three-candidate recall constraint and tie rules, without changing the fitted model.",
+    "files": [
+      "main.py",
+      "orders.csv"
+    ],
+    "lesson_sha256": "1bf5292a968331c2122aa71f18977e68c392dafee6787834834b0f1046fcb069",
+    "test_sha256": "f85e3b3dc0c98a06ce18ef17a560863c6692c43c3757d8faa46a947fdaf2224e",
+    "body_words": 449
+  },
+  {
+    "id": "mixed-classification-project/mixed-project-report",
+    "global_order": 131,
+    "module": "mixed-classification-project",
+    "directory": "13-mixed-classification-project/07-mixed-project-report",
+    "role": "demo",
+    "title": "Report final classification errors",
+    "prerequisites": [
+      "mixed-classification-project/exercise-mixed-project-threshold",
+      "classification-metrics/exercise-confusion-matrix",
+      "classification-metrics/exercise-precision-recall"
+    ],
+    "task": "Change `labels=[1, 0]` to `labels=[0, 1]` in `final_report` so the analogue follows the described policy.",
+    "files": [
+      "main.py",
+      "handling.csv"
+    ],
+    "lesson_sha256": "dce7d5ba90eee8695cc0fa2dd5267e9ff090647af1d06c6aedf2594410f7c5b7",
+    "test_sha256": "296f54f7aef3cbadb10277c034371ad2443caded576568997aa0570b3dd66167",
+    "body_words": 326
+  },
+  {
+    "id": "mixed-classification-project/exercise-mixed-project-report",
+    "global_order": 132,
+    "module": "mixed-classification-project",
+    "directory": "13-mixed-classification-project/08-exercise-mixed-project-report",
+    "role": "exercise",
+    "title": "Exercise: report final classification errors",
+    "prerequisites": [
+      "mixed-classification-project/mixed-project-report",
+      "mixed-classification-project/exercise-mixed-project-threshold"
+    ],
+    "task": "Return the stated audit dictionary from `final_report(model, threshold, test)` without fitting, selecting, or changing its frozen arguments.",
+    "files": [
+      "main.py",
+      "orders.csv"
+    ],
+    "lesson_sha256": "4352f4ac5b0ddff701760128740618b717b66d0d3306b5fa9f1d4966b361ab7a",
+    "test_sha256": "64ad3b26139092675c0a424e12e841d505ec89e84745573197dab1e9c5298458",
+    "body_words": 445
+  },
+  {
+    "id": "inspection-and-unsupervised/class-weights",
+    "global_order": 133,
+    "module": "inspection-and-unsupervised",
+    "directory": "14-inspection-and-unsupervised/01-class-weights",
+    "role": "demo",
+    "title": "Account for class imbalance",
+    "prerequisites": [
+      "classification-metrics/exercise-precision-recall",
+      "classifiers/exercise-logistic-regression",
+      "cross-validation-and-selection/exercise-stratified-cv"
+    ],
+    "task": "Return a fitted `LogisticRegression` with `class_weight=\"balanced\"`, `max_iter=300`, and `n_jobs=1` from `fit_weighted(X, y)`.",
+    "files": [
+      "main.py",
+      "checkout-measurements.csv"
+    ],
+    "lesson_sha256": "3ad8d12fc104ecfe02deaa3b7d87b4ae9162368de5c2f0b03aa79e8c4fd3620b",
+    "test_sha256": "58c2916718356a9cbd16dc4b9a76c8c18c0564a0c46071d8fa55a6b0e01a63fb",
+    "body_words": 486
+  },
+  {
+    "id": "inspection-and-unsupervised/exercise-class-weights",
+    "global_order": 134,
+    "module": "inspection-and-unsupervised",
+    "directory": "14-inspection-and-unsupervised/02-exercise-class-weights",
+    "role": "exercise",
+    "title": "Exercise: account for class imbalance",
+    "prerequisites": [
+      "inspection-and-unsupervised/class-weights"
+    ],
+    "task": "Return a fitted `LogisticRegression` with `class_weight=\"balanced\"`, `max_iter=300`, and `n_jobs=1` from `fit_weighted(X, y)`.",
+    "files": [
+      "main.py",
+      "checkout-measurements.csv"
+    ],
+    "lesson_sha256": "2f2b2a69924d42b68b8c1779c229352f1da38c0e325a4a1b632b89e9dab0d51e",
+    "test_sha256": "58c2916718356a9cbd16dc4b9a76c8c18c0564a0c46071d8fa55a6b0e01a63fb",
+    "body_words": 474
+  },
+  {
+    "id": "inspection-and-unsupervised/calibration",
+    "global_order": 135,
+    "module": "inspection-and-unsupervised",
+    "directory": "14-inspection-and-unsupervised/03-calibration",
+    "role": "demo",
+    "title": "Calibrate predicted probabilities",
+    "prerequisites": [
+      "classification-metrics/exercise-average-precision",
+      "cross-validation-and-selection/exercise-stratified-cv",
+      "inspection-and-unsupervised/exercise-class-weights"
+    ],
+    "task": "Fit and return `CalibratedClassifierCV` using sigmoid calibration, the supplied three-fold splitter, `ensemble=True`, and `n_jobs=1` in `fit_calibrated(X, y)`.",
+    "files": [
+      "main.py",
+      "checkout-measurements.csv"
+    ],
+    "lesson_sha256": "e17493db0e8ba0b24623e1d21125193bf2bc4208caedf2ed279e8be1db6f8d94",
+    "test_sha256": "f45b7427c7e6ce0f569f9719f68e6e30fe42ef9ddb3d9e26c5257a24f709aaea",
+    "body_words": 499
+  },
+  {
+    "id": "inspection-and-unsupervised/exercise-calibration",
+    "global_order": 136,
+    "module": "inspection-and-unsupervised",
+    "directory": "14-inspection-and-unsupervised/04-exercise-calibration",
+    "role": "exercise",
+    "title": "Exercise: calibrate predicted probabilities",
+    "prerequisites": [
+      "inspection-and-unsupervised/calibration"
+    ],
+    "task": "Fit and return `CalibratedClassifierCV` using sigmoid calibration, a `StratifiedKFold(n_splits=3, shuffle=True, random_state=17)` splitter created inside the helper, `ensemble=True`, and `n_jobs=1` in `fit_calibrated(X, y)`.",
+    "files": [
+      "main.py",
+      "checkout-measurements.csv"
+    ],
+    "lesson_sha256": "6effcf5f54324a5b095abb78234c7b1ae57b7e7e95ced6f1c86d5719bf4c7f9e",
+    "test_sha256": "f45b7427c7e6ce0f569f9719f68e6e30fe42ef9ddb3d9e26c5257a24f709aaea",
+    "body_words": 502
+  },
+  {
+    "id": "inspection-and-unsupervised/feature-selection",
+    "global_order": 137,
+    "module": "inspection-and-unsupervised",
+    "directory": "14-inspection-and-unsupervised/05-feature-selection",
+    "role": "demo",
+    "title": "Select features inside validation",
+    "prerequisites": [
+      "cross-validation-and-selection/exercise-search-cv",
+      "regularized-regression/exercise-polynomial-features"
+    ],
+    "task": "Implement `fit_selected(X, y)` as a fitted pipeline named `select` then `model`, with `SelectKBest(f_classif, k=2)` and `LogisticRegression(max_iter=300, n_jobs=1)`.",
+    "files": [
+      "main.py",
+      "checkout-measurements.csv"
+    ],
+    "lesson_sha256": "869bfdfc1c23bd9589a05f8ff97d938222ecc7bb1d29e708eba6939fb13b2b70",
+    "test_sha256": "a572ad196ca08d87ef156da8aee3ae27ced97976c0723bde4992cfdf7d7ef579",
+    "body_words": 446
+  },
+  {
+    "id": "inspection-and-unsupervised/exercise-feature-selection",
+    "global_order": 138,
+    "module": "inspection-and-unsupervised",
+    "directory": "14-inspection-and-unsupervised/06-exercise-feature-selection",
+    "role": "exercise",
+    "title": "Exercise: select features inside validation",
+    "prerequisites": [
+      "inspection-and-unsupervised/feature-selection"
+    ],
+    "task": "Implement `fit_selected(X, y)` as a fitted pipeline named `select` then `model`, with `SelectKBest(f_classif, k=2)` and `LogisticRegression(max_iter=300, n_jobs=1)`.",
+    "files": [
+      "main.py",
+      "checkout-measurements.csv"
+    ],
+    "lesson_sha256": "c497165b517ed656a1d6bf2e9724e61732ac8570d00cb10f83866c963c0a77c2",
+    "test_sha256": "a572ad196ca08d87ef156da8aee3ae27ced97976c0723bde4992cfdf7d7ef579",
+    "body_words": 445
+  },
+  {
+    "id": "inspection-and-unsupervised/permutation-importance",
+    "global_order": 139,
+    "module": "inspection-and-unsupervised",
+    "directory": "14-inspection-and-unsupervised/07-permutation-importance",
+    "role": "demo",
+    "title": "Measure held-out feature dependence",
+    "prerequisites": [
+      "inspection-and-unsupervised/exercise-feature-selection",
+      "trees-and-ensembles/exercise-random-forests"
+    ],
+    "task": "Return `permutation_importance` for the supplied fitted model and validation arrays from `inspect_features`, using accuracy, three repeats, seed 17, and `n_jobs=1`.",
+    "files": [
+      "main.py",
+      "checkout-measurements.csv"
+    ],
+    "lesson_sha256": "afba61c37cea01b9cb66f608eec7ed1df64defc938b918a28d9c05ea01ade6ae",
+    "test_sha256": "8fc35102faaceb5f142b3375a55ae884a2f2f1ec04c6c09d527c5fdb203ff2f1",
+    "body_words": 489
+  },
+  {
+    "id": "inspection-and-unsupervised/exercise-permutation-importance",
+    "global_order": 140,
+    "module": "inspection-and-unsupervised",
+    "directory": "14-inspection-and-unsupervised/08-exercise-permutation-importance",
+    "role": "exercise",
+    "title": "Exercise: measure held-out feature dependence",
+    "prerequisites": [
+      "inspection-and-unsupervised/permutation-importance"
+    ],
+    "task": "Return `permutation_importance` for the supplied fitted model and validation arrays from `inspect_features`, using accuracy, three repeats, seed 17, and `n_jobs=1`.",
+    "files": [
+      "main.py",
+      "checkout-measurements.csv"
+    ],
+    "lesson_sha256": "deec81fd71b1809b7a40173c04561d53342fb4019600c9e1c62625e7f3a3ad68",
+    "test_sha256": "8fc35102faaceb5f142b3375a55ae884a2f2f1ec04c6c09d527c5fdb203ff2f1",
+    "body_words": 477
+  },
+  {
+    "id": "inspection-and-unsupervised/pca",
+    "global_order": 141,
+    "module": "inspection-and-unsupervised",
+    "directory": "14-inspection-and-unsupervised/09-pca",
+    "role": "demo",
+    "title": "Project standardized features",
+    "prerequisites": [
+      "numeric-preprocessing/exercise-standard-scaling",
+      "cross-validation-and-selection/exercise-kfold"
+    ],
+    "task": "Fit and return a two-component `PCA` with `svd_solver=\"full\"` from `fit_projection(X)`; do not fit on the validation array.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "b8ea56d43ce47bb067f3f0870400ca21a57dd1ba554fc754e400cbc1718e87c5",
+    "test_sha256": "5b91880303d8d91c887faa24b81fbf9a0c31e888e8f3b8f01c68ef5e99f2efe8",
+    "body_words": 523
+  },
+  {
+    "id": "inspection-and-unsupervised/exercise-pca",
+    "global_order": 142,
+    "module": "inspection-and-unsupervised",
+    "directory": "14-inspection-and-unsupervised/10-exercise-pca",
+    "role": "exercise",
+    "title": "Exercise: project standardized features",
+    "prerequisites": [
+      "inspection-and-unsupervised/pca"
+    ],
+    "task": "Fit and return a two-component `PCA` with `svd_solver=\"full\"` from `fit_projection(X)`; do not fit on the validation array.",
+    "files": [
+      "main.py",
+      "product-measurements.csv"
+    ],
+    "lesson_sha256": "19e40b3570b5604614b50ed9679924cd67282f00011be537714a6c16b046dd33",
+    "test_sha256": "5b91880303d8d91c887faa24b81fbf9a0c31e888e8f3b8f01c68ef5e99f2efe8",
+    "body_words": 464
+  },
+  {
+    "id": "clustering-and-text/kmeans",
+    "global_order": 143,
+    "module": "clustering-and-text",
+    "directory": "15-clustering-and-text/01-kmeans",
+    "role": "demo",
+    "title": "Assign rows to clusters",
+    "prerequisites": [
+      "inspection-and-unsupervised/exercise-pca",
+      "numeric-preprocessing/exercise-standard-scaling"
+    ],
+    "task": "Fit and return `KMeans` with three clusters, `n_init=10`, and `random_state=17` from `fit_clusters(X)`.",
+    "files": [
+      "main.py",
+      "product-measurements.csv"
+    ],
+    "lesson_sha256": "d4dfba2de36a488dd13ae289e76e65f17ed65331f444bdc59393bc47a9bf09a8",
+    "test_sha256": "4c32d2247241e867af2b327ccb0dc6a1752d880c611b2ed56f55ba9d07a9e969",
+    "body_words": 435
+  },
+  {
+    "id": "clustering-and-text/exercise-kmeans",
+    "global_order": 144,
+    "module": "clustering-and-text",
+    "directory": "15-clustering-and-text/02-exercise-kmeans",
+    "role": "exercise",
+    "title": "Exercise: assign rows to clusters",
+    "prerequisites": [
+      "clustering-and-text/kmeans"
+    ],
+    "task": "Fit and return `KMeans` with three clusters, `n_init=10`, and `random_state=17` from `fit_clusters(X)`.",
+    "files": [
+      "main.py",
+      "product-measurements.csv"
+    ],
+    "lesson_sha256": "2a466f1541d139febcfea866f7f4454d8248ad906fd34b6e36e14f7d82fe0a45",
+    "test_sha256": "4c32d2247241e867af2b327ccb0dc6a1752d880c611b2ed56f55ba9d07a9e969",
+    "body_words": 420
+  },
+  {
+    "id": "clustering-and-text/cluster-validation",
+    "global_order": 145,
+    "module": "clustering-and-text",
+    "directory": "15-clustering-and-text/03-cluster-validation",
+    "role": "demo",
+    "title": "Measure cluster separation",
+    "prerequisites": [
+      "clustering-and-text/exercise-kmeans"
+    ],
+    "task": "Implement `safe_silhouette(X, labels)` to return `None` unless the number of unique labels is between 2 and `len(X)-1`; otherwise return `silhouette_score(X, labels)`.",
+    "files": [
+      "main.py",
+      "product-measurements.csv"
+    ],
+    "lesson_sha256": "03a3728cf8db05f0f57908c57fde657fd7268adb9132cc08d93c45eb9df05c0f",
+    "test_sha256": "28ac11166ed52115476a4d60a7cba27d0ad1ccf608bd7c7da101156a3e1672e9",
+    "body_words": 479
+  },
+  {
+    "id": "clustering-and-text/exercise-cluster-validation",
+    "global_order": 146,
+    "module": "clustering-and-text",
+    "directory": "15-clustering-and-text/04-exercise-cluster-validation",
+    "role": "exercise",
+    "title": "Exercise: measure cluster separation",
+    "prerequisites": [
+      "clustering-and-text/cluster-validation"
+    ],
+    "task": "Implement `safe_silhouette(X, labels)` to return `None` unless the number of unique labels is between 2 and `len(X)-1`; otherwise return `silhouette_score(X, labels)`.",
+    "files": [
+      "main.py",
+      "product-measurements.csv"
+    ],
+    "lesson_sha256": "ada69c3a1ea9fbdd7acff66e14be55cfcbb03607aa089257e7bedec2aa3429b8",
+    "test_sha256": "28ac11166ed52115476a4d60a7cba27d0ad1ccf608bd7c7da101156a3e1672e9",
+    "body_words": 471
+  },
+  {
+    "id": "clustering-and-text/dbscan",
+    "global_order": 147,
+    "module": "clustering-and-text",
+    "directory": "15-clustering-and-text/05-dbscan",
+    "role": "demo",
+    "title": "Find dense regions and noise",
+    "prerequisites": [
+      "clustering-and-text/exercise-cluster-validation"
+    ],
+    "task": "Return labels from `DBSCAN(eps=0.35, min_samples=3, n_jobs=1).fit_predict(X)` in `density_labels(X)`.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "3e0b45782001156f50c4efdee4c02a93059f8c9168364e59a47d9122fb8cfa01",
+    "test_sha256": "fc95e336e747015179380ffa85de86fbbb7a24404ecda5f76911f4bc6b4d6a02",
+    "body_words": 345
+  },
+  {
+    "id": "clustering-and-text/exercise-dbscan",
+    "global_order": 148,
+    "module": "clustering-and-text",
+    "directory": "15-clustering-and-text/06-exercise-dbscan",
+    "role": "exercise",
+    "title": "Exercise: find dense regions and noise",
+    "prerequisites": [
+      "clustering-and-text/dbscan"
+    ],
+    "task": "Return labels from `DBSCAN(eps=0.35, min_samples=3, n_jobs=1).fit_predict(X)` in `density_labels(X)`.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "5a05230cb2b205990a8feb36764dbe96f1c6d46307e2ca32808117faee69ba77",
+    "test_sha256": "fc95e336e747015179380ffa85de86fbbb7a24404ecda5f76911f4bc6b4d6a02",
+    "body_words": 342
+  },
+  {
+    "id": "clustering-and-text/count-vectors",
+    "global_order": 149,
+    "module": "clustering-and-text",
+    "directory": "15-clustering-and-text/07-count-vectors",
+    "role": "demo",
+    "title": "Represent text as sparse counts",
+    "prerequisites": [
+      "estimator-basics/exercise-xy-shapes",
+      "pipelines-and-regression/exercise-pipeline"
+    ],
+    "task": "Fit `CountVectorizer(max_features=100)` on `training` only, and return `(vectorizer, vectorizer.transform(queries))` from `encode_counts(training, queries)`.",
+    "files": [
+      "main.py",
+      "reviews.json"
+    ],
+    "lesson_sha256": "6d2e8b5754a3e35c747e3fe625a930a25e994127f8bab46594de26361413328c",
+    "test_sha256": "27ff2e08aa9f5d0141cea0ecec105e788ede950d60e0f207d8ce186dab903fd9",
+    "body_words": 463
+  },
+  {
+    "id": "clustering-and-text/exercise-count-vectors",
+    "global_order": 150,
+    "module": "clustering-and-text",
+    "directory": "15-clustering-and-text/08-exercise-count-vectors",
+    "role": "exercise",
+    "title": "Exercise: represent text as sparse counts",
+    "prerequisites": [
+      "clustering-and-text/count-vectors"
+    ],
+    "task": "Fit `CountVectorizer(max_features=100)` on `training` only, and return `(vectorizer, vectorizer.transform(queries))` from `encode_counts(training, queries)`.",
+    "files": [
+      "main.py",
+      "reviews.json"
+    ],
+    "lesson_sha256": "b0fbccefcf4ce4c10406cdac5b65bd0cdc97b4a600381fd03c03eb487ed1e4c0",
+    "test_sha256": "27ff2e08aa9f5d0141cea0ecec105e788ede950d60e0f207d8ce186dab903fd9",
+    "body_words": 444
+  },
+  {
+    "id": "clustering-and-text/tfidf",
+    "global_order": 151,
+    "module": "clustering-and-text",
+    "directory": "15-clustering-and-text/09-tfidf",
+    "role": "demo",
+    "title": "Weight text with TF-IDF",
+    "prerequisites": [
+      "clustering-and-text/exercise-count-vectors"
+    ],
+    "task": "Fit `TfidfVectorizer(max_features=100, smooth_idf=True, norm=\"l2\")` on training text only and return its vectorizer and transformed query matrix from `encode_tfidf`.",
+    "files": [
+      "main.py",
+      "reviews.json"
+    ],
+    "lesson_sha256": "e346090608c56b89da2989944f7fb8ee872bd858b499f2d069525ec4bb26db1f",
+    "test_sha256": "ec0cabc550c871b26071e1211b180b104513f264a48cb72c2d5d151c837702db",
+    "body_words": 484
+  },
+  {
+    "id": "clustering-and-text/exercise-tfidf",
+    "global_order": 152,
+    "module": "clustering-and-text",
+    "directory": "15-clustering-and-text/10-exercise-tfidf",
+    "role": "exercise",
+    "title": "Exercise: weight text with TF-IDF",
+    "prerequisites": [
+      "clustering-and-text/tfidf"
+    ],
+    "task": "Fit `TfidfVectorizer(max_features=100, smooth_idf=True, norm=\"l2\")` on training text only and return its vectorizer and transformed query matrix from `encode_tfidf`.",
+    "files": [
+      "main.py",
+      "reviews.json"
+    ],
+    "lesson_sha256": "2a1ff94e7dad6d87c4953d4b350376665c2d89a27d46249ae19bc52c5f1518f4",
+    "test_sha256": "ec0cabc550c871b26071e1211b180b104513f264a48cb72c2d5d151c837702db",
+    "body_words": 476
+  },
+  {
+    "id": "text-and-content-recommendations/text-classifier",
+    "global_order": 153,
+    "module": "text-and-content-recommendations",
+    "directory": "16-text-and-content-recommendations/01-text-classifier",
+    "role": "demo",
+    "title": "Classify sparse text",
+    "prerequisites": [
+      "clustering-and-text/exercise-tfidf",
+      "classifiers/exercise-naive-bayes",
+      "cross-validation-and-selection/exercise-stratified-cv"
+    ],
+    "task": "Implement `fit_text_model(training, labels)` as a fitted pipeline with `text` set to `TfidfVectorizer(max_features=100)` and `model` set to `MultinomialNB(alpha=1.0)`.",
+    "files": [
+      "main.py",
+      "reviews.json"
+    ],
+    "lesson_sha256": "76bc48141f2d6a90ced7914449a1157e81db98d4a026307d3874f90c92d1f6f1",
+    "test_sha256": "9352ad5be98717b845fda1fc5a10781640421cb15dd582555b94c129921d256a",
+    "body_words": 444
+  },
+  {
+    "id": "text-and-content-recommendations/exercise-text-classifier",
+    "global_order": 154,
+    "module": "text-and-content-recommendations",
+    "directory": "16-text-and-content-recommendations/02-exercise-text-classifier",
+    "role": "exercise",
+    "title": "Exercise: classify sparse text",
+    "prerequisites": [
+      "text-and-content-recommendations/text-classifier"
+    ],
+    "task": "Implement `fit_text_model(training, labels)` as a fitted pipeline with `text` set to `TfidfVectorizer(max_features=100)` and `model` set to `MultinomialNB(alpha=1.0)`.",
+    "files": [
+      "main.py",
+      "reviews.json"
+    ],
+    "lesson_sha256": "246988dcdd5b1b00eaa2b06eee390cdfeb0fbe55c1667ffafb4366786a435136",
+    "test_sha256": "9352ad5be98717b845fda1fc5a10781640421cb15dd582555b94c129921d256a",
+    "body_words": 436
+  },
+  {
+    "id": "text-and-content-recommendations/item-profiles",
+    "global_order": 155,
+    "module": "text-and-content-recommendations",
+    "directory": "16-text-and-content-recommendations/03-item-profiles",
+    "role": "demo",
+    "title": "Build item metadata profiles",
+    "prerequisites": [
+      "clustering-and-text/exercise-tfidf"
+    ],
+    "task": "Implement `item_profiles(records)` to sort by `item_id`, join only category/title/description row values, and return aligned `(ids, fitted_vectorizer, sparse_matrix)`.",
+    "files": [
+      "main.py",
+      "catalog.json"
+    ],
+    "lesson_sha256": "5b40a2d9ae6c93d10ab69279813258ceebd4d6ecaa2c53cbd54b845d7c6efe4b",
+    "test_sha256": "2634a2e94c828902ff99ed00fdb9df640627cbc20d4e6e65f001cf2eef3b33d2",
+    "body_words": 454
+  },
+  {
+    "id": "text-and-content-recommendations/exercise-item-profiles",
+    "global_order": 156,
+    "module": "text-and-content-recommendations",
+    "directory": "16-text-and-content-recommendations/04-exercise-item-profiles",
+    "role": "exercise",
+    "title": "Exercise: build item metadata profiles",
+    "prerequisites": [
+      "text-and-content-recommendations/item-profiles"
+    ],
+    "task": "Implement `item_profiles(records)` to sort by `item_id`, join only category/title/description row values, and return aligned `(ids, fitted_vectorizer, sparse_matrix)`.",
+    "files": [
+      "main.py",
+      "catalog.json"
+    ],
+    "lesson_sha256": "8063d0071fe4b8e41cb6faa45b6d6c90a19a91562f7a9ed7de1f3bf067f872ee",
+    "test_sha256": "2634a2e94c828902ff99ed00fdb9df640627cbc20d4e6e65f001cf2eef3b33d2",
+    "body_words": 451
+  },
+  {
+    "id": "text-and-content-recommendations/cosine-similarity",
+    "global_order": 157,
+    "module": "text-and-content-recommendations",
+    "directory": "16-text-and-content-recommendations/05-cosine-similarity",
+    "role": "demo",
+    "title": "Compare item vectors by cosine",
+    "prerequisites": [
+      "text-and-content-recommendations/exercise-item-profiles"
+    ],
+    "task": "Implement `compare_vectors(queries, items)` using `cosine_similarity` and preserve its query-by-item shape and zero-row behavior.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "8e5f09597ea6346b034e0c717545ee3d1019e878349ca4fdb9c6b5f3684fd9e7",
+    "test_sha256": "af31ff60e7dc6f649c6cbe9da33c80f385eeea46eb8e06628ecf269c4565c362",
+    "body_words": 329
+  },
+  {
+    "id": "text-and-content-recommendations/exercise-cosine-similarity",
+    "global_order": 158,
+    "module": "text-and-content-recommendations",
+    "directory": "16-text-and-content-recommendations/06-exercise-cosine-similarity",
+    "role": "exercise",
+    "title": "Exercise: compare item vectors by cosine",
+    "prerequisites": [
+      "text-and-content-recommendations/cosine-similarity"
+    ],
+    "task": "Implement `compare_vectors(queries, items)` using `cosine_similarity` and preserve its query-by-item shape and zero-row behavior.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "09d2648fb956230a02ca1d9055b235cb933e068e814a30cb82743be76bc517db",
+    "test_sha256": "af31ff60e7dc6f649c6cbe9da33c80f385eeea46eb8e06628ecf269c4565c362",
+    "body_words": 321
+  },
+  {
+    "id": "text-and-content-recommendations/rank-candidates",
+    "global_order": 159,
+    "module": "text-and-content-recommendations",
+    "directory": "16-text-and-content-recommendations/07-rank-candidates",
+    "role": "demo",
+    "title": "Rank eligible recommendations",
+    "prerequisites": [
+      "text-and-content-recommendations/exercise-cosine-similarity"
+    ],
+    "task": "Implement `rank_items(ids, scores, seen, query_id, k)` to exclude seen/self IDs, sort by descending score then ascending ID, and return at most `k` distinct IDs.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "127006778ec37ed8ac50050e56c2a57a5c6134ebf8efdd5c9504debf554462bc",
+    "test_sha256": "399e9a32f17027736d3dbbe4419d7173a833ab28592840991443992efce7163e",
+    "body_words": 311
+  },
+  {
+    "id": "text-and-content-recommendations/exercise-rank-candidates",
+    "global_order": 160,
+    "module": "text-and-content-recommendations",
+    "directory": "16-text-and-content-recommendations/08-exercise-rank-candidates",
+    "role": "exercise",
+    "title": "Exercise: rank eligible recommendations",
+    "prerequisites": [
+      "text-and-content-recommendations/rank-candidates"
+    ],
+    "task": "Implement `rank_items(ids, scores, seen, query_id, k)` to exclude seen/self IDs, sort by descending score then ascending ID, and return at most `k` distinct IDs.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "23e3d35c764a7e537c9d241b917711fb10377cb53b78db67aed45e7c059e5344",
+    "test_sha256": "399e9a32f17027736d3dbbe4419d7173a833ab28592840991443992efce7163e",
+    "body_words": 301
+  },
+  {
+    "id": "text-and-content-recommendations/user-profiles",
+    "global_order": 161,
+    "module": "text-and-content-recommendations",
+    "directory": "16-text-and-content-recommendations/09-user-profiles",
+    "role": "demo",
+    "title": "Average a user's observed item vectors",
+    "prerequisites": [
+      "text-and-content-recommendations/exercise-rank-candidates"
+    ],
+    "task": "Implement `mean_profile(ids, item_matrix, history)` as the mean of distinct history-item rows, with a `(1, n_features)` zero array for empty history. Ignore history IDs absent from the catalog.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "bd9bee8b8a719968e5621aef084d57270cf6341969c976f451baecbd013d9af6",
+    "test_sha256": "2a9821111c6f393e127a6ae2911811d55da712a24e5de608b4b8171e53130f6d",
+    "body_words": 382
+  },
+  {
+    "id": "text-and-content-recommendations/exercise-user-profiles",
+    "global_order": 162,
+    "module": "text-and-content-recommendations",
+    "directory": "16-text-and-content-recommendations/10-exercise-user-profiles",
+    "role": "exercise",
+    "title": "Exercise: average a user's observed item vectors",
+    "prerequisites": [
+      "text-and-content-recommendations/user-profiles"
+    ],
+    "task": "Implement `mean_profile(ids, item_matrix, history)` as the mean of distinct history-item rows, with a `(1, n_features)` zero array for empty history. Ignore history IDs absent from the catalog.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "badc4bc5f5d7ec0470d9985d0457c4c8dd28cbfa16eb97381a3f95474a9c369f",
+    "test_sha256": "2a9821111c6f393e127a6ae2911811d55da712a24e5de608b4b8171e53130f6d",
+    "body_words": 367
+  },
+  {
+    "id": "recommendation-evaluation/recommendation-holdout",
+    "global_order": 163,
+    "module": "recommendation-evaluation",
+    "directory": "17-recommendation-evaluation/01-recommendation-holdout",
+    "role": "demo",
+    "title": "Hold out later interactions",
+    "prerequisites": [
+      "text-and-content-recommendations/exercise-user-profiles",
+      "cross-validation-and-selection/exercise-time-cv"
+    ],
+    "task": "Implement `chronological_holdout(events, eligible_ids)` to filter eligible items, sort within users, omit users with fewer than four events, and return earlier history plus one validation and one test event per eligible user.",
+    "files": [
+      "main.py",
+      "catalog.json",
+      "interactions.csv"
+    ],
+    "lesson_sha256": "48f75bdc662489e4c03e5ab72a0df55dc39db63f9523fdfd716f1caeddb22499",
+    "test_sha256": "73c763af48e5363b220048a51959147a59f5d7007750afd72442686c6239dbe6",
+    "body_words": 532
+  },
+  {
+    "id": "recommendation-evaluation/exercise-recommendation-holdout",
+    "global_order": 164,
+    "module": "recommendation-evaluation",
+    "directory": "17-recommendation-evaluation/02-exercise-recommendation-holdout",
+    "role": "exercise",
+    "title": "Exercise: hold out later interactions",
+    "prerequisites": [
+      "recommendation-evaluation/recommendation-holdout"
+    ],
+    "task": "Implement `chronological_holdout(events, eligible_ids)` to filter eligible items, sort within users, omit users with fewer than four events, and return earlier history plus one validation and one test event per eligible user.",
+    "files": [
+      "main.py",
+      "catalog.json",
+      "interactions.csv"
+    ],
+    "lesson_sha256": "021e78bb058922c2d7b44370f2f86071a83f68cd8cab08a1395e9f54d8f28a11",
+    "test_sha256": "73c763af48e5363b220048a51959147a59f5d7007750afd72442686c6239dbe6",
+    "body_words": 519
+  },
+  {
+    "id": "recommendation-evaluation/precision-recall-at-k",
+    "global_order": 165,
+    "module": "recommendation-evaluation",
+    "directory": "17-recommendation-evaluation/03-precision-recall-at-k",
+    "role": "demo",
+    "title": "Measure recommendation relevance",
+    "prerequisites": [
+      "recommendation-evaluation/exercise-recommendation-holdout",
+      "classification-metrics/exercise-precision-recall"
+    ],
+    "task": "Implement `topk_metrics(ranked, relevant, k)` using unique IDs among the first k positions, fixed requested-k precision, relevant-set recall, and binary hit; return `None` for an empty relevance set.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "308aefab5bfa2d976db859511281be8445b6d55071986774c8264d7cbaa28cb1",
+    "test_sha256": "84c83cc412dfaab12323c460026359b8c21c20fb9a6b3576acf0399e60843d50",
+    "body_words": 392
+  },
+  {
+    "id": "recommendation-evaluation/exercise-precision-recall-at-k",
+    "global_order": 166,
+    "module": "recommendation-evaluation",
+    "directory": "17-recommendation-evaluation/04-exercise-precision-recall-at-k",
+    "role": "exercise",
+    "title": "Exercise: measure recommendation relevance",
+    "prerequisites": [
+      "recommendation-evaluation/precision-recall-at-k"
+    ],
+    "task": "Implement `topk_metrics(ranked, relevant, k)` using unique IDs among the first k positions, fixed requested-k precision, relevant-set recall, and binary hit; return `None` for an empty relevance set.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "aacb1cdbe8eff875dcbc6125e424cdd438c2983855a08fd3bed053370cb18576",
+    "test_sha256": "84c83cc412dfaab12323c460026359b8c21c20fb9a6b3576acf0399e60843d50",
+    "body_words": 386
+  },
+  {
+    "id": "recommendation-evaluation/ndcg",
+    "global_order": 167,
+    "module": "recommendation-evaluation",
+    "directory": "17-recommendation-evaluation/05-ndcg",
+    "role": "demo",
+    "title": "Reward relevant items near the top",
+    "prerequisites": [
+      "recommendation-evaluation/exercise-precision-recall-at-k"
+    ],
+    "task": "Implement `binary_ndcg(ranked, relevant, k)` with first-occurrence binary gains, logarithmic rank discounts, ideal normalization, and zero for empty relevance.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "a5ade5b9811461082994865e123b6aab192594465a9fd4ef2debfe8cbfdadccb",
+    "test_sha256": "8ff6e3279b774fd6cb86926c05424744319cc304ed3b6cae31ff71a1e89968fc",
+    "body_words": 374
+  },
+  {
+    "id": "recommendation-evaluation/exercise-ndcg",
+    "global_order": 168,
+    "module": "recommendation-evaluation",
+    "directory": "17-recommendation-evaluation/06-exercise-ndcg",
+    "role": "exercise",
+    "title": "Exercise: reward relevant items near the top",
+    "prerequisites": [
+      "recommendation-evaluation/ndcg"
+    ],
+    "task": "Implement `binary_ndcg(ranked, relevant, k)` with first-occurrence binary gains, logarithmic rank discounts, ideal normalization, and zero for empty relevance.",
+    "files": [
+      "main.py"
+    ],
+    "lesson_sha256": "c2828b3b0641ab451235012b19165503ea32f3e817c8ae04fd4449b09076537e",
+    "test_sha256": "8ff6e3279b774fd6cb86926c05424744319cc304ed3b6cae31ff71a1e89968fc",
+    "body_words": 367
+  },
+  {
+    "id": "recommendation-evaluation/cold-start",
+    "global_order": 169,
+    "module": "recommendation-evaluation",
+    "directory": "17-recommendation-evaluation/07-cold-start",
+    "role": "demo",
+    "title": "Provide a documented fallback",
+    "prerequisites": [
+      "recommendation-evaluation/exercise-ndcg",
+      "text-and-content-recommendations/exercise-user-profiles"
+    ],
+    "task": "Implement `popular_items(ids, training_events, seen, k)` using training-only item counts, seen filtering, and ascending ID ties, including eligible zero-count items.",
+    "files": [
+      "main.py",
+      "catalog.json",
+      "training-views.csv"
+    ],
+    "lesson_sha256": "960c4799025c8f71028c2c28736d40e635f057711b0ea749e2d23f3aebf0563f",
+    "test_sha256": "d3ff104ba9c4402dbca4d0e661cd995e0070ea9519d953b0d6e9bc9c4f1a9f87",
+    "body_words": 544
+  },
+  {
+    "id": "recommendation-evaluation/exercise-cold-start",
+    "global_order": 170,
+    "module": "recommendation-evaluation",
+    "directory": "17-recommendation-evaluation/08-exercise-cold-start",
+    "role": "exercise",
+    "title": "Exercise: provide a documented fallback",
+    "prerequisites": [
+      "recommendation-evaluation/cold-start"
+    ],
+    "task": "Implement `popular_items(ids, training_events, seen, k)` using training-only item counts, seen filtering, and ascending ID ties, including eligible zero-count items.",
+    "files": [
+      "main.py",
+      "catalog.json",
+      "training-views.csv"
+    ],
+    "lesson_sha256": "81963bbd8f51616a9ca7aad2b8c638607ed5ca1b5e4f8417737b9c3eac06b8a5",
+    "test_sha256": "d3ff104ba9c4402dbca4d0e661cd995e0070ea9519d953b0d6e9bc9c4f1a9f87",
+    "body_words": 521
+  },
+  {
+    "id": "recommendation-project/recommendation-project-catalog",
+    "global_order": 171,
+    "module": "recommendation-project",
+    "directory": "18-recommendation-project/01-recommendation-project-catalog",
+    "role": "demo",
+    "title": "Freeze catalog and interaction splits",
+    "prerequisites": [
+      "recommendation-evaluation/exercise-cold-start",
+      "text-and-content-recommendations/exercise-item-profiles",
+      "recommendation-evaluation/exercise-recommendation-holdout"
+    ],
+    "task": "Implement `split_interactions(catalog, events)` under the exact five-date contract, returning three training events plus one validation and one test event per eligible user, with invalid users listed in `omitted`.",
+    "files": [
+      "main.py",
+      "catalog.json",
+      "users.csv",
+      "interactions.csv"
+    ],
+    "lesson_sha256": "3531b78769a3ab67e232fc2c626f41e2e63d4d638b68fe8a4e965d9c09a30c69",
+    "test_sha256": "41dc738fa02d9d94eb8ea3781682b25e3bb0155dc714a1c80e49820aebd7ed22",
+    "body_words": 624
+  },
+  {
+    "id": "recommendation-project/exercise-recommendation-project-catalog",
+    "global_order": 172,
+    "module": "recommendation-project",
+    "directory": "18-recommendation-project/02-exercise-recommendation-project-catalog",
+    "role": "exercise",
+    "title": "Exercise: freeze catalog and interaction splits",
+    "prerequisites": [
+      "recommendation-project/recommendation-project-catalog"
+    ],
+    "task": "Implement `split_interactions(catalog, events)` under the exact five-date contract, returning three training events plus one validation and one test event per eligible user, with invalid users listed in `omitted`.",
+    "files": [
+      "main.py",
+      "catalog.json",
+      "users.csv",
+      "interactions.csv"
+    ],
+    "lesson_sha256": "f15a81fd0fcc1e8008b2159b00b4ceb682c43d0cfb222e3d8c83cb49c66972d8",
+    "test_sha256": "41dc738fa02d9d94eb8ea3781682b25e3bb0155dc714a1c80e49820aebd7ed22",
+    "body_words": 578
+  },
+  {
+    "id": "recommendation-project/recommendation-project-ranker",
+    "global_order": 173,
+    "module": "recommendation-project",
+    "directory": "18-recommendation-project/03-recommendation-project-ranker",
+    "role": "demo",
+    "title": "Build the recommendation function",
+    "prerequisites": [
+      "recommendation-project/exercise-recommendation-project-catalog",
+      "text-and-content-recommendations/exercise-user-profiles",
+      "text-and-content-recommendations/exercise-rank-candidates"
+    ],
+    "task": "Implement `recommend(ids, matrix, training, user, k=3)` as the training-history mean-profile cosine ranker, filtering seen IDs and resolving ties by ascending ID; return `[]` for absent or zero profiles.",
+    "files": [
+      "main.py",
+      "catalog.json",
+      "users.csv",
+      "interactions.csv"
+    ],
+    "lesson_sha256": "5254a25ded3648f65737ef517dd109736ec8612c244c4816ed2b61378e61a533",
+    "test_sha256": "98f41167ec63a3160a71a59c653a8f9a3ad2766425bd28b1f5648aed1030813a",
+    "body_words": 543
+  },
+  {
+    "id": "recommendation-project/exercise-recommendation-project-ranker",
+    "global_order": 174,
+    "module": "recommendation-project",
+    "directory": "18-recommendation-project/04-exercise-recommendation-project-ranker",
+    "role": "exercise",
+    "title": "Exercise: build the recommendation function",
+    "prerequisites": [
+      "recommendation-project/recommendation-project-ranker",
+      "recommendation-project/exercise-recommendation-project-catalog"
+    ],
+    "task": "Implement `recommend(ids, matrix, training, user, k=3)` as the training-history mean-profile cosine ranker, filtering seen IDs and resolving ties by ascending ID; return `[]` for absent or zero profiles.",
+    "files": [
+      "main.py",
+      "catalog.json",
+      "users.csv",
+      "interactions.csv"
+    ],
+    "lesson_sha256": "1603541b6f404b1e56d584d5451b369e12c1c3e5ae5ee0cdf6bde2a096df6570",
+    "test_sha256": "98f41167ec63a3160a71a59c653a8f9a3ad2766425bd28b1f5648aed1030813a",
+    "body_words": 523
+  },
+  {
+    "id": "recommendation-project/recommendation-project-fallback",
+    "global_order": 175,
+    "module": "recommendation-project",
+    "directory": "18-recommendation-project/05-recommendation-project-fallback",
+    "role": "demo",
+    "title": "Add the cold-start branch",
+    "prerequisites": [
+      "recommendation-project/exercise-recommendation-project-ranker",
+      "recommendation-evaluation/exercise-cold-start"
+    ],
+    "task": "Implement `recommend_with_fallback(ids, matrix, training, user, k=3)` to preserve warm rankings and use training-only popularity for absent or zero profiles, with the same seen filtering and ID tie policy.",
+    "files": [
+      "main.py",
+      "catalog.json",
+      "users.csv",
+      "interactions.csv"
+    ],
+    "lesson_sha256": "5b0c5ad82045d0efcdd737f56c807958430ec55720661794ba1b481b510e9814",
+    "test_sha256": "f74a558328d81615bebf458072c255ce7e12675ba192e01029aedb89901a249b",
+    "body_words": 496
+  },
+  {
+    "id": "recommendation-project/exercise-recommendation-project-fallback",
+    "global_order": 176,
+    "module": "recommendation-project",
+    "directory": "18-recommendation-project/06-exercise-recommendation-project-fallback",
+    "role": "exercise",
+    "title": "Exercise: add the cold-start branch",
+    "prerequisites": [
+      "recommendation-project/recommendation-project-fallback",
+      "recommendation-project/exercise-recommendation-project-ranker"
+    ],
+    "task": "Implement `recommend_with_fallback(ids, matrix, training, user, k=3)` to preserve warm rankings and use training-only popularity for absent or zero profiles, with the same seen filtering and ID tie policy.",
+    "files": [
+      "main.py",
+      "catalog.json",
+      "users.csv",
+      "interactions.csv"
+    ],
+    "lesson_sha256": "e7585e50fa04f0b67003221b6e64fa23290d28af553ea9dfa853c1e2a7b3cf64",
+    "test_sha256": "f74a558328d81615bebf458072c255ce7e12675ba192e01029aedb89901a249b",
+    "body_words": 498
+  },
+  {
+    "id": "recommendation-project/recommendation-project-report",
+    "global_order": 177,
+    "module": "recommendation-project",
+    "directory": "18-recommendation-project/07-recommendation-project-report",
+    "role": "demo",
+    "title": "Evaluate and document the recommender",
+    "prerequisites": [
+      "recommendation-project/exercise-recommendation-project-fallback",
+      "recommendation-evaluation/exercise-precision-recall-at-k",
+      "recommendation-evaluation/exercise-ndcg"
+    ],
+    "task": "Implement `evaluate(ids, matrix, training, heldout, k=3)` to return the declared macro metric report for content and popularity with identical exclusions, explicit eligible-user counts, and frozen training state.",
+    "files": [
+      "main.py",
+      "catalog.json",
+      "users.csv",
+      "interactions.csv"
+    ],
+    "lesson_sha256": "23872a95cae2e3afe4fff1dfbf2b11f9e6e452ec507d0080c6ebf7f55efe98c0",
+    "test_sha256": "8c0f1777c1c7c5289a5256461cec5f833dfd3ac3d01c467e3aca0b2d6e65a6cb",
+    "body_words": 638
+  },
+  {
+    "id": "recommendation-project/exercise-recommendation-project-report",
+    "global_order": 178,
+    "module": "recommendation-project",
+    "directory": "18-recommendation-project/08-exercise-recommendation-project-report",
+    "role": "exercise",
+    "title": "Exercise: evaluate and document the recommender",
+    "prerequisites": [
+      "recommendation-project/recommendation-project-report",
+      "recommendation-project/exercise-recommendation-project-fallback"
+    ],
+    "task": "Implement `evaluate(ids, matrix, training, heldout, k=3)` to return the declared macro metric report for content and popularity with identical exclusions, explicit eligible-user counts, and frozen training state.",
+    "files": [
+      "main.py",
+      "catalog.json",
+      "users.csv",
+      "interactions.csv"
+    ],
+    "lesson_sha256": "e56c00f3fc559eac03a5f80431f590fa543930e521be81a5df5efd8555d7806e",
+    "test_sha256": "8c0f1777c1c7c5289a5256461cec5f833dfd3ac3d01c467e3aca0b2d6e65a6cb",
+    "body_words": 608
+  }
+]

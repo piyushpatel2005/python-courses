@@ -1,0 +1,44 @@
+[
+  {
+    "item_id": "A01",
+    "category": "decor",
+    "title": "Linen shade",
+    "description": "fabric light soft",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "A02",
+    "category": "decor",
+    "title": "Cotton shade",
+    "description": "fabric light round",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "A03",
+    "category": "decor",
+    "title": "Steel lamp",
+    "description": "metal light narrow",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "A04",
+    "category": "decor",
+    "title": "Glass lantern",
+    "description": "glass light clear",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "A05",
+    "category": "decor",
+    "title": "Oak frame",
+    "description": "wood surface square",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "A06",
+    "category": "decor",
+    "title": "Pine frame",
+    "description": "wood surface narrow",
+    "available_since": "2025-01-01"
+  }
+]

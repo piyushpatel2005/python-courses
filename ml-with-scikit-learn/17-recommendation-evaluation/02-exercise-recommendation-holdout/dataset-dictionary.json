@@ -1,0 +1,34 @@
+[
+  {
+    "field": "user_id",
+    "dtype": "string",
+    "unit": "none",
+    "missing": "forbidden",
+    "available": "event timestamp",
+    "role": "group/alignment ID"
+  },
+  {
+    "field": "item_id",
+    "dtype": "string",
+    "unit": "none",
+    "missing": "forbidden",
+    "available": "event timestamp",
+    "role": "group/alignment ID"
+  },
+  {
+    "field": "event_at",
+    "dtype": "ISO date string",
+    "unit": "calendar date",
+    "missing": "forbidden",
+    "available": "event timestamp",
+    "role": "chronology"
+  },
+  {
+    "field": "available_since",
+    "dtype": "ISO date string",
+    "unit": "calendar date",
+    "missing": "forbidden",
+    "available": "2025-01-01",
+    "role": "eligibility"
+  }
+]

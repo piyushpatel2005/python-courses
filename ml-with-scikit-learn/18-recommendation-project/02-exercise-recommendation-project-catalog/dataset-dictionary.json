@@ -1,0 +1,66 @@
+[
+  {
+    "field": "item_id",
+    "dtype": "string",
+    "unit": "none",
+    "missing": "forbidden",
+    "available": "2025-01-01",
+    "role": "ID"
+  },
+  {
+    "field": "category",
+    "dtype": "string",
+    "unit": "none",
+    "missing": "forbidden",
+    "available": "2025-01-01",
+    "role": "text feature"
+  },
+  {
+    "field": "title",
+    "dtype": "string",
+    "unit": "none",
+    "missing": "forbidden",
+    "available": "2025-01-01",
+    "role": "text feature"
+  },
+  {
+    "field": "description",
+    "dtype": "string",
+    "unit": "none",
+    "missing": "forbidden",
+    "available": "2025-01-01",
+    "role": "text feature"
+  },
+  {
+    "field": "available_since",
+    "dtype": "string",
+    "unit": "calendar date",
+    "missing": "forbidden",
+    "available": "2025-01-01",
+    "role": "availability"
+  },
+  {
+    "field": "user_id",
+    "dtype": "string",
+    "unit": "none",
+    "missing": "forbidden",
+    "available": "event timestamp",
+    "role": "ID"
+  },
+  {
+    "field": "event_at",
+    "dtype": "string",
+    "unit": "calendar date",
+    "missing": "forbidden",
+    "available": "event timestamp",
+    "role": "availability"
+  },
+  {
+    "field": "event_type",
+    "dtype": "string",
+    "unit": "none",
+    "missing": "forbidden",
+    "available": "event timestamp",
+    "role": "implicit signal"
+  }
+]

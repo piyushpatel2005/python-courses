@@ -1,0 +1,3 @@
+# Metric-practice observations
+
+Original synthetic table, fixed 2025-01-15 snapshot. `observation_id`: unique string audit ID, excluded from inputs. `measurement_a`, `measurement_b`, `measurement_c`: float arbitrary signed simulation units, available before the synthetic label; complete. `truth`: observed integer 0/1 outcome label. `predicted`: fabricated integer 0/1 decision. `score`: fabricated float in [0,1], larger favors 1. Prediction/score columns deliberately contain label-derived noise for metric arithmetic; they are not independent fitted-model evaluation. All columns are complete. The three measurements are not used to calculate the reported metrics.

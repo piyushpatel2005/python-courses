@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="390" viewBox="0 0 520 390" role="img" aria-labelledby="title desc">
+<title id="title">Read linear regression coefficients</title><desc id="desc">Feature columns align with coefficients and summed contributions</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#334155"/></marker></defs>
+<rect width="520" height="390" fill="#f8fafc"/>
+<text x="260.0" y="32.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#0f172a">Read linear regression coefficients</text>
+<rect x="26" y="76" width="468" height="76" rx="10" fill="#dbeafe" stroke="#334155" stroke-width="2"/>
+<text x="260.0" y="107.9" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#0f172a">Illustrative Query</text>
+<text x="260.0" y="130.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#0f172a">x = [4, 2] | w = [2, 3]</text>
+<path d="M260 152 V176" stroke="#334155" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="26" y="176" width="468" height="76" rx="10" fill="#ede9fe" stroke="#334155" stroke-width="2"/>
+<text x="260.0" y="207.9" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#0f172a">Contributions</text>
+<text x="260.0" y="230.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#0f172a">2 × 4 = 8 | 3 × 2 = 6</text>
+<path d="M260 252 V276" stroke="#334155" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="26" y="276" width="468" height="76" rx="10" fill="#dcfce7" stroke="#334155" stroke-width="2"/>
+<text x="260.0" y="307.9" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#0f172a">Include Intercept</text>
+<text x="260.0" y="330.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#0f172a">b + 8 + 6 = 5 + 14 = 19</text>
+</svg>

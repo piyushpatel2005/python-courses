@@ -1,0 +1,34 @@
+[
+  {
+    "field": "product_id",
+    "dtype": "string",
+    "unit": "none",
+    "missing": "not allowed",
+    "available": "2025-01-15 teaching snapshot",
+    "role": "ID, excluded"
+  },
+  {
+    "field": "width_index",
+    "dtype": "float",
+    "unit": "dimensionless",
+    "missing": "not allowed",
+    "available": "2025-01-15 teaching snapshot",
+    "role": "feature"
+  },
+  {
+    "field": "depth_index",
+    "dtype": "float",
+    "unit": "dimensionless",
+    "missing": "not allowed",
+    "available": "2025-01-15 teaching snapshot",
+    "role": "feature"
+  },
+  {
+    "field": "group_label",
+    "dtype": "integer",
+    "unit": "none",
+    "missing": "not allowed",
+    "available": "2025-01-15 teaching snapshot",
+    "role": "supplied membership"
+  }
+]

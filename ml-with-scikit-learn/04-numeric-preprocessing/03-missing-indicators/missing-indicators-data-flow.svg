@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="700" viewBox="0 0 560 700" role="img" aria-labelledby="title desc">
+<title id="title">Missing Indicators: concrete data flow</title>
+<desc id="desc">Small Worked Example (8 Rows). Weight has NaN; volume is complete. indicator_.features_ = [0]. Query Before Imputation. [NaN, 25] and [7, NaN]. Flags inspect original missing cells. Three Output Columns. [8, 25, 1] and [7, 45, 0]. No volume flag: none learned in training</desc>
+<rect width="560" height="700" fill="#ffffff"/>
+<text x="280" y="31" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#243247">Missing Indicators</text>
+<rect x="30" y="70" width="500" height="166" rx="12" fill="#dbeafe" stroke="#243247" stroke-width="2"/>
+<text x="280" y="135" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Small Worked Example (8 Rows)</text>
+<text x="280" y="159" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Weight has NaN; volume is complete</text>
+<text x="280" y="183" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">indicator_.features_ = [0]</text>
+<path d="M280 236 V277" fill="none" stroke="#243247" stroke-width="2"/><path d="M274 268 L280 277 L286 268" fill="none" stroke="#243247" stroke-width="2"/>
+<rect x="30" y="277" width="500" height="166" rx="12" fill="#ede9fe" stroke="#243247" stroke-width="2"/>
+<text x="280" y="342" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Query Before Imputation</text>
+<text x="280" y="366" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">[NaN, 25] and [7, NaN]</text>
+<text x="280" y="390" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Flags inspect original missing cells</text>
+<path d="M280 443 V484" fill="none" stroke="#243247" stroke-width="2"/><path d="M274 475 L280 484 L286 475" fill="none" stroke="#243247" stroke-width="2"/>
+<rect x="30" y="484" width="500" height="166" rx="12" fill="#dcfce7" stroke="#243247" stroke-width="2"/>
+<text x="280" y="549" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Three Output Columns</text>
+<text x="280" y="573" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">[8, 25, 1] and [7, 45, 0]</text>
+<text x="280" y="597" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">No volume flag: none learned in training</text>
+<text x="280" y="682" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#243247">Original teaching figure; rows and states shown explicitly</text>
+</svg>

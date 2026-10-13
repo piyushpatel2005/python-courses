@@ -1,0 +1,182 @@
+[
+  {
+    "review_id": "R01",
+    "text": "oak oak shelf",
+    "partition": "train"
+  },
+  {
+    "review_id": "R02",
+    "text": "steel steel shelf",
+    "partition": "train"
+  },
+  {
+    "review_id": "R03",
+    "text": "pine pine shelf",
+    "partition": "train"
+  },
+  {
+    "review_id": "R04",
+    "text": "linen linen shelf",
+    "partition": "train"
+  },
+  {
+    "review_id": "R05",
+    "text": "glass glass shelf",
+    "partition": "train"
+  },
+  {
+    "review_id": "R06",
+    "text": "oak oak table",
+    "partition": "train"
+  },
+  {
+    "review_id": "R07",
+    "text": "steel steel table",
+    "partition": "train"
+  },
+  {
+    "review_id": "R08",
+    "text": "pine pine table",
+    "partition": "train"
+  },
+  {
+    "review_id": "R09",
+    "text": "linen linen table",
+    "partition": "train"
+  },
+  {
+    "review_id": "R10",
+    "text": "glass glass table",
+    "partition": "train"
+  },
+  {
+    "review_id": "R11",
+    "text": "oak oak chair",
+    "partition": "train"
+  },
+  {
+    "review_id": "R12",
+    "text": "steel steel chair",
+    "partition": "train"
+  },
+  {
+    "review_id": "R13",
+    "text": "pine pine chair",
+    "partition": "train"
+  },
+  {
+    "review_id": "R14",
+    "text": "linen linen chair",
+    "partition": "train"
+  },
+  {
+    "review_id": "R15",
+    "text": "glass glass chair",
+    "partition": "train"
+  },
+  {
+    "review_id": "R16",
+    "text": "oak oak rack",
+    "partition": "train"
+  },
+  {
+    "review_id": "R17",
+    "text": "steel steel rack",
+    "partition": "train"
+  },
+  {
+    "review_id": "R18",
+    "text": "pine pine rack",
+    "partition": "train"
+  },
+  {
+    "review_id": "R19",
+    "text": "linen linen rack",
+    "partition": "train"
+  },
+  {
+    "review_id": "R20",
+    "text": "glass glass rack",
+    "partition": "train"
+  },
+  {
+    "review_id": "R21",
+    "text": "oak oak bench",
+    "partition": "train"
+  },
+  {
+    "review_id": "R22",
+    "text": "steel steel bench",
+    "partition": "train"
+  },
+  {
+    "review_id": "R23",
+    "text": "pine pine bench",
+    "partition": "train"
+  },
+  {
+    "review_id": "R24",
+    "text": "linen linen bench",
+    "partition": "train"
+  },
+  {
+    "review_id": "R25",
+    "text": "glass glass bench",
+    "partition": "train"
+  },
+  {
+    "review_id": "R26",
+    "text": "oak oak desk",
+    "partition": "train"
+  },
+  {
+    "review_id": "R27",
+    "text": "steel steel desk",
+    "partition": "train"
+  },
+  {
+    "review_id": "R28",
+    "text": "pine pine desk",
+    "partition": "train"
+  },
+  {
+    "review_id": "R29",
+    "text": "linen linen desk",
+    "partition": "train"
+  },
+  {
+    "review_id": "R30",
+    "text": "glass glass desk",
+    "partition": "train"
+  },
+  {
+    "review_id": "R31",
+    "text": "oak table",
+    "partition": "query"
+  },
+  {
+    "review_id": "R32",
+    "text": "unseentoken",
+    "partition": "query"
+  },
+  {
+    "review_id": "R33",
+    "text": "shelf shelf",
+    "partition": "query"
+  },
+  {
+    "review_id": "R34",
+    "text": "glass desk",
+    "partition": "query"
+  },
+  {
+    "review_id": "R35",
+    "text": "steel",
+    "partition": "query"
+  },
+  {
+    "review_id": "R36",
+    "text": "chair",
+    "partition": "query"
+  }
+]

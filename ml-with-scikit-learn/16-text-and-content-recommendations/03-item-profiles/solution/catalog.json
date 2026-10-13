@@ -1,0 +1,254 @@
+[
+  {
+    "item_id": "F01",
+    "category": "furniture",
+    "title": "small oak shelf",
+    "description": "wood storage small",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F02",
+    "category": "furniture",
+    "title": "small steel shelf",
+    "description": "metal storage small",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F03",
+    "category": "furniture",
+    "title": "small oak stool",
+    "description": "wood seat small",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F04",
+    "category": "furniture",
+    "title": "small linen chair",
+    "description": "fabric seat small",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F05",
+    "category": "furniture",
+    "title": "small pine desk",
+    "description": "wood work small",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F06",
+    "category": "furniture",
+    "title": "small steel desk",
+    "description": "metal work small",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F07",
+    "category": "furniture",
+    "title": "small woven basket",
+    "description": "fiber storage small",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F08",
+    "category": "furniture",
+    "title": "small cotton cover",
+    "description": "fabric soft small",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F09",
+    "category": "furniture",
+    "title": "small wool rug",
+    "description": "fiber soft small",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F10",
+    "category": "furniture",
+    "title": "small pine bench",
+    "description": "wood seat small",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F11",
+    "category": "furniture",
+    "title": "small glass table",
+    "description": "glass surface small",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F12",
+    "category": "furniture",
+    "title": "small steel rack",
+    "description": "metal storage small",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F13",
+    "category": "furniture",
+    "title": "medium oak shelf",
+    "description": "wood storage medium",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F14",
+    "category": "furniture",
+    "title": "medium steel shelf",
+    "description": "metal storage medium",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F15",
+    "category": "furniture",
+    "title": "medium oak stool",
+    "description": "wood seat medium",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F16",
+    "category": "furniture",
+    "title": "medium linen chair",
+    "description": "fabric seat medium",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F17",
+    "category": "furniture",
+    "title": "medium pine desk",
+    "description": "wood work medium",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F18",
+    "category": "furniture",
+    "title": "medium steel desk",
+    "description": "metal work medium",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F19",
+    "category": "furniture",
+    "title": "medium woven basket",
+    "description": "fiber storage medium",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F20",
+    "category": "furniture",
+    "title": "medium cotton cover",
+    "description": "fabric soft medium",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F21",
+    "category": "furniture",
+    "title": "medium wool rug",
+    "description": "fiber soft medium",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F22",
+    "category": "furniture",
+    "title": "medium pine bench",
+    "description": "wood seat medium",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F23",
+    "category": "furniture",
+    "title": "medium glass table",
+    "description": "glass surface medium",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F24",
+    "category": "furniture",
+    "title": "medium steel rack",
+    "description": "metal storage medium",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F25",
+    "category": "furniture",
+    "title": "large oak shelf",
+    "description": "wood storage large",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F26",
+    "category": "furniture",
+    "title": "large steel shelf",
+    "description": "metal storage large",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F27",
+    "category": "furniture",
+    "title": "large oak stool",
+    "description": "wood seat large",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F28",
+    "category": "furniture",
+    "title": "large linen chair",
+    "description": "fabric seat large",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F29",
+    "category": "furniture",
+    "title": "large pine desk",
+    "description": "wood work large",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F30",
+    "category": "furniture",
+    "title": "large steel desk",
+    "description": "metal work large",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F31",
+    "category": "furniture",
+    "title": "large woven basket",
+    "description": "fiber storage large",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F32",
+    "category": "furniture",
+    "title": "large cotton cover",
+    "description": "fabric soft large",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F33",
+    "category": "furniture",
+    "title": "large wool rug",
+    "description": "fiber soft large",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F34",
+    "category": "furniture",
+    "title": "large pine bench",
+    "description": "wood seat large",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F35",
+    "category": "furniture",
+    "title": "large glass table",
+    "description": "glass surface large",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "F36",
+    "category": "furniture",
+    "title": "large steel rack",
+    "description": "metal storage large",
+    "available_since": "2025-01-01"
+  }
+]

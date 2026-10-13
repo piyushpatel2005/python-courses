@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="700" viewBox="0 0 560 700" role="img" aria-labelledby="title desc">
+<title id="title">Xy Shapes: concrete data flow</title>
+<desc id="desc">Paired Rows: X | y. r0: [1, 4] | 5    r1: [2, 7] | 7. r2: [3, 8] | 9    r3: [4, 12] | 11. Feature Slice: First Two Columns. X: 4 rows x 2 features. Target column excluded. Target Slice: Last Column. y: [5, 7, 9, 11]   shape (4,). Row order stays r0, r1, r2, r3</desc>
+<rect width="560" height="700" fill="#ffffff"/>
+<text x="280" y="31" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#243247">Xy Shapes</text>
+<rect x="30" y="70" width="500" height="166" rx="12" fill="#dbeafe" stroke="#243247" stroke-width="2"/>
+<text x="280" y="135" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Paired Rows: X | y</text>
+<text x="280" y="159" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">r0: [1, 4] | 5    r1: [2, 7] | 7</text>
+<text x="280" y="183" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">r2: [3, 8] | 9    r3: [4, 12] | 11</text>
+<path d="M280 236 V277" fill="none" stroke="#243247" stroke-width="2"/><path d="M274 268 L280 277 L286 268" fill="none" stroke="#243247" stroke-width="2"/>
+<rect x="30" y="277" width="500" height="166" rx="12" fill="#ede9fe" stroke="#243247" stroke-width="2"/>
+<text x="280" y="342" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Feature Slice: First Two Columns</text>
+<text x="280" y="366" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">X: 4 rows x 2 features</text>
+<text x="280" y="390" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Target column excluded</text>
+<rect x="30" y="484" width="500" height="166" rx="12" fill="#dcfce7" stroke="#243247" stroke-width="2"/>
+<text x="280" y="549" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Target Slice: Last Column</text>
+<text x="280" y="573" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">y: [5, 7, 9, 11]   shape (4,)</text>
+<text x="280" y="597" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Row order stays r0, r1, r2, r3</text>
+<path d="M30 153 H15 V567 H30" fill="none" stroke="#243247" stroke-width="2"/><path d="M21 561 L30 567 L21 573" fill="none" stroke="#243247" stroke-width="2"/>
+<text x="280" y="682" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#243247">Original teaching figure; rows and states shown explicitly</text>
+</svg>

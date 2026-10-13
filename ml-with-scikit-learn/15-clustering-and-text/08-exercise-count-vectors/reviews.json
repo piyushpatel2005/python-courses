@@ -1,0 +1,182 @@
+[
+  {
+    "review_id": "R01",
+    "text": "glass glass bowl",
+    "partition": "train"
+  },
+  {
+    "review_id": "R02",
+    "text": "steel steel bowl",
+    "partition": "train"
+  },
+  {
+    "review_id": "R03",
+    "text": "wood wood bowl",
+    "partition": "train"
+  },
+  {
+    "review_id": "R04",
+    "text": "ceramic ceramic bowl",
+    "partition": "train"
+  },
+  {
+    "review_id": "R05",
+    "text": "copper copper bowl",
+    "partition": "train"
+  },
+  {
+    "review_id": "R06",
+    "text": "glass glass tray",
+    "partition": "train"
+  },
+  {
+    "review_id": "R07",
+    "text": "steel steel tray",
+    "partition": "train"
+  },
+  {
+    "review_id": "R08",
+    "text": "wood wood tray",
+    "partition": "train"
+  },
+  {
+    "review_id": "R09",
+    "text": "ceramic ceramic tray",
+    "partition": "train"
+  },
+  {
+    "review_id": "R10",
+    "text": "copper copper tray",
+    "partition": "train"
+  },
+  {
+    "review_id": "R11",
+    "text": "glass glass jug",
+    "partition": "train"
+  },
+  {
+    "review_id": "R12",
+    "text": "steel steel jug",
+    "partition": "train"
+  },
+  {
+    "review_id": "R13",
+    "text": "wood wood jug",
+    "partition": "train"
+  },
+  {
+    "review_id": "R14",
+    "text": "ceramic ceramic jug",
+    "partition": "train"
+  },
+  {
+    "review_id": "R15",
+    "text": "copper copper jug",
+    "partition": "train"
+  },
+  {
+    "review_id": "R16",
+    "text": "glass glass mug",
+    "partition": "train"
+  },
+  {
+    "review_id": "R17",
+    "text": "steel steel mug",
+    "partition": "train"
+  },
+  {
+    "review_id": "R18",
+    "text": "wood wood mug",
+    "partition": "train"
+  },
+  {
+    "review_id": "R19",
+    "text": "ceramic ceramic mug",
+    "partition": "train"
+  },
+  {
+    "review_id": "R20",
+    "text": "copper copper mug",
+    "partition": "train"
+  },
+  {
+    "review_id": "R21",
+    "text": "glass glass plate",
+    "partition": "train"
+  },
+  {
+    "review_id": "R22",
+    "text": "steel steel plate",
+    "partition": "train"
+  },
+  {
+    "review_id": "R23",
+    "text": "wood wood plate",
+    "partition": "train"
+  },
+  {
+    "review_id": "R24",
+    "text": "ceramic ceramic plate",
+    "partition": "train"
+  },
+  {
+    "review_id": "R25",
+    "text": "copper copper plate",
+    "partition": "train"
+  },
+  {
+    "review_id": "R26",
+    "text": "glass glass jar",
+    "partition": "train"
+  },
+  {
+    "review_id": "R27",
+    "text": "steel steel jar",
+    "partition": "train"
+  },
+  {
+    "review_id": "R28",
+    "text": "wood wood jar",
+    "partition": "train"
+  },
+  {
+    "review_id": "R29",
+    "text": "ceramic ceramic jar",
+    "partition": "train"
+  },
+  {
+    "review_id": "R30",
+    "text": "copper copper jar",
+    "partition": "train"
+  },
+  {
+    "review_id": "R31",
+    "text": "glass tray",
+    "partition": "query"
+  },
+  {
+    "review_id": "R32",
+    "text": "unseentoken",
+    "partition": "query"
+  },
+  {
+    "review_id": "R33",
+    "text": "bowl bowl",
+    "partition": "query"
+  },
+  {
+    "review_id": "R34",
+    "text": "copper jar",
+    "partition": "query"
+  },
+  {
+    "review_id": "R35",
+    "text": "steel",
+    "partition": "query"
+  },
+  {
+    "review_id": "R36",
+    "text": "jug",
+    "partition": "query"
+  }
+]

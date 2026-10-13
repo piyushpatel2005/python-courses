@@ -1,0 +1,4 @@
+files:
+  - path: main.py
+  - path: orders.csv
+    readonly: true

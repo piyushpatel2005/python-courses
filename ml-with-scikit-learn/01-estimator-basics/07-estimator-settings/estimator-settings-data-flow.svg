@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="700" viewBox="0 0 560 700" role="img" aria-labelledby="title desc">
+<title id="title">Estimator Settings: concrete data flow</title>
+<desc id="desc">Constructor Settings. fit_intercept=False; n_jobs=1. No coef_ before fit. set_params(fit_intercept=True). get_params: fit_intercept is True. Still no learned coefficients. Supplied Training Fit. coef_ = [2]; intercept_ = 3. Settings choose; training learns</desc>
+<rect width="560" height="700" fill="#ffffff"/>
+<text x="280" y="31" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#243247">Estimator Settings</text>
+<rect x="30" y="70" width="500" height="166" rx="12" fill="#dbeafe" stroke="#243247" stroke-width="2"/>
+<text x="280" y="135" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Constructor Settings</text>
+<text x="280" y="159" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">fit_intercept=False; n_jobs=1</text>
+<text x="280" y="183" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">No coef_ before fit</text>
+<path d="M280 236 V277" fill="none" stroke="#243247" stroke-width="2"/><path d="M274 268 L280 277 L286 268" fill="none" stroke="#243247" stroke-width="2"/>
+<rect x="30" y="277" width="500" height="166" rx="12" fill="#ede9fe" stroke="#243247" stroke-width="2"/>
+<text x="280" y="342" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">set_params(fit_intercept=True)</text>
+<text x="280" y="366" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">get_params: fit_intercept is True</text>
+<text x="280" y="390" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Still no learned coefficients</text>
+<path d="M280 443 V484" fill="none" stroke="#243247" stroke-width="2"/><path d="M274 475 L280 484 L286 475" fill="none" stroke="#243247" stroke-width="2"/>
+<rect x="30" y="484" width="500" height="166" rx="12" fill="#dcfce7" stroke="#243247" stroke-width="2"/>
+<text x="280" y="549" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Supplied Training Fit</text>
+<text x="280" y="573" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">coef_ = [2]; intercept_ = 3</text>
+<text x="280" y="597" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Settings choose; training learns</text>
+<text x="280" y="682" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#243247">Original teaching figure; rows and states shown explicitly</text>
+</svg>

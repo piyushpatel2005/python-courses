@@ -1,0 +1,1912 @@
+[
+  {
+    "lesson": "datasets-and-quality/data-quality",
+    "path": "02-datasets-and-quality/05-data-quality/observations.csv",
+    "rows": 32,
+    "columns": [
+      "amount",
+      "label"
+    ],
+    "sha256": "5cfa9540e61d874b8565ed382f874a2ed98d30d2c0bebf3f53f833a537a216b2"
+  },
+  {
+    "lesson": "datasets-and-quality/exercise-data-quality",
+    "path": "02-datasets-and-quality/06-exercise-data-quality/orders.csv",
+    "rows": 40,
+    "columns": [
+      "amount",
+      "label"
+    ],
+    "sha256": "c8a104169ad08f5be3c9e0b1063b5009e17b1a3bc351b3ee45dc1aed88d1f315"
+  },
+  {
+    "lesson": "datasets-and-quality/prediction-time-features",
+    "path": "02-datasets-and-quality/07-prediction-time-features/observations.csv",
+    "rows": 32,
+    "columns": [
+      "order_id",
+      "basket_value_usd",
+      "item_count",
+      "actual_delivery_days",
+      "returned_30d"
+    ],
+    "sha256": "d5a1a1b7cb817f9b7ae40bdba223144f08ad6046b0f991eb877d6ad237da867f"
+  },
+  {
+    "lesson": "datasets-and-quality/exercise-prediction-time-features",
+    "path": "02-datasets-and-quality/08-exercise-prediction-time-features/orders.csv",
+    "rows": 40,
+    "columns": [
+      "order_id",
+      "basket_value_usd",
+      "item_count",
+      "actual_delivery_days",
+      "returned_30d",
+      "return_reason"
+    ],
+    "sha256": "b2f55c38a184c522845ef531e9c4470c6889eab97130a35f1d60ef85016b081d"
+  },
+  {
+    "lesson": "honest-holdouts/train-test-split",
+    "path": "03-honest-holdouts/01-train-test-split/observations.csv",
+    "rows": 80,
+    "columns": [
+      "row_id",
+      "feature_0",
+      "feature_1",
+      "target"
+    ],
+    "sha256": "4d1fd4ac868af143e419771a6d5c863e1087c2c0cb25dfd91fccf4b3579df5a2"
+  },
+  {
+    "lesson": "honest-holdouts/exercise-train-test-split",
+    "path": "03-honest-holdouts/02-exercise-train-test-split/observations.csv",
+    "rows": 100,
+    "columns": [
+      "row_id",
+      "feature_0",
+      "feature_1",
+      "feature_2",
+      "target"
+    ],
+    "sha256": "c7a3cd2f40fd9e6cda18536206ef6761a0c51db81e4f75329deec410961c98c1"
+  },
+  {
+    "lesson": "honest-holdouts/validation-split",
+    "path": "03-honest-holdouts/03-validation-split/observations.csv",
+    "rows": 80,
+    "columns": [
+      "row_id",
+      "feature_0",
+      "feature_1",
+      "target"
+    ],
+    "sha256": "4d1fd4ac868af143e419771a6d5c863e1087c2c0cb25dfd91fccf4b3579df5a2"
+  },
+  {
+    "lesson": "honest-holdouts/exercise-validation-split",
+    "path": "03-honest-holdouts/04-exercise-validation-split/observations.csv",
+    "rows": 100,
+    "columns": [
+      "row_id",
+      "feature_0",
+      "feature_1",
+      "feature_2",
+      "target"
+    ],
+    "sha256": "75bb2af5558e911bdaf407176e52767c64934687621c1e68d0cbd70be413c54c"
+  },
+  {
+    "lesson": "honest-holdouts/stratified-holdout",
+    "path": "03-honest-holdouts/05-stratified-holdout/labels.csv",
+    "rows": 80,
+    "columns": [
+      "row_id",
+      "label"
+    ],
+    "sha256": "7f846f6b8db35b11c6b4b75fbca854d731a2b53cc6e455c69873352bb56aa320"
+  },
+  {
+    "lesson": "honest-holdouts/exercise-stratified-holdout",
+    "path": "03-honest-holdouts/06-exercise-stratified-holdout/labels.csv",
+    "rows": 100,
+    "columns": [
+      "row_id",
+      "label"
+    ],
+    "sha256": "61879e12b8f02c820868a409c978ba2a5aa1562b8f868f71570a0075e0ec5764"
+  },
+  {
+    "lesson": "honest-holdouts/preprocessing-leakage",
+    "path": "03-honest-holdouts/07-preprocessing-leakage/training.csv",
+    "rows": 32,
+    "columns": [
+      "weight_kg"
+    ],
+    "sha256": "7130e6e898f53273c97be771d7ca9e6ba9dd05a7babe87c9f3e922ba69983f5d"
+  },
+  {
+    "lesson": "honest-holdouts/preprocessing-leakage",
+    "path": "03-honest-holdouts/07-preprocessing-leakage/queries.csv",
+    "rows": 2,
+    "columns": [
+      "weight_kg"
+    ],
+    "sha256": "9a7a6085142c180a45b32acca0f0fc0c2eb0ec6cb7ffeae97dfea5ddcbf63361"
+  },
+  {
+    "lesson": "honest-holdouts/exercise-preprocessing-leakage",
+    "path": "03-honest-holdouts/08-exercise-preprocessing-leakage/training.csv",
+    "rows": 40,
+    "columns": [
+      "width_cm",
+      "volume_l"
+    ],
+    "sha256": "dc0cfa3cb0e8d289aac6d94fd56fd9edf877893e557f0720c9425817ad2768ad"
+  },
+  {
+    "lesson": "honest-holdouts/exercise-preprocessing-leakage",
+    "path": "03-honest-holdouts/08-exercise-preprocessing-leakage/queries.csv",
+    "rows": 3,
+    "columns": [
+      "width_cm",
+      "volume_l"
+    ],
+    "sha256": "9f193d7580e055a0835d459af5f3a3b5ec3e8535368c5b465ca99c64915c4ce5"
+  },
+  {
+    "lesson": "honest-holdouts/holdout-baselines",
+    "path": "03-honest-holdouts/09-holdout-baselines/training.csv",
+    "rows": 60,
+    "columns": [
+      "feature_0",
+      "target"
+    ],
+    "sha256": "02dba77c4ceace67194e25b69086de8e65a594b9b1779b5c81b9396a4640a069"
+  },
+  {
+    "lesson": "honest-holdouts/holdout-baselines",
+    "path": "03-honest-holdouts/09-holdout-baselines/validation.csv",
+    "rows": 20,
+    "columns": [
+      "feature_0",
+      "target"
+    ],
+    "sha256": "27a4b1d5aa498022b5214277e4cc065dd549034bd9d555f9925af387231d096c"
+  },
+  {
+    "lesson": "honest-holdouts/exercise-holdout-baselines",
+    "path": "03-honest-holdouts/10-exercise-holdout-baselines/training.csv",
+    "rows": 75,
+    "columns": [
+      "feature_0",
+      "target"
+    ],
+    "sha256": "0eba2eeb99dab56e6f10e19500a31d3f473746adb8ddc614cfdb8520fa07dd7d"
+  },
+  {
+    "lesson": "honest-holdouts/exercise-holdout-baselines",
+    "path": "03-honest-holdouts/10-exercise-holdout-baselines/validation.csv",
+    "rows": 25,
+    "columns": [
+      "feature_0",
+      "target"
+    ],
+    "sha256": "a62e18177fba1fad00c554ff9cded5acce0dcb12457cee1e4f0b91c1e78d5460"
+  },
+  {
+    "lesson": "numeric-preprocessing/median-imputation",
+    "path": "04-numeric-preprocessing/01-median-imputation/training.csv",
+    "rows": 32,
+    "columns": [
+      "weight_kg",
+      "volume_l"
+    ],
+    "sha256": "b26a0cf655cf5554b060cf6d8f6722c5102b621cf892dfdb130f4c2dccbb35ba"
+  },
+  {
+    "lesson": "numeric-preprocessing/median-imputation",
+    "path": "04-numeric-preprocessing/01-median-imputation/queries.csv",
+    "rows": 2,
+    "columns": [
+      "weight_kg",
+      "volume_l"
+    ],
+    "sha256": "8b29c498982e791715abe29fd5d1a2b47b51806cbb390fc8522c5eb17a942d9b"
+  },
+  {
+    "lesson": "numeric-preprocessing/exercise-median-imputation",
+    "path": "04-numeric-preprocessing/02-exercise-median-imputation/training.csv",
+    "rows": 40,
+    "columns": [
+      "width_cm",
+      "volume_l"
+    ],
+    "sha256": "1dbb36d73be42f00644d8eb0e7e599744a076b0b19ae2c0e8e79f8f1faa86706"
+  },
+  {
+    "lesson": "numeric-preprocessing/exercise-median-imputation",
+    "path": "04-numeric-preprocessing/02-exercise-median-imputation/queries.csv",
+    "rows": 3,
+    "columns": [
+      "width_cm",
+      "volume_l"
+    ],
+    "sha256": "94bed7f1984063892bd638c8debaefe830daae868418bd7bfc44e875202de33e"
+  },
+  {
+    "lesson": "numeric-preprocessing/missing-indicators",
+    "path": "04-numeric-preprocessing/03-missing-indicators/training.csv",
+    "rows": 32,
+    "columns": [
+      "weight_kg",
+      "volume_l"
+    ],
+    "sha256": "4ddd119f92567e59ccce394280cd842eafbe660c577a2d07e58c3e8a2c38e59d"
+  },
+  {
+    "lesson": "numeric-preprocessing/missing-indicators",
+    "path": "04-numeric-preprocessing/03-missing-indicators/queries.csv",
+    "rows": 2,
+    "columns": [
+      "weight_kg",
+      "volume_l"
+    ],
+    "sha256": "8b29c498982e791715abe29fd5d1a2b47b51806cbb390fc8522c5eb17a942d9b"
+  },
+  {
+    "lesson": "numeric-preprocessing/exercise-missing-indicators",
+    "path": "04-numeric-preprocessing/04-exercise-missing-indicators/training.csv",
+    "rows": 40,
+    "columns": [
+      "width_cm",
+      "volume_l"
+    ],
+    "sha256": "31ba4aad956062d2dbd1c8edf7bb94be765eeb253994061d0e4104573fa12144"
+  },
+  {
+    "lesson": "numeric-preprocessing/exercise-missing-indicators",
+    "path": "04-numeric-preprocessing/04-exercise-missing-indicators/queries.csv",
+    "rows": 3,
+    "columns": [
+      "width_cm",
+      "volume_l"
+    ],
+    "sha256": "0ca7cbaf6b6c1648e414ee3013f04e584d14d7db0d34556b2971a07f97d05442"
+  },
+  {
+    "lesson": "numeric-preprocessing/standard-scaling",
+    "path": "04-numeric-preprocessing/05-standard-scaling/training.csv",
+    "rows": 80,
+    "columns": [
+      "feature_0",
+      "feature_1"
+    ],
+    "sha256": "95883cb233133e9d2b8172c2bcc0c4fe0661ad9698459ad8d55b6559e7e2cdf9"
+  },
+  {
+    "lesson": "numeric-preprocessing/standard-scaling",
+    "path": "04-numeric-preprocessing/05-standard-scaling/queries.csv",
+    "rows": 2,
+    "columns": [
+      "feature_0",
+      "feature_1"
+    ],
+    "sha256": "c3966928bbe1ad86006ede88d01836b919edc98f8ddbb0bfba54d6209590c65f"
+  },
+  {
+    "lesson": "numeric-preprocessing/exercise-standard-scaling",
+    "path": "04-numeric-preprocessing/06-exercise-standard-scaling/training.csv",
+    "rows": 100,
+    "columns": [
+      "feature_0",
+      "feature_1",
+      "feature_2"
+    ],
+    "sha256": "d60fe2418d0035c4f25cc557f99c77be3e5009bcbfb51ffcbf9de793187c3dc6"
+  },
+  {
+    "lesson": "numeric-preprocessing/exercise-standard-scaling",
+    "path": "04-numeric-preprocessing/06-exercise-standard-scaling/queries.csv",
+    "rows": 3,
+    "columns": [
+      "feature_0",
+      "feature_1",
+      "feature_2"
+    ],
+    "sha256": "1c7166cb000c0f4675f95ff510119392ee03f2ad13c874d925a882e5aa4e204e"
+  },
+  {
+    "lesson": "numeric-preprocessing/minmax-scaling",
+    "path": "04-numeric-preprocessing/07-minmax-scaling/training.csv",
+    "rows": 80,
+    "columns": [
+      "feature_0",
+      "feature_1"
+    ],
+    "sha256": "95883cb233133e9d2b8172c2bcc0c4fe0661ad9698459ad8d55b6559e7e2cdf9"
+  },
+  {
+    "lesson": "numeric-preprocessing/minmax-scaling",
+    "path": "04-numeric-preprocessing/07-minmax-scaling/queries.csv",
+    "rows": 2,
+    "columns": [
+      "feature_0",
+      "feature_1"
+    ],
+    "sha256": "0c223f763e0264b71d057489d7d49604dabb7589025d88116417da2868064f0d"
+  },
+  {
+    "lesson": "numeric-preprocessing/exercise-minmax-scaling",
+    "path": "04-numeric-preprocessing/08-exercise-minmax-scaling/training.csv",
+    "rows": 100,
+    "columns": [
+      "feature_0",
+      "feature_1",
+      "feature_2"
+    ],
+    "sha256": "d60fe2418d0035c4f25cc557f99c77be3e5009bcbfb51ffcbf9de793187c3dc6"
+  },
+  {
+    "lesson": "numeric-preprocessing/exercise-minmax-scaling",
+    "path": "04-numeric-preprocessing/08-exercise-minmax-scaling/queries.csv",
+    "rows": 3,
+    "columns": [
+      "feature_0",
+      "feature_1",
+      "feature_2"
+    ],
+    "sha256": "b0b0d5d60ef1e29ec4f127b8a1af28221a41ef8e4b575ae020f751034512fe3a"
+  },
+  {
+    "lesson": "numeric-preprocessing/robust-scaling",
+    "path": "04-numeric-preprocessing/09-robust-scaling/training.csv",
+    "rows": 32,
+    "columns": [
+      "weight_kg"
+    ],
+    "sha256": "c3c7aa3fe19121a20c5295b90b77c6ff5fee67fa58e4579785812ff206689649"
+  },
+  {
+    "lesson": "numeric-preprocessing/robust-scaling",
+    "path": "04-numeric-preprocessing/09-robust-scaling/queries.csv",
+    "rows": 2,
+    "columns": [
+      "weight_kg"
+    ],
+    "sha256": "fbd1d7b830d2853b6ff7e60d70bfe503fd5c1508b9781d77a745d46af2763a0a"
+  },
+  {
+    "lesson": "numeric-preprocessing/exercise-robust-scaling",
+    "path": "04-numeric-preprocessing/10-exercise-robust-scaling/training.csv",
+    "rows": 40,
+    "columns": [
+      "width_cm",
+      "volume_l"
+    ],
+    "sha256": "4d3262ad5d3ab2ddc5726686e46fc73fdd4fbd4f05fe99b7f964f0fb784c515d"
+  },
+  {
+    "lesson": "numeric-preprocessing/exercise-robust-scaling",
+    "path": "04-numeric-preprocessing/10-exercise-robust-scaling/queries.csv",
+    "rows": 3,
+    "columns": [
+      "width_cm",
+      "volume_l"
+    ],
+    "sha256": "29600ad0d142aefc916485b07cfba25d8fe545cd1c74149bf280468de3d3bb33"
+  },
+  {
+    "lesson": "categorical-preprocessing/categorical-imputation",
+    "path": "05-categorical-preprocessing/01-categorical-imputation/categories.json",
+    "rows": 32,
+    "columns": [
+      "category"
+    ],
+    "sha256": "4875d4106aed481760957682a6752e7ba875e9a03ba7b98c6e1bc59472c925f4"
+  },
+  {
+    "lesson": "categorical-preprocessing/categorical-imputation",
+    "path": "05-categorical-preprocessing/01-categorical-imputation/queries.json",
+    "rows": 3,
+    "columns": [
+      "category"
+    ],
+    "sha256": "feb9258b8c9340d7d2fd862088c2ed3b26c6f4d57751cb43a0ee46579608fea5"
+  },
+  {
+    "lesson": "categorical-preprocessing/exercise-categorical-imputation",
+    "path": "05-categorical-preprocessing/02-exercise-categorical-imputation/categories.json",
+    "rows": 40,
+    "columns": [
+      "category"
+    ],
+    "sha256": "3b18d7cfa207a0758e7ed63566e9e97584fd8f10131da1cbbe0b751ac938189e"
+  },
+  {
+    "lesson": "categorical-preprocessing/exercise-categorical-imputation",
+    "path": "05-categorical-preprocessing/02-exercise-categorical-imputation/queries.json",
+    "rows": 4,
+    "columns": [
+      "category"
+    ],
+    "sha256": "4f8d62eb755d06bb06b39307af5a624b1f47001da3017ea58a15754b04c98d26"
+  },
+  {
+    "lesson": "categorical-preprocessing/one-hot-encoding",
+    "path": "05-categorical-preprocessing/03-one-hot-encoding/categories.json",
+    "rows": 32,
+    "columns": [
+      "category"
+    ],
+    "sha256": "4e9fcfeeefd6c09cbc5c4dce3a2fbfc05edb6f65f093e91a64d67560bac8413f"
+  },
+  {
+    "lesson": "categorical-preprocessing/one-hot-encoding",
+    "path": "05-categorical-preprocessing/03-one-hot-encoding/queries.json",
+    "rows": 3,
+    "columns": [
+      "category"
+    ],
+    "sha256": "f00e43777fd1ce06149c4dc603ad4d118b9ced215c6bec40e0c32479d845494a"
+  },
+  {
+    "lesson": "categorical-preprocessing/exercise-one-hot-encoding",
+    "path": "05-categorical-preprocessing/04-exercise-one-hot-encoding/categories.json",
+    "rows": 40,
+    "columns": [
+      "category"
+    ],
+    "sha256": "c0ae7f36cb4554842753de5f957a84279c795fed58c0bfd182829ba7a7ac70f4"
+  },
+  {
+    "lesson": "categorical-preprocessing/exercise-one-hot-encoding",
+    "path": "05-categorical-preprocessing/04-exercise-one-hot-encoding/queries.json",
+    "rows": 4,
+    "columns": [
+      "category"
+    ],
+    "sha256": "dd0ea205358d778954ace54427a876e3a5d04241766900c4f8bebd25fd454e00"
+  },
+  {
+    "lesson": "categorical-preprocessing/unknown-categories",
+    "path": "05-categorical-preprocessing/05-unknown-categories/categories.json",
+    "rows": 32,
+    "columns": [
+      "category"
+    ],
+    "sha256": "4e9fcfeeefd6c09cbc5c4dce3a2fbfc05edb6f65f093e91a64d67560bac8413f"
+  },
+  {
+    "lesson": "categorical-preprocessing/unknown-categories",
+    "path": "05-categorical-preprocessing/05-unknown-categories/queries.json",
+    "rows": 3,
+    "columns": [
+      "category"
+    ],
+    "sha256": "481b0341ee7c62d2c2206493e0d6b46be29bd65bd148764fd53395b62d5f333f"
+  },
+  {
+    "lesson": "categorical-preprocessing/exercise-unknown-categories",
+    "path": "05-categorical-preprocessing/06-exercise-unknown-categories/categories.json",
+    "rows": 40,
+    "columns": [
+      "category"
+    ],
+    "sha256": "c0ae7f36cb4554842753de5f957a84279c795fed58c0bfd182829ba7a7ac70f4"
+  },
+  {
+    "lesson": "categorical-preprocessing/exercise-unknown-categories",
+    "path": "05-categorical-preprocessing/06-exercise-unknown-categories/queries.json",
+    "rows": 4,
+    "columns": [
+      "category"
+    ],
+    "sha256": "9abe59a65ace4b2b8b869aad425763dee2501ace043580d61795445992394cbf"
+  },
+  {
+    "lesson": "pipelines-and-regression/linear-coefficients",
+    "path": "06-pipelines-and-regression/03-linear-coefficients/regression-measurements.csv",
+    "rows": 80,
+    "columns": [
+      "feature_1",
+      "feature_2",
+      "target_value"
+    ],
+    "sha256": "15626e69d7d541564f4a448f03c35ac9671f84b729a9a2f66d787edade254e09"
+  },
+  {
+    "lesson": "pipelines-and-regression/exercise-linear-coefficients",
+    "path": "06-pipelines-and-regression/04-exercise-linear-coefficients/regression-measurements.csv",
+    "rows": 90,
+    "columns": [
+      "feature_1",
+      "feature_2",
+      "feature_3",
+      "target_value"
+    ],
+    "sha256": "248bc8fda9212ebde0a8c4c7d32184e24b29169aeb2ec7bfa87c49b12dd91a66"
+  },
+  {
+    "lesson": "regularized-regression/ridge",
+    "path": "07-regularized-regression/01-ridge/regression-measurements.csv",
+    "rows": 90,
+    "columns": [
+      "feature_1",
+      "feature_2",
+      "feature_3",
+      "target_value"
+    ],
+    "sha256": "9e17bd364d62031660e912afb9ead765301ea907c766bbc18ed7109dee083687"
+  },
+  {
+    "lesson": "regularized-regression/exercise-ridge",
+    "path": "07-regularized-regression/02-exercise-ridge/regression-measurements.csv",
+    "rows": 100,
+    "columns": [
+      "feature_1",
+      "feature_2",
+      "feature_3",
+      "feature_4",
+      "target_value"
+    ],
+    "sha256": "2ab211291610a3573e5e0775db1559455ad3f423965d9ed695666a4c7f112a44"
+  },
+  {
+    "lesson": "regularized-regression/lasso",
+    "path": "07-regularized-regression/03-lasso/regression-measurements.csv",
+    "rows": 90,
+    "columns": [
+      "feature_1",
+      "feature_2",
+      "feature_3",
+      "feature_4",
+      "target_value"
+    ],
+    "sha256": "d416b50dd06470a7cc7c4f24a9d46fc8e8e2a68f0e3d6935037e0a9cb43e1bf3"
+  },
+  {
+    "lesson": "regularized-regression/exercise-lasso",
+    "path": "07-regularized-regression/04-exercise-lasso/regression-measurements.csv",
+    "rows": 100,
+    "columns": [
+      "feature_1",
+      "feature_2",
+      "feature_3",
+      "feature_4",
+      "feature_5",
+      "target_value"
+    ],
+    "sha256": "e91bdae44544dd55426d80943b0d15b36de8ab1e902d318733c4f1073ef19863"
+  },
+  {
+    "lesson": "regression-project/regression-project-split",
+    "path": "08-regression-project/01-regression-project-split/sample-parcels.csv",
+    "rows": 20,
+    "columns": [
+      "product_id",
+      "snapshot_date",
+      "weight_kg",
+      "volume_l",
+      "material_cost_usd",
+      "listed_price_usd"
+    ],
+    "sha256": "0946ca780ffea73275ef07173d8adbecb72b8f3fb82afa172842f26d2cbfd646"
+  },
+  {
+    "lesson": "regression-project/exercise-regression-project-split",
+    "path": "08-regression-project/02-exercise-regression-project-split/listing-prices.csv",
+    "rows": 120,
+    "columns": [
+      "product_id",
+      "snapshot_date",
+      "weight_kg",
+      "volume_l",
+      "material_cost_usd",
+      "listed_price_usd"
+    ],
+    "sha256": "fa59977bdb38160c7310777abe4a3f2d0f09bfe33341e4171467faf6e510f8ad"
+  },
+  {
+    "lesson": "regression-project/regression-project-baseline",
+    "path": "08-regression-project/03-regression-project-baseline/sample-parcels.csv",
+    "rows": 20,
+    "columns": [
+      "product_id",
+      "snapshot_date",
+      "weight_kg",
+      "volume_l",
+      "material_cost_usd",
+      "listed_price_usd"
+    ],
+    "sha256": "0946ca780ffea73275ef07173d8adbecb72b8f3fb82afa172842f26d2cbfd646"
+  },
+  {
+    "lesson": "regression-project/exercise-regression-project-baseline",
+    "path": "08-regression-project/04-exercise-regression-project-baseline/listing-prices.csv",
+    "rows": 120,
+    "columns": [
+      "product_id",
+      "snapshot_date",
+      "weight_kg",
+      "volume_l",
+      "material_cost_usd",
+      "listed_price_usd"
+    ],
+    "sha256": "fa59977bdb38160c7310777abe4a3f2d0f09bfe33341e4171467faf6e510f8ad"
+  },
+  {
+    "lesson": "regression-project/regression-project-pipeline",
+    "path": "08-regression-project/05-regression-project-pipeline/sample-parcels.csv",
+    "rows": 20,
+    "columns": [
+      "product_id",
+      "snapshot_date",
+      "weight_kg",
+      "volume_l",
+      "material_cost_usd",
+      "listed_price_usd"
+    ],
+    "sha256": "0946ca780ffea73275ef07173d8adbecb72b8f3fb82afa172842f26d2cbfd646"
+  },
+  {
+    "lesson": "regression-project/exercise-regression-project-pipeline",
+    "path": "08-regression-project/06-exercise-regression-project-pipeline/listing-prices.csv",
+    "rows": 120,
+    "columns": [
+      "product_id",
+      "snapshot_date",
+      "weight_kg",
+      "volume_l",
+      "material_cost_usd",
+      "listed_price_usd"
+    ],
+    "sha256": "fa59977bdb38160c7310777abe4a3f2d0f09bfe33341e4171467faf6e510f8ad"
+  },
+  {
+    "lesson": "regression-project/regression-project-selection",
+    "path": "08-regression-project/07-regression-project-selection/sample-parcels.csv",
+    "rows": 20,
+    "columns": [
+      "product_id",
+      "snapshot_date",
+      "weight_kg",
+      "volume_l",
+      "material_cost_usd",
+      "listed_price_usd"
+    ],
+    "sha256": "0946ca780ffea73275ef07173d8adbecb72b8f3fb82afa172842f26d2cbfd646"
+  },
+  {
+    "lesson": "regression-project/exercise-regression-project-selection",
+    "path": "08-regression-project/08-exercise-regression-project-selection/listing-prices.csv",
+    "rows": 120,
+    "columns": [
+      "product_id",
+      "snapshot_date",
+      "weight_kg",
+      "volume_l",
+      "material_cost_usd",
+      "listed_price_usd"
+    ],
+    "sha256": "fa59977bdb38160c7310777abe4a3f2d0f09bfe33341e4171467faf6e510f8ad"
+  },
+  {
+    "lesson": "regression-project/regression-project-report",
+    "path": "08-regression-project/09-regression-project-report/sample-parcels.csv",
+    "rows": 20,
+    "columns": [
+      "product_id",
+      "snapshot_date",
+      "weight_kg",
+      "volume_l",
+      "material_cost_usd",
+      "listed_price_usd"
+    ],
+    "sha256": "0946ca780ffea73275ef07173d8adbecb72b8f3fb82afa172842f26d2cbfd646"
+  },
+  {
+    "lesson": "regression-project/exercise-regression-project-report",
+    "path": "08-regression-project/10-exercise-regression-project-report/listing-prices.csv",
+    "rows": 120,
+    "columns": [
+      "product_id",
+      "snapshot_date",
+      "weight_kg",
+      "volume_l",
+      "material_cost_usd",
+      "listed_price_usd"
+    ],
+    "sha256": "fa59977bdb38160c7310777abe4a3f2d0f09bfe33341e4171467faf6e510f8ad"
+  },
+  {
+    "lesson": "classifiers/linear-svm",
+    "path": "09-classifiers/07-linear-svm/classification-measurements.csv",
+    "rows": 90,
+    "columns": [
+      "feature_1",
+      "feature_2",
+      "class_label"
+    ],
+    "sha256": "c5743dd4fbf72d5d85e2f61425d97ce7f0113117e0441a07152a7ebd85534393"
+  },
+  {
+    "lesson": "classifiers/exercise-linear-svm",
+    "path": "09-classifiers/08-exercise-linear-svm/classification-measurements.csv",
+    "rows": 100,
+    "columns": [
+      "feature_1",
+      "feature_2",
+      "feature_3",
+      "class_label"
+    ],
+    "sha256": "b4368d9cf8566667aee2598e8fd89964aa04023db0d96b84bfc37739a2daa603"
+  },
+  {
+    "lesson": "classifiers/rbf-svm",
+    "path": "09-classifiers/09-rbf-svm/classification-measurements.csv",
+    "rows": 100,
+    "columns": [
+      "feature_1",
+      "feature_2",
+      "class_label"
+    ],
+    "sha256": "e9f7ca8357d1e5ef3a6dff6ec68d44f3af6e081d3b759c9ae1001dd25efeca02"
+  },
+  {
+    "lesson": "classifiers/exercise-rbf-svm",
+    "path": "09-classifiers/10-exercise-rbf-svm/classification-measurements.csv",
+    "rows": 120,
+    "columns": [
+      "feature_1",
+      "feature_2",
+      "class_label"
+    ],
+    "sha256": "b6f12d8bb3ee438bc92ed92861186294d3ddd30d941274e8910f61c6dfaa7ab9"
+  },
+  {
+    "lesson": "classification-metrics/confusion-matrix",
+    "path": "10-classification-metrics/01-confusion-matrix/observations.csv",
+    "rows": 90,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "truth",
+      "predicted",
+      "score"
+    ],
+    "sha256": "a560624f73fc1eee07ae251ff366d76ed9c1bf6b2141f35f4588c4f29061287f"
+  },
+  {
+    "lesson": "classification-metrics/exercise-confusion-matrix",
+    "path": "10-classification-metrics/02-exercise-confusion-matrix/observations.csv",
+    "rows": 96,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "truth",
+      "predicted",
+      "score"
+    ],
+    "sha256": "34e21fce4e1cfed1ed93410bfe700752d2ba887aa7269a0338e578515d9ba4c1"
+  },
+  {
+    "lesson": "classification-metrics/precision-recall",
+    "path": "10-classification-metrics/03-precision-recall/observations.csv",
+    "rows": 90,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "truth",
+      "predicted",
+      "score"
+    ],
+    "sha256": "a560624f73fc1eee07ae251ff366d76ed9c1bf6b2141f35f4588c4f29061287f"
+  },
+  {
+    "lesson": "classification-metrics/exercise-precision-recall",
+    "path": "10-classification-metrics/04-exercise-precision-recall/observations.csv",
+    "rows": 96,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "truth",
+      "predicted",
+      "score"
+    ],
+    "sha256": "34e21fce4e1cfed1ed93410bfe700752d2ba887aa7269a0338e578515d9ba4c1"
+  },
+  {
+    "lesson": "classification-metrics/thresholds",
+    "path": "10-classification-metrics/07-thresholds/observations.csv",
+    "rows": 90,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "truth",
+      "predicted",
+      "score"
+    ],
+    "sha256": "a560624f73fc1eee07ae251ff366d76ed9c1bf6b2141f35f4588c4f29061287f"
+  },
+  {
+    "lesson": "classification-metrics/exercise-thresholds",
+    "path": "10-classification-metrics/08-exercise-thresholds/observations.csv",
+    "rows": 96,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "truth",
+      "predicted",
+      "score"
+    ],
+    "sha256": "34e21fce4e1cfed1ed93410bfe700752d2ba887aa7269a0338e578515d9ba4c1"
+  },
+  {
+    "lesson": "classification-metrics/roc-auc",
+    "path": "10-classification-metrics/09-roc-auc/observations.csv",
+    "rows": 90,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "truth",
+      "predicted",
+      "score"
+    ],
+    "sha256": "a560624f73fc1eee07ae251ff366d76ed9c1bf6b2141f35f4588c4f29061287f"
+  },
+  {
+    "lesson": "classification-metrics/exercise-roc-auc",
+    "path": "10-classification-metrics/10-exercise-roc-auc/observations.csv",
+    "rows": 96,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "truth",
+      "predicted",
+      "score"
+    ],
+    "sha256": "34e21fce4e1cfed1ed93410bfe700752d2ba887aa7269a0338e578515d9ba4c1"
+  },
+  {
+    "lesson": "classification-metrics/average-precision",
+    "path": "10-classification-metrics/11-average-precision/observations.csv",
+    "rows": 90,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "truth",
+      "predicted",
+      "score"
+    ],
+    "sha256": "a560624f73fc1eee07ae251ff366d76ed9c1bf6b2141f35f4588c4f29061287f"
+  },
+  {
+    "lesson": "classification-metrics/exercise-average-precision",
+    "path": "10-classification-metrics/12-exercise-average-precision/observations.csv",
+    "rows": 96,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "truth",
+      "predicted",
+      "score"
+    ],
+    "sha256": "34e21fce4e1cfed1ed93410bfe700752d2ba887aa7269a0338e578515d9ba4c1"
+  },
+  {
+    "lesson": "trees-and-ensembles/decision-trees",
+    "path": "11-trees-and-ensembles/01-decision-trees/observations.csv",
+    "rows": 90,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "target"
+    ],
+    "sha256": "f81adcc0d8bebbeaf04534671677286d0609f408218bfb65b0b4d80c3c4c7f2b"
+  },
+  {
+    "lesson": "trees-and-ensembles/exercise-decision-trees",
+    "path": "11-trees-and-ensembles/02-exercise-decision-trees/observations.csv",
+    "rows": 96,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "target"
+    ],
+    "sha256": "bbc2965b6be74194875e080e84f66f485a47d581623a50536a21afb5d63eeb72"
+  },
+  {
+    "lesson": "trees-and-ensembles/regression-trees",
+    "path": "11-trees-and-ensembles/03-regression-trees/observations.csv",
+    "rows": 90,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "target"
+    ],
+    "sha256": "6fc7ebf48bd08bdf599b9901951396e0d3f9b37575b2a5294a2c560dd2ed0f4d"
+  },
+  {
+    "lesson": "trees-and-ensembles/exercise-regression-trees",
+    "path": "11-trees-and-ensembles/04-exercise-regression-trees/observations.csv",
+    "rows": 96,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "target"
+    ],
+    "sha256": "59c73e626a81c5813e558ca81f8082eb163141bcba1cb29f006fa563f17c3b0f"
+  },
+  {
+    "lesson": "trees-and-ensembles/random-forests",
+    "path": "11-trees-and-ensembles/05-random-forests/observations.csv",
+    "rows": 90,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "target"
+    ],
+    "sha256": "6fc7ebf48bd08bdf599b9901951396e0d3f9b37575b2a5294a2c560dd2ed0f4d"
+  },
+  {
+    "lesson": "trees-and-ensembles/exercise-random-forests",
+    "path": "11-trees-and-ensembles/06-exercise-random-forests/observations.csv",
+    "rows": 96,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "target"
+    ],
+    "sha256": "59c73e626a81c5813e558ca81f8082eb163141bcba1cb29f006fa563f17c3b0f"
+  },
+  {
+    "lesson": "trees-and-ensembles/gradient-boosting",
+    "path": "11-trees-and-ensembles/07-gradient-boosting/observations.csv",
+    "rows": 90,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "target"
+    ],
+    "sha256": "6fc7ebf48bd08bdf599b9901951396e0d3f9b37575b2a5294a2c560dd2ed0f4d"
+  },
+  {
+    "lesson": "trees-and-ensembles/exercise-gradient-boosting",
+    "path": "11-trees-and-ensembles/08-exercise-gradient-boosting/observations.csv",
+    "rows": 96,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "target"
+    ],
+    "sha256": "59c73e626a81c5813e558ca81f8082eb163141bcba1cb29f006fa563f17c3b0f"
+  },
+  {
+    "lesson": "cross-validation-and-selection/kfold",
+    "path": "12-cross-validation-and-selection/01-kfold/observations.csv",
+    "rows": 90,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "target"
+    ],
+    "sha256": "6fc7ebf48bd08bdf599b9901951396e0d3f9b37575b2a5294a2c560dd2ed0f4d"
+  },
+  {
+    "lesson": "cross-validation-and-selection/exercise-kfold",
+    "path": "12-cross-validation-and-selection/02-exercise-kfold/observations.csv",
+    "rows": 96,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "target"
+    ],
+    "sha256": "c4541f3857c3397c43995176e91b8d47006b26277f24fdef5830dcdc8c509ec0"
+  },
+  {
+    "lesson": "cross-validation-and-selection/group-cv",
+    "path": "12-cross-validation-and-selection/05-group-cv/observations.csv",
+    "rows": 24,
+    "columns": [
+      "product_id",
+      "measurement_a",
+      "measurement_b"
+    ],
+    "sha256": "4aca336114ca1cca3285a9e3b29bc01978b16138c016e6dc019f05a96a8b597b"
+  },
+  {
+    "lesson": "cross-validation-and-selection/exercise-group-cv",
+    "path": "12-cross-validation-and-selection/06-exercise-group-cv/observations.csv",
+    "rows": 36,
+    "columns": [
+      "product_id",
+      "measurement_a",
+      "measurement_b"
+    ],
+    "sha256": "13f9cdc8778ad985f411e86f1d97c1605c11eb29fb3bfb1cdeb00e8dc27ba75b"
+  },
+  {
+    "lesson": "cross-validation-and-selection/time-cv",
+    "path": "12-cross-validation-and-selection/07-time-cv/observations.csv",
+    "rows": 36,
+    "columns": [
+      "date",
+      "daily_index"
+    ],
+    "sha256": "1884bfae007360cb963822f2e323e75676961702320b67f42af93e2cbad26ee5"
+  },
+  {
+    "lesson": "cross-validation-and-selection/exercise-time-cv",
+    "path": "12-cross-validation-and-selection/08-exercise-time-cv/observations.csv",
+    "rows": 60,
+    "columns": [
+      "date",
+      "daily_index"
+    ],
+    "sha256": "89b07fc47c8bfc9dc3644e6c2ce02469351a03ede1ab645f45d1818c65e83d9a"
+  },
+  {
+    "lesson": "cross-validation-and-selection/search-cv",
+    "path": "12-cross-validation-and-selection/09-search-cv/observations.csv",
+    "rows": 90,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "target"
+    ],
+    "sha256": "6fc7ebf48bd08bdf599b9901951396e0d3f9b37575b2a5294a2c560dd2ed0f4d"
+  },
+  {
+    "lesson": "cross-validation-and-selection/exercise-search-cv",
+    "path": "12-cross-validation-and-selection/10-exercise-search-cv/observations.csv",
+    "rows": 96,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "target"
+    ],
+    "sha256": "c4541f3857c3397c43995176e91b8d47006b26277f24fdef5830dcdc8c509ec0"
+  },
+  {
+    "lesson": "cross-validation-and-selection/learning-curves",
+    "path": "12-cross-validation-and-selection/11-learning-curves/observations.csv",
+    "rows": 90,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "target"
+    ],
+    "sha256": "6fc7ebf48bd08bdf599b9901951396e0d3f9b37575b2a5294a2c560dd2ed0f4d"
+  },
+  {
+    "lesson": "cross-validation-and-selection/exercise-learning-curves",
+    "path": "12-cross-validation-and-selection/12-exercise-learning-curves/observations.csv",
+    "rows": 96,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "target"
+    ],
+    "sha256": "c4541f3857c3397c43995176e91b8d47006b26277f24fdef5830dcdc8c509ec0"
+  },
+  {
+    "lesson": "cross-validation-and-selection/validation-curves",
+    "path": "12-cross-validation-and-selection/13-validation-curves/observations.csv",
+    "rows": 90,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "target"
+    ],
+    "sha256": "6fc7ebf48bd08bdf599b9901951396e0d3f9b37575b2a5294a2c560dd2ed0f4d"
+  },
+  {
+    "lesson": "cross-validation-and-selection/exercise-validation-curves",
+    "path": "12-cross-validation-and-selection/14-exercise-validation-curves/observations.csv",
+    "rows": 96,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "target"
+    ],
+    "sha256": "c4541f3857c3397c43995176e91b8d47006b26277f24fdef5830dcdc8c509ec0"
+  },
+  {
+    "lesson": "cross-validation-and-selection/nested-cv",
+    "path": "12-cross-validation-and-selection/15-nested-cv/observations.csv",
+    "rows": 90,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "measurement_c",
+      "target"
+    ],
+    "sha256": "6fc7ebf48bd08bdf599b9901951396e0d3f9b37575b2a5294a2c560dd2ed0f4d"
+  },
+  {
+    "lesson": "cross-validation-and-selection/exercise-nested-cv",
+    "path": "12-cross-validation-and-selection/16-exercise-nested-cv/observations.csv",
+    "rows": 96,
+    "columns": [
+      "observation_id",
+      "measurement_a",
+      "measurement_b",
+      "target"
+    ],
+    "sha256": "c4541f3857c3397c43995176e91b8d47006b26277f24fdef5830dcdc8c509ec0"
+  },
+  {
+    "lesson": "mixed-classification-project/mixed-project-build",
+    "path": "13-mixed-classification-project/01-mixed-project-build/handling.csv",
+    "rows": 30,
+    "columns": [
+      "weight_kg",
+      "width_cm",
+      "material",
+      "flagged"
+    ],
+    "sha256": "7173e4a2dfc36b6b1c55a04c016fead4969756b83d0cd0edc40e6981fb7b9d77"
+  },
+  {
+    "lesson": "mixed-classification-project/exercise-mixed-project-build",
+    "path": "13-mixed-classification-project/02-exercise-mixed-project-build/orders.csv",
+    "rows": 180,
+    "columns": [
+      "order_id",
+      "customer_id",
+      "checkout_date",
+      "basket_value_usd",
+      "item_count",
+      "category",
+      "returned_30d",
+      "actual_delivery_days"
+    ],
+    "sha256": "ed4257a0e014f3d8cfcf7286302ed0eeac46d4cd1ae75cd23c52c8e11020a235"
+  },
+  {
+    "lesson": "mixed-classification-project/mixed-project-tune",
+    "path": "13-mixed-classification-project/03-mixed-project-tune/handling.csv",
+    "rows": 30,
+    "columns": [
+      "weight_kg",
+      "width_cm",
+      "material",
+      "flagged"
+    ],
+    "sha256": "7173e4a2dfc36b6b1c55a04c016fead4969756b83d0cd0edc40e6981fb7b9d77"
+  },
+  {
+    "lesson": "mixed-classification-project/exercise-mixed-project-tune",
+    "path": "13-mixed-classification-project/04-exercise-mixed-project-tune/orders.csv",
+    "rows": 180,
+    "columns": [
+      "order_id",
+      "customer_id",
+      "checkout_date",
+      "basket_value_usd",
+      "item_count",
+      "category",
+      "returned_30d",
+      "actual_delivery_days"
+    ],
+    "sha256": "ed4257a0e014f3d8cfcf7286302ed0eeac46d4cd1ae75cd23c52c8e11020a235"
+  },
+  {
+    "lesson": "mixed-classification-project/mixed-project-threshold",
+    "path": "13-mixed-classification-project/05-mixed-project-threshold/handling.csv",
+    "rows": 30,
+    "columns": [
+      "weight_kg",
+      "width_cm",
+      "material",
+      "flagged"
+    ],
+    "sha256": "7173e4a2dfc36b6b1c55a04c016fead4969756b83d0cd0edc40e6981fb7b9d77"
+  },
+  {
+    "lesson": "mixed-classification-project/exercise-mixed-project-threshold",
+    "path": "13-mixed-classification-project/06-exercise-mixed-project-threshold/orders.csv",
+    "rows": 180,
+    "columns": [
+      "order_id",
+      "customer_id",
+      "checkout_date",
+      "basket_value_usd",
+      "item_count",
+      "category",
+      "returned_30d",
+      "actual_delivery_days"
+    ],
+    "sha256": "ed4257a0e014f3d8cfcf7286302ed0eeac46d4cd1ae75cd23c52c8e11020a235"
+  },
+  {
+    "lesson": "mixed-classification-project/mixed-project-report",
+    "path": "13-mixed-classification-project/07-mixed-project-report/handling.csv",
+    "rows": 30,
+    "columns": [
+      "weight_kg",
+      "width_cm",
+      "material",
+      "flagged"
+    ],
+    "sha256": "7173e4a2dfc36b6b1c55a04c016fead4969756b83d0cd0edc40e6981fb7b9d77"
+  },
+  {
+    "lesson": "mixed-classification-project/exercise-mixed-project-report",
+    "path": "13-mixed-classification-project/08-exercise-mixed-project-report/orders.csv",
+    "rows": 180,
+    "columns": [
+      "order_id",
+      "customer_id",
+      "checkout_date",
+      "basket_value_usd",
+      "item_count",
+      "category",
+      "returned_30d",
+      "actual_delivery_days"
+    ],
+    "sha256": "ed4257a0e014f3d8cfcf7286302ed0eeac46d4cd1ae75cd23c52c8e11020a235"
+  },
+  {
+    "lesson": "inspection-and-unsupervised/class-weights",
+    "path": "14-inspection-and-unsupervised/01-class-weights/checkout-measurements.csv",
+    "rows": 36,
+    "columns": [
+      "order_id",
+      "basket_index",
+      "item_count_index",
+      "returned"
+    ],
+    "sha256": "52d0c9e2a962ab99b2c7c1a38f0783bc67994b3e489af3332fd0be7268f72342"
+  },
+  {
+    "lesson": "inspection-and-unsupervised/exercise-class-weights",
+    "path": "14-inspection-and-unsupervised/02-exercise-class-weights/checkout-measurements.csv",
+    "rows": 36,
+    "columns": [
+      "order_id",
+      "basket_index",
+      "item_count_index",
+      "returned"
+    ],
+    "sha256": "af7c511f2c9d6e917aff538a815ee655db47e9266ee38467cf40be70d6ebe181"
+  },
+  {
+    "lesson": "inspection-and-unsupervised/calibration",
+    "path": "14-inspection-and-unsupervised/03-calibration/checkout-measurements.csv",
+    "rows": 36,
+    "columns": [
+      "order_id",
+      "basket_index",
+      "item_count_index",
+      "category_index",
+      "returned"
+    ],
+    "sha256": "b2c8e9e7866dd042428eb9c738cc77fe685d176cfda18b5570e0ca35eaf3b3c0"
+  },
+  {
+    "lesson": "inspection-and-unsupervised/exercise-calibration",
+    "path": "14-inspection-and-unsupervised/04-exercise-calibration/checkout-measurements.csv",
+    "rows": 36,
+    "columns": [
+      "order_id",
+      "basket_index",
+      "item_count_index",
+      "category_index",
+      "returned"
+    ],
+    "sha256": "2cf77705c142bb12ef79c20a55b12d48cfdba3fb9383402938071236d2ba0e36"
+  },
+  {
+    "lesson": "inspection-and-unsupervised/feature-selection",
+    "path": "14-inspection-and-unsupervised/05-feature-selection/checkout-measurements.csv",
+    "rows": 36,
+    "columns": [
+      "order_id",
+      "basket_index",
+      "item_count_index",
+      "category_index",
+      "season_index",
+      "returned"
+    ],
+    "sha256": "c1938a7153a614349a5dd718ed195a339d143c235abb339bc0bb7844980489f1"
+  },
+  {
+    "lesson": "inspection-and-unsupervised/exercise-feature-selection",
+    "path": "14-inspection-and-unsupervised/06-exercise-feature-selection/checkout-measurements.csv",
+    "rows": 36,
+    "columns": [
+      "order_id",
+      "basket_index",
+      "item_count_index",
+      "category_index",
+      "season_index",
+      "returned"
+    ],
+    "sha256": "76b491fe2d83418b086fa9784a78afcd5493a4afdf3ed63b9992901c8582fef0"
+  },
+  {
+    "lesson": "inspection-and-unsupervised/permutation-importance",
+    "path": "14-inspection-and-unsupervised/07-permutation-importance/checkout-measurements.csv",
+    "rows": 36,
+    "columns": [
+      "order_id",
+      "basket_index",
+      "item_count_index",
+      "category_index",
+      "returned"
+    ],
+    "sha256": "0a066bdef1506c57716529f9da6688c76e4c07bd7acd3b41db039586b4db3b07"
+  },
+  {
+    "lesson": "inspection-and-unsupervised/exercise-permutation-importance",
+    "path": "14-inspection-and-unsupervised/08-exercise-permutation-importance/checkout-measurements.csv",
+    "rows": 36,
+    "columns": [
+      "order_id",
+      "basket_index",
+      "item_count_index",
+      "category_index",
+      "returned"
+    ],
+    "sha256": "df79e769d4e53701bca78ccfdb48b42d4f5584f36b35dfaacf16266a731c0b86"
+  },
+  {
+    "lesson": "inspection-and-unsupervised/exercise-pca",
+    "path": "14-inspection-and-unsupervised/10-exercise-pca/product-measurements.csv",
+    "rows": 36,
+    "columns": [
+      "product_id",
+      "width_index",
+      "depth_index",
+      "height_index"
+    ],
+    "sha256": "376d8ac948b1a05edec3db3dd5555256f93b551f579795e882c134a9abb82a94"
+  },
+  {
+    "lesson": "clustering-and-text/kmeans",
+    "path": "15-clustering-and-text/01-kmeans/product-measurements.csv",
+    "rows": 36,
+    "columns": [
+      "product_id",
+      "width_index",
+      "depth_index"
+    ],
+    "sha256": "53a919e64dadcb1771a4f221e3281644503805897d7cca49881195cb46b1d41b"
+  },
+  {
+    "lesson": "clustering-and-text/exercise-kmeans",
+    "path": "15-clustering-and-text/02-exercise-kmeans/product-measurements.csv",
+    "rows": 36,
+    "columns": [
+      "product_id",
+      "width_index",
+      "depth_index"
+    ],
+    "sha256": "2b65585972fe3ed51358846d51f16df5d232a0d454a8384560a49009f2c4138c"
+  },
+  {
+    "lesson": "clustering-and-text/cluster-validation",
+    "path": "15-clustering-and-text/03-cluster-validation/product-measurements.csv",
+    "rows": 36,
+    "columns": [
+      "product_id",
+      "width_index",
+      "depth_index",
+      "group_label"
+    ],
+    "sha256": "7064cf4b226c0f4f1d0ad348e73befe998ed98b3095688a262c779149b2727d4"
+  },
+  {
+    "lesson": "clustering-and-text/exercise-cluster-validation",
+    "path": "15-clustering-and-text/04-exercise-cluster-validation/product-measurements.csv",
+    "rows": 36,
+    "columns": [
+      "product_id",
+      "width_index",
+      "depth_index",
+      "group_label"
+    ],
+    "sha256": "3eaf536bd74787adaf73c6f059955f576f9b95fd9d36a7d011d657bc56c7dc17"
+  },
+  {
+    "lesson": "clustering-and-text/count-vectors",
+    "path": "15-clustering-and-text/07-count-vectors/reviews.json",
+    "rows": 36,
+    "columns": [
+      "review_id",
+      "text",
+      "partition"
+    ],
+    "sha256": "2e4a1dfd62c622096245d1156a6e947189154225d1b026fb307c99a5b883d70c"
+  },
+  {
+    "lesson": "clustering-and-text/exercise-count-vectors",
+    "path": "15-clustering-and-text/08-exercise-count-vectors/reviews.json",
+    "rows": 36,
+    "columns": [
+      "review_id",
+      "text",
+      "partition"
+    ],
+    "sha256": "0b3352629c600ed20b239693a32f4cdb76ff716923ec1ec0c607d74e61dd8aff"
+  },
+  {
+    "lesson": "clustering-and-text/tfidf",
+    "path": "15-clustering-and-text/09-tfidf/reviews.json",
+    "rows": 36,
+    "columns": [
+      "review_id",
+      "text",
+      "partition"
+    ],
+    "sha256": "2e4a1dfd62c622096245d1156a6e947189154225d1b026fb307c99a5b883d70c"
+  },
+  {
+    "lesson": "clustering-and-text/exercise-tfidf",
+    "path": "15-clustering-and-text/10-exercise-tfidf/reviews.json",
+    "rows": 36,
+    "columns": [
+      "review_id",
+      "text",
+      "partition"
+    ],
+    "sha256": "2937c4fbdb32dddcf70f1d1b1e93c1347e1c9a5db4d410e3bfc4a3cc771b2bc9"
+  },
+  {
+    "lesson": "text-and-content-recommendations/text-classifier",
+    "path": "16-text-and-content-recommendations/01-text-classifier/reviews.json",
+    "rows": 36,
+    "columns": [
+      "review_id",
+      "text",
+      "partition",
+      "topic"
+    ],
+    "sha256": "7244f9d5ec0a727855addbe4ab38b9332f1d68175e576d512d12f970010f79a7"
+  },
+  {
+    "lesson": "text-and-content-recommendations/exercise-text-classifier",
+    "path": "16-text-and-content-recommendations/02-exercise-text-classifier/reviews.json",
+    "rows": 36,
+    "columns": [
+      "review_id",
+      "text",
+      "partition",
+      "topic"
+    ],
+    "sha256": "8a1c7271cbaf82ecffd9f3e7bf4a26c330b683680964c8fe7dbebf5c36c50f1e"
+  },
+  {
+    "lesson": "text-and-content-recommendations/item-profiles",
+    "path": "16-text-and-content-recommendations/03-item-profiles/catalog.json",
+    "rows": 36,
+    "columns": [
+      "item_id",
+      "category",
+      "title",
+      "description",
+      "available_since"
+    ],
+    "sha256": "643abe62c9e564a6d1f20f972bdee88ed9ddb24d7a82eaed71d20441335a7b87"
+  },
+  {
+    "lesson": "text-and-content-recommendations/exercise-item-profiles",
+    "path": "16-text-and-content-recommendations/04-exercise-item-profiles/catalog.json",
+    "rows": 36,
+    "columns": [
+      "category",
+      "title",
+      "description",
+      "item_id",
+      "available_since"
+    ],
+    "sha256": "4f05db16ab30463e9db19631b71bf744928be38e981500441def65e8d602e510"
+  },
+  {
+    "lesson": "recommendation-evaluation/recommendation-holdout",
+    "path": "17-recommendation-evaluation/01-recommendation-holdout/catalog.json",
+    "rows": 12,
+    "columns": [
+      "item_id",
+      "available_since"
+    ],
+    "sha256": "7cde17d32c6affda96c592fb1f2f2acf63f4a339f98376f46fc8f4217a2ba988"
+  },
+  {
+    "lesson": "recommendation-evaluation/recommendation-holdout",
+    "path": "17-recommendation-evaluation/01-recommendation-holdout/interactions.csv",
+    "rows": 32,
+    "columns": [
+      "user_id",
+      "item_id",
+      "event_at"
+    ],
+    "sha256": "d7a8a237227e644b044831fb54cf91dbdfcbb0220347377441400683b881e80a"
+  },
+  {
+    "lesson": "recommendation-evaluation/exercise-recommendation-holdout",
+    "path": "17-recommendation-evaluation/02-exercise-recommendation-holdout/catalog.json",
+    "rows": 12,
+    "columns": [
+      "item_id",
+      "available_since"
+    ],
+    "sha256": "d09192e5e7360fe6d9c5e610d0feb8bbb19d6b1c4622934f52b6db991d2c03a4"
+  },
+  {
+    "lesson": "recommendation-evaluation/exercise-recommendation-holdout",
+    "path": "17-recommendation-evaluation/02-exercise-recommendation-holdout/interactions.csv",
+    "rows": 32,
+    "columns": [
+      "user_id",
+      "item_id",
+      "event_at"
+    ],
+    "sha256": "42c9db7e24984d6d90689d2ccda1cdc32b48ef81b1d5510ab89552a32bff7e53"
+  },
+  {
+    "lesson": "recommendation-evaluation/cold-start",
+    "path": "17-recommendation-evaluation/07-cold-start/catalog.json",
+    "rows": 12,
+    "columns": [
+      "item_id",
+      "available_since"
+    ],
+    "sha256": "7cde17d32c6affda96c592fb1f2f2acf63f4a339f98376f46fc8f4217a2ba988"
+  },
+  {
+    "lesson": "recommendation-evaluation/cold-start",
+    "path": "17-recommendation-evaluation/07-cold-start/training-views.csv",
+    "rows": 30,
+    "columns": [
+      "user_id",
+      "item_id",
+      "event_at"
+    ],
+    "sha256": "6e7f0ae9bb8b8f15afa980d4bcc6979b76698a45ec44fc991a9362a6de01b9f7"
+  },
+  {
+    "lesson": "recommendation-evaluation/exercise-cold-start",
+    "path": "17-recommendation-evaluation/08-exercise-cold-start/catalog.json",
+    "rows": 12,
+    "columns": [
+      "item_id",
+      "available_since"
+    ],
+    "sha256": "d09192e5e7360fe6d9c5e610d0feb8bbb19d6b1c4622934f52b6db991d2c03a4"
+  },
+  {
+    "lesson": "recommendation-evaluation/exercise-cold-start",
+    "path": "17-recommendation-evaluation/08-exercise-cold-start/training-views.csv",
+    "rows": 30,
+    "columns": [
+      "user_id",
+      "item_id",
+      "event_at"
+    ],
+    "sha256": "28e1d069a9c693fd696412514d82644a9159a1cf9b2407d83188edaff89ac941"
+  },
+  {
+    "lesson": "recommendation-project/recommendation-project-catalog",
+    "path": "18-recommendation-project/01-recommendation-project-catalog/catalog.json",
+    "rows": 6,
+    "columns": [
+      "item_id",
+      "category",
+      "title",
+      "description",
+      "available_since"
+    ],
+    "sha256": "e94dfd9264c81ff7b86f131b3f7274fca3266db3bcb337f1ca4b2928c165745c"
+  },
+  {
+    "lesson": "recommendation-project/recommendation-project-catalog",
+    "path": "18-recommendation-project/01-recommendation-project-catalog/users.csv",
+    "rows": 2,
+    "columns": [
+      "user_id"
+    ],
+    "sha256": "eff105ee8d61a195201bb176e00bedb16aebbbc253447110e60d7b4808d0fd87"
+  },
+  {
+    "lesson": "recommendation-project/recommendation-project-catalog",
+    "path": "18-recommendation-project/01-recommendation-project-catalog/interactions.csv",
+    "rows": 10,
+    "columns": [
+      "user_id",
+      "item_id",
+      "event_at",
+      "event_type"
+    ],
+    "sha256": "d202be1b6039bf0e3f6974fe4c595ab69f11a317ba9b3342a8d20bd48ec44dfc"
+  },
+  {
+    "lesson": "recommendation-project/exercise-recommendation-project-catalog",
+    "path": "18-recommendation-project/02-exercise-recommendation-project-catalog/catalog.json",
+    "rows": 18,
+    "columns": [
+      "item_id",
+      "category",
+      "title",
+      "description",
+      "available_since"
+    ],
+    "sha256": "fc862430665dcc14a9d4eeb47c69dd3a9f02fd102af79a7e8b289b7de5a11dbe"
+  },
+  {
+    "lesson": "recommendation-project/exercise-recommendation-project-catalog",
+    "path": "18-recommendation-project/02-exercise-recommendation-project-catalog/users.csv",
+    "rows": 6,
+    "columns": [
+      "user_id"
+    ],
+    "sha256": "a6b4d6eff3378e7462517d09e3c465f0f04218451af745884abcd1bd9062b31d"
+  },
+  {
+    "lesson": "recommendation-project/exercise-recommendation-project-catalog",
+    "path": "18-recommendation-project/02-exercise-recommendation-project-catalog/interactions.csv",
+    "rows": 30,
+    "columns": [
+      "user_id",
+      "item_id",
+      "event_at",
+      "event_type"
+    ],
+    "sha256": "f93c73ca96c5b090568027f3c6ddc21dd87d2577a1a3d45b8e76a01c2615525e"
+  },
+  {
+    "lesson": "recommendation-project/recommendation-project-ranker",
+    "path": "18-recommendation-project/03-recommendation-project-ranker/catalog.json",
+    "rows": 6,
+    "columns": [
+      "item_id",
+      "category",
+      "title",
+      "description",
+      "available_since"
+    ],
+    "sha256": "e94dfd9264c81ff7b86f131b3f7274fca3266db3bcb337f1ca4b2928c165745c"
+  },
+  {
+    "lesson": "recommendation-project/recommendation-project-ranker",
+    "path": "18-recommendation-project/03-recommendation-project-ranker/users.csv",
+    "rows": 2,
+    "columns": [
+      "user_id"
+    ],
+    "sha256": "eff105ee8d61a195201bb176e00bedb16aebbbc253447110e60d7b4808d0fd87"
+  },
+  {
+    "lesson": "recommendation-project/recommendation-project-ranker",
+    "path": "18-recommendation-project/03-recommendation-project-ranker/interactions.csv",
+    "rows": 10,
+    "columns": [
+      "user_id",
+      "item_id",
+      "event_at",
+      "event_type"
+    ],
+    "sha256": "d202be1b6039bf0e3f6974fe4c595ab69f11a317ba9b3342a8d20bd48ec44dfc"
+  },
+  {
+    "lesson": "recommendation-project/exercise-recommendation-project-ranker",
+    "path": "18-recommendation-project/04-exercise-recommendation-project-ranker/catalog.json",
+    "rows": 18,
+    "columns": [
+      "item_id",
+      "category",
+      "title",
+      "description",
+      "available_since"
+    ],
+    "sha256": "fc862430665dcc14a9d4eeb47c69dd3a9f02fd102af79a7e8b289b7de5a11dbe"
+  },
+  {
+    "lesson": "recommendation-project/exercise-recommendation-project-ranker",
+    "path": "18-recommendation-project/04-exercise-recommendation-project-ranker/users.csv",
+    "rows": 6,
+    "columns": [
+      "user_id"
+    ],
+    "sha256": "a6b4d6eff3378e7462517d09e3c465f0f04218451af745884abcd1bd9062b31d"
+  },
+  {
+    "lesson": "recommendation-project/exercise-recommendation-project-ranker",
+    "path": "18-recommendation-project/04-exercise-recommendation-project-ranker/interactions.csv",
+    "rows": 30,
+    "columns": [
+      "user_id",
+      "item_id",
+      "event_at",
+      "event_type"
+    ],
+    "sha256": "f93c73ca96c5b090568027f3c6ddc21dd87d2577a1a3d45b8e76a01c2615525e"
+  },
+  {
+    "lesson": "recommendation-project/recommendation-project-fallback",
+    "path": "18-recommendation-project/05-recommendation-project-fallback/catalog.json",
+    "rows": 6,
+    "columns": [
+      "item_id",
+      "category",
+      "title",
+      "description",
+      "available_since"
+    ],
+    "sha256": "e94dfd9264c81ff7b86f131b3f7274fca3266db3bcb337f1ca4b2928c165745c"
+  },
+  {
+    "lesson": "recommendation-project/recommendation-project-fallback",
+    "path": "18-recommendation-project/05-recommendation-project-fallback/users.csv",
+    "rows": 2,
+    "columns": [
+      "user_id"
+    ],
+    "sha256": "eff105ee8d61a195201bb176e00bedb16aebbbc253447110e60d7b4808d0fd87"
+  },
+  {
+    "lesson": "recommendation-project/recommendation-project-fallback",
+    "path": "18-recommendation-project/05-recommendation-project-fallback/interactions.csv",
+    "rows": 10,
+    "columns": [
+      "user_id",
+      "item_id",
+      "event_at",
+      "event_type"
+    ],
+    "sha256": "d202be1b6039bf0e3f6974fe4c595ab69f11a317ba9b3342a8d20bd48ec44dfc"
+  },
+  {
+    "lesson": "recommendation-project/exercise-recommendation-project-fallback",
+    "path": "18-recommendation-project/06-exercise-recommendation-project-fallback/catalog.json",
+    "rows": 18,
+    "columns": [
+      "item_id",
+      "category",
+      "title",
+      "description",
+      "available_since"
+    ],
+    "sha256": "fc862430665dcc14a9d4eeb47c69dd3a9f02fd102af79a7e8b289b7de5a11dbe"
+  },
+  {
+    "lesson": "recommendation-project/exercise-recommendation-project-fallback",
+    "path": "18-recommendation-project/06-exercise-recommendation-project-fallback/users.csv",
+    "rows": 6,
+    "columns": [
+      "user_id"
+    ],
+    "sha256": "a6b4d6eff3378e7462517d09e3c465f0f04218451af745884abcd1bd9062b31d"
+  },
+  {
+    "lesson": "recommendation-project/exercise-recommendation-project-fallback",
+    "path": "18-recommendation-project/06-exercise-recommendation-project-fallback/interactions.csv",
+    "rows": 30,
+    "columns": [
+      "user_id",
+      "item_id",
+      "event_at",
+      "event_type"
+    ],
+    "sha256": "f93c73ca96c5b090568027f3c6ddc21dd87d2577a1a3d45b8e76a01c2615525e"
+  },
+  {
+    "lesson": "recommendation-project/recommendation-project-report",
+    "path": "18-recommendation-project/07-recommendation-project-report/catalog.json",
+    "rows": 6,
+    "columns": [
+      "item_id",
+      "category",
+      "title",
+      "description",
+      "available_since"
+    ],
+    "sha256": "e94dfd9264c81ff7b86f131b3f7274fca3266db3bcb337f1ca4b2928c165745c"
+  },
+  {
+    "lesson": "recommendation-project/recommendation-project-report",
+    "path": "18-recommendation-project/07-recommendation-project-report/users.csv",
+    "rows": 2,
+    "columns": [
+      "user_id"
+    ],
+    "sha256": "eff105ee8d61a195201bb176e00bedb16aebbbc253447110e60d7b4808d0fd87"
+  },
+  {
+    "lesson": "recommendation-project/recommendation-project-report",
+    "path": "18-recommendation-project/07-recommendation-project-report/interactions.csv",
+    "rows": 10,
+    "columns": [
+      "user_id",
+      "item_id",
+      "event_at",
+      "event_type"
+    ],
+    "sha256": "d202be1b6039bf0e3f6974fe4c595ab69f11a317ba9b3342a8d20bd48ec44dfc"
+  },
+  {
+    "lesson": "recommendation-project/exercise-recommendation-project-report",
+    "path": "18-recommendation-project/08-exercise-recommendation-project-report/catalog.json",
+    "rows": 18,
+    "columns": [
+      "item_id",
+      "category",
+      "title",
+      "description",
+      "available_since"
+    ],
+    "sha256": "fc862430665dcc14a9d4eeb47c69dd3a9f02fd102af79a7e8b289b7de5a11dbe"
+  },
+  {
+    "lesson": "recommendation-project/exercise-recommendation-project-report",
+    "path": "18-recommendation-project/08-exercise-recommendation-project-report/users.csv",
+    "rows": 6,
+    "columns": [
+      "user_id"
+    ],
+    "sha256": "a6b4d6eff3378e7462517d09e3c465f0f04218451af745884abcd1bd9062b31d"
+  },
+  {
+    "lesson": "recommendation-project/exercise-recommendation-project-report",
+    "path": "18-recommendation-project/08-exercise-recommendation-project-report/interactions.csv",
+    "rows": 30,
+    "columns": [
+      "user_id",
+      "item_id",
+      "event_at",
+      "event_type"
+    ],
+    "sha256": "f93c73ca96c5b090568027f3c6ddc21dd87d2577a1a3d45b8e76a01c2615525e"
+  }
+]

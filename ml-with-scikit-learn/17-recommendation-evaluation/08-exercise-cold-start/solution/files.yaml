@@ -1,0 +1,6 @@
+files:
+  - path: main.py
+  - path: catalog.json
+    readonly: true
+  - path: training-views.csv
+    readonly: true

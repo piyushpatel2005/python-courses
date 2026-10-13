@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="700" viewBox="0 0 560 700" role="img" aria-labelledby="title desc">
+<title id="title">Bundled Data: concrete data flow</title>
+<desc id="desc">Iris Bunch: External Benchmark. data: (150, 4); target: (150,). Names and DESCR are metadata. Select [0, 50, 100, 149]. Use the same positions on both arrays. Do not select the first four targets. Aligned Result. X: (4, 4); y: [0, 1, 2, 2]. 4 feature names; 3 target names</desc>
+<rect width="560" height="700" fill="#ffffff"/>
+<text x="280" y="31" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#243247">Bundled Data</text>
+<rect x="30" y="70" width="500" height="166" rx="12" fill="#dbeafe" stroke="#243247" stroke-width="2"/>
+<text x="280" y="135" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Iris Bunch: External Benchmark</text>
+<text x="280" y="159" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">data: (150, 4); target: (150,)</text>
+<text x="280" y="183" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Names and DESCR are metadata</text>
+<path d="M280 236 V277" fill="none" stroke="#243247" stroke-width="2"/><path d="M274 268 L280 277 L286 268" fill="none" stroke="#243247" stroke-width="2"/>
+<rect x="30" y="277" width="500" height="166" rx="12" fill="#ede9fe" stroke="#243247" stroke-width="2"/>
+<text x="280" y="342" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Select [0, 50, 100, 149]</text>
+<text x="280" y="366" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Use the same positions on both arrays</text>
+<text x="280" y="390" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Do not select the first four targets</text>
+<path d="M280 443 V484" fill="none" stroke="#243247" stroke-width="2"/><path d="M274 475 L280 484 L286 475" fill="none" stroke="#243247" stroke-width="2"/>
+<rect x="30" y="484" width="500" height="166" rx="12" fill="#dcfce7" stroke="#243247" stroke-width="2"/>
+<text x="280" y="549" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Aligned Result</text>
+<text x="280" y="573" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">X: (4, 4); y: [0, 1, 2, 2]</text>
+<text x="280" y="597" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">4 feature names; 3 target names</text>
+<text x="280" y="682" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#243247">Original teaching figure; rows and states shown explicitly</text>
+</svg>

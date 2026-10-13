@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="390" viewBox="0 0 480 390" role="img" aria-labelledby="title desc"><title id="title">Vary one model setting</title><desc id="desc">Same Development Rows
+Same Three Fold Boundaries. Then Alpha .1 / 1 / 10
+Refit Pipeline For Each. Then Three MAEs Per Alpha
+X-Axis Is Not Sample Size</desc><rect width="480" height="390" fill="#ffffff"/><defs><marker id="head" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#334155"/></marker></defs>
+<rect x="55" y="20" width="370" height="90" rx="10" fill="#a5d8ff" stroke="#334155" stroke-width="2"/>
+<text x="240" y="52.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Same Development Rows</text>
+<text x="240" y="77.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Same Three Fold Boundaries</text>
+<path d="M240 110 L240 143" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#head)"/>
+<rect x="55" y="145" width="370" height="90" rx="10" fill="#d0bfff" stroke="#334155" stroke-width="2"/>
+<text x="240" y="177.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Alpha .1 / 1 / 10</text>
+<text x="240" y="202.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Refit Pipeline For Each</text>
+<path d="M240 235 L240 268" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#head)"/>
+<rect x="55" y="270" width="370" height="90" rx="10" fill="#b2f2bb" stroke="#334155" stroke-width="2"/>
+<text x="240" y="302.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Three MAEs Per Alpha</text>
+<text x="240" y="327.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">X-Axis Is Not Sample Size</text>
+</svg>

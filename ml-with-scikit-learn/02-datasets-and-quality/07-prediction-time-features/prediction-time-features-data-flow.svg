@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="700" viewBox="0 0 560 700" role="img" aria-labelledby="title desc">
+<title id="title">Prediction Time Features: concrete data flow</title>
+<desc id="desc">At Checkout: 2025-01-15. basket_value_usd = 25; item_count = 1. order_id D0 retained only for audit. Allowed Feature Matrix. [basket_value_usd, item_count]. First row [25, 1]; file shape (32, 2). Excluded Later Events. actual_delivery_days: after delivery. returned_30d: after 30-day window</desc>
+<rect width="560" height="700" fill="#ffffff"/>
+<text x="280" y="31" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#243247">Prediction Time Features</text>
+<rect x="30" y="70" width="500" height="166" rx="12" fill="#dbeafe" stroke="#243247" stroke-width="2"/>
+<text x="280" y="135" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">At Checkout: 2025-01-15</text>
+<text x="280" y="159" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">basket_value_usd = 25; item_count = 1</text>
+<text x="280" y="183" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">order_id D0 retained only for audit</text>
+<path d="M280 236 V277" fill="none" stroke="#243247" stroke-width="2"/><path d="M274 268 L280 277 L286 268" fill="none" stroke="#243247" stroke-width="2"/>
+<rect x="30" y="277" width="500" height="166" rx="12" fill="#ede9fe" stroke="#243247" stroke-width="2"/>
+<text x="280" y="342" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Allowed Feature Matrix</text>
+<text x="280" y="366" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">[basket_value_usd, item_count]</text>
+<text x="280" y="390" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">First row [25, 1]; file shape (32, 2)</text>
+<rect x="30" y="484" width="500" height="166" rx="12" fill="#ffedd5" stroke="#243247" stroke-width="2"/>
+<text x="280" y="549" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Excluded Later Events</text>
+<text x="280" y="573" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">actual_delivery_days: after delivery</text>
+<text x="280" y="597" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">returned_30d: after 30-day window</text>
+<text x="280" y="682" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#243247">Original teaching figure; rows and states shown explicitly</text>
+</svg>

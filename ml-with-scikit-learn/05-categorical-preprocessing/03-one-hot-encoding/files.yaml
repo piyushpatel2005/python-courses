@@ -1,0 +1,6 @@
+files:
+  - path: main.py
+  - path: categories.json
+    readonly: true
+  - path: queries.json
+    readonly: true

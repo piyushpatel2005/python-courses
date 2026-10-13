@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="374" viewBox="0 0 480 374" role="img"><title>Warm and cold recommendation branches</title><desc>A usable content profile keeps its ranking. An absent or zero profile uses training counts. Both branches exclude seen IDs and use deterministic ties.</desc><defs><marker id="tip" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#334155"/></marker></defs><rect width="480" height="374" fill="white"/>
+<rect x="20" y="15" width="440" height="60" rx="8" fill="#dbeafe" stroke="#334155" stroke-width="2"/>
+<text x="240.0" y="51.0" text-anchor="middle" fill="#172033" font-size="17" font-family="Arial,sans-serif">User history and item vectors</text>
+<rect x="20" y="120" width="210" height="90" rx="8" fill="#ede9fe" stroke="#334155" stroke-width="2"/>
+<text x="125.0" y="160.0" text-anchor="middle" fill="#172033" font-size="17" font-family="Arial,sans-serif">Nonzero profile</text>
+<text x="125.0" y="182.0" text-anchor="middle" fill="#172033" font-size="17" font-family="Arial,sans-serif">Keep content ranking</text>
+<rect x="250" y="120" width="210" height="90" rx="8" fill="#ffedd5" stroke="#334155" stroke-width="2"/>
+<text x="355.0" y="160.0" text-anchor="middle" fill="#172033" font-size="17" font-family="Arial,sans-serif">No / zero profile</text>
+<text x="355.0" y="182.0" text-anchor="middle" fill="#172033" font-size="17" font-family="Arial,sans-serif">Training-view counts</text>
+<rect x="20" y="270" width="440" height="85" rx="8" fill="#dcfce7" stroke="#334155" stroke-width="2"/>
+<text x="240.0" y="307.5" text-anchor="middle" fill="#172033" font-size="17" font-family="Arial,sans-serif">Both branches exclude seen IDs</text>
+<text x="240.0" y="329.5" text-anchor="middle" fill="#172033" font-size="17" font-family="Arial,sans-serif">Sort score/count, then ascending ID</text>
+<path d="M240 75 L240 95 L125 95 L125 120" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#tip)"/>
+<path d="M240 75 L240 95 L355 95 L355 120" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#tip)"/>
+<path d="M125 210 L125 240 L240 240 L240 270" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#tip)"/>
+<path d="M355 210 L355 240 L240 240 L240 270" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#tip)"/>
+</svg>

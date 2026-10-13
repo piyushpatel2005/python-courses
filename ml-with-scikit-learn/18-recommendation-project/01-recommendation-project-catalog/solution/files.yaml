@@ -1,0 +1,8 @@
+files:
+  - path: main.py
+  - path: catalog.json
+    readonly: true
+  - path: users.csv
+    readonly: true
+  - path: interactions.csv
+    readonly: true

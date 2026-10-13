@@ -1,0 +1,4 @@
+files:
+  - path: main.py
+  - path: sample-parcels.csv
+    readonly: true

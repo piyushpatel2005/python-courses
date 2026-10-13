@@ -1,0 +1,128 @@
+[
+  {
+    "item_id": "I01",
+    "category": "furniture",
+    "title": "Oak reading chair",
+    "description": "wood seat linen cushion",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "I02",
+    "category": "furniture",
+    "title": "Pine dining bench",
+    "description": "wood seat long frame",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "I03",
+    "category": "furniture",
+    "title": "Steel entry rack",
+    "description": "metal storage narrow shelf",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "I04",
+    "category": "furniture",
+    "title": "Oak side table",
+    "description": "wood surface round frame",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "I05",
+    "category": "furniture",
+    "title": "Linen lounge chair",
+    "description": "fabric seat soft cushion",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "I06",
+    "category": "furniture",
+    "title": "Pine wall shelf",
+    "description": "wood storage open shelf",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "I07",
+    "category": "kitchen",
+    "title": "Steel soup pot",
+    "description": "metal cook deep lid",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "I08",
+    "category": "kitchen",
+    "title": "Iron frying pan",
+    "description": "metal cook flat handle",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "I09",
+    "category": "kitchen",
+    "title": "Glass mixing bowl",
+    "description": "glass serve round bowl",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "I10",
+    "category": "kitchen",
+    "title": "Oak serving tray",
+    "description": "wood serve flat handle",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "I11",
+    "category": "kitchen",
+    "title": "Ceramic tea mug",
+    "description": "ceramic drink glazed handle",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "I12",
+    "category": "kitchen",
+    "title": "Glass water jug",
+    "description": "glass drink clear handle",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "I13",
+    "category": "bedding",
+    "title": "Linen pillow cover",
+    "description": "fabric soft cushion cover",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "I14",
+    "category": "bedding",
+    "title": "Cotton quilt",
+    "description": "fabric soft warm stitched",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "I15",
+    "category": "bedding",
+    "title": "Wool throw",
+    "description": "fiber warm soft woven",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "I16",
+    "category": "decor",
+    "title": "Woven floor basket",
+    "description": "fiber storage woven tall",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "I17",
+    "category": "decor",
+    "title": "Ceramic bud vase",
+    "description": "ceramic flower glazed narrow",
+    "available_since": "2025-01-01"
+  },
+  {
+    "item_id": "I18",
+    "category": "decor",
+    "title": "Glass candle holder",
+    "description": "glass light clear round",
+    "available_since": "2025-01-01"
+  }
+]

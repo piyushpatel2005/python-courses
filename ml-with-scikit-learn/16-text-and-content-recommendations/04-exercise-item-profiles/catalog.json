@@ -1,0 +1,254 @@
+[
+  {
+    "category": "kitchen",
+    "title": "small steel pan",
+    "description": "metal cook small",
+    "item_id": "K01",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "small glass bowl",
+    "description": "glass serve small",
+    "item_id": "K02",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "small wood tray",
+    "description": "wood serve small",
+    "item_id": "K03",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "small ceramic mug",
+    "description": "ceramic drink small",
+    "item_id": "K04",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "small glass jug",
+    "description": "glass drink small",
+    "item_id": "K05",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "small cotton towel",
+    "description": "fabric dry small",
+    "item_id": "K06",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "small steel colander",
+    "description": "metal drain small",
+    "item_id": "K07",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "small wood spoon",
+    "description": "wood stir small",
+    "item_id": "K08",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "small ceramic plate",
+    "description": "ceramic serve small",
+    "item_id": "K09",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "small steel pot",
+    "description": "metal cook small",
+    "item_id": "K10",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "small glass jar",
+    "description": "glass store small",
+    "item_id": "K11",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "small linen cloth",
+    "description": "fabric wipe small",
+    "item_id": "K12",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "medium steel pan",
+    "description": "metal cook medium",
+    "item_id": "K13",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "medium glass bowl",
+    "description": "glass serve medium",
+    "item_id": "K14",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "medium wood tray",
+    "description": "wood serve medium",
+    "item_id": "K15",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "medium ceramic mug",
+    "description": "ceramic drink medium",
+    "item_id": "K16",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "medium glass jug",
+    "description": "glass drink medium",
+    "item_id": "K17",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "medium cotton towel",
+    "description": "fabric dry medium",
+    "item_id": "K18",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "medium steel colander",
+    "description": "metal drain medium",
+    "item_id": "K19",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "medium wood spoon",
+    "description": "wood stir medium",
+    "item_id": "K20",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "medium ceramic plate",
+    "description": "ceramic serve medium",
+    "item_id": "K21",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "medium steel pot",
+    "description": "metal cook medium",
+    "item_id": "K22",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "medium glass jar",
+    "description": "glass store medium",
+    "item_id": "K23",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "medium linen cloth",
+    "description": "fabric wipe medium",
+    "item_id": "K24",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "large steel pan",
+    "description": "metal cook large",
+    "item_id": "K25",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "large glass bowl",
+    "description": "glass serve large",
+    "item_id": "K26",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "large wood tray",
+    "description": "wood serve large",
+    "item_id": "K27",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "large ceramic mug",
+    "description": "ceramic drink large",
+    "item_id": "K28",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "large glass jug",
+    "description": "glass drink large",
+    "item_id": "K29",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "large cotton towel",
+    "description": "fabric dry large",
+    "item_id": "K30",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "large steel colander",
+    "description": "metal drain large",
+    "item_id": "K31",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "large wood spoon",
+    "description": "wood stir large",
+    "item_id": "K32",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "large ceramic plate",
+    "description": "ceramic serve large",
+    "item_id": "K33",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "large steel pot",
+    "description": "metal cook large",
+    "item_id": "K34",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "large glass jar",
+    "description": "glass store large",
+    "item_id": "K35",
+    "available_since": "2025-01-01"
+  },
+  {
+    "category": "kitchen",
+    "title": "large linen cloth",
+    "description": "fabric wipe large",
+    "item_id": "K36",
+    "available_since": "2025-01-01"
+  }
+]

@@ -1,0 +1,218 @@
+[
+  {
+    "review_id": "R01",
+    "text": "packaging wrap torn shelf",
+    "partition": "train",
+    "topic": "packaging"
+  },
+  {
+    "review_id": "R02",
+    "text": "quality glaze smooth shelf",
+    "partition": "train",
+    "topic": "quality"
+  },
+  {
+    "review_id": "R03",
+    "text": "packaging box dented shelf",
+    "partition": "train",
+    "topic": "packaging"
+  },
+  {
+    "review_id": "R04",
+    "text": "quality fabric sturdy shelf",
+    "partition": "train",
+    "topic": "quality"
+  },
+  {
+    "review_id": "R05",
+    "text": "packaging tape loose shelf",
+    "partition": "train",
+    "topic": "packaging"
+  },
+  {
+    "review_id": "R06",
+    "text": "quality finish durable shelf",
+    "partition": "train",
+    "topic": "quality"
+  },
+  {
+    "review_id": "R07",
+    "text": "packaging seal open shelf",
+    "partition": "train",
+    "topic": "packaging"
+  },
+  {
+    "review_id": "R08",
+    "text": "quality surface even shelf",
+    "partition": "train",
+    "topic": "quality"
+  },
+  {
+    "review_id": "R09",
+    "text": "packaging padding thin shelf",
+    "partition": "train",
+    "topic": "packaging"
+  },
+  {
+    "review_id": "R10",
+    "text": "quality handle firm shelf",
+    "partition": "train",
+    "topic": "quality"
+  },
+  {
+    "review_id": "R11",
+    "text": "packaging wrap torn chair",
+    "partition": "train",
+    "topic": "packaging"
+  },
+  {
+    "review_id": "R12",
+    "text": "quality glaze smooth chair",
+    "partition": "train",
+    "topic": "quality"
+  },
+  {
+    "review_id": "R13",
+    "text": "packaging box dented chair",
+    "partition": "train",
+    "topic": "packaging"
+  },
+  {
+    "review_id": "R14",
+    "text": "quality fabric sturdy chair",
+    "partition": "train",
+    "topic": "quality"
+  },
+  {
+    "review_id": "R15",
+    "text": "packaging tape loose chair",
+    "partition": "train",
+    "topic": "packaging"
+  },
+  {
+    "review_id": "R16",
+    "text": "quality finish durable chair",
+    "partition": "train",
+    "topic": "quality"
+  },
+  {
+    "review_id": "R17",
+    "text": "packaging seal open chair",
+    "partition": "train",
+    "topic": "packaging"
+  },
+  {
+    "review_id": "R18",
+    "text": "quality surface even chair",
+    "partition": "train",
+    "topic": "quality"
+  },
+  {
+    "review_id": "R19",
+    "text": "packaging padding thin chair",
+    "partition": "train",
+    "topic": "packaging"
+  },
+  {
+    "review_id": "R20",
+    "text": "quality handle firm chair",
+    "partition": "train",
+    "topic": "quality"
+  },
+  {
+    "review_id": "R21",
+    "text": "packaging wrap torn lamp",
+    "partition": "train",
+    "topic": "packaging"
+  },
+  {
+    "review_id": "R22",
+    "text": "quality glaze smooth lamp",
+    "partition": "train",
+    "topic": "quality"
+  },
+  {
+    "review_id": "R23",
+    "text": "packaging box dented lamp",
+    "partition": "train",
+    "topic": "packaging"
+  },
+  {
+    "review_id": "R24",
+    "text": "quality fabric sturdy lamp",
+    "partition": "train",
+    "topic": "quality"
+  },
+  {
+    "review_id": "R25",
+    "text": "packaging tape loose lamp",
+    "partition": "train",
+    "topic": "packaging"
+  },
+  {
+    "review_id": "R26",
+    "text": "quality finish durable lamp",
+    "partition": "train",
+    "topic": "quality"
+  },
+  {
+    "review_id": "R27",
+    "text": "packaging seal open lamp",
+    "partition": "train",
+    "topic": "packaging"
+  },
+  {
+    "review_id": "R28",
+    "text": "quality surface even lamp",
+    "partition": "train",
+    "topic": "quality"
+  },
+  {
+    "review_id": "R29",
+    "text": "packaging padding thin lamp",
+    "partition": "train",
+    "topic": "packaging"
+  },
+  {
+    "review_id": "R30",
+    "text": "quality handle firm lamp",
+    "partition": "train",
+    "topic": "quality"
+  },
+  {
+    "review_id": "R31",
+    "text": "packaging wrap torn",
+    "partition": "query",
+    "topic": null
+  },
+  {
+    "review_id": "R32",
+    "text": "quality glaze smooth",
+    "partition": "query",
+    "topic": null
+  },
+  {
+    "review_id": "R33",
+    "text": "packaging box",
+    "partition": "query",
+    "topic": null
+  },
+  {
+    "review_id": "R34",
+    "text": "quality chair",
+    "partition": "query",
+    "topic": null
+  },
+  {
+    "review_id": "R35",
+    "text": "unseentoken",
+    "partition": "query",
+    "topic": null
+  },
+  {
+    "review_id": "R36",
+    "text": "packaging padding thin",
+    "partition": "query",
+    "topic": null
+  }
+]

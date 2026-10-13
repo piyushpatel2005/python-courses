@@ -1,0 +1,4 @@
+files:
+  - path: main.py
+  - path: checkout-measurements.csv
+    readonly: true

@@ -1,0 +1,11 @@
+user_id,item_id,event_at,event_type
+D1,A01,2025-01-05,view
+D1,A02,2025-01-12,view
+D1,A03,2025-01-19,view
+D1,A04,2025-01-26,view
+D1,A05,2025-02-02,view
+D2,A05,2025-01-05,view
+D2,A06,2025-01-12,view
+D2,A03,2025-01-19,view
+D2,A02,2025-01-26,view
+D2,A04,2025-02-02,view

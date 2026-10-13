@@ -1,0 +1,34 @@
+[
+  {
+    "field": "user_id",
+    "dtype": "string",
+    "unit": "none",
+    "missing": "forbidden",
+    "available": "event date, at most 2025-01-17",
+    "role": "training count grouping"
+  },
+  {
+    "field": "item_id",
+    "dtype": "string",
+    "unit": "none",
+    "missing": "forbidden",
+    "available": "event date, at most 2025-01-17",
+    "role": "training count grouping"
+  },
+  {
+    "field": "event_at",
+    "dtype": "string",
+    "unit": "calendar date",
+    "missing": "forbidden",
+    "available": "event date, at most 2025-01-17",
+    "role": "availability audit"
+  },
+  {
+    "field": "available_since",
+    "dtype": "ISO date string",
+    "unit": "calendar date",
+    "role": "catalog eligibility",
+    "available": "2025-01-01",
+    "missing": "forbidden"
+  }
+]

@@ -1,0 +1,218 @@
+[
+  {
+    "review_id": "R01",
+    "text": "assembly screws fit shelf",
+    "partition": "train",
+    "topic": "assembly"
+  },
+  {
+    "review_id": "R02",
+    "text": "delivery courier early shelf",
+    "partition": "train",
+    "topic": "delivery"
+  },
+  {
+    "review_id": "R03",
+    "text": "assembly bolts align shelf",
+    "partition": "train",
+    "topic": "assembly"
+  },
+  {
+    "review_id": "R04",
+    "text": "delivery parcel late shelf",
+    "partition": "train",
+    "topic": "delivery"
+  },
+  {
+    "review_id": "R05",
+    "text": "assembly instructions clear shelf",
+    "partition": "train",
+    "topic": "assembly"
+  },
+  {
+    "review_id": "R06",
+    "text": "delivery box arrived shelf",
+    "partition": "train",
+    "topic": "delivery"
+  },
+  {
+    "review_id": "R07",
+    "text": "assembly frame fits shelf",
+    "partition": "train",
+    "topic": "assembly"
+  },
+  {
+    "review_id": "R08",
+    "text": "delivery van delayed shelf",
+    "partition": "train",
+    "topic": "delivery"
+  },
+  {
+    "review_id": "R09",
+    "text": "assembly parts complete shelf",
+    "partition": "train",
+    "topic": "assembly"
+  },
+  {
+    "review_id": "R10",
+    "text": "delivery tracking clear shelf",
+    "partition": "train",
+    "topic": "delivery"
+  },
+  {
+    "review_id": "R11",
+    "text": "assembly screws fit chair",
+    "partition": "train",
+    "topic": "assembly"
+  },
+  {
+    "review_id": "R12",
+    "text": "delivery courier early chair",
+    "partition": "train",
+    "topic": "delivery"
+  },
+  {
+    "review_id": "R13",
+    "text": "assembly bolts align chair",
+    "partition": "train",
+    "topic": "assembly"
+  },
+  {
+    "review_id": "R14",
+    "text": "delivery parcel late chair",
+    "partition": "train",
+    "topic": "delivery"
+  },
+  {
+    "review_id": "R15",
+    "text": "assembly instructions clear chair",
+    "partition": "train",
+    "topic": "assembly"
+  },
+  {
+    "review_id": "R16",
+    "text": "delivery box arrived chair",
+    "partition": "train",
+    "topic": "delivery"
+  },
+  {
+    "review_id": "R17",
+    "text": "assembly frame fits chair",
+    "partition": "train",
+    "topic": "assembly"
+  },
+  {
+    "review_id": "R18",
+    "text": "delivery van delayed chair",
+    "partition": "train",
+    "topic": "delivery"
+  },
+  {
+    "review_id": "R19",
+    "text": "assembly parts complete chair",
+    "partition": "train",
+    "topic": "assembly"
+  },
+  {
+    "review_id": "R20",
+    "text": "delivery tracking clear chair",
+    "partition": "train",
+    "topic": "delivery"
+  },
+  {
+    "review_id": "R21",
+    "text": "assembly screws fit lamp",
+    "partition": "train",
+    "topic": "assembly"
+  },
+  {
+    "review_id": "R22",
+    "text": "delivery courier early lamp",
+    "partition": "train",
+    "topic": "delivery"
+  },
+  {
+    "review_id": "R23",
+    "text": "assembly bolts align lamp",
+    "partition": "train",
+    "topic": "assembly"
+  },
+  {
+    "review_id": "R24",
+    "text": "delivery parcel late lamp",
+    "partition": "train",
+    "topic": "delivery"
+  },
+  {
+    "review_id": "R25",
+    "text": "assembly instructions clear lamp",
+    "partition": "train",
+    "topic": "assembly"
+  },
+  {
+    "review_id": "R26",
+    "text": "delivery box arrived lamp",
+    "partition": "train",
+    "topic": "delivery"
+  },
+  {
+    "review_id": "R27",
+    "text": "assembly frame fits lamp",
+    "partition": "train",
+    "topic": "assembly"
+  },
+  {
+    "review_id": "R28",
+    "text": "delivery van delayed lamp",
+    "partition": "train",
+    "topic": "delivery"
+  },
+  {
+    "review_id": "R29",
+    "text": "assembly parts complete lamp",
+    "partition": "train",
+    "topic": "assembly"
+  },
+  {
+    "review_id": "R30",
+    "text": "delivery tracking clear lamp",
+    "partition": "train",
+    "topic": "delivery"
+  },
+  {
+    "review_id": "R31",
+    "text": "assembly screws fit",
+    "partition": "query",
+    "topic": null
+  },
+  {
+    "review_id": "R32",
+    "text": "delivery courier early",
+    "partition": "query",
+    "topic": null
+  },
+  {
+    "review_id": "R33",
+    "text": "assembly box",
+    "partition": "query",
+    "topic": null
+  },
+  {
+    "review_id": "R34",
+    "text": "delivery chair",
+    "partition": "query",
+    "topic": null
+  },
+  {
+    "review_id": "R35",
+    "text": "unseentoken",
+    "partition": "query",
+    "topic": null
+  },
+  {
+    "review_id": "R36",
+    "text": "assembly parts complete",
+    "partition": "query",
+    "topic": null
+  }
+]

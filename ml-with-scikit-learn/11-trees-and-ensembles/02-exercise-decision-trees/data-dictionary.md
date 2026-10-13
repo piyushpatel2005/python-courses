@@ -1,0 +1,3 @@
+# Synthetic model observations
+
+Fixed snapshot: 2025-01-15. `observation_id`: unique string audit ID, excluded from X. `measurement_a`, `measurement_b`, `measurement_c`: complete float predictor measurements in arbitrary signed simulation units, available before the synthetic target. `target`: integer class 0/1, observed afterward and never included in X. The demo uses 90 rows originally generated with seed 17; transfer uses 96 rows from seed 29. Values and order are preserved exactly in this file migration. These fixtures are not actual commerce measurements or evidence of model quality.

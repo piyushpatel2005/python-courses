@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="390" viewBox="0 0 480 390" role="img" aria-labelledby="title desc"><title id="title">Tune with stratified folds</title><desc id="desc">18 Analogue Training Rows
+Validation / Test Stay Out. Then Each Stratified Fold Refits
+Impute, Scale, Encode, Logistic. Then Compare C = 0.2 And 2
+Refit Winner On 18 Rows</desc><rect width="480" height="390" fill="#ffffff"/><defs><marker id="head" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#334155"/></marker></defs>
+<rect x="55" y="20" width="370" height="90" rx="10" fill="#a5d8ff" stroke="#334155" stroke-width="2"/>
+<text x="240" y="52.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">18 Analogue Training Rows</text>
+<text x="240" y="77.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Validation / Test Stay Out</text>
+<path d="M240 110 L240 143" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#head)"/>
+<rect x="55" y="145" width="370" height="90" rx="10" fill="#d0bfff" stroke="#334155" stroke-width="2"/>
+<text x="240" y="177.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Each Stratified Fold Refits</text>
+<text x="240" y="202.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Impute, Scale, Encode, Logistic</text>
+<path d="M240 235 L240 268" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#head)"/>
+<rect x="55" y="270" width="370" height="90" rx="10" fill="#b2f2bb" stroke="#334155" stroke-width="2"/>
+<text x="240" y="302.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Compare C = 0.2 And 2</text>
+<text x="240" y="327.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Refit Winner On 18 Rows</text>
+</svg>

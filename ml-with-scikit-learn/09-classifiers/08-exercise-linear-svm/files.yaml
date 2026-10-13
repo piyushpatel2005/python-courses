@@ -1,0 +1,4 @@
+files:
+  - path: main.py
+  - path: classification-measurements.csv
+    readonly: true

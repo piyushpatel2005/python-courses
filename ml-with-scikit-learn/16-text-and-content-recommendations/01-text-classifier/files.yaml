@@ -1,0 +1,4 @@
+files:
+  - path: main.py
+  - path: reviews.json
+    readonly: true

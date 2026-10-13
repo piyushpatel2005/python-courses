@@ -1,0 +1,34 @@
+[
+  {
+    "field": "review_id",
+    "dtype": "string",
+    "unit": "none",
+    "missing": "forbidden",
+    "available": "2025-01-15",
+    "role": "ID"
+  },
+  {
+    "field": "text",
+    "dtype": "string",
+    "unit": "none",
+    "missing": "forbidden",
+    "available": "2025-01-15",
+    "role": "feature"
+  },
+  {
+    "field": "partition",
+    "dtype": "string train/query",
+    "unit": "none",
+    "missing": "forbidden",
+    "available": "fixed protocol",
+    "role": "fit boundary"
+  },
+  {
+    "field": "topic",
+    "dtype": "string or null",
+    "unit": "none",
+    "missing": "null for unlabeled queries",
+    "available": "training annotation only",
+    "role": "synthetic target"
+  }
+]

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="1130" viewBox="0 0 560 1130" role="img" aria-labelledby="title desc">
+<title id="title">Robust Scaling: concrete data flow</title>
+<desc id="desc">Small Worked Example (8 Rows). 2, 4, 6, 8, 10, 12, 14, 100 kg. Both scalers see identical rows. Median And IQR. Median = 9; Q1 = 5.5; Q3 = 12.5. Robust scale = 7 kg. Queries: 8 kg And 100 kg. Robust outputs: -0.143 and 13. No row is removed or clipped</desc>
+<rect width="560" height="1130" fill="#ffffff"/>
+<text x="280" y="31" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#243247">Robust Scaling</text>
+<rect x="30" y="70" width="500" height="166" rx="12" fill="#dbeafe" stroke="#243247" stroke-width="2"/>
+<text x="280" y="135" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Small Worked Example (8 Rows)</text>
+<text x="280" y="159" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">2, 4, 6, 8, 10, 12, 14, 100 kg</text>
+<text x="280" y="183" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Both scalers see identical rows</text>
+<path d="M280 236 V277" fill="none" stroke="#243247" stroke-width="2"/><path d="M274 268 L280 277 L286 268" fill="none" stroke="#243247" stroke-width="2"/>
+<rect x="30" y="277" width="500" height="166" rx="12" fill="#ede9fe" stroke="#243247" stroke-width="2"/>
+<text x="280" y="342" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Median And IQR</text>
+<text x="280" y="366" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Median = 9; Q1 = 5.5; Q3 = 12.5</text>
+<text x="280" y="390" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Robust scale = 7 kg</text>
+<path d="M280 443 V484" fill="none" stroke="#243247" stroke-width="2"/><path d="M274 475 L280 484 L286 475" fill="none" stroke="#243247" stroke-width="2"/>
+<rect x="30" y="484" width="500" height="166" rx="12" fill="#dcfce7" stroke="#243247" stroke-width="2"/>
+<text x="280" y="549" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Queries: 8 kg And 100 kg</text>
+<text x="280" y="573" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Robust outputs: -0.143 and 13</text>
+<text x="280" y="597" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">No row is removed or clipped</text>
+<text x="280" y="722" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#243247">Robust-Scaled Value</text>
+<path d="M90 760 L90 1000" fill="none" stroke="#243247" stroke-width="2"/>
+<path d="M90 1000 L490 1000" fill="none" stroke="#243247" stroke-width="2"/>
+<circle cx="105.0" cy="985.0" r="5" fill="#2563eb"/>
+<path d="M105.0 985.0 L112.55102040816327 980.7142857142857" fill="none" stroke="#2563eb" stroke-width="2"/>
+<circle cx="112.55102040816327" cy="980.7142857142857" r="5" fill="#2563eb"/>
+<path d="M112.55102040816327 980.7142857142857 L120.10204081632654 976.4285714285714" fill="none" stroke="#2563eb" stroke-width="2"/>
+<circle cx="120.10204081632654" cy="976.4285714285714" r="5" fill="#2563eb"/>
+<path d="M120.10204081632654 976.4285714285714 L127.65306122448979 972.1428571428571" fill="none" stroke="#2563eb" stroke-width="2"/>
+<circle cx="127.65306122448979" cy="972.1428571428571" r="5" fill="#2563eb"/>
+<path d="M127.65306122448979 972.1428571428571 L135.20408163265307 967.8571428571429" fill="none" stroke="#2563eb" stroke-width="2"/>
+<circle cx="135.20408163265307" cy="967.8571428571429" r="5" fill="#2563eb"/>
+<path d="M135.20408163265307 967.8571428571429 L142.75510204081633 963.5714285714286" fill="none" stroke="#2563eb" stroke-width="2"/>
+<circle cx="142.75510204081633" cy="963.5714285714286" r="5" fill="#2563eb"/>
+<path d="M142.75510204081633 963.5714285714286 L150.30612244897958 959.2857142857143" fill="none" stroke="#2563eb" stroke-width="2"/>
+<circle cx="150.30612244897958" cy="959.2857142857143" r="5" fill="#2563eb"/>
+<path d="M150.30612244897958 959.2857142857143 L475.0 775.0" fill="none" stroke="#2563eb" stroke-width="2"/>
+<circle cx="475.0" cy="775.0" r="5" fill="#2563eb"/>
+<text x="78" y="991" text-anchor="end" font-family="Arial" font-size="16" fill="#243247">-1</text>
+<text x="78" y="781" text-anchor="end" font-family="Arial" font-size="16" fill="#243247">13</text>
+<text x="105" y="1028" text-anchor="middle" font-family="Arial" font-size="16" fill="#243247">2</text>
+<text x="475" y="1028" text-anchor="middle" font-family="Arial" font-size="16" fill="#243247">100</text>
+<text x="280" y="1060" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#243247">Raw Weight (kg)</text>
+<text x="280" y="1086" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#243247">Points follow the displayed fitted rule</text>
+<text x="280" y="1112" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#243247">Original teaching figure; rows and states shown explicitly</text>
+</svg>

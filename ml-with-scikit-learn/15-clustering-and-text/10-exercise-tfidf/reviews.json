@@ -1,0 +1,182 @@
+[
+  {
+    "review_id": "R01",
+    "text": "cotton cotton cover",
+    "partition": "train"
+  },
+  {
+    "review_id": "R02",
+    "text": "wool wool cover",
+    "partition": "train"
+  },
+  {
+    "review_id": "R03",
+    "text": "linen linen cover",
+    "partition": "train"
+  },
+  {
+    "review_id": "R04",
+    "text": "silk silk cover",
+    "partition": "train"
+  },
+  {
+    "review_id": "R05",
+    "text": "fiber fiber cover",
+    "partition": "train"
+  },
+  {
+    "review_id": "R06",
+    "text": "cotton cotton quilt",
+    "partition": "train"
+  },
+  {
+    "review_id": "R07",
+    "text": "wool wool quilt",
+    "partition": "train"
+  },
+  {
+    "review_id": "R08",
+    "text": "linen linen quilt",
+    "partition": "train"
+  },
+  {
+    "review_id": "R09",
+    "text": "silk silk quilt",
+    "partition": "train"
+  },
+  {
+    "review_id": "R10",
+    "text": "fiber fiber quilt",
+    "partition": "train"
+  },
+  {
+    "review_id": "R11",
+    "text": "cotton cotton throw",
+    "partition": "train"
+  },
+  {
+    "review_id": "R12",
+    "text": "wool wool throw",
+    "partition": "train"
+  },
+  {
+    "review_id": "R13",
+    "text": "linen linen throw",
+    "partition": "train"
+  },
+  {
+    "review_id": "R14",
+    "text": "silk silk throw",
+    "partition": "train"
+  },
+  {
+    "review_id": "R15",
+    "text": "fiber fiber throw",
+    "partition": "train"
+  },
+  {
+    "review_id": "R16",
+    "text": "cotton cotton pillow",
+    "partition": "train"
+  },
+  {
+    "review_id": "R17",
+    "text": "wool wool pillow",
+    "partition": "train"
+  },
+  {
+    "review_id": "R18",
+    "text": "linen linen pillow",
+    "partition": "train"
+  },
+  {
+    "review_id": "R19",
+    "text": "silk silk pillow",
+    "partition": "train"
+  },
+  {
+    "review_id": "R20",
+    "text": "fiber fiber pillow",
+    "partition": "train"
+  },
+  {
+    "review_id": "R21",
+    "text": "cotton cotton sheet",
+    "partition": "train"
+  },
+  {
+    "review_id": "R22",
+    "text": "wool wool sheet",
+    "partition": "train"
+  },
+  {
+    "review_id": "R23",
+    "text": "linen linen sheet",
+    "partition": "train"
+  },
+  {
+    "review_id": "R24",
+    "text": "silk silk sheet",
+    "partition": "train"
+  },
+  {
+    "review_id": "R25",
+    "text": "fiber fiber sheet",
+    "partition": "train"
+  },
+  {
+    "review_id": "R26",
+    "text": "cotton cotton blanket",
+    "partition": "train"
+  },
+  {
+    "review_id": "R27",
+    "text": "wool wool blanket",
+    "partition": "train"
+  },
+  {
+    "review_id": "R28",
+    "text": "linen linen blanket",
+    "partition": "train"
+  },
+  {
+    "review_id": "R29",
+    "text": "silk silk blanket",
+    "partition": "train"
+  },
+  {
+    "review_id": "R30",
+    "text": "fiber fiber blanket",
+    "partition": "train"
+  },
+  {
+    "review_id": "R31",
+    "text": "cotton quilt",
+    "partition": "query"
+  },
+  {
+    "review_id": "R32",
+    "text": "unseentoken",
+    "partition": "query"
+  },
+  {
+    "review_id": "R33",
+    "text": "cover cover",
+    "partition": "query"
+  },
+  {
+    "review_id": "R34",
+    "text": "fiber blanket",
+    "partition": "query"
+  },
+  {
+    "review_id": "R35",
+    "text": "wool",
+    "partition": "query"
+  },
+  {
+    "review_id": "R36",
+    "text": "throw",
+    "partition": "query"
+  }
+]

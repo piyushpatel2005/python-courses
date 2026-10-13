@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="390" viewBox="0 0 480 390" role="img" aria-labelledby="title desc"><title id="title">Predict leaf means</title><desc id="desc">Sorted Inputs: 1, 2, 7, 8
+Split At x = 4. Then Left Leaf Targets: 8, 12
+Right Targets: 20, 24. Then Leaf Means: 10 and 22
+x = 2 Predicts 10</desc><rect width="480" height="390" fill="#ffffff"/><defs><marker id="head" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#334155"/></marker></defs>
+<rect x="55" y="20" width="370" height="90" rx="10" fill="#a5d8ff" stroke="#334155" stroke-width="2"/>
+<text x="240" y="52.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Sorted Inputs: 1, 2, 7, 8</text>
+<text x="240" y="77.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Split At x = 4</text>
+<path d="M240 110 L240 143" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#head)"/>
+<rect x="55" y="145" width="370" height="90" rx="10" fill="#d0bfff" stroke="#334155" stroke-width="2"/>
+<text x="240" y="177.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Left Leaf Targets: 8, 12</text>
+<text x="240" y="202.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Right Targets: 20, 24</text>
+<path d="M240 235 L240 268" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#head)"/>
+<rect x="55" y="270" width="370" height="90" rx="10" fill="#b2f2bb" stroke="#334155" stroke-width="2"/>
+<text x="240" y="302.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Leaf Means: 10 and 22</text>
+<text x="240" y="327.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">x = 2 Predicts 10</text>
+</svg>

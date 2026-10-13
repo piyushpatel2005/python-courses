@@ -1,0 +1,4 @@
+files:
+  - path: main.py
+  - path: labels.csv
+    readonly: true

@@ -1,0 +1,1122 @@
+[
+  {
+    "lesson": "estimator-basics/xy-shapes",
+    "svg": "01-estimator-basics/01-xy-shapes/xy-shapes-data-flow.svg",
+    "svg_sha256": "e6e2593bf5d7d02ea4bc324616be80af08cc5de624d521cbbd9fd64febe174fa",
+    "scene_sha256": "74e276ab12166bd20ff97f673c2b58cfab1a6376aae76ccab6f54b5ff441c322",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "estimator-basics/first-fit",
+    "svg": "01-estimator-basics/03-first-fit/first-fit-data-flow.svg",
+    "svg_sha256": "4b70676a573643b8796cedda13da0b9c77b2ce8c06b8ac6bffc6f2cbcdb0b9cd",
+    "scene_sha256": "4d81c54894805d3661241332b2f62268e0ec40fae0f7286fdcf982ed1ce40bb9",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 12,
+      "rectangle": 3,
+      "arrow": 2,
+      "line": 6,
+      "ellipse": 5
+    }
+  },
+  {
+    "lesson": "estimator-basics/new-predictions",
+    "svg": "01-estimator-basics/05-new-predictions/new-predictions-data-flow.svg",
+    "svg_sha256": "5ba817edac0d569b2bfcb6150bf7db0cc37c565f05581349325b4e17ba3f829c",
+    "scene_sha256": "c52c3b03d0ba6ff4d6c95559cd5c8c32b74434773f831773d626857ec2de1e0e",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "estimator-basics/estimator-settings",
+    "svg": "01-estimator-basics/07-estimator-settings/estimator-settings-data-flow.svg",
+    "svg_sha256": "198876b90961e9b3e76539f28b7549a2e3e75493cf381059c11730d60bb800ad",
+    "scene_sha256": "23d80ab164c6687fdbb846f1e415551358e31a91524ddfe530b5d509cde6961c",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "estimator-basics/transform-contract",
+    "svg": "01-estimator-basics/09-transform-contract/transform-contract-data-flow.svg",
+    "svg_sha256": "49deeb53454618a348f017354c7a9c5e531d08e2f011c2024c2406289eb90d2a",
+    "scene_sha256": "836a53d555333dc84a2fc415a3e1f0fd20bbf6a2953952b2f64062c59b9874cc",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "datasets-and-quality/bundled-data",
+    "svg": "02-datasets-and-quality/01-bundled-data/bundled-data-data-flow.svg",
+    "svg_sha256": "bbf8c5480c7302bb0ac60de56757b0e242c00d7258f7cb98afebdb6fe5223d3f",
+    "scene_sha256": "fcf066a7107d1f4cb8147cb6145c41c19a9da3a7843998b5b979e4ad9df132e7",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "datasets-and-quality/synthetic-data",
+    "svg": "02-datasets-and-quality/03-synthetic-data/synthetic-data-data-flow.svg",
+    "svg_sha256": "0bdbab63d21c7ac336f991575c133b9ef61ca3f1501ffc8f6b8161c8b1fd2306",
+    "scene_sha256": "6352cd1396b9b24936d53bd16fa0b53a76546794d258764732121bf609ff1961",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "datasets-and-quality/data-quality",
+    "svg": "02-datasets-and-quality/05-data-quality/data-quality-data-flow.svg",
+    "svg_sha256": "5843585cd32ecf0b439740ed207f466a4bbcdcbb99d5cedb5f2af1487b7f5525",
+    "scene_sha256": "d2a34bab6ac503b91e8c00995830749ffa69fd560b43cd09b7b63b16f3a79337",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "datasets-and-quality/prediction-time-features",
+    "svg": "02-datasets-and-quality/07-prediction-time-features/prediction-time-features-data-flow.svg",
+    "svg_sha256": "8843ee98b9c36b2742f0178c5a2857b9f6ad05742c7fd9cdd34061073499aaa8",
+    "scene_sha256": "e9da4dd3cb7180567b698e9a1e23467161229eb967f0940881e0bf942d921388",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 1
+    }
+  },
+  {
+    "lesson": "honest-holdouts/train-test-split",
+    "svg": "03-honest-holdouts/01-train-test-split/train-test-split-data-flow.svg",
+    "svg_sha256": "9232c3bc0e5590bd44d253c464afb771771b61da517b354675be4f680af06d01",
+    "scene_sha256": "eb9d88b748f28552964540d7bfa7fdc5858fcab5ea96050b17c1135012c831e5",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "honest-holdouts/validation-split",
+    "svg": "03-honest-holdouts/03-validation-split/validation-split-data-flow.svg",
+    "svg_sha256": "17817fe5f1935b122e6613a4cf707608e676ac9a3e0601053089eab822bf6859",
+    "scene_sha256": "94da5bb18bc320557f6352a12324d7ae73f7aad727fe7191f4a3f34502427e18",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "honest-holdouts/stratified-holdout",
+    "svg": "03-honest-holdouts/05-stratified-holdout/stratified-holdout-data-flow.svg",
+    "svg_sha256": "805d88e47f32978e02c08fa80aca7f370de4094a346733697ac015fdd93c1c1e",
+    "scene_sha256": "f07a50b6b0ef067fe9568d091dc9e78a7d9ba037281b72815ad350f7c3e99237",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "honest-holdouts/preprocessing-leakage",
+    "svg": "03-honest-holdouts/07-preprocessing-leakage/preprocessing-leakage-data-flow.svg",
+    "svg_sha256": "38060c9efe22124efedbb2f32c66c5bada199bc1e0f00f07e051c065be8a1754",
+    "scene_sha256": "33e231a8e4de4735c5af70f1780dec6292cdac6ecdbb82c8b4f407e6daec0d25",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "honest-holdouts/holdout-baselines",
+    "svg": "03-honest-holdouts/09-holdout-baselines/holdout-baselines-data-flow.svg",
+    "svg_sha256": "5bb9ab62710f60acfb7e08d732b869d83bf151d4cadc007a74924f72ac3de78d",
+    "scene_sha256": "05abd6704192cf5030571ebe80e61dea59f1ea2db8f796cce345670b1c655618",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "numeric-preprocessing/median-imputation",
+    "svg": "04-numeric-preprocessing/01-median-imputation/median-imputation-data-flow.svg",
+    "svg_sha256": "164a2248579376a5d8d43e134de4d417706e069af5b199f7ca3281f754d7ba2b",
+    "scene_sha256": "16a24bcc7344b60897e9a75fdb19fc9ead4b5ce9935ef863976180a69bfba1f5",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "numeric-preprocessing/missing-indicators",
+    "svg": "04-numeric-preprocessing/03-missing-indicators/missing-indicators-data-flow.svg",
+    "svg_sha256": "c2c97c6aa5e78edc657ce3daaa93ccd3ffc0379ae93d61d39bf9db1a375f94bc",
+    "scene_sha256": "2cddb2c613396b0c683d1527c1cdaa113b19726a485594855b0c297234c4f071",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "numeric-preprocessing/standard-scaling",
+    "svg": "04-numeric-preprocessing/05-standard-scaling/standard-scaling-data-flow.svg",
+    "svg_sha256": "1a72a8eaf2317f302707375f51229116b934a181c3dc285f1f33efa1869d943d",
+    "scene_sha256": "2287f9a3c7397c5b34e5e3c6eff6b836e804b7b8dce139f1dce3d6784bc92a55",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 12,
+      "rectangle": 3,
+      "arrow": 2,
+      "line": 5,
+      "ellipse": 4
+    }
+  },
+  {
+    "lesson": "numeric-preprocessing/minmax-scaling",
+    "svg": "04-numeric-preprocessing/07-minmax-scaling/minmax-scaling-data-flow.svg",
+    "svg_sha256": "ce012ef288114636c9880a5734d3cb5f56b6472792268bcb1dfa78f7c559d3ab",
+    "scene_sha256": "6ccfe55fee56c72d1e2af2f530af87df33b0ddd2d70406a16f13006c921dcae4",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 12,
+      "rectangle": 3,
+      "arrow": 2,
+      "line": 5,
+      "ellipse": 4
+    }
+  },
+  {
+    "lesson": "numeric-preprocessing/robust-scaling",
+    "svg": "04-numeric-preprocessing/09-robust-scaling/robust-scaling-data-flow.svg",
+    "svg_sha256": "470810f6a03a23578e9dc4a58597324acb45f64069ff2570fea1d6db3635f8ff",
+    "scene_sha256": "df67cfed91a65ad00a599d1d3f034b981fa184dbaaa12ab7659d1539bb4630a9",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 12,
+      "rectangle": 3,
+      "arrow": 2,
+      "line": 9,
+      "ellipse": 8
+    }
+  },
+  {
+    "lesson": "categorical-preprocessing/categorical-imputation",
+    "svg": "05-categorical-preprocessing/01-categorical-imputation/categorical-imputation-data-flow.svg",
+    "svg_sha256": "3e45f0ddcebf34fcd73da57a2bc61484b02e44927c2a4ca7e1b4c748eac15d90",
+    "scene_sha256": "dbcfdc8fa50455f36b27c4784ca56ab425ab510bb5b6b76daddad3a55b7a8547",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "categorical-preprocessing/one-hot-encoding",
+    "svg": "05-categorical-preprocessing/03-one-hot-encoding/one-hot-encoding-data-flow.svg",
+    "svg_sha256": "fc538d5e6c198886550e0edfcb63051b18a8c080f3c99bc031e17cf91ec39a05",
+    "scene_sha256": "bd86c4813bfd0c3dd1cba46cad47571583c92740516a75a44903ac90708b002a",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "categorical-preprocessing/unknown-categories",
+    "svg": "05-categorical-preprocessing/05-unknown-categories/unknown-categories-data-flow.svg",
+    "svg_sha256": "a60a76abb6e17c0eabc84ad6d93482c0b26e431dafda9f79a7c301a4c3d9ce5a",
+    "scene_sha256": "a5ddfe689fafe99d2d4692aaabf42c60af304e92caf129e74136f2fbcc3e0f5d",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 5,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "categorical-preprocessing/ordinal-encoding",
+    "svg": "05-categorical-preprocessing/07-ordinal-encoding/ordinal-encoding-data-flow.svg",
+    "svg_sha256": "5ac2c81d2b60a08dd6ea48fd4bf4437c606c6334de45b60ad8cb764b93ef8202",
+    "scene_sha256": "af1e4466e30000cab422c364043fed06b360fada7a8615451641717b81b889b1",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 4,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "categorical-preprocessing/column-transformer",
+    "svg": "05-categorical-preprocessing/09-column-transformer/column-transformer-data-flow.svg",
+    "svg_sha256": "41a1f348d4702b23337345e11c461759a1eb5980fc2fae98ceedb97b7da32b25",
+    "scene_sha256": "aa1f2c7a47a4ce188407b18afca98f89306c37d6df9d7ccb80126420fb96a1ce",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 6,
+      "rectangle": 4,
+      "line": 3,
+      "arrow": 3
+    }
+  },
+  {
+    "lesson": "categorical-preprocessing/column-transformer",
+    "svg": "05-categorical-preprocessing/09-column-transformer/column-transformer-one-row.svg",
+    "svg_sha256": "daf43a9f2b831f0febe435730fe35bd6b968037643408a572859ec537420a2f5",
+    "scene_sha256": "0e8b7e4c49887149c6da9887c1e13069224fdcad2111a7885048fd291838b3c6",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 6,
+      "rectangle": 4,
+      "line": 2,
+      "arrow": 3
+    }
+  },
+  {
+    "lesson": "pipelines-and-regression/pipeline",
+    "svg": "06-pipelines-and-regression/01-pipeline/pipeline-data-flow.svg",
+    "svg_sha256": "395d64b29031462be1adc24a9d52f8efada65d479033dc3f5a5f7a5bf1826331",
+    "scene_sha256": "f96c9d029e6944a25075b04c7ce0c7f9d460c88a900f97dc07a424136b1164ff",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 4,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "pipelines-and-regression/linear-coefficients",
+    "svg": "06-pipelines-and-regression/03-linear-coefficients/linear-coefficients-data-flow.svg",
+    "svg_sha256": "dcbdb8fa0509932c4a6d432e3a15a1c5a8c9af7214e257b3ff6f917244b8b964",
+    "scene_sha256": "7f10ea20b2f6375ccf3140ee003a27067650b5eb82fa78b2b13a16eab2c4d78e",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 4,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "pipelines-and-regression/mae-residuals",
+    "svg": "06-pipelines-and-regression/05-mae-residuals/mae-residuals-data-flow.svg",
+    "svg_sha256": "cc2909ae9fc1c6dc7970e8586dbbcecd5a37f864f795afba34cd5f32c73dd1ea",
+    "scene_sha256": "b52483465edbc50dc87e3d3aebf56afcbd8701c813bf05830cda56b68fb36ca0",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 4,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "pipelines-and-regression/rmse",
+    "svg": "06-pipelines-and-regression/07-rmse/rmse-data-flow.svg",
+    "svg_sha256": "056a301a8bb0ad44f3b1ad51808a75a86a09c401f2bc47f2520735852e7fc089",
+    "scene_sha256": "8938ce803b17e75e2cd3510ff8963d6aa4213a10ceee2c0f447f99068d95e5a9",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 4,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "pipelines-and-regression/r-squared",
+    "svg": "06-pipelines-and-regression/09-r-squared/r-squared-data-flow.svg",
+    "svg_sha256": "60895a8c0e305b35425155ac78952e69c2df54dd616d12c2e75f3f1e19de7512",
+    "scene_sha256": "7376642c49207d9b508ef1ec6bebf1c6f5ece98f8649fadd349a0e46867dcfc2",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 4,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "regularized-regression/ridge",
+    "svg": "07-regularized-regression/01-ridge/ridge-data-flow.svg",
+    "svg_sha256": "c81fb39fc2526e7f5117f247d9440003c8874915b800e81e572dbf080a4e1464",
+    "scene_sha256": "ce909bd763c1fdd5770bd7bdf8f694006404ce501c19bbc18a9ab794a335ad6f",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 4,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "regularized-regression/lasso",
+    "svg": "07-regularized-regression/03-lasso/lasso-data-flow.svg",
+    "svg_sha256": "c9114330c10741d09a399ba05a5e1652baa5c61e9dbf188c25004b321713c1e5",
+    "scene_sha256": "f5340885acddf5171dc733b5c66c854750ee97d448d173ab683e09a88cae8811",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 21,
+      "line": 10,
+      "ellipse": 8,
+      "rectangle": 1
+    }
+  },
+  {
+    "lesson": "regularized-regression/polynomial-features",
+    "svg": "07-regularized-regression/05-polynomial-features/polynomial-features-data-flow.svg",
+    "svg_sha256": "6dd2ba54cd03317ef496e8713a16dd5e6514a8f5fa24ac2bdd0fc5623d463105",
+    "scene_sha256": "6d8f67648fbc5a6148ae2f3157a988f45a9d67e0bfe5798a5a845cb04ce63711",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 4,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "regularized-regression/manual-selection",
+    "svg": "07-regularized-regression/07-manual-selection/manual-selection-data-flow.svg",
+    "svg_sha256": "21148a7c572302ec8415cb46e1b405717ec02c37e8681d051f20f5406b3181ac",
+    "scene_sha256": "74630de12e47b2fa0812a5183f7d945d88ed7e64c31e8d5d77c0a6b03e7af9d0",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 4,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "regularized-regression/residual-patterns",
+    "svg": "07-regularized-regression/09-residual-patterns/residual-patterns-data-flow.svg",
+    "svg_sha256": "1c879fef1e6e69189fdcd1bdb8e263e3188f11a236a2e79c6dff0c2264de93ac",
+    "scene_sha256": "1013f4e30f4a433b26b1ac49c310c7e4e4abcd999d4e737d383315dc1f3b5be2",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 9,
+      "line": 2,
+      "ellipse": 5
+    }
+  },
+  {
+    "lesson": "regression-project/regression-project-split",
+    "svg": "08-regression-project/01-regression-project-split/regression-project-split-data-flow.svg",
+    "svg_sha256": "265cb7bd2406cc166e88e994edd27177e26390e5647158fdfa62cef480f1612a",
+    "scene_sha256": "c0c945745b3c22aea76fee0ee93e2dfa8262f03c182c49607cafa7ee95c5617e",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 4,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "regression-project/regression-project-baseline",
+    "svg": "08-regression-project/03-regression-project-baseline/regression-project-baseline-data-flow.svg",
+    "svg_sha256": "75ad68da90483f41d5b1db6645e3fd649ad846a9ab29a7159c62ae7fe46b3071",
+    "scene_sha256": "2f68cfa2095bf713fd3b5a13f429b027fef92f9de55306105320002f7903ae1c",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 4,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "regression-project/regression-project-pipeline",
+    "svg": "08-regression-project/05-regression-project-pipeline/regression-project-pipeline-data-flow.svg",
+    "svg_sha256": "d756ff56637b413b82d4cfd1b09ba1490a3a494de21127cd1e5ef0ad26a0df1b",
+    "scene_sha256": "72ecbc0d9ebf561a9831e8f1052c2b9d693e7b5be0e4dd6a45b39550cf72beb0",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 4,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "regression-project/regression-project-selection",
+    "svg": "08-regression-project/07-regression-project-selection/regression-project-selection-data-flow.svg",
+    "svg_sha256": "af93ce48c9d9f84474c0fb9e93f19726df15ceedb5a4149ab85468814c5f916f",
+    "scene_sha256": "7bba022f88bc3a06e674f0f3439d6deefe76c388f4d6346e1ec6fc57c45cea33",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 4,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "regression-project/regression-project-report",
+    "svg": "08-regression-project/09-regression-project-report/regression-project-report-data-flow.svg",
+    "svg_sha256": "8e1520bdde5165a370b0218f019332d0c70ab7180f19aea107592b389198214f",
+    "scene_sha256": "729121e18e8f183cc05e2ae67a137accd175674261e49a476e7afe492bff7328",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 4,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "classifiers/logistic-regression",
+    "svg": "09-classifiers/01-logistic-regression/logistic-regression-data-flow.svg",
+    "svg_sha256": "ddd0fa04420a0db7ef38266c17bd4163325b26cb156dcf9d45c1eaaf3fc545f6",
+    "scene_sha256": "c17fe714097321a0d272e4ab380a8d23f50d3244da708b28e97fbec10e97b04e",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 4,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "classifiers/knn",
+    "svg": "09-classifiers/03-knn/knn-data-flow.svg",
+    "svg_sha256": "1db7efbcbb1b25ee1a7de1b7884f49b031128b387b5776482b00faae25b08a2c",
+    "scene_sha256": "5b63f8484592fa3eeb8b2ec07d33124d39512a06386bbe12713890cb702d6dba",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 4,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "classifiers/naive-bayes",
+    "svg": "09-classifiers/05-naive-bayes/naive-bayes-data-flow.svg",
+    "svg_sha256": "0b57e3bed90f69b95950747615c961f360da2565e5319459b92ca06097dbed16",
+    "scene_sha256": "5fa87e5a7f902ca2898767f2b51af40a7a44269413bb12e98068ce3ffa73d0d3",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 4,
+      "rectangle": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "classifiers/linear-svm",
+    "svg": "09-classifiers/07-linear-svm/linear-svm-data-flow.svg",
+    "svg_sha256": "85bf9a165f0e0d58bb053b99feb0878c0398f757407cacbe98a6bb142fa1ec60",
+    "scene_sha256": "3af230c1399881b940de729532d2da5e42e953daab9b508f36657b999faceeba",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 6,
+      "line": 5,
+      "ellipse": 6,
+      "rectangle": 1
+    }
+  },
+  {
+    "lesson": "classifiers/rbf-svm",
+    "svg": "09-classifiers/09-rbf-svm/rbf-svm-data-flow.svg",
+    "svg_sha256": "d79f8a7aea73bbd57d38635f70f9bd4038253ce577fa3bef8012842773f07517",
+    "scene_sha256": "a91a7246a4b6c17b6171f1975b3662b5a826f16945e688a788782921fe9b50ac",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 8,
+      "rectangle": 2,
+      "line": 2,
+      "ellipse": 72
+    }
+  },
+  {
+    "lesson": "classification-metrics/confusion-matrix",
+    "svg": "10-classification-metrics/01-confusion-matrix/confusion-matrix-data-flow.svg",
+    "svg_sha256": "828af289a133c10d88404b4c50c689d373a46ae01311719c535adc76a1ef2502",
+    "scene_sha256": "346f863ac833cdf57a7682f83c72312a5e1964b9f903253b669ddde02f46422f",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "classification-metrics/precision-recall",
+    "svg": "10-classification-metrics/03-precision-recall/precision-recall-data-flow.svg",
+    "svg_sha256": "05c128c6865ad78800e0e988422b7ff361b79d2cb88407bd6b0c3035ddcef409",
+    "scene_sha256": "aa5a74a727ee18fd538c2bac04ce208a18e364d4ee3c2810fbcf58dfd3af10a8",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "classification-metrics/f1-macro",
+    "svg": "10-classification-metrics/05-f1-macro/f1-macro-data-flow.svg",
+    "svg_sha256": "48d495b407e594f8ff12cbb99ad3c85415fd4af4dde69b8441604405a6feaed5",
+    "scene_sha256": "bf5ec2f7da6087581b34825eea70e962d0aaa6575a67282f8e3e8767f8817edd",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "classification-metrics/thresholds",
+    "svg": "10-classification-metrics/07-thresholds/thresholds-data-flow.svg",
+    "svg_sha256": "6da44bd9299fe01a698e40cfef857df3ee4c1d68c4dbd736387358b60a8551ea",
+    "scene_sha256": "d43b728cead713c8491fde915fafdcb9bfbe5b749ad6b594b3c03a03c2490c15",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "classification-metrics/roc-auc",
+    "svg": "10-classification-metrics/09-roc-auc/roc-auc-data-flow.svg",
+    "svg_sha256": "a650e29685a8df4aea3b2b04a8d0971ed4182a5cd32d49dc4b052504afb8e1a4",
+    "scene_sha256": "776581c95a92c44b86ebe85912eff958c699e7c911ce8ad5c530530e1570187d",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "classification-metrics/average-precision",
+    "svg": "10-classification-metrics/11-average-precision/average-precision-data-flow.svg",
+    "svg_sha256": "66f949f567302ca0c45e07ea362c7dddb391d4540e40ab57ab1e937caf6232f0",
+    "scene_sha256": "267b99048f0eecc2cf82a77a8c13290c459969687e95ca48d168973e97db59b1",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "trees-and-ensembles/decision-trees",
+    "svg": "11-trees-and-ensembles/01-decision-trees/decision-trees-data-flow.svg",
+    "svg_sha256": "792aad7af21f1b937e48292892667fd9797f83257cdd1124bf3f163e12be26d8",
+    "scene_sha256": "008b7ba8bb67a5cf35694eea075a691fdbc64a1daa6b5a203c6526839785ee2e",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "trees-and-ensembles/regression-trees",
+    "svg": "11-trees-and-ensembles/03-regression-trees/regression-trees-data-flow.svg",
+    "svg_sha256": "765d5b4b2a8aec573cad33f2ad6587db7ef37c7358b2f87f31fcd18d7b693ece",
+    "scene_sha256": "9f63116e4e674e061e34b2ea667b70319c69942f2c095de5664496b89fe269d1",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "trees-and-ensembles/random-forests",
+    "svg": "11-trees-and-ensembles/05-random-forests/random-forests-data-flow.svg",
+    "svg_sha256": "eb699e88c94e2e2cf5daa550049104722c3b80c3cf7c354c093c53ef604d3818",
+    "scene_sha256": "fb36af8de653f1a7cbdc2bc186f791f1ef83dd6e92d0a743280d80ebd772a64a",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "trees-and-ensembles/gradient-boosting",
+    "svg": "11-trees-and-ensembles/07-gradient-boosting/gradient-boosting-data-flow.svg",
+    "svg_sha256": "f4a194356ba510f535f10def38a87c927192b3fdc584d48d8b8e9ed35760d547",
+    "scene_sha256": "c9f498ab0d2e1367a59a5f60699670144c080a542b77e0012e7d708bdf2f18a4",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "cross-validation-and-selection/kfold",
+    "svg": "12-cross-validation-and-selection/01-kfold/kfold-data-flow.svg",
+    "svg_sha256": "2fc811560e1e334cc336eb36b1261a27a6a02697ec58ba5b20186fe071027a41",
+    "scene_sha256": "23a876331d80fbc9c3b81adca8f94834ff42e4bb67a4c397a8e9fef9aa39d058",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "cross-validation-and-selection/kfold",
+    "svg": "12-cross-validation-and-selection/01-kfold/holdout-outside-cross-validation.svg",
+    "svg_sha256": "f26d615652be480bca4e847f0bd34c52574379e3b55a083138876c39127af5b6",
+    "scene_sha256": "e94a34753bfd517e93af3cf02667667b7e4757d8733a333104dce5def6b358da",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 16,
+      "rectangle": 13,
+      "line": 1,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "cross-validation-and-selection/stratified-cv",
+    "svg": "12-cross-validation-and-selection/03-stratified-cv/stratified-cv-data-flow.svg",
+    "svg_sha256": "3f206536ac816e730b1b0493a5afcc26a809df49b755b36b6ee86ddf09c0eb62",
+    "scene_sha256": "27441c951bc48d8f28b94b3b257ed28a355caad9067341fbb1479666716e06a6",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "cross-validation-and-selection/group-cv",
+    "svg": "12-cross-validation-and-selection/05-group-cv/group-cv-data-flow.svg",
+    "svg_sha256": "773e16ca5ff40aabc92bc4276cab512d37b6be4499dc74fed26b963eec9748ab",
+    "scene_sha256": "396c6bae72ce13bbb088776379db9f6e32ca57157eff4ac64a7eb0d2df0a11a3",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "cross-validation-and-selection/time-cv",
+    "svg": "12-cross-validation-and-selection/07-time-cv/time-cv-data-flow.svg",
+    "svg_sha256": "420276886d7d00e6bba993d1bdaa1f4ac008bd7594601d804e180cb29e7f4f50",
+    "scene_sha256": "c924e2ac8ce1de465613eff4e06f8bab9cdd30f6e09cfd8f13ce2a29aeef97aa",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "cross-validation-and-selection/search-cv",
+    "svg": "12-cross-validation-and-selection/09-search-cv/search-cv-data-flow.svg",
+    "svg_sha256": "abb60489345d4dc11a5c5e3665b2c07acc368639d17361cba91816822f19ea12",
+    "scene_sha256": "ca88f2b31dc9986405c703a0b1c64a1fbc673214b57be54a40e7e7093739b350",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "cross-validation-and-selection/learning-curves",
+    "svg": "12-cross-validation-and-selection/11-learning-curves/learning-curves-data-flow.svg",
+    "svg_sha256": "696a45cf139712c9d0f0ef3db184cccbfcfdf6f769ff8484272d4d1f0a4ec610",
+    "scene_sha256": "71b97ffc5c0cb31cd5d1448879ed378196526de6955a3e629ede8db72821366c",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "cross-validation-and-selection/validation-curves",
+    "svg": "12-cross-validation-and-selection/13-validation-curves/validation-curves-data-flow.svg",
+    "svg_sha256": "71ce98c0adc62b4c9c84a819e6b87cb42f1697f4a229083fb9ccd979757113e7",
+    "scene_sha256": "3a4aebe049a3dab162ffcb5c33c69aa9e5f344146fffffdb122350ed1cf96d14",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "cross-validation-and-selection/nested-cv",
+    "svg": "12-cross-validation-and-selection/15-nested-cv/nested-cv-data-flow.svg",
+    "svg_sha256": "d7c1471131c790446027fab105c73f58fd85ca6890053a061fd0b184d0cda2c3",
+    "scene_sha256": "f0f4788045253fae7bf5baeaf6ca67fd8ac7d3b558d9ca7444852322415f8e01",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "mixed-classification-project/mixed-project-build",
+    "svg": "13-mixed-classification-project/01-mixed-project-build/mixed-project-build-data-flow.svg",
+    "svg_sha256": "c89b994291d0c58c3a4d8a3c1f9da5f8ab3e5cfc3781b55df3d1813b1094d45d",
+    "scene_sha256": "1a480fdffcebe111989b01b5655c97a9547274be7a42c00df0127c6760cac670",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "mixed-classification-project/mixed-project-tune",
+    "svg": "13-mixed-classification-project/03-mixed-project-tune/mixed-project-tune-data-flow.svg",
+    "svg_sha256": "252af62e701a9ff0eecb89212f3139345850292ce514c5309974cc0e3a8d2f9f",
+    "scene_sha256": "e55d5e971c921b44a15746a560c45628fe9b1336f3b8bf1fc4601e6f3a744b59",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "mixed-classification-project/mixed-project-threshold",
+    "svg": "13-mixed-classification-project/05-mixed-project-threshold/mixed-project-threshold-data-flow.svg",
+    "svg_sha256": "bf9680565c37a440467e4e7650dfdd34b92b7b1f1e016b67376f051e932bb840",
+    "scene_sha256": "cb1c4ea9d3fd5158bc052d205dfcd768213ce6173a8c16cd7344355761c83156",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "mixed-classification-project/mixed-project-report",
+    "svg": "13-mixed-classification-project/07-mixed-project-report/mixed-project-report-data-flow.svg",
+    "svg_sha256": "dec4639d1208653afee724cfdf8c520bd82cdd0e5dc45384c2408bee8c183faf",
+    "scene_sha256": "403dee781c72f8a95160ca3fb783774eb54a4937503121cc14e34712dc6750a6",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "inspection-and-unsupervised/class-weights",
+    "svg": "14-inspection-and-unsupervised/01-class-weights/class-weights-data-flow.svg",
+    "svg_sha256": "7b113c1a188381daa28c42b38d90d1c632fca796cd4283fc69cc0a453d9b76c0",
+    "scene_sha256": "b6dd14e5cda67ea04b8f5b128f2a3a7e60a9adb5db9f3ae37d3a9dcdddae7f7d",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "inspection-and-unsupervised/calibration",
+    "svg": "14-inspection-and-unsupervised/03-calibration/calibration-data-flow.svg",
+    "svg_sha256": "a1332faf5557bb2beec6b2530d276f9778203b7d51aac234f57867f853b50c29",
+    "scene_sha256": "b34e35072017430dc1f067a5ddb0b886de02339d0a4c6cdfdfae17bd7771cbea",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "inspection-and-unsupervised/feature-selection",
+    "svg": "14-inspection-and-unsupervised/05-feature-selection/feature-selection-data-flow.svg",
+    "svg_sha256": "6fccc714b01d3fb06f1ccdb17f6132c6fb73ecb857614a2d33ade4ead460d03c",
+    "scene_sha256": "f398df742e42b3198ae2c0411d6be8daf7ce3ef5e51c63136bb7ec5b7c545dea",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "inspection-and-unsupervised/permutation-importance",
+    "svg": "14-inspection-and-unsupervised/07-permutation-importance/permutation-importance-data-flow.svg",
+    "svg_sha256": "35dd2a391b4364bc9f720dd5afa7fc09b32de2ee0182cbd60fc2089718ad1815",
+    "scene_sha256": "3c6efb948717c3cf6a8289f401641a61b7f4178d8014f1abe784cbb1d53d8b92",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "inspection-and-unsupervised/pca",
+    "svg": "14-inspection-and-unsupervised/09-pca/pca-projection-and-variance.svg",
+    "svg_sha256": "c8c187edc5d72e54cffdc22ab7ae7d72f76cc874c4094dd98fc7bfd2cbc4e535",
+    "scene_sha256": "2379e36e00782a02c57e76d594935bf79c479121c820c7d6a6fb8dd467b82edc",
+    "text_sequence_equal": true,
+    "element_types": {
+      "text": 14,
+      "arrow": 3,
+      "ellipse": 5,
+      "line": 1,
+      "rectangle": 3
+    }
+  },
+  {
+    "lesson": "inspection-and-unsupervised/pca",
+    "svg": "14-inspection-and-unsupervised/09-pca/pca-data-flow.svg",
+    "svg_sha256": "cb310605c31fe2224c71475f27a0aaa2d566dd2a865286e6c71950a4059f69f4",
+    "scene_sha256": "57f193ef1477bf999f6e8469abbe30ba5305b4b47b4acbafb9de8754db1df1be",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "clustering-and-text/kmeans",
+    "svg": "15-clustering-and-text/01-kmeans/kmeans-data-flow.svg",
+    "svg_sha256": "32932f8659a3e7a2929e2d4560ff811744c19b451abc47b055ac6575f5176b8f",
+    "scene_sha256": "beea3dd668f15c4d7f46ec6d4957396413907f8743bb87998975186c8ad579b2",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "clustering-and-text/cluster-validation",
+    "svg": "15-clustering-and-text/03-cluster-validation/cluster-validation-data-flow.svg",
+    "svg_sha256": "5a4f4aa1ecbc004d4f529df287a6db9f80f02e36625f7817e881c2a095aa1851",
+    "scene_sha256": "46d8f7ece2605ef95a7bc456197a994cec27129fe788339be1523f5793699fa9",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "clustering-and-text/dbscan",
+    "svg": "15-clustering-and-text/05-dbscan/dbscan-data-flow.svg",
+    "svg_sha256": "7f4d56b231af91c45b6ac69d29a363756500a7d1f39b7a6100316d2a9a804204",
+    "scene_sha256": "aff1296459ea717956105001772b3739416b7a0d7fa90695347ebc1a1592b9b1",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "clustering-and-text/count-vectors",
+    "svg": "15-clustering-and-text/07-count-vectors/count-vectors-data-flow.svg",
+    "svg_sha256": "7d5d01b4bbd3e7b5df4d214ff331cf5b15c8e711e2b58238c1a38c4c2585cdfe",
+    "scene_sha256": "e8ed3a6be382351a517d0be39a89b1f851f8e5128642a1f93828f9f9a3b88eec",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "clustering-and-text/tfidf",
+    "svg": "15-clustering-and-text/09-tfidf/tfidf-data-flow.svg",
+    "svg_sha256": "8cee30440bef29580d53fe0d8aeb0d70dbbe9947bb0b9dfd749e389a71ba1270",
+    "scene_sha256": "7b75b8096239f1ba879eadae3e576f22ca582b2c69f0021cf864e76a5991e359",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "text-and-content-recommendations/text-classifier",
+    "svg": "16-text-and-content-recommendations/01-text-classifier/text-classifier-data-flow.svg",
+    "svg_sha256": "21400cdd7509ac0f14fb1ee5785953b910f693f4af9e0e5b9561b79d5f184da3",
+    "scene_sha256": "3e14177f852cc79d293b29d4e2fc858f196f8dd6dead78a35b4a326bc2fbc300",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "text-and-content-recommendations/item-profiles",
+    "svg": "16-text-and-content-recommendations/03-item-profiles/item-profiles-data-flow.svg",
+    "svg_sha256": "734b4c861733fa8f52a41f91a54c7fc22606a8e0815e32771bc336483f6300d0",
+    "scene_sha256": "f9301249b479fc8f0f2a833b7c1023c339386cb15bba0af701d269d196f9bf64",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "text-and-content-recommendations/cosine-similarity",
+    "svg": "16-text-and-content-recommendations/05-cosine-similarity/cosine-similarity-data-flow.svg",
+    "svg_sha256": "fbaad6600ffdb22d042dd90cd42be4ccbe8612f8acd52f2bc9b2a02f81e25b2a",
+    "scene_sha256": "27e4003063f80b4691bc143b07750bfc9c248d6cfffd1d5fecc6ef731950d3a3",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "text-and-content-recommendations/rank-candidates",
+    "svg": "16-text-and-content-recommendations/07-rank-candidates/rank-candidates-data-flow.svg",
+    "svg_sha256": "53b3f4f15f5a4bdd2cd53f4be74a3f9a2897b9904b9aa486ea95e242a58baa2f",
+    "scene_sha256": "3e248516f4a1fb3548d0c7b91f9ec1149b3f61486476af9e7615bdadb031830a",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "text-and-content-recommendations/user-profiles",
+    "svg": "16-text-and-content-recommendations/09-user-profiles/user-profiles-data-flow.svg",
+    "svg_sha256": "e9b1cab1b38d3a63e30174863932cb48e3c1d5f105bfc8572d4ac04fbe3a1cea",
+    "scene_sha256": "04d11c3675991ae6789bdc4ed2655f900fda7795d6268813c17e2314557d02e3",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "recommendation-evaluation/recommendation-holdout",
+    "svg": "17-recommendation-evaluation/01-recommendation-holdout/recommendation-holdout-data-flow.svg",
+    "svg_sha256": "20fb233ba5b7ca674d4545c31b450d4b887e21f07ca9b5b5cdbe0239303907fd",
+    "scene_sha256": "508922b1567363405e64d9b7c5498b0941c337f753e6e08a40654640b54bbdf5",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "recommendation-evaluation/precision-recall-at-k",
+    "svg": "17-recommendation-evaluation/03-precision-recall-at-k/precision-recall-at-k-data-flow.svg",
+    "svg_sha256": "cc2325827db60412ec7a797cea8bf57d5e57b6466a13537484d7f665dc358c6c",
+    "scene_sha256": "1f3f598b95f1b95782d665067e34e79158c7ea5c6d1ef8cbb6dafa2b2b791810",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "recommendation-evaluation/ndcg",
+    "svg": "17-recommendation-evaluation/05-ndcg/ndcg-data-flow.svg",
+    "svg_sha256": "e0c6fa43fc00e52d03491de91e502868c16ca39ede56d6ae47079c2e2b0c9445",
+    "scene_sha256": "3c90a9e809f62dcf8bdae6252d45866c86a4e7162a9e4639c47064de177b0337",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "recommendation-evaluation/cold-start",
+    "svg": "17-recommendation-evaluation/07-cold-start/cold-start-data-flow.svg",
+    "svg_sha256": "f749ffc8814b5f1493cf96c916679a0a0dece9488258cc35eeb7f04ad390cbb1",
+    "scene_sha256": "4b500be37cdfd10e4f26a83d25380ec46b0fef274173c6da14be3a7eacd726df",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "recommendation-project/recommendation-project-catalog",
+    "svg": "18-recommendation-project/01-recommendation-project-catalog/recommendation-project-catalog-data-flow.svg",
+    "svg_sha256": "2a5d2cba6e35827b1e90299b23b972510292243d5da7e9529586eff3a11b7a57",
+    "scene_sha256": "d2ba0c26ccd9e0b244ba8b9b8c3c53149df1b7593eb10945cfafaa77a2e2ffe2",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "recommendation-project/recommendation-project-ranker",
+    "svg": "18-recommendation-project/03-recommendation-project-ranker/recommendation-project-ranker-data-flow.svg",
+    "svg_sha256": "f8225a04ab02268247ed4f63ce33d3053a79d36b15ba7a079286cba28d87fd8f",
+    "scene_sha256": "c15dd1d091c68536fa27117c9859ef22a4872b8d57ea1fdb88ba0d73c7b677e3",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  },
+  {
+    "lesson": "recommendation-project/recommendation-project-fallback",
+    "svg": "18-recommendation-project/05-recommendation-project-fallback/recommendation-project-fallback-data-flow.svg",
+    "svg_sha256": "6c5c349e3481457cea3c341df06e5db8ba169993a94baea2946f62221688a83f",
+    "scene_sha256": "cbfd6c3fdd03dfc0a8cb7123c4e31b5db631c8e63a6f39f334209ba2d317be31",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 4,
+      "text": 4,
+      "arrow": 4
+    }
+  },
+  {
+    "lesson": "recommendation-project/recommendation-project-report",
+    "svg": "18-recommendation-project/07-recommendation-project-report/recommendation-project-report-data-flow.svg",
+    "svg_sha256": "04d8ed84d8c48828d085c1cf9dddaa3fb15efcb5c771ebfa20e9b66b66092061",
+    "scene_sha256": "62a64ddab229523bf8e1aaa4ae9debb35c7bf185cefdafe6531b896fdd2d7ba2",
+    "text_sequence_equal": true,
+    "element_types": {
+      "rectangle": 3,
+      "text": 3,
+      "arrow": 2
+    }
+  }
+]

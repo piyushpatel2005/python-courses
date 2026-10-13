@@ -1,0 +1,6 @@
+files:
+  - path: main.py
+  - path: training.csv
+    readonly: true
+  - path: queries.csv
+    readonly: true

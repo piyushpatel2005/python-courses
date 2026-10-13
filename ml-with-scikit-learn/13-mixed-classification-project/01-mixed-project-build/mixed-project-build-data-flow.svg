@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="390" viewBox="0 0 480 390" role="img" aria-labelledby="title desc"><title id="title">Separate Numeric And Category Branches</title><desc id="desc">Numeric imputation and scaling runs separately from material one-hot encoding. Their four output columns join before logistic classification.</desc><rect width="480" height="390" fill="white"/><defs><marker id="head" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#334155"/></marker></defs>
+<rect x="15" y="25" width="215" height="130" rx="10" fill="#a5d8ff" stroke="#334155" stroke-width="2"/>
+<text x="122.5" y="65.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Weight / Width</text>
+<text x="122.5" y="90.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Impute Medians</text>
+<text x="122.5" y="115.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Then Scale</text>
+<rect x="250" y="25" width="215" height="130" rx="10" fill="#d0bfff" stroke="#334155" stroke-width="2"/>
+<text x="357.5" y="65.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Material</text>
+<text x="357.5" y="90.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Wood / Steel</text>
+<text x="357.5" y="115.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">One-Hot Encode</text>
+<rect x="65" y="255" width="350" height="100" rx="10" fill="#b2f2bb" stroke="#334155" stroke-width="2"/>
+<text x="240.0" y="292.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Join 4 Columns</text>
+<text x="240.0" y="317.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="20" fill="#172033">Logistic Classifier</text>
+<path d="M122.5 155 L122.5 205 L240 205 L240 255" stroke="#334155" stroke-width="2" fill="none" marker-end="url(#head)"/>
+<path d="M357.5 155 L357.5 205 L240 205 L240 255" stroke="#334155" stroke-width="2" fill="none" marker-end="url(#head)"/>
+</svg>

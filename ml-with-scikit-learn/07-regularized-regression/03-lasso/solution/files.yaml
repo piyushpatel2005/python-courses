@@ -1,0 +1,4 @@
+files:
+  - path: main.py
+  - path: regression-measurements.csv
+    readonly: true
