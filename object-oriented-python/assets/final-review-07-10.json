@@ -1,0 +1,4458 @@
+{
+  "scope": "Independent final source pedagogy and native technical review of modules 07-10; 06 final lesson read as prerequisite boundary.",
+  "counts": {
+    "lessons": 46,
+    "lesson_paths": 230,
+    "quiz_questions": 16,
+    "quiz_paths": 20
+  },
+  "skills_loaded": [
+    "course-reviewer",
+    "humanizer",
+    "course-lesson"
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "severity": "assessment",
+      "path": "07-enums-and-records/03-automatic-values/test_main.py",
+      "issue": "Wrong names could pass auto lesson despite explicit requested member names/order.",
+      "status": "fixed",
+      "repair": "Assert exact __members__ names in order; renamed-member mutant now rejected."
+    },
+    {
+      "id": "F02",
+      "severity": "assessment",
+      "path": "07-enums-and-records/03-automatic-values/test_main.py",
+      "issue": "Valid annotated auto assignments failed because source inspection accepted ast.Assign only.",
+      "status": "fixed",
+      "repair": "Accept ast.AnnAssign as well; annotated variant passes while fixed-number variant still fails."
+    },
+    {
+      "id": "F03",
+      "severity": "assessment",
+      "path": "10-ecommerce-project/13-scripted-session/test_main.py",
+      "issue": "Eagerly consuming commands after quit passed despite prose explicitly promising to stop consuming the iterable.",
+      "status": "fixed",
+      "repair": "Use an iterator and assert the command after quit remains available; eager list(commands) mutant now rejected."
+    }
+  ],
+  "modified_paths": [
+    "07-enums-and-records/03-automatic-values/test_main.py",
+    "10-ecommerce-project/13-scripted-session/test_main.py"
+  ],
+  "protected_lesson_md_edits": [],
+  "protected_lesson_required_fixes": [],
+  "lessons": [
+    {
+      "lesson": "07-enums-and-records/01-named-statuses",
+      "reviewed_paths": [
+        {
+          "path": "07-enums-and-records/01-named-statuses/lesson.md",
+          "sha256": "a298a19e8e0b949e369eec4dec940f215cd2b7097049c63415edefca169606c1",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/01-named-statuses/main.py",
+          "sha256": "c9cfc07377e5ed3b406e108b1e1a4a568895f18cc7908b4dbd819ff7bedf2ca2",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/01-named-statuses/test_main.py",
+          "sha256": "8156076bb932b8b451c2aa8ae577c94225616db949acb0b710e48e9e9cd3a729",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/01-named-statuses/solution/main.py",
+          "sha256": "6626bf8d96ec4950add732ec094d9753b97f8f0789f78c4935ccd27c538b1427",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/01-named-statuses/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Fixed-choice Enum introduced from class syntax already taught; name/member/value distinctions and empty starter are clear.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "07-enums-and-records/02-explicit-enum-values",
+      "reviewed_paths": [
+        {
+          "path": "07-enums-and-records/02-explicit-enum-values/lesson.md",
+          "sha256": "1a21fdb5fb5476469b28f798311f635d13b8da2531cab2356df1a3d22d0b9fb8",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/02-explicit-enum-values/main.py",
+          "sha256": "a2e7178d7eefb3d8109f62f5b5f6ce4b903fff9b6b846748284458e2b4c8fbbc",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/02-explicit-enum-values/test_main.py",
+          "sha256": "d249e0e145de8b5304785afb1f52092b9d6d222dc68a1405b794b2fb62865d94",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/02-explicit-enum-values/solution/main.py",
+          "sha256": "56041716d367b51a9ef715d273241478cbc3317b2f3179eaaa92a77e76957316",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/02-explicit-enum-values/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Explicit codes, name/value lookup exceptions, arbitrary object values, and storage stability are accurate; diagram-owned prose left untouched.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "07-enums-and-records/03-automatic-values",
+      "reviewed_paths": [
+        {
+          "path": "07-enums-and-records/03-automatic-values/lesson.md",
+          "sha256": "6c5a314106b081b9e777468b0e94953ffb0794f1b078355cb9f0af2fcd9662f5",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/03-automatic-values/main.py",
+          "sha256": "2b2539e94780e9b348b01414ab922c4f20aaab5c6c6faed99baaeb6c33d46ee4",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/03-automatic-values/test_main.py",
+          "sha256": "cb32cb8129532462e75bbc3a33ddc125d74166f8a3700c8299f223ccc1ef4500",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/03-automatic-values/solution/main.py",
+          "sha256": "16ce559a78c235c954012fc7d6973bd029191958cf2848aab01a3cdf584409f0",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/03-automatic-values/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "All-auto generation is correctly qualified; repaired wrong-name false positive and annotated-assignment false negative in grading.",
+      "findings": [
+        "F01",
+        "F02"
+      ],
+      "outcome": "accepted_after_repair"
+    },
+    {
+      "lesson": "07-enums-and-records/04-compare-members",
+      "reviewed_paths": [
+        {
+          "path": "07-enums-and-records/04-compare-members/lesson.md",
+          "sha256": "f90b7c499ec1861a603331570062f999d87cfb0cb43aabef05027fb9edfef6f7",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/04-compare-members/main.py",
+          "sha256": "78e672060a4bf86c326d4efc636f6c17a6fb528836193857900ca38ebf9132df",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/04-compare-members/test_main.py",
+          "sha256": "155f24dc0b3a04ee258aadb9f1696761c158c7152b12969d750b278cd1963f4f",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/04-compare-members/solution/main.py",
+          "sha256": "7f04e7a2aada2afc5b5e18dcbac2fdd9bed71c3301e4665e2e7fa55c2f927b96",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/04-compare-members/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Identity/equality and raw-value membership version caveat are correct for plain Enum; unrelated enums are tested.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "07-enums-and-records/05-unique-values",
+      "reviewed_paths": [
+        {
+          "path": "07-enums-and-records/05-unique-values/lesson.md",
+          "sha256": "a4f9cf119a614ff755215c2365d17569bbbda4e49bf931760fc8d3d7db9f34b5",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/05-unique-values/main.py",
+          "sha256": "8c8f460746424d5e4336c174671f41c3f949737f341aa598033e84ce689d2e48",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/05-unique-values/test_main.py",
+          "sha256": "1352e30f3fa8dfb53ab3477530e989f10e37d3d5ce47aa0708947b81928da639",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/05-unique-values/solution/main.py",
+          "sha256": "e03798ec00394079d8fc2b1ac43e9ed322fba5c46d17483c109ea81518ee05b2",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/05-unique-values/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Alias behavior and local factory decoration are explained before use; source-aware unique check matches the explicit task.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "07-enums-and-records/06-iterate-members",
+      "reviewed_paths": [
+        {
+          "path": "07-enums-and-records/06-iterate-members/lesson.md",
+          "sha256": "821f3a5ce74c5f62a860d5829cc630e81d14c0f4eb3c75edee68107c6e087a84",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/06-iterate-members/main.py",
+          "sha256": "d5f45503b2ba08629a63636a255b3ae1d0bd866f60982ee32ea711d02b7d717e",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/06-iterate-members/test_main.py",
+          "sha256": "de65dedb9fff9785697e9abb5015f230b2334ee634d8620ea3b17a0a79a7041b",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/06-iterate-members/solution/main.py",
+          "sha256": "d4e9e49c4ca1313bbb9cba93ee2d13f570108a94d6b1a3b83d66786b068c3d2a",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/06-iterate-members/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Canonical iteration, alias omission, order and empty enum covered with varied enums.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "07-enums-and-records/07-enum-methods",
+      "reviewed_paths": [
+        {
+          "path": "07-enums-and-records/07-enum-methods/lesson.md",
+          "sha256": "893bcee384cad066be646d8b3b7ad3706c665e59d0fbb1a53d7b7173701a3f6d",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/07-enum-methods/main.py",
+          "sha256": "bebf5c0016b9866c94c2495e997ca71ae4b746e20eca1a9934f2fd20537d0e97",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/07-enum-methods/test_main.py",
+          "sha256": "6aa35a756bf5781434083b7748399e7cac5c230fb789e7cc7144d5c0f386db6b",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/07-enum-methods/solution/main.py",
+          "sha256": "326832cf00815eec1d5bdc13f64091498c8bf395e25fd898db8f5de1804de988",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/07-enum-methods/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Enum instance method uses its own value and the caller count; zero and multiple counts tested.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "07-enums-and-records/08-enum-truth-values",
+      "reviewed_paths": [
+        {
+          "path": "07-enums-and-records/08-enum-truth-values/lesson.md",
+          "sha256": "5ec73b87cfa7bfa9b339cb14ff99ad92c05fce90d9427891ebc5d6c9c51b8697",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/08-enum-truth-values/main.py",
+          "sha256": "0782c081481c1f7099b1afddc8e6224e79d1c99918b90a8e477cb508cb1d7c3d",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/08-enum-truth-values/test_main.py",
+          "sha256": "c401bcd3e077fec6472b9dbc5437794f53d199db86212e2449d537b6ef21b97d",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/08-enum-truth-values/solution/main.py",
+          "sha256": "8dd1939c189b256e2056faa0ab1fb41225320696a356fb69fc853ad3eed4ee68",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/08-enum-truth-values/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Plain Enum default truth versus explicit bool result is accurate; all supplied states checked.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "07-enums-and-records/09-enum-type-checks",
+      "reviewed_paths": [
+        {
+          "path": "07-enums-and-records/09-enum-type-checks/lesson.md",
+          "sha256": "05269fa82fd35e3510f59d3f4878b51229bc70baa327edc36a5c520672b62cd4",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/09-enum-type-checks/main.py",
+          "sha256": "345cbc00fa751133ee8af8bb6d996ed40df6c58b30d4b8ab1e01d1b6266a0e98",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/09-enum-type-checks/test_main.py",
+          "sha256": "4762e8a97b4e9504ba3f17fd7d7b329fd2de3231583797f6a9a37181197e2aac",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/09-enum-type-checks/solution/main.py",
+          "sha256": "06d2e0b5260577fd9cf14a20e2add84c1259806a2c46641d3bc14bb83fbd51fa",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/09-enum-type-checks/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Member-type predicate avoids conversion and distinguishes raw values, enum class and unrelated enum.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "07-enums-and-records/10-dataclass-records",
+      "reviewed_paths": [
+        {
+          "path": "07-enums-and-records/10-dataclass-records/lesson.md",
+          "sha256": "526aaa29dc60cc071e9e3bfb42e73efa91bf9b5cc3871fab8be754060da0b401",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/10-dataclass-records/main.py",
+          "sha256": "9fea70fafe79fcd2597a412884e5b1c8970643886d2b803c137a276e565ca64c",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/10-dataclass-records/test_main.py",
+          "sha256": "d4d1632de9d78efc13b2eb480556b13ff93637f4fe6734f984f7201d5d3c8fd1",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/10-dataclass-records/solution/main.py",
+          "sha256": "797482646dfbaadbdf39417153530ffa0d17e48f2c074b78a4e9b16b581f3764",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/10-dataclass-records/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Dataclass annotations, default ordering, generated equality and mutable instances explained accurately.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "07-enums-and-records/11-enum-in-a-dataclass",
+      "reviewed_paths": [
+        {
+          "path": "07-enums-and-records/11-enum-in-a-dataclass/lesson.md",
+          "sha256": "cd1e495e3a7b2534fe96d9f5f4b1eba58cba629410971645d68508673256b0ab",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/11-enum-in-a-dataclass/main.py",
+          "sha256": "835caae57feeb7f5d86094f25bd785612d1a0c864e805263b800e6b793c201f1",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/11-enum-in-a-dataclass/test_main.py",
+          "sha256": "17a8ee04957bc5f4711f7d82327e543f31e4c237dd0fb013ba9b331b8ecc2f02",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/11-enum-in-a-dataclass/solution/main.py",
+          "sha256": "868aca3eaaf8aedcaf13923892915b45cf8fd8938f8690e90c54236370104280",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/11-enum-in-a-dataclass/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Separate enum and dataclass roles are clear; annotation is not claimed to validate runtime input.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "07-enums-and-records/12-dataclass-enum-values",
+      "reviewed_paths": [
+        {
+          "path": "07-enums-and-records/12-dataclass-enum-values/lesson.md",
+          "sha256": "ab0334dbd6b9501a56e1860a51e08273821cd75cd04214fa46287a5935839124",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/12-dataclass-enum-values/main.py",
+          "sha256": "8cccfe7651e84128640f29812eba97aa0330a7f6c29862f90ce8e315565fcfee",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/12-dataclass-enum-values/test_main.py",
+          "sha256": "d041d1b694613ac1fbe48eb4eff21373ec1ee247f912b824896ebc645bdaa1ce",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/12-dataclass-enum-values/solution/main.py",
+          "sha256": "fb0d07d83dd2b659053bec60a09a67686490813e0287e06ab06db1a9e91d66fe",
+          "reviewed": true
+        },
+        {
+          "path": "07-enums-and-records/12-dataclass-enum-values/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Frozen dataclass values, two-layer access and equality-driven aliases accurately address source outline without decorating Enum itself.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "08-descriptors/01-descriptor-read",
+      "reviewed_paths": [
+        {
+          "path": "08-descriptors/01-descriptor-read/lesson.md",
+          "sha256": "171e4e17743318a9971560db039729c7601e4cc224fc289bbe72bb79fd1b676e",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/01-descriptor-read/main.py",
+          "sha256": "fde615901c6a683c5b63e443878602d797974fd56408347ffde75c8347653d30",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/01-descriptor-read/test_main.py",
+          "sha256": "3c3c98a5055c872b0fd849832c52dab7a17b7ede594475799b7a77a229f523ea",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/01-descriptor-read/solution/main.py",
+          "sha256": "8705e140b634673e4de1120e1ddc0c3af5393b3fe4b9e96584901c57528568e7",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/01-descriptor-read/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Descriptor placement, self/instance/owner and recursion risk introduced before instance computation; class branch supplied.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "08-descriptors/02-class-level-access",
+      "reviewed_paths": [
+        {
+          "path": "08-descriptors/02-class-level-access/lesson.md",
+          "sha256": "83e089d8666f66de387191603e04e48c5cdd4c692b60dc899a2536cf8bda2325",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/02-class-level-access/main.py",
+          "sha256": "5e3e9c00a6a640215c0f272bf24d37d50c3f4b0851d98973d625f4f9b257137c",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/02-class-level-access/test_main.py",
+          "sha256": "98600e6068265535aabf09a6e9aaa23b0759e94c37a947c4a59cc6fc4b68c30b",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/02-class-level-access/solution/main.py",
+          "sha256": "d4e75365092cbe7f47845ae1b71f409c57100ea79eb7edfff7a5dccab37d2424",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/02-class-level-access/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Class access convention and inherited access verified; descriptor identity retained.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "08-descriptors/03-descriptor-write",
+      "reviewed_paths": [
+        {
+          "path": "08-descriptors/03-descriptor-write/lesson.md",
+          "sha256": "c6d1d467223a05c0834a9003d6b7f63fbd0520e4a10fb01c690211c3ea4c2fdd",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/03-descriptor-write/main.py",
+          "sha256": "84d0ca0a526041ae6bafaf6be10f4265cdf57be462af96633bfdbfb019fcecfa",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/03-descriptor-write/test_main.py",
+          "sha256": "c7b45b2ef2f02de6c8a24551d4d7935426c392e3c11f36c7b9fc84ab82062208",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/03-descriptor-write/solution/main.py",
+          "sha256": "32963b01ab70fefc41ca0f11ca0121a1693054b4dad4f0d6c3af98e3cd65f5cb",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/03-descriptor-write/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Validation precedes storage and leaves old value intact; numeric-only input scope explicit.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "08-descriptors/04-per-instance-storage",
+      "reviewed_paths": [
+        {
+          "path": "08-descriptors/04-per-instance-storage/lesson.md",
+          "sha256": "d39c826c8e8125de9af66ea2b81f381e0bb9c150e8106627e66b18a9129cec5a",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/04-per-instance-storage/main.py",
+          "sha256": "68023b36e3f5108165ce4e79143190a85e0a04223ceeb7133dbc41475a18f759",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/04-per-instance-storage/test_main.py",
+          "sha256": "ad2c846c09c30db5421ac7524f0841181571a8bc1626ac62d394439aa5289842",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/04-per-instance-storage/solution/main.py",
+          "sha256": "40fa7a3404cde898b7f7bf792861d52842493b71b20eb0c44a0441755b634592",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/04-per-instance-storage/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Getter/setter together implement one storage contract; interleaved owner state and missing values tested.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "08-descriptors/05-descriptor-delete",
+      "reviewed_paths": [
+        {
+          "path": "08-descriptors/05-descriptor-delete/lesson.md",
+          "sha256": "9d73af0e1944f9f79cacfe57ec1cd2cd14cf6789d61a6641c1c3cab20a21a676",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/05-descriptor-delete/main.py",
+          "sha256": "3380bd6055a250de546b370151dee19e42e09b27bfc77e0b9b3f6cb628e09520",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/05-descriptor-delete/test_main.py",
+          "sha256": "2bcdc4878ce61402685c3146a142e085fb80c1fb02e91ad2d2c46565b884e099",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/05-descriptor-delete/solution/main.py",
+          "sha256": "ac74a4d69dd8c3843e9538728958d54737621fb0d93c30fed5b9b2ccf15451aa",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/05-descriptor-delete/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Deletion is genuinely removal, preserves unrelated data, allows repeat deletion and subsequent writes.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "08-descriptors/06-set-name",
+      "reviewed_paths": [
+        {
+          "path": "08-descriptors/06-set-name/lesson.md",
+          "sha256": "66f7d9d414859c05f14d08e58fda65684135f10a9fbdf246944bf791b63b9d44",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/06-set-name/main.py",
+          "sha256": "265412a889fa6106c07ecd88b777bf68a1f9a3db504751bc74884e9eb0e2f0c6",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/06-set-name/test_main.py",
+          "sha256": "3ffa722d0ad780d015f3b70a52c86df5f1ef28f197be6954bca30f5d2deca148",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/06-set-name/solution/main.py",
+          "sha256": "d175dc87b4653bd6a7bb7d39cd9f5b84df6fe8b8f6629fb180a597fbeb24b9aa",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/06-set-name/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Naming hook explained as a class-creation hook on namespace objects; naming-only example does not claim to implement descriptor read/write.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "08-descriptors/07-data-descriptor-priority",
+      "reviewed_paths": [
+        {
+          "path": "08-descriptors/07-data-descriptor-priority/lesson.md",
+          "sha256": "4eaf724ca964d17e90b9134f4d5a7c033a65da8e3ed09bdcaddf6fbe8a37b01b",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/07-data-descriptor-priority/main.py",
+          "sha256": "4963752a6bc6a95bb220c91cf7ef4d066c40bea862db0d60db5fe61050953597",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/07-data-descriptor-priority/test_main.py",
+          "sha256": "f5d3c51b8367568aa5ba3392691c7d08aa0d43b22f8025f7cbec4d82ee1e6d9f",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/07-data-descriptor-priority/solution/main.py",
+          "sha256": "0389925d501612ebd955965b5760a25df17a55eada8479d7d63a8673a4bd1a61",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/07-data-descriptor-priority/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Readable data descriptor priority and rejecting setter classification correctly qualified with standard lookup.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "08-descriptors/08-non-data-descriptor-priority",
+      "reviewed_paths": [
+        {
+          "path": "08-descriptors/08-non-data-descriptor-priority/lesson.md",
+          "sha256": "a2916615a80d9ba3bd8f055abf2d3a8b5714fb6a387ef1c90edc229f974ed7f9",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/08-non-data-descriptor-priority/main.py",
+          "sha256": "7098b051d9007ee370f60df03ea1d3be0914c1367dc354650014f18d5598e626",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/08-non-data-descriptor-priority/test_main.py",
+          "sha256": "a6390997aeb6c0b360fb965213a67df2de2e3370fa5f76a9ff6b0eafe0c0dfd0",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/08-non-data-descriptor-priority/solution/main.py",
+          "sha256": "ef8bbef7a162e55cae72e0b2c32f80322715e148fc7e22ea8d50eaa023d7a96b",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/08-non-data-descriptor-priority/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Non-data shadowing and restoration accurately taught and tested; diagram-owned prose left untouched.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "08-descriptors/09-property-as-descriptor",
+      "reviewed_paths": [
+        {
+          "path": "08-descriptors/09-property-as-descriptor/lesson.md",
+          "sha256": "71ddcefb2678cf709f7f797bda1adfc0dc43697acb78bef141ea570f819679f2",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/09-property-as-descriptor/main.py",
+          "sha256": "3d3b4d590656c0e60ed55e9e5b6189392080b16a6d0e1a62e52007d4d5e1756b",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/09-property-as-descriptor/test_main.py",
+          "sha256": "070871deb9fe6b8d43dc85fb90bea9ffcb4ed43995daf03f707de8574ac1f703",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/09-property-as-descriptor/solution/main.py",
+          "sha256": "26bac72d0bc860e54c5a7e497e20c3b515229b7b8a13de9435fdeea9f057f3e0",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/09-property-as-descriptor/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Read-only property remains a data descriptor and computes from current data; shadow dictionary adversary covered.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "08-descriptors/10-function-binding",
+      "reviewed_paths": [
+        {
+          "path": "08-descriptors/10-function-binding/lesson.md",
+          "sha256": "164819c942fa4f93af990d559fe9ef9093a0390e874c2e01217f6b6511c815d6",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/10-function-binding/main.py",
+          "sha256": "fe5e871befb4f46dfaa5a3233026584143ee5e538d826cf6e6a77e6d326cee8f",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/10-function-binding/test_main.py",
+          "sha256": "4640e220d14ab11f24563c6eb510930ec3d27fa080230b30d3290ae22834854a",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/10-function-binding/solution/main.py",
+          "sha256": "1c6268ad9481b6baf5703bd40144bbc32ec188efecf9cd1b5764ef5e2fe3f16e",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/10-function-binding/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Function binding returns actual method identity and delayed receiver access; alternate function tested.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "08-descriptors/11-reusable-validation",
+      "reviewed_paths": [
+        {
+          "path": "08-descriptors/11-reusable-validation/lesson.md",
+          "sha256": "6570db101431663a81e9a8bf4c78d32df7fb646973250ad2cc7b18a9719be954",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/11-reusable-validation/main.py",
+          "sha256": "95ba6a45d40127fd82bc5b23ca37eafedc99ade3ffb0e15fedb519f01e023a77",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/11-reusable-validation/test_main.py",
+          "sha256": "b63e33e369b47650a1078b16f37ce268d5bfbe327bc28625d577ceaa4a90df82",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/11-reusable-validation/solution/main.py",
+          "sha256": "778018cbae61bafadcb485ed366c16224df1c1c515ffd73a2ffe8b4d726e1a4e",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/11-reusable-validation/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Validation contract explicitly excludes bool/numeric subclasses and assumes finite inputs; separate field/owner storage tested.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "08-descriptors/12-descriptor-backed-record",
+      "reviewed_paths": [
+        {
+          "path": "08-descriptors/12-descriptor-backed-record/lesson.md",
+          "sha256": "fd2b90830201a9a48e7bf490daee3d379e454abad29ca773541a45b6cc56b800",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/12-descriptor-backed-record/main.py",
+          "sha256": "6083ced4911e8fb5bac52409652795e90a0872a041ef7efa976a48c5285a388e",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/12-descriptor-backed-record/test_main.py",
+          "sha256": "ec2750155c420be34d3be94b1175772f09aa1ff5d6038221cf070138cdc5618d",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/12-descriptor-backed-record/solution/main.py",
+          "sha256": "9240f2a1daa79c08679d3220113d227070c3eebb363afeea91a20a24f30afd0d",
+          "reviewed": true
+        },
+        {
+          "path": "08-descriptors/12-descriptor-backed-record/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Initialization delegates through descriptor fields, with error propagation and independent records; public assignment spy covered.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "09-errors-and-contracts/01-raise-a-built-in-error",
+      "reviewed_paths": [
+        {
+          "path": "09-errors-and-contracts/01-raise-a-built-in-error/lesson.md",
+          "sha256": "97043a5625701cbf6d447355428e3784b296ae60fa0d3cf2052558ba299de97c",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/01-raise-a-built-in-error/main.py",
+          "sha256": "601e7226b0db5eb4f355a34ad0aa6a39a0f96b3953e16800595f9702459bbb05",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/01-raise-a-built-in-error/test_main.py",
+          "sha256": "2e88f582929fa8b595b7a20052c5c550f23922c903c94931140a1150e2bceb2a",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/01-raise-a-built-in-error/solution/main.py",
+          "sha256": "408454c76adc151a3238308524bab80b25ff11ccd87bf543c860596aa3083961",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/01-raise-a-built-in-error/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "ValueError guard preserves prior state; integer input precondition and exact message match checks.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "09-errors-and-contracts/02-catch-a-specific-error",
+      "reviewed_paths": [
+        {
+          "path": "09-errors-and-contracts/02-catch-a-specific-error/lesson.md",
+          "sha256": "bc37ee762fd5c717deb76f42b0ae75d549daad00f6066e12047882be4d765f20",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/02-catch-a-specific-error/main.py",
+          "sha256": "4bf300534a3f7be7fc078c818e4d098e5990b5c1b43db40e9b468dee36ddc2f8",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/02-catch-a-specific-error/test_main.py",
+          "sha256": "b8daecfe3b43c4e64b9f680b23604e3a338eb52592e1e2d5bb9d1942f01e06d5",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/02-catch-a-specific-error/solution/main.py",
+          "sha256": "3bbce92eded42ec4e87d441324d009e0036212f95ad616621bf478facc8cc371",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/02-catch-a-specific-error/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Narrow KeyError handling preserves falsey success and unrelated failures.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "09-errors-and-contracts/03-custom-domain-error",
+      "reviewed_paths": [
+        {
+          "path": "09-errors-and-contracts/03-custom-domain-error/lesson.md",
+          "sha256": "7328077c61b1b21b3e288cf16faf14cec998ad6a4c8aed41f5db6ecd2cdd1759",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/03-custom-domain-error/main.py",
+          "sha256": "ef9851bc88a7302d32db919f69806edf2322d3ae50551080803a558b7ee05b07",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/03-custom-domain-error/test_main.py",
+          "sha256": "f13a428e2e113c858f9305217750ecf7041db44a92bd38534fc857bb95e969d7",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/03-custom-domain-error/solution/main.py",
+          "sha256": "7132cdf7d53d53087a11353e99cc7a9f0fb5077808f301e9f0040dc574b31434",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/03-custom-domain-error/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Exception inheritance and inherited message handling taught using supplied raising function.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "09-errors-and-contracts/04-exception-details",
+      "reviewed_paths": [
+        {
+          "path": "09-errors-and-contracts/04-exception-details/lesson.md",
+          "sha256": "96cd2112f6a7243c9bcf2daedf0ce823988696ccbfe28e87da504dcb3b41071e",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/04-exception-details/main.py",
+          "sha256": "a4b9f5cac8cae0a5d8806d322e0e1524614eebd1b72f106312c45a97cf3cdfbd",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/04-exception-details/test_main.py",
+          "sha256": "82eab0b0aea588b5771de361636e65dc0d4984f77070215090286f00d6cdde0e",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/04-exception-details/solution/main.py",
+          "sha256": "36d11fd198a62685e828fc02c587202988e4bf97ed10070c60d3a2162cba5714",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/04-exception-details/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Custom initializer preserves raw detail attributes and initializes args/message through super.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "09-errors-and-contracts/05-chain-a-cause",
+      "reviewed_paths": [
+        {
+          "path": "09-errors-and-contracts/05-chain-a-cause/lesson.md",
+          "sha256": "a315cd7789224daabbaefb13b332641fe24cb6e3f23b3c183aae2416d530cdc4",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/05-chain-a-cause/main.py",
+          "sha256": "1ef762bb47b29a8ee20de3df241b9d2d893c4c5a3fa7e880976a2dd27e432ef0",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/05-chain-a-cause/test_main.py",
+          "sha256": "b3692090f917d45c6b0f752110dad42137259ffcd87bcc3ecd43ce81e2c663d4",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/05-chain-a-cause/solution/main.py",
+          "sha256": "1e60d753b54424eea8723fb6371bf44dd36cb942f37e11c92e9b4f042e4124ef",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/05-chain-a-cause/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Explicit cause chaining distinguishes conversion and validation; TypeError must propagate.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "09-errors-and-contracts/06-cleanup-with-finally",
+      "reviewed_paths": [
+        {
+          "path": "09-errors-and-contracts/06-cleanup-with-finally/lesson.md",
+          "sha256": "a7935e31bd9788f07741ba1241069cd9aa9c2b1a7420291c7961296fb9cb36d0",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/06-cleanup-with-finally/main.py",
+          "sha256": "af2da979258fb142cd6aa4a824c1507518f34b9270ba7fb7a1ad3bccdd7940f9",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/06-cleanup-with-finally/test_main.py",
+          "sha256": "8551512dcea1a61e96dd04c71e6710baf1f6691cf5fc81575fc5b81b232e8613",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/06-cleanup-with-finally/solution/main.py",
+          "sha256": "864053f38b80100fd35a084f29712e71a8cea660fea78ca8a7e4f82ed229c1ef",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/06-cleanup-with-finally/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Finally cleanup retains return/error and closes exactly once; assumes successful cleanup explicitly.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "09-errors-and-contracts/07-abstract-contract",
+      "reviewed_paths": [
+        {
+          "path": "09-errors-and-contracts/07-abstract-contract/lesson.md",
+          "sha256": "ca48ac8ddcfb4d099bc939d54fb4703b1208c2404771fa542cf553ed6f661249",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/07-abstract-contract/main.py",
+          "sha256": "45f79b6b2143ee514c8f33d3a5219a9558e15767d2d130ee150b47b54c12a56f",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/07-abstract-contract/test_main.py",
+          "sha256": "5d1ae343201ea18334cff6cc0a0859531c422b7880dc955f707f6405e7c84265",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/07-abstract-contract/solution/main.py",
+          "sha256": "2a2979459679016a2fdd066fb96f0de9a039df3593b96d8d3b1492ecc1ba87ae",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/07-abstract-contract/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "ABC plus abstractmethod blocks incomplete instantiation without claiming correctness of implementations.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "09-errors-and-contracts/08-implement-a-contract",
+      "reviewed_paths": [
+        {
+          "path": "09-errors-and-contracts/08-implement-a-contract/lesson.md",
+          "sha256": "fd91a9b79e4c4e3ce9abfd76fc1e91671cac42125a477d6970e7b5f448f9e4d3",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/08-implement-a-contract/main.py",
+          "sha256": "b984b237f0ad96fb257bac32b94745e6d3e3d7da2c301930ec7d722a40e41593",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/08-implement-a-contract/test_main.py",
+          "sha256": "ebcdc9384926819a809aa2847151f9493c6c880b8dac018eee353c7e02b8e2fb",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/08-implement-a-contract/solution/main.py",
+          "sha256": "30108f29769bca7451f503874aaa463e990895b7e14a9f0f4f659431c00ce294",
+          "reviewed": true
+        },
+        {
+          "path": "09-errors-and-contracts/08-implement-a-contract/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Concrete threshold override uses inclusive boundary and integer cents; alternate configurations tested.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "10-ecommerce-project/01-product-record",
+      "reviewed_paths": [
+        {
+          "path": "10-ecommerce-project/01-product-record/lesson.md",
+          "sha256": "738c6fe0f433d4c5d9206c166309dac7cf30c2ce12a10713cd770e16432fc30f",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/01-product-record/main.py",
+          "sha256": "87022014d3134ad017425b0fd2b8fbb8395beab0c981a1645e32fc4e13f0e6cb",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/01-product-record/test_main.py",
+          "sha256": "c819571df981b4cdfec09f9a844d8218bf335f4ebb8c8ccb3ff8d758d785785c",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/01-product-record/solution/main.py",
+          "sha256": "8ef4f81c0bb79e5f3ba281a0b72101fac04c45c91f863294e916aa2814d862f4",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/01-product-record/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Frozen record and post-init validation introduced; whitespace-only strings and exact nonnegative integer cents are explicit.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "10-ecommerce-project/02-product-catalog",
+      "reviewed_paths": [
+        {
+          "path": "10-ecommerce-project/02-product-catalog/lesson.md",
+          "sha256": "24a3aa96dd21259c7e15fbd4f09da1a0a649473c134d77b1b44727a75285351a",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/02-product-catalog/main.py",
+          "sha256": "9c79596ed7027517a8ca7508c898967ffe1167f438f84179ee2ea29ed389543e",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/02-product-catalog/test_main.py",
+          "sha256": "00e23e0fdc20a702ff75ecf4f90dcb31dd2f7eac2e66d5d8066cd33d916fddc1",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/02-product-catalog/solution/main.py",
+          "sha256": "1c742c9bff76df07de76bd35a8e4b89957356078b04181a1b3250692685b52e5",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/02-product-catalog/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Catalog index, duplicates and per-instance dictionary introduced with an iterable contract; inherited Product preserved.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "10-ecommerce-project/03-cart-line",
+      "reviewed_paths": [
+        {
+          "path": "10-ecommerce-project/03-cart-line/lesson.md",
+          "sha256": "6cb0ed3cab32d399a16216b73b4488ace3bc7608b0aa524893c462e7421af03a",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/03-cart-line/main.py",
+          "sha256": "b9948337f2f3fdfeebb24adb15fb304193831dbdc3eab765334218614a780d57",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/03-cart-line/test_main.py",
+          "sha256": "24f8961acd3095bf6a9d87574deb828b9d56690eccfe13bd1f40b8ca12962df7",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/03-cart-line/solution/main.py",
+          "sha256": "02dda2b776d68ae36729d156adfbc477b4d5ea718ad6d50a3b87ad496f1561d2",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/03-cart-line/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Computed subtotal transfers earlier properties/composition; current quantity reflected on each read.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "10-ecommerce-project/04-add-to-cart",
+      "reviewed_paths": [
+        {
+          "path": "10-ecommerce-project/04-add-to-cart/lesson.md",
+          "sha256": "36eb9818425af2e4e556d8975f9eede1fdbef9c94ce61d56c878ee7841c1d57b",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/04-add-to-cart/main.py",
+          "sha256": "a5fb05f9d3a348d20a6275e5f56103ea874527eb5678e1623ae02f438fbfa4df",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/04-add-to-cart/test_main.py",
+          "sha256": "f28910fe8ddd873ee4aaf412952f748cffd1e6f11ceaba123b26a22d530925f2",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/04-add-to-cart/solution/main.py",
+          "sha256": "74871879b98a10cc6948da22056d06d0e018b3dc11e3e7163e3ea13287640200",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/04-add-to-cart/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Cart additions validate before mutation, resolve catalog identity and accumulate existing SKU quantities.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "10-ecommerce-project/05-remove-from-cart",
+      "reviewed_paths": [
+        {
+          "path": "10-ecommerce-project/05-remove-from-cart/lesson.md",
+          "sha256": "209a14559c336cc6db013bdbe32b2956aa8afefa627fa723e6c3ee68b7ab686a",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/05-remove-from-cart/main.py",
+          "sha256": "c9ac52390118d211f32b517a025747519bcaf31f6afb778267cff432142ccddd",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/05-remove-from-cart/test_main.py",
+          "sha256": "13325e4571395672946b752a3a064976e0f5a960be4f81794a487984b96a54f3",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/05-remove-from-cart/solution/main.py",
+          "sha256": "8cc7a7b8546d14f11a73dcd9190289136b375df5f8b2117f28849f2d06410dce",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/05-remove-from-cart/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Whole-line deletion has exact bool interface and idempotent missing-key result.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "10-ecommerce-project/06-cart-summary",
+      "reviewed_paths": [
+        {
+          "path": "10-ecommerce-project/06-cart-summary/lesson.md",
+          "sha256": "ea2e6d6db0ac14aa22b5f983dbe27c4cbdc398122ab14c23a1c7f751aa9bc641",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/06-cart-summary/main.py",
+          "sha256": "728bad4dd14d14025fe14d52bcc4c602738974885a46728dc9c0919931df66e0",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/06-cart-summary/test_main.py",
+          "sha256": "4496228dc6c3fbe940f07e8646863fc8d2f83e8f3b0b8697dafca6dd75b1d8c6",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/06-cart-summary/solution/main.py",
+          "sha256": "1b71712de2714f3cc6d3a015e5a02403ada746a97ac40cebb2ad83d68a0c184c",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/06-cart-summary/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Summary returns ordered independent tuple rows and integer total without mutation.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "10-ecommerce-project/07-order-snapshot",
+      "reviewed_paths": [
+        {
+          "path": "10-ecommerce-project/07-order-snapshot/lesson.md",
+          "sha256": "c1e33f2e7fe711df6972db13cfea0da6ecc251f2e3355661268e43e2f62406e9",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/07-order-snapshot/main.py",
+          "sha256": "8aca8ed1d512bd17debc639b05004a3b2e62f488369b16049ad4fe7dc9136794",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/07-order-snapshot/test_main.py",
+          "sha256": "22060ed01362f2c794d186fa59acf3f9a38e2b1bc8d55cee5c5c16ae1eb26a4a",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/07-order-snapshot/solution/main.py",
+          "sha256": "adbde2e79eee50d9bd62bbb3446ffdae2fbca223414edfbe109168e5b2f0af76",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/07-order-snapshot/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Immutable purchase snapshot uses tuple-of-tuples of immutable scalar values; empty snapshots distinguished from checkout; protected prose untouched.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "10-ecommerce-project/08-checkout-service",
+      "reviewed_paths": [
+        {
+          "path": "10-ecommerce-project/08-checkout-service/lesson.md",
+          "sha256": "99587a94c80250476149ebbfa571e17b65f24c5d82551431f4a17754327417e3",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/08-checkout-service/main.py",
+          "sha256": "b085ab91a5247aabcfd453c82303a6b6f0a2dacbf039b41669305ac403ad5d88",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/08-checkout-service/test_main.py",
+          "sha256": "c07e7f0f43410d17936a853350264869619038ba3801c82c0628c7082bade449",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/08-checkout-service/solution/main.py",
+          "sha256": "27710c84aa2b87ca7b237ded19f464c7f582143b9269ab8200b238768b01eef2",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/08-checkout-service/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Checkout snapshots before clearing, with failed snapshot preserving cart; service/registry dependency separation explicit.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "10-ecommerce-project/09-order-registry",
+      "reviewed_paths": [
+        {
+          "path": "10-ecommerce-project/09-order-registry/lesson.md",
+          "sha256": "a15946823535194f22b306a99064b7516352d2feea8f50df34eaf31aa5cff876",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/09-order-registry/main.py",
+          "sha256": "401ba419574e659a3fd6316f0e92e0922f98b91d8221cca3483b4d767e34d31c",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/09-order-registry/test_main.py",
+          "sha256": "cf25a6bb7190c569cd72c803b92b54accd5d29a34d903e508423e87a34ccc08b",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/09-order-registry/solution/main.py",
+          "sha256": "59653c5fad75f177c4205648c0c3f90be0b04d6c0f764b8d5beedf8ef7418969",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/09-order-registry/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Frozen orders and mutable tracking state separated; duplicate rejection preserves shipped state and exact order identity.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "10-ecommerce-project/10-invoice-lines",
+      "reviewed_paths": [
+        {
+          "path": "10-ecommerce-project/10-invoice-lines/lesson.md",
+          "sha256": "464e0728b314237809619fdf5ca8ee8701a94211df449baf19e0834e22bdb3d9",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/10-invoice-lines/main.py",
+          "sha256": "022cc29e742ec1e6a86c0ddeb68bce29ee7ab4e244299a3c90f60cac7ca5d720",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/10-invoice-lines/test_main.py",
+          "sha256": "3a493cf43bbf279191ba42c6bc195c0837262fb0084197abb8fc99724d37d777",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/10-invoice-lines/solution/main.py",
+          "sha256": "33a887e2c2b35140c0f03be9d38faca20aae7ca708930bdd048a760403d30e5f",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/10-invoice-lines/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Invoice reads snapshot and formats nonnegative integer cents only at presentation boundary.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "10-ecommerce-project/11-invoice-total",
+      "reviewed_paths": [
+        {
+          "path": "10-ecommerce-project/11-invoice-total/lesson.md",
+          "sha256": "59fd81236127c38087d6379aac9dffdd7428170bdc4f4ccc5011fda2228fe866",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/11-invoice-total/main.py",
+          "sha256": "cab76816cf43c3e153b108728905f098e520e620d655a2ce8617524bffd44b1e",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/11-invoice-total/test_main.py",
+          "sha256": "c06d850a172915cd887f61b939c495ceab0e842d66f98ac550fb0329afdd10d2",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/11-invoice-total/solution/main.py",
+          "sha256": "ef7cba43077b971f9df307f54beaca60f9a5330cf7433dffc22aee35331b83db",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/11-invoice-total/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Invoice composition uses existing lines, stored total and no trailing newline; empty invoice covered.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "10-ecommerce-project/12-command-router",
+      "reviewed_paths": [
+        {
+          "path": "10-ecommerce-project/12-command-router/lesson.md",
+          "sha256": "d91a1643ce437472f8fbad87125c65660d842dbe657f6f4f19540df34a67772f",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/12-command-router/main.py",
+          "sha256": "219989ac3a8a8052cec9d07182ca183c653d1df9c914f354e36c32eeb2c56dac",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/12-command-router/test_main.py",
+          "sha256": "f4614b444fd2ceb3b14752a83c8ce5bb9179fddf2ab68968c11f5b7e38d14dd6",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/12-command-router/solution/main.py",
+          "sha256": "a04dd86aa84c2f33988412d8df77ec014c945bad02d98300522fff4cc1c6bb2b",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/12-command-router/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Router grammar and return/delegation contract specified; token-count guards prevent accidental IndexError.",
+      "findings": [],
+      "outcome": "accepted"
+    },
+    {
+      "lesson": "10-ecommerce-project/13-scripted-session",
+      "reviewed_paths": [
+        {
+          "path": "10-ecommerce-project/13-scripted-session/lesson.md",
+          "sha256": "48bdc53e6894d244ea2b0893af8b8b1380bae8195aab8eda2ae4012e89e5cdcd",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/13-scripted-session/main.py",
+          "sha256": "90970d71297076effb36d8e80670b962c68c9a33b245866a9b66090b496a6af6",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/13-scripted-session/test_main.py",
+          "sha256": "2955403792d9aff673e0506f50a99d3eb628b8d79b17a416b3404053869a428f",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/13-scripted-session/solution/main.py",
+          "sha256": "0f48dc34565f7cdb9b0f8deb3ac42f5110e2026597aa40201229c818881280c6",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/13-scripted-session/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Session recovers only expected user errors; repaired missing lazy-iterator consumption check at quit.",
+      "findings": [
+        "F03"
+      ],
+      "outcome": "accepted_after_repair"
+    },
+    {
+      "lesson": "10-ecommerce-project/14-shop-main",
+      "reviewed_paths": [
+        {
+          "path": "10-ecommerce-project/14-shop-main/lesson.md",
+          "sha256": "e8ee3673ea9a56020ef1ed45113445bc46023cae34efa5d2fa6235a1b53e1e4c",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/14-shop-main/main.py",
+          "sha256": "9bf7d799315c255ae5dff959f49319fcdfc989f64d26a9d691366e704c8a6995",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/14-shop-main/test_main.py",
+          "sha256": "f8c76874d91c8c15184868e73b29aa89708077562b71604d79bc8bb43cba95d9",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/14-shop-main/solution/main.py",
+          "sha256": "e3e17ff81f6ff2759cf87c7ff2d04c12d0428504e7287b2cef970bfecbd4f087",
+          "reviewed": true
+        },
+        {
+          "path": "10-ecommerce-project/14-shop-main/files.yaml",
+          "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+          "reviewed": true
+        }
+      ],
+      "pedagogy_and_technical_note": "Fresh entrypoint, None versus empty iterable and import guard are explicit; full default CLI and multi-order recovery/status transcript executed.",
+      "findings": [],
+      "outcome": "accepted"
+    }
+  ],
+  "quizzes": [
+    {
+      "path": "07-enums-and-records/quiz/index.yaml",
+      "sha256": "f014e4035db9196e80537dc80b7b55a9941c5512c3f8b54dbc9cdfa7b80ab5da",
+      "reviewed": true,
+      "note": "Quiz title parsed."
+    },
+    {
+      "path": "07-enums-and-records/quiz/q01.md",
+      "sha256": "79ac645ce653fe96a2b6c220d5e4f201a4aa177acc524927129e73da810fa05a",
+      "reviewed": true,
+      "note": "Question, distractors, correct answer and explanation agree with earlier instruction; actual backend quiz parser retains answer."
+    },
+    {
+      "path": "07-enums-and-records/quiz/q02.md",
+      "sha256": "a9d35de4fb346c727bcce239a323391c93846ac26707c9babbbe07ddbf0c2d32",
+      "reviewed": true,
+      "note": "Question, distractors, correct answer and explanation agree with earlier instruction; actual backend quiz parser retains answer."
+    },
+    {
+      "path": "07-enums-and-records/quiz/q03.md",
+      "sha256": "cbcb02775b1f6a8812e125c7879b2424f70e0cb66a0a2ba2f71f1146643ff30c",
+      "reviewed": true,
+      "note": "Question, distractors, correct answer and explanation agree with earlier instruction; actual backend quiz parser retains answer."
+    },
+    {
+      "path": "07-enums-and-records/quiz/q04.md",
+      "sha256": "09279f9bbca2edd64bd78de92f8d33c83bfcbd77b71b79a548516d988a881d73",
+      "reviewed": true,
+      "note": "Question, distractors, correct answer and explanation agree with earlier instruction; actual backend quiz parser retains answer."
+    },
+    {
+      "path": "08-descriptors/quiz/index.yaml",
+      "sha256": "7c99931774f1654d2a39977b8b9d2d83da8339b31f126e6239843786b2c67c9b",
+      "reviewed": true,
+      "note": "Quiz title parsed."
+    },
+    {
+      "path": "08-descriptors/quiz/q01.md",
+      "sha256": "74aceaf6dd6d371a9adf280d7193bb496a424e809198d85a8635aeee78906bf5",
+      "reviewed": true,
+      "note": "Question, distractors, correct answer and explanation agree with earlier instruction; actual backend quiz parser retains answer."
+    },
+    {
+      "path": "08-descriptors/quiz/q02.md",
+      "sha256": "2499d90f42a6fc1adb9fdb613f8fb962f4e36548b30ca76ed094a6fd4f5efecc",
+      "reviewed": true,
+      "note": "Question, distractors, correct answer and explanation agree with earlier instruction; actual backend quiz parser retains answer."
+    },
+    {
+      "path": "08-descriptors/quiz/q03.md",
+      "sha256": "f36580a2d8fce39659d56afea0021b177e4f4d5e2a6a9c8e2a04ce90fae55c64",
+      "reviewed": true,
+      "note": "Question, distractors, correct answer and explanation agree with earlier instruction; actual backend quiz parser retains answer."
+    },
+    {
+      "path": "08-descriptors/quiz/q04.md",
+      "sha256": "122d26c1b3ef87e07358e9d58b3d352f849a215d84d5993842f0ba1a9fc76562",
+      "reviewed": true,
+      "note": "Question, distractors, correct answer and explanation agree with earlier instruction; actual backend quiz parser retains answer."
+    },
+    {
+      "path": "09-errors-and-contracts/quiz/index.yaml",
+      "sha256": "a1312c60c93590147a22d6d39a61bcdc94ef8f7ade9dfb5c9e52201cf1094d3c",
+      "reviewed": true,
+      "note": "Quiz title parsed."
+    },
+    {
+      "path": "09-errors-and-contracts/quiz/q01.md",
+      "sha256": "a1220e07a8cbc1c14946351a2a9b09ac4b3f7d857005c7852ee093939c4313e8",
+      "reviewed": true,
+      "note": "Question, distractors, correct answer and explanation agree with earlier instruction; actual backend quiz parser retains answer."
+    },
+    {
+      "path": "09-errors-and-contracts/quiz/q02.md",
+      "sha256": "a18be595eb54f722235ae1e9bf48b4024f46f50a671904f7cf2bd3bb3a5c7619",
+      "reviewed": true,
+      "note": "Question, distractors, correct answer and explanation agree with earlier instruction; actual backend quiz parser retains answer."
+    },
+    {
+      "path": "09-errors-and-contracts/quiz/q03.md",
+      "sha256": "bb7e5fe2cb953b90ae000e1aafcf19532ab6880c3627f5ae21d65f35f68c8f9b",
+      "reviewed": true,
+      "note": "Question, distractors, correct answer and explanation agree with earlier instruction; actual backend quiz parser retains answer."
+    },
+    {
+      "path": "09-errors-and-contracts/quiz/q04.md",
+      "sha256": "4c9119f90fda3c6f15fc60740808f0d6ff0f2647048c2e4f39955eeb8c841b9f",
+      "reviewed": true,
+      "note": "Question, distractors, correct answer and explanation agree with earlier instruction; actual backend quiz parser retains answer."
+    },
+    {
+      "path": "10-ecommerce-project/quiz/index.yaml",
+      "sha256": "0c7d516c1c76cd6747fc4ce41b2c7c9e5a4dd1839a25a19757cf33f7f2e54814",
+      "reviewed": true,
+      "note": "Quiz title parsed."
+    },
+    {
+      "path": "10-ecommerce-project/quiz/q01.md",
+      "sha256": "13fc2212f9ddd640d6cf415be6bef321d35c8f8531c211a9769427dacc523b57",
+      "reviewed": true,
+      "note": "Question, distractors, correct answer and explanation agree with earlier instruction; actual backend quiz parser retains answer."
+    },
+    {
+      "path": "10-ecommerce-project/quiz/q02.md",
+      "sha256": "550bbf49ab8bdd08f600cfc2e0f2b7528750735c65810c9666ec2987f587844c",
+      "reviewed": true,
+      "note": "Question, distractors, correct answer and explanation agree with earlier instruction; actual backend quiz parser retains answer."
+    },
+    {
+      "path": "10-ecommerce-project/quiz/q03.md",
+      "sha256": "9337691629965f68d7a392004a7c41cc1e1b06ea700768f4cd7b5ddf11b91c16",
+      "reviewed": true,
+      "note": "Question, distractors, correct answer and explanation agree with earlier instruction; actual backend quiz parser retains answer."
+    },
+    {
+      "path": "10-ecommerce-project/quiz/q04.md",
+      "sha256": "299e7ac126fa9ff5dc1273e8bb6ce42a418aa713ec0c760bea7855eae915e522",
+      "reviewed": true,
+      "note": "Question, distractors, correct answer and explanation agree with earlier instruction; actual backend quiz parser retains answer."
+    }
+  ],
+  "boundary_review": {
+    "paths": [
+      {
+        "path": "06-banking-project/10-statement-report/files.yaml",
+        "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      {
+        "path": "06-banking-project/10-statement-report/lesson.md",
+        "sha256": "b309c38c2763a9656cb5eeaf89c9048b1c8d5edb4beb6f405b528ce9f06e0989"
+      },
+      {
+        "path": "06-banking-project/10-statement-report/main.py",
+        "sha256": "574da0ee08df06bdc992dc949104124954752b2b537a095e8bb118f9d2cda7f4"
+      },
+      {
+        "path": "06-banking-project/10-statement-report/solution/main.py",
+        "sha256": "9655b571ad9f72c49f5ec71c07367109d293f2dce79bb201b6c68df6a75aa3a1"
+      },
+      {
+        "path": "06-banking-project/10-statement-report/test_main.py",
+        "sha256": "50fb51dbd9de4e01ef7d6895c7aaceb62fce993343c6bad9984870a9c390c3bd"
+      }
+    ],
+    "notes": [
+      "06 finishes a complete self-contained bank statement; 07 opens a new enum topic rather than silently extending the bank model. Existing class/import prerequisites are sufficient.",
+      "07 dataclass value records lead into independent managed-attribute lessons; 08 explicitly supplies or explains class access, naming and validation before requiring them.",
+      "08 uses simple raised errors with explanatory minimums; 09 deepens exception design and abstract contracts.",
+      "10 starts a fresh cumulative shop and supplies earlier completed behavior at every stage; all adjacent project definition ASTs match."
+    ]
+  },
+  "voice_review": "Every lesson read in full with starter/test/solution. Explanations use concrete examples and delimit supplied versus learner work. Repeated Run/Submit scaffolding retained; no cosmetic rewriting warranted. Module 09/10 explanations are shorter than 07/08 but provide the required syntax, scope and checkpoints.",
+  "source_topic_review": {
+    "enum_dataclass": "Source outline phrase Enum as dataclass is covered safely through separate enum fields and frozen dataclass values; direct dataclass decoration of Enum is explicitly discouraged.",
+    "descriptor": "Placement, hook arguments, class access, per-instance storage, true deletion, naming hook, data/non-data priority, property and function binding all covered.",
+    "exceptions_ABC": "Narrow catching, domain types/details, causes, finally and abstract/concrete overrides covered with matching behavioral checks.",
+    "CLI": "Complete scripted in-memory console shop, not interactive input or persistence; documented limitation retained."
+  },
+  "verification": {
+    "python_executable": "/Users/piyush.patel/IdeaProjects/intercourses/backend/.venv/bin/python",
+    "python_version": "3.12.12 (main, Jan 27 2026, 23:41:44) [Clang 21.1.4 ]",
+    "full_native_command": [
+      "/Users/piyush.patel/IdeaProjects/intercourses/backend/.venv/bin/python",
+      "-I",
+      "-B",
+      "/Users/piyush.patel/IdeaProjects/python-courses/object-oriented-python/assets/verify_native.py"
+    ],
+    "full_native_counts": {
+      "lessons": 112,
+      "tasks": 112,
+      "errors": 0
+    },
+    "full_native_quiz_questions": 40,
+    "native_records": [
+      {
+        "lesson": "07-enums-and-records/01-named-statuses",
+        "hashes": {
+          "lesson.md": "a298a19e8e0b949e369eec4dec940f215cd2b7097049c63415edefca169606c1",
+          "main.py": "c9cfc07377e5ed3b406e108b1e1a4a568895f18cc7908b4dbd819ff7bedf2ca2",
+          "test_main.py": "8156076bb932b8b451c2aa8ae577c94225616db949acb0b710e48e9e9cd3a729",
+          "solution/main.py": "6626bf8d96ec4950add732ec094d9753b97f8f0789f78c4935ccd27c538b1427",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_named_statuses",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Not ready: AttributeError type object 'TicketState' has no attribute 'NEW'\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_named_statuses",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "NEW done\n"
+        }
+      },
+      {
+        "lesson": "07-enums-and-records/02-explicit-enum-values",
+        "hashes": {
+          "lesson.md": "1a21fdb5fb5476469b28f798311f635d13b8da2531cab2356df1a3d22d0b9fb8",
+          "main.py": "a2e7178d7eefb3d8109f62f5b5f6ce4b903fff9b6b846748284458e2b4c8fbbc",
+          "test_main.py": "d249e0e145de8b5304785afb1f52092b9d6d222dc68a1405b794b2fb62865d94",
+          "solution/main.py": "56041716d367b51a9ef715d273241478cbc3317b2f3179eaaa92a77e76957316",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_explicit_enum_values",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "0 1\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_explicit_enum_values",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "202 404\n"
+        }
+      },
+      {
+        "lesson": "07-enums-and-records/03-automatic-values",
+        "hashes": {
+          "lesson.md": "6c5a314106b081b9e777468b0e94953ffb0794f1b078355cb9f0af2fcd9662f5",
+          "main.py": "2b2539e94780e9b348b01414ab922c4f20aaab5c6c6faed99baaeb6c33d46ee4",
+          "test_main.py": "cb32cb8129532462e75bbc3a33ddc125d74166f8a3700c8299f223ccc1ef4500",
+          "solution/main.py": "16ce559a78c235c954012fc7d6973bd029191958cf2848aab01a3cdf584409f0",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_automatic_values",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "['pick', 'wrap', 'send']\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_automatic_values",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "[1, 2, 3]\n"
+        }
+      },
+      {
+        "lesson": "07-enums-and-records/04-compare-members",
+        "hashes": {
+          "lesson.md": "f90b7c499ec1861a603331570062f999d87cfb0cb43aabef05027fb9edfef6f7",
+          "main.py": "78e672060a4bf86c326d4efc636f6c17a6fb528836193857900ca38ebf9132df",
+          "test_main.py": "155f24dc0b3a04ee258aadb9f1696761c158c7152b12969d750b278cd1963f4f",
+          "solution/main.py": "7f04e7a2aada2afc5b5e18dcbac2fdd9bed71c3301e4665e2e7fa55c2f927b96",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_compare_members",
+              "passed": false,
+              "message": "Recognize only WorkState.COMPLETE"
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_compare_members",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "True False\n"
+        }
+      },
+      {
+        "lesson": "07-enums-and-records/05-unique-values",
+        "hashes": {
+          "lesson.md": "a4f9cf119a614ff755215c2365d17569bbbda4e49bf931760fc8d3d7db9f34b5",
+          "main.py": "8c8f460746424d5e4336c174671f41c3f949737f341aa598033e84ce689d2e48",
+          "test_main.py": "1352e30f3fa8dfb53ab3477530e989f10e37d3d5ce47aa0708947b81928da639",
+          "solution/main.py": "e03798ec00394079d8fc2b1ac43e9ed322fba5c46d17483c109ea81518ee05b2",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_unique_values",
+              "passed": false,
+              "message": "Apply @unique to Choice"
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "['tea', 'juice']\nDuplicate still accepted\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_unique_values",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "['tea', 'juice']\nDuplicate rejected\n"
+        }
+      },
+      {
+        "lesson": "07-enums-and-records/06-iterate-members",
+        "hashes": {
+          "lesson.md": "821f3a5ce74c5f62a860d5829cc630e81d14c0f4eb3c75edee68107c6e087a84",
+          "main.py": "d5f45503b2ba08629a63636a255b3ae1d0bd866f60982ee32ea711d02b7d717e",
+          "test_main.py": "de65dedb9fff9785697e9abb5015f230b2334ee634d8620ea3b17a0a79a7041b",
+          "solution/main.py": "d4e9e49c4ca1313bbb9cba93ee2d13f570108a94d6b1a3b83d66786b068c3d2a",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_iterate_members",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_iterate_members",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "[('LIGHT', 'light'), ('DARK', 'dark')]\n"
+        }
+      },
+      {
+        "lesson": "07-enums-and-records/07-enum-methods",
+        "hashes": {
+          "lesson.md": "893bcee384cad066be646d8b3b7ad3706c665e59d0fbb1a53d7b7173701a3f6d",
+          "main.py": "bebf5c0016b9866c94c2495e997ca71ae4b746e20eca1a9934f2fd20537d0e97",
+          "test_main.py": "6aa35a756bf5781434083b7748399e7cac5c230fb789e7cc7144d5c0f386db6b",
+          "solution/main.py": "326832cf00815eec1d5bdc13f64091498c8bf395e25fd898db8f5de1804de988",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_enum_methods",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_enum_methods",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "12 16\n"
+        }
+      },
+      {
+        "lesson": "07-enums-and-records/08-enum-truth-values",
+        "hashes": {
+          "lesson.md": "5ec73b87cfa7bfa9b339cb14ff99ad92c05fce90d9427891ebc5d6c9c51b8697",
+          "main.py": "0782c081481c1f7099b1afddc8e6224e79d1c99918b90a8e477cb508cb1d7c3d",
+          "test_main.py": "c401bcd3e077fec6472b9dbc5437794f53d199db86212e2449d537b6ef21b97d",
+          "solution/main.py": "8dd1939c189b256e2056faa0ab1fb41225320696a356fb69fc853ad3eed4ee68",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_enum_truth_values",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "True True True\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_enum_truth_values",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "False True True\n"
+        }
+      },
+      {
+        "lesson": "07-enums-and-records/09-enum-type-checks",
+        "hashes": {
+          "lesson.md": "05269fa82fd35e3510f59d3f4878b51229bc70baa327edc36a5c520672b62cd4",
+          "main.py": "345cbc00fa751133ee8af8bb6d996ed40df6c58b30d4b8ab1e01d1b6266a0e98",
+          "test_main.py": "4762e8a97b4e9504ba3f17fd7d7b329fd2de3231583797f6a9a37181197e2aac",
+          "solution/main.py": "06d2e0b5260577fd9cf14a20e2add84c1259806a2c46641d3bc14bb83fbd51fa",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_enum_type_checks",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_enum_type_checks",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "True False\n"
+        }
+      },
+      {
+        "lesson": "07-enums-and-records/10-dataclass-records",
+        "hashes": {
+          "lesson.md": "526aaa29dc60cc071e9e3bfb42e73efa91bf9b5cc3871fab8be754060da0b401",
+          "main.py": "9fea70fafe79fcd2597a412884e5b1c8970643886d2b803c137a276e565ca64c",
+          "test_main.py": "d4d1632de9d78efc13b2eb480556b13ff93637f4fe6734f984f7201d5d3c8fd1",
+          "solution/main.py": "797482646dfbaadbdf39417153530ffa0d17e48f2c074b78a4e9b16b581f3764",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_dataclass_records",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Not ready: TypeError Reading() takes no arguments\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_dataclass_records",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Reading(title='River notes', pages=18)\nTrue\n"
+        }
+      },
+      {
+        "lesson": "07-enums-and-records/11-enum-in-a-dataclass",
+        "hashes": {
+          "lesson.md": "cd1e495e3a7b2534fe96d9f5f4b1eba58cba629410971645d68508673256b0ab",
+          "main.py": "835caae57feeb7f5d86094f25bd785612d1a0c864e805263b800e6b793c201f1",
+          "test_main.py": "17a8ee04957bc5f4711f7d82327e543f31e4c237dd0fb013ba9b331b8ecc2f02",
+          "solution/main.py": "868aca3eaaf8aedcaf13923892915b45cf8fd8938f8690e90c54236370104280",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_enum_in_a_dataclass",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "open False\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_enum_in_a_dataclass",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "CaseState.OPEN True\n"
+        }
+      },
+      {
+        "lesson": "07-enums-and-records/12-dataclass-enum-values",
+        "hashes": {
+          "lesson.md": "ab0334dbd6b9501a56e1860a51e08273821cd75cd04214fa46287a5935839124",
+          "main.py": "8cccfe7651e84128640f29812eba97aa0330a7f6c29862f90ce8e315565fcfee",
+          "test_main.py": "d041d1b694613ac1fbe48eb4eff21373ec1ee247f912b824896ebc645bdaa1ce",
+          "solution/main.py": "fb0d07d83dd2b659053bec60a09a67686490813e0287e06ab06db1a9e91d66fe",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_dataclass_enum_values",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Not ready: AttributeError type object 'PaperSize' has no attribute 'CARD'\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_dataclass_enum_values",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "10 15 150\n"
+        }
+      },
+      {
+        "lesson": "08-descriptors/01-descriptor-read",
+        "hashes": {
+          "lesson.md": "171e4e17743318a9971560db039729c7601e4cc224fc289bbe72bb79fd1b676e",
+          "main.py": "fde615901c6a683c5b63e443878602d797974fd56408347ffde75c8347653d30",
+          "test_main.py": "3c3c98a5055c872b0fd849832c52dab7a17b7ede594475799b7a77a229f523ea",
+          "solution/main.py": "8705e140b634673e4de1120e1ddc0c3af5393b3fe4b9e96584901c57528568e7",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_descriptor_read",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_descriptor_read",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "30 70\n"
+        }
+      },
+      {
+        "lesson": "08-descriptors/02-class-level-access",
+        "hashes": {
+          "lesson.md": "83e089d8666f66de387191603e04e48c5cdd4c692b60dc899a2536cf8bda2325",
+          "main.py": "5e3e9c00a6a640215c0f272bf24d37d50c3f4b0851d98973d625f4f9b257137c",
+          "test_main.py": "98600e6068265535aabf09a6e9aaa23b0759e94c37a947c4a59cc6fc4b68c30b",
+          "solution/main.py": "d4e75365092cbe7f47845ae1b71f409c57100ea79eb7edfff7a5dccab37d2424",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_class_level_access",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "False Record heading\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_class_level_access",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "True Record heading\n"
+        }
+      },
+      {
+        "lesson": "08-descriptors/03-descriptor-write",
+        "hashes": {
+          "lesson.md": "c6d1d467223a05c0834a9003d6b7f63fbd0520e4a10fb01c690211c3ea4c2fdd",
+          "main.py": "84d0ca0a526041ae6bafaf6be10f4265cdf57be462af96633bfdbfb019fcecfa",
+          "test_main.py": "c7b45b2ef2f02de6c8a24551d4d7935426c392e3c11f36c7b9fc84ab82062208",
+          "solution/main.py": "32963b01ab70fefc41ca0f11ca0121a1693054b4dad4f0d6c3af98e3cd65f5cb",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_descriptor_write",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "0\nNegative value accepted\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_descriptor_write",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "7\nRejected: 7\n"
+        }
+      },
+      {
+        "lesson": "08-descriptors/04-per-instance-storage",
+        "hashes": {
+          "lesson.md": "d39c826c8e8125de9af66ea2b81f381e0bb9c150e8106627e66b18a9129cec5a",
+          "main.py": "68023b36e3f5108165ce4e79143190a85e0a04223ceeb7133dbc41475a18f759",
+          "test_main.py": "ad2c846c09c30db5421ac7524f0841181571a8bc1626ac62d394439aa5289842",
+          "solution/main.py": "40fa7a3404cde898b7f7bf792861d52842493b71b20eb0c44a0441755b634592",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_per_instance_storage",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_per_instance_storage",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "A7 B2\n"
+        }
+      },
+      {
+        "lesson": "08-descriptors/05-descriptor-delete",
+        "hashes": {
+          "lesson.md": "9d73af0e1944f9f79cacfe57ec1cd2cd14cf6789d61a6641c1c3cab20a21a676",
+          "main.py": "3380bd6055a250de546b370151dee19e42e09b27bfc77e0b9b3f6cb628e09520",
+          "test_main.py": "2bcdc4878ce61402685c3146a142e085fb80c1fb02e91ad2d2c46565b884e099",
+          "solution/main.py": "ac74a4d69dd8c3843e9538728958d54737621fb0d93c30fed5b9b2ccf15451aa",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_descriptor_delete",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "old keep\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_descriptor_delete",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None keep\n"
+        }
+      },
+      {
+        "lesson": "08-descriptors/06-set-name",
+        "hashes": {
+          "lesson.md": "66f7d9d414859c05f14d08e58fda65684135f10a9fbdf246944bf791b63b9d44",
+          "main.py": "265412a889fa6106c07ecd88b777bf68a1f9a3db504751bc74884e9eb0e2f0c6",
+          "test_main.py": "3ffa722d0ad780d015f3b70a52c86df5f1ef28f197be6954bca30f5d2deca148",
+          "solution/main.py": "d175dc87b4653bd6a7bb7d39cd9f5b84df6fe8b8f6629fb180a597fbeb24b9aa",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_set_name",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Yorkshire Yorkshire\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_set_name",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Leeds Yorkshire\n"
+        }
+      },
+      {
+        "lesson": "08-descriptors/07-data-descriptor-priority",
+        "hashes": {
+          "lesson.md": "4eaf724ca964d17e90b9134f4d5a7c033a65da8e3ed09bdcaddf6fbe8a37b01b",
+          "main.py": "4963752a6bc6a95bb220c91cf7ef4d066c40bea862db0d60db5fe61050953597",
+          "test_main.py": "f5d3c51b8367568aa5ba3392691c7d08aa0d43b22f8025f7cbec4d82ee1e6d9f",
+          "solution/main.py": "0389925d501612ebd955965b5760a25df17a55eada8479d7d63a8673a4bd1a61",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_data_descriptor_priority",
+              "passed": false,
+              "message": "Data descriptor must win over instance storage"
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "shadow\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_data_descriptor_priority",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "R17\n"
+        }
+      },
+      {
+        "lesson": "08-descriptors/08-non-data-descriptor-priority",
+        "hashes": {
+          "lesson.md": "a2916615a80d9ba3bd8f055abf2d3a8b5714fb6a387ef1c90edc229f974ed7f9",
+          "main.py": "7098b051d9007ee370f60df03ea1d3be0914c1367dc354650014f18d5598e626",
+          "test_main.py": "a6390997aeb6c0b360fb965213a67df2de2e3370fa5f76a9ff6b0eafe0c0dfd0",
+          "solution/main.py": "ef8bbef7a162e55cae72e0b2c32f80322715e148fc7e22ea8d50eaa023d7a96b",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_non_data_descriptor_priority",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None\nWelcome back None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_non_data_descriptor_priority",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Hello, Mina\nWelcome back Hello, Oren\n"
+        }
+      },
+      {
+        "lesson": "08-descriptors/09-property-as-descriptor",
+        "hashes": {
+          "lesson.md": "71ddcefb2678cf709f7f797bda1adfc0dc43697acb78bef141ea570f819679f2",
+          "main.py": "3d3b4d590656c0e60ed55e9e5b6189392080b16a6d0e1a62e52007d4d5e1756b",
+          "test_main.py": "070871deb9fe6b8d43dc85fb90bea9ffcb4ed43995daf03f707de8574ac1f703",
+          "solution/main.py": "26bac72d0bc860e54c5a7e497e20c3b515229b7b8a13de9435fdeea9f057f3e0",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_property_as_descriptor",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None\nNone\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_property_as_descriptor",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "12\n20\n"
+        }
+      },
+      {
+        "lesson": "08-descriptors/10-function-binding",
+        "hashes": {
+          "lesson.md": "164819c942fa4f93af990d559fe9ef9093a0390e874c2e01217f6b6511c815d6",
+          "main.py": "fe5e871befb4f46dfaa5a3233026584143ee5e538d826cf6e6a77e6d326cee8f",
+          "test_main.py": "4640e220d14ab11f24563c6eb510930ec3d27fa080230b30d3290ae22834854a",
+          "solution/main.py": "1c6268ad9481b6baf5703bd40144bbc32ec188efecf9cd1b5764ef5e2fe3f16e",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_function_binding",
+              "passed": false,
+              "message": "'NoneType' object has no attribute '__self__'"
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Not ready: TypeError 'NoneType' object is not callable\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_function_binding",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Welcome Uma!\n"
+        }
+      },
+      {
+        "lesson": "08-descriptors/11-reusable-validation",
+        "hashes": {
+          "lesson.md": "6570db101431663a81e9a8bf4c78d32df7fb646973250ad2cc7b18a9719be954",
+          "main.py": "95ba6a45d40127fd82bc5b23ca37eafedc99ade3ffb0e15fedb519f01e023a77",
+          "test_main.py": "b63e33e369b47650a1078b16f37ce268d5bfbe327bc28625d577ceaa4a90df82",
+          "solution/main.py": "778018cbae61bafadcb485ed366c16224df1c1c515ffd73a2ffe8b4d726e1a4e",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_reusable_validation",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_reusable_validation",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "2.5 30\nRejected: 2.5\n"
+        }
+      },
+      {
+        "lesson": "08-descriptors/12-descriptor-backed-record",
+        "hashes": {
+          "lesson.md": "fd2b90830201a9a48e7bf490daee3d379e454abad29ca773541a45b6cc56b800",
+          "main.py": "6083ced4911e8fb5bac52409652795e90a0872a041ef7efa976a48c5285a388e",
+          "test_main.py": "ec2750155c420be34d3be94b1175772f09aa1ff5d6038221cf070138cdc5618d",
+          "solution/main.py": "9240f2a1daa79c08679d3220113d227070c3eebb363afeea91a20a24f30afd0d",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_descriptor_backed_record",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "14 None None None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_descriptor_backed_record",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "14 3 20 5\n"
+        }
+      },
+      {
+        "lesson": "09-errors-and-contracts/01-raise-a-built-in-error",
+        "hashes": {
+          "lesson.md": "97043a5625701cbf6d447355428e3784b296ae60fa0d3cf2052558ba299de97c",
+          "main.py": "601e7226b0db5eb4f355a34ad0aa6a39a0f96b3953e16800595f9702459bbb05",
+          "test_main.py": "2e88f582929fa8b595b7a20052c5c550f23922c903c94931140a1150e2bceb2a",
+          "solution/main.py": "408454c76adc151a3238308524bab80b25ff11ccd87bf543c860596aa3083961",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Seats: 1\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Seats: 4\n"
+        }
+      },
+      {
+        "lesson": "09-errors-and-contracts/02-catch-a-specific-error",
+        "hashes": {
+          "lesson.md": "bc37ee762fd5c717deb76f42b0ae75d549daad00f6066e12047882be4d765f20",
+          "main.py": "4bf300534a3f7be7fc078c818e4d098e5990b5c1b43db40e9b468dee36ddc2f8",
+          "test_main.py": "b8daecfe3b43c4e64b9f680b23604e3a338eb52592e1e2d5bb9d1942f01e06d5",
+          "solution/main.py": "3bbce92eded42ec4e87d441324d009e0036212f95ad616621bf478facc8cc371",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Unknown locker\n"
+        }
+      },
+      {
+        "lesson": "09-errors-and-contracts/03-custom-domain-error",
+        "hashes": {
+          "lesson.md": "7328077c61b1b21b3e288cf16faf14cec998ad6a4c8aed41f5db6ecd2cdd1759",
+          "main.py": "ef9851bc88a7302d32db919f69806edf2322d3ae50551080803a558b7ee05b07",
+          "test_main.py": "f13a428e2e113c858f9305217750ecf7041db44a92bd38534fc857bb95e969d7",
+          "solution/main.py": "7132cdf7d53d53087a11353e99cc7a9f0fb5077808f301e9f0040dc574b31434",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Probe: TypeError SoldOutError() takes no arguments\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Probe: SoldOutError workshop is full\n"
+        }
+      },
+      {
+        "lesson": "09-errors-and-contracts/04-exception-details",
+        "hashes": {
+          "lesson.md": "96cd2112f6a7243c9bcf2daedf0ce823988696ccbfe28e87da504dcb3b41071e",
+          "main.py": "a4b9f5cac8cae0a5d8806d322e0e1524614eebd1b72f106312c45a97cf3cdfbd",
+          "test_main.py": "82eab0b0aea588b5771de361636e65dc0d4984f77070215090286f00d6cdde0e",
+          "solution/main.py": "36d11fd198a62685e828fc02c587202988e4bf97ed10070c60d3a2162cba5714",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": "'StockShortage' object has no attribute 'requested'"
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "(6, 2)\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "requested 6; available 2\n"
+        }
+      },
+      {
+        "lesson": "09-errors-and-contracts/05-chain-a-cause",
+        "hashes": {
+          "lesson.md": "a315cd7789224daabbaefb13b332641fe24cb6e3f23b3c183aae2416d530cdc4",
+          "main.py": "1ef762bb47b29a8ee20de3df241b9d2d893c4c5a3fa7e880976a2dd27e432ef0",
+          "test_main.py": "b3692090f917d45c6b0f752110dad42137259ffcd87bcc3ecd43ce81e2c663d4",
+          "solution/main.py": "1e60d753b54424eea8723fb6371bf44dd36cb942f37e11c92e9b4f042e4124ef",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Quantity: None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Quantity: 8\n"
+        }
+      },
+      {
+        "lesson": "09-errors-and-contracts/06-cleanup-with-finally",
+        "hashes": {
+          "lesson.md": "a7935e31bd9788f07741ba1241069cd9aa9c2b1a7420291c7961296fb9cb36d0",
+          "main.py": "af2da979258fb142cd6aa4a824c1507518f34b9270ba7fb7a1ad3bccdd7940f9",
+          "test_main.py": "8551512dcea1a61e96dd04c71e6710baf1f6691cf5fc81575fc5b81b232e8613",
+          "solution/main.py": "864053f38b80100fd35a084f29712e71a8cea660fea78ca8a7e4f82ed229c1ef",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None\nClosed: False\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "chapter one\nClosed: True\n"
+        }
+      },
+      {
+        "lesson": "09-errors-and-contracts/07-abstract-contract",
+        "hashes": {
+          "lesson.md": "ca48ac8ddcfb4d099bc939d54fb4703b1208c2404771fa542cf553ed6f661249",
+          "main.py": "45f79b6b2143ee514c8f33d3a5219a9558e15767d2d130ee150b47b54c12a56f",
+          "test_main.py": "5d1ae343201ea18334cff6cc0a0859531c422b7880dc955f707f6405e7c84265",
+          "solution/main.py": "2a2979459679016a2fdd066fb96f0de9a039df3593b96d8d3b1492ecc1ba87ae",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Created: DeliveryPolicy\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Probe: TypeError Can't instantiate abstract class DeliveryPolicy without an implementation for abstract method 'fee_cents'\n"
+        }
+      },
+      {
+        "lesson": "09-errors-and-contracts/08-implement-a-contract",
+        "hashes": {
+          "lesson.md": "fd91a9b79e4c4e3ce9abfd76fc1e91671cac42125a477d6970e7b5f448f9e4d3",
+          "main.py": "b984b237f0ad96fb257bac32b94745e6d3e3d7da2c301930ec7d722a40e41593",
+          "test_main.py": "ebcdc9384926819a809aa2847151f9493c6c880b8dac018eee353c7e02b8e2fb",
+          "solution/main.py": "30108f29769bca7451f503874aaa463e990895b7e14a9f0f4f659431c00ce294",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Delivery: None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Delivery: 0\n"
+        }
+      },
+      {
+        "lesson": "10-ecommerce-project/01-product-record",
+        "hashes": {
+          "lesson.md": "738c6fe0f433d4c5d9206c166309dac7cf30c2ce12a10713cd770e16432fc30f",
+          "main.py": "87022014d3134ad017425b0fd2b8fbb8395beab0c981a1645e32fc4e13f0e6cb",
+          "test_main.py": "c819571df981b4cdfec09f9a844d8218bf335f4ebb8c8ccb3ff8d758d785785c",
+          "solution/main.py": "8ef4f81c0bb79e5f3ba281a0b72101fac04c45c91f863294e916aa2814d862f4",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": "Reject invalid product data"
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Product(sku='MUG', name='Mug', price_cents=1250)\nProduct(sku='BAD', name='Invalid price', price_cents=-1)\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Product(sku='MUG', name='Mug', price_cents=1250)\nProbe: ValueError price must be nonnegative integer cents\n"
+        }
+      },
+      {
+        "lesson": "10-ecommerce-project/02-product-catalog",
+        "hashes": {
+          "lesson.md": "24a3aa96dd21259c7e15fbd4f09da1a0a649473c134d77b1b44727a75285351a",
+          "main.py": "9c79596ed7027517a8ca7508c898967ffe1167f438f84179ee2ea29ed389543e",
+          "test_main.py": "00e23e0fdc20a702ff75ecf4f90dcb31dd2f7eac2e66d5d8066cd33d916fddc1",
+          "solution/main.py": "1c742c9bff76df07de76bd35a8e4b89957356078b04181a1b3250692685b52e5",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": "'Catalog' object has no attribute 'products'"
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Probe: AttributeError 'Catalog' object has no attribute 'products'\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "['MUG']\n"
+        }
+      },
+      {
+        "lesson": "10-ecommerce-project/03-cart-line",
+        "hashes": {
+          "lesson.md": "6cb0ed3cab32d399a16216b73b4488ace3bc7608b0aa524893c462e7421af03a",
+          "main.py": "b9948337f2f3fdfeebb24adb15fb304193831dbdc3eab765334218614a780d57",
+          "test_main.py": "24f8961acd3095bf6a9d87574deb828b9d56690eccfe13bd1f40b8ca12962df7",
+          "solution/main.py": "02dda2b776d68ae36729d156adfbc477b4d5ea718ad6d50a3b87ad496f1561d2",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Line cents: None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Line cents: 2500\n"
+        }
+      },
+      {
+        "lesson": "10-ecommerce-project/04-add-to-cart",
+        "hashes": {
+          "lesson.md": "36eb9818425af2e4e556d8975f9eede1fdbef9c94ce61d56c878ee7841c1d57b",
+          "main.py": "a5fb05f9d3a348d20a6275e5f56103ea874527eb5678e1623ae02f438fbfa4df",
+          "test_main.py": "f28910fe8ddd873ee4aaf412952f748cffd1e6f11ceaba123b26a22d530925f2",
+          "solution/main.py": "74871879b98a10cc6948da22056d06d0e018b3dc11e3e7163e3ea13287640200",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": "'X'"
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Probe: KeyError 'MUG'\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Quantity: 2\n"
+        }
+      },
+      {
+        "lesson": "10-ecommerce-project/05-remove-from-cart",
+        "hashes": {
+          "lesson.md": "209a14559c336cc6db013bdbe32b2956aa8afefa627fa723e6c3ee68b7ab686a",
+          "main.py": "c9ac52390118d211f32b517a025747519bcaf31f6afb778267cff432142ccddd",
+          "test_main.py": "13325e4571395672946b752a3a064976e0f5a960be4f81794a487984b96a54f3",
+          "solution/main.py": "8cc7a7b8546d14f11a73dcd9190289136b375df5f8b2117f28849f2d06410dce",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Removed: None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Removed: False\n"
+        }
+      },
+      {
+        "lesson": "10-ecommerce-project/06-cart-summary",
+        "hashes": {
+          "lesson.md": "ea2e6d6db0ac14aa22b5f983dbe27c4cbdc398122ab14c23a1c7f751aa9bc641",
+          "main.py": "728bad4dd14d14025fe14d52bcc4c602738974885a46728dc9c0919931df66e0",
+          "test_main.py": "4496228dc6c3fbe940f07e8646863fc8d2f83e8f3b0b8697dafca6dd75b1d8c6",
+          "solution/main.py": "1b71712de2714f3cc6d3a015e5a02403ada746a97ac40cebb2ad83d68a0c184c",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "([('MUG', 'Mug', 2, 2500)], 2500)\n"
+        }
+      },
+      {
+        "lesson": "10-ecommerce-project/07-order-snapshot",
+        "hashes": {
+          "lesson.md": "c1e33f2e7fe711df6972db13cfea0da6ecc251f2e3355661268e43e2f62406e9",
+          "main.py": "8aca8ed1d512bd17debc639b05004a3b2e62f488369b16049ad4fe7dc9136794",
+          "test_main.py": "22060ed01362f2c794d186fa59acf3f9a38e2b1bc8d55cee5c5c16ae1eb26a4a",
+          "solution/main.py": "adbde2e79eee50d9bd62bbb3446ffdae2fbca223414edfbe109168e5b2f0af76",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": "'NoneType' object has no attribute 'order_id'"
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Order(order_id='O1', lines=(), total_cents=0)\n"
+        }
+      },
+      {
+        "lesson": "10-ecommerce-project/08-checkout-service",
+        "hashes": {
+          "lesson.md": "99587a94c80250476149ebbfa571e17b65f24c5d82551431f4a17754327417e3",
+          "main.py": "b085ab91a5247aabcfd453c82303a6b6f0a2dacbf039b41669305ac403ad5d88",
+          "test_main.py": "c07e7f0f43410d17936a853350264869619038ba3801c82c0628c7082bade449",
+          "solution/main.py": "27710c84aa2b87ca7b237ded19f464c7f582143b9269ab8200b238768b01eef2",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": "Reject empty checkout"
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None\nCart: ([('MUG', 'Mug', 1, 1250)], 1250)\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Order(order_id='O1', lines=(('MUG', 'Mug', 1, 1250),), total_cents=1250)\nCart: ([], 0)\n"
+        }
+      },
+      {
+        "lesson": "10-ecommerce-project/09-order-registry",
+        "hashes": {
+          "lesson.md": "a15946823535194f22b306a99064b7516352d2feea8f50df34eaf31aa5cff876",
+          "main.py": "401ba419574e659a3fd6316f0e92e0922f98b91d8221cca3483b4d767e34d31c",
+          "test_main.py": "cf25a6bb7190c569cd72c803b92b54accd5d29a34d903e508423e87a34ccc08b",
+          "solution/main.py": "59653c5fad75f177c4205648c0c3f90be0b04d6c0f764b8d5beedf8ef7418969",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": "'A'"
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Probe: KeyError 'O1'\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Status: placed\n"
+        }
+      },
+      {
+        "lesson": "10-ecommerce-project/10-invoice-lines",
+        "hashes": {
+          "lesson.md": "464e0728b314237809619fdf5ca8ee8701a94211df449baf19e0834e22bdb3d9",
+          "main.py": "022cc29e742ec1e6a86c0ddeb68bce29ee7ab4e244299a3c90f60cac7ca5d720",
+          "test_main.py": "3a493cf43bbf279191ba42c6bc195c0837262fb0084197abb8fc99724d37d777",
+          "solution/main.py": "33a887e2c2b35140c0f03be9d38faca20aae7ca708930bdd048a760403d30e5f",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "['MUG | Mug | 2 x | $25.00']\n"
+        }
+      },
+      {
+        "lesson": "10-ecommerce-project/11-invoice-total",
+        "hashes": {
+          "lesson.md": "59fd81236127c38087d6379aac9dffdd7428170bdc4f4ccc5011fda2228fe866",
+          "main.py": "cab76816cf43c3e153b108728905f098e520e620d655a2ce8617524bffd44b1e",
+          "test_main.py": "c06d850a172915cd887f61b939c495ceab0e842d66f98ac550fb0329afdd10d2",
+          "solution/main.py": "ef7cba43077b971f9df307f54beaca60f9a5330cf7433dffc22aee35331b83db",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Order O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+        }
+      },
+      {
+        "lesson": "10-ecommerce-project/12-command-router",
+        "hashes": {
+          "lesson.md": "d91a1643ce437472f8fbad87125c65660d842dbe657f6f4f19540df34a67772f",
+          "main.py": "219989ac3a8a8052cec9d07182ca183c653d1df9c914f354e36c32eeb2c56dac",
+          "test_main.py": "f4614b444fd2ceb3b14752a83c8ce5bb9179fddf2ab68968c11f5b7e38d14dd6",
+          "solution/main.py": "a04dd86aa84c2f33988412d8df77ec014c945bad02d98300522fff4cc1c6bb2b",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "MUG | Mug | $12.50\n"
+        }
+      },
+      {
+        "lesson": "10-ecommerce-project/13-scripted-session",
+        "hashes": {
+          "lesson.md": "48bdc53e6894d244ea2b0893af8b8b1380bae8195aab8eda2ae4012e89e5cdcd",
+          "main.py": "90970d71297076effb36d8e80670b962c68c9a33b245866a9b66090b496a6af6",
+          "test_main.py": "2955403792d9aff673e0506f50a99d3eb628b8d79b17a416b3404053869a428f",
+          "solution/main.py": "0f48dc34565f7cdb9b0f8deb3ac42f5110e2026597aa40201229c818881280c6",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "['Added MUG x 2', 'Created O1', 'O1: placed']\n"
+        }
+      },
+      {
+        "lesson": "10-ecommerce-project/14-shop-main",
+        "hashes": {
+          "lesson.md": "e8ee3673ea9a56020ef1ed45113445bc46023cae34efa5d2fa6235a1b53e1e4c",
+          "main.py": "9bf7d799315c255ae5dff959f49319fcdfc989f64d26a9d691366e704c8a6995",
+          "test_main.py": "f8c76874d91c8c15184868e73b29aa89708077562b71604d79bc8bb43cba95d9",
+          "solution/main.py": "e3e17ff81f6ff2759cf87c7ff2d04c12d0428504e7287b2cef970bfecbd4f087",
+          "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+        },
+        "task_count": 1,
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "Complete main to start the session.\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+        }
+      }
+    ],
+    "changed_test_runs": {
+      "07-enums-and-records/03-automatic-values": {
+        "starter": {
+          "rows": [
+            {
+              "name": "test_automatic_values",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "['pick', 'wrap', 'send']\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_automatic_values",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "[1, 2, 3]\n"
+        }
+      },
+      "10-ecommerce-project/13-scripted-session": {
+        "starter": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": false,
+              "message": ""
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "None\n"
+        },
+        "solution": {
+          "rows": [
+            {
+              "name": "test_behavior",
+              "passed": true
+            }
+          ],
+          "run_error": null,
+          "import_error": null,
+          "stdout": "['Added MUG x 2', 'Created O1', 'O1: placed']\n"
+        }
+      }
+    },
+    "adversarial_before": {
+      "auto_wrong_names": {
+        "rows": [
+          {
+            "name": "test_automatic_values",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "[1, 2, 3]\n"
+      },
+      "auto_annotations": {
+        "rows": [
+          {
+            "name": "test_automatic_values",
+            "passed": false,
+            "message": ""
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "[1, 2, 3]\n"
+      },
+      "auto_fixed_numbers": {
+        "rows": [
+          {
+            "name": "test_automatic_values",
+            "passed": false,
+            "message": "Use auto() rather than fixed numbers"
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "[1, 2, 3]\n"
+      },
+      "session_consumes_after_quit": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "['Added MUG x 2', 'Created O1', 'O1: placed']\n"
+      }
+    },
+    "adversarial_after": {
+      "auto_wrong_names": {
+        "rows": [
+          {
+            "name": "test_automatic_values",
+            "passed": false,
+            "message": "Keep the three phase names in the requested order"
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "[1, 2, 3]\n"
+      },
+      "auto_annotations": {
+        "rows": [
+          {
+            "name": "test_automatic_values",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "[1, 2, 3]\n"
+      },
+      "auto_fixed_numbers": {
+        "rows": [
+          {
+            "name": "test_automatic_values",
+            "passed": false,
+            "message": "Use auto() rather than fixed numbers"
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "[1, 2, 3]\n"
+      },
+      "session_consumes_after_quit": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": false,
+            "message": "Stop consuming commands at quit"
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "['Added MUG x 2', 'Created O1', 'O1: placed']\n"
+      }
+    },
+    "adversarial_sources": {
+      "auto_wrong_names": "from enum import Enum, auto\n\nclass PackPhase(Enum):\n    OTHER = auto()\n    WRAP = auto()\n    SEND = auto()\n\n\nif __name__ == \"__main__\":\n    try:\n        print([member.value for member in PackPhase])\n    except (AttributeError, TypeError, ValueError, KeyError, NameError) as error:\n        print(\"Not ready:\", type(error).__name__, str(error))\n",
+      "auto_annotations": "from enum import Enum, auto\n\nclass PackPhase(Enum):\n    PICK: int = auto()\n    WRAP: int = auto()\n    SEND: int = auto()\n\n\nif __name__ == \"__main__\":\n    try:\n        print([member.value for member in PackPhase])\n    except (AttributeError, TypeError, ValueError, KeyError, NameError) as error:\n        print(\"Not ready:\", type(error).__name__, str(error))\n",
+      "auto_fixed_numbers": "from enum import Enum, auto\n\nclass PackPhase(Enum):\n    PICK = 1\n    WRAP = 2\n    SEND = 3\n\n\nif __name__ == \"__main__\":\n    try:\n        print([member.value for member in PackPhase])\n    except (AttributeError, TypeError, ValueError, KeyError, NameError) as error:\n        print(\"Not ready:\", type(error).__name__, str(error))\n",
+      "session_consumes_after_quit": "from dataclasses import dataclass\n\n\n@dataclass(frozen=True)\nclass Product:\n    sku: str\n    name: str\n    price_cents: int\n\n    def __post_init__(self):\n        if not isinstance(self.sku, str) or not self.sku.strip():\n            raise ValueError(\"sku must be nonempty\")\n        if not isinstance(self.name, str) or not self.name.strip():\n            raise ValueError(\"name must be nonempty\")\n        if type(self.price_cents) is not int or self.price_cents < 0:\n            raise ValueError(\"price must be nonnegative integer cents\")\n\n\nclass Catalog:\n    def get(self, sku):\n        return self.products[sku]\n\n    def all(self):\n        return [self.products[sku] for sku in sorted(self.products)]\n\n    def __init__(self, products):\n        self.products = {}\n        for product in products:\n            if product.sku in self.products:\n                raise ValueError(\"duplicate sku\")\n            self.products[product.sku] = product\n\n\nclass CartLine:\n    def __init__(self, product, quantity):\n        if type(quantity) is not int or quantity <= 0:\n            raise ValueError(\"quantity must be a positive integer\")\n        self.product = product\n        self.quantity = quantity\n\n    @property\n    def subtotal_cents(self):\n        return self.product.price_cents * self.quantity\n\n\nclass Cart:\n    def __init__(self, catalog):\n        self.catalog = catalog\n        self.lines = {}\n\n    def add(self, sku, quantity):\n        if type(quantity) is not int or quantity <= 0:\n            raise ValueError(\"quantity must be a positive integer\")\n        product = self.catalog.get(sku)\n        if sku in self.lines:\n            self.lines[sku].quantity += quantity\n        else:\n            self.lines[sku] = CartLine(product, quantity)\n\n    def remove(self, sku):\n        if sku not in self.lines:\n            return False\n        del self.lines[sku]\n        return True\n\n    def summary(self):\n        rows = []\n        for sku in sorted(self.lines):\n            line = self.lines[sku]\n            rows.append((sku, line.product.name, line.quantity, line.subtotal_cents))\n        return rows, sum(row[3] for row in rows)\n\n\n\n@dataclass(frozen=True)\nclass Order:\n    order_id: str\n    lines: tuple\n    total_cents: int\n\n\ndef snapshot_order(order_id, cart):\n    rows, total = cart.summary()\n    return Order(order_id, tuple(rows), total)\n\n\nclass CheckoutService:\n    def checkout(self, cart, order_id):\n        if not cart.lines:\n            raise ValueError(\"cart is empty\")\n        order = snapshot_order(order_id, cart)\n        cart.lines.clear()\n        return order\n\n\nclass OrderRegistry:\n    def __init__(self):\n        self.orders = {}\n        self.statuses = {}\n\n    def get(self, order_id):\n        return self.orders[order_id]\n\n    def track(self, order_id):\n        return self.statuses[order_id]\n\n    def advance(self, order_id, status):\n        current = self.track(order_id)\n        following = {\"placed\": \"shipped\", \"shipped\": \"delivered\"}\n        if following.get(current) != status:\n            raise ValueError(\"invalid status transition\")\n        self.statuses[order_id] = status\n\n    def add(self, order):\n        if order.order_id in self.orders:\n            raise ValueError(\"duplicate order\")\n        self.orders[order.order_id] = order\n        self.statuses[order.order_id] = \"placed\"\n\n\ndef money(cents):\n    return f\"{cents // 100}.{cents % 100:02d}\"\n\n\nclass Invoice:\n    def __init__(self, order):\n        self.order = order\n\n    def lines(self):\n        return [f\"{sku} | {name} | {quantity} x | ${money(subtotal)}\"\n                for sku, name, quantity, subtotal in self.order.lines]\n\n    def render(self):\n        parts = [f\"Order {self.order.order_id}\"]\n        parts.extend(self.lines())\n        parts.append(f\"Total: ${money(self.order.total_cents)}\")\n        return \"\\n\".join(parts)\n\n\n\nclass Shop:\n    def __init__(self, catalog):\n        self.catalog = catalog\n        self.cart = Cart(catalog)\n        self.registry = OrderRegistry()\n        self.checkout_service = CheckoutService()\n        self.next_order = 1\n\n    def products(self):\n        return \"\\n\".join(f\"{p.sku} | {p.name} | ${money(p.price_cents)}\" for p in self.catalog.all()) or \"No products\"\n\n    def add(self, sku, quantity):\n        self.cart.add(sku, quantity)\n        return f\"Added {sku} x {quantity}\"\n\n    def remove(self, sku):\n        return f\"Removed {sku}\" if self.cart.remove(sku) else f\"Not in cart: {sku}\"\n\n    def cart_text(self):\n        rows, total = self.cart.summary()\n        lines = [f\"{sku} | {name} | {quantity} x | ${money(subtotal)}\" for sku, name, quantity, subtotal in rows]\n        return \"\\n\".join(lines + [f\"Cart total: ${money(total)}\"])\n\n    def checkout(self):\n        order_id = f\"O{self.next_order}\"\n        order = self.checkout_service.checkout(self.cart, order_id)\n        self.registry.add(order)\n        self.next_order += 1\n        return f\"Created {order_id}\"\n\n    def orders(self):\n        return \"\\n\".join(self.registry.orders) or \"No orders\"\n\n    def track(self, order_id):\n        return f\"{order_id}: {self.registry.track(order_id)}\"\n\n    def show(self, order_id):\n        return Invoice(self.registry.get(order_id)).render()\n\n    def status(self, order_id, state):\n        self.registry.advance(order_id, state)\n        return self.track(order_id)\n\n    def execute(self, command):\n        parts = command.split()\n        if parts == [\"products\"]:\n            return self.products()\n        if len(parts) == 3 and parts[0] == \"add\":\n            return self.add(parts[1], int(parts[2]))\n        if len(parts) == 2 and parts[0] == \"remove\":\n            return self.remove(parts[1])\n        if parts == [\"cart\"]:\n            return self.cart_text()\n        if parts == [\"checkout\"]:\n            return self.checkout()\n        if parts == [\"orders\"]:\n            return self.orders()\n        if len(parts) == 2 and parts[0] == \"track\":\n            return self.track(parts[1])\n        if len(parts) == 2 and parts[0] == \"show\":\n            return self.show(parts[1])\n        if len(parts) == 3 and parts[0] == \"status\":\n            return self.status(parts[1], parts[2])\n        raise ValueError(\"invalid command\")\n\n\ndef run_session(shop, commands):\n    responses = []\n    for command in list(commands):\n        if command.strip() == \"quit\":\n            break\n        try:\n            responses.append(shop.execute(command))\n        except (ValueError, KeyError) as error:\n            responses.append(\"Error: \" + str(error))\n    return responses\n\n\nif __name__ == \"__main__\":\n    try:\n        shop = Shop(Catalog([Product(\"MUG\", \"Mug\", 1250)]))\n        print(run_session(shop, [\"add MUG 2\", \"checkout\", \"track O1\"]))\n    except Exception as error:\n        print(\"Probe:\", type(error).__name__, str(error))\n"
+    },
+    "project_AST_continuity": [
+      {
+        "from": "10-ecommerce-project/01-product-record",
+        "to": "10-ecommerce-project/02-product-catalog",
+        "preserved_units": 6,
+        "mismatches": []
+      },
+      {
+        "from": "10-ecommerce-project/02-product-catalog",
+        "to": "10-ecommerce-project/03-cart-line",
+        "preserved_units": 10,
+        "mismatches": []
+      },
+      {
+        "from": "10-ecommerce-project/03-cart-line",
+        "to": "10-ecommerce-project/04-add-to-cart",
+        "preserved_units": 13,
+        "mismatches": []
+      },
+      {
+        "from": "10-ecommerce-project/04-add-to-cart",
+        "to": "10-ecommerce-project/05-remove-from-cart",
+        "preserved_units": 16,
+        "mismatches": []
+      },
+      {
+        "from": "10-ecommerce-project/05-remove-from-cart",
+        "to": "10-ecommerce-project/06-cart-summary",
+        "preserved_units": 17,
+        "mismatches": []
+      },
+      {
+        "from": "10-ecommerce-project/06-cart-summary",
+        "to": "10-ecommerce-project/07-order-snapshot",
+        "preserved_units": 18,
+        "mismatches": []
+      },
+      {
+        "from": "10-ecommerce-project/07-order-snapshot",
+        "to": "10-ecommerce-project/08-checkout-service",
+        "preserved_units": 23,
+        "mismatches": []
+      },
+      {
+        "from": "10-ecommerce-project/08-checkout-service",
+        "to": "10-ecommerce-project/09-order-registry",
+        "preserved_units": 25,
+        "mismatches": []
+      },
+      {
+        "from": "10-ecommerce-project/09-order-registry",
+        "to": "10-ecommerce-project/10-invoice-lines",
+        "preserved_units": 31,
+        "mismatches": []
+      },
+      {
+        "from": "10-ecommerce-project/10-invoice-lines",
+        "to": "10-ecommerce-project/11-invoice-total",
+        "preserved_units": 35,
+        "mismatches": []
+      },
+      {
+        "from": "10-ecommerce-project/11-invoice-total",
+        "to": "10-ecommerce-project/12-command-router",
+        "preserved_units": 36,
+        "mismatches": []
+      },
+      {
+        "from": "10-ecommerce-project/12-command-router",
+        "to": "10-ecommerce-project/13-scripted-session",
+        "preserved_units": 48,
+        "mismatches": []
+      },
+      {
+        "from": "10-ecommerce-project/13-scripted-session",
+        "to": "10-ecommerce-project/14-shop-main",
+        "preserved_units": 49,
+        "mismatches": []
+      }
+    ],
+    "final_solution_stage_regression": {
+      "10-ecommerce-project/01-product-record": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+      },
+      "10-ecommerce-project/02-product-catalog": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+      },
+      "10-ecommerce-project/03-cart-line": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+      },
+      "10-ecommerce-project/04-add-to-cart": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+      },
+      "10-ecommerce-project/05-remove-from-cart": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+      },
+      "10-ecommerce-project/06-cart-summary": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+      },
+      "10-ecommerce-project/07-order-snapshot": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+      },
+      "10-ecommerce-project/08-checkout-service": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+      },
+      "10-ecommerce-project/09-order-registry": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+      },
+      "10-ecommerce-project/10-invoice-lines": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+      },
+      "10-ecommerce-project/11-invoice-total": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+      },
+      "10-ecommerce-project/12-command-router": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+      },
+      "10-ecommerce-project/13-scripted-session": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+      },
+      "10-ecommerce-project/14-shop-main": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+      }
+    },
+    "standalone_examples": [
+      {
+        "lesson": "07-enums-and-records/01-named-statuses",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "OPEN\nopen\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "07-enums-and-records/02-explicit-enum-values",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "EXPRESS\n12\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "07-enums-and-records/03-automatic-values",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "1 2\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "07-enums-and-records/04-compare-members",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "True\nFalse\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "07-enums-and-records/05-unique-values",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "pm\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "07-enums-and-records/06-iterate-members",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "['BLACK', 'WHITE']\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "07-enums-and-records/07-enum-methods",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "6\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "07-enums-and-records/08-enum-truth-values",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "False True\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "07-enums-and-records/09-enum-type-checks",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "True\nFalse\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "07-enums-and-records/10-dataclass-records",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "Label(text='Fragile', copies=1)\nTrue\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "07-enums-and-records/11-enum-in-a-dataclass",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "FRONT\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "07-enums-and-records/12-dataclass-enum-values",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "2\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "08-descriptors/01-descriptor-read",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "21\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "08-descriptors/02-class-level-access",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "cm\nTrue\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "08-descriptors/03-descriptor-write",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "Seeds\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "08-descriptors/04-per-instance-storage",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "north\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "08-descriptors/05-descriptor-delete",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "Map revision\nNone\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "08-descriptors/06-set-name",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "location\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "08-descriptors/07-data-descriptor-priority",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "lesson": "08-descriptors/08-non-data-descriptor-priority",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "standard\npersonal\nstandard\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "08-descriptors/09-property-as-descriptor",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "12\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "08-descriptors/10-function-binding",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "River map\nTrue\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "08-descriptors/11-reusable-validation",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "False\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "08-descriptors/12-descriptor-backed-record",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "4\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "09-errors-and-contracts/01-raise-a-built-in-error",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "lesson": "09-errors-and-contracts/02-catch-a-specific-error",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "lesson": "09-errors-and-contracts/03-custom-domain-error",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "west gate\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "09-errors-and-contracts/04-exception-details",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "lesson": "09-errors-and-contracts/05-chain-a-cause",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "ValueError\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "09-errors-and-contracts/06-cleanup-with-finally",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "['work', 'cleanup']\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "09-errors-and-contracts/07-abstract-contract",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "lesson": "09-errors-and-contracts/08-implement-a-contract",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "Note: bring water\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "10-ecommerce-project/01-product-record",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "Trail(name='Ridge', distance_m=850)\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "10-ecommerce-project/02-product-catalog",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "['Birds', 'Maps']\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "10-ecommerce-project/03-cart-line",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "lesson": "10-ecommerce-project/04-add-to-cart",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "{'red': 5}\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "10-ecommerce-project/05-remove-from-cart",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "{'gold': 2}\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "10-ecommerce-project/06-cart-summary",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "[('Mon', 5), ('Tue', 3)] 8\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "10-ecommerce-project/07-order-snapshot",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "(('north', 12), ('south', 9))\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "10-ecommerce-project/08-checkout-service",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "('draft',) []\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "10-ecommerce-project/09-order-registry",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "lesson": "10-ecommerce-project/10-invoice-lines",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "2:05\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "10-ecommerce-project/11-invoice-total",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "Travel log\nRidge trail\nDistance: 850 m\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "10-ecommerce-project/12-command-router",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "lesson": "10-ecommerce-project/13-scripted-session",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "['NORTH']\n",
+        "stderr": ""
+      },
+      {
+        "lesson": "10-ecommerce-project/14-shop-main",
+        "index": 0,
+        "exit_code": 0,
+        "stdout": "Ready\n",
+        "stderr": ""
+      }
+    ],
+    "final_CLI": {
+      "exit_code": 0,
+      "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n",
+      "stderr": ""
+    },
+    "extended_session_test_source": "from solution import *\n\ndef test_end_to_end():\n    shop = Shop(Catalog([Product(\"B\", \"Brush\", 113), Product(\"A\", \"Art card\", 0)]))\n    commands = [\"products\", \"checkout\", \"add missing 2\", \"add B zero\", \"add B -1\", \"add B 2\", \"add A 1\", \"cart\", \"remove A\", \"remove A\", \"checkout\", \"status O1 delivered\", \"track O1\", \"status O1 shipped\", \"status O1 delivered\", \"status O1 shipped\", \"track O1\", \"add B 3\", \"checkout\", \"orders\", \"show O1\", \"show O2\", \"quit\", \"add B 99\"]\n    replies = run_session(shop, commands)\n    assert replies[0] == \"A | Art card | $0.00\\nB | Brush | $1.13\"\n    assert replies[1] == \"Error: cart is empty\"\n    assert replies[2] == \"Error: 'missing'\"\n    assert replies[3].startswith(\"Error:\")\n    assert replies[4] == \"Error: quantity must be a positive integer\"\n    assert replies[9] == \"Not in cart: A\"\n    assert replies[10] == \"Created O1\"\n    assert replies[11] == \"Error: invalid status transition\"\n    assert replies[12] == \"O1: placed\"\n    assert replies[13:17] == [\"O1: shipped\", \"O1: delivered\", \"Error: invalid status transition\", \"O1: delivered\"]\n    assert replies[19] == \"O1\\nO2\"\n    assert replies[20] == \"Order O1\\nB | Brush | 2 x | $2.26\\nTotal: $2.26\"\n    assert replies[21] == \"Order O2\\nB | Brush | 3 x | $3.39\\nTotal: $3.39\"\n    assert len(replies) == 22\n    assert shop.cart.lines == {}\n    assert shop.registry.get(\"O1\").total_cents == 113 * 2\n    assert shop.registry.get(\"O2\").total_cents == 113 * 3\n    assert shop.next_order == 3\n",
+    "extended_session_result": {
+      "rows": [
+        {
+          "name": "test_end_to_end",
+          "passed": true
+        }
+      ],
+      "run_error": null,
+      "import_error": null,
+      "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+    },
+    "actual_backend_quiz_records": [
+      {
+        "module": "07-enums-and-records",
+        "questions": [
+          {
+            "id": "q01",
+            "type": "single_choice",
+            "language": "python",
+            "body_markdown": "A plain `Enum` has `ZERO = 0` and no `__bool__` override. What is `bool(ThatEnum.ZERO)`?",
+            "options": [
+              {
+                "id": "a",
+                "text": "True"
+              },
+              {
+                "id": "b",
+                "text": "False"
+              },
+              {
+                "id": "c",
+                "text": "It returns the integer 0"
+              }
+            ],
+            "correct": "a",
+            "wrong_explanations": {},
+            "explanation": "Plain Enum members are truthy by default; their stored values do not determine truth automatically.",
+            "pyodide_packages": []
+          },
+          {
+            "id": "q02",
+            "type": "single_choice",
+            "language": "python",
+            "body_markdown": "An enum declares `A = 4`, `OLD_A = 4`, and `B = 7`, in that order. Which names appear during ordinary iteration?",
+            "options": [
+              {
+                "id": "a",
+                "text": "A, OLD_A, B"
+              },
+              {
+                "id": "b",
+                "text": "A, B"
+              },
+              {
+                "id": "c",
+                "text": "OLD_A, B"
+              }
+            ],
+            "correct": "b",
+            "wrong_explanations": {},
+            "explanation": "OLD_A is an alias of A. Iteration visits canonical members in definition order.",
+            "pyodide_packages": []
+          },
+          {
+            "id": "q03",
+            "type": "single_choice",
+            "language": "python",
+            "body_markdown": "Which expression checks that `item` is already a member of a plain `State` enum?",
+            "options": [
+              {
+                "id": "a",
+                "text": "isinstance(item, State)"
+              },
+              {
+                "id": "b",
+                "text": "item == item.value"
+              },
+              {
+                "id": "c",
+                "text": "State(item) is not None"
+              }
+            ],
+            "correct": "a",
+            "wrong_explanations": {},
+            "explanation": "isinstance checks the object type without conversion. Calling State attempts value lookup and may raise ValueError.",
+            "pyodide_packages": []
+          },
+          {
+            "id": "q04",
+            "type": "single_choice",
+            "language": "python",
+            "body_markdown": "Which design safely combines a named choice with a record?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Decorate the Enum subclass directly with @dataclass"
+              },
+              {
+                "id": "b",
+                "text": "Store a State member in a separate dataclass field"
+              },
+              {
+                "id": "c",
+                "text": "Replace every enum value with its name at runtime"
+              }
+            ],
+            "correct": "b",
+            "wrong_explanations": {},
+            "explanation": "Use a separate dataclass whose field holds an enum member. Dataclass instances can also be enum values; directly decorating Enum is not this pattern.",
+            "pyodide_packages": []
+          }
+        ]
+      },
+      {
+        "module": "08-descriptors",
+        "questions": [
+          {
+            "id": "q01",
+            "type": "single_choice",
+            "language": "python",
+            "body_markdown": "A descriptor implements `__get__` and a `__set__` that always raises `AttributeError`. An instance dictionary contains the same public name. What happens on an ordinary instance read?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The instance entry wins"
+              },
+              {
+                "id": "b",
+                "text": "The descriptor getter wins"
+              },
+              {
+                "id": "c",
+                "text": "Python deletes the instance entry"
+              }
+            ],
+            "correct": "b",
+            "wrong_explanations": {},
+            "explanation": "The setter makes it a data descriptor even though the setter rejects writes. Its getter takes priority over instance storage.",
+            "pyodide_packages": []
+          },
+          {
+            "id": "q02",
+            "type": "single_choice",
+            "language": "python",
+            "body_markdown": "Where should changing per-record values live when many records share one descriptor?",
+            "options": [
+              {
+                "id": "a",
+                "text": "In a single self.value attribute on the descriptor"
+              },
+              {
+                "id": "b",
+                "text": "In each owner instance, for example its __dict__"
+              },
+              {
+                "id": "c",
+                "text": "In the descriptor class body"
+              }
+            ],
+            "correct": "b",
+            "wrong_explanations": {},
+            "explanation": "The descriptor is shared through the owner class. Each owner needs its own storage to prevent cross-record changes.",
+            "pyodide_packages": []
+          },
+          {
+            "id": "q03",
+            "type": "single_choice",
+            "language": "python",
+            "body_markdown": "For a getter-only non-data descriptor, what does a same-named instance entry do?",
+            "options": [
+              {
+                "id": "a",
+                "text": "It overrides the descriptor for that instance"
+              },
+              {
+                "id": "b",
+                "text": "It is always ignored"
+              },
+              {
+                "id": "c",
+                "text": "It replaces the descriptor for every instance"
+              }
+            ],
+            "correct": "a",
+            "wrong_explanations": {},
+            "explanation": "Instance dictionary entries take priority over non-data descriptors. Removing the entry reveals the class descriptor again.",
+            "pyodide_packages": []
+          },
+          {
+            "id": "q04",
+            "type": "single_choice",
+            "language": "python",
+            "body_markdown": "When is `__set_name__` called automatically for a descriptor?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Every time its getter runs"
+              },
+              {
+                "id": "b",
+                "text": "When an instance is initialized"
+              },
+              {
+                "id": "c",
+                "text": "When the owner class is created with the descriptor in its body"
+              }
+            ],
+            "correct": "c",
+            "wrong_explanations": {},
+            "explanation": "Class creation supplies the owner and attribute name. Attaching a descriptor afterward does not automatically call the hook.",
+            "pyodide_packages": []
+          }
+        ]
+      },
+      {
+        "module": "09-errors-and-contracts",
+        "questions": [
+          {
+            "id": "q01",
+            "type": "single_choice",
+            "language": "python",
+            "body_markdown": "A reservation rejects a new seat count. When should it assign the attribute?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Before checking the value"
+              },
+              {
+                "id": "b",
+                "text": "Only after validation succeeds"
+              },
+              {
+                "id": "c",
+                "text": "Inside every except block"
+              }
+            ],
+            "correct": "b",
+            "wrong_explanations": {},
+            "explanation": "Checking first preserves the earlier valid state when the update fails.",
+            "pyodide_packages": []
+          },
+          {
+            "id": "q02",
+            "type": "single_choice",
+            "language": "python",
+            "body_markdown": "What does raise QuantityError(...) from cause preserve?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The original exception as __cause__"
+              },
+              {
+                "id": "b",
+                "text": "A retry command"
+              },
+              {
+                "id": "c",
+                "text": "The original return value"
+              }
+            ],
+            "correct": "a",
+            "wrong_explanations": {},
+            "explanation": "Explicit chaining keeps the original exception available for diagnosis.",
+            "pyodide_packages": []
+          },
+          {
+            "id": "q03",
+            "type": "single_choice",
+            "language": "python",
+            "body_markdown": "A function returns from try. What happens to its finally block?",
+            "options": [
+              {
+                "id": "a",
+                "text": "It is skipped"
+              },
+              {
+                "id": "b",
+                "text": "It runs before the function finishes"
+              },
+              {
+                "id": "c",
+                "text": "It runs only if an error occurred"
+              }
+            ],
+            "correct": "b",
+            "wrong_explanations": {},
+            "explanation": "Finally runs when control leaves try, including through a return.",
+            "pyodide_packages": []
+          },
+          {
+            "id": "q04",
+            "type": "single_choice",
+            "language": "python",
+            "body_markdown": "What does an abstract method guarantee about a concrete subclass?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Its calculation is correct"
+              },
+              {
+                "id": "b",
+                "text": "It cannot raise exceptions"
+              },
+              {
+                "id": "c",
+                "text": "It provides an override before instantiation is allowed"
+              }
+            ],
+            "correct": "c",
+            "wrong_explanations": {},
+            "explanation": "ABC checks abstract-method completion, not the business correctness of an override.",
+            "pyodide_packages": []
+          }
+        ]
+      },
+      {
+        "module": "10-ecommerce-project",
+        "questions": [
+          {
+            "id": "q01",
+            "type": "single_choice",
+            "language": "python",
+            "body_markdown": "Why does the order store tuples of row values instead of CartLine objects?",
+            "options": [
+              {
+                "id": "a",
+                "text": "To make later cart edits leave the purchase unchanged"
+              },
+              {
+                "id": "b",
+                "text": "To keep the cart and order synchronized"
+              },
+              {
+                "id": "c",
+                "text": "To enable remote persistence"
+              }
+            ],
+            "correct": "a",
+            "wrong_explanations": {},
+            "explanation": "The snapshot copies immutable values, so mutable cart lines cannot rewrite the purchase.",
+            "pyodide_packages": []
+          },
+          {
+            "id": "q02",
+            "type": "single_choice",
+            "language": "python",
+            "body_markdown": "Which representation does this project use for a price of $2.05?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The float 2.05"
+              },
+              {
+                "id": "b",
+                "text": "The integer 205"
+              },
+              {
+                "id": "c",
+                "text": "The string 205 cents"
+              }
+            ],
+            "correct": "b",
+            "wrong_explanations": {},
+            "explanation": "Integer cents support exact arithmetic; money formatting happens only for display.",
+            "pyodide_packages": []
+          },
+          {
+            "id": "q03",
+            "type": "single_choice",
+            "language": "python",
+            "body_markdown": "Which responsibility belongs to the registry rather than checkout?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Computing a cart line subtotal"
+              },
+              {
+                "id": "b",
+                "text": "Clearing a successfully purchased cart"
+              },
+              {
+                "id": "c",
+                "text": "Looking up an existing order by its ID"
+              }
+            ],
+            "correct": "c",
+            "wrong_explanations": {},
+            "explanation": "Checkout creates a purchase snapshot; the registry stores and retrieves completed orders.",
+            "pyodide_packages": []
+          },
+          {
+            "id": "q04",
+            "type": "single_choice",
+            "language": "python",
+            "body_markdown": "Why does main check commands is None rather than not commands?",
+            "options": [
+              {
+                "id": "a",
+                "text": "An empty list means run no commands"
+              },
+              {
+                "id": "b",
+                "text": "An empty list must run the defaults"
+              },
+              {
+                "id": "c",
+                "text": "None and an empty list always mean the same thing"
+              }
+            ],
+            "correct": "a",
+            "wrong_explanations": {},
+            "explanation": "The default script is used only when no argument is supplied; an explicit empty iterable remains empty.",
+            "pyodide_packages": []
+          }
+        ]
+      }
+    ],
+    "git_diff_check_exit_code": 0
+  },
+  "limitations": [
+    "Browser worker/UI/navigation/rendered diagrams not tested by this reviewer; parent owns final browser harness.",
+    "Protected diagram-integrated prose reviewed but not edited; later parent edits invalidate stored prose hashes.",
+    "Entire course is untracked in repository, so git diff --check cannot inspect its contents; final source compared to in-memory review baseline and recorded by hash.",
+    "Initial backend loader import inherited Hermes PYTHONPATH and failed on incompatible pydantic_core; reran successfully with -I using the requested backend venv. No source workaround was applied.",
+    "Tests establish stated contracts over varied fixtures, not arbitrary malicious implementations or production readiness."
+  ]
+}

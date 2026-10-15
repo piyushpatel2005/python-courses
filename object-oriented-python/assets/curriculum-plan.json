@@ -1,0 +1,637 @@
+{
+  "slug": "object-oriented-python",
+  "prerequisites": "Python variables, collections, loops, functions, imports and basic try/except; OOP starts from zero. Validation needed early is explained locally before the dedicated exceptions module.",
+  "policy": "All lessons coding; one focused task preferred, max three independently testable tasks; main.py incomplete but runnable, test_main.py, solution/main.py, files.yaml main.py only. No demo-only lessons.",
+  "modules": [
+    {
+      "directory": "01-classes-and-objects",
+      "slug": "classes-and-objects",
+      "title": "Classes and objects",
+      "lessons": [
+        {
+          "directory": "01-define-a-class",
+          "slug": "define-a-class",
+          "order": 1
+        },
+        {
+          "directory": "02-create-two-objects",
+          "slug": "create-two-objects",
+          "order": 2
+        },
+        {
+          "directory": "03-attach-instance-data",
+          "slug": "attach-instance-data",
+          "order": 3
+        },
+        {
+          "directory": "04-read-and-update-data",
+          "slug": "read-and-update-data",
+          "order": 4
+        },
+        {
+          "directory": "05-class-defaults",
+          "slug": "class-defaults",
+          "order": 5
+        },
+        {
+          "directory": "06-shadow-a-class-default",
+          "slug": "shadow-a-class-default",
+          "order": 6
+        },
+        {
+          "directory": "07-write-an-instance-method",
+          "slug": "write-an-instance-method",
+          "order": 7
+        },
+        {
+          "directory": "08-return-a-value",
+          "slug": "return-a-value",
+          "order": 8
+        },
+        {
+          "directory": "09-initialize-an-object",
+          "slug": "initialize-an-object",
+          "order": 9
+        },
+        {
+          "directory": "10-constructor-defaults",
+          "slug": "constructor-defaults",
+          "order": 10
+        },
+        {
+          "directory": "11-independent-instance-lists",
+          "slug": "independent-instance-lists",
+          "order": 11
+        },
+        {
+          "directory": "12-class-body-scope",
+          "slug": "class-body-scope",
+          "order": 12
+        }
+      ]
+    },
+    {
+      "directory": "02-object-interfaces",
+      "slug": "object-interfaces",
+      "title": "Object interfaces",
+      "lessons": [
+        {
+          "directory": "01-bound-methods",
+          "slug": "bound-methods",
+          "order": 1
+        },
+        {
+          "directory": "02-function-attributes",
+          "slug": "function-attributes",
+          "order": 2
+        },
+        {
+          "directory": "03-classes-are-callable",
+          "slug": "classes-are-callable",
+          "order": 3
+        },
+        {
+          "directory": "04-class-method-factory",
+          "slug": "class-method-factory",
+          "order": 4
+        },
+        {
+          "directory": "05-static-methods",
+          "slug": "static-methods",
+          "order": 5
+        },
+        {
+          "directory": "06-property-function",
+          "slug": "property-function",
+          "order": 6
+        },
+        {
+          "directory": "07-property-decorator",
+          "slug": "property-decorator",
+          "order": 7
+        },
+        {
+          "directory": "08-computed-properties",
+          "slug": "computed-properties",
+          "order": 8
+        },
+        {
+          "directory": "09-read-only-properties",
+          "slug": "read-only-properties",
+          "order": 9
+        },
+        {
+          "directory": "10-property-setters",
+          "slug": "property-setters",
+          "order": 10
+        }
+      ]
+    },
+    {
+      "directory": "03-python-protocols",
+      "slug": "python-protocols",
+      "title": "Python protocols",
+      "lessons": [
+        {
+          "directory": "01-friendly-str",
+          "slug": "friendly-str",
+          "order": 1
+        },
+        {
+          "directory": "02-developer-repr",
+          "slug": "developer-repr",
+          "order": 2
+        },
+        {
+          "directory": "03-add-value-objects",
+          "slug": "add-value-objects",
+          "order": 3
+        },
+        {
+          "directory": "04-subtract-value-objects",
+          "slug": "subtract-value-objects",
+          "order": 4
+        },
+        {
+          "directory": "05-multiply-by-a-scalar",
+          "slug": "multiply-by-a-scalar",
+          "order": 5
+        },
+        {
+          "directory": "06-reflected-multiplication",
+          "slug": "reflected-multiplication",
+          "order": 6
+        },
+        {
+          "directory": "07-value-equality",
+          "slug": "value-equality",
+          "order": 7
+        },
+        {
+          "directory": "08-order-value-objects",
+          "slug": "order-value-objects",
+          "order": 8
+        },
+        {
+          "directory": "09-sized-objects",
+          "slug": "sized-objects",
+          "order": 9
+        },
+        {
+          "directory": "10-truthy-objects",
+          "slug": "truthy-objects",
+          "order": 10
+        },
+        {
+          "directory": "11-hashable-keys",
+          "slug": "hashable-keys",
+          "order": 11
+        },
+        {
+          "directory": "12-callable-objects",
+          "slug": "callable-objects",
+          "order": 12
+        },
+        {
+          "directory": "13-custom-format",
+          "slug": "custom-format",
+          "order": 13
+        },
+        {
+          "directory": "14-explicit-cleanup",
+          "slug": "explicit-cleanup",
+          "order": 14
+        }
+      ]
+    },
+    {
+      "directory": "04-inheritance",
+      "slug": "inheritance",
+      "title": "Inheritance and composition",
+      "lessons": [
+        {
+          "directory": "01-inherit-a-method",
+          "slug": "inherit-a-method",
+          "order": 1
+        },
+        {
+          "directory": "02-the-object-base",
+          "slug": "the-object-base",
+          "order": 2
+        },
+        {
+          "directory": "03-extend-initialization",
+          "slug": "extend-initialization",
+          "order": 3
+        },
+        {
+          "directory": "04-override-a-method",
+          "slug": "override-a-method",
+          "order": 4
+        },
+        {
+          "directory": "05-reuse-with-super",
+          "slug": "reuse-with-super",
+          "order": 5
+        },
+        {
+          "directory": "06-substitution-in-a-loop",
+          "slug": "substitution-in-a-loop",
+          "order": 6
+        },
+        {
+          "directory": "07-compose-a-service",
+          "slug": "compose-a-service",
+          "order": 7
+        },
+        {
+          "directory": "08-introduce-slots",
+          "slug": "introduce-slots",
+          "order": 8
+        },
+        {
+          "directory": "09-slots-in-subclasses",
+          "slug": "slots-in-subclasses",
+          "order": 9
+        },
+        {
+          "directory": "10-multiple-inheritance",
+          "slug": "multiple-inheritance",
+          "order": 10
+        },
+        {
+          "directory": "11-inspect-the-mro",
+          "slug": "inspect-the-mro",
+          "order": 11
+        },
+        {
+          "directory": "12-cooperative-diamond",
+          "slug": "cooperative-diamond",
+          "order": 12
+        }
+      ]
+    },
+    {
+      "directory": "05-animal-rescue-project",
+      "slug": "animal-rescue-project",
+      "title": "Animal rescue project",
+      "lessons": [
+        {
+          "directory": "01-animal-record",
+          "slug": "animal-record",
+          "order": 1
+        },
+        {
+          "directory": "02-bird-specialization",
+          "slug": "bird-specialization",
+          "order": 2
+        },
+        {
+          "directory": "03-fish-specialization",
+          "slug": "fish-specialization",
+          "order": 3
+        },
+        {
+          "directory": "04-species-behavior",
+          "slug": "species-behavior",
+          "order": 4
+        },
+        {
+          "directory": "05-feeding-service",
+          "slug": "feeding-service",
+          "order": 5
+        },
+        {
+          "directory": "06-rescue-register",
+          "slug": "rescue-register",
+          "order": 6
+        },
+        {
+          "directory": "07-habitat-groups",
+          "slug": "habitat-groups",
+          "order": 7
+        },
+        {
+          "directory": "08-daily-care-report",
+          "slug": "daily-care-report",
+          "order": 8
+        }
+      ]
+    },
+    {
+      "directory": "06-banking-project",
+      "slug": "banking-project",
+      "title": "Banking project",
+      "lessons": [
+        {
+          "directory": "01-account-balance",
+          "slug": "account-balance",
+          "order": 1
+        },
+        {
+          "directory": "02-deposit-money",
+          "slug": "deposit-money",
+          "order": 2
+        },
+        {
+          "directory": "03-withdraw-money",
+          "slug": "withdraw-money",
+          "order": 3
+        },
+        {
+          "directory": "04-savings-account",
+          "slug": "savings-account",
+          "order": 4
+        },
+        {
+          "directory": "05-current-account",
+          "slug": "current-account",
+          "order": 5
+        },
+        {
+          "directory": "06-fixed-deposit",
+          "slug": "fixed-deposit",
+          "order": 6
+        },
+        {
+          "directory": "07-interest-calculator",
+          "slug": "interest-calculator",
+          "order": 7
+        },
+        {
+          "directory": "08-apply-interest",
+          "slug": "apply-interest",
+          "order": 8
+        },
+        {
+          "directory": "09-account-registry",
+          "slug": "account-registry",
+          "order": 9
+        },
+        {
+          "directory": "10-statement-report",
+          "slug": "statement-report",
+          "order": 10
+        }
+      ]
+    },
+    {
+      "directory": "07-enums-and-records",
+      "slug": "enums-and-records",
+      "title": "Enums and records",
+      "lessons": [
+        {
+          "directory": "01-named-statuses",
+          "slug": "named-statuses",
+          "order": 1
+        },
+        {
+          "directory": "02-explicit-enum-values",
+          "slug": "explicit-enum-values",
+          "order": 2
+        },
+        {
+          "directory": "03-automatic-values",
+          "slug": "automatic-values",
+          "order": 3
+        },
+        {
+          "directory": "04-compare-members",
+          "slug": "compare-members",
+          "order": 4
+        },
+        {
+          "directory": "05-unique-values",
+          "slug": "unique-values",
+          "order": 5
+        },
+        {
+          "directory": "06-iterate-members",
+          "slug": "iterate-members",
+          "order": 6
+        },
+        {
+          "directory": "07-enum-methods",
+          "slug": "enum-methods",
+          "order": 7
+        },
+        {
+          "directory": "08-enum-truth-values",
+          "slug": "enum-truth-values",
+          "order": 8
+        },
+        {
+          "directory": "09-enum-type-checks",
+          "slug": "enum-type-checks",
+          "order": 9
+        },
+        {
+          "directory": "10-dataclass-records",
+          "slug": "dataclass-records",
+          "order": 10
+        },
+        {
+          "directory": "11-enum-in-a-dataclass",
+          "slug": "enum-in-a-dataclass",
+          "order": 11
+        },
+        {
+          "directory": "12-dataclass-enum-values",
+          "slug": "dataclass-enum-values",
+          "order": 12
+        }
+      ]
+    },
+    {
+      "directory": "08-descriptors",
+      "slug": "descriptors",
+      "title": "Descriptors",
+      "lessons": [
+        {
+          "directory": "01-descriptor-read",
+          "slug": "descriptor-read",
+          "order": 1
+        },
+        {
+          "directory": "02-class-level-access",
+          "slug": "class-level-access",
+          "order": 2
+        },
+        {
+          "directory": "03-descriptor-write",
+          "slug": "descriptor-write",
+          "order": 3
+        },
+        {
+          "directory": "04-per-instance-storage",
+          "slug": "per-instance-storage",
+          "order": 4
+        },
+        {
+          "directory": "05-descriptor-delete",
+          "slug": "descriptor-delete",
+          "order": 5
+        },
+        {
+          "directory": "06-set-name",
+          "slug": "set-name",
+          "order": 6
+        },
+        {
+          "directory": "07-data-descriptor-priority",
+          "slug": "data-descriptor-priority",
+          "order": 7
+        },
+        {
+          "directory": "08-non-data-descriptor-priority",
+          "slug": "non-data-descriptor-priority",
+          "order": 8
+        },
+        {
+          "directory": "09-property-as-descriptor",
+          "slug": "property-as-descriptor",
+          "order": 9
+        },
+        {
+          "directory": "10-function-binding",
+          "slug": "function-binding",
+          "order": 10
+        },
+        {
+          "directory": "11-reusable-validation",
+          "slug": "reusable-validation",
+          "order": 11
+        },
+        {
+          "directory": "12-descriptor-backed-record",
+          "slug": "descriptor-backed-record",
+          "order": 12
+        }
+      ]
+    },
+    {
+      "directory": "09-errors-and-contracts",
+      "slug": "errors-and-contracts",
+      "title": "Errors and contracts",
+      "lessons": [
+        {
+          "directory": "01-raise-a-built-in-error",
+          "slug": "raise-a-built-in-error",
+          "order": 1
+        },
+        {
+          "directory": "02-catch-a-specific-error",
+          "slug": "catch-a-specific-error",
+          "order": 2
+        },
+        {
+          "directory": "03-custom-domain-error",
+          "slug": "custom-domain-error",
+          "order": 3
+        },
+        {
+          "directory": "04-exception-details",
+          "slug": "exception-details",
+          "order": 4
+        },
+        {
+          "directory": "05-chain-a-cause",
+          "slug": "chain-a-cause",
+          "order": 5
+        },
+        {
+          "directory": "06-cleanup-with-finally",
+          "slug": "cleanup-with-finally",
+          "order": 6
+        },
+        {
+          "directory": "07-abstract-contract",
+          "slug": "abstract-contract",
+          "order": 7
+        },
+        {
+          "directory": "08-implement-a-contract",
+          "slug": "implement-a-contract",
+          "order": 8
+        }
+      ]
+    },
+    {
+      "directory": "10-ecommerce-project",
+      "slug": "ecommerce-project",
+      "title": "Ecommerce console project",
+      "lessons": [
+        {
+          "directory": "01-product-record",
+          "slug": "product-record",
+          "order": 1
+        },
+        {
+          "directory": "02-product-catalog",
+          "slug": "product-catalog",
+          "order": 2
+        },
+        {
+          "directory": "03-cart-line",
+          "slug": "cart-line",
+          "order": 3
+        },
+        {
+          "directory": "04-add-to-cart",
+          "slug": "add-to-cart",
+          "order": 4
+        },
+        {
+          "directory": "05-remove-from-cart",
+          "slug": "remove-from-cart",
+          "order": 5
+        },
+        {
+          "directory": "06-cart-summary",
+          "slug": "cart-summary",
+          "order": 6
+        },
+        {
+          "directory": "07-order-snapshot",
+          "slug": "order-snapshot",
+          "order": 7
+        },
+        {
+          "directory": "08-checkout-service",
+          "slug": "checkout-service",
+          "order": 8
+        },
+        {
+          "directory": "09-order-registry",
+          "slug": "order-registry",
+          "order": 9
+        },
+        {
+          "directory": "10-invoice-lines",
+          "slug": "invoice-lines",
+          "order": 10
+        },
+        {
+          "directory": "11-invoice-total",
+          "slug": "invoice-total",
+          "order": 11
+        },
+        {
+          "directory": "12-command-router",
+          "slug": "command-router",
+          "order": 12
+        },
+        {
+          "directory": "13-scripted-session",
+          "slug": "scripted-session",
+          "order": 13
+        },
+        {
+          "directory": "14-shop-main",
+          "slug": "shop-main",
+          "order": 14
+        }
+      ]
+    }
+  ]
+}

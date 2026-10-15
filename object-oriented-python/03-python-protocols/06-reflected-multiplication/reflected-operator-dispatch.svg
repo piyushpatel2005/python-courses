@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="610" viewBox="0 0 600 610" role="img" aria-labelledby="title desc">
+<title id="title">How Reflected Multiplication Works</title><desc id="desc">For 3 * v where v is a Vector unrelated to int, int.__mul__ returns NotImplemented and Vector.__rmul__ receives v and 3. If neither supports the operation Python raises TypeError.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#40566f"/></marker></defs>
+<rect width="600" height="610" rx="18" fill="#f8fafd"/>
+<rect x="24" y="24" width="552" height="5" rx="2" fill="#3974bd"/>
+<text x="300" y="62" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#172c46">How Reflected Multiplication Works</text>
+<text x="300" y="91" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#40566f">CONCEPTUAL MODEL · ILLUSTRATIVE EXAMPLE</text>
+<g data-card="true"><rect x="140" y="118" width="320" height="60" rx="12" fill="#e8f1ff" stroke="#91a7bd" stroke-width="1.5"/>
+<text x="300.0" y="155.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">3 * v</text>
+</g>
+<path data-connector="true" d="M300 178 L300 210" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
+<g data-card="true"><rect x="75" y="210" width="450" height="68" rx="12" fill="#eee8ff" stroke="#91a7bd" stroke-width="1.5"/>
+<text x="300.0" y="237.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">int.__mul__(3, v)</text>
+<text x="300.0" y="265.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">Cannot multiply this Vector</text>
+</g>
+<path data-connector="true" d="M300 278 L300 332" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="450" y="311" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#172c46">NotImplemented</text>
+<g data-card="true"><rect x="75" y="332" width="450" height="68" rx="12" fill="#ddf5ee" stroke="#91a7bd" stroke-width="1.5"/>
+<text x="300.0" y="359.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Vector.__rmul__(v, 3)</text>
+<text x="300.0" y="387.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">Try the right-hand operand</text>
+</g>
+<path data-connector="true" d="M300 400 L300 448" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
+<g data-card="true"><rect x="75" y="448" width="450" height="68" rx="12" fill="#fff1d7" stroke="#91a7bd" stroke-width="1.5"/>
+<text x="300.0" y="475.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Return a New Vector</text>
+<text x="300.0" y="503.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">Or TypeError if both decline</text>
+</g>
+<text x="300" y="561" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">Example: Vector is not a subclass of int.</text>
+<text x="300" y="586" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">A right-hand subclass can change dispatch priority.</text>
+</svg>

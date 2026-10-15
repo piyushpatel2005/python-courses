@@ -1,0 +1,1618 @@
+{
+  "scope": [
+    "05-animal-rescue-project",
+    "06-banking-project"
+  ],
+  "execution": "CPython 3.12.12",
+  "plan_sha256": "e46de7f7ee49d6c2c0a99061ae31f3f6f9701053712249e344d7f54ac45984e6",
+  "lessons": [
+    {
+      "path": "05-animal-rescue-project/01-animal-record",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_animal_record",
+          "passed": false,
+          "error": "AttributeError: 'Animal' object has no attribute 'name'"
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_animal_record",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Record: unfinished unfinished",
+      "solution_run_output": "Record: Moss hay",
+      "prior_stage_regression_checks": [],
+      "loader": {
+        "slug": "animal-record",
+        "order": 1,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "25bae546d386c89b2d24a38d9dac6d82405308932edc5879b9c191d1a43fc934",
+        "main.py": "149b2311b995a5d3281415eff74d8896b7167d5dc2590156fae98f87afd0bffa",
+        "test_main.py": "40ea6acda61a4066f64878ab3fdae80849465ad3e0d4592f3ea88d2e1ca49b57",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "5a037a30d4ba92e755a62d15067e11ad7f67c99b7bed87d46e0fd15918aa9d85"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "Small initial model: two per-instance strings; default habitat is supplied, not graded as a keep task.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "25bae546d386c89b2d24a38d9dac6d82405308932edc5879b9c191d1a43fc934"
+      }
+    },
+    {
+      "path": "05-animal-rescue-project/02-bird-specialization",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_bird_record",
+          "passed": false,
+          "error": "AttributeError: 'Bird' object has no attribute 'name'"
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_bird_record",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Record: Moss hay\nBird: unfinished unfinished aviary",
+      "solution_run_output": "Record: Moss hay\nBird: Lark 24 aviary",
+      "prior_stage_regression_checks": [
+        "05-animal-rescue-project/01-animal-record"
+      ],
+      "loader": {
+        "slug": "bird-specialization",
+        "order": 2,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "a1204e9a00e026a725eb528c9274ca0050b4e5dc8ef489287fbf354442011fc7",
+        "main.py": "6b9745fb426765597cb050f05cf79a7a3d57318e88f53ea66ead365f6987950b",
+        "test_main.py": "cfafe349f8ac8d783fe8d6ebc9c1dffd637d4cdebc8abb51169e7f6b7e6e5ff1",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "b3fd73b0f47af6fa01c02e5fbb5994f1fe7e179d92f5bed56902f45d6d89f3da"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "One constructor extension; the parent-constructor spy rejects copied initialization and restores its patch in finally.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "a1204e9a00e026a725eb528c9274ca0050b4e5dc8ef489287fbf354442011fc7"
+      }
+    },
+    {
+      "path": "05-animal-rescue-project/03-fish-specialization",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_fish_record",
+          "passed": false,
+          "error": "AttributeError: 'Fish' object has no attribute 'name'"
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_fish_record",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Record: Moss hay\nBird: Lark 24 aviary\nFish: unfinished unfinished tank",
+      "solution_run_output": "Record: Moss hay\nBird: Lark 24 aviary\nFish: Ripple fresh tank",
+      "prior_stage_regression_checks": [
+        "05-animal-rescue-project/01-animal-record",
+        "05-animal-rescue-project/02-bird-specialization"
+      ],
+      "loader": {
+        "slug": "fish-specialization",
+        "order": 3,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "506f317adc6f66e4f63bcd4efdb410c2b2cf290b3c92a7b7fb8ea9976bfbdb9c",
+        "main.py": "468b7f7d76b631208848aaebc2d43715958be1363f847a81028a442b0ebf71e7",
+        "test_main.py": "a10704baa130c3e53d1142a36969920ab2ce1e4db26bf0f70cc8883b78427cf0",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "48ec5c1fd13e8444a017d3f4d37ee548381722d47cd62467877d2a1d98e92d27"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "Transfers the previous constructor pattern to water conditions without changing Bird.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "506f317adc6f66e4f63bcd4efdb410c2b2cf290b3c92a7b7fb8ea9976bfbdb9c"
+      }
+    },
+    {
+      "path": "05-animal-rescue-project/04-species-behavior",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_species_movement",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_species_movement",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Record: Moss hay\nBird: Lark 24 aviary\nFish: Ripple fresh tank\nMovements: [None, None, None]",
+      "solution_run_output": "Record: Moss hay\nBird: Lark 24 aviary\nFish: Ripple fresh tank\nMovements: ['walk', 'fly', 'swim']",
+      "prior_stage_regression_checks": [
+        "05-animal-rescue-project/01-animal-record",
+        "05-animal-rescue-project/02-bird-specialization",
+        "05-animal-rescue-project/03-fish-specialization"
+      ],
+      "loader": {
+        "slug": "species-behavior",
+        "order": 4,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "6783389d851c0a2fc6e1833726a8d41445ccbb4ad00616a2be55b3b0f8bcf684",
+        "main.py": "119262b6c3c00113074454bd26626b49138b8f5aca819719aef50e7c53d86021",
+        "test_main.py": "a387284d9e5b35d7e65584489d9f6f40998320607b71f551452efe76d72dfa83",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "0ed5b66d944615b0b31a350499a9e555de4277c381e4666b42f08654d441f4ba"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "One polymorphic movement contract has three tiny method bodies. One task/test checks the mixed-call behavior; no independent reporting task is bundled.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "6783389d851c0a2fc6e1833726a8d41445ccbb4ad00616a2be55b3b0f8bcf684"
+      }
+    },
+    {
+      "path": "05-animal-rescue-project/05-feeding-service",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_meal_label",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_meal_label",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Record: Moss hay\nBird: Lark 24 aviary\nFish: Ripple fresh tank\nMovements: ['walk', 'fly', 'swim']\nMeal: None",
+      "solution_run_output": "Record: Moss hay\nBird: Lark 24 aviary\nFish: Ripple fresh tank\nMovements: ['walk', 'fly', 'swim']\nMeal: Lark: seeds",
+      "prior_stage_regression_checks": [
+        "05-animal-rescue-project/01-animal-record",
+        "05-animal-rescue-project/02-bird-specialization",
+        "05-animal-rescue-project/03-fish-specialization",
+        "05-animal-rescue-project/04-species-behavior"
+      ],
+      "loader": {
+        "slug": "feeding-service",
+        "order": 5,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "f14840c3dbecb2e77969481a8c65f96f1d8eb259d6e94d2285346882612b6f8b",
+        "main.py": "46b909d3b03e3eb7687a27fad60a3e498284265f34a58c0eba39768294346751",
+        "test_main.py": "87c7ab68213a3acae6871730e0f2152ed9ae7300d6f8ff1ca16f6c693180051d",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "f8d3a8a805fe9e8995cd494293419ee529a0dbdcdd15d212e40a6c50dba7b896"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "A service formats current attributes without inheriting from or mutating Animal.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "f14840c3dbecb2e77969481a8c65f96f1d8eb259d6e94d2285346882612b6f8b"
+      }
+    },
+    {
+      "path": "05-animal-rescue-project/06-rescue-register",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_register_arrival",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_register_arrival",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Record: Moss hay\nBird: Lark 24 aviary\nFish: Ripple fresh tank\nMovements: ['walk', 'fly', 'swim']\nMeal: Lark: seeds\nRegistered: None",
+      "solution_run_output": "Record: Moss hay\nBird: Lark 24 aviary\nFish: Ripple fresh tank\nMovements: ['walk', 'fly', 'swim']\nMeal: Lark: seeds\nRegistered: 1",
+      "prior_stage_regression_checks": [
+        "05-animal-rescue-project/01-animal-record",
+        "05-animal-rescue-project/02-bird-specialization",
+        "05-animal-rescue-project/03-fish-specialization",
+        "05-animal-rescue-project/04-species-behavior",
+        "05-animal-rescue-project/05-feeding-service"
+      ],
+      "loader": {
+        "slug": "rescue-register",
+        "order": 6,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "9bcdf98b4b6ae4e176512816d5d117617aa121f0e2724e585135d9845ad7b642",
+        "main.py": "a9c5ccd089aa2377f9767fe4344a89bb32eb37fec33338d680b33117d5b53cdf",
+        "test_main.py": "a92fac134f72c795f7365ed4ad3d653eb114e0d5f9bfcc5d6c48f4e7435a3e9b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "12c1c508fd587e4b27171fcf8c72abe174fbe5a45b03428aea54e975bacf631f"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "The supplied constructor scaffolds composition and an independent list; the only new graded behavior is recording an arrival.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "9bcdf98b4b6ae4e176512816d5d117617aa121f0e2724e585135d9845ad7b642"
+      }
+    },
+    {
+      "path": "05-animal-rescue-project/07-habitat-groups",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_habitat_groups",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_habitat_groups",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Record: Moss hay\nBird: Lark 24 aviary\nFish: Ripple fresh tank\nMovements: ['walk', 'fly', 'swim']\nMeal: Lark: seeds\nRegistered: 1\nHabitats: unfinished",
+      "solution_run_output": "Record: Moss hay\nBird: Lark 24 aviary\nFish: Ripple fresh tank\nMovements: ['walk', 'fly', 'swim']\nMeal: Lark: seeds\nRegistered: 1\nHabitats: {'aviary': ['Lark'], 'tank': ['Ripple']}",
+      "prior_stage_regression_checks": [
+        "05-animal-rescue-project/01-animal-record",
+        "05-animal-rescue-project/02-bird-specialization",
+        "05-animal-rescue-project/03-fish-specialization",
+        "05-animal-rescue-project/04-species-behavior",
+        "05-animal-rescue-project/05-feeding-service",
+        "05-animal-rescue-project/06-rescue-register"
+      ],
+      "loader": {
+        "slug": "habitat-groups",
+        "order": 7,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "21bc9ab568032eb6e4736596210e14f530f6bfa812c08057543e70764bc6822b",
+        "main.py": "36381c2e559f891b3f70b4e7a63074011e3ec8f7b65cf283e1aea7260d5452f7",
+        "test_main.py": "eb8b5be03c4b62c03a48f8b2a0dca00a2ccb749e4f98b3c0b1cd9fbcf0042de5",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "448819e0864631d1587f5920b4b6363b2bf1931d79261c1a7978dedd6fa244c1"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "Explicit empty case, repeated arrivals, object identity, fresh dictionary/list ownership, and future habitat strings.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "21bc9ab568032eb6e4736596210e14f530f6bfa812c08057543e70764bc6822b"
+      }
+    },
+    {
+      "path": "05-animal-rescue-project/08-daily-care-report",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_daily_care_report",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_daily_care_report",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Record: Moss hay\nBird: Lark 24 aviary\nFish: Ripple fresh tank\nMovements: ['walk', 'fly', 'swim']\nMeal: Lark: seeds\nRegistered: 1\nHabitats: {'aviary': ['Lark'], 'tank': ['Ripple']}\nDaily care:\nNone",
+      "solution_run_output": "Record: Moss hay\nBird: Lark 24 aviary\nFish: Ripple fresh tank\nMovements: ['walk', 'fly', 'swim']\nMeal: Lark: seeds\nRegistered: 1\nHabitats: {'aviary': ['Lark'], 'tank': ['Ripple']}\nDaily care:\nMoss: hay | land | walk\nLark: seeds | aviary | fly\nRipple: flakes | tank | swim",
+      "prior_stage_regression_checks": [
+        "05-animal-rescue-project/01-animal-record",
+        "05-animal-rescue-project/02-bird-specialization",
+        "05-animal-rescue-project/03-fish-specialization",
+        "05-animal-rescue-project/04-species-behavior",
+        "05-animal-rescue-project/05-feeding-service",
+        "05-animal-rescue-project/06-rescue-register",
+        "05-animal-rescue-project/07-habitat-groups"
+      ],
+      "loader": {
+        "slug": "daily-care-report",
+        "order": 8,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "8773736922d7078e2444592dfe2cafc3be424da9bd5776eca3dd0b6f45763ef3",
+        "main.py": "89e250d4a949de023117b5bc7282979d4127b33f2e7e9dcd37b55cc689f71867",
+        "test_main.py": "0208c5c5e8a022441dcb0d511221a37f1e93f4d2c62aa8b7a7afc5a2bd2e9634",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "842fec82cd2bbb495c126cde4be7e7e2c6a6b5e490e3e1a46af671808d85deb9"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "A returned report delegates to the supplied service and movement methods; the starter already supplies printing.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "8773736922d7078e2444592dfe2cafc3be424da9bd5776eca3dd0b6f45763ef3"
+      }
+    },
+    {
+      "path": "06-banking-project/01-account-balance",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_opening_balance",
+          "passed": false,
+          "error": "AttributeError: 'Account' object has no attribute 'owner'"
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_opening_balance",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Opening cents: unfinished",
+      "solution_run_output": "Opening cents: 1250",
+      "prior_stage_regression_checks": [],
+      "loader": {
+        "slug": "account-balance",
+        "order": 1,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "e9dd8ab2ca98ad1f7351cd11b32579b52c38d6e0f21de9fb4f0a6ea314dfb983",
+        "main.py": "db64b6812d213c2834f400faeb5d2ef8c102a5dfadb4bcd0c76e5639b01de652",
+        "test_main.py": "c56dba035ab0f5f7a64fc89215f8f6a5b7294ce45560f4694f70dee85f7843de",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "5db9c6c71d8e1ad805ae9ce7c7624a473a8f5beb722c97fd0a97d541436a3df1"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "Locally explains exact integer cents, read-only property setup, booleans, ValueError, and default zero.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "e9dd8ab2ca98ad1f7351cd11b32579b52c38d6e0f21de9fb4f0a6ea314dfb983"
+      }
+    },
+    {
+      "path": "06-banking-project/02-deposit-money",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_deposit",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_deposit",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Opening cents: 1250\nAfter deposit: None",
+      "solution_run_output": "Opening cents: 1250\nAfter deposit: 1500",
+      "prior_stage_regression_checks": [
+        "06-banking-project/01-account-balance"
+      ],
+      "loader": {
+        "slug": "deposit-money",
+        "order": 2,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "77cedc87335ddfca00dcc69d14efd1033e20b596127e58910e096a23876138be",
+        "main.py": "4f05515ba1904e1ca976a54038070797a82ca5fbee85d823a2884cfe88299455",
+        "test_main.py": "dde078eef6d734801d2505efa4618eded5a31e84070c3703436ec52388501051",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "0a1f14d10f6ab94e05fbf150e4bc1351325008e4dd505d08a7923a9865ecc9f9"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "One validated mutation; the amount, return value, and rejection-state contract are explicit.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "77cedc87335ddfca00dcc69d14efd1033e20b596127e58910e096a23876138be"
+      }
+    },
+    {
+      "path": "06-banking-project/03-withdraw-money",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_withdrawal",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_withdrawal",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Opening cents: 1250\nAfter deposit: 1500\nAfter withdrawal: None",
+      "solution_run_output": "Opening cents: 1250\nAfter deposit: 1500\nAfter withdrawal: 1100",
+      "prior_stage_regression_checks": [
+        "06-banking-project/01-account-balance",
+        "06-banking-project/02-deposit-money"
+      ],
+      "loader": {
+        "slug": "withdraw-money",
+        "order": 3,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "953b6028254c9085576a0c34c4e7e53bf6d93bdae82f087d11f4c55ce53716b1",
+        "main.py": "6cc325cf43b3e661ecf7c19f635e11baef11d981e2a04800d1c1e902857a3459",
+        "test_main.py": "c6d7806ff4d0eef58daa17c6b0de15f086f78a85e2b4bc2e6a872c8a4475da4a",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "492e62dec3e461daf94c5784cfe0e74ad4051c49c03fe5bf6248cd04b427cf9c"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "One withdrawal policy; tests cover exact balance, overdraft rejection, and unchanged state.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "953b6028254c9085576a0c34c4e7e53bf6d93bdae82f087d11f4c55ce53716b1"
+      }
+    },
+    {
+      "path": "06-banking-project/04-savings-account",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_savings_record",
+          "passed": false,
+          "error": "AttributeError: 'SavingsAccount' object has no attribute 'owner'"
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_savings_record",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Opening cents: 1250\nAfter deposit: 1500\nAfter withdrawal: 1100\nSavings rate: unfinished",
+      "solution_run_output": "Opening cents: 1250\nAfter deposit: 1500\nAfter withdrawal: 1100\nSavings rate: 300",
+      "prior_stage_regression_checks": [
+        "06-banking-project/01-account-balance",
+        "06-banking-project/02-deposit-money",
+        "06-banking-project/03-withdraw-money"
+      ],
+      "loader": {
+        "slug": "savings-account",
+        "order": 4,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "279534cda9b375394b0b581c3aeae82644f5fba392e885283f4c69348d0ea574",
+        "main.py": "92168a1fc4b43a6a36727a4056d117859c486b0dc35648ab917f94395af3ef1c",
+        "test_main.py": "81e7d7470b4914206ef79646950d851cf0c4bffd12d843196d819fee1d73d31e",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "272c91472020b10ead6f307129b21c7d64488d056fa3e9b5222813db21d1b165"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "Constructor extension records basis points without prematurely calculating interest.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "279534cda9b375394b0b581c3aeae82644f5fba392e885283f4c69348d0ea574"
+      }
+    },
+    {
+      "path": "06-banking-project/05-current-account",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_current_withdrawal",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_current_withdrawal",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Opening cents: 1250\nAfter deposit: 1500\nAfter withdrawal: 1100\nSavings rate: 300\nCurrent cents: None",
+      "solution_run_output": "Opening cents: 1250\nAfter deposit: 1500\nAfter withdrawal: 1100\nSavings rate: 300\nCurrent cents: -500",
+      "prior_stage_regression_checks": [
+        "06-banking-project/01-account-balance",
+        "06-banking-project/02-deposit-money",
+        "06-banking-project/03-withdraw-money",
+        "06-banking-project/04-savings-account"
+      ],
+      "loader": {
+        "slug": "current-account",
+        "order": 5,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "49ef43566afc0b0d5d16f0b357efa18defe98ccf56d808de540e1e5e83079a7a",
+        "main.py": "6f0fd210db6a5bcdd4585b8ca9cbffbc5950c6bb97cabccacbc3d5ef223e357b",
+        "test_main.py": "43a8632246592dba4e150ee75c55e78b660e1165a092724522d46a8008aa0e2c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "9d280487f23cc8b51aba2fc9f1310390c43b0265767ffc1e1a06c76c23ca4182"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "Constructor and overdraft validation are supplied setup; only the overridden withdrawal policy is incomplete.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "49ef43566afc0b0d5d16f0b357efa18defe98ccf56d808de540e1e5e83079a7a"
+      }
+    },
+    {
+      "path": "06-banking-project/06-fixed-deposit",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_fixed_deposit_lock",
+          "passed": false,
+          "error": "AssertionError: Reject this value with ValueError"
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_fixed_deposit_lock",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Opening cents: 1250\nAfter deposit: 1500\nAfter withdrawal: 1100\nSavings rate: 300\nCurrent cents: -500\nFixed deposit: unfinished",
+      "solution_run_output": "Opening cents: 1250\nAfter deposit: 1500\nAfter withdrawal: 1100\nSavings rate: 300\nCurrent cents: -500\nFixed deposit: locked",
+      "prior_stage_regression_checks": [
+        "06-banking-project/01-account-balance",
+        "06-banking-project/02-deposit-money",
+        "06-banking-project/03-withdraw-money",
+        "06-banking-project/04-savings-account",
+        "06-banking-project/05-current-account"
+      ],
+      "loader": {
+        "slug": "fixed-deposit",
+        "order": 6,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "2ccf50a532ccd42322ef1d17f3f7535e6fb64321462ba9be245ff6f35d9cdb96",
+        "main.py": "35ca61f9eb649b5eb86ad1d7ef21afb5d3fb486ec3122429ab9484f523ca853c",
+        "test_main.py": "1404202258f0e6c51afd607cd521bffc32b6a49c62f5541332f8351c8e408e01",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "cf756466206edf32498b47d61cdf38c771bd3cff8bcd923324c3fa028ad89005"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "Explicit permanent-lock teaching policy avoids implied maturity support; inherited deposits remain available.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "2ccf50a532ccd42322ef1d17f3f7535e6fb64321462ba9be245ff6f35d9cdb96"
+      }
+    },
+    {
+      "path": "06-banking-project/07-interest-calculator",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_interest_calculation",
+          "passed": false,
+          "error": "AssertionError: Return integer cents, not a float"
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_interest_calculation",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Opening cents: 1250\nAfter deposit: 1500\nAfter withdrawal: 1100\nSavings rate: 300\nCurrent cents: -500\nFixed deposit: locked\nInterest cents: None",
+      "solution_run_output": "Opening cents: 1250\nAfter deposit: 1500\nAfter withdrawal: 1100\nSavings rate: 300\nCurrent cents: -500\nFixed deposit: locked\nInterest cents: 300",
+      "prior_stage_regression_checks": [
+        "06-banking-project/01-account-balance",
+        "06-banking-project/02-deposit-money",
+        "06-banking-project/03-withdraw-money",
+        "06-banking-project/04-savings-account",
+        "06-banking-project/05-current-account",
+        "06-banking-project/06-fixed-deposit"
+      ],
+      "loader": {
+        "slug": "interest-calculator",
+        "order": 7,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "4c19c2d9ddd1b39550bc688c232981ff8ce9e76c79f06111d4fcbdb7effc67fd",
+        "main.py": "7a638e95bf238254b921246754f6bc8de1a10cb12b04837869883b3c50f8d268",
+        "test_main.py": "a08c6e18fe993dc440067b01958dd9456a82997774786346890da317dc652d19",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "4335ecf2f4bd7bfbb67f574ebcf8a45a586a0508ef663ca7c1bd74524687e2d9"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "Standalone integer arithmetic service; formula, zero inputs, type rejection, and one final floor division are explicit.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "4c19c2d9ddd1b39550bc688c232981ff8ce9e76c79f06111d4fcbdb7effc67fd"
+      }
+    },
+    {
+      "path": "06-banking-project/08-apply-interest",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_apply_interest",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_apply_interest",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Opening cents: 1250\nAfter deposit: 1500\nAfter withdrawal: 1100\nSavings rate: 300\nCurrent cents: -500\nFixed deposit: locked\nInterest cents: 300\nCredited: None Balance: 10000",
+      "solution_run_output": "Opening cents: 1250\nAfter deposit: 1500\nAfter withdrawal: 1100\nSavings rate: 300\nCurrent cents: -500\nFixed deposit: locked\nInterest cents: 300\nCredited: 300 Balance: 10300",
+      "prior_stage_regression_checks": [
+        "06-banking-project/01-account-balance",
+        "06-banking-project/02-deposit-money",
+        "06-banking-project/03-withdraw-money",
+        "06-banking-project/04-savings-account",
+        "06-banking-project/05-current-account",
+        "06-banking-project/06-fixed-deposit",
+        "06-banking-project/07-interest-calculator"
+      ],
+      "loader": {
+        "slug": "apply-interest",
+        "order": 8,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "bc38ddc7a3d9bd2bb32c69c0507cd3d741e895d9e55be3c82dda8d8ee1c34112",
+        "main.py": "33f42906d802417eda3e6e0dae42c6eae0bc4b0c985f7c7cd714c3350dfaab11",
+        "test_main.py": "b8a7a56b73976b8115cc491b0950e30b9af33885c159bc7bfd31a5e8ae4fb463",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "960a805dac1bb86beb5073491d69eb23b6d61a22f28f793c9660692aa8ab3856"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "Delegates exactly once, credits through deposit only when positive, returns earned cents, and propagates invalid-month errors.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "bc38ddc7a3d9bd2bb32c69c0507cd3d741e895d9e55be3c82dda8d8ee1c34112"
+      }
+    },
+    {
+      "path": "06-banking-project/09-account-registry",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_account_registry",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_account_registry",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Opening cents: 1250\nAfter deposit: 1500\nAfter withdrawal: 1100\nSavings rate: 300\nCurrent cents: -500\nFixed deposit: locked\nInterest cents: 300\nCredited: 300 Balance: 10300\nAccount count: None",
+      "solution_run_output": "Opening cents: 1250\nAfter deposit: 1500\nAfter withdrawal: 1100\nSavings rate: 300\nCurrent cents: -500\nFixed deposit: locked\nInterest cents: 300\nCredited: 300 Balance: 10300\nAccount count: 1",
+      "prior_stage_regression_checks": [
+        "06-banking-project/01-account-balance",
+        "06-banking-project/02-deposit-money",
+        "06-banking-project/03-withdraw-money",
+        "06-banking-project/04-savings-account",
+        "06-banking-project/05-current-account",
+        "06-banking-project/06-fixed-deposit",
+        "06-banking-project/07-interest-calculator",
+        "06-banking-project/08-apply-interest"
+      ],
+      "loader": {
+        "slug": "account-registry",
+        "order": 9,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "fc30938d3c46eb696e31dc81e8762c06ad77a257a21be4dfc15cade3c383a741",
+        "main.py": "6c6e067f7aa5625dd14fa36638fd090cc1faa4500fbd899b900bb85c39b24b49",
+        "test_main.py": "961ad66f7928959fa6a33d800111f34ca059846269dd06e0b7164c906584167d",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "8d212efb6a28442688dda6d61878583dd7b4f49675354023165d8ed95ec08fea"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "One ID registration behavior; duplicates reject without overwrite and object references stay live.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "fc30938d3c46eb696e31dc81e8762c06ad77a257a21be4dfc15cade3c383a741"
+      }
+    },
+    {
+      "path": "06-banking-project/10-statement-report",
+      "task_count": 1,
+      "test_count": 1,
+      "starter_results": [
+        {
+          "name": "test_statement_report",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "solution_results": [
+        {
+          "name": "test_statement_report",
+          "passed": true
+        }
+      ],
+      "starter_run_output": "Opening cents: 1250\nAfter deposit: 1500\nAfter withdrawal: 1100\nSavings rate: 300\nCurrent cents: -500\nFixed deposit: locked\nInterest cents: 300\nCredited: 300 Balance: 10300\nAccount count: 1\nStatement:\nNone",
+      "solution_run_output": "Opening cents: 1250\nAfter deposit: 1500\nAfter withdrawal: 1100\nSavings rate: 300\nCurrent cents: -500\nFixed deposit: locked\nInterest cents: 300\nCredited: 300 Balance: 10300\nAccount count: 1\nStatement:\nC-1 | Noor | -500 cents\nF-1 | Sol | 20900 cents\nS-1 | Mira | 12360 cents",
+      "prior_stage_regression_checks": [
+        "06-banking-project/01-account-balance",
+        "06-banking-project/02-deposit-money",
+        "06-banking-project/03-withdraw-money",
+        "06-banking-project/04-savings-account",
+        "06-banking-project/05-current-account",
+        "06-banking-project/06-fixed-deposit",
+        "06-banking-project/07-interest-calculator",
+        "06-banking-project/08-apply-interest",
+        "06-banking-project/09-account-registry"
+      ],
+      "loader": {
+        "slug": "statement-report",
+        "order": 10,
+        "type": "coding",
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "lesson.md": "b309c38c2763a9656cb5eeaf89c9048b1c8d5edb4beb6f405b528ce9f06e0989",
+        "main.py": "574da0ee08df06bdc992dc949104124954752b2b537a095e8bb118f9d2cda7f4",
+        "test_main.py": "50fb51dbd9de4e01ef7d6895c7aaceb62fce993343c6bad9984870a9c390c3bd",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "solution/main.py": "9655b571ad9f72c49f5ec71c07367109d293f2dce79bb201b6c68df6a75aa3a1"
+      },
+      "review": {
+        "passes": 2,
+        "first": "Read learner prose, new starter/solution bodies, and every hidden test in project order; inherited code checked by AST/text continuity.",
+        "second": "Reread final prose and quizzes after wording and frontmatter repairs; reran runtime, loader, and all continuity checks.",
+        "note": "Final in-memory program uses all three specialized account types; exact sorted text format and empty result are specified.",
+        "task_atomicity": "One coherent behavior; one numbered task maps to one synchronous zero-argument test.",
+        "final_prose_sha256": "b309c38c2763a9656cb5eeaf89c9048b1c8d5edb4beb6f405b528ce9f06e0989"
+      }
+    }
+  ],
+  "quizzes": [
+    {
+      "module": "05-animal-rescue-project",
+      "questions": 4,
+      "ids": [
+        "q01",
+        "q02",
+        "q03",
+        "q04"
+      ],
+      "correct": [
+        "a",
+        "b",
+        "c",
+        "a"
+      ],
+      "sha256": {
+        "index.yaml": "c26571a9a78bec9ca22fb511c8974db84304d9f1147d636b904323966d29e86d",
+        "q01.md": "feb19f026fa6d49c21c3e3197def82fa9d9a4ca693fc330658e331604a250605",
+        "q02.md": "96d0f5a440dfc5c08dad6db1c9af608ab785ade2281a9a1c38381b7e1d16c4e7",
+        "q03.md": "af8de001a3dc5b2c8171e3e6f491a9725379d5ab049b28a25d997fddfea140d3",
+        "q04.md": "386e33ea93ffdb60528c87da0386ed102e15adcba843ab4eff792440d2745d5c"
+      }
+    },
+    {
+      "module": "06-banking-project",
+      "questions": 4,
+      "ids": [
+        "q01",
+        "q02",
+        "q03",
+        "q04"
+      ],
+      "correct": [
+        "b",
+        "c",
+        "a",
+        "b"
+      ],
+      "sha256": {
+        "index.yaml": "c55f176fd8545b20f0135a76c3374a789209b2cdd4fe69d9be8607218488d133",
+        "q01.md": "9038a9f1eb9f5e654e8fb706a23f559f7402b4af85756e78bbb8929e96211483",
+        "q02.md": "2b56d3c4e2b0ecad8a0c34ffaf49d9633c2394ab60c27457f3fc571f654b70f0",
+        "q03.md": "7abbf299a29e2259886346510a9c98d56ccba6b023ae9b6cd3d0b62b8c54ca0a",
+        "q04.md": "5a029c1b7d48809f5cd34f067f048c3a28647dae40fc42390f621c7b3c1898d3"
+      }
+    }
+  ],
+  "continuity": [
+    {
+      "unchanged_methods": [
+        "Animal.__init__"
+      ],
+      "additions": [
+        "Bird"
+      ],
+      "prior_probe_statements": 2,
+      "prior_ast_and_text_unchanged": true,
+      "intentional_existing_changes": [],
+      "from": "05-animal-rescue-project/01-animal-record",
+      "to": "05-animal-rescue-project/02-bird-specialization"
+    },
+    {
+      "unchanged_methods": [
+        "Animal.__init__",
+        "Bird.__init__"
+      ],
+      "additions": [
+        "Fish"
+      ],
+      "prior_probe_statements": 4,
+      "prior_ast_and_text_unchanged": true,
+      "intentional_existing_changes": [],
+      "from": "05-animal-rescue-project/02-bird-specialization",
+      "to": "05-animal-rescue-project/03-fish-specialization"
+    },
+    {
+      "unchanged_methods": [
+        "Animal.__init__",
+        "Bird.__init__",
+        "Fish.__init__"
+      ],
+      "additions": [
+        "Animal.move",
+        "Bird.move",
+        "Fish.move"
+      ],
+      "prior_probe_statements": 6,
+      "prior_ast_and_text_unchanged": true,
+      "intentional_existing_changes": [],
+      "from": "05-animal-rescue-project/03-fish-specialization",
+      "to": "05-animal-rescue-project/04-species-behavior"
+    },
+    {
+      "unchanged_methods": [
+        "Animal.__init__",
+        "Animal.move",
+        "Bird.__init__",
+        "Bird.move",
+        "Fish.__init__",
+        "Fish.move"
+      ],
+      "additions": [
+        "FeedingService"
+      ],
+      "prior_probe_statements": 7,
+      "prior_ast_and_text_unchanged": true,
+      "intentional_existing_changes": [],
+      "from": "05-animal-rescue-project/04-species-behavior",
+      "to": "05-animal-rescue-project/05-feeding-service"
+    },
+    {
+      "unchanged_methods": [
+        "Animal.__init__",
+        "Animal.move",
+        "Bird.__init__",
+        "Bird.move",
+        "Fish.__init__",
+        "Fish.move",
+        "FeedingService.meal"
+      ],
+      "additions": [
+        "RescueRegister"
+      ],
+      "prior_probe_statements": 9,
+      "prior_ast_and_text_unchanged": true,
+      "intentional_existing_changes": [],
+      "from": "05-animal-rescue-project/05-feeding-service",
+      "to": "05-animal-rescue-project/06-rescue-register"
+    },
+    {
+      "unchanged_methods": [
+        "Animal.__init__",
+        "Animal.move",
+        "Bird.__init__",
+        "Bird.move",
+        "Fish.__init__",
+        "Fish.move",
+        "FeedingService.meal",
+        "RescueRegister.__init__",
+        "RescueRegister.add"
+      ],
+      "additions": [
+        "RescueRegister.habitat_groups"
+      ],
+      "prior_probe_statements": 11,
+      "prior_ast_and_text_unchanged": true,
+      "intentional_existing_changes": [],
+      "from": "05-animal-rescue-project/06-rescue-register",
+      "to": "05-animal-rescue-project/07-habitat-groups"
+    },
+    {
+      "unchanged_methods": [
+        "Animal.__init__",
+        "Animal.move",
+        "Bird.__init__",
+        "Bird.move",
+        "Fish.__init__",
+        "Fish.move",
+        "FeedingService.meal",
+        "RescueRegister.__init__",
+        "RescueRegister.add",
+        "RescueRegister.habitat_groups"
+      ],
+      "additions": [
+        "RescueRegister.daily_report"
+      ],
+      "prior_probe_statements": 16,
+      "prior_ast_and_text_unchanged": true,
+      "intentional_existing_changes": [],
+      "from": "05-animal-rescue-project/07-habitat-groups",
+      "to": "05-animal-rescue-project/08-daily-care-report"
+    },
+    {
+      "unchanged_methods": [
+        "Account.__init__",
+        "Account.balance_cents"
+      ],
+      "additions": [
+        "Account.deposit"
+      ],
+      "prior_probe_statements": 2,
+      "prior_ast_and_text_unchanged": true,
+      "intentional_existing_changes": [],
+      "from": "06-banking-project/01-account-balance",
+      "to": "06-banking-project/02-deposit-money"
+    },
+    {
+      "unchanged_methods": [
+        "Account.__init__",
+        "Account.balance_cents",
+        "Account.deposit"
+      ],
+      "additions": [
+        "Account.withdraw"
+      ],
+      "prior_probe_statements": 4,
+      "prior_ast_and_text_unchanged": true,
+      "intentional_existing_changes": [],
+      "from": "06-banking-project/02-deposit-money",
+      "to": "06-banking-project/03-withdraw-money"
+    },
+    {
+      "unchanged_methods": [
+        "Account.__init__",
+        "Account.balance_cents",
+        "Account.deposit",
+        "Account.withdraw"
+      ],
+      "additions": [
+        "SavingsAccount"
+      ],
+      "prior_probe_statements": 6,
+      "prior_ast_and_text_unchanged": true,
+      "intentional_existing_changes": [],
+      "from": "06-banking-project/03-withdraw-money",
+      "to": "06-banking-project/04-savings-account"
+    },
+    {
+      "unchanged_methods": [
+        "Account.__init__",
+        "Account.balance_cents",
+        "Account.deposit",
+        "Account.withdraw",
+        "SavingsAccount.__init__"
+      ],
+      "additions": [
+        "CurrentAccount"
+      ],
+      "prior_probe_statements": 8,
+      "prior_ast_and_text_unchanged": true,
+      "intentional_existing_changes": [],
+      "from": "06-banking-project/04-savings-account",
+      "to": "06-banking-project/05-current-account"
+    },
+    {
+      "unchanged_methods": [
+        "Account.__init__",
+        "Account.balance_cents",
+        "Account.deposit",
+        "Account.withdraw",
+        "SavingsAccount.__init__",
+        "CurrentAccount.__init__",
+        "CurrentAccount.withdraw"
+      ],
+      "additions": [
+        "FixedDeposit"
+      ],
+      "prior_probe_statements": 10,
+      "prior_ast_and_text_unchanged": true,
+      "intentional_existing_changes": [],
+      "from": "06-banking-project/05-current-account",
+      "to": "06-banking-project/06-fixed-deposit"
+    },
+    {
+      "unchanged_methods": [
+        "Account.__init__",
+        "Account.balance_cents",
+        "Account.deposit",
+        "Account.withdraw",
+        "SavingsAccount.__init__",
+        "CurrentAccount.__init__",
+        "CurrentAccount.withdraw",
+        "FixedDeposit.withdraw"
+      ],
+      "additions": [
+        "InterestCalculator"
+      ],
+      "prior_probe_statements": 12,
+      "prior_ast_and_text_unchanged": true,
+      "intentional_existing_changes": [],
+      "from": "06-banking-project/06-fixed-deposit",
+      "to": "06-banking-project/07-interest-calculator"
+    },
+    {
+      "unchanged_methods": [
+        "Account.__init__",
+        "Account.balance_cents",
+        "Account.deposit",
+        "Account.withdraw",
+        "SavingsAccount.__init__",
+        "CurrentAccount.__init__",
+        "CurrentAccount.withdraw",
+        "FixedDeposit.withdraw",
+        "InterestCalculator.calculate"
+      ],
+      "additions": [
+        "SavingsAccount.apply_interest"
+      ],
+      "prior_probe_statements": 14,
+      "prior_ast_and_text_unchanged": true,
+      "intentional_existing_changes": [],
+      "from": "06-banking-project/07-interest-calculator",
+      "to": "06-banking-project/08-apply-interest"
+    },
+    {
+      "unchanged_methods": [
+        "Account.__init__",
+        "Account.balance_cents",
+        "Account.deposit",
+        "Account.withdraw",
+        "SavingsAccount.__init__",
+        "SavingsAccount.apply_interest",
+        "CurrentAccount.__init__",
+        "CurrentAccount.withdraw",
+        "FixedDeposit.withdraw",
+        "InterestCalculator.calculate"
+      ],
+      "additions": [
+        "AccountRegistry"
+      ],
+      "prior_probe_statements": 17,
+      "prior_ast_and_text_unchanged": true,
+      "intentional_existing_changes": [],
+      "from": "06-banking-project/08-apply-interest",
+      "to": "06-banking-project/09-account-registry"
+    },
+    {
+      "unchanged_methods": [
+        "Account.__init__",
+        "Account.balance_cents",
+        "Account.deposit",
+        "Account.withdraw",
+        "SavingsAccount.__init__",
+        "SavingsAccount.apply_interest",
+        "CurrentAccount.__init__",
+        "CurrentAccount.withdraw",
+        "FixedDeposit.withdraw",
+        "InterestCalculator.calculate",
+        "AccountRegistry.__init__",
+        "AccountRegistry.add"
+      ],
+      "additions": [
+        "AccountRegistry.statement"
+      ],
+      "prior_probe_statements": 19,
+      "prior_ast_and_text_unchanged": true,
+      "intentional_existing_changes": [],
+      "from": "06-banking-project/09-account-registry",
+      "to": "06-banking-project/10-statement-report"
+    }
+  ],
+  "limitations": [
+    "No browser/Pyodide worker or application UI acceptance in this scoped audit.",
+    "Diagrams are owned by the parent agent and excluded from this audit.",
+    "Behavioral tests cover varied cases but cannot prove every possible implementation or input."
+  ],
+  "totals": {
+    "coding_lessons": 18,
+    "tasks": 18,
+    "tests": 18,
+    "starter_tests_failed": 18,
+    "solution_tests_passed": 18,
+    "runnable_starters": 18,
+    "runnable_solutions": 18,
+    "continuity_transitions": 16,
+    "prior_stage_regression_tests_passed": 73,
+    "quizzes": 2,
+    "quiz_questions": 8,
+    "mutants_rejected": 19,
+    "mutant_lessons": 18
+  },
+  "mutations": [
+    {
+      "path": "05-animal-rescue-project/01-animal-record",
+      "mutation": "Hardcoded visible record",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_animal_record",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "path": "05-animal-rescue-project/02-bird-specialization",
+      "mutation": "Duplicates parent fields instead of delegating",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_bird_record",
+          "passed": false,
+          "error": "AssertionError: Initialize shared fields through super()"
+        }
+      ]
+    },
+    {
+      "path": "05-animal-rescue-project/03-fish-specialization",
+      "mutation": "Hardcoded water type",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_fish_record",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "path": "05-animal-rescue-project/04-species-behavior",
+      "mutation": "Uses the base movement for birds",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_species_movement",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "path": "05-animal-rescue-project/05-feeding-service",
+      "mutation": "Hardcoded visible meal",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_meal_label",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "path": "05-animal-rescue-project/06-rescue-register",
+      "mutation": "Returns a count without storing the arrival",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_register_arrival",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "path": "05-animal-rescue-project/07-habitat-groups",
+      "mutation": "Always returns empty groups",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_habitat_groups",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "path": "05-animal-rescue-project/08-daily-care-report",
+      "mutation": "Ignores registered animals",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_daily_care_report",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "path": "06-banking-project/01-account-balance",
+      "mutation": "Omits opening-balance validation",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_opening_balance",
+          "passed": false,
+          "error": "AssertionError: Reject this value with ValueError"
+        }
+      ]
+    },
+    {
+      "path": "06-banking-project/02-deposit-money",
+      "mutation": "Omits deposit validation",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_deposit",
+          "passed": false,
+          "error": "AssertionError: Reject this value with ValueError"
+        }
+      ]
+    },
+    {
+      "path": "06-banking-project/03-withdraw-money",
+      "mutation": "Rejects the exact available balance",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_withdrawal",
+          "passed": false,
+          "error": "ValueError: balance"
+        }
+      ]
+    },
+    {
+      "path": "06-banking-project/04-savings-account",
+      "mutation": "Hardcodes the default rate",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_savings_record",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "path": "06-banking-project/05-current-account",
+      "mutation": "Rejects the exact overdraft boundary",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_current_withdrawal",
+          "passed": false,
+          "error": "ValueError: limit"
+        }
+      ]
+    },
+    {
+      "path": "06-banking-project/06-fixed-deposit",
+      "mutation": "Silently ignores rather than rejects withdrawal",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_fixed_deposit_lock",
+          "passed": false,
+          "error": "AssertionError: Reject this value with ValueError"
+        }
+      ]
+    },
+    {
+      "path": "06-banking-project/07-interest-calculator",
+      "mutation": "Rounds each month instead of once at the end",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_interest_calculation",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "path": "06-banking-project/08-apply-interest",
+      "mutation": "Returns interest without crediting it",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_apply_interest",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "path": "06-banking-project/09-account-registry",
+      "mutation": "Overwrites duplicate IDs",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_account_registry",
+          "passed": false,
+          "error": "AssertionError: Reject this value with ValueError"
+        }
+      ]
+    },
+    {
+      "path": "06-banking-project/10-statement-report",
+      "mutation": "Reports insertion order rather than sorted IDs",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_statement_report",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "path": "06-banking-project/07-interest-calculator",
+      "mutation": "Returns numerically equal floats rather than integer cents",
+      "rejected": true,
+      "results": [
+        {
+          "name": "test_interest_calculation",
+          "passed": false,
+          "error": "AssertionError: Return integer cents, not a float"
+        }
+      ]
+    }
+  ],
+  "authored_files": {
+    "lesson_markdown": 18,
+    "starters": 18,
+    "solutions": 18,
+    "tests": 18,
+    "editor_manifests": 18,
+    "quiz_indexes": 2,
+    "quiz_questions": 8,
+    "audit_files": 1,
+    "total": 101
+  },
+  "reviews": [
+    {
+      "pass": 1,
+      "lessons": 18,
+      "quiz_questions": 8,
+      "findings": [
+        "Normalized lesson YAML list indentation to two spaces, with deeper continuation indentation.",
+        "Removed a meta-teaching sentence from the movement lesson.",
+        "Replaced the vague repeated unfinished-checkpoint footer with direct supplied-probe guidance.",
+        "Strengthened fresh dictionary and integer-cent output assertions."
+      ],
+      "continuity_transitions_checked": 16
+    },
+    {
+      "pass": 2,
+      "lessons": 18,
+      "quiz_questions": 8,
+      "findings": [
+        "Final wording, empty cases, amount boundaries, return values, and project handoffs agree with the tests.",
+        "No prior method, class attribute, base class, or existing Console statement was changed between consecutive stages.",
+        "No additional corrections required after the final reread."
+      ],
+      "continuity_transitions_checked": 16
+    }
+  ],
+  "continuity_policy": "New methods are inserted into existing class bodies; new class scaffolds and guarded Console statements are added. Every prior method and class attribute is byte-for-byte preserved by source-segment comparison and AST-equal. All existing Console statements remain an unchanged prefix. No intentional changes to prior behavior or fixtures.",
+  "scaffold_additions": [
+    "RescueRegister.__init__ supplies feeder and independent animals list in stage 05/06.",
+    "CurrentAccount.__init__ supplies the new overdraft field and its validation in stage 06/05.",
+    "AccountRegistry.__init__ supplies the independent accounts dictionary in stage 06/09.",
+    "Animal/Bird/Fish habitat class attributes and class headers are supplied with their respective records.",
+    "Account.balance_cents property is supplied in banking stage 1."
+  ],
+  "safety_and_scope": {
+    "blocking_input": false,
+    "file_or_network_io_in_learner_code": false,
+    "external_dependencies": false,
+    "future_enum_descriptor_dataclass_abc_requirements": false,
+    "commits_created": false,
+    "source_write_scope": [
+      "05-animal-rescue-project",
+      "06-banking-project",
+      "assets/audit-05-06.json"
+    ],
+    "git_diff_check": "Passed; authored module files are untracked, so an independent trailing-whitespace/conflict-marker scan was also run."
+  },
+  "source_files_scanned": 100,
+  "replay_commands": [
+    "/Users/piyush.patel/IdeaProjects/intercourses/backend/.venv/bin/python /Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/audit_05_06.py",
+    "/Users/piyush.patel/IdeaProjects/intercourses/backend/.venv/bin/python /Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/mutants_05_06.py"
+  ],
+  "replay_note": "Replay helpers live in profile scratch and may be pruned; all learner tests and completed solutions are retained in the authored source modules."
+}

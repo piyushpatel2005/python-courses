@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="700" viewBox="0 0 600 700" role="img" aria-labelledby="title desc">
+<title id="title">Which Attribute Value Wins?</title><desc id="desc">For ordinary obj.x lookup, first find a class candidate through the MRO. A readable data descriptor wins over the instance dictionary, which wins over a non-data descriptor or ordinary class attribute. Missing lookup can invoke __getattr__.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#40566f"/></marker></defs>
+<rect width="600" height="700" rx="18" fill="#f8fafd"/>
+<rect x="24" y="24" width="552" height="5" rx="2" fill="#3974bd"/>
+<text x="300" y="62" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#172c46">Which Attribute Value Wins?</text>
+<text x="300" y="91" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#40566f">CONCEPTUAL MODEL · ILLUSTRATIVE EXAMPLE</text>
+<text x="300" y="125" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#172c46">obj.x · ordinary instance attribute lookup</text>
+<text x="300" y="153" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#172c46">First find the class candidate using type(obj).__mro__.</text>
+<g data-card="true"><rect x="65" y="177" width="470" height="76" rx="12" fill="#eee8ff" stroke="#91a7bd" stroke-width="1.5"/>
+<text x="300.0" y="208.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">1 · Readable Data Descriptor</text>
+<text x="300.0" y="236.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">__get__ plus __set__ or __delete__</text>
+</g>
+<path data-connector="true" d="M300 253 L300 277" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
+<g data-card="true"><rect x="65" y="277" width="470" height="76" rx="12" fill="#ddf5ee" stroke="#91a7bd" stroke-width="1.5"/>
+<text x="300.0" y="308.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">2 · Instance Dictionary</text>
+<text x="300.0" y="336.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">obj.__dict__[&quot;x&quot;], if present</text>
+</g>
+<path data-connector="true" d="M300 353 L300 377" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
+<g data-card="true"><rect x="65" y="377" width="470" height="76" rx="12" fill="#e8f1ff" stroke="#91a7bd" stroke-width="1.5"/>
+<text x="300.0" y="408.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">3 · Non-Data Descriptor</text>
+<text x="300.0" y="436.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">Class candidate has __get__ only</text>
+</g>
+<path data-connector="true" d="M300 453 L300 477" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
+<g data-card="true"><rect x="65" y="477" width="470" height="76" rx="12" fill="#e8f1ff" stroke="#91a7bd" stroke-width="1.5"/>
+<text x="300.0" y="508.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">4 · Ordinary Class Attribute</text>
+<text x="300.0" y="536.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">Return the class candidate, if present</text>
+</g>
+<text x="300" y="592" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#172c46">Stop at the first applicable result.</text>
+<text x="300" y="626" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">If missing: __getattr__ may provide a fallback.</text>
+<text x="300" y="651" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">Without a fallback value, AttributeError is raised.</text>
+<text x="300" y="676" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">Custom __getattribute__ can change this behavior.</text>
+</svg>

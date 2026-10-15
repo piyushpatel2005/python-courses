@@ -1,0 +1,1645 @@
+{
+  "scope": "22 lessons in modules 09 and 10; CPython and actual backend loader; browser/runtime and diagrams delegated to parent",
+  "passes": [
+    {
+      "review": 1,
+      "lessons": [
+        {
+          "path": "09-errors-and-contracts/01-raise-a-built-in-error",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "Seats: 1\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Seats: 4\n"
+          },
+          "example_stdout": [
+            ""
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "97043a5625701cbf6d447355428e3784b296ae60fa0d3cf2052558ba299de97c",
+            "main.py": "601e7226b0db5eb4f355a34ad0aa6a39a0f96b3953e16800595f9702459bbb05",
+            "test_main.py": "2e88f582929fa8b595b7a20052c5c550f23922c903c94931140a1150e2bceb2a",
+            "solution/main.py": "408454c76adc151a3238308524bab80b25ff11ccd87bf543c860596aa3083961",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "09-errors-and-contracts/02-catch-a-specific-error",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Unknown locker\n"
+          },
+          "example_stdout": [
+            ""
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "bc37ee762fd5c717deb76f42b0ae75d549daad00f6066e12047882be4d765f20",
+            "main.py": "4bf300534a3f7be7fc078c818e4d098e5990b5c1b43db40e9b468dee36ddc2f8",
+            "test_main.py": "b8daecfe3b43c4e64b9f680b23604e3a338eb52592e1e2d5bb9d1942f01e06d5",
+            "solution/main.py": "3bbce92eded42ec4e87d441324d009e0036212f95ad616621bf478facc8cc371",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "09-errors-and-contracts/03-custom-domain-error",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "Probe: TypeError SoldOutError() takes no arguments\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Probe: SoldOutError workshop is full\n"
+          },
+          "example_stdout": [
+            "west gate\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "7328077c61b1b21b3e288cf16faf14cec998ad6a4c8aed41f5db6ecd2cdd1759",
+            "main.py": "ef9851bc88a7302d32db919f69806edf2322d3ae50551080803a558b7ee05b07",
+            "test_main.py": "f13a428e2e113c858f9305217750ecf7041db44a92bd38534fc857bb95e969d7",
+            "solution/main.py": "7132cdf7d53d53087a11353e99cc7a9f0fb5077808f301e9f0040dc574b31434",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "09-errors-and-contracts/04-exception-details",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AttributeError: 'StockShortage' object has no attribute 'requested'"
+              }
+            ],
+            "stdout": "(6, 2)\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "requested 6; available 2\n"
+          },
+          "example_stdout": [
+            ""
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "96cd2112f6a7243c9bcf2daedf0ce823988696ccbfe28e87da504dcb3b41071e",
+            "main.py": "a4b9f5cac8cae0a5d8806d322e0e1524614eebd1b72f106312c45a97cf3cdfbd",
+            "test_main.py": "82eab0b0aea588b5771de361636e65dc0d4984f77070215090286f00d6cdde0e",
+            "solution/main.py": "36d11fd198a62685e828fc02c587202988e4bf97ed10070c60d3a2162cba5714",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "09-errors-and-contracts/05-chain-a-cause",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "Quantity: None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Quantity: 8\n"
+          },
+          "example_stdout": [
+            "ValueError\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "a315cd7789224daabbaefb13b332641fe24cb6e3f23b3c183aae2416d530cdc4",
+            "main.py": "1ef762bb47b29a8ee20de3df241b9d2d893c4c5a3fa7e880976a2dd27e432ef0",
+            "test_main.py": "b3692090f917d45c6b0f752110dad42137259ffcd87bcc3ecd43ce81e2c663d4",
+            "solution/main.py": "1e60d753b54424eea8723fb6371bf44dd36cb942f37e11c92e9b4f042e4124ef",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "09-errors-and-contracts/06-cleanup-with-finally",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "None\nClosed: False\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "chapter one\nClosed: True\n"
+          },
+          "example_stdout": [
+            "['work', 'cleanup']\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "a7935e31bd9788f07741ba1241069cd9aa9c2b1a7420291c7961296fb9cb36d0",
+            "main.py": "af2da979258fb142cd6aa4a824c1507518f34b9270ba7fb7a1ad3bccdd7940f9",
+            "test_main.py": "8551512dcea1a61e96dd04c71e6710baf1f6691cf5fc81575fc5b81b232e8613",
+            "solution/main.py": "864053f38b80100fd35a084f29712e71a8cea660fea78ca8a7e4f82ed229c1ef",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "09-errors-and-contracts/07-abstract-contract",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "Created: DeliveryPolicy\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Probe: TypeError Can't instantiate abstract class DeliveryPolicy without an implementation for abstract method 'fee_cents'\n"
+          },
+          "example_stdout": [
+            ""
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "ca48ac8ddcfb4d099bc939d54fb4703b1208c2404771fa542cf553ed6f661249",
+            "main.py": "45f79b6b2143ee514c8f33d3a5219a9558e15767d2d130ee150b47b54c12a56f",
+            "test_main.py": "5d1ae343201ea18334cff6cc0a0859531c422b7880dc955f707f6405e7c84265",
+            "solution/main.py": "2a2979459679016a2fdd066fb96f0de9a039df3593b96d8d3b1492ecc1ba87ae",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "09-errors-and-contracts/08-implement-a-contract",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "Delivery: None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Delivery: 0\n"
+          },
+          "example_stdout": [
+            "Note: bring water\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "fd91a9b79e4c4e3ce9abfd76fc1e91671cac42125a477d6970e7b5f448f9e4d3",
+            "main.py": "b984b237f0ad96fb257bac32b94745e6d3e3d7da2c301930ec7d722a40e41593",
+            "test_main.py": "ebcdc9384926819a809aa2847151f9493c6c880b8dac018eee353c7e02b8e2fb",
+            "solution/main.py": "30108f29769bca7451f503874aaa463e990895b7e14a9f0f4f659431c00ce294",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/01-product-record",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: Reject invalid product data"
+              }
+            ],
+            "stdout": "Product(sku='MUG', name='Mug', price_cents=1250)\nProduct(sku='BAD', name='Invalid price', price_cents=-1)\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Product(sku='MUG', name='Mug', price_cents=1250)\nProbe: ValueError price must be nonnegative integer cents\n"
+          },
+          "example_stdout": [
+            "Trail(name='Ridge', distance_m=850)\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "738c6fe0f433d4c5d9206c166309dac7cf30c2ce12a10713cd770e16432fc30f",
+            "main.py": "87022014d3134ad017425b0fd2b8fbb8395beab0c981a1645e32fc4e13f0e6cb",
+            "test_main.py": "c819571df981b4cdfec09f9a844d8218bf335f4ebb8c8ccb3ff8d758d785785c",
+            "solution/main.py": "8ef4f81c0bb79e5f3ba281a0b72101fac04c45c91f863294e916aa2814d862f4",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/02-product-catalog",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AttributeError: 'Catalog' object has no attribute 'products'"
+              }
+            ],
+            "stdout": "Probe: AttributeError 'Catalog' object has no attribute 'products'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "['MUG']\n"
+          },
+          "example_stdout": [
+            "['Birds', 'Maps']\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "24a3aa96dd21259c7e15fbd4f09da1a0a649473c134d77b1b44727a75285351a",
+            "main.py": "9c79596ed7027517a8ca7508c898967ffe1167f438f84179ee2ea29ed389543e",
+            "test_main.py": "00e23e0fdc20a702ff75ecf4f90dcb31dd2f7eac2e66d5d8066cd33d916fddc1",
+            "solution/main.py": "1c742c9bff76df07de76bd35a8e4b89957356078b04181a1b3250692685b52e5",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/03-cart-line",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "Line cents: None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Line cents: 2500\n"
+          },
+          "example_stdout": [
+            ""
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "6cb0ed3cab32d399a16216b73b4488ace3bc7608b0aa524893c462e7421af03a",
+            "main.py": "b9948337f2f3fdfeebb24adb15fb304193831dbdc3eab765334218614a780d57",
+            "test_main.py": "24f8961acd3095bf6a9d87574deb828b9d56690eccfe13bd1f40b8ca12962df7",
+            "solution/main.py": "02dda2b776d68ae36729d156adfbc477b4d5ea718ad6d50a3b87ad496f1561d2",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/04-add-to-cart",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "KeyError: 'X'"
+              }
+            ],
+            "stdout": "Probe: KeyError 'MUG'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Quantity: 2\n"
+          },
+          "example_stdout": [
+            "{'red': 5}\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "36eb9818425af2e4e556d8975f9eede1fdbef9c94ce61d56c878ee7841c1d57b",
+            "main.py": "a5fb05f9d3a348d20a6275e5f56103ea874527eb5678e1623ae02f438fbfa4df",
+            "test_main.py": "f28910fe8ddd873ee4aaf412952f748cffd1e6f11ceaba123b26a22d530925f2",
+            "solution/main.py": "74871879b98a10cc6948da22056d06d0e018b3dc11e3e7163e3ea13287640200",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/05-remove-from-cart",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "Removed: None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Removed: False\n"
+          },
+          "example_stdout": [
+            "{'gold': 2}\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "209a14559c336cc6db013bdbe32b2956aa8afefa627fa723e6c3ee68b7ab686a",
+            "main.py": "c9ac52390118d211f32b517a025747519bcaf31f6afb778267cff432142ccddd",
+            "test_main.py": "13325e4571395672946b752a3a064976e0f5a960be4f81794a487984b96a54f3",
+            "solution/main.py": "8cc7a7b8546d14f11a73dcd9190289136b375df5f8b2117f28849f2d06410dce",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/06-cart-summary",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "([('MUG', 'Mug', 2, 2500)], 2500)\n"
+          },
+          "example_stdout": [
+            "[('Mon', 5), ('Tue', 3)] 8\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "ea2e6d6db0ac14aa22b5f983dbe27c4cbdc398122ab14c23a1c7f751aa9bc641",
+            "main.py": "728bad4dd14d14025fe14d52bcc4c602738974885a46728dc9c0919931df66e0",
+            "test_main.py": "4496228dc6c3fbe940f07e8646863fc8d2f83e8f3b0b8697dafca6dd75b1d8c6",
+            "solution/main.py": "1b71712de2714f3cc6d3a015e5a02403ada746a97ac40cebb2ad83d68a0c184c",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/07-order-snapshot",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AttributeError: 'NoneType' object has no attribute 'order_id'"
+              }
+            ],
+            "stdout": "None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Order(order_id='O1', lines=(), total_cents=0)\n"
+          },
+          "example_stdout": [
+            "(('north', 12), ('south', 9))\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "beafa4077d886c47a4c17a31e9ad466d96a11dc05cc573a950a31c1b635db775",
+            "main.py": "8aca8ed1d512bd17debc639b05004a3b2e62f488369b16049ad4fe7dc9136794",
+            "test_main.py": "22060ed01362f2c794d186fa59acf3f9a38e2b1bc8d55cee5c5c16ae1eb26a4a",
+            "solution/main.py": "adbde2e79eee50d9bd62bbb3446ffdae2fbca223414edfbe109168e5b2f0af76",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/08-checkout-service",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: Reject empty checkout"
+              }
+            ],
+            "stdout": "None\nCart: ([('MUG', 'Mug', 1, 1250)], 1250)\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Order(order_id='O1', lines=(('MUG', 'Mug', 1, 1250),), total_cents=1250)\nCart: ([], 0)\n"
+          },
+          "example_stdout": [
+            "('draft',) []\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "99587a94c80250476149ebbfa571e17b65f24c5d82551431f4a17754327417e3",
+            "main.py": "b085ab91a5247aabcfd453c82303a6b6f0a2dacbf039b41669305ac403ad5d88",
+            "test_main.py": "c07e7f0f43410d17936a853350264869619038ba3801c82c0628c7082bade449",
+            "solution/main.py": "27710c84aa2b87ca7b237ded19f464c7f582143b9269ab8200b238768b01eef2",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/09-order-registry",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "KeyError: 'A'"
+              }
+            ],
+            "stdout": "Probe: KeyError 'O1'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Status: placed\n"
+          },
+          "example_stdout": [
+            ""
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "a15946823535194f22b306a99064b7516352d2feea8f50df34eaf31aa5cff876",
+            "main.py": "401ba419574e659a3fd6316f0e92e0922f98b91d8221cca3483b4d767e34d31c",
+            "test_main.py": "cf25a6bb7190c569cd72c803b92b54accd5d29a34d903e508423e87a34ccc08b",
+            "solution/main.py": "59653c5fad75f177c4205648c0c3f90be0b04d6c0f764b8d5beedf8ef7418969",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/10-invoice-lines",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "['MUG | Mug | 2 x | $25.00']\n"
+          },
+          "example_stdout": [
+            "2:05\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "464e0728b314237809619fdf5ca8ee8701a94211df449baf19e0834e22bdb3d9",
+            "main.py": "022cc29e742ec1e6a86c0ddeb68bce29ee7ab4e244299a3c90f60cac7ca5d720",
+            "test_main.py": "3a493cf43bbf279191ba42c6bc195c0837262fb0084197abb8fc99724d37d777",
+            "solution/main.py": "33a887e2c2b35140c0f03be9d38faca20aae7ca708930bdd048a760403d30e5f",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/11-invoice-total",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Order O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+          },
+          "example_stdout": [
+            "Travel log\nRidge trail\nDistance: 850 m\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "59fd81236127c38087d6379aac9dffdd7428170bdc4f4ccc5011fda2228fe866",
+            "main.py": "cab76816cf43c3e153b108728905f098e520e620d655a2ce8617524bffd44b1e",
+            "test_main.py": "c06d850a172915cd887f61b939c495ceab0e842d66f98ac550fb0329afdd10d2",
+            "solution/main.py": "ef7cba43077b971f9df307f54beaca60f9a5330cf7433dffc22aee35331b83db",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/12-command-router",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "MUG | Mug | $12.50\n"
+          },
+          "example_stdout": [
+            ""
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "d91a1643ce437472f8fbad87125c65660d842dbe657f6f4f19540df34a67772f",
+            "main.py": "219989ac3a8a8052cec9d07182ca183c653d1df9c914f354e36c32eeb2c56dac",
+            "test_main.py": "f4614b444fd2ceb3b14752a83c8ce5bb9179fddf2ab68968c11f5b7e38d14dd6",
+            "solution/main.py": "a04dd86aa84c2f33988412d8df77ec014c945bad02d98300522fff4cc1c6bb2b",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/13-scripted-session",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "['Added MUG x 2', 'Created O1', 'O1: placed']\n"
+          },
+          "example_stdout": [
+            "['NORTH']\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "48bdc53e6894d244ea2b0893af8b8b1380bae8195aab8eda2ae4012e89e5cdcd",
+            "main.py": "90970d71297076effb36d8e80670b962c68c9a33b245866a9b66090b496a6af6",
+            "test_main.py": "19884313c697d14f6d748106f940f06d25d995b38350313bd0840220f7846d76",
+            "solution/main.py": "0f48dc34565f7cdb9b0f8deb3ac42f5110e2026597aa40201229c818881280c6",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/14-shop-main",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "Complete main to start the session.\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+          },
+          "example_stdout": [
+            ""
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "e8ee3673ea9a56020ef1ed45113445bc46023cae34efa5d2fa6235a1b53e1e4c",
+            "main.py": "9bf7d799315c255ae5dff959f49319fcdfc989f64d26a9d691366e704c8a6995",
+            "test_main.py": "f8c76874d91c8c15184868e73b29aa89708077562b71604d79bc8bb43cba95d9",
+            "solution/main.py": "e3e17ff81f6ff2759cf87c7ff2d04c12d0428504e7287b2cef970bfecbd4f087",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        }
+      ]
+    },
+    {
+      "review": 2,
+      "lessons": [
+        {
+          "path": "09-errors-and-contracts/01-raise-a-built-in-error",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "Seats: 1\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Seats: 4\n"
+          },
+          "example_stdout": [
+            ""
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "97043a5625701cbf6d447355428e3784b296ae60fa0d3cf2052558ba299de97c",
+            "main.py": "601e7226b0db5eb4f355a34ad0aa6a39a0f96b3953e16800595f9702459bbb05",
+            "test_main.py": "2e88f582929fa8b595b7a20052c5c550f23922c903c94931140a1150e2bceb2a",
+            "solution/main.py": "408454c76adc151a3238308524bab80b25ff11ccd87bf543c860596aa3083961",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "09-errors-and-contracts/02-catch-a-specific-error",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Unknown locker\n"
+          },
+          "example_stdout": [
+            ""
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "bc37ee762fd5c717deb76f42b0ae75d549daad00f6066e12047882be4d765f20",
+            "main.py": "4bf300534a3f7be7fc078c818e4d098e5990b5c1b43db40e9b468dee36ddc2f8",
+            "test_main.py": "b8daecfe3b43c4e64b9f680b23604e3a338eb52592e1e2d5bb9d1942f01e06d5",
+            "solution/main.py": "3bbce92eded42ec4e87d441324d009e0036212f95ad616621bf478facc8cc371",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "09-errors-and-contracts/03-custom-domain-error",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "Probe: TypeError SoldOutError() takes no arguments\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Probe: SoldOutError workshop is full\n"
+          },
+          "example_stdout": [
+            "west gate\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "7328077c61b1b21b3e288cf16faf14cec998ad6a4c8aed41f5db6ecd2cdd1759",
+            "main.py": "ef9851bc88a7302d32db919f69806edf2322d3ae50551080803a558b7ee05b07",
+            "test_main.py": "f13a428e2e113c858f9305217750ecf7041db44a92bd38534fc857bb95e969d7",
+            "solution/main.py": "7132cdf7d53d53087a11353e99cc7a9f0fb5077808f301e9f0040dc574b31434",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "09-errors-and-contracts/04-exception-details",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AttributeError: 'StockShortage' object has no attribute 'requested'"
+              }
+            ],
+            "stdout": "(6, 2)\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "requested 6; available 2\n"
+          },
+          "example_stdout": [
+            ""
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "96cd2112f6a7243c9bcf2daedf0ce823988696ccbfe28e87da504dcb3b41071e",
+            "main.py": "a4b9f5cac8cae0a5d8806d322e0e1524614eebd1b72f106312c45a97cf3cdfbd",
+            "test_main.py": "82eab0b0aea588b5771de361636e65dc0d4984f77070215090286f00d6cdde0e",
+            "solution/main.py": "36d11fd198a62685e828fc02c587202988e4bf97ed10070c60d3a2162cba5714",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "09-errors-and-contracts/05-chain-a-cause",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "Quantity: None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Quantity: 8\n"
+          },
+          "example_stdout": [
+            "ValueError\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "a315cd7789224daabbaefb13b332641fe24cb6e3f23b3c183aae2416d530cdc4",
+            "main.py": "1ef762bb47b29a8ee20de3df241b9d2d893c4c5a3fa7e880976a2dd27e432ef0",
+            "test_main.py": "b3692090f917d45c6b0f752110dad42137259ffcd87bcc3ecd43ce81e2c663d4",
+            "solution/main.py": "1e60d753b54424eea8723fb6371bf44dd36cb942f37e11c92e9b4f042e4124ef",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "09-errors-and-contracts/06-cleanup-with-finally",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "None\nClosed: False\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "chapter one\nClosed: True\n"
+          },
+          "example_stdout": [
+            "['work', 'cleanup']\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "a7935e31bd9788f07741ba1241069cd9aa9c2b1a7420291c7961296fb9cb36d0",
+            "main.py": "af2da979258fb142cd6aa4a824c1507518f34b9270ba7fb7a1ad3bccdd7940f9",
+            "test_main.py": "8551512dcea1a61e96dd04c71e6710baf1f6691cf5fc81575fc5b81b232e8613",
+            "solution/main.py": "864053f38b80100fd35a084f29712e71a8cea660fea78ca8a7e4f82ed229c1ef",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "09-errors-and-contracts/07-abstract-contract",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "Created: DeliveryPolicy\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Probe: TypeError Can't instantiate abstract class DeliveryPolicy without an implementation for abstract method 'fee_cents'\n"
+          },
+          "example_stdout": [
+            ""
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "ca48ac8ddcfb4d099bc939d54fb4703b1208c2404771fa542cf553ed6f661249",
+            "main.py": "45f79b6b2143ee514c8f33d3a5219a9558e15767d2d130ee150b47b54c12a56f",
+            "test_main.py": "5d1ae343201ea18334cff6cc0a0859531c422b7880dc955f707f6405e7c84265",
+            "solution/main.py": "2a2979459679016a2fdd066fb96f0de9a039df3593b96d8d3b1492ecc1ba87ae",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "09-errors-and-contracts/08-implement-a-contract",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "Delivery: None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Delivery: 0\n"
+          },
+          "example_stdout": [
+            "Note: bring water\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "fd91a9b79e4c4e3ce9abfd76fc1e91671cac42125a477d6970e7b5f448f9e4d3",
+            "main.py": "b984b237f0ad96fb257bac32b94745e6d3e3d7da2c301930ec7d722a40e41593",
+            "test_main.py": "ebcdc9384926819a809aa2847151f9493c6c880b8dac018eee353c7e02b8e2fb",
+            "solution/main.py": "30108f29769bca7451f503874aaa463e990895b7e14a9f0f4f659431c00ce294",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/01-product-record",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: Reject invalid product data"
+              }
+            ],
+            "stdout": "Product(sku='MUG', name='Mug', price_cents=1250)\nProduct(sku='BAD', name='Invalid price', price_cents=-1)\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Product(sku='MUG', name='Mug', price_cents=1250)\nProbe: ValueError price must be nonnegative integer cents\n"
+          },
+          "example_stdout": [
+            "Trail(name='Ridge', distance_m=850)\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "738c6fe0f433d4c5d9206c166309dac7cf30c2ce12a10713cd770e16432fc30f",
+            "main.py": "87022014d3134ad017425b0fd2b8fbb8395beab0c981a1645e32fc4e13f0e6cb",
+            "test_main.py": "c819571df981b4cdfec09f9a844d8218bf335f4ebb8c8ccb3ff8d758d785785c",
+            "solution/main.py": "8ef4f81c0bb79e5f3ba281a0b72101fac04c45c91f863294e916aa2814d862f4",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/02-product-catalog",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AttributeError: 'Catalog' object has no attribute 'products'"
+              }
+            ],
+            "stdout": "Probe: AttributeError 'Catalog' object has no attribute 'products'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "['MUG']\n"
+          },
+          "example_stdout": [
+            "['Birds', 'Maps']\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "24a3aa96dd21259c7e15fbd4f09da1a0a649473c134d77b1b44727a75285351a",
+            "main.py": "9c79596ed7027517a8ca7508c898967ffe1167f438f84179ee2ea29ed389543e",
+            "test_main.py": "00e23e0fdc20a702ff75ecf4f90dcb31dd2f7eac2e66d5d8066cd33d916fddc1",
+            "solution/main.py": "1c742c9bff76df07de76bd35a8e4b89957356078b04181a1b3250692685b52e5",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/03-cart-line",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "Line cents: None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Line cents: 2500\n"
+          },
+          "example_stdout": [
+            ""
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "6cb0ed3cab32d399a16216b73b4488ace3bc7608b0aa524893c462e7421af03a",
+            "main.py": "b9948337f2f3fdfeebb24adb15fb304193831dbdc3eab765334218614a780d57",
+            "test_main.py": "24f8961acd3095bf6a9d87574deb828b9d56690eccfe13bd1f40b8ca12962df7",
+            "solution/main.py": "02dda2b776d68ae36729d156adfbc477b4d5ea718ad6d50a3b87ad496f1561d2",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/04-add-to-cart",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "KeyError: 'X'"
+              }
+            ],
+            "stdout": "Probe: KeyError 'MUG'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Quantity: 2\n"
+          },
+          "example_stdout": [
+            "{'red': 5}\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "36eb9818425af2e4e556d8975f9eede1fdbef9c94ce61d56c878ee7841c1d57b",
+            "main.py": "a5fb05f9d3a348d20a6275e5f56103ea874527eb5678e1623ae02f438fbfa4df",
+            "test_main.py": "f28910fe8ddd873ee4aaf412952f748cffd1e6f11ceaba123b26a22d530925f2",
+            "solution/main.py": "74871879b98a10cc6948da22056d06d0e018b3dc11e3e7163e3ea13287640200",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/05-remove-from-cart",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "Removed: None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Removed: False\n"
+          },
+          "example_stdout": [
+            "{'gold': 2}\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "209a14559c336cc6db013bdbe32b2956aa8afefa627fa723e6c3ee68b7ab686a",
+            "main.py": "c9ac52390118d211f32b517a025747519bcaf31f6afb778267cff432142ccddd",
+            "test_main.py": "13325e4571395672946b752a3a064976e0f5a960be4f81794a487984b96a54f3",
+            "solution/main.py": "8cc7a7b8546d14f11a73dcd9190289136b375df5f8b2117f28849f2d06410dce",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/06-cart-summary",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "([('MUG', 'Mug', 2, 2500)], 2500)\n"
+          },
+          "example_stdout": [
+            "[('Mon', 5), ('Tue', 3)] 8\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "ea2e6d6db0ac14aa22b5f983dbe27c4cbdc398122ab14c23a1c7f751aa9bc641",
+            "main.py": "728bad4dd14d14025fe14d52bcc4c602738974885a46728dc9c0919931df66e0",
+            "test_main.py": "4496228dc6c3fbe940f07e8646863fc8d2f83e8f3b0b8697dafca6dd75b1d8c6",
+            "solution/main.py": "1b71712de2714f3cc6d3a015e5a02403ada746a97ac40cebb2ad83d68a0c184c",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/07-order-snapshot",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AttributeError: 'NoneType' object has no attribute 'order_id'"
+              }
+            ],
+            "stdout": "None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Order(order_id='O1', lines=(), total_cents=0)\n"
+          },
+          "example_stdout": [
+            "(('north', 12), ('south', 9))\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "beafa4077d886c47a4c17a31e9ad466d96a11dc05cc573a950a31c1b635db775",
+            "main.py": "8aca8ed1d512bd17debc639b05004a3b2e62f488369b16049ad4fe7dc9136794",
+            "test_main.py": "22060ed01362f2c794d186fa59acf3f9a38e2b1bc8d55cee5c5c16ae1eb26a4a",
+            "solution/main.py": "adbde2e79eee50d9bd62bbb3446ffdae2fbca223414edfbe109168e5b2f0af76",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/08-checkout-service",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: Reject empty checkout"
+              }
+            ],
+            "stdout": "None\nCart: ([('MUG', 'Mug', 1, 1250)], 1250)\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Order(order_id='O1', lines=(('MUG', 'Mug', 1, 1250),), total_cents=1250)\nCart: ([], 0)\n"
+          },
+          "example_stdout": [
+            "('draft',) []\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "99587a94c80250476149ebbfa571e17b65f24c5d82551431f4a17754327417e3",
+            "main.py": "b085ab91a5247aabcfd453c82303a6b6f0a2dacbf039b41669305ac403ad5d88",
+            "test_main.py": "c07e7f0f43410d17936a853350264869619038ba3801c82c0628c7082bade449",
+            "solution/main.py": "27710c84aa2b87ca7b237ded19f464c7f582143b9269ab8200b238768b01eef2",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/09-order-registry",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "KeyError: 'A'"
+              }
+            ],
+            "stdout": "Probe: KeyError 'O1'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Status: placed\n"
+          },
+          "example_stdout": [
+            ""
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "a15946823535194f22b306a99064b7516352d2feea8f50df34eaf31aa5cff876",
+            "main.py": "401ba419574e659a3fd6316f0e92e0922f98b91d8221cca3483b4d767e34d31c",
+            "test_main.py": "cf25a6bb7190c569cd72c803b92b54accd5d29a34d903e508423e87a34ccc08b",
+            "solution/main.py": "59653c5fad75f177c4205648c0c3f90be0b04d6c0f764b8d5beedf8ef7418969",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/10-invoice-lines",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "['MUG | Mug | 2 x | $25.00']\n"
+          },
+          "example_stdout": [
+            "2:05\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "464e0728b314237809619fdf5ca8ee8701a94211df449baf19e0834e22bdb3d9",
+            "main.py": "022cc29e742ec1e6a86c0ddeb68bce29ee7ab4e244299a3c90f60cac7ca5d720",
+            "test_main.py": "3a493cf43bbf279191ba42c6bc195c0837262fb0084197abb8fc99724d37d777",
+            "solution/main.py": "33a887e2c2b35140c0f03be9d38faca20aae7ca708930bdd048a760403d30e5f",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/11-invoice-total",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "Order O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+          },
+          "example_stdout": [
+            "Travel log\nRidge trail\nDistance: 850 m\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "59fd81236127c38087d6379aac9dffdd7428170bdc4f4ccc5011fda2228fe866",
+            "main.py": "cab76816cf43c3e153b108728905f098e520e620d655a2ce8617524bffd44b1e",
+            "test_main.py": "c06d850a172915cd887f61b939c495ceab0e842d66f98ac550fb0329afdd10d2",
+            "solution/main.py": "ef7cba43077b971f9df307f54beaca60f9a5330cf7433dffc22aee35331b83db",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/12-command-router",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "MUG | Mug | $12.50\n"
+          },
+          "example_stdout": [
+            ""
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "d91a1643ce437472f8fbad87125c65660d842dbe657f6f4f19540df34a67772f",
+            "main.py": "219989ac3a8a8052cec9d07182ca183c653d1df9c914f354e36c32eeb2c56dac",
+            "test_main.py": "f4614b444fd2ceb3b14752a83c8ce5bb9179fddf2ab68968c11f5b7e38d14dd6",
+            "solution/main.py": "a04dd86aa84c2f33988412d8df77ec014c945bad02d98300522fff4cc1c6bb2b",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/13-scripted-session",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "['Added MUG x 2', 'Created O1', 'O1: placed']\n"
+          },
+          "example_stdout": [
+            "['NORTH']\n"
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "48bdc53e6894d244ea2b0893af8b8b1380bae8195aab8eda2ae4012e89e5cdcd",
+            "main.py": "90970d71297076effb36d8e80670b962c68c9a33b245866a9b66090b496a6af6",
+            "test_main.py": "19884313c697d14f6d748106f940f06d25d995b38350313bd0840220f7846d76",
+            "solution/main.py": "0f48dc34565f7cdb9b0f8deb3ac42f5110e2026597aa40201229c818881280c6",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        },
+        {
+          "path": "10-ecommerce-project/14-shop-main",
+          "starter": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": false,
+                "error": "AssertionError: "
+              }
+            ],
+            "stdout": "Complete main to start the session.\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "name": "test_behavior",
+                "passed": true
+              }
+            ],
+            "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+          },
+          "example_stdout": [
+            ""
+          ],
+          "tasks": 1,
+          "hashes": {
+            "lesson.md": "e8ee3673ea9a56020ef1ed45113445bc46023cae34efa5d2fa6235a1b53e1e4c",
+            "main.py": "9bf7d799315c255ae5dff959f49319fcdfc989f64d26a9d691366e704c8a6995",
+            "test_main.py": "f8c76874d91c8c15184868e73b29aa89708077562b71604d79bc8bb43cba95d9",
+            "solution/main.py": "e3e17ff81f6ff2759cf87c7ff2d04c12d0428504e7287b2cef970bfecbd4f087",
+            "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+          }
+        }
+      ]
+    }
+  ],
+  "continuity": [
+    {
+      "from": "10-ecommerce-project/01-product-record",
+      "to": "10-ecommerce-project/02-product-catalog",
+      "preserved_definitions": 6,
+      "changed_or_missing": []
+    },
+    {
+      "from": "10-ecommerce-project/02-product-catalog",
+      "to": "10-ecommerce-project/03-cart-line",
+      "preserved_definitions": 10,
+      "changed_or_missing": []
+    },
+    {
+      "from": "10-ecommerce-project/03-cart-line",
+      "to": "10-ecommerce-project/04-add-to-cart",
+      "preserved_definitions": 13,
+      "changed_or_missing": []
+    },
+    {
+      "from": "10-ecommerce-project/04-add-to-cart",
+      "to": "10-ecommerce-project/05-remove-from-cart",
+      "preserved_definitions": 16,
+      "changed_or_missing": []
+    },
+    {
+      "from": "10-ecommerce-project/05-remove-from-cart",
+      "to": "10-ecommerce-project/06-cart-summary",
+      "preserved_definitions": 17,
+      "changed_or_missing": []
+    },
+    {
+      "from": "10-ecommerce-project/06-cart-summary",
+      "to": "10-ecommerce-project/07-order-snapshot",
+      "preserved_definitions": 18,
+      "changed_or_missing": []
+    },
+    {
+      "from": "10-ecommerce-project/07-order-snapshot",
+      "to": "10-ecommerce-project/08-checkout-service",
+      "preserved_definitions": 23,
+      "changed_or_missing": []
+    },
+    {
+      "from": "10-ecommerce-project/08-checkout-service",
+      "to": "10-ecommerce-project/09-order-registry",
+      "preserved_definitions": 25,
+      "changed_or_missing": []
+    },
+    {
+      "from": "10-ecommerce-project/09-order-registry",
+      "to": "10-ecommerce-project/10-invoice-lines",
+      "preserved_definitions": 31,
+      "changed_or_missing": []
+    },
+    {
+      "from": "10-ecommerce-project/10-invoice-lines",
+      "to": "10-ecommerce-project/11-invoice-total",
+      "preserved_definitions": 35,
+      "changed_or_missing": []
+    },
+    {
+      "from": "10-ecommerce-project/11-invoice-total",
+      "to": "10-ecommerce-project/12-command-router",
+      "preserved_definitions": 36,
+      "changed_or_missing": []
+    },
+    {
+      "from": "10-ecommerce-project/12-command-router",
+      "to": "10-ecommerce-project/13-scripted-session",
+      "preserved_definitions": 48,
+      "changed_or_missing": []
+    },
+    {
+      "from": "10-ecommerce-project/13-scripted-session",
+      "to": "10-ecommerce-project/14-shop-main",
+      "preserved_definitions": 49,
+      "changed_or_missing": []
+    }
+  ],
+  "quizzes": [
+    {
+      "path": "09-errors-and-contracts/quiz/q01.md",
+      "correct": "b",
+      "options": 3
+    },
+    {
+      "path": "09-errors-and-contracts/quiz/q02.md",
+      "correct": "a",
+      "options": 3
+    },
+    {
+      "path": "09-errors-and-contracts/quiz/q03.md",
+      "correct": "b",
+      "options": 3
+    },
+    {
+      "path": "09-errors-and-contracts/quiz/q04.md",
+      "correct": "c",
+      "options": 3
+    },
+    {
+      "path": "10-ecommerce-project/quiz/q01.md",
+      "correct": "a",
+      "options": 3
+    },
+    {
+      "path": "10-ecommerce-project/quiz/q02.md",
+      "correct": "b",
+      "options": 3
+    },
+    {
+      "path": "10-ecommerce-project/quiz/q03.md",
+      "correct": "c",
+      "options": 3
+    },
+    {
+      "path": "10-ecommerce-project/quiz/q04.md",
+      "correct": "a",
+      "options": 3
+    }
+  ],
+  "integration": [
+    {
+      "tests": [
+        {
+          "name": "test_full_shop_journey",
+          "passed": true
+        }
+      ],
+      "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+    },
+    {
+      "tests": [
+        {
+          "name": "test_full_shop_journey",
+          "passed": true
+        }
+      ],
+      "stdout": "MUG | Mug | $12.50\nTEA | Tea | $5.75\nAdded MUG x 2\nAdded TEA x 1\nRemoved TEA\nMUG | Mug | 2 x | $25.00\nCart total: $25.00\nCreated O1\nO1\nO1: placed\nO1: shipped\nOrder O1\nMUG | Mug | 2 x | $25.00\nTotal: $25.00\n"
+    }
+  ],
+  "review_notes": [
+    {
+      "round": 1,
+      "scope": "All 22 lesson prose, task contracts, starters, solutions and tests; 8 quiz items",
+      "repairs": [
+        "Clarified whitespace-only product validation and exact integer prices",
+        "Separated checkout creation from registry storage",
+        "Replaced generic example introductions and hints with lesson-specific guidance",
+        "Expanded object ownership, snapshot immutability, and boundary explanations"
+      ]
+    },
+    {
+      "round": 2,
+      "scope": "Reread all revised lesson bodies and hidden tests; inspected complete cumulative application; reran all final artifacts twice",
+      "repairs": [
+        "Made intended exception probes say Probe rather than Not ready",
+        "Added visible unfinished-main output and invalid-product Run probe",
+        "Removed generation markers from learner source",
+        "Checked exact malformed-command error text"
+      ],
+      "remaining": [
+        "Real browser/Pyodide and visual diagrams are delegated to parent; no browser acceptance claimed here"
+      ]
+    }
+  ],
+  "totals": {
+    "lessons": 22,
+    "tests_per_pass": 22,
+    "quiz_questions": 8,
+    "continuity_edges": 13,
+    "review_passes": 2,
+    "examples_per_pass": 22,
+    "source_runs": 88,
+    "integration_runs": 2
+  },
+  "failures": []
+}

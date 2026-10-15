@@ -1,0 +1,1458 @@
+{
+  "scope": [
+    "03-python-protocols",
+    "04-inheritance"
+  ],
+  "lessons": 26,
+  "coding_lessons": 26,
+  "tasks": 26,
+  "quiz_questions": 8,
+  "verification": "CPython execution and actual platform loader; browser/Pyodide UI not exercised",
+  "review_passes": [
+    {
+      "pass": 1,
+      "scope": "All 26 lesson explanations, tiny examples, tasks, and module progression reread from generated source.",
+      "findings_fixed": [
+        "Escaped a newline test fixture that generated invalid Python.",
+        "Protected immutable hash fields from repeated __init__ calls and documented low-level bypass limits."
+      ]
+    },
+    {
+      "pass": 2,
+      "scope": "All 26 starters, full reference changes, tests, and eight quiz questions reread against the explanations and task contracts.",
+      "findings_fixed": [
+        "Reduced multiple-inheritance exercise to one class-declaration change by supplying its initializer.",
+        "Removed exercise-specific answer expression from composition prose.",
+        "Formatted quiz code identifiers as inline code."
+      ],
+      "risk_checks": [
+        "NotImplemented for unsupported arithmetic/equality/ordering.",
+        "Equality/hash use stable immutable data, with mutation and reinitialization rejection.",
+        "Finalizer checked only through explicit invocation; no timing, sleeps, gc.collect, or del-trigger assumption.",
+        "Cooperative diamond tested with base-only, normal, reversed, and extended MROs using compatible signatures."
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "lesson": "03-python-protocols/01-friendly-str",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 260,
+      "versions": {
+        "starter": {
+          "run_stdout": "Not ready: TypeError __str__ returned non-string (type NoneType)\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_friendly_str",
+              "passed": false,
+              "error": "TypeError: __str__ returned non-string (type NoneType)"
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Lake: 4 km\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_friendly_str",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "Timer: 7 min\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "32bf4bf6eb4e7a7898dbdc6af3dc3cc74e656a73f69d7a19b650d2d784b63826",
+        "main.py": "c1ee79a543ff08bc3e726c3d88e0fb7a317095ff2fa623256d5c208a99238bc7",
+        "solution/main.py": "43b9ab1cabcc8db7f55db9f376d7976beace99bb20b7897f187f89b287b58f91",
+        "test_main.py": "8a3b4c72bc3b43e9c268497a8a396a7c1d0e3c1d764300b75c414236a7dcacb0"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/02-developer-repr",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 269,
+      "versions": {
+        "starter": {
+          "run_stdout": "Not ready: TypeError __repr__ returned non-string (type NoneType)\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_developer_repr",
+              "passed": false,
+              "error": "TypeError: __repr__ returned non-string (type NoneType)"
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Parcel(code=\"A'7\", count=3)\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_developer_repr",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "[Reading(value=18)]\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "805ff7f8016dc0d6080ca6944079a70315f1de3b78149d1c31155dc83e7ee7f6",
+        "main.py": "7fcd1684dbbaa5d9928ea1cafe694e7550531a60940c17a06f75665c5aa8f506",
+        "solution/main.py": "ab75a3321bd6977c5bc0dc359440db48bb1000e2d06e6b2310c8248d29dd8b14",
+        "test_main.py": "700f48b136b0b35b7524f31c3d8756c12a968a52fd0eb2d7e134fe396fb7566a"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/03-add-value-objects",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 269,
+      "versions": {
+        "starter": {
+          "run_stdout": "Not ready: AttributeError 'NoneType' object has no attribute 'metres'\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_add_value_objects",
+              "passed": false,
+              "error": "AssertionError: Addition must return a Cable."
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Combined metres: 10\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_add_value_objects",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "20\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "b9409f753e7d1ae32f2767336e0f962d7024b46a854d220b5a5e9cf6dfc3da5b",
+        "main.py": "b8dffd4bcda3b41fe0d2c74c5a7de284164890c72cd0346ff96e064a68d3f8c5",
+        "solution/main.py": "d1c07e90c5b0ba401b6cdd6fcbdad03618616a7b566216c6433cda19487580aa",
+        "test_main.py": "7ca9b12ee21d9554be82b53d46dd75c745bf0aadf2a694a2d58cd8103290110b"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/04-subtract-value-objects",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 283,
+      "versions": {
+        "starter": {
+          "run_stdout": "Not ready: AttributeError 'NoneType' object has no attribute 'steps'\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_subtract_value_objects",
+              "passed": false,
+              "error": "AssertionError: "
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Difference: -5\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_subtract_value_objects",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "-3\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "22c4fa97d7a5b3d839334a082420ffc890b18e1e2749e0ffed5cc212258e0a63",
+        "main.py": "dd8f38a26accf8b0734a6484b0dbaff081bdf41e05e56f9e4472af5b06cd31fd",
+        "solution/main.py": "d5cd2ea24e116432979113a9c08b7fcf6bdb87a35da9cf51fac21c2c06ee1afd",
+        "test_main.py": "b7b00507704e1319869a5c3cd84b7a4eeaa2a635427b8b07214f891adecc82ba"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/05-multiply-by-a-scalar",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 276,
+      "versions": {
+        "starter": {
+          "run_stdout": "Not ready: AttributeError 'NoneType' object has no attribute 'sheets'\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_multiply_by_a_scalar",
+              "passed": false,
+              "error": "AssertionError: "
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Scaled sheets: 21\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_multiply_by_a_scalar",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "400\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "8e0718cd165a1ada4fdc25fb35cd6347572c47635b30f766abe0da52b23ccc4a",
+        "main.py": "314ad92363d68e484d57ecbad0b17f87c1dd69944f5f2fbfc6f7f68612d71c43",
+        "solution/main.py": "1c65fbbb176391f85623b0d7e53283dd0770693fb2d97ffd0c960b4186c5df3f",
+        "test_main.py": "bb8011888088e5d7ac22fe5ab1a46eec3d83595d0da4ee56cf57f065b2899192"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/06-reflected-multiplication",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 291,
+      "versions": {
+        "starter": {
+          "run_stdout": "Not ready: AttributeError 'NoneType' object has no attribute 'count'\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_reflected_multiplication",
+              "passed": false,
+              "error": "AssertionError: "
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Both orders: 20 20\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_reflected_multiplication",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "24\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "6f2ce5a80f4f9bfae205eb90fe82f24405b84e68346d574d27884956025d0e0f",
+        "main.py": "94012a41ecae86c8059e5697d39421645e1a8e598667372be690e8820c26f6a1",
+        "reflected-operator-dispatch.svg": "dd5507f4164a569d1a74faafc944c36c1c770762e7e82c5fcb28ddcfec7bceb3",
+        "solution/main.py": "d7a66ad2f0a90da76c87d45d51ae4024123a02bf56f06e81abec20593f8e9133",
+        "test_main.py": "7b4699fca51c82b15d5de1d139a764129717987d0931743ec165f899e392cbc1"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/07-value-equality",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 292,
+      "versions": {
+        "starter": {
+          "run_stdout": "Equal seats: None\nDifferent rows: None\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_value_equality",
+              "passed": false,
+              "error": "AssertionError: Compare both stored fields."
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Equal seats: True\nDifferent rows: False\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_value_equality",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "True\nFalse\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "4ff9d5a69a24f0b6436d2b61538d30717f827681c82fdbf047d6aba1efe1710e",
+        "main.py": "c8113489bc3e6ce0ad4f3559b32c09cea5d22234944f475d8636a815b83225b9",
+        "solution/main.py": "e760c0e9fbc28f24dfe2008b7cdc8b9fb3d94dfe13432d224d96d2b080433925",
+        "test_main.py": "9871aba9edee20cecfc479bf3d91f030d20d3953327a2ea939b5c3667c0c603b"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/08-order-value-objects",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 276,
+      "versions": {
+        "starter": {
+          "run_stdout": "Sorted seconds: [64, 59, 62]\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_order_value_objects",
+              "passed": false,
+              "error": "AssertionError: "
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Sorted seconds: [59, 62, 64]\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_order_value_objects",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "[180, 200, 210]\n[210, 180, 200]\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "cee2dfd6bad067c14d62b2e4df2d47a24c9dfb7911348a4f4283529f27b1f154",
+        "main.py": "a1b63592f23a94fee5a1fd8051e62060c6e0852b72571a455d0fd06be3d6f81d",
+        "solution/main.py": "66549b3bc59c751842913ed0cc23b2645c5455ec45941875ebb1f41e2e913a49",
+        "test_main.py": "406157a1fd54bc58632e2d9d5122a80dc643a98f9476e7ab57bb292273a93eb2"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/09-sized-objects",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 296,
+      "versions": {
+        "starter": {
+          "run_stdout": "Not ready: TypeError 'NoneType' object cannot be interpreted as an integer\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_sized_objects",
+              "passed": false,
+              "error": "TypeError: 'NoneType' object cannot be interpreted as an integer"
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Titles: 2\nAfter adding: 3\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_sized_objects",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "2\n0\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "d536cad291a29cc9d867341117f6d4c607edc98218838c981c5084f5153fbab6",
+        "main.py": "002a024a1c79fbd0611306dece6983f7c2e5c197cee5849e2d3134c404c63690",
+        "solution/main.py": "cd236948fac43a7569f38863e55695b16774eca157beb1d378dde7fc95a2c697",
+        "test_main.py": "7c4843654a935056a5890525a249dd9d60f3a55ab1aeeb13d19c9cb36a93175f"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/10-truthy-objects",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 285,
+      "versions": {
+        "starter": {
+          "run_stdout": "Not ready: TypeError __bool__ should return bool, returned NoneType\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_truthy_objects",
+              "passed": false,
+              "error": "AssertionError: Return a bool for the complete usability rule."
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Charged: True\nSwitched off: False\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_truthy_objects",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "False\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "2872af18360aa99af54d296a30e80290482e132c03692ffe1b57ce1267e79bb6",
+        "main.py": "7efa6aace2043e0e70f43ce8182927144d895af1185d6f63d70e2aa810269d4f",
+        "solution/main.py": "bd397482cf566e7c26bfd382fc67bf8ecf9d076565301f0573e840ee8f53487f",
+        "test_main.py": "c932a390001a14060d6884eaaebd4451001a60ac1104dae79283f389b32484aa"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/11-hashable-keys",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 323,
+      "versions": {
+        "starter": {
+          "run_stdout": "Not ready: TypeError __hash__ method should return an integer\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_hashable_keys",
+              "passed": false,
+              "error": "TypeError: __hash__ method should return an integer"
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Found: cables\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_hashable_keys",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "spare lamps\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "56e31116b167c008557d46d20740c9d9290c1a8262a2661558cf7b626e6208ed",
+        "main.py": "84e43bf2acba01fce0b3aa6ea39097ff41c551a7d995ea9c1c228fde03672f49",
+        "solution/main.py": "807471a3b3c648452383a2978d62784ec035c86095497571742aa967bb7b7099",
+        "test_main.py": "ba791ab5b0c0260c2e659cc48dbe4c562c00c2081b7fcf3086963c12685d7adc"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/12-callable-objects",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 286,
+      "versions": {
+        "starter": {
+          "run_stdout": "Scaled: None None None\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_callable_objects",
+              "passed": false,
+              "error": "AssertionError: Use this call's value and this instance's factor."
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Scaled: 24 60 6\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_callable_objects",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "Doors open.\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "f2fac0478e0fc22224e95127fd73cf4a983eeb70e24c3beb453c94c5bf889888",
+        "main.py": "80c7b55f3957e891ecb87cdb2eac99bb94875e88988dab777d3c4c8783bdab10",
+        "solution/main.py": "f0fce4899c7b1607d27029709bfe9801e06bb9ec75c66d66783820960bca0973",
+        "test_main.py": "be70067a62a2cbef6d6a7be4175e9908f4f23a1a8c0373310b5970e4b78836df"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/13-custom-format",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 278,
+      "versions": {
+        "starter": {
+          "run_stdout": "Not ready: TypeError __format__ must return a str, not NoneType\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_custom_format",
+              "passed": false,
+              "error": "TypeError: __format__ must return a str, not NoneType"
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Compact: 18 m\nExpanded: 18 metres\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_custom_format",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "8.12\n8.1\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "2c3e1ea72115397652318de1f90db919fba75957ef68c0e4731e3684562f1150",
+        "main.py": "eb1ef257a375de282523a22ad2f0acfed8ad14bb21bf63e974490ae0a3bb6111",
+        "solution/main.py": "6730d19de0959b07cc4f93957260074002b3a7440d17ecf3440127a8776561c3",
+        "test_main.py": "a8537b1cbbb3bcd95fba15ebb201ed2abfb3acdc2b38827c0b398613a19ae7ee"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/14-explicit-cleanup",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 292,
+      "versions": {
+        "starter": {
+          "run_stdout": "After explicit hook: False []\nAfter explicit close: ['closed:preview']\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_explicit_cleanup",
+              "passed": false,
+              "error": "AssertionError: Delegate the hook to close()."
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "After explicit hook: True ['closed:preview']\nAfter explicit close: ['closed:preview']\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_explicit_cleanup",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "False\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "db38bdef3650706f942060f945889674a97532979172cbc93394cfdf9394ef4e",
+        "main.py": "90ec7b10534de670ad2b3c2276b6da3d7f035e0c49a0518030cdfc379c733554",
+        "solution/main.py": "6ab71561b28e6d8bd3b00e4fbec4434621aad2fb0844bf12387c4517c9e42776",
+        "test_main.py": "62d63109e1252e16478d36315d5a5089ca6fc6c3c56c19e2a29d527815167026"
+      }
+    },
+    {
+      "lesson": "04-inheritance/01-inherit-a-method",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 294,
+      "versions": {
+        "starter": {
+          "run_stdout": "Not ready: NameError name 'ColdLocker' is not defined\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_inherit_a_method",
+              "passed": false,
+              "error": "NameError: name 'ColdLocker' is not defined"
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Locker B7\nIs a locker: True\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_inherit_a_method",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "REMINDER\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "a093550657305f882d635e7ae7dc3c54d65bc02de338775abe44345c4fef6b9d",
+        "main.py": "fb24371af05bb6a4174a29c4844f00e17727a7f13f26f12a84ba88fc26d44c60",
+        "solution/main.py": "34a98e18dadd98e640ea254b52c84c55d25db34156635894171216ed07e83a65",
+        "test_main.py": "ad0654f22203b3f1ddb3e5dda79de3a091eb6312f550a307301f52bb977daf97"
+      }
+    },
+    {
+      "lesson": "04-inheritance/02-the-object-base",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 288,
+      "versions": {
+        "starter": {
+          "run_stdout": "Plain: None\nSubclass: None\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_the_object_base",
+              "passed": false,
+              "error": "AssertionError: Inspect the actual class's direct bases."
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Plain: True\nSubclass: False\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_the_object_base",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "True\nTrue\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "fed07f9d3ba16841d633039a5a73595930bf209be9dd563b9cbc5f0496ed1787",
+        "main.py": "c4f28484b599f388ab99bf047a8f5dfef0a4fa9e6628073796942b986b34abe4",
+        "solution/main.py": "dc6586d5a93deba5c95e5361c9d68e75edf0aa0709d260ef1f12c9c0b67e89a4",
+        "test_main.py": "9d39e4aef180af5509bf98752a438a710a99b41b3bc9f526094e3710a6da9af2"
+      }
+    },
+    {
+      "lesson": "04-inheritance/03-extend-initialization",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 285,
+      "versions": {
+        "starter": {
+          "run_stdout": "Not ready: AttributeError 'TimedTicket' object has no attribute 'title'\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_extend_initialization",
+              "passed": false,
+              "error": "AttributeError: 'TimedTicket' object has no attribute 'title'"
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Ticket: Exhibit 14\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_extend_initialization",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "5\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "abf27b1ae09994af69013f7b09a671a705f4582d255681e54a39854ef2f19e36",
+        "main.py": "e0dde30011261ade2fad9dcef31ab6be926fb37f621db2500486ccfd888a3298",
+        "solution/main.py": "c598b310336cba931b4d132fd61179ef98107d9d361ea7cbcc8d2784cd870bb9",
+        "test_main.py": "0cd293e746dc8af265aa487bd047e7076984ba10b50fc781569d01f8e6019041"
+      }
+    },
+    {
+      "lesson": "04-inheritance/04-override-a-method",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 288,
+      "versions": {
+        "starter": {
+          "run_stdout": "Sound at door\nNone\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_override_a_method",
+              "passed": false,
+              "error": "AssertionError: Override the subclass signal."
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Sound at door\nLight at door\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_override_a_method",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "small drum: tap\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "c4dc7c1fab128daf8a81ef431aa138157aa1d012af712bac35876279eccfdf76",
+        "main.py": "045a56af13a05c846e37ce416106b40d001fb0874514d563c7dd7b7f6b01219b",
+        "solution/main.py": "c4768bc6b56965659cc00fdd5444ac563b233ad2906f5ab89740f638aa56b725",
+        "test_main.py": "048aefef8e873b01e5ba0cbe8e2d32d885cb7936ede48960ba67cd614f01973a"
+      }
+    },
+    {
+      "lesson": "04-inheritance/05-reuse-with-super",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 283,
+      "versions": {
+        "starter": {
+          "run_stdout": "None\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_reuse_with_super",
+              "passed": false,
+              "error": "AssertionError: "
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Shipment Q8 | insured 200\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_reuse_with_super",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "Welcome this morning\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "4cbe2630a92b630ed544bd1b91aca7c55e50b98359b7de1a5cb98329e6c21996",
+        "main.py": "178bacc4559f9743dfcdd2f001feb67f3330017f5687d7e9b8198d9c80c7128d",
+        "solution/main.py": "5276f7a86704169f21ae0c5eefd6096ed40480d23d76a27738635704f5a383e7",
+        "test_main.py": "418640ebd73e54e9e8343b7eeb06c80f4f4ec9078663c032d4b8c0dc0f549752"
+      }
+    },
+    {
+      "lesson": "04-inheritance/06-substitution-in-a-loop",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 293,
+      "versions": {
+        "starter": {
+          "run_stdout": "None\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_substitution_in_a_loop",
+              "passed": false,
+              "error": "AssertionError: Empty input returns an empty list."
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "['Road A', 'Bike B']\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_substitution_in_a_loop",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "['ARRIVAL', 'DEPARTURE']\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "1d2ccaa9a520457d9e3ee1d7d03105cc0dc279e755c4f1560a1562e283623fbd",
+        "main.py": "acd0b7a6736949f6d8f23466782b8cea6dfc64f545b7143510098399cf1fdcc5",
+        "solution/main.py": "fd0c0fd0904b2b815578f17c2214b48a004400312073a3506da91355f0131434",
+        "test_main.py": "2872f19fefea0145586177f56681a0282bca9ea77ca59a1a0e5973736ac3ea40"
+      }
+    },
+    {
+      "lesson": "04-inheritance/07-compose-a-service",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 305,
+      "versions": {
+        "starter": {
+          "run_stdout": "None\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_compose_a_service",
+              "passed": false,
+              "error": "AssertionError: "
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "[Workshop at noon]\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_compose_a_service",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "Playing Rain\n"
+      ],
+      "hashes": {
+        "composed-service-delegation.svg": "97fb9f98c272549a07628b770d27086c8d48f12b506ca66d754ce7cc9ab9d606",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "7d49a16a550e630804870ba57dfc84106265653d29938456596f66c5be9c9d08",
+        "main.py": "fae3fa453764b78e6c81d64945e670a26d275962d75e12819435e84fda456abb",
+        "solution/main.py": "2822c31cc418ea94be6c103fa88f94647cffa8bd45751e8f1d7254c5f5055276",
+        "test_main.py": "7fab606bcaf0e8aedd109f8d5797f8acd8292b836c3a3ebf01cacce9b4764a56"
+      }
+    },
+    {
+      "lesson": "04-inheritance/08-introduce-slots",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 303,
+      "versions": {
+        "starter": {
+          "run_stdout": "Coordinates: 2 5\nExtra attribute accepted; add slots.\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_introduce_slots",
+              "passed": false,
+              "error": "AttributeError: type object 'GridPoint' has no attribute '__slots__'"
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Coordinates: 2 5\nExtra attribute rejected.\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_introduce_slots",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "5\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "31bbb721991f30e5c82ee9893428c952769cb921d4bde0d16c2fb5b93070d6af",
+        "main.py": "e1b84427cd739e515bb2e3d5309e2ba6c953d30596b49b622106ecf73747ee50",
+        "solution/main.py": "201ecadd00e3bfdc597600341bc1325edc54da48dbb02d7c38c2184a7b014287",
+        "test_main.py": "2162dcd7d78052c1365680f4260c5146c2f7721fd612e8592b4482b68b1a8560"
+      }
+    },
+    {
+      "lesson": "04-inheritance/09-slots-in-subclasses",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 303,
+      "versions": {
+        "starter": {
+          "run_stdout": "4 7 gate\nExtra attribute accepted; add subclass slots.\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_slots_in_subclasses",
+              "passed": false,
+              "error": "AssertionError: Declare only the new field."
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "4 7 gate\nSubclass layout remains restricted.\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_slots_in_subclasses",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "True\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "b6b56d335a29363d7425bff90499c2e9c36c90a649b2699ba333b03fd80af25d",
+        "main.py": "306ed4c0d45dbf64490fb98a60dba82a5fbb59eefe0d5f447f6e7a4860f69a91",
+        "solution/main.py": "fe5ba180b02fc124e7c54b94551552ce865a4d2225ad48ef94dfe45f0460b419",
+        "test_main.py": "084139bd4f68acb9b70ea61c06c3c5d305767158aed8135624fe393d5758106d"
+      }
+    },
+    {
+      "lesson": "04-inheritance/10-multiple-inheritance",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 312,
+      "versions": {
+        "starter": {
+          "run_stdout": "Not ready: AttributeError 'InventoryCard' object has no attribute 'print_label'\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_multiple_inheritance",
+              "passed": false,
+              "error": "AssertionError: Use the two bases in the requested order."
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Item K9\n/track/K9\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_multiple_inheritance",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "HELLO hello\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "d46d2e8a8b0764f5e2935c75787f329f6211ac7fcbb5f2393f94923c512210ea",
+        "main.py": "1cd78ffb283412f4e878e454c43cfce42b8c312544d9475d41a20c3a5c8451a8",
+        "solution/main.py": "cb6ba6080628789581081a9bf6d500d97bc55da0ecec73fa153f668dc63409ba",
+        "test_main.py": "ab308dfe3a801416db490002713763ca08c91506cbf6a5942bccdad61fbb2c51"
+      }
+    },
+    {
+      "lesson": "04-inheritance/11-inspect-the-mro",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 301,
+      "versions": {
+        "starter": {
+          "run_stdout": "Direct bases: ['Signed', 'Dated']\nFull order: None\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_inspect_the_mro",
+              "passed": false,
+              "error": "AssertionError: "
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Direct bases: ['Signed', 'Dated']\nFull order: ['Report', 'Signed', 'Dated', 'Document', 'object']\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_inspect_the_mro",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "['Leaf', 'Root', 'object']\n"
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "52baa51e239b531eeedcc3832a77b6a3a21f20a5d40c3a46b3823baa68675b21",
+        "main.py": "7218e853812a5f6989ea5b021b4810d6321f3fb8d21e515ea06334873e415338",
+        "solution/main.py": "715feacf7772cc7ee232e164f96ff0fbe54dd7224799e1ef4d4abdc94360cc50",
+        "test_main.py": "da6f65b77612458a28e3d9fba337ac8b351de1f971098a87fd3284c875e0a64f"
+      }
+    },
+    {
+      "lesson": "04-inheritance/12-cooperative-diamond",
+      "tasks": 1,
+      "tests": 1,
+      "loader": "pass",
+      "concept_words": 293,
+      "versions": {
+        "starter": {
+          "run_stdout": "Build order: None\nShared list: []\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_cooperative_diamond",
+              "passed": false,
+              "error": "AssertionError: "
+            }
+          ]
+        },
+        "solution": {
+          "run_stdout": "Build order: ['signed', 'dated', 'document']\nShared list: ['signed', 'dated', 'document']\n",
+          "run_stderr": "",
+          "results": [
+            {
+              "name": "test_01_cooperative_diamond",
+              "passed": true
+            }
+          ]
+        }
+      },
+      "example_stdout": [
+        "['prepared', 'finished']\n"
+      ],
+      "hashes": {
+        "cooperative-mro-order.svg": "ae9cd48386353271464438200b64e31ac9a9978c73fba7f294e1bf53fa29a01e",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "6b7c0198e71b863766200cb01c63f90c3698d5d18ca16a17013458296270b819",
+        "main.py": "008e78f29247a360e13cd30b2cc71bcf40b1d20a3cce8056a33cb2cfeb5c2523",
+        "solution/main.py": "5e19dc0210bb09101176fd99084b43860abcb57a2c64b0fee3dd96deef5d37a7",
+        "test_main.py": "18b37ce98b1f2ef9b87045f11efcaaca95c5466bbad8b4706269ac8f5f575b7a"
+      }
+    }
+  ],
+  "adversarial_checks": [
+    {
+      "lesson": "03-python-protocols/01-friendly-str",
+      "mutation": "fixed display fixture",
+      "rejected": true,
+      "last_error": "AssertionError: Return a label from this marker's attributes."
+    },
+    {
+      "lesson": "03-python-protocols/02-developer-repr",
+      "mutation": "missing string representation",
+      "rejected": true,
+      "last_error": "AssertionError: Include both named fields with their representations."
+    },
+    {
+      "lesson": "03-python-protocols/03-add-value-objects",
+      "mutation": "mutating addition",
+      "rejected": true,
+      "last_error": "AssertionError"
+    },
+    {
+      "lesson": "03-python-protocols/04-subtract-value-objects",
+      "mutation": "discarded sign",
+      "rejected": true,
+      "last_error": "AssertionError: Keep left-minus-right order."
+    },
+    {
+      "lesson": "03-python-protocols/05-multiply-by-a-scalar",
+      "mutation": "accepting bool scalar",
+      "rejected": true,
+      "last_error": "AssertionError"
+    },
+    {
+      "lesson": "03-python-protocols/06-reflected-multiplication",
+      "mutation": "duplicated rather than delegated arithmetic",
+      "rejected": true,
+      "last_error": "AssertionError: Delegate rather than duplicate __mul__."
+    },
+    {
+      "lesson": "03-python-protocols/07-value-equality",
+      "mutation": "declining equality with False",
+      "rejected": true,
+      "last_error": "AssertionError"
+    },
+    {
+      "lesson": "03-python-protocols/08-order-value-objects",
+      "mutation": "less-than-or-equal instead of less-than",
+      "rejected": true,
+      "last_error": "AssertionError"
+    },
+    {
+      "lesson": "03-python-protocols/09-sized-objects",
+      "mutation": "fixed count",
+      "rejected": true,
+      "last_error": "AssertionError: Count the current contained list."
+    },
+    {
+      "lesson": "03-python-protocols/10-truthy-objects",
+      "mutation": "ignored enabled switch",
+      "rejected": true,
+      "last_error": "AssertionError: Return a bool for the complete usability rule."
+    },
+    {
+      "lesson": "03-python-protocols/11-hashable-keys",
+      "mutation": "identity hash with value equality",
+      "rejected": true,
+      "last_error": "AssertionError: Hash the tuple of equality fields."
+    },
+    {
+      "lesson": "03-python-protocols/12-callable-objects",
+      "mutation": "fixed result",
+      "rejected": true,
+      "last_error": "AssertionError: Use this call's value and this instance's factor."
+    },
+    {
+      "lesson": "03-python-protocols/13-custom-format",
+      "mutation": "silent invalid-format fallback",
+      "rejected": true,
+      "last_error": "AssertionError: Unknown format specifications must raise ValueError."
+    },
+    {
+      "lesson": "03-python-protocols/14-explicit-cleanup",
+      "mutation": "non-idempotent finalizer",
+      "rejected": true,
+      "last_error": "AssertionError: Cleanup must be idempotent."
+    },
+    {
+      "lesson": "04-inheritance/01-inherit-a-method",
+      "mutation": "alias rather than subclass",
+      "rejected": true,
+      "last_error": "AssertionError: Inherit label rather than duplicate it."
+    },
+    {
+      "lesson": "04-inheritance/02-the-object-base",
+      "mutation": "ancestor mistaken for direct base",
+      "rejected": true,
+      "last_error": "AssertionError"
+    },
+    {
+      "lesson": "04-inheritance/03-extend-initialization",
+      "mutation": "copied base setup",
+      "rejected": true,
+      "last_error": "AssertionError: Delegate base initialization once."
+    },
+    {
+      "lesson": "04-inheritance/04-override-a-method",
+      "mutation": "fixed location",
+      "rejected": true,
+      "last_error": "AssertionError: Override the subclass signal."
+    },
+    {
+      "lesson": "04-inheritance/05-reuse-with-super",
+      "mutation": "duplicated base formatting",
+      "rejected": true,
+      "last_error": "AssertionError"
+    },
+    {
+      "lesson": "04-inheritance/06-substitution-in-a-loop",
+      "mutation": "lost duplicate entries",
+      "rejected": true,
+      "last_error": "AssertionError"
+    },
+    {
+      "lesson": "04-inheritance/07-compose-a-service",
+      "mutation": "ignored injected collaborator",
+      "rejected": true,
+      "last_error": "AssertionError"
+    },
+    {
+      "lesson": "04-inheritance/08-introduce-slots",
+      "mutation": "restored instance dictionary",
+      "rejected": true,
+      "last_error": "AssertionError: Declare only the two coordinate slots."
+    },
+    {
+      "lesson": "04-inheritance/09-slots-in-subclasses",
+      "mutation": "redeclared inherited slots",
+      "rejected": true,
+      "last_error": "AssertionError: Declare only the new field."
+    },
+    {
+      "lesson": "04-inheritance/10-multiple-inheritance",
+      "mutation": "missing second capability",
+      "rejected": true,
+      "last_error": "AssertionError: Use the two bases in the requested order."
+    },
+    {
+      "lesson": "04-inheritance/11-inspect-the-mro",
+      "mutation": "direct parents instead of full MRO",
+      "rejected": true,
+      "last_error": "AssertionError"
+    },
+    {
+      "lesson": "04-inheritance/12-cooperative-diamond",
+      "mutation": "hardcoded root skips sibling",
+      "rejected": true,
+      "last_error": "AssertionError: Each participant must run once in MRO order."
+    }
+  ],
+  "issues_remaining": [
+    "Browser/Pyodide execution and application navigation were not exercised in this source audit.",
+    "Diagrams belong to the parent author and are outside this audit."
+  ],
+  "python_version": "3.12.12 (main, Jan 27 2026, 23:41:44) [Clang 21.1.4 ]",
+  "quiz_loader_results": [
+    {
+      "module": "03-python-protocols",
+      "title": "Python protocols quiz",
+      "questions": [
+        {
+          "id": "q01",
+          "type": "single_choice",
+          "correct": "a"
+        },
+        {
+          "id": "q02",
+          "type": "multiple_choice",
+          "correct": [
+            "a",
+            "c"
+          ]
+        },
+        {
+          "id": "q03",
+          "type": "single_choice",
+          "correct": "b"
+        },
+        {
+          "id": "q04",
+          "type": "true_false",
+          "correct": "false"
+        }
+      ]
+    },
+    {
+      "module": "04-inheritance",
+      "title": "Inheritance and composition quiz",
+      "questions": [
+        {
+          "id": "q01",
+          "type": "single_choice",
+          "correct": "b"
+        },
+        {
+          "id": "q02",
+          "type": "single_choice",
+          "correct": "b"
+        },
+        {
+          "id": "q03",
+          "type": "multiple_choice",
+          "correct": [
+            "a",
+            "c"
+          ]
+        },
+        {
+          "id": "q04",
+          "type": "single_choice",
+          "correct": "c"
+        }
+      ]
+    }
+  ],
+  "authored_files_excluding_audit": 140,
+  "authored_file_hashes": {
+    "03-python-protocols/01-friendly-str/lesson.md": "32bf4bf6eb4e7a7898dbdc6af3dc3cc74e656a73f69d7a19b650d2d784b63826",
+    "03-python-protocols/01-friendly-str/main.py": "c1ee79a543ff08bc3e726c3d88e0fb7a317095ff2fa623256d5c208a99238bc7",
+    "03-python-protocols/01-friendly-str/test_main.py": "8a3b4c72bc3b43e9c268497a8a396a7c1d0e3c1d764300b75c414236a7dcacb0",
+    "03-python-protocols/01-friendly-str/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "03-python-protocols/01-friendly-str/solution/main.py": "43b9ab1cabcc8db7f55db9f376d7976beace99bb20b7897f187f89b287b58f91",
+    "03-python-protocols/02-developer-repr/lesson.md": "805ff7f8016dc0d6080ca6944079a70315f1de3b78149d1c31155dc83e7ee7f6",
+    "03-python-protocols/02-developer-repr/main.py": "7fcd1684dbbaa5d9928ea1cafe694e7550531a60940c17a06f75665c5aa8f506",
+    "03-python-protocols/02-developer-repr/test_main.py": "700f48b136b0b35b7524f31c3d8756c12a968a52fd0eb2d7e134fe396fb7566a",
+    "03-python-protocols/02-developer-repr/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "03-python-protocols/02-developer-repr/solution/main.py": "ab75a3321bd6977c5bc0dc359440db48bb1000e2d06e6b2310c8248d29dd8b14",
+    "03-python-protocols/03-add-value-objects/lesson.md": "b9409f753e7d1ae32f2767336e0f962d7024b46a854d220b5a5e9cf6dfc3da5b",
+    "03-python-protocols/03-add-value-objects/main.py": "b8dffd4bcda3b41fe0d2c74c5a7de284164890c72cd0346ff96e064a68d3f8c5",
+    "03-python-protocols/03-add-value-objects/test_main.py": "7ca9b12ee21d9554be82b53d46dd75c745bf0aadf2a694a2d58cd8103290110b",
+    "03-python-protocols/03-add-value-objects/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "03-python-protocols/03-add-value-objects/solution/main.py": "d1c07e90c5b0ba401b6cdd6fcbdad03618616a7b566216c6433cda19487580aa",
+    "03-python-protocols/04-subtract-value-objects/lesson.md": "22c4fa97d7a5b3d839334a082420ffc890b18e1e2749e0ffed5cc212258e0a63",
+    "03-python-protocols/04-subtract-value-objects/main.py": "dd8f38a26accf8b0734a6484b0dbaff081bdf41e05e56f9e4472af5b06cd31fd",
+    "03-python-protocols/04-subtract-value-objects/test_main.py": "b7b00507704e1319869a5c3cd84b7a4eeaa2a635427b8b07214f891adecc82ba",
+    "03-python-protocols/04-subtract-value-objects/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "03-python-protocols/04-subtract-value-objects/solution/main.py": "d5cd2ea24e116432979113a9c08b7fcf6bdb87a35da9cf51fac21c2c06ee1afd",
+    "03-python-protocols/05-multiply-by-a-scalar/lesson.md": "8e0718cd165a1ada4fdc25fb35cd6347572c47635b30f766abe0da52b23ccc4a",
+    "03-python-protocols/05-multiply-by-a-scalar/main.py": "314ad92363d68e484d57ecbad0b17f87c1dd69944f5f2fbfc6f7f68612d71c43",
+    "03-python-protocols/05-multiply-by-a-scalar/test_main.py": "bb8011888088e5d7ac22fe5ab1a46eec3d83595d0da4ee56cf57f065b2899192",
+    "03-python-protocols/05-multiply-by-a-scalar/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "03-python-protocols/05-multiply-by-a-scalar/solution/main.py": "1c65fbbb176391f85623b0d7e53283dd0770693fb2d97ffd0c960b4186c5df3f",
+    "03-python-protocols/06-reflected-multiplication/lesson.md": "6f2ce5a80f4f9bfae205eb90fe82f24405b84e68346d574d27884956025d0e0f",
+    "03-python-protocols/06-reflected-multiplication/main.py": "94012a41ecae86c8059e5697d39421645e1a8e598667372be690e8820c26f6a1",
+    "03-python-protocols/06-reflected-multiplication/test_main.py": "7b4699fca51c82b15d5de1d139a764129717987d0931743ec165f899e392cbc1",
+    "03-python-protocols/06-reflected-multiplication/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "03-python-protocols/06-reflected-multiplication/solution/main.py": "d7a66ad2f0a90da76c87d45d51ae4024123a02bf56f06e81abec20593f8e9133",
+    "03-python-protocols/07-value-equality/lesson.md": "4ff9d5a69a24f0b6436d2b61538d30717f827681c82fdbf047d6aba1efe1710e",
+    "03-python-protocols/07-value-equality/main.py": "c8113489bc3e6ce0ad4f3559b32c09cea5d22234944f475d8636a815b83225b9",
+    "03-python-protocols/07-value-equality/test_main.py": "9871aba9edee20cecfc479bf3d91f030d20d3953327a2ea939b5c3667c0c603b",
+    "03-python-protocols/07-value-equality/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "03-python-protocols/07-value-equality/solution/main.py": "e760c0e9fbc28f24dfe2008b7cdc8b9fb3d94dfe13432d224d96d2b080433925",
+    "03-python-protocols/08-order-value-objects/lesson.md": "cee2dfd6bad067c14d62b2e4df2d47a24c9dfb7911348a4f4283529f27b1f154",
+    "03-python-protocols/08-order-value-objects/main.py": "a1b63592f23a94fee5a1fd8051e62060c6e0852b72571a455d0fd06be3d6f81d",
+    "03-python-protocols/08-order-value-objects/test_main.py": "406157a1fd54bc58632e2d9d5122a80dc643a98f9476e7ab57bb292273a93eb2",
+    "03-python-protocols/08-order-value-objects/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "03-python-protocols/08-order-value-objects/solution/main.py": "66549b3bc59c751842913ed0cc23b2645c5455ec45941875ebb1f41e2e913a49",
+    "03-python-protocols/09-sized-objects/lesson.md": "d536cad291a29cc9d867341117f6d4c607edc98218838c981c5084f5153fbab6",
+    "03-python-protocols/09-sized-objects/main.py": "002a024a1c79fbd0611306dece6983f7c2e5c197cee5849e2d3134c404c63690",
+    "03-python-protocols/09-sized-objects/test_main.py": "7c4843654a935056a5890525a249dd9d60f3a55ab1aeeb13d19c9cb36a93175f",
+    "03-python-protocols/09-sized-objects/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "03-python-protocols/09-sized-objects/solution/main.py": "cd236948fac43a7569f38863e55695b16774eca157beb1d378dde7fc95a2c697",
+    "03-python-protocols/10-truthy-objects/lesson.md": "2872af18360aa99af54d296a30e80290482e132c03692ffe1b57ce1267e79bb6",
+    "03-python-protocols/10-truthy-objects/main.py": "7efa6aace2043e0e70f43ce8182927144d895af1185d6f63d70e2aa810269d4f",
+    "03-python-protocols/10-truthy-objects/test_main.py": "c932a390001a14060d6884eaaebd4451001a60ac1104dae79283f389b32484aa",
+    "03-python-protocols/10-truthy-objects/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "03-python-protocols/10-truthy-objects/solution/main.py": "bd397482cf566e7c26bfd382fc67bf8ecf9d076565301f0573e840ee8f53487f",
+    "03-python-protocols/11-hashable-keys/lesson.md": "56e31116b167c008557d46d20740c9d9290c1a8262a2661558cf7b626e6208ed",
+    "03-python-protocols/11-hashable-keys/main.py": "84e43bf2acba01fce0b3aa6ea39097ff41c551a7d995ea9c1c228fde03672f49",
+    "03-python-protocols/11-hashable-keys/test_main.py": "ba791ab5b0c0260c2e659cc48dbe4c562c00c2081b7fcf3086963c12685d7adc",
+    "03-python-protocols/11-hashable-keys/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "03-python-protocols/11-hashable-keys/solution/main.py": "807471a3b3c648452383a2978d62784ec035c86095497571742aa967bb7b7099",
+    "03-python-protocols/12-callable-objects/lesson.md": "f2fac0478e0fc22224e95127fd73cf4a983eeb70e24c3beb453c94c5bf889888",
+    "03-python-protocols/12-callable-objects/main.py": "80c7b55f3957e891ecb87cdb2eac99bb94875e88988dab777d3c4c8783bdab10",
+    "03-python-protocols/12-callable-objects/test_main.py": "be70067a62a2cbef6d6a7be4175e9908f4f23a1a8c0373310b5970e4b78836df",
+    "03-python-protocols/12-callable-objects/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "03-python-protocols/12-callable-objects/solution/main.py": "f0fce4899c7b1607d27029709bfe9801e06bb9ec75c66d66783820960bca0973",
+    "03-python-protocols/13-custom-format/lesson.md": "2c3e1ea72115397652318de1f90db919fba75957ef68c0e4731e3684562f1150",
+    "03-python-protocols/13-custom-format/main.py": "eb1ef257a375de282523a22ad2f0acfed8ad14bb21bf63e974490ae0a3bb6111",
+    "03-python-protocols/13-custom-format/test_main.py": "a8537b1cbbb3bcd95fba15ebb201ed2abfb3acdc2b38827c0b398613a19ae7ee",
+    "03-python-protocols/13-custom-format/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "03-python-protocols/13-custom-format/solution/main.py": "6730d19de0959b07cc4f93957260074002b3a7440d17ecf3440127a8776561c3",
+    "03-python-protocols/14-explicit-cleanup/lesson.md": "db38bdef3650706f942060f945889674a97532979172cbc93394cfdf9394ef4e",
+    "03-python-protocols/14-explicit-cleanup/main.py": "90ec7b10534de670ad2b3c2276b6da3d7f035e0c49a0518030cdfc379c733554",
+    "03-python-protocols/14-explicit-cleanup/test_main.py": "62d63109e1252e16478d36315d5a5089ca6fc6c3c56c19e2a29d527815167026",
+    "03-python-protocols/14-explicit-cleanup/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "03-python-protocols/14-explicit-cleanup/solution/main.py": "6ab71561b28e6d8bd3b00e4fbec4434621aad2fb0844bf12387c4517c9e42776",
+    "03-python-protocols/quiz/index.yaml": "5e0d5d7e7c2643238c34ef2cccdc6fc1fc23d6b1f0da947c4192fab529806514",
+    "03-python-protocols/quiz/q01.md": "9b3d9ad9ad046d6fbf2eefb0d64c4637036be13763813f8ada37f27e043676fb",
+    "03-python-protocols/quiz/q02.md": "fce415b4a06e2f7b1ad5de744682cf0388ebb82999f169f719fccf8bfa9715b4",
+    "03-python-protocols/quiz/q03.md": "a94ec011ac427a33d53fee0a8f56283c555ec43190646f17331ee91df909deda",
+    "03-python-protocols/quiz/q04.md": "f1393cedbfa5ec89dd7841d94e74900d4d84557247036671e05ebbb5e57a54d9",
+    "04-inheritance/01-inherit-a-method/lesson.md": "a093550657305f882d635e7ae7dc3c54d65bc02de338775abe44345c4fef6b9d",
+    "04-inheritance/01-inherit-a-method/main.py": "fb24371af05bb6a4174a29c4844f00e17727a7f13f26f12a84ba88fc26d44c60",
+    "04-inheritance/01-inherit-a-method/test_main.py": "ad0654f22203b3f1ddb3e5dda79de3a091eb6312f550a307301f52bb977daf97",
+    "04-inheritance/01-inherit-a-method/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "04-inheritance/01-inherit-a-method/solution/main.py": "34a98e18dadd98e640ea254b52c84c55d25db34156635894171216ed07e83a65",
+    "04-inheritance/02-the-object-base/lesson.md": "fed07f9d3ba16841d633039a5a73595930bf209be9dd563b9cbc5f0496ed1787",
+    "04-inheritance/02-the-object-base/main.py": "c4f28484b599f388ab99bf047a8f5dfef0a4fa9e6628073796942b986b34abe4",
+    "04-inheritance/02-the-object-base/test_main.py": "9d39e4aef180af5509bf98752a438a710a99b41b3bc9f526094e3710a6da9af2",
+    "04-inheritance/02-the-object-base/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "04-inheritance/02-the-object-base/solution/main.py": "dc6586d5a93deba5c95e5361c9d68e75edf0aa0709d260ef1f12c9c0b67e89a4",
+    "04-inheritance/03-extend-initialization/lesson.md": "abf27b1ae09994af69013f7b09a671a705f4582d255681e54a39854ef2f19e36",
+    "04-inheritance/03-extend-initialization/main.py": "e0dde30011261ade2fad9dcef31ab6be926fb37f621db2500486ccfd888a3298",
+    "04-inheritance/03-extend-initialization/test_main.py": "0cd293e746dc8af265aa487bd047e7076984ba10b50fc781569d01f8e6019041",
+    "04-inheritance/03-extend-initialization/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "04-inheritance/03-extend-initialization/solution/main.py": "c598b310336cba931b4d132fd61179ef98107d9d361ea7cbcc8d2784cd870bb9",
+    "04-inheritance/04-override-a-method/lesson.md": "c4dc7c1fab128daf8a81ef431aa138157aa1d012af712bac35876279eccfdf76",
+    "04-inheritance/04-override-a-method/main.py": "045a56af13a05c846e37ce416106b40d001fb0874514d563c7dd7b7f6b01219b",
+    "04-inheritance/04-override-a-method/test_main.py": "048aefef8e873b01e5ba0cbe8e2d32d885cb7936ede48960ba67cd614f01973a",
+    "04-inheritance/04-override-a-method/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "04-inheritance/04-override-a-method/solution/main.py": "c4768bc6b56965659cc00fdd5444ac563b233ad2906f5ab89740f638aa56b725",
+    "04-inheritance/05-reuse-with-super/lesson.md": "4cbe2630a92b630ed544bd1b91aca7c55e50b98359b7de1a5cb98329e6c21996",
+    "04-inheritance/05-reuse-with-super/main.py": "178bacc4559f9743dfcdd2f001feb67f3330017f5687d7e9b8198d9c80c7128d",
+    "04-inheritance/05-reuse-with-super/test_main.py": "418640ebd73e54e9e8343b7eeb06c80f4f4ec9078663c032d4b8c0dc0f549752",
+    "04-inheritance/05-reuse-with-super/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "04-inheritance/05-reuse-with-super/solution/main.py": "5276f7a86704169f21ae0c5eefd6096ed40480d23d76a27738635704f5a383e7",
+    "04-inheritance/06-substitution-in-a-loop/lesson.md": "1d2ccaa9a520457d9e3ee1d7d03105cc0dc279e755c4f1560a1562e283623fbd",
+    "04-inheritance/06-substitution-in-a-loop/main.py": "acd0b7a6736949f6d8f23466782b8cea6dfc64f545b7143510098399cf1fdcc5",
+    "04-inheritance/06-substitution-in-a-loop/test_main.py": "2872f19fefea0145586177f56681a0282bca9ea77ca59a1a0e5973736ac3ea40",
+    "04-inheritance/06-substitution-in-a-loop/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "04-inheritance/06-substitution-in-a-loop/solution/main.py": "fd0c0fd0904b2b815578f17c2214b48a004400312073a3506da91355f0131434",
+    "04-inheritance/07-compose-a-service/lesson.md": "7d49a16a550e630804870ba57dfc84106265653d29938456596f66c5be9c9d08",
+    "04-inheritance/07-compose-a-service/main.py": "fae3fa453764b78e6c81d64945e670a26d275962d75e12819435e84fda456abb",
+    "04-inheritance/07-compose-a-service/test_main.py": "7fab606bcaf0e8aedd109f8d5797f8acd8292b836c3a3ebf01cacce9b4764a56",
+    "04-inheritance/07-compose-a-service/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "04-inheritance/07-compose-a-service/solution/main.py": "2822c31cc418ea94be6c103fa88f94647cffa8bd45751e8f1d7254c5f5055276",
+    "04-inheritance/08-introduce-slots/lesson.md": "31bbb721991f30e5c82ee9893428c952769cb921d4bde0d16c2fb5b93070d6af",
+    "04-inheritance/08-introduce-slots/main.py": "e1b84427cd739e515bb2e3d5309e2ba6c953d30596b49b622106ecf73747ee50",
+    "04-inheritance/08-introduce-slots/test_main.py": "2162dcd7d78052c1365680f4260c5146c2f7721fd612e8592b4482b68b1a8560",
+    "04-inheritance/08-introduce-slots/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "04-inheritance/08-introduce-slots/solution/main.py": "201ecadd00e3bfdc597600341bc1325edc54da48dbb02d7c38c2184a7b014287",
+    "04-inheritance/09-slots-in-subclasses/lesson.md": "b6b56d335a29363d7425bff90499c2e9c36c90a649b2699ba333b03fd80af25d",
+    "04-inheritance/09-slots-in-subclasses/main.py": "306ed4c0d45dbf64490fb98a60dba82a5fbb59eefe0d5f447f6e7a4860f69a91",
+    "04-inheritance/09-slots-in-subclasses/test_main.py": "084139bd4f68acb9b70ea61c06c3c5d305767158aed8135624fe393d5758106d",
+    "04-inheritance/09-slots-in-subclasses/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "04-inheritance/09-slots-in-subclasses/solution/main.py": "fe5ba180b02fc124e7c54b94551552ce865a4d2225ad48ef94dfe45f0460b419",
+    "04-inheritance/10-multiple-inheritance/lesson.md": "d46d2e8a8b0764f5e2935c75787f329f6211ac7fcbb5f2393f94923c512210ea",
+    "04-inheritance/10-multiple-inheritance/main.py": "1cd78ffb283412f4e878e454c43cfce42b8c312544d9475d41a20c3a5c8451a8",
+    "04-inheritance/10-multiple-inheritance/test_main.py": "ab308dfe3a801416db490002713763ca08c91506cbf6a5942bccdad61fbb2c51",
+    "04-inheritance/10-multiple-inheritance/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "04-inheritance/10-multiple-inheritance/solution/main.py": "cb6ba6080628789581081a9bf6d500d97bc55da0ecec73fa153f668dc63409ba",
+    "04-inheritance/11-inspect-the-mro/lesson.md": "52baa51e239b531eeedcc3832a77b6a3a21f20a5d40c3a46b3823baa68675b21",
+    "04-inheritance/11-inspect-the-mro/main.py": "7218e853812a5f6989ea5b021b4810d6321f3fb8d21e515ea06334873e415338",
+    "04-inheritance/11-inspect-the-mro/test_main.py": "da6f65b77612458a28e3d9fba337ac8b351de1f971098a87fd3284c875e0a64f",
+    "04-inheritance/11-inspect-the-mro/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "04-inheritance/11-inspect-the-mro/solution/main.py": "715feacf7772cc7ee232e164f96ff0fbe54dd7224799e1ef4d4abdc94360cc50",
+    "04-inheritance/12-cooperative-diamond/lesson.md": "6b7c0198e71b863766200cb01c63f90c3698d5d18ca16a17013458296270b819",
+    "04-inheritance/12-cooperative-diamond/main.py": "008e78f29247a360e13cd30b2cc71bcf40b1d20a3cce8056a33cb2cfeb5c2523",
+    "04-inheritance/12-cooperative-diamond/test_main.py": "18b37ce98b1f2ef9b87045f11efcaaca95c5466bbad8b4706269ac8f5f575b7a",
+    "04-inheritance/12-cooperative-diamond/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "04-inheritance/12-cooperative-diamond/solution/main.py": "5e19dc0210bb09101176fd99084b43860abcb57a2c64b0fee3dd96deef5d37a7",
+    "04-inheritance/quiz/index.yaml": "1d4f782fff19e31dd84ceefa1cbf3f4e175c76fd25b4f07ec0bac0c0c196a6a8",
+    "04-inheritance/quiz/q01.md": "9dd80d5274bacf16adb0d1cf1d7057783a684f2c1488bef662cf053d6add3484",
+    "04-inheritance/quiz/q02.md": "56cf1d41500661b39d6a562339007b351256bcfa7c18b72856abd11dec522dee",
+    "04-inheritance/quiz/q03.md": "7b407ff87535c834255df4a8600d7c366acd7d45ed7a0ea5c82cc4177be1af3f",
+    "04-inheritance/quiz/q04.md": "fdbd620dc3f3ed66e7991edfc575bb7825faba3be9ffd0a3972e4d101c18e98b"
+  },
+  "whitespace_check": "git diff --no-index --check against each authored file: passed",
+  "summary": {
+    "lessons": 26,
+    "task_test_pairs": 26,
+    "starter_tests_passed": 0,
+    "solution_tests_passed": 26,
+    "starter_and_solution_runs": 52,
+    "executed_tiny_examples": 26,
+    "quiz_questions": 8,
+    "adversaries_rejected": 26
+  }
+}

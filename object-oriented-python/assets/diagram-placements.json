@@ -1,0 +1,50 @@
+[
+  {
+    "file": "class-and-instance-state.svg",
+    "lesson": "01-classes-and-objects/11-independent-instance-lists",
+    "alt": "One class supplies shared behavior while two instances own independent lists; changing one leaves the other unchanged.",
+    "sha256": "1a9c81179b9958283c48e0c0b47e9ba6153d4fd08a5f7ffa2efff4225eb929e4"
+  },
+  {
+    "file": "bound-method-self.svg",
+    "lesson": "02-object-interfaces/01-bound-methods",
+    "alt": "A bound method remembers its receiver: a.deposit(5) calls Account.deposit(a, 5).",
+    "sha256": "5edeb34185ff77a388f643ae8b2e1f22dcb3e2d3fb20e6350520cda1a772bb9a"
+  },
+  {
+    "file": "reflected-operator-dispatch.svg",
+    "lesson": "03-python-protocols/06-reflected-multiplication",
+    "alt": "Integer multiplication declines an unrelated Vector, then Python tries Vector.__rmul__; both declining causes TypeError.",
+    "sha256": "dd5507f4164a569d1a74faafc944c36c1c770762e7e82c5fcb28ddcfec7bceb3"
+  },
+  {
+    "file": "cooperative-mro-order.svg",
+    "lesson": "04-inheritance/12-cooperative-diamond",
+    "alt": "The example diamond has MRO D, B, C, A, object; super inside B continues at C on a D instance.",
+    "sha256": "ae9cd48386353271464438200b64e31ac9a9978c73fba7f294e1bf53fa29a01e"
+  },
+  {
+    "file": "composed-service-delegation.svg",
+    "lesson": "04-inheritance/07-compose-a-service",
+    "alt": "A service delegates charging to an injected real or fake gateway without inheriting from it.",
+    "sha256": "97fb9f98c272549a07628b770d27086c8d48f12b506ca66d754ce7cc9ab9d606"
+  },
+  {
+    "file": "enum-member-and-value.svg",
+    "lesson": "07-enums-and-records/02-explicit-enum-values",
+    "alt": "Status.PAID converts to the stored string paid through .value; Status(\"paid\") reconstructs the enum member.",
+    "sha256": "2fa13cd0e37175d42385caed66861ba574fb6241fe9c700e81ccc3643c87d506"
+  },
+  {
+    "file": "descriptor-lookup-precedence.svg",
+    "lesson": "08-descriptors/08-non-data-descriptor-priority",
+    "alt": "Ordinary lookup prioritizes readable data descriptors, instance data, non-data descriptors, then ordinary class attributes.",
+    "sha256": "7f7ef18666d8411080e49a18f033a29c765152c024c3a20a004f461087898e2a"
+  },
+  {
+    "file": "cart-order-invoice-snapshot.svg",
+    "lesson": "10-ecommerce-project/07-order-snapshot",
+    "alt": "Checkout snapshots cart values; invoices read the order, remaining unaffected by later cart or catalog edits.",
+    "sha256": "47064e86d01abf86c8e7d292353afc840d99ef12c7f7aaeb9b0517150d2dc301"
+  }
+]

@@ -1,0 +1,47 @@
+---
+title: "Extend initialization with super"
+slug: "extend-initialization"
+order: 3
+language: "python"
+lesson_type: "coding"
+summary: "Initialize base state before storing a subclass-specific field."
+seo_title: "Extend initialization with super | Object-oriented Python"
+seo_description: "Initialize base state before storing a subclass-specific field. Practice with runnable Python code and behavioral checks."
+seo_keywords: ["python", "extend initialization", "object oriented programming"]
+hints: ["The base receives only its own argument; the subclass stores its extra field afterward."]
+---
+
+# Extend initialization with super
+
+A timed ticket needs everything a ticket already knows, plus an admission hour. The starter supplies the base class and subclass declaration. Complete only the subclass initializer so each part receives the data it owns.
+
+Defining `__init__` in a subclass replaces the inherited initializer for construction. Python does not automatically run both bodies. If the base initializer establishes fields that its methods need, the subclass must arrange that work. Otherwise a seemingly successful construction can fail later when an inherited method reads missing state.
+
+Inside an instance method, `super()` provides access to the next implementation in the instance's method resolution order. With this simple single-inheritance chain, that next initializer is the base class's initializer. Calling `super().__init__(argument)` passes the instance automatically; do not supply `self` again. After the base setup, assign the subclass's additional field.
+
+The example adds a color to a geometric point. Its base owns a coordinate, so the specialized initializer forwards that argument rather than reimplementing the coordinate assignment. Your ticket classes have different fields, but the ownership boundary is the same. If the base later validates or normalizes its input, a delegating subclass will still use that behavior.
+
+Keep method signatures in view. A signature is the list of parameters a callable accepts. The ticket base accepts one title argument; the timed ticket accepts a title and hour. Only the title belongs in the call to the base initializer. Forwarding both would raise `TypeError` because that initializer has no hour parameter.
+
+The tests temporarily observe the base initializer to verify delegation, not just the final attributes. That protects the learning goal: copying the base assignment may produce the same sample label but bypass the shared initialization policy.
+
+## A small example
+
+```python
+class Point:
+    def __init__(self, x):
+        self.x = x
+
+class ColoredPoint(Point):
+    def __init__(self, x, color):
+        super().__init__(x)
+        self.color = color
+
+print(ColoredPoint(5, "blue").x)
+```
+
+## Your Tasks
+
+1. Complete `TimedTicket.__init__(title, hour)` by calling the base initializer through `super()` with `title`, then storing `hour` on this instance.
+
+Edit `main.py`, then press Run to inspect the supplied probe. A `Not ready` message means the unfinished operation raised an exception; it does not complete the task. Press Submit to check the behavior with additional values. You do not need to edit the probe.

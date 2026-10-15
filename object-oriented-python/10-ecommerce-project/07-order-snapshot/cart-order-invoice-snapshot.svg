@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="650" viewBox="0 0 600 650" role="img" aria-labelledby="title desc">
+<title id="title">Snapshot Once, Report From the Order</title><desc id="desc">Checkout copies cart line values into independent order line records. Later cart edits do not change the order. The invoice uses order quantities and captured unit prices, not the live cart or catalog.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#40566f"/></marker></defs>
+<rect width="600" height="650" rx="18" fill="#f8fafd"/>
+<rect x="24" y="24" width="552" height="5" rx="2" fill="#3974bd"/>
+<text x="300" y="62" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#172c46">Snapshot Once, Report From the Order</text>
+<text x="300" y="91" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#40566f">CONCEPTUAL MODEL · ILLUSTRATIVE EXAMPLE</text>
+<g data-card="true"><rect x="65" y="120" width="470" height="94" rx="12" fill="#e8f1ff" stroke="#91a7bd" stroke-width="1.5"/>
+<text x="300.0" y="146.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Editable Cart</text>
+<text x="300.0" y="174.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">Tea · quantity 2 · unit price 500 cents</text>
+<text x="300.0" y="202.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">Live shopping state</text>
+</g>
+<path data-connector="true" d="M300 214 L300 270" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="444" y="248" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#172c46">Copy line values</text>
+<g data-card="true"><rect x="65" y="270" width="470" height="94" rx="12" fill="#ddf5ee" stroke="#91a7bd" stroke-width="1.5"/>
+<text x="300.0" y="296.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Order Snapshot</text>
+<text x="300.0" y="324.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">Tea · quantity 2 · unit price 500 cents</text>
+<text x="300.0" y="352.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">Independent order line records</text>
+</g>
+<path data-connector="true" d="M300 364 L300 420" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="436" y="398" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#172c46">Read order only</text>
+<g data-card="true"><rect x="65" y="420" width="470" height="94" rx="12" fill="#eee8ff" stroke="#91a7bd" stroke-width="1.5"/>
+<text x="300.0" y="446.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Invoice</text>
+<text x="300.0" y="474.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">Tea: 2 × 500 = 1000 cents</text>
+<text x="300.0" y="502.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">Total derived from captured values</text>
+</g>
+<text x="300" y="576" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">Later cart or catalog edits must not alter this order.</text>
+<text x="300" y="601" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">Copy records, not just the outer list.</text>
+<text x="300" y="626" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">Invoice prices come from the snapshot.</text>
+</svg>

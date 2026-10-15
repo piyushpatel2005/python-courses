@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800" role="img" aria-labelledby="title desc">
+<title id="title">super() Follows the MRO</title><desc id="desc">For A(object), B(A), C(A), and D(B, C), D has method resolution order D, B, C, A, object. Cooperative super calls follow that order, so super in B can call C on a D instance.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#40566f"/></marker></defs>
+<rect width="600" height="800" rx="18" fill="#f8fafd"/>
+<rect x="24" y="24" width="552" height="5" rx="2" fill="#3974bd"/>
+<text x="300" y="62" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#172c46">super() Follows the MRO</text>
+<text x="300" y="91" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#40566f">CONCEPTUAL MODEL · ILLUSTRATIVE EXAMPLE</text>
+<g data-card="true"><rect x="40" y="120" width="520" height="92" rx="12" fill="#eee8ff" stroke="#91a7bd" stroke-width="1.5"/>
+<text x="300.0" y="159.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Example Base Declarations</text>
+<text x="300.0" y="187.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">A(object) · B(A) · C(A) · D(B, C)</text>
+</g>
+<text x="300" y="244" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#172c46">D.__mro__: lookup and cooperative call order</text>
+<g data-card="true"><rect x="210" y="266" width="180" height="60" rx="12" fill="#e8f1ff" stroke="#91a7bd" stroke-width="1.5"/>
+<text x="300.0" y="303.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">D</text>
+</g>
+<path data-connector="true" d="M300 326 L300 342" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
+<g data-card="true"><rect x="210" y="342" width="180" height="60" rx="12" fill="#ddf5ee" stroke="#91a7bd" stroke-width="1.5"/>
+<text x="300.0" y="379.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">B</text>
+</g>
+<path data-connector="true" d="M300 402 L300 418" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
+<g data-card="true"><rect x="210" y="418" width="180" height="60" rx="12" fill="#ddf5ee" stroke="#91a7bd" stroke-width="1.5"/>
+<text x="300.0" y="455.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">C</text>
+</g>
+<path data-connector="true" d="M300 478 L300 494" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
+<g data-card="true"><rect x="210" y="494" width="180" height="60" rx="12" fill="#eee8ff" stroke="#91a7bd" stroke-width="1.5"/>
+<text x="300.0" y="531.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">A</text>
+</g>
+<path data-connector="true" d="M300 554 L300 570" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
+<g data-card="true"><rect x="210" y="570" width="180" height="60" rx="12" fill="#fff1d7" stroke="#91a7bd" stroke-width="1.5"/>
+<text x="300.0" y="607.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">object</text>
+</g>
+<text x="300" y="726" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">On a D instance, super() inside B continues at C.</text>
+<text x="300" y="751" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">Each cooperative method calls super() once.</text>
+<text x="300" y="776" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">The shared A is visited once, not once per branch.</text>
+</svg>

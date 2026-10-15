@@ -1,0 +1,1601 @@
+{
+  "scope": [
+    "01-classes-and-objects",
+    "02-object-interfaces"
+  ],
+  "runtime": "3.12.12 (main, Jan 27 2026, 23:41:44) [Clang 21.1.4 ]",
+  "verification": "CPython execution plus actual backend loader; browser/Pyodide and diagrams handled by parent",
+  "lessons": [
+    {
+      "path": "01-classes-and-objects/01-define-a-class",
+      "word_count": 320,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Not ready yet: name 'Tool' is not defined\n",
+        "results": [
+          {
+            "name": "test_tool_is_a_class",
+            "passed": false,
+            "error": "AssertionError: Define the Tool class above the console probe."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Tool instance: True\n",
+        "results": [
+          {
+            "name": "test_tool_is_a_class",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 2,
+      "loader": {
+        "slug": "define-a-class",
+        "order": 1,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "22e5b2fe15335d9f1a47ef814e9b82d9401c8634250d47182ecd6132c2d685c8",
+        "main.py": "addc11cb1ce215902cb78cf75fbbd90f3f9e24e35f536f2906ed390695572a61",
+        "test_main.py": "597ac75dc85d5b5a29c480d9f17779580f2a359b8bc49616e5ed374b93317054",
+        "solution/main.py": "963658bc05d4cd4daf26866b83c554c3aaf9b8445324bdd941ecbd5dfdab9402"
+      },
+      "adversarial_check": {
+        "mutation": "Class replaced by a callable factory",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_tool_is_a_class",
+            "passed": false,
+            "error": "AssertionError: Tool must be a class, not an instance or a function."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Class/instance vocabulary starts from zero; pass and the supplied guard are explained."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Kept the first change small; concrete parcel example differs from tool task."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "01-classes-and-objects/02-create-two-objects",
+      "word_count": 301,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Both tools: False\nSeparate objects: False\n",
+        "results": [
+          {
+            "name": "test_two_separate_tools",
+            "passed": false,
+            "error": "AssertionError: Create drill with a Tool call."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Both tools: True\nSeparate objects: True\n",
+        "results": [
+          {
+            "name": "test_two_separate_tools",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 2,
+      "loader": {
+        "slug": "create-two-objects",
+        "order": 2,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "e8434facdb122b6f5a86975032aa943da2156c63cfe03f29fbcdb4fcbbe528e9",
+        "main.py": "973515282a43f673c46479269da2bd3a6a0478d69b250aa349f7f421313bc066",
+        "test_main.py": "c7ffadce6ae6b92d8308b56f75e9409f764ee29fa53c00593e0be117987c7a16",
+        "solution/main.py": "3461ac4433c37f33971d554acd79baa4b319c55f0de1f54a123f8833f0afbd9e"
+      },
+      "adversarial_check": {
+        "mutation": "Aliased objects",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_two_separate_tools",
+            "passed": false,
+            "error": "AssertionError: Two names for one object are not two tools."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Two-object identity task tests aliases rather than merely two variable names."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Assignment explanation avoids container metaphors and distinguishes names from objects."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "01-classes-and-objects/03-attach-instance-data",
+      "word_count": 320,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Not ready yet: 'Tool' object has no attribute 'name'\n",
+        "results": [
+          {
+            "name": "test_each_tool_keeps_its_name",
+            "passed": false,
+            "error": "AssertionError: Store the name parameter on each tool."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Tool names: drill saw\n",
+        "results": [
+          {
+            "name": "test_each_tool_keeps_its_name",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "attach-instance-data",
+        "order": 3,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "616112fcf23d27681fe4d9c67e7561d387fcfe5105d42e14f6b561d178c424ed",
+        "main.py": "27ae76dd29d5e0b237b696292b0b7dca09728005fcaa1aaf33a5e6af7703ec4e",
+        "test_main.py": "099cadbf7a5183733062412df2184c388cea7248eb2ce7eccb6859e4fcdcafc2",
+        "solution/main.py": "cf41fcd181c0a2e380291cfa3111ff2e9d350c972fd27a720d186afc0a4279ac"
+      },
+      "adversarial_check": {
+        "mutation": "Constant name",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_each_tool_keeps_its_name",
+            "passed": false,
+            "error": "AssertionError: Store the name parameter on each tool."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Ordinary factory supplies setup; learner adds one instance attribute from a parameter."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Explains literal versus parameter without repeating the answer assignment."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "01-classes-and-objects/04-read-and-update-data",
+      "word_count": 311,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Recorded uses: 3\n",
+        "results": [
+          {
+            "name": "test_usage_updates_accumulate",
+            "passed": false,
+            "error": "AssertionError: Add to the existing count rather than replacing it."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Recorded uses: 9\n",
+        "results": [
+          {
+            "name": "test_usage_updates_accumulate",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "read-and-update-data",
+        "order": 4,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "fa6c9d1da3097b2201afa763209ceec54280b35ac1df41e03125eb23dd78f275",
+        "main.py": "0896b859cf283e1937ba0961e65e15f6dc584534fcdeb40ca71c5e9033f5ea82",
+        "test_main.py": "17af2f9c2bb3e61678936d1e7f4e15fdcd05fe8bf007c906f0ed6ce64fbed9c9",
+        "solution/main.py": "d527ba5fb8c55fa9f998c7046154ddb377b8a231f1d204c48797d391ba8b9858"
+      },
+      "adversarial_check": {
+        "mutation": "Replace instead of accumulate",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_usage_updates_accumulate",
+            "passed": false,
+            "error": "AssertionError: Add to the existing count rather than replacing it."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Mutation task uses existing nonzero state and another instance."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Clarified that no return is needed and the original object is observed."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "01-classes-and-objects/05-class-defaults",
+      "word_count": 305,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Not ready yet: type object 'Tool' has no attribute 'loan_days'\n",
+        "results": [
+          {
+            "name": "test_tools_use_the_class_default",
+            "passed": false,
+            "error": "AssertionError: Set loan_days in the class body."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Class loan period: 7\nInstance loan period: 7\n",
+        "results": [
+          {
+            "name": "test_tools_use_the_class_default",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 2,
+      "loader": {
+        "slug": "class-defaults",
+        "order": 5,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "1df621e29868b4e4a31e1880d853a8dbce3d14a33b7e5d472ccdd3dcdb493759",
+        "main.py": "9674a89bfbeda07c6360c25027c7a336483f0b99604e346d9dd6352c63beb603",
+        "test_main.py": "7c5c8b13ab0dc5a6903689ab2dd80b9c989e4cbddb528ce360b7935021a9bc8e",
+        "solution/main.py": "6d9a03914b6570f10d9e8b4ee49a1d0bb6df691837870f1e10e6754a32427945"
+      },
+      "adversarial_check": {
+        "mutation": "Copied class default",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_tools_use_the_class_default",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Class-level fallback precedes shadowing and methods; changed-default behavior is tested."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Explains defaults as lookup rather than copied values."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "01-classes-and-objects/06-shadow-a-class-default",
+      "word_count": 301,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Loan periods: 7 7 7\n",
+        "results": [
+          {
+            "name": "test_one_tool_overrides_the_default",
+            "passed": false,
+            "error": "AssertionError: Assign the override on the supplied tool."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Loan periods: 14 7 7\n",
+        "results": [
+          {
+            "name": "test_one_tool_overrides_the_default",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "shadow-a-class-default",
+        "order": 6,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "e645b35b32159ca481c377299f72d1fe628072490a72be61bc8a9ef76aa9c7b9",
+        "main.py": "e7234fe2a42ac679957eb3dc94d47192138bda1b3c50964e2895297e28ceb126",
+        "test_main.py": "819c66a4aa0baf3290387e7d72ec58b149823bd9eec8b131edd0769560b9c5f5",
+        "solution/main.py": "e0c96a61deedd2395e80abccc679d5df0571e9f6459a86017cb14d432c5ffbd3"
+      },
+      "adversarial_check": {
+        "mutation": "Mutate shared default",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_one_tool_overrides_the_default",
+            "passed": false,
+            "error": "AssertionError: Do not change the class default."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Instance override tested against class updates and another instance."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Explicit replacement contract prevents extend_loan from being mistaken for addition."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "01-classes-and-objects/07-write-an-instance-method",
+      "word_count": 316,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Not ready yet: 'Tool' object has no attribute 'record_use'\n",
+        "results": [
+          {
+            "name": "test_record_use_updates_its_receiver",
+            "passed": false,
+            "error": "AssertionError: Define record_use inside Tool with self as its parameter."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Uses after two calls: 7\n",
+        "results": [
+          {
+            "name": "test_record_use_updates_its_receiver",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "write-an-instance-method",
+        "order": 7,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "7ccbd6ac50c1cb7383efe50062370626b6b1ef5a4a76977f2bbd29a8b5084bae",
+        "main.py": "583d9210ca124a44c49afb8418e8c4840bc433018aaca7cb34ca9a4044a24a9b",
+        "test_main.py": "3982cb480f742e518e466f0c43167d86911a5774274c0757a626cb4664426802",
+        "solution/main.py": "8f93dbbcc8450c89b96b84dfe27a1aab9d3c5e38c920fb000b31a4baeb4463ff"
+      },
+      "adversarial_check": {
+        "mutation": "Reset method count",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_record_use_updates_its_receiver",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "First method explains def indentation, self, and implicit receiver."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Lamp example performs a different operation; factory remains supplied setup."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "01-classes-and-objects/08-return-a-value",
+      "word_count": 318,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "None\nNone\n",
+        "results": [
+          {
+            "name": "test_summary_returns_current_data",
+            "passed": false,
+            "error": "AssertionError: Return the formatted string instead of printing it."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "drill: 2 uses\ndrill: 3 uses\n",
+        "results": [
+          {
+            "name": "test_summary_returns_current_data",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "return-a-value",
+        "order": 8,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "ef2cbc025a797060906da52ebf59b7af7251b2d07bd04d39d36bd974cc85f46e",
+        "main.py": "138085da2c66c556b679212fb460db3caa1872a5cfeb535944e3e48f01c44c03",
+        "test_main.py": "c4ea27f9f907d7a3b1c34c451e6af3ef40c740f4ab8ee056a4ae41f0345fe870",
+        "solution/main.py": "c2a55783950640155ab664cd72873cd7d5120e392cefd954b61662cd327a3df3"
+      },
+      "adversarial_check": {
+        "mutation": "Constant summary",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_summary_returns_current_data",
+            "passed": false,
+            "error": "AssertionError: Return the formatted string instead of printing it."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Return/print distinction checked with stdout capture and changing state."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Changed add missing method to complete supplied method, matching starter."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "01-classes-and-objects/09-initialize-an-object",
+      "word_count": 312,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Not ready yet: 'Tool' object has no attribute 'name'\n",
+        "results": [
+          {
+            "name": "test_initialization_stores_each_tools_data",
+            "passed": false,
+            "error": "AssertionError: Store both constructor arguments on self."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "drill: 4 uses\nsaw: 1 uses\n",
+        "results": [
+          {
+            "name": "test_initialization_stores_each_tools_data",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "initialize-an-object",
+        "order": 9,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "73a77da1dee0f59296731e54371700bf332024cce3309c58f4dabb6e1a9916e7",
+        "main.py": "a7528f560b4c9219be16042b4087e591d47508cc4ff02c4fd1e2ffabc4b15068",
+        "test_main.py": "693f9083b400bf803a0ba55f285ce5ed75771b224d4d68d80ce2722fe1f9ad7d",
+        "solution/main.py": "4aa990cc929c969fa00a290956b94f762f6d98aca495041231abf9a6219ecd90"
+      },
+      "adversarial_check": {
+        "mutation": "Constant initializer name",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_initialization_stores_each_tools_data",
+            "passed": false,
+            "error": "AssertionError: Store both constructor arguments on self."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Initializer introduced only after methods and attributes; no non-None return."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Envelope example explains local parameter versus instance attribute patiently."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "01-classes-and-objects/10-constructor-defaults",
+      "word_count": 320,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Not ready yet: Tool.__init__() missing 1 required positional argument: 'uses'\n",
+        "results": [
+          {
+            "name": "test_default_and_explicit_usage_counts",
+            "passed": false,
+            "error": "TypeError: Tool.__init__() missing 1 required positional argument: 'uses'"
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "New tool uses: 0\nImported tool uses: 6\n",
+        "results": [
+          {
+            "name": "test_default_and_explicit_usage_counts",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "constructor-defaults",
+        "order": 10,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "396a7fcccb57368d5d2c0cc747aabeaa318cb08725a1bd62e0be45d145bd92dc",
+        "main.py": "82c0b3a6857187bc144f0620ac352e015dfa769a75f7675396fd5875e902a354",
+        "test_main.py": "e0b1bed224999ae332a14819c896b35a86f76dbd782c9d20f55993237a7d86a9",
+        "solution/main.py": "0abd7e7676b6026907d9b706d55427776eb5951d616d0bfe345c59f5674f2c71"
+      },
+      "adversarial_check": {
+        "mutation": "Discard explicit count",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_default_and_explicit_usage_counts",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Default parameter distinguished from shared class default; explicit values retained."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Signature-focused task avoids asking for unrelated state changes."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "01-classes-and-objects/11-independent-instance-lists",
+      "word_count": 325,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Not ready yet: 'Tool' object has no attribute 'notes'\n",
+        "results": [
+          {
+            "name": "test_notes_are_independent_lists",
+            "passed": false,
+            "error": "AssertionError: Create an empty notes list in __init__."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Drill notes: ['battery checked']\nSaw notes: []\n",
+        "results": [
+          {
+            "name": "test_notes_are_independent_lists",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "independent-instance-lists",
+        "order": 11,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "class-and-instance-state.svg": "1a9c81179b9958283c48e0c0b47e9ba6153d4fd08a5f7ffa2efff4225eb929e4",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "7a3f1a2d4f6b6fd370e394cc9928ed8ffd2998d3e33baa58bbc7817b3eaa6eea",
+        "main.py": "2ddcc88638a7301ce8ca153ae86c0c89bfee5942c0b17c1610bea2002b8df59d",
+        "test_main.py": "7cfe87ef47985a518e8f1a1947c3ecc95f10e060fb1311d7c2c8df3643d67868",
+        "solution/main.py": "77090ee3af29861ef4a0ccbb0f229389757c91f8728f1feec30ec77544978f81"
+      },
+      "adversarial_check": {
+        "mutation": "Shared notes collection",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_notes_are_independent_lists",
+            "passed": false,
+            "error": "AssertionError: Each initializer call needs a fresh list."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Each list ownership tested with repeated mutation, another instance, and a new object."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Explains both class-body and mutable-argument sharing, without requiring either trap."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "01-classes-and-objects/12-class-body-scope",
+      "word_count": 330,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Default: None\nOverride: None\n",
+        "results": [
+          {
+            "name": "test_label_uses_receiver_attribute_lookup",
+            "passed": false,
+            "error": "AssertionError: Read prefix through self, not the global name."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Default: TOOL-A1\nOverride: REPAIR-B2\n",
+        "results": [
+          {
+            "name": "test_label_uses_receiver_attribute_lookup",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "class-body-scope",
+        "order": 12,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "e129e1d111943e1d100f58c8f39032a2bdae5174154c467a31a291cc6426fbc9",
+        "main.py": "d297797b8169829c0446ba5bb6dee9bbd37c7d7cd20663ced44f45552cfe30f7",
+        "test_main.py": "880fa86eaa670f3488d8eab4870e2e844e8ee06b90d6dfe2dfb341eea0fc0c24",
+        "solution/main.py": "951f47e1aa806185c34cb36748dafd049fccc9edf6a87b02dd87ce0c2658c4d2"
+      },
+      "adversarial_check": {
+        "mutation": "Global rather than receiver prefix",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_label_uses_receiver_attribute_lookup",
+            "passed": false,
+            "error": "AssertionError: Read prefix through self, not the global name."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Global/class/instance lookup contrasted with deliberately conflicting prefixes."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Workshop labels close the module without generic congratulatory prose."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "02-object-interfaces/01-bound-methods",
+      "word_count": 291,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Before action: 3\nNot ready yet: 'NoneType' object is not callable\n",
+        "results": [
+          {
+            "name": "test_deferred_method_remembers_its_tool",
+            "passed": false,
+            "error": "AssertionError: Return tool.record_use without parentheses."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Before action: 3\nAction result: 4\n",
+        "results": [
+          {
+            "name": "test_deferred_method_remembers_its_tool",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "bound-methods",
+        "order": 1,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "bound-method-self.svg": "5edeb34185ff77a388f643ae8b2e1f22dcb3e2d3fb20e6350520cda1a772bb9a",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "1909e9dbaf542a80540f1bb9469b31a6fbba8398b0044bb7fcd7ae4456b8f185",
+        "main.py": "f22a61e4c66537f69e298adb3f13dce51bddc3a4b3873c1acce1ef882cc8a633",
+        "test_main.py": "f26243335b9b0bcad7dba44c70102d8ccdf9bb98a9d94640603a8a32dd0755c1",
+        "solution/main.py": "058ad9881f17b4510fd5a2a338cc51e21235bcc0971f93ca260a229e39f00417"
+      },
+      "adversarial_check": {
+        "mutation": "Eager method invocation",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_deferred_method_remembers_its_tool",
+            "passed": false,
+            "error": "AssertionError: Return tool.record_use without parentheses."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Deferred bound method checked for receiver identity and no eager calls."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Saved operation explained through a bell; changed state is not a snapshot."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "02-object-interfaces/02-function-attributes",
+      "word_count": 325,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Not ready yet: 'function' object has no attribute 'description'\n",
+        "results": [
+          {
+            "name": "test_description_is_attached_without_execution",
+            "passed": false,
+            "error": "AssertionError: Attach metadata to the function object."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Description: Show workshop stock\nCommand result: Available tools\n",
+        "results": [
+          {
+            "name": "test_description_is_attached_without_execution",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "function-attributes",
+        "order": 2,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "6f819b11033608afdc7d46c5d8c892c68c450a87bca062e078ffaa04b269f159",
+        "main.py": "14d5a36387ea243b2137205e0fffdab148d293f8b2b38d1cde0b1c2f86bb9029",
+        "test_main.py": "3e81bf19431ecffc210e435798d1637184f1a35bcebebb2462cf49bb247b58e2",
+        "solution/main.py": "89e697f3a450bc4ffd33abb4722a010ab67d555b8f96448c971eb9b1ea5fc9c6"
+      },
+      "adversarial_check": {
+        "mutation": "Execute metadata target",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_description_is_attached_without_execution",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Metadata attaches to function objects without execution; aliases explained."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Ordinary functions explicitly distinguished from their returned values."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "02-object-interfaces/03-classes-are-callable",
+      "word_count": 317,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Not ready yet: 'NoneType' object has no attribute 'name'\n",
+        "results": [
+          {
+            "name": "test_record_creation_calls_the_supplied_factory_once",
+            "passed": false,
+            "error": "AssertionError: Construct using the factory parameter."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Tool: drill\nMember: Ari\n",
+        "results": [
+          {
+            "name": "test_record_creation_calls_the_supplied_factory_once",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "classes-are-callable",
+        "order": 3,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "ae1e308879cd404bb07411b5c5696a25aa5e4eb679f0e7c1c7cde0e59d382c4a",
+        "main.py": "6ba824839f001081317cef44a62d382815db6feeaeafab2c78a7ec5bb3359cc5",
+        "test_main.py": "3479875d7604303511033641b83a35ef3021ef845a7b75d51c8eb6e49e5e9803",
+        "solution/main.py": "ba808506b6cc5fef68a4c5561227aa4c09e29a9bd865b9e3b56f4f370a6ce6a7"
+      },
+      "adversarial_check": {
+        "mutation": "Hardcoded factory",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_record_creation_calls_the_supplied_factory_once",
+            "passed": false,
+            "error": "AssertionError: Construct using the factory parameter."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Callable parameter works for both classes and function factories; exactly-once behavior tested."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Construction timing explained without requiring metaclasses or callable instances."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "02-object-interfaces/04-class-method-factory",
+      "word_count": 316,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Not ready yet: type object 'Tool' has no attribute 'from_text'\n",
+        "results": [
+          {
+            "name": "test_class_factory_parses_and_constructs",
+            "passed": false,
+            "error": "AssertionError: Decorate from_text with @classmethod."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Parsed record: drill 8\nInteger count: True\n",
+        "results": [
+          {
+            "name": "test_class_factory_parses_and_constructs",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "class-method-factory",
+        "order": 4,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "9f982bb2a73978f8d7e7bbd552ae4bad8f57ff69109975759b54ba3c6e3a4741",
+        "main.py": "875d73ae2417f49a41a954b3bdf6db177e36549a596117462e885cd3bd760368",
+        "test_main.py": "a87a59ec214e2f0cb724591e500a62307b478c97a2a36463570be4af7e9d94d8",
+        "solution/main.py": "962563d067239371f54e800cc377ec1ece7e286e76322f3ea9f4a7d22722b144"
+      },
+      "adversarial_check": {
+        "mutation": "Hardcoded class in class method",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_class_factory_parses_and_constructs",
+            "passed": false,
+            "error": "AssertionError: Construct through the cls parameter."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "First decorator use explains placement, transformation, cls binding, and return."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Coordinate parsing example differs from tool format; valid-input scope explicit."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "02-object-interfaces/05-static-methods",
+      "word_count": 331,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Not ready yet: type object 'Tool' has no attribute 'normalize_code'\n",
+        "results": [
+          {
+            "name": "test_static_normalization_needs_no_receiver",
+            "passed": false,
+            "error": "AssertionError: Use @staticmethod for a helper with no self or cls."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Normalized code: AB-7\n",
+        "results": [
+          {
+            "name": "test_static_normalization_needs_no_receiver",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "static-methods",
+        "order": 5,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "20108452f34cc3b4350fabffbcf953895f89def15e46c678d51910cbefb1640a",
+        "main.py": "2ae28193a9638832c43ecc95e8b189e16f364524249d48a190e3c0685a2630aa",
+        "test_main.py": "bbe25fcffe4e5a852084f5970aaec9fda6d92d3f61e69fe1b50276382ce8d4aa",
+        "solution/main.py": "408049c8e763ee3c85513c255283fc0dc5bfd4e717e52f3030af827496ca81f5"
+      },
+      "adversarial_check": {
+        "mutation": "Missing case normalization",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_static_normalization_needs_no_receiver",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Static method checked through class and instance; no automatic argument."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Provides decision rule versus ordinary/class methods and a module-function alternative."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "02-object-interfaces/06-property-function",
+      "word_count": 320,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Not ready yet: 'Tool' object has no attribute 'label'\n",
+        "results": [
+          {
+            "name": "test_label_property_uses_the_getter",
+            "passed": false,
+            "error": "AssertionError: Create label with the property function."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Label: DRILL\nUpdated label: SAW\n",
+        "results": [
+          {
+            "name": "test_label_property_uses_the_getter",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "property-function",
+        "order": 6,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "4205b6dc1f6b538b15a663ee95afa0f06c9cf4a15eb7fc9901b27e472a3d8db7",
+        "main.py": "7e2e717ec99eef70925646bcbc74f428586fadf2aa102438a9afcaa1384ccf83",
+        "test_main.py": "4e1513a149dd7ede4f3304dd6a8ae1bdda5d6593de945db7368aad62375dbdff",
+        "solution/main.py": "1db236790cd68d7263050380e0d426719f1d44a17db67c88d254e15ff7e35957"
+      },
+      "adversarial_check": {
+        "mutation": "Constant getter result",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_label_property_uses_the_getter",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Explicit property function precedes decorator; supplied getter keeps task atomic."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Function object versus premature call and attribute versus method syntax explained."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "02-object-interfaces/07-property-decorator",
+      "word_count": 336,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Display name: <bound method Member.display_name of <__main__.Member object at 0x108de24b0>>\nUpdated name: <bound method Member.display_name of <__main__.Member object at 0x108de24b0>>\n",
+        "results": [
+          {
+            "name": "test_display_name_is_a_live_property",
+            "passed": false,
+            "error": "AssertionError: Place @property immediately above the getter."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Display name: Ari Shah\nUpdated name: Ari Patel\n",
+        "results": [
+          {
+            "name": "test_display_name_is_a_live_property",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "property-decorator",
+        "order": 7,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "ae79ff3d88460b1113e91730d6b4b3906984b4c3e6b83afc10c1ba14ebf4d806",
+        "main.py": "dbb076f803db18461e66865c7b30e2d5a5508cfa6895c238fcf6accfbfef59e4",
+        "test_main.py": "d536db8f21982fafc65197b231f4097d4858b4a433057a168eb7bbcc65b1d49c",
+        "solution/main.py": "94ae321d017e84c447fa856497c76aed2c1a69ba13d43807ff8516086b446101"
+      },
+      "adversarial_check": {
+        "mutation": "Ordinary method instead of property",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_display_name_is_a_live_property",
+            "passed": false,
+            "error": "AssertionError: Place @property immediately above the getter."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Decorator form connected to prior property(...) syntax; live names checked."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Text explains getter indentation and parentheses without hidden descriptor prerequisites."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "02-object-interfaces/08-computed-properties",
+      "word_count": 336,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Not ready yet: 'ToolBatch' object has no attribute 'available'\n",
+        "results": [
+          {
+            "name": "test_available_is_derived_from_current_counts",
+            "passed": false,
+            "error": "AssertionError: Define a getter-only property."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Available: 7\nAfter more loans: 4\n",
+        "results": [
+          {
+            "name": "test_available_is_derived_from_current_counts",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "computed-properties",
+        "order": 8,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "d93b20be2e0c398b60749f8d025dcca781450383db33dcd2d1ffcf7e4c1ffbb3",
+        "main.py": "b846270d885241aa62fe14bb874cfc70ffb19b84973e8b12488a4aaf1aba7125",
+        "test_main.py": "e56b70f2cb8d245bcd0441a59d54c6b788496bb64e450231ac18efad9b809f09",
+        "solution/main.py": "3c7bded80f7fd9650e0b74ed7035f0170b53f4871c97560c138ea4e03cc9ce28"
+      },
+      "adversarial_check": {
+        "mutation": "Constant derived count",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_available_is_derived_from_current_counts",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Computed value tested after changes to both source fields and separate batches."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Corrected ToolBatch.total wording to instance attributes; no misleading class-state notation."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "02-object-interfaces/09-read-only-properties",
+      "word_count": 327,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Not ready yet: 'Tool' object has no attribute 'asset_code'\n",
+        "results": [
+          {
+            "name": "test_asset_code_is_publicly_read_only",
+            "passed": false,
+            "error": "AssertionError: Expose asset_code with a getter and no setter."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Asset code: A-7\nPublic reassignment rejected\n",
+        "results": [
+          {
+            "name": "test_asset_code_is_publicly_read_only",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "read-only-properties",
+        "order": 9,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "66a56b10dba3b2050d3e3c2bdaccc4dd0b5208475d8d8df6d07178ce146c84d6",
+        "main.py": "18f4cd669945d0ff7cff9ece3933380dd4f8059ab1f4aa77c4ed94570c94f620",
+        "test_main.py": "962e397985005f1b7d8b1205a914e8c9e9ec27f64bc664b7b7f1da049b9bf579",
+        "solution/main.py": "30e0d3dda1a08d60173e5040a91f66826760f9fb91574ece6b633b36e8d984fd"
+      },
+      "adversarial_check": {
+        "mutation": "Writable identity property",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_asset_code_is_publicly_read_only",
+            "passed": false,
+            "error": "AssertionError: Expose asset_code with a getter and no setter."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Read-only public interface checked for rejection, unchanged identity, and editable ordinary data."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Underscore convention distinguished from secrecy and whole-object immutability."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    },
+    {
+      "path": "02-object-interfaces/10-property-setters",
+      "word_count": 320,
+      "tasks": 1,
+      "tests": 1,
+      "starter": {
+        "console": "Not ready yet: property 'loan_days' of 'Tool' object has no setter\n",
+        "results": [
+          {
+            "name": "test_loan_period_setter_validates_before_storing",
+            "passed": false,
+            "error": "AssertionError: Add a setter to the loan_days property."
+          }
+        ],
+        "import_safe": true
+      },
+      "solution": {
+        "console": "Accepted period: 14\nInvalid period rejected\nPeriod after rejection: 14\n",
+        "results": [
+          {
+            "name": "test_loan_period_setter_validates_before_storing",
+            "passed": true
+          }
+        ],
+        "import_safe": true
+      },
+      "empty_submission_import_safe": true,
+      "examples_executed": 1,
+      "loader": {
+        "slug": "property-setters",
+        "order": 10,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "f2cddaa23db332d5447c8eba61c6bd16f1d74ab029b5cc947ee5c6ed0f24b803",
+        "main.py": "282d135fc9235446d91e1b3bd01495654f74605fa1c34a86b092130d62af0d75",
+        "test_main.py": "efd3d7547563f06b7ec88fc2c88a5b260346be3a8d4be427214c91facf0845b5",
+        "solution/main.py": "e1ea305a16be38fae155bb24a6fe4e9ece71ea1997628fd49e9918c6216c69d6"
+      },
+      "adversarial_check": {
+        "mutation": "Accept zero boundary",
+        "rejected": true,
+        "results": [
+          {
+            "name": "test_loan_period_setter_validates_before_storing",
+            "passed": false,
+            "error": "AssertionError: Reject zero and negative periods with ValueError."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "pass_number": 1,
+          "focus": "pedagogy, prerequisite order, task/starter/test/solution alignment",
+          "outcome": "approved",
+          "note": "Setter accepts positive integers, rejects zero/negative before mutation, also validates constructor."
+        },
+        {
+          "pass_number": 2,
+          "focus": "natural prose and final learner task",
+          "outcome": "approved",
+          "note": "Setter decorator pairing and recursion risk explained locally; exact error wording not required."
+        }
+      ],
+      "partial_submissions": "Not applicable: exactly one focused task/test."
+    }
+  ],
+  "quizzes": [
+    {
+      "module": "01-classes-and-objects",
+      "title": "Classes and objects quiz",
+      "questions": 4,
+      "parsed_answers": [
+        "a",
+        "b",
+        "c",
+        "a"
+      ]
+    },
+    {
+      "module": "02-object-interfaces",
+      "title": "Object interfaces quiz",
+      "questions": 4,
+      "parsed_answers": [
+        "c",
+        "b",
+        "a",
+        "c"
+      ]
+    }
+  ],
+  "limitations": [
+    "No browser UI or Pyodide execution performed in this subtask.",
+    "Diagram authoring and runtime integration delegated to parent."
+  ],
+  "totals": {
+    "lessons": 22,
+    "tests": 22,
+    "starters_failing": 22,
+    "solutions_passing": 22,
+    "quizzes": 2,
+    "quiz_questions": 8,
+    "adversarial_mutants_rejected": 22,
+    "lesson_review_passes": 44,
+    "authored_module_files": 120,
+    "observed_module_files_including_parent_assets": 122,
+    "parent_authored_svg_assets": 2
+  },
+  "review_edits": [
+    "Removed repetitive probe-is-not-a-task sentence from every lesson.",
+    "Replaced inaccurate marked-area instruction where starters did not have marked areas.",
+    "Clarified supplied method completion, instance attribute notation, and ordinary method wording.",
+    "Repaired generated escaped-newline test fixture before final verification."
+  ],
+  "scope_preservation": "Created assigned module directories only and this audit; root manifest, frozen plan, and other modules not edited.",
+  "replay_harness": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/audit_oop_01_02.py"
+}
