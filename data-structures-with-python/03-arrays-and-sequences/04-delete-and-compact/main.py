@@ -1,0 +1,60 @@
+from __future__ import annotations
+from typing import Any
+from collections.abc import Iterable
+
+class Array:
+    def __init__(self, values: Iterable[Any] = ()) -> None:
+        initial = list(values)
+        self.size: int = len(initial)
+        self.capacity: int = max(1, self.size)
+        self._data: list[Any] = initial + [None] * (self.capacity - self.size)
+
+    def snapshot(self) -> list[Any]:
+        return self._data[:self.size]
+
+    def get(self, index: int) -> Any:
+        if not 0 <= index < self.size:
+            raise IndexError("index outside occupied positions")
+        return self._data[index]
+
+    def _grow(self) -> None:
+        new_capacity = self.capacity * 2
+        new_data = [None] * new_capacity
+        for index in range(self.size):
+            new_data[index] = self._data[index]
+        self._data = new_data
+        self.capacity = new_capacity
+
+    def append(self, value: Any) -> None:
+        if self.size == self.capacity:
+            self._grow()
+        self._data[self.size] = value
+        self.size += 1
+
+    def insert(self, index: int, value: Any) -> None:
+        if not 0 <= index <= self.size:
+            raise IndexError("insertion index outside boundaries")
+        if self.size == self.capacity:
+            self._grow()
+        for position in range(self.size, index, -1):
+            self._data[position] = self._data[position - 1]
+        self._data[index] = value
+        self.size += 1
+
+    def delete(self, index: int) -> Any:
+        pass  # Step 1: reject invalid indices before mutation.
+        removed = self._data[index]
+        raise NotImplementedError("Step 2: shift the suffix left")
+        raise NotImplementedError("Step 3: reduce the occupied count")
+        raise NotImplementedError("Step 4: clear the new spare tail slot")
+        return None  # Step 5: return the saved removed reference.
+
+
+# Supplied Run probe; the unfinished operation is reported safely.
+if __name__ == "__main__":
+    try:
+        array = Array(["red", "green", "blue"])
+        print(array.delete(1))
+        print(array.snapshot(), array.capacity)
+    except NotImplementedError as error:
+        print("Not ready yet:", error)

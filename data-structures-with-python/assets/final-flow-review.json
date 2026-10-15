@@ -1,0 +1,2224 @@
+{
+  "scope": "source-only flow review of data-structures-with-python; no browser/Pyodide UI execution by request",
+  "inventory": {
+    "modules": 21,
+    "lessons": 210,
+    "coding_tasks": 470,
+    "quiz_questions": 84,
+    "diagram_pairs": 182
+  },
+  "reviews": [
+    "assets/review-01-03.json",
+    "assets/review-04-06.json",
+    "assets/review-07-09.json",
+    "assets/review-10-12.json",
+    "assets/review-13-15.json",
+    "assets/review-16-18.json",
+    "assets/review-19-21.json"
+  ],
+  "follow_up": "assets/atomic-followup-05.json supersedes two module-05 lesson hashes and task vectors in review-04-06.json",
+  "cross_module_boundaries": 20,
+  "cross_module_result": "Adjacent module openings and endings checked for prerequisite order and explicit representation reset; no new blocker detected.",
+  "validation": {
+    "native_report": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-native/native-report.json",
+    "native_errors": 0,
+    "structure_report": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-validation/structure-report.json",
+    "structure_errors": 0,
+    "annotation_gaps": 0,
+    "trailing_whitespace": 0
+  },
+  "limitations": [
+    "No current browser Pyodide Run/Submit, lesson UI, or responsive artwork validation: explicitly excluded.",
+    "Iterative DFS figure shows a contrasting eager-marking method; the lesson calls out this distinction rather than presenting it as the implementation.",
+    "The enclosing python-courses worktree reports this course as untracked; git diff --check does not inspect new files. A separate source whitespace scan found no trailing whitespace.",
+    "Earlier per-module review/audit snapshots may have stale hashes where subsequent atomic follow-up changed two module-05 lessons; use this final inventory for current hashes."
+  ],
+  "sources": [
+    {
+      "lesson": "01-memory-and-cost/01-references-and-aliases",
+      "files": {
+        "lesson.md": "f01155f8838fa5d879ef10213c2d25a0a694e752531614613d0873424e07a40b",
+        "main.py": "bd02d9bc7da7006be9a1f40c37bb1183d06b794e7048451373253fd917b47ecf",
+        "test_main.py": "708da703d5dea884bacc19857407b4cf5fa8dbd163e10f9e74bdbfa3c0966dcb",
+        "solution/main.py": "4ca12b39eb7d27b2e7e2228b52138af827ccbc38dad292f7092f323887d3165f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "01-memory-and-cost/02-object-identity",
+      "files": {
+        "lesson.md": "9d5af485fffe608ee993892ccff079122c2e4d134b8d8207f85efb084e2cb7c3",
+        "main.py": "cac034c5eab9aae2a00888cddd245256e0130a2e7bb0a325fdec4da9bd5eb865",
+        "test_main.py": "c5ba382b57c6cbc1792e846b8dc193529e610a4104247c76afc03fe935616032",
+        "solution/main.py": "a098b352fb8e05ec05600ab71e8a667dc5265d894b2405795c108448df81faf3",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "01-memory-and-cost/03-shallow-copies",
+      "files": {
+        "lesson.md": "a5f29f5b019ac60e40fb623e1fccd1ccd95fcca2e13b4e5b0e541d2f17c3d6ee",
+        "main.py": "7773b61b9f2df84a2354d6a110daf0fbbbb3ba750b05df1e42162cb5661888f6",
+        "test_main.py": "c31e3e7263303aefea6068479eb3d0052d932c12ccd71eac44c8d6aff8d55df3",
+        "solution/main.py": "b333e6f300ddab0362d2c781fcd6c9ca483a646595ed1b34c359cf3528e1334d",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "01-memory-and-cost/04-nested-copy-boundaries",
+      "files": {
+        "lesson.md": "7de66970710cf83911421ee81e97b00f0ad11599e3954a9db16b8f14e183515a",
+        "main.py": "7b8db80bd43420769d0c6a36dc2a145f0ad599386515432355e583c32caab24c",
+        "test_main.py": "a4546445d996e4ab91a62b7cd8e7b47a05efa309bcf66bab72fafa1d444d4df1",
+        "solution/main.py": "a839e04bd8ca1a8994603b9ea50681633859af8d1aab5becc7a2a7ef396deffd",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "01-memory-and-cost/05-count-linear-work",
+      "files": {
+        "lesson.md": "d5c5947bacf51cf0bc5f425103bae24888af51d86b561095160df1d2a5cc5739",
+        "main.py": "4d40c13d9cbd77d0824bee7cb09d36734591fcffb27d2d09b7daefdd7b4c6c03",
+        "test_main.py": "5f3d37d4a2ccca74cf373bd56083a7580da0cabc475f85472a43e51a9445c5a5",
+        "solution/main.py": "065f63dfda84b8396b917aaa08b35122ca639607767533d2c99b4ed043956ecd",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "01-memory-and-cost/06-count-pair-work",
+      "files": {
+        "lesson.md": "d7d3d9bde848445e90ab17e378a76c9b6ae2e106653621664da48b8db9c5b21e",
+        "main.py": "574a11ca5bca3ba1d16740d9a7556e4bbbe8a343bb94e4a568bff956dc81a441",
+        "test_main.py": "7ff6f24af269470131555c59ae8fbfd698a01268f7ff9b6290054b385e8b2d47",
+        "solution/main.py": "85490f9d08a079c6e9f44d711934d9f49eb79756b4580161109ba6d0ac97483d",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "01-memory-and-cost/07-count-halving-work",
+      "files": {
+        "lesson.md": "476a7b611057088d10eef54c4f4b4a5173070af645168fe8bd894797d30d3624",
+        "main.py": "69c60c3799105d6f5441d45eb6bf745deee5bd292a2eced47e71213640073fed",
+        "test_main.py": "173a8686fae931726910f538f4965917b8dff76960567fac7de4ae14d89fd859",
+        "solution/main.py": "31c3d3ecdc69050020bc7ad4b2c1407fc5c2f32a4fde7730d54d46170e103e41",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "01-memory-and-cost/08-compare-growth",
+      "files": {
+        "lesson.md": "132876ae0a097b10f4e472df8909d60eebc9bdf07bae088f19e58ef43d6c69c8",
+        "main.py": "d027b22196096c3e294ea730b888260904ea7866add6551a6edf2da39886aad4",
+        "test_main.py": "06a0b15c0f5c71a1096d657b3457e25d4ce1caad3ccae6382dea3468001152b1",
+        "solution/main.py": "0ef5ebda3f0898dea95c127156639286b5b4517844bcf7e28718256847cc356f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "01-memory-and-cost/09-auxiliary-space",
+      "files": {
+        "lesson.md": "74cb2817c1553e21cee91bf9802a2ee8289712ba6fd49f0a253954d9e95cb261",
+        "main.py": "48844ad33531b5c757e29f31a9a5967e6a2720031d99322635af129b3f3f225c",
+        "test_main.py": "57f4cee2d0b1073fe059d5c1c6895fc9e38b37ad44e59ee7d47edd839261ae56",
+        "solution/main.py": "ba9daa57ca64532dd8bc51252856ba9655861f9cbe53d5aa9d8a5d7625205922",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "01-memory-and-cost/10-amortized-append",
+      "files": {
+        "lesson.md": "cc6b9424fb7cf4a4b7e1e2f7c3f5ecfe4cf5b69028b205038d0d3efa02d9e050",
+        "main.py": "464e7a6a08f24bf560af51fce49f69a374f6a61de990db2b79ce6986c7460c1a",
+        "test_main.py": "c288cf6481ff6926e33785100429b9f1fdf5214dcab72c69e5ee843633207e99",
+        "solution/main.py": "b1ef52a9a48dd3af63400d920de1b2c4ea3d321c49186b1dcd5726081288299f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "02-recursion/01-base-and-recursive-cases",
+      "files": {
+        "lesson.md": "735b08494a3147614f13498fcd0e74b43b2eeeb1d95b49fe76e0c6a026daaa8d",
+        "main.py": "abbf20cb45310135026d954d7e0fb4c7eef4cbcfda4c26ee9e40f03eaa4bdd54",
+        "test_main.py": "245a70bbc4b4867db90f7efb347373e0d759b81e8d15aa01a92f47e5b2467561",
+        "solution/main.py": "d4a8e63ea0e828022811d9a3002d145111b33bce76c9342ebfd4b2b141c01b59",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "02-recursion/02-countdown-trace",
+      "files": {
+        "lesson.md": "6418f4d5a6d9f57ba0e54d6381bcd5d83ac4cf02f41c8b20f436f8379daddc36",
+        "main.py": "94665c7f1c3fcf8ff8590da9eab73baf755539a26d8426fba80fa82df8f4d9ba",
+        "test_main.py": "cf972dfa2b36e4d6a372be02698c2dc2df2ea06d1fe4a6b95d65c208e33763d4",
+        "solution/main.py": "e568ec3a5355348003746dea7e55732f3f5a7ef9bfa90c2c1a3044220d2b9901",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "02-recursion/03-recursive-sum",
+      "files": {
+        "lesson.md": "29e78177d6092eb0ed9b086e477dce9b620784bda2d579b7f174e15d68a1ef40",
+        "main.py": "2b95dc18ed2c943b2497624917e48fc104e1534db77dbe0d780553fd70d4a000",
+        "test_main.py": "e0acfb89b0ec6d3ec08503295545bbd79a9302bff2cfd373a681f40da65fea27",
+        "solution/main.py": "c11bbfe38559962687b903da58f2c7b4b3fbc249ebdcfdd407f7c38682dbf249",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "02-recursion/04-iterative-factorial",
+      "files": {
+        "lesson.md": "032503130a9819119112f31c2b0764dd5db747db22a0559564fcbb6a202168fc",
+        "main.py": "e4d59f4deb8af11ebd18b1a33b7aba9af93a6466886163e5577c37f1bccea8ed",
+        "test_main.py": "b4576f69ee54b7fbb353cc1000c280f10e4a07630957bfd9e6bdd7f790415571",
+        "solution/main.py": "f799633141e72f443115683df3f6bc0c6273d6f40af2a570cbb5ee5ded27654f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "02-recursion/05-recursive-factorial",
+      "files": {
+        "lesson.md": "18e50e4af750ae54c77cef23c0c5635afbfe8e821d0ee492a5830a23fb0ea962",
+        "main.py": "2711fd139b6754a9756d4a905188e133cf0216f3809c11a0969c34891900422d",
+        "test_main.py": "f3ed38e9fe5e3a718ea4f56a63c29d98bd4a2ad70cab5ae7e9cbe94b37ee725d",
+        "solution/main.py": "cbee1b8eabff117cbd093a5126e77d3b626384fc1f40576f606d98874922e42d",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "02-recursion/06-fibonacci-tree",
+      "files": {
+        "lesson.md": "c4f50a12de24ecf4d7f90db3df6b877b15868595ffd7c3917258b6f0f7b3423e",
+        "main.py": "18b7a1a3ef1cbbaad4a78cd748c4aefdc1663af14faa7c00e042c58c8ad244be",
+        "test_main.py": "3ac2f578bb1406888a1538227909d7a648daf3ee0511726be5d0a45d8294ff22",
+        "solution/main.py": "545a24b158c56c5502518aa0da925e65e789b60ad94e49ba4d979fc86ce83a0b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "02-recursion/07-memoized-fibonacci",
+      "files": {
+        "lesson.md": "d6cb80146967d2c6eb742a38ba737802e2259239103a6ee753b734fa2d7f5493",
+        "main.py": "c2fa5e83e2c38a4acf5bc2fb33f9056755d29ee2d076d25d3cb0f7b34eff3e83",
+        "test_main.py": "59d1989127f13e81c7ab3510570008d4b19c92b062905a71911657f9f1f632cc",
+        "solution/main.py": "28e6ba6864acc24f770031d93eea19e1c46b7ebedc9798872a328828175f8923",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "02-recursion/08-iterative-fibonacci",
+      "files": {
+        "lesson.md": "0118b15f017c84f8d524cc106da7166bb8dc5e1b46cd3c953bcdbcddc6b1c63e",
+        "main.py": "a273713e70bdb72c8add1008b2308b861afb97d6684a3c178b427dcbd0e5025e",
+        "test_main.py": "57aa51ec5878f52ce07c29e4bd26259dd8590bca91c6ea90589c33f7a81abc77",
+        "solution/main.py": "07b3a138c401d33414dd3a98fbde84285a75869d69047e83b05d2b473d2882a9",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "02-recursion/09-tail-recursion-limits",
+      "files": {
+        "lesson.md": "33deb8a01f400634d2ce554d4b145aa1e284d5b18e59a871f5c8a267343b06d2",
+        "main.py": "0423cbbbf2f55cc4106b43629fc0afe953ed3746130d76f30127dffb584055a0",
+        "test_main.py": "787e20cadf8f4fbec2c87aa8c297c38a200c060f2cd42a772c1d3dcee85d66a7",
+        "solution/main.py": "9d6dee5e14e36bce3e3b620df222f11bcbb9dbfc2e81b8f97fe58111438f757f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "02-recursion/10-recursive-binary-search",
+      "files": {
+        "lesson.md": "4b5f70458084ceae3ba1df09b8e23053e69a9ada0e47b04eed24e5447a3f9c34",
+        "main.py": "25cbd77adfc741e0d902b426a73be209459d84eff20a2ade252c6c5c8737705a",
+        "test_main.py": "78b161e89c826fdfcf9cc1b9f5cc23b2cb51447f8916bd66e40410ec7a449331",
+        "solution/main.py": "14be93c82106f689c0c087a500374f212102f9dd400cb72467fd685bad4f06bd",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "03-arrays-and-sequences/01-array-access",
+      "files": {
+        "lesson.md": "d5cdd810285c71869554d5282d1d717e2c797fbb2d8ebac0365ac08937a5c4a1",
+        "main.py": "7e491412ae5f4d7c645d98177bff36e11ac7ff5276477329a54c470142de46b3",
+        "test_main.py": "fbbf301bb73f18214a6e54708880dbd63fe1bf91dafd3ceb168a919c1d29d634",
+        "solution/main.py": "9db27c6c2083eac9fa6b6124aeba1da5f14a57b25b4a4e4894bb0e6360fc93d3",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "03-arrays-and-sequences/02-append-with-capacity",
+      "files": {
+        "lesson.md": "6fa7699701f18e5c720c856354b67e669426d3e2a1d93cdb157f0834aede8f6f",
+        "main.py": "8c634505e4e187c470810d010cd8110d6ff0f266cd1c9cc597d942a265240ae9",
+        "test_main.py": "970a6fa96887cef57df87ed4c634dee737fffb4a7f52c6bf3e3652cc7885fd28",
+        "solution/main.py": "9b809e6271a4d37a1d01f3fc49aa1a17b5f9a0966e94285d1bcbd8842ae5f535",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "03-arrays-and-sequences/03-insert-and-shift",
+      "files": {
+        "lesson.md": "28b824c6306216f1c616aa1f33405b992ad14535b817e683ab6da89279d43a5b",
+        "main.py": "6cc9f1922df9864e136eb9cfec9ae20465319eef8d0da142308ca7491cfc17b9",
+        "test_main.py": "f61e01e5f4d0ad663017966180ce33f4d8bc39b02455dec31dd87dccb320a05d",
+        "solution/main.py": "30794168b2dfd2ff4364ec239540e9a896f2e7878436b03ce919795c008052ba",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "03-arrays-and-sequences/04-delete-and-compact",
+      "files": {
+        "lesson.md": "101f83de20b8cf5cecdb633935cbb34bf40737e7b3cb25c86c8ab748693de73d",
+        "main.py": "be2cac5dffc9a0ee0e14594b067f62dcc813a674f5f429cd63cf623b46957d57",
+        "test_main.py": "ba6b648fb4a22db8689250146fa94e415dfdd72fbe041c8d3dad76eecc419c40",
+        "solution/main.py": "b5d2aed9a2aaffa0bbe36c7670b0d37661dc461a757d9e099c2e87d0b91c2f3f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "03-arrays-and-sequences/05-reverse-two-pointers",
+      "files": {
+        "lesson.md": "68a675a1254a7cb74ee0dca29635bcfbcf931d4cd8156a433fcff6434120ff93",
+        "main.py": "6fc2f972b2930d18b11817ae227ebe5da2b037ab1cc4c3ec8f3ab75b703b0196",
+        "test_main.py": "a318b492989f81740650e3a1e35554ea363dc768372c5f6d6bed3c810b694a34",
+        "solution/main.py": "edf5f3e5cfd07e60b5851f26864a2bffcfa3ea54c5e5d70cda9bea5102f120f0",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "03-arrays-and-sequences/06-sliding-window",
+      "files": {
+        "lesson.md": "5d61c85bd3978bdf02f5e163c08523741fb9ecd5df3e4d0eff8dcc95a2aaecfd",
+        "main.py": "1652cdcf75c5ed6902c899e826538757b0fa24dbcc38f51fbd5fbb530f4ad88c",
+        "test_main.py": "f92a523241cb0bc9fecea12cabbd562134fadecb3e3a69ea900e620528c4fb63",
+        "solution/main.py": "2ca73c99071cf68bdecca00bf0902930a11bc339e3a5496143e69c64a1d4eb38",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "03-arrays-and-sequences/07-prefix-sums",
+      "files": {
+        "lesson.md": "fc2b6c1194a04ea1c620b3dd7496d67c326b071070923fa2612a04a5f0d99392",
+        "main.py": "94aeee759ccd2c7b3bc79e2d2457d880b28de2680141a4b4a7c5fb355f096b12",
+        "test_main.py": "e9d1e0420e2425b3e8b55d6645be8cf870a34dafb86051e8ffad25344a884172",
+        "solution/main.py": "8fa1a904ed5078cc5f6b8fdf5353dbd75f7f649f18d90f6412db32cc817f525c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "03-arrays-and-sequences/08-range-sum-queries",
+      "files": {
+        "lesson.md": "0535844d9068fb481248c82fcafd12ede449cf049ea78e5b0dda65f890b476ff",
+        "main.py": "9aa099114f188f1644098a64036151fd2e82f7c9b947fe1277dd802c8a42e6a8",
+        "test_main.py": "a134973264cbf628440876d88156df1ee69a77b12d815ea9352d730e4e16d4d7",
+        "solution/main.py": "492aa9968e74518d716906afe948a807174773785252a60e8035e94e9c8dbfe0",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "04-singly-linked-lists/01-node-and-link",
+      "files": {
+        "lesson.md": "f0eb2c48108782549de260836a56340303d9da22dc87c918c3958bf2fabbbe99",
+        "main.py": "c5dc228e3d82c353ec7f55d8be5669e15f91c941feb863ca60d05b0da8146167",
+        "test_main.py": "ac2b56f1e9e29b0e276424d172e043c141f2be8827d50de9a23bf38ed03d82b4",
+        "solution/main.py": "a40c8650473b27b0742c1dac88fa19386d62c90cfc38c3fb23fb0fe48a1a80bf",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "04-singly-linked-lists/02-traverse-nodes",
+      "files": {
+        "lesson.md": "a4eb5f39bac002f80bc4255896e19f5178c43f7f5b3151aa215089aac80811f8",
+        "main.py": "14e101d3b5a45a8e4031e9b7319ed490c1fc829be29e6aea65346aef95f75b19",
+        "test_main.py": "c44dcf00d00b90c97112486406cb1e65473026c69661e8354194950330079710",
+        "solution/main.py": "da88e595ae9e436a8a11aec4b8dca64613df2f3fd305def334eef1f776369f84",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "04-singly-linked-lists/03-list-state",
+      "files": {
+        "lesson.md": "5c9ce810696c8eaa99323e7b59cea4ac516eec03cb32716e9bc28e91cd14b250",
+        "main.py": "bce162d34d0b3d8962975f9ea59e91b7ca3aa674eabf39dbfbfa4dd6fe4eca7c",
+        "test_main.py": "722eccbcce7e64194e3965cc45fd139f95597ed2a5233f0e744c12b857e04505",
+        "solution/main.py": "a5719fb659f9d1d1316e69c590fa67a34aebf15193e7e39b6b0d44e2696640ba",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "04-singly-linked-lists/04-prepend-node",
+      "files": {
+        "lesson.md": "e4640edaae0f1b31cd717eb7e0ef0281db9cd1fee18ecefa2b3caf6cd4556c29",
+        "main.py": "67178595430e9fb3e7860b39f37b2b5ff42315b52529dae79493514b3a11fbe4",
+        "test_main.py": "ccd483b7c6112161681b7d9d7e276eb6488fdbc9b564e7ff8cc491760c691f7a",
+        "solution/main.py": "28cbe49562ba77253bfb10f2e827049a4edcfa0721e53e9880e4bc723e7dd35b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "04-singly-linked-lists/05-append-node",
+      "files": {
+        "lesson.md": "b059fae2f4a575ff6b13be06ccda0d7a2131f74f67de851e2e469babd58acaec",
+        "main.py": "7cec337952ba6b8c0590019698e8179079a8abf39dc5b413ab70db1dff0845be",
+        "test_main.py": "9c6f284b31e1dd9a82e2f4266657224c36850eb15da076f86905aec9005a691c",
+        "solution/main.py": "4b20029a83c654b10fbe2bad0945d8600954f959d57e01c4be3604705f5b747e",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "04-singly-linked-lists/06-find-node",
+      "files": {
+        "lesson.md": "ee8b4ede49bdfbf495e5299e1f68484ee6ed3105a8859b80e4c4bf8ce51c47da",
+        "main.py": "54f1a0bab5b4ae3388117d363bdd300026033312b1879136365aecd7264e1163",
+        "test_main.py": "5bd530ca6aca9212dfa9582c6d0be169238b3dc65c8758f4a06ce830202ae55b",
+        "solution/main.py": "1f9f875d5e4cf4c3842812669984a2c66a408d8e306060f26e2067c9677f70d4",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "04-singly-linked-lists/07-insert-after-node",
+      "files": {
+        "lesson.md": "226502b1e0b31abb5002115b3eaeefe7dc39a3687f92bccca8b09996a2e29867",
+        "main.py": "86912b268e9c4124787db04c4b0551234b23e5830140b70999deb8adb73f88e0",
+        "test_main.py": "040873a99ef87812c4d4613090372a5204a5f78c4c357ccdcd726e441ac2ceb4",
+        "solution/main.py": "71e499579b1855adf6199ad17d9ec286cf3a8a2548821fa070082a7918b6e35c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "04-singly-linked-lists/08-remove-head",
+      "files": {
+        "lesson.md": "6ba3ff37ef1b7caebf38eff6c2f83aaea295ef156be4c51d13fdc3a3e82f190f",
+        "main.py": "a8d22c67a7493a245bc29e27a8c302d7ac0579789439f0aef5151d7df0c32c49",
+        "test_main.py": "65b0209b68b57b520d9172312358b953c1b76e211578f3bdc980e7aa781dac6f",
+        "solution/main.py": "afe585c445484ab27996be52db3a5f517ae1a7b17b3547b8b2cec6d62fef8f85",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "04-singly-linked-lists/09-remove-tail",
+      "files": {
+        "lesson.md": "5481f32d2ea808fa0ab180ac6036b843b06897b4501ab3f0f99b3c1178d3f7f3",
+        "main.py": "dc266a9ee9223af6c41372f86c71490ac6e3f5314fd1eb81a425a2c4b76869e0",
+        "test_main.py": "54411e3382debd86c8174a2468b329f02b98a1d497e8a4aa03ca2c2ff62246eb",
+        "solution/main.py": "3f81b24fb91079cb6db491e69d014a3acaaf78948d7a0a457879691d9035f359",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "04-singly-linked-lists/10-remove-first-match",
+      "files": {
+        "lesson.md": "c2f7748c0e1434907ef86ac94a02a4d17a26aa1de247a76b2e56161ef753dd51",
+        "main.py": "28c7e7a8f2702a4eaf0db6f8f5789fb35051be9593947127d629b163d5532f51",
+        "test_main.py": "2e3f5cc60279faba724eca62e86168c704dbbc89178ba72aeeb4edb168aea8cf",
+        "solution/main.py": "3895b5cf13e663c8787510e07e818f5798994ef02c9feeaf9cc75ceb72c68b87",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "04-singly-linked-lists/11-reverse-links",
+      "files": {
+        "lesson.md": "fea0d9115d025cfac5cf40ace8a5f3ee8de20034b8e71175abb64a21aedf35e6",
+        "main.py": "0a034c1234b94ae1af96eec07d80e15cd981403f372565a337a98bc993bc32c1",
+        "test_main.py": "75609584c9d1d5f82e3fd34815d55fb9873e145273e82efca5192270d4c874cc",
+        "solution/main.py": "a7a66f9cb87f069c33d22cdc2a5645e750434bfd866664dc9f3fce5a5858c000",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "04-singly-linked-lists/12-playlist-project",
+      "files": {
+        "lesson.md": "527135996b37334335c5d97888a803a12e33b24f13ae3960b70fd5a888184d50",
+        "main.py": "7a3b10f4adff2bd9dbfb86ce41474846b9b0617831344407dee7b9702765f013",
+        "test_main.py": "02a4d33e373beae7877dac20b368b8a216875416d43ec5351103901717b404ed",
+        "solution/main.py": "007a451ead2af7a329a0506d268cf089182336bd6830658eeb137a836e165a96",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "05-linked-list-variants/01-doubly-linked-node",
+      "files": {
+        "lesson.md": "bd73781a73c2378d4133c92da026dede039725fa8c63aa15b44b708215785fa6",
+        "main.py": "9a48527a91fb727057eaec78998cf7ecc0f2260df00293ceb9c8bd7bccfc974f",
+        "test_main.py": "2ef443be84140561742a105e3258023d315179515625cdeeb6a6ffd2a19b3e75",
+        "solution/main.py": "bff62e466e9a966dcf552fa24e54a0c91c8af9005d6f4ddf34e10372b00bd204",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "05-linked-list-variants/02-doubly-prepend",
+      "files": {
+        "lesson.md": "de8309d959b23242a7d01d10a6308edb3941e9267b606012b147d7926480662d",
+        "main.py": "9b9842cb6b59efb8b6c2e9a27094b6a3963a2cdff4fe33cdf29b343c2eca755c",
+        "test_main.py": "71a08fe26c73600d501a39b4a58ab8414566a0599d30bbd5a8ccd68f8fc6208b",
+        "solution/main.py": "146870d7dd55031c9e686ecad5484525915f3f87522206856446e1d05fab77f6",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "05-linked-list-variants/03-doubly-append",
+      "files": {
+        "lesson.md": "f88edcdf9bf0affd4aa935e1ff7968a5ec28fa51d2cd4ae23b5425f8ddef5be7",
+        "main.py": "77db51ebaffc1e3825eb1d60a5ee15e4133de96a5541e336658111adf29756c4",
+        "test_main.py": "ad122d2051667ab0ec988e77f863847475c66425dbbbf6df928009cec47a116c",
+        "solution/main.py": "07303583054c5f4f8da547dd32093d33325c7f7b8769e82ea3286953a1e54445",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "05-linked-list-variants/04-doubly-remove",
+      "files": {
+        "lesson.md": "bde5227091e912ef41612a45af3430a40d5b5741a95a8e747cebcb8d4684bc34",
+        "main.py": "fda49c0f5db02c18f02b1ad1354ae20abab23cec7646f922be4860cc47c389b5",
+        "test_main.py": "45ea53f1ae4ca12046d94a0b40bcbe26c081fa8b5074de46ac6e7ccc4b44eaff",
+        "solution/main.py": "f8a5cd14d3365b856da9935f2918a426437903ce66cf7889bf0db6e0056a78c7",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "05-linked-list-variants/05-browser-history",
+      "files": {
+        "lesson.md": "aaba82571921b4dd2a5308b057f42634128b27e2f98529a288a134393348ddc5",
+        "main.py": "b313ba325cd6420faf3163e52505bccc67853329b967f295796f80bb6cdb8885",
+        "test_main.py": "ff70d470d2be110bb742044c6a35c71615fa5eb6570aecdcaa1135179732b83c",
+        "solution/main.py": "9945da73fd31a68fe11bff02f7646bf00c4db99982aa7938f31fa89bbfdaeade",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "05-linked-list-variants/06-circular-append",
+      "files": {
+        "lesson.md": "beaa42207fde44d7ab0d63050d05b5780849ba40b424891659a0ee44f18ee129",
+        "main.py": "56f04cfcaaa34761163a130a1230b3e4d30b89f12349b052fa5634480eaf27cb",
+        "test_main.py": "25421502fe9bbe3f567b823aa516dc2c3cbb6fd685f4b44cbe1973b3d851a3b4",
+        "solution/main.py": "ff7b2fb1a46ebf5af81e62ea67a9729281a0b49b1a9a9fa147e1b1069327c467",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "05-linked-list-variants/07-circular-traversal",
+      "files": {
+        "lesson.md": "d73edb6e61548eb123e429550e7805e22a7db301071fa66e7dcb2ef5042a063c",
+        "main.py": "9b93dd38fafa4d7fd1593adf84c81a8bf72e93e1b9436ed97b5db2c41bde9d2a",
+        "test_main.py": "dd676f4707ef21dfae97f7b68a1e1dc42e1d2fee3fa2f4a0a205250096eb87a5",
+        "solution/main.py": "7ce80d86ad107feaaea76470f997a729d931ca1904dfef3a5c1b036a7aa2249a",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "05-linked-list-variants/08-circular-remove",
+      "files": {
+        "lesson.md": "d5f27112209388969da36ff7b58ab903fecd0c55f7f5b8fc9a69da0deebad041",
+        "main.py": "95744b635fe5a7629563bbb65ce610bf1c2167b9daa17c588c1a97a1c06ed879",
+        "test_main.py": "a2f4235cb182e0b242db69d9cb543c4bdb891de3cbddf897008a7b9335798202",
+        "solution/main.py": "c88d50fe51ba845b913ec1124f41193e882d802c3fe8b46b2eb946505c013ea0",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "05-linked-list-variants/09-skip-levels",
+      "files": {
+        "lesson.md": "97c8286334149145f7931f8d638e005504451b1bfcf2058eaddd3502b3c50ac5",
+        "main.py": "eea616657ba14872e61f6d92b2122590554e2c90139dedd5a99644ddf3084ca4",
+        "test_main.py": "ecbc8dbd415a2a626ad5b7bd6404c835eb47810e5578642cd8333c0f4aa4408a",
+        "solution/main.py": "ce54642b2588d6ed64d2e721d908e9cb0d4296ca07f20b8740e7b023f24a6b32",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "05-linked-list-variants/10-skip-predecessors",
+      "files": {
+        "lesson.md": "ba01549780803512048b98fac71337976f08895efb4b795d9faa02f36c39dc76",
+        "main.py": "9d120408cce0a4dcb7c7a82bd9947301e86ebb42c122a5dfef74fd8f5d12aec1",
+        "test_main.py": "e390c60c27dacce87aa980d57e197ef2a85bca3eae8629bbe7b15cbdfff92334",
+        "solution/main.py": "b57f37b0cadfb1eeff71d73b49d64819af4e452128a151cad7f0a5baa4137bb4",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "05-linked-list-variants/11-skip-search",
+      "files": {
+        "lesson.md": "ce4c16cb303afa73e7896bc0c09991f6cfeba880d04768c379f72b267257ef93",
+        "main.py": "da58d1a09343e36401d1160dc8beeb197348979ebc90e7232e2e1db76bf66cdf",
+        "test_main.py": "e2bd61f25f679568460a814b7780ea472c9cef0ec7845e897b9b1daf58170665",
+        "solution/main.py": "4aa52a159be78606862f369d0e4ce567ce9d99b429a9ebc526dff5f15c14b2a9",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "05-linked-list-variants/12-skip-insert",
+      "files": {
+        "lesson.md": "4772e58784794b4240f049c7005e1bb167de4350fed39acb0141af4925e3b2b8",
+        "main.py": "980f3cb27818daff24babf764c3ec4b0d63f1c64b3956fc2e3e10af6a670a87a",
+        "test_main.py": "03e125b06ff97674a831bdac9a3d57755ff03c0a4f06aaebdb5835cde6812542",
+        "solution/main.py": "5507fc2519f056d33467d9a0e66d8d123527e92d52229c23d17850d367b97ae0",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "05-linked-list-variants/13-skip-remove",
+      "files": {
+        "lesson.md": "acd167861f891949edbe98a81fcddf512e8f17daf6a273ac725a828b3294c48b",
+        "main.py": "db4b808f68abc2a96240e864132341e9b41a53784d4af3b1914d48308202f6e8",
+        "test_main.py": "8e57b51e3203445fd2bfd426c08f9a97a0df07d301937fb6b2fc1d12ecd27bea",
+        "solution/main.py": "2cc868cbad81a99acecb74c3bc88aa7292edc36250a462e73cec819fac08fa61",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "files": {
+        "lesson.md": "5bd4c8d3e1696ec00e98502c5904b52a89a3a55df6bc3b1787f50b12ba912ff1",
+        "main.py": "e8f2284afc9a27d8d902878375ac9d36c78255c6a0454199874f1396aeec39b7",
+        "test_main.py": "9ec14bcb621ea227e5e967c7d4698d7af56b980fba49d449ad3f48496bfd2762",
+        "solution/main.py": "0647fae9f581cb4a0da4ca67cb32be039346dc0160ae70d8d69b1466dd51ce08",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "06-stacks/01-stack-state",
+      "files": {
+        "lesson.md": "19295caaec7a7363cf0ea9349e2b7c22aead879526aa6ea0fdee1e8faff89866",
+        "main.py": "de84b2a8ea0befdb2c6f5f25806ada306320af171c7d93aedea01fc4ade055c3",
+        "test_main.py": "3ada190f7960208a187856c67483806325562e8d0f8ca53b574f4186a1148090",
+        "solution/main.py": "d3d1a23a192ef1560d4570a71ecb6fb802a24f2b6d7165cc2585023851af9c3b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "06-stacks/02-push-item",
+      "files": {
+        "lesson.md": "9396258e39af91467aa14bae6688d6216d12dde1008ed5803f1514d4a06f4c1d",
+        "main.py": "4ba275d3c3807453929e730f702feea0eabed509de3ee2020f2e6e025afe124c",
+        "test_main.py": "743f3731f4dad6540f01b870265001295b7f78bec9f02e38a6471e63aacc1694",
+        "solution/main.py": "8980e4c3047972fe95b1c77711b6c0cbd29ab27f74a7a7b592f1c13056680a4d",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "06-stacks/03-peek-item",
+      "files": {
+        "lesson.md": "a02bb204339f05e5f483b31f5a6ddbe7636329494ac94f344def49e0571c14ca",
+        "main.py": "9be3d4004fe946edd07f1c6c32561fecb3c9492cbd03b25b39d3e599f49b9905",
+        "test_main.py": "28d54a3c2deec7255a1ee080f9e88a1efc0f9c663d4ef85d79e438f0c249806c",
+        "solution/main.py": "c6e0b762f9ae725d1849f93506bcd0e3f88c49b4336b3143b927e0c8cd80982d",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "06-stacks/04-pop-item",
+      "files": {
+        "lesson.md": "8e6a6b195a71fa727485f8399d349a71acdf3d8575bd3b69ab3ef58c69a40d5a",
+        "main.py": "8ea88f7a59c860b37bae53a74dc5f22dd7dae6df1856e89b16962726e8a15087",
+        "test_main.py": "4c684a371cdd7aea16f175211f1e94e43af653272ef232a1937832d94cc93191",
+        "solution/main.py": "ca3320a8a10f8440b9feb5188ec113f76bd7e31599181daa5935a4e94c64011c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "06-stacks/05-balanced-brackets",
+      "files": {
+        "lesson.md": "d24c3a5c09dccf72d70cb88b2963081617fab3d36abd50b78ea05036d7808f8b",
+        "main.py": "67fc6cf2f5cef16d90374b59a81976c4df9c7cab3e3bea48071b78c37331a3e9",
+        "test_main.py": "66678d3ba5c011f22f26423c347804dbd4922f9fab9a619903c3dfd6c88574be",
+        "solution/main.py": "be789eccb95f83675e105264b14a4de9442fac457ff3e0952b54b906153f3ce2",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "06-stacks/06-postfix-evaluation",
+      "files": {
+        "lesson.md": "37c202d71716a1fafd4762d6ab0c001ec394cc466d2782414827950eb8269e01",
+        "main.py": "9d9c7dd97f71e18d237e8b75a9b1fd33d3f6bd1ca0595b32419463ccb461ddaf",
+        "test_main.py": "758fb36bc0d75817a52d493f5290f98ea5f84d9ec79fd6c38af26bb7b2e26d9d",
+        "solution/main.py": "d8fe2baedef0020fcb01395d304e03e6979f437a57be496499de23ec89c255e3",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "06-stacks/07-undo-history",
+      "files": {
+        "lesson.md": "5e22db6df4a100f3243c4721c8574993f35b6e9056af5e8744acb168dfa6cab9",
+        "main.py": "20ad87deecc7f1b5b4a2ff081be7066aeb5784ddaef94fd314bfa4ed45db6caa",
+        "test_main.py": "cd6a2890e0f4b236ca3a78cd25ba45ce0a8c4e05e223b0a1f5a38cbd5d19eb8f",
+        "solution/main.py": "b3ce2e57093f01f2aa2d9acb634f39b1d93f0102ce4f076827ac20ff8d17288a",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "06-stacks/08-minimum-stack",
+      "files": {
+        "lesson.md": "a1279f0013797757494429c5b51edb9233e9ef13dde3c34dcca6681366187fc7",
+        "main.py": "b049404681fda68d537b89f653c39f7287ce3d548b5c3b6c91142e7cdcdcf2f7",
+        "test_main.py": "ea1dcf31d22a93b29dec960af3efe8a8c2a1c9569c78cc5611772e337e30ee88",
+        "solution/main.py": "de6e40065aa9d11734a2fcf2f059db1749b9eea6b216beeb7db334b3c6338d2b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "07-queues-and-deques/01-linked-queue-state",
+      "files": {
+        "lesson.md": "981b64c3de0223dcab2b16ea0c728a8b7afb2a235a98c5ecd251d0d258334f35",
+        "main.py": "e66cbac4d82de8be96574dd846bf48ea68a96d79a64a1b176cf01b77424b52f9",
+        "test_main.py": "146ead6b4f21b5a6064f41f26a2f16e3c90a742f4f9cb2a0eb8cf868c04ae150",
+        "solution/main.py": "4f7d2dd17c873b8e6941ec5e4dcc8d84a3f6b979f9ec25b44bab60fe2cd2d788",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "07-queues-and-deques/02-enqueue-item",
+      "files": {
+        "lesson.md": "d9b31f781d454472de41e38c4be55a0ae78adb5edee6c168d39a96633cfd7c4a",
+        "main.py": "3986c408ac4142981014451df866ba59e43e1ff959e422c10b51773c307ea55b",
+        "test_main.py": "b8688bf089023257c068c6b9683ae377b2458851f4f4dfc972445a4687975243",
+        "solution/main.py": "b86be351a4434c0935ff9bd689b1452431c87f792f07d6cdc7b2dfcf392dd0ca",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "07-queues-and-deques/03-dequeue-item",
+      "files": {
+        "lesson.md": "571a2651da25c62ad966b6b9df5a0e4b7bdd822cb1170ecdf3d9319be582fa45",
+        "main.py": "4cb78fb17deb4b29c2916536348663ab025df26bffeafaf55adb0467ccf24854",
+        "test_main.py": "d7509a3ca96fc2b4eb6fa9cfca2b77ead0678c974ee4366e99d519e70376f8a6",
+        "solution/main.py": "63210dcc36c85efeb2501b7fb15ee1f6f8b08e12f6c28b492c5b7d491c6a1065",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "07-queues-and-deques/04-peek-queue",
+      "files": {
+        "lesson.md": "3e3868a5cc5aca714e5506668b79de8f4146b5010a38b73b1542c2e683d02091",
+        "main.py": "dae9d0a6f3bfc5206aa11f1192dbba88b5f16a577264ea18602737a2842f584e",
+        "test_main.py": "8d863e74a5b6e93c641aca34bda544c9541c5ac15ecf71ceb8587b616f46a3d3",
+        "solution/main.py": "908b53881316a7d1e5a7614d77fe33913f649ccba3cbfc718e1bcd995d43901b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "07-queues-and-deques/05-deque-basics",
+      "files": {
+        "lesson.md": "158e58ea61c2e3cab0b1da62bac05d378cde3bdf030d5263316f9c183aa86548",
+        "main.py": "c0cab21086090ad130bfb7280dcba9caf2cfd75b8b306602f970a6f74cc4087b",
+        "test_main.py": "87107cd5e5d61c306a34083e01b4c597471304abbbf514d760519f6714c228d5",
+        "solution/main.py": "db4b9b32af1b5e929eadfa417b01a647e07de655ee53affcb7b2e1f01071c8e5",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "07-queues-and-deques/06-ring-buffer-state",
+      "files": {
+        "lesson.md": "50b88bf9a6c1ac3766550dc413bd2c4af90b5a27614e4bcad6380380339d573c",
+        "main.py": "8d9a376dd6386f1f0c1f2f05269a775d565b783968a5a123924b6985306703f9",
+        "test_main.py": "1381d4ef3f3057f01d4193f7f72f77b89883cb80984b42f6cf9e256ffee5ff5e",
+        "solution/main.py": "99f05ed36dc87f2081892f11bd60a88784e6d9599d82e10396d12d4453948046",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "07-queues-and-deques/07-ring-enqueue",
+      "files": {
+        "lesson.md": "08b3fa60630dbb886bd81bc603b2192d7bbdc66f122d2df2e2bb63cb177f9818",
+        "main.py": "5c90e12f34c4e1c8a1fe7e44e82e8d8bfda20072f2fdc43f9ab65e49a7152163",
+        "test_main.py": "7f8a8bbc76682a91a620cf5746405bdc9897d3dd588509d20cb86c5437371136",
+        "solution/main.py": "dc9e312c05e9cecce19f62090961907e4882d859d62e977e4dd7b855b3ad2ebb",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "07-queues-and-deques/08-ring-dequeue",
+      "files": {
+        "lesson.md": "7a789c6cb6f90a20b3b5ab1b9734ecf8726f64b7f544d39f47530590f4b77be0",
+        "main.py": "3a828a8cac57390960f0d8dd2c13cdf190799ef808f44fa7fd4f67baace76be7",
+        "test_main.py": "091e418f499acc9299a1f9750b8844a5ffa4eb5f2eef47c0619ca67382580c5e",
+        "solution/main.py": "d34d7b4a0f7eea45466a19ec4e6221f21e5e32a0fd75d9e561d412e3c5abf8b4",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "07-queues-and-deques/09-round-robin",
+      "files": {
+        "lesson.md": "df983ca78084a1be5e256b50a91872277e05e0901035de537a4a390de7f5ba29",
+        "main.py": "f474a57990e5894b680b73af0ecc063bf448739159deda5987453872a4c4080e",
+        "test_main.py": "79a923311ef21ba10bec2a4032e51c5c02a528a71bf04ed7f952959f79fa40bd",
+        "solution/main.py": "934ce101ef5d63c4ad1fc013a679909b910c0bb0949dee429bbb252b1512cde1",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "07-queues-and-deques/10-sliding-window-maximum",
+      "files": {
+        "lesson.md": "5c26ce30a4d195dc1c41246dc54e0873ebf14233034ae7f0de31f00527bbe150",
+        "main.py": "6d5cd6ba3de20c2b35424694a635e48561396ec62692e26f8724035213996e9a",
+        "test_main.py": "74f80f09cccbc56129ede5fbbcce956a523a64fe9224e86d910b0009751afd6b",
+        "solution/main.py": "b0d4be7067748af419943f705ac2dce02828340a7bc0fe26ace0321d697a2acf",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "08-hash-tables/01-hash-to-bucket",
+      "files": {
+        "lesson.md": "03f6dedff6166555368e2a72256c312df0b8740a58721ec34d3d3fbf8ee17d8e",
+        "main.py": "d1bc8a1261ee946ea5a003bc93890de0d5f1bbcd62e05b1237b643fd57c63e59",
+        "test_main.py": "f94b04ebf430fbfeaccdae65b266c53dd58c5d1ca9c92f11361a1091a0c61c2e",
+        "solution/main.py": "e399076d8fd20cd2cdf2b7673c0aaa45f9238a6d49972704acf886d0ccad4fd8",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "08-hash-tables/02-collision-buckets",
+      "files": {
+        "lesson.md": "09e244ba295377ef73a2776a34f00a246daa7cfc349d33d6de4d2e91bdefea03",
+        "main.py": "3e376b4a3ce327abc4e0351c08bfe2e128fd08850b5a0bfb92c26f6aae759a80",
+        "test_main.py": "092c20fc59ec5dd5c04b9bb082f04c9e0b7691c7c030033b5188ca2f5186b9e1",
+        "solution/main.py": "ffb127fb4b30c11e145704b70161b36299fca2f9413aed1a4a235d522044674c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "08-hash-tables/03-table-state",
+      "files": {
+        "lesson.md": "667d850bf2f28532bd9c50a9ceabe40ac08a9fc9d510e4592789c9e904113da2",
+        "main.py": "6f8b59d57abf523fa4951f4f876d8ec5e91d022a7dae6d1b9ff87b93f616019d",
+        "test_main.py": "afad54896b6318192c03766034f7e7e3e0dee42a1880111582ffb49bedf389de",
+        "solution/main.py": "7ad0009a2485172ee1678b3fa1931fd52cd65492a48d10499386ce7b8a681579",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "08-hash-tables/04-insert-or-update",
+      "files": {
+        "lesson.md": "a87439c2df2061820b0229b7ea7380daade929ef18190ea0221895064948ff72",
+        "main.py": "39dbd54714986a2c3803370102a17164d3977458b5971ac9dca9028c4a39cb8f",
+        "test_main.py": "6dfd82b11826b80c93dfd6cfc3f82d9527bc4fdeca619374acbbcae793d0c57a",
+        "solution/main.py": "188d4e19bcdfe24c26a1ed6790e153c20edd28d51b6c6378e7ae64786c2b224d",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "08-hash-tables/05-lookup-key",
+      "files": {
+        "lesson.md": "068a32c9eb5a02ffc6465e5ac2518eda6865f902ee271874d5d5c9c7c0ffbd98",
+        "main.py": "c95d90fcb7fde0e09f95e47b3ae84a8a7277164bd6557309cc021ce85cbe00c1",
+        "test_main.py": "dd0dd191586fd7c449c3159b2033b85206b0eab5a2b41f964c1c995b5ebbc2c0",
+        "solution/main.py": "8df44e0ac2ccc5ef74601f2909e113a982ce3e61a625565cf370a2ab990253b2",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "08-hash-tables/06-delete-key",
+      "files": {
+        "lesson.md": "e055b99da203f99a7e5e5969bf970a7b726b04222334628165f474cca740b98b",
+        "main.py": "d3990b5b3e441e729ff984b5e9e5769c751fde3eb99c39a6100f4e2abaa86ed0",
+        "test_main.py": "b39dd9e9acceb3d44016385927abab7f6f5712a51fdf10d601fa758281a5b863",
+        "solution/main.py": "ff4198e7efaba7fc796d47dc5ec9d41c3bd1227b03e0485e9f3e72963a008e64",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "08-hash-tables/07-list-entries",
+      "files": {
+        "lesson.md": "2bba62dc37ec8e710cf44ce61c793850502c18feade961d589d5b0c9c59bbeb4",
+        "main.py": "a9df85a7587576e0668bd661c8ebde45876105b2ab7dad008b9d6ec8e58eea2a",
+        "test_main.py": "b1d4f7c013b6dbf8b05514138c593002b98896ed6f4f62d9fe1ec6c647f462fb",
+        "solution/main.py": "2389fd3b5a6ac115301d16bef7f38205014b0e4ee97a3872ea8f50a44d683ccf",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "08-hash-tables/08-load-factor",
+      "files": {
+        "lesson.md": "4877b60fcfef770d6feb62cd627aa31a2ec4b22d78b28731eb691de1ec376d60",
+        "main.py": "05fe16d11e84a7edf4ef5551aa39664c140f346142cbd492010ec7cb220cf33a",
+        "test_main.py": "473f5449f8a13ea6f3bfd5a50f48afe65a3bd9b75d252947f2c29b3a712c7154",
+        "solution/main.py": "f9bc3f76a3ec7ada9c70d10066fd6234a520be308e6877ade7d83b65f1af0757",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "08-hash-tables/09-rehash-table",
+      "files": {
+        "lesson.md": "e72a5c91d7b9863f152f6049a529f9260511939bfb6cb839ba35a811b0ae6242",
+        "main.py": "77d5e05a764e6b02f556a3d999862b24a62d364f6eabae0aea4ff115d74a1d45",
+        "test_main.py": "24cfa5300d5fef56e7ce6032c6a75c91f0435c4658857fbf992a5101a505ea80",
+        "solution/main.py": "b77cf983d53ef21d8ca93c2a712aa17f159ed176c70e211205fa9fed3d2488bf",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "08-hash-tables/10-linear-probing",
+      "files": {
+        "lesson.md": "297ca1c18fe673616113dcf1a9553053f7edf97cb72cb3d6990bd8a200209d2c",
+        "main.py": "76a2b7b9cc051bd38468c457789b2df51e877782431a0a0e93cf3f422aa74922",
+        "test_main.py": "620d543159f6b8099ccbadfcbae35cd39e8574ef1b24c9f19c5c20f0359be392",
+        "solution/main.py": "fba6c6351ced2a3be57b49b872c2eddac0eef5fe2fe6263d1431db36c2bcd4e2",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "08-hash-tables/11-tombstone-deletion",
+      "files": {
+        "lesson.md": "322d79e5b197a1294dec6f545d7319ddcca46976433ef71bf831f630d170cab4",
+        "main.py": "1132047255175bbf7a2c553319dc6a8359b8d76fb89443d91b08c9a449df2a8e",
+        "test_main.py": "d7dbe911e006a73b67e82d14fb86f85439e95eb2048278ce26e736dfd2c78b2c",
+        "solution/main.py": "5c5fc830116856e2ec7ebe9c04a44f72caa0305e41d9a7063a5ce3b68995642e",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "08-hash-tables/12-frequency-index",
+      "files": {
+        "lesson.md": "a09fc628816567a1e1a2ca081c0411c9793da8134ef21a84c7a10295202ad3ac",
+        "main.py": "1aa40c90caf2e43cb714bb3dc4fdddc1b4aacdfd14a0cb6a820b0f476bf90d0b",
+        "test_main.py": "5723f7ecd6a68f33c79e2e775ce3b3f02e2554274a2ad700de70aa5d33d6606d",
+        "solution/main.py": "9d8b753359b7627887c793a896db890b0814506117fbc2428ba0980efcf1b23f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "09-searching/01-linear-search",
+      "files": {
+        "lesson.md": "8d5c326f99be54cb175a96ad7f1608a9e579e00d6ea36f710ff5ac2eea2b6c13",
+        "main.py": "daa8553533f0fbf16fdd2fee7aa52f9cbae9d7448736d4963d85c3d9a062158f",
+        "test_main.py": "f2684585e38d380adf3dd01a934a41d00118a2c2b0aced01c2c2344b459d2dc9",
+        "solution/main.py": "d3de2bc5cd9d7dcfd585c8fe5fb74cc47176de32330ebc3099aba95395d41bd2",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "09-searching/02-search-with-key",
+      "files": {
+        "lesson.md": "f6dbb5e07c82db3f05d6baf9931241a1e5e802d5172f6cd1fbe2b1f23e680267",
+        "main.py": "fbe670481644ddc217e6192d2b2f0d68818311ecec952a151d013997f6960fb3",
+        "test_main.py": "1f2fd1e34bd2edade024c96f951a3bdfcd62378f91882a86385bc265a27197da",
+        "solution/main.py": "ac87a9dc8d862445594e21556c96655b3fc216e80f5e287fc4131eabb802d5e4",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "09-searching/03-binary-search-loop",
+      "files": {
+        "lesson.md": "b430b93c7f74ab04eb0a62e29a9463cd482c6781e79d67f0cf831241b0c9a7dc",
+        "main.py": "b238208ca814582e4da9504ee827f2f9e97860d9e5c1da87bee8d28bb6287cff",
+        "test_main.py": "a12283c7b50dce6f647cb90548901cf45fd0a6928a9e6d81d8774b0ec057d229",
+        "solution/main.py": "822577eff0c7394e876c8f423bf4095f08bb067aff306e5e4c08a70fedf30ebd",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "09-searching/04-binary-search-boundaries",
+      "files": {
+        "lesson.md": "a003c396cb59486a360a3c9c8cfa0c2936264d8c38f66970f39b6da20f7c4b6a",
+        "main.py": "9d12dcde973d7d91539e294485a04e000551fbd608167b17160a212a49f9f2ca",
+        "test_main.py": "8447795d446dc175283c382eceeabb92cf32b1dc6fbea72e51b9eec926e46caf",
+        "solution/main.py": "950aba61cd7dfba433d935f5df9572cb4a034a47e89fbc64467b192e79c80221",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "09-searching/05-lower-bound",
+      "files": {
+        "lesson.md": "389aa70b46998078efdddafd9326a353958ff5598a4a5042f7a663576d489d86",
+        "main.py": "11d0216348edf0f2a00b75912e67dca33d1f5f090bbea5804282b771432f2d56",
+        "test_main.py": "793b4ad233e5da904903ae696d413ba7b9b77ec8d47d62ab8117e955e3e2dbf6",
+        "solution/main.py": "9d3faf1e89d0ccdf2fac6ad479fe72a249f295c156ca6a0d35d4d6bf3386ab0f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "09-searching/06-upper-bound",
+      "files": {
+        "lesson.md": "c412c68e8d2532f3f78a96ac9ce3d6c40524e3f5d2c36db8317d62b524f0ff8f",
+        "main.py": "746927761b2f588d3a5b58071c877b3c718cb90ebe8c96ada052fc2ffc4ecfc7",
+        "test_main.py": "8381eb459e7f404f051a70dc57bda440f100467c004a62085706294f42ed4169",
+        "solution/main.py": "d1dc1fe4155be44ca7b711e9b6d861dfde582ea59318efbfc5081e6ffca29b0e",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "09-searching/07-sorted-insertion",
+      "files": {
+        "lesson.md": "763c9cda6eb87a8f442d587c70c224d62e72c2da2063c2aba2e1c89f0fb42803",
+        "main.py": "6acf2457a92b68454fec5ce4f2888bf19fca3fe5638d04ca3f44beb502efd9d8",
+        "test_main.py": "c733e27d44189ad99d3ad0a573a105e1493d3eb2fe3cfa80b7c91f3ee4135692",
+        "solution/main.py": "99a8e2f74507f26578ba25ff949de762425a6590a3fa799a7a8ae379903f49b8",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "09-searching/08-search-comparison-budget",
+      "files": {
+        "lesson.md": "df1f6ef507df0b10a2f3bb5c4213f9a3178e918925f8a6ef3eefda86c1dff8fb",
+        "main.py": "34ebcf6db9f03a2cae798a88f581ee90f548126417d1abe24b27c1d392b235c6",
+        "test_main.py": "95a833314737ad40e0b7dad5c8ec602b43cb08dc37ea8dd206c56c143b3a590e",
+        "solution/main.py": "9bef294ec0a2970fce95a8e70e2b52fb6d232bcb32eab9e52e16c06b78b60242",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "10-sorting/01-swap-adjacent",
+      "files": {
+        "lesson.md": "5b5ad71638a698d754a35c13c7565293f17daca7c5b15c5f5f2a60065cec9955",
+        "main.py": "a65659c145aec34c530d6ee88fe5062fa11fb3cc0a084fa8c21a297fb0d7d469",
+        "test_main.py": "fdf0eedf5226e71d88e4ab6274771767ac88b9f6d63750d9895028cb7ff8eb0e",
+        "solution/main.py": "e20aaab8ff63622a4b0c72591dedf54d24b1c9635b752545c5ab3e9b71fec93a",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "10-sorting/02-bubble-pass",
+      "files": {
+        "lesson.md": "5a3f87ab94f76ac5134ab0a2ebec696fa02ae010d70c02bb9bfdab3a5506d5eb",
+        "main.py": "66b82059e389f7f642174787f6dc4843100492f2b4297fc0cd13d2fde17787e4",
+        "test_main.py": "f234faa1a7344c8ea9644a745d36028b988c34f451cea52020d68b559b9aedcc",
+        "solution/main.py": "813cb7c84943daeba87e2c97c5ba5ebe76fa9039dcf2b321e182cc170bee6094",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "10-sorting/03-bubble-sort",
+      "files": {
+        "lesson.md": "43e8b1b8950c3c4d82e1201f2d5f8f7c9a804b0feb7397a967d9bc8a049f6886",
+        "main.py": "000d2cc94aa4da9d8a9f6b9b25efb37ce06ae51ffb52959ab644d69327b0fdf2",
+        "test_main.py": "a54664399966b46219106fd928df97a0160686382f5bbaea251b876298cf63d0",
+        "solution/main.py": "707a2db2c13ee7016ced1d8acfe6e00e521d876cc5788e5386a21248e7cbe072",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "10-sorting/04-select-minimum",
+      "files": {
+        "lesson.md": "dd206b585fd72dfcf48aa79d977f417b0998724d8262add5a34f3d7b768f6ecb",
+        "main.py": "621ebbdf891eff376a68ebb53b8e3f739fb0035566b4d37049192a2731fa8a31",
+        "test_main.py": "00d4099f25c42dbbc22db2824d8d1b554ba701d9c69830e1ddc4b9e7c2082c36",
+        "solution/main.py": "ab32771d68863720a4e1e1112bd939c7ea85eb23aa06aa1e278276b9c39d5bb1",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "10-sorting/05-selection-sort",
+      "files": {
+        "lesson.md": "ea9822b2795214dae7b410bb31d6ee1aa0de0ee70b25a006e7fc232dfb6918ff",
+        "main.py": "201f173c07b726e46619c6c52635f50464da63adcf31e11d8cf3e2b2152ec533",
+        "test_main.py": "f1f82c881081096ce61627ac24a1c871dca6aa1208bda2480cb21551d40500fb",
+        "solution/main.py": "e4ca1b2cacf3c427b2a1ffaca974e9eac7d29cd84cd7d6e6396930e20abceb5f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "10-sorting/06-insertion-step",
+      "files": {
+        "lesson.md": "547f71c514296af7b720ea5959675741ab79d5b88254ed61388ef516f369d44f",
+        "main.py": "d69e79e69f6e2cf132df9e7d06d218834bda384052aa0916c2b3c9f50971719e",
+        "test_main.py": "5d075c9cd6cc5c7d3ab13b7e4b4dd998a0b571cdbc24e97e887ddd9894be92d9",
+        "solution/main.py": "035caf83f198b5a6caa2e1cc0a970c25bd6d0821c06f7064f734a64c27a515c4",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "10-sorting/07-insertion-sort",
+      "files": {
+        "lesson.md": "441915f27ced127dfe3287ae065716670bc17768243c81fbc284570aea029443",
+        "main.py": "32d7c678548c1b5d976770f0d3db627a5e20a1308cf850ee6ae0ab874e82ceea",
+        "test_main.py": "4aa13d8f6b90286f6ed5506dafdef1a52131419a1151bb098de90aed70cd205e",
+        "solution/main.py": "48ba7b66d1de00e5f00fbc4f7e99dc8b24d3a8f0374fa13e48ea3e97f29c03a7",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "10-sorting/08-merge-runs",
+      "files": {
+        "lesson.md": "d6bc4eab2a2110b62ffed212b7cc96b0a3786e6bd6608610dd8dd8e6ea4942f2",
+        "main.py": "bd08066bbf5395fccde046bfa45c2baea08f241decb0a5f702142625f097b4e2",
+        "test_main.py": "44aae417858f053d9b8cde73a3996472972753a28e26551a2c6a0a2e5147600d",
+        "solution/main.py": "2f06bdc4aeb43e8815e28142997ac380db8eedad61050c72d87b78fbcdd013f3",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "10-sorting/09-merge-sort",
+      "files": {
+        "lesson.md": "1366ad8ff111221ad9579aa962c4206de471330b44d5139e3b21e49ad0c7d8b3",
+        "main.py": "41ec1a8ea5ef2008f2b8446e116088d3ba69a58f15132b3fc6f9c3996c6c409e",
+        "test_main.py": "45c7b654d6a399674fdd2037cdbb5e1a87316cacb1c0fdc3b1bea62d2b57e306",
+        "solution/main.py": "8ea0ca265557a95d437d4a34ef91c9ceddc6e6e99381d11c7e8c8d71d9082052",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "10-sorting/10-partition-around-pivot",
+      "files": {
+        "lesson.md": "96dba17fc61b18afd49375bcc5c91cbbf28c90852caa463bc16fda910668f5c9",
+        "main.py": "d00058e68b177bc940a205722520108e3d3f92c50e343da63d6c22e0cf2b550a",
+        "test_main.py": "9fb387f382f8817cca408ffd81ede891135af44aaa3403b917f4de4d4195da70",
+        "solution/main.py": "09827454426b19ef82202b03504c7806cc7a5f86c0b681d4b87ed7df6525dfcc",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "10-sorting/11-quicksort",
+      "files": {
+        "lesson.md": "c9fd363b4924e68bdd83f98574445ba567e2f3bda17efd27151aded5af5067d7",
+        "main.py": "fd591f837a019771cab0cd329c6ea78e9fb8907a355a7bb641124afb14de6df3",
+        "test_main.py": "c04eb9f477dd2a4d193b7b0ff49be112e6b8a528e9be2e507951239a4202d49f",
+        "solution/main.py": "63cc2a768644f6fd1c3f7f203e698480c94565e1081b9734b713e054815d95a6",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "10-sorting/12-stable-key-sorting",
+      "files": {
+        "lesson.md": "136f8ba666bb91927b706f01c11aa54184cf276acf8cb1952c93aec570b31958",
+        "main.py": "058f7c1bb7fc7efcf4153fa6d83d81676dd8803ee9672e4467d0b8092f8dac20",
+        "test_main.py": "b0140b357e625d2f2327f13a2aaccadcffa111c3975baa3a3ba429fec15b74a0",
+        "solution/main.py": "bab7ba0456ffc0612ce14d25581962bf6c9e82aea20042a09e3521b67944cc92",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "11-trees-and-bst/01-binary-node",
+      "files": {
+        "lesson.md": "8c2a167da70bc3c98a57754f670cb4115e9e41cf4729be6b3d3b3d2977f8b76b",
+        "main.py": "153014daf468e25ada740a28756d822be010689ae54c68a9dc1d9bdd544299ac",
+        "test_main.py": "8a95dab2ace6e22f07fa8daebc20d2af8e8e49fdf7999b81f2663b2735372c54",
+        "solution/main.py": "d8f61baae2168c8345e11ffb05558a15c9265a0ec9b365234378261b39566d86",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "11-trees-and-bst/02-count-nodes",
+      "files": {
+        "lesson.md": "650c2cf9504a43150f2256a04600d6eacf73131ce976705f0abaa885afdcc612",
+        "main.py": "5754645cd464ae6f7adda76907cf495a055168ed200ae355e938861826946743",
+        "test_main.py": "3e5feb4318053c82d6f0ad45a73914298112e3c3d820895b56fd2cec328dc51b",
+        "solution/main.py": "2c77fc27e3214851766ea3ea9ba94f4c1eec30310ee9b185cc3ca2c2d533be05",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "11-trees-and-bst/03-tree-height",
+      "files": {
+        "lesson.md": "9f827519eef4c31075557e990f0c1ac415706703bd3ad0abdbe8e0836e0a1852",
+        "main.py": "019922e4a47b19471f6a1628613d70b744a77a80480a1bb50070566e227edf72",
+        "test_main.py": "5d7ef4e8a60975d47816b4260c72089f868388f01eb2e1f97da2db06cc1e54d2",
+        "solution/main.py": "a82e908a0eb3b0304adc27a6a48a0bc8ac0b64c394e0ef7057c0fb37f2eeab32",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "11-trees-and-bst/04-preorder-traversal",
+      "files": {
+        "lesson.md": "a8382effacbcfc6dd38ee4d447eeb75974bf3ac48c40395a0a8040d253b85d04",
+        "main.py": "b7fc5d308713a50f967ead8f7445f01134ecc3e73ca4a697ed71c0446797df43",
+        "test_main.py": "20c8a1d45a3eaab715a164b3ad9259fdda3a5d80edc451ef1ca42d7566a19d34",
+        "solution/main.py": "1b0ad8fdd37cbfb8f605d3cf73c57115e722ea6082f0b0eebc512c1060747a3f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "11-trees-and-bst/05-inorder-traversal",
+      "files": {
+        "lesson.md": "3c7a28847c9adf54e1ad1414258cb0b0fb781df4e1d9f96d4bbf9a1e327a0d9e",
+        "main.py": "65f47208ccd1af11c249c96a201b916beff0da01e8df42b53b5785d6b4c438b1",
+        "test_main.py": "f13f6f770e3a5c2faab61ba89726a7664ce413b630349797c77496dc845c3061",
+        "solution/main.py": "bf523a46666f0e9eabe6fcd4e941df586db07d8253d503e0397fdfab01ab8a78",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "11-trees-and-bst/06-postorder-traversal",
+      "files": {
+        "lesson.md": "1e7999651c70cc2156aa988f72ba457478f0e25ba22c05a81f578e59c20d8c79",
+        "main.py": "778997552abb633b3b43ea43f50e1dd79000fb2f2c1c00263195583166a9d73e",
+        "test_main.py": "cd8d9c00548338b553d72eb9144241e9fae4b5821b69ca18668987da3bea1919",
+        "solution/main.py": "014ee6fafb31b8d85b6fe1547ebbae7cd2e1ace6b66dfcc524bcf919e9902364",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "11-trees-and-bst/07-level-order-traversal",
+      "files": {
+        "lesson.md": "8149f8122928f3e4e0b8986ba2d2c80bd3860a242252cdb744a15fa28a67ce42",
+        "main.py": "423147c30c7565294a360ebfc5e1b45748204350cf310baa9faf8a7ce88639cf",
+        "test_main.py": "9a4fb7d9cd6419714ef28ff9d754db282685b49fed806642b31cc6bc5cad81e9",
+        "solution/main.py": "c3ab6520eb7de51c5506f9478a60196fe09ffa6fa363b5cb9d62fd27a2d025fa",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "11-trees-and-bst/08-bst-search",
+      "files": {
+        "lesson.md": "67a2f44d965cde15669eca24a5870b22d0c370ca8736b9ee6474ac31ec1c8276",
+        "main.py": "db1e24c102d05df718d3c6a2de7649d5a88727b97b1e0dc58fb87940582c0619",
+        "test_main.py": "19d3a8ab617fe2f881dda90d4d0b69c10b3c748111af2d924d0278b754e29ea8",
+        "solution/main.py": "4ae933522bc1f008dffe2f1cb42f05128279343957fb79eecbf2056daf56388b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "11-trees-and-bst/09-bst-insert",
+      "files": {
+        "lesson.md": "0364d43e122cc9b3987dcd3cd697e92f62d00eb1d4d5a9627602c7346cff1507",
+        "main.py": "9bc5be90c7b3cbb7e15ae910cfa9df94d1d1911272f7309a07b7d7f39e2d41f0",
+        "test_main.py": "2260016e9aafc4633598d1f98d8750a1d0d480f49c65f0bb23b796bfb5bfbfc6",
+        "solution/main.py": "64453e138e05b4ebeb98cf2a2095a495a9ef51f25b35bf6af8b0427bf9231dbc",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "11-trees-and-bst/10-bst-minimum",
+      "files": {
+        "lesson.md": "1e340b24291801ce2637c8a48a9c34acf534c4dbaae88ba7e71ef269255c3ea5",
+        "main.py": "e82b98c9897638ac4788b88501aab8f3fc2fb9427adbf5e63fa48571457a1587",
+        "test_main.py": "356c182209e25010ba9413a09e3c6d970681895e61d6261a6b15a438a3968a3c",
+        "solution/main.py": "241557f59e2161137e776102f1bef989f5d31660252614b39d8f5d151a1a7fef",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "11-trees-and-bst/11-bst-delete-leaf",
+      "files": {
+        "lesson.md": "c4a982aa900bbd815108aacccfdd98f4d6f8c97c3b0f311c4f68d7c586066124",
+        "main.py": "137e68dbf640ba7543627c92f525d6c5635732b9098accbcd5f4fee254a092b4",
+        "test_main.py": "e53e995fd18cd143c2cac26a7388035d2fa963bb7981801bdd3363a6be3005aa",
+        "solution/main.py": "64950d9e9179e78c78f52c22cdd3d7aa5d2607ba79ad560b6510c9108d95604a",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "11-trees-and-bst/12-bst-delete-one-child",
+      "files": {
+        "lesson.md": "f41e1aa8d9d413d21bdd04521dce193580981c7f0105050b699de65a641132a5",
+        "main.py": "75f2308730627bbbb0d908045a247b5245eaabd4b84e1426c6d9f0fc128527ee",
+        "test_main.py": "00036541dedf3755631804b67c3acbc8a0205f856fbcecaa6ece898ad2424193",
+        "solution/main.py": "41fc1d4dc164e0c1cf3d0c8d05e22df16bd1fd6005596e38b1ce21ef96c1de73",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "11-trees-and-bst/13-bst-delete-two-children",
+      "files": {
+        "lesson.md": "3140c7767e3aebcdc0eb364d6faffafa320816d8907d9bb75bdc852ee18b2f7f",
+        "main.py": "226275d027da4e8462302d24cfa89666b947a1d49127bc55a7095d0b4faa63c9",
+        "test_main.py": "499d8b874d5b5c9ee15b58424cfd257ad7ab9969231dcd9e28b4e4b8e6b46bfd",
+        "solution/main.py": "b77e72fc390a8cac9d3890c114a5961f89ae752260550f8aa263997881da1963",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "11-trees-and-bst/14-validate-bst",
+      "files": {
+        "lesson.md": "4e61013d8afc7d71cfc95d61b4d84be7a1020ab622ccd9e376e75129c1764b58",
+        "main.py": "5a7962575b4f190ce7e000a0881d2381a75bd757afc30d2eb7b4d860aa932b6b",
+        "test_main.py": "2d3826159fa34c12d647183cc4c59b4e1d1fe3a2af98a22fbc06e0e14dad3133",
+        "solution/main.py": "e2b2a29955f127889738792f818ef6910db2da51d005a98d692a331b250c56eb",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "12-heaps-and-priority/01-heap-array-indices",
+      "files": {
+        "lesson.md": "3d389ea4320d3d0356b3b0d9c3730ee730b2581950baedf753beba03d74bdf72",
+        "main.py": "89432d4a94ddf2cb6677201dc059f12cb4b99b22368c4d3501cc2f41f716ca92",
+        "test_main.py": "162ae32850a0aef3bcad5e1de347e0ecc55f8e7a89f8456a8be75106c39dc7f4",
+        "solution/main.py": "8b355e54fcbfbcf260d08e48d8b50c2458469c7ac8c2ebf0ee8fe8143ac6add4",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "12-heaps-and-priority/02-heap-order",
+      "files": {
+        "lesson.md": "5f38951da80a0bbc669e9e734bf76fd3dc0bf82b0a3db933b924acb51945af73",
+        "main.py": "0137a675b016a4cecae965e0dc1d584963c2798c2db94ae319aed11f981e9993",
+        "test_main.py": "6b02ca93724da5087e9e0f632030305b0d3d965abb9501a1239d6839a8391994",
+        "solution/main.py": "cf22ca025fa141738802773135cc4b709b016bbf08aefc1b3cfd7908fe886522",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "12-heaps-and-priority/03-sift-up",
+      "files": {
+        "lesson.md": "f8ecdaf1853becd748bfcf34ee14bb2ec5b656e4e04046762513632229ad8171",
+        "main.py": "fae39a43ba2a441bb3d99b34552129c8a1a0d477bfca6ceb219d828af778466e",
+        "test_main.py": "6e0c6afd69e60816accb8f62a08fd9b68f6428b593363d3dbc94f93303cb4b1e",
+        "solution/main.py": "7d8d321ccac81edf83b93f88844b1aa53c6219f16b4eac0b30953431615b2d69",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "12-heaps-and-priority/04-sift-down",
+      "files": {
+        "lesson.md": "aef77e4c5751e2506316525e20a69aec446d700154c6df5a3e1206d1b8825e4b",
+        "main.py": "1cbcff45958b37db037d9b1f18749a44345243e38c426ebcd17070b6c9e401b6",
+        "test_main.py": "f2f3bd745b107fd7c00a83c9805dacfbb30e6b304cb89c22a93984339fa496a3",
+        "solution/main.py": "fdca6aaaf7ada7fa56ab60fa0ad7d4112ef10ba15ceb444f6cebcec3bab5576f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "12-heaps-and-priority/05-heap-push",
+      "files": {
+        "lesson.md": "f3fad94427fc8959fc645e29b0899e4231738ab0d5b19f5139b43fe520288358",
+        "main.py": "e58df3b4a0562b3adc8d3000fbfcfc2d22eb1a24cdc98dcf1f950ea8a354e351",
+        "test_main.py": "8b599ad13dfa918014df0c8a217900d7dddcf2001fc6e772f5dc3415dbe072e2",
+        "solution/main.py": "f5495aa30ee4482516ed2f132cd3f5b579ae66b1ceeea315663805b26a251da3",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "12-heaps-and-priority/06-heap-pop",
+      "files": {
+        "lesson.md": "6e95ee3131c195e4d15e3ec24010196f3eed514bc8c8e5283d8da6a872d31f60",
+        "main.py": "cdbbbf9ea06930ca5b77f7b2ec3df0abd58d0fa926797769b962158067ae704d",
+        "test_main.py": "474549b455883ddd9afd60a1ae95bb5eea112239654ecda1b4d19a1a440c1bf2",
+        "solution/main.py": "9eae85241d19c1091737ec47035a546bdb5f80e96c53b291b93b2a56202453bf",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "12-heaps-and-priority/07-bottom-up-heapify",
+      "files": {
+        "lesson.md": "c9230b9887997ffe96a4cfa5825ec95b6b24c65bc1ac8732dd1230fd0cfa681b",
+        "main.py": "0c34da095d30bc7425f934a5fe78a08abc8a87b935999ce315f009e11ebd9f57",
+        "test_main.py": "122f2280ebcd200f5ae5f097fb43716b7e4bc3e4c667013aa87406350afbaa2a",
+        "solution/main.py": "2f57e55554b197bef1696d1db9dc49e49453d338d7efe539b8825d6f9ff3653c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "12-heaps-and-priority/08-max-heap",
+      "files": {
+        "lesson.md": "c50f038d9d1310a79132e8774f3f7a54cda70f8f332d8c85caaa7468554c94a6",
+        "main.py": "f793dd344c7512dc275c66c0b8b7b58d4062114b722d1d14ca55e7824526f2eb",
+        "test_main.py": "3a272df0e201f112678f8194d18d98bdad0aded7734ea001110d7e862419a091",
+        "solution/main.py": "6132e49c390f8b36919c7ecbc17ab8cb60af04e106f3ae919a26e1c062580c88",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "12-heaps-and-priority/09-heap-sort",
+      "files": {
+        "lesson.md": "397d4b3e4383923ee9fab2f6b875cb1f27ad6026cf63503d088db64e47f7a43e",
+        "main.py": "45f12ac0cac2f711b3e6704b98b2232c5259a34f96db04dd83bb86a58741388f",
+        "test_main.py": "b7e7854fca8be0aa94e711817207393304876c358f85cd380d9d1c841e8e84b0",
+        "solution/main.py": "7587fcfc6b8daa3d49273a4122172961eb6259f36c4f4e578266f917ce7d1028",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "12-heaps-and-priority/10-heapq-basics",
+      "files": {
+        "lesson.md": "047f1cdb5c92bef4ebecd788c4a18341ca08be72f6b7ac1bcacf16675e1cc00f",
+        "main.py": "69adc646293340ba71a2282148302a451fa3a950d225f93c55efa1c7f1c366af",
+        "test_main.py": "d1ceb464e387114b1ca0966b7293547cbde54c5011c75aa6f0071867f958be17",
+        "solution/main.py": "a5571dad5c1ea9731c7d2860dcf594296b636170be566f81257530ca90a9dcb5",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "12-heaps-and-priority/11-stable-priority-queue",
+      "files": {
+        "lesson.md": "89d05891fe4aafa0e358551ca07b15b2cf2b82d00ced5cbc1ee4c2121a65bfdc",
+        "main.py": "e2a5f04204464b45313522351b424ea02768532512126a9a8f2b45c41cdea6fa",
+        "test_main.py": "b1401eb08c484e67cac76aad5883c009bfc424387fdc27f49e5ac935a77d7d15",
+        "solution/main.py": "ecf8884e34f14c70c339fdfaf580c228e635ac92f3dc28963fb39cb7aab0332c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "12-heaps-and-priority/12-priority-updates",
+      "files": {
+        "lesson.md": "752ba083e39116a690bb303fa2de5f94422e493821982e5fa18968ed2d8837e5",
+        "main.py": "645b75b14d2dd1bcb49ffcf04005c53b76ced715bd4f0420fe7ac4cea7a4862d",
+        "test_main.py": "d88ce76c50f4cdc1d3dbdcbcf14add0d164a1cab361bc46c0aee7c877d89d1f4",
+        "solution/main.py": "4bf08e49894c60cf4ab322b60a75bed68b07d23dfe15d75544e927b80fd37579",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "12-heaps-and-priority/13-top-k-stream",
+      "files": {
+        "lesson.md": "e65a79175ff5d5968f4273616e9bfdbab51d7089d84ea63203f0098f23683718",
+        "main.py": "69f275a3a1fab71ae153c53122eb4282b55517af45fa4f923a39f521d7f39d40",
+        "test_main.py": "1cbaaf5310d7ad07237a3f7eaf1ffc5ceb997a4938cf679ce9f4b307a509a30d",
+        "solution/main.py": "949a6e99fe52e1285bd2dde5d5fb77730faded682d5a53c21953e8452040641e",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "12-heaps-and-priority/14-scheduler-project",
+      "files": {
+        "lesson.md": "62fad93ffd9f49775142e8cb67dff0a7ba62490175d572636e986ef3752a76f4",
+        "main.py": "b243eaad8bebca6e95c15fdbadd52ecfc7e1d756fd004b9d99208247548bc18e",
+        "test_main.py": "c41095e8feea446dfe579caef36cd57e55212b5a238e84fbc14be14b27c10d49",
+        "solution/main.py": "14bc7bf323c56514e5b97b8fdf8997ac5cc867657a46cf51c699ddfe465b55fb",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "13-graph-models/01-adjacency-list",
+      "files": {
+        "lesson.md": "4ef3b333fa13a9d7e34d2cd5cd3c2d7b257559848781519c3e694df1bef8dc83",
+        "main.py": "158a5b233721579be2bb9d35eee0a3fcdc7c4128ce80fed3875d10e4fc07c230",
+        "test_main.py": "4db4adcf9495ed8e8229c68f509038dd195cbefeb6f89fdc6789c7394b8b538c",
+        "solution/main.py": "16adb8fd29960db1bdc8521c45bd6886947e591ea97a66f465202a5f316534d8",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "13-graph-models/02-add-vertex",
+      "files": {
+        "lesson.md": "f9ae0fdb35cda5972b405f97032899180f9ed0840f981e92c63a206907b9588d",
+        "main.py": "13466a52063f668d767f5ecb8075bb50c985f320d43003a0959967ee1938ae08",
+        "test_main.py": "125dad6fd2fc51dd8b8720d913cadaf2d86e0a67e0d3297a34639c5c6c3702db",
+        "solution/main.py": "4d76cf39b4588e5bd5ce1adac46015b4dc9202849e430a3b2a8df3651711c1ad",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "13-graph-models/03-add-undirected-edge",
+      "files": {
+        "lesson.md": "52bc1b0f47f32f21813afd530d0746adb35f285641bad1d67acba7271824184d",
+        "main.py": "dfc0c5d18f53542737a9ffda631b43c3103ad6b7f936e3e3a55495993bad932e",
+        "test_main.py": "dd99d03aa2411ee049e7ede47a7eff677191b895c23f7c2924d36112695af43a",
+        "solution/main.py": "f72bf9c3a87be521994236fa1e5f9aed78888f3a02642ada54d6612169e7ff9c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "13-graph-models/04-remove-edge",
+      "files": {
+        "lesson.md": "fb6a93cb9578a712ce49d6a35d69ec32966a0bc48adb2f937dcb4a791237c572",
+        "main.py": "1da610acc92a25f8e3e2669294040cbf91f8877bc49275dbc5dd41bddec9143b",
+        "test_main.py": "d9b7653c9d075c2a12f87294f7eb9929c890791de55d2ad0ca70c76b5f12a7e6",
+        "solution/main.py": "7adac65bdf0d4241859203a8cfe7b41b25c704d6158aae136da2b4aaffc51dc4",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "13-graph-models/05-remove-vertex",
+      "files": {
+        "lesson.md": "1b8e81641523fac5d273e789982f1062efdb2eca21d0b0abd58411e22177f557",
+        "main.py": "e66c09ac640a895956244aeb13886b8fad3ebb39bbe0a42d99520cab6f46358b",
+        "test_main.py": "85389afca2d04833c8b9740a4354667b7a1109975138611df0bfbd70f2ce65e7",
+        "solution/main.py": "a4526141efe39e1e303f3224758738a600c2dde41b9bebad17716ac9e46efd96",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "13-graph-models/06-directed-edges",
+      "files": {
+        "lesson.md": "a7f37c566bb9e582dee32eb234908943337f77e87e287209540a89194cb5a10d",
+        "main.py": "51ba3e7c71a72531943b3e50ee7511f336ee595a34c06deddbbd27192ea544cc",
+        "test_main.py": "8f2f66893006e0d15a5ea2289cbdf50e942e6b6f5d75791fd2ebd221bc02b8a3",
+        "solution/main.py": "b8b86464c0dbc51570c245015dc738ee6116cd7c8ed2a5cbf1744ba29568e72c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "13-graph-models/07-adjacency-matrix",
+      "files": {
+        "lesson.md": "a28def89664b0ad81730758f3a51ff46d989faf811067152d439e2a83e12271e",
+        "main.py": "515be02f3940cb14433aa70252d141617968a9eee83079d935d4012710a906c6",
+        "test_main.py": "6f0066b8d5f7cadbe2598d0c26e5bb403b75d9b0afac5d3751afb8f2c201d254",
+        "solution/main.py": "0dedddae91a115daa98e9a3279014eb2f158976fafee7a8c2555dfa4ada9f08c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "13-graph-models/08-graph-degrees",
+      "files": {
+        "lesson.md": "6efb725fa53358121252b7da6f206005dec95747a92bf29d9314e8ff0268094f",
+        "main.py": "f97c9306f74e17434a6d662d04de032a1fe3243756f898c5ffcc477b6b62a7c6",
+        "test_main.py": "6f3183381dd68f3c831e22724c9ff7f24571d41e8863b3f41486e19bbfc40f7b",
+        "solution/main.py": "48a6c14ecc104e3bb03ee0ff2ca3ebb7f27be2ba187e67633352b8f75da56c01",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "14-graph-traversal/01-bfs-frontier",
+      "files": {
+        "lesson.md": "5ee980efb7065ae3dce945608712a1a3f9519ef60a4dd11e835188eaeb65df08",
+        "main.py": "78d8a5967b6dae7178e1164dab7d2442d432be95c1eaf6e221726cd0e3d72256",
+        "test_main.py": "c71c376751ca0bc6a39b974ddede1e96819cabc5955fb3ebacdf12edce58fb71",
+        "solution/main.py": "9df22fbd2b3f0976991b08959ec1b4221651d563f2be61c182bce99040a31781",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "14-graph-traversal/02-bfs-traversal",
+      "files": {
+        "lesson.md": "2a4eb4e3eac3fb4fa9bc2a318ca89f76e9f4e273be8c09017aff404059445778",
+        "main.py": "29a3dbc3a84eba3f786612e1006f8e5fdb4df8918776bfb80c8ab352867ee70a",
+        "test_main.py": "5537cda229c921161e2321c1c98aa350943dbf04bdb4993b5e9c2ec6c195df3e",
+        "solution/main.py": "494fc46161facf1d0c31bc82e78ffcef28cbad896075eecb8aae6e63128cd447",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "14-graph-traversal/03-bfs-distances",
+      "files": {
+        "lesson.md": "655943ce71b55a28ca174623d003de1923b71645b543021b059c956fa94f87e1",
+        "main.py": "fddc286f2d3961d639a7362ab67af055022861cabb9591cfc60e6eee21ca45df",
+        "test_main.py": "861b1ac7e3f0190d227c5444b9fa493c7fd3987861ad28d6e8e18e82c0830b15",
+        "solution/main.py": "537f8bc72bab9d2a6312aebe97c2929198d4e20657307b70d1f6b35f73759420",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "14-graph-traversal/04-bfs-path",
+      "files": {
+        "lesson.md": "8ad5a414a3015e7a8145a6f5a16cece3cf46dc112f4fe392649b05005c178197",
+        "main.py": "da16d2951605d224067a453dd125214eb214c087932689997e6bdc57e50f2f07",
+        "test_main.py": "470e225b76cc6fe795f27ff77490b69408eee08f31bf4edcd9483edcba4c27dc",
+        "solution/main.py": "f54b4d4565574e6d3265f8aa6207d951aa7e4dc9da77aeaeae68a29fafddb863",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "14-graph-traversal/05-connected-components",
+      "files": {
+        "lesson.md": "127167d9854a57c6e40c322b25cdd6218488746c80059c4fa12edc7458608e62",
+        "main.py": "a02ec2757a1f69c14051eded2c926b33fc4a8f913d265bcd160dfd9c72b8b891",
+        "test_main.py": "c56369d8463aadfdb31f14b85ccb5b55be460c9541c12b39af151794c68ab3c9",
+        "solution/main.py": "1c958f4a52801a6082cafc78068b50198e47146a509e74f76504296616a83c2a",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "14-graph-traversal/06-dfs-recursive",
+      "files": {
+        "lesson.md": "dd7eb28594216c3644e64922baa6009adcc5bffb4ebe8ed5236e9c83ece1cdef",
+        "main.py": "8c6fdc252805fbd22b3092aef0ebd896633c6c9bb56491531e8ffe87e5edfb76",
+        "test_main.py": "d0de93afd4e3d9332ce05e14d37f2d09ea558edb38b7e332ed46bfb5a5199a07",
+        "solution/main.py": "0fae1d0c6c5d3f82d116ef03af94bbe4a72d4ff37f1890379b5f3d92a7509c3f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "14-graph-traversal/07-dfs-iterative",
+      "files": {
+        "lesson.md": "e10374c7fb7ca1da3927f942bf730832347b1a9aea12ee9df252c09bfbc92a2d",
+        "main.py": "6ebfb7d0af1779b6d89276c500d6d5f6ff896c0809ceb920d0453233996d3a5f",
+        "test_main.py": "69cb903dfc081bcf529ca835b69d2de4276a9816dd438fe3ef05c079d9617220",
+        "solution/main.py": "b30fb39ffa75b8b42a59f34ba56a879fa085bedae07c37542dfa859ef3efbd50",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "14-graph-traversal/08-undirected-cycle",
+      "files": {
+        "lesson.md": "e2863dcbad508c747e94751403003c570dcb89171b116e5b8f2fe5430a51f808",
+        "main.py": "3e1152dbde42a850530e822325bec84efb31405922385a1db8dccbb3c5025397",
+        "test_main.py": "9b0dab978a328118d4477ebc85925ec20684e2316bd78ef5e1d3f9d3600e58fd",
+        "solution/main.py": "7c78d4fefa41f7bc4ce27c9290d772f49556d95e2a0e1bc57ee972bdb710b935",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "14-graph-traversal/09-directed-cycle",
+      "files": {
+        "lesson.md": "c8b18fe77686809e3b8996e79a75f396df18b6d63fa39132a1d6e6480c259f9d",
+        "main.py": "9c5aed89684255f398b697c919d4fdf5e3b4c40369acec33e47f78c8c4aee0f8",
+        "test_main.py": "689ff176540f63001c018618e9716fa214931061db5f1a57e8394711fd760af9",
+        "solution/main.py": "cd44407f4c659be190cee6f88e6356a1f9e36345ceb7df0e820f2bf0f676de41",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "14-graph-traversal/10-topological-order",
+      "files": {
+        "lesson.md": "09815f4f23444694f558dcec964572382e008e70296858ab7f910c4825e68c75",
+        "main.py": "9af98922044195d4d374bb1bf8949ad35a646a2f6f3d8fda75e536e47abcdb73",
+        "test_main.py": "e7768d7b63484e7f83a47e2c5ed19a1b86b56de7ee8a66f98e4f77621eb569c3",
+        "solution/main.py": "1f30a0acb970b394dd85bbce5493175a3fc013a2827af1de3d98a73cae348032",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "15-shortest-paths/01-weighted-adjacency",
+      "files": {
+        "lesson.md": "d8c1e0028b6de77053997ee694594c54c0d70482c6bf2d0da66f40d03441ac89",
+        "main.py": "6cbc95474309ca5b617316f334f1472be426a05c3e3345b177104f1ff13f906f",
+        "test_main.py": "e1030949221a25c3054d89cc386b55f2ccf2c8405d59dea8d7d4d252fc7d3bd5",
+        "solution/main.py": "f84c3d7e8c3fcb0259c25be431f6879fae51a4a5890655081e230617ff12dfac",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "15-shortest-paths/02-path-cost",
+      "files": {
+        "lesson.md": "4ec6e81a85cd3d65b127bccf080764118ca0fbfe1aabd8136762d9390c5b57a3",
+        "main.py": "d3338fa51cf237fc2e8743e86446640288f60eeff2d4cc3b0705e9fdb558b572",
+        "test_main.py": "9e34880aaa2a35cb1cb80d313a7749ee1c1640f9cd720a1c73ba647981ae45f1",
+        "solution/main.py": "75ed903d715b52dd4fbf19698280a2ed44960e89e0ef88630f867e87a7b38df1",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "15-shortest-paths/03-relax-edge",
+      "files": {
+        "lesson.md": "33f1517531032096187b9dbced57b0f48ee86a8b3e5e0f1264b6eb6410becdbf",
+        "main.py": "ee2b59f22f81ea46b08d4ddf7f49d8f672edc7cadfdbcb27e59e484482021025",
+        "test_main.py": "cf755783fc948002c42028008fe9061929e123bb6f6826723e9722b843c6f384",
+        "solution/main.py": "335001625cf5c6a72cbd8debf6feea6f0feab6d91b4d03d0a5f35f8532ca33ea",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "15-shortest-paths/04-dijkstra-scan",
+      "files": {
+        "lesson.md": "80b2be8140a7a4255d3a24aa7554e7b9d1902f27a9de96cac8ac129ebf9339e3",
+        "main.py": "3718604adf8b582758f5f359c0b306027103747ce72115e6dbd64d459e1026c3",
+        "test_main.py": "85ba69207c7d31485ad459db1d984648768676999a9f978c1cd1f898f0820d6d",
+        "solution/main.py": "45c3ee0ea05ac6d7b9f81f101ffdbc2efbc83d96107e7f6173ce3f791c1de1e1",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "15-shortest-paths/05-dijkstra-heap",
+      "files": {
+        "lesson.md": "9bfc08eb8b161d820e0df1dcb0436131ab5605f1a5c1fc58cc469955e30cf7a3",
+        "main.py": "68ce8e3b804c4fff0dafeded5776dec1046e5407f994572d6fdccb664659e588",
+        "test_main.py": "791da1bb88d396fc8c6e7514b8fcc6270bd6006fb123b758fc5cd22632ae0f94",
+        "solution/main.py": "b31df42fa6bde8d5e07ed9ebaa3ee2f0e5cf6a2b315c4a8467a905a6442faf22",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "15-shortest-paths/06-reconstruct-weighted-path",
+      "files": {
+        "lesson.md": "511d8c5b01fc60d3f4dfeaed2ccf0e4cdfd3a046a507d22db6be8eee637f538b",
+        "main.py": "1b6e4c72357a4fb3cd00712fd08f85668bc6de581a7840ca1fefa6ad46d3e756",
+        "test_main.py": "66ee692e77f16ceee40591af8ac835e6d15436fbd6c3a5df31e60a82593ee262",
+        "solution/main.py": "5416e537b41d6776377b51261301509de3736c1fc21f84cf4941e5d6ec870cf1",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "15-shortest-paths/07-unreachable-and-zero-weights",
+      "files": {
+        "lesson.md": "7169b6d3f278aacfd959c7f7ea6129623e6137458c27478a9420dbf3a123ce14",
+        "main.py": "f037263ad2ba4d1d94b2141a77fe8afd12ae988cf6fdd7163b3db3e17d34d45f",
+        "test_main.py": "25ac446ac42bd3341c9c8a8dd0cc82cbae32ae5b6da0e85e35e7c0fa11248063",
+        "solution/main.py": "daa946d45408a2ca19edc035bd35739033e7778de07e448bd4c758700ecaa4ec",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "15-shortest-paths/08-route-planner",
+      "files": {
+        "lesson.md": "baad33de3b1086e0b9150b87a2e48244e86dce75452b55b9a094930e7c1ad832",
+        "main.py": "23d4cc7932469c077ea4dae63a52ea816c8cf645985ff6a9e665c8872a1fe2b0",
+        "test_main.py": "5208ee6650706926ab76b3b484846bc003e8a41a050423fbb1034d97fd1e0740",
+        "solution/main.py": "2327e6806aaf42731d0b8a64bdaa8c0b2ccd19c7b82b809d72fbdc6c430def9b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "16-bits-and-sets/01-test-a-bit",
+      "files": {
+        "lesson.md": "be5908e4101db666f94b52ac22d668d77ea9e2f8e219d1cf338f3bfafd9d98f2",
+        "main.py": "f571220f818a39a499e575fd6ec070d8d88487e77069a3d0754194feee981629",
+        "test_main.py": "26ee3d781079c20150c4c25ccb59ec9b1e45addfaf46ccf4a5117ea22bf1227a",
+        "solution/main.py": "cddec6d02edc35c8127272c3b4b5414c018b3b449f777ba463f84ca465a05131",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "16-bits-and-sets/02-set-clear-toggle",
+      "files": {
+        "lesson.md": "8cf52b35fe3ab8681036f717c45215a1cb43015c2cad091f67702ffc3cc64b57",
+        "main.py": "1a86b9e20755d6f35ae607c550ab1414e7772d41f2368e1ca44536175b57baf9",
+        "test_main.py": "67416238ef7b4502b28b3832be7f34c1ecfbfbd126ef78f58abc7bf29f6a4eca",
+        "solution/main.py": "ecfcec44b43042b8e4c0ac29767a5b2704e8a3bec92c3b5769a1143e993d5329",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "16-bits-and-sets/03-bit-count",
+      "files": {
+        "lesson.md": "f5556aa00ded2840cceeb95d79bc34185fc2a6ed6a0bc2e38d7dc8ae46164c8e",
+        "main.py": "7beede18c158861183e593d0c97eacd30865f0051f72a77c8144302f5b960ab5",
+        "test_main.py": "41b522e5e38d37327704ace152f3fa5dd46c0f949667b945f94658e1babe1f05",
+        "solution/main.py": "12af9b53c071962442ca4f12489037ced231785f0015c8366b7bd1a8c86ff2cd",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "16-bits-and-sets/04-power-of-two",
+      "files": {
+        "lesson.md": "028e2b0f92f937c82b1a06c4afacd4d2b63a320853f04530638c5450e02104be",
+        "main.py": "f4d067570603f1f29663803e9902137164386defe242c0783cc095696c906595",
+        "test_main.py": "6e81a5e3704df6b41134dd447d843bcb6da93091b70b6d886ad90ac4440345c8",
+        "solution/main.py": "6d402d5dfee69a583d24f24eb2958222b7d272228f59c0d259a9fc8544a7bf84",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "16-bits-and-sets/05-fixed-width-masks",
+      "files": {
+        "lesson.md": "d01771fe9cae191d2309af846e3099cc7306004060c9987cf51ce4e229165a5d",
+        "main.py": "a667e6a1857acb4fe4a96d4b6ab1cd5ed564389bee2ca6d360f9a569fe45cb9b",
+        "test_main.py": "d144b9c7fb06f910a43ba5cf3d0c08fefc86615cf9c55eda07fbec9b5b9d5793",
+        "solution/main.py": "33209873b8fa0b893b07b9213e8154a8e9fd0db821b1eef0bd6c03e24eed0ff9",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "16-bits-and-sets/06-set-algebra",
+      "files": {
+        "lesson.md": "59f47d6c242b40c4afe04051f7dc4c54707d7faa90eaa88488cfb0bdefc95604",
+        "main.py": "9a55fda2ff35830d6314f21b2f2c47b2a985e1047415d487c69a63447bc183c3",
+        "test_main.py": "7f9781fbc481c84479f2eff233f4c558b136b61bebeb730840d8f00dc42494e7",
+        "solution/main.py": "3caa0b0f4c647ec9f84c82696ba6fd06cfaf48e4db19026e24f5e741c97c3cc3",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "16-bits-and-sets/07-frozenset-keys",
+      "files": {
+        "lesson.md": "f8fae91bd736ba1afe9950438e96b9f552bb5e87141e816805abf71a4dc75824",
+        "main.py": "6220b363e10745f9c750a65620385d69ef625b20f183ed98079c7a9b6b1e89da",
+        "test_main.py": "af4c356259adca89c059603e5dc0ad0129523341d50355a2452659d16ade264d",
+        "solution/main.py": "678e7493584f5d3b40bc78dfd342898801f1518e15b379a8e4a3430b6630eb1b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "16-bits-and-sets/08-permission-flags",
+      "files": {
+        "lesson.md": "7a9720cd753855779b73cd7bf1449c557e276ca655b914d939a5e9c7e16e8bba",
+        "main.py": "0936da021997e01fb53d28b20ac41be8481d515ba52bb01ded36d40c1e0894d5",
+        "test_main.py": "f33dec7eb1595e64da92ce0f718f7a133cddcd606d36727b997f59166206c1ff",
+        "solution/main.py": "e83635949ba1c1727194503e372013a1e5ec17ec3f0b2dbcc7a6381a55f0ff2a",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "17-tries/01-trie-node",
+      "files": {
+        "lesson.md": "8eeb109e6f3e8081f1fead5a6ad868b5f91d0dbf61563052b15cf472f6cd0514",
+        "main.py": "4c8b80f63bd4d74bc45f57c1b09531f00f24b4bc5de078a7654f074920439736",
+        "test_main.py": "d0c46a47fada6a894e65c254ce10078ba9a838392d76499f47c34acc8aac8ea0",
+        "solution/main.py": "a8775ad2ed36fde133d32902e6142af624da154e92643db247b3bc05f2e749f8",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "17-tries/02-insert-word",
+      "files": {
+        "lesson.md": "85559f26b7ffd8da313872a901eb99e1a5cac26bcb8244047916025b1ff9f8f9",
+        "main.py": "6feb4ab448d90532892faf09961498cba668e060ca89b1199f3a3d65ff896af2",
+        "test_main.py": "01df0eef3297891fe4d1ac0c670a1997ff634f188829135096189894be8365ec",
+        "solution/main.py": "444ab06c44741c6824d3f7fc141e80b3e0df985aaba8eb1485a51456ef6bfa99",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "17-tries/03-contains-word",
+      "files": {
+        "lesson.md": "825a1b5e2c1d92e443a9d847795491e91bbb4b3f89bab563cf6e4cff0e3b207a",
+        "main.py": "a5418b6c51df627ac14d9bda8fc5922e663b14a79ddf9b5787c2c66bd9af0f00",
+        "test_main.py": "33bb03b7a2f304d499853d15a163a669b4070d5d2169134f00ac9e1767f49009",
+        "solution/main.py": "99283dd00f9f35dde0f8ecf0de2a3db34a8d8f5d2fe83ce54a9645adc035f156",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "17-tries/04-starts-with",
+      "files": {
+        "lesson.md": "dceffd36869216d8adacfc2a40f69f0f70bc92c84c0468f9c4dcf6c1d22576e9",
+        "main.py": "2a9c2e0c2811a0aff98ef0664cd410531dedd22bdaa9859cc6fa46ca2139543a",
+        "test_main.py": "abab53fb693a0ecd2db50088466abfa9747376fe7d5ce3ce960b54914c6f59d4",
+        "solution/main.py": "8a0a8e04e22c7bea47259f4e5b683a12dc7d6a3884950ab566f24cde40f16eca",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "17-tries/05-collect-prefix-words",
+      "files": {
+        "lesson.md": "08babdd6b66e6490664d13b88900b89e07122b341a18d44226dd7aefeb59d61f",
+        "main.py": "f708545b46453a199b4b63ff1aa0a62743359f39587f03c7ea59ab0806ab692d",
+        "test_main.py": "3e6d7a9b237826697c8ec0296e360c1f7a394afadc059333320698b4b8067b4f",
+        "solution/main.py": "3642d9a9731851113b35ddffd52e1fa0e426605f8be2b075009478068ccc9f13",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "17-tries/06-delete-word",
+      "files": {
+        "lesson.md": "ab9528972c7e53cec17f80470bff3c080ebb125c76198366058d935460745fa6",
+        "main.py": "946f7f480b3305c39ce1407481053e66e1a16b702879c89e24732e157bd8171d",
+        "test_main.py": "c564c05612efdbddb027fabc0d8d9f9cb2835d2f2857b069e1b569f25ac0bc7a",
+        "solution/main.py": "4dec930f83f0527f794f58affe38fd8771e313797e46a22459e511171a2ed67a",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "17-tries/07-prefix-counts",
+      "files": {
+        "lesson.md": "ef4b8ac34e5833b53ba7b6cd23733c34206a6062dc01264db09df57ff2060322",
+        "main.py": "ad95aa37481e70698e41767f16f619e1cdb5be13f40b1db25b2998201d7804d1",
+        "test_main.py": "6eb2123dd753039bc3fa61e627f499583bd2cec8d345e3b7d1d79c9ae93f619a",
+        "solution/main.py": "cd5901fb246e195ae77b5b571359abae19ffdbe5a5d125231f08187cf8bae40b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "17-tries/08-autocomplete-project",
+      "files": {
+        "lesson.md": "296b8705f9d33691153dc42cf76688aca63c32dbcf41eb620deb1d4acacc868b",
+        "main.py": "0255c49c3a07044b06e70d9494d664ab6f398946df9281bfd7502137e8c1c845",
+        "test_main.py": "e648c12fb1bbf5208249128f9c6eea860561aaa93902c7cd80f3d31188fff2cf",
+        "solution/main.py": "2d7a799c10441278d85f8e732948a0430a9ee53c0bdf24c7e6ef1bbd83af6d34",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "18-range-structures/01-fenwick-lowbit",
+      "files": {
+        "lesson.md": "9b5b37a267e35eff301735c876769ede4dae3817e9ea30f4c47ad2be6e98bd71",
+        "main.py": "733b15b0a2c1114bb7cb75fdf4da08614afd974fa7cbedee69d4d07d6a702072",
+        "test_main.py": "cf28f33808a8c4bdc420057f1daad7088cd3c9244ca7576f80608b1cec9dacc8",
+        "solution/main.py": "03c50b26214639433a8c4f559ea77601ed9668acd611867aaaac8103a83b5f5b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "18-range-structures/02-fenwick-state",
+      "files": {
+        "lesson.md": "f6f38fbbf8bea68169169f5f821ec499a4935aa37b31f569cef85669f2d73e98",
+        "main.py": "08b39036af79407d4cb3f8c440c15646c21b0307f9962b1bde58c680a2bee21c",
+        "test_main.py": "eaae96b13ccd5c9b48be3b1eb4a9659a1e134d3dd8fd7b6e681970721bd80f3e",
+        "solution/main.py": "f074015e256b7af75560646d2bb1b9a9d99de57e98f35a65e68c402b4357e56b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "18-range-structures/03-fenwick-add",
+      "files": {
+        "lesson.md": "ae3713b51b891d8e3b25684c586335655f835670ef2a69f2d1df39e438e45f02",
+        "main.py": "064b2131ea8136c4f072c8507290495166c8cbb0c89dced8157519ec8ed50824",
+        "test_main.py": "259f1eeccc2259ece69e4aa2128160ae14ce743eec2c7581758e9a6799652551",
+        "solution/main.py": "dbfd3b3222f47ff42ce3d61c49aaf3c4fdaea67c12b1e071c4b543fdcd1677e2",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "18-range-structures/04-fenwick-prefix",
+      "files": {
+        "lesson.md": "9c289f960972eb6d030655a2aca125f7a939cc4d8dc00a08b5cca1fbca2fc01c",
+        "main.py": "2ee700a6a4e8aa455052bfa692bc7eddd2b7cd60eca41306dca1cfd8482e4e74",
+        "test_main.py": "f4466041b255a4ba60b8f388c08abdb847072be8b31f38bca05a3bb689b5d0aa",
+        "solution/main.py": "f0a7c7a52b2912f9c728237fb9b5cf92717669c50bf697dad019fb25a2e5cf46",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "18-range-structures/05-fenwick-range",
+      "files": {
+        "lesson.md": "e73ccbac783caa181e29866da8a6711bb5c2b1ecef2930d4b177dff8aa1cb68a",
+        "main.py": "031818c24174830a1e4eb3caf139430349f81937f7227af4505f8e4b7c7c4842",
+        "test_main.py": "e9c75c5b2b51cee8637215481fa9eb9f7dd70b74f2d851b9df1eca6926e47fdc",
+        "solution/main.py": "5e8fa8b3b9092de7a7b474116ab9ebd337e750aee91ff4fe7fc12fc72446ae06",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "18-range-structures/06-fenwick-build",
+      "files": {
+        "lesson.md": "4d57d4c1bb3813c4caa754f12542da379655de525f88355b103247fc53d4cef7",
+        "main.py": "a2e6006fabd9292d6569aefe593b2a9319c9d8468125516a8f5a95344fd908a6",
+        "test_main.py": "9089ed37bb520de3081b7e583ee25fb8d6aec7cfaeab151c43304609a62328e2",
+        "solution/main.py": "70bad15314576d8458137d7046a8836a31f21f3aa32f7c0d5075b7fcaf4fd750",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "18-range-structures/07-segment-layout",
+      "files": {
+        "lesson.md": "bf65c83414026e3891ca40a4bb06b73692214b1fffc2ebdaef4972c401f72c13",
+        "main.py": "468d632bdf590c9a7a828b227f8a2ce183c92e5da3ae50c59fc80c79948463a5",
+        "test_main.py": "710a11cc9512930b209e6d0b1935ef0a0d767cfe6b87dde0626d9d6aab96d6e3",
+        "solution/main.py": "699049955729fc2a64111f9274114cb3fd322af52378f854a0ea77ea38e62047",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "18-range-structures/08-segment-build",
+      "files": {
+        "lesson.md": "5af8ada7274710886a1a63739537249c33bb456d9833841032c543c8ea99af63",
+        "main.py": "cfc5c5913690e85a6f3ad7f26ee45fd5bcf56193e9081403e84c1b09df508dc7",
+        "test_main.py": "abd357ea4adcdaa42352fd267c7ee8b7df31aab6b9c771e6cbf202a7b6a94783",
+        "solution/main.py": "ec50f8e7f008f33b192966ee7994cc1bdd430c0093a3b2bba046e05b893e9cd3",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "18-range-structures/09-segment-query",
+      "files": {
+        "lesson.md": "e84aa6114e54d5db7ad2f891ec24f758aecbcc62e4b8f4688780879ad644340c",
+        "main.py": "2ffc32a50ca3d64af972c1460b0bf0e6b20f760c484d5b483b89b8d4cd2ea0b7",
+        "test_main.py": "0ccf03715033bd8f118c88efd165d98d7294a0bd9d84ec1f72034cde6535bdf6",
+        "solution/main.py": "98a01057daabc7be4026878d7f6614245f4940c06c8d49f3bfee73dcd80a6234",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "18-range-structures/10-segment-update",
+      "files": {
+        "lesson.md": "665024ffa3aaec2ef3ee363057164baf1f618ace945277da9337d9aabafc9573",
+        "main.py": "24ef3a64cf4bcb897fa1bf40e25ca58c29981e6a707c48f55502f720fd0d19e9",
+        "test_main.py": "5fdb8db17e1a340bd7ee7e0be26ebc8629dbb7833479822e1268ab4753bdf4a3",
+        "solution/main.py": "69e236e6154323e5dfa605ccc81e2b4fb2cc76b506eba63b47970d833d51a574",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "18-range-structures/11-range-minimum",
+      "files": {
+        "lesson.md": "4e27ea35705b5b372d7113e3a31c3a9a30de67a0de5738c2c93acd3e3b8bdd43",
+        "main.py": "86d832bf4e469f7423b5fd9254c1292ef862e9746615d46d3276e802b24fd9fc",
+        "test_main.py": "2307b48885ecc770e810907b291b7b985ffb714fbf26b6c6071456f46d315188",
+        "solution/main.py": "fce47da33c39ce840bae5c03dedc31d5fb08c38e9df223a968e4b47a117f06a3",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "18-range-structures/12-range-dashboard",
+      "files": {
+        "lesson.md": "2125d2ade0ddacede2cba6d63bb29ab9934c4eede2dd36908c9d738b9c88452d",
+        "main.py": "f98cc752a754b321bd76f4c5808cc5fa93ed7d8c88081e4100a4438e5dd04eec",
+        "test_main.py": "7299472b2d39a87b786feae2c4107c8bf5de03a5e5be25c6fdb141fde81c0bd3",
+        "solution/main.py": "9e30e7c4abdc745026975e2496ffc0386b4a6620482a7b8451ebbce0e45217cf",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "19-disjoint-sets/01-dsu-state",
+      "files": {
+        "lesson.md": "6607c198c15d68dc82a057c0ed9fd26a7e18f61b0a4cd4dfa1a77c3f6968d89a",
+        "main.py": "abbc0e67ac772345abfdbb71110973e5db8a00f488014815fcda8ce2a03c1104",
+        "test_main.py": "a40d361e5d96afafdd93a2f5a76870ae92834b21b76b13113dd0aded1e36bf69",
+        "solution/main.py": "54a46b2993646a7bed5874d9aa8b838f459efb3641414b9b5b93749e7775d327",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "19-disjoint-sets/02-find-root",
+      "files": {
+        "lesson.md": "8922cfb9677689542a05b951a4cf95a64e0334d19be94a3dafaf00cf2c00dada",
+        "main.py": "8f85ede9f982b1a26d78f077f63096cd2d3f57f7acb645eef56269a6c3ed03f3",
+        "test_main.py": "de538ab087b79c4438978b8299018298a51b97ee802b2a5cedbade9d1930af6f",
+        "solution/main.py": "09f4f463110cbca1fdbdacc404cf86e5f5cf21de767f76df10cbcc7dd10a3fa2",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "19-disjoint-sets/03-union-components",
+      "files": {
+        "lesson.md": "2fe065636a1c12922fef9696d71eff6480d57875c46ffe3ac736bc28dc65411b",
+        "main.py": "0beee28cc0c3be4d9d440084be23516ba284d9931d16bb1d3762b4b20eb4e12c",
+        "test_main.py": "598128f373ac73348976e684142f616decb55ab4b3915b94757a15f8b5fc4e24",
+        "solution/main.py": "2603761791aa2cee92b6aaca60eec18ea8ff95f2fc0601fc611d5445ea7650c5",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "19-disjoint-sets/04-path-compression",
+      "files": {
+        "lesson.md": "2071d5ead44f6e43c1786fb1500795980e37682b7ae1de8b691ab07915165b43",
+        "main.py": "3ae1f6ff456ac74e40b0194ffb169b75c4211e8771b81fbf7618510fd19ea6e1",
+        "test_main.py": "628c52379cd57dd9038b38bf259d993b4a4e15a4bc1be674b7ff3df09a779baf",
+        "solution/main.py": "7bb27b3027a5fe72a82b112697c6b161d8bc49eac6726fa6f370a7eabb4e72b7",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "19-disjoint-sets/05-union-by-size",
+      "files": {
+        "lesson.md": "1bc2ed61370c6092a456033c051d22aa5f30036d45018a1c97a4483d3b405fe2",
+        "main.py": "ddb7b3cf2b569c2ff84b4e6e9a3f5dd16af23ed0f27b6bda702cb013cd4b2d52",
+        "test_main.py": "e0bdd5495a60d5d46b1be677aa70f6018171f111dea1cdfbeab6e3df85d18ca3",
+        "solution/main.py": "d977e4c84bab1e82b30d2c31b509b4cb3fdce4a0502265e04e8f910be9dc88a1",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "19-disjoint-sets/06-component-count",
+      "files": {
+        "lesson.md": "3e5b11628ca3e3051131f1aeeee59fd9f1fad16f7964ea53834fab909749287e",
+        "main.py": "e699c9972a2c8d62c7408a6b65273b75672520168f62250c2707841e67067d4d",
+        "test_main.py": "5ce9fe54edd303c13669ac3ef64f6edc512f282813d421b3fa5c6b642b83121e",
+        "solution/main.py": "9df5a9d7e7d22d4ee2714279fd49c540bb13450e506d4237615fa3ea0ddb435b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "19-disjoint-sets/07-detect-redundant-edge",
+      "files": {
+        "lesson.md": "0931b71c1bc45b31a68412e2921c24478627c7a5b2deb8969b3dd7b3ff0364cf",
+        "main.py": "93f8f4b47fd668b7d7db88bab4cace8737358893255786e89bfc332b5d448b56",
+        "test_main.py": "e3aca9b6e033c71b7cd8582211b0f9edc1a61884230706d559ff9994015bde84",
+        "solution/main.py": "ae9f04ad692b5b30f3f08c8ea174df7ed1e1b1736dfde67b6852c230fb80093c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "19-disjoint-sets/08-kruskal-forest",
+      "files": {
+        "lesson.md": "111dffadad20cfe3d189af932c467c294c79ea782e42416102cf012ab9a058ce",
+        "main.py": "da9a9fdc73bb4e6482079af597f4cc2af4849d235323801b2d5da99019443023",
+        "test_main.py": "72f99e7d93697ed37748036c31f3e7cffdb07de4d28c6b1ddb21fb43b5c2d931",
+        "solution/main.py": "93d7eb06ff9d5a21b8e1a705cda995ec1ee8cd8518521bb4600268163008c3c0",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "20-combinatorial-search/01-cartesian-product",
+      "files": {
+        "lesson.md": "27ddc1b1ea0a0a27f20289402d040d2d9b9490bed8f7a4c10380e3bb316b3b8a",
+        "main.py": "feb522fb325db54feb23efe4b3b57a0140877b67d25ce7e40419caec2a894771",
+        "test_main.py": "bfae35251f1b3f2c94246887d7c69ccc8382d301614a7e2288ad14455dd3a439",
+        "solution/main.py": "086f3d3f61a6d7d50825f3ceb657bbe5a3a3cdf5dc3e698831b7b55a376c250c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "20-combinatorial-search/02-power-set-iteration",
+      "files": {
+        "lesson.md": "0f3798caf2b6a5a840ffc6024448431bdcc434fdf7579f402ea1f04f4e719655",
+        "main.py": "f18fa7257c90a18c6ba6ecb5c02d215789f88b7876ec06345a145a6715ddd136",
+        "test_main.py": "dc98ccb0bb19aeb58eab5e15b7df27572d6a9dd30c995c91952a659f0c176bd3",
+        "solution/main.py": "28cd03ea0cecd3da3418917dfa4a3440d589947837400df241a2128a9d51ee19",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "20-combinatorial-search/03-power-set-bits",
+      "files": {
+        "lesson.md": "40d1b5f51c44dc160825cb4dfb57d321cebcb9ad3f1c82e548981f5c5a0c5e89",
+        "main.py": "df89d7f54904cb11eeadad904a535b78dc34744ba4a8c9ea97a2f25ecf4e7bc8",
+        "test_main.py": "3344721649e5fff74e1baf1d17d897cf1e296da371434c8fafd85087ca940d26",
+        "solution/main.py": "b87c49528c3a70a0605d40e0b818266174e22860d8f05e1b803276cea1dc646c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "20-combinatorial-search/04-combinations-without-replacement",
+      "files": {
+        "lesson.md": "c0aca138cf0a452d885a46c0549ca78610a05029e10ebf1ce440d8f475db779d",
+        "main.py": "a03e43de31ec35c91b1aae916fc064578ccc55dfbe5a9c119c5b47edd588a2c5",
+        "test_main.py": "5ccc9d2a961243c937c2dfdd1eca381e8f82431c5f0cac42146eab9ace1b8e17",
+        "solution/main.py": "4dd7e6edef4b6ca3adaf246e5f92791d4504a6e4b031fc5e85ab87309d3fbbf9",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "20-combinatorial-search/05-combinations-with-replacement",
+      "files": {
+        "lesson.md": "597e298f548c18209e95b159637835e0c5d33f0c50e44bbeb7b4800709a21016",
+        "main.py": "6b0a3d58c967028e8e68f4d29fa2c4b87f8cdbafacb22afb33a84d43bce90d2c",
+        "test_main.py": "5a98ad70fb4a2cb5add62b5c58ff7df42d58679c86fbc316b5fd21825420de49",
+        "solution/main.py": "c5f7dd550a6cab97d27f9b8c16e4e7a989388b58d0a2a6f0fdbb00af26fd76ef",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "20-combinatorial-search/06-permutations-without-replacement",
+      "files": {
+        "lesson.md": "a6b4b48f110401fc6454d889b86fd0063257e69c229ed273ef603fdc996ec671",
+        "main.py": "a696a2d55188d5a1a046b638e6d090f0c7afcd41cee158d28d0fdaf820153c1f",
+        "test_main.py": "c8a0506ca257f5fd7413fb84cce81b2c4ea7f7a8b681a41e384bcd487da80348",
+        "solution/main.py": "7f7e9e54a08613dd4252c30a3fd523bcfcb225b2066e410f2795a806800971f8",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "20-combinatorial-search/07-words-with-repetition",
+      "files": {
+        "lesson.md": "dd0c06cb08b8aeff44501c1cbf8d06daf5e6544a3adc4d6af1dbab2949117356",
+        "main.py": "a7ba836aea10322fb3830336ac925c94dd7952b2dba88f339c4d29f3ccadc263",
+        "test_main.py": "0804850d02ccfd89480eacf9e52bc7b8ac6ead9274423c2be5ef87f06c46bc5b",
+        "solution/main.py": "0b5eec410908d3b2d472eb04be06a6f4cbf370346815077bd4f9819eee950425",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "20-combinatorial-search/08-backtracking-constraints",
+      "files": {
+        "lesson.md": "8ff69726a517957a3707eeae0652f97137df43367996860db779e948facfa194",
+        "main.py": "66f59e38f46a79590ef3d2eb4bbf1851e1cd0502e14f434c2a868ebe0249bb1d",
+        "test_main.py": "da03dc4552a0e0831e0888ad571bc43a9d8288b71a563cdb8a5872e2be3fd124",
+        "solution/main.py": "4eaa48b7306021405dcffc9680c586cdbee1e4d294a704a33ee612861e30ca1b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "21-dispatch-project/01-catalog-index",
+      "files": {
+        "lesson.md": "547b06171a23d2627bd668c18cf24724ccb6de2b901bad887fdedff70e624969",
+        "main.py": "1dea939c64599f77b793098045c3c3e836d71efc8f5fe1315aa4c33b6f68fc65",
+        "test_main.py": "88fcb3b60a88fa57328ead15d70119ee5c0b567e8cebdb96194838a8101b3571",
+        "solution/main.py": "36ce3352ba96b009dab060042fa0b7442f9856d3d55211628eec3b471729fd9b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "21-dispatch-project/02-pending-queue",
+      "files": {
+        "lesson.md": "fc72bbbbd108d14998085ff33aacfc85ccc38b25a05b27be1d80e6adcbe79067",
+        "main.py": "177fdb7cfb9a5f4f0066348934e324cee459fb09e1ef305d4363af77071ad010",
+        "test_main.py": "360573d5e8b1a383870964bdc42b0dba32940b87a3404590ce09e2c18824a47e",
+        "solution/main.py": "119b226e825b3cab53809e87fb785ec5a0746b225b8fa6164327209345ef2117",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "21-dispatch-project/03-priority-dispatch",
+      "files": {
+        "lesson.md": "c29f448d5a164afd65ea9efbc0968fff534177c8adbd203b4b25a83ca5d214e9",
+        "main.py": "33cdc2ec9b31ebc3f7e4ca0d8dbaec65e042537bb4a02d7eb92455c771966caa",
+        "test_main.py": "910e6eba0538c8c51cbb2743c66403a40d9286c6aa5f02710a34c4a1edba0611",
+        "solution/main.py": "9342a94cc384c9ee6f301a065b83ecd8b1aff0d451c634bd222526fe2e97eaa3",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "21-dispatch-project/04-history-stack",
+      "files": {
+        "lesson.md": "cb385f7d42d6ab6aeab15e27b6e23d5c1f681fb048add00dcbe22073ca9ed947",
+        "main.py": "83995a2fe15d02990206f00b0bad4ba432abe64b8c166237abd1d33fc2d07465",
+        "test_main.py": "43a27086bd6386dfe6ec51d27538f57e600d1435b8292bb2bd0bbee49ac6b5ee",
+        "solution/main.py": "bac9372e1a826b0e3975220c4d517f74b014b40c5a1de0a694d7d32fe7be35c3",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "21-dispatch-project/05-network-reachability",
+      "files": {
+        "lesson.md": "d78a772672720f5ddea29b4b1ab0f738b96f3b2688031bf473b577875516e498",
+        "main.py": "dee0a761f3d6b8a951d739668d680d371175c01fc2b40f885c80be6556be8276",
+        "test_main.py": "86a1f203805b80b35a03effe8912c5f9c7719001dd18ff2d4f79dd87028f0521",
+        "solution/main.py": "d31139bcf38f46d84ad3697bc24bc8a574eea412a0cc934cfaa1953d682bd32b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "21-dispatch-project/06-cheapest-route",
+      "files": {
+        "lesson.md": "402678b15a0c3fc4b39ea762e0eafbf01534e7e8c07fc4b3e5c6a24fd96ba504",
+        "main.py": "0b32c4afd3e1bc4f6eaff81787b64edb3705b833560a0d842ec836a693d779e1",
+        "test_main.py": "08ec55bea61eaec36bc48974ee3375f468be8e41748e72cbd180aaec3a49bde4",
+        "solution/main.py": "ec95472f71625c6cbcff75e0780329206f6d41a8177d4165d98f059857619bc6",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "21-dispatch-project/07-daily-load-report",
+      "files": {
+        "lesson.md": "a287e1ecdedb9d503b0226e3b441bcc6786152ab74a27fdb2424003d9d18a9a1",
+        "main.py": "9c1f7acbbb7d9d92fd76549783a205ceb50fdf74f41d5bc99733fada39831749",
+        "test_main.py": "5be4088373df887c00eb5425f463462e6e6f4d4988bcc64a8c97cd69ffc8a898",
+        "solution/main.py": "8e28c9de54b62a869b97f39952254ba2e43cda9471d694e1e8119da5a13dd2dc",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    },
+    {
+      "lesson": "21-dispatch-project/08-dispatch-session",
+      "files": {
+        "lesson.md": "740f3870534499ac33664add2d477a8032a704209c57f9ca4a153aa2b59a7565",
+        "main.py": "b50fa06eb07edef2dc9b2de3edf125531168c58ae965c77bbbb974e3ca744ecb",
+        "test_main.py": "0de6d28f3a1b02be6bce95f7be158e1aa1546113dfcd0cb6c3e041f3c73f23e5",
+        "solution/main.py": "e701538b22baf65a1e9c9b121d14a61f77802d2ff7fd8e0f0aef48fab84abe68",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      }
+    }
+  ],
+  "quiz_hashes": {
+    "01-memory-and-cost/quiz/q01.md": "bbbcd8c7fc109edbacf55383db7eb31158f05678f461594958d111e326f03500",
+    "01-memory-and-cost/quiz/q02.md": "f7d4616c3815ea186e27043fdc8be386a95dae41d2a9482fdd6d8f9a70dad78d",
+    "01-memory-and-cost/quiz/q03.md": "f6ca47ddc14dc972044b5b4064c5b498df317fc7b2aa543f473e53b9beda8533",
+    "01-memory-and-cost/quiz/q04.md": "a5242278c46ef7471a53cd6bb78104057d1b8f5de6002683fbc583c3d0a59140",
+    "02-recursion/quiz/q01.md": "d9383a90c4878d7c84b0e107c0addba3d37e1bb94a367691f4795ce87f4fde46",
+    "02-recursion/quiz/q02.md": "d56f72c7a530445297a66fb1ade81136fa771d8b86034c6c3913ab1a8dc2d4f7",
+    "02-recursion/quiz/q03.md": "0ff1a935d1662f17cb5152d7d7c23262491345047529720907153079910bab27",
+    "02-recursion/quiz/q04.md": "bd98e183d82e1813a345e906db090ac7f761760b802f0cc10617259292a1ca66",
+    "03-arrays-and-sequences/quiz/q01.md": "c21e4a808a6dc2a9c07af8a3e849ad2c284569759dcfd41157418b170d8bf122",
+    "03-arrays-and-sequences/quiz/q02.md": "cdd228d381a77a7c2cd0487267096d654b707080fabcddce68dafb360f0ac44b",
+    "03-arrays-and-sequences/quiz/q03.md": "9befe06cf1d1c179bf6284364b72d921edeb47c67004a25fed562a50d3ca47b1",
+    "03-arrays-and-sequences/quiz/q04.md": "f67cb0a52df056f02f393c8a1ff658eb0a8ac9315e12f40bd1ed08d14693d3f5",
+    "04-singly-linked-lists/quiz/q01.md": "4968c94ccd0b27fd2a78f17d0056d2aeb5e97de4d026476ac5f5fa2e6cb0a041",
+    "04-singly-linked-lists/quiz/q02.md": "25ce5db22d0a69e6f384af81c44c8a2e641aa90de51cb62d6d0debac3c189128",
+    "04-singly-linked-lists/quiz/q03.md": "37d5ffe0d663b6378f2e9b0f8a2986fe0149dc0786f6054e2f14897236081687",
+    "04-singly-linked-lists/quiz/q04.md": "5e89fc2f1352f3fc80d31ede776e1444dd55586e381ada6035602c0a0b12ffc1",
+    "05-linked-list-variants/quiz/q01.md": "0a1ee51693c44e03abfb66e23a1f667616efc353c881fef192a78232148fd4c6",
+    "05-linked-list-variants/quiz/q02.md": "4a73f41e0c52dd2c0e91ab934a6d3386ff10d3e8eb147f11d77b5f93719a5498",
+    "05-linked-list-variants/quiz/q03.md": "006cc6dca01d4cf7e235f33c414817469bc3cebfb1db6249e2a9b014d01379c0",
+    "05-linked-list-variants/quiz/q04.md": "a52dc72af3a18bf9bac51d8c8c54a1e8eedc4146273e99454436fef7699d8934",
+    "06-stacks/quiz/q01.md": "20fbdb05967fddd559e1e8421b2f9792a269a739bec385028a09719785fc85a1",
+    "06-stacks/quiz/q02.md": "930c361d6d136665a187b87ee9a6fd625ee835221ad40738ea7c59694a6459ca",
+    "06-stacks/quiz/q03.md": "b79914659ce6c2258b9286dbba27e2243a91c57560bb14fd2c5f61182040a5d4",
+    "06-stacks/quiz/q04.md": "85e92ee58a65d25f3986c93b5c9e9868c97b8b3e4c9263c8dba0f1dd5679c4a1",
+    "07-queues-and-deques/quiz/q01.md": "9039ed76e753e8d39dc38ae2c741563ee3f80adee77994e0d097d3d2ba0f312b",
+    "07-queues-and-deques/quiz/q02.md": "a0159bfa06f6af8352c662dd8c82c2b1b501c88d9310c7fc3c088ed47390ab3d",
+    "07-queues-and-deques/quiz/q03.md": "b591be93d4d87173b6644ad747a524480a51409326b0ba9d25e01efb588b74bd",
+    "07-queues-and-deques/quiz/q04.md": "a185163432fbc4d79c9287c9aa81b3a023882a5bb3d50b12b56e40c4d72d7e72",
+    "08-hash-tables/quiz/q01.md": "5a15fbf9dec7be246c483eb129fac3c9e5e11005410abceb8ed2249569c1c293",
+    "08-hash-tables/quiz/q02.md": "e8c2101fba01fc4dd4a455a66c9bfe08f6c9188c271cb72914ff9fc9895f6d88",
+    "08-hash-tables/quiz/q03.md": "352711f10d6e1ab757703ae12b03262cc1dc510491c7de04c6b4a516dcea253d",
+    "08-hash-tables/quiz/q04.md": "7016d4f63ed2fbbd04c58ea6c8e8b1cd09d9788e0a344cada61961e0b2591869",
+    "09-searching/quiz/q01.md": "deea5d31a17240add9eb334c59206a0fefce0e2cf32b72188d2993c73e0e34a5",
+    "09-searching/quiz/q02.md": "6dc2d698fe1fed48bdb54e1c93723d3174779e35ffe0ddde6fa9fe50420709f1",
+    "09-searching/quiz/q03.md": "3bc84c1783b326ca2c3be9722d8fe0d912d6023bca6868d9c84b9ed4f8f9819a",
+    "09-searching/quiz/q04.md": "3b52fcc0c261c7a4b5c41ee3540da820b050fe8f3e4a0355ad50702af2302b42",
+    "10-sorting/quiz/q01.md": "9dd68d791941295b858f6f2dcee120acaced5d7f161ef61b9a273f4d6806c29f",
+    "10-sorting/quiz/q02.md": "c5cedb1864b03a9e8fbd5f5087ab73ef8006d4c8c49eb8057c266b63e938039e",
+    "10-sorting/quiz/q03.md": "8d0b78eb0b6b496339e60fbdc9fe9640aa4ec5cdb0d098c672212ef39940df0e",
+    "10-sorting/quiz/q04.md": "08bb8b4d1213c2fa3c0e99253c7ea1c9d3f99434ca10a7bfd2e275660efe9dcf",
+    "11-trees-and-bst/quiz/q01.md": "f781860295bc0247b969e2a6701843e2969972ba517bd118a7719f0ea2fdff49",
+    "11-trees-and-bst/quiz/q02.md": "575193f6784ebb078ac943e604fc324ea502cef1af5980fa1fb6ef497c680d7b",
+    "11-trees-and-bst/quiz/q03.md": "0c9cee618bd369d35155fd8245537c297e5d73544d9abe7c765cdd2ba86e3714",
+    "11-trees-and-bst/quiz/q04.md": "be3588a8974e0c9566468dd29caa28a702f900ab5438ea16e470046a1cfbf29e",
+    "12-heaps-and-priority/quiz/q01.md": "b7761b8d52022fae6fc390792313bdb1594dc0f701ab7914fce8b3c244e2d2fa",
+    "12-heaps-and-priority/quiz/q02.md": "827f72f67ebb978bfa44712e82c7e52cfda7f7018e7165dc9a08973bb3146686",
+    "12-heaps-and-priority/quiz/q03.md": "c842dfbf54ec1c33dbe5650f974658a37d4248ffae0e8e1a92b4e20af1115214",
+    "12-heaps-and-priority/quiz/q04.md": "c75a95460a31cf996446459d17b7e9d71e519e06679ed1cab38a3d0a88112acf",
+    "13-graph-models/quiz/q01.md": "abd8a2de92499407c6769f7c819841b6b635881f9033b2ac3ab9c96d0ad9abb0",
+    "13-graph-models/quiz/q02.md": "4bdc563806cb72ef45136ad29f0f870823aefc6b660bb644833bc00631147ad2",
+    "13-graph-models/quiz/q03.md": "6d142c2bd6a9a3ead83475135a30f6751c02e7d6dbcad14f02ed9ed648591c54",
+    "13-graph-models/quiz/q04.md": "642e27afae51531b47f3258d0673839d4b2434892a64698472c44a458fdb5c20",
+    "14-graph-traversal/quiz/q01.md": "b0208730c50907ab2b0b4b3425b5a8d157781bfb061a82f38d8d34e49a07b293",
+    "14-graph-traversal/quiz/q02.md": "c981935a325f6e8684dd893cd7adf16187f6b51e4deb468e6ce15c66c02861e0",
+    "14-graph-traversal/quiz/q03.md": "ff007691c263a3d603c6020b6612b25bfddd07e9101f5d7058c6a394112277ae",
+    "14-graph-traversal/quiz/q04.md": "797756f523edf7e6b16a562627c3d742fabb1edc686c16e183c273908202bb09",
+    "15-shortest-paths/quiz/q01.md": "c8b1d808966e4198581318a50ab3e817ee6be4811c33eeae35e193ff2eb0130a",
+    "15-shortest-paths/quiz/q02.md": "0a24a3ac9f8d3a821064192ac9f97f0fdef3e13335da69cebdd6f16942e48f30",
+    "15-shortest-paths/quiz/q03.md": "b80717c3df19bb05242a22fd8aca0b0b43456336bf29b71852ee0e3801be18ff",
+    "15-shortest-paths/quiz/q04.md": "d256dcc7f16c81767f949bfe7e1a24a63ee6ef2f56741ec3173b5f5fd54c83d9",
+    "16-bits-and-sets/quiz/q01.md": "c545bbd15a0d919e7fb53b5b9af11c4d1aeabc01520bc5632d659f17d3d30f27",
+    "16-bits-and-sets/quiz/q02.md": "5516e3ce38b99a9b7d948ba550584aee8ec86200a4f377dc64463ffb1d924267",
+    "16-bits-and-sets/quiz/q03.md": "af28c27cdbfa233c4c157557eb32db48711d2fbb536dc32ffba9a12e464c1c42",
+    "16-bits-and-sets/quiz/q04.md": "f220e6d89e9123a2ca3527c3a360b26000514ed60d294f62e9ff83798da2dd3d",
+    "17-tries/quiz/q01.md": "ebeb96ec63307648eaac63adfaaf1107ce48ade4e74519255ccc3f2c87367dee",
+    "17-tries/quiz/q02.md": "9221cf59c9ae193c7fcb7c8283fda2c9e43d451f786354614138bdafc7f6f1af",
+    "17-tries/quiz/q03.md": "73db9a477f9c986942313f3e1c14d22379861b58b8cb3e123c36dd9417396256",
+    "17-tries/quiz/q04.md": "e6c9d070d78d3161d6a34796df48675a64c3e1cee42c0d3a4c11c2a505f31ff8",
+    "18-range-structures/quiz/q01.md": "d81a85018589701cb50a33c8cd2f7bfd1b8f89cdfe4e99c5667ade9f442b1571",
+    "18-range-structures/quiz/q02.md": "a9cd7d4d0daeb8693bfac64f2198e471f985e3825195c746bafc97769421dad0",
+    "18-range-structures/quiz/q03.md": "ac1c746d0e9c0581b9363cdfa8d5229ac98e79fb39bde1bc3d3522a45ea75d58",
+    "18-range-structures/quiz/q04.md": "7b0e53d9ac7cbb1760a889e7c5c55afdc79d593525d8fdfa5ea51a299deae681",
+    "19-disjoint-sets/quiz/q01.md": "f7af78f414ebca2cb565a1f40e6678e0dbc3b7788df2594429b6c24e26ac91e8",
+    "19-disjoint-sets/quiz/q02.md": "b60ed81749b6e8d1f7a768644fb6f2be18b465ac158fbe702f8d0d8e1e27bcb9",
+    "19-disjoint-sets/quiz/q03.md": "0a67a252064dd3021cb92446ddf7b93d9ab69306b5933496b10db5d7ca324246",
+    "19-disjoint-sets/quiz/q04.md": "57293ce3cddff487c8c4d323c6265d468d1178b6301e73a139de3edf313a891c",
+    "20-combinatorial-search/quiz/q01.md": "168007be57a065d6491f9d39505ef73510a426f31cc44a76e13d3e82ac247c97",
+    "20-combinatorial-search/quiz/q02.md": "b5b5cad04272697050768ae7be5f89b1f3d6b138464972832e38f3ba0e64f52f",
+    "20-combinatorial-search/quiz/q03.md": "366364f05198e04cc7e7d752965385f8f7037dceec9e57e190b538e8ee494872",
+    "20-combinatorial-search/quiz/q04.md": "d47d827c7e068bcd2859c2d5723bde40df14fd44dddd18bd8c8ffdaaec0d1495",
+    "21-dispatch-project/quiz/q01.md": "c22d121a296174656b95ed86ee567623c59cf2b50a13cbf6fe5dfbfb88b2d2e4",
+    "21-dispatch-project/quiz/q02.md": "9fc702be5094f2439b28c22250868795802dcfa865842f5f96dd300619885df6",
+    "21-dispatch-project/quiz/q03.md": "57562efdf2211f36a4ced08bd0f5f905e4bb2bd529c78d25f00b1f6d492dc8ea",
+    "21-dispatch-project/quiz/q04.md": "c2bc58696c680d513b6155f29bc670dc58f6d6df211bf4fe83ddcf0e6d69f3ad"
+  }
+}

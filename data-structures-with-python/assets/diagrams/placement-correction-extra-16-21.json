@@ -1,0 +1,734 @@
+{
+  "scope": "35 additional diagrams, modules 16\u201321; placement-only repair",
+  "verified_pairs": 70,
+  "removed_owned_misplaced_files": 70,
+  "remaining_owned_wrong_duplicates": 0,
+  "canonical_files_unchanged": 70,
+  "editor_evidence_files_unchanged": 228,
+  "unrelated_assets_preserved": 0,
+  "lesson_markdown_modified_by_repair": false,
+  "canonical_regeneration_performed": false,
+  "historical_audit_fields_preserved": true,
+  "files": [
+    {
+      "old": "16-bits-and-sets/01-test-a-bit/assets/bits-and-sets-test-a-bit-trace.svg",
+      "new": "16-bits-and-sets/01-test-a-bit/bits-and-sets-test-a-bit-trace.svg",
+      "canonical": "assets/diagrams/bits-and-sets-test-a-bit-trace.svg",
+      "sha256": "1f56383c9282eab4d36a31abd935fd91304a0d19919c5949f6caf433f6ac6f17",
+      "destination_existed": false
+    },
+    {
+      "old": "16-bits-and-sets/01-test-a-bit/assets/bits-and-sets-test-a-bit-trace.excalidraw",
+      "new": "16-bits-and-sets/01-test-a-bit/bits-and-sets-test-a-bit-trace.excalidraw",
+      "canonical": "assets/diagrams/bits-and-sets-test-a-bit-trace.excalidraw",
+      "sha256": "3bdf8462e2fef6623c449e7c2de15331b9274cc9f0790d03b2689ca6d3a0553f",
+      "destination_existed": false
+    },
+    {
+      "old": "16-bits-and-sets/02-set-clear-toggle/assets/bits-and-sets-set-clear-toggle-trace.svg",
+      "new": "16-bits-and-sets/02-set-clear-toggle/bits-and-sets-set-clear-toggle-trace.svg",
+      "canonical": "assets/diagrams/bits-and-sets-set-clear-toggle-trace.svg",
+      "sha256": "37ebe974931b73c566e762f4ce96dc8fccffaa396bd0fc04d53d42da8ae3cc25",
+      "destination_existed": false
+    },
+    {
+      "old": "16-bits-and-sets/02-set-clear-toggle/assets/bits-and-sets-set-clear-toggle-trace.excalidraw",
+      "new": "16-bits-and-sets/02-set-clear-toggle/bits-and-sets-set-clear-toggle-trace.excalidraw",
+      "canonical": "assets/diagrams/bits-and-sets-set-clear-toggle-trace.excalidraw",
+      "sha256": "9154c29e582279e2f3f782ace2513007002d0901c50b61da22a4bc8df3775aa2",
+      "destination_existed": false
+    },
+    {
+      "old": "16-bits-and-sets/03-bit-count/assets/bits-and-sets-bit-count-trace.svg",
+      "new": "16-bits-and-sets/03-bit-count/bits-and-sets-bit-count-trace.svg",
+      "canonical": "assets/diagrams/bits-and-sets-bit-count-trace.svg",
+      "sha256": "df7c5df72f55c065d7bc5c156161ef03c2e9cfb134a8b638802e0d2df55a3c8d",
+      "destination_existed": false
+    },
+    {
+      "old": "16-bits-and-sets/03-bit-count/assets/bits-and-sets-bit-count-trace.excalidraw",
+      "new": "16-bits-and-sets/03-bit-count/bits-and-sets-bit-count-trace.excalidraw",
+      "canonical": "assets/diagrams/bits-and-sets-bit-count-trace.excalidraw",
+      "sha256": "4371e8825f9bbdee564f5ada4cf7dba3d6d606ddd79fef57b4f3e349cc4374fc",
+      "destination_existed": false
+    },
+    {
+      "old": "16-bits-and-sets/04-power-of-two/assets/bits-and-sets-power-of-two-trace.svg",
+      "new": "16-bits-and-sets/04-power-of-two/bits-and-sets-power-of-two-trace.svg",
+      "canonical": "assets/diagrams/bits-and-sets-power-of-two-trace.svg",
+      "sha256": "f6f8a554c7673a3a10df41788a9593b6c6f9bca913ff7984ad8a1beda014bcd5",
+      "destination_existed": false
+    },
+    {
+      "old": "16-bits-and-sets/04-power-of-two/assets/bits-and-sets-power-of-two-trace.excalidraw",
+      "new": "16-bits-and-sets/04-power-of-two/bits-and-sets-power-of-two-trace.excalidraw",
+      "canonical": "assets/diagrams/bits-and-sets-power-of-two-trace.excalidraw",
+      "sha256": "5ae327b453033225a85538b472293fb1020c61725516e42d978ca6ad4e301797",
+      "destination_existed": false
+    },
+    {
+      "old": "16-bits-and-sets/06-set-algebra/assets/bits-and-sets-set-algebra-trace.svg",
+      "new": "16-bits-and-sets/06-set-algebra/bits-and-sets-set-algebra-trace.svg",
+      "canonical": "assets/diagrams/bits-and-sets-set-algebra-trace.svg",
+      "sha256": "e4c23816af1ccad2cb3b5bbcd9d9d7115f253ad10961b56de7a650150f9dd013",
+      "destination_existed": false
+    },
+    {
+      "old": "16-bits-and-sets/06-set-algebra/assets/bits-and-sets-set-algebra-trace.excalidraw",
+      "new": "16-bits-and-sets/06-set-algebra/bits-and-sets-set-algebra-trace.excalidraw",
+      "canonical": "assets/diagrams/bits-and-sets-set-algebra-trace.excalidraw",
+      "sha256": "c0709f66fdf138c2042620fce5350bd47ca3d78342ea5e0a3c3e06e855de9c0e",
+      "destination_existed": false
+    },
+    {
+      "old": "16-bits-and-sets/08-permission-flags/assets/bits-and-sets-permission-flags-trace.svg",
+      "new": "16-bits-and-sets/08-permission-flags/bits-and-sets-permission-flags-trace.svg",
+      "canonical": "assets/diagrams/bits-and-sets-permission-flags-trace.svg",
+      "sha256": "2a99b8fd6b743e9560937c9e0c8059164b7010fc86c7e83f984bd17f8edb91ed",
+      "destination_existed": false
+    },
+    {
+      "old": "16-bits-and-sets/08-permission-flags/assets/bits-and-sets-permission-flags-trace.excalidraw",
+      "new": "16-bits-and-sets/08-permission-flags/bits-and-sets-permission-flags-trace.excalidraw",
+      "canonical": "assets/diagrams/bits-and-sets-permission-flags-trace.excalidraw",
+      "sha256": "2bdd29c41df00426826fd36b7eff6c817fef2e87cd454833ba99c4620a035be2",
+      "destination_existed": false
+    },
+    {
+      "old": "17-tries/01-trie-node/assets/tries-trie-node-trace.svg",
+      "new": "17-tries/01-trie-node/tries-trie-node-trace.svg",
+      "canonical": "assets/diagrams/tries-trie-node-trace.svg",
+      "sha256": "c7f2da2ceac3947018225917676c95f08b45a8b616d220095f42a1ffbe378d59",
+      "destination_existed": false
+    },
+    {
+      "old": "17-tries/01-trie-node/assets/tries-trie-node-trace.excalidraw",
+      "new": "17-tries/01-trie-node/tries-trie-node-trace.excalidraw",
+      "canonical": "assets/diagrams/tries-trie-node-trace.excalidraw",
+      "sha256": "a0ceacccee5ce32c7a40e5643317a8859260968b007897172f90577f23f90f59",
+      "destination_existed": false
+    },
+    {
+      "old": "17-tries/02-insert-word/assets/tries-insert-word-trace.svg",
+      "new": "17-tries/02-insert-word/tries-insert-word-trace.svg",
+      "canonical": "assets/diagrams/tries-insert-word-trace.svg",
+      "sha256": "33977eb634065a25d515825d543e160aaa172dc3d8e4551fa890a1a604c309e9",
+      "destination_existed": false
+    },
+    {
+      "old": "17-tries/02-insert-word/assets/tries-insert-word-trace.excalidraw",
+      "new": "17-tries/02-insert-word/tries-insert-word-trace.excalidraw",
+      "canonical": "assets/diagrams/tries-insert-word-trace.excalidraw",
+      "sha256": "13240dd532774315a85ec4fdb11d6cf441ab32da5e9329e498a891958d6ef7fc",
+      "destination_existed": false
+    },
+    {
+      "old": "17-tries/03-contains-word/assets/tries-contains-word-trace.svg",
+      "new": "17-tries/03-contains-word/tries-contains-word-trace.svg",
+      "canonical": "assets/diagrams/tries-contains-word-trace.svg",
+      "sha256": "fda19828075f0b0a06e63e0863d3377d19e542a1b53f44fbd1a607b3bf440499",
+      "destination_existed": false
+    },
+    {
+      "old": "17-tries/03-contains-word/assets/tries-contains-word-trace.excalidraw",
+      "new": "17-tries/03-contains-word/tries-contains-word-trace.excalidraw",
+      "canonical": "assets/diagrams/tries-contains-word-trace.excalidraw",
+      "sha256": "5f4226a79fbf04d27762027275fbd6c9697b87259f91332732077c4de6eeea4f",
+      "destination_existed": false
+    },
+    {
+      "old": "17-tries/04-starts-with/assets/tries-starts-with-trace.svg",
+      "new": "17-tries/04-starts-with/tries-starts-with-trace.svg",
+      "canonical": "assets/diagrams/tries-starts-with-trace.svg",
+      "sha256": "1db1d5f3a0e1848e085b9da9bf034489cda40f944995a962de4b3b7598e9832e",
+      "destination_existed": false
+    },
+    {
+      "old": "17-tries/04-starts-with/assets/tries-starts-with-trace.excalidraw",
+      "new": "17-tries/04-starts-with/tries-starts-with-trace.excalidraw",
+      "canonical": "assets/diagrams/tries-starts-with-trace.excalidraw",
+      "sha256": "5009df2e75ed56a294570ccd67c777984bfe6fc0d14a6c04ecc49053cf0653c0",
+      "destination_existed": false
+    },
+    {
+      "old": "17-tries/05-collect-prefix-words/assets/tries-collect-prefix-words-trace.svg",
+      "new": "17-tries/05-collect-prefix-words/tries-collect-prefix-words-trace.svg",
+      "canonical": "assets/diagrams/tries-collect-prefix-words-trace.svg",
+      "sha256": "b4f42073a5cec551159eca7bf3a4dd7a710be21d0ba1ea749ca49d8c9fb69eb7",
+      "destination_existed": false
+    },
+    {
+      "old": "17-tries/05-collect-prefix-words/assets/tries-collect-prefix-words-trace.excalidraw",
+      "new": "17-tries/05-collect-prefix-words/tries-collect-prefix-words-trace.excalidraw",
+      "canonical": "assets/diagrams/tries-collect-prefix-words-trace.excalidraw",
+      "sha256": "72895e239fe9a38793c18406aa627fe7aefb61f767fafd0d8ab7c53408df98a8",
+      "destination_existed": false
+    },
+    {
+      "old": "17-tries/07-prefix-counts/assets/tries-prefix-counts-trace.svg",
+      "new": "17-tries/07-prefix-counts/tries-prefix-counts-trace.svg",
+      "canonical": "assets/diagrams/tries-prefix-counts-trace.svg",
+      "sha256": "5684f37e80a8602cec1c627247605d37553208b06e2412ed75183c925a2ca238",
+      "destination_existed": false
+    },
+    {
+      "old": "17-tries/07-prefix-counts/assets/tries-prefix-counts-trace.excalidraw",
+      "new": "17-tries/07-prefix-counts/tries-prefix-counts-trace.excalidraw",
+      "canonical": "assets/diagrams/tries-prefix-counts-trace.excalidraw",
+      "sha256": "bc94d9045e1cf8bb03a4d1f870915f199cf8fe1dfffb205881b3539865226568",
+      "destination_existed": false
+    },
+    {
+      "old": "17-tries/08-autocomplete-project/assets/tries-autocomplete-project-trace.svg",
+      "new": "17-tries/08-autocomplete-project/tries-autocomplete-project-trace.svg",
+      "canonical": "assets/diagrams/tries-autocomplete-project-trace.svg",
+      "sha256": "f9cad09021c81326d7c68bc34f79fbf7eda0769ee5cc497b9d82537c8c14d43f",
+      "destination_existed": false
+    },
+    {
+      "old": "17-tries/08-autocomplete-project/assets/tries-autocomplete-project-trace.excalidraw",
+      "new": "17-tries/08-autocomplete-project/tries-autocomplete-project-trace.excalidraw",
+      "canonical": "assets/diagrams/tries-autocomplete-project-trace.excalidraw",
+      "sha256": "1f88245ddbc8b36f606179bd5ad535dbc60a09ee0726dc2a0eb10714b0d6d783",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/01-fenwick-lowbit/assets/range-structures-fenwick-lowbit-trace.svg",
+      "new": "18-range-structures/01-fenwick-lowbit/range-structures-fenwick-lowbit-trace.svg",
+      "canonical": "assets/diagrams/range-structures-fenwick-lowbit-trace.svg",
+      "sha256": "200c4291b7344351338deb4864bc79c97e79529a987fa937db95bfb312b3b66e",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/01-fenwick-lowbit/assets/range-structures-fenwick-lowbit-trace.excalidraw",
+      "new": "18-range-structures/01-fenwick-lowbit/range-structures-fenwick-lowbit-trace.excalidraw",
+      "canonical": "assets/diagrams/range-structures-fenwick-lowbit-trace.excalidraw",
+      "sha256": "50a18a81553c925d37a5ed6a2a4bc0c918bb4dd499b74b499618e2f69342c44b",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/02-fenwick-state/assets/range-structures-fenwick-state-trace.svg",
+      "new": "18-range-structures/02-fenwick-state/range-structures-fenwick-state-trace.svg",
+      "canonical": "assets/diagrams/range-structures-fenwick-state-trace.svg",
+      "sha256": "f23f731a67713c52da29739a998cd366e52f53103bfd5ee6588d720a37340d2a",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/02-fenwick-state/assets/range-structures-fenwick-state-trace.excalidraw",
+      "new": "18-range-structures/02-fenwick-state/range-structures-fenwick-state-trace.excalidraw",
+      "canonical": "assets/diagrams/range-structures-fenwick-state-trace.excalidraw",
+      "sha256": "22b21ba9df46dcf4cb9ffa098bb6408005fc26401c6332e54f1cfe82e36faa04",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/03-fenwick-add/assets/range-structures-fenwick-add-trace.svg",
+      "new": "18-range-structures/03-fenwick-add/range-structures-fenwick-add-trace.svg",
+      "canonical": "assets/diagrams/range-structures-fenwick-add-trace.svg",
+      "sha256": "83e790f3b7abe58d151db20b4754f76935a2e90a53179ac4bfd74e653fba8b0f",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/03-fenwick-add/assets/range-structures-fenwick-add-trace.excalidraw",
+      "new": "18-range-structures/03-fenwick-add/range-structures-fenwick-add-trace.excalidraw",
+      "canonical": "assets/diagrams/range-structures-fenwick-add-trace.excalidraw",
+      "sha256": "21386d58388cd4d2a4ab7c136824756047f482b98bf3dce5678134bc218dfcfc",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/05-fenwick-range/assets/range-structures-fenwick-range-trace.svg",
+      "new": "18-range-structures/05-fenwick-range/range-structures-fenwick-range-trace.svg",
+      "canonical": "assets/diagrams/range-structures-fenwick-range-trace.svg",
+      "sha256": "58eddbc2fd1c02cbffd9d158d4f9a646d2b93f184b3f8f268dbdc3c13e3fb6bd",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/05-fenwick-range/assets/range-structures-fenwick-range-trace.excalidraw",
+      "new": "18-range-structures/05-fenwick-range/range-structures-fenwick-range-trace.excalidraw",
+      "canonical": "assets/diagrams/range-structures-fenwick-range-trace.excalidraw",
+      "sha256": "d85edcdc84ed17e11bc4c02e4db116b02b87d6f5e9d5562931ac36957d9df769",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/06-fenwick-build/assets/range-structures-fenwick-build-trace.svg",
+      "new": "18-range-structures/06-fenwick-build/range-structures-fenwick-build-trace.svg",
+      "canonical": "assets/diagrams/range-structures-fenwick-build-trace.svg",
+      "sha256": "effe916be59d8682c46b54a69d11b5033f07c9208fed8a12cb7601338a38b4bf",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/06-fenwick-build/assets/range-structures-fenwick-build-trace.excalidraw",
+      "new": "18-range-structures/06-fenwick-build/range-structures-fenwick-build-trace.excalidraw",
+      "canonical": "assets/diagrams/range-structures-fenwick-build-trace.excalidraw",
+      "sha256": "3a5ced24a6db84030a66c1c1089801929ead205a585907618753717a061e93b4",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/07-segment-layout/assets/range-structures-segment-layout-trace.svg",
+      "new": "18-range-structures/07-segment-layout/range-structures-segment-layout-trace.svg",
+      "canonical": "assets/diagrams/range-structures-segment-layout-trace.svg",
+      "sha256": "8cdd0b5364306f07b729dc2ad3d301e0314ce54e3ab6bf37bb37d634fb9b27a3",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/07-segment-layout/assets/range-structures-segment-layout-trace.excalidraw",
+      "new": "18-range-structures/07-segment-layout/range-structures-segment-layout-trace.excalidraw",
+      "canonical": "assets/diagrams/range-structures-segment-layout-trace.excalidraw",
+      "sha256": "4ecfb3904132bf87981ec4431e94d840c956c4231f7cb8da5adde53990215858",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/08-segment-build/assets/range-structures-segment-build-trace.svg",
+      "new": "18-range-structures/08-segment-build/range-structures-segment-build-trace.svg",
+      "canonical": "assets/diagrams/range-structures-segment-build-trace.svg",
+      "sha256": "9ef8be9977155b8243a38e1dde494f65aa6a0939332d07887db6ad1ef9b33248",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/08-segment-build/assets/range-structures-segment-build-trace.excalidraw",
+      "new": "18-range-structures/08-segment-build/range-structures-segment-build-trace.excalidraw",
+      "canonical": "assets/diagrams/range-structures-segment-build-trace.excalidraw",
+      "sha256": "e62b3409a0df47607050de8bcb166b81aeff0b42aa32bfa2f9065a298e5e7ceb",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/10-segment-update/assets/range-structures-segment-update-trace.svg",
+      "new": "18-range-structures/10-segment-update/range-structures-segment-update-trace.svg",
+      "canonical": "assets/diagrams/range-structures-segment-update-trace.svg",
+      "sha256": "04e846b95de9e9cb27bf8f5d1abc1b1f6ab853f0801e0378a41078d48f4aef7b",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/10-segment-update/assets/range-structures-segment-update-trace.excalidraw",
+      "new": "18-range-structures/10-segment-update/range-structures-segment-update-trace.excalidraw",
+      "canonical": "assets/diagrams/range-structures-segment-update-trace.excalidraw",
+      "sha256": "4d964b696a948709f71a17c2f47747907430d5fff2a1aa07e132c4a526ea3eaa",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/11-range-minimum/assets/range-structures-range-minimum-trace.svg",
+      "new": "18-range-structures/11-range-minimum/range-structures-range-minimum-trace.svg",
+      "canonical": "assets/diagrams/range-structures-range-minimum-trace.svg",
+      "sha256": "ad5a535b463e8411855ea4e04dcccc094f36dcc7e550a2aa0c52ab1c719c9eff",
+      "destination_existed": false
+    },
+    {
+      "old": "18-range-structures/11-range-minimum/assets/range-structures-range-minimum-trace.excalidraw",
+      "new": "18-range-structures/11-range-minimum/range-structures-range-minimum-trace.excalidraw",
+      "canonical": "assets/diagrams/range-structures-range-minimum-trace.excalidraw",
+      "sha256": "6a3f635950365a6118e9c8e00c0b7662ee887a54a68ba4b859269203e3dfe61c",
+      "destination_existed": false
+    },
+    {
+      "old": "19-disjoint-sets/01-dsu-state/assets/disjoint-sets-dsu-state-trace.svg",
+      "new": "19-disjoint-sets/01-dsu-state/disjoint-sets-dsu-state-trace.svg",
+      "canonical": "assets/diagrams/disjoint-sets-dsu-state-trace.svg",
+      "sha256": "48b543da246b8971a951829b0f74b96cb61bb592237088e8b3228f44b135f0d2",
+      "destination_existed": false
+    },
+    {
+      "old": "19-disjoint-sets/01-dsu-state/assets/disjoint-sets-dsu-state-trace.excalidraw",
+      "new": "19-disjoint-sets/01-dsu-state/disjoint-sets-dsu-state-trace.excalidraw",
+      "canonical": "assets/diagrams/disjoint-sets-dsu-state-trace.excalidraw",
+      "sha256": "8f2c560436ab175156a45e0b490114e8966ef804dda198256f59faaa2c609253",
+      "destination_existed": false
+    },
+    {
+      "old": "19-disjoint-sets/02-find-root/assets/disjoint-sets-find-root-trace.svg",
+      "new": "19-disjoint-sets/02-find-root/disjoint-sets-find-root-trace.svg",
+      "canonical": "assets/diagrams/disjoint-sets-find-root-trace.svg",
+      "sha256": "7861679170dec760b69bcc8e89251a0d4e1c00a70ce4a6c9af6b9c255b16f46c",
+      "destination_existed": false
+    },
+    {
+      "old": "19-disjoint-sets/02-find-root/assets/disjoint-sets-find-root-trace.excalidraw",
+      "new": "19-disjoint-sets/02-find-root/disjoint-sets-find-root-trace.excalidraw",
+      "canonical": "assets/diagrams/disjoint-sets-find-root-trace.excalidraw",
+      "sha256": "428b438425038a11f17d3e7b851ce68ead0f2735d7fc9f6addef8114a8d0f57d",
+      "destination_existed": false
+    },
+    {
+      "old": "19-disjoint-sets/03-union-components/assets/disjoint-sets-union-components-trace.svg",
+      "new": "19-disjoint-sets/03-union-components/disjoint-sets-union-components-trace.svg",
+      "canonical": "assets/diagrams/disjoint-sets-union-components-trace.svg",
+      "sha256": "989c9eb7b0d31f63e913217d0b3e298bf98a6789d780b2d459cb1cc7a1fb4550",
+      "destination_existed": false
+    },
+    {
+      "old": "19-disjoint-sets/03-union-components/assets/disjoint-sets-union-components-trace.excalidraw",
+      "new": "19-disjoint-sets/03-union-components/disjoint-sets-union-components-trace.excalidraw",
+      "canonical": "assets/diagrams/disjoint-sets-union-components-trace.excalidraw",
+      "sha256": "d72c006d39daf12de484494de25899be3623afea91cc94893c18be2542b72cd7",
+      "destination_existed": false
+    },
+    {
+      "old": "19-disjoint-sets/05-union-by-size/assets/disjoint-sets-union-by-size-trace.svg",
+      "new": "19-disjoint-sets/05-union-by-size/disjoint-sets-union-by-size-trace.svg",
+      "canonical": "assets/diagrams/disjoint-sets-union-by-size-trace.svg",
+      "sha256": "bd32b14c0e6828bebdf79de7e80b0c986b59306f3ab12b8604568bf82f69a018",
+      "destination_existed": false
+    },
+    {
+      "old": "19-disjoint-sets/05-union-by-size/assets/disjoint-sets-union-by-size-trace.excalidraw",
+      "new": "19-disjoint-sets/05-union-by-size/disjoint-sets-union-by-size-trace.excalidraw",
+      "canonical": "assets/diagrams/disjoint-sets-union-by-size-trace.excalidraw",
+      "sha256": "564c087ebbe899a8260ef27da79449373e8e30b4b6794d116f503719c1e44039",
+      "destination_existed": false
+    },
+    {
+      "old": "19-disjoint-sets/07-detect-redundant-edge/assets/disjoint-sets-detect-redundant-edge-trace.svg",
+      "new": "19-disjoint-sets/07-detect-redundant-edge/disjoint-sets-detect-redundant-edge-trace.svg",
+      "canonical": "assets/diagrams/disjoint-sets-detect-redundant-edge-trace.svg",
+      "sha256": "4da8168038b7dbac0817f4b785571f4c8e90a8c948a486355e3b72cd9b1016fe",
+      "destination_existed": false
+    },
+    {
+      "old": "19-disjoint-sets/07-detect-redundant-edge/assets/disjoint-sets-detect-redundant-edge-trace.excalidraw",
+      "new": "19-disjoint-sets/07-detect-redundant-edge/disjoint-sets-detect-redundant-edge-trace.excalidraw",
+      "canonical": "assets/diagrams/disjoint-sets-detect-redundant-edge-trace.excalidraw",
+      "sha256": "301e7d95220196ca8972ba6fa939db01afc5fc1f8b77ad6200c673337bfb22de",
+      "destination_existed": false
+    },
+    {
+      "old": "19-disjoint-sets/08-kruskal-forest/assets/disjoint-sets-kruskal-forest-trace.svg",
+      "new": "19-disjoint-sets/08-kruskal-forest/disjoint-sets-kruskal-forest-trace.svg",
+      "canonical": "assets/diagrams/disjoint-sets-kruskal-forest-trace.svg",
+      "sha256": "bd806f1a1d57a688ca73ea4648a022b90bce902d05cf5b2c30c14e4ce6a8f2d5",
+      "destination_existed": false
+    },
+    {
+      "old": "19-disjoint-sets/08-kruskal-forest/assets/disjoint-sets-kruskal-forest-trace.excalidraw",
+      "new": "19-disjoint-sets/08-kruskal-forest/disjoint-sets-kruskal-forest-trace.excalidraw",
+      "canonical": "assets/diagrams/disjoint-sets-kruskal-forest-trace.excalidraw",
+      "sha256": "5597c70a0cdbd146a6da5b7b3fb117ba4bcc335400f133f4cdd1087d3e2cc3f2",
+      "destination_existed": false
+    },
+    {
+      "old": "20-combinatorial-search/01-cartesian-product/assets/combinatorial-search-cartesian-product-trace.svg",
+      "new": "20-combinatorial-search/01-cartesian-product/combinatorial-search-cartesian-product-trace.svg",
+      "canonical": "assets/diagrams/combinatorial-search-cartesian-product-trace.svg",
+      "sha256": "585c3f2cd6963cede0964e30b5d8454229dfaf4b0c9e5032ec29496e32a0cc0f",
+      "destination_existed": false
+    },
+    {
+      "old": "20-combinatorial-search/01-cartesian-product/assets/combinatorial-search-cartesian-product-trace.excalidraw",
+      "new": "20-combinatorial-search/01-cartesian-product/combinatorial-search-cartesian-product-trace.excalidraw",
+      "canonical": "assets/diagrams/combinatorial-search-cartesian-product-trace.excalidraw",
+      "sha256": "6960527f42952f0622a17b7e25e0dc4b03104f2054b6c06658fdd7222aa355bb",
+      "destination_existed": false
+    },
+    {
+      "old": "20-combinatorial-search/02-power-set-iteration/assets/combinatorial-search-power-set-iteration-trace.svg",
+      "new": "20-combinatorial-search/02-power-set-iteration/combinatorial-search-power-set-iteration-trace.svg",
+      "canonical": "assets/diagrams/combinatorial-search-power-set-iteration-trace.svg",
+      "sha256": "716b037da5e00868139a83813d3249d761a16a2100b3c5e0f650db8c56d55242",
+      "destination_existed": false
+    },
+    {
+      "old": "20-combinatorial-search/02-power-set-iteration/assets/combinatorial-search-power-set-iteration-trace.excalidraw",
+      "new": "20-combinatorial-search/02-power-set-iteration/combinatorial-search-power-set-iteration-trace.excalidraw",
+      "canonical": "assets/diagrams/combinatorial-search-power-set-iteration-trace.excalidraw",
+      "sha256": "c62888f4d9c4c5e36a012075881a2c4eff5d8da5380f1ce4627f230ba1bb9fce",
+      "destination_existed": false
+    },
+    {
+      "old": "20-combinatorial-search/03-power-set-bits/assets/combinatorial-search-power-set-bits-trace.svg",
+      "new": "20-combinatorial-search/03-power-set-bits/combinatorial-search-power-set-bits-trace.svg",
+      "canonical": "assets/diagrams/combinatorial-search-power-set-bits-trace.svg",
+      "sha256": "c258e1db8f557a412af54659acf58a29d51aa3583d7a71dd2c7f3e3d5e559ae9",
+      "destination_existed": false
+    },
+    {
+      "old": "20-combinatorial-search/03-power-set-bits/assets/combinatorial-search-power-set-bits-trace.excalidraw",
+      "new": "20-combinatorial-search/03-power-set-bits/combinatorial-search-power-set-bits-trace.excalidraw",
+      "canonical": "assets/diagrams/combinatorial-search-power-set-bits-trace.excalidraw",
+      "sha256": "9f021a845ab89de6a56f68eabca38b20c8c5d32971ef582834152f5c45b9d03a",
+      "destination_existed": false
+    },
+    {
+      "old": "20-combinatorial-search/04-combinations-without-replacement/assets/combinatorial-search-combinations-without-replacement-trace.svg",
+      "new": "20-combinatorial-search/04-combinations-without-replacement/combinatorial-search-combinations-without-replacement-trace.svg",
+      "canonical": "assets/diagrams/combinatorial-search-combinations-without-replacement-trace.svg",
+      "sha256": "e62293598fa9a3e2ada0577b957cb85876d97ff45dc9b47dccfecfe461863307",
+      "destination_existed": false
+    },
+    {
+      "old": "20-combinatorial-search/04-combinations-without-replacement/assets/combinatorial-search-combinations-without-replacement-trace.excalidraw",
+      "new": "20-combinatorial-search/04-combinations-without-replacement/combinatorial-search-combinations-without-replacement-trace.excalidraw",
+      "canonical": "assets/diagrams/combinatorial-search-combinations-without-replacement-trace.excalidraw",
+      "sha256": "e8c2ee7a52472cbd9ed4d80784e9a4f1a3cc2beaa5088b0f21a9adb1e9ae2f05",
+      "destination_existed": false
+    },
+    {
+      "old": "20-combinatorial-search/05-combinations-with-replacement/assets/combinatorial-search-combinations-with-replacement-trace.svg",
+      "new": "20-combinatorial-search/05-combinations-with-replacement/combinatorial-search-combinations-with-replacement-trace.svg",
+      "canonical": "assets/diagrams/combinatorial-search-combinations-with-replacement-trace.svg",
+      "sha256": "4f86f208ec1fb14d297c439815c564cd8a44193e22adea382ae8fc55749d89e9",
+      "destination_existed": false
+    },
+    {
+      "old": "20-combinatorial-search/05-combinations-with-replacement/assets/combinatorial-search-combinations-with-replacement-trace.excalidraw",
+      "new": "20-combinatorial-search/05-combinations-with-replacement/combinatorial-search-combinations-with-replacement-trace.excalidraw",
+      "canonical": "assets/diagrams/combinatorial-search-combinations-with-replacement-trace.excalidraw",
+      "sha256": "60931d82e0e555f52713f5718946e8e7c5d87b990987c3b5f09f31fef58eebd1",
+      "destination_existed": false
+    },
+    {
+      "old": "20-combinatorial-search/06-permutations-without-replacement/assets/combinatorial-search-permutations-without-replacement-trace.svg",
+      "new": "20-combinatorial-search/06-permutations-without-replacement/combinatorial-search-permutations-without-replacement-trace.svg",
+      "canonical": "assets/diagrams/combinatorial-search-permutations-without-replacement-trace.svg",
+      "sha256": "3fc545447e18d380f761a52cff7fe07b827396d4cd4acd55e57f8caa9e9d0716",
+      "destination_existed": false
+    },
+    {
+      "old": "20-combinatorial-search/06-permutations-without-replacement/assets/combinatorial-search-permutations-without-replacement-trace.excalidraw",
+      "new": "20-combinatorial-search/06-permutations-without-replacement/combinatorial-search-permutations-without-replacement-trace.excalidraw",
+      "canonical": "assets/diagrams/combinatorial-search-permutations-without-replacement-trace.excalidraw",
+      "sha256": "ba41709df66857ebe8b1a61389ad3cdd7b3706c5ccd063dc81b56aec818563ca",
+      "destination_existed": false
+    },
+    {
+      "old": "20-combinatorial-search/07-words-with-repetition/assets/combinatorial-search-words-with-repetition-trace.svg",
+      "new": "20-combinatorial-search/07-words-with-repetition/combinatorial-search-words-with-repetition-trace.svg",
+      "canonical": "assets/diagrams/combinatorial-search-words-with-repetition-trace.svg",
+      "sha256": "8f4a3570dfc6fbdd43550e77998feda6d389be4b0ddba5d1e88839f00bdf0fc0",
+      "destination_existed": false
+    },
+    {
+      "old": "20-combinatorial-search/07-words-with-repetition/assets/combinatorial-search-words-with-repetition-trace.excalidraw",
+      "new": "20-combinatorial-search/07-words-with-repetition/combinatorial-search-words-with-repetition-trace.excalidraw",
+      "canonical": "assets/diagrams/combinatorial-search-words-with-repetition-trace.excalidraw",
+      "sha256": "f430ac54522af3d32b36215b851f520f14e9b81060c0b1656792e1181a63010f",
+      "destination_existed": false
+    }
+  ],
+  "evidence_sha256": {
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-dsu-state-trace-editor.png": "b708a9a95dd9789efd088b897c386360ac510924eb6a8e833ef568a1e3e02a62",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-build-trace-edited.excalidraw": "7d4dfff990fc64b893557f8a45eb2de9c4c5f812d5a536ed4a9ff52d0e43694b",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-permutations-without-replacement-trace-edited.svg": "3655ce3a003a6a31b75755c6430a0624a73463ef98a9bbbd8cad8b1c6f44db78",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-prefix-counts-trace-export.svg": "deec69453d9ad92b914f89e11637240619d96a00b27c120ee184f480735e28ae",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-power-of-two-trace-export.png": "3a65dd8d7863b5095281672d94e63aec033caa6bd1d94e1dd3b29ac45dbce363",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-test-a-bit-trace-export.svg": "58fb305668de9a70110f25aaae7e92a50280d14db3a1aad3fe70d58c43367492",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-union-components-trace-editor.png": "ae8d143c14e91d2c253a1a7bd2cc58caca8b01fdf4e4fb1ab7796d8bc8c8af8a",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-power-set-bits-trace-export.svg": "41eef8c5aed86af6763d1299362d8bd71433e730e244d59aea829f80cf1c51e7",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-range-trace-export.png": "751c00ea0489447024adf6e7621b2118957aa6a87eefba37b92d662cd01714f7",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-insert-word-trace-export.png": "b6c1b9787eadf2d08389ec706bac9036b8b0ac26c7397901094480a231781033",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-test-a-bit-trace-edited.excalidraw": "96c9483a006ad602b8d35116cafa4e6ff1f13e68b2123c304243b07de5f874ba",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-dsu-state-trace-edited.excalidraw": "fc2d5ca3af1fd00b02ee973b6d2cc10fe6d25e3cc4d79fede89a6853efbd4495",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-range-minimum-trace-export.svg": "6155283b3c0d04dbf4cc0d0c6de77b9d9094e13cf577d05c81902b00c658f785",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-permutations-without-replacement-trace-export.png": "619b074a9aa520be30fc7520721995de081989e51040e992446341d9b9dc25c6",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-update-trace-export.svg": "fe0f774ec6755bdfffe5664c89f5323c9c7233c6671857a1c7447e282f695ca7",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-build-trace-editor.png": "6669e1e848a24c05fb11b2cebe2895501041ef44a62b36aaa1dcfbfc69f43969",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-set-algebra-trace-original.png": "4af50b6bcab099c4b888432ac50eda4aa8285aa0e5624c18fbf277680d6d21b3",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-bit-count-trace-export.svg": "1200921bf459fa4519f34d2938dc4608f8af5b3285244eec06f5ec5570d2c6e7",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-power-set-iteration-trace-original.png": "78537937c8628808718d2ee78fa81005fb042f29f015e80e34121d0da072015e",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-insert-word-trace-edited.svg": "ff9dac51571c96f9710a2ba86276b68a063d77acbb6bc36829d0ca20bbc827be",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-range-trace-edited.svg": "29da56041cc81cea0c83766def02c617950ff95f46f78bd7801aebf67e3a8bb5",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-set-clear-toggle-trace-original.png": "95d8d441c1df39c50287d954830a36a093d6b9f02bd3748cb397e3fc1fb26e91",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-kruskal-forest-trace-original.png": "c2f3dd3791984a118ab4cee9c7b6bb2f5f32b0b562bd9e40916c09224cda409d",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-state-trace-export.svg": "53a016509fc4e29aeb869c72600d65a5b93582de0d1ba9c1d5f655209a460103",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-power-of-two-trace-edited.svg": "c49f4ab3e87cd86e65b00723e8192bef8870055618abd4e6a8bdd2deaba15c5d",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-cartesian-product-trace-export.svg": "d347ef7007f4259cdcd735e1776088195a2273cf7711fc72d78078218cf4ead8",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-dsu-state-trace-export.png": "3b0fbbd14f4a93f3df4255d958c42d533b64fa4ca3524117d0c580bfef162905",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-words-with-repetition-trace-original.png": "1ea0d2f4f1ec3e1d6270f83732a26fb460d26ade1c15bcbe25e2540d09d3526c",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-combinations-without-replacement-trace-export.svg": "1fbd5834672d2b0e435c853882d36d20f44ef48dfb9b3072775465bae9e43a93",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-build-trace-edited.svg": "32fd69b4918eeb1dd7c886935ccbbc08cb556f15497a1d025e5f27ba2c17d122",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-range-trace-editor.png": "c3f5e9f610ecff06c8126835be037224d2d708f285d5a656e71e046269dfbe44",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-insert-word-trace-editor.png": "f4e32d8aa19027e8d91149a04075f0f8662e80dba5f3e5f6da79843c0ef73d42",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-power-of-two-trace-editor.png": "35c9385df82640d6dec2ad0bf1085e982c405f09f8f6dceda8d6dc0cc4a0eac0",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-detect-redundant-edge-trace-edited.excalidraw": "7227286c1c2a87263c2b7744dd16192a3227de75b8c9e0431cb1149885a604e1",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-union-components-trace-export.png": "9572d421c5dce2c4c18efa988e1e417af480c522407f62b9c7b18792aa2d42a8",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-permutations-without-replacement-trace-edited.excalidraw": "33cccae97630b4fac39ef808c45d34ec14f094e58c903964ded394d131280cbe",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-dsu-state-trace-edited.svg": "4f0982a1aa9b295a00278c50993c9b5933907885789b59590d015c5fdfafe4e3",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-build-trace-export.png": "08d6878d9f22dc4f87ccc69e7a92f7dc9da4d2da66868614c1193b26389ed656",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/canonical-contact-09.png": "38c005a46b45fdb9c0d8e3376d00d805f15806798111fe12422e94de81963862",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-power-set-iteration-trace-export.svg": "f152c09a440e667d2e7dd0e417258e11fcf1cfd7a2f464b9e09541bc91119182",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-permutations-without-replacement-trace-editor.png": "52c97bad6801179f1ac3911c213e462fda9d4d7d25fc81bcc6d54778bc02e10f",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-autocomplete-project-trace-export.svg": "f3ab40abc68931c6a0af3288e011e8559bfd04809aeb5fe1fe3e6d75adc248c2",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-union-components-trace-edited.svg": "abbff36d953f3ccd184abafe44155bced94195033d3bb88e0d9527b67e2afd13",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-cartesian-product-trace-original.png": "5993df2fb0c44a353c460a0ce48d0c91c2f6b01afdbca671f378b675fec62f5c",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-trie-node-trace-original.png": "42a47f7d76d58a7bb0ec4565f55905328a37b44447dec0de78785c468f846009",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-layout-trace-export.svg": "f8ef4d5f38517612510c67496519cebfdc26e5fcfec313a38bf425ab2836e6e9",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-find-root-trace-original.png": "eeb096104dc24f0717bcc874d38a656d35b1f2db4d34245f26c048fce07e456e",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/canonical-contact-08.png": "e1b732eeff9026e29e220a65f5305d29486a5cf722d5b7b235cc276520cd5d71",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-union-by-size-trace-original.png": "7893655af26a363dafdfb61de85d0545b8467a17e4e3da0e54d9b67c1a34ecf4",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-cartesian-product-trace-edited.excalidraw": "49c433f44d80fcdabb6df42ac41079d773d920ea294131b19de129d1f30e017b",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-layout-trace-export.png": "d850899c20a1b2f4ebbadd20b5f2f43112afb11914ef4f666ead8cf8157809a3",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-state-trace-editor.png": "219afcccff8a5af5450ae71689684687a523cc91b8819a2c57188ce1846c3f81",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-update-trace-editor.png": "3ad208e00c0dd297ef5b2f6dba4283f9a332d3cc8f835fe3008e363e1edb3701",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-cartesian-product-trace-edited.svg": "dd16d860b22fce447ca41bdfebcf62661dbc93856192b1802f7354e5089f3296",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-range-minimum-trace-editor.png": "28d9311a4bf8a0af8e83fc2bb82dcb1130c9fa0a0a58b9dc7992ea48f0e62259",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-autocomplete-project-trace-export.png": "b9d5c279a7c584caf6c270a37172416eadd6c91e6c26255b3c3de75443fdf138",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-power-set-iteration-trace-export.png": "fc68b4dc45df1d181d494c43e604166e0ca4197c8d1b01a0bc62dc0dbc95c63b",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-union-components-trace-edited.excalidraw": "3cfaf56f6f5aff65c16cd08a83ffbcb8aff527cce43f103443aea25e8b67995c",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-combinations-without-replacement-trace-edited.svg": "ed60152c145803175ab9e99be510286f4fcc1522a3ea229a32a861795a1366ab",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-bit-count-trace-editor.png": "6bc8c8d2c87a6a1610ad7e87bbee99c8c6b2a2926782a109e9f462e1c396616e",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-bit-count-trace-edited.excalidraw": "aabb68e8affcce559ce364b4462e107eb6ca265e7534ff685bac6a11a5dff535",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-find-root-trace-edited.excalidraw": "388c013580e5a435ebd92bc9ac6f50ae5d3efb96fe01af63860a72c7bf072257",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-build-trace-export.svg": "e02b89761aa1e7c84d146a9031178e90eb897c9c7c51628a4a786ac195477beb",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-union-components-trace-export.svg": "dcf8af1f73dcf44b73035f29d5aa3b55bf1f99815f7cef6b17bfaf6fcc7bd31c",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-test-a-bit-trace-editor.png": "198daaacf2762e8485f3da931df326cb04cdeb84f1ed5c65813d38f722955524",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-layout-trace-edited.svg": "ef190b69e3c1648caff6a277d0b9f3d5adb146316900a5b9337eea16893fdb40",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-prefix-counts-trace-editor.png": "e03cf615ca1658c494459bf1db73611a1b928f892c683259d74afcd510feec84",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-prefix-counts-trace-original.png": "a3675709a7f9a059c50e3d7b9d09ca326c0e38ea267ca62b54446489fded016e",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-power-of-two-trace-original.png": "63c5bde5950ec8c57a85d032c2a32d83887a7a9ef33a513987a9b8d8a6d6f3eb",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-power-set-bits-trace-editor.png": "92734d3685045082e4d3c3007ccecdac5a74411d178c014c0bb69162709a5a6d",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-permission-flags-trace-original.png": "5167705887588220be3c74f8d6c30806afc9cb69aa9655a25e5035b2ef5c1a29",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-lowbit-trace-original.png": "9c29f0c176894265a43dbc098e547b6f27c1fc2931e5588d3c3a920a1ad012dc",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-dsu-state-trace-export.svg": "0eac07f1c70dba0ff80e3f59f7df67fe2d85f7d85ba6c9f0c994846d13e86e80",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-combinations-without-replacement-trace-export.png": "67499953ae14e1750ea385998da16f6bc8d3fceacd5bb3258947185bcabd3f93",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-power-set-iteration-trace-edited.svg": "df1e7559fddc355db3915b230894d998fc954be5961be6a2f2c929981a964367",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-cartesian-product-trace-export.png": "b89e60e530abdcd072cc4f761c7db9aef2941fac460f73f3ca52c4de36a41191",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-autocomplete-project-trace-edited.svg": "b0bc5e081f0a80052964267072b1efe0a46b9b6169480264dd8d03a8292ff4c9",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-state-trace-export.png": "a2487c8ccf312f6e781a86a7d58ebfa8339c1888f00ac9d3dbb33b6f8cb02ac6",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-combinations-without-replacement-trace-original.png": "dae6030a1c311848fe1730074fd13bfab71e773cd45c02693979c59e67881c66",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-prefix-counts-trace-edited.svg": "eb08c7f5566a835bd0b3f988525da027459fc965f8215099a440c843a7610819",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-test-a-bit-trace-edited.svg": "b90baa2bf26fbcdf504d3ad92aa22fbd81109097d4b7d9c875caadb81664bba4",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-layout-trace-editor.png": "70ad14daf95e8b569680723703d5bdf6462748696623d2f7bc352fe5d8ebfc5a",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-power-set-bits-trace-original.png": "3a6fb61b2ef17ead9ce4e5074ddb81468073320f4a9b5826f84abf27617d7d1f",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-power-set-bits-trace-edited.svg": "6c95aa4b9b81f1e1de9e186f65313ce3443d3707b8de59fa8d097ba1b821012f",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/native-contact-09.png": "3a21219511ddc9dae21378350777845ff623b9eedd72f0ae37b0563856147d03",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-power-set-iteration-trace-editor.png": "09dad5ce2a322040c499c22af75d4846ea265283a4f0ebbaa813f05f4231f1a9",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-update-trace-original.png": "9ae4c5d5cf8f3c8272841da339b800b2f11584124c7c54fa287e0ff1bca2a6f8",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-bit-count-trace-export.png": "88e08758746099865060039b3ea3ccca519c7c44bc4c74413053cee5ccb35638",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/native-contact-08.png": "90fc4983f1c608d8d5259b95198e901a0df6b9ae4231b5ea8c2b76bacbcd4724",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-range-minimum-trace-export.png": "db1d49abb6c89952f7a6076bb2c267d132b8fb13cdcd7889d5c8ae842033769d",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-autocomplete-project-trace-editor.png": "871dbc739740fc385685dc70f7f1b00522cfeea95dd24e1acec3420c15237f9d",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-union-components-trace-original.png": "4d10bdf147e9b29e5c860ec330a957c88a6cc6633f1749ef8e262e2363416389",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-update-trace-export.png": "33e52297676b8e538552934d9d161a3ddc0ca03aa78920d20c7d1070f95d1c30",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-permutations-without-replacement-trace-export.svg": "32c491b0abb14bca85296cf8dca802685b9aba642c129fb78ac99427fe342af7",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-insert-word-trace-export.svg": "5f27c199c3a164654c092363ae470ada9335eb0b81a500d8d942b4344f1844a9",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-range-trace-export.svg": "1fa554bc927fc3e78e1dd18982ed0ed622bf431a94f2a53724a94d20a7751228",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-power-set-bits-trace-export.png": "c65e6bc0876340c1d473379df596cb90cab4b6f119f6f5e0b0b26ac8d6036950",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-state-trace-edited.svg": "fd8ffe4c5a8669a3ccbbf79a8c66cb1b7cce70f0f1e6e6ce0ff01d0232f61b77",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-power-of-two-trace-export.svg": "14a6e62664e4cf7739b41a5a9648a355bbe81c0a717cac9bfec960831ce98a55",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-test-a-bit-trace-export.png": "757f61a344db0701ac365b53ae14074f65f9b2bfc4064fac4ad4738ab0ebf630",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-prefix-counts-trace-export.png": "b6b7e8ead1584b4d02f271aa244968f15e929dd3d0826bbb3cc3c45561bfb268",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-range-minimum-trace-edited.svg": "783bcafa788583c36647babd85df202ce8c23476575041127a6c9b021e52bb83",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-kruskal-forest-trace-edited.excalidraw": "f3a9f2985e1df962539f79bfc9f3c12369b3d2034f0d625027a49a1f2c07509b",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-cartesian-product-trace-editor.png": "5ce71e22005c691ebf343e57b0e95b5c31129ef6c4b3d2c9147cbf547a75de6e",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-power-of-two-trace-edited.excalidraw": "0cda2b07a579448e3314eee808c158ecbe3967bfbe2f15df8502f745c702d474",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-set-clear-toggle-trace-edited.excalidraw": "4e2e415ef9b63b8fa8a130e627829987da8769c70f56088ba59baf85b0d8c024",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-update-trace-edited.svg": "f4a614567593195622cf8ef9f4c89b998ce5f4dbfb5acd3921f78e7d6d047aed",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-bit-count-trace-edited.svg": "8fef63fb1215b70a687fff283612c0f370d84d08926297d7966e0e6efc33722e",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-combinations-without-replacement-trace-editor.png": "856f3422b79b69491602bdcf537fca776ae9db03f871963de455785d1d0117a5",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-set-algebra-trace-edited.excalidraw": "e8c4a4b44a67a66aa2e2c9f19b01898154775d573946a463e894677035b0dc2a",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-lowbit-trace-edited.excalidraw": "da13da85911e593bcaaf829df6166fda5d516ddce2cddf034eeaab7f609b22ac",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-contains-word-trace-edited.excalidraw": "bdbff939616bdb16b05fcc0f6b8ccc3cdd7c8e1477653bc20634977a76f24fe9",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-lowbit-trace-edited.svg": "420379f73b8a3c1f8eca22c84a5a849307f73a6c43c83b9731dddf5bdf58ce44",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-add-trace-edited.excalidraw": "2eb08c1b96c6959b8eb0ba2566e459cb6d5c24f8a1026ef486621d6305a85825",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-find-root-trace-export.svg": "b655c0a948a8bdeb5402954d53b42c074c13010d78f1501d9edfb0d5efc8b33f",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/native-contact-06.png": "66697021e92f3410c50f0bceb56924701d25558c45444887c27b21204d165175",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-add-trace-edited.svg": "e6c169d90919f4e3738fb50c8b052435ccaef8ac1409027b99477b3dbcf261cb",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/native-contact-07.png": "4ac293052737aadd976ed31ff2f1dcbb5aed31861a7c72da124d2957eea9690a",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-range-minimum-trace-edited.excalidraw": "9549915670cc5bca08012a459f2579100822456e931c8bad9a38bf55e03d5c38",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-union-by-size-trace-export.png": "c145cd719fd4baadbddcabcee9400e9d280374bb9fe581c5ec4e2d340f2fa845",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-kruskal-forest-trace-export.png": "c4a0c9adef24e990fd3b8d87d155ebb36d637b564b5a6e0b6022a7db590b953b",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-words-with-repetition-trace-edited.svg": "c5585832eac4fd67e1617bbd7ce08b66c910d1a64151e96d529cef4ea1f51c54",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-collect-prefix-words-trace-original.png": "182abea38623818d569a0f60e93d5d76cd7afbf0b2908d6ade8a3a5161c75ee8",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-power-set-iteration-trace-edited.excalidraw": "1d4269440470a00f383a5c3acd40a1e0d81090f4c91189316dac79bd7ba9a1e7",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-collect-prefix-words-trace-editor.png": "472bc6a4d88b1bcd68b99dbbc4a946114c45caf07df1517e46305d9b3f9596e1",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-detect-redundant-edge-trace-original.png": "1a95190607c1598e3c7310d9b0860e1ac3f6218a4c6a519d2fe817ec281f2175",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-detect-redundant-edge-trace-editor.png": "f7b3970c55fc38368035e66294a096f31ad02c85f7c83d91c9aef9f983536f02",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-contains-word-trace-export.png": "a95f8574f2da047d964a464f735ac24d278bb2c508b74e86b29fc618bd8855a3",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-add-trace-export.png": "3d56c8509254e5bd3bc78542bafe42ccdbadfd3239ec5838a7cbbb54cb49afa6",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-build-trace-editor.png": "4bce1d77cb731bfc563420022a6cec6f2c0dee530293bd479e2f7a5cf79a10fe",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-permutations-without-replacement-trace-original.png": "f10beffc9a32ec34c3e0e63067f89b52022e3243d7f1121ffbeca441da4b7683",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-layout-trace-edited.excalidraw": "dbb3f78ec78fe215801e010b01c667faad0eeee53b100a219fa77fa4a473119e",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-permission-flags-trace-editor.png": "153ae88d55923671a328a398cc1fa2b848b28f460a7f0ef8da9d14d7b613b036",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/native-contact-05.png": "56b9db0b25b06e82e394b904719580ad39eed2a589da95d0de0b5a3d82dba288",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-add-trace-original.png": "323353c4128c7545ede8db1f036485c8423397a175d2fafb4597b52cffabc219",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-starts-with-trace-export.svg": "b33ac232dbc0f3b461670c369bf1d95c396d3ea372def95a0a5ccab303102a35",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-lowbit-trace-export.png": "f17b55a78f36e309dbd18ee2fbad015ddf9652795f64ba6dc9899a908dd48628",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-words-with-repetition-trace-export.png": "5a21c827acad4700e73989784abd2ea02d8c42b9918efcdd6e4d1d99c5152479",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-union-by-size-trace-edited.svg": "d91a89226262aa5051c326734e223ceba215229e5c7baeb21feee53bc55626e1",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-trie-node-trace-export.svg": "8aeccf3b83dbe8bea29081f38bbd41acd21171307d0af2346c422bd60d4d7019",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-kruskal-forest-trace-edited.svg": "2e2ef9e050683a3564e68e8d8d2b12788f48599f27d2a4b4635c13a123d4d544",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-contains-word-trace-edited.svg": "ca243839de9f93530f8f371c0d43558b3d2385e967e53c5c767c3b48c645889b",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/native-contact-04.png": "6feb0a454720a29e63c465cdbd7a1debb9b2aec26f45739227670e765867b4f0",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-combinations-with-replacement-trace-edited.excalidraw": "1435e37a3e1807551b8f9e5035e3d826f52c2673e4f26c24857a9304af952e20",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-contains-word-trace-original.png": "f9a2e4be3d5a689f9c018d88296103278b97724bd96ab700749dcf543b91dcea",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-state-trace-original.png": "df7f42a7349906fd525868444c508a7ef4fc366af717a6a24a35e4c0c2cb3400",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-permission-flags-trace-edited.svg": "be6ef1ffd79527ec64aa63557c706d6db746a81227fc0dae5de64728f55caa3d",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-build-trace-edited.svg": "6c6396388b929d5b5f3054f28e3a8299de40ada841c3eb5cd6c0a02091150fa5",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-test-a-bit-trace-original.png": "45bcea19920ad18a21788b48d777648fecc635e7f37bb60494fc7b0377946d22",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-set-clear-toggle-trace-export.svg": "60cee5f0edb97668ca0f65fe800a386109bed1ae7239d21d31ed54173db0d686",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-set-algebra-trace-export.svg": "3bbd37c347a1547eb68a0a8ccaa7faad1a3bfb4c82bf06309762d5f7aa0c4051",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-combinations-without-replacement-trace-edited.excalidraw": "280ce7128ee288526fc9894a662b978c37f9a11a6538a1fe7605cb7f786b3f9c",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-detect-redundant-edge-trace-export.png": "62d1e55bbada6844eb4fefac8bac5997962d12e38e8c9f67156e99f47609caa7",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-contains-word-trace-editor.png": "226cfade4ff3ead1fa9d1e5d5486966399380df21f9bcc5557034798e0a9381c",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-union-by-size-trace-editor.png": "7cf7e3ef9cd34f62761c34498add9637ecee9e20988d3915a9033707b2faa7df",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-kruskal-forest-trace-editor.png": "c4aea9c15def61961e25a7b352684deef8fd48c1eb23ca49f0e4f76f8ec23683",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-combinations-with-replacement-trace-export.svg": "aa0af1a8c82fabcca8aa69e30fbb808f473bf0ec8169f88f4d18ae5058f1d038",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-collect-prefix-words-trace-edited.excalidraw": "31ba1874fd0983eb80914d4f85a237e2411bd1acbf7e2b0ecfbc392d6ad74cdf",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/native-contact-01.png": "e9a03b14d94f7e83085a2c8a106b019ed43cebb3eede93fc1ae32cf134f614e4",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-collect-prefix-words-trace-export.png": "9f4bb12edc167805d9b7bff1f6f9a7adfd0f905e3d5d16e5a72e8f735749fa58",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-lowbit-trace-editor.png": "3706f7b59f40d890e7c0d90646b3fcc29670a00d02fc324b9f4ddfef988c3041",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-bit-count-trace-original.png": "71c0efe15de9dc834e51bd2c36caa972867bc2012340898351f62e755c69ea4a",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-layout-trace-original.png": "67c03f221ee6bff0e23c0dd5f38ccffb9ddc355f7de093409e380b03d38ef057",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/native-contact-03.png": "84bd31062f480382341b7604cae2becfaad3fe30ad86597d281ecdf770698828",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-permission-flags-trace-export.png": "7dfcd89b52db5b388c3e5a95cb745395ce2c6f8f90b0ed7030586d7a2e07e155",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-add-trace-editor.png": "508bdc3652b611bf35814a5a1b299ffe96ab9477b45c28b51d8a596adc558817",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-build-trace-export.png": "a0d83c550390c5f524d5f05cdec7fa909cfcd77f67ddca63a64591b38e1e969b",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/native-contact-02.png": "fb032c3e6c2a226c71492036426d985cb7f61bb9ce00709596de12097df2e3eb",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-detect-redundant-edge-trace-edited.svg": "1be4bb038177f8942b4173e9f57913f7c8ea919e5b8d0cd93d10c5258a726a2b",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-range-trace-original.png": "bf8f0642f381d8836c099efd06989d9c268439efef628a5de55e5b4db74174e0",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-permission-flags-trace-edited.excalidraw": "d6b6b030f4fd0369634f3546751c3516759a76e2169750c953549bc19021edd1",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-collect-prefix-words-trace-edited.svg": "a36c20ef1aee08df3fb6b35657639db28e9270e6bff38c901143f804894dc919",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-prefix-counts-trace-edited.excalidraw": "f1749615fb034ae802f97d1e148ddd152b88a8941312178e8689fd92c16a7721",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-words-with-repetition-trace-editor.png": "bad7d12d0ebe1701f8cbc82d02de8ac63d8504fc807dc0142b0fbb82d5decf48",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-set-algebra-trace-edited.svg": "f32481bd742b931e964e756685226e9b0bac7531aa25a3d3e957ddf133be807d",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-trie-node-trace-editor.png": "82a904849646effc0c84dc6d12e26487281d049a1dedbb82855b17969fe2874a",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-range-trace-edited.excalidraw": "3833b4c9ebb53ffca5413cd268ca18e258f5ef06ce2afb847f0f11ae08038885",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-combinations-with-replacement-trace-edited.svg": "5499c0345c8469040bd6a009783ae65c0a780ae6fae79454318f72a02a72cfb9",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/canonical-contact-05.png": "05e5d7e5a323b7100bd9957e4b1bd1e05d07f9f38c6dbad03b5a22bc72ef1bfe",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-autocomplete-project-trace-edited.excalidraw": "ab8bbebf782665f9d39521989e919ebb2e459335382c5932ba02fd4e4e5dd353",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-update-trace-edited.excalidraw": "006bee764020765ccd3f4effd200087a72feb81744d49992da645cfefb515fdb",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-permission-flags-trace-export.svg": "1b3d2a123fac932314f2510fd73cd9ee5a644de5191d46c5386ca49c2e2a36cf",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-dsu-state-trace-original.png": "c0c05cacc7ba32470d4a3ff7a86068a83b73471a198153195a40894fab39b44b",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-insert-word-trace-edited.excalidraw": "787084747a22c13d9dfb2f656554121505e73c3f7e9f22423834cbc4fda3b48e",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-build-trace-export.svg": "8620135919489437521a519ab5c554d385555c5bcb2ed8304541d4d1d3b227b3",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/canonical-contact-04.png": "685c81b0827893d0cc2e96c18607bb27770f60fc8ca1682a16835d3cc6b5c3b3",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-starts-with-trace-editor.png": "cf6c869890b79ac19e063132d891349d809226aaf13a893cd8d059e19f4def98",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-set-clear-toggle-trace-edited.svg": "b157bbb2118a090bcaa2bec06d7c5ad55f94fbf2be096d5978134461e7689abe",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/canonical-contact-06.png": "175a2cb8e4bc596092af6e850012f66208b68c4dcdb458fa49cfca23dc5ad240",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-detect-redundant-edge-trace-export.svg": "0d634df072dcda6e758a9996a269c824aa101a1977279d5738cc5732f0d953bb",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-combinations-with-replacement-trace-original.png": "bd3e4b14dd34307cd41098f10e59b780407ecff8d936140d5eb29b145f65f995",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-set-algebra-trace-export.png": "9a6695201e1018c7dc7df5517fe510e739525249b3f6b1c35a8e3a7423aed265",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-collect-prefix-words-trace-export.svg": "6cc61a8abb531407d40126f99b40489d588180dd05750de5dad72f1cb083c6c9",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-combinations-with-replacement-trace-export.png": "8e62303ccdc73d238617f36bb758822292b0dc8d1be12f1411baa49dbb4c8eea",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-starts-with-trace-original.png": "e040299d01af4887c2eb454a21cf15d297d35c9ad546b923a110f68523c7e240",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-range-minimum-trace-original.png": "5869dbbaa183c4e353d3333bc02488628cdc2622d790c73d2df226dce20a208a",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-set-clear-toggle-trace-export.png": "80083496b48aa8777fc72144a3062f15ebd26dae675faf10f8f14640da9b1478",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-segment-build-trace-original.png": "b346372866e5c7b484b8d44b8d794b85dd4959bd1fd18602d01bba1928cee3c7",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/canonical-contact-07.png": "f2ce99ba7b7c829a566acac2e5c120ddf52420b507273eb0eb04fd32835cc135",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-union-by-size-trace-edited.excalidraw": "b12825efc6683b8f47bf0cc3b1187269486dae6d618ac22c3f79b135d32da740",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-find-root-trace-editor.png": "6056a975c5beac9fd2a299fce1b8edde1751f9d11d264b6ca71deffd80227341",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-build-trace-original.png": "39011fc06145fa8f7092ab5b9772ebbde3a50c42734339eab7949eaa4dd2e416",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-starts-with-trace-edited.excalidraw": "d81090dbdc287317df54411ec863d0ab776e490d845aa30c6d210e4182db01df",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-state-trace-edited.excalidraw": "79555efe814cde96c81b2ba278c6ef489530dc21d1ef8394988af957a774384c",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/canonical-contact-03.png": "deabd3b41b7887a9625842e0aad80c228fac93b07e1f0983ebffb1ce6a051760",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-trie-node-trace-export.png": "6ee196a50653c07c28a937238165ff6a60699f4ad99845f36e6a63b2c516fecf",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-words-with-repetition-trace-export.svg": "2c917f0745371570d47e2fb269feef8d1b4afde961b18c4a87318a2226434cc6",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-trie-node-trace-edited.excalidraw": "76da178266e4916894d0c81359d3b64bac15006cee84da10e9329f942a88413e",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-starts-with-trace-export.png": "40c49f7edcd4fb3ffc34956d794e732bce0257996367246f240126c14165a894",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-lowbit-trace-export.svg": "b6d518c203f13389563339e316a7237d925f652157c158b1552f11fc239d8350",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/canonical-contact-02.png": "07250c65ded712a1befb9becd48522eb65a08942c664b906cb722b0de0cb03a7",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-find-root-trace-edited.svg": "5b49a1c4aeddd4aa36ae2a8653c91dd4cf8b573b5faa7aad3b65c6747652e268",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-insert-word-trace-original.png": "71c58ee7cf8247836838f9b7f9300b21d836a3a4f19643d83b285a6a15497551",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-add-trace-export.svg": "7ad5f90027530bc02926e0bf2a1017d66935963c650c9e0af432cbfd4cacd39e",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-combinations-with-replacement-trace-editor.png": "aaeb7848495589d3d702f776f1fbc1bf2f840b9a6b138b318b858b5627dc2e4b",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-trie-node-trace-edited.svg": "0f07781859e6ce15d627257790ab6d755d8ba852095cfda722c53761ec441f5b",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-kruskal-forest-trace-export.svg": "301e3fb1fa725fc2ffc224217faf604c513b7c54301b8b945481c9cc891bdd0b",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-union-by-size-trace-export.svg": "f1c00969468b42aeec7d710e29523be441b37315fdbe3f2d4cc9180dacbde56b",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-contains-word-trace-export.svg": "57b2491cf5eaa25ab5f385543511ee917be98fb9a4f07e6ef21428b9025b9f8c",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-set-algebra-trace-editor.png": "4be057ccddd7e0331396a933a31e4630c13816c1fa69e078d855f01d5fa41d70",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/disjoint-sets-find-root-trace-export.png": "5bf2cfa55a0c42e2e5e7dcd4c4585967818a78dbc2cc691d0e24808b513dc25b",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-autocomplete-project-trace-original.png": "fd2acea8c9bbef972eda8ccd0522ad3c71169921f983d19e9fb95a7d6bf11297",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/range-structures-fenwick-build-trace-edited.excalidraw": "6a85873a16ad503f57440e4207c15dec4189c82e0dd54efdfa02a1ca119ca250",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/bits-and-sets-set-clear-toggle-trace-editor.png": "1ce4149e2dabf9c23e9be08d1de7560c0a3223972204fb2972b147a2efa1ce2b",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/canonical-contact-01.png": "64ffa7761978f5db8c13405d281f904406d823807037b37eed559445a76f726a",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/tries-starts-with-trace-edited.svg": "418463a8af3aa70adc3fc1dbad5f60a8f037ab90a7510e02de1c0eda39e993f0",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-words-with-repetition-trace-edited.excalidraw": "0f890b91639aa8d884fb9ee45a2d9804c860fc1ee0f2ffdbeb1b5a020be89dbd",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence/combinatorial-search-power-set-bits-trace-edited.excalidraw": "a75d844c0550f793b2b718c7a65c4bf237ef988ec437d30e9364819fd45a469b"
+  }
+}

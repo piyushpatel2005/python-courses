@@ -1,0 +1,2273 @@
+{
+  "slug": "data-structures-with-python",
+  "audience": "Python basics plus classes, __init__, instance methods and exceptions; OOP course or equivalent. No prior algorithms required.",
+  "rules": "Practice-first coding, one new method/behavior per lesson, incomplete runnable main.py, test_main.py and solution/main.py, exact one-to-one task/test mapping, no platform/reference names in learner content, original prose/data/diagrams. Each module quiz 4 questions.",
+  "modules": [
+    {
+      "directory": "01-memory-and-cost",
+      "slug": "memory-and-cost",
+      "title": "Memory and algorithm cost",
+      "order": 1,
+      "lessons": [
+        {
+          "directory": "01-references-and-aliases",
+          "slug": "references-and-aliases",
+          "order": 1,
+          "id": "memory-and-cost/references-and-aliases",
+          "prerequisites": [],
+          "type": "coding"
+        },
+        {
+          "directory": "02-object-identity",
+          "slug": "object-identity",
+          "order": 2,
+          "id": "memory-and-cost/object-identity",
+          "prerequisites": [
+            "memory-and-cost/references-and-aliases"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-shallow-copies",
+          "slug": "shallow-copies",
+          "order": 3,
+          "id": "memory-and-cost/shallow-copies",
+          "prerequisites": [
+            "memory-and-cost/object-identity"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-nested-copy-boundaries",
+          "slug": "nested-copy-boundaries",
+          "order": 4,
+          "id": "memory-and-cost/nested-copy-boundaries",
+          "prerequisites": [
+            "memory-and-cost/shallow-copies"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-count-linear-work",
+          "slug": "count-linear-work",
+          "order": 5,
+          "id": "memory-and-cost/count-linear-work",
+          "prerequisites": [
+            "memory-and-cost/nested-copy-boundaries"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-count-pair-work",
+          "slug": "count-pair-work",
+          "order": 6,
+          "id": "memory-and-cost/count-pair-work",
+          "prerequisites": [
+            "memory-and-cost/count-linear-work"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-count-halving-work",
+          "slug": "count-halving-work",
+          "order": 7,
+          "id": "memory-and-cost/count-halving-work",
+          "prerequisites": [
+            "memory-and-cost/count-pair-work"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-compare-growth",
+          "slug": "compare-growth",
+          "order": 8,
+          "id": "memory-and-cost/compare-growth",
+          "prerequisites": [
+            "memory-and-cost/count-halving-work"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "09-auxiliary-space",
+          "slug": "auxiliary-space",
+          "order": 9,
+          "id": "memory-and-cost/auxiliary-space",
+          "prerequisites": [
+            "memory-and-cost/compare-growth"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "10-amortized-append",
+          "slug": "amortized-append",
+          "order": 10,
+          "id": "memory-and-cost/amortized-append",
+          "prerequisites": [
+            "memory-and-cost/auxiliary-space"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "02-recursion",
+      "slug": "recursion",
+      "title": "Recursion and iteration",
+      "order": 2,
+      "lessons": [
+        {
+          "directory": "01-base-and-recursive-cases",
+          "slug": "base-and-recursive-cases",
+          "order": 1,
+          "id": "recursion/base-and-recursive-cases",
+          "prerequisites": [
+            "memory-and-cost/amortized-append"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-countdown-trace",
+          "slug": "countdown-trace",
+          "order": 2,
+          "id": "recursion/countdown-trace",
+          "prerequisites": [
+            "recursion/base-and-recursive-cases"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-recursive-sum",
+          "slug": "recursive-sum",
+          "order": 3,
+          "id": "recursion/recursive-sum",
+          "prerequisites": [
+            "recursion/countdown-trace"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-iterative-factorial",
+          "slug": "iterative-factorial",
+          "order": 4,
+          "id": "recursion/iterative-factorial",
+          "prerequisites": [
+            "recursion/recursive-sum"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-recursive-factorial",
+          "slug": "recursive-factorial",
+          "order": 5,
+          "id": "recursion/recursive-factorial",
+          "prerequisites": [
+            "recursion/iterative-factorial"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-fibonacci-tree",
+          "slug": "fibonacci-tree",
+          "order": 6,
+          "id": "recursion/fibonacci-tree",
+          "prerequisites": [
+            "recursion/recursive-factorial"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-memoized-fibonacci",
+          "slug": "memoized-fibonacci",
+          "order": 7,
+          "id": "recursion/memoized-fibonacci",
+          "prerequisites": [
+            "recursion/fibonacci-tree"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-iterative-fibonacci",
+          "slug": "iterative-fibonacci",
+          "order": 8,
+          "id": "recursion/iterative-fibonacci",
+          "prerequisites": [
+            "recursion/memoized-fibonacci"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "09-tail-recursion-limits",
+          "slug": "tail-recursion-limits",
+          "order": 9,
+          "id": "recursion/tail-recursion-limits",
+          "prerequisites": [
+            "recursion/iterative-fibonacci"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "10-recursive-binary-search",
+          "slug": "recursive-binary-search",
+          "order": 10,
+          "id": "recursion/recursive-binary-search",
+          "prerequisites": [
+            "recursion/tail-recursion-limits"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "03-arrays-and-sequences",
+      "slug": "arrays-and-sequences",
+      "title": "Arrays and sequence patterns",
+      "order": 3,
+      "lessons": [
+        {
+          "directory": "01-array-access",
+          "slug": "array-access",
+          "order": 1,
+          "id": "arrays-and-sequences/array-access",
+          "prerequisites": [
+            "recursion/recursive-binary-search"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-append-with-capacity",
+          "slug": "append-with-capacity",
+          "order": 2,
+          "id": "arrays-and-sequences/append-with-capacity",
+          "prerequisites": [
+            "arrays-and-sequences/array-access"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-insert-and-shift",
+          "slug": "insert-and-shift",
+          "order": 3,
+          "id": "arrays-and-sequences/insert-and-shift",
+          "prerequisites": [
+            "arrays-and-sequences/append-with-capacity"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-delete-and-compact",
+          "slug": "delete-and-compact",
+          "order": 4,
+          "id": "arrays-and-sequences/delete-and-compact",
+          "prerequisites": [
+            "arrays-and-sequences/insert-and-shift"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-reverse-two-pointers",
+          "slug": "reverse-two-pointers",
+          "order": 5,
+          "id": "arrays-and-sequences/reverse-two-pointers",
+          "prerequisites": [
+            "arrays-and-sequences/delete-and-compact"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-sliding-window",
+          "slug": "sliding-window",
+          "order": 6,
+          "id": "arrays-and-sequences/sliding-window",
+          "prerequisites": [
+            "arrays-and-sequences/reverse-two-pointers"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-prefix-sums",
+          "slug": "prefix-sums",
+          "order": 7,
+          "id": "arrays-and-sequences/prefix-sums",
+          "prerequisites": [
+            "arrays-and-sequences/sliding-window"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-range-sum-queries",
+          "slug": "range-sum-queries",
+          "order": 8,
+          "id": "arrays-and-sequences/range-sum-queries",
+          "prerequisites": [
+            "arrays-and-sequences/prefix-sums"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "04-singly-linked-lists",
+      "slug": "singly-linked-lists",
+      "title": "Build a singly linked list",
+      "order": 4,
+      "lessons": [
+        {
+          "directory": "01-node-and-link",
+          "slug": "node-and-link",
+          "order": 1,
+          "id": "singly-linked-lists/node-and-link",
+          "prerequisites": [
+            "arrays-and-sequences/range-sum-queries"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-traverse-nodes",
+          "slug": "traverse-nodes",
+          "order": 2,
+          "id": "singly-linked-lists/traverse-nodes",
+          "prerequisites": [
+            "singly-linked-lists/node-and-link"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-list-state",
+          "slug": "list-state",
+          "order": 3,
+          "id": "singly-linked-lists/list-state",
+          "prerequisites": [
+            "singly-linked-lists/traverse-nodes"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-prepend-node",
+          "slug": "prepend-node",
+          "order": 4,
+          "id": "singly-linked-lists/prepend-node",
+          "prerequisites": [
+            "singly-linked-lists/list-state"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-append-node",
+          "slug": "append-node",
+          "order": 5,
+          "id": "singly-linked-lists/append-node",
+          "prerequisites": [
+            "singly-linked-lists/prepend-node"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-find-node",
+          "slug": "find-node",
+          "order": 6,
+          "id": "singly-linked-lists/find-node",
+          "prerequisites": [
+            "singly-linked-lists/append-node"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-insert-after-node",
+          "slug": "insert-after-node",
+          "order": 7,
+          "id": "singly-linked-lists/insert-after-node",
+          "prerequisites": [
+            "singly-linked-lists/find-node"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-remove-head",
+          "slug": "remove-head",
+          "order": 8,
+          "id": "singly-linked-lists/remove-head",
+          "prerequisites": [
+            "singly-linked-lists/insert-after-node"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "09-remove-tail",
+          "slug": "remove-tail",
+          "order": 9,
+          "id": "singly-linked-lists/remove-tail",
+          "prerequisites": [
+            "singly-linked-lists/remove-head"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "10-remove-first-match",
+          "slug": "remove-first-match",
+          "order": 10,
+          "id": "singly-linked-lists/remove-first-match",
+          "prerequisites": [
+            "singly-linked-lists/remove-tail"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "11-reverse-links",
+          "slug": "reverse-links",
+          "order": 11,
+          "id": "singly-linked-lists/reverse-links",
+          "prerequisites": [
+            "singly-linked-lists/remove-first-match"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "12-playlist-project",
+          "slug": "playlist-project",
+          "order": 12,
+          "id": "singly-linked-lists/playlist-project",
+          "prerequisites": [
+            "singly-linked-lists/reverse-links"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "05-linked-list-variants",
+      "slug": "linked-list-variants",
+      "title": "Doubly linked, circular, and skip lists",
+      "order": 5,
+      "lessons": [
+        {
+          "directory": "01-doubly-linked-node",
+          "slug": "doubly-linked-node",
+          "order": 1,
+          "id": "linked-list-variants/doubly-linked-node",
+          "prerequisites": [
+            "singly-linked-lists/playlist-project"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-doubly-prepend",
+          "slug": "doubly-prepend",
+          "order": 2,
+          "id": "linked-list-variants/doubly-prepend",
+          "prerequisites": [
+            "linked-list-variants/doubly-linked-node"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-doubly-append",
+          "slug": "doubly-append",
+          "order": 3,
+          "id": "linked-list-variants/doubly-append",
+          "prerequisites": [
+            "linked-list-variants/doubly-prepend"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-doubly-remove",
+          "slug": "doubly-remove",
+          "order": 4,
+          "id": "linked-list-variants/doubly-remove",
+          "prerequisites": [
+            "linked-list-variants/doubly-append"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-browser-history",
+          "slug": "browser-history",
+          "order": 5,
+          "id": "linked-list-variants/browser-history",
+          "prerequisites": [
+            "linked-list-variants/doubly-remove"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-circular-append",
+          "slug": "circular-append",
+          "order": 6,
+          "id": "linked-list-variants/circular-append",
+          "prerequisites": [
+            "linked-list-variants/browser-history"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-circular-traversal",
+          "slug": "circular-traversal",
+          "order": 7,
+          "id": "linked-list-variants/circular-traversal",
+          "prerequisites": [
+            "linked-list-variants/circular-append"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-circular-remove",
+          "slug": "circular-remove",
+          "order": 8,
+          "id": "linked-list-variants/circular-remove",
+          "prerequisites": [
+            "linked-list-variants/circular-traversal"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "09-skip-levels",
+          "slug": "skip-levels",
+          "order": 9,
+          "id": "linked-list-variants/skip-levels",
+          "prerequisites": [
+            "linked-list-variants/circular-remove"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "10-skip-predecessors",
+          "slug": "skip-predecessors",
+          "order": 10,
+          "id": "linked-list-variants/skip-predecessors",
+          "prerequisites": [
+            "linked-list-variants/skip-levels"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "11-skip-search",
+          "slug": "skip-search",
+          "order": 11,
+          "id": "linked-list-variants/skip-search",
+          "prerequisites": [
+            "linked-list-variants/skip-predecessors"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "12-skip-insert",
+          "slug": "skip-insert",
+          "order": 12,
+          "id": "linked-list-variants/skip-insert",
+          "prerequisites": [
+            "linked-list-variants/skip-search"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "13-skip-remove",
+          "slug": "skip-remove",
+          "order": 13,
+          "id": "linked-list-variants/skip-remove",
+          "prerequisites": [
+            "linked-list-variants/skip-insert"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "14-skip-list-tradeoffs",
+          "slug": "skip-list-tradeoffs",
+          "order": 14,
+          "id": "linked-list-variants/skip-list-tradeoffs",
+          "prerequisites": [
+            "linked-list-variants/skip-remove"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "06-stacks",
+      "slug": "stacks",
+      "title": "Stacks and their applications",
+      "order": 6,
+      "lessons": [
+        {
+          "directory": "01-stack-state",
+          "slug": "stack-state",
+          "order": 1,
+          "id": "stacks/stack-state",
+          "prerequisites": [
+            "linked-list-variants/skip-list-tradeoffs"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-push-item",
+          "slug": "push-item",
+          "order": 2,
+          "id": "stacks/push-item",
+          "prerequisites": [
+            "stacks/stack-state"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-peek-item",
+          "slug": "peek-item",
+          "order": 3,
+          "id": "stacks/peek-item",
+          "prerequisites": [
+            "stacks/push-item"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-pop-item",
+          "slug": "pop-item",
+          "order": 4,
+          "id": "stacks/pop-item",
+          "prerequisites": [
+            "stacks/peek-item"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-balanced-brackets",
+          "slug": "balanced-brackets",
+          "order": 5,
+          "id": "stacks/balanced-brackets",
+          "prerequisites": [
+            "stacks/pop-item"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-postfix-evaluation",
+          "slug": "postfix-evaluation",
+          "order": 6,
+          "id": "stacks/postfix-evaluation",
+          "prerequisites": [
+            "stacks/balanced-brackets"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-undo-history",
+          "slug": "undo-history",
+          "order": 7,
+          "id": "stacks/undo-history",
+          "prerequisites": [
+            "stacks/postfix-evaluation"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-minimum-stack",
+          "slug": "minimum-stack",
+          "order": 8,
+          "id": "stacks/minimum-stack",
+          "prerequisites": [
+            "stacks/undo-history"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "07-queues-and-deques",
+      "slug": "queues-and-deques",
+      "title": "Queues and deques",
+      "order": 7,
+      "lessons": [
+        {
+          "directory": "01-linked-queue-state",
+          "slug": "linked-queue-state",
+          "order": 1,
+          "id": "queues-and-deques/linked-queue-state",
+          "prerequisites": [
+            "stacks/minimum-stack"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-enqueue-item",
+          "slug": "enqueue-item",
+          "order": 2,
+          "id": "queues-and-deques/enqueue-item",
+          "prerequisites": [
+            "queues-and-deques/linked-queue-state"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-dequeue-item",
+          "slug": "dequeue-item",
+          "order": 3,
+          "id": "queues-and-deques/dequeue-item",
+          "prerequisites": [
+            "queues-and-deques/enqueue-item"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-peek-queue",
+          "slug": "peek-queue",
+          "order": 4,
+          "id": "queues-and-deques/peek-queue",
+          "prerequisites": [
+            "queues-and-deques/dequeue-item"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-deque-basics",
+          "slug": "deque-basics",
+          "order": 5,
+          "id": "queues-and-deques/deque-basics",
+          "prerequisites": [
+            "queues-and-deques/peek-queue"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-ring-buffer-state",
+          "slug": "ring-buffer-state",
+          "order": 6,
+          "id": "queues-and-deques/ring-buffer-state",
+          "prerequisites": [
+            "queues-and-deques/deque-basics"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-ring-enqueue",
+          "slug": "ring-enqueue",
+          "order": 7,
+          "id": "queues-and-deques/ring-enqueue",
+          "prerequisites": [
+            "queues-and-deques/ring-buffer-state"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-ring-dequeue",
+          "slug": "ring-dequeue",
+          "order": 8,
+          "id": "queues-and-deques/ring-dequeue",
+          "prerequisites": [
+            "queues-and-deques/ring-enqueue"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "09-round-robin",
+          "slug": "round-robin",
+          "order": 9,
+          "id": "queues-and-deques/round-robin",
+          "prerequisites": [
+            "queues-and-deques/ring-dequeue"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "10-sliding-window-maximum",
+          "slug": "sliding-window-maximum",
+          "order": 10,
+          "id": "queues-and-deques/sliding-window-maximum",
+          "prerequisites": [
+            "queues-and-deques/round-robin"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "08-hash-tables",
+      "slug": "hash-tables",
+      "title": "Build and use hash tables",
+      "order": 8,
+      "lessons": [
+        {
+          "directory": "01-hash-to-bucket",
+          "slug": "hash-to-bucket",
+          "order": 1,
+          "id": "hash-tables/hash-to-bucket",
+          "prerequisites": [
+            "queues-and-deques/sliding-window-maximum"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-collision-buckets",
+          "slug": "collision-buckets",
+          "order": 2,
+          "id": "hash-tables/collision-buckets",
+          "prerequisites": [
+            "hash-tables/hash-to-bucket"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-table-state",
+          "slug": "table-state",
+          "order": 3,
+          "id": "hash-tables/table-state",
+          "prerequisites": [
+            "hash-tables/collision-buckets"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-insert-or-update",
+          "slug": "insert-or-update",
+          "order": 4,
+          "id": "hash-tables/insert-or-update",
+          "prerequisites": [
+            "hash-tables/table-state"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-lookup-key",
+          "slug": "lookup-key",
+          "order": 5,
+          "id": "hash-tables/lookup-key",
+          "prerequisites": [
+            "hash-tables/insert-or-update"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-delete-key",
+          "slug": "delete-key",
+          "order": 6,
+          "id": "hash-tables/delete-key",
+          "prerequisites": [
+            "hash-tables/lookup-key"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-list-entries",
+          "slug": "list-entries",
+          "order": 7,
+          "id": "hash-tables/list-entries",
+          "prerequisites": [
+            "hash-tables/delete-key"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-load-factor",
+          "slug": "load-factor",
+          "order": 8,
+          "id": "hash-tables/load-factor",
+          "prerequisites": [
+            "hash-tables/list-entries"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "09-rehash-table",
+          "slug": "rehash-table",
+          "order": 9,
+          "id": "hash-tables/rehash-table",
+          "prerequisites": [
+            "hash-tables/load-factor"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "10-linear-probing",
+          "slug": "linear-probing",
+          "order": 10,
+          "id": "hash-tables/linear-probing",
+          "prerequisites": [
+            "hash-tables/rehash-table"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "11-tombstone-deletion",
+          "slug": "tombstone-deletion",
+          "order": 11,
+          "id": "hash-tables/tombstone-deletion",
+          "prerequisites": [
+            "hash-tables/linear-probing"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "12-frequency-index",
+          "slug": "frequency-index",
+          "order": 12,
+          "id": "hash-tables/frequency-index",
+          "prerequisites": [
+            "hash-tables/tombstone-deletion"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "09-searching",
+      "slug": "searching",
+      "title": "Searching sorted and unsorted data",
+      "order": 9,
+      "lessons": [
+        {
+          "directory": "01-linear-search",
+          "slug": "linear-search",
+          "order": 1,
+          "id": "searching/linear-search",
+          "prerequisites": [
+            "hash-tables/frequency-index"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-search-with-key",
+          "slug": "search-with-key",
+          "order": 2,
+          "id": "searching/search-with-key",
+          "prerequisites": [
+            "searching/linear-search"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-binary-search-loop",
+          "slug": "binary-search-loop",
+          "order": 3,
+          "id": "searching/binary-search-loop",
+          "prerequisites": [
+            "searching/search-with-key"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-binary-search-boundaries",
+          "slug": "binary-search-boundaries",
+          "order": 4,
+          "id": "searching/binary-search-boundaries",
+          "prerequisites": [
+            "searching/binary-search-loop"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-lower-bound",
+          "slug": "lower-bound",
+          "order": 5,
+          "id": "searching/lower-bound",
+          "prerequisites": [
+            "searching/binary-search-boundaries"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-upper-bound",
+          "slug": "upper-bound",
+          "order": 6,
+          "id": "searching/upper-bound",
+          "prerequisites": [
+            "searching/lower-bound"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-sorted-insertion",
+          "slug": "sorted-insertion",
+          "order": 7,
+          "id": "searching/sorted-insertion",
+          "prerequisites": [
+            "searching/upper-bound"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-search-comparison-budget",
+          "slug": "search-comparison-budget",
+          "order": 8,
+          "id": "searching/search-comparison-budget",
+          "prerequisites": [
+            "searching/sorted-insertion"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "10-sorting",
+      "slug": "sorting",
+      "title": "Sorting algorithms",
+      "order": 10,
+      "lessons": [
+        {
+          "directory": "01-swap-adjacent",
+          "slug": "swap-adjacent",
+          "order": 1,
+          "id": "sorting/swap-adjacent",
+          "prerequisites": [
+            "searching/search-comparison-budget"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-bubble-pass",
+          "slug": "bubble-pass",
+          "order": 2,
+          "id": "sorting/bubble-pass",
+          "prerequisites": [
+            "sorting/swap-adjacent"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-bubble-sort",
+          "slug": "bubble-sort",
+          "order": 3,
+          "id": "sorting/bubble-sort",
+          "prerequisites": [
+            "sorting/bubble-pass"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-select-minimum",
+          "slug": "select-minimum",
+          "order": 4,
+          "id": "sorting/select-minimum",
+          "prerequisites": [
+            "sorting/bubble-sort"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-selection-sort",
+          "slug": "selection-sort",
+          "order": 5,
+          "id": "sorting/selection-sort",
+          "prerequisites": [
+            "sorting/select-minimum"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-insertion-step",
+          "slug": "insertion-step",
+          "order": 6,
+          "id": "sorting/insertion-step",
+          "prerequisites": [
+            "sorting/selection-sort"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-insertion-sort",
+          "slug": "insertion-sort",
+          "order": 7,
+          "id": "sorting/insertion-sort",
+          "prerequisites": [
+            "sorting/insertion-step"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-merge-runs",
+          "slug": "merge-runs",
+          "order": 8,
+          "id": "sorting/merge-runs",
+          "prerequisites": [
+            "sorting/insertion-sort"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "09-merge-sort",
+          "slug": "merge-sort",
+          "order": 9,
+          "id": "sorting/merge-sort",
+          "prerequisites": [
+            "sorting/merge-runs"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "10-partition-around-pivot",
+          "slug": "partition-around-pivot",
+          "order": 10,
+          "id": "sorting/partition-around-pivot",
+          "prerequisites": [
+            "sorting/merge-sort"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "11-quicksort",
+          "slug": "quicksort",
+          "order": 11,
+          "id": "sorting/quicksort",
+          "prerequisites": [
+            "sorting/partition-around-pivot"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "12-stable-key-sorting",
+          "slug": "stable-key-sorting",
+          "order": 12,
+          "id": "sorting/stable-key-sorting",
+          "prerequisites": [
+            "sorting/quicksort"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "11-trees-and-bst",
+      "slug": "trees-and-bst",
+      "title": "Binary trees and search trees",
+      "order": 11,
+      "lessons": [
+        {
+          "directory": "01-binary-node",
+          "slug": "binary-node",
+          "order": 1,
+          "id": "trees-and-bst/binary-node",
+          "prerequisites": [
+            "sorting/stable-key-sorting"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-count-nodes",
+          "slug": "count-nodes",
+          "order": 2,
+          "id": "trees-and-bst/count-nodes",
+          "prerequisites": [
+            "trees-and-bst/binary-node"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-tree-height",
+          "slug": "tree-height",
+          "order": 3,
+          "id": "trees-and-bst/tree-height",
+          "prerequisites": [
+            "trees-and-bst/count-nodes"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-preorder-traversal",
+          "slug": "preorder-traversal",
+          "order": 4,
+          "id": "trees-and-bst/preorder-traversal",
+          "prerequisites": [
+            "trees-and-bst/tree-height"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-inorder-traversal",
+          "slug": "inorder-traversal",
+          "order": 5,
+          "id": "trees-and-bst/inorder-traversal",
+          "prerequisites": [
+            "trees-and-bst/preorder-traversal"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-postorder-traversal",
+          "slug": "postorder-traversal",
+          "order": 6,
+          "id": "trees-and-bst/postorder-traversal",
+          "prerequisites": [
+            "trees-and-bst/inorder-traversal"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-level-order-traversal",
+          "slug": "level-order-traversal",
+          "order": 7,
+          "id": "trees-and-bst/level-order-traversal",
+          "prerequisites": [
+            "trees-and-bst/postorder-traversal"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-bst-search",
+          "slug": "bst-search",
+          "order": 8,
+          "id": "trees-and-bst/bst-search",
+          "prerequisites": [
+            "trees-and-bst/level-order-traversal"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "09-bst-insert",
+          "slug": "bst-insert",
+          "order": 9,
+          "id": "trees-and-bst/bst-insert",
+          "prerequisites": [
+            "trees-and-bst/bst-search"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "10-bst-minimum",
+          "slug": "bst-minimum",
+          "order": 10,
+          "id": "trees-and-bst/bst-minimum",
+          "prerequisites": [
+            "trees-and-bst/bst-insert"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "11-bst-delete-leaf",
+          "slug": "bst-delete-leaf",
+          "order": 11,
+          "id": "trees-and-bst/bst-delete-leaf",
+          "prerequisites": [
+            "trees-and-bst/bst-minimum"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "12-bst-delete-one-child",
+          "slug": "bst-delete-one-child",
+          "order": 12,
+          "id": "trees-and-bst/bst-delete-one-child",
+          "prerequisites": [
+            "trees-and-bst/bst-delete-leaf"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "13-bst-delete-two-children",
+          "slug": "bst-delete-two-children",
+          "order": 13,
+          "id": "trees-and-bst/bst-delete-two-children",
+          "prerequisites": [
+            "trees-and-bst/bst-delete-one-child"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "14-validate-bst",
+          "slug": "validate-bst",
+          "order": 14,
+          "id": "trees-and-bst/validate-bst",
+          "prerequisites": [
+            "trees-and-bst/bst-delete-two-children"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "12-heaps-and-priority",
+      "slug": "heaps-and-priority",
+      "title": "Heaps and priority queues",
+      "order": 12,
+      "lessons": [
+        {
+          "directory": "01-heap-array-indices",
+          "slug": "heap-array-indices",
+          "order": 1,
+          "id": "heaps-and-priority/heap-array-indices",
+          "prerequisites": [
+            "trees-and-bst/validate-bst"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-heap-order",
+          "slug": "heap-order",
+          "order": 2,
+          "id": "heaps-and-priority/heap-order",
+          "prerequisites": [
+            "heaps-and-priority/heap-array-indices"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-sift-up",
+          "slug": "sift-up",
+          "order": 3,
+          "id": "heaps-and-priority/sift-up",
+          "prerequisites": [
+            "heaps-and-priority/heap-order"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-sift-down",
+          "slug": "sift-down",
+          "order": 4,
+          "id": "heaps-and-priority/sift-down",
+          "prerequisites": [
+            "heaps-and-priority/sift-up"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-heap-push",
+          "slug": "heap-push",
+          "order": 5,
+          "id": "heaps-and-priority/heap-push",
+          "prerequisites": [
+            "heaps-and-priority/sift-down"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-heap-pop",
+          "slug": "heap-pop",
+          "order": 6,
+          "id": "heaps-and-priority/heap-pop",
+          "prerequisites": [
+            "heaps-and-priority/heap-push"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-bottom-up-heapify",
+          "slug": "bottom-up-heapify",
+          "order": 7,
+          "id": "heaps-and-priority/bottom-up-heapify",
+          "prerequisites": [
+            "heaps-and-priority/heap-pop"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-max-heap",
+          "slug": "max-heap",
+          "order": 8,
+          "id": "heaps-and-priority/max-heap",
+          "prerequisites": [
+            "heaps-and-priority/bottom-up-heapify"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "09-heap-sort",
+          "slug": "heap-sort",
+          "order": 9,
+          "id": "heaps-and-priority/heap-sort",
+          "prerequisites": [
+            "heaps-and-priority/max-heap"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "10-heapq-basics",
+          "slug": "heapq-basics",
+          "order": 10,
+          "id": "heaps-and-priority/heapq-basics",
+          "prerequisites": [
+            "heaps-and-priority/heap-sort"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "11-stable-priority-queue",
+          "slug": "stable-priority-queue",
+          "order": 11,
+          "id": "heaps-and-priority/stable-priority-queue",
+          "prerequisites": [
+            "heaps-and-priority/heapq-basics"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "12-priority-updates",
+          "slug": "priority-updates",
+          "order": 12,
+          "id": "heaps-and-priority/priority-updates",
+          "prerequisites": [
+            "heaps-and-priority/stable-priority-queue"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "13-top-k-stream",
+          "slug": "top-k-stream",
+          "order": 13,
+          "id": "heaps-and-priority/top-k-stream",
+          "prerequisites": [
+            "heaps-and-priority/priority-updates"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "14-scheduler-project",
+          "slug": "scheduler-project",
+          "order": 14,
+          "id": "heaps-and-priority/scheduler-project",
+          "prerequisites": [
+            "heaps-and-priority/top-k-stream"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "13-graph-models",
+      "slug": "graph-models",
+      "title": "Represent and build graphs",
+      "order": 13,
+      "lessons": [
+        {
+          "directory": "01-adjacency-list",
+          "slug": "adjacency-list",
+          "order": 1,
+          "id": "graph-models/adjacency-list",
+          "prerequisites": [
+            "heaps-and-priority/scheduler-project"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-add-vertex",
+          "slug": "add-vertex",
+          "order": 2,
+          "id": "graph-models/add-vertex",
+          "prerequisites": [
+            "graph-models/adjacency-list"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-add-undirected-edge",
+          "slug": "add-undirected-edge",
+          "order": 3,
+          "id": "graph-models/add-undirected-edge",
+          "prerequisites": [
+            "graph-models/add-vertex"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-remove-edge",
+          "slug": "remove-edge",
+          "order": 4,
+          "id": "graph-models/remove-edge",
+          "prerequisites": [
+            "graph-models/add-undirected-edge"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-remove-vertex",
+          "slug": "remove-vertex",
+          "order": 5,
+          "id": "graph-models/remove-vertex",
+          "prerequisites": [
+            "graph-models/remove-edge"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-directed-edges",
+          "slug": "directed-edges",
+          "order": 6,
+          "id": "graph-models/directed-edges",
+          "prerequisites": [
+            "graph-models/remove-vertex"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-adjacency-matrix",
+          "slug": "adjacency-matrix",
+          "order": 7,
+          "id": "graph-models/adjacency-matrix",
+          "prerequisites": [
+            "graph-models/directed-edges"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-graph-degrees",
+          "slug": "graph-degrees",
+          "order": 8,
+          "id": "graph-models/graph-degrees",
+          "prerequisites": [
+            "graph-models/adjacency-matrix"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "14-graph-traversal",
+      "slug": "graph-traversal",
+      "title": "Breadth-first and depth-first traversal",
+      "order": 14,
+      "lessons": [
+        {
+          "directory": "01-bfs-frontier",
+          "slug": "bfs-frontier",
+          "order": 1,
+          "id": "graph-traversal/bfs-frontier",
+          "prerequisites": [
+            "graph-models/graph-degrees"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-bfs-traversal",
+          "slug": "bfs-traversal",
+          "order": 2,
+          "id": "graph-traversal/bfs-traversal",
+          "prerequisites": [
+            "graph-traversal/bfs-frontier"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-bfs-distances",
+          "slug": "bfs-distances",
+          "order": 3,
+          "id": "graph-traversal/bfs-distances",
+          "prerequisites": [
+            "graph-traversal/bfs-traversal"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-bfs-path",
+          "slug": "bfs-path",
+          "order": 4,
+          "id": "graph-traversal/bfs-path",
+          "prerequisites": [
+            "graph-traversal/bfs-distances"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-connected-components",
+          "slug": "connected-components",
+          "order": 5,
+          "id": "graph-traversal/connected-components",
+          "prerequisites": [
+            "graph-traversal/bfs-path"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-dfs-recursive",
+          "slug": "dfs-recursive",
+          "order": 6,
+          "id": "graph-traversal/dfs-recursive",
+          "prerequisites": [
+            "graph-traversal/connected-components"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-dfs-iterative",
+          "slug": "dfs-iterative",
+          "order": 7,
+          "id": "graph-traversal/dfs-iterative",
+          "prerequisites": [
+            "graph-traversal/dfs-recursive"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-undirected-cycle",
+          "slug": "undirected-cycle",
+          "order": 8,
+          "id": "graph-traversal/undirected-cycle",
+          "prerequisites": [
+            "graph-traversal/dfs-iterative"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "09-directed-cycle",
+          "slug": "directed-cycle",
+          "order": 9,
+          "id": "graph-traversal/directed-cycle",
+          "prerequisites": [
+            "graph-traversal/undirected-cycle"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "10-topological-order",
+          "slug": "topological-order",
+          "order": 10,
+          "id": "graph-traversal/topological-order",
+          "prerequisites": [
+            "graph-traversal/directed-cycle"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "15-shortest-paths",
+      "slug": "shortest-paths",
+      "title": "Weighted graphs and shortest paths",
+      "order": 15,
+      "lessons": [
+        {
+          "directory": "01-weighted-adjacency",
+          "slug": "weighted-adjacency",
+          "order": 1,
+          "id": "shortest-paths/weighted-adjacency",
+          "prerequisites": [
+            "graph-traversal/topological-order"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-path-cost",
+          "slug": "path-cost",
+          "order": 2,
+          "id": "shortest-paths/path-cost",
+          "prerequisites": [
+            "shortest-paths/weighted-adjacency"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-relax-edge",
+          "slug": "relax-edge",
+          "order": 3,
+          "id": "shortest-paths/relax-edge",
+          "prerequisites": [
+            "shortest-paths/path-cost"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-dijkstra-scan",
+          "slug": "dijkstra-scan",
+          "order": 4,
+          "id": "shortest-paths/dijkstra-scan",
+          "prerequisites": [
+            "shortest-paths/relax-edge"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-dijkstra-heap",
+          "slug": "dijkstra-heap",
+          "order": 5,
+          "id": "shortest-paths/dijkstra-heap",
+          "prerequisites": [
+            "shortest-paths/dijkstra-scan"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-reconstruct-weighted-path",
+          "slug": "reconstruct-weighted-path",
+          "order": 6,
+          "id": "shortest-paths/reconstruct-weighted-path",
+          "prerequisites": [
+            "shortest-paths/dijkstra-heap"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-unreachable-and-zero-weights",
+          "slug": "unreachable-and-zero-weights",
+          "order": 7,
+          "id": "shortest-paths/unreachable-and-zero-weights",
+          "prerequisites": [
+            "shortest-paths/reconstruct-weighted-path"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-route-planner",
+          "slug": "route-planner",
+          "order": 8,
+          "id": "shortest-paths/route-planner",
+          "prerequisites": [
+            "shortest-paths/unreachable-and-zero-weights"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "16-bits-and-sets",
+      "slug": "bits-and-sets",
+      "title": "Bits and sets",
+      "order": 16,
+      "lessons": [
+        {
+          "directory": "01-test-a-bit",
+          "slug": "test-a-bit",
+          "order": 1,
+          "id": "bits-and-sets/test-a-bit",
+          "prerequisites": [
+            "shortest-paths/route-planner"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-set-clear-toggle",
+          "slug": "set-clear-toggle",
+          "order": 2,
+          "id": "bits-and-sets/set-clear-toggle",
+          "prerequisites": [
+            "bits-and-sets/test-a-bit"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-bit-count",
+          "slug": "bit-count",
+          "order": 3,
+          "id": "bits-and-sets/bit-count",
+          "prerequisites": [
+            "bits-and-sets/set-clear-toggle"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-power-of-two",
+          "slug": "power-of-two",
+          "order": 4,
+          "id": "bits-and-sets/power-of-two",
+          "prerequisites": [
+            "bits-and-sets/bit-count"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-fixed-width-masks",
+          "slug": "fixed-width-masks",
+          "order": 5,
+          "id": "bits-and-sets/fixed-width-masks",
+          "prerequisites": [
+            "bits-and-sets/power-of-two"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-set-algebra",
+          "slug": "set-algebra",
+          "order": 6,
+          "id": "bits-and-sets/set-algebra",
+          "prerequisites": [
+            "bits-and-sets/fixed-width-masks"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-frozenset-keys",
+          "slug": "frozenset-keys",
+          "order": 7,
+          "id": "bits-and-sets/frozenset-keys",
+          "prerequisites": [
+            "bits-and-sets/set-algebra"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-permission-flags",
+          "slug": "permission-flags",
+          "order": 8,
+          "id": "bits-and-sets/permission-flags",
+          "prerequisites": [
+            "bits-and-sets/frozenset-keys"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "17-tries",
+      "slug": "tries",
+      "title": "Tries and prefix lookup",
+      "order": 17,
+      "lessons": [
+        {
+          "directory": "01-trie-node",
+          "slug": "trie-node",
+          "order": 1,
+          "id": "tries/trie-node",
+          "prerequisites": [
+            "bits-and-sets/permission-flags"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-insert-word",
+          "slug": "insert-word",
+          "order": 2,
+          "id": "tries/insert-word",
+          "prerequisites": [
+            "tries/trie-node"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-contains-word",
+          "slug": "contains-word",
+          "order": 3,
+          "id": "tries/contains-word",
+          "prerequisites": [
+            "tries/insert-word"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-starts-with",
+          "slug": "starts-with",
+          "order": 4,
+          "id": "tries/starts-with",
+          "prerequisites": [
+            "tries/contains-word"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-collect-prefix-words",
+          "slug": "collect-prefix-words",
+          "order": 5,
+          "id": "tries/collect-prefix-words",
+          "prerequisites": [
+            "tries/starts-with"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-delete-word",
+          "slug": "delete-word",
+          "order": 6,
+          "id": "tries/delete-word",
+          "prerequisites": [
+            "tries/collect-prefix-words"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-prefix-counts",
+          "slug": "prefix-counts",
+          "order": 7,
+          "id": "tries/prefix-counts",
+          "prerequisites": [
+            "tries/delete-word"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-autocomplete-project",
+          "slug": "autocomplete-project",
+          "order": 8,
+          "id": "tries/autocomplete-project",
+          "prerequisites": [
+            "tries/prefix-counts"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "18-range-structures",
+      "slug": "range-structures",
+      "title": "Fenwick and segment trees",
+      "order": 18,
+      "lessons": [
+        {
+          "directory": "01-fenwick-lowbit",
+          "slug": "fenwick-lowbit",
+          "order": 1,
+          "id": "range-structures/fenwick-lowbit",
+          "prerequisites": [
+            "tries/autocomplete-project"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-fenwick-state",
+          "slug": "fenwick-state",
+          "order": 2,
+          "id": "range-structures/fenwick-state",
+          "prerequisites": [
+            "range-structures/fenwick-lowbit"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-fenwick-add",
+          "slug": "fenwick-add",
+          "order": 3,
+          "id": "range-structures/fenwick-add",
+          "prerequisites": [
+            "range-structures/fenwick-state"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-fenwick-prefix",
+          "slug": "fenwick-prefix",
+          "order": 4,
+          "id": "range-structures/fenwick-prefix",
+          "prerequisites": [
+            "range-structures/fenwick-add"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-fenwick-range",
+          "slug": "fenwick-range",
+          "order": 5,
+          "id": "range-structures/fenwick-range",
+          "prerequisites": [
+            "range-structures/fenwick-prefix"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-fenwick-build",
+          "slug": "fenwick-build",
+          "order": 6,
+          "id": "range-structures/fenwick-build",
+          "prerequisites": [
+            "range-structures/fenwick-range"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-segment-layout",
+          "slug": "segment-layout",
+          "order": 7,
+          "id": "range-structures/segment-layout",
+          "prerequisites": [
+            "range-structures/fenwick-build"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-segment-build",
+          "slug": "segment-build",
+          "order": 8,
+          "id": "range-structures/segment-build",
+          "prerequisites": [
+            "range-structures/segment-layout"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "09-segment-query",
+          "slug": "segment-query",
+          "order": 9,
+          "id": "range-structures/segment-query",
+          "prerequisites": [
+            "range-structures/segment-build"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "10-segment-update",
+          "slug": "segment-update",
+          "order": 10,
+          "id": "range-structures/segment-update",
+          "prerequisites": [
+            "range-structures/segment-query"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "11-range-minimum",
+          "slug": "range-minimum",
+          "order": 11,
+          "id": "range-structures/range-minimum",
+          "prerequisites": [
+            "range-structures/segment-update"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "12-range-dashboard",
+          "slug": "range-dashboard",
+          "order": 12,
+          "id": "range-structures/range-dashboard",
+          "prerequisites": [
+            "range-structures/range-minimum"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "19-disjoint-sets",
+      "slug": "disjoint-sets",
+      "title": "Disjoint-set union",
+      "order": 19,
+      "lessons": [
+        {
+          "directory": "01-dsu-state",
+          "slug": "dsu-state",
+          "order": 1,
+          "id": "disjoint-sets/dsu-state",
+          "prerequisites": [
+            "range-structures/range-dashboard"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-find-root",
+          "slug": "find-root",
+          "order": 2,
+          "id": "disjoint-sets/find-root",
+          "prerequisites": [
+            "disjoint-sets/dsu-state"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-union-components",
+          "slug": "union-components",
+          "order": 3,
+          "id": "disjoint-sets/union-components",
+          "prerequisites": [
+            "disjoint-sets/find-root"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-path-compression",
+          "slug": "path-compression",
+          "order": 4,
+          "id": "disjoint-sets/path-compression",
+          "prerequisites": [
+            "disjoint-sets/union-components"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-union-by-size",
+          "slug": "union-by-size",
+          "order": 5,
+          "id": "disjoint-sets/union-by-size",
+          "prerequisites": [
+            "disjoint-sets/path-compression"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-component-count",
+          "slug": "component-count",
+          "order": 6,
+          "id": "disjoint-sets/component-count",
+          "prerequisites": [
+            "disjoint-sets/union-by-size"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-detect-redundant-edge",
+          "slug": "detect-redundant-edge",
+          "order": 7,
+          "id": "disjoint-sets/detect-redundant-edge",
+          "prerequisites": [
+            "disjoint-sets/component-count"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-kruskal-forest",
+          "slug": "kruskal-forest",
+          "order": 8,
+          "id": "disjoint-sets/kruskal-forest",
+          "prerequisites": [
+            "disjoint-sets/detect-redundant-edge"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "20-combinatorial-search",
+      "slug": "combinatorial-search",
+      "title": "Combinatorial search",
+      "order": 20,
+      "lessons": [
+        {
+          "directory": "01-cartesian-product",
+          "slug": "cartesian-product",
+          "order": 1,
+          "id": "combinatorial-search/cartesian-product",
+          "prerequisites": [
+            "disjoint-sets/kruskal-forest"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-power-set-iteration",
+          "slug": "power-set-iteration",
+          "order": 2,
+          "id": "combinatorial-search/power-set-iteration",
+          "prerequisites": [
+            "combinatorial-search/cartesian-product"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-power-set-bits",
+          "slug": "power-set-bits",
+          "order": 3,
+          "id": "combinatorial-search/power-set-bits",
+          "prerequisites": [
+            "combinatorial-search/power-set-iteration"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-combinations-without-replacement",
+          "slug": "combinations-without-replacement",
+          "order": 4,
+          "id": "combinatorial-search/combinations-without-replacement",
+          "prerequisites": [
+            "combinatorial-search/power-set-bits"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-combinations-with-replacement",
+          "slug": "combinations-with-replacement",
+          "order": 5,
+          "id": "combinatorial-search/combinations-with-replacement",
+          "prerequisites": [
+            "combinatorial-search/combinations-without-replacement"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-permutations-without-replacement",
+          "slug": "permutations-without-replacement",
+          "order": 6,
+          "id": "combinatorial-search/permutations-without-replacement",
+          "prerequisites": [
+            "combinatorial-search/combinations-with-replacement"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-words-with-repetition",
+          "slug": "words-with-repetition",
+          "order": 7,
+          "id": "combinatorial-search/words-with-repetition",
+          "prerequisites": [
+            "combinatorial-search/permutations-without-replacement"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-backtracking-constraints",
+          "slug": "backtracking-constraints",
+          "order": 8,
+          "id": "combinatorial-search/backtracking-constraints",
+          "prerequisites": [
+            "combinatorial-search/words-with-repetition"
+          ],
+          "type": "coding"
+        }
+      ]
+    },
+    {
+      "directory": "21-dispatch-project",
+      "slug": "dispatch-project",
+      "title": "Project: a dispatch workbench",
+      "order": 21,
+      "lessons": [
+        {
+          "directory": "01-catalog-index",
+          "slug": "catalog-index",
+          "order": 1,
+          "id": "dispatch-project/catalog-index",
+          "prerequisites": [
+            "combinatorial-search/backtracking-constraints"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "02-pending-queue",
+          "slug": "pending-queue",
+          "order": 2,
+          "id": "dispatch-project/pending-queue",
+          "prerequisites": [
+            "dispatch-project/catalog-index"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "03-priority-dispatch",
+          "slug": "priority-dispatch",
+          "order": 3,
+          "id": "dispatch-project/priority-dispatch",
+          "prerequisites": [
+            "dispatch-project/pending-queue"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "04-history-stack",
+          "slug": "history-stack",
+          "order": 4,
+          "id": "dispatch-project/history-stack",
+          "prerequisites": [
+            "dispatch-project/priority-dispatch"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "05-network-reachability",
+          "slug": "network-reachability",
+          "order": 5,
+          "id": "dispatch-project/network-reachability",
+          "prerequisites": [
+            "dispatch-project/history-stack"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "06-cheapest-route",
+          "slug": "cheapest-route",
+          "order": 6,
+          "id": "dispatch-project/cheapest-route",
+          "prerequisites": [
+            "dispatch-project/network-reachability"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "07-daily-load-report",
+          "slug": "daily-load-report",
+          "order": 7,
+          "id": "dispatch-project/daily-load-report",
+          "prerequisites": [
+            "dispatch-project/cheapest-route"
+          ],
+          "type": "coding"
+        },
+        {
+          "directory": "08-dispatch-session",
+          "slug": "dispatch-session",
+          "order": 8,
+          "id": "dispatch-project/dispatch-session",
+          "prerequisites": [
+            "dispatch-project/daily-load-report"
+          ],
+          "type": "coding"
+        }
+      ]
+    }
+  ]
+}

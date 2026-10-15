@@ -1,0 +1,96 @@
+# Internal conceptual-reference research — Python data structures
+
+## Scope and provenance
+
+Inspected all substantive chapters, PDF pp. 12–283, including their applications, implementations, complexity discussions, examples and quizzes; also inspected appendices pp. 284–291. The actual PDF and supplied JSON both contain **292 pages**, not 290. All page references below are **1-based PDF positions**, not printed folios (main-text printed folios are generally ten lower). Front matter and rights notice: p. 2; contents: pp. 3–9; revision information is not a reliable current technical authority.
+
+This is an internal research map, not learner-facing text. Use the concepts, not the source's prose, implementation structure, examples, names, datasets, quiz wording or visual compositions. Manuscript restrictions and separate code permission are stated on p. 2; write original Python implementations anyway. No course files were changed. Keep the new curriculum separate from the completed OOP course; the required course outline remains the coverage authority. This reference is supplemental, not an outline replacement.
+
+## Topic and original visual-idea map
+
+Each row covers a substantive chapter or appendix group. Proposed visuals are new designs, not redraws; use new data and layouts, with paired SVG and editable Excalidraw sources when lessons are authored.
+
+| PDF pages | Concepts worth adapting | Original visual / exercise direction | Adaptation guardrail |
+|---|---|---|---|
+| 12–23 | Algorithms, input size, growth rates, dominant terms; iterative/recursive work; total versus auxiliary space | Operation-counter strip beside input/output/working-memory trays; compare mutation and copying | Define the cost model; one Python expression is not one constant-cost operation. Distinguish output memory. |
+| 24–36 | Node/reference model; head/tail; prepend, append, find, head/tail/value deletion; iteration | Pointer-rewiring storyboard with identity tags, saved successor and separate before/after state | Constant-time deletion requires the necessary reference; searching or singly linked tail deletion is linear. Identity is not value equality. |
+| 37–43 | FIFO interface, linked representation, queue applications | Arrivals and service timeline with front/rear markers; compare linked queue and circular buffer | Front removal from a Python list shifts elements; use `deque` for practical FIFO.[7] |
+| 44–51 | LIFO, push/pop/peek, undo and pending recursive work | Shared event stream fed to FIFO and LIFO; call-frame cards alongside an explicit stack | Use linked head operations or list end operations; source prose inconsistently describes head versus tail. |
+| 52–62 | Mapping ADT; hashing and bucket reduction; chaining; lookup/update/delete; collisions | Distinct keys converge on one bucket; equality checks highlighted individually; resize redistributes entries | A collision is not an overwrite. Include key length, load factor and worst case; do not describe the teaching table as Python `dict` internals. |
+| 63–90 | Root/child/leaf, depth/height; full/complete/perfect/degenerate shapes; BST invariant; lookup, insertion, deletion; inorder; min/max; balancing motivation | Same keys in balanced and chain-shaped trees; interval bounds at nodes; separate leaf/one-child/two-child deletion panels | Operations are O(height), not automatically O(log n). Define duplicate-key policy, empty root and height convention. Preserve key–payload association. |
+| 91–114 | Heap shape and order invariants; array indexing; sift up/down; peek, root removal, arbitrary removal; comparison keys | Array row aligned under tree levels; index/value distinguished; last-slot-to-root movement then repair | A heap is not fully sorted or a BST. Arbitrary removal needs a search or position map. `heapify` is distinct from a single sift.[2] |
+| 115–122 | Priority-queue ADT versus heap implementation; priority direction; insertion, extraction, cancellation, reprioritization | Task identifier / priority / arrival counter cards; stale entry versus live entry; alternate indexed-heap swap map | Add equal-priority stability and unorderable payloads. Never silently mutate an ordering key in-place.[2] |
+| 123–142 | Directed/undirected/weighted graphs; adjacency, paths, cycles, isolated vertices; adjacency list/matrix; mutation APIs | One original network displayed as edge list, adjacency dict and matrix with a shared legend | Connected does not mean complete. Zero-weight edges need a representation distinct from absence. Avoid concatenated-string edge IDs and neighbor-object mutation. |
+| 143–157 | Binary digits; masks; bit get/set/clear/update; parity; shifts; bit count/difference/length; shift-and-add arithmetic | Explicit-width bit windows over an unbounded integer model; highlight a single mask operation | Python integers are not fixed 32-bit words. Signed displays require an explicit width. Negative right-shift loops can fail to terminate.[1] |
+| 158–162 | Factorial as recurrence/base case; recursion versus iteration; counting arrangements | Descent/unwind lanes versus a running accumulator, using a fresh small input | Reject invalid inputs; account for growing integers. Keep this a bridge to recursion/combinatorics, not an unrelated arithmetic module. |
+| 163–167 | Fibonacci recurrence, sequence versus nth-value APIs, iterative state, closed-form temptation | Dependency graph versus rolling two-cell window; retained-output memory comparison | State indexing explicitly. Floating-point closed forms are not a generally exact replacement for integer recurrence. |
+| 168–172 | Primality and divisor-pair stopping argument | Optional factor-pair rectangle only if the required outline needs it | **Do not add merely to inflate lesson count.** Peripheral to a data-structures curriculum; no cryptographic implementation claims. |
+| 173–176 | Positive power-of-two recognition; repeated halving versus clearing the lowest set bit | Single-set-bit rail beside nonpower counterexamples and zero | Specify positive integers; bigint bit operations are not universally constant-time.[1] |
+| 177–184 | Linear search, predicate/equality choice, first match versus all matches | Scan cursor plus separate first-hit and all-hit output tracks | All-match search still scans the whole input and stores matches; source's generic table does not describe that implementation accurately. |
+| 185–190 | Sortedness prerequisite, shrinking interval, iterative binary search, custom ordering | Half-open interval ruler showing rejected region and termination condition | Use indices rather than slices; specify duplicate behavior. `bisect` finds insertion boundaries, not automatic membership; insertion remains linear.[10] |
+| 191–195 | Mathematical sets; ordered Cartesian pairs; products of several domains; output-size growth | Configuration grid and a multi-stage choice pipeline, with tuples as outputs | Product is not power set. Empty factors yield no results, not an error. Python sets have uniqueness/hashability constraints; reproducible enumeration needs explicit ordering.[1][6] |
+| 196–205 | Power set including empty/full set; bitmask enumeration and backtracking; copy-on-record | Inclusion/exclusion decision tree synchronized with a mask and current path | Materialized subsets require output-sensitive cost including element copies; do not adopt the source's O(2^n) claim for copied-list output. Avoid mutable default accumulators. |
+| 206–216 | Ordered selections with/without replacement; full versus length-r permutations; factorial connection | Position slots with either replenished choices or a shrinking availability tray | Repetition allowed maps naturally to `product(..., repeat=r)`; `permutations` distinguishes positions, not equal values.[6] Handle r=0 and empty input. |
+| 217–226 | Unordered selections; with/without replacement; eliminate ordering duplicates; increasing candidate index | Four-quadrant order/replacement chooser; monotone candidate-index paths | Do not generate every permutation and deduplicate as the primary method. With replacement allows reuse, not arbitrary reordering. Distinguish unlimited reuse from bounded inventory.[6] |
+| 227–232 | Quicksort partitioning, pivot choice, duplicates, recursion, average/worst cases; comparison keys | Partition conveyor with less/equal/greater regions; balanced versus lopsided recursion shapes | Do not translate repeated front removal to `pop(0)`; distinguish allocating and in-place variants, recursion depth and actual temporary storage.[7] |
+| 233–240 | Tree DFS, recursion/explicit stack, backtracking, visit callbacks | One original tree with preorder/inorder/postorder event markers and frame snapshots | Expand beyond source preorder to compare all three orders. State what event counts as a visit; account for callback/output work. |
+| 241–248 | Tree BFS and queue frontier; level order; comparison to DFS | Same tree under BFS and DFS with frontier-size gauges; wide tree versus chain | BFS queue space follows width, not depth; the source's chain-as-worst-BFS-memory explanation is incorrect. |
+| 249–257 | Graph DFS, visited state, reachable component, implicit/explicit stack, applications | Cyclic network with discovered/active/finished states; disconnected component restart | Specify neighbor order; reversing pushes alone need not reproduce recursive graph DFS's parent tree when discovery is eager. Use iterator frames for exact equivalence. |
+| 258–266 | Graph BFS, discovery marking, layers, reachability and unweighted shortest paths | Queue snapshots, discovery distance and predecessor arrows on the same cyclic network | Mark on enqueue; shortest means fewest edges for unweighted/equal-weight graphs, not arbitrary weighted distance. |
+| 267–283 | Dijkstra relaxation, tentative/settled distinction, min-priority frontier, priority updates, predecessors/path recovery | New weighted network synchronized with distance/predecessor table and heap-entry panel; expose one stale entry | Require nonnegative weights; settle on valid minimum extraction, not first discovery; handle unreachable targets.[11] Analyze the actual priority-queue implementation. |
+| 284–291 | Review prompts and complexity comparisons; additional structures/sorts named in tables | Original operation decision matrix with preconditions and implementation columns | Answer keys/tables are not ground truth. B-trees, AVL/red-black trees, Bloom filters and other sorts are mentions, not substantive chapters here. Do not claim they were taught by this reference. |
+
+## Highest-value additions beyond the required outline
+
+Prioritize the **Cartesian product → power set → permutations → combinations** sequence, tied to nested loops, output growth and backtracking, rather than standalone formula memorization. Contrast order-sensitive versus order-insensitive selection, replacement versus no replacement, and equal values versus distinct input positions. Add zero-size cases and lazy versus materialized output; `itertools` is an independent reference/checking tool, not a replacement for original educational implementations.[6]
+
+Build **explicit traversal comparisons**: same structure and neighbor order, different frontier discipline; tree versus cyclic graph; preorder/inorder/postorder versus level order; depth versus width memory; reachability versus shortest-path guarantees. Give **priority updates** their own treatment before Dijkstra: scan-and-rebuild, indexed repair, and lazy invalidation are different designs with different costs.[2][11]
+
+## Python-specific facts verified against primary sources
+
+- **Integer width:** `int` has arbitrary precision; bitwise semantics behave as if two's-complement had unlimited sign extension. Teach finite-width encoding as an explicit model, not physical storage. `bit_count()` counts ones in the absolute value, not an infinite signed encoding; it was added in 3.10.[1]
+- **Exponentiation:** Do not transfer p. 16's claim that `base ** exponent` is O(1). Official semantics equate two-argument `pow` with `**`; three-argument `pow` performs modular exponentiation more efficiently than computing the full power then reducing.[8] CPython 3.14.0's integer implementation uses binary/sliding-window exponentiation and size-dependent multiplication, not one fixed-cost machine instruction.[9] Therefore state bounded-word assumptions when counting arithmetic operations; do not promise one universal Python-level Big-O formula independent of operand size/type. Growing results also invalidate “fixed variables implies fixed bytes.”
+- **Recursion:** CPython does not implement tail-call optimization of Python functions; the 3.14 tail-call interpreter feature is unrelated.[5] Recursion depth is limited; increasing the limit is not an algorithmic fix and can be unsafe.[4] Prefer an explicit stack for adversarially deep trees/graphs.
+- **Hash behavior:** `str`/`bytes` hashes are salted by default and are not predictable across interpreter invocations; set iteration order is not guaranteed.[3] Do not assert all types have randomized hashes. Tests should not assert exact built-in hash values or unordered rendering. Use an explicitly named deterministic teaching hash or injected collision function for repeatable bucket diagrams. `ord()` describes Unicode code points, not an ASCII-only universe.[8]
+- **Heap version:** Public max-heap helpers (`heapify_max`, `heappush_max`, `heappop_max`, etc.) were added in Python 3.14.[2] Pin the course runtime before using them; for older runtimes, numeric negation or an original max-heap is a compatibility option, not a generic payload-negation trick. The runtime itself was not audited in this task.
+- **Heap ties/updates:** Include a monotonic tiebreaker so equal priorities do not compare unrelated payloads. Official documentation describes invalidating an old entry and inserting a revised one for priority changes.[2] Retained stale entries count toward memory; membership in a separate map is not automatically synchronized with heap contents.
+- **Practical FIFO/search:** `deque` supports approximately constant-time end operations, whereas list front insertion/removal moves elements.[7] Binary search's logarithmic location step does not make insertion into a Python list logarithmic.[10]
+
+## Corrections that must not migrate into lessons
+
+These are independent implementation/definition checks against the supplied text, not copied explanations.
+
+1. **pp. 31, 42, 46–50:** distinguish node identity from equal values; linked queue uses append/head removal, linked stack uses head prepend/removal. Singly linked tail removal is not constant time.
+2. **pp. 70, 89:** BST elimination is not necessarily halving; use O(h). The chapter mentions balancing but does not implement it. An AVL-style height-difference condition is not the definition of every balanced-tree family.
+3. **pp. 80–85:** independently test BST root replacement, parent links and payload migration. Do not mechanically port helpers that change a key without its associated data or leave parent metadata inconsistent.
+4. **pp. 105–113, 121–122:** value search scans the heap; the arbitrary-remove implementation can scan repeatedly. Its O(log n) table omits that cost. Also avoid a membership map that fails to remove polled values or mishandles duplicates/falsy values.
+5. **pp. 124–125:** connectedness requires paths, not an edge for every pair. Matrix absence must not erase valid zero-weight edges.
+6. **pp. 184, 204:** include materialized output storage/copying. First-match and all-match search have different best cases. Generating all copied subsets is not just counting recursion nodes.
+7. **pp. 191–201:** product and power set are different operations; use half-open mask ranges and verify bit-position labels. Empty selections are valid mathematical base cases.
+8. **pp. 231–232:** a Python quicksort partition should iterate, not repeatedly remove index zero. Do not attach textbook quicksort complexity to an implementation whose partition has extra linear shifts.[7]
+9. **p. 247:** a single-child chain has a tiny BFS frontier; breadth produces the large queue. DFS recursive auxiliary memory is tied to height; BFS to maximum width, excluding collected output.
+10. **pp. 269–282:** do not inherit the final Dijkstra complexity derivation. With indexed binary-heap decrease-key, the standard bound is O((V+E) log V).[11] For a proposed lazy-duplicate Python heap design, derive the bound from up to O(E) successful-relaxation entries: O(V + E log(E+1)) time and O(V+E) auxiliary space under constant-cost hashing/arithmetic assumptions; this is an implementation analysis, not a `heapq` documentation guarantee. Add nonnegative-weight validation and stale-entry checks.
+
+## Visual inspection record
+
+Rendered with the installed scratch PyMuPDF environment. Visually reviewed four contact sheets covering PDF **30, 55, 66, 72, 73, 74, 91, 95, 123, 126, 235, 243, 250, 259, 270, 272**; additionally inspected full-size renders of 55, 95 and 272. Page 72 is a substantive insertion-path diagram even though extraction yields only a running header; p. 74 carries the two-child deletion illustration introduced on p. 73. Page 91 introduces heap invariants, while the explicit tree-to-array diagram is on p. 95.
+
+Observed design functions: p. 30 exposes bypassed references; p. 55 separates hashing, bucket reduction and chaining; pp. 66/72/74 distinguish structure, search decisions and replacement; p. 95 aligns hierarchical and array representations; pp. 123/126 distinguish edge direction and adjacency storage; pp. 235/243/250/259 use visit-sequence snapshots; pp. 270/272 distinguish tentative distances and processed vertices. New visuals should improve these functions with labeled frontiers, legends, larger typography, index/value separation and explicit intermediate invariants—not preserve source layouts or examples. All renders remain internal scratch reference material, never course assets.
+
+## Research limitations / retrieval
+
+The configured web-extraction tool rejected extraction because its backend is search-only. Retrieved official pages directly over HTTPS instead and saved readable snapshots locally; no backend configuration was changed. Python facts above were checked in those retrieved documents; the exponentiation implementation source is pinned to CPython v3.14.0. PDF parsing was successful, with spacing/encoding defects in its text layer handled by page-aware review and diagram rendering. PyMuPDF emitted a `fitz`-alias deprecation warning; rendering succeeded. No lesson authoring was performed.
+
+## Sources
+
+[1] https://docs.python.org/3/builtins/stdtypes.html
+[2] https://docs.python.org/3/library/heapq.html
+[3] https://docs.python.org/3/reference/datamodel.html
+[4] https://docs.python.org/3/library/sys.html
+[5] https://docs.python.org/3/whatsnew/3.14.html
+[6] https://docs.python.org/3/library/itertools.html
+[7] https://docs.python.org/3/library/collections.html
+[8] https://docs.python.org/3/builtins/functions.html
+[9] https://raw.githubusercontent.com/python/cpython/v3.14.0/Objects/longobject.c
+[10] https://docs.python.org/3/library/bisect.html
+[11] https://courses.csail.mit.edu/6.006/fall11/lectures/lecture16.pdf

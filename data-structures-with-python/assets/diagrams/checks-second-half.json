@@ -1,0 +1,478 @@
+[
+  {
+    "name": "lower_bound(5)",
+    "actual": 1,
+    "expected": 1,
+    "passed": true
+  },
+  {
+    "name": "stable merge",
+    "actual": [
+      [
+        3,
+        "L"
+      ],
+      [
+        4,
+        "R"
+      ],
+      [
+        7,
+        "L"
+      ],
+      [
+        7,
+        "R"
+      ],
+      [
+        10,
+        "L"
+      ],
+      [
+        12,
+        "R"
+      ]
+    ],
+    "expected": [
+      [
+        3,
+        "L"
+      ],
+      [
+        4,
+        "R"
+      ],
+      [
+        7,
+        "L"
+      ],
+      [
+        7,
+        "R"
+      ],
+      [
+        10,
+        "L"
+      ],
+      [
+        12,
+        "R"
+      ]
+    ],
+    "passed": true
+  },
+  {
+    "name": "partition multiset",
+    "actual": [
+      2,
+      3,
+      5,
+      6,
+      8,
+      8,
+      8
+    ],
+    "expected": [
+      2,
+      3,
+      5,
+      6,
+      8,
+      8,
+      8
+    ],
+    "passed": true
+  },
+  {
+    "name": "inorder BST",
+    "actual": [
+      2,
+      4,
+      7,
+      11,
+      15,
+      18
+    ],
+    "expected": [
+      2,
+      4,
+      7,
+      11,
+      15,
+      18
+    ],
+    "passed": true
+  },
+  {
+    "name": "postorder",
+    "actual": [
+      2,
+      7,
+      4,
+      15,
+      18,
+      11
+    ],
+    "expected": [
+      2,
+      7,
+      4,
+      15,
+      18,
+      11
+    ],
+    "passed": true
+  },
+  {
+    "name": "successor transplant inorder",
+    "actual": [
+      9,
+      26,
+      28,
+      35
+    ],
+    "expected": [
+      9,
+      26,
+      28,
+      35
+    ],
+    "passed": true
+  },
+  {
+    "name": "successor right child reattached",
+    "actual": 28,
+    "expected": 28,
+    "passed": true
+  },
+  {
+    "name": "min heap mapping",
+    "actual": true,
+    "expected": true,
+    "passed": true
+  },
+  {
+    "name": "sift down after pop",
+    "actual": [
+      4,
+      5,
+      6,
+      9,
+      7,
+      8
+    ],
+    "expected": [
+      4,
+      5,
+      6,
+      9,
+      7,
+      8
+    ],
+    "passed": true
+  },
+  {
+    "name": "stable priority order",
+    "actual": [
+      "elm",
+      "oak",
+      "ash"
+    ],
+    "expected": [
+      "elm",
+      "oak",
+      "ash"
+    ],
+    "passed": true
+  },
+  {
+    "name": "undirected matrix symmetry",
+    "actual": [
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        0
+      ]
+    ],
+    "expected": [
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        0
+      ]
+    ],
+    "passed": true
+  },
+  {
+    "name": "BFS distances",
+    "actual": {
+      "P": 0,
+      "Q": 1,
+      "R": 1,
+      "S": 2
+    },
+    "expected": {
+      "P": 0,
+      "Q": 1,
+      "R": 1,
+      "S": 2
+    },
+    "passed": true
+  },
+  {
+    "name": "relax via U",
+    "actual": 9,
+    "expected": 9,
+    "passed": true
+  },
+  {
+    "name": "Dijkstra improved record",
+    "actual": 5,
+    "expected": 5,
+    "passed": true
+  },
+  {
+    "name": "masked complement",
+    "actual": 210,
+    "expected": 210,
+    "passed": true
+  },
+  {
+    "name": "Fenwick prefix(7)",
+    "actual": 28,
+    "expected": 28,
+    "passed": true
+  },
+  {
+    "name": "segment query [1,4)",
+    "actual": 15,
+    "expected": 15,
+    "passed": true
+  },
+  {
+    "name": "DSU root",
+    "actual": "D",
+    "expected": "D",
+    "passed": true
+  },
+  {
+    "name": "DSU compression",
+    "actual": {
+      "A": "D",
+      "B": "D",
+      "C": "D",
+      "D": "D",
+      "X": "Y",
+      "Y": "Y"
+    },
+    "expected": {
+      "A": "D",
+      "B": "D",
+      "C": "D",
+      "D": "D",
+      "X": "Y",
+      "Y": "Y"
+    },
+    "passed": true
+  },
+  {
+    "name": "backtracking exactly one 1",
+    "actual": [
+      "01",
+      "10"
+    ],
+    "expected": [
+      "01",
+      "10"
+    ],
+    "passed": true
+  },
+  {
+    "name": "lower-bound narrowing states",
+    "actual": [
+      [
+        0,
+        6,
+        3
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "expected": [
+      [
+        0,
+        6,
+        3
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "passed": true
+  },
+  {
+    "name": "preorder",
+    "actual": [
+      11,
+      4,
+      2,
+      7,
+      18,
+      15
+    ],
+    "expected": [
+      11,
+      4,
+      2,
+      7,
+      18,
+      15
+    ],
+    "passed": true
+  },
+  {
+    "name": "Fenwick visited indices",
+    "actual": [
+      7,
+      6,
+      4
+    ],
+    "expected": [
+      7,
+      6,
+      4
+    ],
+    "passed": true
+  },
+  {
+    "name": "Fenwick block values",
+    "actual": [
+      5,
+      9,
+      14
+    ],
+    "expected": [
+      5,
+      9,
+      14
+    ],
+    "passed": true
+  },
+  {
+    "name": "segment root sum",
+    "actual": 18,
+    "expected": 18,
+    "passed": true
+  },
+  {
+    "name": "segment half sums",
+    "actual": [
+      11,
+      7
+    ],
+    "expected": [
+      11,
+      7
+    ],
+    "passed": true
+  },
+  {
+    "name": "Python complement",
+    "actual": -46,
+    "expected": -46,
+    "passed": true
+  },
+  {
+    "name": "load query [0,2)",
+    "actual": 10,
+    "expected": 10,
+    "passed": true
+  },
+  {
+    "name": "DFS active ancestor cycle",
+    "actual": true,
+    "expected": true,
+    "passed": true
+  },
+  {
+    "name": "DFS finished node DAG",
+    "actual": false,
+    "expected": false,
+    "passed": true
+  },
+  {
+    "name": "trie prune preserves mat",
+    "actual": {
+      "m": {
+        "a": {
+          "t": {
+            "$": true
+          }
+        }
+      }
+    },
+    "expected": {
+      "m": {
+        "a": {
+          "t": {
+            "$": true
+          }
+        }
+      }
+    },
+    "passed": true
+  }
+]

@@ -1,0 +1,722 @@
+[
+  {
+    "lesson": "01-memory-and-cost/01-references-and-aliases",
+    "file": "shared-reference-map.svg",
+    "editable": "shared-reference-map.excalidraw",
+    "brief": "Two names point to the same mutable object; rebinding redirects only one name.",
+    "alt": "Before rebinding, names a and b both refer to list [17]. After a is rebound to [29], b still refers to the original list [17].",
+    "caption": "Arrows mean references, not copied values.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/shared-reference-map.svg",
+    "local_svg": "01-memory-and-cost/01-references-and-aliases/shared-reference-map.svg",
+    "canonical_editable": "assets/diagrams/shared-reference-map.excalidraw",
+    "local_editable": "01-memory-and-cost/01-references-and-aliases/shared-reference-map.excalidraw",
+    "computed_trace": {
+      "a": [
+        29
+      ],
+      "b": [
+        17
+      ],
+      "same_object_after": false
+    },
+    "svg_sha256": "afb2162e0c4e2dd6eaee8f9e4a02ced90704b713f35810fe772f74a1a9770b4a"
+  },
+  {
+    "lesson": "01-memory-and-cost/04-nested-copy-boundaries",
+    "file": "shallow-copy-nested-lists.svg",
+    "editable": "shallow-copy-nested-lists.excalidraw",
+    "brief": "Show distinct outer lists sharing one inner list, then independent inner copies.",
+    "alt": "Two distinct outer lists point to the same inner list [17, 23]. Copying each inner list creates independent inner lists; changing the copied inner list does not alter the original.",
+    "caption": "Lower panel: change only copy[0][1] to 99.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/shallow-copy-nested-lists.svg",
+    "local_svg": "01-memory-and-cost/04-nested-copy-boundaries/shallow-copy-nested-lists.svg",
+    "canonical_editable": "assets/diagrams/shallow-copy-nested-lists.excalidraw",
+    "local_editable": "01-memory-and-cost/04-nested-copy-boundaries/shallow-copy-nested-lists.excalidraw",
+    "computed_trace": {
+      "outer": [
+        [
+          17,
+          23
+        ]
+      ],
+      "independent": [
+        [
+          17,
+          99
+        ]
+      ],
+      "shallow_inner_shared": true
+    },
+    "svg_sha256": "3a33a7386db44d21985fdde5c03be02e7d1ace31d40390a395240c30a1894f90"
+  },
+  {
+    "lesson": "01-memory-and-cost/08-compare-growth",
+    "file": "algorithm-growth-comparison.svg",
+    "editable": "algorithm-growth-comparison.excalidraw",
+    "brief": "Plot or tabulate exact operation counts for linear, halving and pair work; explicit input axis, no misleading timing.",
+    "alt": "Exact operation counts for input sizes 4, 8, 16, and 32: one visit per item, repeated integer halving until 1, and one visit per distinct unordered pair.",
+    "caption": "Equal-cost counted steps; these are not timings.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/algorithm-growth-comparison.svg",
+    "local_svg": "01-memory-and-cost/08-compare-growth/algorithm-growth-comparison.svg",
+    "canonical_editable": "assets/diagrams/algorithm-growth-comparison.excalidraw",
+    "local_editable": "01-memory-and-cost/08-compare-growth/algorithm-growth-comparison.excalidraw",
+    "computed_trace": {
+      "columns": [
+        "n",
+        "visits",
+        "halvings",
+        "pairs"
+      ],
+      "rows": [
+        [
+          4,
+          4,
+          2,
+          6
+        ],
+        [
+          8,
+          8,
+          3,
+          28
+        ],
+        [
+          16,
+          16,
+          4,
+          120
+        ],
+        [
+          32,
+          32,
+          5,
+          496
+        ]
+      ]
+    },
+    "svg_sha256": "2050f6e896ac128f619fe4c2887250576ffe6e753f5a51180e325c1b9b9c57fd"
+  },
+  {
+    "lesson": "02-recursion/02-countdown-trace",
+    "file": "recursive-call-and-return.svg",
+    "editable": "recursive-call-and-return.excalidraw",
+    "brief": "Separate descending calls and ascending returns; base case visible.",
+    "alt": "A countdown called with 2 calls 1, then 0. Zero is the base case. All calls return None, unwinding from 0 to 1 to 2.",
+    "caption": "Definition: recurse only while n > 0.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/recursive-call-and-return.svg",
+    "local_svg": "02-recursion/02-countdown-trace/recursive-call-and-return.svg",
+    "canonical_editable": "assets/diagrams/recursive-call-and-return.excalidraw",
+    "local_editable": "02-recursion/02-countdown-trace/recursive-call-and-return.excalidraw",
+    "computed_trace": [
+      [
+        "call",
+        2
+      ],
+      [
+        "call",
+        1
+      ],
+      [
+        "call",
+        0
+      ],
+      [
+        "return",
+        0,
+        null
+      ],
+      [
+        "return",
+        1,
+        null
+      ],
+      [
+        "return",
+        2,
+        null
+      ]
+    ],
+    "svg_sha256": "371ccffa65ac026a8678755c9570f90ca675f7d03a85cf8d1ebf18292b7d0408"
+  },
+  {
+    "lesson": "02-recursion/07-memoized-fibonacci",
+    "file": "fibonacci-repeated-subproblems.svg",
+    "editable": "fibonacci-repeated-subproblems.excalidraw",
+    "brief": "Show repeated subproblems in a small call tree versus reuse, values calculated.",
+    "alt": "The naive Fibonacci call tree for f(4) has nine calls, including two f(2) calls. With base values f(0)=0 and f(1)=1 cached, compute f(2)=1, f(3)=2, and f(4)=3 once each.",
+    "caption": "Bases: f(0)=0, f(1)=1; recurrence adds two children.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/fibonacci-repeated-subproblems.svg",
+    "local_svg": "02-recursion/07-memoized-fibonacci/fibonacci-repeated-subproblems.svg",
+    "canonical_editable": "assets/diagrams/fibonacci-repeated-subproblems.excalidraw",
+    "local_editable": "02-recursion/07-memoized-fibonacci/fibonacci-repeated-subproblems.excalidraw",
+    "computed_trace": {
+      "naive_calls": [
+        4,
+        3,
+        2,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "result": 3,
+      "cache_values": [
+        0,
+        1,
+        1,
+        2,
+        3
+      ],
+      "cache_hits": [
+        1,
+        0,
+        1,
+        2
+      ]
+    },
+    "svg_sha256": "054d9354eb32e07df7d2e84e787c6fc892e77e76e1103f43379cb8616dd366f0"
+  },
+  {
+    "lesson": "03-arrays-and-sequences/03-insert-and-shift",
+    "file": "array-insertion-shifts.svg",
+    "editable": "array-insertion-shifts.excalidraw",
+    "brief": "Before/after insertion with right-to-left reference shifts and logical size/capacity.",
+    "alt": "Insert 19 at index 1 into a capacity-four buffer containing 13, 27, 41. First copy index 2 to 3, then 1 to 2, then write 19 at 1 and increase size from 3 to 4.",
+    "caption": "Shift right to left; duplicates during copying are OK.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/array-insertion-shifts.svg",
+    "local_svg": "03-arrays-and-sequences/03-insert-and-shift/array-insertion-shifts.svg",
+    "canonical_editable": "assets/diagrams/array-insertion-shifts.excalidraw",
+    "local_editable": "03-arrays-and-sequences/03-insert-and-shift/array-insertion-shifts.excalidraw",
+    "computed_trace": {
+      "states": [
+        [
+          13,
+          27,
+          41,
+          null
+        ],
+        [
+          13,
+          27,
+          41,
+          41
+        ],
+        [
+          13,
+          27,
+          27,
+          41
+        ],
+        [
+          13,
+          19,
+          27,
+          41
+        ]
+      ],
+      "final_size": 4,
+      "capacity": 4
+    },
+    "svg_sha256": "d2a68941a42e7ee7a2367af7d2705714a885dd2c4a0501261c2c6ce5916b4eba"
+  },
+  {
+    "lesson": "03-arrays-and-sequences/08-range-sum-queries",
+    "file": "prefix-sum-half-open-range.svg",
+    "editable": "prefix-sum-half-open-range.excalidraw",
+    "brief": "Original values and prefix array, mark [left,right) and subtract prefix entries.",
+    "alt": "Values [3, 8, 2, 6] have prefix sums [0, 3, 11, 13, 19]. Range [1, 3) includes values 8 and 2. Subtract prefix[1] from prefix[3] to get 10.",
+    "caption": "Left included, right excluded; prefix[0] = 0.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/prefix-sum-half-open-range.svg",
+    "local_svg": "03-arrays-and-sequences/08-range-sum-queries/prefix-sum-half-open-range.svg",
+    "canonical_editable": "assets/diagrams/prefix-sum-half-open-range.excalidraw",
+    "local_editable": "03-arrays-and-sequences/08-range-sum-queries/prefix-sum-half-open-range.excalidraw",
+    "computed_trace": {
+      "values": [
+        3,
+        8,
+        2,
+        6
+      ],
+      "prefix": [
+        0,
+        3,
+        11,
+        13,
+        19
+      ],
+      "range": [
+        1,
+        3
+      ],
+      "sum": 10
+    },
+    "svg_sha256": "6f3e2bde84e311c1c7fdc9bb8591da3db93a3cc14119813808fdd1aca3a9d633"
+  },
+  {
+    "lesson": "04-singly-linked-lists/07-insert-after-node",
+    "file": "linked-list-splice.svg",
+    "editable": "linked-list-splice.excalidraw",
+    "brief": "Before/intermediate/after insertion; save next before rewriting links.",
+    "alt": "Initially A links to C. First save C by setting new node B.next to A.next while A still links to C. Then set A.next to B, creating A to B to C.",
+    "caption": "New node B exists before either link assignment.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/linked-list-splice.svg",
+    "local_svg": "04-singly-linked-lists/07-insert-after-node/linked-list-splice.svg",
+    "canonical_editable": "assets/diagrams/linked-list-splice.excalidraw",
+    "local_editable": "04-singly-linked-lists/07-insert-after-node/linked-list-splice.excalidraw",
+    "computed_trace": {
+      "intermediate": {
+        "A": "C",
+        "C": null,
+        "B": "C"
+      },
+      "after": {
+        "A": "B",
+        "C": null,
+        "B": "C"
+      }
+    },
+    "svg_sha256": "9561cb27b8d40f067d70e5dd3c1a178ce9f3318aaa123601b31cc4cd61601570"
+  },
+  {
+    "lesson": "04-singly-linked-lists/10-remove-first-match",
+    "file": "linked-list-bypass.svg",
+    "editable": "linked-list-bypass.excalidraw",
+    "brief": "Bypass target node with predecessor link and update head/tail cases separately.",
+    "alt": "Removing middle B changes A.next to C. If removing the head, head becomes its next node. If removing the tail, tail becomes its predecessor. Removing the only node sets both head and tail to None.",
+    "caption": "Nonempty tail must have next = None.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/linked-list-bypass.svg",
+    "local_svg": "04-singly-linked-lists/10-remove-first-match/linked-list-bypass.svg",
+    "canonical_editable": "assets/diagrams/linked-list-bypass.excalidraw",
+    "local_editable": "04-singly-linked-lists/10-remove-first-match/linked-list-bypass.excalidraw",
+    "computed_trace": {
+      "middle": {
+        "remaining": [
+          "A",
+          "C"
+        ],
+        "head": "A",
+        "tail": "C",
+        "links": {
+          "A": "C",
+          "B": null,
+          "C": null
+        }
+      },
+      "head_case": {
+        "remaining": [
+          "C"
+        ],
+        "head": "C",
+        "tail": "C",
+        "links": {
+          "A": null,
+          "C": null
+        }
+      },
+      "tail_case": {
+        "remaining": [
+          "A"
+        ],
+        "head": "A",
+        "tail": "A",
+        "links": {
+          "A": null,
+          "C": null
+        }
+      },
+      "singleton": {
+        "remaining": [],
+        "head": null,
+        "tail": null,
+        "links": {
+          "A": null
+        }
+      }
+    },
+    "svg_sha256": "a6ba3b797cc0ad5d43fabef5ed34839260bf4e71d55c2a55c5d7ccd4ac4d379c"
+  },
+  {
+    "lesson": "04-singly-linked-lists/11-reverse-links",
+    "file": "linked-list-three-pointer-reversal.svg",
+    "editable": "linked-list-three-pointer-reversal.excalidraw",
+    "brief": "One precise reversal iteration: prev,current,next before/after, no lost tail.",
+    "alt": "Before one reversal iteration, prev is A, current is B, and saved next is C. A.next is None and B.next is C. After setting B.next to A and advancing, prev is B and current is C; the suffix beginning at C remains reachable.",
+    "caption": "Only the current node’s next link changes this turn.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/linked-list-three-pointer-reversal.svg",
+    "local_svg": "04-singly-linked-lists/11-reverse-links/linked-list-three-pointer-reversal.svg",
+    "canonical_editable": "assets/diagrams/linked-list-three-pointer-reversal.excalidraw",
+    "local_editable": "04-singly-linked-lists/11-reverse-links/linked-list-three-pointer-reversal.excalidraw",
+    "computed_trace": {
+      "links": {
+        "A": null,
+        "B": "A",
+        "C": null
+      },
+      "prev": "B",
+      "current": "C",
+      "saved_next": "C"
+    },
+    "svg_sha256": "e76943bab7fd7e605567ae9cda50f55ab9dc2e2ed47c3873ca3ff86f544eae87"
+  },
+  {
+    "lesson": "05-linked-list-variants/04-doubly-remove",
+    "file": "doubly-linked-removal.svg",
+    "editable": "doubly-linked-removal.excalidraw",
+    "brief": "Prev and next pointers reconnected in both directions around removed middle node.",
+    "alt": "Before deletion, A and B and C have reciprocal next and prev links. Removing middle node B sets A.next to C and C.prev to A; B is detached by clearing both of its links.",
+    "caption": "Middle-node case; head and tail stay unchanged.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/doubly-linked-removal.svg",
+    "local_svg": "05-linked-list-variants/04-doubly-remove/doubly-linked-removal.svg",
+    "canonical_editable": "assets/diagrams/doubly-linked-removal.excalidraw",
+    "local_editable": "05-linked-list-variants/04-doubly-remove/doubly-linked-removal.excalidraw",
+    "computed_trace": {
+      "next": {
+        "A": "C",
+        "B": null,
+        "C": null
+      },
+      "prev": {
+        "A": null,
+        "B": null,
+        "C": "A"
+      }
+    },
+    "svg_sha256": "b921b2338253105f772436625c5c67e544019088739d10918c443cb69e6ea89f"
+  },
+  {
+    "lesson": "05-linked-list-variants/07-circular-traversal",
+    "file": "circular-list-stop-condition.svg",
+    "editable": "circular-list-stop-condition.excalidraw",
+    "brief": "Ring returns to head; distinguish None-ended list and one-lap stopping.",
+    "alt": "A circular list has head A, then B, then C whose next points back to A. Visit A, B, C once and stop before revisiting head A. A conventional linear list instead ends at None.",
+    "caption": "Nonempty ring; compare node identity to head.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/circular-list-stop-condition.svg",
+    "local_svg": "05-linked-list-variants/07-circular-traversal/circular-list-stop-condition.svg",
+    "canonical_editable": "assets/diagrams/circular-list-stop-condition.excalidraw",
+    "local_editable": "05-linked-list-variants/07-circular-traversal/circular-list-stop-condition.excalidraw",
+    "computed_trace": {
+      "ring": {
+        "A": "B",
+        "B": "C",
+        "C": "A"
+      },
+      "one_lap": [
+        "A",
+        "B",
+        "C"
+      ],
+      "stop_at": "A"
+    },
+    "svg_sha256": "cdd26be443af9a189b70d034e34b15e00789092796fbd535db0757598479b019"
+  },
+  {
+    "lesson": "05-linked-list-variants/10-skip-predecessors",
+    "file": "skip-list-search-lanes.svg",
+    "editable": "skip-list-search-lanes.excalidraw",
+    "brief": "Sorted base level plus upper-level forward links; trace move-right/drop-down without exceeding target.",
+    "alt": "A skip list has sorted base keys 7, 18, 31, 46. Search for 26 begins at the head on level 1, moves right to 18, rejects the forward key 46 as too large, then drops to level 0. The next key 31 is too large, so the predecessor is 18 on both levels.",
+    "caption": "Fixed illustrative levels; vertical move keeps key.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/skip-list-search-lanes.svg",
+    "local_svg": "05-linked-list-variants/10-skip-predecessors/skip-list-search-lanes.svg",
+    "canonical_editable": "assets/diagrams/skip-list-search-lanes.excalidraw",
+    "local_editable": "05-linked-list-variants/10-skip-predecessors/skip-list-search-lanes.excalidraw",
+    "computed_trace": {
+      "levels": [
+        [
+          7,
+          18,
+          31,
+          46
+        ],
+        [
+          18,
+          46
+        ]
+      ],
+      "target": 26,
+      "predecessors": [
+        18,
+        18
+      ],
+      "moves": [
+        [
+          "right",
+          1,
+          18
+        ],
+        [
+          "drop",
+          18
+        ]
+      ]
+    },
+    "svg_sha256": "c1c651629cc94d8a1fed37f92bc7d3a01981ae40d8c180534020be5c2f06d76a"
+  },
+  {
+    "lesson": "06-stacks/04-pop-item",
+    "file": "stack-lifo-operations.svg",
+    "editable": "stack-lifo-operations.excalidraw",
+    "brief": "Top-marked stack before push and after pop, latest value leaves first.",
+    "alt": "A stack initially contains bottom 14 and top 28. Pushing 35 puts it above 28. Popping returns 35 and restores top 28.",
+    "caption": "Bottom drawn low; only the top is added/removed.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/stack-lifo-operations.svg",
+    "local_svg": "06-stacks/04-pop-item/stack-lifo-operations.svg",
+    "canonical_editable": "assets/diagrams/stack-lifo-operations.excalidraw",
+    "local_editable": "06-stacks/04-pop-item/stack-lifo-operations.excalidraw",
+    "computed_trace": {
+      "pushed": [
+        14,
+        28,
+        35
+      ],
+      "returned": 35,
+      "after": [
+        14,
+        28
+      ]
+    },
+    "svg_sha256": "7aadc00d11a4e59de42725908e29ec4a99c58a334fb45b4c84f848af85f13237"
+  },
+  {
+    "lesson": "06-stacks/05-balanced-brackets",
+    "file": "bracket-stack-trace.svg",
+    "editable": "bracket-stack-trace.excalidraw",
+    "brief": "Trace nested brackets and mismatch; show actual expected-closer stack for tiny expression.",
+    "alt": "For ([ ]), scanning opening parenthesis and opening bracket pushes expected closers ) then ]. Closing bracket pops ], and closing parenthesis pops ), leaving empty. For ([), the closing parenthesis mismatches top ], so reject immediately.",
+    "caption": "Only bracket characters shown; stack stores closers.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/bracket-stack-trace.svg",
+    "local_svg": "06-stacks/05-balanced-brackets/bracket-stack-trace.svg",
+    "canonical_editable": "assets/diagrams/bracket-stack-trace.excalidraw",
+    "local_editable": "06-stacks/05-balanced-brackets/bracket-stack-trace.excalidraw",
+    "computed_trace": {
+      "valid": "([])",
+      "stacks": [
+        [
+          ")"
+        ],
+        [
+          ")",
+          "]"
+        ],
+        [
+          ")"
+        ],
+        []
+      ],
+      "mismatch": "([)",
+      "expected": "]",
+      "actual": ")",
+      "stack_at_reject": [
+        ")",
+        "]"
+      ]
+    },
+    "svg_sha256": "559d38df7e676e26c6bf17f368342d3e89d27241d788f5faac501fd6094ad680"
+  },
+  {
+    "lesson": "07-queues-and-deques/03-dequeue-item",
+    "file": "queue-head-tail-transition.svg",
+    "editable": "queue-head-tail-transition.excalidraw",
+    "brief": "FIFO removal from head and reset tail when last node leaves.",
+    "alt": "Initially queue nodes 16 and 24 are head and tail. Dequeue returns 16, leaving both head and tail pointing to 24. A second dequeue returns 24 and sets both pointers to None.",
+    "caption": "Linked queue: the last remaining node has next=None.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/queue-head-tail-transition.svg",
+    "local_svg": "07-queues-and-deques/03-dequeue-item/queue-head-tail-transition.svg",
+    "canonical_editable": "assets/diagrams/queue-head-tail-transition.excalidraw",
+    "local_editable": "07-queues-and-deques/03-dequeue-item/queue-head-tail-transition.excalidraw",
+    "computed_trace": {
+      "first_return": 16,
+      "middle": [
+        24
+      ],
+      "last_return": 24,
+      "after": []
+    },
+    "svg_sha256": "c4160bfc08579b501328920340eaef85a9341e2a686b78c4240fb31c266fb8a1"
+  },
+  {
+    "lesson": "07-queues-and-deques/07-ring-enqueue",
+    "file": "ring-buffer-wraparound.svg",
+    "editable": "ring-buffer-wraparound.excalidraw",
+    "brief": "Physical slots with logical FIFO order and explicit head/size/capacity, modulo wrap.",
+    "alt": "A ring buffer of capacity five has head 3 and size 3, storing 41 at index 3, 52 at 4, and 63 at 0. Enqueue 74 writes index (3+3) modulo 5 = 1, and size becomes 4. Logical order is 41, 52, 63, 74.",
+    "caption": "· = unused slot; head marks the next removal.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/ring-buffer-wraparound.svg",
+    "local_svg": "07-queues-and-deques/07-ring-enqueue/ring-buffer-wraparound.svg",
+    "canonical_editable": "assets/diagrams/ring-buffer-wraparound.excalidraw",
+    "local_editable": "07-queues-and-deques/07-ring-enqueue/ring-buffer-wraparound.excalidraw",
+    "computed_trace": {
+      "buffer": [
+        63,
+        74,
+        null,
+        41,
+        52
+      ],
+      "head": 3,
+      "size": 4,
+      "write_index": 1,
+      "fifo": [
+        41,
+        52,
+        63,
+        74
+      ]
+    },
+    "svg_sha256": "48d3ff3f3cc951c5f7d11992b1bfe536f197dd630e50d0f7b558f95c1d469fb7"
+  },
+  {
+    "lesson": "07-queues-and-deques/10-sliding-window-maximum",
+    "file": "monotonic-deque-window.svg",
+    "editable": "monotonic-deque-window.excalidraw",
+    "brief": "Small window advance, expired indices removed at front, weaker values at back, max remains front.",
+    "alt": "For values 9, 4, 6, 7 and window size 3, the first window has candidate indices 0 and 2. Advancing the window expires index 0 from the front. Incoming 7 removes weaker 6 at index 2 from the back. Append index 3, which is the new maximum.",
+    "caption": "Cells read index:value; remove ties from back too.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/monotonic-deque-window.svg",
+    "local_svg": "07-queues-and-deques/10-sliding-window-maximum/monotonic-deque-window.svg",
+    "canonical_editable": "assets/diagrams/monotonic-deque-window.excalidraw",
+    "local_editable": "07-queues-and-deques/10-sliding-window-maximum/monotonic-deque-window.excalidraw",
+    "computed_trace": {
+      "values": [
+        9,
+        4,
+        6,
+        7
+      ],
+      "width": 3,
+      "trace": [
+        {
+          "i": 0,
+          "expired": [],
+          "weaker": [],
+          "deque": [
+            0
+          ]
+        },
+        {
+          "i": 1,
+          "expired": [],
+          "weaker": [],
+          "deque": [
+            0,
+            1
+          ]
+        },
+        {
+          "i": 2,
+          "expired": [],
+          "weaker": [
+            1
+          ],
+          "deque": [
+            0,
+            2
+          ]
+        },
+        {
+          "i": 3,
+          "expired": [
+            0
+          ],
+          "weaker": [
+            2
+          ],
+          "deque": [
+            3
+          ]
+        }
+      ]
+    },
+    "svg_sha256": "fc8b6dc156d4f9cb354bb761a86ce578409c5e09261b56105e97b3b0f0df259e"
+  },
+  {
+    "lesson": "08-hash-tables/02-collision-buckets",
+    "file": "hash-collision-chains.svg",
+    "editable": "hash-collision-chains.excalidraw",
+    "brief": "Different string keys map to one bucket but remain distinct entries; simple specified illustrative hash.",
+    "alt": "Using sum of Unicode code points modulo four, keys ab and ba both hash to bucket 3. The bucket keeps separate entries ab:12 and ba:90; equality checks distinguish them.",
+    "caption": "Illustrative hash only; not Python’s string hash.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/hash-collision-chains.svg",
+    "local_svg": "08-hash-tables/02-collision-buckets/hash-collision-chains.svg",
+    "canonical_editable": "assets/diagrams/hash-collision-chains.excalidraw",
+    "local_editable": "08-hash-tables/02-collision-buckets/hash-collision-chains.excalidraw",
+    "computed_trace": {
+      "buckets": {
+        "ab": 3,
+        "ba": 3
+      },
+      "entries": [
+        [
+          "ab",
+          12
+        ],
+        [
+          "ba",
+          90
+        ]
+      ]
+    },
+    "svg_sha256": "944116670ca584ed3b7c20351f903f81d48cbf43f72a5448a1ccd47f2990160c"
+  },
+  {
+    "lesson": "08-hash-tables/11-tombstone-deletion",
+    "file": "probing-tombstone-search.svg",
+    "editable": "probing-tombstone-search.excalidraw",
+    "brief": "Deleted slot vs never-used slot; trace continuing lookup through tombstone to colliding key.",
+    "alt": "With capacity five, linear probing, and integer hash k modulo five, keys 7, 12, and 17 occupy slots 2, 3, and 4. Deleting 12 leaves a tombstone in slot 3. Lookup of 17 checks 2, continues through 3, and matches 4. A miss for 22 continues to never-used slot 0 and stops.",
+    "caption": "Empty means never used; DEL means deleted.",
+    "context_suggestion": "Place after introducing the representation and before the implementation task. Treat the labeled illustrative data as a separate worked trace, not as exercise expected output.",
+    "canonical_svg": "assets/diagrams/probing-tombstone-search.svg",
+    "local_svg": "08-hash-tables/11-tombstone-deletion/probing-tombstone-search.svg",
+    "canonical_editable": "assets/diagrams/probing-tombstone-search.excalidraw",
+    "local_editable": "08-hash-tables/11-tombstone-deletion/probing-tombstone-search.excalidraw",
+    "computed_trace": {
+      "buffer": [
+        null,
+        null,
+        7,
+        "DEL",
+        17
+      ],
+      "find17": {
+        "visited": [
+          2,
+          3,
+          4
+        ],
+        "found": true
+      },
+      "find22": {
+        "visited": [
+          2,
+          3,
+          4,
+          0
+        ],
+        "found": false
+      }
+    },
+    "svg_sha256": "307be8da13e17a6c0e15ed5056546f1413772b6d4c54257079a98cc6ba76b159"
+  }
+]

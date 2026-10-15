@@ -1,0 +1,1699 @@
+{
+  "scope": "All 35 ADDITIONAL diagram-plan entries for modules 06\u201310; initial plan untouched",
+  "libraryVersion": "0.18.1",
+  "browser": "156.0.8078.4",
+  "externalRequestsBlocked": true,
+  "canonicalSvgCount": 35,
+  "canonicalExcalidrawCount": 35,
+  "lessonLocalSvgCount": 35,
+  "lessonLocalExcalidrawCount": 35,
+  "totalArtifactCount": 140,
+  "evidenceDirectory": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-extra-06-10/evidence",
+  "errors": [],
+  "geometryFailures": [],
+  "visualReview": "All 35 canonical renders at native 500px, all 35 actual native SVG exports, and all 35 mounted-editor screenshots inspected through 14 contact sheets. No clipped labels, text collisions, connector crossings or hidden titles found.",
+  "limitations": [
+    "Native Arial text has no bold weight; source SVG is retained unchanged.",
+    "Cells intentionally smaller than general architecture-card guidelines: short numeric/node labels remain at 16px at native 500px SVG width.",
+    "Non-elbow arrows support native endpoint bindings; complex bends may need manual adjustment after large moves."
+  ],
+  "diagrams": [
+    {
+      "file": "stacks-stack-state-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 17,
+      "text": 13,
+      "rectangles": 4,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 13,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "stacks-stack-state-trace-original.png",
+        "editor": "stacks-stack-state-trace-editor.png",
+        "export": "stacks-stack-state-trace-export.svg",
+        "editedExport": "stacks-stack-state-trace-edited.svg",
+        "editedReimport": "stacks-stack-state-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "stacks-push-item-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 28,
+      "text": 21,
+      "rectangles": 7,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 21,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "stacks-push-item-trace-original.png",
+        "editor": "stacks-push-item-trace-editor.png",
+        "export": "stacks-push-item-trace-export.svg",
+        "editedExport": "stacks-push-item-trace-edited.svg",
+        "editedReimport": "stacks-push-item-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "stacks-peek-item-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 30,
+      "text": 22,
+      "rectangles": 8,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 22,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "stacks-peek-item-trace-original.png",
+        "editor": "stacks-peek-item-trace-editor.png",
+        "export": "stacks-peek-item-trace-export.svg",
+        "editedExport": "stacks-peek-item-trace-edited.svg",
+        "editedReimport": "stacks-peek-item-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "stacks-postfix-evaluation-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 35,
+      "text": 27,
+      "rectangles": 8,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 670,
+        "textCount": 27,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "stacks-postfix-evaluation-trace-original.png",
+        "editor": "stacks-postfix-evaluation-trace-editor.png",
+        "export": "stacks-postfix-evaluation-trace-export.svg",
+        "editedExport": "stacks-postfix-evaluation-trace-edited.svg",
+        "editedReimport": "stacks-postfix-evaluation-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "stacks-undo-history-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 25,
+      "text": 19,
+      "rectangles": 6,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 558,
+        "textCount": 19,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "stacks-undo-history-trace-original.png",
+        "editor": "stacks-undo-history-trace-editor.png",
+        "export": "stacks-undo-history-trace-export.svg",
+        "editedExport": "stacks-undo-history-trace-edited.svg",
+        "editedReimport": "stacks-undo-history-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "stacks-minimum-stack-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 37,
+      "text": 27,
+      "rectangles": 10,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 27,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "stacks-minimum-stack-trace-original.png",
+        "editor": "stacks-minimum-stack-trace-editor.png",
+        "export": "stacks-minimum-stack-trace-export.svg",
+        "editedExport": "stacks-minimum-stack-trace-edited.svg",
+        "editedReimport": "stacks-minimum-stack-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "queues-and-deques-linked-queue-state-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 16,
+      "text": 12,
+      "rectangles": 4,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 12,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "queues-and-deques-linked-queue-state-trace-original.png",
+        "editor": "queues-and-deques-linked-queue-state-trace-editor.png",
+        "export": "queues-and-deques-linked-queue-state-trace-export.svg",
+        "editedExport": "queues-and-deques-linked-queue-state-trace-edited.svg",
+        "editedReimport": "queues-and-deques-linked-queue-state-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "queues-and-deques-enqueue-item-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 26,
+      "text": 17,
+      "rectangles": 7,
+      "arrows": 2,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 4,
+      "geometry": {
+        "width": 500,
+        "height": 558,
+        "textCount": 17,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "queues-and-deques-enqueue-item-trace-original.png",
+        "editor": "queues-and-deques-enqueue-item-trace-editor.png",
+        "export": "queues-and-deques-enqueue-item-trace-export.svg",
+        "editedExport": "queues-and-deques-enqueue-item-trace-edited.svg",
+        "editedReimport": "queues-and-deques-enqueue-item-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "queues-and-deques-peek-queue-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 22,
+      "text": 14,
+      "rectangles": 6,
+      "arrows": 2,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 4,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 14,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "queues-and-deques-peek-queue-trace-original.png",
+        "editor": "queues-and-deques-peek-queue-trace-editor.png",
+        "export": "queues-and-deques-peek-queue-trace-export.svg",
+        "editedExport": "queues-and-deques-peek-queue-trace-edited.svg",
+        "editedReimport": "queues-and-deques-peek-queue-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "queues-and-deques-deque-basics-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 41,
+      "text": 31,
+      "rectangles": 10,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 670,
+        "textCount": 31,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "queues-and-deques-deque-basics-trace-original.png",
+        "editor": "queues-and-deques-deque-basics-trace-editor.png",
+        "export": "queues-and-deques-deque-basics-trace-export.svg",
+        "editedExport": "queues-and-deques-deque-basics-trace-edited.svg",
+        "editedReimport": "queues-and-deques-deque-basics-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "queues-and-deques-ring-buffer-state-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 49,
+      "text": 35,
+      "rectangles": 14,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 35,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "queues-and-deques-ring-buffer-state-trace-original.png",
+        "editor": "queues-and-deques-ring-buffer-state-trace-editor.png",
+        "export": "queues-and-deques-ring-buffer-state-trace-export.svg",
+        "editedExport": "queues-and-deques-ring-buffer-state-trace-edited.svg",
+        "editedReimport": "queues-and-deques-ring-buffer-state-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "queues-and-deques-ring-dequeue-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 46,
+      "text": 33,
+      "rectangles": 13,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 33,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "queues-and-deques-ring-dequeue-trace-original.png",
+        "editor": "queues-and-deques-ring-dequeue-trace-editor.png",
+        "export": "queues-and-deques-ring-dequeue-trace-export.svg",
+        "editedExport": "queues-and-deques-ring-dequeue-trace-edited.svg",
+        "editedReimport": "queues-and-deques-ring-dequeue-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "queues-and-deques-round-robin-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 29,
+      "text": 22,
+      "rectangles": 7,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 558,
+        "textCount": 22,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "queues-and-deques-round-robin-trace-original.png",
+        "editor": "queues-and-deques-round-robin-trace-editor.png",
+        "export": "queues-and-deques-round-robin-trace-export.svg",
+        "editedExport": "queues-and-deques-round-robin-trace-edited.svg",
+        "editedReimport": "queues-and-deques-round-robin-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "hash-tables-hash-to-bucket-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 16,
+      "text": 12,
+      "rectangles": 4,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 12,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "hash-tables-hash-to-bucket-trace-original.png",
+        "editor": "hash-tables-hash-to-bucket-trace-editor.png",
+        "export": "hash-tables-hash-to-bucket-trace-export.svg",
+        "editedExport": "hash-tables-hash-to-bucket-trace-edited.svg",
+        "editedReimport": "hash-tables-hash-to-bucket-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "hash-tables-table-state-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 46,
+      "text": 33,
+      "rectangles": 13,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 33,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "hash-tables-table-state-trace-original.png",
+        "editor": "hash-tables-table-state-trace-editor.png",
+        "export": "hash-tables-table-state-trace-export.svg",
+        "editedExport": "hash-tables-table-state-trace-edited.svg",
+        "editedReimport": "hash-tables-table-state-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "hash-tables-insert-or-update-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 20,
+      "text": 14,
+      "rectangles": 6,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 14,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "hash-tables-insert-or-update-trace-original.png",
+        "editor": "hash-tables-insert-or-update-trace-editor.png",
+        "export": "hash-tables-insert-or-update-trace-export.svg",
+        "editedExport": "hash-tables-insert-or-update-trace-edited.svg",
+        "editedReimport": "hash-tables-insert-or-update-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "hash-tables-lookup-key-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 20,
+      "text": 14,
+      "rectangles": 6,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 14,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "hash-tables-lookup-key-trace-original.png",
+        "editor": "hash-tables-lookup-key-trace-editor.png",
+        "export": "hash-tables-lookup-key-trace-export.svg",
+        "editedExport": "hash-tables-lookup-key-trace-edited.svg",
+        "editedReimport": "hash-tables-lookup-key-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "hash-tables-delete-key-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 31,
+      "text": 23,
+      "rectangles": 8,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 23,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "hash-tables-delete-key-trace-original.png",
+        "editor": "hash-tables-delete-key-trace-editor.png",
+        "export": "hash-tables-delete-key-trace-export.svg",
+        "editedExport": "hash-tables-delete-key-trace-edited.svg",
+        "editedReimport": "hash-tables-delete-key-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "hash-tables-load-factor-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 34,
+      "text": 23,
+      "rectangles": 11,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 23,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "hash-tables-load-factor-trace-original.png",
+        "editor": "hash-tables-load-factor-trace-editor.png",
+        "export": "hash-tables-load-factor-trace-export.svg",
+        "editedExport": "hash-tables-load-factor-trace-edited.svg",
+        "editedReimport": "hash-tables-load-factor-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "hash-tables-rehash-table-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 30,
+      "text": 20,
+      "rectangles": 10,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 558,
+        "textCount": 20,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "hash-tables-rehash-table-trace-original.png",
+        "editor": "hash-tables-rehash-table-trace-editor.png",
+        "export": "hash-tables-rehash-table-trace-export.svg",
+        "editedExport": "hash-tables-rehash-table-trace-edited.svg",
+        "editedReimport": "hash-tables-rehash-table-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "hash-tables-linear-probing-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 46,
+      "text": 33,
+      "rectangles": 13,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 33,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "hash-tables-linear-probing-trace-original.png",
+        "editor": "hash-tables-linear-probing-trace-editor.png",
+        "export": "hash-tables-linear-probing-trace-export.svg",
+        "editedExport": "hash-tables-linear-probing-trace-edited.svg",
+        "editedReimport": "hash-tables-linear-probing-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "searching-linear-search-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 46,
+      "text": 33,
+      "rectangles": 13,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 33,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "searching-linear-search-trace-original.png",
+        "editor": "searching-linear-search-trace-editor.png",
+        "export": "searching-linear-search-trace-export.svg",
+        "editedExport": "searching-linear-search-trace-edited.svg",
+        "editedReimport": "searching-linear-search-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "searching-binary-search-loop-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 64,
+      "text": 45,
+      "rectangles": 19,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 45,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "searching-binary-search-loop-trace-original.png",
+        "editor": "searching-binary-search-loop-trace-editor.png",
+        "export": "searching-binary-search-loop-trace-export.svg",
+        "editedExport": "searching-binary-search-loop-trace-edited.svg",
+        "editedReimport": "searching-binary-search-loop-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "searching-binary-search-boundaries-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 55,
+      "text": 39,
+      "rectangles": 16,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 39,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "searching-binary-search-boundaries-trace-original.png",
+        "editor": "searching-binary-search-boundaries-trace-editor.png",
+        "export": "searching-binary-search-boundaries-trace-export.svg",
+        "editedExport": "searching-binary-search-boundaries-trace-edited.svg",
+        "editedReimport": "searching-binary-search-boundaries-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "searching-upper-bound-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 72,
+      "text": 51,
+      "rectangles": 21,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 558,
+        "textCount": 51,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "searching-upper-bound-trace-original.png",
+        "editor": "searching-upper-bound-trace-editor.png",
+        "export": "searching-upper-bound-trace-export.svg",
+        "editedExport": "searching-upper-bound-trace-edited.svg",
+        "editedReimport": "searching-upper-bound-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "searching-sorted-insertion-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 69,
+      "text": 49,
+      "rectangles": 20,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 558,
+        "textCount": 49,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "searching-sorted-insertion-trace-original.png",
+        "editor": "searching-sorted-insertion-trace-editor.png",
+        "export": "searching-sorted-insertion-trace-export.svg",
+        "editedExport": "searching-sorted-insertion-trace-edited.svg",
+        "editedReimport": "searching-sorted-insertion-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "sorting-swap-adjacent-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 37,
+      "text": 27,
+      "rectangles": 10,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 446,
+        "textCount": 27,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "sorting-swap-adjacent-trace-original.png",
+        "editor": "sorting-swap-adjacent-trace-editor.png",
+        "export": "sorting-swap-adjacent-trace-export.svg",
+        "editedExport": "sorting-swap-adjacent-trace-edited.svg",
+        "editedReimport": "sorting-swap-adjacent-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "sorting-bubble-pass-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 60,
+      "text": 43,
+      "rectangles": 17,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 558,
+        "textCount": 43,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "sorting-bubble-pass-trace-original.png",
+        "editor": "sorting-bubble-pass-trace-editor.png",
+        "export": "sorting-bubble-pass-trace-export.svg",
+        "editedExport": "sorting-bubble-pass-trace-edited.svg",
+        "editedReimport": "sorting-bubble-pass-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "sorting-bubble-sort-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 60,
+      "text": 43,
+      "rectangles": 17,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 558,
+        "textCount": 43,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "sorting-bubble-sort-trace-original.png",
+        "editor": "sorting-bubble-sort-trace-editor.png",
+        "export": "sorting-bubble-sort-trace-export.svg",
+        "editedExport": "sorting-bubble-sort-trace-edited.svg",
+        "editedReimport": "sorting-bubble-sort-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "sorting-select-minimum-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 60,
+      "text": 43,
+      "rectangles": 17,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 558,
+        "textCount": 43,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "sorting-select-minimum-trace-original.png",
+        "editor": "sorting-select-minimum-trace-editor.png",
+        "export": "sorting-select-minimum-trace-export.svg",
+        "editedExport": "sorting-select-minimum-trace-edited.svg",
+        "editedReimport": "sorting-select-minimum-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "sorting-selection-sort-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 60,
+      "text": 43,
+      "rectangles": 17,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 558,
+        "textCount": 43,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "sorting-selection-sort-trace-original.png",
+        "editor": "sorting-selection-sort-trace-editor.png",
+        "export": "sorting-selection-sort-trace-export.svg",
+        "editedExport": "sorting-selection-sort-trace-edited.svg",
+        "editedReimport": "sorting-selection-sort-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "sorting-insertion-step-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 60,
+      "text": 43,
+      "rectangles": 17,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 558,
+        "textCount": 43,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "sorting-insertion-step-trace-original.png",
+        "editor": "sorting-insertion-step-trace-editor.png",
+        "export": "sorting-insertion-step-trace-export.svg",
+        "editedExport": "sorting-insertion-step-trace-edited.svg",
+        "editedReimport": "sorting-insertion-step-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "sorting-insertion-sort-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 60,
+      "text": 43,
+      "rectangles": 17,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 558,
+        "textCount": 43,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "sorting-insertion-sort-trace-original.png",
+        "editor": "sorting-insertion-sort-trace-editor.png",
+        "export": "sorting-insertion-sort-trace-export.svg",
+        "editedExport": "sorting-insertion-sort-trace-edited.svg",
+        "editedReimport": "sorting-insertion-sort-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "sorting-merge-sort-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 60,
+      "text": 43,
+      "rectangles": 17,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 558,
+        "textCount": 43,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "sorting-merge-sort-trace-original.png",
+        "editor": "sorting-merge-sort-trace-editor.png",
+        "export": "sorting-merge-sort-trace-export.svg",
+        "editedExport": "sorting-merge-sort-trace-edited.svg",
+        "editedReimport": "sorting-merge-sort-trace-edited.excalidraw"
+      }
+    },
+    {
+      "file": "sorting-quicksort-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 66,
+      "text": 47,
+      "rectangles": 19,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 558,
+        "textCount": 47,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "sorting-quicksort-trace-original.png",
+        "editor": "sorting-quicksort-trace-editor.png",
+        "export": "sorting-quicksort-trace-export.svg",
+        "editedExport": "sorting-quicksort-trace-edited.svg",
+        "editedReimport": "sorting-quicksort-trace-edited.excalidraw"
+      }
+    }
+  ],
+  "exactPlanCoverage": true,
+  "artifactHashes": [
+    {
+      "file": "stacks-stack-state-trace.svg",
+      "svg_sha256": "270ec75549ab4494471ef47ef5b18585a8a5378bf01de976d25153fc2f0180eb",
+      "editable_sha256": "d5b8e91bbf982fe5167467876ac85a671bfed6ca82f59e04935986aea3ee467b"
+    },
+    {
+      "file": "stacks-push-item-trace.svg",
+      "svg_sha256": "6f37bb8925d1c73b28e9c395fa9583dab7378e24f30d057b1257cfadcd80fb30",
+      "editable_sha256": "f8b122efafe7d1f800f84eadaff0159589755435bf410d7a75c8eac669e1606f"
+    },
+    {
+      "file": "stacks-peek-item-trace.svg",
+      "svg_sha256": "61c2a94fa253f003ee7bb6a90fbe78634ac2df6243aab812799557124086f976",
+      "editable_sha256": "a2af9044b25edea194c375743cc4ae57d0c85580562c9fa2a0b6bedc523ed3b2"
+    },
+    {
+      "file": "stacks-postfix-evaluation-trace.svg",
+      "svg_sha256": "4e6026eb04d6718053c48ac0daf9a655a1875e81e25d04dd241f3d8000fab49b",
+      "editable_sha256": "990fcddd5d61a7c0d5ad681cf4b721e0a38c745d74e75cc1ab60edcef3b136e7"
+    },
+    {
+      "file": "stacks-undo-history-trace.svg",
+      "svg_sha256": "95b335f107aa2bde258eecb5d03310e42f98a3796ed319c3c820eebc25ef9dc9",
+      "editable_sha256": "fa61d37671a38660e78b6d168d7fd907adaa47698c9dd7673336aea0a59f2ad3"
+    },
+    {
+      "file": "stacks-minimum-stack-trace.svg",
+      "svg_sha256": "9459e5a60d58b0d3270632529bee7c1a103e8af08d1994c9507344852b614dbc",
+      "editable_sha256": "47a78553510f18461109ef8af0be94161ddb80264b576e7e5366a2da0aa860c1"
+    },
+    {
+      "file": "queues-and-deques-linked-queue-state-trace.svg",
+      "svg_sha256": "d24fb41f39995317ed1ed24055aea62767b4b85f536189d8d7ed1c5aac626a5c",
+      "editable_sha256": "5cf9d50fb4fd6cf341257f86a0c896fdbdb05fad5c743a713de544b7f0485faa"
+    },
+    {
+      "file": "queues-and-deques-enqueue-item-trace.svg",
+      "svg_sha256": "bb3de33433e39811d5b402bfdae22b2af8af759e450d9d4a853baa48391c6325",
+      "editable_sha256": "ca6740ce7384961e51332c409a14727ad88243664db9021223dfd72293379b13"
+    },
+    {
+      "file": "queues-and-deques-peek-queue-trace.svg",
+      "svg_sha256": "b4ba40301909ac6d7c6f2f69aee8cd4db4219af39d80e2e55f9800320c6a257b",
+      "editable_sha256": "206cf1f515b00467b35cb0df3f986faf05d187b69f900f6d5e390d8c2f80907a"
+    },
+    {
+      "file": "queues-and-deques-deque-basics-trace.svg",
+      "svg_sha256": "8c200528462d153de7d82c55f7505c892bb7a13289fe106571bf5d4654fd6320",
+      "editable_sha256": "baf751ddf8a8e815d670765a84c64b3e9229f74b55c11dd4c575fe304efe1d47"
+    },
+    {
+      "file": "queues-and-deques-ring-buffer-state-trace.svg",
+      "svg_sha256": "75e22a083ee28fc1d1a28b774d9d9d2479f3a22759cd42658dfc0bd6f1b0cfb0",
+      "editable_sha256": "8997d3f9195f728e9a0d0433e9980303ad5b00e9e2e2bde25510e440671022a5"
+    },
+    {
+      "file": "queues-and-deques-ring-dequeue-trace.svg",
+      "svg_sha256": "726cf509dc3521f0f385d0221268e1592b9f75d02b44db65b3df9651ada37089",
+      "editable_sha256": "7b2add28bbba841c7b83a214fa51609841cb8da9db69d138712f47a98142cbc8"
+    },
+    {
+      "file": "queues-and-deques-round-robin-trace.svg",
+      "svg_sha256": "59681b0bec286159c8ec2fe00b86eeec1df2a007d73c214a6fcf3efa24bbce29",
+      "editable_sha256": "9b0645168b96f30c4e725e7af43c357cbfa94e6fa11416e184714c5802b4f9de"
+    },
+    {
+      "file": "hash-tables-hash-to-bucket-trace.svg",
+      "svg_sha256": "3cabe89cb6a2a3ec351f211c468bc2ccfebd776bd4ed0f616710d9442c5666d0",
+      "editable_sha256": "299539dc7e44252108808c76db2fe117e5eaba70300cd0a6d1cda1cfe2dd8726"
+    },
+    {
+      "file": "hash-tables-table-state-trace.svg",
+      "svg_sha256": "25ddc49c384e42e2cdd410732e35238b8859193e526e6b988ad5143f53bcbb71",
+      "editable_sha256": "e44c361ce4c900a2abc18d982427226b44be4e73c43e7446f92e1df18ead4ef5"
+    },
+    {
+      "file": "hash-tables-insert-or-update-trace.svg",
+      "svg_sha256": "5220caae3e816961b4571c79d5c81e829ecf4ee4402e4e507396d98280b29947",
+      "editable_sha256": "acb67deaadc77fdc22eef7e92d4c1b91dd4ba30d41521596035393e336381941"
+    },
+    {
+      "file": "hash-tables-lookup-key-trace.svg",
+      "svg_sha256": "362842920ca6116222d839f87d686d61a04c5fe8e7040d52875210dda4bb2667",
+      "editable_sha256": "cc0c7898049884abd09a1791ad242f19a0ad587752e0911ee2c6635829ffb9a4"
+    },
+    {
+      "file": "hash-tables-delete-key-trace.svg",
+      "svg_sha256": "ce0ee50fd5ef9f4954c317acbfced9e0b0d94baca11f78fcdf98f340b75a5c30",
+      "editable_sha256": "51fcf40bc44f1467d0f72d7fa1b407b20926f6a9c219db98523dc89e7ffc7675"
+    },
+    {
+      "file": "hash-tables-load-factor-trace.svg",
+      "svg_sha256": "943b77fe03bf27b93f432785eba847b01c2792e06f96285328f3ff8c9ce30feb",
+      "editable_sha256": "d3c32a477101b54d043e30bd98806e4fa0fe40bc66f8f5d120f52bd3e733a6c6"
+    },
+    {
+      "file": "hash-tables-rehash-table-trace.svg",
+      "svg_sha256": "59a599516d51f4404751f08513b7592c05445671c23503b231841dba14c1f8ef",
+      "editable_sha256": "6c35ebf7f71e60cabd432028b559412ba6dc0fe3473a7b0906e14e9118a3e1de"
+    },
+    {
+      "file": "hash-tables-linear-probing-trace.svg",
+      "svg_sha256": "3e0444276153d4c8e01cbc39f949363c8784771aff2426d56ac88f9aeaa2ae01",
+      "editable_sha256": "d397a6034d90a988ec80b116d1f5de0a6b87495b8223ea9f961c48bedd032f8d"
+    },
+    {
+      "file": "searching-linear-search-trace.svg",
+      "svg_sha256": "a76570fc6f96ff9b0628956fa69cd97cc4fbec44976413d7b0e400ffaa547192",
+      "editable_sha256": "08100b972328263f88120c7f92347d1b454bcfc889f4955c9b694109ebe2b9e8"
+    },
+    {
+      "file": "searching-binary-search-loop-trace.svg",
+      "svg_sha256": "69130743fb94cbb7ecd36737010069297daeb5975cd17dfafb0c16cc4d2c2b06",
+      "editable_sha256": "f21d35fd30736eafabc2483156833e7e046320b2ce1f9ca3492f5651523f6ca3"
+    },
+    {
+      "file": "searching-binary-search-boundaries-trace.svg",
+      "svg_sha256": "97feddc6d9a6dd4bb1ac5d5fcac639d6c60d0c4098d8293929dfa6fb58630c3f",
+      "editable_sha256": "09cbf2b09a7d362520f9831a2ee5ff0c2926c68e1890914bf9595100deb902e6"
+    },
+    {
+      "file": "searching-upper-bound-trace.svg",
+      "svg_sha256": "54352f6d8943b956d0579a5d96154f6fa4bbdaf1afa3a376735bb32280953296",
+      "editable_sha256": "bb8c6bdb54a84c2e83cda3ca1880e3e5d4b89feba8e29b80fd271d3bc4635808"
+    },
+    {
+      "file": "searching-sorted-insertion-trace.svg",
+      "svg_sha256": "d31692a2ee4546a50ae5593cecdb22ef034e5fc95dd7399fc683bdd3b9098f34",
+      "editable_sha256": "ce6c481e00249aa76d23c4905f5e58f04d02fbd0ef02a3e0f301dbb9a5a45400"
+    },
+    {
+      "file": "sorting-swap-adjacent-trace.svg",
+      "svg_sha256": "61590ce7e99329f50ad122985de85b107b9f3d792ff2956a5c8e322114804196",
+      "editable_sha256": "0f0bb430cdb23480bd51392f5ec84c1c7c6532fdc0cd3a529c3bf6df95490651"
+    },
+    {
+      "file": "sorting-bubble-pass-trace.svg",
+      "svg_sha256": "9eb92d7f58e0c66c5906907162a8967ece4abd47fd62823fbaa81894788666bd",
+      "editable_sha256": "ec2d527546fc0d43a0c2be6b3ca733c7e68544056ea3b39ebf471b8ce38fc31d"
+    },
+    {
+      "file": "sorting-bubble-sort-trace.svg",
+      "svg_sha256": "8b215c3abae1961608e6ebfcf850788fe173d7750a6bd7844a1c56e7563a09bb",
+      "editable_sha256": "de80dcad1fa92782744306e97c5faf94febe87d3729c0ac0fa32b244b2f18b8c"
+    },
+    {
+      "file": "sorting-select-minimum-trace.svg",
+      "svg_sha256": "208414d69f00fd3eead22e1f7f0814558d3628fc5332557df95017aa5104b960",
+      "editable_sha256": "a4f7bb8a03ad745168b9dacca0929e00a4908439295d8923bfbcd876f8ff76a4"
+    },
+    {
+      "file": "sorting-selection-sort-trace.svg",
+      "svg_sha256": "be54d575e16ecdba04373bffb7beb4eb08356f71308e1c430d3268db23fecfa2",
+      "editable_sha256": "283d7b0c3a0ff0292c14b7ddab4b8ba353bccbc238e8d5b7a3e301c2c0c549bc"
+    },
+    {
+      "file": "sorting-insertion-step-trace.svg",
+      "svg_sha256": "db336ae883a1d44c6bf3a10b9f9ce18d99a0b2921a6283af4bc4a2a8645fe350",
+      "editable_sha256": "0011ae2ed244bcb754216b340e9282f97ea646b4800bc448d98f8f6e836f9ac1"
+    },
+    {
+      "file": "sorting-insertion-sort-trace.svg",
+      "svg_sha256": "d45e8e0749bad118fed95e55c333755977e8115c8b67782bb60dd5edccd71ab5",
+      "editable_sha256": "bf17da9697f3f189e2f784ee612f395f503b8f309855f478a0143f4f0cb007cb"
+    },
+    {
+      "file": "sorting-merge-sort-trace.svg",
+      "svg_sha256": "2532552dac51813db4dbdff61437646da7058b281f1c9592604dd55ed387fac8",
+      "editable_sha256": "7e5b6d02cfd8baadd51e3ec2bab1fd546b46794ba40dee004be2d5de308474a0"
+    },
+    {
+      "file": "sorting-quicksort-trace.svg",
+      "svg_sha256": "c6fe0c43af88134a2bcf7cc5f587350ab12aa31b68386b10fb3d9de09e871230",
+      "editable_sha256": "c2caeb0b8b0557ffb1743c3ee0001d3edde23fba60a5e6e35444cb9ba7e62ebe"
+    }
+  ],
+  "traceEvidence": "assets/diagrams/traces-extra-06-10.json",
+  "contactSheets": [
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-extra-06-10/evidence/contact-original-native-01.png",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-extra-06-10/evidence/contact-editors-01.png",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-extra-06-10/evidence/contact-original-native-02.png",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-extra-06-10/evidence/contact-editors-02.png",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-extra-06-10/evidence/contact-original-native-03.png",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-extra-06-10/evidence/contact-editors-03.png",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-extra-06-10/evidence/contact-original-native-04.png",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-extra-06-10/evidence/contact-editors-04.png",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-extra-06-10/evidence/contact-original-native-05.png",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-extra-06-10/evidence/contact-editors-05.png",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-extra-06-10/evidence/contact-original-native-06.png",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-extra-06-10/evidence/contact-editors-06.png",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-extra-06-10/evidence/contact-original-native-07.png",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-extra-06-10/evidence/contact-editors-07.png"
+  ],
+  "originalExamples": true,
+  "lessonContractAbsentAtGeneration": [
+    "10-sorting/01-swap-adjacent",
+    "10-sorting/02-bubble-pass",
+    "10-sorting/03-bubble-sort",
+    "10-sorting/04-select-minimum",
+    "10-sorting/05-selection-sort",
+    "10-sorting/06-insertion-step",
+    "10-sorting/07-insertion-sort",
+    "10-sorting/09-merge-sort",
+    "10-sorting/11-quicksort"
+  ]
+}

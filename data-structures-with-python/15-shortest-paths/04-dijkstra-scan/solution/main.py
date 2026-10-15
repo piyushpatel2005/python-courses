@@ -1,0 +1,104 @@
+from __future__ import annotations
+from collections.abc import Iterable, Iterator
+from collections import deque
+import heapq
+from math import inf
+
+class WeightedGraph:
+    def __init__(self, vertices: Iterable[str] = ()) -> None:
+        self.adj: dict[str, list[tuple[str, int]]] = {v: [] for v in vertices}
+
+    def add_edge(self, source: str, target: str, weight: int) -> bool:
+        if source not in self.adj or target not in self.adj:
+            raise KeyError("Unknown endpoint")
+        if type(weight) is not int or weight < 0:
+            raise ValueError("Weight must be a nonnegative integer")
+        if any(neighbor == target for neighbor, _ in self.adj[source]):
+            return False
+        self.adj[source].append((target, weight))
+        return True
+        return None
+
+def validate_weighted(adj: dict[str, list[tuple[str, int]]]) -> None:
+    for source, edges in adj.items():
+        targets: set[str] = set()
+        for target, weight in edges:
+            if target not in adj:
+                raise KeyError(target)
+            if type(weight) is not int or weight < 0:
+                raise ValueError("Weight must be a nonnegative integer")
+            if target in targets:
+                raise ValueError("Parallel arcs are not supported")
+            targets.add(target)
+
+def edge_weight(adj: dict[str, list[tuple[str, int]]], source: str, target: str) -> int:
+    for neighbor, weight in adj[source]:
+        if neighbor == target:
+            return weight
+    raise KeyError((source, target))
+
+def path_cost(adj: dict[str, list[tuple[str, int]]], path: list[str]) -> int:
+    validate_weighted(adj)
+    for vertex in path:
+        if vertex not in adj:
+            raise KeyError(vertex)
+    total: int = 0
+    for source, target in zip(path, path[1:]):
+        total += edge_weight(adj, source, target)
+    return total
+
+def candidate_cost(distance: int | float, weight: int) -> int | float:
+    return distance + weight
+    return inf
+
+def relax(distances: dict[str, int | float], parents: dict[str, str | None], source: str, target: str, weight: int) -> bool:
+    candidate = candidate_cost(distances[source], weight)
+    if candidate >= distances[target]:
+        return False
+    distances[target] = candidate
+    parents[target] = source
+    return True
+
+def initial_distances(adj: dict[str, list[tuple[str, int]]], start: str) -> dict[str, int | float]:
+    # Task 1
+    distances: dict[str, int | float] = {v: inf for v in adj}
+    # End task 1
+    # Task 2
+    distances[start] = 0
+    # End task 2
+    return distances
+
+def smallest_unsettled(distances: dict[str, int | float], settled: set[str]) -> str | None:
+    best: str | None = None
+    best_distance: int | float = inf
+    for vertex, distance in distances.items():
+        # Task 3
+        if vertex not in settled and distance < best_distance:
+            best, best_distance = vertex, distance
+        # End task 3
+    return best
+
+def dijkstra_scan(adj: dict[str, list[tuple[str, int]]], start: str) -> tuple[dict[str, int | float], dict[str, str | None]]:
+    validate_weighted(adj)
+    if start not in adj:
+        raise KeyError(start)
+    distances = initial_distances(adj, start)
+    parents: dict[str, str | None] = {v: None for v in adj}
+    settled: set[str] = set()
+    while True:
+        vertex = smallest_unsettled(distances, settled)
+        if vertex is None:
+            break
+        settled.add(vertex)
+        # Task 4
+        for neighbor, weight in adj[vertex]:
+            relax(distances, parents, vertex, neighbor, weight)
+        # End task 4
+    return distances, parents
+
+
+if __name__ == "__main__":
+    try:
+        g = {"dock": [("yard", 8), ("desk", 2)], "yard": [], "desk": [("yard", 3)], "island": []}; print(dijkstra_scan(g, "dock"))
+    except (NotImplementedError, KeyError, TypeError, AttributeError, ValueError) as error:
+        print("Checkpoint not ready:", error)

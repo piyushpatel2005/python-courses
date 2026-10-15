@@ -1,0 +1,783 @@
+{
+  "scope": "modules 10–12, source/native only; browser explicitly excluded",
+  "reviewed": {
+    "ordered_lessons": 40,
+    "lesson_source_files": 160,
+    "quiz_questions": 12,
+    "tasks_and_test_functions": 86,
+    "lesson_diagrams_rendered_locally": 37,
+    "continuing_definition_edges_ast_unchanged": 28,
+    "continuing_next_solution_prior_tests_passed": 28,
+    "fresh_variation_edges": 9
+  },
+  "execution": {
+    "native_environment": "host CPython, isolated per-submission subprocess; not Pyodide or browser",
+    "starter_and_solution_probes": "40 starter and 40 solution main.py executions succeeded",
+    "cumulative_states": 126,
+    "expected_vectors": "all 126 exact true-prefix/false-suffix vectors passed",
+    "author_regressions": "40/40 passed",
+    "loader": "actual backend ContentLoader discovered all 40 in exact frozen order (12/14/14), 12 valid quiz answers, coding/pyodide tabs and hidden tests/solution bytes matched disk",
+    "svg": "37/37 referenced lesson-local SVGs parsed and produced local Quick Look thumbnails; select figures visually inspected; no browser display acceptance",
+    "preserved_artwork_sha256": "all prior SVG/Excalidraw hashes unchanged",
+    "failures": []
+  },
+  "changes": [
+    {
+      "path": "10-sorting/03-bubble-sort/test_main.py",
+      "before": "a0afa882824d16f81da31dd00ba633c75b9215cc883fb5dde33a44b10aa1efa6",
+      "after": "a54664399966b46219106fd928df97a0160686382f5bbaea251b876298cf63d0"
+    },
+    {
+      "path": "10-sorting/07-insertion-sort/test_main.py",
+      "before": "302566a9d6ec85e8bfbb0215a03818ace890442503baa31e6b131fd37e333881",
+      "after": "4aa13d8f6b90286f6ed5506dafdef1a52131419a1151bb098de90aed70cd205e"
+    },
+    {
+      "path": "10-sorting/09-merge-sort/test_main.py",
+      "before": "1f47e8d5c9c75968491efdae7e315c829d077ce02edee79e31603ca0939fda2e",
+      "after": "45c7b654d6a399674fdd2037cdbb5e1a87316cacb1c0fdc3b1bea62d2b57e306"
+    },
+    {
+      "path": "11-trees-and-bst/05-inorder-traversal/lesson.md",
+      "before": "ad8ce11e33b70c7803bc6386a26074e545233b84d5a2ba756221115aa2d2fd7b",
+      "after": "3c7a28847c9adf54e1ad1414258cb0b0fb781df4e1d9f96d4bbf9a1e327a0d9e"
+    }
+  ],
+  "remaining_issues": [
+    "Browser/Pyodide Submit, navigation, and rendered responsive SVG delivery intentionally not tested.",
+    "Some existing SVG descriptions use generic authoring text; art was preserved rather than rewritten."
+  ],
+  "lessons": [
+    {
+      "path": "10-sorting/01-swap-adjacent",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "5b5ad71638a698d754a35c13c7565293f17daca7c5b15c5f5f2a60065cec9955",
+        "main.py": "a65659c145aec34c530d6ee88fe5062fa11fb3cc0a084fa8c21a297fb0d7d469",
+        "test_main.py": "fdf0eedf5226e71d88e4ab6274771767ac88b9f6d63750d9895028cb7ff8eb0e",
+        "solution/main.py": "e20aaab8ff63622a4b0c72591dedf54d24b1c9635b752545c5ab3e9b71fec93a",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "10-sorting/01-swap-adjacent/sorting-swap-adjacent-trace.svg",
+          "sha256": "61590ce7e99329f50ad122985de85b107b9f3d792ff2956a5c8e322114804196"
+        }
+      ]
+    },
+    {
+      "path": "10-sorting/02-bubble-pass",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "5a3f87ab94f76ac5134ab0a2ebec696fa02ae010d70c02bb9bfdab3a5506d5eb",
+        "main.py": "66b82059e389f7f642174787f6dc4843100492f2b4297fc0cd13d2fde17787e4",
+        "test_main.py": "f234faa1a7344c8ea9644a745d36028b988c34f451cea52020d68b559b9aedcc",
+        "solution/main.py": "813cb7c84943daeba87e2c97c5ba5ebe76fa9039dcf2b321e182cc170bee6094",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "10-sorting/02-bubble-pass/sorting-bubble-pass-trace.svg",
+          "sha256": "9eb92d7f58e0c66c5906907162a8967ece4abd47fd62823fbaa81894788666bd"
+        }
+      ]
+    },
+    {
+      "path": "10-sorting/03-bubble-sort",
+      "tasks": 1,
+      "hashes_sha256": {
+        "lesson.md": "43e8b1b8950c3c4d82e1201f2d5f8f7c9a804b0feb7397a967d9bc8a049f6886",
+        "main.py": "000d2cc94aa4da9d8a9f6b9b25efb37ce06ae51ffb52959ab644d69327b0fdf2",
+        "test_main.py": "a54664399966b46219106fd928df97a0160686382f5bbaea251b876298cf63d0",
+        "solution/main.py": "707a2db2c13ee7016ced1d8acfe6e00e521d876cc5788e5386a21248e7cbe072",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "10-sorting/03-bubble-sort/sorting-bubble-sort-trace.svg",
+          "sha256": "8b215c3abae1961608e6ebfcf850788fe173d7750a6bd7844a1c56e7563a09bb"
+        }
+      ]
+    },
+    {
+      "path": "10-sorting/04-select-minimum",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "dd206b585fd72dfcf48aa79d977f417b0998724d8262add5a34f3d7b768f6ecb",
+        "main.py": "621ebbdf891eff376a68ebb53b8e3f739fb0035566b4d37049192a2731fa8a31",
+        "test_main.py": "00d4099f25c42dbbc22db2824d8d1b554ba701d9c69830e1ddc4b9e7c2082c36",
+        "solution/main.py": "ab32771d68863720a4e1e1112bd939c7ea85eb23aa06aa1e278276b9c39d5bb1",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "10-sorting/04-select-minimum/sorting-select-minimum-trace.svg",
+          "sha256": "208414d69f00fd3eead22e1f7f0814558d3628fc5332557df95017aa5104b960"
+        }
+      ]
+    },
+    {
+      "path": "10-sorting/05-selection-sort",
+      "tasks": 1,
+      "hashes_sha256": {
+        "lesson.md": "ea9822b2795214dae7b410bb31d6ee1aa0de0ee70b25a006e7fc232dfb6918ff",
+        "main.py": "201f173c07b726e46619c6c52635f50464da63adcf31e11d8cf3e2b2152ec533",
+        "test_main.py": "f1f82c881081096ce61627ac24a1c871dca6aa1208bda2480cb21551d40500fb",
+        "solution/main.py": "e4ca1b2cacf3c427b2a1ffaca974e9eac7d29cd84cd7d6e6396930e20abceb5f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "10-sorting/05-selection-sort/sorting-selection-sort-trace.svg",
+          "sha256": "be54d575e16ecdba04373bffb7beb4eb08356f71308e1c430d3268db23fecfa2"
+        }
+      ]
+    },
+    {
+      "path": "10-sorting/06-insertion-step",
+      "tasks": 3,
+      "hashes_sha256": {
+        "lesson.md": "547f71c514296af7b720ea5959675741ab79d5b88254ed61388ef516f369d44f",
+        "main.py": "d69e79e69f6e2cf132df9e7d06d218834bda384052aa0916c2b3c9f50971719e",
+        "test_main.py": "5d075c9cd6cc5c7d3ab13b7e4b4dd998a0b571cdbc24e97e887ddd9894be92d9",
+        "solution/main.py": "035caf83f198b5a6caa2e1cc0a970c25bd6d0821c06f7064f734a64c27a515c4",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "10-sorting/06-insertion-step/sorting-insertion-step-trace.svg",
+          "sha256": "db336ae883a1d44c6bf3a10b9f9ce18d99a0b2921a6283af4bc4a2a8645fe350"
+        }
+      ]
+    },
+    {
+      "path": "10-sorting/07-insertion-sort",
+      "tasks": 1,
+      "hashes_sha256": {
+        "lesson.md": "441915f27ced127dfe3287ae065716670bc17768243c81fbc284570aea029443",
+        "main.py": "32d7c678548c1b5d976770f0d3db627a5e20a1308cf850ee6ae0ab874e82ceea",
+        "test_main.py": "4aa13d8f6b90286f6ed5506dafdef1a52131419a1151bb098de90aed70cd205e",
+        "solution/main.py": "48ba7b66d1de00e5f00fbc4f7e99dc8b24d3a8f0374fa13e48ea3e97f29c03a7",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "10-sorting/07-insertion-sort/sorting-insertion-sort-trace.svg",
+          "sha256": "d45e8e0749bad118fed95e55c333755977e8115c8b67782bb60dd5edccd71ab5"
+        }
+      ]
+    },
+    {
+      "path": "10-sorting/08-merge-runs",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "d6bc4eab2a2110b62ffed212b7cc96b0a3786e6bd6608610dd8dd8e6ea4942f2",
+        "main.py": "bd08066bbf5395fccde046bfa45c2baea08f241decb0a5f702142625f097b4e2",
+        "test_main.py": "44aae417858f053d9b8cde73a3996472972753a28e26551a2c6a0a2e5147600d",
+        "solution/main.py": "2f06bdc4aeb43e8815e28142997ac380db8eedad61050c72d87b78fbcdd013f3",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "10-sorting/08-merge-runs/merge-two-sorted-runs.svg",
+          "sha256": "c24b10914973c1ac89c11d852b9b7301eb49e0de80c06840424062a895c1cbc8"
+        }
+      ]
+    },
+    {
+      "path": "10-sorting/09-merge-sort",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "1366ad8ff111221ad9579aa962c4206de471330b44d5139e3b21e49ad0c7d8b3",
+        "main.py": "41ec1a8ea5ef2008f2b8446e116088d3ba69a58f15132b3fc6f9c3996c6c409e",
+        "test_main.py": "45c7b654d6a399674fdd2037cdbb5e1a87316cacb1c0fdc3b1bea62d2b57e306",
+        "solution/main.py": "8ea0ca265557a95d437d4a34ef91c9ceddc6e6e99381d11c7e8c8d71d9082052",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "10-sorting/09-merge-sort/sorting-merge-sort-trace.svg",
+          "sha256": "2532552dac51813db4dbdff61437646da7058b281f1c9592604dd55ed387fac8"
+        }
+      ]
+    },
+    {
+      "path": "10-sorting/10-partition-around-pivot",
+      "tasks": 3,
+      "hashes_sha256": {
+        "lesson.md": "96dba17fc61b18afd49375bcc5c91cbbf28c90852caa463bc16fda910668f5c9",
+        "main.py": "d00058e68b177bc940a205722520108e3d3f92c50e343da63d6c22e0cf2b550a",
+        "test_main.py": "9fb387f382f8817cca408ffd81ede891135af44aaa3403b917f4de4d4195da70",
+        "solution/main.py": "09827454426b19ef82202b03504c7806cc7a5f86c0b681d4b87ed7df6525dfcc",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "10-sorting/10-partition-around-pivot/quicksort-partition-regions.svg",
+          "sha256": "4643c4372ce9bf781390a4d01f73aa406a25f178e98ec610e6edbcda9f6ab412"
+        }
+      ]
+    },
+    {
+      "path": "10-sorting/11-quicksort",
+      "tasks": 3,
+      "hashes_sha256": {
+        "lesson.md": "c9fd363b4924e68bdd83f98574445ba567e2f3bda17efd27151aded5af5067d7",
+        "main.py": "fd591f837a019771cab0cd329c6ea78e9fb8907a355a7bb641124afb14de6df3",
+        "test_main.py": "c04eb9f477dd2a4d193b7b0ff49be112e6b8a528e9be2e507951239a4202d49f",
+        "solution/main.py": "63cc2a768644f6fd1c3f7f203e698480c94565e1081b9734b713e054815d95a6",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "10-sorting/11-quicksort/sorting-quicksort-trace.svg",
+          "sha256": "c6fe0c43af88134a2bcf7cc5f587350ab12aa31b68386b10fb3d9de09e871230"
+        }
+      ]
+    },
+    {
+      "path": "10-sorting/12-stable-key-sorting",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "136f8ba666bb91927b706f01c11aa54184cf276acf8cb1952c93aec570b31958",
+        "main.py": "058f7c1bb7fc7efcf4153fa6d83d81676dd8803ee9672e4467d0b8092f8dac20",
+        "test_main.py": "b0140b357e625d2f2327f13a2aaccadcffa111c3975baa3a3ba429fec15b74a0",
+        "solution/main.py": "bab7ba0456ffc0612ce14d25581962bf6c9e82aea20042a09e3521b67944cc92",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": []
+    },
+    {
+      "path": "11-trees-and-bst/01-binary-node",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "8c2a167da70bc3c98a57754f670cb4115e9e41cf4729be6b3d3b3d2977f8b76b",
+        "main.py": "153014daf468e25ada740a28756d822be010689ae54c68a9dc1d9bdd544299ac",
+        "test_main.py": "8a95dab2ace6e22f07fa8daebc20d2af8e8e49fdf7999b81f2663b2735372c54",
+        "solution/main.py": "d8f61baae2168c8345e11ffb05558a15c9265a0ec9b365234378261b39566d86",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "11-trees-and-bst/01-binary-node/trees-and-bst-binary-node-trace.svg",
+          "sha256": "2fc3566220f0408032e3ba2a6ef4ca5f04ff156f8799a07dd6891f2866669bc6"
+        }
+      ]
+    },
+    {
+      "path": "11-trees-and-bst/02-count-nodes",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "650c2cf9504a43150f2256a04600d6eacf73131ce976705f0abaa885afdcc612",
+        "main.py": "5754645cd464ae6f7adda76907cf495a055168ed200ae355e938861826946743",
+        "test_main.py": "3e5feb4318053c82d6f0ad45a73914298112e3c3d820895b56fd2cec328dc51b",
+        "solution/main.py": "2c77fc27e3214851766ea3ea9ba94f4c1eec30310ee9b185cc3ca2c2d533be05",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "11-trees-and-bst/02-count-nodes/trees-and-bst-count-nodes-trace.svg",
+          "sha256": "88bfa4ee0123f7a9a04d363e26694239c9936dae9021682e4242bb3fc670ceac"
+        }
+      ]
+    },
+    {
+      "path": "11-trees-and-bst/03-tree-height",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "9f827519eef4c31075557e990f0c1ac415706703bd3ad0abdbe8e0836e0a1852",
+        "main.py": "019922e4a47b19471f6a1628613d70b744a77a80480a1bb50070566e227edf72",
+        "test_main.py": "5d7ef4e8a60975d47816b4260c72089f868388f01eb2e1f97da2db06cc1e54d2",
+        "solution/main.py": "a82e908a0eb3b0304adc27a6a48a0bc8ac0b64c394e0ef7057c0fb37f2eeab32",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "11-trees-and-bst/03-tree-height/trees-and-bst-tree-height-trace.svg",
+          "sha256": "44522f275a4d7bdb2dc94237a4314eeaf9448691c50393091a5591fcb71f13c7"
+        }
+      ]
+    },
+    {
+      "path": "11-trees-and-bst/04-preorder-traversal",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "a8382effacbcfc6dd38ee4d447eeb75974bf3ac48c40395a0a8040d253b85d04",
+        "main.py": "b7fc5d308713a50f967ead8f7445f01134ecc3e73ca4a697ed71c0446797df43",
+        "test_main.py": "20c8a1d45a3eaab715a164b3ad9259fdda3a5d80edc451ef1ca42d7566a19d34",
+        "solution/main.py": "1b0ad8fdd37cbfb8f605d3cf73c57115e722ea6082f0b0eebc512c1060747a3f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "11-trees-and-bst/04-preorder-traversal/trees-and-bst-preorder-traversal-trace.svg",
+          "sha256": "55aff92316bc1f90f38b4816b444536b905df4e51c0193caff802718162b3a27"
+        }
+      ]
+    },
+    {
+      "path": "11-trees-and-bst/05-inorder-traversal",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "3c7a28847c9adf54e1ad1414258cb0b0fb781df4e1d9f96d4bbf9a1e327a0d9e",
+        "main.py": "65f47208ccd1af11c249c96a201b916beff0da01e8df42b53b5785d6b4c438b1",
+        "test_main.py": "f13f6f770e3a5c2faab61ba89726a7664ce413b630349797c77496dc845c3061",
+        "solution/main.py": "bf523a46666f0e9eabe6fcd4e941df586db07d8253d503e0397fdfab01ab8a78",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "11-trees-and-bst/05-inorder-traversal/trees-and-bst-inorder-traversal-trace.svg",
+          "sha256": "823c17b4b3d989b469db1b4e811f1a8e7fc3b289f9d5fcdf394a5a53c55058c8"
+        }
+      ]
+    },
+    {
+      "path": "11-trees-and-bst/06-postorder-traversal",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "1e7999651c70cc2156aa988f72ba457478f0e25ba22c05a81f578e59c20d8c79",
+        "main.py": "778997552abb633b3b43ea43f50e1dd79000fb2f2c1c00263195583166a9d73e",
+        "test_main.py": "cd8d9c00548338b553d72eb9144241e9fae4b5821b69ca18668987da3bea1919",
+        "solution/main.py": "014ee6fafb31b8d85b6fe1547ebbae7cd2e1ace6b66dfcc524bcf919e9902364",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "11-trees-and-bst/06-postorder-traversal/binary-tree-traversal-orders.svg",
+          "sha256": "61fc99e15b589ee594d39d4be8f702573520b5636c28bbc01df1db7983266d5f"
+        }
+      ]
+    },
+    {
+      "path": "11-trees-and-bst/07-level-order-traversal",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "8149f8122928f3e4e0b8986ba2d2c80bd3860a242252cdb744a15fa28a67ce42",
+        "main.py": "423147c30c7565294a360ebfc5e1b45748204350cf310baa9faf8a7ce88639cf",
+        "test_main.py": "9a4fb7d9cd6419714ef28ff9d754db282685b49fed806642b31cc6bc5cad81e9",
+        "solution/main.py": "c3ab6520eb7de51c5506f9478a60196fe09ffa6fa363b5cb9d62fd27a2d025fa",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "11-trees-and-bst/07-level-order-traversal/trees-and-bst-level-order-traversal-trace.svg",
+          "sha256": "baabc057270d0a1dbbedf428ec582ed4b878c42c45d51c376a31860f67e0b07d"
+        }
+      ]
+    },
+    {
+      "path": "11-trees-and-bst/08-bst-search",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "67a2f44d965cde15669eca24a5870b22d0c370ca8736b9ee6474ac31ec1c8276",
+        "main.py": "db1e24c102d05df718d3c6a2de7649d5a88727b97b1e0dc58fb87940582c0619",
+        "test_main.py": "19d3a8ab617fe2f881dda90d4d0b69c10b3c748111af2d924d0278b754e29ea8",
+        "solution/main.py": "4ae933522bc1f008dffe2f1cb42f05128279343957fb79eecbf2056daf56388b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "11-trees-and-bst/08-bst-search/trees-and-bst-bst-search-trace.svg",
+          "sha256": "64ab68fa27e9c632ff0f9f617d0793fa4c80cb9ca263a76ed01f94c74119ff1c"
+        }
+      ]
+    },
+    {
+      "path": "11-trees-and-bst/09-bst-insert",
+      "tasks": 4,
+      "hashes_sha256": {
+        "lesson.md": "0364d43e122cc9b3987dcd3cd697e92f62d00eb1d4d5a9627602c7346cff1507",
+        "main.py": "9bc5be90c7b3cbb7e15ae910cfa9df94d1d1911272f7309a07b7d7f39e2d41f0",
+        "test_main.py": "2260016e9aafc4633598d1f98d8750a1d0d480f49c65f0bb23b796bfb5bfbfc6",
+        "solution/main.py": "64453e138e05b4ebeb98cf2a2095a495a9ef51f25b35bf6af8b0427bf9231dbc",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "11-trees-and-bst/09-bst-insert/trees-and-bst-bst-insert-trace.svg",
+          "sha256": "ec7a993cfef92cdaacdfcd863e4e1b1440ee8bdd6d642d626c233ba3bdafef34"
+        }
+      ]
+    },
+    {
+      "path": "11-trees-and-bst/10-bst-minimum",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "1e340b24291801ce2637c8a48a9c34acf534c4dbaae88ba7e71ef269255c3ea5",
+        "main.py": "e82b98c9897638ac4788b88501aab8f3fc2fb9427adbf5e63fa48571457a1587",
+        "test_main.py": "356c182209e25010ba9413a09e3c6d970681895e61d6261a6b15a438a3968a3c",
+        "solution/main.py": "241557f59e2161137e776102f1bef989f5d31660252614b39d8f5d151a1a7fef",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "11-trees-and-bst/10-bst-minimum/trees-and-bst-bst-minimum-trace.svg",
+          "sha256": "8f8b3fa574519075dd9054b3f79a62ce1ae660ce10bd0aa062d55b101938985f"
+        }
+      ]
+    },
+    {
+      "path": "11-trees-and-bst/11-bst-delete-leaf",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "c4a982aa900bbd815108aacccfdd98f4d6f8c97c3b0f311c4f68d7c586066124",
+        "main.py": "137e68dbf640ba7543627c92f525d6c5635732b9098accbcd5f4fee254a092b4",
+        "test_main.py": "e53e995fd18cd143c2cac26a7388035d2fa963bb7981801bdd3363a6be3005aa",
+        "solution/main.py": "64950d9e9179e78c78f52c22cdd3d7aa5d2607ba79ad560b6510c9108d95604a",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "11-trees-and-bst/11-bst-delete-leaf/trees-and-bst-bst-delete-leaf-trace.svg",
+          "sha256": "17b5584721c80c757fa2d55e191caff64ebc73cb8ca8b7b2c11f9930dbf7a7b0"
+        }
+      ]
+    },
+    {
+      "path": "11-trees-and-bst/12-bst-delete-one-child",
+      "tasks": 5,
+      "hashes_sha256": {
+        "lesson.md": "f41e1aa8d9d413d21bdd04521dce193580981c7f0105050b699de65a641132a5",
+        "main.py": "75f2308730627bbbb0d908045a247b5245eaabd4b84e1426c6d9f0fc128527ee",
+        "test_main.py": "00036541dedf3755631804b67c3acbc8a0205f856fbcecaa6ece898ad2424193",
+        "solution/main.py": "41fc1d4dc164e0c1cf3d0c8d05e22df16bd1fd6005596e38b1ce21ef96c1de73",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "11-trees-and-bst/12-bst-delete-one-child/trees-and-bst-bst-delete-one-child-trace.svg",
+          "sha256": "7072421689231c72bfd3fdf2e24acd2248dfad591b70e8365c280854ca737c0f"
+        }
+      ]
+    },
+    {
+      "path": "11-trees-and-bst/13-bst-delete-two-children",
+      "tasks": 4,
+      "hashes_sha256": {
+        "lesson.md": "3140c7767e3aebcdc0eb364d6faffafa320816d8907d9bb75bdc852ee18b2f7f",
+        "main.py": "226275d027da4e8462302d24cfa89666b947a1d49127bc55a7095d0b4faa63c9",
+        "test_main.py": "499d8b874d5b5c9ee15b58424cfd257ad7ab9969231dcd9e28b4e4b8e6b46bfd",
+        "solution/main.py": "b77e72fc390a8cac9d3890c114a5961f89ae752260550f8aa263997881da1963",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "11-trees-and-bst/13-bst-delete-two-children/bst-successor-transplant.svg",
+          "sha256": "46344725896594151c51700e89372418c0bb45e64b4d4dbfd61916e1047de661"
+        }
+      ]
+    },
+    {
+      "path": "11-trees-and-bst/14-validate-bst",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "4e61013d8afc7d71cfc95d61b4d84be7a1020ab622ccd9e376e75129c1764b58",
+        "main.py": "5a7962575b4f190ce7e000a0881d2381a75bd757afc30d2eb7b4d860aa932b6b",
+        "test_main.py": "2d3826159fa34c12d647183cc4c59b4e1d1fe3a2af98a22fbc06e0e14dad3133",
+        "solution/main.py": "e2b2a29955f127889738792f818ef6910db2da51d005a98d692a331b250c56eb",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "11-trees-and-bst/14-validate-bst/trees-and-bst-validate-bst-trace.svg",
+          "sha256": "d741f066cc20bd0a805d38025cc504b6f089fa1fe6488db989f3e84a88df0c44"
+        }
+      ]
+    },
+    {
+      "path": "12-heaps-and-priority/01-heap-array-indices",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "3d389ea4320d3d0356b3b0d9c3730ee730b2581950baedf753beba03d74bdf72",
+        "main.py": "89432d4a94ddf2cb6677201dc059f12cb4b99b22368c4d3501cc2f41f716ca92",
+        "test_main.py": "162ae32850a0aef3bcad5e1de347e0ecc55f8e7a89f8456a8be75106c39dc7f4",
+        "solution/main.py": "8b355e54fcbfbcf260d08e48d8b50c2458469c7ac8c2ebf0ee8fe8143ac6add4",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "12-heaps-and-priority/01-heap-array-indices/heap-array-tree-mapping.svg",
+          "sha256": "ac8d5dbb5e7e2f072673f3b5d6ece44221afde6935fa2f6245c1d54257d5ee87"
+        }
+      ]
+    },
+    {
+      "path": "12-heaps-and-priority/02-heap-order",
+      "tasks": 1,
+      "hashes_sha256": {
+        "lesson.md": "5f38951da80a0bbc669e9e734bf76fd3dc0bf82b0a3db933b924acb51945af73",
+        "main.py": "0137a675b016a4cecae965e0dc1d584963c2798c2db94ae319aed11f981e9993",
+        "test_main.py": "6b02ca93724da5087e9e0f632030305b0d3d965abb9501a1239d6839a8391994",
+        "solution/main.py": "cf22ca025fa141738802773135cc4b709b016bbf08aefc1b3cfd7908fe886522",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "12-heaps-and-priority/02-heap-order/heaps-and-priority-heap-order-trace.svg",
+          "sha256": "d68973810bf8e54bc44b073e9f6ac4af07c3bfcf39a8604b5aabba7ef1298f42"
+        }
+      ]
+    },
+    {
+      "path": "12-heaps-and-priority/03-sift-up",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "f8ecdaf1853becd748bfcf34ee14bb2ec5b656e4e04046762513632229ad8171",
+        "main.py": "fae39a43ba2a441bb3d99b34552129c8a1a0d477bfca6ceb219d828af778466e",
+        "test_main.py": "6e0c6afd69e60816accb8f62a08fd9b68f6428b593363d3dbc94f93303cb4b1e",
+        "solution/main.py": "7d8d321ccac81edf83b93f88844b1aa53c6219f16b4eac0b30953431615b2d69",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "12-heaps-and-priority/03-sift-up/heaps-and-priority-sift-up-trace.svg",
+          "sha256": "a01d8712405412e171ae962d89ae75bcd8024a1215ab75c62f4e66cc02e33a60"
+        }
+      ]
+    },
+    {
+      "path": "12-heaps-and-priority/04-sift-down",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "aef77e4c5751e2506316525e20a69aec446d700154c6df5a3e1206d1b8825e4b",
+        "main.py": "1cbcff45958b37db037d9b1f18749a44345243e38c426ebcd17070b6c9e401b6",
+        "test_main.py": "f2f3bd745b107fd7c00a83c9805dacfbb30e6b304cb89c22a93984339fa496a3",
+        "solution/main.py": "fdca6aaaf7ada7fa56ab60fa0ad7d4112ef10ba15ceb444f6cebcec3bab5576f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "12-heaps-and-priority/04-sift-down/min-heap-sift-down.svg",
+          "sha256": "eec34bf2a8470c57f6aecc031aa52fa8718cf2676e9ec100ecc5e30f82b515d3"
+        }
+      ]
+    },
+    {
+      "path": "12-heaps-and-priority/05-heap-push",
+      "tasks": 1,
+      "hashes_sha256": {
+        "lesson.md": "f3fad94427fc8959fc645e29b0899e4231738ab0d5b19f5139b43fe520288358",
+        "main.py": "e58df3b4a0562b3adc8d3000fbfcfc2d22eb1a24cdc98dcf1f950ea8a354e351",
+        "test_main.py": "8b599ad13dfa918014df0c8a217900d7dddcf2001fc6e772f5dc3415dbe072e2",
+        "solution/main.py": "f5495aa30ee4482516ed2f132cd3f5b579ae66b1ceeea315663805b26a251da3",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "12-heaps-and-priority/05-heap-push/heaps-and-priority-heap-push-trace.svg",
+          "sha256": "61f69db56d0cc30d0fd702c1bd67873e6f838dfe1451f7735fe2fd89f9a54c29"
+        }
+      ]
+    },
+    {
+      "path": "12-heaps-and-priority/06-heap-pop",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "6e95ee3131c195e4d15e3ec24010196f3eed514bc8c8e5283d8da6a872d31f60",
+        "main.py": "cdbbbf9ea06930ca5b77f7b2ec3df0abd58d0fa926797769b962158067ae704d",
+        "test_main.py": "474549b455883ddd9afd60a1ae95bb5eea112239654ecda1b4d19a1a440c1bf2",
+        "solution/main.py": "9eae85241d19c1091737ec47035a546bdb5f80e96c53b291b93b2a56202453bf",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "12-heaps-and-priority/06-heap-pop/heaps-and-priority-heap-pop-trace.svg",
+          "sha256": "18e538fb83258680afb1d408a1a34436a8e71c4a8722ba6073384ea8e0ff7794"
+        }
+      ]
+    },
+    {
+      "path": "12-heaps-and-priority/07-bottom-up-heapify",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "c9230b9887997ffe96a4cfa5825ec95b6b24c65bc1ac8732dd1230fd0cfa681b",
+        "main.py": "0c34da095d30bc7425f934a5fe78a08abc8a87b935999ce315f009e11ebd9f57",
+        "test_main.py": "122f2280ebcd200f5ae5f097fb43716b7e4bc3e4c667013aa87406350afbaa2a",
+        "solution/main.py": "2f57e55554b197bef1696d1db9dc49e49453d338d7efe539b8825d6f9ff3653c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "12-heaps-and-priority/07-bottom-up-heapify/heaps-and-priority-bottom-up-heapify-trace.svg",
+          "sha256": "a3d6be7941fba4ce52acee4dce9f65330f45b8836a7749d47a0264a73708965f"
+        }
+      ]
+    },
+    {
+      "path": "12-heaps-and-priority/08-max-heap",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "c50f038d9d1310a79132e8774f3f7a54cda70f8f332d8c85caaa7468554c94a6",
+        "main.py": "f793dd344c7512dc275c66c0b8b7b58d4062114b722d1d14ca55e7824526f2eb",
+        "test_main.py": "3a272df0e201f112678f8194d18d98bdad0aded7734ea001110d7e862419a091",
+        "solution/main.py": "6132e49c390f8b36919c7ecbc17ab8cb60af04e106f3ae919a26e1c062580c88",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "12-heaps-and-priority/08-max-heap/heaps-and-priority-max-heap-trace.svg",
+          "sha256": "54110e6a790cdf90acc600c0d19b32f6d46bf20b64a93c95ec89f5cdb9c43fdf"
+        }
+      ]
+    },
+    {
+      "path": "12-heaps-and-priority/09-heap-sort",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "397d4b3e4383923ee9fab2f6b875cb1f27ad6026cf63503d088db64e47f7a43e",
+        "main.py": "45f12ac0cac2f711b3e6704b98b2232c5259a34f96db04dd83bb86a58741388f",
+        "test_main.py": "b7e7854fca8be0aa94e711817207393304876c358f85cd380d9d1c841e8e84b0",
+        "solution/main.py": "7587fcfc6b8daa3d49273a4122172961eb6259f36c4f4e578266f917ce7d1028",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "12-heaps-and-priority/09-heap-sort/heaps-and-priority-heap-sort-trace.svg",
+          "sha256": "bc4cade3eab717091f117e0f2270e2cd8bb46bbef763666dbb6f558aee96396e"
+        }
+      ]
+    },
+    {
+      "path": "12-heaps-and-priority/10-heapq-basics",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "047f1cdb5c92bef4ebecd788c4a18341ca08be72f6b7ac1bcacf16675e1cc00f",
+        "main.py": "69adc646293340ba71a2282148302a451fa3a950d225f93c55efa1c7f1c366af",
+        "test_main.py": "d1ceb464e387114b1ca0966b7293547cbde54c5011c75aa6f0071867f958be17",
+        "solution/main.py": "a5571dad5c1ea9731c7d2860dcf594296b636170be566f81257530ca90a9dcb5",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": []
+    },
+    {
+      "path": "12-heaps-and-priority/11-stable-priority-queue",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "89d05891fe4aafa0e358551ca07b15b2cf2b82d00ced5cbc1ee4c2121a65bfdc",
+        "main.py": "e2a5f04204464b45313522351b424ea02768532512126a9a8f2b45c41cdea6fa",
+        "test_main.py": "b1401eb08c484e67cac76aad5883c009bfc424387fdc27f49e5ac935a77d7d15",
+        "solution/main.py": "ecf8884e34f14c70c339fdfaf580c228e635ac92f3dc28963fb39cb7aab0332c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "12-heaps-and-priority/11-stable-priority-queue/stable-priority-tie-breaker.svg",
+          "sha256": "f2858f6cf37f4f8f6f56590da10f61389cce3dd138c1dd4420c670bb2c5f5acc"
+        }
+      ]
+    },
+    {
+      "path": "12-heaps-and-priority/12-priority-updates",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "752ba083e39116a690bb303fa2de5f94422e493821982e5fa18968ed2d8837e5",
+        "main.py": "645b75b14d2dd1bcb49ffcf04005c53b76ced715bd4f0420fe7ac4cea7a4862d",
+        "test_main.py": "d88ce76c50f4cdc1d3dbdcbcf14add0d164a1cab361bc46c0aee7c877d89d1f4",
+        "solution/main.py": "4bf08e49894c60cf4ab322b60a75bed68b07d23dfe15d75544e927b80fd37579",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "12-heaps-and-priority/12-priority-updates/heaps-and-priority-priority-updates-trace.svg",
+          "sha256": "11988723eb5a7074c5566871c08af4307795d765ea470f305b01a1d5dde938d8"
+        }
+      ]
+    },
+    {
+      "path": "12-heaps-and-priority/13-top-k-stream",
+      "tasks": 3,
+      "hashes_sha256": {
+        "lesson.md": "e65a79175ff5d5968f4273616e9bfdbab51d7089d84ea63203f0098f23683718",
+        "main.py": "69f275a3a1fab71ae153c53122eb4282b55517af45fa4f923a39f521d7f39d40",
+        "test_main.py": "1cbaaf5310d7ad07237a3f7eaf1ffc5ceb997a4938cf679ce9f4b307a509a30d",
+        "solution/main.py": "949a6e99fe52e1285bd2dde5d5fb77730faded682d5a53c21953e8452040641e",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": [
+        {
+          "path": "12-heaps-and-priority/13-top-k-stream/heaps-and-priority-top-k-stream-trace.svg",
+          "sha256": "fbb4109bc2ff0f049588ee94dec93e86751681ec3188b5c1a1f35bd9bed93f0d"
+        }
+      ]
+    },
+    {
+      "path": "12-heaps-and-priority/14-scheduler-project",
+      "tasks": 2,
+      "hashes_sha256": {
+        "lesson.md": "62fad93ffd9f49775142e8cb67dff0a7ba62490175d572636e986ef3752a76f4",
+        "main.py": "b243eaad8bebca6e95c15fdbadd52ecfc7e1d756fd004b9d99208247548bc18e",
+        "test_main.py": "c41095e8feea446dfe579caef36cd57e55212b5a238e84fbc14be14b27c10d49",
+        "solution/main.py": "14bc7bf323c56514e5b97b8fdf8997ac5cc867657a46cf51c699ddfe465b55fb",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "diagrams": []
+    }
+  ],
+  "quiz_files": [
+    {
+      "path": "10-sorting/quiz/index.yaml",
+      "sha256": "537ace118b0ca50ea819634199e988b0093e4f97d3d423a1940cd6d3ed916e6c"
+    },
+    {
+      "path": "10-sorting/quiz/q01.md",
+      "sha256": "9dd68d791941295b858f6f2dcee120acaced5d7f161ef61b9a273f4d6806c29f"
+    },
+    {
+      "path": "10-sorting/quiz/q02.md",
+      "sha256": "c5cedb1864b03a9e8fbd5f5087ab73ef8006d4c8c49eb8057c266b63e938039e"
+    },
+    {
+      "path": "10-sorting/quiz/q03.md",
+      "sha256": "8d0b78eb0b6b496339e60fbdc9fe9640aa4ec5cdb0d098c672212ef39940df0e"
+    },
+    {
+      "path": "10-sorting/quiz/q04.md",
+      "sha256": "08bb8b4d1213c2fa3c0e99253c7ea1c9d3f99434ca10a7bfd2e275660efe9dcf"
+    },
+    {
+      "path": "11-trees-and-bst/quiz/index.yaml",
+      "sha256": "3b1696d63d9829afdcad017bc2b0f49efb0faf8cbc88e35e7b582dcbbe465c6e"
+    },
+    {
+      "path": "11-trees-and-bst/quiz/q01.md",
+      "sha256": "f781860295bc0247b969e2a6701843e2969972ba517bd118a7719f0ea2fdff49"
+    },
+    {
+      "path": "11-trees-and-bst/quiz/q02.md",
+      "sha256": "575193f6784ebb078ac943e604fc324ea502cef1af5980fa1fb6ef497c680d7b"
+    },
+    {
+      "path": "11-trees-and-bst/quiz/q03.md",
+      "sha256": "0c9cee618bd369d35155fd8245537c297e5d73544d9abe7c765cdd2ba86e3714"
+    },
+    {
+      "path": "11-trees-and-bst/quiz/q04.md",
+      "sha256": "be3588a8974e0c9566468dd29caa28a702f900ab5438ea16e470046a1cfbf29e"
+    },
+    {
+      "path": "12-heaps-and-priority/quiz/index.yaml",
+      "sha256": "9b467b079a642e77c923908870047fce3193c00b09c7939d87aa94166b58c5cd"
+    },
+    {
+      "path": "12-heaps-and-priority/quiz/q01.md",
+      "sha256": "b7761b8d52022fae6fc390792313bdb1594dc0f701ab7914fce8b3c244e2d2fa"
+    },
+    {
+      "path": "12-heaps-and-priority/quiz/q02.md",
+      "sha256": "827f72f67ebb978bfa44712e82c7e52cfda7f7018e7165dc9a08973bb3146686"
+    },
+    {
+      "path": "12-heaps-and-priority/quiz/q03.md",
+      "sha256": "c842dfbf54ec1c33dbe5650f974658a37d4248ffae0e8e1a92b4e20af1115214"
+    },
+    {
+      "path": "12-heaps-and-priority/quiz/q04.md",
+      "sha256": "c75a95460a31cf996446459d17b7e9d71e519e06679ed1cab38a3d0a88112acf"
+    }
+  ],
+  "replay_asset": {
+    "path": "assets/partial-state-10-12.json",
+    "sha256": "2f2fd89e316d24a716d60d4e61fc8cce86724f69a22d5964fd0d1fd34f685119"
+  }
+}

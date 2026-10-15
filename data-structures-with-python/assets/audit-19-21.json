@@ -1,0 +1,5867 @@
+{
+  "status": "passed",
+  "runtime": "Native CPython and real backend loader; parent owns actual Pyodide/Submit acceptance",
+  "scope": "modules 19-21; final small-task revision",
+  "lessons": [
+    {
+      "path": "19-disjoint-sets/01-dsu-state",
+      "target": "__init__",
+      "module": 0,
+      "order": 1,
+      "task_targets": [
+        "validate_size",
+        "initial_parents",
+        "initial_sizes"
+      ],
+      "task_count": 3,
+      "starter_output": "Complete validate_size\n",
+      "solution_output": "[0, 1, 2] [1, 1, 1]\n",
+      "starter_tests": [
+        {
+          "name": "test_validate_component_size",
+          "passed": false,
+          "error": "NotImplementedError: Complete validate_size"
+        },
+        {
+          "name": "test_parent_initialization",
+          "passed": false,
+          "error": "NotImplementedError: Complete initial_parents"
+        },
+        {
+          "name": "test_initial_size_list",
+          "passed": false,
+          "error": "NotImplementedError: Complete initial_sizes"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_validate_component_size",
+          "passed": true
+        },
+        {
+          "name": "test_parent_initialization",
+          "passed": true
+        },
+        {
+          "name": "test_initial_size_list",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_validate_component_size",
+              "passed": true
+            },
+            {
+              "name": "test_parent_initialization",
+              "passed": false,
+              "error": "NotImplementedError: Complete initial_parents"
+            },
+            {
+              "name": "test_initial_size_list",
+              "passed": false,
+              "error": "NotImplementedError: Complete initial_sizes"
+            }
+          ],
+          "source_hash": "144e7460e41ad50a819bfbadbfc5eb3ce5c9b074fa1973b0f6c89a058d93662c",
+          "run_output": "Complete initial_parents\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_validate_component_size",
+              "passed": true
+            },
+            {
+              "name": "test_parent_initialization",
+              "passed": true
+            },
+            {
+              "name": "test_initial_size_list",
+              "passed": false,
+              "error": "NotImplementedError: Complete initial_sizes"
+            }
+          ],
+          "source_hash": "e90dd37ab84115187102de8012ed58a1f148cf9886462865ea1309d91e8dd067",
+          "run_output": "Complete initial_sizes\n"
+        },
+        {
+          "completed": 3,
+          "tests": [
+            {
+              "name": "test_validate_component_size",
+              "passed": true
+            },
+            {
+              "name": "test_parent_initialization",
+              "passed": true
+            },
+            {
+              "name": "test_initial_size_list",
+              "passed": true
+            }
+          ],
+          "source_hash": "1d48a3a47ff24326e6ba4698f8bee826d7588bece0850b7000a543c6976e4990",
+          "run_output": "[0, 1, 2] [1, 1, 1]\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "validate_size",
+          "tests": [
+            {
+              "name": "test_validate_component_size",
+              "passed": true
+            },
+            {
+              "name": "test_parent_initialization",
+              "passed": false,
+              "error": "NotImplementedError: Complete initial_parents"
+            },
+            {
+              "name": "test_initial_size_list",
+              "passed": false,
+              "error": "NotImplementedError: Complete initial_sizes"
+            }
+          ]
+        },
+        {
+          "target": "initial_parents",
+          "tests": [
+            {
+              "name": "test_validate_component_size",
+              "passed": false,
+              "error": "NotImplementedError: Complete validate_size"
+            },
+            {
+              "name": "test_parent_initialization",
+              "passed": true
+            },
+            {
+              "name": "test_initial_size_list",
+              "passed": false,
+              "error": "NotImplementedError: Complete initial_sizes"
+            }
+          ]
+        },
+        {
+          "target": "initial_sizes",
+          "tests": [
+            {
+              "name": "test_validate_component_size",
+              "passed": false,
+              "error": "NotImplementedError: Complete validate_size"
+            },
+            {
+              "name": "test_parent_initialization",
+              "passed": false,
+              "error": "NotImplementedError: Complete initial_parents"
+            },
+            {
+              "name": "test_initial_size_list",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 1,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "facde2a66eeb063c60470c3fd393e736134b1fa3a9ed58338d99f406aeaf0c52",
+        "main.py": "abbc0e67ac772345abfdbb71110973e5db8a00f488014815fcda8ce2a03c1104",
+        "test_main.py": "a40d361e5d96afafdd93a2f5a76870ae92834b21b76b13113dd0aded1e36bf69",
+        "solution/main.py": "54a46b2993646a7bed5874d9aa8b838f459efb3641414b9b5b93749e7775d327"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "19-disjoint-sets/02-find-root",
+      "target": "find",
+      "module": 0,
+      "order": 2,
+      "task_targets": [
+        "is_root",
+        "root_from"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete root_from\n",
+      "solution_output": "0\n",
+      "starter_tests": [
+        {
+          "name": "test_identify_self_link",
+          "passed": false,
+          "error": "NotImplementedError: Complete is_root"
+        },
+        {
+          "name": "test_follow_valid_chain",
+          "passed": false,
+          "error": "NotImplementedError: Complete root_from"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_identify_self_link",
+          "passed": true
+        },
+        {
+          "name": "test_follow_valid_chain",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_identify_self_link",
+              "passed": true
+            },
+            {
+              "name": "test_follow_valid_chain",
+              "passed": false,
+              "error": "NotImplementedError: Complete root_from"
+            }
+          ],
+          "source_hash": "6db450b3c24577a83ac72e2a8e95932e13891641311212b3a74cb6f6c88dd046",
+          "run_output": "Complete root_from\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_identify_self_link",
+              "passed": true
+            },
+            {
+              "name": "test_follow_valid_chain",
+              "passed": true
+            }
+          ],
+          "source_hash": "875f75fe0dfb866160dd406527957940e33e80e9b1c34b8881f3a6afb830f8ef",
+          "run_output": "0\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "is_root",
+          "tests": [
+            {
+              "name": "test_identify_self_link",
+              "passed": true
+            },
+            {
+              "name": "test_follow_valid_chain",
+              "passed": false,
+              "error": "NotImplementedError: Complete root_from"
+            }
+          ]
+        },
+        {
+          "target": "root_from",
+          "tests": [
+            {
+              "name": "test_identify_self_link",
+              "passed": false,
+              "error": "NotImplementedError: Complete is_root"
+            },
+            {
+              "name": "test_follow_valid_chain",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 2,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "b0a4c90cea96ef6b2588d25500a34dfeafc81c85758e7915f5c5eda96fcbe33b",
+        "main.py": "8f85ede9f982b1a26d78f077f63096cd2d3f57f7acb645eef56269a6c3ed03f3",
+        "test_main.py": "de538ab087b79c4438978b8299018298a51b97ee802b2a5cedbade9d1930af6f",
+        "solution/main.py": "09f4f463110cbca1fdbdacc404cf86e5f5cf21de767f76df10cbcc7dd10a3fa2"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "19-disjoint-sets/03-union-components",
+      "target": "union",
+      "module": 0,
+      "order": 3,
+      "task_targets": [
+        "union_roots",
+        "merge_roots"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete union_roots\n",
+      "solution_output": "True\nTrue\n",
+      "starter_tests": [
+        {
+          "name": "test_resolve_union_endpoints",
+          "passed": false,
+          "error": "NotImplementedError: Complete union_roots"
+        },
+        {
+          "name": "test_merge_distinct_roots_once",
+          "passed": false,
+          "error": "NotImplementedError: Complete merge_roots"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_resolve_union_endpoints",
+          "passed": true
+        },
+        {
+          "name": "test_merge_distinct_roots_once",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_resolve_union_endpoints",
+              "passed": true
+            },
+            {
+              "name": "test_merge_distinct_roots_once",
+              "passed": false,
+              "error": "NotImplementedError: Complete merge_roots"
+            }
+          ],
+          "source_hash": "3fee8ea2b3003a9931a72ba334453b97acdf8296793ce55ff3ddaa95023d2c69",
+          "run_output": "Complete merge_roots\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_resolve_union_endpoints",
+              "passed": true
+            },
+            {
+              "name": "test_merge_distinct_roots_once",
+              "passed": true
+            }
+          ],
+          "source_hash": "813bddaf016bb273ae8ac1fd17f10fb9284493b048da0fa12f4fcc6efa0def97",
+          "run_output": "True\nTrue\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "union_roots",
+          "tests": [
+            {
+              "name": "test_resolve_union_endpoints",
+              "passed": true
+            },
+            {
+              "name": "test_merge_distinct_roots_once",
+              "passed": false,
+              "error": "NotImplementedError: Complete merge_roots"
+            }
+          ]
+        },
+        {
+          "target": "merge_roots",
+          "tests": [
+            {
+              "name": "test_resolve_union_endpoints",
+              "passed": false,
+              "error": "NotImplementedError: Complete union_roots"
+            },
+            {
+              "name": "test_merge_distinct_roots_once",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 3,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "c4c1e6e0adf641e0d7daf562aad495bed75d38308b9e6b2eb4dccbc36cef1411",
+        "main.py": "0beee28cc0c3be4d9d440084be23516ba284d9931d16bb1d3762b4b20eb4e12c",
+        "test_main.py": "598128f373ac73348976e684142f616decb55ab4b3915b94757a15f8b5fc4e24",
+        "solution/main.py": "2603761791aa2cee92b6aaca60eec18ea8ff95f2fc0601fc611d5445ea7650c5"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "19-disjoint-sets/04-path-compression",
+      "target": "find_compressed",
+      "module": 0,
+      "order": 4,
+      "task_targets": [
+        "redirect_parent",
+        "compress_to"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete compress_to\n",
+      "solution_output": "0 [0, 0, 0, 0, 4]\n",
+      "starter_tests": [
+        {
+          "name": "test_redirect_preserves_old_link",
+          "passed": false,
+          "error": "NotImplementedError: Complete redirect_parent"
+        },
+        {
+          "name": "test_compress_entire_path",
+          "passed": false,
+          "error": "NotImplementedError: Complete compress_to"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_redirect_preserves_old_link",
+          "passed": true
+        },
+        {
+          "name": "test_compress_entire_path",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_redirect_preserves_old_link",
+              "passed": true
+            },
+            {
+              "name": "test_compress_entire_path",
+              "passed": false,
+              "error": "NotImplementedError: Complete compress_to"
+            }
+          ],
+          "source_hash": "fda3cf34a0829c1526120aee0699cc4eb57be037ec79dc05f69844b3ddabd1d5",
+          "run_output": "Complete compress_to\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_redirect_preserves_old_link",
+              "passed": true
+            },
+            {
+              "name": "test_compress_entire_path",
+              "passed": true
+            }
+          ],
+          "source_hash": "843173e77bc4e2a0803c8c9f640009f560ae2153fb8ab6985d0fad50fdfe2826",
+          "run_output": "0 [0, 0, 0, 0, 4]\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "redirect_parent",
+          "tests": [
+            {
+              "name": "test_redirect_preserves_old_link",
+              "passed": true
+            },
+            {
+              "name": "test_compress_entire_path",
+              "passed": false,
+              "error": "NotImplementedError: Complete compress_to"
+            }
+          ]
+        },
+        {
+          "target": "compress_to",
+          "tests": [
+            {
+              "name": "test_redirect_preserves_old_link",
+              "passed": false,
+              "error": "NotImplementedError: Complete redirect_parent"
+            },
+            {
+              "name": "test_compress_entire_path",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 4,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "e6904859f2640a26c6475d7a0d8922468932add637e533d2a8c090322673be52",
+        "main.py": "3ae1f6ff456ac74e40b0194ffb169b75c4211e8771b81fbf7618510fd19ea6e1",
+        "test_main.py": "628c52379cd57dd9038b38bf259d993b4a4e15a4bc1be674b7ff3df09a779baf",
+        "solution/main.py": "7bb27b3027a5fe72a82b112697c6b161d8bc49eac6726fa6f370a7eabb4e72b7"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "19-disjoint-sets/05-union-by-size",
+      "target": "union_by_size",
+      "module": 0,
+      "order": 5,
+      "task_targets": [
+        "compressed_roots",
+        "smaller_first"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete compressed_roots\n",
+      "solution_output": "True\nTrue\nTrue\n4\n",
+      "starter_tests": [
+        {
+          "name": "test_compress_both_endpoint_paths",
+          "passed": false,
+          "error": "NotImplementedError: Complete compressed_roots"
+        },
+        {
+          "name": "test_order_roots_by_component_size",
+          "passed": false,
+          "error": "NotImplementedError: Complete smaller_first"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_compress_both_endpoint_paths",
+          "passed": true
+        },
+        {
+          "name": "test_order_roots_by_component_size",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_compress_both_endpoint_paths",
+              "passed": true
+            },
+            {
+              "name": "test_order_roots_by_component_size",
+              "passed": false,
+              "error": "NotImplementedError: Complete smaller_first"
+            }
+          ],
+          "source_hash": "18f983706571b4424ff0d1c8d40b97de1db00adb876a09c29b706bcb5c5c19d0",
+          "run_output": "Complete smaller_first\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_compress_both_endpoint_paths",
+              "passed": true
+            },
+            {
+              "name": "test_order_roots_by_component_size",
+              "passed": true
+            }
+          ],
+          "source_hash": "2b35429601e9b9a6aec89369debf525e39436ee4a51e4f00971decac2316e379",
+          "run_output": "True\nTrue\nTrue\n4\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "compressed_roots",
+          "tests": [
+            {
+              "name": "test_compress_both_endpoint_paths",
+              "passed": true
+            },
+            {
+              "name": "test_order_roots_by_component_size",
+              "passed": false,
+              "error": "NotImplementedError: Complete smaller_first"
+            }
+          ]
+        },
+        {
+          "target": "smaller_first",
+          "tests": [
+            {
+              "name": "test_compress_both_endpoint_paths",
+              "passed": false,
+              "error": "NotImplementedError: Complete compressed_roots"
+            },
+            {
+              "name": "test_order_roots_by_component_size",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 5,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "2b4c907c1f3855f70e2078ca697245e847e1b45cde89ba253f41d13b649b91ad",
+        "main.py": "ddb7b3cf2b569c2ff84b4e6e9a3f5dd16af23ed0f27b6bda702cb013cd4b2d52",
+        "test_main.py": "e0bdd5495a60d5d46b1be677aa70f6018171f111dea1cdfbeab6e3df85d18ca3",
+        "solution/main.py": "d977e4c84bab1e82b30d2c31b509b4cb3fdce4a0502265e04e8f910be9dc88a1"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "19-disjoint-sets/06-component-count",
+      "target": "component_count",
+      "module": 0,
+      "order": 6,
+      "task_targets": [
+        "root_flags",
+        "count_root_flags"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete root_flags\n",
+      "solution_output": "4\n3\n",
+      "starter_tests": [
+        {
+          "name": "test_root_flags_ignore_intermediate_parents",
+          "passed": false,
+          "error": "NotImplementedError: Complete root_flags"
+        },
+        {
+          "name": "test_count_boolean_roots",
+          "passed": false,
+          "error": "NotImplementedError: Complete count_root_flags"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_root_flags_ignore_intermediate_parents",
+          "passed": true
+        },
+        {
+          "name": "test_count_boolean_roots",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_root_flags_ignore_intermediate_parents",
+              "passed": true
+            },
+            {
+              "name": "test_count_boolean_roots",
+              "passed": false,
+              "error": "NotImplementedError: Complete count_root_flags"
+            }
+          ],
+          "source_hash": "02fda66bfa9b00b58a933189c219d4f8f2f172362276305e406941fd76033313",
+          "run_output": "Complete count_root_flags\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_root_flags_ignore_intermediate_parents",
+              "passed": true
+            },
+            {
+              "name": "test_count_boolean_roots",
+              "passed": true
+            }
+          ],
+          "source_hash": "091d46800c4219c431aa0b0c9235229b0215efe3c495f15393003b1587046da6",
+          "run_output": "4\n3\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "root_flags",
+          "tests": [
+            {
+              "name": "test_root_flags_ignore_intermediate_parents",
+              "passed": true
+            },
+            {
+              "name": "test_count_boolean_roots",
+              "passed": false,
+              "error": "NotImplementedError: Complete count_root_flags"
+            }
+          ]
+        },
+        {
+          "target": "count_root_flags",
+          "tests": [
+            {
+              "name": "test_root_flags_ignore_intermediate_parents",
+              "passed": false,
+              "error": "NotImplementedError: Complete root_flags"
+            },
+            {
+              "name": "test_count_boolean_roots",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 6,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "3e5b11628ca3e3051131f1aeeee59fd9f1fad16f7964ea53834fab909749287e",
+        "main.py": "e699c9972a2c8d62c7408a6b65273b75672520168f62250c2707841e67067d4d",
+        "test_main.py": "5ce9fe54edd303c13669ac3ef64f6edc512f282813d421b3fa5c6b642b83121e",
+        "solution/main.py": "9df5a9d7e7d22d4ee2714279fd49c540bb13450e506d4237615fa3ea0ddb435b"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "19-disjoint-sets/07-detect-redundant-edge",
+      "target": "first_redundant",
+      "module": 0,
+      "order": 7,
+      "task_targets": [
+        "edge_is_redundant",
+        "edge_pair"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete edge_is_redundant\n",
+      "solution_output": "(2, 0)\n",
+      "starter_tests": [
+        {
+          "name": "test_redundancy_updates_connectivity",
+          "passed": false,
+          "error": "NotImplementedError: Complete edge_is_redundant"
+        },
+        {
+          "name": "test_edge_result_preserves_orientation",
+          "passed": false,
+          "error": "NotImplementedError: Complete edge_pair"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_redundancy_updates_connectivity",
+          "passed": true
+        },
+        {
+          "name": "test_edge_result_preserves_orientation",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_redundancy_updates_connectivity",
+              "passed": true
+            },
+            {
+              "name": "test_edge_result_preserves_orientation",
+              "passed": false,
+              "error": "NotImplementedError: Complete edge_pair"
+            }
+          ],
+          "source_hash": "8dca803f3b680f66f89b6d03f2abe0eb82004ae917f34181b9c861e55a2f4a64",
+          "run_output": "Complete edge_pair\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_redundancy_updates_connectivity",
+              "passed": true
+            },
+            {
+              "name": "test_edge_result_preserves_orientation",
+              "passed": true
+            }
+          ],
+          "source_hash": "2e39cbd358f61f36c1b6873eda2c1032a78f83f75c9cccb7d164e0f6261a2847",
+          "run_output": "(2, 0)\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "edge_is_redundant",
+          "tests": [
+            {
+              "name": "test_redundancy_updates_connectivity",
+              "passed": true
+            },
+            {
+              "name": "test_edge_result_preserves_orientation",
+              "passed": false,
+              "error": "NotImplementedError: Complete edge_pair"
+            }
+          ]
+        },
+        {
+          "target": "edge_pair",
+          "tests": [
+            {
+              "name": "test_redundancy_updates_connectivity",
+              "passed": false,
+              "error": "NotImplementedError: Complete edge_is_redundant"
+            },
+            {
+              "name": "test_edge_result_preserves_orientation",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 7,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "a750db92a7bf1beafaec2d29690b56e294b0444a051be6bcc4e1903a3f2e9eec",
+        "main.py": "93f8f4b47fd668b7d7db88bab4cace8737358893255786e89bfc332b5d448b56",
+        "test_main.py": "e3aca9b6e033c71b7cd8582211b0f9edc1a61884230706d559ff9994015bde84",
+        "solution/main.py": "ae9f04ad692b5b30f3f08c8ea174df7ed1e1b1736dfde67b6852c230fb80093c"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "19-disjoint-sets/08-kruskal-forest",
+      "target": "kruskal_forest",
+      "module": 0,
+      "order": 8,
+      "task_targets": [
+        "ordered_edges",
+        "choose_forest_edges",
+        "forest_weight"
+      ],
+      "task_count": 3,
+      "starter_output": "Complete ordered_edges\n",
+      "solution_output": "([(3, 4, -1), (1, 2, 2), (0, 2, 4)], 5)\n",
+      "starter_tests": [
+        {
+          "name": "test_stable_weight_order",
+          "passed": false,
+          "error": "NotImplementedError: Complete ordered_edges"
+        },
+        {
+          "name": "test_accept_only_connecting_edges",
+          "passed": false,
+          "error": "NotImplementedError: Complete choose_forest_edges"
+        },
+        {
+          "name": "test_total_accepted_weights",
+          "passed": false,
+          "error": "NotImplementedError: Complete forest_weight"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_stable_weight_order",
+          "passed": true
+        },
+        {
+          "name": "test_accept_only_connecting_edges",
+          "passed": true
+        },
+        {
+          "name": "test_total_accepted_weights",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_stable_weight_order",
+              "passed": true
+            },
+            {
+              "name": "test_accept_only_connecting_edges",
+              "passed": false,
+              "error": "NotImplementedError: Complete choose_forest_edges"
+            },
+            {
+              "name": "test_total_accepted_weights",
+              "passed": false,
+              "error": "NotImplementedError: Complete forest_weight"
+            }
+          ],
+          "source_hash": "42d0ac3a3fdda3f93174ad827b48f03fd951e280a6dff82e928038f197f28647",
+          "run_output": "Complete choose_forest_edges\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_stable_weight_order",
+              "passed": true
+            },
+            {
+              "name": "test_accept_only_connecting_edges",
+              "passed": true
+            },
+            {
+              "name": "test_total_accepted_weights",
+              "passed": false,
+              "error": "NotImplementedError: Complete forest_weight"
+            }
+          ],
+          "source_hash": "7d8f26cdffc54371f557e5db7fbb5ff246942d710cd0dd4cf2c13b9cbb9a38b6",
+          "run_output": "Complete forest_weight\n"
+        },
+        {
+          "completed": 3,
+          "tests": [
+            {
+              "name": "test_stable_weight_order",
+              "passed": true
+            },
+            {
+              "name": "test_accept_only_connecting_edges",
+              "passed": true
+            },
+            {
+              "name": "test_total_accepted_weights",
+              "passed": true
+            }
+          ],
+          "source_hash": "f83326a66f206420beccd095c7080e263137c9a80184def8db05d72ca65ba3cf",
+          "run_output": "([(3, 4, -1), (1, 2, 2), (0, 2, 4)], 5)\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "ordered_edges",
+          "tests": [
+            {
+              "name": "test_stable_weight_order",
+              "passed": true
+            },
+            {
+              "name": "test_accept_only_connecting_edges",
+              "passed": false,
+              "error": "NotImplementedError: Complete choose_forest_edges"
+            },
+            {
+              "name": "test_total_accepted_weights",
+              "passed": false,
+              "error": "NotImplementedError: Complete forest_weight"
+            }
+          ]
+        },
+        {
+          "target": "choose_forest_edges",
+          "tests": [
+            {
+              "name": "test_stable_weight_order",
+              "passed": false,
+              "error": "NotImplementedError: Complete ordered_edges"
+            },
+            {
+              "name": "test_accept_only_connecting_edges",
+              "passed": true
+            },
+            {
+              "name": "test_total_accepted_weights",
+              "passed": false,
+              "error": "NotImplementedError: Complete forest_weight"
+            }
+          ]
+        },
+        {
+          "target": "forest_weight",
+          "tests": [
+            {
+              "name": "test_stable_weight_order",
+              "passed": false,
+              "error": "NotImplementedError: Complete ordered_edges"
+            },
+            {
+              "name": "test_accept_only_connecting_edges",
+              "passed": false,
+              "error": "NotImplementedError: Complete choose_forest_edges"
+            },
+            {
+              "name": "test_total_accepted_weights",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 8,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "a35e6b544e72c4b30a5b8599017c497a8824c9aeb49841ed66c75c5fadc95b1a",
+        "main.py": "da9a9fdc73bb4e6482079af597f4cc2af4849d235323801b2d5da99019443023",
+        "test_main.py": "72f99e7d93697ed37748036c31f3e7cffdb07de4d28c6b1ddb21fb43b5c2d931",
+        "solution/main.py": "93d7eb06ff9d5a21b8e1a705cda995ec1ee8cd8518521bb4600268163008c3c0"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "20-combinatorial-search/01-cartesian-product",
+      "target": "cartesian_product",
+      "module": 1,
+      "order": 1,
+      "task_targets": [
+        "pair_row",
+        "product_rows"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete product_rows\n",
+      "solution_output": "[('red', 1), ('red', 2), ('blue', 1), ('blue', 2)]\n",
+      "starter_tests": [
+        {
+          "name": "test_one_cartesian_row",
+          "passed": false,
+          "error": "NotImplementedError: Complete pair_row"
+        },
+        {
+          "name": "test_join_cartesian_rows",
+          "passed": false,
+          "error": "NotImplementedError: Complete product_rows"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_one_cartesian_row",
+          "passed": true
+        },
+        {
+          "name": "test_join_cartesian_rows",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_one_cartesian_row",
+              "passed": true
+            },
+            {
+              "name": "test_join_cartesian_rows",
+              "passed": false,
+              "error": "NotImplementedError: Complete product_rows"
+            }
+          ],
+          "source_hash": "7b2f288dc263220032c80a57de940d874dd5592db1a2ab1faa91483ff4769acf",
+          "run_output": "Complete product_rows\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_one_cartesian_row",
+              "passed": true
+            },
+            {
+              "name": "test_join_cartesian_rows",
+              "passed": true
+            }
+          ],
+          "source_hash": "3b5bcfe724f89f8ef58892873c1e4bfbaf028aa5f65391aaba932bdf4fb756f9",
+          "run_output": "[('red', 1), ('red', 2), ('blue', 1), ('blue', 2)]\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "pair_row",
+          "tests": [
+            {
+              "name": "test_one_cartesian_row",
+              "passed": true
+            },
+            {
+              "name": "test_join_cartesian_rows",
+              "passed": false,
+              "error": "NotImplementedError: Complete product_rows"
+            }
+          ]
+        },
+        {
+          "target": "product_rows",
+          "tests": [
+            {
+              "name": "test_one_cartesian_row",
+              "passed": false,
+              "error": "NotImplementedError: Complete pair_row"
+            },
+            {
+              "name": "test_join_cartesian_rows",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 1,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "5660ea7d45e632559a372babab92cc32e10631b54cd8807446ad6b25e4860e4f",
+        "main.py": "feb522fb325db54feb23efe4b3b57a0140877b67d25ce7e40419caec2a894771",
+        "test_main.py": "bfae35251f1b3f2c94246887d7c69ccc8382d301614a7e2288ad14455dd3a439",
+        "solution/main.py": "086f3d3f61a6d7d50825f3ceb657bbe5a3a3cdf5dc3e698831b7b55a376c250c"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "20-combinatorial-search/02-power-set-iteration",
+      "target": "power_set",
+      "module": 1,
+      "order": 2,
+      "task_targets": [
+        "append_choice",
+        "subsets_with"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete subsets_with\n",
+      "solution_output": "[(), ('pen',), ('tape',), ('pen', 'tape')]\n",
+      "starter_tests": [
+        {
+          "name": "test_copy_and_extend_one_subset",
+          "passed": false,
+          "error": "NotImplementedError: Complete append_choice"
+        },
+        {
+          "name": "test_snapshot_additions",
+          "passed": false,
+          "error": "NotImplementedError: Complete subsets_with"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_copy_and_extend_one_subset",
+          "passed": true
+        },
+        {
+          "name": "test_snapshot_additions",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_copy_and_extend_one_subset",
+              "passed": true
+            },
+            {
+              "name": "test_snapshot_additions",
+              "passed": false,
+              "error": "NotImplementedError: Complete subsets_with"
+            }
+          ],
+          "source_hash": "a270157109afb829dd192ef63842cf9a9f85f58311919f672cb39da3a7880ee6",
+          "run_output": "Complete subsets_with\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_copy_and_extend_one_subset",
+              "passed": true
+            },
+            {
+              "name": "test_snapshot_additions",
+              "passed": true
+            }
+          ],
+          "source_hash": "5362d290f8db31e517abdb7266a2c7645f11f7b665a0ac741b347bfae20ecb72",
+          "run_output": "[(), ('pen',), ('tape',), ('pen', 'tape')]\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "append_choice",
+          "tests": [
+            {
+              "name": "test_copy_and_extend_one_subset",
+              "passed": true
+            },
+            {
+              "name": "test_snapshot_additions",
+              "passed": false,
+              "error": "NotImplementedError: Complete subsets_with"
+            }
+          ]
+        },
+        {
+          "target": "subsets_with",
+          "tests": [
+            {
+              "name": "test_copy_and_extend_one_subset",
+              "passed": false,
+              "error": "NotImplementedError: Complete append_choice"
+            },
+            {
+              "name": "test_snapshot_additions",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 2,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "12d075d3e4f02a777b6e8044edb082bbff6b97ad41c19b58ea3d97276211a5d6",
+        "main.py": "f18fa7257c90a18c6ba6ecb5c02d215789f88b7876ec06345a145a6715ddd136",
+        "test_main.py": "dc98ccb0bb19aeb58eab5e15b7df27572d6a9dd30c995c91952a659f0c176bd3",
+        "solution/main.py": "28cd03ea0cecd3da3418917dfa4a3440d589947837400df241a2128a9d51ee19"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "20-combinatorial-search/03-power-set-bits",
+      "target": "power_set_bits",
+      "module": 1,
+      "order": 3,
+      "task_targets": [
+        "selected_bit",
+        "subset_for_mask"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete subset_for_mask\n",
+      "solution_output": "[(), ('pen',), ('tape',), ('pen', 'tape')]\n",
+      "starter_tests": [
+        {
+          "name": "test_bit_membership",
+          "passed": false,
+          "error": "NotImplementedError: Complete selected_bit"
+        },
+        {
+          "name": "test_materialize_one_mask",
+          "passed": false,
+          "error": "NotImplementedError: Complete subset_for_mask"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_bit_membership",
+          "passed": true
+        },
+        {
+          "name": "test_materialize_one_mask",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_bit_membership",
+              "passed": true
+            },
+            {
+              "name": "test_materialize_one_mask",
+              "passed": false,
+              "error": "NotImplementedError: Complete subset_for_mask"
+            }
+          ],
+          "source_hash": "915e105e83b3f6b44f48601106531b5c02f8d0967330dd9e1e5f90057c6b0048",
+          "run_output": "Complete subset_for_mask\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_bit_membership",
+              "passed": true
+            },
+            {
+              "name": "test_materialize_one_mask",
+              "passed": true
+            }
+          ],
+          "source_hash": "d6088f2df34300ceb19937353f0cb0a78178d87c8808ad30e0f0bde41565bdcb",
+          "run_output": "[(), ('pen',), ('tape',), ('pen', 'tape')]\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "selected_bit",
+          "tests": [
+            {
+              "name": "test_bit_membership",
+              "passed": true
+            },
+            {
+              "name": "test_materialize_one_mask",
+              "passed": false,
+              "error": "NotImplementedError: Complete subset_for_mask"
+            }
+          ]
+        },
+        {
+          "target": "subset_for_mask",
+          "tests": [
+            {
+              "name": "test_bit_membership",
+              "passed": false,
+              "error": "NotImplementedError: Complete selected_bit"
+            },
+            {
+              "name": "test_materialize_one_mask",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 3,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "68b9be242302b379f1eb9b3ca7cc035d9fc8f4c19148d39077b2f277fbdc4ccc",
+        "main.py": "df89d7f54904cb11eeadad904a535b78dc34744ba4a8c9ea97a2f25ecf4e7bc8",
+        "test_main.py": "3344721649e5fff74e1baf1d17d897cf1e296da371434c8fafd85087ca940d26",
+        "solution/main.py": "b87c49528c3a70a0605d40e0b818266174e22860d8f05e1b803276cea1dc646c"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "20-combinatorial-search/04-combinations-without-replacement",
+      "target": "combinations",
+      "module": 1,
+      "order": 4,
+      "task_targets": [
+        "distinct_next",
+        "distinct_snapshot"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete distinct_next\n",
+      "solution_output": "[('north', 'west'), ('north', 'east'), ('west', 'east')]\n",
+      "starter_tests": [
+        {
+          "name": "test_distinct_next_boundary",
+          "passed": false,
+          "error": "NotImplementedError: Complete distinct_next"
+        },
+        {
+          "name": "test_distinct_leaf_snapshot",
+          "passed": false,
+          "error": "NotImplementedError: Complete distinct_snapshot"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_distinct_next_boundary",
+          "passed": true
+        },
+        {
+          "name": "test_distinct_leaf_snapshot",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_distinct_next_boundary",
+              "passed": true
+            },
+            {
+              "name": "test_distinct_leaf_snapshot",
+              "passed": false,
+              "error": "NotImplementedError: Complete distinct_snapshot"
+            }
+          ],
+          "source_hash": "cac4d5ff57141978a17e99a0de793921357b46f3113fa9760a2ed51d1ddd8b99",
+          "run_output": "Complete distinct_snapshot\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_distinct_next_boundary",
+              "passed": true
+            },
+            {
+              "name": "test_distinct_leaf_snapshot",
+              "passed": true
+            }
+          ],
+          "source_hash": "3f8e9f5096e7aaa40537c188d98cfa739c962aad2213be94342c66509335f829",
+          "run_output": "[('north', 'west'), ('north', 'east'), ('west', 'east')]\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "distinct_next",
+          "tests": [
+            {
+              "name": "test_distinct_next_boundary",
+              "passed": true
+            },
+            {
+              "name": "test_distinct_leaf_snapshot",
+              "passed": false,
+              "error": "NotImplementedError: Complete distinct_snapshot"
+            }
+          ]
+        },
+        {
+          "target": "distinct_snapshot",
+          "tests": [
+            {
+              "name": "test_distinct_next_boundary",
+              "passed": false,
+              "error": "NotImplementedError: Complete distinct_next"
+            },
+            {
+              "name": "test_distinct_leaf_snapshot",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 4,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "4c0ba3d26bd4c0f5f82c17c9b2ad2cdbc37bd02b7c01b210ead4fd412282ccc1",
+        "main.py": "a03e43de31ec35c91b1aae916fc064578ccc55dfbe5a9c119c5b47edd588a2c5",
+        "test_main.py": "8374d803b10e2d238adb2ebd87e8ac0ffed487593cedcecb66adbe79c22de613",
+        "solution/main.py": "4dd7e6edef4b6ca3adaf246e5f92791d4504a6e4b031fc5e85ab87309d3fbbf9"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "20-combinatorial-search/05-combinations-with-replacement",
+      "target": "combinations_repeated",
+      "module": 1,
+      "order": 5,
+      "task_targets": [
+        "repeated_next",
+        "repeated_snapshot"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete repeated_next\n",
+      "solution_output": "[('matte', 'matte'), ('matte', 'gloss'), ('gloss', 'gloss')]\n",
+      "starter_tests": [
+        {
+          "name": "test_repeated_next_boundary",
+          "passed": false,
+          "error": "NotImplementedError: Complete repeated_next"
+        },
+        {
+          "name": "test_repeated_leaf_snapshot",
+          "passed": false,
+          "error": "NotImplementedError: Complete repeated_snapshot"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_repeated_next_boundary",
+          "passed": true
+        },
+        {
+          "name": "test_repeated_leaf_snapshot",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_repeated_next_boundary",
+              "passed": true
+            },
+            {
+              "name": "test_repeated_leaf_snapshot",
+              "passed": false,
+              "error": "NotImplementedError: Complete repeated_snapshot"
+            }
+          ],
+          "source_hash": "61fee961d32cb0f95fdee1343dde488be5ddc9cbbd018a0efe5db119749551d3",
+          "run_output": "Complete repeated_snapshot\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_repeated_next_boundary",
+              "passed": true
+            },
+            {
+              "name": "test_repeated_leaf_snapshot",
+              "passed": true
+            }
+          ],
+          "source_hash": "7fe067872bc93f5e0fd040ef06069963429604f4ae3642d51fafd30f4e4d9720",
+          "run_output": "[('matte', 'matte'), ('matte', 'gloss'), ('gloss', 'gloss')]\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "repeated_next",
+          "tests": [
+            {
+              "name": "test_repeated_next_boundary",
+              "passed": true
+            },
+            {
+              "name": "test_repeated_leaf_snapshot",
+              "passed": false,
+              "error": "NotImplementedError: Complete repeated_snapshot"
+            }
+          ]
+        },
+        {
+          "target": "repeated_snapshot",
+          "tests": [
+            {
+              "name": "test_repeated_next_boundary",
+              "passed": false,
+              "error": "NotImplementedError: Complete repeated_next"
+            },
+            {
+              "name": "test_repeated_leaf_snapshot",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 5,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "22253a0bbac6dc2dddaea906cee7e247c6c42d0abd395eadcf2370966bd36dbb",
+        "main.py": "6b0a3d58c967028e8e68f4d29fa2c4b87f8cdbafacb22afb33a84d43bce90d2c",
+        "test_main.py": "85c250cdc7e157a9ad993108bda44884d74eb4a62608b145a644bf07ec00475a",
+        "solution/main.py": "c5f7dd550a6cab97d27f9b8c16e4e7a989388b58d0a2a6f0fdbb00af26fd76ef"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "20-combinatorial-search/06-permutations-without-replacement",
+      "target": "permutations",
+      "module": 1,
+      "order": 6,
+      "task_targets": [
+        "unused_indices",
+        "choose_position",
+        "release_position"
+      ],
+      "task_count": 3,
+      "starter_output": "Complete unused_indices\n",
+      "solution_output": "[('north', 'south'), ('north', 'west'), ('south', 'north'), ('south', 'west'), ('west', 'north'), ('west', 'south')]\n",
+      "starter_tests": [
+        {
+          "name": "test_available_permutation_positions",
+          "passed": false,
+          "error": "NotImplementedError: Complete unused_indices"
+        },
+        {
+          "name": "test_choose_one_permutation_position",
+          "passed": false,
+          "error": "NotImplementedError: Complete choose_position"
+        },
+        {
+          "name": "test_restore_permutation_state",
+          "passed": false,
+          "error": "NotImplementedError: Complete release_position"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_available_permutation_positions",
+          "passed": true
+        },
+        {
+          "name": "test_choose_one_permutation_position",
+          "passed": true
+        },
+        {
+          "name": "test_restore_permutation_state",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_available_permutation_positions",
+              "passed": true
+            },
+            {
+              "name": "test_choose_one_permutation_position",
+              "passed": false,
+              "error": "NotImplementedError: Complete choose_position"
+            },
+            {
+              "name": "test_restore_permutation_state",
+              "passed": false,
+              "error": "NotImplementedError: Complete release_position"
+            }
+          ],
+          "source_hash": "b7a2605c2f6e2874f9e51bdf785b02133ecb95dcfa77465c91e8278efb046fa8",
+          "run_output": "Complete choose_position\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_available_permutation_positions",
+              "passed": true
+            },
+            {
+              "name": "test_choose_one_permutation_position",
+              "passed": true
+            },
+            {
+              "name": "test_restore_permutation_state",
+              "passed": false,
+              "error": "NotImplementedError: Complete release_position"
+            }
+          ],
+          "source_hash": "2edbeabe1514b5d64e8740008a7c8f73b70b36ee83374f5433335893a7a5a6f1",
+          "run_output": "Complete release_position\n"
+        },
+        {
+          "completed": 3,
+          "tests": [
+            {
+              "name": "test_available_permutation_positions",
+              "passed": true
+            },
+            {
+              "name": "test_choose_one_permutation_position",
+              "passed": true
+            },
+            {
+              "name": "test_restore_permutation_state",
+              "passed": true
+            }
+          ],
+          "source_hash": "27010465082bee0a4d9141787b2089cd2427aa011c97992f304a3ef4e11cfd80",
+          "run_output": "[('north', 'south'), ('north', 'west'), ('south', 'north'), ('south', 'west'), ('west', 'north'), ('west', 'south')]\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "unused_indices",
+          "tests": [
+            {
+              "name": "test_available_permutation_positions",
+              "passed": true
+            },
+            {
+              "name": "test_choose_one_permutation_position",
+              "passed": false,
+              "error": "NotImplementedError: Complete choose_position"
+            },
+            {
+              "name": "test_restore_permutation_state",
+              "passed": false,
+              "error": "NotImplementedError: Complete release_position"
+            }
+          ]
+        },
+        {
+          "target": "choose_position",
+          "tests": [
+            {
+              "name": "test_available_permutation_positions",
+              "passed": false,
+              "error": "NotImplementedError: Complete unused_indices"
+            },
+            {
+              "name": "test_choose_one_permutation_position",
+              "passed": true
+            },
+            {
+              "name": "test_restore_permutation_state",
+              "passed": false,
+              "error": "NotImplementedError: Complete release_position"
+            }
+          ]
+        },
+        {
+          "target": "release_position",
+          "tests": [
+            {
+              "name": "test_available_permutation_positions",
+              "passed": false,
+              "error": "NotImplementedError: Complete unused_indices"
+            },
+            {
+              "name": "test_choose_one_permutation_position",
+              "passed": false,
+              "error": "NotImplementedError: Complete choose_position"
+            },
+            {
+              "name": "test_restore_permutation_state",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 6,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "118fac1c4c6945b2918aa0a1836bbfa36764ba8966fae54967cd25745497896b",
+        "main.py": "a696a2d55188d5a1a046b638e6d090f0c7afcd41cee158d28d0fdaf820153c1f",
+        "test_main.py": "c8a0506ca257f5fd7413fb84cce81b2c4ea7f7a8b681a41e384bcd487da80348",
+        "solution/main.py": "7f7e9e54a08613dd4252c30a3fd523bcfcb225b2066e410f2795a806800971f8"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "20-combinatorial-search/07-words-with-repetition",
+      "target": "words",
+      "module": 1,
+      "order": 7,
+      "task_targets": [
+        "word_complete",
+        "extend_word"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete word_complete\n",
+      "solution_output": "[('short', 'short'), ('short', 'long'), ('long', 'short'), ('long', 'long')]\n",
+      "starter_tests": [
+        {
+          "name": "test_word_length_base_case",
+          "passed": false,
+          "error": "NotImplementedError: Complete word_complete"
+        },
+        {
+          "name": "test_extend_word_without_mutation",
+          "passed": false,
+          "error": "NotImplementedError: Complete extend_word"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_word_length_base_case",
+          "passed": true
+        },
+        {
+          "name": "test_extend_word_without_mutation",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_word_length_base_case",
+              "passed": true
+            },
+            {
+              "name": "test_extend_word_without_mutation",
+              "passed": false,
+              "error": "NotImplementedError: Complete extend_word"
+            }
+          ],
+          "source_hash": "712872cbb5adc64ecb58a1dcfd075a49dd878e6f8b2cd26891476433d159c580",
+          "run_output": "Complete extend_word\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_word_length_base_case",
+              "passed": true
+            },
+            {
+              "name": "test_extend_word_without_mutation",
+              "passed": true
+            }
+          ],
+          "source_hash": "8371b5c2761d2171d440e70858284c76488985cec64e7a006ba2054b75c7ac79",
+          "run_output": "[('short', 'short'), ('short', 'long'), ('long', 'short'), ('long', 'long')]\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "word_complete",
+          "tests": [
+            {
+              "name": "test_word_length_base_case",
+              "passed": true
+            },
+            {
+              "name": "test_extend_word_without_mutation",
+              "passed": false,
+              "error": "NotImplementedError: Complete extend_word"
+            }
+          ]
+        },
+        {
+          "target": "extend_word",
+          "tests": [
+            {
+              "name": "test_word_length_base_case",
+              "passed": false,
+              "error": "NotImplementedError: Complete word_complete"
+            },
+            {
+              "name": "test_extend_word_without_mutation",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 7,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "08e50ede09a2d74c2f204a98a396923af557fc557fed6091dba422d53a12aa42",
+        "main.py": "a7ba836aea10322fb3830336ac925c94dd7952b2dba88f339c4d29f3ccadc263",
+        "test_main.py": "0804850d02ccfd89480eacf9e52bc7b8ac6ead9274423c2be5ef87f06c46bc5b",
+        "solution/main.py": "0b5eec410908d3b2d472eb04be06a6f4cbf370346815077bd4f9819eee950425"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "20-combinatorial-search/08-backtracking-constraints",
+      "target": "budget_selections",
+      "module": 1,
+      "order": 8,
+      "task_targets": [
+        "fits_budget",
+        "budget_snapshot"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete budget_snapshot\n",
+      "solution_output": "([(), (2,), (1,), (0,)], 10)\n",
+      "starter_tests": [
+        {
+          "name": "test_include_budget_boundary",
+          "passed": false,
+          "error": "NotImplementedError: Complete fits_budget"
+        },
+        {
+          "name": "test_snapshot_selected_indices",
+          "passed": false,
+          "error": "NotImplementedError: Complete budget_snapshot"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_include_budget_boundary",
+          "passed": true
+        },
+        {
+          "name": "test_snapshot_selected_indices",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_include_budget_boundary",
+              "passed": true
+            },
+            {
+              "name": "test_snapshot_selected_indices",
+              "passed": false,
+              "error": "NotImplementedError: Complete budget_snapshot"
+            }
+          ],
+          "source_hash": "af1cb74d856ce3c43a4ada9d7fa2cc95ffe520f22eef12bd4a3d649ea278e64d",
+          "run_output": "Complete budget_snapshot\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_include_budget_boundary",
+              "passed": true
+            },
+            {
+              "name": "test_snapshot_selected_indices",
+              "passed": true
+            }
+          ],
+          "source_hash": "b68094df2b1294632cb769ad41e8177c14b20903971a3d5df886e489525cb5fc",
+          "run_output": "([(), (2,), (1,), (0,)], 10)\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "fits_budget",
+          "tests": [
+            {
+              "name": "test_include_budget_boundary",
+              "passed": true
+            },
+            {
+              "name": "test_snapshot_selected_indices",
+              "passed": false,
+              "error": "NotImplementedError: Complete budget_snapshot"
+            }
+          ]
+        },
+        {
+          "target": "budget_snapshot",
+          "tests": [
+            {
+              "name": "test_include_budget_boundary",
+              "passed": false,
+              "error": "NotImplementedError: Complete fits_budget"
+            },
+            {
+              "name": "test_snapshot_selected_indices",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 8,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "457c315f4ae2cccb7a5effba39cb9c5890cf811dfe1671fe8aa4212ecdd4e3ff",
+        "main.py": "66f59e38f46a79590ef3d2eb4bbf1851e1cd0502e14f434c2a868ebe0249bb1d",
+        "test_main.py": "da03dc4552a0e0831e0888ad571bc43a9d8288b71a563cdb8a5872e2be3fd124",
+        "solution/main.py": "4eaa48b7306021405dcffc9680c586cdbee1e4d294a704a33ee612861e30ca1b"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "21-dispatch-project/01-catalog-index",
+      "target": "register",
+      "module": 2,
+      "order": 1,
+      "task_targets": [
+        "ensure_new_id",
+        "copy_record",
+        "store_record"
+      ],
+      "task_count": 3,
+      "starter_output": "Complete ensure_new_id\n",
+      "solution_output": "r1\n{'r1': {'id': 'r1', 'destination': 'pier', 'priority': 2, 'day': 0, 'units': 3}}\n",
+      "starter_tests": [
+        {
+          "name": "test_reject_existing_catalog_id",
+          "passed": false,
+          "error": "NotImplementedError: Complete ensure_new_id"
+        },
+        {
+          "name": "test_copy_catalog_record",
+          "passed": false,
+          "error": "NotImplementedError: Complete copy_record"
+        },
+        {
+          "name": "test_store_record_by_identifier",
+          "passed": false,
+          "error": "NotImplementedError: Complete store_record"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_reject_existing_catalog_id",
+          "passed": true
+        },
+        {
+          "name": "test_copy_catalog_record",
+          "passed": true
+        },
+        {
+          "name": "test_store_record_by_identifier",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_reject_existing_catalog_id",
+              "passed": true
+            },
+            {
+              "name": "test_copy_catalog_record",
+              "passed": false,
+              "error": "NotImplementedError: Complete copy_record"
+            },
+            {
+              "name": "test_store_record_by_identifier",
+              "passed": false,
+              "error": "NotImplementedError: Complete store_record"
+            }
+          ],
+          "source_hash": "c63cb89fd9eb60ac9983a9018b4a9e84e2d055bdcedaa9d4f662a0a1f6e36008",
+          "run_output": "Complete copy_record\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_reject_existing_catalog_id",
+              "passed": true
+            },
+            {
+              "name": "test_copy_catalog_record",
+              "passed": true
+            },
+            {
+              "name": "test_store_record_by_identifier",
+              "passed": false,
+              "error": "NotImplementedError: Complete store_record"
+            }
+          ],
+          "source_hash": "60fbac5c43d408e466e50d7c8ed1c9547acd625b67a7cdae80a49b3683c77e18",
+          "run_output": "Complete store_record\n"
+        },
+        {
+          "completed": 3,
+          "tests": [
+            {
+              "name": "test_reject_existing_catalog_id",
+              "passed": true
+            },
+            {
+              "name": "test_copy_catalog_record",
+              "passed": true
+            },
+            {
+              "name": "test_store_record_by_identifier",
+              "passed": true
+            }
+          ],
+          "source_hash": "6eae11b62856a246a788f0fa29df7f9907495014043b9a3ebc1be32b3a5a0f9b",
+          "run_output": "r1\n{'r1': {'id': 'r1', 'destination': 'pier', 'priority': 2, 'day': 0, 'units': 3}}\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "ensure_new_id",
+          "tests": [
+            {
+              "name": "test_reject_existing_catalog_id",
+              "passed": true
+            },
+            {
+              "name": "test_copy_catalog_record",
+              "passed": false,
+              "error": "NotImplementedError: Complete copy_record"
+            },
+            {
+              "name": "test_store_record_by_identifier",
+              "passed": false,
+              "error": "NotImplementedError: Complete store_record"
+            }
+          ]
+        },
+        {
+          "target": "copy_record",
+          "tests": [
+            {
+              "name": "test_reject_existing_catalog_id",
+              "passed": false,
+              "error": "NotImplementedError: Complete ensure_new_id"
+            },
+            {
+              "name": "test_copy_catalog_record",
+              "passed": true
+            },
+            {
+              "name": "test_store_record_by_identifier",
+              "passed": false,
+              "error": "NotImplementedError: Complete store_record"
+            }
+          ]
+        },
+        {
+          "target": "store_record",
+          "tests": [
+            {
+              "name": "test_reject_existing_catalog_id",
+              "passed": false,
+              "error": "NotImplementedError: Complete ensure_new_id"
+            },
+            {
+              "name": "test_copy_catalog_record",
+              "passed": false,
+              "error": "NotImplementedError: Complete copy_record"
+            },
+            {
+              "name": "test_store_record_by_identifier",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 1,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "1a8ce167be2bd90888ea765a1560ffae2d55a3da34a586ac94edf22f99867248",
+        "main.py": "1dea939c64599f77b793098045c3c3e836d71efc8f5fe1315aa4c33b6f68fc65",
+        "test_main.py": "88fcb3b60a88fa57328ead15d70119ee5c0b567e8cebdb96194838a8101b3571",
+        "solution/main.py": "36ce3352ba96b009dab060042fa0b7442f9856d3d55211628eec3b471729fd9b"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "21-dispatch-project/02-pending-queue",
+      "target": "enqueue",
+      "module": 2,
+      "order": 2,
+      "task_targets": [
+        "claim_id",
+        "append_pending"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete claim_id\n",
+      "solution_output": "True\nTrue\nr1 r2 None\n",
+      "starter_tests": [
+        {
+          "name": "test_claim_only_inactive_id",
+          "passed": false,
+          "error": "NotImplementedError: Complete claim_id"
+        },
+        {
+          "name": "test_append_fifo_pending_ids",
+          "passed": false,
+          "error": "NotImplementedError: Complete append_pending"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_claim_only_inactive_id",
+          "passed": true
+        },
+        {
+          "name": "test_append_fifo_pending_ids",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_claim_only_inactive_id",
+              "passed": true
+            },
+            {
+              "name": "test_append_fifo_pending_ids",
+              "passed": false,
+              "error": "NotImplementedError: Complete append_pending"
+            }
+          ],
+          "source_hash": "70b84938a79d5f4753f33cd42bf3a99a17a87896e8d6fda545a3f9919d79c515",
+          "run_output": "Complete append_pending\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_claim_only_inactive_id",
+              "passed": true
+            },
+            {
+              "name": "test_append_fifo_pending_ids",
+              "passed": true
+            }
+          ],
+          "source_hash": "6ee736cb306be41011fc3641a484b1c332692801fa151b674e60e1a8376dda7e",
+          "run_output": "True\nTrue\nr1 r2 None\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "claim_id",
+          "tests": [
+            {
+              "name": "test_claim_only_inactive_id",
+              "passed": true
+            },
+            {
+              "name": "test_append_fifo_pending_ids",
+              "passed": false,
+              "error": "NotImplementedError: Complete append_pending"
+            }
+          ]
+        },
+        {
+          "target": "append_pending",
+          "tests": [
+            {
+              "name": "test_claim_only_inactive_id",
+              "passed": false,
+              "error": "NotImplementedError: Complete claim_id"
+            },
+            {
+              "name": "test_append_fifo_pending_ids",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 2,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "2cacb29c9f0a5f331369f7c48f7f9d86d7b71bbf35d24b8cba1024f691b002a3",
+        "main.py": "177fdb7cfb9a5f4f0066348934e324cee459fb09e1ef305d4363af77071ad010",
+        "test_main.py": "360573d5e8b1a383870964bdc42b0dba32940b87a3404590ce09e2c18824a47e",
+        "solution/main.py": "119b226e825b3cab53809e87fb785ec5a0746b225b8fa6164327209345ef2117"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "21-dispatch-project/03-priority-dispatch",
+      "target": "dispatch",
+      "module": 2,
+      "order": 3,
+      "task_targets": [
+        "priority_entry",
+        "take_ready"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete priority_entry\n",
+      "solution_output": "r2 r3 r1\n",
+      "starter_tests": [
+        {
+          "name": "test_make_stable_priority_entry",
+          "passed": false,
+          "error": "NotImplementedError: Complete priority_entry"
+        },
+        {
+          "name": "test_pop_next_ready_id",
+          "passed": false,
+          "error": "NotImplementedError: Complete take_ready"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_make_stable_priority_entry",
+          "passed": true
+        },
+        {
+          "name": "test_pop_next_ready_id",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_make_stable_priority_entry",
+              "passed": true
+            },
+            {
+              "name": "test_pop_next_ready_id",
+              "passed": false,
+              "error": "NotImplementedError: Complete take_ready"
+            }
+          ],
+          "source_hash": "5bc0326a70cdd5b63bcf74511ad1929ef0d1e5eb5ad0a8a2ad08f8f726924b90",
+          "run_output": "Complete take_ready\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_make_stable_priority_entry",
+              "passed": true
+            },
+            {
+              "name": "test_pop_next_ready_id",
+              "passed": true
+            }
+          ],
+          "source_hash": "5fe99a7ef743573a9e2e053cd855e0d8a91dbb8f8cf0ba900c95b57d77518306",
+          "run_output": "r2 r3 r1\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "priority_entry",
+          "tests": [
+            {
+              "name": "test_make_stable_priority_entry",
+              "passed": true
+            },
+            {
+              "name": "test_pop_next_ready_id",
+              "passed": false,
+              "error": "NotImplementedError: Complete take_ready"
+            }
+          ]
+        },
+        {
+          "target": "take_ready",
+          "tests": [
+            {
+              "name": "test_make_stable_priority_entry",
+              "passed": false,
+              "error": "NotImplementedError: Complete priority_entry"
+            },
+            {
+              "name": "test_pop_next_ready_id",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 3,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "6dd6e5f5f3c56159baa1f8230749833715bf43856fa55b1d433a91dd078ccb0d",
+        "main.py": "33cdc2ec9b31ebc3f7e4ca0d8dbaec65e042537bb4a02d7eb92455c771966caa",
+        "test_main.py": "910e6eba0538c8c51cbb2743c66403a40d9286c6aa5f02710a34c4a1edba0611",
+        "solution/main.py": "9342a94cc384c9ee6f301a065b83ecd8b1aff0d451c634bd222526fe2e97eaa3"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "21-dispatch-project/04-history-stack",
+      "target": "undo",
+      "module": 2,
+      "order": 4,
+      "task_targets": [
+        "pop_history",
+        "reverse_load",
+        "release_id"
+      ],
+      "task_count": 3,
+      "starter_output": "Complete pop_history\n",
+      "solution_output": "r1 r1 []\nTrue\n",
+      "starter_tests": [
+        {
+          "name": "test_pop_latest_history_id",
+          "passed": false,
+          "error": "NotImplementedError: Complete pop_history"
+        },
+        {
+          "name": "test_reverse_one_load_contribution",
+          "passed": false,
+          "error": "NotImplementedError: Complete reverse_load"
+        },
+        {
+          "name": "test_release_without_resubmitting",
+          "passed": false,
+          "error": "NotImplementedError: Complete release_id"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_pop_latest_history_id",
+          "passed": true
+        },
+        {
+          "name": "test_reverse_one_load_contribution",
+          "passed": true
+        },
+        {
+          "name": "test_release_without_resubmitting",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_pop_latest_history_id",
+              "passed": true
+            },
+            {
+              "name": "test_reverse_one_load_contribution",
+              "passed": false,
+              "error": "NotImplementedError: Complete reverse_load"
+            },
+            {
+              "name": "test_release_without_resubmitting",
+              "passed": false,
+              "error": "NotImplementedError: Complete release_id"
+            }
+          ],
+          "source_hash": "9e869c9c99360cc671dbf65c4c39f7c5b3b4c6ae28f977e58b49e701f210af2c",
+          "run_output": "Complete reverse_load\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_pop_latest_history_id",
+              "passed": true
+            },
+            {
+              "name": "test_reverse_one_load_contribution",
+              "passed": true
+            },
+            {
+              "name": "test_release_without_resubmitting",
+              "passed": false,
+              "error": "NotImplementedError: Complete release_id"
+            }
+          ],
+          "source_hash": "c4a535d0a517db119c955b5ea61fa28bbb0f4108a8d0f89281170f1c35af57a8",
+          "run_output": "Complete release_id\n"
+        },
+        {
+          "completed": 3,
+          "tests": [
+            {
+              "name": "test_pop_latest_history_id",
+              "passed": true
+            },
+            {
+              "name": "test_reverse_one_load_contribution",
+              "passed": true
+            },
+            {
+              "name": "test_release_without_resubmitting",
+              "passed": true
+            }
+          ],
+          "source_hash": "40317cd69ed046c20ba8158148114be56c08b82cfcc55f3e061c1fa9a6be3ffd",
+          "run_output": "r1 r1 []\nTrue\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "pop_history",
+          "tests": [
+            {
+              "name": "test_pop_latest_history_id",
+              "passed": true
+            },
+            {
+              "name": "test_reverse_one_load_contribution",
+              "passed": false,
+              "error": "NotImplementedError: Complete reverse_load"
+            },
+            {
+              "name": "test_release_without_resubmitting",
+              "passed": false,
+              "error": "NotImplementedError: Complete release_id"
+            }
+          ]
+        },
+        {
+          "target": "reverse_load",
+          "tests": [
+            {
+              "name": "test_pop_latest_history_id",
+              "passed": false,
+              "error": "NotImplementedError: Complete pop_history"
+            },
+            {
+              "name": "test_reverse_one_load_contribution",
+              "passed": true
+            },
+            {
+              "name": "test_release_without_resubmitting",
+              "passed": false,
+              "error": "NotImplementedError: Complete release_id"
+            }
+          ]
+        },
+        {
+          "target": "release_id",
+          "tests": [
+            {
+              "name": "test_pop_latest_history_id",
+              "passed": false,
+              "error": "NotImplementedError: Complete pop_history"
+            },
+            {
+              "name": "test_reverse_one_load_contribution",
+              "passed": false,
+              "error": "NotImplementedError: Complete reverse_load"
+            },
+            {
+              "name": "test_release_without_resubmitting",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 4,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "3397c60fb95d65dd05955eb9bca7a43ce91bf0531691e52dba8ca3bbb0581982",
+        "main.py": "83995a2fe15d02990206f00b0bad4ba432abe64b8c166237abd1d33fc2d07465",
+        "test_main.py": "43a27086bd6386dfe6ec51d27538f57e600d1435b8292bb2bd0bbee49ac6b5ee",
+        "solution/main.py": "bac9372e1a826b0e3975220c4d517f74b014b40c5a1de0a694d7d32fe7be35c3"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "21-dispatch-project/05-network-reachability",
+      "target": "can_reach",
+      "module": 2,
+      "order": 5,
+      "task_targets": [
+        "check_sites",
+        "queue_unseen"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete check_sites\n",
+      "solution_output": "True\nFalse\n",
+      "starter_tests": [
+        {
+          "name": "test_validate_both_network_sites",
+          "passed": false,
+          "error": "NotImplementedError: Complete check_sites"
+        },
+        {
+          "name": "test_queue_each_unseen_neighbor_once",
+          "passed": false,
+          "error": "NotImplementedError: Complete queue_unseen"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_validate_both_network_sites",
+          "passed": true
+        },
+        {
+          "name": "test_queue_each_unseen_neighbor_once",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_validate_both_network_sites",
+              "passed": true
+            },
+            {
+              "name": "test_queue_each_unseen_neighbor_once",
+              "passed": false,
+              "error": "NotImplementedError: Complete queue_unseen"
+            }
+          ],
+          "source_hash": "126031416120366debaf43b77075a905928d24a49b01ba9439012d16db36e64c",
+          "run_output": "Complete queue_unseen\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_validate_both_network_sites",
+              "passed": true
+            },
+            {
+              "name": "test_queue_each_unseen_neighbor_once",
+              "passed": true
+            }
+          ],
+          "source_hash": "1582ea226441297676f9a64c9bc404bcca473e0e8f4538d8b48864f6ba610683",
+          "run_output": "True\nFalse\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "check_sites",
+          "tests": [
+            {
+              "name": "test_validate_both_network_sites",
+              "passed": true
+            },
+            {
+              "name": "test_queue_each_unseen_neighbor_once",
+              "passed": false,
+              "error": "NotImplementedError: Complete queue_unseen"
+            }
+          ]
+        },
+        {
+          "target": "queue_unseen",
+          "tests": [
+            {
+              "name": "test_validate_both_network_sites",
+              "passed": false,
+              "error": "NotImplementedError: Complete check_sites"
+            },
+            {
+              "name": "test_queue_each_unseen_neighbor_once",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 5,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "a2a72d5772422ba13146b6e1df42873b1d45444e27be8e3c371462ac39d5eb97",
+        "main.py": "dee0a761f3d6b8a951d739668d680d371175c01fc2b40f885c80be6556be8276",
+        "test_main.py": "86a1f203805b80b35a03effe8912c5f9c7719001dd18ff2d4f79dd87028f0521",
+        "solution/main.py": "d31139bcf38f46d84ad3697bc24bc8a574eea412a0cc934cfaa1953d682bd32b"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "21-dispatch-project/06-cheapest-route",
+      "target": "cheapest_route",
+      "module": 2,
+      "order": 6,
+      "task_targets": [
+        "route_exists",
+        "rebuild_path"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete route_exists\n",
+      "solution_output": "(5, ['depot', 'shed', 'pier'])\n",
+      "starter_tests": [
+        {
+          "name": "test_reachable_distance_including_zero",
+          "passed": false,
+          "error": "NotImplementedError: Complete route_exists"
+        },
+        {
+          "name": "test_rebuild_forward_weighted_path",
+          "passed": false,
+          "error": "NotImplementedError: Complete rebuild_path"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_reachable_distance_including_zero",
+          "passed": true
+        },
+        {
+          "name": "test_rebuild_forward_weighted_path",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_reachable_distance_including_zero",
+              "passed": true
+            },
+            {
+              "name": "test_rebuild_forward_weighted_path",
+              "passed": false,
+              "error": "NotImplementedError: Complete rebuild_path"
+            }
+          ],
+          "source_hash": "4e0e37a6a824f33fc295e5beafe3adf1abdc8335c3c0251a17d004170a12f22f",
+          "run_output": "Complete rebuild_path\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_reachable_distance_including_zero",
+              "passed": true
+            },
+            {
+              "name": "test_rebuild_forward_weighted_path",
+              "passed": true
+            }
+          ],
+          "source_hash": "6dbeb75c8d368417e1d1579c800292e4ce9f8d003a9a356165694848975caa27",
+          "run_output": "(5, ['depot', 'shed', 'pier'])\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "route_exists",
+          "tests": [
+            {
+              "name": "test_reachable_distance_including_zero",
+              "passed": true
+            },
+            {
+              "name": "test_rebuild_forward_weighted_path",
+              "passed": false,
+              "error": "NotImplementedError: Complete rebuild_path"
+            }
+          ]
+        },
+        {
+          "target": "rebuild_path",
+          "tests": [
+            {
+              "name": "test_reachable_distance_including_zero",
+              "passed": false,
+              "error": "NotImplementedError: Complete route_exists"
+            },
+            {
+              "name": "test_rebuild_forward_weighted_path",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 6,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "0d00e113f39c29713ba371839d73c58b7d2da4207655937d2c63c4ac0a5cfc36",
+        "main.py": "0b32c4afd3e1bc4f6eaff81787b64edb3705b833560a0d842ec836a693d779e1",
+        "test_main.py": "08ec55bea61eaec36bc48974ee3375f468be8e41748e72cbd180aaec3a49bde4",
+        "solution/main.py": "ec95472f71625c6cbcff75e0780329206f6d41a8177d4165d98f059857619bc6"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "21-dispatch-project/07-daily-load-report",
+      "target": "load_report",
+      "module": 2,
+      "order": 7,
+      "task_targets": [
+        "check_load_bounds",
+        "read_load_range"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete check_load_bounds\n",
+      "solution_output": "5\n0\n",
+      "starter_tests": [
+        {
+          "name": "test_validate_reporting_bounds",
+          "passed": false,
+          "error": "NotImplementedError: Complete check_load_bounds"
+        },
+        {
+          "name": "test_delegate_half_open_range",
+          "passed": false,
+          "error": "NotImplementedError: Complete read_load_range"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_validate_reporting_bounds",
+          "passed": true
+        },
+        {
+          "name": "test_delegate_half_open_range",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_validate_reporting_bounds",
+              "passed": true
+            },
+            {
+              "name": "test_delegate_half_open_range",
+              "passed": false,
+              "error": "NotImplementedError: Complete read_load_range"
+            }
+          ],
+          "source_hash": "d40743e150203876e15209025afb8a52473d0b0ff19b0a1f4a2db9e472b343cd",
+          "run_output": "Complete read_load_range\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_validate_reporting_bounds",
+              "passed": true
+            },
+            {
+              "name": "test_delegate_half_open_range",
+              "passed": true
+            }
+          ],
+          "source_hash": "9f25ed2366ffbfd6a68187e7dc4c99f06644bb83ff187610624f563eb7687309",
+          "run_output": "5\n0\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "check_load_bounds",
+          "tests": [
+            {
+              "name": "test_validate_reporting_bounds",
+              "passed": true
+            },
+            {
+              "name": "test_delegate_half_open_range",
+              "passed": false,
+              "error": "NotImplementedError: Complete read_load_range"
+            }
+          ]
+        },
+        {
+          "target": "read_load_range",
+          "tests": [
+            {
+              "name": "test_validate_reporting_bounds",
+              "passed": false,
+              "error": "NotImplementedError: Complete check_load_bounds"
+            },
+            {
+              "name": "test_delegate_half_open_range",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 7,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "bb878476832fc23d4c150ddee00ba59c2c23bb5b35875395645def7b32f661b1",
+        "main.py": "9c1f7acbbb7d9d92fd76549783a205ceb50fdf74f41d5bc99733fada39831749",
+        "test_main.py": "5be4088373df887c00eb5425f463462e6e6f4d4988bcc64a8c97cd69ffc8a898",
+        "solution/main.py": "8e28c9de54b62a869b97f39952254ba2e43cda9471d694e1e8119da5a13dd2dc"
+      },
+      "status": "passed"
+    },
+    {
+      "path": "21-dispatch-project/08-dispatch-session",
+      "target": "run_session",
+      "module": 2,
+      "order": 8,
+      "task_targets": [
+        "execute_safely",
+        "run_session"
+      ],
+      "task_count": 2,
+      "starter_output": "Complete run_session\n",
+      "solution_output": "register zeta\nenqueue True\nregister alpha\nenqueue True\nregister later\nenqueue True\nreachable True\nroute (5, ['depot', 'shed', 'pier'])\nreachable False\nroute (None, [])\ndispatch zeta\ndispatch alpha\nload 8\nundo alpha\nload 3\nenqueue error\ndispatch later\nload 2\n",
+      "starter_tests": [
+        {
+          "name": "test_one_command_recovery",
+          "passed": false,
+          "error": "NotImplementedError: Complete execute_safely"
+        },
+        {
+          "name": "test_collect_session_results_in_order",
+          "passed": false,
+          "error": "NotImplementedError: Complete run_session"
+        }
+      ],
+      "solution_tests": [
+        {
+          "name": "test_one_command_recovery",
+          "passed": true
+        },
+        {
+          "name": "test_collect_session_results_in_order",
+          "passed": true
+        }
+      ],
+      "prefixes": [
+        {
+          "completed": 1,
+          "tests": [
+            {
+              "name": "test_one_command_recovery",
+              "passed": true
+            },
+            {
+              "name": "test_collect_session_results_in_order",
+              "passed": false,
+              "error": "NotImplementedError: Complete run_session"
+            }
+          ],
+          "source_hash": "94c54226cb31cf1234c20a0b93f01a172ff4512af58ed5219b1e3ee77033b2ba",
+          "run_output": "Complete run_session\n"
+        },
+        {
+          "completed": 2,
+          "tests": [
+            {
+              "name": "test_one_command_recovery",
+              "passed": true
+            },
+            {
+              "name": "test_collect_session_results_in_order",
+              "passed": true
+            }
+          ],
+          "source_hash": "4363518763d2c8480c2e0021439d98205b0d1f21cfaaaaafd20817cada71deab",
+          "run_output": "register zeta\nenqueue True\nregister alpha\nenqueue True\nregister later\nenqueue True\nreachable True\nroute (5, ['depot', 'shed', 'pier'])\nreachable False\nroute (None, [])\ndispatch zeta\ndispatch alpha\nload 8\nundo alpha\nload 3\nenqueue error\ndispatch later\nload 2\n"
+        }
+      ],
+      "isolated_tasks": [
+        {
+          "target": "execute_safely",
+          "tests": [
+            {
+              "name": "test_one_command_recovery",
+              "passed": true
+            },
+            {
+              "name": "test_collect_session_results_in_order",
+              "passed": false,
+              "error": "NotImplementedError: Complete run_session"
+            }
+          ]
+        },
+        {
+          "target": "run_session",
+          "tests": [
+            {
+              "name": "test_one_command_recovery",
+              "passed": false,
+              "error": "NotImplementedError: Complete execute_safely"
+            },
+            {
+              "name": "test_collect_session_results_in_order",
+              "passed": true
+            }
+          ]
+        }
+      ],
+      "loader": {
+        "order": 8,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ],
+        "solution_tabs": [
+          "main.py"
+        ]
+      },
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "283af349f831b1b7b71a4ab9920fc4beec17de95042941a73effe0cfd1a9d118",
+        "main.py": "b50fa06eb07edef2dc9b2de3edf125531168c58ae965c77bbbb974e3ca744ecb",
+        "test_main.py": "0de6d28f3a1b02be6bce95f7be158e1aa1546113dfcd0cb6c3e041f3c73f23e5",
+        "solution/main.py": "e701538b22baf65a1e9c9b121d14a61f77802d2ff7fd8e0f0aef48fab84abe68"
+      },
+      "status": "passed"
+    }
+  ],
+  "continuity": [
+    {
+      "from": "19-disjoint-sets/01-dsu-state",
+      "to": "19-disjoint-sets/02-find-root",
+      "preserved": true,
+      "mismatches": []
+    },
+    {
+      "from": "19-disjoint-sets/02-find-root",
+      "to": "19-disjoint-sets/03-union-components",
+      "preserved": true,
+      "mismatches": []
+    },
+    {
+      "from": "19-disjoint-sets/03-union-components",
+      "to": "19-disjoint-sets/04-path-compression",
+      "preserved": true,
+      "mismatches": []
+    },
+    {
+      "from": "19-disjoint-sets/04-path-compression",
+      "to": "19-disjoint-sets/05-union-by-size",
+      "preserved": true,
+      "mismatches": []
+    },
+    {
+      "from": "19-disjoint-sets/05-union-by-size",
+      "to": "19-disjoint-sets/06-component-count",
+      "preserved": true,
+      "mismatches": []
+    },
+    {
+      "from": "19-disjoint-sets/06-component-count",
+      "to": "19-disjoint-sets/07-detect-redundant-edge",
+      "preserved": true,
+      "mismatches": []
+    },
+    {
+      "from": "19-disjoint-sets/07-detect-redundant-edge",
+      "to": "19-disjoint-sets/08-kruskal-forest",
+      "preserved": true,
+      "mismatches": []
+    },
+    {
+      "from": "21-dispatch-project/01-catalog-index",
+      "to": "21-dispatch-project/02-pending-queue",
+      "preserved": true,
+      "mismatches": []
+    },
+    {
+      "from": "21-dispatch-project/02-pending-queue",
+      "to": "21-dispatch-project/03-priority-dispatch",
+      "preserved": true,
+      "mismatches": []
+    },
+    {
+      "from": "21-dispatch-project/03-priority-dispatch",
+      "to": "21-dispatch-project/04-history-stack",
+      "preserved": true,
+      "mismatches": []
+    },
+    {
+      "from": "21-dispatch-project/04-history-stack",
+      "to": "21-dispatch-project/05-network-reachability",
+      "preserved": true,
+      "mismatches": []
+    },
+    {
+      "from": "21-dispatch-project/05-network-reachability",
+      "to": "21-dispatch-project/06-cheapest-route",
+      "preserved": true,
+      "mismatches": []
+    },
+    {
+      "from": "21-dispatch-project/06-cheapest-route",
+      "to": "21-dispatch-project/07-daily-load-report",
+      "preserved": true,
+      "mismatches": []
+    },
+    {
+      "from": "21-dispatch-project/07-daily-load-report",
+      "to": "21-dispatch-project/08-dispatch-session",
+      "preserved": true,
+      "mismatches": []
+    }
+  ],
+  "regressions": [
+    {
+      "earlier": "19-disjoint-sets/01-dsu-state",
+      "later": "19-disjoint-sets/02-find-root",
+      "tests": [
+        {
+          "name": "test_validate_component_size",
+          "passed": true
+        },
+        {
+          "name": "test_parent_initialization",
+          "passed": true
+        },
+        {
+          "name": "test_initial_size_list",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/01-dsu-state",
+      "later": "19-disjoint-sets/03-union-components",
+      "tests": [
+        {
+          "name": "test_validate_component_size",
+          "passed": true
+        },
+        {
+          "name": "test_parent_initialization",
+          "passed": true
+        },
+        {
+          "name": "test_initial_size_list",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/02-find-root",
+      "later": "19-disjoint-sets/03-union-components",
+      "tests": [
+        {
+          "name": "test_identify_self_link",
+          "passed": true
+        },
+        {
+          "name": "test_follow_valid_chain",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/01-dsu-state",
+      "later": "19-disjoint-sets/04-path-compression",
+      "tests": [
+        {
+          "name": "test_validate_component_size",
+          "passed": true
+        },
+        {
+          "name": "test_parent_initialization",
+          "passed": true
+        },
+        {
+          "name": "test_initial_size_list",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/02-find-root",
+      "later": "19-disjoint-sets/04-path-compression",
+      "tests": [
+        {
+          "name": "test_identify_self_link",
+          "passed": true
+        },
+        {
+          "name": "test_follow_valid_chain",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/03-union-components",
+      "later": "19-disjoint-sets/04-path-compression",
+      "tests": [
+        {
+          "name": "test_resolve_union_endpoints",
+          "passed": true
+        },
+        {
+          "name": "test_merge_distinct_roots_once",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/01-dsu-state",
+      "later": "19-disjoint-sets/05-union-by-size",
+      "tests": [
+        {
+          "name": "test_validate_component_size",
+          "passed": true
+        },
+        {
+          "name": "test_parent_initialization",
+          "passed": true
+        },
+        {
+          "name": "test_initial_size_list",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/02-find-root",
+      "later": "19-disjoint-sets/05-union-by-size",
+      "tests": [
+        {
+          "name": "test_identify_self_link",
+          "passed": true
+        },
+        {
+          "name": "test_follow_valid_chain",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/03-union-components",
+      "later": "19-disjoint-sets/05-union-by-size",
+      "tests": [
+        {
+          "name": "test_resolve_union_endpoints",
+          "passed": true
+        },
+        {
+          "name": "test_merge_distinct_roots_once",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/04-path-compression",
+      "later": "19-disjoint-sets/05-union-by-size",
+      "tests": [
+        {
+          "name": "test_redirect_preserves_old_link",
+          "passed": true
+        },
+        {
+          "name": "test_compress_entire_path",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/01-dsu-state",
+      "later": "19-disjoint-sets/06-component-count",
+      "tests": [
+        {
+          "name": "test_validate_component_size",
+          "passed": true
+        },
+        {
+          "name": "test_parent_initialization",
+          "passed": true
+        },
+        {
+          "name": "test_initial_size_list",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/02-find-root",
+      "later": "19-disjoint-sets/06-component-count",
+      "tests": [
+        {
+          "name": "test_identify_self_link",
+          "passed": true
+        },
+        {
+          "name": "test_follow_valid_chain",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/03-union-components",
+      "later": "19-disjoint-sets/06-component-count",
+      "tests": [
+        {
+          "name": "test_resolve_union_endpoints",
+          "passed": true
+        },
+        {
+          "name": "test_merge_distinct_roots_once",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/04-path-compression",
+      "later": "19-disjoint-sets/06-component-count",
+      "tests": [
+        {
+          "name": "test_redirect_preserves_old_link",
+          "passed": true
+        },
+        {
+          "name": "test_compress_entire_path",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/05-union-by-size",
+      "later": "19-disjoint-sets/06-component-count",
+      "tests": [
+        {
+          "name": "test_compress_both_endpoint_paths",
+          "passed": true
+        },
+        {
+          "name": "test_order_roots_by_component_size",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/01-dsu-state",
+      "later": "19-disjoint-sets/07-detect-redundant-edge",
+      "tests": [
+        {
+          "name": "test_validate_component_size",
+          "passed": true
+        },
+        {
+          "name": "test_parent_initialization",
+          "passed": true
+        },
+        {
+          "name": "test_initial_size_list",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/02-find-root",
+      "later": "19-disjoint-sets/07-detect-redundant-edge",
+      "tests": [
+        {
+          "name": "test_identify_self_link",
+          "passed": true
+        },
+        {
+          "name": "test_follow_valid_chain",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/03-union-components",
+      "later": "19-disjoint-sets/07-detect-redundant-edge",
+      "tests": [
+        {
+          "name": "test_resolve_union_endpoints",
+          "passed": true
+        },
+        {
+          "name": "test_merge_distinct_roots_once",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/04-path-compression",
+      "later": "19-disjoint-sets/07-detect-redundant-edge",
+      "tests": [
+        {
+          "name": "test_redirect_preserves_old_link",
+          "passed": true
+        },
+        {
+          "name": "test_compress_entire_path",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/05-union-by-size",
+      "later": "19-disjoint-sets/07-detect-redundant-edge",
+      "tests": [
+        {
+          "name": "test_compress_both_endpoint_paths",
+          "passed": true
+        },
+        {
+          "name": "test_order_roots_by_component_size",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/06-component-count",
+      "later": "19-disjoint-sets/07-detect-redundant-edge",
+      "tests": [
+        {
+          "name": "test_root_flags_ignore_intermediate_parents",
+          "passed": true
+        },
+        {
+          "name": "test_count_boolean_roots",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/01-dsu-state",
+      "later": "19-disjoint-sets/08-kruskal-forest",
+      "tests": [
+        {
+          "name": "test_validate_component_size",
+          "passed": true
+        },
+        {
+          "name": "test_parent_initialization",
+          "passed": true
+        },
+        {
+          "name": "test_initial_size_list",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/02-find-root",
+      "later": "19-disjoint-sets/08-kruskal-forest",
+      "tests": [
+        {
+          "name": "test_identify_self_link",
+          "passed": true
+        },
+        {
+          "name": "test_follow_valid_chain",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/03-union-components",
+      "later": "19-disjoint-sets/08-kruskal-forest",
+      "tests": [
+        {
+          "name": "test_resolve_union_endpoints",
+          "passed": true
+        },
+        {
+          "name": "test_merge_distinct_roots_once",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/04-path-compression",
+      "later": "19-disjoint-sets/08-kruskal-forest",
+      "tests": [
+        {
+          "name": "test_redirect_preserves_old_link",
+          "passed": true
+        },
+        {
+          "name": "test_compress_entire_path",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/05-union-by-size",
+      "later": "19-disjoint-sets/08-kruskal-forest",
+      "tests": [
+        {
+          "name": "test_compress_both_endpoint_paths",
+          "passed": true
+        },
+        {
+          "name": "test_order_roots_by_component_size",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/06-component-count",
+      "later": "19-disjoint-sets/08-kruskal-forest",
+      "tests": [
+        {
+          "name": "test_root_flags_ignore_intermediate_parents",
+          "passed": true
+        },
+        {
+          "name": "test_count_boolean_roots",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "19-disjoint-sets/07-detect-redundant-edge",
+      "later": "19-disjoint-sets/08-kruskal-forest",
+      "tests": [
+        {
+          "name": "test_redundancy_updates_connectivity",
+          "passed": true
+        },
+        {
+          "name": "test_edge_result_preserves_orientation",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/01-catalog-index",
+      "later": "21-dispatch-project/02-pending-queue",
+      "tests": [
+        {
+          "name": "test_reject_existing_catalog_id",
+          "passed": true
+        },
+        {
+          "name": "test_copy_catalog_record",
+          "passed": true
+        },
+        {
+          "name": "test_store_record_by_identifier",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/01-catalog-index",
+      "later": "21-dispatch-project/03-priority-dispatch",
+      "tests": [
+        {
+          "name": "test_reject_existing_catalog_id",
+          "passed": true
+        },
+        {
+          "name": "test_copy_catalog_record",
+          "passed": true
+        },
+        {
+          "name": "test_store_record_by_identifier",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/02-pending-queue",
+      "later": "21-dispatch-project/03-priority-dispatch",
+      "tests": [
+        {
+          "name": "test_claim_only_inactive_id",
+          "passed": true
+        },
+        {
+          "name": "test_append_fifo_pending_ids",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/01-catalog-index",
+      "later": "21-dispatch-project/04-history-stack",
+      "tests": [
+        {
+          "name": "test_reject_existing_catalog_id",
+          "passed": true
+        },
+        {
+          "name": "test_copy_catalog_record",
+          "passed": true
+        },
+        {
+          "name": "test_store_record_by_identifier",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/02-pending-queue",
+      "later": "21-dispatch-project/04-history-stack",
+      "tests": [
+        {
+          "name": "test_claim_only_inactive_id",
+          "passed": true
+        },
+        {
+          "name": "test_append_fifo_pending_ids",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/03-priority-dispatch",
+      "later": "21-dispatch-project/04-history-stack",
+      "tests": [
+        {
+          "name": "test_make_stable_priority_entry",
+          "passed": true
+        },
+        {
+          "name": "test_pop_next_ready_id",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/01-catalog-index",
+      "later": "21-dispatch-project/05-network-reachability",
+      "tests": [
+        {
+          "name": "test_reject_existing_catalog_id",
+          "passed": true
+        },
+        {
+          "name": "test_copy_catalog_record",
+          "passed": true
+        },
+        {
+          "name": "test_store_record_by_identifier",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/02-pending-queue",
+      "later": "21-dispatch-project/05-network-reachability",
+      "tests": [
+        {
+          "name": "test_claim_only_inactive_id",
+          "passed": true
+        },
+        {
+          "name": "test_append_fifo_pending_ids",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/03-priority-dispatch",
+      "later": "21-dispatch-project/05-network-reachability",
+      "tests": [
+        {
+          "name": "test_make_stable_priority_entry",
+          "passed": true
+        },
+        {
+          "name": "test_pop_next_ready_id",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/04-history-stack",
+      "later": "21-dispatch-project/05-network-reachability",
+      "tests": [
+        {
+          "name": "test_pop_latest_history_id",
+          "passed": true
+        },
+        {
+          "name": "test_reverse_one_load_contribution",
+          "passed": true
+        },
+        {
+          "name": "test_release_without_resubmitting",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/01-catalog-index",
+      "later": "21-dispatch-project/06-cheapest-route",
+      "tests": [
+        {
+          "name": "test_reject_existing_catalog_id",
+          "passed": true
+        },
+        {
+          "name": "test_copy_catalog_record",
+          "passed": true
+        },
+        {
+          "name": "test_store_record_by_identifier",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/02-pending-queue",
+      "later": "21-dispatch-project/06-cheapest-route",
+      "tests": [
+        {
+          "name": "test_claim_only_inactive_id",
+          "passed": true
+        },
+        {
+          "name": "test_append_fifo_pending_ids",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/03-priority-dispatch",
+      "later": "21-dispatch-project/06-cheapest-route",
+      "tests": [
+        {
+          "name": "test_make_stable_priority_entry",
+          "passed": true
+        },
+        {
+          "name": "test_pop_next_ready_id",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/04-history-stack",
+      "later": "21-dispatch-project/06-cheapest-route",
+      "tests": [
+        {
+          "name": "test_pop_latest_history_id",
+          "passed": true
+        },
+        {
+          "name": "test_reverse_one_load_contribution",
+          "passed": true
+        },
+        {
+          "name": "test_release_without_resubmitting",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/05-network-reachability",
+      "later": "21-dispatch-project/06-cheapest-route",
+      "tests": [
+        {
+          "name": "test_validate_both_network_sites",
+          "passed": true
+        },
+        {
+          "name": "test_queue_each_unseen_neighbor_once",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/01-catalog-index",
+      "later": "21-dispatch-project/07-daily-load-report",
+      "tests": [
+        {
+          "name": "test_reject_existing_catalog_id",
+          "passed": true
+        },
+        {
+          "name": "test_copy_catalog_record",
+          "passed": true
+        },
+        {
+          "name": "test_store_record_by_identifier",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/02-pending-queue",
+      "later": "21-dispatch-project/07-daily-load-report",
+      "tests": [
+        {
+          "name": "test_claim_only_inactive_id",
+          "passed": true
+        },
+        {
+          "name": "test_append_fifo_pending_ids",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/03-priority-dispatch",
+      "later": "21-dispatch-project/07-daily-load-report",
+      "tests": [
+        {
+          "name": "test_make_stable_priority_entry",
+          "passed": true
+        },
+        {
+          "name": "test_pop_next_ready_id",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/04-history-stack",
+      "later": "21-dispatch-project/07-daily-load-report",
+      "tests": [
+        {
+          "name": "test_pop_latest_history_id",
+          "passed": true
+        },
+        {
+          "name": "test_reverse_one_load_contribution",
+          "passed": true
+        },
+        {
+          "name": "test_release_without_resubmitting",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/05-network-reachability",
+      "later": "21-dispatch-project/07-daily-load-report",
+      "tests": [
+        {
+          "name": "test_validate_both_network_sites",
+          "passed": true
+        },
+        {
+          "name": "test_queue_each_unseen_neighbor_once",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/06-cheapest-route",
+      "later": "21-dispatch-project/07-daily-load-report",
+      "tests": [
+        {
+          "name": "test_reachable_distance_including_zero",
+          "passed": true
+        },
+        {
+          "name": "test_rebuild_forward_weighted_path",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/01-catalog-index",
+      "later": "21-dispatch-project/08-dispatch-session",
+      "tests": [
+        {
+          "name": "test_reject_existing_catalog_id",
+          "passed": true
+        },
+        {
+          "name": "test_copy_catalog_record",
+          "passed": true
+        },
+        {
+          "name": "test_store_record_by_identifier",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/02-pending-queue",
+      "later": "21-dispatch-project/08-dispatch-session",
+      "tests": [
+        {
+          "name": "test_claim_only_inactive_id",
+          "passed": true
+        },
+        {
+          "name": "test_append_fifo_pending_ids",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/03-priority-dispatch",
+      "later": "21-dispatch-project/08-dispatch-session",
+      "tests": [
+        {
+          "name": "test_make_stable_priority_entry",
+          "passed": true
+        },
+        {
+          "name": "test_pop_next_ready_id",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/04-history-stack",
+      "later": "21-dispatch-project/08-dispatch-session",
+      "tests": [
+        {
+          "name": "test_pop_latest_history_id",
+          "passed": true
+        },
+        {
+          "name": "test_reverse_one_load_contribution",
+          "passed": true
+        },
+        {
+          "name": "test_release_without_resubmitting",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/05-network-reachability",
+      "later": "21-dispatch-project/08-dispatch-session",
+      "tests": [
+        {
+          "name": "test_validate_both_network_sites",
+          "passed": true
+        },
+        {
+          "name": "test_queue_each_unseen_neighbor_once",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/06-cheapest-route",
+      "later": "21-dispatch-project/08-dispatch-session",
+      "tests": [
+        {
+          "name": "test_reachable_distance_including_zero",
+          "passed": true
+        },
+        {
+          "name": "test_rebuild_forward_weighted_path",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "earlier": "21-dispatch-project/07-daily-load-report",
+      "later": "21-dispatch-project/08-dispatch-session",
+      "tests": [
+        {
+          "name": "test_validate_reporting_bounds",
+          "passed": true
+        },
+        {
+          "name": "test_delegate_half_open_range",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "original_contract_regressions": [
+    {
+      "path": "19-disjoint-sets/01-dsu-state",
+      "tests": [
+        {
+          "name": "test_initial_partition",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/02-find-root",
+      "tests": [
+        {
+          "name": "test_follow_root_without_mutation",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/03-union-components",
+      "tests": [
+        {
+          "name": "test_union_whole_components",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/04-path-compression",
+      "tests": [
+        {
+          "name": "test_full_compression",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/05-union-by-size",
+      "tests": [
+        {
+          "name": "test_size_rule_and_connectivity",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/06-component-count",
+      "tests": [
+        {
+          "name": "test_component_count_tracks_partition",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/07-detect-redundant-edge",
+      "tests": [
+        {
+          "name": "test_redundant_edge_in_input_order",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/08-kruskal-forest",
+      "tests": [
+        {
+          "name": "test_minimum_disconnected_forest",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/01-cartesian-product",
+      "tests": [
+        {
+          "name": "test_ordered_cartesian_pairs",
+          "passed": true
+        }
+      ],
+      "note": "Behavioral assertions retained; obsolete whole-function technique checks excluded."
+    },
+    {
+      "path": "20-combinatorial-search/02-power-set-iteration",
+      "tests": [
+        {
+          "name": "test_doubling_subsets",
+          "passed": true
+        }
+      ],
+      "note": "Behavioral assertions retained; obsolete whole-function technique checks excluded."
+    },
+    {
+      "path": "20-combinatorial-search/03-power-set-bits",
+      "tests": [
+        {
+          "name": "test_mask_order_and_membership",
+          "passed": true
+        }
+      ],
+      "note": "Behavioral assertions retained; obsolete whole-function technique checks excluded."
+    },
+    {
+      "path": "20-combinatorial-search/04-combinations-without-replacement",
+      "tests": [
+        {
+          "name": "test_no_replacement_combinations",
+          "passed": true
+        }
+      ],
+      "note": "Behavioral assertions retained; obsolete whole-function technique checks excluded."
+    },
+    {
+      "path": "20-combinatorial-search/05-combinations-with-replacement",
+      "tests": [
+        {
+          "name": "test_replacement_combinations",
+          "passed": true
+        }
+      ],
+      "note": "Behavioral assertions retained; obsolete whole-function technique checks excluded."
+    },
+    {
+      "path": "20-combinatorial-search/06-permutations-without-replacement",
+      "tests": [
+        {
+          "name": "test_ordered_distinct_arrangements",
+          "passed": true
+        }
+      ],
+      "note": "Behavioral assertions retained; obsolete whole-function technique checks excluded."
+    },
+    {
+      "path": "20-combinatorial-search/07-words-with-repetition",
+      "tests": [
+        {
+          "name": "test_words_allow_repetition",
+          "passed": true
+        }
+      ],
+      "note": "Behavioral assertions retained; obsolete whole-function technique checks excluded."
+    },
+    {
+      "path": "20-combinatorial-search/08-backtracking-constraints",
+      "tests": [
+        {
+          "name": "test_pruned_budget_subsets",
+          "passed": true
+        }
+      ],
+      "note": "Behavioral assertions retained; obsolete whole-function technique checks excluded."
+    },
+    {
+      "path": "21-dispatch-project/01-catalog-index",
+      "tests": [
+        {
+          "name": "test_indexed_catalog_and_copy",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "path": "21-dispatch-project/02-pending-queue",
+      "tests": [
+        {
+          "name": "test_fifo_intake_and_duplicate_policy",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "path": "21-dispatch-project/03-priority-dispatch",
+      "tests": [
+        {
+          "name": "test_stable_priority_dispatch",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "path": "21-dispatch-project/04-history-stack",
+      "tests": [
+        {
+          "name": "test_lifo_undo_restores_load_and_eligibility",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "path": "21-dispatch-project/05-network-reachability",
+      "tests": [
+        {
+          "name": "test_directed_reachability_without_side_effects",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "path": "21-dispatch-project/06-cheapest-route",
+      "tests": [
+        {
+          "name": "test_weighted_route_reconstruction",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "path": "21-dispatch-project/07-daily-load-report",
+      "tests": [
+        {
+          "name": "test_half_open_load_queries_and_undo",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "path": "21-dispatch-project/08-dispatch-session",
+      "tests": [
+        {
+          "name": "test_scripted_session_integrates_and_recovers",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "quizzes": [
+    {
+      "module": "19-disjoint-sets",
+      "question_count": 4,
+      "parsed": true
+    },
+    {
+      "module": "20-combinatorial-search",
+      "question_count": 4,
+      "parsed": true
+    },
+    {
+      "module": "21-dispatch-project",
+      "question_count": 4,
+      "parsed": true
+    }
+  ],
+  "errors": [],
+  "verified_count": 24,
+  "task_count": 53,
+  "valid_alternatives": [
+    {
+      "label": "opposite equal-size root policy",
+      "tests": [
+        {
+          "name": "test_compress_both_endpoint_paths",
+          "passed": true
+        },
+        {
+          "name": "test_order_roots_by_component_size",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "mutants": [
+    {
+      "path": "19-disjoint-sets/01-dsu-state",
+      "target": "validate_size",
+      "mutated_body": "return None",
+      "tests": [
+        {
+          "name": "test_validate_component_size",
+          "passed": false,
+          "error": "AssertionError: Reject invalid n"
+        },
+        {
+          "name": "test_parent_initialization",
+          "passed": true
+        },
+        {
+          "name": "test_initial_size_list",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "19-disjoint-sets/01-dsu-state",
+      "target": "initial_parents",
+      "mutated_body": "return [0] * n",
+      "tests": [
+        {
+          "name": "test_validate_component_size",
+          "passed": true
+        },
+        {
+          "name": "test_parent_initialization",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_initial_size_list",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "19-disjoint-sets/01-dsu-state",
+      "target": "initial_sizes",
+      "mutated_body": "return [0] * n",
+      "tests": [
+        {
+          "name": "test_validate_component_size",
+          "passed": true
+        },
+        {
+          "name": "test_parent_initialization",
+          "passed": true
+        },
+        {
+          "name": "test_initial_size_list",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "19-disjoint-sets/02-find-root",
+      "target": "is_root",
+      "mutated_body": "return True",
+      "tests": [
+        {
+          "name": "test_identify_self_link",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_follow_valid_chain",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "19-disjoint-sets/02-find-root",
+      "target": "root_from",
+      "mutated_body": "return self.parent[item]",
+      "tests": [
+        {
+          "name": "test_identify_self_link",
+          "passed": true
+        },
+        {
+          "name": "test_follow_valid_chain",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "19-disjoint-sets/03-union-components",
+      "target": "union_roots",
+      "mutated_body": "return a,b",
+      "tests": [
+        {
+          "name": "test_resolve_union_endpoints",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_merge_distinct_roots_once",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "19-disjoint-sets/03-union-components",
+      "target": "merge_roots",
+      "mutated_body": "return False",
+      "tests": [
+        {
+          "name": "test_resolve_union_endpoints",
+          "passed": true
+        },
+        {
+          "name": "test_merge_distinct_roots_once",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "19-disjoint-sets/04-path-compression",
+      "target": "redirect_parent",
+      "mutated_body": "self.parent[item]=root\nreturn root",
+      "tests": [
+        {
+          "name": "test_redirect_preserves_old_link",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_compress_entire_path",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "19-disjoint-sets/04-path-compression",
+      "target": "compress_to",
+      "mutated_body": "if item != root:\n    self.redirect_parent(item,root)",
+      "tests": [
+        {
+          "name": "test_redirect_preserves_old_link",
+          "passed": true
+        },
+        {
+          "name": "test_compress_entire_path",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "19-disjoint-sets/05-union-by-size",
+      "target": "compressed_roots",
+      "mutated_body": "return self.find(a),self.find(b)",
+      "tests": [
+        {
+          "name": "test_compress_both_endpoint_paths",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_order_roots_by_component_size",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "19-disjoint-sets/05-union-by-size",
+      "target": "smaller_first",
+      "mutated_body": "if self.size[root_a] < self.size[root_b]:\n    return root_b,root_a\nreturn root_a,root_b",
+      "tests": [
+        {
+          "name": "test_compress_both_endpoint_paths",
+          "passed": true
+        },
+        {
+          "name": "test_order_roots_by_component_size",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "19-disjoint-sets/06-component-count",
+      "target": "root_flags",
+      "mutated_body": "return [True]*len(self.parent)",
+      "tests": [
+        {
+          "name": "test_root_flags_ignore_intermediate_parents",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_count_boolean_roots",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "19-disjoint-sets/06-component-count",
+      "target": "count_root_flags",
+      "mutated_body": "return len(flags)",
+      "tests": [
+        {
+          "name": "test_root_flags_ignore_intermediate_parents",
+          "passed": true
+        },
+        {
+          "name": "test_count_boolean_roots",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "19-disjoint-sets/07-detect-redundant-edge",
+      "target": "edge_is_redundant",
+      "mutated_body": "return groups.union_by_size(a,b)",
+      "tests": [
+        {
+          "name": "test_redundancy_updates_connectivity",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_edge_result_preserves_orientation",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "19-disjoint-sets/07-detect-redundant-edge",
+      "target": "edge_pair",
+      "mutated_body": "return b,a",
+      "tests": [
+        {
+          "name": "test_redundancy_updates_connectivity",
+          "passed": true
+        },
+        {
+          "name": "test_edge_result_preserves_orientation",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "19-disjoint-sets/08-kruskal-forest",
+      "target": "ordered_edges",
+      "mutated_body": "return sorted(edges,key=lambda edge:-edge[2])",
+      "tests": [
+        {
+          "name": "test_stable_weight_order",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_accept_only_connecting_edges",
+          "passed": true
+        },
+        {
+          "name": "test_total_accepted_weights",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "19-disjoint-sets/08-kruskal-forest",
+      "target": "choose_forest_edges",
+      "mutated_body": "return [tuple(edge) for edge in edges]",
+      "tests": [
+        {
+          "name": "test_stable_weight_order",
+          "passed": true
+        },
+        {
+          "name": "test_accept_only_connecting_edges",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_total_accepted_weights",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "19-disjoint-sets/08-kruskal-forest",
+      "target": "forest_weight",
+      "mutated_body": "return len(chosen)",
+      "tests": [
+        {
+          "name": "test_stable_weight_order",
+          "passed": true
+        },
+        {
+          "name": "test_accept_only_connecting_edges",
+          "passed": true
+        },
+        {
+          "name": "test_total_accepted_weights",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "20-combinatorial-search/01-cartesian-product",
+      "target": "pair_row",
+      "mutated_body": "return [(second,first) for second in right]",
+      "tests": [
+        {
+          "name": "test_one_cartesian_row",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_join_cartesian_rows",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "20-combinatorial-search/01-cartesian-product",
+      "target": "product_rows",
+      "mutated_body": "return [pair for first in reversed(left) for pair in pair_row(first,right)]",
+      "tests": [
+        {
+          "name": "test_one_cartesian_row",
+          "passed": true
+        },
+        {
+          "name": "test_join_cartesian_rows",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "20-combinatorial-search/02-power-set-iteration",
+      "target": "append_choice",
+      "mutated_body": "return (value,)+subset",
+      "tests": [
+        {
+          "name": "test_copy_and_extend_one_subset",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_snapshot_additions",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "20-combinatorial-search/02-power-set-iteration",
+      "target": "subsets_with",
+      "mutated_body": "subsets.extend([append_choice(subset,value) for subset in subsets])\nreturn subsets",
+      "tests": [
+        {
+          "name": "test_copy_and_extend_one_subset",
+          "passed": true
+        },
+        {
+          "name": "test_snapshot_additions",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "20-combinatorial-search/03-power-set-bits",
+      "target": "selected_bit",
+      "mutated_body": "return bool(mask)",
+      "tests": [
+        {
+          "name": "test_bit_membership",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_materialize_one_mask",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "20-combinatorial-search/03-power-set-bits",
+      "target": "subset_for_mask",
+      "mutated_body": "return tuple(value for i,value in reversed(list(enumerate(values))) if selected_bit(mask,i))",
+      "tests": [
+        {
+          "name": "test_bit_membership",
+          "passed": true
+        },
+        {
+          "name": "test_materialize_one_mask",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "20-combinatorial-search/04-combinations-without-replacement",
+      "target": "distinct_next",
+      "mutated_body": "return index",
+      "tests": [
+        {
+          "name": "test_distinct_next_boundary",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_distinct_leaf_snapshot",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "20-combinatorial-search/04-combinations-without-replacement",
+      "target": "distinct_snapshot",
+      "mutated_body": "return path",
+      "tests": [
+        {
+          "name": "test_distinct_next_boundary",
+          "passed": true
+        },
+        {
+          "name": "test_distinct_leaf_snapshot",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "20-combinatorial-search/05-combinations-with-replacement",
+      "target": "repeated_next",
+      "mutated_body": "return index+1",
+      "tests": [
+        {
+          "name": "test_repeated_next_boundary",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_repeated_leaf_snapshot",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "20-combinatorial-search/05-combinations-with-replacement",
+      "target": "repeated_snapshot",
+      "mutated_body": "return path",
+      "tests": [
+        {
+          "name": "test_repeated_next_boundary",
+          "passed": true
+        },
+        {
+          "name": "test_repeated_leaf_snapshot",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "20-combinatorial-search/06-permutations-without-replacement",
+      "target": "unused_indices",
+      "mutated_body": "return [i for i,taken in enumerate(used) if taken]",
+      "tests": [
+        {
+          "name": "test_available_permutation_positions",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_choose_one_permutation_position",
+          "passed": true
+        },
+        {
+          "name": "test_restore_permutation_state",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "20-combinatorial-search/06-permutations-without-replacement",
+      "target": "choose_position",
+      "mutated_body": "path.append(values[index])",
+      "tests": [
+        {
+          "name": "test_available_permutation_positions",
+          "passed": true
+        },
+        {
+          "name": "test_choose_one_permutation_position",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_restore_permutation_state",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "20-combinatorial-search/06-permutations-without-replacement",
+      "target": "release_position",
+      "mutated_body": "path.pop()",
+      "tests": [
+        {
+          "name": "test_available_permutation_positions",
+          "passed": true
+        },
+        {
+          "name": "test_choose_one_permutation_position",
+          "passed": true
+        },
+        {
+          "name": "test_restore_permutation_state",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "20-combinatorial-search/07-words-with-repetition",
+      "target": "word_complete",
+      "mutated_body": "return len(path)<=r",
+      "tests": [
+        {
+          "name": "test_word_length_base_case",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_extend_word_without_mutation",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "20-combinatorial-search/07-words-with-repetition",
+      "target": "extend_word",
+      "mutated_body": "return path+(value,value)",
+      "tests": [
+        {
+          "name": "test_word_length_base_case",
+          "passed": true
+        },
+        {
+          "name": "test_extend_word_without_mutation",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "20-combinatorial-search/08-backtracking-constraints",
+      "target": "fits_budget",
+      "mutated_body": "return total+weight<capacity",
+      "tests": [
+        {
+          "name": "test_include_budget_boundary",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_snapshot_selected_indices",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "20-combinatorial-search/08-backtracking-constraints",
+      "target": "budget_snapshot",
+      "mutated_body": "return path",
+      "tests": [
+        {
+          "name": "test_include_budget_boundary",
+          "passed": true
+        },
+        {
+          "name": "test_snapshot_selected_indices",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/01-catalog-index",
+      "target": "ensure_new_id",
+      "mutated_body": "return None",
+      "tests": [
+        {
+          "name": "test_reject_existing_catalog_id",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_copy_catalog_record",
+          "passed": true
+        },
+        {
+          "name": "test_store_record_by_identifier",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/01-catalog-index",
+      "target": "copy_record",
+      "mutated_body": "return job",
+      "tests": [
+        {
+          "name": "test_reject_existing_catalog_id",
+          "passed": true
+        },
+        {
+          "name": "test_copy_catalog_record",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_store_record_by_identifier",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/01-catalog-index",
+      "target": "store_record",
+      "mutated_body": "self.catalog[\"fixed\"]=record",
+      "tests": [
+        {
+          "name": "test_reject_existing_catalog_id",
+          "passed": true
+        },
+        {
+          "name": "test_copy_catalog_record",
+          "passed": true
+        },
+        {
+          "name": "test_store_record_by_identifier",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/02-pending-queue",
+      "target": "claim_id",
+      "mutated_body": "self.active.add(job_id)\nreturn True",
+      "tests": [
+        {
+          "name": "test_claim_only_inactive_id",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_append_fifo_pending_ids",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/02-pending-queue",
+      "target": "append_pending",
+      "mutated_body": "self.pending.appendleft(job_id)",
+      "tests": [
+        {
+          "name": "test_claim_only_inactive_id",
+          "passed": true
+        },
+        {
+          "name": "test_append_fifo_pending_ids",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/03-priority-dispatch",
+      "target": "priority_entry",
+      "mutated_body": "return self._job(job_id)[\"priority\"],self.sequence,job_id",
+      "tests": [
+        {
+          "name": "test_make_stable_priority_entry",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_pop_next_ready_id",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/03-priority-dispatch",
+      "target": "take_ready",
+      "mutated_body": "return self.ready.pop()[2] if self.ready else None",
+      "tests": [
+        {
+          "name": "test_make_stable_priority_entry",
+          "passed": true
+        },
+        {
+          "name": "test_pop_next_ready_id",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/04-history-stack",
+      "target": "pop_history",
+      "mutated_body": "return self.history.pop(0) if self.history else None",
+      "tests": [
+        {
+          "name": "test_pop_latest_history_id",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_reverse_one_load_contribution",
+          "passed": true
+        },
+        {
+          "name": "test_release_without_resubmitting",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/04-history-stack",
+      "target": "reverse_load",
+      "mutated_body": "job=self._job(job_id)\nself.loads.add(job[\"day\"],job[\"units\"])",
+      "tests": [
+        {
+          "name": "test_pop_latest_history_id",
+          "passed": true
+        },
+        {
+          "name": "test_reverse_one_load_contribution",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_release_without_resubmitting",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/04-history-stack",
+      "target": "release_id",
+      "mutated_body": "return None",
+      "tests": [
+        {
+          "name": "test_pop_latest_history_id",
+          "passed": true
+        },
+        {
+          "name": "test_reverse_one_load_contribution",
+          "passed": true
+        },
+        {
+          "name": "test_release_without_resubmitting",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/05-network-reachability",
+      "target": "check_sites",
+      "mutated_body": "if start not in self.network:\n    raise KeyError(start)",
+      "tests": [
+        {
+          "name": "test_validate_both_network_sites",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_queue_each_unseen_neighbor_once",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/05-network-reachability",
+      "target": "queue_unseen",
+      "mutated_body": "for neighbor,_ in self.network[site]:\n    if neighbor not in seen:\n        frontier.append(neighbor)",
+      "tests": [
+        {
+          "name": "test_validate_both_network_sites",
+          "passed": true
+        },
+        {
+          "name": "test_queue_each_unseen_neighbor_once",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/06-cheapest-route",
+      "target": "route_exists",
+      "mutated_body": "return bool(distance[destination])",
+      "tests": [
+        {
+          "name": "test_reachable_distance_including_zero",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_rebuild_forward_weighted_path",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/06-cheapest-route",
+      "target": "rebuild_path",
+      "mutated_body": "path=[destination]\nwhile path[-1]!=start:\n    path.append(previous[path[-1]])\nreturn path",
+      "tests": [
+        {
+          "name": "test_reachable_distance_including_zero",
+          "passed": true
+        },
+        {
+          "name": "test_rebuild_forward_weighted_path",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/07-daily-load-report",
+      "target": "check_load_bounds",
+      "mutated_body": "return None",
+      "tests": [
+        {
+          "name": "test_validate_reporting_bounds",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_delegate_half_open_range",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/07-daily-load-report",
+      "target": "read_load_range",
+      "mutated_body": "return self.loads.range_sum(start,stop+1)",
+      "tests": [
+        {
+          "name": "test_validate_reporting_bounds",
+          "passed": true
+        },
+        {
+          "name": "test_delegate_half_open_range",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/08-dispatch-session",
+      "target": "execute_safely",
+      "mutated_body": "try:\n    return workbench.execute(command)\nexcept Exception:\n    return \"error\"",
+      "tests": [
+        {
+          "name": "test_one_command_recovery",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "name": "test_collect_session_results_in_order",
+          "passed": true
+        }
+      ],
+      "rejected": true
+    },
+    {
+      "path": "21-dispatch-project/08-dispatch-session",
+      "target": "run_session",
+      "mutated_body": "return [execute_safely(workbench,command) for command in reversed(commands)]",
+      "tests": [
+        {
+          "name": "test_one_command_recovery",
+          "passed": true
+        },
+        {
+          "name": "test_collect_session_results_in_order",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ],
+      "rejected": true
+    }
+  ],
+  "model_checks": {
+    "dsu_operations": 1600,
+    "bruteforce_small_forests": 60,
+    "project_operations": 160,
+    "graph_copy_and_validation": true
+  },
+  "prose_examples": [
+    {
+      "label": "separate lockers",
+      "passed": true
+    },
+    {
+      "label": "locker link",
+      "passed": true
+    },
+    {
+      "label": "root chain",
+      "passed": true
+    },
+    {
+      "label": "join whole groups",
+      "passed": true
+    },
+    {
+      "label": "compression trace",
+      "passed": true
+    },
+    {
+      "label": "count roots not parent values",
+      "passed": true
+    },
+    {
+      "label": "redundant cable example",
+      "passed": true
+    },
+    {
+      "label": "weighted cable example",
+      "passed": true
+    },
+    {
+      "label": "paper finish pairs",
+      "passed": true
+    },
+    {
+      "label": "tool doubling",
+      "passed": true
+    },
+    {
+      "label": "mask selects first and third",
+      "passed": true
+    },
+    {
+      "label": "unordered team",
+      "passed": true
+    },
+    {
+      "label": "repeated roll selection",
+      "passed": true
+    },
+    {
+      "label": "ordered site arrangements",
+      "passed": true
+    },
+    {
+      "label": "repeated signal words",
+      "passed": true
+    },
+    {
+      "label": "budget tool indices",
+      "passed": true
+    },
+    {
+      "label": "directed depot reachability",
+      "passed": true
+    },
+    {
+      "label": "cheaper two-edge route",
+      "passed": true
+    },
+    {
+      "label": "half-open load trace",
+      "passed": true
+    }
+  ],
+  "humanization": [
+    {
+      "pass": 1,
+      "path": "19-disjoint-sets/01-dsu-state",
+      "before": "e6cd5871fb9029368bd2d30a47b95f129b7c6a890d25cb8e6e1994bc0a7686bc",
+      "after": "e6cd5871fb9029368bd2d30a47b95f129b7c6a890d25cb8e6e1994bc0a7686bc",
+      "notes": [
+        "Reviewed new helper explanations, ordered tasks, supplied wrappers and independently tested task boundaries."
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "19-disjoint-sets/02-find-root",
+      "before": "ec19407fed58ac75d47a333f26a79298ab4ec2f4d3ec5d52817762f4b12e4c34",
+      "after": "ec19407fed58ac75d47a333f26a79298ab4ec2f4d3ec5d52817762f4b12e4c34",
+      "notes": [
+        "Reviewed new helper explanations, ordered tasks, supplied wrappers and independently tested task boundaries."
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "19-disjoint-sets/03-union-components",
+      "before": "d4ce385a04f99b95d23f306962ea09e708185667967828beb786ed98100b217b",
+      "after": "d4ce385a04f99b95d23f306962ea09e708185667967828beb786ed98100b217b",
+      "notes": [
+        "Reviewed new helper explanations, ordered tasks, supplied wrappers and independently tested task boundaries."
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "19-disjoint-sets/04-path-compression",
+      "before": "d10d29139e07183fbfb0def4dfe77d6c217bdff35aa42cb9fbbf236d21609850",
+      "after": "d10d29139e07183fbfb0def4dfe77d6c217bdff35aa42cb9fbbf236d21609850",
+      "notes": [
+        "Reviewed new helper explanations, ordered tasks, supplied wrappers and independently tested task boundaries."
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "19-disjoint-sets/05-union-by-size",
+      "before": "9eb1c323a1648ba47351c08eb2db6080966267030d43e180b5d8a61f6d06d8fe",
+      "after": "e7ea0d48962eac10eb22de74606197b9f9708d569db57f3e6feaec3de9aa12e3",
+      "notes": [
+        {
+          "old": "Add `union_by_size(a, b)` without removing the earlier unbalanced `union`.",
+          "new": "The supplied `union_by_size(a, b)` keeps the earlier unbalanced `union` for comparison."
+        }
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "19-disjoint-sets/06-component-count",
+      "before": "0f45ecfc59e7d0018477eb34559b2cc89473502c51f599e3a18fa00464c9d252",
+      "after": "0f45ecfc59e7d0018477eb34559b2cc89473502c51f599e3a18fa00464c9d252",
+      "notes": [
+        "Reviewed new helper explanations, ordered tasks, supplied wrappers and independently tested task boundaries."
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "19-disjoint-sets/07-detect-redundant-edge",
+      "before": "9115c379b28629486a79fbf0fb39254719209f868cddd044ae4ba8e928184fd3",
+      "after": "9115c379b28629486a79fbf0fb39254719209f868cddd044ae4ba8e928184fd3",
+      "notes": [
+        "Reviewed new helper explanations, ordered tasks, supplied wrappers and independently tested task boundaries."
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "19-disjoint-sets/08-kruskal-forest",
+      "before": "50c431f7b87341b462e283f2e774b9782ee896751d80eda8625894fb1ff879ee",
+      "after": "50c431f7b87341b462e283f2e774b9782ee896751d80eda8625894fb1ff879ee",
+      "notes": [
+        "Reviewed new helper explanations, ordered tasks, supplied wrappers and independently tested task boundaries."
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "20-combinatorial-search/01-cartesian-product",
+      "before": "4a3b12932551823228ab94a0c9c72fd480d71e8cc4ae6338e6beda20075d8fb7",
+      "after": "ee6666c0d52abca5a838c99e46842b1684293d1306db351c933e2a91b1372e50",
+      "notes": [
+        {
+          "old": "Implement the search yourself rather than calling `itertools`; it is useful later as a comparison, but here the branching rules are the lesson.",
+          "new": "Write the row-building helpers without `itertools`; the loop structure is what you are practicing."
+        }
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "20-combinatorial-search/02-power-set-iteration",
+      "before": "2b3d57768d427294077ed70a28dc69c1080b4dab73409956d7877360a38b329b",
+      "after": "2b3d57768d427294077ed70a28dc69c1080b4dab73409956d7877360a38b329b",
+      "notes": [
+        "Reviewed new helper explanations, ordered tasks, supplied wrappers and independently tested task boundaries."
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "20-combinatorial-search/03-power-set-bits",
+      "before": "7e070d75b05fd6555ac52607e47cf59dd2773c18d2af5eacd9bfd50d3b1a49d3",
+      "after": "7e070d75b05fd6555ac52607e47cf59dd2773c18d2af5eacd9bfd50d3b1a49d3",
+      "notes": [
+        "Reviewed new helper explanations, ordered tasks, supplied wrappers and independently tested task boundaries."
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "20-combinatorial-search/04-combinations-without-replacement",
+      "before": "96e0be825b672bb0e94c250c7f00391f5bdd35528d8151867afd5bf53bafc2e1",
+      "after": "29c6b87eb81b2fb388625a6344d2dafff96cefc0ca4f6979f63ff289e92a39e5",
+      "notes": [
+        {
+          "old": "The recursive driver is supplied so each checkbox is small.",
+          "new": "The supplied recursive driver calls your two helpers at the branch boundary and at a completed leaf."
+        },
+        {
+          "old": "after choosing index without replacement.",
+          "new": "after choosing an item without replacement."
+        }
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "20-combinatorial-search/05-combinations-with-replacement",
+      "before": "b0790d52c374c21ce7b08e8f321847867cd0d598acd08c3a6fd5e24fe70faed6",
+      "after": "af983be32b44c594921831abc8cbc2b2c8b8b677356eecc083afbd20e5592a01",
+      "notes": [
+        {
+          "old": "The recursive driver is supplied so each checkbox is small.",
+          "new": "This driver keeps the previous lesson's recursion shape but changes the allowed next index."
+        },
+        {
+          "old": "after choosing index with replacement.",
+          "new": "after choosing an item with replacement."
+        }
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "20-combinatorial-search/06-permutations-without-replacement",
+      "before": "595d2784f02bf1c9b2cad8775d2e97892cc5966356146fca9dbb665b10e95382",
+      "after": "514af2237706c122944f9d38a8fed5d6460991c7026fd2c372935e08eaff46b2",
+      "notes": [
+        {
+          "old": "Working space is O(n+r) for markers, path, and recursive calls.",
+          "new": "The markers and path use O(n+r) space. This staged driver also keeps a candidate-index list at each active depth, so total working space is O(nr+r)."
+        }
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "20-combinatorial-search/07-words-with-repetition",
+      "before": "78bd73f4d37269049211b9f64ea5eb0db31c82c48a5b0821efbca1c623798b3c",
+      "after": "234580b2af3e7fc9e93c0a0c1ac5513e888b7625b99f4b0d84dfd0b83eb64fca",
+      "notes": [
+        {
+          "old": "Materializing them costs O(r n**r) time and output space for positive n and r, with O(r\u00b2) tuple-path space across the recursive stack in this copying variation.",
+          "new": "For n >= 2 and positive r, construction takes O(r n**r) time and output space. With a single symbol, repeatedly copying longer tuple paths takes O(r\u00b2) time even though there is only one output word. The copying variation can retain O(r\u00b2) tuple-path space across the recursive stack."
+        }
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "20-combinatorial-search/08-backtracking-constraints",
+      "before": "e04d330444da34a32ec409c1c3129070d82b93b602dd6030f876ba012b47364c",
+      "after": "e04d330444da34a32ec409c1c3129070d82b93b602dd6030f876ba012b47364c",
+      "notes": [
+        "Reviewed new helper explanations, ordered tasks, supplied wrappers and independently tested task boundaries."
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "21-dispatch-project/01-catalog-index",
+      "before": "02a80e503335c355c656652b314a277cc6d18fdfbab4dbfefe9fd38df7928bbf",
+      "after": "d12191d828d9380512d8057dec9e2300ed9eeba8a7f0cd672bfc0c75e27e9dcd",
+      "notes": [
+        {
+          "old": "Field validation and the returned ID are supplied in `register`; neither is a checkbox.",
+          "new": "The supplied `register` method validates the fields and returns the ID after storage succeeds."
+        }
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "21-dispatch-project/02-pending-queue",
+      "before": "14a05a9a83410fb13f210f5dbe4e78e94be1466cd6c7bc904d4928c4949b8d7a",
+      "after": "14a05a9a83410fb13f210f5dbe4e78e94be1466cd6c7bc904d4928c4949b8d7a",
+      "notes": [
+        "Reviewed new helper explanations, ordered tasks, supplied wrappers and independently tested task boundaries."
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "21-dispatch-project/03-priority-dispatch",
+      "before": "f86cd69bf6f926f44016ffe5f4b9d08a0981d17fb694e5ebc8581b7c5f3ecae7",
+      "after": "f86cd69bf6f926f44016ffe5f4b9d08a0981d17fb694e5ebc8581b7c5f3ecae7",
+      "notes": [
+        "Reviewed new helper explanations, ordered tasks, supplied wrappers and independently tested task boundaries."
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "21-dispatch-project/04-history-stack",
+      "before": "da0043fa8dbd6aaf19b05cf56f8125b37383ebcab1a9fcc69abaaafa662bf735",
+      "after": "da0043fa8dbd6aaf19b05cf56f8125b37383ebcab1a9fcc69abaaafa662bf735",
+      "notes": [
+        "Reviewed new helper explanations, ordered tasks, supplied wrappers and independently tested task boundaries."
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "21-dispatch-project/05-network-reachability",
+      "before": "e03758b11e9b942c25ec454e3afe0b25b36e46e9623df4a5aeefdebdccfd7f94",
+      "after": "e03758b11e9b942c25ec454e3afe0b25b36e46e9623df4a5aeefdebdccfd7f94",
+      "notes": [
+        "Reviewed new helper explanations, ordered tasks, supplied wrappers and independently tested task boundaries."
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "21-dispatch-project/06-cheapest-route",
+      "before": "a38745b2d3cbde945f00b6d01cfec72c639ec9e15d719ae729b1d1600cdf26b3",
+      "after": "676605f2ea5641decc2aa8aea532e7c4a489a66d03544d9f78dae635855cc094",
+      "notes": [
+        {
+          "old": "Add `cheapest_route(start, destination)` returning `(cost, path)`,",
+          "new": "The supplied `cheapest_route(start, destination)` returns `(cost, path)`,"
+        }
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "21-dispatch-project/07-daily-load-report",
+      "before": "5d1e06c964cb5b2e1b5a4272e62a8ea64432fc658ab661d5418dd5f416c449a7",
+      "after": "5d1e06c964cb5b2e1b5a4272e62a8ea64432fc658ab661d5418dd5f416c449a7",
+      "notes": [
+        "Reviewed new helper explanations, ordered tasks, supplied wrappers and independently tested task boundaries."
+      ]
+    },
+    {
+      "pass": 1,
+      "path": "21-dispatch-project/08-dispatch-session",
+      "before": "1ce8ee766de7294d8fa944b97cadc9b1f68b54bbb7375ac3539db0e36e195307",
+      "after": "1ce8ee766de7294d8fa944b97cadc9b1f68b54bbb7375ac3539db0e36e195307",
+      "notes": [
+        "Reviewed new helper explanations, ordered tasks, supplied wrappers and independently tested task boundaries."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "19-disjoint-sets/01-dsu-state",
+      "before": "e6cd5871fb9029368bd2d30a47b95f129b7c6a890d25cb8e6e1994bc0a7686bc",
+      "after": "facde2a66eeb063c60470c3fd393e736134b1fa3a9ed58338d99f406aeaf0c52",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "19-disjoint-sets/02-find-root",
+      "before": "ec19407fed58ac75d47a333f26a79298ab4ec2f4d3ec5d52817762f4b12e4c34",
+      "after": "b0a4c90cea96ef6b2588d25500a34dfeafc81c85758e7915f5c5eda96fcbe33b",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "19-disjoint-sets/03-union-components",
+      "before": "d4ce385a04f99b95d23f306962ea09e708185667967828beb786ed98100b217b",
+      "after": "c4c1e6e0adf641e0d7daf562aad495bed75d38308b9e6b2eb4dccbc36cef1411",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "19-disjoint-sets/04-path-compression",
+      "before": "d10d29139e07183fbfb0def4dfe77d6c217bdff35aa42cb9fbbf236d21609850",
+      "after": "e6904859f2640a26c6475d7a0d8922468932add637e533d2a8c090322673be52",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "19-disjoint-sets/05-union-by-size",
+      "before": "e7ea0d48962eac10eb22de74606197b9f9708d569db57f3e6feaec3de9aa12e3",
+      "after": "2b4c907c1f3855f70e2078ca697245e847e1b45cde89ba253f41d13b649b91ad",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "19-disjoint-sets/06-component-count",
+      "before": "0f45ecfc59e7d0018477eb34559b2cc89473502c51f599e3a18fa00464c9d252",
+      "after": "3e5b11628ca3e3051131f1aeeee59fd9f1fad16f7964ea53834fab909749287e",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "19-disjoint-sets/07-detect-redundant-edge",
+      "before": "9115c379b28629486a79fbf0fb39254719209f868cddd044ae4ba8e928184fd3",
+      "after": "a750db92a7bf1beafaec2d29690b56e294b0444a051be6bcc4e1903a3f2e9eec",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "19-disjoint-sets/08-kruskal-forest",
+      "before": "50c431f7b87341b462e283f2e774b9782ee896751d80eda8625894fb1ff879ee",
+      "after": "a35e6b544e72c4b30a5b8599017c497a8824c9aeb49841ed66c75c5fadc95b1a",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "20-combinatorial-search/01-cartesian-product",
+      "before": "ee6666c0d52abca5a838c99e46842b1684293d1306db351c933e2a91b1372e50",
+      "after": "5660ea7d45e632559a372babab92cc32e10631b54cd8807446ad6b25e4860e4f",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "20-combinatorial-search/02-power-set-iteration",
+      "before": "2b3d57768d427294077ed70a28dc69c1080b4dab73409956d7877360a38b329b",
+      "after": "12d075d3e4f02a777b6e8044edb082bbff6b97ad41c19b58ea3d97276211a5d6",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "20-combinatorial-search/03-power-set-bits",
+      "before": "7e070d75b05fd6555ac52607e47cf59dd2773c18d2af5eacd9bfd50d3b1a49d3",
+      "after": "68b9be242302b379f1eb9b3ca7cc035d9fc8f4c19148d39077b2f277fbdc4ccc",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "20-combinatorial-search/04-combinations-without-replacement",
+      "before": "29c6b87eb81b2fb388625a6344d2dafff96cefc0ca4f6979f63ff289e92a39e5",
+      "after": "4c0ba3d26bd4c0f5f82c17c9b2ad2cdbc37bd02b7c01b210ead4fd412282ccc1",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "20-combinatorial-search/05-combinations-with-replacement",
+      "before": "af983be32b44c594921831abc8cbc2b2c8b8b677356eecc083afbd20e5592a01",
+      "after": "22253a0bbac6dc2dddaea906cee7e247c6c42d0abd395eadcf2370966bd36dbb",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "20-combinatorial-search/06-permutations-without-replacement",
+      "before": "514af2237706c122944f9d38a8fed5d6460991c7026fd2c372935e08eaff46b2",
+      "after": "118fac1c4c6945b2918aa0a1836bbfa36764ba8966fae54967cd25745497896b",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "20-combinatorial-search/07-words-with-repetition",
+      "before": "234580b2af3e7fc9e93c0a0c1ac5513e888b7625b99f4b0d84dfd0b83eb64fca",
+      "after": "08e50ede09a2d74c2f204a98a396923af557fc557fed6091dba422d53a12aa42",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "20-combinatorial-search/08-backtracking-constraints",
+      "before": "e04d330444da34a32ec409c1c3129070d82b93b602dd6030f876ba012b47364c",
+      "after": "457c315f4ae2cccb7a5effba39cb9c5890cf811dfe1671fe8aa4212ecdd4e3ff",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "21-dispatch-project/01-catalog-index",
+      "before": "d12191d828d9380512d8057dec9e2300ed9eeba8a7f0cd672bfc0c75e27e9dcd",
+      "after": "1a8ce167be2bd90888ea765a1560ffae2d55a3da34a586ac94edf22f99867248",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "21-dispatch-project/02-pending-queue",
+      "before": "14a05a9a83410fb13f210f5dbe4e78e94be1466cd6c7bc904d4928c4949b8d7a",
+      "after": "2cacb29c9f0a5f331369f7c48f7f9d86d7b71bbf35d24b8cba1024f691b002a3",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "21-dispatch-project/03-priority-dispatch",
+      "before": "f86cd69bf6f926f44016ffe5f4b9d08a0981d17fb694e5ebc8581b7c5f3ecae7",
+      "after": "6dd6e5f5f3c56159baa1f8230749833715bf43856fa55b1d433a91dd078ccb0d",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "21-dispatch-project/04-history-stack",
+      "before": "da0043fa8dbd6aaf19b05cf56f8125b37383ebcab1a9fcc69abaaafa662bf735",
+      "after": "3397c60fb95d65dd05955eb9bca7a43ce91bf0531691e52dba8ca3bbb0581982",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "21-dispatch-project/05-network-reachability",
+      "before": "e03758b11e9b942c25ec454e3afe0b25b36e46e9623df4a5aeefdebdccfd7f94",
+      "after": "a2a72d5772422ba13146b6e1df42873b1d45444e27be8e3c371462ac39d5eb97",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "21-dispatch-project/06-cheapest-route",
+      "before": "676605f2ea5641decc2aa8aea532e7c4a489a66d03544d9f78dae635855cc094",
+      "after": "0d00e113f39c29713ba371839d73c58b7d2da4207655937d2c63c4ac0a5cfc36",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "21-dispatch-project/07-daily-load-report",
+      "before": "5d1e06c964cb5b2e1b5a4272e62a8ea64432fc658ab661d5418dd5f416c449a7",
+      "after": "bb878476832fc23d4c150ddee00ba59c2c23bb5b35875395645def7b32f661b1",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    },
+    {
+      "pass": 2,
+      "path": "21-dispatch-project/08-dispatch-session",
+      "before": "1ce8ee766de7294d8fa944b97cadc9b1f68b54bbb7375ac3539db0e36e195307",
+      "after": "283af349f831b1b7b71a4ab9920fc4beec17de95042941a73effe0cfd1a9d118",
+      "notes": [
+        "Re-read revised helper contracts and reference bodies; aligned hints to the small tasks and retained independently verified prefix order."
+      ]
+    }
+  ],
+  "superseded_review": {
+    "path": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/before-atomic-19-21/audit-19-21.json",
+    "reason": "Superseded single-checkbox lessons with independently testable helper tasks after user correction."
+  },
+  "source_research": {
+    "reference_pages": "191-226",
+    "usage": "Conceptual comparison only; original prose, fixtures and quizzes; empty selection and output-copy costs handled explicitly."
+  },
+  "limitations": [
+    "Actual InterCourses Pyodide worker/Submit and browser UI acceptance remain with the parent.",
+    "Parent owns original diagrams and course manifest.",
+    "Native source-technique checks use inspect.getsource; confirm source visibility in actual Submit."
+  ],
+  "replay": {
+    "main_harness": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/audit_atomic19_21.py",
+    "extended_harness": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/extended_atomic19_21.py",
+    "partial_submissions": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/atomic-audit19-21"
+  }
+}

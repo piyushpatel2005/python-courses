@@ -1,0 +1,1212 @@
+[
+  {
+    "check": "computed binary links",
+    "actual": [
+      18,
+      9,
+      27,
+      null
+    ],
+    "expected": [
+      18,
+      9,
+      27,
+      null
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed count/height/base cases",
+    "actual": [
+      6,
+      3,
+      0,
+      0,
+      1
+    ],
+    "expected": [
+      6,
+      3,
+      0,
+      0,
+      1
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed search 13",
+    "actual": [
+      18,
+      9,
+      13
+    ],
+    "expected": [
+      18,
+      9,
+      13
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed found 13",
+    "actual": true,
+    "expected": true,
+    "pass": true
+  },
+  {
+    "check": "computed search 12",
+    "actual": [
+      18,
+      9,
+      13
+    ],
+    "expected": [
+      18,
+      9,
+      13
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed found 12",
+    "actual": false,
+    "expected": false,
+    "pass": true
+  },
+  {
+    "check": "computed minimum path",
+    "actual": [
+      18,
+      9,
+      4
+    ],
+    "expected": [
+      18,
+      9,
+      4
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed duplicate insertion",
+    "actual": 6,
+    "expected": 6,
+    "pass": true
+  },
+  {
+    "check": "computed leaf deletion",
+    "actual": [
+      9,
+      13,
+      18,
+      27,
+      32
+    ],
+    "expected": [
+      9,
+      13,
+      18,
+      27,
+      32
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed one-child deletion",
+    "actual": [
+      4,
+      9,
+      13,
+      18,
+      32
+    ],
+    "expected": [
+      4,
+      9,
+      13,
+      18,
+      32
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed singleton deletion",
+    "actual": null,
+    "expected": null,
+    "pass": true
+  },
+  {
+    "check": "computed tree BFS",
+    "actual": [
+      18,
+      9,
+      27,
+      4,
+      13,
+      32
+    ],
+    "expected": [
+      18,
+      9,
+      27,
+      4,
+      13,
+      32
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed tree frontier",
+    "actual": [
+      [
+        9,
+        27
+      ],
+      [
+        27,
+        4,
+        13
+      ]
+    ],
+    "expected": [
+      [
+        9,
+        27
+      ],
+      [
+        27,
+        4,
+        13
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed graph BFS",
+    "actual": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "expected": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed graph queue",
+    "actual": [
+      [
+        "B",
+        "C"
+      ],
+      [
+        "C",
+        "D"
+      ],
+      [
+        "D"
+      ],
+      []
+    ],
+    "expected": [
+      [
+        "B",
+        "C"
+      ],
+      [
+        "C",
+        "D"
+      ],
+      [
+        "D"
+      ],
+      []
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed BFS predecessor",
+    "actual": {
+      "A": null,
+      "B": "A",
+      "C": "A",
+      "D": "B"
+    },
+    "expected": {
+      "A": null,
+      "B": "A",
+      "C": "A",
+      "D": "B"
+    },
+    "pass": true
+  },
+  {
+    "check": "computed BFS path",
+    "actual": [
+      "A",
+      "B",
+      "D"
+    ],
+    "expected": [
+      "A",
+      "B",
+      "D"
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed BFS unreachable",
+    "actual": [],
+    "expected": [],
+    "pass": true
+  },
+  {
+    "check": "computed recursive DFS",
+    "actual": [
+      "A",
+      "B",
+      "D",
+      "C"
+    ],
+    "expected": [
+      "A",
+      "B",
+      "D",
+      "C"
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed recursive parent C",
+    "actual": "D",
+    "expected": "D",
+    "pass": true
+  },
+  {
+    "check": "computed iterative DFS",
+    "actual": [
+      "A",
+      "B",
+      "D",
+      "C"
+    ],
+    "expected": [
+      "A",
+      "B",
+      "D",
+      "C"
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed iterative parent C",
+    "actual": "A",
+    "expected": "A",
+    "pass": true
+  },
+  {
+    "check": "computed undirected cycle",
+    "actual": true,
+    "expected": true,
+    "pass": true
+  },
+  {
+    "check": "computed components",
+    "actual": [
+      [
+        "A",
+        "B"
+      ],
+      [
+        "C",
+        "D"
+      ],
+      [
+        "Z"
+      ]
+    ],
+    "expected": [
+      [
+        "A",
+        "B"
+      ],
+      [
+        "C",
+        "D"
+      ],
+      [
+        "Z"
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed initial indegrees",
+    "actual": [
+      0,
+      1,
+      1,
+      2
+    ],
+    "expected": [
+      0,
+      1,
+      1,
+      2
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed Kahn order",
+    "actual": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "expected": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed directed matrix",
+    "actual": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "expected": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed Dijkstra settled order",
+    "actual": [
+      "A",
+      "C",
+      "D",
+      "B"
+    ],
+    "expected": [
+      "A",
+      "C",
+      "D",
+      "B"
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed relaxation states",
+    "actual": [
+      [
+        0,
+        6,
+        2,
+        "inf",
+        "inf"
+      ],
+      [
+        0,
+        6,
+        2,
+        5,
+        "inf"
+      ]
+    ],
+    "expected": [
+      [
+        0,
+        6,
+        2,
+        "inf",
+        "inf"
+      ],
+      [
+        0,
+        6,
+        2,
+        5,
+        "inf"
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed weighted path",
+    "actual": [
+      "A",
+      "C",
+      "D"
+    ],
+    "expected": [
+      "A",
+      "C",
+      "D"
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed zero edges",
+    "actual": [
+      0,
+      0,
+      4,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      4,
+      0
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed unreachable",
+    "actual": true,
+    "expected": true,
+    "pass": true
+  },
+  {
+    "check": "computed independent lists",
+    "actual": 3,
+    "expected": 3,
+    "pass": true
+  },
+  {
+    "check": "computed add edge",
+    "actual": {
+      "A": [
+        "B"
+      ],
+      "B": [
+        "A"
+      ],
+      "C": []
+    },
+    "expected": {
+      "A": [
+        "B"
+      ],
+      "B": [
+        "A"
+      ],
+      "C": []
+    },
+    "pass": true
+  },
+  {
+    "check": "computed remove edge",
+    "actual": {
+      "A": [],
+      "B": [],
+      "C": []
+    },
+    "expected": {
+      "A": [],
+      "B": [],
+      "C": []
+    },
+    "pass": true
+  },
+  {
+    "check": "computed remove vertex",
+    "actual": {
+      "B": [
+        "D"
+      ],
+      "C": [],
+      "D": [
+        "B"
+      ]
+    },
+    "expected": {
+      "B": [
+        "D"
+      ],
+      "C": [],
+      "D": [
+        "B"
+      ]
+    },
+    "pass": true
+  },
+  {
+    "check": "computed lazy physical heap",
+    "actual": [
+      [
+        1,
+        "A"
+      ],
+      [
+        2,
+        "B"
+      ],
+      [
+        5,
+        "C"
+      ],
+      [
+        7,
+        "A"
+      ]
+    ],
+    "expected": [
+      [
+        1,
+        "A"
+      ],
+      [
+        2,
+        "B"
+      ],
+      [
+        5,
+        "C"
+      ],
+      [
+        7,
+        "A"
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed lazy valid pops",
+    "actual": [
+      "A",
+      "B",
+      "C"
+    ],
+    "expected": [
+      "A",
+      "B",
+      "C"
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed stale skip",
+    "actual": [
+      "A"
+    ],
+    "expected": [
+      "A"
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed max pop",
+    "actual": [
+      14,
+      12,
+      9,
+      5,
+      7
+    ],
+    "expected": [
+      14,
+      12,
+      9,
+      5,
+      7
+    ],
+    "pass": true
+  },
+  {
+    "check": "computed heap extraction sort",
+    "actual": [
+      5,
+      7,
+      9,
+      12,
+      14,
+      16
+    ],
+    "expected": [
+      5,
+      7,
+      9,
+      12,
+      14,
+      16
+    ],
+    "pass": true
+  },
+  {
+    "check": "count-nodes",
+    "actual": 6,
+    "expected": 6,
+    "pass": true
+  },
+  {
+    "check": "tree-height",
+    "actual": 3,
+    "expected": 3,
+    "pass": true
+  },
+  {
+    "check": "preorder-traversal",
+    "actual": [
+      18,
+      9,
+      4,
+      13,
+      27,
+      32
+    ],
+    "expected": [
+      18,
+      9,
+      4,
+      13,
+      27,
+      32
+    ],
+    "pass": true
+  },
+  {
+    "check": "inorder-traversal",
+    "actual": [
+      4,
+      9,
+      13,
+      18,
+      27,
+      32
+    ],
+    "expected": [
+      4,
+      9,
+      13,
+      18,
+      27,
+      32
+    ],
+    "pass": true
+  },
+  {
+    "check": "level-order-traversal",
+    "actual": [
+      18,
+      9,
+      27,
+      4,
+      13,
+      32
+    ],
+    "expected": [
+      18,
+      9,
+      27,
+      4,
+      13,
+      32
+    ],
+    "pass": true
+  },
+  {
+    "check": "bst-search",
+    "actual": [
+      18,
+      9,
+      13
+    ],
+    "expected": [
+      18,
+      9,
+      13
+    ],
+    "pass": true
+  },
+  {
+    "check": "bst-insert",
+    "actual": [
+      4,
+      9,
+      13,
+      18,
+      27,
+      32
+    ],
+    "expected": [
+      4,
+      9,
+      13,
+      18,
+      27,
+      32
+    ],
+    "pass": true
+  },
+  {
+    "check": "bst-minimum",
+    "actual": 4,
+    "expected": 4,
+    "pass": true
+  },
+  {
+    "check": "bst-delete-leaf",
+    "actual": [
+      9,
+      13,
+      18,
+      27,
+      32
+    ],
+    "expected": [
+      9,
+      13,
+      18,
+      27,
+      32
+    ],
+    "pass": true
+  },
+  {
+    "check": "bst-delete-one-child",
+    "actual": [
+      4,
+      9,
+      13,
+      18,
+      32
+    ],
+    "expected": [
+      4,
+      9,
+      13,
+      18,
+      32
+    ],
+    "pass": true
+  },
+  {
+    "check": "validate-bst",
+    "actual": false,
+    "expected": false,
+    "pass": true
+  },
+  {
+    "check": "heap-order",
+    "actual": true,
+    "expected": true,
+    "pass": true
+  },
+  {
+    "check": "sift-up",
+    "actual": [
+      1,
+      3,
+      6,
+      15,
+      8,
+      10
+    ],
+    "expected": [
+      1,
+      3,
+      6,
+      15,
+      8,
+      10
+    ],
+    "pass": true
+  },
+  {
+    "check": "heap-push",
+    "actual": [
+      2,
+      8,
+      3,
+      15,
+      11,
+      10,
+      6
+    ],
+    "expected": [
+      2,
+      8,
+      3,
+      15,
+      11,
+      10,
+      6
+    ],
+    "pass": true
+  },
+  {
+    "check": "heap-pop",
+    "actual": [
+      3,
+      [
+        6,
+        8,
+        10,
+        15,
+        11
+      ]
+    ],
+    "expected": [
+      3,
+      [
+        6,
+        8,
+        10,
+        15,
+        11
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "check": "bottom-up-heapify",
+    "actual": [
+      2,
+      5,
+      4,
+      7,
+      12,
+      9
+    ],
+    "expected": [
+      2,
+      5,
+      4,
+      7,
+      12,
+      9
+    ],
+    "pass": true
+  },
+  {
+    "check": "max-heap",
+    "actual": true,
+    "expected": true,
+    "pass": true
+  },
+  {
+    "check": "heap-sort",
+    "actual": [
+      5,
+      7,
+      9,
+      12,
+      14,
+      16
+    ],
+    "expected": [
+      5,
+      7,
+      9,
+      12,
+      14,
+      16
+    ],
+    "pass": true
+  },
+  {
+    "check": "priority-updates",
+    "actual": [
+      "A",
+      "B",
+      "C"
+    ],
+    "expected": [
+      "A",
+      "B",
+      "C"
+    ],
+    "pass": true
+  },
+  {
+    "check": "top-k-stream",
+    "actual": [
+      9,
+      12,
+      14
+    ],
+    "expected": [
+      9,
+      12,
+      14
+    ],
+    "pass": true
+  },
+  {
+    "check": "adjacency-list",
+    "actual": [
+      "A",
+      "B",
+      "C"
+    ],
+    "expected": [
+      "A",
+      "B",
+      "C"
+    ],
+    "pass": true
+  },
+  {
+    "check": "add-vertex",
+    "actual": 3,
+    "expected": 3,
+    "pass": true
+  },
+  {
+    "check": "add-undirected-edge",
+    "actual": {
+      "A": [
+        "B"
+      ],
+      "B": [
+        "A"
+      ],
+      "C": []
+    },
+    "expected": {
+      "A": [
+        "B"
+      ],
+      "B": [
+        "A"
+      ],
+      "C": []
+    },
+    "pass": true
+  },
+  {
+    "check": "remove-edge",
+    "actual": [
+      [
+        "A",
+        "C"
+      ]
+    ],
+    "expected": [
+      [
+        "A",
+        "C"
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "check": "remove-vertex",
+    "actual": false,
+    "expected": false,
+    "pass": true
+  },
+  {
+    "check": "directed-edges",
+    "actual": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "expected": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "pass": true
+  },
+  {
+    "check": "bfs-frontier",
+    "actual": [
+      "C",
+      "D"
+    ],
+    "expected": [
+      "C",
+      "D"
+    ],
+    "pass": true
+  },
+  {
+    "check": "bfs-traversal",
+    "actual": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "expected": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "pass": true
+  },
+  {
+    "check": "bfs-path",
+    "actual": 2,
+    "expected": 2,
+    "pass": true
+  },
+  {
+    "check": "connected-components",
+    "actual": 3,
+    "expected": 3,
+    "pass": true
+  },
+  {
+    "check": "dfs-recursive",
+    "actual": [
+      "A",
+      "B",
+      "D",
+      "C"
+    ],
+    "expected": [
+      "A",
+      "B",
+      "D",
+      "C"
+    ],
+    "pass": true
+  },
+  {
+    "check": "dfs-iterative",
+    "actual": [
+      "A",
+      "B",
+      "D",
+      "C"
+    ],
+    "expected": [
+      "A",
+      "B",
+      "D",
+      "C"
+    ],
+    "pass": true
+  },
+  {
+    "check": "undirected-cycle",
+    "actual": 4,
+    "expected": 4,
+    "pass": true
+  },
+  {
+    "check": "topological-order",
+    "actual": true,
+    "expected": true,
+    "pass": true
+  },
+  {
+    "check": "weighted-adjacency",
+    "actual": 4,
+    "expected": 4,
+    "pass": true
+  },
+  {
+    "check": "path-cost",
+    "actual": [
+      7,
+      5
+    ],
+    "expected": [
+      7,
+      5
+    ],
+    "pass": true
+  },
+  {
+    "check": "dijkstra-scan",
+    "actual": [
+      0,
+      6,
+      2,
+      5
+    ],
+    "expected": [
+      0,
+      6,
+      2,
+      5
+    ],
+    "pass": true
+  },
+  {
+    "check": "reconstruct-weighted-path",
+    "actual": [
+      "A",
+      "C",
+      "D"
+    ],
+    "expected": [
+      "A",
+      "C",
+      "D"
+    ],
+    "pass": true
+  },
+  {
+    "check": "unreachable-and-zero-weights",
+    "actual": 0,
+    "expected": 0,
+    "pass": true
+  }
+]

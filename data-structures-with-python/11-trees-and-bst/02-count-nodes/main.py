@@ -1,0 +1,23 @@
+from __future__ import annotations
+
+from typing import Any, Callable, Iterable
+
+class Node:
+
+    def __init__(self, value: int, left: Node | None=None, right: Node | None=None) -> None:
+        self.value: int = value
+        self.left: Node | None = left
+        self.right: Node | None = right
+
+def count_nodes(root: Node | None) -> int:
+    # TODO task 1: In `count_nodes`, return zero for a missing subtree.
+    pass
+    # TODO task 2: In `count_nodes`, combine both recursive child counts with the current node.
+    raise NotImplementedError('Complete this step')
+
+if __name__ == "__main__":
+    try:
+        root = Node(12, Node(5, Node(2)), Node(18))
+        print(count_nodes(root))
+    except (NotImplementedError, AttributeError, TypeError) as error:
+        print("Unfinished checkpoint:", error)

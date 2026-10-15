@@ -1,0 +1,94 @@
+from __future__ import annotations
+
+def bucket_index(key: str, capacity: int) -> int:
+    validate_capacity(capacity)
+    result = 0
+    for character in key:
+        result = (result * 31 + ord(character)) % capacity
+    return result
+
+
+class HashTable:
+    buckets: list[list[tuple[str, object]]]
+    size: int
+
+    def __init__(self, capacity: int = 8) -> None:
+        bucket_index("", capacity)
+        self.buckets: list[list[tuple[str, object]]] = [[] for _ in range(capacity)]
+        self.size: int = 0
+
+    def put(self, key: str, value: object) -> None:
+        bucket = self.buckets[bucket_index(key, len(self.buckets))]
+        for i, (stored_key, _) in enumerate(bucket):
+            if stored_key == key:
+                bucket[i] = (key, value)
+                return None
+        bucket.append((key, value))
+        self.size += 1
+
+    def get(self, key: str) -> object:
+        bucket = self.buckets[bucket_index(key, len(self.buckets))]
+        for stored_key, value in bucket:
+            if stored_key == key:
+                return value
+        raise KeyError(key)
+
+    def delete(self, key: str) -> bool:
+        bucket = self.buckets[bucket_index(key, len(self.buckets))]
+        for i, (stored_key, _) in enumerate(bucket):
+            if stored_key == key:
+                bucket.pop(i)
+                self.size -= 1
+                return True
+        return False
+
+    def entries(self) -> list[tuple[str, object]]:
+        result = []
+        for bucket in self.buckets:
+            for pair in bucket:
+                result.append(pair)
+        return result
+
+    def load_factor(self) -> float:
+        return self.size / len(self.buckets)
+
+    def rehash(self, capacity: int) -> None:
+        validate_capacity(capacity)
+        pairs = self.entries()
+        self.buckets = redistribute_entries(pairs, capacity)
+
+
+def frequency_index(words: list[str]) -> HashTable:
+    table = HashTable(max(1, 2 * len(words)))
+    for word in words:
+        increment_count(table, word)
+    return table
+
+
+def validate_capacity(capacity: int) -> None:
+    if type(capacity) is not int or capacity <= 0:
+        raise ValueError("capacity must be a positive integer")
+
+
+def redistribute_entries(pairs: list[tuple[str, object]], capacity: int) -> list[list[tuple[str, object]]]:
+    buckets = [[] for _ in range(capacity)]
+    for key, value in pairs:
+        index = bucket_index(key, capacity)
+        buckets[index].append((key, value))
+    return buckets
+
+
+def increment_count(table: HashTable, word: str) -> None:
+    try:
+        count = table.get(word)
+    except KeyError:
+        count = 0
+    table.put(word, count + 1)
+
+
+if __name__ == "__main__":
+    try:
+        table = frequency_index(["bolt", "nut", "bolt", "washer"])
+        print(table.get("bolt"), table.get("nut"), table.size)
+    except (NotImplementedError, AttributeError, TypeError, IndexError, OverflowError) as error:
+        print(error)

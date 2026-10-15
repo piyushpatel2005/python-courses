@@ -1,0 +1,1193 @@
+{
+  "scope": [
+    "04-singly-linked-lists",
+    "05-linked-list-variants",
+    "06-stacks"
+  ],
+  "method": "Read the complete lesson.md, starter main.py, test_main.py, reference solution/main.py, and quiz questions in directory order; compared carried definitions, trace text and linked SVG XML, contracts, task/test order, and section boundaries. Native CPython and backend loader only; no browser or Pyodide acceptance.",
+  "lesson_count": 34,
+  "quiz_question_count": 12,
+  "linked_svg_count": 31,
+  "lessons": [
+    {
+      "path": "04-singly-linked-lists/01-node-and-link",
+      "order": 1,
+      "tasks": 2,
+      "tests_in_order": [
+        "test_node_keeps_payload_reference",
+        "test_node_keeps_successor_reference"
+      ],
+      "starter_pass_vector": [
+        false,
+        false
+      ],
+      "solution_pass_vector": [
+        true,
+        true
+      ],
+      "linked_diagrams": [
+        "singly-linked-lists-node-and-link-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "f0eb2c48108782549de260836a56340303d9da22dc87c918c3958bf2fabbbe99",
+        "main.py": "c5dc228e3d82c353ec7f55d8be5669e15f91c941feb863ca60d05b0da8146167",
+        "singly-linked-lists-node-and-link-trace.svg": "0c374776f496230c2f7d773e19f6d39dc2266d5289411d08d913d57729c8a140",
+        "solution/main.py": "a40c8650473b27b0742c1dac88fa19386d62c90cfc38c3fb23fb0fe48a1a80bf",
+        "test_main.py": "ac2b56f1e9e29b0e276424d172e043c141f2be8827d50de9a23bf38ed03d82b4"
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/02-traverse-nodes",
+      "order": 2,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_values_walk"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "singly-linked-lists-traverse-nodes-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "a4eb5f39bac002f80bc4255896e19f5178c43f7f5b3151aa215089aac80811f8",
+        "main.py": "14e101d3b5a45a8e4031e9b7319ed490c1fc829be29e6aea65346aef95f75b19",
+        "singly-linked-lists-traverse-nodes-trace.svg": "601caf0ca5d71ebd21ae705210d8a0e27e718f89fb6003c7c32be34f67e0734a",
+        "solution/main.py": "da88e595ae9e436a8a11aec4b8dca64613df2f3fd305def334eef1f776369f84",
+        "test_main.py": "c44dcf00d00b90c97112486406cb1e65473026c69661e8354194950330079710"
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/03-list-state",
+      "order": 3,
+      "tasks": 2,
+      "tests_in_order": [
+        "test_empty_list_endpoints",
+        "test_empty_list_count"
+      ],
+      "starter_pass_vector": [
+        false,
+        false
+      ],
+      "solution_pass_vector": [
+        true,
+        true
+      ],
+      "linked_diagrams": [
+        "singly-linked-lists-list-state-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "5c9ce810696c8eaa99323e7b59cea4ac516eec03cb32716e9bc28e91cd14b250",
+        "main.py": "bce162d34d0b3d8962975f9ea59e91b7ca3aa674eabf39dbfbfa4dd6fe4eca7c",
+        "singly-linked-lists-list-state-trace.svg": "cb79607653e8d827952356dcfcba05c34b09ccce40fc72f1432de0d6851aacbd",
+        "solution/main.py": "a5719fb659f9d1d1316e69c590fa67a34aebf15193e7e39b6b0d44e2696640ba",
+        "test_main.py": "722eccbcce7e64194e3965cc45fd139f95597ed2a5233f0e744c12b857e04505"
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/04-prepend-node",
+      "order": 4,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_prepend_preserves_chain"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "singly-linked-lists-prepend-node-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "e4640edaae0f1b31cd717eb7e0ef0281db9cd1fee18ecefa2b3caf6cd4556c29",
+        "main.py": "67178595430e9fb3e7860b39f37b2b5ff42315b52529dae79493514b3a11fbe4",
+        "singly-linked-lists-prepend-node-trace.svg": "1a2f53e0397635b9e596bea67947d53d14dad660cbd60e852370ecf07e623ffc",
+        "solution/main.py": "28cbe49562ba77253bfb10f2e827049a4edcfa0721e53e9880e4bc723e7dd35b",
+        "test_main.py": "ccd483b7c6112161681b7d9d7e276eb6488fdbc9b564e7ff8cc491760c691f7a"
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/05-append-node",
+      "order": 5,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_append_uses_endpoints"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "singly-linked-lists-append-node-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "b059fae2f4a575ff6b13be06ccda0d7a2131f74f67de851e2e469babd58acaec",
+        "main.py": "7cec337952ba6b8c0590019698e8179079a8abf39dc5b413ab70db1dff0845be",
+        "singly-linked-lists-append-node-trace.svg": "c80fd785dea88728e4f94f763e582d2650973cf66b593e86e76ec119cac7df23",
+        "solution/main.py": "4b20029a83c654b10fbe2bad0945d8600954f959d57e01c4be3604705f5b747e",
+        "test_main.py": "9c6f284b31e1dd9a82e2f4266657224c36850eb15da076f86905aec9005a691c"
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/06-find-node",
+      "order": 6,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_find_returns_first_identity"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "singly-linked-lists-find-node-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "ee8b4ede49bdfbf495e5299e1f68484ee6ed3105a8859b80e4c4bf8ce51c47da",
+        "main.py": "54f1a0bab5b4ae3388117d363bdd300026033312b1879136365aecd7264e1163",
+        "singly-linked-lists-find-node-trace.svg": "93f9a4706ab54b3fcd7cb1692f9e88cdeb068c1392d7ca6413def1c953effce5",
+        "solution/main.py": "1f9f875d5e4cf4c3842812669984a2c66a408d8e306060f26e2067c9677f70d4",
+        "test_main.py": "5bd530ca6aca9212dfa9582c6d0be169238b3dc65c8758f4a06ce830202ae55b"
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/07-insert-after-node",
+      "order": 7,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_insert_after_splices"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "linked-list-splice.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "226502b1e0b31abb5002115b3eaeefe7dc39a3687f92bccca8b09996a2e29867",
+        "linked-list-splice.svg": "9561cb27b8d40f067d70e5dd3c1a178ce9f3318aaa123601b31cc4cd61601570",
+        "main.py": "86912b268e9c4124787db04c4b0551234b23e5830140b70999deb8adb73f88e0",
+        "solution/main.py": "71e499579b1855adf6199ad17d9ec286cf3a8a2548821fa070082a7918b6e35c",
+        "test_main.py": "040873a99ef87812c4d4613090372a5204a5f78c4c357ccdcd726e441ac2ceb4"
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/08-remove-head",
+      "order": 8,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_remove_head_detaches"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "singly-linked-lists-remove-head-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "6ba3ff37ef1b7caebf38eff6c2f83aaea295ef156be4c51d13fdc3a3e82f190f",
+        "main.py": "a8d22c67a7493a245bc29e27a8c302d7ac0579789439f0aef5151d7df0c32c49",
+        "singly-linked-lists-remove-head-trace.svg": "76ddb91823d231ab143e86c1e5b3d7c52d5f1c75ea8e5c4af4da85cca26df897",
+        "solution/main.py": "afe585c445484ab27996be52db3a5f517ae1a7b17b3547b8b2cec6d62fef8f85",
+        "test_main.py": "65b0209b68b57b520d9172312358b953c1b76e211578f3bdc980e7aa781dac6f"
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/09-remove-tail",
+      "order": 9,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_remove_tail_finds_predecessor"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "singly-linked-lists-remove-tail-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "5481f32d2ea808fa0ab180ac6036b843b06897b4501ab3f0f99b3c1178d3f7f3",
+        "main.py": "dc266a9ee9223af6c41372f86c71490ac6e3f5314fd1eb81a425a2c4b76869e0",
+        "singly-linked-lists-remove-tail-trace.svg": "c1c832b909f2afee211818895e8fceb2c796b2e75cf690e55cba1053455e9994",
+        "solution/main.py": "3f81b24fb91079cb6db491e69d014a3acaaf78948d7a0a457879691d9035f359",
+        "test_main.py": "54411e3382debd86c8174a2468b329f02b98a1d497e8a4aa03ca2c2ff62246eb"
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/10-remove-first-match",
+      "order": 10,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_remove_first_duplicate_policy"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "linked-list-bypass.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "c2f7748c0e1434907ef86ac94a02a4d17a26aa1de247a76b2e56161ef753dd51",
+        "linked-list-bypass.svg": "a6ba3b797cc0ad5d43fabef5ed34839260bf4e71d55c2a55c5d7ccd4ac4d379c",
+        "main.py": "28c7e7a8f2702a4eaf0db6f8f5789fb35051be9593947127d629b163d5532f51",
+        "solution/main.py": "3895b5cf13e663c8787510e07e818f5798994ef02c9feeaf9cc75ceb72c68b87",
+        "test_main.py": "2e3f5cc60279faba724eca62e86168c704dbbc89178ba72aeeb4edb168aea8cf"
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/11-reverse-links",
+      "order": 11,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_reverse_preserves_node_identity"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "linked-list-three-pointer-reversal.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "fea0d9115d025cfac5cf40ace8a5f3ee8de20034b8e71175abb64a21aedf35e6",
+        "linked-list-three-pointer-reversal.svg": "e76943bab7fd7e605567ae9cda50f55ab9dc2e2ed47c3873ca3ff86f544eae87",
+        "main.py": "0a034c1234b94ae1af96eec07d80e15cd981403f372565a337a98bc993bc32c1",
+        "solution/main.py": "a7a66f9cb87f069c33d22cdc2a5645e750434bfd866664dc9f3fce5a5858c000",
+        "test_main.py": "75609584c9d1d5f82e3fd34815d55fb9873e145273e82efca5192270d4c874cc"
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/12-playlist-project",
+      "order": 12,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_play_next_delegates_and_drains"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "527135996b37334335c5d97888a803a12e33b24f13ae3960b70fd5a888184d50",
+        "main.py": "7a3b10f4adff2bd9dbfb86ce41474846b9b0617831344407dee7b9702765f013",
+        "solution/main.py": "007a451ead2af7a329a0506d268cf089182336bd6830658eeb137a836e165a96",
+        "test_main.py": "02a4d33e373beae7877dac20b368b8a216875416d43ec5351103901717b404ed"
+      }
+    },
+    {
+      "path": "05-linked-list-variants/01-doubly-linked-node",
+      "order": 1,
+      "tasks": 2,
+      "tests_in_order": [
+        "test_double_node_keeps_payload_reference",
+        "test_double_node_starts_detached"
+      ],
+      "starter_pass_vector": [
+        false,
+        false
+      ],
+      "solution_pass_vector": [
+        true,
+        true
+      ],
+      "linked_diagrams": [
+        "linked-list-variants-doubly-linked-node-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "bd73781a73c2378d4133c92da026dede039725fa8c63aa15b44b708215785fa6",
+        "linked-list-variants-doubly-linked-node-trace.svg": "2cf6cb0db52989dc9eb207e3116b98d924add3f427388abe2d78c473267f11fa",
+        "main.py": "9a48527a91fb727057eaec78998cf7ecc0f2260df00293ceb9c8bd7bccfc974f",
+        "solution/main.py": "bff62e466e9a966dcf552fa24e54a0c91c8af9005d6f4ddf34e10372b00bd204",
+        "test_main.py": "2ef443be84140561742a105e3258023d315179515625cdeeb6a6ffd2a19b3e75"
+      }
+    },
+    {
+      "path": "05-linked-list-variants/02-doubly-prepend",
+      "order": 2,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_double_prepend_links"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "linked-list-variants-doubly-prepend-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "de8309d959b23242a7d01d10a6308edb3941e9267b606012b147d7926480662d",
+        "linked-list-variants-doubly-prepend-trace.svg": "ef0373b948f2cc6d616f951b9708afcf65c309d43a463e1b3e17e368e3cab745",
+        "main.py": "9b9842cb6b59efb8b6c2e9a27094b6a3963a2cdff4fe33cdf29b343c2eca755c",
+        "solution/main.py": "146870d7dd55031c9e686ecad5484525915f3f87522206856446e1d05fab77f6",
+        "test_main.py": "71a08fe26c73600d501a39b4a58ab8414566a0599d30bbd5a8ccd68f8fc6208b"
+      }
+    },
+    {
+      "path": "05-linked-list-variants/03-doubly-append",
+      "order": 3,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_double_append_links"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "linked-list-variants-doubly-append-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "f88edcdf9bf0affd4aa935e1ff7968a5ec28fa51d2cd4ae23b5425f8ddef5be7",
+        "linked-list-variants-doubly-append-trace.svg": "aa1bd8364d8f86d80f5e0e800530f7fd7831ea7f050a1e0c3519ca57cbb9776e",
+        "main.py": "77db51ebaffc1e3825eb1d60a5ee15e4133de96a5541e336658111adf29756c4",
+        "solution/main.py": "07303583054c5f4f8da547dd32093d33325c7f7b8769e82ea3286953a1e54445",
+        "test_main.py": "ad122d2051667ab0ec988e77f863847475c66425dbbbf6df928009cec47a116c"
+      }
+    },
+    {
+      "path": "05-linked-list-variants/04-doubly-remove",
+      "order": 4,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_double_remove_repairs_neighbors"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "doubly-linked-removal.svg"
+      ],
+      "sha256": {
+        "doubly-linked-removal.svg": "b921b2338253105f772436625c5c67e544019088739d10918c443cb69e6ea89f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "bde5227091e912ef41612a45af3430a40d5b5741a95a8e747cebcb8d4684bc34",
+        "main.py": "fda49c0f5db02c18f02b1ad1354ae20abab23cec7646f922be4860cc47c389b5",
+        "solution/main.py": "f8a5cd14d3365b856da9935f2918a426437903ce66cf7889bf0db6e0056a78c7",
+        "test_main.py": "45ea53f1ae4ca12046d94a0b40bcbe26c081fa8b5074de46ac6e7ccc4b44eaff"
+      }
+    },
+    {
+      "path": "05-linked-list-variants/05-browser-history",
+      "order": 5,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_visit_replaces_forward_branch"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "linked-list-variants-browser-history-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "aaba82571921b4dd2a5308b057f42634128b27e2f98529a288a134393348ddc5",
+        "linked-list-variants-browser-history-trace.svg": "087d7c594d032a3e5fec473306dc2c500717aa0aaa0973e2937b14a38744b1c3",
+        "main.py": "b313ba325cd6420faf3163e52505bccc67853329b967f295796f80bb6cdb8885",
+        "solution/main.py": "9945da73fd31a68fe11bff02f7646bf00c4db99982aa7938f31fa89bbfdaeade",
+        "test_main.py": "ff70d470d2be110bb742044c6a35c71615fa5eb6570aecdcaa1135179732b83c"
+      }
+    },
+    {
+      "path": "05-linked-list-variants/06-circular-append",
+      "order": 6,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_circular_append_closes_ring"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "linked-list-variants-circular-append-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "beaa42207fde44d7ab0d63050d05b5780849ba40b424891659a0ee44f18ee129",
+        "linked-list-variants-circular-append-trace.svg": "85896ae549a07ee6d55802315af2e1039a4f9c9f512539807c35fb9d6fd470bc",
+        "main.py": "56f04cfcaaa34761163a130a1230b3e4d30b89f12349b052fa5634480eaf27cb",
+        "solution/main.py": "ff7b2fb1a46ebf5af81e62ea67a9729281a0b49b1a9a9fa147e1b1069327c467",
+        "test_main.py": "25421502fe9bbe3f567b823aa516dc2c3cbb6fd685f4b44cbe1973b3d851a3b4"
+      }
+    },
+    {
+      "path": "05-linked-list-variants/07-circular-traversal",
+      "order": 7,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_circular_values_one_lap"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "circular-list-stop-condition.svg"
+      ],
+      "sha256": {
+        "circular-list-stop-condition.svg": "cdd26be443af9a189b70d034e34b15e00789092796fbd535db0757598479b019",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "d73edb6e61548eb123e429550e7805e22a7db301071fa66e7dcb2ef5042a063c",
+        "main.py": "9b93dd38fafa4d7fd1593adf84c81a8bf72e93e1b9436ed97b5db2c41bde9d2a",
+        "solution/main.py": "7ce80d86ad107feaaea76470f997a729d931ca1904dfef3a5c1b036a7aa2249a",
+        "test_main.py": "dd676f4707ef21dfae97f7b68a1e1dc42e1d2fee3fa2f4a0a205250096eb87a5"
+      }
+    },
+    {
+      "path": "05-linked-list-variants/08-circular-remove",
+      "order": 8,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_circular_remove_repairs_closure"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "linked-list-variants-circular-remove-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "166b40179f7715bcc51480ecb4da94538e1469afab24264f88e983cc7025d2cf",
+        "linked-list-variants-circular-remove-trace.svg": "2a95b5141701056e6fb782aa9aa925bae2260be49b78eb57451bb1c19d182c5a",
+        "main.py": "ecc8c3a47f2898afc271e47f1f0d7ee13327d64db6dfbe4495d50f58245c54f1",
+        "solution/main.py": "c88d50fe51ba845b913ec1124f41193e882d802c3fe8b46b2eb946505c013ea0",
+        "test_main.py": "3efc961d9f7f4ed668c4d439a4e6665eadb3bd00c70248bd8324d16a52648094"
+      }
+    },
+    {
+      "path": "05-linked-list-variants/09-skip-levels",
+      "order": 9,
+      "tasks": 2,
+      "tests_in_order": [
+        "test_skip_height_validation",
+        "test_skip_node_slots"
+      ],
+      "starter_pass_vector": [
+        false,
+        false
+      ],
+      "solution_pass_vector": [
+        true,
+        true
+      ],
+      "linked_diagrams": [
+        "linked-list-variants-skip-levels-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "97c8286334149145f7931f8d638e005504451b1bfcf2058eaddd3502b3c50ac5",
+        "linked-list-variants-skip-levels-trace.svg": "8b893977a3ab2e7d92cc9c826ac3031e1466265785424c11b32019fa3267964b",
+        "main.py": "eea616657ba14872e61f6d92b2122590554e2c90139dedd5a99644ddf3084ca4",
+        "solution/main.py": "ce54642b2588d6ed64d2e721d908e9cb0d4296ca07f20b8740e7b023f24a6b32",
+        "test_main.py": "ecbc8dbd415a2a626ad5b7bd6404c835eb47810e5578642cd8333c0f4aa4408a"
+      }
+    },
+    {
+      "path": "05-linked-list-variants/10-skip-predecessors",
+      "order": 10,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_skip_predecessor_identity"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "skip-list-search-lanes.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "ba01549780803512048b98fac71337976f08895efb4b795d9faa02f36c39dc76",
+        "main.py": "9d120408cce0a4dcb7c7a82bd9947301e86ebb42c122a5dfef74fd8f5d12aec1",
+        "skip-list-search-lanes.svg": "c1c651629cc94d8a1fed37f92bc7d3a01981ae40d8c180534020be5c2f06d76a",
+        "solution/main.py": "b57f37b0cadfb1eeff71d73b49d64819af4e452128a151cad7f0a5baa4137bb4",
+        "test_main.py": "e390c60c27dacce87aa980d57e197ef2a85bca3eae8629bbe7b15cbdfff92334"
+      }
+    },
+    {
+      "path": "05-linked-list-variants/11-skip-search",
+      "order": 11,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_skip_search_exact_match"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "linked-list-variants-skip-search-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "ce4c16cb303afa73e7896bc0c09991f6cfeba880d04768c379f72b267257ef93",
+        "linked-list-variants-skip-search-trace.svg": "7f995f27efe015ead3133239fa566f775b7591b9472149dc10ea90e962610fae",
+        "main.py": "da58d1a09343e36401d1160dc8beeb197348979ebc90e7232e2e1db76bf66cdf",
+        "solution/main.py": "4aa52a159be78606862f369d0e4ce567ce9d99b429a9ebc526dff5f15c14b2a9",
+        "test_main.py": "e2bd61f25f679568460a814b7780ea472c9cef0ec7845e897b9b1daf58170665"
+      }
+    },
+    {
+      "path": "05-linked-list-variants/12-skip-insert",
+      "order": 12,
+      "tasks": 3,
+      "tests_in_order": [
+        "test_insert_rejects_height_before_search",
+        "test_insert_preserves_duplicate_tower",
+        "test_skip_insert_towers_and_duplicates"
+      ],
+      "starter_pass_vector": [
+        false,
+        false,
+        false
+      ],
+      "solution_pass_vector": [
+        true,
+        true,
+        true
+      ],
+      "linked_diagrams": [
+        "linked-list-variants-skip-insert-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "4772e58784794b4240f049c7005e1bb167de4350fed39acb0141af4925e3b2b8",
+        "linked-list-variants-skip-insert-trace.svg": "03262a912b02d4cb2de282c3c3a6f163501ecfe8e62f82a7cdd96b62b9221c1e",
+        "main.py": "980f3cb27818daff24babf764c3ec4b0d63f1c64b3956fc2e3e10af6a670a87a",
+        "solution/main.py": "5507fc2519f056d33467d9a0e66d8d123527e92d52229c23d17850d367b97ae0",
+        "test_main.py": "03e125b06ff97674a831bdac9a3d57755ff03c0a4f06aaebdb5835cde6812542"
+      }
+    },
+    {
+      "path": "05-linked-list-variants/13-skip-remove",
+      "order": 13,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_skip_remove_all_levels"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "linked-list-variants-skip-remove-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "75ab3bd2209c481dd8fdc43d0841241b31e7e23058c0f0e40b3ce1a2e30b31ee",
+        "linked-list-variants-skip-remove-trace.svg": "7a429782f9643d87e4337ca2218453dcdee0ac849e3ab715abf9ceea9e2b3649",
+        "main.py": "63cbe0e0b1882751234eb7fc20ba57038b0382e4c7b0e5cc029e83df53da4e19",
+        "solution/main.py": "2cc868cbad81a99acecb74c3bc88aa7292edc36250a462e73cec819fac08fa61",
+        "test_main.py": "95b79b27c83656874d658df81004538c8b5ab4491286752d28c774c7ea0ef84c"
+      }
+    },
+    {
+      "path": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "order": 14,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_skip_work_metric_and_shape"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "5bd4c8d3e1696ec00e98502c5904b52a89a3a55df6bc3b1787f50b12ba912ff1",
+        "main.py": "e8f2284afc9a27d8d902878375ac9d36c78255c6a0454199874f1396aeec39b7",
+        "solution/main.py": "0647fae9f581cb4a0da4ca67cb32be039346dc0160ae70d8d69b1466dd51ce08",
+        "test_main.py": "9ec14bcb621ea227e5e967c7d4698d7af56b980fba49d449ad3f48496bfd2762"
+      }
+    },
+    {
+      "path": "06-stacks/01-stack-state",
+      "order": 1,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_stack_independent_storage"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "stacks-stack-state-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "19295caaec7a7363cf0ea9349e2b7c22aead879526aa6ea0fdee1e8faff89866",
+        "main.py": "de84b2a8ea0befdb2c6f5f25806ada306320af171c7d93aedea01fc4ade055c3",
+        "solution/main.py": "d3d1a23a192ef1560d4570a71ecb6fb802a24f2b6d7165cc2585023851af9c3b",
+        "stacks-stack-state-trace.svg": "270ec75549ab4494471ef47ef5b18585a8a5378bf01de976d25153fc2f0180eb",
+        "test_main.py": "3ada190f7960208a187856c67483806325562e8d0f8ca53b574f4186a1148090"
+      }
+    },
+    {
+      "path": "06-stacks/02-push-item",
+      "order": 2,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_push_appends_references"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "stacks-push-item-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "9396258e39af91467aa14bae6688d6216d12dde1008ed5803f1514d4a06f4c1d",
+        "main.py": "4ba275d3c3807453929e730f702feea0eabed509de3ee2020f2e6e025afe124c",
+        "solution/main.py": "8980e4c3047972fe95b1c77711b6c0cbd29ab27f74a7a7b592f1c13056680a4d",
+        "stacks-push-item-trace.svg": "6f37bb8925d1c73b28e9c395fa9583dab7378e24f30d057b1257cfadcd80fb30",
+        "test_main.py": "743f3731f4dad6540f01b870265001295b7f78bec9f02e38a6471e63aacc1694"
+      }
+    },
+    {
+      "path": "06-stacks/03-peek-item",
+      "order": 3,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_peek_is_read_only"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "stacks-peek-item-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "a02bb204339f05e5f483b31f5a6ddbe7636329494ac94f344def49e0571c14ca",
+        "main.py": "9be3d4004fe946edd07f1c6c32561fecb3c9492cbd03b25b39d3e599f49b9905",
+        "solution/main.py": "c6e0b762f9ae725d1849f93506bcd0e3f88c49b4336b3143b927e0c8cd80982d",
+        "stacks-peek-item-trace.svg": "61c2a94fa253f003ee7bb6a90fbe78634ac2df6243aab812799557124086f976",
+        "test_main.py": "28d54a3c2deec7255a1ee080f9e88a1efc0f9c663d4ef85d79e438f0c249806c"
+      }
+    },
+    {
+      "path": "06-stacks/04-pop-item",
+      "order": 4,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_pop_lifo_and_underflow"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "stack-lifo-operations.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "8e6a6b195a71fa727485f8399d349a71acdf3d8575bd3b69ab3ef58c69a40d5a",
+        "main.py": "8ea88f7a59c860b37bae53a74dc5f22dd7dae6df1856e89b16962726e8a15087",
+        "solution/main.py": "ca3320a8a10f8440b9feb5188ec113f76bd7e31599181daa5935a4e94c64011c",
+        "stack-lifo-operations.svg": "7aadc00d11a4e59de42725908e29ec4a99c58a334fb45b4c84f848af85f13237",
+        "test_main.py": "4c684a371cdd7aea16f175211f1e94e43af653272ef232a1937832d94cc93191"
+      }
+    },
+    {
+      "path": "06-stacks/05-balanced-brackets",
+      "order": 5,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_balanced_nested_types"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [],
+      "sha256": {
+        "bracket-stack-trace.svg": "559d38df7e676e26c6bf17f368342d3e89d27241d788f5faac501fd6094ad680",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "d24c3a5c09dccf72d70cb88b2963081617fab3d36abd50b78ea05036d7808f8b",
+        "main.py": "67fc6cf2f5cef16d90374b59a81976c4df9c7cab3e3bea48071b78c37331a3e9",
+        "solution/main.py": "be789eccb95f83675e105264b14a4de9442fac457ff3e0952b54b906153f3ce2",
+        "test_main.py": "66678d3ba5c011f22f26423c347804dbd4922f9fab9a619903c3dfd6c88574be"
+      }
+    },
+    {
+      "path": "06-stacks/06-postfix-evaluation",
+      "order": 6,
+      "tasks": 3,
+      "tests_in_order": [
+        "test_postfix_parses_integer_tokens",
+        "test_postfix_combines_two_operands_in_order",
+        "test_postfix_order_and_errors"
+      ],
+      "starter_pass_vector": [
+        false,
+        false,
+        false
+      ],
+      "solution_pass_vector": [
+        true,
+        true,
+        true
+      ],
+      "linked_diagrams": [
+        "stacks-postfix-evaluation-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "37c202d71716a1fafd4762d6ab0c001ec394cc466d2782414827950eb8269e01",
+        "main.py": "9d9c7dd97f71e18d237e8b75a9b1fd33d3f6bd1ca0595b32419463ccb461ddaf",
+        "solution/main.py": "d8fe2baedef0020fcb01395d304e03e6979f437a57be496499de23ec89c255e3",
+        "stacks-postfix-evaluation-trace.svg": "4e6026eb04d6718053c48ac0daf9a655a1875e81e25d04dd241f3d8000fab49b",
+        "test_main.py": "758fb36bc0d75817a52d493f5290f98ea5f84d9ec79fd6c38af26bb7b2e26d9d"
+      }
+    },
+    {
+      "path": "06-stacks/07-undo-history",
+      "order": 7,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_undo_restores_and_exhausts"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "stacks-undo-history-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "5e22db6df4a100f3243c4721c8574993f35b6e9056af5e8744acb168dfa6cab9",
+        "main.py": "20ad87deecc7f1b5b4a2ff081be7066aeb5784ddaef94fd314bfa4ed45db6caa",
+        "solution/main.py": "b3ce2e57093f01f2aa2d9acb634f39b1d93f0102ce4f076827ac20ff8d17288a",
+        "stacks-undo-history-trace.svg": "95b335f107aa2bde258eecb5d03310e42f98a3796ed319c3c820eebc25ef9dc9",
+        "test_main.py": "cd6a2890e0f4b236ca3a78cd25ba45ce0a8c4e05e223b0a1f5a38cbd5d19eb8f"
+      }
+    },
+    {
+      "path": "06-stacks/08-minimum-stack",
+      "order": 8,
+      "tasks": 1,
+      "tests_in_order": [
+        "test_minimum_stack_prefix_summaries"
+      ],
+      "starter_pass_vector": [
+        false
+      ],
+      "solution_pass_vector": [
+        true
+      ],
+      "linked_diagrams": [
+        "stacks-minimum-stack-trace.svg"
+      ],
+      "sha256": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "a1279f0013797757494429c5b51edb9233e9ef13dde3c34dcca6681366187fc7",
+        "main.py": "b049404681fda68d537b89f653c39f7287ce3d548b5c3b6c91142e7cdcdcf2f7",
+        "solution/main.py": "de6e40065aa9d11734a2fcf2f059db1749b9eea6b216beeb7db334b3c6338d2b",
+        "stacks-minimum-stack-trace.svg": "9459e5a60d58b0d3270632529bee7c1a103e8af08d1994c9507344852b614dbc",
+        "test_main.py": "ea1dcf31d22a93b29dec960af3efe8a8c2a1c9569c78cc5611772e337e30ee88"
+      }
+    }
+  ],
+  "quiz_sha256": {
+    "04-singly-linked-lists/quiz/index.yaml": "798e4baa40ad395ae57d55d026ac5507b61aeb7ffcea7d082047d3f36d7871b5",
+    "04-singly-linked-lists/quiz/q01.md": "4968c94ccd0b27fd2a78f17d0056d2aeb5e97de4d026476ac5f5fa2e6cb0a041",
+    "04-singly-linked-lists/quiz/q02.md": "25ce5db22d0a69e6f384af81c44c8a2e641aa90de51cb62d6d0debac3c189128",
+    "04-singly-linked-lists/quiz/q03.md": "37d5ffe0d663b6378f2e9b0f8a2986fe0149dc0786f6054e2f14897236081687",
+    "04-singly-linked-lists/quiz/q04.md": "5e89fc2f1352f3fc80d31ede776e1444dd55586e381ada6035602c0a0b12ffc1",
+    "05-linked-list-variants/quiz/index.yaml": "67557d19a3fafb1d5fbeb7e7f120fd19093dd398b7fbc469be11dabd32f9ffe3",
+    "05-linked-list-variants/quiz/q01.md": "0a1ee51693c44e03abfb66e23a1f667616efc353c881fef192a78232148fd4c6",
+    "05-linked-list-variants/quiz/q02.md": "4a73f41e0c52dd2c0e91ab934a6d3386ff10d3e8eb147f11d77b5f93719a5498",
+    "05-linked-list-variants/quiz/q03.md": "006cc6dca01d4cf7e235f33c414817469bc3cebfb1db6249e2a9b014d01379c0",
+    "05-linked-list-variants/quiz/q04.md": "a52dc72af3a18bf9bac51d8c8c54a1e8eedc4146273e99454436fef7699d8934",
+    "06-stacks/quiz/index.yaml": "9fc0c0c145be769e0502f435b24abb64bc0ff99adc09b134c7232a6121a99c9d",
+    "06-stacks/quiz/q01.md": "20fbdb05967fddd559e1e8421b2f9792a269a739bec385028a09719785fc85a1",
+    "06-stacks/quiz/q02.md": "930c361d6d136665a187b87ee9a6fd625ee835221ad40738ea7c59694a6459ca",
+    "06-stacks/quiz/q03.md": "b79914659ce6c2258b9286dbba27e2243a91c57560bb14fd2c5f61182040a5d4",
+    "06-stacks/quiz/q04.md": "85e92ee58a65d25f3986c93b5c9e9868c97b8b3e4c9263c8dba0f1dd5679c4a1"
+  },
+  "hash_differences_from_preexisting_audit_not_attributed_to_this_pass": [
+    {
+      "path": "04-singly-linked-lists/01-node-and-link",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "04-singly-linked-lists/02-traverse-nodes",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "04-singly-linked-lists/03-list-state",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "04-singly-linked-lists/04-prepend-node",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "04-singly-linked-lists/05-append-node",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "04-singly-linked-lists/06-find-node",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "04-singly-linked-lists/07-insert-after-node",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "04-singly-linked-lists/08-remove-head",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "04-singly-linked-lists/09-remove-tail",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "04-singly-linked-lists/10-remove-first-match",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "04-singly-linked-lists/11-reverse-links",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "05-linked-list-variants/01-doubly-linked-node",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "05-linked-list-variants/02-doubly-prepend",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "05-linked-list-variants/03-doubly-append",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "05-linked-list-variants/04-doubly-remove",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "05-linked-list-variants/05-browser-history",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "05-linked-list-variants/06-circular-append",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "05-linked-list-variants/07-circular-traversal",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "05-linked-list-variants/08-circular-remove",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "05-linked-list-variants/09-skip-levels",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "05-linked-list-variants/10-skip-predecessors",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "05-linked-list-variants/11-skip-search",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "05-linked-list-variants/12-skip-insert",
+      "files": [
+        "lesson.md",
+        "main.py",
+        "test_main.py"
+      ]
+    },
+    {
+      "path": "05-linked-list-variants/13-skip-remove",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "06-stacks/01-stack-state",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "06-stacks/02-push-item",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "06-stacks/03-peek-item",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "06-stacks/04-pop-item",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "06-stacks/05-balanced-brackets",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "06-stacks/06-postfix-evaluation",
+      "files": [
+        "lesson.md",
+        "main.py",
+        "test_main.py"
+      ]
+    },
+    {
+      "path": "06-stacks/07-undo-history",
+      "files": [
+        "lesson.md"
+      ]
+    },
+    {
+      "path": "06-stacks/08-minimum-stack",
+      "files": [
+        "lesson.md"
+      ]
+    }
+  ],
+  "changes_explained": [
+    {
+      "path": "04-singly-linked-lists/03-list-state/lesson.md",
+      "reason": "Clarify that the drawn singleton is a future transition, not the constructor task."
+    },
+    {
+      "path": "05-linked-list-variants/07-circular-traversal/lesson.md",
+      "reason": "Distinguish identity-based diagram stopping from size-bounded reference implementation."
+    },
+    {
+      "path": "05-linked-list-variants/12-skip-insert",
+      "reason": "Split validation, duplicate preservation, and tower splicing into independently checked stages; keep partial Run safe."
+    },
+    {
+      "path": "06-stacks/05-balanced-brackets/lesson.md",
+      "reason": "Correct the diagram alt text and explain its expected-closer representation versus the opening-stack exercise."
+    },
+    {
+      "path": "06-stacks/06-postfix-evaluation",
+      "reason": "Split integer parsing, operator reduction, and final result into ordered checks; supply runnable scaffolding."
+    }
+  ],
+  "verification": {
+    "interpreter": "InterCourses backend .venv CPython (native, not Pyodide)",
+    "backend_loader_lessons": 34,
+    "backend_loader_quiz_questions": 12,
+    "starter_run": 34,
+    "solution_run": 34,
+    "starter_checks_passed": 0,
+    "solution_checks_passed": 42,
+    "task_checks": 42,
+    "cumulative_definition_edges": 31,
+    "prior_contract_regression_pairs": 185,
+    "noop_mutants_rejected": 34,
+    "svg_xml_and_local_reference_checks": 31,
+    "partial_vectors": {
+      "05-linked-list-variants/12-skip-insert": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "06-stacks/06-postfix-evaluation": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ]
+    },
+    "isolated_later_task_checks": {
+      "05-linked-list-variants/12-skip-insert/task2": [
+        false,
+        true,
+        false
+      ],
+      "06-stacks/06-postfix-evaluation/task2": [
+        false,
+        true,
+        false
+      ]
+    }
+  },
+  "remaining_issues": [
+    "Browser UI, Pyodide Worker Run/Submit, rendered SVG layout and visual delivery explicitly not verified in this source-only review.",
+    "Some longer operations still have one whole-method checkbox (notably circular removal and skip-list removal); native final behavior passes, but their intermediate learner milestones remain ungraded. Splitting them would require coordinated starter/test changes.",
+    "Repository course directory is untracked in the enclosing Git worktree; git diff --check does not inspect these new files. No commit was made."
+  ]
+}

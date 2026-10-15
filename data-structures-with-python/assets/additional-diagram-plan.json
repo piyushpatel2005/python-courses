@@ -1,0 +1,996 @@
+[
+  {
+    "lesson": "01-memory-and-cost/03-shallow-copies",
+    "file": "memory-and-cost-shallow-copies-trace.svg",
+    "editable": "memory-and-cost-shallow-copies-trace.excalidraw",
+    "brief": "Operation-specific worked trace for shallow copies in Memory and algorithm cost. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "01-memory-and-cost/09-auxiliary-space",
+    "file": "memory-and-cost-auxiliary-space-trace.svg",
+    "editable": "memory-and-cost-auxiliary-space-trace.excalidraw",
+    "brief": "Operation-specific worked trace for auxiliary space in Memory and algorithm cost. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "01-memory-and-cost/10-amortized-append",
+    "file": "memory-and-cost-amortized-append-trace.svg",
+    "editable": "memory-and-cost-amortized-append-trace.excalidraw",
+    "brief": "Operation-specific worked trace for amortized append in Memory and algorithm cost. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "02-recursion/01-base-and-recursive-cases",
+    "file": "recursion-base-and-recursive-cases-trace.svg",
+    "editable": "recursion-base-and-recursive-cases-trace.excalidraw",
+    "brief": "Operation-specific worked trace for base and recursive cases in Recursion and iteration. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "02-recursion/03-recursive-sum",
+    "file": "recursion-recursive-sum-trace.svg",
+    "editable": "recursion-recursive-sum-trace.excalidraw",
+    "brief": "Operation-specific worked trace for recursive sum in Recursion and iteration. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "02-recursion/05-recursive-factorial",
+    "file": "recursion-recursive-factorial-trace.svg",
+    "editable": "recursion-recursive-factorial-trace.excalidraw",
+    "brief": "Operation-specific worked trace for recursive factorial in Recursion and iteration. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "02-recursion/06-fibonacci-tree",
+    "file": "recursion-fibonacci-tree-trace.svg",
+    "editable": "recursion-fibonacci-tree-trace.excalidraw",
+    "brief": "Operation-specific worked trace for fibonacci tree in Recursion and iteration. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "02-recursion/08-iterative-fibonacci",
+    "file": "recursion-iterative-fibonacci-trace.svg",
+    "editable": "recursion-iterative-fibonacci-trace.excalidraw",
+    "brief": "Operation-specific worked trace for iterative fibonacci in Recursion and iteration. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "02-recursion/10-recursive-binary-search",
+    "file": "recursion-recursive-binary-search-trace.svg",
+    "editable": "recursion-recursive-binary-search-trace.excalidraw",
+    "brief": "Operation-specific worked trace for recursive binary search in Recursion and iteration. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "03-arrays-and-sequences/02-append-with-capacity",
+    "file": "arrays-and-sequences-append-with-capacity-trace.svg",
+    "editable": "arrays-and-sequences-append-with-capacity-trace.excalidraw",
+    "brief": "Operation-specific worked trace for append with capacity in Arrays and sequence patterns. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "03-arrays-and-sequences/04-delete-and-compact",
+    "file": "arrays-and-sequences-delete-and-compact-trace.svg",
+    "editable": "arrays-and-sequences-delete-and-compact-trace.excalidraw",
+    "brief": "Operation-specific worked trace for delete and compact in Arrays and sequence patterns. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "03-arrays-and-sequences/05-reverse-two-pointers",
+    "file": "arrays-and-sequences-reverse-two-pointers-trace.svg",
+    "editable": "arrays-and-sequences-reverse-two-pointers-trace.excalidraw",
+    "brief": "Operation-specific worked trace for reverse two pointers in Arrays and sequence patterns. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "03-arrays-and-sequences/06-sliding-window",
+    "file": "arrays-and-sequences-sliding-window-trace.svg",
+    "editable": "arrays-and-sequences-sliding-window-trace.excalidraw",
+    "brief": "Operation-specific worked trace for sliding window in Arrays and sequence patterns. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "03-arrays-and-sequences/07-prefix-sums",
+    "file": "arrays-and-sequences-prefix-sums-trace.svg",
+    "editable": "arrays-and-sequences-prefix-sums-trace.excalidraw",
+    "brief": "Operation-specific worked trace for prefix sums in Arrays and sequence patterns. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "04-singly-linked-lists/01-node-and-link",
+    "file": "singly-linked-lists-node-and-link-trace.svg",
+    "editable": "singly-linked-lists-node-and-link-trace.excalidraw",
+    "brief": "Operation-specific worked trace for node and link in Build a singly linked list. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "04-singly-linked-lists/02-traverse-nodes",
+    "file": "singly-linked-lists-traverse-nodes-trace.svg",
+    "editable": "singly-linked-lists-traverse-nodes-trace.excalidraw",
+    "brief": "Operation-specific worked trace for traverse nodes in Build a singly linked list. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "04-singly-linked-lists/03-list-state",
+    "file": "singly-linked-lists-list-state-trace.svg",
+    "editable": "singly-linked-lists-list-state-trace.excalidraw",
+    "brief": "Operation-specific worked trace for list state in Build a singly linked list. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "04-singly-linked-lists/04-prepend-node",
+    "file": "singly-linked-lists-prepend-node-trace.svg",
+    "editable": "singly-linked-lists-prepend-node-trace.excalidraw",
+    "brief": "Operation-specific worked trace for prepend node in Build a singly linked list. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "04-singly-linked-lists/05-append-node",
+    "file": "singly-linked-lists-append-node-trace.svg",
+    "editable": "singly-linked-lists-append-node-trace.excalidraw",
+    "brief": "Operation-specific worked trace for append node in Build a singly linked list. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "04-singly-linked-lists/06-find-node",
+    "file": "singly-linked-lists-find-node-trace.svg",
+    "editable": "singly-linked-lists-find-node-trace.excalidraw",
+    "brief": "Operation-specific worked trace for find node in Build a singly linked list. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "04-singly-linked-lists/08-remove-head",
+    "file": "singly-linked-lists-remove-head-trace.svg",
+    "editable": "singly-linked-lists-remove-head-trace.excalidraw",
+    "brief": "Operation-specific worked trace for remove head in Build a singly linked list. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "04-singly-linked-lists/09-remove-tail",
+    "file": "singly-linked-lists-remove-tail-trace.svg",
+    "editable": "singly-linked-lists-remove-tail-trace.excalidraw",
+    "brief": "Operation-specific worked trace for remove tail in Build a singly linked list. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "05-linked-list-variants/01-doubly-linked-node",
+    "file": "linked-list-variants-doubly-linked-node-trace.svg",
+    "editable": "linked-list-variants-doubly-linked-node-trace.excalidraw",
+    "brief": "Operation-specific worked trace for doubly linked node in Doubly linked, circular, and skip lists. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "05-linked-list-variants/02-doubly-prepend",
+    "file": "linked-list-variants-doubly-prepend-trace.svg",
+    "editable": "linked-list-variants-doubly-prepend-trace.excalidraw",
+    "brief": "Operation-specific worked trace for doubly prepend in Doubly linked, circular, and skip lists. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "05-linked-list-variants/03-doubly-append",
+    "file": "linked-list-variants-doubly-append-trace.svg",
+    "editable": "linked-list-variants-doubly-append-trace.excalidraw",
+    "brief": "Operation-specific worked trace for doubly append in Doubly linked, circular, and skip lists. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "05-linked-list-variants/05-browser-history",
+    "file": "linked-list-variants-browser-history-trace.svg",
+    "editable": "linked-list-variants-browser-history-trace.excalidraw",
+    "brief": "Operation-specific worked trace for browser history in Doubly linked, circular, and skip lists. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "05-linked-list-variants/06-circular-append",
+    "file": "linked-list-variants-circular-append-trace.svg",
+    "editable": "linked-list-variants-circular-append-trace.excalidraw",
+    "brief": "Operation-specific worked trace for circular append in Doubly linked, circular, and skip lists. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "05-linked-list-variants/08-circular-remove",
+    "file": "linked-list-variants-circular-remove-trace.svg",
+    "editable": "linked-list-variants-circular-remove-trace.excalidraw",
+    "brief": "Operation-specific worked trace for circular remove in Doubly linked, circular, and skip lists. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "05-linked-list-variants/09-skip-levels",
+    "file": "linked-list-variants-skip-levels-trace.svg",
+    "editable": "linked-list-variants-skip-levels-trace.excalidraw",
+    "brief": "Operation-specific worked trace for skip levels in Doubly linked, circular, and skip lists. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "05-linked-list-variants/11-skip-search",
+    "file": "linked-list-variants-skip-search-trace.svg",
+    "editable": "linked-list-variants-skip-search-trace.excalidraw",
+    "brief": "Operation-specific worked trace for skip search in Doubly linked, circular, and skip lists. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "05-linked-list-variants/12-skip-insert",
+    "file": "linked-list-variants-skip-insert-trace.svg",
+    "editable": "linked-list-variants-skip-insert-trace.excalidraw",
+    "brief": "Operation-specific worked trace for skip insert in Doubly linked, circular, and skip lists. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "05-linked-list-variants/13-skip-remove",
+    "file": "linked-list-variants-skip-remove-trace.svg",
+    "editable": "linked-list-variants-skip-remove-trace.excalidraw",
+    "brief": "Operation-specific worked trace for skip remove in Doubly linked, circular, and skip lists. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "06-stacks/01-stack-state",
+    "file": "stacks-stack-state-trace.svg",
+    "editable": "stacks-stack-state-trace.excalidraw",
+    "brief": "Operation-specific worked trace for stack state in Stacks and their applications. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "06-stacks/02-push-item",
+    "file": "stacks-push-item-trace.svg",
+    "editable": "stacks-push-item-trace.excalidraw",
+    "brief": "Operation-specific worked trace for push item in Stacks and their applications. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "06-stacks/03-peek-item",
+    "file": "stacks-peek-item-trace.svg",
+    "editable": "stacks-peek-item-trace.excalidraw",
+    "brief": "Operation-specific worked trace for peek item in Stacks and their applications. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "06-stacks/06-postfix-evaluation",
+    "file": "stacks-postfix-evaluation-trace.svg",
+    "editable": "stacks-postfix-evaluation-trace.excalidraw",
+    "brief": "Operation-specific worked trace for postfix evaluation in Stacks and their applications. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "06-stacks/07-undo-history",
+    "file": "stacks-undo-history-trace.svg",
+    "editable": "stacks-undo-history-trace.excalidraw",
+    "brief": "Operation-specific worked trace for undo history in Stacks and their applications. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "06-stacks/08-minimum-stack",
+    "file": "stacks-minimum-stack-trace.svg",
+    "editable": "stacks-minimum-stack-trace.excalidraw",
+    "brief": "Operation-specific worked trace for minimum stack in Stacks and their applications. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "07-queues-and-deques/01-linked-queue-state",
+    "file": "queues-and-deques-linked-queue-state-trace.svg",
+    "editable": "queues-and-deques-linked-queue-state-trace.excalidraw",
+    "brief": "Operation-specific worked trace for linked queue state in Queues and deques. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "07-queues-and-deques/02-enqueue-item",
+    "file": "queues-and-deques-enqueue-item-trace.svg",
+    "editable": "queues-and-deques-enqueue-item-trace.excalidraw",
+    "brief": "Operation-specific worked trace for enqueue item in Queues and deques. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "07-queues-and-deques/04-peek-queue",
+    "file": "queues-and-deques-peek-queue-trace.svg",
+    "editable": "queues-and-deques-peek-queue-trace.excalidraw",
+    "brief": "Operation-specific worked trace for peek queue in Queues and deques. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "07-queues-and-deques/05-deque-basics",
+    "file": "queues-and-deques-deque-basics-trace.svg",
+    "editable": "queues-and-deques-deque-basics-trace.excalidraw",
+    "brief": "Operation-specific worked trace for deque basics in Queues and deques. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "07-queues-and-deques/06-ring-buffer-state",
+    "file": "queues-and-deques-ring-buffer-state-trace.svg",
+    "editable": "queues-and-deques-ring-buffer-state-trace.excalidraw",
+    "brief": "Operation-specific worked trace for ring buffer state in Queues and deques. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "07-queues-and-deques/08-ring-dequeue",
+    "file": "queues-and-deques-ring-dequeue-trace.svg",
+    "editable": "queues-and-deques-ring-dequeue-trace.excalidraw",
+    "brief": "Operation-specific worked trace for ring dequeue in Queues and deques. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "07-queues-and-deques/09-round-robin",
+    "file": "queues-and-deques-round-robin-trace.svg",
+    "editable": "queues-and-deques-round-robin-trace.excalidraw",
+    "brief": "Operation-specific worked trace for round robin in Queues and deques. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "08-hash-tables/01-hash-to-bucket",
+    "file": "hash-tables-hash-to-bucket-trace.svg",
+    "editable": "hash-tables-hash-to-bucket-trace.excalidraw",
+    "brief": "Operation-specific worked trace for hash to bucket in Build and use hash tables. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "08-hash-tables/03-table-state",
+    "file": "hash-tables-table-state-trace.svg",
+    "editable": "hash-tables-table-state-trace.excalidraw",
+    "brief": "Operation-specific worked trace for table state in Build and use hash tables. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "08-hash-tables/04-insert-or-update",
+    "file": "hash-tables-insert-or-update-trace.svg",
+    "editable": "hash-tables-insert-or-update-trace.excalidraw",
+    "brief": "Operation-specific worked trace for insert or update in Build and use hash tables. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "08-hash-tables/05-lookup-key",
+    "file": "hash-tables-lookup-key-trace.svg",
+    "editable": "hash-tables-lookup-key-trace.excalidraw",
+    "brief": "Operation-specific worked trace for lookup key in Build and use hash tables. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "08-hash-tables/06-delete-key",
+    "file": "hash-tables-delete-key-trace.svg",
+    "editable": "hash-tables-delete-key-trace.excalidraw",
+    "brief": "Operation-specific worked trace for delete key in Build and use hash tables. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "08-hash-tables/08-load-factor",
+    "file": "hash-tables-load-factor-trace.svg",
+    "editable": "hash-tables-load-factor-trace.excalidraw",
+    "brief": "Operation-specific worked trace for load factor in Build and use hash tables. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "08-hash-tables/09-rehash-table",
+    "file": "hash-tables-rehash-table-trace.svg",
+    "editable": "hash-tables-rehash-table-trace.excalidraw",
+    "brief": "Operation-specific worked trace for rehash table in Build and use hash tables. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "08-hash-tables/10-linear-probing",
+    "file": "hash-tables-linear-probing-trace.svg",
+    "editable": "hash-tables-linear-probing-trace.excalidraw",
+    "brief": "Operation-specific worked trace for linear probing in Build and use hash tables. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "09-searching/01-linear-search",
+    "file": "searching-linear-search-trace.svg",
+    "editable": "searching-linear-search-trace.excalidraw",
+    "brief": "Operation-specific worked trace for linear search in Searching sorted and unsorted data. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "09-searching/03-binary-search-loop",
+    "file": "searching-binary-search-loop-trace.svg",
+    "editable": "searching-binary-search-loop-trace.excalidraw",
+    "brief": "Operation-specific worked trace for binary search loop in Searching sorted and unsorted data. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "09-searching/04-binary-search-boundaries",
+    "file": "searching-binary-search-boundaries-trace.svg",
+    "editable": "searching-binary-search-boundaries-trace.excalidraw",
+    "brief": "Operation-specific worked trace for binary search boundaries in Searching sorted and unsorted data. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "09-searching/06-upper-bound",
+    "file": "searching-upper-bound-trace.svg",
+    "editable": "searching-upper-bound-trace.excalidraw",
+    "brief": "Operation-specific worked trace for upper bound in Searching sorted and unsorted data. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "09-searching/07-sorted-insertion",
+    "file": "searching-sorted-insertion-trace.svg",
+    "editable": "searching-sorted-insertion-trace.excalidraw",
+    "brief": "Operation-specific worked trace for sorted insertion in Searching sorted and unsorted data. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "10-sorting/01-swap-adjacent",
+    "file": "sorting-swap-adjacent-trace.svg",
+    "editable": "sorting-swap-adjacent-trace.excalidraw",
+    "brief": "Operation-specific worked trace for swap adjacent in Sorting algorithms. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "10-sorting/02-bubble-pass",
+    "file": "sorting-bubble-pass-trace.svg",
+    "editable": "sorting-bubble-pass-trace.excalidraw",
+    "brief": "Operation-specific worked trace for bubble pass in Sorting algorithms. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "10-sorting/03-bubble-sort",
+    "file": "sorting-bubble-sort-trace.svg",
+    "editable": "sorting-bubble-sort-trace.excalidraw",
+    "brief": "Operation-specific worked trace for bubble sort in Sorting algorithms. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "10-sorting/04-select-minimum",
+    "file": "sorting-select-minimum-trace.svg",
+    "editable": "sorting-select-minimum-trace.excalidraw",
+    "brief": "Operation-specific worked trace for select minimum in Sorting algorithms. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "10-sorting/05-selection-sort",
+    "file": "sorting-selection-sort-trace.svg",
+    "editable": "sorting-selection-sort-trace.excalidraw",
+    "brief": "Operation-specific worked trace for selection sort in Sorting algorithms. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "10-sorting/06-insertion-step",
+    "file": "sorting-insertion-step-trace.svg",
+    "editable": "sorting-insertion-step-trace.excalidraw",
+    "brief": "Operation-specific worked trace for insertion step in Sorting algorithms. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "10-sorting/07-insertion-sort",
+    "file": "sorting-insertion-sort-trace.svg",
+    "editable": "sorting-insertion-sort-trace.excalidraw",
+    "brief": "Operation-specific worked trace for insertion sort in Sorting algorithms. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "10-sorting/09-merge-sort",
+    "file": "sorting-merge-sort-trace.svg",
+    "editable": "sorting-merge-sort-trace.excalidraw",
+    "brief": "Operation-specific worked trace for merge sort in Sorting algorithms. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "10-sorting/11-quicksort",
+    "file": "sorting-quicksort-trace.svg",
+    "editable": "sorting-quicksort-trace.excalidraw",
+    "brief": "Operation-specific worked trace for quicksort in Sorting algorithms. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "11-trees-and-bst/01-binary-node",
+    "file": "trees-and-bst-binary-node-trace.svg",
+    "editable": "trees-and-bst-binary-node-trace.excalidraw",
+    "brief": "Operation-specific worked trace for binary node in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "11-trees-and-bst/02-count-nodes",
+    "file": "trees-and-bst-count-nodes-trace.svg",
+    "editable": "trees-and-bst-count-nodes-trace.excalidraw",
+    "brief": "Operation-specific worked trace for count nodes in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "11-trees-and-bst/03-tree-height",
+    "file": "trees-and-bst-tree-height-trace.svg",
+    "editable": "trees-and-bst-tree-height-trace.excalidraw",
+    "brief": "Operation-specific worked trace for tree height in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "11-trees-and-bst/04-preorder-traversal",
+    "file": "trees-and-bst-preorder-traversal-trace.svg",
+    "editable": "trees-and-bst-preorder-traversal-trace.excalidraw",
+    "brief": "Operation-specific worked trace for preorder traversal in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "11-trees-and-bst/05-inorder-traversal",
+    "file": "trees-and-bst-inorder-traversal-trace.svg",
+    "editable": "trees-and-bst-inorder-traversal-trace.excalidraw",
+    "brief": "Operation-specific worked trace for inorder traversal in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "11-trees-and-bst/07-level-order-traversal",
+    "file": "trees-and-bst-level-order-traversal-trace.svg",
+    "editable": "trees-and-bst-level-order-traversal-trace.excalidraw",
+    "brief": "Operation-specific worked trace for level order traversal in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "11-trees-and-bst/08-bst-search",
+    "file": "trees-and-bst-bst-search-trace.svg",
+    "editable": "trees-and-bst-bst-search-trace.excalidraw",
+    "brief": "Operation-specific worked trace for bst search in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "11-trees-and-bst/09-bst-insert",
+    "file": "trees-and-bst-bst-insert-trace.svg",
+    "editable": "trees-and-bst-bst-insert-trace.excalidraw",
+    "brief": "Operation-specific worked trace for bst insert in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "11-trees-and-bst/10-bst-minimum",
+    "file": "trees-and-bst-bst-minimum-trace.svg",
+    "editable": "trees-and-bst-bst-minimum-trace.excalidraw",
+    "brief": "Operation-specific worked trace for bst minimum in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "11-trees-and-bst/11-bst-delete-leaf",
+    "file": "trees-and-bst-bst-delete-leaf-trace.svg",
+    "editable": "trees-and-bst-bst-delete-leaf-trace.excalidraw",
+    "brief": "Operation-specific worked trace for bst delete leaf in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "11-trees-and-bst/12-bst-delete-one-child",
+    "file": "trees-and-bst-bst-delete-one-child-trace.svg",
+    "editable": "trees-and-bst-bst-delete-one-child-trace.excalidraw",
+    "brief": "Operation-specific worked trace for bst delete one child in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "11-trees-and-bst/14-validate-bst",
+    "file": "trees-and-bst-validate-bst-trace.svg",
+    "editable": "trees-and-bst-validate-bst-trace.excalidraw",
+    "brief": "Operation-specific worked trace for validate bst in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "12-heaps-and-priority/02-heap-order",
+    "file": "heaps-and-priority-heap-order-trace.svg",
+    "editable": "heaps-and-priority-heap-order-trace.excalidraw",
+    "brief": "Operation-specific worked trace for heap order in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "12-heaps-and-priority/03-sift-up",
+    "file": "heaps-and-priority-sift-up-trace.svg",
+    "editable": "heaps-and-priority-sift-up-trace.excalidraw",
+    "brief": "Operation-specific worked trace for sift up in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "12-heaps-and-priority/05-heap-push",
+    "file": "heaps-and-priority-heap-push-trace.svg",
+    "editable": "heaps-and-priority-heap-push-trace.excalidraw",
+    "brief": "Operation-specific worked trace for heap push in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "12-heaps-and-priority/06-heap-pop",
+    "file": "heaps-and-priority-heap-pop-trace.svg",
+    "editable": "heaps-and-priority-heap-pop-trace.excalidraw",
+    "brief": "Operation-specific worked trace for heap pop in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "12-heaps-and-priority/07-bottom-up-heapify",
+    "file": "heaps-and-priority-bottom-up-heapify-trace.svg",
+    "editable": "heaps-and-priority-bottom-up-heapify-trace.excalidraw",
+    "brief": "Operation-specific worked trace for bottom up heapify in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "12-heaps-and-priority/08-max-heap",
+    "file": "heaps-and-priority-max-heap-trace.svg",
+    "editable": "heaps-and-priority-max-heap-trace.excalidraw",
+    "brief": "Operation-specific worked trace for max heap in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "12-heaps-and-priority/09-heap-sort",
+    "file": "heaps-and-priority-heap-sort-trace.svg",
+    "editable": "heaps-and-priority-heap-sort-trace.excalidraw",
+    "brief": "Operation-specific worked trace for heap sort in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "12-heaps-and-priority/12-priority-updates",
+    "file": "heaps-and-priority-priority-updates-trace.svg",
+    "editable": "heaps-and-priority-priority-updates-trace.excalidraw",
+    "brief": "Operation-specific worked trace for priority updates in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "12-heaps-and-priority/13-top-k-stream",
+    "file": "heaps-and-priority-top-k-stream-trace.svg",
+    "editable": "heaps-and-priority-top-k-stream-trace.excalidraw",
+    "brief": "Operation-specific worked trace for top k stream in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "13-graph-models/01-adjacency-list",
+    "file": "graph-models-adjacency-list-trace.svg",
+    "editable": "graph-models-adjacency-list-trace.excalidraw",
+    "brief": "Operation-specific worked trace for adjacency list in Represent and build graphs. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "13-graph-models/02-add-vertex",
+    "file": "graph-models-add-vertex-trace.svg",
+    "editable": "graph-models-add-vertex-trace.excalidraw",
+    "brief": "Operation-specific worked trace for add vertex in Represent and build graphs. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "13-graph-models/03-add-undirected-edge",
+    "file": "graph-models-add-undirected-edge-trace.svg",
+    "editable": "graph-models-add-undirected-edge-trace.excalidraw",
+    "brief": "Operation-specific worked trace for add undirected edge in Represent and build graphs. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "13-graph-models/04-remove-edge",
+    "file": "graph-models-remove-edge-trace.svg",
+    "editable": "graph-models-remove-edge-trace.excalidraw",
+    "brief": "Operation-specific worked trace for remove edge in Represent and build graphs. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "13-graph-models/05-remove-vertex",
+    "file": "graph-models-remove-vertex-trace.svg",
+    "editable": "graph-models-remove-vertex-trace.excalidraw",
+    "brief": "Operation-specific worked trace for remove vertex in Represent and build graphs. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "13-graph-models/06-directed-edges",
+    "file": "graph-models-directed-edges-trace.svg",
+    "editable": "graph-models-directed-edges-trace.excalidraw",
+    "brief": "Operation-specific worked trace for directed edges in Represent and build graphs. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "14-graph-traversal/01-bfs-frontier",
+    "file": "graph-traversal-bfs-frontier-trace.svg",
+    "editable": "graph-traversal-bfs-frontier-trace.excalidraw",
+    "brief": "Operation-specific worked trace for bfs frontier in Breadth-first and depth-first traversal. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "14-graph-traversal/02-bfs-traversal",
+    "file": "graph-traversal-bfs-traversal-trace.svg",
+    "editable": "graph-traversal-bfs-traversal-trace.excalidraw",
+    "brief": "Operation-specific worked trace for bfs traversal in Breadth-first and depth-first traversal. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "14-graph-traversal/04-bfs-path",
+    "file": "graph-traversal-bfs-path-trace.svg",
+    "editable": "graph-traversal-bfs-path-trace.excalidraw",
+    "brief": "Operation-specific worked trace for bfs path in Breadth-first and depth-first traversal. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "14-graph-traversal/05-connected-components",
+    "file": "graph-traversal-connected-components-trace.svg",
+    "editable": "graph-traversal-connected-components-trace.excalidraw",
+    "brief": "Operation-specific worked trace for connected components in Breadth-first and depth-first traversal. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "14-graph-traversal/06-dfs-recursive",
+    "file": "graph-traversal-dfs-recursive-trace.svg",
+    "editable": "graph-traversal-dfs-recursive-trace.excalidraw",
+    "brief": "Operation-specific worked trace for dfs recursive in Breadth-first and depth-first traversal. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "14-graph-traversal/07-dfs-iterative",
+    "file": "graph-traversal-dfs-iterative-trace.svg",
+    "editable": "graph-traversal-dfs-iterative-trace.excalidraw",
+    "brief": "Operation-specific worked trace for dfs iterative in Breadth-first and depth-first traversal. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "14-graph-traversal/08-undirected-cycle",
+    "file": "graph-traversal-undirected-cycle-trace.svg",
+    "editable": "graph-traversal-undirected-cycle-trace.excalidraw",
+    "brief": "Operation-specific worked trace for undirected cycle in Breadth-first and depth-first traversal. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "14-graph-traversal/10-topological-order",
+    "file": "graph-traversal-topological-order-trace.svg",
+    "editable": "graph-traversal-topological-order-trace.excalidraw",
+    "brief": "Operation-specific worked trace for topological order in Breadth-first and depth-first traversal. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "15-shortest-paths/01-weighted-adjacency",
+    "file": "shortest-paths-weighted-adjacency-trace.svg",
+    "editable": "shortest-paths-weighted-adjacency-trace.excalidraw",
+    "brief": "Operation-specific worked trace for weighted adjacency in Weighted graphs and shortest paths. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "15-shortest-paths/02-path-cost",
+    "file": "shortest-paths-path-cost-trace.svg",
+    "editable": "shortest-paths-path-cost-trace.excalidraw",
+    "brief": "Operation-specific worked trace for path cost in Weighted graphs and shortest paths. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "15-shortest-paths/04-dijkstra-scan",
+    "file": "shortest-paths-dijkstra-scan-trace.svg",
+    "editable": "shortest-paths-dijkstra-scan-trace.excalidraw",
+    "brief": "Operation-specific worked trace for dijkstra scan in Weighted graphs and shortest paths. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "15-shortest-paths/06-reconstruct-weighted-path",
+    "file": "shortest-paths-reconstruct-weighted-path-trace.svg",
+    "editable": "shortest-paths-reconstruct-weighted-path-trace.excalidraw",
+    "brief": "Operation-specific worked trace for reconstruct weighted path in Weighted graphs and shortest paths. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "15-shortest-paths/07-unreachable-and-zero-weights",
+    "file": "shortest-paths-unreachable-and-zero-weights-trace.svg",
+    "editable": "shortest-paths-unreachable-and-zero-weights-trace.excalidraw",
+    "brief": "Operation-specific worked trace for unreachable and zero weights in Weighted graphs and shortest paths. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "16-bits-and-sets/01-test-a-bit",
+    "file": "bits-and-sets-test-a-bit-trace.svg",
+    "editable": "bits-and-sets-test-a-bit-trace.excalidraw",
+    "brief": "Operation-specific worked trace for test a bit in Bits and sets. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "16-bits-and-sets/02-set-clear-toggle",
+    "file": "bits-and-sets-set-clear-toggle-trace.svg",
+    "editable": "bits-and-sets-set-clear-toggle-trace.excalidraw",
+    "brief": "Operation-specific worked trace for set clear toggle in Bits and sets. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "16-bits-and-sets/03-bit-count",
+    "file": "bits-and-sets-bit-count-trace.svg",
+    "editable": "bits-and-sets-bit-count-trace.excalidraw",
+    "brief": "Operation-specific worked trace for bit count in Bits and sets. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "16-bits-and-sets/04-power-of-two",
+    "file": "bits-and-sets-power-of-two-trace.svg",
+    "editable": "bits-and-sets-power-of-two-trace.excalidraw",
+    "brief": "Operation-specific worked trace for power of two in Bits and sets. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "16-bits-and-sets/06-set-algebra",
+    "file": "bits-and-sets-set-algebra-trace.svg",
+    "editable": "bits-and-sets-set-algebra-trace.excalidraw",
+    "brief": "Operation-specific worked trace for set algebra in Bits and sets. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "16-bits-and-sets/08-permission-flags",
+    "file": "bits-and-sets-permission-flags-trace.svg",
+    "editable": "bits-and-sets-permission-flags-trace.excalidraw",
+    "brief": "Operation-specific worked trace for permission flags in Bits and sets. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "17-tries/01-trie-node",
+    "file": "tries-trie-node-trace.svg",
+    "editable": "tries-trie-node-trace.excalidraw",
+    "brief": "Operation-specific worked trace for trie node in Tries and prefix lookup. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "17-tries/02-insert-word",
+    "file": "tries-insert-word-trace.svg",
+    "editable": "tries-insert-word-trace.excalidraw",
+    "brief": "Operation-specific worked trace for insert word in Tries and prefix lookup. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "17-tries/03-contains-word",
+    "file": "tries-contains-word-trace.svg",
+    "editable": "tries-contains-word-trace.excalidraw",
+    "brief": "Operation-specific worked trace for contains word in Tries and prefix lookup. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "17-tries/04-starts-with",
+    "file": "tries-starts-with-trace.svg",
+    "editable": "tries-starts-with-trace.excalidraw",
+    "brief": "Operation-specific worked trace for starts with in Tries and prefix lookup. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "17-tries/05-collect-prefix-words",
+    "file": "tries-collect-prefix-words-trace.svg",
+    "editable": "tries-collect-prefix-words-trace.excalidraw",
+    "brief": "Operation-specific worked trace for collect prefix words in Tries and prefix lookup. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "17-tries/07-prefix-counts",
+    "file": "tries-prefix-counts-trace.svg",
+    "editable": "tries-prefix-counts-trace.excalidraw",
+    "brief": "Operation-specific worked trace for prefix counts in Tries and prefix lookup. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "17-tries/08-autocomplete-project",
+    "file": "tries-autocomplete-project-trace.svg",
+    "editable": "tries-autocomplete-project-trace.excalidraw",
+    "brief": "Operation-specific worked trace for autocomplete project in Tries and prefix lookup. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "18-range-structures/01-fenwick-lowbit",
+    "file": "range-structures-fenwick-lowbit-trace.svg",
+    "editable": "range-structures-fenwick-lowbit-trace.excalidraw",
+    "brief": "Operation-specific worked trace for fenwick lowbit in Fenwick and segment trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "18-range-structures/02-fenwick-state",
+    "file": "range-structures-fenwick-state-trace.svg",
+    "editable": "range-structures-fenwick-state-trace.excalidraw",
+    "brief": "Operation-specific worked trace for fenwick state in Fenwick and segment trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "18-range-structures/03-fenwick-add",
+    "file": "range-structures-fenwick-add-trace.svg",
+    "editable": "range-structures-fenwick-add-trace.excalidraw",
+    "brief": "Operation-specific worked trace for fenwick add in Fenwick and segment trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "18-range-structures/05-fenwick-range",
+    "file": "range-structures-fenwick-range-trace.svg",
+    "editable": "range-structures-fenwick-range-trace.excalidraw",
+    "brief": "Operation-specific worked trace for fenwick range in Fenwick and segment trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "18-range-structures/06-fenwick-build",
+    "file": "range-structures-fenwick-build-trace.svg",
+    "editable": "range-structures-fenwick-build-trace.excalidraw",
+    "brief": "Operation-specific worked trace for fenwick build in Fenwick and segment trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "18-range-structures/07-segment-layout",
+    "file": "range-structures-segment-layout-trace.svg",
+    "editable": "range-structures-segment-layout-trace.excalidraw",
+    "brief": "Operation-specific worked trace for segment layout in Fenwick and segment trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "18-range-structures/08-segment-build",
+    "file": "range-structures-segment-build-trace.svg",
+    "editable": "range-structures-segment-build-trace.excalidraw",
+    "brief": "Operation-specific worked trace for segment build in Fenwick and segment trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "18-range-structures/10-segment-update",
+    "file": "range-structures-segment-update-trace.svg",
+    "editable": "range-structures-segment-update-trace.excalidraw",
+    "brief": "Operation-specific worked trace for segment update in Fenwick and segment trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "18-range-structures/11-range-minimum",
+    "file": "range-structures-range-minimum-trace.svg",
+    "editable": "range-structures-range-minimum-trace.excalidraw",
+    "brief": "Operation-specific worked trace for range minimum in Fenwick and segment trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "19-disjoint-sets/01-dsu-state",
+    "file": "disjoint-sets-dsu-state-trace.svg",
+    "editable": "disjoint-sets-dsu-state-trace.excalidraw",
+    "brief": "Operation-specific worked trace for dsu state in Disjoint-set union. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "19-disjoint-sets/02-find-root",
+    "file": "disjoint-sets-find-root-trace.svg",
+    "editable": "disjoint-sets-find-root-trace.excalidraw",
+    "brief": "Operation-specific worked trace for find root in Disjoint-set union. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "19-disjoint-sets/03-union-components",
+    "file": "disjoint-sets-union-components-trace.svg",
+    "editable": "disjoint-sets-union-components-trace.excalidraw",
+    "brief": "Operation-specific worked trace for union components in Disjoint-set union. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "19-disjoint-sets/05-union-by-size",
+    "file": "disjoint-sets-union-by-size-trace.svg",
+    "editable": "disjoint-sets-union-by-size-trace.excalidraw",
+    "brief": "Operation-specific worked trace for union by size in Disjoint-set union. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "19-disjoint-sets/07-detect-redundant-edge",
+    "file": "disjoint-sets-detect-redundant-edge-trace.svg",
+    "editable": "disjoint-sets-detect-redundant-edge-trace.excalidraw",
+    "brief": "Operation-specific worked trace for detect redundant edge in Disjoint-set union. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "19-disjoint-sets/08-kruskal-forest",
+    "file": "disjoint-sets-kruskal-forest-trace.svg",
+    "editable": "disjoint-sets-kruskal-forest-trace.excalidraw",
+    "brief": "Operation-specific worked trace for kruskal forest in Disjoint-set union. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "20-combinatorial-search/01-cartesian-product",
+    "file": "combinatorial-search-cartesian-product-trace.svg",
+    "editable": "combinatorial-search-cartesian-product-trace.excalidraw",
+    "brief": "Operation-specific worked trace for cartesian product in Combinatorial search. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "20-combinatorial-search/02-power-set-iteration",
+    "file": "combinatorial-search-power-set-iteration-trace.svg",
+    "editable": "combinatorial-search-power-set-iteration-trace.excalidraw",
+    "brief": "Operation-specific worked trace for power set iteration in Combinatorial search. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "20-combinatorial-search/03-power-set-bits",
+    "file": "combinatorial-search-power-set-bits-trace.svg",
+    "editable": "combinatorial-search-power-set-bits-trace.excalidraw",
+    "brief": "Operation-specific worked trace for power set bits in Combinatorial search. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "20-combinatorial-search/04-combinations-without-replacement",
+    "file": "combinatorial-search-combinations-without-replacement-trace.svg",
+    "editable": "combinatorial-search-combinations-without-replacement-trace.excalidraw",
+    "brief": "Operation-specific worked trace for combinations without replacement in Combinatorial search. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "20-combinatorial-search/05-combinations-with-replacement",
+    "file": "combinatorial-search-combinations-with-replacement-trace.svg",
+    "editable": "combinatorial-search-combinations-with-replacement-trace.excalidraw",
+    "brief": "Operation-specific worked trace for combinations with replacement in Combinatorial search. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "20-combinatorial-search/06-permutations-without-replacement",
+    "file": "combinatorial-search-permutations-without-replacement-trace.svg",
+    "editable": "combinatorial-search-permutations-without-replacement-trace.excalidraw",
+    "brief": "Operation-specific worked trace for permutations without replacement in Combinatorial search. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  },
+  {
+    "lesson": "20-combinatorial-search/07-words-with-repetition",
+    "file": "combinatorial-search-words-with-repetition-trace.svg",
+    "editable": "combinatorial-search-words-with-repetition-trace.excalidraw",
+    "brief": "Operation-specific worked trace for words with repetition in Combinatorial search. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism.",
+    "alt": null
+  }
+]

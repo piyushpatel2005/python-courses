@@ -1,0 +1,1267 @@
+{
+  "libraryVersion": "0.18.1",
+  "browser": "155.0.8059.40",
+  "externalRequestsBlocked": true,
+  "canonicalSVG": 20,
+  "canonicalEditable": 20,
+  "lessonSVG": 20,
+  "lessonEditable": 20,
+  "algorithmChecks": [
+    {
+      "name": "lower_bound(5)",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "stable merge",
+      "actual": [
+        [
+          3,
+          "L"
+        ],
+        [
+          4,
+          "R"
+        ],
+        [
+          7,
+          "L"
+        ],
+        [
+          7,
+          "R"
+        ],
+        [
+          10,
+          "L"
+        ],
+        [
+          12,
+          "R"
+        ]
+      ],
+      "expected": [
+        [
+          3,
+          "L"
+        ],
+        [
+          4,
+          "R"
+        ],
+        [
+          7,
+          "L"
+        ],
+        [
+          7,
+          "R"
+        ],
+        [
+          10,
+          "L"
+        ],
+        [
+          12,
+          "R"
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "partition multiset",
+      "actual": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        8,
+        8
+      ],
+      "expected": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        8,
+        8
+      ],
+      "passed": true
+    },
+    {
+      "name": "inorder BST",
+      "actual": [
+        2,
+        4,
+        7,
+        11,
+        15,
+        18
+      ],
+      "expected": [
+        2,
+        4,
+        7,
+        11,
+        15,
+        18
+      ],
+      "passed": true
+    },
+    {
+      "name": "postorder",
+      "actual": [
+        2,
+        7,
+        4,
+        15,
+        18,
+        11
+      ],
+      "expected": [
+        2,
+        7,
+        4,
+        15,
+        18,
+        11
+      ],
+      "passed": true
+    },
+    {
+      "name": "successor transplant inorder",
+      "actual": [
+        9,
+        26,
+        28,
+        35
+      ],
+      "expected": [
+        9,
+        26,
+        28,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "name": "successor right child reattached",
+      "actual": 28,
+      "expected": 28,
+      "passed": true
+    },
+    {
+      "name": "min heap mapping",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "sift down after pop",
+      "actual": [
+        4,
+        5,
+        6,
+        9,
+        7,
+        8
+      ],
+      "expected": [
+        4,
+        5,
+        6,
+        9,
+        7,
+        8
+      ],
+      "passed": true
+    },
+    {
+      "name": "stable priority order",
+      "actual": [
+        "elm",
+        "oak",
+        "ash"
+      ],
+      "expected": [
+        "elm",
+        "oak",
+        "ash"
+      ],
+      "passed": true
+    },
+    {
+      "name": "undirected matrix symmetry",
+      "actual": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "expected": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "BFS distances",
+      "actual": {
+        "P": 0,
+        "Q": 1,
+        "R": 1,
+        "S": 2
+      },
+      "expected": {
+        "P": 0,
+        "Q": 1,
+        "R": 1,
+        "S": 2
+      },
+      "passed": true
+    },
+    {
+      "name": "relax via U",
+      "actual": 9,
+      "expected": 9,
+      "passed": true
+    },
+    {
+      "name": "Dijkstra improved record",
+      "actual": 5,
+      "expected": 5,
+      "passed": true
+    },
+    {
+      "name": "masked complement",
+      "actual": 210,
+      "expected": 210,
+      "passed": true
+    },
+    {
+      "name": "Fenwick prefix(7)",
+      "actual": 28,
+      "expected": 28,
+      "passed": true
+    },
+    {
+      "name": "segment query [1,4)",
+      "actual": 15,
+      "expected": 15,
+      "passed": true
+    },
+    {
+      "name": "DSU root",
+      "actual": "D",
+      "expected": "D",
+      "passed": true
+    },
+    {
+      "name": "DSU compression",
+      "actual": {
+        "A": "D",
+        "B": "D",
+        "C": "D",
+        "D": "D",
+        "X": "Y",
+        "Y": "Y"
+      },
+      "expected": {
+        "A": "D",
+        "B": "D",
+        "C": "D",
+        "D": "D",
+        "X": "Y",
+        "Y": "Y"
+      },
+      "passed": true
+    },
+    {
+      "name": "backtracking exactly one 1",
+      "actual": [
+        "01",
+        "10"
+      ],
+      "expected": [
+        "01",
+        "10"
+      ],
+      "passed": true
+    },
+    {
+      "name": "lower-bound narrowing states",
+      "actual": [
+        [
+          0,
+          6,
+          3
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "expected": [
+        [
+          0,
+          6,
+          3
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "preorder",
+      "actual": [
+        11,
+        4,
+        2,
+        7,
+        18,
+        15
+      ],
+      "expected": [
+        11,
+        4,
+        2,
+        7,
+        18,
+        15
+      ],
+      "passed": true
+    },
+    {
+      "name": "Fenwick visited indices",
+      "actual": [
+        7,
+        6,
+        4
+      ],
+      "expected": [
+        7,
+        6,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "name": "Fenwick block values",
+      "actual": [
+        5,
+        9,
+        14
+      ],
+      "expected": [
+        5,
+        9,
+        14
+      ],
+      "passed": true
+    },
+    {
+      "name": "segment root sum",
+      "actual": 18,
+      "expected": 18,
+      "passed": true
+    },
+    {
+      "name": "segment half sums",
+      "actual": [
+        11,
+        7
+      ],
+      "expected": [
+        11,
+        7
+      ],
+      "passed": true
+    },
+    {
+      "name": "Python complement",
+      "actual": -46,
+      "expected": -46,
+      "passed": true
+    },
+    {
+      "name": "load query [0,2)",
+      "actual": 10,
+      "expected": 10,
+      "passed": true
+    },
+    {
+      "name": "DFS active ancestor cycle",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "DFS finished node DAG",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "trie prune preserves mat",
+      "actual": {
+        "m": {
+          "a": {
+            "t": {
+              "$": true
+            }
+          }
+        }
+      },
+      "expected": {
+        "m": {
+          "a": {
+            "t": {
+              "$": true
+            }
+          }
+        }
+      },
+      "passed": true
+    }
+  ],
+  "diagrams": [
+    {
+      "name": "binary-search-half-open-boundary.excalidraw",
+      "elements": 64,
+      "text": 45,
+      "rectangles": 19,
+      "arrows": 0,
+      "boundArrowEnds": 0,
+      "boundTexts": 18,
+      "groups": 18,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/binary-search-half-open-boundary.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/09-searching/05-lower-bound/binary-search-half-open-boundary.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/binary-search-half-open-boundary-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/binary-search-half-open-boundary-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "merge-two-sorted-runs.excalidraw",
+      "elements": 40,
+      "text": 24,
+      "rectangles": 16,
+      "arrows": 0,
+      "boundArrowEnds": 0,
+      "boundTexts": 15,
+      "groups": 15,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/merge-two-sorted-runs.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/10-sorting/08-merge-runs/merge-two-sorted-runs.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/merge-two-sorted-runs-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/merge-two-sorted-runs-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "quicksort-partition-regions.excalidraw",
+      "elements": 42,
+      "text": 24,
+      "rectangles": 18,
+      "arrows": 0,
+      "boundArrowEnds": 0,
+      "boundTexts": 17,
+      "groups": 17,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/quicksort-partition-regions.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/10-sorting/10-partition-around-pivot/quicksort-partition-regions.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/quicksort-partition-regions-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/quicksort-partition-regions-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "binary-tree-traversal-orders.excalidraw",
+      "elements": 27,
+      "text": 15,
+      "rectangles": 7,
+      "arrows": 5,
+      "boundArrowEnds": 10,
+      "boundTexts": 6,
+      "groups": 6,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/binary-tree-traversal-orders.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/06-postorder-traversal/binary-tree-traversal-orders.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/binary-tree-traversal-orders-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/binary-tree-traversal-orders-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "bst-successor-transplant.excalidraw",
+      "elements": 33,
+      "text": 16,
+      "rectangles": 10,
+      "arrows": 7,
+      "boundArrowEnds": 14,
+      "boundTexts": 9,
+      "groups": 9,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/bst-successor-transplant.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/13-bst-delete-two-children/bst-successor-transplant.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/bst-successor-transplant-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/bst-successor-transplant-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "heap-array-tree-mapping.excalidraw",
+      "elements": 48,
+      "text": 27,
+      "rectangles": 15,
+      "arrows": 6,
+      "boundArrowEnds": 12,
+      "boundTexts": 14,
+      "groups": 14,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/heap-array-tree-mapping.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/01-heap-array-indices/heap-array-tree-mapping.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/heap-array-tree-mapping-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/heap-array-tree-mapping-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "min-heap-sift-down.excalidraw",
+      "elements": 60,
+      "text": 31,
+      "rectangles": 19,
+      "arrows": 10,
+      "boundArrowEnds": 20,
+      "boundTexts": 18,
+      "groups": 18,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/min-heap-sift-down.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/04-sift-down/min-heap-sift-down.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/min-heap-sift-down-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/min-heap-sift-down-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "stable-priority-tie-breaker.excalidraw",
+      "elements": 22,
+      "text": 13,
+      "rectangles": 7,
+      "arrows": 2,
+      "boundArrowEnds": 4,
+      "boundTexts": 6,
+      "groups": 6,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/stable-priority-tie-breaker.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/11-stable-priority-queue/stable-priority-tie-breaker.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/stable-priority-tie-breaker-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/stable-priority-tie-breaker-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "graph-list-matrix-correspondence.excalidraw",
+      "elements": 59,
+      "text": 34,
+      "rectangles": 21,
+      "arrows": 4,
+      "boundArrowEnds": 8,
+      "boundTexts": 20,
+      "groups": 20,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/graph-list-matrix-correspondence.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/13-graph-models/07-adjacency-matrix/graph-list-matrix-correspondence.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/graph-list-matrix-correspondence-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/graph-list-matrix-correspondence-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "bfs-distance-layers.excalidraw",
+      "elements": 25,
+      "text": 16,
+      "rectangles": 5,
+      "arrows": 4,
+      "boundArrowEnds": 8,
+      "boundTexts": 4,
+      "groups": 4,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/bfs-distance-layers.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/14-graph-traversal/03-bfs-distances/bfs-distance-layers.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/bfs-distance-layers-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/bfs-distance-layers-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "dfs-active-finished-colors.excalidraw",
+      "elements": 29,
+      "text": 16,
+      "rectangles": 7,
+      "arrows": 6,
+      "boundArrowEnds": 12,
+      "boundTexts": 6,
+      "groups": 6,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/dfs-active-finished-colors.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/14-graph-traversal/09-directed-cycle/dfs-active-finished-colors.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/dfs-active-finished-colors-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/dfs-active-finished-colors-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "weighted-edge-relaxation.excalidraw",
+      "elements": 20,
+      "text": 12,
+      "rectangles": 6,
+      "arrows": 2,
+      "boundArrowEnds": 4,
+      "boundTexts": 5,
+      "groups": 5,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/weighted-edge-relaxation.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/15-shortest-paths/03-relax-edge/weighted-edge-relaxation.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/weighted-edge-relaxation-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/weighted-edge-relaxation-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "dijkstra-stale-heap-entry.excalidraw",
+      "elements": 23,
+      "text": 14,
+      "rectangles": 6,
+      "arrows": 3,
+      "boundArrowEnds": 6,
+      "boundTexts": 5,
+      "groups": 5,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/dijkstra-stale-heap-entry.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/15-shortest-paths/05-dijkstra-heap/dijkstra-stale-heap-entry.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/dijkstra-stale-heap-entry-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/dijkstra-stale-heap-entry-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "fixed-width-bit-mask.excalidraw",
+      "elements": 73,
+      "text": 40,
+      "rectangles": 33,
+      "arrows": 0,
+      "boundArrowEnds": 0,
+      "boundTexts": 32,
+      "groups": 32,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/fixed-width-bit-mask.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/16-bits-and-sets/05-fixed-width-masks/fixed-width-bit-mask.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/fixed-width-bit-mask-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/fixed-width-bit-mask-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "trie-shared-prefix-deletion.excalidraw",
+      "elements": 32,
+      "text": 15,
+      "rectangles": 10,
+      "arrows": 7,
+      "boundArrowEnds": 14,
+      "boundTexts": 9,
+      "groups": 9,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/trie-shared-prefix-deletion.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/17-tries/06-delete-word/trie-shared-prefix-deletion.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/trie-shared-prefix-deletion-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/trie-shared-prefix-deletion-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "fenwick-prefix-blocks.excalidraw",
+      "elements": 40,
+      "text": 28,
+      "rectangles": 12,
+      "arrows": 0,
+      "boundArrowEnds": 0,
+      "boundTexts": 11,
+      "groups": 11,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/fenwick-prefix-blocks.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/18-range-structures/04-fenwick-prefix/fenwick-prefix-blocks.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/fenwick-prefix-blocks-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/fenwick-prefix-blocks-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "segment-tree-range-decomposition.excalidraw",
+      "elements": 39,
+      "text": 21,
+      "rectangles": 12,
+      "arrows": 6,
+      "boundArrowEnds": 12,
+      "boundTexts": 11,
+      "groups": 11,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/segment-tree-range-decomposition.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/18-range-structures/09-segment-query/segment-tree-range-decomposition.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/segment-tree-range-decomposition-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/segment-tree-range-decomposition-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "dsu-path-compression.excalidraw",
+      "elements": 41,
+      "text": 20,
+      "rectangles": 13,
+      "arrows": 8,
+      "boundArrowEnds": 16,
+      "boundTexts": 12,
+      "groups": 12,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/dsu-path-compression.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/19-disjoint-sets/04-path-compression/dsu-path-compression.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/dsu-path-compression-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/dsu-path-compression-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "backtracking-choice-undo.excalidraw",
+      "elements": 33,
+      "text": 19,
+      "rectangles": 8,
+      "arrows": 6,
+      "boundArrowEnds": 12,
+      "boundTexts": 7,
+      "groups": 7,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/backtracking-choice-undo.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/20-combinatorial-search/08-backtracking-constraints/backtracking-choice-undo.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/backtracking-choice-undo-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/backtracking-choice-undo-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    },
+    {
+      "name": "dispatch-workbench-responsibilities.excalidraw",
+      "elements": 46,
+      "text": 25,
+      "rectangles": 19,
+      "arrows": 2,
+      "boundArrowEnds": 4,
+      "boundTexts": 18,
+      "groups": 18,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/dispatch-workbench-responsibilities.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/21-dispatch-project/08-dispatch-session/dispatch-workbench-responsibilities.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/dispatch-workbench-responsibilities-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-second-half/evidence/dispatch-workbench-responsibilities-editor.png",
+      "svgVisualReviewedAtWidth500": true,
+      "nativeEditorVisualReviewed": true,
+      "sourceTextEquality": true,
+      "imageElements": 0
+    }
+  ],
+  "verifiedArtifactFiles": 80,
+  "nativeElementTotals": {
+    "rectangle": 263,
+    "text": 455,
+    "arrow": 78
+  },
+  "sha256Pairs": [
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/binary-search-half-open-boundary.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/09-searching/05-lower-bound/binary-search-half-open-boundary.svg",
+      "sha256": "385df586e04541a46757b2ea87d0964dac49365d456a8cfcb1d2cccbca8b96b6",
+      "bytes": 8010
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/binary-search-half-open-boundary.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/09-searching/05-lower-bound/binary-search-half-open-boundary.excalidraw",
+      "sha256": "cba1578fb6092ddad826086f285510e6646a6017b8de2a0eba556bd77a82d91a",
+      "bytes": 54581
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/merge-two-sorted-runs.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/10-sorting/08-merge-runs/merge-two-sorted-runs.svg",
+      "sha256": "c24b10914973c1ac89c11d852b9b7301eb49e0de80c06840424062a895c1cbc8",
+      "bytes": 5186
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/merge-two-sorted-runs.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/10-sorting/08-merge-runs/merge-two-sorted-runs.excalidraw",
+      "sha256": "aac3ee7b166e49807ef4c424b17f1d9326c49cbed82c853a97afff28d170cfcc",
+      "bytes": 33916
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/quicksort-partition-regions.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/10-sorting/10-partition-around-pivot/quicksort-partition-regions.svg",
+      "sha256": "4643c4372ce9bf781390a4d01f73aa406a25f178e98ec610e6edbcda9f6ab412",
+      "bytes": 5611
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/quicksort-partition-regions.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/10-sorting/10-partition-around-pivot/quicksort-partition-regions.excalidraw",
+      "sha256": "1a644d1ba2fb72d5001bb81543358b2470a4545b75155ab857217fbd45935c49",
+      "bytes": 35501
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/binary-tree-traversal-orders.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/06-postorder-traversal/binary-tree-traversal-orders.svg",
+      "sha256": "61fc99e15b589ee594d39d4be8f702573520b5636c28bbc01df1db7983266d5f",
+      "bytes": 3662
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/binary-tree-traversal-orders.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/06-postorder-traversal/binary-tree-traversal-orders.excalidraw",
+      "sha256": "8b99cffc1a4c4520d85fb42f9c375773b9e7a6dbaeb4ef735fb11e7a56dfafe6",
+      "bytes": 25658
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/bst-successor-transplant.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/13-bst-delete-two-children/bst-successor-transplant.svg",
+      "sha256": "46344725896594151c51700e89372418c0bb45e64b4d4dbfd61916e1047de661",
+      "bytes": 4342
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/bst-successor-transplant.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/13-bst-delete-two-children/bst-successor-transplant.excalidraw",
+      "sha256": "ee4acd03a36384e6958e18d35085cff5545fc343e8f2522bb339ae0148dbdb98",
+      "bytes": 31356
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/heap-array-tree-mapping.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/01-heap-array-indices/heap-array-tree-mapping.svg",
+      "sha256": "ac8d5dbb5e7e2f072673f3b5d6ece44221afde6935fa2f6245c1d54257d5ee87",
+      "bytes": 6418
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/heap-array-tree-mapping.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/01-heap-array-indices/heap-array-tree-mapping.excalidraw",
+      "sha256": "e8829cb6774c61b46451be5996c2c6b995c88b0660bae7aab38aba846c6a9bb8",
+      "bytes": 43771
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/min-heap-sift-down.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/04-sift-down/min-heap-sift-down.svg",
+      "sha256": "eec34bf2a8470c57f6aecc031aa52fa8718cf2676e9ec100ecc5e30f82b515d3",
+      "bytes": 7506
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/min-heap-sift-down.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/04-sift-down/min-heap-sift-down.excalidraw",
+      "sha256": "6e29a5987bb1195550a942dc9ab192f889728d3a616425e469f44b3aa707e514",
+      "bytes": 55419
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/stable-priority-tie-breaker.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/11-stable-priority-queue/stable-priority-tie-breaker.svg",
+      "sha256": "f2858f6cf37f4f8f6f56590da10f61389cce3dd138c1dd4420c670bb2c5f5acc",
+      "bytes": 3091
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/stable-priority-tie-breaker.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/11-stable-priority-queue/stable-priority-tie-breaker.excalidraw",
+      "sha256": "109c3957ddab5d408ad1b8de752e57776b6d6aa3f26c01ae7575993770d144e5",
+      "bytes": 19964
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/graph-list-matrix-correspondence.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/13-graph-models/07-adjacency-matrix/graph-list-matrix-correspondence.svg",
+      "sha256": "0ba55af7d2e57e7174e73f55a748281d5f1972fffebc1c200c5f2031428c8b4c",
+      "bytes": 7262
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/graph-list-matrix-correspondence.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/13-graph-models/07-adjacency-matrix/graph-list-matrix-correspondence.excalidraw",
+      "sha256": "cb62986a7039ec962fdbaee4b2a7daa24a87d6ca8b24f654ccf56bfe500c5c31",
+      "bytes": 51576
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/bfs-distance-layers.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/14-graph-traversal/03-bfs-distances/bfs-distance-layers.svg",
+      "sha256": "7a78cfd4e6ba45ec94789c533c796c40e6d8236ae6a43c22341a11646a772804",
+      "bytes": 3474
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/bfs-distance-layers.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/14-graph-traversal/03-bfs-distances/bfs-distance-layers.excalidraw",
+      "sha256": "5db6a8c45a8d692b01e84eeced23718e6f206651fdf3141a2319fcf3bc3fcf31",
+      "bytes": 23722
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/dfs-active-finished-colors.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/14-graph-traversal/09-directed-cycle/dfs-active-finished-colors.svg",
+      "sha256": "f4b60709b50b4e56d9680863b4d85aedc29612ed60c6f740540dedb835173863",
+      "bytes": 4202
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/dfs-active-finished-colors.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/14-graph-traversal/09-directed-cycle/dfs-active-finished-colors.excalidraw",
+      "sha256": "5972578361a8550eb210b0d42ea79ff1974055fe59657e3a1d81cbc9f10b068c",
+      "bytes": 28315
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/weighted-edge-relaxation.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/15-shortest-paths/03-relax-edge/weighted-edge-relaxation.svg",
+      "sha256": "f132eb3cb6f2c40fb61bd3ff29eea1d8f9b340afa9baf488a93c2fdf57159ccf",
+      "bytes": 2928
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/weighted-edge-relaxation.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/15-shortest-paths/03-relax-edge/weighted-edge-relaxation.excalidraw",
+      "sha256": "8bf385fe0158c065d0b59ef2191d826089428d0670ac0239cd8b3e3b6add22cb",
+      "bytes": 18339
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/dijkstra-stale-heap-entry.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/15-shortest-paths/05-dijkstra-heap/dijkstra-stale-heap-entry.svg",
+      "sha256": "24a37c2fae4ffbaeebb7ed46a24e22f5e2e2553f2d840b275082a3b7c4898106",
+      "bytes": 3402
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/dijkstra-stale-heap-entry.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/15-shortest-paths/05-dijkstra-heap/dijkstra-stale-heap-entry.excalidraw",
+      "sha256": "76d71c34cb0a1d1be185e4673190e0835346163c846535558da6c347d915526a",
+      "bytes": 21671
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/fixed-width-bit-mask.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/16-bits-and-sets/05-fixed-width-masks/fixed-width-bit-mask.svg",
+      "sha256": "2905ea0a8d991aef7f6da0a2f55b4af8d1e89359a8f6582bc3e431e27944df3d",
+      "bytes": 8983
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/fixed-width-bit-mask.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/16-bits-and-sets/05-fixed-width-masks/fixed-width-bit-mask.excalidraw",
+      "sha256": "537fefdf9289e91d908ea0231d3427066e739c29f7bada27127ed98459642b37",
+      "bytes": 60862
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/trie-shared-prefix-deletion.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/17-tries/06-delete-word/trie-shared-prefix-deletion.svg",
+      "sha256": "16317cd360c66b698fab52aecc396f782164f932cac9ff346a516ac3df91d773",
+      "bytes": 4224
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/trie-shared-prefix-deletion.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/17-tries/06-delete-word/trie-shared-prefix-deletion.excalidraw",
+      "sha256": "b2b377b3150ac12ecbcb44451fac7fe89238fb9b0551b01337fdd3f5a5b512ba",
+      "bytes": 30478
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/fenwick-prefix-blocks.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/18-range-structures/04-fenwick-prefix/fenwick-prefix-blocks.svg",
+      "sha256": "25f294e21516487ba8d3255083e84ccb136c292385c9f353cad04d8fdfbf6f02",
+      "bytes": 5269
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/fenwick-prefix-blocks.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/18-range-structures/04-fenwick-prefix/fenwick-prefix-blocks.excalidraw",
+      "sha256": "45746564ff8ccb926784abd980db2b6a5b11b7131be38dc48430cf0d6107be95",
+      "bytes": 34491
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/segment-tree-range-decomposition.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/18-range-structures/09-segment-query/segment-tree-range-decomposition.svg",
+      "sha256": "4e6b86dbacf681964bea5ebe0fe30a23d6e98197935675ad222dcab847f816cc",
+      "bytes": 5061
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/segment-tree-range-decomposition.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/18-range-structures/09-segment-query/segment-tree-range-decomposition.excalidraw",
+      "sha256": "2d057a7c44e9e6e0332841e18c5950bd0aa2ef36812d1ebc399c4f72dd12d839",
+      "bytes": 36066
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/dsu-path-compression.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/19-disjoint-sets/04-path-compression/dsu-path-compression.svg",
+      "sha256": "daf3eab3e61f32a44ca3978e057e58e7675908cf38b06709cdff03d8f48e34a3",
+      "bytes": 5426
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/dsu-path-compression.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/19-disjoint-sets/04-path-compression/dsu-path-compression.excalidraw",
+      "sha256": "b2cc376f1ed403eaccc32c2ce4cd065d96fac774d25fc7cb8e069a14532f03ca",
+      "bytes": 38470
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/backtracking-choice-undo.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/20-combinatorial-search/08-backtracking-constraints/backtracking-choice-undo.svg",
+      "sha256": "208f45585681f40e3b6dd65716a75e380b6bd415ae1c264f15bb138090a79c7d",
+      "bytes": 4437
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/backtracking-choice-undo.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/20-combinatorial-search/08-backtracking-constraints/backtracking-choice-undo.excalidraw",
+      "sha256": "9ad605aeeb210ab89a1d6b8170e3c90533e31b762d058eb861b99b4e6ab6c808",
+      "bytes": 31337
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/dispatch-workbench-responsibilities.svg",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/21-dispatch-project/08-dispatch-session/dispatch-workbench-responsibilities.svg",
+      "sha256": "756f8c08a524dea9904d891937cd6750047e4f2a66bf4af6a52890e385af2b69",
+      "bytes": 5961
+    },
+    {
+      "canonical": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/dispatch-workbench-responsibilities.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/21-dispatch-project/08-dispatch-session/dispatch-workbench-responsibilities.excalidraw",
+      "sha256": "47762a55adddc7eb2caee88c39966d5fbef4e5b662826f615a95d43d998e20f0",
+      "bytes": 39870
+    }
+  ],
+  "visualReview": {
+    "all20SVGAndNativeScenesReviewed": true,
+    "resolvedIssues": [
+      "Trie footer spacing increased after automated text-overlap detection.",
+      "Tall editor viewport increased to keep toolbar clear of titles.",
+      "Vite local dependency allowlist includes symlink target for UI fonts."
+    ],
+    "remainingIssues": [],
+    "editingLimitations": "No native bold weight; long-label resizing and multi-segment connector bends may need manual layout adjustments."
+  }
+}

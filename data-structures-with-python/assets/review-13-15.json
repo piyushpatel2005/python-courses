@@ -1,0 +1,676 @@
+{
+  "scope": "Source/loader/native CPython flow review of published modules 13-15 only; browser explicitly excluded.",
+  "plan_sha256": "654f68de583ebf1aef6d54952eea1ae1f36b2d4afe595514a9f81bc1c02ed17a",
+  "prior_audit_sha256": "9b45959e146ca25e2a28cbbb1f6d9dde16d00de5934fd28b805b36c189595e41",
+  "inventory": {
+    "modules": [
+      "13-graph-models",
+      "14-graph-traversal",
+      "15-shortest-paths"
+    ],
+    "lessons": 26,
+    "tasks": 69,
+    "quiz_questions": 12,
+    "diagram_references": 24
+  },
+  "lessons": [
+    {
+      "path": "13-graph-models/01-adjacency-list",
+      "files_sha256": {
+        "lesson.md": "4ef3b333fa13a9d7e34d2cd5cd3c2d7b257559848781519c3e694df1bef8dc83",
+        "main.py": "158a5b233721579be2bb9d35eee0a3fcdc7c4128ce80fed3875d10e4fc07c230",
+        "test_main.py": "4db4adcf9495ed8e8229c68f509038dd195cbefeb6f89fdc6789c7394b8b538c",
+        "solution/main.py": "16adb8fd29960db1bdc8521c45bd6886947e591ea97a66f465202a5f316534d8",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "graph-models-adjacency-list-trace.svg": "11fce92b8b83f391c111264078b23c6f511ec13ca4ab9b9ac0bb593ac50191b7"
+      },
+      "task_count": 2,
+      "prefix_vectors_passed": 3,
+      "isolated_tasks_passed": 2,
+      "image_references": [
+        "graph-models-adjacency-list-trace.svg"
+      ]
+    },
+    {
+      "path": "13-graph-models/02-add-vertex",
+      "files_sha256": {
+        "lesson.md": "f9ae0fdb35cda5972b405f97032899180f9ed0840f981e92c63a206907b9588d",
+        "main.py": "13466a52063f668d767f5ecb8075bb50c985f320d43003a0959967ee1938ae08",
+        "test_main.py": "125dad6fd2fc51dd8b8720d913cadaf2d86e0a67e0d3297a34639c5c6c3702db",
+        "solution/main.py": "4d76cf39b4588e5bd5ce1adac46015b4dc9202849e430a3b2a8df3651711c1ad",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "graph-models-add-vertex-trace.svg": "a15b6a23fba8016f389d1f8d92c3cb5a618d074e73eb701c17ed699a6d196ad6"
+      },
+      "task_count": 2,
+      "prefix_vectors_passed": 3,
+      "isolated_tasks_passed": 2,
+      "image_references": [
+        "graph-models-add-vertex-trace.svg"
+      ]
+    },
+    {
+      "path": "13-graph-models/03-add-undirected-edge",
+      "files_sha256": {
+        "lesson.md": "52bc1b0f47f32f21813afd530d0746adb35f285641bad1d67acba7271824184d",
+        "main.py": "dfc0c5d18f53542737a9ffda631b43c3103ad6b7f936e3e3a55495993bad932e",
+        "test_main.py": "dd99d03aa2411ee049e7ede47a7eff677191b895c23f7c2924d36112695af43a",
+        "solution/main.py": "f72bf9c3a87be521994236fa1e5f9aed78888f3a02642ada54d6612169e7ff9c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "graph-models-add-undirected-edge-trace.svg": "3177d781bfa30e4319cb9199db33fcc7e0fd7070564af76f852dd512b7056463"
+      },
+      "task_count": 4,
+      "prefix_vectors_passed": 5,
+      "isolated_tasks_passed": 4,
+      "image_references": [
+        "graph-models-add-undirected-edge-trace.svg"
+      ]
+    },
+    {
+      "path": "13-graph-models/04-remove-edge",
+      "files_sha256": {
+        "lesson.md": "fb6a93cb9578a712ce49d6a35d69ec32966a0bc48adb2f937dcb4a791237c572",
+        "main.py": "1da610acc92a25f8e3e2669294040cbf91f8877bc49275dbc5dd41bddec9143b",
+        "test_main.py": "d9b7653c9d075c2a12f87294f7eb9929c890791de55d2ad0ca70c76b5f12a7e6",
+        "solution/main.py": "7adac65bdf0d4241859203a8cfe7b41b25c704d6158aae136da2b4aaffc51dc4",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "graph-models-remove-edge-trace.svg": "adee25b673dbb6b94e387f7e072fcd08dd2db3b2511ccfd6f64f2400d3a587c9"
+      },
+      "task_count": 2,
+      "prefix_vectors_passed": 3,
+      "isolated_tasks_passed": 2,
+      "image_references": [
+        "graph-models-remove-edge-trace.svg"
+      ]
+    },
+    {
+      "path": "13-graph-models/05-remove-vertex",
+      "files_sha256": {
+        "lesson.md": "1b8e81641523fac5d273e789982f1062efdb2eca21d0b0abd58411e22177f557",
+        "main.py": "e66c09ac640a895956244aeb13886b8fad3ebb39bbe0a42d99520cab6f46358b",
+        "test_main.py": "85389afca2d04833c8b9740a4354667b7a1109975138611df0bfbd70f2ce65e7",
+        "solution/main.py": "a4526141efe39e1e303f3224758738a600c2dde41b9bebad17716ac9e46efd96",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "graph-models-remove-vertex-trace.svg": "8c7ecea3cb9867a83591ac4080b3423a54a028421179e1ccdbb9ad3b9217188f"
+      },
+      "task_count": 3,
+      "prefix_vectors_passed": 4,
+      "isolated_tasks_passed": 3,
+      "image_references": [
+        "graph-models-remove-vertex-trace.svg"
+      ]
+    },
+    {
+      "path": "13-graph-models/06-directed-edges",
+      "files_sha256": {
+        "lesson.md": "a7f37c566bb9e582dee32eb234908943337f77e87e287209540a89194cb5a10d",
+        "main.py": "51ba3e7c71a72531943b3e50ee7511f336ee595a34c06deddbbd27192ea544cc",
+        "test_main.py": "8f2f66893006e0d15a5ea2289cbdf50e942e6b6f5d75791fd2ebd221bc02b8a3",
+        "solution/main.py": "b8b86464c0dbc51570c245015dc738ee6116cd7c8ed2a5cbf1744ba29568e72c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "graph-models-directed-edges-trace.svg": "8bebe8301ca55f838f0c3ab8a2556c02dea9a04c4a80c8eddbfdfb73daa4f6b8"
+      },
+      "task_count": 4,
+      "prefix_vectors_passed": 5,
+      "isolated_tasks_passed": 4,
+      "image_references": [
+        "graph-models-directed-edges-trace.svg"
+      ]
+    },
+    {
+      "path": "13-graph-models/07-adjacency-matrix",
+      "files_sha256": {
+        "lesson.md": "a28def89664b0ad81730758f3a51ff46d989faf811067152d439e2a83e12271e",
+        "main.py": "515be02f3940cb14433aa70252d141617968a9eee83079d935d4012710a906c6",
+        "test_main.py": "6f0066b8d5f7cadbe2598d0c26e5bb403b75d9b0afac5d3751afb8f2c201d254",
+        "solution/main.py": "0dedddae91a115daa98e9a3279014eb2f158976fafee7a8c2555dfa4ada9f08c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "graph-list-matrix-correspondence.svg": "0ba55af7d2e57e7174e73f55a748281d5f1972fffebc1c200c5f2031428c8b4c"
+      },
+      "task_count": 3,
+      "prefix_vectors_passed": 4,
+      "isolated_tasks_passed": 3,
+      "image_references": [
+        "graph-list-matrix-correspondence.svg"
+      ]
+    },
+    {
+      "path": "13-graph-models/08-graph-degrees",
+      "files_sha256": {
+        "lesson.md": "6efb725fa53358121252b7da6f206005dec95747a92bf29d9314e8ff0268094f",
+        "main.py": "f97c9306f74e17434a6d662d04de032a1fe3243756f898c5ffcc477b6b62a7c6",
+        "test_main.py": "6f3183381dd68f3c831e22724c9ff7f24571d41e8863b3f41486e19bbfc40f7b",
+        "solution/main.py": "48a6c14ecc104e3bb03ee0ff2ca3ebb7f27be2ba187e67633352b8f75da56c01",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 2,
+      "prefix_vectors_passed": 3,
+      "isolated_tasks_passed": 2,
+      "image_references": []
+    },
+    {
+      "path": "14-graph-traversal/01-bfs-frontier",
+      "files_sha256": {
+        "lesson.md": "5ee980efb7065ae3dce945608712a1a3f9519ef60a4dd11e835188eaeb65df08",
+        "main.py": "78d8a5967b6dae7178e1164dab7d2442d432be95c1eaf6e221726cd0e3d72256",
+        "test_main.py": "c71c376751ca0bc6a39b974ddede1e96819cabc5955fb3ebacdf12edce58fb71",
+        "solution/main.py": "9df22fbd2b3f0976991b08959ec1b4221651d563f2be61c182bce99040a31781",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "graph-traversal-bfs-frontier-trace.svg": "bb3cffec8731c9d3f38d1ac65207bcc042aad1725801939d8800a1471823f95f"
+      },
+      "task_count": 2,
+      "prefix_vectors_passed": 3,
+      "isolated_tasks_passed": 2,
+      "image_references": [
+        "graph-traversal-bfs-frontier-trace.svg"
+      ]
+    },
+    {
+      "path": "14-graph-traversal/02-bfs-traversal",
+      "files_sha256": {
+        "lesson.md": "2a4eb4e3eac3fb4fa9bc2a318ca89f76e9f4e273be8c09017aff404059445778",
+        "main.py": "29a3dbc3a84eba3f786612e1006f8e5fdb4df8918776bfb80c8ab352867ee70a",
+        "test_main.py": "5537cda229c921161e2321c1c98aa350943dbf04bdb4993b5e9c2ec6c195df3e",
+        "solution/main.py": "494fc46161facf1d0c31bc82e78ffcef28cbad896075eecb8aae6e63128cd447",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "graph-traversal-bfs-traversal-trace.svg": "8817c2737bb169df506013e2db5c9c3cb07ca8aa2f39a423ba47b4e10f3cce35"
+      },
+      "task_count": 3,
+      "prefix_vectors_passed": 4,
+      "isolated_tasks_passed": 3,
+      "image_references": [
+        "graph-traversal-bfs-traversal-trace.svg"
+      ]
+    },
+    {
+      "path": "14-graph-traversal/03-bfs-distances",
+      "files_sha256": {
+        "lesson.md": "655943ce71b55a28ca174623d003de1923b71645b543021b059c956fa94f87e1",
+        "main.py": "fddc286f2d3961d639a7362ab67af055022861cabb9591cfc60e6eee21ca45df",
+        "test_main.py": "861b1ac7e3f0190d227c5444b9fa493c7fd3987861ad28d6e8e18e82c0830b15",
+        "solution/main.py": "537f8bc72bab9d2a6312aebe97c2929198d4e20657307b70d1f6b35f73759420",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "bfs-distance-layers.svg": "7a78cfd4e6ba45ec94789c533c796c40e6d8236ae6a43c22341a11646a772804"
+      },
+      "task_count": 2,
+      "prefix_vectors_passed": 3,
+      "isolated_tasks_passed": 2,
+      "image_references": [
+        "bfs-distance-layers.svg"
+      ]
+    },
+    {
+      "path": "14-graph-traversal/04-bfs-path",
+      "files_sha256": {
+        "lesson.md": "8ad5a414a3015e7a8145a6f5a16cece3cf46dc112f4fe392649b05005c178197",
+        "main.py": "da16d2951605d224067a453dd125214eb214c087932689997e6bdc57e50f2f07",
+        "test_main.py": "470e225b76cc6fe795f27ff77490b69408eee08f31bf4edcd9483edcba4c27dc",
+        "solution/main.py": "f54b4d4565574e6d3265f8aa6207d951aa7e4dc9da77aeaeae68a29fafddb863",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "graph-traversal-bfs-path-trace.svg": "460a556f7a42f0c2bd5e562c12966fcacb70ec9063ecb85eba7cb8500e79df6a"
+      },
+      "task_count": 3,
+      "prefix_vectors_passed": 4,
+      "isolated_tasks_passed": 3,
+      "image_references": [
+        "graph-traversal-bfs-path-trace.svg"
+      ]
+    },
+    {
+      "path": "14-graph-traversal/05-connected-components",
+      "files_sha256": {
+        "lesson.md": "127167d9854a57c6e40c322b25cdd6218488746c80059c4fa12edc7458608e62",
+        "main.py": "a02ec2757a1f69c14051eded2c926b33fc4a8f913d265bcd160dfd9c72b8b891",
+        "test_main.py": "c56369d8463aadfdb31f14b85ccb5b55be460c9541c12b39af151794c68ab3c9",
+        "solution/main.py": "1c958f4a52801a6082cafc78068b50198e47146a509e74f76504296616a83c2a",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "graph-traversal-connected-components-trace.svg": "592283996d8a4ee90875e3636dd5001296b5f32b43ac1e177a575cc4bcb46586"
+      },
+      "task_count": 2,
+      "prefix_vectors_passed": 3,
+      "isolated_tasks_passed": 2,
+      "image_references": [
+        "graph-traversal-connected-components-trace.svg"
+      ]
+    },
+    {
+      "path": "14-graph-traversal/06-dfs-recursive",
+      "files_sha256": {
+        "lesson.md": "dd7eb28594216c3644e64922baa6009adcc5bffb4ebe8ed5236e9c83ece1cdef",
+        "main.py": "8c6fdc252805fbd22b3092aef0ebd896633c6c9bb56491531e8ffe87e5edfb76",
+        "test_main.py": "d0de93afd4e3d9332ce05e14d37f2d09ea558edb38b7e332ed46bfb5a5199a07",
+        "solution/main.py": "0fae1d0c6c5d3f82d116ef03af94bbe4a72d4ff37f1890379b5f3d92a7509c3f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "graph-traversal-dfs-recursive-trace.svg": "4cfaae553cf7fcbf659a5361e9d816b86fe2b78d60ede99cef78571d65b7c598"
+      },
+      "task_count": 3,
+      "prefix_vectors_passed": 4,
+      "isolated_tasks_passed": 3,
+      "image_references": [
+        "graph-traversal-dfs-recursive-trace.svg"
+      ]
+    },
+    {
+      "path": "14-graph-traversal/07-dfs-iterative",
+      "files_sha256": {
+        "lesson.md": "e10374c7fb7ca1da3927f942bf730832347b1a9aea12ee9df252c09bfbc92a2d",
+        "main.py": "6ebfb7d0af1779b6d89276c500d6d5f6ff896c0809ceb920d0453233996d3a5f",
+        "test_main.py": "69cb903dfc081bcf529ca835b69d2de4276a9816dd438fe3ef05c079d9617220",
+        "solution/main.py": "b30fb39ffa75b8b42a59f34ba56a879fa085bedae07c37542dfa859ef3efbd50",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "graph-traversal-dfs-iterative-trace.svg": "008fec77f3c0f2a8ba821853e727c65075fffa3d5f93887c563a8a0dea92561d"
+      },
+      "task_count": 4,
+      "prefix_vectors_passed": 5,
+      "isolated_tasks_passed": 4,
+      "image_references": [
+        "graph-traversal-dfs-iterative-trace.svg"
+      ]
+    },
+    {
+      "path": "14-graph-traversal/08-undirected-cycle",
+      "files_sha256": {
+        "lesson.md": "e2863dcbad508c747e94751403003c570dcb89171b116e5b8f2fe5430a51f808",
+        "main.py": "3e1152dbde42a850530e822325bec84efb31405922385a1db8dccbb3c5025397",
+        "test_main.py": "9b0dab978a328118d4477ebc85925ec20684e2316bd78ef5e1d3f9d3600e58fd",
+        "solution/main.py": "7c78d4fefa41f7bc4ce27c9290d772f49556d95e2a0e1bc57ee972bdb710b935",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "graph-traversal-undirected-cycle-trace.svg": "afbac44f22971ef95b2d2ef728482d9147da43d62cbd3fb9364876d0cc14fd11"
+      },
+      "task_count": 2,
+      "prefix_vectors_passed": 3,
+      "isolated_tasks_passed": 2,
+      "image_references": [
+        "graph-traversal-undirected-cycle-trace.svg"
+      ]
+    },
+    {
+      "path": "14-graph-traversal/09-directed-cycle",
+      "files_sha256": {
+        "lesson.md": "c8b18fe77686809e3b8996e79a75f396df18b6d63fa39132a1d6e6480c259f9d",
+        "main.py": "9c5aed89684255f398b697c919d4fdf5e3b4c40369acec33e47f78c8c4aee0f8",
+        "test_main.py": "689ff176540f63001c018618e9716fa214931061db5f1a57e8394711fd760af9",
+        "solution/main.py": "cd44407f4c659be190cee6f88e6356a1f9e36345ceb7df0e820f2bf0f676de41",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "dfs-active-finished-colors.svg": "f4b60709b50b4e56d9680863b4d85aedc29612ed60c6f740540dedb835173863"
+      },
+      "task_count": 2,
+      "prefix_vectors_passed": 3,
+      "isolated_tasks_passed": 2,
+      "image_references": [
+        "dfs-active-finished-colors.svg"
+      ]
+    },
+    {
+      "path": "14-graph-traversal/10-topological-order",
+      "files_sha256": {
+        "lesson.md": "09815f4f23444694f558dcec964572382e008e70296858ab7f910c4825e68c75",
+        "main.py": "9af98922044195d4d374bb1bf8949ad35a646a2f6f3d8fda75e536e47abcdb73",
+        "test_main.py": "e7768d7b63484e7f83a47e2c5ed19a1b86b56de7ee8a66f98e4f77621eb569c3",
+        "solution/main.py": "1f30a0acb970b394dd85bbce5493175a3fc013a2827af1de3d98a73cae348032",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "graph-traversal-topological-order-trace.svg": "b85c9b7c6e8889aab023b935b7825fbdb96996a8d75720d3a83ace6c614fbe29"
+      },
+      "task_count": 3,
+      "prefix_vectors_passed": 4,
+      "isolated_tasks_passed": 3,
+      "image_references": [
+        "graph-traversal-topological-order-trace.svg"
+      ]
+    },
+    {
+      "path": "15-shortest-paths/01-weighted-adjacency",
+      "files_sha256": {
+        "lesson.md": "d8c1e0028b6de77053997ee694594c54c0d70482c6bf2d0da66f40d03441ac89",
+        "main.py": "6cbc95474309ca5b617316f334f1472be426a05c3e3345b177104f1ff13f906f",
+        "test_main.py": "e1030949221a25c3054d89cc386b55f2ccf2c8405d59dea8d7d4d252fc7d3bd5",
+        "solution/main.py": "f84c3d7e8c3fcb0259c25be431f6879fae51a4a5890655081e230617ff12dfac",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "shortest-paths-weighted-adjacency-trace.svg": "abf6cb9118988a4cb02e224b8a9c41b884f5037637ce60ee944cf7312c7f496b"
+      },
+      "task_count": 4,
+      "prefix_vectors_passed": 5,
+      "isolated_tasks_passed": 4,
+      "image_references": [
+        "shortest-paths-weighted-adjacency-trace.svg"
+      ]
+    },
+    {
+      "path": "15-shortest-paths/02-path-cost",
+      "files_sha256": {
+        "lesson.md": "4ec6e81a85cd3d65b127bccf080764118ca0fbfe1aabd8136762d9390c5b57a3",
+        "main.py": "d3338fa51cf237fc2e8743e86446640288f60eeff2d4cc3b0705e9fdb558b572",
+        "test_main.py": "9e34880aaa2a35cb1cb80d313a7749ee1c1640f9cd720a1c73ba647981ae45f1",
+        "solution/main.py": "75ed903d715b52dd4fbf19698280a2ed44960e89e0ef88630f867e87a7b38df1",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "shortest-paths-path-cost-trace.svg": "a1200f9ac56a4c1272186f88aee07720d20d04a317c5f6c3eabd9b157c640daf"
+      },
+      "task_count": 2,
+      "prefix_vectors_passed": 3,
+      "isolated_tasks_passed": 2,
+      "image_references": [
+        "shortest-paths-path-cost-trace.svg"
+      ]
+    },
+    {
+      "path": "15-shortest-paths/03-relax-edge",
+      "files_sha256": {
+        "lesson.md": "33f1517531032096187b9dbced57b0f48ee86a8b3e5e0f1264b6eb6410becdbf",
+        "main.py": "ee2b59f22f81ea46b08d4ddf7f49d8f672edc7cadfdbcb27e59e484482021025",
+        "test_main.py": "cf755783fc948002c42028008fe9061929e123bb6f6826723e9722b843c6f384",
+        "solution/main.py": "335001625cf5c6a72cbd8debf6feea6f0feab6d91b4d03d0a5f35f8532ca33ea",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "weighted-edge-relaxation.svg": "f132eb3cb6f2c40fb61bd3ff29eea1d8f9b340afa9baf488a93c2fdf57159ccf"
+      },
+      "task_count": 3,
+      "prefix_vectors_passed": 4,
+      "isolated_tasks_passed": 3,
+      "image_references": [
+        "weighted-edge-relaxation.svg"
+      ]
+    },
+    {
+      "path": "15-shortest-paths/04-dijkstra-scan",
+      "files_sha256": {
+        "lesson.md": "80b2be8140a7a4255d3a24aa7554e7b9d1902f27a9de96cac8ac129ebf9339e3",
+        "main.py": "3718604adf8b582758f5f359c0b306027103747ce72115e6dbd64d459e1026c3",
+        "test_main.py": "85ba69207c7d31485ad459db1d984648768676999a9f978c1cd1f898f0820d6d",
+        "solution/main.py": "45c3ee0ea05ac6d7b9f81f101ffdbc2efbc83d96107e7f6173ce3f791c1de1e1",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "shortest-paths-dijkstra-scan-trace.svg": "a60c03911fb20fa8af7f659307439dacc576876f17b26c80ccaea4cdb1d91353"
+      },
+      "task_count": 4,
+      "prefix_vectors_passed": 5,
+      "isolated_tasks_passed": 4,
+      "image_references": [
+        "shortest-paths-dijkstra-scan-trace.svg"
+      ]
+    },
+    {
+      "path": "15-shortest-paths/05-dijkstra-heap",
+      "files_sha256": {
+        "lesson.md": "9bfc08eb8b161d820e0df1dcb0436131ab5605f1a5c1fc58cc469955e30cf7a3",
+        "main.py": "68ce8e3b804c4fff0dafeded5776dec1046e5407f994572d6fdccb664659e588",
+        "test_main.py": "791da1bb88d396fc8c6e7514b8fcc6270bd6006fb123b758fc5cd22632ae0f94",
+        "solution/main.py": "b31df42fa6bde8d5e07ed9ebaa3ee2f0e5cf6a2b315c4a8467a905a6442faf22",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "dijkstra-stale-heap-entry.svg": "24a37c2fae4ffbaeebb7ed46a24e22f5e2e2553f2d840b275082a3b7c4898106"
+      },
+      "task_count": 2,
+      "prefix_vectors_passed": 3,
+      "isolated_tasks_passed": 2,
+      "image_references": [
+        "dijkstra-stale-heap-entry.svg"
+      ]
+    },
+    {
+      "path": "15-shortest-paths/06-reconstruct-weighted-path",
+      "files_sha256": {
+        "lesson.md": "511d8c5b01fc60d3f4dfeaed2ccf0e4cdfd3a046a507d22db6be8eee637f538b",
+        "main.py": "1b6e4c72357a4fb3cd00712fd08f85668bc6de581a7840ca1fefa6ad46d3e756",
+        "test_main.py": "66ee692e77f16ceee40591af8ac835e6d15436fbd6c3a5df31e60a82593ee262",
+        "solution/main.py": "5416e537b41d6776377b51261301509de3736c1fc21f84cf4941e5d6ec870cf1",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "shortest-paths-reconstruct-weighted-path-trace.svg": "7e2f4d817350bc95c983c56e90935c1b0d8b5cff57284b1de291f5caad0fab2d"
+      },
+      "task_count": 2,
+      "prefix_vectors_passed": 3,
+      "isolated_tasks_passed": 2,
+      "image_references": [
+        "shortest-paths-reconstruct-weighted-path-trace.svg"
+      ]
+    },
+    {
+      "path": "15-shortest-paths/07-unreachable-and-zero-weights",
+      "files_sha256": {
+        "lesson.md": "7169b6d3f278aacfd959c7f7ea6129623e6137458c27478a9420dbf3a123ce14",
+        "main.py": "f037263ad2ba4d1d94b2141a77fe8afd12ae988cf6fdd7163b3db3e17d34d45f",
+        "test_main.py": "25ac446ac42bd3341c9c8a8dd0cc82cbae32ae5b6da0e85e35e7c0fa11248063",
+        "solution/main.py": "daa946d45408a2ca19edc035bd35739033e7778de07e448bd4c758700ecaa4ec",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "shortest-paths-unreachable-and-zero-weights-trace.svg": "f29760a2132dff02b3a2cf667dac2077f278cf77bcea3e8646096c7d78393db5"
+      },
+      "task_count": 2,
+      "prefix_vectors_passed": 3,
+      "isolated_tasks_passed": 2,
+      "image_references": [
+        "shortest-paths-unreachable-and-zero-weights-trace.svg"
+      ]
+    },
+    {
+      "path": "15-shortest-paths/08-route-planner",
+      "files_sha256": {
+        "lesson.md": "baad33de3b1086e0b9150b87a2e48244e86dce75452b55b9a094930e7c1ad832",
+        "main.py": "23d4cc7932469c077ea4dae63a52ea816c8cf645985ff6a9e665c8872a1fe2b0",
+        "test_main.py": "5208ee6650706926ab76b3b484846bc003e8a41a050423fbb1034d97fd1e0740",
+        "solution/main.py": "2327e6806aaf42731d0b8a64bdaa8c0b2ccd19c7b82b809d72fbdc6c430def9b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 2,
+      "prefix_vectors_passed": 3,
+      "isolated_tasks_passed": 2,
+      "image_references": []
+    }
+  ],
+  "quizzes": [
+    {
+      "path": "13-graph-models/quiz/q01.md",
+      "sha256": "abd8a2de92499407c6769f7c819841b6b635881f9033b2ac3ab9c96d0ad9abb0"
+    },
+    {
+      "path": "13-graph-models/quiz/q02.md",
+      "sha256": "4bdc563806cb72ef45136ad29f0f870823aefc6b660bb644833bc00631147ad2"
+    },
+    {
+      "path": "13-graph-models/quiz/q03.md",
+      "sha256": "6d142c2bd6a9a3ead83475135a30f6751c02e7d6dbcad14f02ed9ed648591c54"
+    },
+    {
+      "path": "13-graph-models/quiz/q04.md",
+      "sha256": "642e27afae51531b47f3258d0673839d4b2434892a64698472c44a458fdb5c20"
+    },
+    {
+      "path": "14-graph-traversal/quiz/q01.md",
+      "sha256": "b0208730c50907ab2b0b4b3425b5a8d157781bfb061a82f38d8d34e49a07b293"
+    },
+    {
+      "path": "14-graph-traversal/quiz/q02.md",
+      "sha256": "c981935a325f6e8684dd893cd7adf16187f6b51e4deb468e6ce15c66c02861e0"
+    },
+    {
+      "path": "14-graph-traversal/quiz/q03.md",
+      "sha256": "ff007691c263a3d603c6020b6612b25bfddd07e9101f5d7058c6a394112277ae"
+    },
+    {
+      "path": "14-graph-traversal/quiz/q04.md",
+      "sha256": "797756f523edf7e6b16a562627c3d742fabb1edc686c16e183c273908202bb09"
+    },
+    {
+      "path": "15-shortest-paths/quiz/q01.md",
+      "sha256": "c8b1d808966e4198581318a50ab3e817ee6be4811c33eeae35e193ff2eb0130a"
+    },
+    {
+      "path": "15-shortest-paths/quiz/q02.md",
+      "sha256": "0a24a3ac9f8d3a821064192ac9f97f0fdef3e13335da69cebdd6f16942e48f30"
+    },
+    {
+      "path": "15-shortest-paths/quiz/q03.md",
+      "sha256": "b80717c3df19bb05242a22fd8aca0b0b43456336bf29b71852ee0e3801be18ff"
+    },
+    {
+      "path": "15-shortest-paths/quiz/q04.md",
+      "sha256": "d256dcc7f16c81767f949bfe7e1a24a63ee6ef2f56741ec3173b5f5fd54c83d9"
+    }
+  ],
+  "diagrams": [
+    {
+      "lesson": "13-graph-models/01-adjacency-list",
+      "filename": "graph-models-adjacency-list-trace.svg",
+      "sha256": "11fce92b8b83f391c111264078b23c6f511ec13ca4ab9b9ac0bb593ac50191b7",
+      "copy_matches": true
+    },
+    {
+      "lesson": "13-graph-models/02-add-vertex",
+      "filename": "graph-models-add-vertex-trace.svg",
+      "sha256": "a15b6a23fba8016f389d1f8d92c3cb5a618d074e73eb701c17ed699a6d196ad6",
+      "copy_matches": true
+    },
+    {
+      "lesson": "13-graph-models/03-add-undirected-edge",
+      "filename": "graph-models-add-undirected-edge-trace.svg",
+      "sha256": "3177d781bfa30e4319cb9199db33fcc7e0fd7070564af76f852dd512b7056463",
+      "copy_matches": true
+    },
+    {
+      "lesson": "13-graph-models/04-remove-edge",
+      "filename": "graph-models-remove-edge-trace.svg",
+      "sha256": "adee25b673dbb6b94e387f7e072fcd08dd2db3b2511ccfd6f64f2400d3a587c9",
+      "copy_matches": true
+    },
+    {
+      "lesson": "13-graph-models/05-remove-vertex",
+      "filename": "graph-models-remove-vertex-trace.svg",
+      "sha256": "8c7ecea3cb9867a83591ac4080b3423a54a028421179e1ccdbb9ad3b9217188f",
+      "copy_matches": true
+    },
+    {
+      "lesson": "13-graph-models/06-directed-edges",
+      "filename": "graph-models-directed-edges-trace.svg",
+      "sha256": "8bebe8301ca55f838f0c3ab8a2556c02dea9a04c4a80c8eddbfdfb73daa4f6b8",
+      "copy_matches": true
+    },
+    {
+      "lesson": "13-graph-models/07-adjacency-matrix",
+      "filename": "graph-list-matrix-correspondence.svg",
+      "sha256": "0ba55af7d2e57e7174e73f55a748281d5f1972fffebc1c200c5f2031428c8b4c",
+      "copy_matches": true
+    },
+    {
+      "lesson": "14-graph-traversal/01-bfs-frontier",
+      "filename": "graph-traversal-bfs-frontier-trace.svg",
+      "sha256": "bb3cffec8731c9d3f38d1ac65207bcc042aad1725801939d8800a1471823f95f",
+      "copy_matches": true
+    },
+    {
+      "lesson": "14-graph-traversal/02-bfs-traversal",
+      "filename": "graph-traversal-bfs-traversal-trace.svg",
+      "sha256": "8817c2737bb169df506013e2db5c9c3cb07ca8aa2f39a423ba47b4e10f3cce35",
+      "copy_matches": true
+    },
+    {
+      "lesson": "14-graph-traversal/03-bfs-distances",
+      "filename": "bfs-distance-layers.svg",
+      "sha256": "7a78cfd4e6ba45ec94789c533c796c40e6d8236ae6a43c22341a11646a772804",
+      "copy_matches": true
+    },
+    {
+      "lesson": "14-graph-traversal/04-bfs-path",
+      "filename": "graph-traversal-bfs-path-trace.svg",
+      "sha256": "460a556f7a42f0c2bd5e562c12966fcacb70ec9063ecb85eba7cb8500e79df6a",
+      "copy_matches": true
+    },
+    {
+      "lesson": "14-graph-traversal/05-connected-components",
+      "filename": "graph-traversal-connected-components-trace.svg",
+      "sha256": "592283996d8a4ee90875e3636dd5001296b5f32b43ac1e177a575cc4bcb46586",
+      "copy_matches": true
+    },
+    {
+      "lesson": "14-graph-traversal/06-dfs-recursive",
+      "filename": "graph-traversal-dfs-recursive-trace.svg",
+      "sha256": "4cfaae553cf7fcbf659a5361e9d816b86fe2b78d60ede99cef78571d65b7c598",
+      "copy_matches": true
+    },
+    {
+      "lesson": "14-graph-traversal/07-dfs-iterative",
+      "filename": "graph-traversal-dfs-iterative-trace.svg",
+      "sha256": "008fec77f3c0f2a8ba821853e727c65075fffa3d5f93887c563a8a0dea92561d",
+      "copy_matches": true
+    },
+    {
+      "lesson": "14-graph-traversal/08-undirected-cycle",
+      "filename": "graph-traversal-undirected-cycle-trace.svg",
+      "sha256": "afbac44f22971ef95b2d2ef728482d9147da43d62cbd3fb9364876d0cc14fd11",
+      "copy_matches": true
+    },
+    {
+      "lesson": "14-graph-traversal/09-directed-cycle",
+      "filename": "dfs-active-finished-colors.svg",
+      "sha256": "f4b60709b50b4e56d9680863b4d85aedc29612ed60c6f740540dedb835173863",
+      "copy_matches": true
+    },
+    {
+      "lesson": "14-graph-traversal/10-topological-order",
+      "filename": "graph-traversal-topological-order-trace.svg",
+      "sha256": "b85c9b7c6e8889aab023b935b7825fbdb96996a8d75720d3a83ace6c614fbe29",
+      "copy_matches": true
+    },
+    {
+      "lesson": "15-shortest-paths/01-weighted-adjacency",
+      "filename": "shortest-paths-weighted-adjacency-trace.svg",
+      "sha256": "abf6cb9118988a4cb02e224b8a9c41b884f5037637ce60ee944cf7312c7f496b",
+      "copy_matches": true
+    },
+    {
+      "lesson": "15-shortest-paths/02-path-cost",
+      "filename": "shortest-paths-path-cost-trace.svg",
+      "sha256": "a1200f9ac56a4c1272186f88aee07720d20d04a317c5f6c3eabd9b157c640daf",
+      "copy_matches": true
+    },
+    {
+      "lesson": "15-shortest-paths/03-relax-edge",
+      "filename": "weighted-edge-relaxation.svg",
+      "sha256": "f132eb3cb6f2c40fb61bd3ff29eea1d8f9b340afa9baf488a93c2fdf57159ccf",
+      "copy_matches": true
+    },
+    {
+      "lesson": "15-shortest-paths/04-dijkstra-scan",
+      "filename": "shortest-paths-dijkstra-scan-trace.svg",
+      "sha256": "a60c03911fb20fa8af7f659307439dacc576876f17b26c80ccaea4cdb1d91353",
+      "copy_matches": true
+    },
+    {
+      "lesson": "15-shortest-paths/05-dijkstra-heap",
+      "filename": "dijkstra-stale-heap-entry.svg",
+      "sha256": "24a37c2fae4ffbaeebb7ed46a24e22f5e2e2553f2d840b275082a3b7c4898106",
+      "copy_matches": true
+    },
+    {
+      "lesson": "15-shortest-paths/06-reconstruct-weighted-path",
+      "filename": "shortest-paths-reconstruct-weighted-path-trace.svg",
+      "sha256": "7e2f4d817350bc95c983c56e90935c1b0d8b5cff57284b1de291f5caad0fab2d",
+      "copy_matches": true
+    },
+    {
+      "lesson": "15-shortest-paths/07-unreachable-and-zero-weights",
+      "filename": "shortest-paths-unreachable-and-zero-weights-trace.svg",
+      "sha256": "f29760a2132dff02b3a2cf667dac2077f278cf77bcea3e8646096c7d78393db5",
+      "copy_matches": true
+    }
+  ],
+  "verification": {
+    "platform_backend_loader": "1 course; modules 13-15 in planned published order, 8/10/8 lessons and 4 questions per quiz; starter/hidden-test/reference payloads match disk.",
+    "native_python": "CPython 3.14: 95/95 exact cumulative prefix vectors (including 26 starters and 26 solutions); 69/69 isolated-task vectors.",
+    "cumulative_handoffs": "301/301 earlier-stage test invocations against later-stage references; preserved definition AST checks passed within each continuing variant (undirected-to-directed graph intentionally starts a new class).",
+    "behavior_probes": "100 seeded closed directed graph cases checked BFS/DFS equality, distance/path, cycle/topological consistency; 100 seeded nonnegative weighted graph cases checked heap and scan against independent Bellman-Ford oracle, route costs, plus four invalid graph fixtures for each implementation.",
+    "images": "24/24 SVGs parsed and referenced with alt text; platform asset copier run in scratch, copied bytes match lesson-adjacent originals. No rendered or browser visual acceptance."
+  },
+  "contracts": [
+    "Undirected builder uses symmetric ordered lists and no self-loops; directed builder switches to outgoing-only lists; matrix/degrees explicitly accept supplied loops and duplicate entries under their own contracts.",
+    "BFS marks on enqueue and follows neighbor order; recursive and iterator-frame DFS agree on visit order. The iterative lesson now explicitly distinguishes its eager-marking figure from actual iterator-frame parent selection.",
+    "Weighted graph rejects booleans, floats and negative weights; zero remains a valid cost. Dijkstra validates the entire graph, uses strict relaxation, skips stale heap entries, and uses enqueue serials to break ties.",
+    "Cumulative starters preserve completed definitions; section-end quizzes use taught contracts."
+  ],
+  "repairs": [
+    {
+      "path": "14-graph-traversal/07-dfs-iterative/lesson.md",
+      "before_sha256": "aed209aa0f59f90c709777a0d50156a38c5fc6780052b911c3bed649423910bf",
+      "after_sha256": "e10374c7fb7ca1da3927f942bf730832347b1a9aea12ee9df252c09bfbc92a2d",
+      "change": "Relabeled the eager-marking SVG as a contrast and traced iterator-frame discovery and parent selection explicitly; code and diagram bytes unchanged."
+    }
+  ],
+  "remaining_issues": [
+    "No source/runtime failures found in the scoped native checks.",
+    "The iterative DFS SVG depicts an eager-marking alternative, not iterator frames; its heading and adjacent paragraph explicitly flag this, but the image itself has not been redrawn.",
+    "Browser/Pyodide Submit and rendered diagram acceptance not run, per explicit no-browser scope."
+  ]
+}

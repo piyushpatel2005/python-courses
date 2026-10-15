@@ -1,0 +1,282 @@
+[
+  {
+    "lesson": "01-memory-and-cost/01-references-and-aliases",
+    "file": "shared-reference-map.svg",
+    "editable": "shared-reference-map.excalidraw",
+    "brief": "Two names point to the same mutable object; rebinding redirects only one name.",
+    "alt": "Two names point to the same mutable object; rebinding redirects only one name."
+  },
+  {
+    "lesson": "01-memory-and-cost/04-nested-copy-boundaries",
+    "file": "shallow-copy-nested-lists.svg",
+    "editable": "shallow-copy-nested-lists.excalidraw",
+    "brief": "Show distinct outer lists sharing one inner list, then independent inner copies.",
+    "alt": "Show distinct outer lists sharing one inner list, then independent inner copies."
+  },
+  {
+    "lesson": "01-memory-and-cost/08-compare-growth",
+    "file": "algorithm-growth-comparison.svg",
+    "editable": "algorithm-growth-comparison.excalidraw",
+    "brief": "Plot or tabulate exact operation counts for linear, halving and pair work; explicit input axis, no misleading timing.",
+    "alt": "Plot or tabulate exact operation counts for linear, halving and pair work; explicit input axis, no misleading timing."
+  },
+  {
+    "lesson": "02-recursion/02-countdown-trace",
+    "file": "recursive-call-and-return.svg",
+    "editable": "recursive-call-and-return.excalidraw",
+    "brief": "Separate descending calls and ascending returns; base case visible.",
+    "alt": "Separate descending calls and ascending returns; base case visible."
+  },
+  {
+    "lesson": "02-recursion/07-memoized-fibonacci",
+    "file": "fibonacci-repeated-subproblems.svg",
+    "editable": "fibonacci-repeated-subproblems.excalidraw",
+    "brief": "Show repeated subproblems in a small call tree versus reuse, values calculated.",
+    "alt": "Show repeated subproblems in a small call tree versus reuse, values calculated."
+  },
+  {
+    "lesson": "03-arrays-and-sequences/03-insert-and-shift",
+    "file": "array-insertion-shifts.svg",
+    "editable": "array-insertion-shifts.excalidraw",
+    "brief": "Before/after insertion with right-to-left reference shifts and logical size/capacity.",
+    "alt": "Before/after insertion with right-to-left reference shifts and logical size/capacity."
+  },
+  {
+    "lesson": "03-arrays-and-sequences/08-range-sum-queries",
+    "file": "prefix-sum-half-open-range.svg",
+    "editable": "prefix-sum-half-open-range.excalidraw",
+    "brief": "Original values and prefix array, mark [left,right) and subtract prefix entries.",
+    "alt": "Original values and prefix array, mark [left,right) and subtract prefix entries."
+  },
+  {
+    "lesson": "04-singly-linked-lists/07-insert-after-node",
+    "file": "linked-list-splice.svg",
+    "editable": "linked-list-splice.excalidraw",
+    "brief": "Before/intermediate/after insertion; save next before rewriting links.",
+    "alt": "Before/intermediate/after insertion; save next before rewriting links."
+  },
+  {
+    "lesson": "04-singly-linked-lists/10-remove-first-match",
+    "file": "linked-list-bypass.svg",
+    "editable": "linked-list-bypass.excalidraw",
+    "brief": "Bypass target node with predecessor link and update head/tail cases separately.",
+    "alt": "Bypass target node with predecessor link and update head/tail cases separately."
+  },
+  {
+    "lesson": "04-singly-linked-lists/11-reverse-links",
+    "file": "linked-list-three-pointer-reversal.svg",
+    "editable": "linked-list-three-pointer-reversal.excalidraw",
+    "brief": "One precise reversal iteration: prev,current,next before/after, no lost tail.",
+    "alt": "One precise reversal iteration: prev,current,next before/after, no lost tail."
+  },
+  {
+    "lesson": "05-linked-list-variants/04-doubly-remove",
+    "file": "doubly-linked-removal.svg",
+    "editable": "doubly-linked-removal.excalidraw",
+    "brief": "Prev and next pointers reconnected in both directions around removed middle node.",
+    "alt": "Prev and next pointers reconnected in both directions around removed middle node."
+  },
+  {
+    "lesson": "05-linked-list-variants/07-circular-traversal",
+    "file": "circular-list-stop-condition.svg",
+    "editable": "circular-list-stop-condition.excalidraw",
+    "brief": "Ring returns to head; distinguish None-ended list and one-lap stopping.",
+    "alt": "Ring returns to head; distinguish None-ended list and one-lap stopping."
+  },
+  {
+    "lesson": "05-linked-list-variants/10-skip-predecessors",
+    "file": "skip-list-search-lanes.svg",
+    "editable": "skip-list-search-lanes.excalidraw",
+    "brief": "Sorted base level plus upper-level forward links; trace move-right/drop-down without exceeding target.",
+    "alt": "Sorted base level plus upper-level forward links; trace move-right/drop-down without exceeding target."
+  },
+  {
+    "lesson": "06-stacks/04-pop-item",
+    "file": "stack-lifo-operations.svg",
+    "editable": "stack-lifo-operations.excalidraw",
+    "brief": "Top-marked stack before push and after pop, latest value leaves first.",
+    "alt": "Top-marked stack before push and after pop, latest value leaves first."
+  },
+  {
+    "lesson": "06-stacks/05-balanced-brackets",
+    "file": "bracket-stack-trace.svg",
+    "editable": "bracket-stack-trace.excalidraw",
+    "brief": "Trace nested brackets and mismatch; show actual expected-closer stack for tiny expression.",
+    "alt": "Trace nested brackets and mismatch; show actual expected-closer stack for tiny expression."
+  },
+  {
+    "lesson": "07-queues-and-deques/03-dequeue-item",
+    "file": "queue-head-tail-transition.svg",
+    "editable": "queue-head-tail-transition.excalidraw",
+    "brief": "FIFO removal from head and reset tail when last node leaves.",
+    "alt": "FIFO removal from head and reset tail when last node leaves."
+  },
+  {
+    "lesson": "07-queues-and-deques/07-ring-enqueue",
+    "file": "ring-buffer-wraparound.svg",
+    "editable": "ring-buffer-wraparound.excalidraw",
+    "brief": "Physical slots with logical FIFO order and explicit head/size/capacity, modulo wrap.",
+    "alt": "Physical slots with logical FIFO order and explicit head/size/capacity, modulo wrap."
+  },
+  {
+    "lesson": "07-queues-and-deques/10-sliding-window-maximum",
+    "file": "monotonic-deque-window.svg",
+    "editable": "monotonic-deque-window.excalidraw",
+    "brief": "Small window advance, expired indices removed at front, weaker values at back, max remains front.",
+    "alt": "Small window advance, expired indices removed at front, weaker values at back, max remains front."
+  },
+  {
+    "lesson": "08-hash-tables/02-collision-buckets",
+    "file": "hash-collision-chains.svg",
+    "editable": "hash-collision-chains.excalidraw",
+    "brief": "Different string keys map to one bucket but remain distinct entries; simple specified illustrative hash.",
+    "alt": "Different string keys map to one bucket but remain distinct entries; simple specified illustrative hash."
+  },
+  {
+    "lesson": "08-hash-tables/11-tombstone-deletion",
+    "file": "probing-tombstone-search.svg",
+    "editable": "probing-tombstone-search.excalidraw",
+    "brief": "Deleted slot vs never-used slot; trace continuing lookup through tombstone to colliding key.",
+    "alt": "Deleted slot vs never-used slot; trace continuing lookup through tombstone to colliding key."
+  },
+  {
+    "lesson": "09-searching/05-lower-bound",
+    "file": "binary-search-half-open-boundary.svg",
+    "editable": "binary-search-half-open-boundary.excalidraw",
+    "brief": "Before/after [lo,hi) narrowing, target with duplicates and first valid insertion index.",
+    "alt": "Before/after [lo,hi) narrowing, target with duplicates and first valid insertion index."
+  },
+  {
+    "lesson": "10-sorting/08-merge-runs",
+    "file": "merge-two-sorted-runs.svg",
+    "editable": "merge-two-sorted-runs.excalidraw",
+    "brief": "Two read cursors and output prefix, stable equal-key choice and remaining tail.",
+    "alt": "Two read cursors and output prefix, stable equal-key choice and remaining tail."
+  },
+  {
+    "lesson": "10-sorting/10-partition-around-pivot",
+    "file": "quicksort-partition-regions.svg",
+    "editable": "quicksort-partition-regions.excalidraw",
+    "brief": "Clearly illustrative three-way partition less/equal/greater with duplicates, distinguish from a specific in-place scheme.",
+    "alt": "Clearly illustrative three-way partition less/equal/greater with duplicates, distinguish from a specific in-place scheme."
+  },
+  {
+    "lesson": "11-trees-and-bst/06-postorder-traversal",
+    "file": "binary-tree-traversal-orders.svg",
+    "editable": "binary-tree-traversal-orders.excalidraw",
+    "brief": "One small tree with computed preorder,inorder,postorder sequences.",
+    "alt": "One small tree with computed preorder,inorder,postorder sequences."
+  },
+  {
+    "lesson": "11-trees-and-bst/13-bst-delete-two-children",
+    "file": "bst-successor-transplant.svg",
+    "editable": "bst-successor-transplant.excalidraw",
+    "brief": "Before/after two-child deletion replacing with smallest right subtree key; reattach successor child.",
+    "alt": "Before/after two-child deletion replacing with smallest right subtree key; reattach successor child."
+  },
+  {
+    "lesson": "12-heaps-and-priority/01-heap-array-indices",
+    "file": "heap-array-tree-mapping.svg",
+    "editable": "heap-array-tree-mapping.excalidraw",
+    "brief": "Same binary min-heap as tree and zero-based array; parent/children formulas and indices.",
+    "alt": "Same binary min-heap as tree and zero-based array; parent/children formulas and indices."
+  },
+  {
+    "lesson": "12-heaps-and-priority/04-sift-down",
+    "file": "min-heap-sift-down.svg",
+    "editable": "min-heap-sift-down.excalidraw",
+    "brief": "Root replacement then compare children and swap with smaller child; intermediate/final valid heap.",
+    "alt": "Root replacement then compare children and swap with smaller child; intermediate/final valid heap."
+  },
+  {
+    "lesson": "12-heaps-and-priority/11-stable-priority-queue",
+    "file": "stable-priority-tie-breaker.svg",
+    "editable": "stable-priority-tie-breaker.excalidraw",
+    "brief": "Entries ordered by priority then insertion counter, payload never compared.",
+    "alt": "Entries ordered by priority then insertion counter, payload never compared."
+  },
+  {
+    "lesson": "13-graph-models/07-adjacency-matrix",
+    "file": "graph-list-matrix-correspondence.svg",
+    "editable": "graph-list-matrix-correspondence.excalidraw",
+    "brief": "Same small graph as vertex/edge figure, adjacency lists and matrix, consistent undirected symmetry.",
+    "alt": "Same small graph as vertex/edge figure, adjacency lists and matrix, consistent undirected symmetry."
+  },
+  {
+    "lesson": "14-graph-traversal/03-bfs-distances",
+    "file": "bfs-distance-layers.svg",
+    "editable": "bfs-distance-layers.excalidraw",
+    "brief": "Small graph with cycles, discovery layers and FIFO frontier; visited on enqueue.",
+    "alt": "Small graph with cycles, discovery layers and FIFO frontier; visited on enqueue."
+  },
+  {
+    "lesson": "14-graph-traversal/09-directed-cycle",
+    "file": "dfs-active-finished-colors.svg",
+    "editable": "dfs-active-finished-colors.excalidraw",
+    "brief": "Directed back edge to active ancestor versus edge to finished node, separate cases.",
+    "alt": "Directed back edge to active ancestor versus edge to finished node, separate cases."
+  },
+  {
+    "lesson": "15-shortest-paths/03-relax-edge",
+    "file": "weighted-edge-relaxation.svg",
+    "editable": "weighted-edge-relaxation.excalidraw",
+    "brief": "Compare old distance with distance[u]+weight, update predecessor only for improved path.",
+    "alt": "Compare old distance with distance[u]+weight, update predecessor only for improved path."
+  },
+  {
+    "lesson": "15-shortest-paths/05-dijkstra-heap",
+    "file": "dijkstra-stale-heap-entry.svg",
+    "editable": "dijkstra-stale-heap-entry.excalidraw",
+    "brief": "Two queued records for same vertex; discard outdated distance instead of processing twice.",
+    "alt": "Two queued records for same vertex; discard outdated distance instead of processing twice."
+  },
+  {
+    "lesson": "16-bits-and-sets/05-fixed-width-masks",
+    "file": "fixed-width-bit-mask.svg",
+    "editable": "fixed-width-bit-mask.excalidraw",
+    "brief": "8-bit mask, bitwise complement and explicit masking; bit positions labeled least significant at right.",
+    "alt": "8-bit mask, bitwise complement and explicit masking; bit positions labeled least significant at right."
+  },
+  {
+    "lesson": "17-tries/06-delete-word",
+    "file": "trie-shared-prefix-deletion.svg",
+    "editable": "trie-shared-prefix-deletion.excalidraw",
+    "brief": "Two words sharing prefix; clear terminal flag/prune only unused suffix without deleting other word.",
+    "alt": "Two words sharing prefix; clear terminal flag/prune only unused suffix without deleting other word."
+  },
+  {
+    "lesson": "18-range-structures/04-fenwick-prefix",
+    "file": "fenwick-prefix-blocks.svg",
+    "editable": "fenwick-prefix-blocks.excalidraw",
+    "brief": "1-based tree cells intervals; prefix query decomposes index via subtract lowbit, arithmetic checked.",
+    "alt": "1-based tree cells intervals; prefix query decomposes index via subtract lowbit, arithmetic checked."
+  },
+  {
+    "lesson": "18-range-structures/09-segment-query",
+    "file": "segment-tree-range-decomposition.svg",
+    "editable": "segment-tree-range-decomposition.excalidraw",
+    "brief": "Half-open segment intervals and disjoint query cover; sum shown matches original array.",
+    "alt": "Half-open segment intervals and disjoint query cover; sum shown matches original array."
+  },
+  {
+    "lesson": "19-disjoint-sets/04-path-compression",
+    "file": "dsu-path-compression.svg",
+    "editable": "dsu-path-compression.excalidraw",
+    "brief": "Parent forest before/after find, all nodes on path point to root; other components untouched.",
+    "alt": "Parent forest before/after find, all nodes on path point to root; other components untouched."
+  },
+  {
+    "lesson": "20-combinatorial-search/08-backtracking-constraints",
+    "file": "backtracking-choice-undo.svg",
+    "editable": "backtracking-choice-undo.excalidraw",
+    "brief": "Small decision tree with pruned branch; state push/recurse/pop and correct complete outcomes.",
+    "alt": "Small decision tree with pruned branch; state push/recurse/pop and correct complete outcomes."
+  },
+  {
+    "lesson": "21-dispatch-project/08-dispatch-session",
+    "file": "dispatch-workbench-responsibilities.svg",
+    "editable": "dispatch-workbench-responsibilities.excalidraw",
+    "brief": "Conceptual components: catalog lookup, pending queue, priorities, history, graph routes, load sums; no UML claim.",
+    "alt": "Conceptual components: catalog lookup, pending queue, priorities, history, graph routes, load sums; no UML claim."
+  }
+]

@@ -1,0 +1,1764 @@
+{
+  "status": "passed_in_scope",
+  "scope": [
+    "19-disjoint-sets",
+    "20-combinatorial-search",
+    "21-dispatch-project"
+  ],
+  "reviewed_in_published_order": true,
+  "counts": {
+    "lessons": 24,
+    "tasks": 53,
+    "quiz_questions": 12,
+    "diagrams": 16,
+    "native_cumulative_cases": 77,
+    "native_isolated_cases": 53,
+    "cross_stage_regressions": 56,
+    "continuity_boundaries": 14
+  },
+  "repairs": [
+    {
+      "paths": [
+        "20-combinatorial-search/04-combinations-without-replacement/test_main.py",
+        "20-combinatorial-search/05-combinations-with-replacement/test_main.py"
+      ],
+      "change": "Task-two tests now check public combination order and zero/empty cases with task-one boundary supplied, preserving independent partial credit."
+    }
+  ],
+  "verification": {
+    "native_cpython": "24 starters and all 53 cumulative prefixes produced exact true-prefix/false-suffix task vectors; 53 isolated task completions produced one-hot vectors; all Run probes import/run without uncaught errors.",
+    "backend_loader": "Real InterCourses backend ContentLoader discovered modules 19/20/21 in manifest order, 8 coding lessons and 4 quiz questions each; main.py/test_main.py/solution/main.py loaded.",
+    "continuity": "AST definitions unchanged at all 14 DSU and dispatch adjacent boundaries.",
+    "regression": "56 earlier-test vs later-solution combinations passed.",
+    "integration": {
+      "04-combinations-without-replacement": {
+        "itertools_order_cases": 25
+      },
+      "05-combinations-with-replacement": {
+        "itertools_order_cases": 25
+      },
+      "kruskal": {
+        "cases": 3
+      },
+      "dispatch": {
+        "commands": 18,
+        "result": [
+          "zeta",
+          true,
+          "alpha",
+          true,
+          "later",
+          true,
+          true,
+          [
+            5,
+            [
+              "depot",
+              "shed",
+              "pier"
+            ]
+          ],
+          false,
+          [
+            null,
+            []
+          ],
+          "zeta",
+          "alpha",
+          8,
+          "alpha",
+          3,
+          "error",
+          "later",
+          2
+        ],
+        "stdout_lines": 18
+      }
+    },
+    "diagrams": "16 lesson-local SVGs parsed and converted to PNG with macOS sips; two contact sheets visually inspected; Kruskal examined at natural scale. Browser display excluded by request.",
+    "whole_course_native": "210 lessons, 464 tasks, 84 questions; one out-of-scope starter Run error in module 05.",
+    "image_delivery": "Production copy-lesson-images.mjs copied 182 images across the course from scratch; all 16 referenced scope SVGs matched byte-for-byte at public module/lesson slug paths."
+  },
+  "lessons": [
+    {
+      "path": "19-disjoint-sets/01-dsu-state",
+      "task_targets": [
+        "validate_size",
+        "initial_parents",
+        "initial_sizes"
+      ],
+      "task_count": 3,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false,
+            false
+          ],
+          "source_sha256": "abbc0e67ac772345abfdbb71110973e5db8a00f488014815fcda8ce2a03c1104"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false,
+            false
+          ],
+          "source_sha256": "1603e583bd6d66565b2266dc264eedc5b31085a33d33e7f0b9eb639f72ef1d8c"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true,
+            false
+          ],
+          "source_sha256": "dfe76a8c1a47172269c28e7f24d12fb2d1ebc714a5f20f1c997d30edd771f8aa"
+        },
+        {
+          "case": "prefix-3",
+          "vector": [
+            true,
+            true,
+            true
+          ],
+          "source_sha256": "54a46b2993646a7bed5874d9aa8b838f459efb3641414b9b5b93749e7775d327"
+        }
+      ],
+      "hashes": {
+        "disjoint-sets-dsu-state-trace.excalidraw": "8f2c560436ab175156a45e0b490114e8966ef804dda198256f59faaa2c609253",
+        "disjoint-sets-dsu-state-trace.svg": "48b543da246b8971a951829b0f74b96cb61bb592237088e8b3228f44b135f0d2",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "6607c198c15d68dc82a057c0ed9fd26a7e18f61b0a4cd4dfa1a77c3f6968d89a",
+        "main.py": "abbc0e67ac772345abfdbb71110973e5db8a00f488014815fcda8ce2a03c1104",
+        "solution/main.py": "54a46b2993646a7bed5874d9aa8b838f459efb3641414b9b5b93749e7775d327",
+        "test_main.py": "a40d361e5d96afafdd93a2f5a76870ae92834b21b76b13113dd0aded1e36bf69"
+      }
+    },
+    {
+      "path": "19-disjoint-sets/02-find-root",
+      "task_targets": [
+        "is_root",
+        "root_from"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "8f85ede9f982b1a26d78f077f63096cd2d3f57f7acb645eef56269a6c3ed03f3"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "8390b32964773f94d68340dfaaf395994b2a045be37116fbd468876013de1ee1"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "09f4f463110cbca1fdbdacc404cf86e5f5cf21de767f76df10cbcc7dd10a3fa2"
+        }
+      ],
+      "hashes": {
+        "disjoint-sets-find-root-trace.excalidraw": "428b438425038a11f17d3e7b851ce68ead0f2735d7fc9f6addef8114a8d0f57d",
+        "disjoint-sets-find-root-trace.svg": "7861679170dec760b69bcc8e89251a0d4e1c00a70ce4a6c9af6b9c255b16f46c",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "8922cfb9677689542a05b951a4cf95a64e0334d19be94a3dafaf00cf2c00dada",
+        "main.py": "8f85ede9f982b1a26d78f077f63096cd2d3f57f7acb645eef56269a6c3ed03f3",
+        "solution/main.py": "09f4f463110cbca1fdbdacc404cf86e5f5cf21de767f76df10cbcc7dd10a3fa2",
+        "test_main.py": "de538ab087b79c4438978b8299018298a51b97ee802b2a5cedbade9d1930af6f"
+      }
+    },
+    {
+      "path": "19-disjoint-sets/03-union-components",
+      "task_targets": [
+        "union_roots",
+        "merge_roots"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "0beee28cc0c3be4d9d440084be23516ba284d9931d16bb1d3762b4b20eb4e12c"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "63e5772f27b82edaeb72a6403e281351dd4d31dfbce089a98a3fb76589835005"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "2603761791aa2cee92b6aaca60eec18ea8ff95f2fc0601fc611d5445ea7650c5"
+        }
+      ],
+      "hashes": {
+        "disjoint-sets-union-components-trace.excalidraw": "d72c006d39daf12de484494de25899be3623afea91cc94893c18be2542b72cd7",
+        "disjoint-sets-union-components-trace.svg": "989c9eb7b0d31f63e913217d0b3e298bf98a6789d780b2d459cb1cc7a1fb4550",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "2fe065636a1c12922fef9696d71eff6480d57875c46ffe3ac736bc28dc65411b",
+        "main.py": "0beee28cc0c3be4d9d440084be23516ba284d9931d16bb1d3762b4b20eb4e12c",
+        "solution/main.py": "2603761791aa2cee92b6aaca60eec18ea8ff95f2fc0601fc611d5445ea7650c5",
+        "test_main.py": "598128f373ac73348976e684142f616decb55ab4b3915b94757a15f8b5fc4e24"
+      }
+    },
+    {
+      "path": "19-disjoint-sets/04-path-compression",
+      "task_targets": [
+        "redirect_parent",
+        "compress_to"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "3ae1f6ff456ac74e40b0194ffb169b75c4211e8771b81fbf7618510fd19ea6e1"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "619e7a6df9e1282a6460e6e450eff6ee39f459d52aa1d7918224a5318c7aba5b"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "7bb27b3027a5fe72a82b112697c6b161d8bc49eac6726fa6f370a7eabb4e72b7"
+        }
+      ],
+      "hashes": {
+        "dsu-path-compression.excalidraw": "b2cc376f1ed403eaccc32c2ce4cd065d96fac774d25fc7cb8e069a14532f03ca",
+        "dsu-path-compression.svg": "daf3eab3e61f32a44ca3978e057e58e7675908cf38b06709cdff03d8f48e34a3",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "2071d5ead44f6e43c1786fb1500795980e37682b7ae1de8b691ab07915165b43",
+        "main.py": "3ae1f6ff456ac74e40b0194ffb169b75c4211e8771b81fbf7618510fd19ea6e1",
+        "solution/main.py": "7bb27b3027a5fe72a82b112697c6b161d8bc49eac6726fa6f370a7eabb4e72b7",
+        "test_main.py": "628c52379cd57dd9038b38bf259d993b4a4e15a4bc1be674b7ff3df09a779baf"
+      }
+    },
+    {
+      "path": "19-disjoint-sets/05-union-by-size",
+      "task_targets": [
+        "compressed_roots",
+        "smaller_first"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "ddb7b3cf2b569c2ff84b4e6e9a3f5dd16af23ed0f27b6bda702cb013cd4b2d52"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "c326a0cebfd53bb0bc81ed5042c1e0df0ecc2c290d9bc0fa8b6430af0fb54812"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "d977e4c84bab1e82b30d2c31b509b4cb3fdce4a0502265e04e8f910be9dc88a1"
+        }
+      ],
+      "hashes": {
+        "disjoint-sets-union-by-size-trace.excalidraw": "564c087ebbe899a8260ef27da79449373e8e30b4b6794d116f503719c1e44039",
+        "disjoint-sets-union-by-size-trace.svg": "bd32b14c0e6828bebdf79de7e80b0c986b59306f3ab12b8604568bf82f69a018",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "1bc2ed61370c6092a456033c051d22aa5f30036d45018a1c97a4483d3b405fe2",
+        "main.py": "ddb7b3cf2b569c2ff84b4e6e9a3f5dd16af23ed0f27b6bda702cb013cd4b2d52",
+        "solution/main.py": "d977e4c84bab1e82b30d2c31b509b4cb3fdce4a0502265e04e8f910be9dc88a1",
+        "test_main.py": "e0bdd5495a60d5d46b1be677aa70f6018171f111dea1cdfbeab6e3df85d18ca3"
+      }
+    },
+    {
+      "path": "19-disjoint-sets/06-component-count",
+      "task_targets": [
+        "root_flags",
+        "count_root_flags"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "e699c9972a2c8d62c7408a6b65273b75672520168f62250c2707841e67067d4d"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "76185c14bee9ec216ea54c1611e5682151f3a611c69a648706a52b869aa13f3a"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "9df5a9d7e7d22d4ee2714279fd49c540bb13450e506d4237615fa3ea0ddb435b"
+        }
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "3e5b11628ca3e3051131f1aeeee59fd9f1fad16f7964ea53834fab909749287e",
+        "main.py": "e699c9972a2c8d62c7408a6b65273b75672520168f62250c2707841e67067d4d",
+        "solution/main.py": "9df5a9d7e7d22d4ee2714279fd49c540bb13450e506d4237615fa3ea0ddb435b",
+        "test_main.py": "5ce9fe54edd303c13669ac3ef64f6edc512f282813d421b3fa5c6b642b83121e"
+      }
+    },
+    {
+      "path": "19-disjoint-sets/07-detect-redundant-edge",
+      "task_targets": [
+        "edge_is_redundant",
+        "edge_pair"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "93f8f4b47fd668b7d7db88bab4cace8737358893255786e89bfc332b5d448b56"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "27f2f109639b6f78cba4488ae3f30d40771976892cd4afc71a75f708612d1fcc"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "ae9f04ad692b5b30f3f08c8ea174df7ed1e1b1736dfde67b6852c230fb80093c"
+        }
+      ],
+      "hashes": {
+        "disjoint-sets-detect-redundant-edge-trace.excalidraw": "cd07b716d13908efcf9c2d63f6791f0ec83bf14ddddadca4d72e0a4bd3d59d2e",
+        "disjoint-sets-detect-redundant-edge-trace.svg": "6211cccf0f244698448a352afc7a5ed2f24b5ce8663def3f8b7927b9b43a937a",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "0931b71c1bc45b31a68412e2921c24478627c7a5b2deb8969b3dd7b3ff0364cf",
+        "main.py": "93f8f4b47fd668b7d7db88bab4cace8737358893255786e89bfc332b5d448b56",
+        "solution/main.py": "ae9f04ad692b5b30f3f08c8ea174df7ed1e1b1736dfde67b6852c230fb80093c",
+        "test_main.py": "e3aca9b6e033c71b7cd8582211b0f9edc1a61884230706d559ff9994015bde84"
+      }
+    },
+    {
+      "path": "19-disjoint-sets/08-kruskal-forest",
+      "task_targets": [
+        "ordered_edges",
+        "choose_forest_edges",
+        "forest_weight"
+      ],
+      "task_count": 3,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false,
+            false
+          ],
+          "source_sha256": "da9a9fdc73bb4e6482079af597f4cc2af4849d235323801b2d5da99019443023"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false,
+            false
+          ],
+          "source_sha256": "44a9ae47232b8123cc8d0e705dafc682882e767233db55db390574f3b94266e6"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true,
+            false
+          ],
+          "source_sha256": "b3c48d630edd75f6150e7c2d622f91ba6737662d680a5566045710712bb07096"
+        },
+        {
+          "case": "prefix-3",
+          "vector": [
+            true,
+            true,
+            true
+          ],
+          "source_sha256": "93d7eb06ff9d5a21b8e1a705cda995ec1ee8cd8518521bb4600268163008c3c0"
+        }
+      ],
+      "hashes": {
+        "disjoint-sets-kruskal-forest-trace.excalidraw": "aab0263bb77b5d87af1908a204fa415bf0429117871cd24cfb9abf3f9c39ce87",
+        "disjoint-sets-kruskal-forest-trace.svg": "f15f7933f98d2bc80b1088a6965e95123f77c3fa2e67841339c51069cdba69d0",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "111dffadad20cfe3d189af932c467c294c79ea782e42416102cf012ab9a058ce",
+        "main.py": "da9a9fdc73bb4e6482079af597f4cc2af4849d235323801b2d5da99019443023",
+        "solution/main.py": "93d7eb06ff9d5a21b8e1a705cda995ec1ee8cd8518521bb4600268163008c3c0",
+        "test_main.py": "72f99e7d93697ed37748036c31f3e7cffdb07de4d28c6b1ddb21fb43b5c2d931"
+      }
+    },
+    {
+      "path": "20-combinatorial-search/01-cartesian-product",
+      "task_targets": [
+        "pair_row",
+        "product_rows"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "feb522fb325db54feb23efe4b3b57a0140877b67d25ce7e40419caec2a894771"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "7f99d497ca68496213993280cf5de91af9ff12d8ee217b6e8cc72d531bf50c00"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "086f3d3f61a6d7d50825f3ceb657bbe5a3a3cdf5dc3e698831b7b55a376c250c"
+        }
+      ],
+      "hashes": {
+        "combinatorial-search-cartesian-product-trace.excalidraw": "6960527f42952f0622a17b7e25e0dc4b03104f2054b6c06658fdd7222aa355bb",
+        "combinatorial-search-cartesian-product-trace.svg": "585c3f2cd6963cede0964e30b5d8454229dfaf4b0c9e5032ec29496e32a0cc0f",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "27ddc1b1ea0a0a27f20289402d040d2d9b9490bed8f7a4c10380e3bb316b3b8a",
+        "main.py": "feb522fb325db54feb23efe4b3b57a0140877b67d25ce7e40419caec2a894771",
+        "solution/main.py": "086f3d3f61a6d7d50825f3ceb657bbe5a3a3cdf5dc3e698831b7b55a376c250c",
+        "test_main.py": "bfae35251f1b3f2c94246887d7c69ccc8382d301614a7e2288ad14455dd3a439"
+      }
+    },
+    {
+      "path": "20-combinatorial-search/02-power-set-iteration",
+      "task_targets": [
+        "append_choice",
+        "subsets_with"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "f18fa7257c90a18c6ba6ecb5c02d215789f88b7876ec06345a145a6715ddd136"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "7970296e5eb8cae1d290a72056a42d57e56c4ecdbe6b4c4c1c254e956b80b6ea"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "28cd03ea0cecd3da3418917dfa4a3440d589947837400df241a2128a9d51ee19"
+        }
+      ],
+      "hashes": {
+        "combinatorial-search-power-set-iteration-trace.excalidraw": "c62888f4d9c4c5e36a012075881a2c4eff5d8da5380f1ce4627f230ba1bb9fce",
+        "combinatorial-search-power-set-iteration-trace.svg": "716b037da5e00868139a83813d3249d761a16a2100b3c5e0f650db8c56d55242",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "0f3798caf2b6a5a840ffc6024448431bdcc434fdf7579f402ea1f04f4e719655",
+        "main.py": "f18fa7257c90a18c6ba6ecb5c02d215789f88b7876ec06345a145a6715ddd136",
+        "solution/main.py": "28cd03ea0cecd3da3418917dfa4a3440d589947837400df241a2128a9d51ee19",
+        "test_main.py": "dc98ccb0bb19aeb58eab5e15b7df27572d6a9dd30c995c91952a659f0c176bd3"
+      }
+    },
+    {
+      "path": "20-combinatorial-search/03-power-set-bits",
+      "task_targets": [
+        "selected_bit",
+        "subset_for_mask"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "df89d7f54904cb11eeadad904a535b78dc34744ba4a8c9ea97a2f25ecf4e7bc8"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "0fbb4b58dd44ccb69b9360fc2cf42629a53150845d6aa4f807efb6e3344f4bb0"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "b87c49528c3a70a0605d40e0b818266174e22860d8f05e1b803276cea1dc646c"
+        }
+      ],
+      "hashes": {
+        "combinatorial-search-power-set-bits-trace.excalidraw": "9f021a845ab89de6a56f68eabca38b20c8c5d32971ef582834152f5c45b9d03a",
+        "combinatorial-search-power-set-bits-trace.svg": "c258e1db8f557a412af54659acf58a29d51aa3583d7a71dd2c7f3e3d5e559ae9",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "40d1b5f51c44dc160825cb4dfb57d321cebcb9ad3f1c82e548981f5c5a0c5e89",
+        "main.py": "df89d7f54904cb11eeadad904a535b78dc34744ba4a8c9ea97a2f25ecf4e7bc8",
+        "solution/main.py": "b87c49528c3a70a0605d40e0b818266174e22860d8f05e1b803276cea1dc646c",
+        "test_main.py": "3344721649e5fff74e1baf1d17d897cf1e296da371434c8fafd85087ca940d26"
+      }
+    },
+    {
+      "path": "20-combinatorial-search/04-combinations-without-replacement",
+      "task_targets": [
+        "distinct_next",
+        "distinct_snapshot"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "a03e43de31ec35c91b1aae916fc064578ccc55dfbe5a9c119c5b47edd588a2c5"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "0dd6da2e2e2de0165d07e06d8907d3b598d54bdc6d03490286e7056bfbd76880"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "4dd7e6edef4b6ca3adaf246e5f92791d4504a6e4b031fc5e85ab87309d3fbbf9"
+        }
+      ],
+      "hashes": {
+        "combinatorial-search-combinations-without-replacement-trace.excalidraw": "ed89ba3c4356effcd161c41812fb1741b2b1fe107310662e9b5dad5a01b8daa6",
+        "combinatorial-search-combinations-without-replacement-trace.svg": "78ed78aa52ac4d36cc5e239d4c9551523059c28a49ce85924de088528d338fc6",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "c0aca138cf0a452d885a46c0549ca78610a05029e10ebf1ce440d8f475db779d",
+        "main.py": "a03e43de31ec35c91b1aae916fc064578ccc55dfbe5a9c119c5b47edd588a2c5",
+        "solution/main.py": "4dd7e6edef4b6ca3adaf246e5f92791d4504a6e4b031fc5e85ab87309d3fbbf9",
+        "test_main.py": "5ccc9d2a961243c937c2dfdd1eca381e8f82431c5f0cac42146eab9ace1b8e17"
+      }
+    },
+    {
+      "path": "20-combinatorial-search/05-combinations-with-replacement",
+      "task_targets": [
+        "repeated_next",
+        "repeated_snapshot"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "6b0a3d58c967028e8e68f4d29fa2c4b87f8cdbafacb22afb33a84d43bce90d2c"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "f5467d7c75eabd7300b422c569aff0fb1fc80ea37c2fd4656b1b2351f8bd1df2"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "c5f7dd550a6cab97d27f9b8c16e4e7a989388b58d0a2a6f0fdbb00af26fd76ef"
+        }
+      ],
+      "hashes": {
+        "combinatorial-search-combinations-with-replacement-trace.excalidraw": "60931d82e0e555f52713f5718946e8e7c5d87b990987c3b5f09f31fef58eebd1",
+        "combinatorial-search-combinations-with-replacement-trace.svg": "4f86f208ec1fb14d297c439815c564cd8a44193e22adea382ae8fc55749d89e9",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "597e298f548c18209e95b159637835e0c5d33f0c50e44bbeb7b4800709a21016",
+        "main.py": "6b0a3d58c967028e8e68f4d29fa2c4b87f8cdbafacb22afb33a84d43bce90d2c",
+        "solution/main.py": "c5f7dd550a6cab97d27f9b8c16e4e7a989388b58d0a2a6f0fdbb00af26fd76ef",
+        "test_main.py": "5a98ad70fb4a2cb5add62b5c58ff7df42d58679c86fbc316b5fd21825420de49"
+      }
+    },
+    {
+      "path": "20-combinatorial-search/06-permutations-without-replacement",
+      "task_targets": [
+        "unused_indices",
+        "choose_position",
+        "release_position"
+      ],
+      "task_count": 3,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false,
+            false
+          ],
+          "source_sha256": "a696a2d55188d5a1a046b638e6d090f0c7afcd41cee158d28d0fdaf820153c1f"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false,
+            false
+          ],
+          "source_sha256": "beb31312c43e7eed38af754312f96cfd3b655b690867686dfcfe0828b3a77b57"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true,
+            false
+          ],
+          "source_sha256": "8558a239e4902fab1e7ef3c245c4b948d9cf353f18abb9c1ebe27c20ee7c3154"
+        },
+        {
+          "case": "prefix-3",
+          "vector": [
+            true,
+            true,
+            true
+          ],
+          "source_sha256": "7f7e9e54a08613dd4252c30a3fd523bcfcb225b2066e410f2795a806800971f8"
+        }
+      ],
+      "hashes": {
+        "combinatorial-search-permutations-without-replacement-trace.excalidraw": "ba41709df66857ebe8b1a61389ad3cdd7b3706c5ccd063dc81b56aec818563ca",
+        "combinatorial-search-permutations-without-replacement-trace.svg": "3fc545447e18d380f761a52cff7fe07b827396d4cd4acd55e57f8caa9e9d0716",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "a6b4b48f110401fc6454d889b86fd0063257e69c229ed273ef603fdc996ec671",
+        "main.py": "a696a2d55188d5a1a046b638e6d090f0c7afcd41cee158d28d0fdaf820153c1f",
+        "solution/main.py": "7f7e9e54a08613dd4252c30a3fd523bcfcb225b2066e410f2795a806800971f8",
+        "test_main.py": "c8a0506ca257f5fd7413fb84cce81b2c4ea7f7a8b681a41e384bcd487da80348"
+      }
+    },
+    {
+      "path": "20-combinatorial-search/07-words-with-repetition",
+      "task_targets": [
+        "word_complete",
+        "extend_word"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "a7ba836aea10322fb3830336ac925c94dd7952b2dba88f339c4d29f3ccadc263"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "1614087c14685727d0dcf50fb878fcde6020378e35de769fc1317fbee065cdd3"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "0b5eec410908d3b2d472eb04be06a6f4cbf370346815077bd4f9819eee950425"
+        }
+      ],
+      "hashes": {
+        "combinatorial-search-words-with-repetition-trace.excalidraw": "6cdbe1c16898bdbd3adb5c0d15ed0e0f574f4719c7173dcd114225b160dc5ab2",
+        "combinatorial-search-words-with-repetition-trace.svg": "d3affde481a948f220ec8aa0428d315ffdd13eda5193d5aaf65afbc53a511a5b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "dd0c06cb08b8aeff44501c1cbf8d06daf5e6544a3adc4d6af1dbab2949117356",
+        "main.py": "a7ba836aea10322fb3830336ac925c94dd7952b2dba88f339c4d29f3ccadc263",
+        "solution/main.py": "0b5eec410908d3b2d472eb04be06a6f4cbf370346815077bd4f9819eee950425",
+        "test_main.py": "0804850d02ccfd89480eacf9e52bc7b8ac6ead9274423c2be5ef87f06c46bc5b"
+      }
+    },
+    {
+      "path": "20-combinatorial-search/08-backtracking-constraints",
+      "task_targets": [
+        "fits_budget",
+        "budget_snapshot"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "66f59e38f46a79590ef3d2eb4bbf1851e1cd0502e14f434c2a868ebe0249bb1d"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "9c63d24742af6bf526331a43e813ea4d7bf6e3c15804413fb19c1d6c4be8297d"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "4eaa48b7306021405dcffc9680c586cdbee1e4d294a704a33ee612861e30ca1b"
+        }
+      ],
+      "hashes": {
+        "backtracking-choice-undo.excalidraw": "9ad605aeeb210ab89a1d6b8170e3c90533e31b762d058eb861b99b4e6ab6c808",
+        "backtracking-choice-undo.svg": "208f45585681f40e3b6dd65716a75e380b6bd415ae1c264f15bb138090a79c7d",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "8ff69726a517957a3707eeae0652f97137df43367996860db779e948facfa194",
+        "main.py": "66f59e38f46a79590ef3d2eb4bbf1851e1cd0502e14f434c2a868ebe0249bb1d",
+        "solution/main.py": "4eaa48b7306021405dcffc9680c586cdbee1e4d294a704a33ee612861e30ca1b",
+        "test_main.py": "da03dc4552a0e0831e0888ad571bc43a9d8288b71a563cdb8a5872e2be3fd124"
+      }
+    },
+    {
+      "path": "21-dispatch-project/01-catalog-index",
+      "task_targets": [
+        "ensure_new_id",
+        "copy_record",
+        "store_record"
+      ],
+      "task_count": 3,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false,
+            false
+          ],
+          "source_sha256": "1dea939c64599f77b793098045c3c3e836d71efc8f5fe1315aa4c33b6f68fc65"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false,
+            false
+          ],
+          "source_sha256": "8989276f7f7a053a724ccc0ed189722c0912b40244b1f338d0a2c66d9fb8268c"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true,
+            false
+          ],
+          "source_sha256": "3786e8112924cdcbf87a0ddfa137b8b293b0f700a49b60a134a55c8aa44f98d8"
+        },
+        {
+          "case": "prefix-3",
+          "vector": [
+            true,
+            true,
+            true
+          ],
+          "source_sha256": "36ce3352ba96b009dab060042fa0b7442f9856d3d55211628eec3b471729fd9b"
+        }
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "547b06171a23d2627bd668c18cf24724ccb6de2b901bad887fdedff70e624969",
+        "main.py": "1dea939c64599f77b793098045c3c3e836d71efc8f5fe1315aa4c33b6f68fc65",
+        "solution/main.py": "36ce3352ba96b009dab060042fa0b7442f9856d3d55211628eec3b471729fd9b",
+        "test_main.py": "88fcb3b60a88fa57328ead15d70119ee5c0b567e8cebdb96194838a8101b3571"
+      }
+    },
+    {
+      "path": "21-dispatch-project/02-pending-queue",
+      "task_targets": [
+        "claim_id",
+        "append_pending"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "177fdb7cfb9a5f4f0066348934e324cee459fb09e1ef305d4363af77071ad010"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "c6879bdccf16ff881b9ecbeb30df5e98aa12025360dc246601338e890107d3c0"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "119b226e825b3cab53809e87fb785ec5a0746b225b8fa6164327209345ef2117"
+        }
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "fc72bbbbd108d14998085ff33aacfc85ccc38b25a05b27be1d80e6adcbe79067",
+        "main.py": "177fdb7cfb9a5f4f0066348934e324cee459fb09e1ef305d4363af77071ad010",
+        "solution/main.py": "119b226e825b3cab53809e87fb785ec5a0746b225b8fa6164327209345ef2117",
+        "test_main.py": "360573d5e8b1a383870964bdc42b0dba32940b87a3404590ce09e2c18824a47e"
+      }
+    },
+    {
+      "path": "21-dispatch-project/03-priority-dispatch",
+      "task_targets": [
+        "priority_entry",
+        "take_ready"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "33cdc2ec9b31ebc3f7e4ca0d8dbaec65e042537bb4a02d7eb92455c771966caa"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "0ceafcbfeb8da47a6af2f8a419dc9a7cce2e2eb9353a77e6a58e2cf28ad7b44a"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "9342a94cc384c9ee6f301a065b83ecd8b1aff0d451c634bd222526fe2e97eaa3"
+        }
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "c29f448d5a164afd65ea9efbc0968fff534177c8adbd203b4b25a83ca5d214e9",
+        "main.py": "33cdc2ec9b31ebc3f7e4ca0d8dbaec65e042537bb4a02d7eb92455c771966caa",
+        "solution/main.py": "9342a94cc384c9ee6f301a065b83ecd8b1aff0d451c634bd222526fe2e97eaa3",
+        "test_main.py": "910e6eba0538c8c51cbb2743c66403a40d9286c6aa5f02710a34c4a1edba0611"
+      }
+    },
+    {
+      "path": "21-dispatch-project/04-history-stack",
+      "task_targets": [
+        "pop_history",
+        "reverse_load",
+        "release_id"
+      ],
+      "task_count": 3,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false,
+            false
+          ],
+          "source_sha256": "83995a2fe15d02990206f00b0bad4ba432abe64b8c166237abd1d33fc2d07465"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false,
+            false
+          ],
+          "source_sha256": "3d0553fbfe7ecf3f2e5793c442df2347f0944f7eb17a82d4b804890f6efd9ec7"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true,
+            false
+          ],
+          "source_sha256": "b79addc48c78ca7d51a9ad7294da32e1a384bc68cbe95cdb99508ae0f469e066"
+        },
+        {
+          "case": "prefix-3",
+          "vector": [
+            true,
+            true,
+            true
+          ],
+          "source_sha256": "bac9372e1a826b0e3975220c4d517f74b014b40c5a1de0a694d7d32fe7be35c3"
+        }
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "cb385f7d42d6ab6aeab15e27b6e23d5c1f681fb048add00dcbe22073ca9ed947",
+        "main.py": "83995a2fe15d02990206f00b0bad4ba432abe64b8c166237abd1d33fc2d07465",
+        "solution/main.py": "bac9372e1a826b0e3975220c4d517f74b014b40c5a1de0a694d7d32fe7be35c3",
+        "test_main.py": "43a27086bd6386dfe6ec51d27538f57e600d1435b8292bb2bd0bbee49ac6b5ee"
+      }
+    },
+    {
+      "path": "21-dispatch-project/05-network-reachability",
+      "task_targets": [
+        "check_sites",
+        "queue_unseen"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "dee0a761f3d6b8a951d739668d680d371175c01fc2b40f885c80be6556be8276"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "98039de0affc8df0f8e8e9f0db00938ccbd389b84a1ed8f719969fa9ec9273f7"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "d31139bcf38f46d84ad3697bc24bc8a574eea412a0cc934cfaa1953d682bd32b"
+        }
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "d78a772672720f5ddea29b4b1ab0f738b96f3b2688031bf473b577875516e498",
+        "main.py": "dee0a761f3d6b8a951d739668d680d371175c01fc2b40f885c80be6556be8276",
+        "solution/main.py": "d31139bcf38f46d84ad3697bc24bc8a574eea412a0cc934cfaa1953d682bd32b",
+        "test_main.py": "86a1f203805b80b35a03effe8912c5f9c7719001dd18ff2d4f79dd87028f0521"
+      }
+    },
+    {
+      "path": "21-dispatch-project/06-cheapest-route",
+      "task_targets": [
+        "route_exists",
+        "rebuild_path"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "0b32c4afd3e1bc4f6eaff81787b64edb3705b833560a0d842ec836a693d779e1"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "6990bfdc6d423c9c187e3ec7f31d0e4b8761dfaa44099908629e50a03d099a8b"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "ec95472f71625c6cbcff75e0780329206f6d41a8177d4165d98f059857619bc6"
+        }
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "402678b15a0c3fc4b39ea762e0eafbf01534e7e8c07fc4b3e5c6a24fd96ba504",
+        "main.py": "0b32c4afd3e1bc4f6eaff81787b64edb3705b833560a0d842ec836a693d779e1",
+        "solution/main.py": "ec95472f71625c6cbcff75e0780329206f6d41a8177d4165d98f059857619bc6",
+        "test_main.py": "08ec55bea61eaec36bc48974ee3375f468be8e41748e72cbd180aaec3a49bde4"
+      }
+    },
+    {
+      "path": "21-dispatch-project/07-daily-load-report",
+      "task_targets": [
+        "check_load_bounds",
+        "read_load_range"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "9c1f7acbbb7d9d92fd76549783a205ceb50fdf74f41d5bc99733fada39831749"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "42a0938b1cff73a7847cf8d745971585afa40e18d72e9d0b05c813449720df49"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "8e28c9de54b62a869b97f39952254ba2e43cda9471d694e1e8119da5a13dd2dc"
+        }
+      ],
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "a287e1ecdedb9d503b0226e3b441bcc6786152ab74a27fdb2424003d9d18a9a1",
+        "main.py": "9c1f7acbbb7d9d92fd76549783a205ceb50fdf74f41d5bc99733fada39831749",
+        "solution/main.py": "8e28c9de54b62a869b97f39952254ba2e43cda9471d694e1e8119da5a13dd2dc",
+        "test_main.py": "5be4088373df887c00eb5425f463462e6e6f4d4988bcc64a8c97cd69ffc8a898"
+      }
+    },
+    {
+      "path": "21-dispatch-project/08-dispatch-session",
+      "task_targets": [
+        "execute_safely",
+        "run_session"
+      ],
+      "task_count": 2,
+      "native": [
+        {
+          "case": "starter",
+          "vector": [
+            false,
+            false
+          ],
+          "source_sha256": "b50fa06eb07edef2dc9b2de3edf125531168c58ae965c77bbbb974e3ca744ecb"
+        },
+        {
+          "case": "prefix-1",
+          "vector": [
+            true,
+            false
+          ],
+          "source_sha256": "d5d303a3255dd4129932f1184059f639733362da816b6d6e4c46ad80f15baf29"
+        },
+        {
+          "case": "prefix-2",
+          "vector": [
+            true,
+            true
+          ],
+          "source_sha256": "e701538b22baf65a1e9c9b121d14a61f77802d2ff7fd8e0f0aef48fab84abe68"
+        }
+      ],
+      "hashes": {
+        "dispatch-workbench-responsibilities.excalidraw": "47762a55adddc7eb2caee88c39966d5fbef4e5b662826f615a95d43d998e20f0",
+        "dispatch-workbench-responsibilities.svg": "756f8c08a524dea9904d891937cd6750047e4f2a66bf4af6a52890e385af2b69",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "740f3870534499ac33664add2d477a8032a704209c57f9ca4a153aa2b59a7565",
+        "main.py": "b50fa06eb07edef2dc9b2de3edf125531168c58ae965c77bbbb974e3ca744ecb",
+        "solution/main.py": "e701538b22baf65a1e9c9b121d14a61f77802d2ff7fd8e0f0aef48fab84abe68",
+        "test_main.py": "0de6d28f3a1b02be6bce95f7be158e1aa1546113dfcd0cb6c3e041f3c73f23e5"
+      }
+    }
+  ],
+  "isolated_tasks": [
+    {
+      "path": "19-disjoint-sets/01-dsu-state",
+      "task": "validate_size",
+      "vector": [
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/01-dsu-state",
+      "task": "initial_parents",
+      "vector": [
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/01-dsu-state",
+      "task": "initial_sizes",
+      "vector": [
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/02-find-root",
+      "task": "is_root",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/02-find-root",
+      "task": "root_from",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/03-union-components",
+      "task": "union_roots",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/03-union-components",
+      "task": "merge_roots",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/04-path-compression",
+      "task": "redirect_parent",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/04-path-compression",
+      "task": "compress_to",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/05-union-by-size",
+      "task": "compressed_roots",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/05-union-by-size",
+      "task": "smaller_first",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/06-component-count",
+      "task": "root_flags",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/06-component-count",
+      "task": "count_root_flags",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/07-detect-redundant-edge",
+      "task": "edge_is_redundant",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/07-detect-redundant-edge",
+      "task": "edge_pair",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/08-kruskal-forest",
+      "task": "ordered_edges",
+      "vector": [
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/08-kruskal-forest",
+      "task": "choose_forest_edges",
+      "vector": [
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "path": "19-disjoint-sets/08-kruskal-forest",
+      "task": "forest_weight",
+      "vector": [
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/01-cartesian-product",
+      "task": "pair_row",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/01-cartesian-product",
+      "task": "product_rows",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/02-power-set-iteration",
+      "task": "append_choice",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/02-power-set-iteration",
+      "task": "subsets_with",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/03-power-set-bits",
+      "task": "selected_bit",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/03-power-set-bits",
+      "task": "subset_for_mask",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/04-combinations-without-replacement",
+      "task": "distinct_next",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/04-combinations-without-replacement",
+      "task": "distinct_snapshot",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/05-combinations-with-replacement",
+      "task": "repeated_next",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/05-combinations-with-replacement",
+      "task": "repeated_snapshot",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/06-permutations-without-replacement",
+      "task": "unused_indices",
+      "vector": [
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/06-permutations-without-replacement",
+      "task": "choose_position",
+      "vector": [
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/06-permutations-without-replacement",
+      "task": "release_position",
+      "vector": [
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/07-words-with-repetition",
+      "task": "word_complete",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/07-words-with-repetition",
+      "task": "extend_word",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/08-backtracking-constraints",
+      "task": "fits_budget",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "20-combinatorial-search/08-backtracking-constraints",
+      "task": "budget_snapshot",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "21-dispatch-project/01-catalog-index",
+      "task": "ensure_new_id",
+      "vector": [
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "path": "21-dispatch-project/01-catalog-index",
+      "task": "copy_record",
+      "vector": [
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "path": "21-dispatch-project/01-catalog-index",
+      "task": "store_record",
+      "vector": [
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "path": "21-dispatch-project/02-pending-queue",
+      "task": "claim_id",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "21-dispatch-project/02-pending-queue",
+      "task": "append_pending",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "21-dispatch-project/03-priority-dispatch",
+      "task": "priority_entry",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "21-dispatch-project/03-priority-dispatch",
+      "task": "take_ready",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "21-dispatch-project/04-history-stack",
+      "task": "pop_history",
+      "vector": [
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "path": "21-dispatch-project/04-history-stack",
+      "task": "reverse_load",
+      "vector": [
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "path": "21-dispatch-project/04-history-stack",
+      "task": "release_id",
+      "vector": [
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "path": "21-dispatch-project/05-network-reachability",
+      "task": "check_sites",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "21-dispatch-project/05-network-reachability",
+      "task": "queue_unseen",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "21-dispatch-project/06-cheapest-route",
+      "task": "route_exists",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "21-dispatch-project/06-cheapest-route",
+      "task": "rebuild_path",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "21-dispatch-project/07-daily-load-report",
+      "task": "check_load_bounds",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "21-dispatch-project/07-daily-load-report",
+      "task": "read_load_range",
+      "vector": [
+        false,
+        true
+      ]
+    },
+    {
+      "path": "21-dispatch-project/08-dispatch-session",
+      "task": "execute_safely",
+      "vector": [
+        true,
+        false
+      ]
+    },
+    {
+      "path": "21-dispatch-project/08-dispatch-session",
+      "task": "run_session",
+      "vector": [
+        false,
+        true
+      ]
+    }
+  ],
+  "quizzes": [
+    {
+      "path": "19-disjoint-sets/quiz/index.yaml",
+      "sha256": "9a186cc398373fd04f03e1fbbb209e5ed880ca36c5be63d02c82a36113ed74c1"
+    },
+    {
+      "path": "19-disjoint-sets/quiz/q01.md",
+      "sha256": "f7af78f414ebca2cb565a1f40e6678e0dbc3b7788df2594429b6c24e26ac91e8"
+    },
+    {
+      "path": "19-disjoint-sets/quiz/q02.md",
+      "sha256": "b60ed81749b6e8d1f7a768644fb6f2be18b465ac158fbe702f8d0d8e1e27bcb9"
+    },
+    {
+      "path": "19-disjoint-sets/quiz/q03.md",
+      "sha256": "0a67a252064dd3021cb92446ddf7b93d9ab69306b5933496b10db5d7ca324246"
+    },
+    {
+      "path": "19-disjoint-sets/quiz/q04.md",
+      "sha256": "57293ce3cddff487c8c4d323c6265d468d1178b6301e73a139de3edf313a891c"
+    },
+    {
+      "path": "20-combinatorial-search/quiz/index.yaml",
+      "sha256": "bdd556ecdc3a9d71769cfb7403b59596be32223cb86255aa1c932357d94061f1"
+    },
+    {
+      "path": "20-combinatorial-search/quiz/q01.md",
+      "sha256": "168007be57a065d6491f9d39505ef73510a426f31cc44a76e13d3e82ac247c97"
+    },
+    {
+      "path": "20-combinatorial-search/quiz/q02.md",
+      "sha256": "b5b5cad04272697050768ae7be5f89b1f3d6b138464972832e38f3ba0e64f52f"
+    },
+    {
+      "path": "20-combinatorial-search/quiz/q03.md",
+      "sha256": "366364f05198e04cc7e7d752965385f8f7037dceec9e57e190b538e8ee494872"
+    },
+    {
+      "path": "20-combinatorial-search/quiz/q04.md",
+      "sha256": "d47d827c7e068bcd2859c2d5723bde40df14fd44dddd18bd8c8ffdaaec0d1495"
+    },
+    {
+      "path": "21-dispatch-project/quiz/index.yaml",
+      "sha256": "fb200bb4ac77e3e20d38babd1018000d0f3e64116650e9520e670ac271ca241b"
+    },
+    {
+      "path": "21-dispatch-project/quiz/q01.md",
+      "sha256": "c22d121a296174656b95ed86ee567623c59cf2b50a13cbf6fe5dfbfb88b2d2e4"
+    },
+    {
+      "path": "21-dispatch-project/quiz/q02.md",
+      "sha256": "9fc702be5094f2439b28c22250868795802dcfa865842f5f96dd300619885df6"
+    },
+    {
+      "path": "21-dispatch-project/quiz/q03.md",
+      "sha256": "57562efdf2211f36a4ced08bd0f5f905e4bb2bd529c78d25f00b1f6d492dc8ea"
+    },
+    {
+      "path": "21-dispatch-project/quiz/q04.md",
+      "sha256": "c2bc58696c680d513b6155f29bc670dc58f6d6df211bf4fe83ddcf0e6d69f3ad"
+    }
+  ],
+  "diagrams": [
+    {
+      "path": "19-disjoint-sets/01-dsu-state/disjoint-sets-dsu-state-trace.svg",
+      "sha256": "48b543da246b8971a951829b0f74b96cb61bb592237088e8b3228f44b135f0d2",
+      "native_rendered": true
+    },
+    {
+      "path": "19-disjoint-sets/02-find-root/disjoint-sets-find-root-trace.svg",
+      "sha256": "7861679170dec760b69bcc8e89251a0d4e1c00a70ce4a6c9af6b9c255b16f46c",
+      "native_rendered": true
+    },
+    {
+      "path": "19-disjoint-sets/03-union-components/disjoint-sets-union-components-trace.svg",
+      "sha256": "989c9eb7b0d31f63e913217d0b3e298bf98a6789d780b2d459cb1cc7a1fb4550",
+      "native_rendered": true
+    },
+    {
+      "path": "19-disjoint-sets/04-path-compression/dsu-path-compression.svg",
+      "sha256": "daf3eab3e61f32a44ca3978e057e58e7675908cf38b06709cdff03d8f48e34a3",
+      "native_rendered": true
+    },
+    {
+      "path": "19-disjoint-sets/05-union-by-size/disjoint-sets-union-by-size-trace.svg",
+      "sha256": "bd32b14c0e6828bebdf79de7e80b0c986b59306f3ab12b8604568bf82f69a018",
+      "native_rendered": true
+    },
+    {
+      "path": "19-disjoint-sets/07-detect-redundant-edge/disjoint-sets-detect-redundant-edge-trace.svg",
+      "sha256": "6211cccf0f244698448a352afc7a5ed2f24b5ce8663def3f8b7927b9b43a937a",
+      "native_rendered": true
+    },
+    {
+      "path": "19-disjoint-sets/08-kruskal-forest/disjoint-sets-kruskal-forest-trace.svg",
+      "sha256": "f15f7933f98d2bc80b1088a6965e95123f77c3fa2e67841339c51069cdba69d0",
+      "native_rendered": true
+    },
+    {
+      "path": "20-combinatorial-search/01-cartesian-product/combinatorial-search-cartesian-product-trace.svg",
+      "sha256": "585c3f2cd6963cede0964e30b5d8454229dfaf4b0c9e5032ec29496e32a0cc0f",
+      "native_rendered": true
+    },
+    {
+      "path": "20-combinatorial-search/02-power-set-iteration/combinatorial-search-power-set-iteration-trace.svg",
+      "sha256": "716b037da5e00868139a83813d3249d761a16a2100b3c5e0f650db8c56d55242",
+      "native_rendered": true
+    },
+    {
+      "path": "20-combinatorial-search/03-power-set-bits/combinatorial-search-power-set-bits-trace.svg",
+      "sha256": "c258e1db8f557a412af54659acf58a29d51aa3583d7a71dd2c7f3e3d5e559ae9",
+      "native_rendered": true
+    },
+    {
+      "path": "20-combinatorial-search/04-combinations-without-replacement/combinatorial-search-combinations-without-replacement-trace.svg",
+      "sha256": "78ed78aa52ac4d36cc5e239d4c9551523059c28a49ce85924de088528d338fc6",
+      "native_rendered": true
+    },
+    {
+      "path": "20-combinatorial-search/05-combinations-with-replacement/combinatorial-search-combinations-with-replacement-trace.svg",
+      "sha256": "4f86f208ec1fb14d297c439815c564cd8a44193e22adea382ae8fc55749d89e9",
+      "native_rendered": true
+    },
+    {
+      "path": "20-combinatorial-search/06-permutations-without-replacement/combinatorial-search-permutations-without-replacement-trace.svg",
+      "sha256": "3fc545447e18d380f761a52cff7fe07b827396d4cd4acd55e57f8caa9e9d0716",
+      "native_rendered": true
+    },
+    {
+      "path": "20-combinatorial-search/07-words-with-repetition/combinatorial-search-words-with-repetition-trace.svg",
+      "sha256": "d3affde481a948f220ec8aa0428d315ffdd13eda5193d5aaf65afbc53a511a5b",
+      "native_rendered": true
+    },
+    {
+      "path": "20-combinatorial-search/08-backtracking-constraints/backtracking-choice-undo.svg",
+      "sha256": "208f45585681f40e3b6dd65716a75e380b6bd415ae1c264f15bb138090a79c7d",
+      "native_rendered": true
+    },
+    {
+      "path": "21-dispatch-project/08-dispatch-session/dispatch-workbench-responsibilities.svg",
+      "sha256": "756f8c08a524dea9904d891937cd6750047e4f2a66bf4af6a52890e385af2b69",
+      "native_rendered": true
+    }
+  ],
+  "remaining_issues": [
+    {
+      "path": "05-linked-list-variants/12-skip-insert/main.py",
+      "issue": "Out-of-scope whole-course native audit: starter Run dereferences None from search(24). No edit made."
+    },
+    {
+      "path": "21-dispatch-project",
+      "issue": "Only the final stage has a lesson-local overview diagram; stages 01–07 rely on prose and code. No browser visual acceptance requested."
+    }
+  ],
+  "limitations": [
+    "Native CPython and backend loader only; no Pyodide Worker/Submit UI or navigation acceptance (browser excluded).",
+    "Existing assets/audit-19-21.json predates prose/diagram changes in 23 lessons and this review’s two test edits; use hashes in this report as final scope evidence."
+  ]
+}

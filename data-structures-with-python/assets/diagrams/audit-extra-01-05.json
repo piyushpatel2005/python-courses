@@ -1,0 +1,1815 @@
+{
+  "planned": 32,
+  "generated_svg": 32,
+  "trace_checks": {
+    "memory-and-cost-shallow-copies-trace.svg": {
+      "a": [
+        [
+          3,
+          8,
+          9
+        ],
+        [
+          5
+        ]
+      ],
+      "b": [
+        [
+          3,
+          8,
+          9
+        ],
+        [
+          5
+        ]
+      ],
+      "outer_distinct": true,
+      "inner_shared": true
+    },
+    "memory-and-cost-auxiliary-space-trace.svg": {
+      "input": [
+        4,
+        7,
+        2,
+        9
+      ],
+      "states": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          9
+        ]
+      ],
+      "output": [
+        2,
+        9
+      ],
+      "empty_output": null
+    },
+    "memory-and-cost-amortized-append-trace.svg": {
+      "costs": [
+        1,
+        2,
+        3,
+        1,
+        5,
+        1,
+        1,
+        1
+      ],
+      "total": 15,
+      "average": 1.875,
+      "capacity": 8
+    },
+    "recursion-base-and-recursive-cases-trace.svg": {
+      "count3": 3,
+      "count0": 0
+    },
+    "recursion-recursive-sum-trace.svg": {
+      "sum": 13,
+      "empty": 0,
+      "frames": 4
+    },
+    "recursion-recursive-factorial-trace.svg": {
+      "factorial3": 6,
+      "factorial0": 1
+    },
+    "recursion-fibonacci-tree-trace.svg": {
+      "result": 3,
+      "calls": 9,
+      "repeated_F2": 2
+    },
+    "recursion-iterative-fibonacci-trace.svg": {
+      "states": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          3,
+          2,
+          3
+        ],
+        [
+          4,
+          3,
+          5
+        ],
+        [
+          5,
+          5,
+          8
+        ]
+      ],
+      "result": 5
+    },
+    "recursion-recursive-binary-search-trace.svg": {
+      "trace": [
+        [
+          0,
+          7,
+          3,
+          11
+        ],
+        [
+          4,
+          7,
+          5,
+          17
+        ]
+      ],
+      "index": 5
+    },
+    "arrays-and-sequences-append-with-capacity-trace.svg": {
+      "slots": [
+        4,
+        9,
+        6,
+        null
+      ],
+      "size": 3,
+      "capacity": 4
+    },
+    "arrays-and-sequences-delete-and-compact-trace.svg": {
+      "removed": 9,
+      "after": [
+        4,
+        6,
+        2
+      ],
+      "shifts": 2
+    },
+    "arrays-and-sequences-reverse-two-pointers-trace.svg": {
+      "snapshots": [
+        [
+          3,
+          7,
+          4,
+          8,
+          2
+        ],
+        [
+          2,
+          7,
+          4,
+          8,
+          3
+        ],
+        [
+          2,
+          8,
+          4,
+          7,
+          3
+        ]
+      ],
+      "swaps": 2
+    },
+    "arrays-and-sequences-sliding-window-trace.svg": {
+      "window_sums": [
+        12,
+        10,
+        15
+      ],
+      "best": 15
+    },
+    "arrays-and-sequences-prefix-sums-trace.svg": {
+      "prefix": [
+        0,
+        4,
+        5,
+        12,
+        14
+      ],
+      "query": 10
+    },
+    "singly-linked-lists-node-and-link-trace.svg": {
+      "values": [
+        "A: 4",
+        "B: 9"
+      ],
+      "head": "A: 4",
+      "tail": "B: 9",
+      "size": 2,
+      "circular": false,
+      "reciprocal": false
+    },
+    "singly-linked-lists-traverse-nodes-trace.svg": {
+      "values": [
+        "A: 4",
+        "B: 9",
+        "C: 6"
+      ],
+      "head": "A: 4",
+      "tail": "C: 6",
+      "size": 3,
+      "circular": false,
+      "reciprocal": false
+    },
+    "singly-linked-lists-list-state-trace.svg": {
+      "values": [
+        "A: 4"
+      ],
+      "head": "A: 4",
+      "tail": "A: 4",
+      "size": 1,
+      "circular": false,
+      "reciprocal": false
+    },
+    "singly-linked-lists-prepend-node-trace.svg": {
+      "values": [
+        "N: 2",
+        "A: 4",
+        "B: 9"
+      ],
+      "head": "N: 2",
+      "tail": "B: 9",
+      "size": 3,
+      "circular": false,
+      "reciprocal": false
+    },
+    "singly-linked-lists-append-node-trace.svg": {
+      "values": [
+        "A: 4",
+        "B: 9",
+        "N: 6"
+      ],
+      "head": "A: 4",
+      "tail": "N: 6",
+      "size": 3,
+      "circular": false,
+      "reciprocal": false
+    },
+    "singly-linked-lists-find-node-trace.svg": {
+      "values": [
+        "A: 4",
+        "B: 9",
+        "C: 4"
+      ],
+      "head": "A: 4",
+      "tail": "C: 4",
+      "size": 3,
+      "circular": false,
+      "reciprocal": false
+    },
+    "singly-linked-lists-remove-head-trace.svg": {
+      "values": [
+        "B: 9",
+        "C: 6"
+      ],
+      "head": "B: 9",
+      "tail": "C: 6",
+      "size": 2,
+      "circular": false,
+      "reciprocal": false
+    },
+    "singly-linked-lists-remove-tail-trace.svg": {
+      "values": [
+        "A: 4",
+        "B: 9"
+      ],
+      "head": "A: 4",
+      "tail": "B: 9",
+      "size": 2,
+      "circular": false,
+      "reciprocal": false
+    },
+    "linked-list-variants-doubly-linked-node-trace.svg": {
+      "values": [
+        "A: 4",
+        "B: 9"
+      ],
+      "head": "A: 4",
+      "tail": "B: 9",
+      "size": 2,
+      "circular": false,
+      "reciprocal": true
+    },
+    "linked-list-variants-doubly-prepend-trace.svg": {
+      "values": [
+        "N: 2",
+        "A: 4",
+        "B: 9"
+      ],
+      "head": "N: 2",
+      "tail": "B: 9",
+      "size": 3,
+      "circular": false,
+      "reciprocal": true
+    },
+    "linked-list-variants-doubly-append-trace.svg": {
+      "values": [
+        "A: 4",
+        "B: 9",
+        "N: 6"
+      ],
+      "head": "A: 4",
+      "tail": "N: 6",
+      "size": 3,
+      "circular": false,
+      "reciprocal": true
+    },
+    "linked-list-variants-browser-history-trace.svg": {
+      "values": [
+        "A: Home",
+        "B: Guide",
+        "D: Blog"
+      ],
+      "head": "A: Home",
+      "tail": "D: Blog",
+      "size": 3,
+      "circular": false,
+      "reciprocal": true
+    },
+    "linked-list-variants-circular-append-trace.svg": {
+      "values": [
+        "A: 4",
+        "B: 9",
+        "N: 6"
+      ],
+      "head": "A: 4",
+      "tail": "N: 6",
+      "size": 3,
+      "circular": true,
+      "reciprocal": false
+    },
+    "linked-list-variants-circular-remove-trace.svg": {
+      "values": [
+        "B: 9",
+        "C: 6"
+      ],
+      "head": "B: 9",
+      "tail": "C: 6",
+      "size": 2,
+      "circular": true,
+      "reciprocal": false
+    },
+    "linked-list-variants-skip-levels-trace.svg": {
+      "before": [
+        [
+          4,
+          9,
+          15,
+          22
+        ],
+        [
+          9,
+          22
+        ],
+        [
+          22
+        ]
+      ],
+      "after": [
+        [
+          4,
+          9,
+          15,
+          22
+        ],
+        [
+          9,
+          22
+        ],
+        [
+          22
+        ]
+      ],
+      "levels_nested": true,
+      "search15": [
+        [
+          "level",
+          2,
+          -1
+        ],
+        [
+          "level",
+          1,
+          -1
+        ],
+        [
+          "right",
+          1,
+          9
+        ],
+        [
+          "level",
+          0,
+          9
+        ]
+      ],
+      "missing16_next": 22,
+      "empty_singleton_roundtrip": true,
+      "actual_pointer_rewiring": true
+    },
+    "linked-list-variants-skip-search-trace.svg": {
+      "before": [
+        [
+          4,
+          9,
+          15,
+          22
+        ],
+        [
+          9,
+          22
+        ],
+        [
+          22
+        ]
+      ],
+      "after": [
+        [
+          4,
+          9,
+          15,
+          22
+        ],
+        [
+          9,
+          22
+        ],
+        [
+          22
+        ]
+      ],
+      "levels_nested": true,
+      "search15": [
+        [
+          "level",
+          2,
+          -1
+        ],
+        [
+          "level",
+          1,
+          -1
+        ],
+        [
+          "right",
+          1,
+          9
+        ],
+        [
+          "level",
+          0,
+          9
+        ]
+      ],
+      "missing16_next": 22,
+      "empty_singleton_roundtrip": true,
+      "actual_pointer_rewiring": true
+    },
+    "linked-list-variants-skip-insert-trace.svg": {
+      "before": [
+        [
+          4,
+          9,
+          15,
+          22
+        ],
+        [
+          9,
+          22
+        ],
+        [
+          22
+        ]
+      ],
+      "after": [
+        [
+          4,
+          9,
+          12,
+          15,
+          22
+        ],
+        [
+          9,
+          12,
+          22
+        ],
+        [
+          22
+        ]
+      ],
+      "levels_nested": true,
+      "search15": [
+        [
+          "level",
+          2,
+          -1
+        ],
+        [
+          "level",
+          1,
+          -1
+        ],
+        [
+          "right",
+          1,
+          9
+        ],
+        [
+          "level",
+          0,
+          9
+        ]
+      ],
+      "missing16_next": 22,
+      "empty_singleton_roundtrip": true,
+      "actual_pointer_rewiring": true
+    },
+    "linked-list-variants-skip-remove-trace.svg": {
+      "before": [
+        [
+          4,
+          9,
+          15,
+          22
+        ],
+        [
+          9,
+          22
+        ],
+        [
+          22
+        ]
+      ],
+      "after": [
+        [
+          4,
+          15,
+          22
+        ],
+        [
+          22
+        ],
+        [
+          22
+        ]
+      ],
+      "levels_nested": true,
+      "search15": [
+        [
+          "level",
+          2,
+          -1
+        ],
+        [
+          "level",
+          1,
+          -1
+        ],
+        [
+          "right",
+          1,
+          9
+        ],
+        [
+          "level",
+          0,
+          9
+        ]
+      ],
+      "missing16_next": 22,
+      "empty_singleton_roundtrip": true,
+      "actual_pointer_rewiring": true
+    },
+    "linked_edge_suite": "42 nonempty/empty insertion and removal model transitions passed"
+  },
+  "native_acceptance": {
+    "libraryVersion": "0.18.1",
+    "browser": "156.0.8078.4",
+    "externalRequestsBlocked": true,
+    "figures": 32,
+    "results": [
+      {
+        "file": "memory-and-cost-shallow-copies-trace.svg",
+        "elements": 25,
+        "texts": 13,
+        "arrows": 5,
+        "rectangles": 7,
+        "boundTexts": 4,
+        "boundArrowEnds": 10,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "memory-and-cost-auxiliary-space-trace.svg",
+        "elements": 36,
+        "texts": 23,
+        "arrows": 3,
+        "rectangles": 10,
+        "boundTexts": 5,
+        "boundArrowEnds": 6,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "memory-and-cost-amortized-append-trace.svg",
+        "elements": 61,
+        "texts": 42,
+        "arrows": 0,
+        "rectangles": 19,
+        "boundTexts": 16,
+        "boundArrowEnds": 0,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "recursion-base-and-recursive-cases-trace.svg",
+        "elements": 29,
+        "texts": 14,
+        "arrows": 6,
+        "rectangles": 9,
+        "boundTexts": 8,
+        "boundArrowEnds": 12,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "recursion-recursive-sum-trace.svg",
+        "elements": 29,
+        "texts": 14,
+        "arrows": 6,
+        "rectangles": 9,
+        "boundTexts": 8,
+        "boundArrowEnds": 12,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "recursion-recursive-factorial-trace.svg",
+        "elements": 29,
+        "texts": 14,
+        "arrows": 6,
+        "rectangles": 9,
+        "boundTexts": 8,
+        "boundArrowEnds": 12,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "recursion-fibonacci-tree-trace.svg",
+        "elements": 31,
+        "texts": 13,
+        "arrows": 8,
+        "rectangles": 10,
+        "boundTexts": 9,
+        "boundArrowEnds": 16,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "recursion-iterative-fibonacci-trace.svg",
+        "elements": 29,
+        "texts": 17,
+        "arrows": 5,
+        "rectangles": 7,
+        "boundTexts": 0,
+        "boundArrowEnds": 10,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "recursion-recursive-binary-search-trace.svg",
+        "elements": 36,
+        "texts": 24,
+        "arrows": 1,
+        "rectangles": 11,
+        "boundTexts": 8,
+        "boundArrowEnds": 2,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "arrays-and-sequences-append-with-capacity-trace.svg",
+        "elements": 33,
+        "texts": 23,
+        "arrows": 1,
+        "rectangles": 9,
+        "boundTexts": 8,
+        "boundArrowEnds": 0,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "arrays-and-sequences-delete-and-compact-trace.svg",
+        "elements": 35,
+        "texts": 23,
+        "arrows": 2,
+        "rectangles": 10,
+        "boundTexts": 8,
+        "boundArrowEnds": 4,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "arrays-and-sequences-reverse-two-pointers-trace.svg",
+        "elements": 53,
+        "texts": 37,
+        "arrows": 0,
+        "rectangles": 16,
+        "boundTexts": 15,
+        "boundArrowEnds": 0,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "arrays-and-sequences-sliding-window-trace.svg",
+        "elements": 53,
+        "texts": 37,
+        "arrows": 0,
+        "rectangles": 16,
+        "boundTexts": 15,
+        "boundArrowEnds": 0,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "arrays-and-sequences-prefix-sums-trace.svg",
+        "elements": 36,
+        "texts": 25,
+        "arrows": 0,
+        "rectangles": 11,
+        "boundTexts": 10,
+        "boundArrowEnds": 0,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "singly-linked-lists-node-and-link-trace.svg",
+        "elements": 26,
+        "texts": 15,
+        "arrows": 7,
+        "rectangles": 4,
+        "boundTexts": 3,
+        "boundArrowEnds": 8,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "singly-linked-lists-traverse-nodes-trace.svg",
+        "elements": 35,
+        "texts": 18,
+        "arrows": 10,
+        "rectangles": 7,
+        "boundTexts": 6,
+        "boundArrowEnds": 14,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "singly-linked-lists-list-state-trace.svg",
+        "elements": 17,
+        "texts": 11,
+        "arrows": 3,
+        "rectangles": 3,
+        "boundTexts": 2,
+        "boundArrowEnds": 3,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "singly-linked-lists-prepend-node-trace.svg",
+        "elements": 32,
+        "texts": 17,
+        "arrows": 9,
+        "rectangles": 6,
+        "boundTexts": 5,
+        "boundArrowEnds": 12,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "singly-linked-lists-append-node-trace.svg",
+        "elements": 32,
+        "texts": 17,
+        "arrows": 9,
+        "rectangles": 6,
+        "boundTexts": 5,
+        "boundArrowEnds": 12,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "singly-linked-lists-find-node-trace.svg",
+        "elements": 35,
+        "texts": 18,
+        "arrows": 10,
+        "rectangles": 7,
+        "boundTexts": 6,
+        "boundArrowEnds": 14,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "singly-linked-lists-remove-head-trace.svg",
+        "elements": 35,
+        "texts": 19,
+        "arrows": 9,
+        "rectangles": 7,
+        "boundTexts": 5,
+        "boundArrowEnds": 12,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "singly-linked-lists-remove-tail-trace.svg",
+        "elements": 35,
+        "texts": 19,
+        "arrows": 9,
+        "rectangles": 7,
+        "boundTexts": 5,
+        "boundArrowEnds": 12,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "linked-list-variants-doubly-linked-node-trace.svg",
+        "elements": 35,
+        "texts": 18,
+        "arrows": 12,
+        "rectangles": 5,
+        "boundTexts": 4,
+        "boundArrowEnds": 16,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "linked-list-variants-doubly-prepend-trace.svg",
+        "elements": 39,
+        "texts": 19,
+        "arrows": 14,
+        "rectangles": 6,
+        "boundTexts": 5,
+        "boundArrowEnds": 20,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "linked-list-variants-doubly-append-trace.svg",
+        "elements": 39,
+        "texts": 19,
+        "arrows": 14,
+        "rectangles": 6,
+        "boundTexts": 5,
+        "boundArrowEnds": 20,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "linked-list-variants-browser-history-trace.svg",
+        "elements": 43,
+        "texts": 20,
+        "arrows": 16,
+        "rectangles": 7,
+        "boundTexts": 6,
+        "boundArrowEnds": 24,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "linked-list-variants-circular-append-trace.svg",
+        "elements": 32,
+        "texts": 17,
+        "arrows": 9,
+        "rectangles": 6,
+        "boundTexts": 5,
+        "boundArrowEnds": 14,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "linked-list-variants-circular-remove-trace.svg",
+        "elements": 35,
+        "texts": 19,
+        "arrows": 9,
+        "rectangles": 7,
+        "boundTexts": 5,
+        "boundArrowEnds": 14,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "linked-list-variants-skip-levels-trace.svg",
+        "elements": 45,
+        "texts": 23,
+        "arrows": 10,
+        "rectangles": 12,
+        "boundTexts": 10,
+        "boundArrowEnds": 17,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "linked-list-variants-skip-search-trace.svg",
+        "elements": 47,
+        "texts": 23,
+        "arrows": 12,
+        "rectangles": 12,
+        "boundTexts": 10,
+        "boundArrowEnds": 21,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "linked-list-variants-skip-insert-trace.svg",
+        "elements": 85,
+        "texts": 40,
+        "arrows": 22,
+        "rectangles": 23,
+        "boundTexts": 22,
+        "boundArrowEnds": 38,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      },
+      {
+        "file": "linked-list-variants-skip-remove-trace.svg",
+        "elements": 73,
+        "texts": 36,
+        "arrows": 18,
+        "rectangles": 19,
+        "boundTexts": 18,
+        "boundArrowEnds": 30,
+        "sourceTextParity": true,
+        "import": true,
+        "mountedEditor": true,
+        "exportSvg": true,
+        "editedExport": true,
+        "editedReimport": true,
+        "noImages": true,
+        "offCanvasText": [],
+        "byteIdentical": true
+      }
+    ]
+  },
+  "visual_review": {
+    "status": "passed",
+    "coverage": "All 32 canonical SVGs and all 32 native exports visually inspected in 16 source and 16 native contact sheets; changed diagrams re-inspected after fixes.",
+    "sheet_size": "1240 \u00d7 1520; two full-width 1240 \u00d7 760 diagrams per sheet",
+    "contact_sheet_hashes": {
+      "native-contact-01.png": "9b4c5e907560deea1a02fa9b42b92e5355fdc9170a6b1292c2acd7d0a3a145b9",
+      "native-contact-02.png": "38e4406c1188888c7b05c62dc48349bdc209049484a5dd60b42b6c8e33adb6f9",
+      "native-contact-03.png": "21b5937dba044e4c741b9c923b9eaeb082c36e7ebee5673882af7f6a0fc59062",
+      "native-contact-04.png": "e2ce13d2d70f6be3497f220bdfb946892457f0a2afcf22839e0f6407e33c6634",
+      "native-contact-05.png": "f47c3df799853faf1e4a2c2d032810954df13b21942c2d5d7f9bc3eaade10691",
+      "native-contact-06.png": "f6159cf1f19f8c76ec9d2dd13d81c62735791ad1b2aa6c8a6eb0153d6ac07d01",
+      "native-contact-07.png": "2846fc26e15682ea4060d47a8d6251b6b321f540d5589a7a383ca9704f069eaa",
+      "native-contact-08.png": "5be5db1c7abad27faf6c1f163b746d246df939491b80e45a502e53867c2a5280",
+      "native-contact-09.png": "0c91b7b5e71d99e934e0dba09f1fedbc0a424f5fac550e27775fba7483e0d8c4",
+      "native-contact-10.png": "615f7bd5c7d6e517717486697bbe19d2a65c03b8e293af864386076fc813d783",
+      "native-contact-11.png": "1acbe7ef33ff3ff4af0bf8ff8a64c4943a7c70d76fe48103b41dac4d626ce58e",
+      "native-contact-12.png": "5170d1d1a53e8200018d7041f3255d6413e28a2235d341cf9ad80b9f1ac5ad17",
+      "native-contact-13.png": "a267cb99724bfdfb252d5ee10f413a67e42149854319ea9c4e4b956c118dc067",
+      "native-contact-14.png": "a0c2fd91d6ac72d0af8f7c6b113fb39dbc38c645c51c42d60f58c9de7644ffdc",
+      "native-contact-15.png": "b5bce21dbe33da1610d268a0ac9e6233cf361307be7d136255742e29065abd99",
+      "native-contact-16.png": "26ad6a5aa20b33935bea3fc0c620d92f9761bcec9e07433e476f1b910a60502e",
+      "source-contact-01.png": "3a18b02e9f351a29cf4412f647292bfdea76e765655e423925c167c659c252ce",
+      "source-contact-02.png": "0d7c8e8b0859651f284ee6eae6d7be55f4d844d6d91654e8b25cddc0d6a8e43c",
+      "source-contact-03.png": "fe3b0e1d9df66ca155263f2e0292a1732d17119072e6caaeb563d0891321dc28",
+      "source-contact-04.png": "c66440963aeca52da9b9723d3254fa5783a6349d7f08f9c718f909343916ac87",
+      "source-contact-05.png": "fac16b8f7dba4919d87df0ef8dbe5962bf632b3a00dcafc82cdf63ef2141e58f",
+      "source-contact-06.png": "b6763ab1d257d84c3ec20f3e4bf5b3d667ba344a729c1de5631cd2514233d38f",
+      "source-contact-07.png": "4a88af7a45a64ee9330345e6525150977fb64658d59ecf632dcc948a1222f14e",
+      "source-contact-08.png": "0d882d99e9d80eeade59c811cabccf25c3719569d71dcef7f4d597739d591262",
+      "source-contact-09.png": "2607441b278fa5b0718b23ed51412b90861047e131a6ff537a748bcc3167d3b1",
+      "source-contact-10.png": "b7d297c1446a95215beaa0f2a3e3b7e54751593dea7f39518a26aaff982ec094",
+      "source-contact-11.png": "9ff9466da974c4e2d1f8c9b1c8e4813ab4435f164982ef947e5f83ec08e1a0ac",
+      "source-contact-12.png": "5fd522389105df95301cde93ecc6cdb0708b629a836d35f625d40bdab7e4bf53",
+      "source-contact-13.png": "fbb65329ee4101f29ec16956a6139d0ccf3518e951262cfe5b20089c96cde437",
+      "source-contact-14.png": "44a43c2312db561b03d003bf85917fbed390b5a623be22d6b462da4e5f623016",
+      "source-contact-15.png": "f8a309cb2888ff12c13c9cc8f28d1656724150ca1774acb5ef5e347e921057a4",
+      "source-contact-16.png": "768972d6ff86db3b906a1032824b10325691d428fa1e564d1fc08d2c706ef079"
+    },
+    "editor_screenshots_inspected": [
+      "memory-and-cost-shallow-copies-trace-editor.png",
+      "linked-list-variants-skip-insert-trace-editor.png"
+    ],
+    "resolved_issues": [
+      "Removed auxiliary-space connector crossing a heading",
+      "Moved compaction caption clear of shift arrows",
+      "Separated recursion lanes and attached return arrows",
+      "Moved circular closure labels away from the AFTER heading",
+      "Added detached removed-node cards and highlighted skip-search descent",
+      "Aligned return contracts and auxiliary-space mechanism with newly available lessons"
+    ],
+    "unresolved_issues": []
+  },
+  "scope": "Only modules 01\u201305 extra diagram filenames; no lesson.md edits",
+  "evidence": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-01-05/evidence",
+  "native_limitations": [
+    "Text is native editable Arial; SVG bold weight is not used.",
+    "Multi-line cards use grouped separate text elements; resizing may require manual text adjustment.",
+    "Connectors are native arrows with reciprocal endpoint bindings where endpoints meet node edges; bends may need manual adjustment."
+  ],
+  "lesson_contract_checks": [
+    {
+      "lesson": "01-memory-and-cost/03-shallow-copies",
+      "solution_sha256": "b333e6f300ddab0362d2c781fcd6c9ca483a646595ed1b34c359cf3528e1334d",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "01-memory-and-cost/09-auxiliary-space",
+      "solution_sha256": "ba9daa57ca64532dd8bc51252856ba9655861f9cbe53d5aa9d8a5d7625205922",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "01-memory-and-cost/10-amortized-append",
+      "solution_sha256": "b1ef52a9a48dd3af63400d920de1b2c4ea3d321c49186b1dcd5726081288299f",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "02-recursion/01-base-and-recursive-cases",
+      "solution_sha256": "d4a8e63ea0e828022811d9a3002d145111b33bce76c9342ebfd4b2b141c01b59",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "02-recursion/03-recursive-sum",
+      "solution_sha256": "c11bbfe38559962687b903da58f2c7b4b3fbc249ebdcfdd407f7c38682dbf249",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "02-recursion/05-recursive-factorial",
+      "solution_sha256": "cbee1b8eabff117cbd093a5126e77d3b626384fc1f40576f606d98874922e42d",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "02-recursion/06-fibonacci-tree",
+      "solution_sha256": "545a24b158c56c5502518aa0da925e65e789b60ad94e49ba4d979fc86ce83a0b",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "02-recursion/08-iterative-fibonacci",
+      "solution_sha256": "07b3a138c401d33414dd3a98fbde84285a75869d69047e83b05d2b473d2882a9",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "02-recursion/10-recursive-binary-search",
+      "solution_sha256": "14be93c82106f689c0c087a500374f212102f9dd400cb72467fd685bad4f06bd",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "03-arrays-and-sequences/02-append-with-capacity",
+      "solution_sha256": "9b809e6271a4d37a1d01f3fc49aa1a17b5f9a0966e94285d1bcbd8842ae5f535",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "03-arrays-and-sequences/04-delete-and-compact",
+      "solution_sha256": "b5d2aed9a2aaffa0bbe36c7670b0d37661dc461a757d9e099c2e87d0b91c2f3f",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "03-arrays-and-sequences/05-reverse-two-pointers",
+      "solution_sha256": "edf5f3e5cfd07e60b5851f26864a2bffcfa3ea54c5e5d70cda9bea5102f120f0",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "03-arrays-and-sequences/06-sliding-window",
+      "solution_sha256": "2ca73c99071cf68bdecca00bf0902930a11bc339e3a5496143e69c64a1d4eb38",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "03-arrays-and-sequences/07-prefix-sums",
+      "solution_sha256": "8fa1a904ed5078cc5f6b8fdf5353dbd75f7f649f18d90f6412db32cc817f525c",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "04-singly-linked-lists/01-node-and-link",
+      "solution_sha256": "26da90fd0cb43196a1abb0791f6df2f9d47cbb8304ea2f607bb6b355609dcc8e",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "04-singly-linked-lists/02-traverse-nodes",
+      "solution_sha256": "da88e595ae9e436a8a11aec4b8dca64613df2f3fd305def334eef1f776369f84",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "04-singly-linked-lists/03-list-state",
+      "solution_sha256": "f0e826cd40a23c7625ec248c7d0b02c7215af30e8fa7624dc8dba97d81e1dc94",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "04-singly-linked-lists/04-prepend-node",
+      "solution_sha256": "28cbe49562ba77253bfb10f2e827049a4edcfa0721e53e9880e4bc723e7dd35b",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "04-singly-linked-lists/05-append-node",
+      "solution_sha256": "4b20029a83c654b10fbe2bad0945d8600954f959d57e01c4be3604705f5b747e",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "04-singly-linked-lists/06-find-node",
+      "solution_sha256": "1f9f875d5e4cf4c3842812669984a2c66a408d8e306060f26e2067c9677f70d4",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "04-singly-linked-lists/08-remove-head",
+      "solution_sha256": "afe585c445484ab27996be52db3a5f517ae1a7b17b3547b8b2cec6d62fef8f85",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "04-singly-linked-lists/09-remove-tail",
+      "solution_sha256": "3f81b24fb91079cb6db491e69d014a3acaaf78948d7a0a457879691d9035f359",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "05-linked-list-variants/01-doubly-linked-node",
+      "solution_sha256": "d436985823b22ecf3ccd620ac0296ecfa8bfb1430955bcdee54ebda66b30be10",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "05-linked-list-variants/02-doubly-prepend",
+      "solution_sha256": "146870d7dd55031c9e686ecad5484525915f3f87522206856446e1d05fab77f6",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "05-linked-list-variants/03-doubly-append",
+      "solution_sha256": "07303583054c5f4f8da547dd32093d33325c7f7b8769e82ea3286953a1e54445",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "05-linked-list-variants/05-browser-history",
+      "solution_sha256": "9945da73fd31a68fe11bff02f7646bf00c4db99982aa7938f31fa89bbfdaeade",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "05-linked-list-variants/06-circular-append",
+      "solution_sha256": "ff7b2fb1a46ebf5af81e62ea67a9729281a0b49b1a9a9fa147e1b1069327c467",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "05-linked-list-variants/08-circular-remove",
+      "solution_sha256": "c88d50fe51ba845b913ec1124f41193e882d802c3fe8b46b2eb946505c013ea0",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "05-linked-list-variants/09-skip-levels",
+      "solution_sha256": "ce54642b2588d6ed64d2e721d908e9cb0d4296ca07f20b8740e7b023f24a6b32",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "05-linked-list-variants/11-skip-search",
+      "solution_sha256": "4aa52a159be78606862f369d0e4ce567ce9d99b429a9ebc526dff5f15c14b2a9",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "05-linked-list-variants/12-skip-insert",
+      "solution_sha256": "5507fc2519f056d33467d9a0e66d8d123527e92d52229c23d17850d367b97ae0",
+      "illustrative_input_verified": true
+    },
+    {
+      "lesson": "05-linked-list-variants/13-skip-remove",
+      "solution_sha256": "2cc868cbad81a99acecb74c3bc88aa7292edc36250a462e73cec819fac08fa61",
+      "illustrative_input_verified": true
+    }
+  ],
+  "artifact_manifest": [
+    {
+      "canonical": "assets/diagrams/memory-and-cost-shallow-copies-trace.svg",
+      "lesson_local": "01-memory-and-cost/03-shallow-copies/memory-and-cost-shallow-copies-trace.svg",
+      "sha256": "22e237674037e6de06c8bc6f38dfc715ef5e0023dae33b2bb23a8327b8dbc1b9",
+      "bytes": 3988
+    },
+    {
+      "canonical": "assets/diagrams/memory-and-cost-shallow-copies-trace.excalidraw",
+      "lesson_local": "01-memory-and-cost/03-shallow-copies/memory-and-cost-shallow-copies-trace.excalidraw",
+      "sha256": "9f22fac149be668f176f7e3e53eb31bab37acbe388e70db2698fa2e37cd3876d",
+      "bytes": 24470
+    },
+    {
+      "canonical": "assets/diagrams/memory-and-cost-auxiliary-space-trace.svg",
+      "lesson_local": "01-memory-and-cost/09-auxiliary-space/memory-and-cost-auxiliary-space-trace.svg",
+      "sha256": "49a73aa93d00e298275fb5d7e15997a02ad9f50bf70f7b2c5b0ae895656acc10",
+      "bytes": 5219
+    },
+    {
+      "canonical": "assets/diagrams/memory-and-cost-auxiliary-space-trace.excalidraw",
+      "lesson_local": "01-memory-and-cost/09-auxiliary-space/memory-and-cost-auxiliary-space-trace.excalidraw",
+      "sha256": "3ef4f07d8b9f7b4c9dddc7e53124005109b0eb56b109cfde9981b33235c2ba7e",
+      "bytes": 32475
+    },
+    {
+      "canonical": "assets/diagrams/memory-and-cost-amortized-append-trace.svg",
+      "lesson_local": "01-memory-and-cost/10-amortized-append/memory-and-cost-amortized-append-trace.svg",
+      "sha256": "3b997d5f2a72ba4259283823d2daa3f3062c5c7e514ef6251001e29d8dd75260",
+      "bytes": 7918
+    },
+    {
+      "canonical": "assets/diagrams/memory-and-cost-amortized-append-trace.excalidraw",
+      "lesson_local": "01-memory-and-cost/10-amortized-append/memory-and-cost-amortized-append-trace.excalidraw",
+      "sha256": "7244019e784f40c8ed449ac19b36ebad5314e0b5f9fa4e5fa7bcfe0c04d78de4",
+      "bytes": 51939
+    },
+    {
+      "canonical": "assets/diagrams/recursion-base-and-recursive-cases-trace.svg",
+      "lesson_local": "02-recursion/01-base-and-recursive-cases/recursion-base-and-recursive-cases-trace.svg",
+      "sha256": "f312a7bcca376015d19efb2a7abf0764254a8e35f262d7cdcc7172cd4d9cb6cd",
+      "bytes": 4618
+    },
+    {
+      "canonical": "assets/diagrams/recursion-base-and-recursive-cases-trace.excalidraw",
+      "lesson_local": "02-recursion/01-base-and-recursive-cases/recursion-base-and-recursive-cases-trace.excalidraw",
+      "sha256": "8bb9779a11335879b7182b3cb1dadd17a64dd46bf679c5bdeb47f651888118fc",
+      "bytes": 28404
+    },
+    {
+      "canonical": "assets/diagrams/recursion-recursive-sum-trace.svg",
+      "lesson_local": "02-recursion/03-recursive-sum/recursion-recursive-sum-trace.svg",
+      "sha256": "1e0aadb57d6640afd8b783faaaa84d27db705b4c8686151b42cf999fc5346e3a",
+      "bytes": 4638
+    },
+    {
+      "canonical": "assets/diagrams/recursion-recursive-sum-trace.excalidraw",
+      "lesson_local": "02-recursion/03-recursive-sum/recursion-recursive-sum-trace.excalidraw",
+      "sha256": "eef4d8ca3b978b18ef9f1d382538d8730da0dfc9c4c963cf8df5fce8231fa1b8",
+      "bytes": 28422
+    },
+    {
+      "canonical": "assets/diagrams/recursion-recursive-factorial-trace.svg",
+      "lesson_local": "02-recursion/05-recursive-factorial/recursion-recursive-factorial-trace.svg",
+      "sha256": "99d707424067f88b00f642b43c96a3bf8e7c5cd869d7995b2d5eaf3c279241bc",
+      "bytes": 4629
+    },
+    {
+      "canonical": "assets/diagrams/recursion-recursive-factorial-trace.excalidraw",
+      "lesson_local": "02-recursion/05-recursive-factorial/recursion-recursive-factorial-trace.excalidraw",
+      "sha256": "d9b2ece1a7507c8f67e98799b20b617fb2486f6552255024e24a57a34f76f592",
+      "bytes": 28430
+    },
+    {
+      "canonical": "assets/diagrams/recursion-fibonacci-tree-trace.svg",
+      "lesson_local": "02-recursion/06-fibonacci-tree/recursion-fibonacci-tree-trace.svg",
+      "sha256": "8fa4655feeeb7a6fce7ed7cfc2c991693846793725b69e58d7599463d672ea94",
+      "bytes": 4463
+    },
+    {
+      "canonical": "assets/diagrams/recursion-fibonacci-tree-trace.excalidraw",
+      "lesson_local": "02-recursion/06-fibonacci-tree/recursion-fibonacci-tree-trace.excalidraw",
+      "sha256": "16aa6904a3e04bfdd50df6dd31db83eb780b938e62ab4f4379bb096926506613",
+      "bytes": 30234
+    },
+    {
+      "canonical": "assets/diagrams/recursion-iterative-fibonacci-trace.svg",
+      "lesson_local": "02-recursion/08-iterative-fibonacci/recursion-iterative-fibonacci-trace.svg",
+      "sha256": "6d8e195a4fa52cbbb25c70e819b781e9e7556b74ed9a54c4f3261f87ebd1de7f",
+      "bytes": 4383
+    },
+    {
+      "canonical": "assets/diagrams/recursion-iterative-fibonacci-trace.excalidraw",
+      "lesson_local": "02-recursion/08-iterative-fibonacci/recursion-iterative-fibonacci-trace.excalidraw",
+      "sha256": "cdd5a9d571466c1aaa19b6e81f7ebe4aa82db9184460a3efb2f02f465cb7b14e",
+      "bytes": 27547
+    },
+    {
+      "canonical": "assets/diagrams/recursion-recursive-binary-search-trace.svg",
+      "lesson_local": "02-recursion/10-recursive-binary-search/recursion-recursive-binary-search-trace.svg",
+      "sha256": "8f1ddb003301dfffb46b5bae7c73e6058380d1eb881d7b1364ed7213ae6efd34",
+      "bytes": 5135
+    },
+    {
+      "canonical": "assets/diagrams/recursion-recursive-binary-search-trace.excalidraw",
+      "lesson_local": "02-recursion/10-recursive-binary-search/recursion-recursive-binary-search-trace.excalidraw",
+      "sha256": "472bdcba75c6e43e6c7ab4639481c9403022d24f26165f3f033fb4a17fe33b38",
+      "bytes": 31378
+    },
+    {
+      "canonical": "assets/diagrams/arrays-and-sequences-append-with-capacity-trace.svg",
+      "lesson_local": "03-arrays-and-sequences/02-append-with-capacity/arrays-and-sequences-append-with-capacity-trace.svg",
+      "sha256": "de5540cb8b999bc36cecc097c2704f3e6ddefc5c824409ba6a9147f68305ece4",
+      "bytes": 4690
+    },
+    {
+      "canonical": "assets/diagrams/arrays-and-sequences-append-with-capacity-trace.excalidraw",
+      "lesson_local": "03-arrays-and-sequences/02-append-with-capacity/arrays-and-sequences-append-with-capacity-trace.excalidraw",
+      "sha256": "b8b4e000c523329c0447b5ee852eb6e4907baa82567129c70a52514a92bf064c",
+      "bytes": 28592
+    },
+    {
+      "canonical": "assets/diagrams/arrays-and-sequences-delete-and-compact-trace.svg",
+      "lesson_local": "03-arrays-and-sequences/04-delete-and-compact/arrays-and-sequences-delete-and-compact-trace.svg",
+      "sha256": "0344dae15bf39a9c200cbe04ccce29fe2af98dac632bbbf7b196881e01d12a51",
+      "bytes": 4885
+    },
+    {
+      "canonical": "assets/diagrams/arrays-and-sequences-delete-and-compact-trace.excalidraw",
+      "lesson_local": "03-arrays-and-sequences/04-delete-and-compact/arrays-and-sequences-delete-and-compact-trace.excalidraw",
+      "sha256": "548d85dcde84463948a0915087731f09bbd411b80828e6c387e21b23484334ad",
+      "bytes": 30977
+    },
+    {
+      "canonical": "assets/diagrams/arrays-and-sequences-reverse-two-pointers-trace.svg",
+      "lesson_local": "03-arrays-and-sequences/05-reverse-two-pointers/arrays-and-sequences-reverse-two-pointers-trace.svg",
+      "sha256": "af7a200ba8bcdef2c2f44e16d4b3f47b2e90c200a07c2689ba3222686a5656f8",
+      "bytes": 6922
+    },
+    {
+      "canonical": "assets/diagrams/arrays-and-sequences-reverse-two-pointers-trace.excalidraw",
+      "lesson_local": "03-arrays-and-sequences/05-reverse-two-pointers/arrays-and-sequences-reverse-two-pointers-trace.excalidraw",
+      "sha256": "3ec7649cc56dfa9722a2e9af1a42620b0e862ce2419ba847145d71258bf58dd3",
+      "bytes": 45197
+    },
+    {
+      "canonical": "assets/diagrams/arrays-and-sequences-sliding-window-trace.svg",
+      "lesson_local": "03-arrays-and-sequences/06-sliding-window/arrays-and-sequences-sliding-window-trace.svg",
+      "sha256": "ef0ca769756338ea70d1ebed515bdea1374edab8c10f51c33347c1b416752e6c",
+      "bytes": 6973
+    },
+    {
+      "canonical": "assets/diagrams/arrays-and-sequences-sliding-window-trace.excalidraw",
+      "lesson_local": "03-arrays-and-sequences/06-sliding-window/arrays-and-sequences-sliding-window-trace.excalidraw",
+      "sha256": "a23bf4f54c7776c42a1074ea39f856e7958981d97810c15f6a916a20979f26d6",
+      "bytes": 45279
+    },
+    {
+      "canonical": "assets/diagrams/arrays-and-sequences-prefix-sums-trace.svg",
+      "lesson_local": "03-arrays-and-sequences/07-prefix-sums/arrays-and-sequences-prefix-sums-trace.svg",
+      "sha256": "25d026879a01b4ca2f13c102e064be4a51a0be17af4a7fb8773e51177a177137",
+      "bytes": 5067
+    },
+    {
+      "canonical": "assets/diagrams/arrays-and-sequences-prefix-sums-trace.excalidraw",
+      "lesson_local": "03-arrays-and-sequences/07-prefix-sums/arrays-and-sequences-prefix-sums-trace.excalidraw",
+      "sha256": "894ff052c63f519510633ddad841f750a33bb0bf5ad30f2a7a80a8cc8be566e6",
+      "bytes": 31059
+    },
+    {
+      "canonical": "assets/diagrams/singly-linked-lists-node-and-link-trace.svg",
+      "lesson_local": "04-singly-linked-lists/01-node-and-link/singly-linked-lists-node-and-link-trace.svg",
+      "sha256": "0c374776f496230c2f7d773e19f6d39dc2266d5289411d08d913d57729c8a140",
+      "bytes": 3837
+    },
+    {
+      "canonical": "assets/diagrams/singly-linked-lists-node-and-link-trace.excalidraw",
+      "lesson_local": "04-singly-linked-lists/01-node-and-link/singly-linked-lists-node-and-link-trace.excalidraw",
+      "sha256": "84950660aff79ac4f7ec11326e69125001713a56cfb56cefe3d2ce18ddf05aba",
+      "bytes": 24709
+    },
+    {
+      "canonical": "assets/diagrams/singly-linked-lists-traverse-nodes-trace.svg",
+      "lesson_local": "04-singly-linked-lists/02-traverse-nodes/singly-linked-lists-traverse-nodes-trace.svg",
+      "sha256": "601caf0ca5d71ebd21ae705210d8a0e27e718f89fb6003c7c32be34f67e0734a",
+      "bytes": 4954
+    },
+    {
+      "canonical": "assets/diagrams/singly-linked-lists-traverse-nodes-trace.excalidraw",
+      "lesson_local": "04-singly-linked-lists/02-traverse-nodes/singly-linked-lists-traverse-nodes-trace.excalidraw",
+      "sha256": "13fbfa3c0ce03e0e0d00653b6218871476f84b81b1a47587037cee3f77465da7",
+      "bytes": 33737
+    },
+    {
+      "canonical": "assets/diagrams/singly-linked-lists-list-state-trace.svg",
+      "lesson_local": "04-singly-linked-lists/03-list-state/singly-linked-lists-list-state-trace.svg",
+      "sha256": "cb79607653e8d827952356dcfcba05c34b09ccce40fc72f1432de0d6851aacbd",
+      "bytes": 2736
+    },
+    {
+      "canonical": "assets/diagrams/singly-linked-lists-list-state-trace.excalidraw",
+      "lesson_local": "04-singly-linked-lists/03-list-state/singly-linked-lists-list-state-trace.excalidraw",
+      "sha256": "03dc81e9edc153ba8eb72b2e18c48a750cd16c7389ad5f23cf02ea62fe31ee97",
+      "bytes": 15770
+    },
+    {
+      "canonical": "assets/diagrams/singly-linked-lists-prepend-node-trace.svg",
+      "lesson_local": "04-singly-linked-lists/04-prepend-node/singly-linked-lists-prepend-node-trace.svg",
+      "sha256": "1a2f53e0397635b9e596bea67947d53d14dad660cbd60e852370ecf07e623ffc",
+      "bytes": 4504
+    },
+    {
+      "canonical": "assets/diagrams/singly-linked-lists-prepend-node-trace.excalidraw",
+      "lesson_local": "04-singly-linked-lists/04-prepend-node/singly-linked-lists-prepend-node-trace.excalidraw",
+      "sha256": "5c1ac52ec817cbdbee4b73be5f1ffdcae4c26af99329578dd51ad0b14d13b973",
+      "bytes": 30638
+    },
+    {
+      "canonical": "assets/diagrams/singly-linked-lists-append-node-trace.svg",
+      "lesson_local": "04-singly-linked-lists/05-append-node/singly-linked-lists-append-node-trace.svg",
+      "sha256": "c80fd785dea88728e4f94f763e582d2650973cf66b593e86e76ec119cac7df23",
+      "bytes": 4487
+    },
+    {
+      "canonical": "assets/diagrams/singly-linked-lists-append-node-trace.excalidraw",
+      "lesson_local": "04-singly-linked-lists/05-append-node/singly-linked-lists-append-node-trace.excalidraw",
+      "sha256": "4d2cde8d43c093c79f6fdac4e24ded105323deac9c55e622d5b0e10e3e73f642",
+      "bytes": 30620
+    },
+    {
+      "canonical": "assets/diagrams/singly-linked-lists-find-node-trace.svg",
+      "lesson_local": "04-singly-linked-lists/06-find-node/singly-linked-lists-find-node-trace.svg",
+      "sha256": "93f9a4706ab54b3fcd7cb1692f9e88cdeb068c1392d7ca6413def1c953effce5",
+      "bytes": 4926
+    },
+    {
+      "canonical": "assets/diagrams/singly-linked-lists-find-node-trace.excalidraw",
+      "lesson_local": "04-singly-linked-lists/06-find-node/singly-linked-lists-find-node-trace.excalidraw",
+      "sha256": "6ebf6199d183ad9581b0eefbf10c2afd8e7344fc5b90c8cb746496d5de29b843",
+      "bytes": 33681
+    },
+    {
+      "canonical": "assets/diagrams/singly-linked-lists-remove-head-trace.svg",
+      "lesson_local": "04-singly-linked-lists/08-remove-head/singly-linked-lists-remove-head-trace.svg",
+      "sha256": "76ddb91823d231ab143e86c1e5b3d7c52d5f1c75ea8e5c4af4da85cca26df897",
+      "bytes": 4994
+    },
+    {
+      "canonical": "assets/diagrams/singly-linked-lists-remove-head-trace.excalidraw",
+      "lesson_local": "04-singly-linked-lists/08-remove-head/singly-linked-lists-remove-head-trace.excalidraw",
+      "sha256": "71ff6e50fb6c669dbec89045c73d60528a904a4e7fede1d62dc30c78806ac106",
+      "bytes": 33252
+    },
+    {
+      "canonical": "assets/diagrams/singly-linked-lists-remove-tail-trace.svg",
+      "lesson_local": "04-singly-linked-lists/09-remove-tail/singly-linked-lists-remove-tail-trace.svg",
+      "sha256": "c1c832b909f2afee211818895e8fceb2c796b2e75cf690e55cba1053455e9994",
+      "bytes": 4976
+    },
+    {
+      "canonical": "assets/diagrams/singly-linked-lists-remove-tail-trace.excalidraw",
+      "lesson_local": "04-singly-linked-lists/09-remove-tail/singly-linked-lists-remove-tail-trace.excalidraw",
+      "sha256": "69dc35915a903cc5e5bff56cfbba8c9268e84393b4b568a6cd303fbc136e76cf",
+      "bytes": 33244
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-doubly-linked-node-trace.svg",
+      "lesson_local": "05-linked-list-variants/01-doubly-linked-node/linked-list-variants-doubly-linked-node-trace.svg",
+      "sha256": "2cf6cb0db52989dc9eb207e3116b98d924add3f427388abe2d78c473267f11fa",
+      "bytes": 4935
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-doubly-linked-node-trace.excalidraw",
+      "lesson_local": "05-linked-list-variants/01-doubly-linked-node/linked-list-variants-doubly-linked-node-trace.excalidraw",
+      "sha256": "eb1bbf5dd7eb3e9e754d9f9db42b166c6666e6a604b4fb4ce48db993e7862087",
+      "bytes": 34386
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-doubly-prepend-trace.svg",
+      "lesson_local": "05-linked-list-variants/02-doubly-prepend/linked-list-variants-doubly-prepend-trace.svg",
+      "sha256": "ef0373b948f2cc6d616f951b9708afcf65c309d43a463e1b3e17e368e3cab745",
+      "bytes": 5336
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-doubly-prepend-trace.excalidraw",
+      "lesson_local": "05-linked-list-variants/02-doubly-prepend/linked-list-variants-doubly-prepend-trace.excalidraw",
+      "sha256": "f3b7a950ddea7a6b8cb220f722aa4968578f6b9eb9d809e90e980d99cbb13c60",
+      "bytes": 38636
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-doubly-append-trace.svg",
+      "lesson_local": "05-linked-list-variants/03-doubly-append/linked-list-variants-doubly-append-trace.svg",
+      "sha256": "aa1bd8364d8f86d80f5e0e800530f7fd7831ea7f050a1e0c3519ca57cbb9776e",
+      "bytes": 5315
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-doubly-append-trace.excalidraw",
+      "lesson_local": "05-linked-list-variants/03-doubly-append/linked-list-variants-doubly-append-trace.excalidraw",
+      "sha256": "28511a290dd3de79838dfd54e302ffba0b7114855be7f6bc955b6cb7a0842f58",
+      "bytes": 38618
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-browser-history-trace.svg",
+      "lesson_local": "05-linked-list-variants/05-browser-history/linked-list-variants-browser-history-trace.svg",
+      "sha256": "087d7c594d032a3e5fec473306dc2c500717aa0aaa0973e2937b14a38744b1c3",
+      "bytes": 5996
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-browser-history-trace.excalidraw",
+      "lesson_local": "05-linked-list-variants/05-browser-history/linked-list-variants-browser-history-trace.excalidraw",
+      "sha256": "3e8f6ac6734aa4f1700f27fcb344a1b0af6894e082ce6122fce8c1a193c0d125",
+      "bytes": 43170
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-circular-append-trace.svg",
+      "lesson_local": "05-linked-list-variants/06-circular-append/linked-list-variants-circular-append-trace.svg",
+      "sha256": "85896ae549a07ee6d55802315af2e1039a4f9c9f512539807c35fb9d6fd470bc",
+      "bytes": 4595
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-circular-append-trace.excalidraw",
+      "lesson_local": "05-linked-list-variants/06-circular-append/linked-list-variants-circular-append-trace.excalidraw",
+      "sha256": "7344f5c7847b82ab8f372de6bd3a4f09653be7b05eb58b7ca65d8a6a57fe0c20",
+      "bytes": 31455
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-circular-remove-trace.svg",
+      "lesson_local": "05-linked-list-variants/08-circular-remove/linked-list-variants-circular-remove-trace.svg",
+      "sha256": "2a95b5141701056e6fb782aa9aa925bae2260be49b78eb57451bb1c19d182c5a",
+      "bytes": 5104
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-circular-remove-trace.excalidraw",
+      "lesson_local": "05-linked-list-variants/08-circular-remove/linked-list-variants-circular-remove-trace.excalidraw",
+      "sha256": "aaafb80df761980208395accede01e8efd5597d1cdecdb485bddf8d3961c3395",
+      "bytes": 34095
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-skip-levels-trace.svg",
+      "lesson_local": "05-linked-list-variants/09-skip-levels/linked-list-variants-skip-levels-trace.svg",
+      "sha256": "8b893977a3ab2e7d92cc9c826ac3031e1466265785424c11b32019fa3267964b",
+      "bytes": 6278
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-skip-levels-trace.excalidraw",
+      "lesson_local": "05-linked-list-variants/09-skip-levels/linked-list-variants-skip-levels-trace.excalidraw",
+      "sha256": "344b068666fd9e3e0adeedfbbe165c143e31fefda2710cf558f6b067b9734fcd",
+      "bytes": 42647
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-skip-search-trace.svg",
+      "lesson_local": "05-linked-list-variants/11-skip-search/linked-list-variants-skip-search-trace.svg",
+      "sha256": "7f995f27efe015ead3133239fa566f775b7591b9472149dc10ea90e962610fae",
+      "bytes": 6483
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-skip-search-trace.excalidraw",
+      "lesson_local": "05-linked-list-variants/11-skip-search/linked-list-variants-skip-search-trace.excalidraw",
+      "sha256": "e336abdd4e522786e5a422990f9d60fe6b3a88a329745d83b80c93da6b5a739e",
+      "bytes": 45202
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-skip-insert-trace.svg",
+      "lesson_local": "05-linked-list-variants/12-skip-insert/linked-list-variants-skip-insert-trace.svg",
+      "sha256": "03262a912b02d4cb2de282c3c3a6f163501ecfe8e62f82a7cdd96b62b9221c1e",
+      "bytes": 10919
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-skip-insert-trace.excalidraw",
+      "lesson_local": "05-linked-list-variants/12-skip-insert/linked-list-variants-skip-insert-trace.excalidraw",
+      "sha256": "5da035b2adf4ef067c01f2ecb9c07db746f0c8fee27b7c545b27844b8a96d5c3",
+      "bytes": 81001
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-skip-remove-trace.svg",
+      "lesson_local": "05-linked-list-variants/13-skip-remove/linked-list-variants-skip-remove-trace.svg",
+      "sha256": "7a429782f9643d87e4337ca2218453dcdee0ac849e3ab715abf9ceea9e2b3649",
+      "bytes": 9489
+    },
+    {
+      "canonical": "assets/diagrams/linked-list-variants-skip-remove-trace.excalidraw",
+      "lesson_local": "05-linked-list-variants/13-skip-remove/linked-list-variants-skip-remove-trace.excalidraw",
+      "sha256": "885c9d7ad70e589c1704b3b41180cb35a0651bc2b54dd6f5ad5deba3b7cd61a5",
+      "bytes": 69141
+    }
+  ],
+  "native_element_totals": {
+    "rectangle": 303,
+    "text": 687,
+    "arrow": 245
+  },
+  "final_checks": {
+    "planned_figures": 32,
+    "canonical_files": 64,
+    "lesson_local_files": 64,
+    "byte_identical_pairs": 64,
+    "source_text_parity": true,
+    "all_binding_ids_valid": true,
+    "actual_lesson_examples_executed": 32
+  },
+  "alignment_notes": [
+    "Lessons were unavailable at initial authoring, then all 32 solutions were read and illustrative inputs executed after they appeared.",
+    "Auxiliary-space diagram traces the actual extremes scan.",
+    "Recursion diagrams display product/value lanes and explicitly label tuple-return counters.",
+    "Binary search missing sentinel is None; linked removals return detached nodes; circular remove_first returns None when empty or missing.",
+    "count, sum_at, and fact are explanatory shorthand for steps_to_zero, total_from, and the factorial product lane."
+  ]
+}

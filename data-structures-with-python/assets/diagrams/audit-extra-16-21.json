@@ -1,0 +1,2340 @@
+{
+  "scope": "All 35 additional plan entries in modules 16–21; plan has no module 21 entries.",
+  "libraryVersion": "0.18.1",
+  "browser": "156.0.8078.4",
+  "externalRequestsBlocked": true,
+  "canonicalSvgCount": 35,
+  "canonicalExcalidrawCount": 35,
+  "lessonLocalSvgCount": 35,
+  "lessonLocalExcalidrawCount": 35,
+  "totalArtifactCount": 140,
+  "evidenceDirectory": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-diagrams-extra-16-21/evidence",
+  "errors": [],
+  "geometryFailures": [],
+  "visualReview": "All 35 canonical and 35 native-export figures visually inspected at 500px using 18 contact sheets. Corrected undirected-edge legends and reinspected both affected sheets. Mounted editor screenshot inspected; import/edit/export/reimport/remount exercised for every figure. No clipping, text overlap, or connector crossings. Final actual-solution hashes rechecked: 35 unchanged.",
+  "limitations": [
+    "Native Arial text has no bold weight; source SVG is retained unchanged.",
+    "Cells intentionally smaller than general architecture-card guidelines: short numeric/node labels remain at 16px at native 500px SVG width.",
+    "Non-elbow arrows support native endpoint bindings; complex bends may need manual adjustment after large moves."
+  ],
+  "diagrams": [
+    {
+      "file": "bits-and-sets-test-a-bit-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 34,
+      "text": 21,
+      "rectangles": 13,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 21,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "bits-and-sets-test-a-bit-trace-original.png",
+        "editor": "bits-and-sets-test-a-bit-trace-editor.png",
+        "export": "bits-and-sets-test-a-bit-trace-export.svg",
+        "editedExport": "bits-and-sets-test-a-bit-trace-edited.svg",
+        "editedReimport": "bits-and-sets-test-a-bit-trace-edited.excalidraw"
+      },
+      "local_svg": "16-bits-and-sets/01-test-a-bit/bits-and-sets-test-a-bit-trace.svg",
+      "local_editable": "16-bits-and-sets/01-test-a-bit/bits-and-sets-test-a-bit-trace.excalidraw"
+    },
+    {
+      "file": "bits-and-sets-set-clear-toggle-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 56,
+      "text": 31,
+      "rectangles": 25,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 31,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "bits-and-sets-set-clear-toggle-trace-original.png",
+        "editor": "bits-and-sets-set-clear-toggle-trace-editor.png",
+        "export": "bits-and-sets-set-clear-toggle-trace-export.svg",
+        "editedExport": "bits-and-sets-set-clear-toggle-trace-edited.svg",
+        "editedReimport": "bits-and-sets-set-clear-toggle-trace-edited.excalidraw"
+      },
+      "local_svg": "16-bits-and-sets/02-set-clear-toggle/bits-and-sets-set-clear-toggle-trace.svg",
+      "local_editable": "16-bits-and-sets/02-set-clear-toggle/bits-and-sets-set-clear-toggle-trace.excalidraw"
+    },
+    {
+      "file": "bits-and-sets-bit-count-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 69,
+      "text": 38,
+      "rectangles": 31,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 38,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "bits-and-sets-bit-count-trace-original.png",
+        "editor": "bits-and-sets-bit-count-trace-editor.png",
+        "export": "bits-and-sets-bit-count-trace-export.svg",
+        "editedExport": "bits-and-sets-bit-count-trace-edited.svg",
+        "editedReimport": "bits-and-sets-bit-count-trace-edited.excalidraw"
+      },
+      "local_svg": "16-bits-and-sets/03-bit-count/bits-and-sets-bit-count-trace.svg",
+      "local_editable": "16-bits-and-sets/03-bit-count/bits-and-sets-bit-count-trace.excalidraw"
+    },
+    {
+      "file": "bits-and-sets-power-of-two-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 40,
+      "text": 24,
+      "rectangles": 16,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 24,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "bits-and-sets-power-of-two-trace-original.png",
+        "editor": "bits-and-sets-power-of-two-trace-editor.png",
+        "export": "bits-and-sets-power-of-two-trace-export.svg",
+        "editedExport": "bits-and-sets-power-of-two-trace-edited.svg",
+        "editedReimport": "bits-and-sets-power-of-two-trace-edited.excalidraw"
+      },
+      "local_svg": "16-bits-and-sets/04-power-of-two/bits-and-sets-power-of-two-trace.svg",
+      "local_editable": "16-bits-and-sets/04-power-of-two/bits-and-sets-power-of-two-trace.excalidraw"
+    },
+    {
+      "file": "bits-and-sets-set-algebra-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 20,
+      "text": 14,
+      "rectangles": 6,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 14,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "bits-and-sets-set-algebra-trace-original.png",
+        "editor": "bits-and-sets-set-algebra-trace-editor.png",
+        "export": "bits-and-sets-set-algebra-trace-export.svg",
+        "editedExport": "bits-and-sets-set-algebra-trace-edited.svg",
+        "editedReimport": "bits-and-sets-set-algebra-trace-edited.excalidraw"
+      },
+      "local_svg": "16-bits-and-sets/06-set-algebra/bits-and-sets-set-algebra-trace.svg",
+      "local_editable": "16-bits-and-sets/06-set-algebra/bits-and-sets-set-algebra-trace.excalidraw"
+    },
+    {
+      "file": "bits-and-sets-permission-flags-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 28,
+      "text": 18,
+      "rectangles": 10,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 18,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "bits-and-sets-permission-flags-trace-original.png",
+        "editor": "bits-and-sets-permission-flags-trace-editor.png",
+        "export": "bits-and-sets-permission-flags-trace-export.svg",
+        "editedExport": "bits-and-sets-permission-flags-trace-edited.svg",
+        "editedReimport": "bits-and-sets-permission-flags-trace-edited.excalidraw"
+      },
+      "local_svg": "16-bits-and-sets/08-permission-flags/bits-and-sets-permission-flags-trace.svg",
+      "local_editable": "16-bits-and-sets/08-permission-flags/bits-and-sets-permission-flags-trace.excalidraw"
+    },
+    {
+      "file": "tries-trie-node-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 15,
+      "text": 10,
+      "rectangles": 4,
+      "arrows": 1,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 2,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 10,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "tries-trie-node-trace-original.png",
+        "editor": "tries-trie-node-trace-editor.png",
+        "export": "tries-trie-node-trace-export.svg",
+        "editedExport": "tries-trie-node-trace-edited.svg",
+        "editedReimport": "tries-trie-node-trace-edited.excalidraw"
+      },
+      "local_svg": "17-tries/01-trie-node/tries-trie-node-trace.svg",
+      "local_editable": "17-tries/01-trie-node/tries-trie-node-trace.excalidraw"
+    },
+    {
+      "file": "tries-insert-word-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 33,
+      "text": 16,
+      "rectangles": 10,
+      "arrows": 7,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 14,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 16,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "tries-insert-word-trace-original.png",
+        "editor": "tries-insert-word-trace-editor.png",
+        "export": "tries-insert-word-trace-export.svg",
+        "editedExport": "tries-insert-word-trace-edited.svg",
+        "editedReimport": "tries-insert-word-trace-edited.excalidraw"
+      },
+      "local_svg": "17-tries/02-insert-word/tries-insert-word-trace.svg",
+      "local_editable": "17-tries/02-insert-word/tries-insert-word-trace.excalidraw"
+    },
+    {
+      "file": "tries-contains-word-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 21,
+      "text": 13,
+      "rectangles": 5,
+      "arrows": 3,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 6,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 13,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "tries-contains-word-trace-original.png",
+        "editor": "tries-contains-word-trace-editor.png",
+        "export": "tries-contains-word-trace-export.svg",
+        "editedExport": "tries-contains-word-trace-edited.svg",
+        "editedReimport": "tries-contains-word-trace-edited.excalidraw"
+      },
+      "local_svg": "17-tries/03-contains-word/tries-contains-word-trace.svg",
+      "local_editable": "17-tries/03-contains-word/tries-contains-word-trace.excalidraw"
+    },
+    {
+      "file": "tries-starts-with-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 21,
+      "text": 13,
+      "rectangles": 5,
+      "arrows": 3,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 6,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 13,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "tries-starts-with-trace-original.png",
+        "editor": "tries-starts-with-trace-editor.png",
+        "export": "tries-starts-with-trace-export.svg",
+        "editedExport": "tries-starts-with-trace-edited.svg",
+        "editedReimport": "tries-starts-with-trace-edited.excalidraw"
+      },
+      "local_svg": "17-tries/04-starts-with/tries-starts-with-trace.svg",
+      "local_editable": "17-tries/04-starts-with/tries-starts-with-trace.excalidraw"
+    },
+    {
+      "file": "tries-collect-prefix-words-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 24,
+      "text": 14,
+      "rectangles": 6,
+      "arrows": 4,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 8,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 14,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "tries-collect-prefix-words-trace-original.png",
+        "editor": "tries-collect-prefix-words-trace-editor.png",
+        "export": "tries-collect-prefix-words-trace-export.svg",
+        "editedExport": "tries-collect-prefix-words-trace-edited.svg",
+        "editedReimport": "tries-collect-prefix-words-trace-edited.excalidraw"
+      },
+      "local_svg": "17-tries/05-collect-prefix-words/tries-collect-prefix-words-trace.svg",
+      "local_editable": "17-tries/05-collect-prefix-words/tries-collect-prefix-words-trace.excalidraw"
+    },
+    {
+      "file": "tries-prefix-counts-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 24,
+      "text": 14,
+      "rectangles": 6,
+      "arrows": 4,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 8,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 14,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "tries-prefix-counts-trace-original.png",
+        "editor": "tries-prefix-counts-trace-editor.png",
+        "export": "tries-prefix-counts-trace-export.svg",
+        "editedExport": "tries-prefix-counts-trace-edited.svg",
+        "editedReimport": "tries-prefix-counts-trace-edited.excalidraw"
+      },
+      "local_svg": "17-tries/07-prefix-counts/tries-prefix-counts-trace.svg",
+      "local_editable": "17-tries/07-prefix-counts/tries-prefix-counts-trace.excalidraw"
+    },
+    {
+      "file": "tries-autocomplete-project-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 24,
+      "text": 14,
+      "rectangles": 6,
+      "arrows": 4,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 8,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 14,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "tries-autocomplete-project-trace-original.png",
+        "editor": "tries-autocomplete-project-trace-editor.png",
+        "export": "tries-autocomplete-project-trace-export.svg",
+        "editedExport": "tries-autocomplete-project-trace-edited.svg",
+        "editedReimport": "tries-autocomplete-project-trace-edited.excalidraw"
+      },
+      "local_svg": "17-tries/08-autocomplete-project/tries-autocomplete-project-trace.svg",
+      "local_editable": "17-tries/08-autocomplete-project/tries-autocomplete-project-trace.excalidraw"
+    },
+    {
+      "file": "range-structures-fenwick-lowbit-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 37,
+      "text": 21,
+      "rectangles": 14,
+      "arrows": 2,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 4,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 21,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "range-structures-fenwick-lowbit-trace-original.png",
+        "editor": "range-structures-fenwick-lowbit-trace-editor.png",
+        "export": "range-structures-fenwick-lowbit-trace-export.svg",
+        "editedExport": "range-structures-fenwick-lowbit-trace-edited.svg",
+        "editedReimport": "range-structures-fenwick-lowbit-trace-edited.excalidraw"
+      },
+      "local_svg": "18-range-structures/01-fenwick-lowbit/range-structures-fenwick-lowbit-trace.svg",
+      "local_editable": "18-range-structures/01-fenwick-lowbit/range-structures-fenwick-lowbit-trace.excalidraw"
+    },
+    {
+      "file": "range-structures-fenwick-state-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 20,
+      "text": 14,
+      "rectangles": 6,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 14,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "range-structures-fenwick-state-trace-original.png",
+        "editor": "range-structures-fenwick-state-trace-editor.png",
+        "export": "range-structures-fenwick-state-trace-export.svg",
+        "editedExport": "range-structures-fenwick-state-trace-edited.svg",
+        "editedReimport": "range-structures-fenwick-state-trace-edited.excalidraw"
+      },
+      "local_svg": "18-range-structures/02-fenwick-state/range-structures-fenwick-state-trace.svg",
+      "local_editable": "18-range-structures/02-fenwick-state/range-structures-fenwick-state-trace.excalidraw"
+    },
+    {
+      "file": "range-structures-fenwick-add-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 36,
+      "text": 20,
+      "rectangles": 14,
+      "arrows": 2,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 4,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 20,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "range-structures-fenwick-add-trace-original.png",
+        "editor": "range-structures-fenwick-add-trace-editor.png",
+        "export": "range-structures-fenwick-add-trace-export.svg",
+        "editedExport": "range-structures-fenwick-add-trace-edited.svg",
+        "editedReimport": "range-structures-fenwick-add-trace-edited.excalidraw"
+      },
+      "local_svg": "18-range-structures/03-fenwick-add/range-structures-fenwick-add-trace.svg",
+      "local_editable": "18-range-structures/03-fenwick-add/range-structures-fenwick-add-trace.excalidraw"
+    },
+    {
+      "file": "range-structures-fenwick-range-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 28,
+      "text": 18,
+      "rectangles": 10,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 18,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "range-structures-fenwick-range-trace-original.png",
+        "editor": "range-structures-fenwick-range-trace-editor.png",
+        "export": "range-structures-fenwick-range-trace-export.svg",
+        "editedExport": "range-structures-fenwick-range-trace-edited.svg",
+        "editedReimport": "range-structures-fenwick-range-trace-edited.excalidraw"
+      },
+      "local_svg": "18-range-structures/05-fenwick-range/range-structures-fenwick-range-trace.svg",
+      "local_editable": "18-range-structures/05-fenwick-range/range-structures-fenwick-range-trace.excalidraw"
+    },
+    {
+      "file": "range-structures-fenwick-build-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 29,
+      "text": 19,
+      "rectangles": 10,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 19,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "range-structures-fenwick-build-trace-original.png",
+        "editor": "range-structures-fenwick-build-trace-editor.png",
+        "export": "range-structures-fenwick-build-trace-export.svg",
+        "editedExport": "range-structures-fenwick-build-trace-edited.svg",
+        "editedReimport": "range-structures-fenwick-build-trace-edited.excalidraw"
+      },
+      "local_svg": "18-range-structures/06-fenwick-build/range-structures-fenwick-build-trace.svg",
+      "local_editable": "18-range-structures/06-fenwick-build/range-structures-fenwick-build-trace.excalidraw"
+    },
+    {
+      "file": "range-structures-segment-layout-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 33,
+      "text": 19,
+      "rectangles": 8,
+      "arrows": 6,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 12,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 19,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "range-structures-segment-layout-trace-original.png",
+        "editor": "range-structures-segment-layout-trace-editor.png",
+        "export": "range-structures-segment-layout-trace-export.svg",
+        "editedExport": "range-structures-segment-layout-trace-edited.svg",
+        "editedReimport": "range-structures-segment-layout-trace-edited.excalidraw"
+      },
+      "local_svg": "18-range-structures/07-segment-layout/range-structures-segment-layout-trace.svg",
+      "local_editable": "18-range-structures/07-segment-layout/range-structures-segment-layout-trace.excalidraw"
+    },
+    {
+      "file": "range-structures-segment-build-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 33,
+      "text": 19,
+      "rectangles": 8,
+      "arrows": 6,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 12,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 19,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "range-structures-segment-build-trace-original.png",
+        "editor": "range-structures-segment-build-trace-editor.png",
+        "export": "range-structures-segment-build-trace-export.svg",
+        "editedExport": "range-structures-segment-build-trace-edited.svg",
+        "editedReimport": "range-structures-segment-build-trace-edited.excalidraw"
+      },
+      "local_svg": "18-range-structures/08-segment-build/range-structures-segment-build-trace.svg",
+      "local_editable": "18-range-structures/08-segment-build/range-structures-segment-build-trace.excalidraw"
+    },
+    {
+      "file": "range-structures-segment-update-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 33,
+      "text": 19,
+      "rectangles": 8,
+      "arrows": 6,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 12,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 19,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "range-structures-segment-update-trace-original.png",
+        "editor": "range-structures-segment-update-trace-editor.png",
+        "export": "range-structures-segment-update-trace-export.svg",
+        "editedExport": "range-structures-segment-update-trace-edited.svg",
+        "editedReimport": "range-structures-segment-update-trace-edited.excalidraw"
+      },
+      "local_svg": "18-range-structures/10-segment-update/range-structures-segment-update-trace.svg",
+      "local_editable": "18-range-structures/10-segment-update/range-structures-segment-update-trace.excalidraw"
+    },
+    {
+      "file": "range-structures-range-minimum-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 33,
+      "text": 19,
+      "rectangles": 8,
+      "arrows": 6,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 12,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 19,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "range-structures-range-minimum-trace-original.png",
+        "editor": "range-structures-range-minimum-trace-editor.png",
+        "export": "range-structures-range-minimum-trace-export.svg",
+        "editedExport": "range-structures-range-minimum-trace-edited.svg",
+        "editedReimport": "range-structures-range-minimum-trace-edited.excalidraw"
+      },
+      "local_svg": "18-range-structures/11-range-minimum/range-structures-range-minimum-trace.svg",
+      "local_editable": "18-range-structures/11-range-minimum/range-structures-range-minimum-trace.excalidraw"
+    },
+    {
+      "file": "disjoint-sets-dsu-state-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 25,
+      "text": 16,
+      "rectangles": 9,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 16,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "disjoint-sets-dsu-state-trace-original.png",
+        "editor": "disjoint-sets-dsu-state-trace-editor.png",
+        "export": "disjoint-sets-dsu-state-trace-export.svg",
+        "editedExport": "disjoint-sets-dsu-state-trace-edited.svg",
+        "editedReimport": "disjoint-sets-dsu-state-trace-edited.excalidraw"
+      },
+      "local_svg": "19-disjoint-sets/01-dsu-state/disjoint-sets-dsu-state-trace.svg",
+      "local_editable": "19-disjoint-sets/01-dsu-state/disjoint-sets-dsu-state-trace.excalidraw"
+    },
+    {
+      "file": "disjoint-sets-find-root-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 25,
+      "text": 15,
+      "rectangles": 8,
+      "arrows": 2,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 4,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 15,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "disjoint-sets-find-root-trace-original.png",
+        "editor": "disjoint-sets-find-root-trace-editor.png",
+        "export": "disjoint-sets-find-root-trace-export.svg",
+        "editedExport": "disjoint-sets-find-root-trace-edited.svg",
+        "editedReimport": "disjoint-sets-find-root-trace-edited.excalidraw"
+      },
+      "local_svg": "19-disjoint-sets/02-find-root/disjoint-sets-find-root-trace.svg",
+      "local_editable": "19-disjoint-sets/02-find-root/disjoint-sets-find-root-trace.excalidraw"
+    },
+    {
+      "file": "disjoint-sets-union-components-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 33,
+      "text": 20,
+      "rectangles": 13,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 20,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "disjoint-sets-union-components-trace-original.png",
+        "editor": "disjoint-sets-union-components-trace-editor.png",
+        "export": "disjoint-sets-union-components-trace-export.svg",
+        "editedExport": "disjoint-sets-union-components-trace-edited.svg",
+        "editedReimport": "disjoint-sets-union-components-trace-edited.excalidraw"
+      },
+      "local_svg": "19-disjoint-sets/03-union-components/disjoint-sets-union-components-trace.svg",
+      "local_editable": "19-disjoint-sets/03-union-components/disjoint-sets-union-components-trace.excalidraw"
+    },
+    {
+      "file": "disjoint-sets-union-by-size-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 30,
+      "text": 19,
+      "rectangles": 11,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 19,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "disjoint-sets-union-by-size-trace-original.png",
+        "editor": "disjoint-sets-union-by-size-trace-editor.png",
+        "export": "disjoint-sets-union-by-size-trace-export.svg",
+        "editedExport": "disjoint-sets-union-by-size-trace-edited.svg",
+        "editedReimport": "disjoint-sets-union-by-size-trace-edited.excalidraw"
+      },
+      "local_svg": "19-disjoint-sets/05-union-by-size/disjoint-sets-union-by-size-trace.svg",
+      "local_editable": "19-disjoint-sets/05-union-by-size/disjoint-sets-union-by-size-trace.excalidraw"
+    },
+    {
+      "file": "disjoint-sets-detect-redundant-edge-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 19,
+      "text": 12,
+      "rectangles": 4,
+      "arrows": 3,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 6,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 12,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "disjoint-sets-detect-redundant-edge-trace-original.png",
+        "editor": "disjoint-sets-detect-redundant-edge-trace-editor.png",
+        "export": "disjoint-sets-detect-redundant-edge-trace-export.svg",
+        "editedExport": "disjoint-sets-detect-redundant-edge-trace-edited.svg",
+        "editedReimport": "disjoint-sets-detect-redundant-edge-trace-edited.excalidraw"
+      },
+      "local_svg": "19-disjoint-sets/07-detect-redundant-edge/disjoint-sets-detect-redundant-edge-trace.svg",
+      "local_editable": "19-disjoint-sets/07-detect-redundant-edge/disjoint-sets-detect-redundant-edge-trace.excalidraw"
+    },
+    {
+      "file": "disjoint-sets-kruskal-forest-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 25,
+      "text": 16,
+      "rectangles": 6,
+      "arrows": 3,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 6,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 16,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "disjoint-sets-kruskal-forest-trace-original.png",
+        "editor": "disjoint-sets-kruskal-forest-trace-editor.png",
+        "export": "disjoint-sets-kruskal-forest-trace-export.svg",
+        "editedExport": "disjoint-sets-kruskal-forest-trace-edited.svg",
+        "editedReimport": "disjoint-sets-kruskal-forest-trace-edited.excalidraw"
+      },
+      "local_svg": "19-disjoint-sets/08-kruskal-forest/disjoint-sets-kruskal-forest-trace.svg",
+      "local_editable": "19-disjoint-sets/08-kruskal-forest/disjoint-sets-kruskal-forest-trace.excalidraw"
+    },
+    {
+      "file": "combinatorial-search-cartesian-product-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 17,
+      "text": 12,
+      "rectangles": 5,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 12,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "combinatorial-search-cartesian-product-trace-original.png",
+        "editor": "combinatorial-search-cartesian-product-trace-editor.png",
+        "export": "combinatorial-search-cartesian-product-trace-export.svg",
+        "editedExport": "combinatorial-search-cartesian-product-trace-edited.svg",
+        "editedReimport": "combinatorial-search-cartesian-product-trace-edited.excalidraw"
+      },
+      "local_svg": "20-combinatorial-search/01-cartesian-product/combinatorial-search-cartesian-product-trace.svg",
+      "local_editable": "20-combinatorial-search/01-cartesian-product/combinatorial-search-cartesian-product-trace.excalidraw"
+    },
+    {
+      "file": "combinatorial-search-power-set-iteration-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 19,
+      "text": 13,
+      "rectangles": 6,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 13,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "combinatorial-search-power-set-iteration-trace-original.png",
+        "editor": "combinatorial-search-power-set-iteration-trace-editor.png",
+        "export": "combinatorial-search-power-set-iteration-trace-export.svg",
+        "editedExport": "combinatorial-search-power-set-iteration-trace-edited.svg",
+        "editedReimport": "combinatorial-search-power-set-iteration-trace-edited.excalidraw"
+      },
+      "local_svg": "20-combinatorial-search/02-power-set-iteration/combinatorial-search-power-set-iteration-trace.svg",
+      "local_editable": "20-combinatorial-search/02-power-set-iteration/combinatorial-search-power-set-iteration-trace.excalidraw"
+    },
+    {
+      "file": "combinatorial-search-power-set-bits-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 25,
+      "text": 12,
+      "rectangles": 9,
+      "arrows": 4,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 8,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 12,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "combinatorial-search-power-set-bits-trace-original.png",
+        "editor": "combinatorial-search-power-set-bits-trace-editor.png",
+        "export": "combinatorial-search-power-set-bits-trace-export.svg",
+        "editedExport": "combinatorial-search-power-set-bits-trace-edited.svg",
+        "editedReimport": "combinatorial-search-power-set-bits-trace-edited.excalidraw"
+      },
+      "local_svg": "20-combinatorial-search/03-power-set-bits/combinatorial-search-power-set-bits-trace.svg",
+      "local_editable": "20-combinatorial-search/03-power-set-bits/combinatorial-search-power-set-bits-trace.excalidraw"
+    },
+    {
+      "file": "combinatorial-search-combinations-without-replacement-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 26,
+      "text": 14,
+      "rectangles": 7,
+      "arrows": 5,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 10,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 14,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "combinatorial-search-combinations-without-replacement-trace-original.png",
+        "editor": "combinatorial-search-combinations-without-replacement-trace-editor.png",
+        "export": "combinatorial-search-combinations-without-replacement-trace-export.svg",
+        "editedExport": "combinatorial-search-combinations-without-replacement-trace-edited.svg",
+        "editedReimport": "combinatorial-search-combinations-without-replacement-trace-edited.excalidraw"
+      },
+      "local_svg": "20-combinatorial-search/04-combinations-without-replacement/combinatorial-search-combinations-without-replacement-trace.svg",
+      "local_editable": "20-combinatorial-search/04-combinations-without-replacement/combinatorial-search-combinations-without-replacement-trace.excalidraw"
+    },
+    {
+      "file": "combinatorial-search-combinations-with-replacement-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 26,
+      "text": 14,
+      "rectangles": 7,
+      "arrows": 5,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 10,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 14,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "combinatorial-search-combinations-with-replacement-trace-original.png",
+        "editor": "combinatorial-search-combinations-with-replacement-trace-editor.png",
+        "export": "combinatorial-search-combinations-with-replacement-trace-export.svg",
+        "editedExport": "combinatorial-search-combinations-with-replacement-trace-edited.svg",
+        "editedReimport": "combinatorial-search-combinations-with-replacement-trace-edited.excalidraw"
+      },
+      "local_svg": "20-combinatorial-search/05-combinations-with-replacement/combinatorial-search-combinations-with-replacement-trace.svg",
+      "local_editable": "20-combinatorial-search/05-combinations-with-replacement/combinatorial-search-combinations-with-replacement-trace.excalidraw"
+    },
+    {
+      "file": "combinatorial-search-permutations-without-replacement-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 23,
+      "text": 13,
+      "rectangles": 6,
+      "arrows": 4,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 8,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 13,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "combinatorial-search-permutations-without-replacement-trace-original.png",
+        "editor": "combinatorial-search-permutations-without-replacement-trace-editor.png",
+        "export": "combinatorial-search-permutations-without-replacement-trace-export.svg",
+        "editedExport": "combinatorial-search-permutations-without-replacement-trace-edited.svg",
+        "editedReimport": "combinatorial-search-permutations-without-replacement-trace-edited.excalidraw"
+      },
+      "local_svg": "20-combinatorial-search/06-permutations-without-replacement/combinatorial-search-permutations-without-replacement-trace.svg",
+      "local_editable": "20-combinatorial-search/06-permutations-without-replacement/combinatorial-search-permutations-without-replacement-trace.excalidraw"
+    },
+    {
+      "file": "combinatorial-search-words-with-repetition-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 29,
+      "text": 15,
+      "rectangles": 8,
+      "arrows": 6,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 12,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 15,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "combinatorial-search-words-with-repetition-trace-original.png",
+        "editor": "combinatorial-search-words-with-repetition-trace-editor.png",
+        "export": "combinatorial-search-words-with-repetition-trace-export.svg",
+        "editedExport": "combinatorial-search-words-with-repetition-trace-edited.svg",
+        "editedReimport": "combinatorial-search-words-with-repetition-trace-edited.excalidraw"
+      },
+      "local_svg": "20-combinatorial-search/07-words-with-repetition/combinatorial-search-words-with-repetition-trace.svg",
+      "local_editable": "20-combinatorial-search/07-words-with-repetition/combinatorial-search-words-with-repetition-trace.excalidraw"
+    }
+  ],
+  "solutionChecks": [
+    {
+      "lesson": "16-bits-and-sets/01-test-a-bit",
+      "solution_sha256": "cddec6d02edc35c8127272c3b4b5414c018b3b449f777ba463f84ca465a05131",
+      "actual_solution_executed": true,
+      "trace": {
+        "results": [
+          1,
+          0,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "lesson": "16-bits-and-sets/02-set-clear-toggle",
+      "solution_sha256": "ecfcec44b43042b8e4c0ac29767a5b2704e8a3bec92c3b5769a1143e993d5329",
+      "actual_solution_executed": true,
+      "trace": {
+        "returns": [
+          47,
+          45,
+          47
+        ]
+      }
+    },
+    {
+      "lesson": "16-bits-and-sets/03-bit-count",
+      "solution_sha256": "12af9b53c071962442ca4f12489037ced231785f0015c8366b7bd1a8c86ff2cd",
+      "actual_solution_executed": true,
+      "trace": {
+        "states": [
+          45,
+          44,
+          40,
+          32,
+          0
+        ],
+        "return": 4
+      }
+    },
+    {
+      "lesson": "16-bits-and-sets/04-power-of-two",
+      "solution_sha256": "6d402d5dfee69a583d24f24eb2958222b7d272228f59c0d259a9fc8544a7bf84",
+      "actual_solution_executed": true,
+      "trace": {
+        "inputs": [
+          16,
+          20,
+          0,
+          -8,
+          1
+        ],
+        "returns": [
+          true,
+          false,
+          false,
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "lesson": "16-bits-and-sets/06-set-algebra",
+      "solution_sha256": "ab9ab03c7b9c63aa07e78a9dc9aa8a14ee6f3f458d34a81053c00d239c36343a",
+      "actual_solution_executed": true,
+      "trace": {
+        "either": [
+          3,
+          7,
+          11
+        ],
+        "both": [
+          7
+        ],
+        "left_only": [
+          3
+        ],
+        "exclusive": [
+          3,
+          11
+        ]
+      }
+    },
+    {
+      "lesson": "16-bits-and-sets/08-permission-flags",
+      "solution_sha256": "e83635949ba1c1727194503e372013a1e5ec17ec3f0b2dbcc7a6381a55f0ff2a",
+      "actual_solution_executed": true,
+      "trace": {
+        "held": 3,
+        "requests": [
+          2,
+          6,
+          0
+        ],
+        "returns": [
+          true,
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "lesson": "17-tries/01-trie-node",
+      "solution_sha256": "a8775ad2ed36fde133d32902e6142af624da154e92643db247b3bc05f2e749f8",
+      "actual_solution_executed": true,
+      "trace": {
+        "A": {
+          "terminal": false,
+          "children": {
+            "b": {
+              "terminal": false,
+              "children": {}
+            }
+          }
+        },
+        "B": {
+          "terminal": false,
+          "children": {}
+        }
+      }
+    },
+    {
+      "lesson": "17-tries/02-insert-word",
+      "solution_sha256": "444ab06c44741c6824d3f7fc141e80b3e0df985aaba8eb1485a51456ef6bfa99",
+      "actual_solution_executed": true,
+      "trace": {
+        "before": {
+          "terminal": false,
+          "children": {
+            "b": {
+              "terminal": false,
+              "children": {
+                "e": {
+                  "terminal": false,
+                  "children": {
+                    "e": {
+                      "terminal": true,
+                      "children": {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "after": {
+          "terminal": true,
+          "children": {
+            "b": {
+              "terminal": false,
+              "children": {
+                "e": {
+                  "terminal": false,
+                  "children": {
+                    "e": {
+                      "terminal": true,
+                      "children": {}
+                    },
+                    "t": {
+                      "terminal": true,
+                      "children": {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "return": null
+      }
+    },
+    {
+      "lesson": "17-tries/03-contains-word",
+      "solution_sha256": "99283dd00f9f35dde0f8ecf0de2a3db34a8d8f5d2fe83ce54a9645adc035f156",
+      "actual_solution_executed": true,
+      "trace": {
+        "queries": [
+          "be",
+          "bee",
+          "bo",
+          ""
+        ],
+        "returns": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "unchanged": true
+      }
+    },
+    {
+      "lesson": "17-tries/04-starts-with",
+      "solution_sha256": "8a0a8e04e22c7bea47259f4e5b683a12dc7d6a3884950ab566f24cde40f16eca",
+      "actual_solution_executed": true,
+      "trace": {
+        "queries": [
+          "be",
+          "bee",
+          "bo",
+          ""
+        ],
+        "returns": [
+          true,
+          true,
+          false,
+          true
+        ],
+        "unchanged": true
+      }
+    },
+    {
+      "lesson": "17-tries/05-collect-prefix-words",
+      "solution_sha256": "3642d9a9731851113b35ddffd52e1fa0e426605f8be2b075009478068ccc9f13",
+      "actual_solution_executed": true,
+      "trace": {
+        "return": [
+          "be",
+          "bee",
+          "bet"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "lesson": "17-tries/07-prefix-counts",
+      "solution_sha256": "cd5901fb246e195ae77b5b571359abae19ffdbe5a5d125231f08187cf8bae40b",
+      "actual_solution_executed": true,
+      "trace": {
+        "count": 3,
+        "empty": 3
+      }
+    },
+    {
+      "lesson": "17-tries/08-autocomplete-project",
+      "solution_sha256": "2d7a799c10441278d85f8e732948a0430a9ee53c0bdf24c7e6ef1bbd83af6d34",
+      "actual_solution_executed": true,
+      "trace": {
+        "suggest": [
+          3,
+          [
+            "be",
+            "bee"
+          ]
+        ],
+        "delete": true,
+        "after": {
+          "terminal": false,
+          "children": {
+            "b": {
+              "terminal": false,
+              "children": {
+                "e": {
+                  "terminal": true,
+                  "children": {
+                    "t": {
+                      "terminal": true,
+                      "children": {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "lesson": "18-range-structures/01-fenwick-lowbit",
+      "solution_sha256": "03c50b26214639433a8c4f559ea77601ed9668acd611867aaaac8103a83b5f5b",
+      "actual_solution_executed": true,
+      "trace": {
+        "returns": [
+          4,
+          8,
+          0
+        ]
+      }
+    },
+    {
+      "lesson": "18-range-structures/02-fenwick-state",
+      "solution_sha256": "f074015e256b7af75560646d2bb1b9a9d99de57e98f35a65e68c402b4357e56b",
+      "actual_solution_executed": true,
+      "trace": {
+        "tree": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "n": 4
+      }
+    },
+    {
+      "lesson": "18-range-structures/03-fenwick-add",
+      "solution_sha256": "dbfd3b3222f47ff42ce3d61c49aaf3c4fdaea67c12b1e071c4b543fdcd1677e2",
+      "actual_solution_executed": true,
+      "trace": {
+        "before": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "after": [
+          0,
+          0,
+          0,
+          7,
+          7
+        ],
+        "return": null
+      }
+    },
+    {
+      "lesson": "18-range-structures/05-fenwick-range",
+      "solution_sha256": "5e8fa8b3b9092de7a7b474116ab9ebd337e750aee91ff4fe7fc12fc72446ae06",
+      "actual_solution_executed": true,
+      "trace": {
+        "return": 5,
+        "tree": [
+          0,
+          6,
+          3,
+          8,
+          13
+        ]
+      }
+    },
+    {
+      "lesson": "18-range-structures/06-fenwick-build",
+      "solution_sha256": "70bad15314576d8458137d7046a8836a31f21f3aa32f7c0d5075b7fcaf4fd750",
+      "actual_solution_executed": true,
+      "trace": {
+        "tree": [
+          0,
+          6,
+          3,
+          8,
+          13
+        ],
+        "n": 4
+      }
+    },
+    {
+      "lesson": "18-range-structures/07-segment-layout",
+      "solution_sha256": "699049955729fc2a64111f9274114cb3fd322af52378f854a0ea77ea38e62047",
+      "actual_solution_executed": true,
+      "trace": {
+        "tree": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          -3,
+          8,
+          0
+        ],
+        "n": 3,
+        "size": 4
+      }
+    },
+    {
+      "lesson": "18-range-structures/08-segment-build",
+      "solution_sha256": "ec50f8e7f008f33b192966ee7994cc1bdd430c0093a3b2bba046e05b893e9cd3",
+      "actual_solution_executed": true,
+      "trace": {
+        "tree": [
+          0,
+          11,
+          3,
+          8,
+          6,
+          -3,
+          8,
+          0
+        ],
+        "n": 3,
+        "size": 4
+      }
+    },
+    {
+      "lesson": "18-range-structures/10-segment-update",
+      "solution_sha256": "69e236e6154323e5dfa605ccc81e2b4fb2cc76b506eba63b47970d833d51a574",
+      "actual_solution_executed": true,
+      "trace": {
+        "before": [
+          0,
+          11,
+          3,
+          8,
+          6,
+          -3,
+          8,
+          0
+        ],
+        "after": [
+          0,
+          19,
+          11,
+          8,
+          6,
+          5,
+          8,
+          0
+        ],
+        "return": null
+      }
+    },
+    {
+      "lesson": "18-range-structures/11-range-minimum",
+      "solution_sha256": "fce47da33c39ce840bae5c03dedc31d5fb08c38e9df223a968e4b47a117f06a3",
+      "actual_solution_executed": true,
+      "trace": {
+        "tree": [
+          "infinity",
+          -3,
+          -3,
+          8,
+          6,
+          -3,
+          8,
+          "infinity"
+        ],
+        "query": -3,
+        "empty": "infinity"
+      }
+    },
+    {
+      "lesson": "19-disjoint-sets/01-dsu-state",
+      "solution_sha256": "3d1088718d675ec734be16cd8cd38a52ad83f2aef782859c5b71a23d5d24eb05",
+      "actual_solution_executed": true,
+      "trace": {
+        "parent": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "size": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "lesson": "19-disjoint-sets/02-find-root",
+      "solution_sha256": "6c886e236da909b90fcd491d03faecb7bd04f0710c9a794f762e42621f8cd147",
+      "actual_solution_executed": true,
+      "trace": {
+        "parent": [
+          0,
+          2,
+          3,
+          3
+        ],
+        "return": 3,
+        "unchanged": true
+      }
+    },
+    {
+      "lesson": "19-disjoint-sets/03-union-components",
+      "solution_sha256": "3e716749b217a436ae9460a3ea236395ae77aee83cb5efdee7e1f67fe788e533",
+      "actual_solution_executed": true,
+      "trace": {
+        "parent": [
+          0,
+          3,
+          2,
+          3
+        ],
+        "size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "returns": [
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "lesson": "19-disjoint-sets/05-union-by-size",
+      "solution_sha256": "1d0c70c52914cdf10b22df0f7fc1e4d6f291569822ee858a37125ae285747dff",
+      "actual_solution_executed": true,
+      "trace": {
+        "before": [
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "after": [
+          2,
+          2,
+          2,
+          2,
+          3
+        ],
+        "size": [
+          1,
+          2,
+          5,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "lesson": "19-disjoint-sets/07-detect-redundant-edge",
+      "solution_sha256": "40dd0dfa91aafd4f617eb12e6004e321f6c84a294b6db86ce172825dfe57dda2",
+      "actual_solution_executed": true,
+      "trace": {
+        "edges": [
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "return": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "lesson": "19-disjoint-sets/08-kruskal-forest",
+      "solution_sha256": "f522b7d852adc7de41db607cdf6c418d34045c96cf64b3ce20d5ad78a35d4c52",
+      "actual_solution_executed": true,
+      "trace": {
+        "edges": [
+          [
+            0,
+            2,
+            7
+          ],
+          [
+            2,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            3,
+            4,
+            -2
+          ]
+        ],
+        "return": [
+          [
+            [
+              3,
+              4,
+              -2
+            ],
+            [
+              2,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              5
+            ]
+          ],
+          6
+        ]
+      }
+    },
+    {
+      "lesson": "20-combinatorial-search/01-cartesian-product",
+      "solution_sha256": "9798b17e86daf2361482b25153bd4d4d5ee412e2ba23a4adf6392f12be149fbd",
+      "actual_solution_executed": true,
+      "trace": {
+        "return": [
+          [
+            "K",
+            4
+          ],
+          [
+            "K",
+            9
+          ],
+          [
+            "M",
+            4
+          ],
+          [
+            "M",
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "lesson": "20-combinatorial-search/02-power-set-iteration",
+      "solution_sha256": "b8efa530f21c517f984be0fdd7bf30da585bda39b9c16902f695bd4ab95f52c5",
+      "actual_solution_executed": true,
+      "trace": {
+        "return": [
+          [],
+          [
+            "K"
+          ],
+          [
+            "M"
+          ],
+          [
+            "K",
+            "M"
+          ]
+        ]
+      }
+    },
+    {
+      "lesson": "20-combinatorial-search/03-power-set-bits",
+      "solution_sha256": "da91a6575cda2660bcfc40f5f5195b4b2ca27ee1fafd10ef59cc948667420b7b",
+      "actual_solution_executed": true,
+      "trace": {
+        "return": [
+          [],
+          [
+            "K"
+          ],
+          [
+            "M"
+          ],
+          [
+            "K",
+            "M"
+          ]
+        ]
+      }
+    },
+    {
+      "lesson": "20-combinatorial-search/04-combinations-without-replacement",
+      "solution_sha256": "661b1649b49e456ab6dad539f46e2a441e28475e79c00d9ba45baec6894e05cc",
+      "actual_solution_executed": true,
+      "trace": {
+        "items": [
+          "K",
+          "M",
+          "P"
+        ],
+        "r": 2,
+        "return": [
+          [
+            "K",
+            "M"
+          ],
+          [
+            "K",
+            "P"
+          ],
+          [
+            "M",
+            "P"
+          ]
+        ],
+        "zero": [
+          []
+        ]
+      }
+    },
+    {
+      "lesson": "20-combinatorial-search/05-combinations-with-replacement",
+      "solution_sha256": "54c97a91faea25359df991d91b7419a9bd2bc9faf85ad9553e42036916ef6815",
+      "actual_solution_executed": true,
+      "trace": {
+        "items": [
+          "K",
+          "M"
+        ],
+        "r": 2,
+        "return": [
+          [
+            "K",
+            "K"
+          ],
+          [
+            "K",
+            "M"
+          ],
+          [
+            "M",
+            "M"
+          ]
+        ],
+        "zero": [
+          []
+        ]
+      }
+    },
+    {
+      "lesson": "20-combinatorial-search/06-permutations-without-replacement",
+      "solution_sha256": "afa2cc0d5028106e0315c23f5740241d11062600f5f80310c9f283c33cbd50bd",
+      "actual_solution_executed": true,
+      "trace": {
+        "items": [
+          "K",
+          "M"
+        ],
+        "r": 2,
+        "return": [
+          [
+            "K",
+            "M"
+          ],
+          [
+            "M",
+            "K"
+          ]
+        ],
+        "zero": [
+          []
+        ]
+      }
+    },
+    {
+      "lesson": "20-combinatorial-search/07-words-with-repetition",
+      "solution_sha256": "977ffb9a311999618da4e6d25749d6ab7f83026a90277eb4fd197d84541e5199",
+      "actual_solution_executed": true,
+      "trace": {
+        "items": [
+          "K",
+          "M"
+        ],
+        "r": 2,
+        "return": [
+          [
+            "K",
+            "K"
+          ],
+          [
+            "K",
+            "M"
+          ],
+          [
+            "M",
+            "K"
+          ],
+          [
+            "M",
+            "M"
+          ]
+        ],
+        "zero": [
+          []
+        ]
+      }
+    }
+  ]
+}

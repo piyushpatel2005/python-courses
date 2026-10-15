@@ -1,0 +1,68 @@
+from __future__ import annotations
+
+def bucket_index(key: str, capacity: int) -> int:
+    validate_capacity(capacity)
+    result = 0
+    for character in key:
+        result = (result * 31 + ord(character)) % capacity
+    return result
+
+
+class HashTable:
+    buckets: list[list[tuple[str, object]]]
+    size: int
+
+    def __init__(self, capacity: int = 8) -> None:
+        bucket_index("", capacity)
+        self.buckets: list[list[tuple[str, object]]] = [[] for _ in range(capacity)]
+        self.size: int = 0
+
+    def put(self, key: str, value: object) -> None:
+        bucket = self.buckets[bucket_index(key, len(self.buckets))]
+        for i, (stored_key, _) in enumerate(bucket):
+            if stored_key == key:
+                bucket[i] = (key, value)
+                return None
+        bucket.append((key, value))
+        self.size += 1
+
+    def get(self, key: str) -> object:
+        bucket = self.buckets[bucket_index(key, len(self.buckets))]
+        for stored_key, value in bucket:
+            if stored_key == key:
+                return value
+        raise KeyError(key)
+
+    def delete(self, key: str) -> bool:
+        bucket = self.buckets[bucket_index(key, len(self.buckets))]
+        for i, (stored_key, _) in enumerate(bucket):
+            if stored_key == key:
+                bucket.pop(i)
+                self.size -= 1
+                return True
+        return False
+
+    def entries(self) -> list[tuple[str, object]]:
+        result = []
+        for bucket in self.buckets:
+            for pair in bucket:
+                result.append(pair)
+        return result
+
+    def load_factor(self) -> float:
+        return self.size / len(self.buckets)
+
+
+def validate_capacity(capacity: int) -> None:
+    if type(capacity) is not int or capacity <= 0:
+        raise ValueError("capacity must be a positive integer")
+
+
+if __name__ == "__main__":
+    try:
+        table = HashTable(4)
+        table.put("bolt", 4)
+        table.put("nut", 6)
+        print(table.load_factor())
+    except (NotImplementedError, AttributeError, TypeError, IndexError, OverflowError) as error:
+        print(error)

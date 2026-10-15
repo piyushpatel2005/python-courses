@@ -1,0 +1,124 @@
+from __future__ import annotations
+
+class Node:
+
+    def __init__(self: Node, value: object, next_node: Node | None=None) -> None:
+        self.value: object = value
+        self.next: Node | None = next_node
+
+def values(head: Node | None) -> list[object]:
+    result = []
+    current = head
+    while current is not None:
+        result.append(current.value)
+        current = current.next
+    return result
+
+class LinkedList:
+
+    def __init__(self: LinkedList) -> None:
+        self.head: Node | None = None
+        self.tail: Node | None = None
+        self.size: int = 0
+
+    def prepend(self: LinkedList, value: object) -> Node:
+        node = Node(value, self.head)
+        self.head = node
+        if self.tail is None:
+            self.tail = node
+        self.size += 1
+        return node
+
+    def append(self: LinkedList, value: object) -> Node:
+        node = Node(value)
+        if self.tail is None:
+            self.head = node
+        else:
+            self.tail.next = node
+        self.tail = node
+        self.size += 1
+        return node
+
+    def find(self: LinkedList, value: object) -> Node | None:
+        current = self.head
+        while current is not None:
+            if current.value == value:
+                return current
+            current = current.next
+        return None
+
+    def insert_after(self: LinkedList, previous: Node | None, value: object) -> Node:
+        if previous is None:
+            raise ValueError('A live predecessor is required')
+        node = Node(value, previous.next)
+        previous.next = node
+        if self.tail is previous:
+            self.tail = node
+        self.size += 1
+        return node
+
+    def remove_head(self: LinkedList) -> Node:
+        if self.head is None:
+            raise IndexError('Empty list')
+        removed = self.head
+        self.head = removed.next
+        self.size -= 1
+        if self.head is None:
+            self.tail = None
+        removed.next = None
+        return removed
+
+    def remove_tail(self: LinkedList) -> Node:
+        if self.head is None:
+            raise IndexError('Empty list')
+        if self.head is self.tail:
+            return self.remove_head()
+        previous = self.head
+        while previous.next is not self.tail:
+            previous = previous.next
+        removed = self.tail
+        previous.next = None
+        self.tail = previous
+        self.size -= 1
+        return removed
+
+    def remove_first(self: LinkedList, value: object) -> Node | None:
+        previous = None
+        current = self.head
+        while current is not None:
+            if current.value == value:
+                if previous is None:
+                    return self.remove_head()
+                previous.next = current.next
+                if current is self.tail:
+                    self.tail = previous
+                current.next = None
+                self.size -= 1
+                return current
+            previous, current = (current, current.next)
+        return None
+
+    def reverse(self: LinkedList) -> None:
+        previous = None
+        current = self.head
+        self.tail = self.head
+        while current is not None:
+            following = current.next
+            current.next = previous
+            previous = current
+            current = following
+        self.head = previous
+
+    def play_next(self: LinkedList) -> object | None:
+        if self.head is None:
+            return None
+        return self.remove_head().value
+if __name__ == '__main__':
+    try:
+        playlist = LinkedList()
+        for title in ['Dawn', 'Rain', 'Harbor']:
+            playlist.append(title)
+        print('Playing:', playlist.play_next())
+        print('Remaining:', values(playlist.head))
+    except NotImplementedError as error:
+        print(error)

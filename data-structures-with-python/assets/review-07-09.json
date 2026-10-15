@@ -1,0 +1,2913 @@
+{
+  "scope": [
+    "07-queues-and-deques",
+    "08-hash-tables",
+    "09-searching"
+  ],
+  "status": "complete_source_native_review",
+  "source_audit": "assets/audit-07-09.json",
+  "source_audit_sha256": "118d3e4093c13f9f84d555a56e9fc4a2b0e919e69e6b926f369e55fe5afde4c4",
+  "published_loader_order": [
+    "07-queues-and-deques/01-linked-queue-state",
+    "07-queues-and-deques/02-enqueue-item",
+    "07-queues-and-deques/03-dequeue-item",
+    "07-queues-and-deques/04-peek-queue",
+    "07-queues-and-deques/05-deque-basics",
+    "07-queues-and-deques/06-ring-buffer-state",
+    "07-queues-and-deques/07-ring-enqueue",
+    "07-queues-and-deques/08-ring-dequeue",
+    "07-queues-and-deques/09-round-robin",
+    "07-queues-and-deques/10-sliding-window-maximum",
+    "08-hash-tables/01-hash-to-bucket",
+    "08-hash-tables/02-collision-buckets",
+    "08-hash-tables/03-table-state",
+    "08-hash-tables/04-insert-or-update",
+    "08-hash-tables/05-lookup-key",
+    "08-hash-tables/06-delete-key",
+    "08-hash-tables/07-list-entries",
+    "08-hash-tables/08-load-factor",
+    "08-hash-tables/09-rehash-table",
+    "08-hash-tables/10-linear-probing",
+    "08-hash-tables/11-tombstone-deletion",
+    "08-hash-tables/12-frequency-index",
+    "09-searching/01-linear-search",
+    "09-searching/02-search-with-key",
+    "09-searching/03-binary-search-loop",
+    "09-searching/04-binary-search-boundaries",
+    "09-searching/05-lower-bound",
+    "09-searching/06-upper-bound",
+    "09-searching/07-sorted-insertion",
+    "09-searching/08-search-comparison-budget"
+  ],
+  "reviewed_paths": [
+    {
+      "path": "07-queues-and-deques/01-linked-queue-state/lesson.md",
+      "sha256": "981b64c3de0223dcab2b16ea0c728a8b7afb2a235a98c5ecd251d0d258334f35",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "ce7f6974fe08d625b3dd9a47863e4a64f8befbb2af4add9881911abb05987de5"
+    },
+    {
+      "path": "07-queues-and-deques/01-linked-queue-state/main.py",
+      "sha256": "e66cbac4d82de8be96574dd846bf48ea68a96d79a64a1b176cf01b77424b52f9",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "e66cbac4d82de8be96574dd846bf48ea68a96d79a64a1b176cf01b77424b52f9"
+    },
+    {
+      "path": "07-queues-and-deques/01-linked-queue-state/test_main.py",
+      "sha256": "146ead6b4f21b5a6064f41f26a2f16e3c90a742f4f9cb2a0eb8cf868c04ae150",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "146ead6b4f21b5a6064f41f26a2f16e3c90a742f4f9cb2a0eb8cf868c04ae150"
+    },
+    {
+      "path": "07-queues-and-deques/01-linked-queue-state/solution/main.py",
+      "sha256": "4f7d2dd17c873b8e6941ec5e4dcc8d84a3f6b979f9ec25b44bab60fe2cd2d788",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "4f7d2dd17c873b8e6941ec5e4dcc8d84a3f6b979f9ec25b44bab60fe2cd2d788"
+    },
+    {
+      "path": "07-queues-and-deques/01-linked-queue-state/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "07-queues-and-deques/01-linked-queue-state/queues-and-deques-linked-queue-state-trace.svg",
+      "sha256": "d24fb41f39995317ed1ed24055aea62767b4b85f536189d8d7ed1c5aac626a5c",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "07-queues-and-deques/02-enqueue-item/lesson.md",
+      "sha256": "d9b31f781d454472de41e38c4be55a0ae78adb5edee6c168d39a96633cfd7c4a",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "7cee60b5e50dca4a29f158e9c2d5752a15d568d5bc8999acb0f350222154bff0"
+    },
+    {
+      "path": "07-queues-and-deques/02-enqueue-item/main.py",
+      "sha256": "3986c408ac4142981014451df866ba59e43e1ff959e422c10b51773c307ea55b",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "3986c408ac4142981014451df866ba59e43e1ff959e422c10b51773c307ea55b"
+    },
+    {
+      "path": "07-queues-and-deques/02-enqueue-item/test_main.py",
+      "sha256": "b8688bf089023257c068c6b9683ae377b2458851f4f4dfc972445a4687975243",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b8688bf089023257c068c6b9683ae377b2458851f4f4dfc972445a4687975243"
+    },
+    {
+      "path": "07-queues-and-deques/02-enqueue-item/solution/main.py",
+      "sha256": "b86be351a4434c0935ff9bd689b1452431c87f792f07d6cdc7b2dfcf392dd0ca",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b86be351a4434c0935ff9bd689b1452431c87f792f07d6cdc7b2dfcf392dd0ca"
+    },
+    {
+      "path": "07-queues-and-deques/02-enqueue-item/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "07-queues-and-deques/02-enqueue-item/queues-and-deques-enqueue-item-trace.svg",
+      "sha256": "bb3de33433e39811d5b402bfdae22b2af8af759e450d9d4a853baa48391c6325",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "07-queues-and-deques/03-dequeue-item/lesson.md",
+      "sha256": "571a2651da25c62ad966b6b9df5a0e4b7bdd822cb1170ecdf3d9319be582fa45",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "7a4b7ef467f39b979adef7934ebdf71d9978424b6fff686a557372bea68073eb"
+    },
+    {
+      "path": "07-queues-and-deques/03-dequeue-item/main.py",
+      "sha256": "4cb78fb17deb4b29c2916536348663ab025df26bffeafaf55adb0467ccf24854",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "4cb78fb17deb4b29c2916536348663ab025df26bffeafaf55adb0467ccf24854"
+    },
+    {
+      "path": "07-queues-and-deques/03-dequeue-item/test_main.py",
+      "sha256": "d7509a3ca96fc2b4eb6fa9cfca2b77ead0678c974ee4366e99d519e70376f8a6",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "d7509a3ca96fc2b4eb6fa9cfca2b77ead0678c974ee4366e99d519e70376f8a6"
+    },
+    {
+      "path": "07-queues-and-deques/03-dequeue-item/solution/main.py",
+      "sha256": "63210dcc36c85efeb2501b7fb15ee1f6f8b08e12f6c28b492c5b7d491c6a1065",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "63210dcc36c85efeb2501b7fb15ee1f6f8b08e12f6c28b492c5b7d491c6a1065"
+    },
+    {
+      "path": "07-queues-and-deques/03-dequeue-item/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "07-queues-and-deques/03-dequeue-item/queue-head-tail-transition.svg",
+      "sha256": "c4160bfc08579b501328920340eaef85a9341e2a686b78c4240fb31c266fb8a1",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "07-queues-and-deques/04-peek-queue/lesson.md",
+      "sha256": "3e3868a5cc5aca714e5506668b79de8f4146b5010a38b73b1542c2e683d02091",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b8d125c699c15d2bfb638cfdeda9926f50355cebc00b2dac03c78a893f4cb98c"
+    },
+    {
+      "path": "07-queues-and-deques/04-peek-queue/main.py",
+      "sha256": "dae9d0a6f3bfc5206aa11f1192dbba88b5f16a577264ea18602737a2842f584e",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "dae9d0a6f3bfc5206aa11f1192dbba88b5f16a577264ea18602737a2842f584e"
+    },
+    {
+      "path": "07-queues-and-deques/04-peek-queue/test_main.py",
+      "sha256": "8d863e74a5b6e93c641aca34bda544c9541c5ac15ecf71ceb8587b616f46a3d3",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "8d863e74a5b6e93c641aca34bda544c9541c5ac15ecf71ceb8587b616f46a3d3"
+    },
+    {
+      "path": "07-queues-and-deques/04-peek-queue/solution/main.py",
+      "sha256": "908b53881316a7d1e5a7614d77fe33913f649ccba3cbfc718e1bcd995d43901b",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "908b53881316a7d1e5a7614d77fe33913f649ccba3cbfc718e1bcd995d43901b"
+    },
+    {
+      "path": "07-queues-and-deques/04-peek-queue/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "07-queues-and-deques/04-peek-queue/queues-and-deques-peek-queue-trace.svg",
+      "sha256": "b4ba40301909ac6d7c6f2f69aee8cd4db4219af39d80e2e55f9800320c6a257b",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "07-queues-and-deques/05-deque-basics/lesson.md",
+      "sha256": "158e58ea61c2e3cab0b1da62bac05d378cde3bdf030d5263316f9c183aa86548",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "2e1b66d4c08cbfd08ba56f807835551f11e97ec0a041671c48fe9c26a658d6ef"
+    },
+    {
+      "path": "07-queues-and-deques/05-deque-basics/main.py",
+      "sha256": "c0cab21086090ad130bfb7280dcba9caf2cfd75b8b306602f970a6f74cc4087b",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "c0cab21086090ad130bfb7280dcba9caf2cfd75b8b306602f970a6f74cc4087b"
+    },
+    {
+      "path": "07-queues-and-deques/05-deque-basics/test_main.py",
+      "sha256": "87107cd5e5d61c306a34083e01b4c597471304abbbf514d760519f6714c228d5",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "87107cd5e5d61c306a34083e01b4c597471304abbbf514d760519f6714c228d5"
+    },
+    {
+      "path": "07-queues-and-deques/05-deque-basics/solution/main.py",
+      "sha256": "db4b9b32af1b5e929eadfa417b01a647e07de655ee53affcb7b2e1f01071c8e5",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "db4b9b32af1b5e929eadfa417b01a647e07de655ee53affcb7b2e1f01071c8e5"
+    },
+    {
+      "path": "07-queues-and-deques/05-deque-basics/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "07-queues-and-deques/05-deque-basics/queues-and-deques-deque-basics-trace.svg",
+      "sha256": "8c200528462d153de7d82c55f7505c892bb7a13289fe106571bf5d4654fd6320",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "07-queues-and-deques/06-ring-buffer-state/lesson.md",
+      "sha256": "50b88bf9a6c1ac3766550dc413bd2c4af90b5a27614e4bcad6380380339d573c",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "e2f20f78ed9026ac644489cee7f260ca81430048402de49b82ca11c310bc195c"
+    },
+    {
+      "path": "07-queues-and-deques/06-ring-buffer-state/main.py",
+      "sha256": "8d9a376dd6386f1f0c1f2f05269a775d565b783968a5a123924b6985306703f9",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "8d9a376dd6386f1f0c1f2f05269a775d565b783968a5a123924b6985306703f9"
+    },
+    {
+      "path": "07-queues-and-deques/06-ring-buffer-state/test_main.py",
+      "sha256": "1381d4ef3f3057f01d4193f7f72f77b89883cb80984b42f6cf9e256ffee5ff5e",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "1381d4ef3f3057f01d4193f7f72f77b89883cb80984b42f6cf9e256ffee5ff5e"
+    },
+    {
+      "path": "07-queues-and-deques/06-ring-buffer-state/solution/main.py",
+      "sha256": "99f05ed36dc87f2081892f11bd60a88784e6d9599d82e10396d12d4453948046",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "99f05ed36dc87f2081892f11bd60a88784e6d9599d82e10396d12d4453948046"
+    },
+    {
+      "path": "07-queues-and-deques/06-ring-buffer-state/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "07-queues-and-deques/06-ring-buffer-state/queues-and-deques-ring-buffer-state-trace.svg",
+      "sha256": "75e22a083ee28fc1d1a28b774d9d9d2479f3a22759cd42658dfc0bd6f1b0cfb0",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "07-queues-and-deques/07-ring-enqueue/lesson.md",
+      "sha256": "08b3fa60630dbb886bd81bc603b2192d7bbdc66f122d2df2e2bb63cb177f9818",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "0df5c19d4e09307227437d2f96c7b8a446cd662449b835c450bb846f11a2bf28"
+    },
+    {
+      "path": "07-queues-and-deques/07-ring-enqueue/main.py",
+      "sha256": "5c90e12f34c4e1c8a1fe7e44e82e8d8bfda20072f2fdc43f9ab65e49a7152163",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "5c90e12f34c4e1c8a1fe7e44e82e8d8bfda20072f2fdc43f9ab65e49a7152163"
+    },
+    {
+      "path": "07-queues-and-deques/07-ring-enqueue/test_main.py",
+      "sha256": "7f8a8bbc76682a91a620cf5746405bdc9897d3dd588509d20cb86c5437371136",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "7f8a8bbc76682a91a620cf5746405bdc9897d3dd588509d20cb86c5437371136"
+    },
+    {
+      "path": "07-queues-and-deques/07-ring-enqueue/solution/main.py",
+      "sha256": "dc9e312c05e9cecce19f62090961907e4882d859d62e977e4dd7b855b3ad2ebb",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "dc9e312c05e9cecce19f62090961907e4882d859d62e977e4dd7b855b3ad2ebb"
+    },
+    {
+      "path": "07-queues-and-deques/07-ring-enqueue/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "07-queues-and-deques/07-ring-enqueue/ring-buffer-wraparound.svg",
+      "sha256": "48d3ff3f3cc951c5f7d11992b1bfe536f197dd630e50d0f7b558f95c1d469fb7",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "07-queues-and-deques/08-ring-dequeue/lesson.md",
+      "sha256": "7a789c6cb6f90a20b3b5ab1b9734ecf8726f64b7f544d39f47530590f4b77be0",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "5dbc7c12daac178b5611a9e98af020c233557b21f6b117c69b38bf6bf350a6c5"
+    },
+    {
+      "path": "07-queues-and-deques/08-ring-dequeue/main.py",
+      "sha256": "3a828a8cac57390960f0d8dd2c13cdf190799ef808f44fa7fd4f67baace76be7",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "3a828a8cac57390960f0d8dd2c13cdf190799ef808f44fa7fd4f67baace76be7"
+    },
+    {
+      "path": "07-queues-and-deques/08-ring-dequeue/test_main.py",
+      "sha256": "091e418f499acc9299a1f9750b8844a5ffa4eb5f2eef47c0619ca67382580c5e",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "091e418f499acc9299a1f9750b8844a5ffa4eb5f2eef47c0619ca67382580c5e"
+    },
+    {
+      "path": "07-queues-and-deques/08-ring-dequeue/solution/main.py",
+      "sha256": "d34d7b4a0f7eea45466a19ec4e6221f21e5e32a0fd75d9e561d412e3c5abf8b4",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "d34d7b4a0f7eea45466a19ec4e6221f21e5e32a0fd75d9e561d412e3c5abf8b4"
+    },
+    {
+      "path": "07-queues-and-deques/08-ring-dequeue/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "07-queues-and-deques/08-ring-dequeue/queues-and-deques-ring-dequeue-trace.svg",
+      "sha256": "726cf509dc3521f0f385d0221268e1592b9f75d02b44db65b3df9651ada37089",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "07-queues-and-deques/09-round-robin/lesson.md",
+      "sha256": "df983ca78084a1be5e256b50a91872277e05e0901035de537a4a390de7f5ba29",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "148b6b58098d2b2313a4be0a962f3774b6bb9ebe63b514b47437d2eabef7eca9"
+    },
+    {
+      "path": "07-queues-and-deques/09-round-robin/main.py",
+      "sha256": "f474a57990e5894b680b73af0ecc063bf448739159deda5987453872a4c4080e",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "f474a57990e5894b680b73af0ecc063bf448739159deda5987453872a4c4080e"
+    },
+    {
+      "path": "07-queues-and-deques/09-round-robin/test_main.py",
+      "sha256": "79a923311ef21ba10bec2a4032e51c5c02a528a71bf04ed7f952959f79fa40bd",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "79a923311ef21ba10bec2a4032e51c5c02a528a71bf04ed7f952959f79fa40bd"
+    },
+    {
+      "path": "07-queues-and-deques/09-round-robin/solution/main.py",
+      "sha256": "934ce101ef5d63c4ad1fc013a679909b910c0bb0949dee429bbb252b1512cde1",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "934ce101ef5d63c4ad1fc013a679909b910c0bb0949dee429bbb252b1512cde1"
+    },
+    {
+      "path": "07-queues-and-deques/09-round-robin/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "07-queues-and-deques/09-round-robin/queues-and-deques-round-robin-trace.svg",
+      "sha256": "59681b0bec286159c8ec2fe00b86eeec1df2a007d73c214a6fcf3efa24bbce29",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "07-queues-and-deques/10-sliding-window-maximum/lesson.md",
+      "sha256": "5c26ce30a4d195dc1c41246dc54e0873ebf14233034ae7f0de31f00527bbe150",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "707f44b6b4ed2717166f1e0bb3db2485150ed1432997ef88c595feb5a276bc53"
+    },
+    {
+      "path": "07-queues-and-deques/10-sliding-window-maximum/main.py",
+      "sha256": "6d5cd6ba3de20c2b35424694a635e48561396ec62692e26f8724035213996e9a",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "6d5cd6ba3de20c2b35424694a635e48561396ec62692e26f8724035213996e9a"
+    },
+    {
+      "path": "07-queues-and-deques/10-sliding-window-maximum/test_main.py",
+      "sha256": "74f80f09cccbc56129ede5fbbcce956a523a64fe9224e86d910b0009751afd6b",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "74f80f09cccbc56129ede5fbbcce956a523a64fe9224e86d910b0009751afd6b"
+    },
+    {
+      "path": "07-queues-and-deques/10-sliding-window-maximum/solution/main.py",
+      "sha256": "b0d4be7067748af419943f705ac2dce02828340a7bc0fe26ace0321d697a2acf",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b0d4be7067748af419943f705ac2dce02828340a7bc0fe26ace0321d697a2acf"
+    },
+    {
+      "path": "07-queues-and-deques/10-sliding-window-maximum/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "07-queues-and-deques/10-sliding-window-maximum/monotonic-deque-window.svg",
+      "sha256": "fc8b6dc156d4f9cb354bb761a86ce578409c5e09261b56105e97b3b0f0df259e",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "08-hash-tables/01-hash-to-bucket/lesson.md",
+      "sha256": "03f6dedff6166555368e2a72256c312df0b8740a58721ec34d3d3fbf8ee17d8e",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "42f146fe9d2b416200d29df8117e5b56726e77ba2e3e2c9a2503a0ce43f10782"
+    },
+    {
+      "path": "08-hash-tables/01-hash-to-bucket/main.py",
+      "sha256": "d1bc8a1261ee946ea5a003bc93890de0d5f1bbcd62e05b1237b643fd57c63e59",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "d1bc8a1261ee946ea5a003bc93890de0d5f1bbcd62e05b1237b643fd57c63e59"
+    },
+    {
+      "path": "08-hash-tables/01-hash-to-bucket/test_main.py",
+      "sha256": "f94b04ebf430fbfeaccdae65b266c53dd58c5d1ca9c92f11361a1091a0c61c2e",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "f94b04ebf430fbfeaccdae65b266c53dd58c5d1ca9c92f11361a1091a0c61c2e"
+    },
+    {
+      "path": "08-hash-tables/01-hash-to-bucket/solution/main.py",
+      "sha256": "e399076d8fd20cd2cdf2b7673c0aaa45f9238a6d49972704acf886d0ccad4fd8",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "e399076d8fd20cd2cdf2b7673c0aaa45f9238a6d49972704acf886d0ccad4fd8"
+    },
+    {
+      "path": "08-hash-tables/01-hash-to-bucket/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "08-hash-tables/01-hash-to-bucket/hash-tables-hash-to-bucket-trace.svg",
+      "sha256": "3cabe89cb6a2a3ec351f211c468bc2ccfebd776bd4ed0f616710d9442c5666d0",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "08-hash-tables/02-collision-buckets/lesson.md",
+      "sha256": "09e244ba295377ef73a2776a34f00a246daa7cfc349d33d6de4d2e91bdefea03",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "5e979d35f78547662d98ed5787156d29c6b00241e651f44d5217a48ddc8c9739"
+    },
+    {
+      "path": "08-hash-tables/02-collision-buckets/main.py",
+      "sha256": "3e376b4a3ce327abc4e0351c08bfe2e128fd08850b5a0bfb92c26f6aae759a80",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "3e376b4a3ce327abc4e0351c08bfe2e128fd08850b5a0bfb92c26f6aae759a80"
+    },
+    {
+      "path": "08-hash-tables/02-collision-buckets/test_main.py",
+      "sha256": "092c20fc59ec5dd5c04b9bb082f04c9e0b7691c7c030033b5188ca2f5186b9e1",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "092c20fc59ec5dd5c04b9bb082f04c9e0b7691c7c030033b5188ca2f5186b9e1"
+    },
+    {
+      "path": "08-hash-tables/02-collision-buckets/solution/main.py",
+      "sha256": "ffb127fb4b30c11e145704b70161b36299fca2f9413aed1a4a235d522044674c",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "ffb127fb4b30c11e145704b70161b36299fca2f9413aed1a4a235d522044674c"
+    },
+    {
+      "path": "08-hash-tables/02-collision-buckets/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "08-hash-tables/02-collision-buckets/hash-collision-chains.svg",
+      "sha256": "944116670ca584ed3b7c20351f903f81d48cbf43f72a5448a1ccd47f2990160c",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "08-hash-tables/03-table-state/lesson.md",
+      "sha256": "667d850bf2f28532bd9c50a9ceabe40ac08a9fc9d510e4592789c9e904113da2",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "1d7f97943562bf1aeda8626390d6f98702d6a5c2e3dde8cab840b5e6208ac0d7"
+    },
+    {
+      "path": "08-hash-tables/03-table-state/main.py",
+      "sha256": "6f8b59d57abf523fa4951f4f876d8ec5e91d022a7dae6d1b9ff87b93f616019d",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "6f8b59d57abf523fa4951f4f876d8ec5e91d022a7dae6d1b9ff87b93f616019d"
+    },
+    {
+      "path": "08-hash-tables/03-table-state/test_main.py",
+      "sha256": "afad54896b6318192c03766034f7e7e3e0dee42a1880111582ffb49bedf389de",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "afad54896b6318192c03766034f7e7e3e0dee42a1880111582ffb49bedf389de"
+    },
+    {
+      "path": "08-hash-tables/03-table-state/solution/main.py",
+      "sha256": "7ad0009a2485172ee1678b3fa1931fd52cd65492a48d10499386ce7b8a681579",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "7ad0009a2485172ee1678b3fa1931fd52cd65492a48d10499386ce7b8a681579"
+    },
+    {
+      "path": "08-hash-tables/03-table-state/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "08-hash-tables/03-table-state/hash-tables-table-state-trace.svg",
+      "sha256": "25ddc49c384e42e2cdd410732e35238b8859193e526e6b988ad5143f53bcbb71",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "08-hash-tables/04-insert-or-update/lesson.md",
+      "sha256": "a87439c2df2061820b0229b7ea7380daade929ef18190ea0221895064948ff72",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "2546ba4cf9a63a24c4267a05fa6cbd93f0d96d9a8f7dca26989c7b4fe3f248ae"
+    },
+    {
+      "path": "08-hash-tables/04-insert-or-update/main.py",
+      "sha256": "39dbd54714986a2c3803370102a17164d3977458b5971ac9dca9028c4a39cb8f",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "39dbd54714986a2c3803370102a17164d3977458b5971ac9dca9028c4a39cb8f"
+    },
+    {
+      "path": "08-hash-tables/04-insert-or-update/test_main.py",
+      "sha256": "6dfd82b11826b80c93dfd6cfc3f82d9527bc4fdeca619374acbbcae793d0c57a",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "6dfd82b11826b80c93dfd6cfc3f82d9527bc4fdeca619374acbbcae793d0c57a"
+    },
+    {
+      "path": "08-hash-tables/04-insert-or-update/solution/main.py",
+      "sha256": "188d4e19bcdfe24c26a1ed6790e153c20edd28d51b6c6378e7ae64786c2b224d",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "188d4e19bcdfe24c26a1ed6790e153c20edd28d51b6c6378e7ae64786c2b224d"
+    },
+    {
+      "path": "08-hash-tables/04-insert-or-update/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "08-hash-tables/04-insert-or-update/hash-tables-insert-or-update-trace.svg",
+      "sha256": "5220caae3e816961b4571c79d5c81e829ecf4ee4402e4e507396d98280b29947",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "08-hash-tables/05-lookup-key/lesson.md",
+      "sha256": "068a32c9eb5a02ffc6465e5ac2518eda6865f902ee271874d5d5c9c7c0ffbd98",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "43966804a75d53d286034214aa41ae56c0fea11ddbd326b88ade0c42de1f625b"
+    },
+    {
+      "path": "08-hash-tables/05-lookup-key/main.py",
+      "sha256": "c95d90fcb7fde0e09f95e47b3ae84a8a7277164bd6557309cc021ce85cbe00c1",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "c95d90fcb7fde0e09f95e47b3ae84a8a7277164bd6557309cc021ce85cbe00c1"
+    },
+    {
+      "path": "08-hash-tables/05-lookup-key/test_main.py",
+      "sha256": "dd0dd191586fd7c449c3159b2033b85206b0eab5a2b41f964c1c995b5ebbc2c0",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "dd0dd191586fd7c449c3159b2033b85206b0eab5a2b41f964c1c995b5ebbc2c0"
+    },
+    {
+      "path": "08-hash-tables/05-lookup-key/solution/main.py",
+      "sha256": "8df44e0ac2ccc5ef74601f2909e113a982ce3e61a625565cf370a2ab990253b2",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "8df44e0ac2ccc5ef74601f2909e113a982ce3e61a625565cf370a2ab990253b2"
+    },
+    {
+      "path": "08-hash-tables/05-lookup-key/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "08-hash-tables/05-lookup-key/hash-tables-lookup-key-trace.svg",
+      "sha256": "362842920ca6116222d839f87d686d61a04c5fe8e7040d52875210dda4bb2667",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "08-hash-tables/06-delete-key/lesson.md",
+      "sha256": "e055b99da203f99a7e5e5969bf970a7b726b04222334628165f474cca740b98b",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "f49218d94b87356a8cdd5531da83a9b687aba3f3b1ec86f67520f83c0d3a1805"
+    },
+    {
+      "path": "08-hash-tables/06-delete-key/main.py",
+      "sha256": "d3990b5b3e441e729ff984b5e9e5769c751fde3eb99c39a6100f4e2abaa86ed0",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "d3990b5b3e441e729ff984b5e9e5769c751fde3eb99c39a6100f4e2abaa86ed0"
+    },
+    {
+      "path": "08-hash-tables/06-delete-key/test_main.py",
+      "sha256": "b39dd9e9acceb3d44016385927abab7f6f5712a51fdf10d601fa758281a5b863",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b39dd9e9acceb3d44016385927abab7f6f5712a51fdf10d601fa758281a5b863"
+    },
+    {
+      "path": "08-hash-tables/06-delete-key/solution/main.py",
+      "sha256": "ff4198e7efaba7fc796d47dc5ec9d41c3bd1227b03e0485e9f3e72963a008e64",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "ff4198e7efaba7fc796d47dc5ec9d41c3bd1227b03e0485e9f3e72963a008e64"
+    },
+    {
+      "path": "08-hash-tables/06-delete-key/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "08-hash-tables/06-delete-key/hash-tables-delete-key-trace.svg",
+      "sha256": "ce0ee50fd5ef9f4954c317acbfced9e0b0d94baca11f78fcdf98f340b75a5c30",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "08-hash-tables/07-list-entries/lesson.md",
+      "sha256": "2bba62dc37ec8e710cf44ce61c793850502c18feade961d589d5b0c9c59bbeb4",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "2bba62dc37ec8e710cf44ce61c793850502c18feade961d589d5b0c9c59bbeb4"
+    },
+    {
+      "path": "08-hash-tables/07-list-entries/main.py",
+      "sha256": "a9df85a7587576e0668bd661c8ebde45876105b2ab7dad008b9d6ec8e58eea2a",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "a9df85a7587576e0668bd661c8ebde45876105b2ab7dad008b9d6ec8e58eea2a"
+    },
+    {
+      "path": "08-hash-tables/07-list-entries/test_main.py",
+      "sha256": "b1d4f7c013b6dbf8b05514138c593002b98896ed6f4f62d9fe1ec6c647f462fb",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b1d4f7c013b6dbf8b05514138c593002b98896ed6f4f62d9fe1ec6c647f462fb"
+    },
+    {
+      "path": "08-hash-tables/07-list-entries/solution/main.py",
+      "sha256": "2389fd3b5a6ac115301d16bef7f38205014b0e4ee97a3872ea8f50a44d683ccf",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "2389fd3b5a6ac115301d16bef7f38205014b0e4ee97a3872ea8f50a44d683ccf"
+    },
+    {
+      "path": "08-hash-tables/07-list-entries/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "08-hash-tables/08-load-factor/lesson.md",
+      "sha256": "4877b60fcfef770d6feb62cd627aa31a2ec4b22d78b28731eb691de1ec376d60",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "369370d9a52b3e9f4b6520c09096f7b46b88f83ec812972dc01af72689845338"
+    },
+    {
+      "path": "08-hash-tables/08-load-factor/main.py",
+      "sha256": "05fe16d11e84a7edf4ef5551aa39664c140f346142cbd492010ec7cb220cf33a",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "05fe16d11e84a7edf4ef5551aa39664c140f346142cbd492010ec7cb220cf33a"
+    },
+    {
+      "path": "08-hash-tables/08-load-factor/test_main.py",
+      "sha256": "473f5449f8a13ea6f3bfd5a50f48afe65a3bd9b75d252947f2c29b3a712c7154",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "473f5449f8a13ea6f3bfd5a50f48afe65a3bd9b75d252947f2c29b3a712c7154"
+    },
+    {
+      "path": "08-hash-tables/08-load-factor/solution/main.py",
+      "sha256": "f9bc3f76a3ec7ada9c70d10066fd6234a520be308e6877ade7d83b65f1af0757",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "f9bc3f76a3ec7ada9c70d10066fd6234a520be308e6877ade7d83b65f1af0757"
+    },
+    {
+      "path": "08-hash-tables/08-load-factor/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "08-hash-tables/08-load-factor/hash-tables-load-factor-trace.svg",
+      "sha256": "943b77fe03bf27b93f432785eba847b01c2792e06f96285328f3ff8c9ce30feb",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "08-hash-tables/09-rehash-table/lesson.md",
+      "sha256": "e72a5c91d7b9863f152f6049a529f9260511939bfb6cb839ba35a811b0ae6242",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "fbc3e3f0c5d488a789a01a4f815a168128259c85e43200b11d90bf350355b68d"
+    },
+    {
+      "path": "08-hash-tables/09-rehash-table/main.py",
+      "sha256": "77d5e05a764e6b02f556a3d999862b24a62d364f6eabae0aea4ff115d74a1d45",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "77d5e05a764e6b02f556a3d999862b24a62d364f6eabae0aea4ff115d74a1d45"
+    },
+    {
+      "path": "08-hash-tables/09-rehash-table/test_main.py",
+      "sha256": "24cfa5300d5fef56e7ce6032c6a75c91f0435c4658857fbf992a5101a505ea80",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "24cfa5300d5fef56e7ce6032c6a75c91f0435c4658857fbf992a5101a505ea80"
+    },
+    {
+      "path": "08-hash-tables/09-rehash-table/solution/main.py",
+      "sha256": "b77cf983d53ef21d8ca93c2a712aa17f159ed176c70e211205fa9fed3d2488bf",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b77cf983d53ef21d8ca93c2a712aa17f159ed176c70e211205fa9fed3d2488bf"
+    },
+    {
+      "path": "08-hash-tables/09-rehash-table/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "08-hash-tables/09-rehash-table/hash-tables-rehash-table-trace.svg",
+      "sha256": "59a599516d51f4404751f08513b7592c05445671c23503b231841dba14c1f8ef",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "08-hash-tables/10-linear-probing/lesson.md",
+      "sha256": "297ca1c18fe673616113dcf1a9553053f7edf97cb72cb3d6990bd8a200209d2c",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "01e8d8da3454613ac9fe12fc61fccce43561a81c3292bc111bb78586edfad478"
+    },
+    {
+      "path": "08-hash-tables/10-linear-probing/main.py",
+      "sha256": "76a2b7b9cc051bd38468c457789b2df51e877782431a0a0e93cf3f422aa74922",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "76a2b7b9cc051bd38468c457789b2df51e877782431a0a0e93cf3f422aa74922"
+    },
+    {
+      "path": "08-hash-tables/10-linear-probing/test_main.py",
+      "sha256": "620d543159f6b8099ccbadfcbae35cd39e8574ef1b24c9f19c5c20f0359be392",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "620d543159f6b8099ccbadfcbae35cd39e8574ef1b24c9f19c5c20f0359be392"
+    },
+    {
+      "path": "08-hash-tables/10-linear-probing/solution/main.py",
+      "sha256": "fba6c6351ced2a3be57b49b872c2eddac0eef5fe2fe6263d1431db36c2bcd4e2",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "fba6c6351ced2a3be57b49b872c2eddac0eef5fe2fe6263d1431db36c2bcd4e2"
+    },
+    {
+      "path": "08-hash-tables/10-linear-probing/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "08-hash-tables/10-linear-probing/hash-tables-linear-probing-trace.svg",
+      "sha256": "3e0444276153d4c8e01cbc39f949363c8784771aff2426d56ac88f9aeaa2ae01",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "08-hash-tables/11-tombstone-deletion/lesson.md",
+      "sha256": "322d79e5b197a1294dec6f545d7319ddcca46976433ef71bf831f630d170cab4",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "7274934228cca25b8c56a0c3a3c691daab4121dd789053afa3d8b04c19def94a"
+    },
+    {
+      "path": "08-hash-tables/11-tombstone-deletion/main.py",
+      "sha256": "1132047255175bbf7a2c553319dc6a8359b8d76fb89443d91b08c9a449df2a8e",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "1132047255175bbf7a2c553319dc6a8359b8d76fb89443d91b08c9a449df2a8e"
+    },
+    {
+      "path": "08-hash-tables/11-tombstone-deletion/test_main.py",
+      "sha256": "d7dbe911e006a73b67e82d14fb86f85439e95eb2048278ce26e736dfd2c78b2c",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "d7dbe911e006a73b67e82d14fb86f85439e95eb2048278ce26e736dfd2c78b2c"
+    },
+    {
+      "path": "08-hash-tables/11-tombstone-deletion/solution/main.py",
+      "sha256": "5c5fc830116856e2ec7ebe9c04a44f72caa0305e41d9a7063a5ce3b68995642e",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "5c5fc830116856e2ec7ebe9c04a44f72caa0305e41d9a7063a5ce3b68995642e"
+    },
+    {
+      "path": "08-hash-tables/11-tombstone-deletion/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "08-hash-tables/11-tombstone-deletion/probing-tombstone-search.svg",
+      "sha256": "307be8da13e17a6c0e15ed5056546f1413772b6d4c54257079a98cc6ba76b159",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "08-hash-tables/12-frequency-index/lesson.md",
+      "sha256": "a09fc628816567a1e1a2ca081c0411c9793da8134ef21a84c7a10295202ad3ac",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "a09fc628816567a1e1a2ca081c0411c9793da8134ef21a84c7a10295202ad3ac"
+    },
+    {
+      "path": "08-hash-tables/12-frequency-index/main.py",
+      "sha256": "1aa40c90caf2e43cb714bb3dc4fdddc1b4aacdfd14a0cb6a820b0f476bf90d0b",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "1aa40c90caf2e43cb714bb3dc4fdddc1b4aacdfd14a0cb6a820b0f476bf90d0b"
+    },
+    {
+      "path": "08-hash-tables/12-frequency-index/test_main.py",
+      "sha256": "5723f7ecd6a68f33c79e2e775ce3b3f02e2554274a2ad700de70aa5d33d6606d",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "5723f7ecd6a68f33c79e2e775ce3b3f02e2554274a2ad700de70aa5d33d6606d"
+    },
+    {
+      "path": "08-hash-tables/12-frequency-index/solution/main.py",
+      "sha256": "9d8b753359b7627887c793a896db890b0814506117fbc2428ba0980efcf1b23f",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "9d8b753359b7627887c793a896db890b0814506117fbc2428ba0980efcf1b23f"
+    },
+    {
+      "path": "08-hash-tables/12-frequency-index/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "09-searching/01-linear-search/lesson.md",
+      "sha256": "8d5c326f99be54cb175a96ad7f1608a9e579e00d6ea36f710ff5ac2eea2b6c13",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "5a3ae9e3e8f40f77012620d756e6866afb6aa0b4b19033fff9e9214a1fba6ca8"
+    },
+    {
+      "path": "09-searching/01-linear-search/main.py",
+      "sha256": "daa8553533f0fbf16fdd2fee7aa52f9cbae9d7448736d4963d85c3d9a062158f",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "daa8553533f0fbf16fdd2fee7aa52f9cbae9d7448736d4963d85c3d9a062158f"
+    },
+    {
+      "path": "09-searching/01-linear-search/test_main.py",
+      "sha256": "f2684585e38d380adf3dd01a934a41d00118a2c2b0aced01c2c2344b459d2dc9",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "f2684585e38d380adf3dd01a934a41d00118a2c2b0aced01c2c2344b459d2dc9"
+    },
+    {
+      "path": "09-searching/01-linear-search/solution/main.py",
+      "sha256": "d3de2bc5cd9d7dcfd585c8fe5fb74cc47176de32330ebc3099aba95395d41bd2",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "d3de2bc5cd9d7dcfd585c8fe5fb74cc47176de32330ebc3099aba95395d41bd2"
+    },
+    {
+      "path": "09-searching/01-linear-search/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "09-searching/01-linear-search/searching-linear-search-trace.svg",
+      "sha256": "a76570fc6f96ff9b0628956fa69cd97cc4fbec44976413d7b0e400ffaa547192",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "09-searching/02-search-with-key/lesson.md",
+      "sha256": "f6dbb5e07c82db3f05d6baf9931241a1e5e802d5172f6cd1fbe2b1f23e680267",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "f6dbb5e07c82db3f05d6baf9931241a1e5e802d5172f6cd1fbe2b1f23e680267"
+    },
+    {
+      "path": "09-searching/02-search-with-key/main.py",
+      "sha256": "fbe670481644ddc217e6192d2b2f0d68818311ecec952a151d013997f6960fb3",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "fbe670481644ddc217e6192d2b2f0d68818311ecec952a151d013997f6960fb3"
+    },
+    {
+      "path": "09-searching/02-search-with-key/test_main.py",
+      "sha256": "1f2fd1e34bd2edade024c96f951a3bdfcd62378f91882a86385bc265a27197da",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "1f2fd1e34bd2edade024c96f951a3bdfcd62378f91882a86385bc265a27197da"
+    },
+    {
+      "path": "09-searching/02-search-with-key/solution/main.py",
+      "sha256": "ac87a9dc8d862445594e21556c96655b3fc216e80f5e287fc4131eabb802d5e4",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "ac87a9dc8d862445594e21556c96655b3fc216e80f5e287fc4131eabb802d5e4"
+    },
+    {
+      "path": "09-searching/02-search-with-key/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "09-searching/03-binary-search-loop/lesson.md",
+      "sha256": "b430b93c7f74ab04eb0a62e29a9463cd482c6781e79d67f0cf831241b0c9a7dc",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "d2a5d36f8aa163cad35e0efa04a34bd94fb184b68b0454fe1beb474e9b55447b"
+    },
+    {
+      "path": "09-searching/03-binary-search-loop/main.py",
+      "sha256": "b238208ca814582e4da9504ee827f2f9e97860d9e5c1da87bee8d28bb6287cff",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b238208ca814582e4da9504ee827f2f9e97860d9e5c1da87bee8d28bb6287cff"
+    },
+    {
+      "path": "09-searching/03-binary-search-loop/test_main.py",
+      "sha256": "a12283c7b50dce6f647cb90548901cf45fd0a6928a9e6d81d8774b0ec057d229",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "a12283c7b50dce6f647cb90548901cf45fd0a6928a9e6d81d8774b0ec057d229"
+    },
+    {
+      "path": "09-searching/03-binary-search-loop/solution/main.py",
+      "sha256": "822577eff0c7394e876c8f423bf4095f08bb067aff306e5e4c08a70fedf30ebd",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "822577eff0c7394e876c8f423bf4095f08bb067aff306e5e4c08a70fedf30ebd"
+    },
+    {
+      "path": "09-searching/03-binary-search-loop/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "09-searching/03-binary-search-loop/searching-binary-search-loop-trace.svg",
+      "sha256": "69130743fb94cbb7ecd36737010069297daeb5975cd17dfafb0c16cc4d2c2b06",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "09-searching/04-binary-search-boundaries/lesson.md",
+      "sha256": "a003c396cb59486a360a3c9c8cfa0c2936264d8c38f66970f39b6da20f7c4b6a",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "d86c20da5917da4a795618164905f8c3b453193ebf80924fdba72f26e3644fa9"
+    },
+    {
+      "path": "09-searching/04-binary-search-boundaries/main.py",
+      "sha256": "9d12dcde973d7d91539e294485a04e000551fbd608167b17160a212a49f9f2ca",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "9d12dcde973d7d91539e294485a04e000551fbd608167b17160a212a49f9f2ca"
+    },
+    {
+      "path": "09-searching/04-binary-search-boundaries/test_main.py",
+      "sha256": "8447795d446dc175283c382eceeabb92cf32b1dc6fbea72e51b9eec926e46caf",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "8447795d446dc175283c382eceeabb92cf32b1dc6fbea72e51b9eec926e46caf"
+    },
+    {
+      "path": "09-searching/04-binary-search-boundaries/solution/main.py",
+      "sha256": "950aba61cd7dfba433d935f5df9572cb4a034a47e89fbc64467b192e79c80221",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "950aba61cd7dfba433d935f5df9572cb4a034a47e89fbc64467b192e79c80221"
+    },
+    {
+      "path": "09-searching/04-binary-search-boundaries/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "09-searching/04-binary-search-boundaries/searching-binary-search-boundaries-trace.svg",
+      "sha256": "97feddc6d9a6dd4bb1ac5d5fcac639d6c60d0c4098d8293929dfa6fb58630c3f",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "09-searching/05-lower-bound/lesson.md",
+      "sha256": "389aa70b46998078efdddafd9326a353958ff5598a4a5042f7a663576d489d86",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "a1429ec9a3e11308f213de72ca19b899d9bcd2f670f28c76fa2f2245b35a7e57"
+    },
+    {
+      "path": "09-searching/05-lower-bound/main.py",
+      "sha256": "11d0216348edf0f2a00b75912e67dca33d1f5f090bbea5804282b771432f2d56",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "11d0216348edf0f2a00b75912e67dca33d1f5f090bbea5804282b771432f2d56"
+    },
+    {
+      "path": "09-searching/05-lower-bound/test_main.py",
+      "sha256": "793b4ad233e5da904903ae696d413ba7b9b77ec8d47d62ab8117e955e3e2dbf6",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "793b4ad233e5da904903ae696d413ba7b9b77ec8d47d62ab8117e955e3e2dbf6"
+    },
+    {
+      "path": "09-searching/05-lower-bound/solution/main.py",
+      "sha256": "9d3faf1e89d0ccdf2fac6ad479fe72a249f295c156ca6a0d35d4d6bf3386ab0f",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "9d3faf1e89d0ccdf2fac6ad479fe72a249f295c156ca6a0d35d4d6bf3386ab0f"
+    },
+    {
+      "path": "09-searching/05-lower-bound/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "09-searching/05-lower-bound/binary-search-half-open-boundary.svg",
+      "sha256": "385df586e04541a46757b2ea87d0964dac49365d456a8cfcb1d2cccbca8b96b6",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "09-searching/06-upper-bound/lesson.md",
+      "sha256": "c412c68e8d2532f3f78a96ac9ce3d6c40524e3f5d2c36db8317d62b524f0ff8f",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "8973b5d5771ccc7cd8907b46e6fec77c175b223c8c9ecc4f39eefc198515f722"
+    },
+    {
+      "path": "09-searching/06-upper-bound/main.py",
+      "sha256": "746927761b2f588d3a5b58071c877b3c718cb90ebe8c96ada052fc2ffc4ecfc7",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "746927761b2f588d3a5b58071c877b3c718cb90ebe8c96ada052fc2ffc4ecfc7"
+    },
+    {
+      "path": "09-searching/06-upper-bound/test_main.py",
+      "sha256": "8381eb459e7f404f051a70dc57bda440f100467c004a62085706294f42ed4169",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "8381eb459e7f404f051a70dc57bda440f100467c004a62085706294f42ed4169"
+    },
+    {
+      "path": "09-searching/06-upper-bound/solution/main.py",
+      "sha256": "d1dc1fe4155be44ca7b711e9b6d861dfde582ea59318efbfc5081e6ffca29b0e",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "d1dc1fe4155be44ca7b711e9b6d861dfde582ea59318efbfc5081e6ffca29b0e"
+    },
+    {
+      "path": "09-searching/06-upper-bound/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "09-searching/06-upper-bound/searching-upper-bound-trace.svg",
+      "sha256": "54352f6d8943b956d0579a5d96154f6fa4bbdaf1afa3a376735bb32280953296",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "09-searching/07-sorted-insertion/lesson.md",
+      "sha256": "763c9cda6eb87a8f442d587c70c224d62e72c2da2063c2aba2e1c89f0fb42803",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "37f9a8953fd97f761461b9be58ee7176d31c8926539797ee2b28a8b5f4f54322"
+    },
+    {
+      "path": "09-searching/07-sorted-insertion/main.py",
+      "sha256": "6acf2457a92b68454fec5ce4f2888bf19fca3fe5638d04ca3f44beb502efd9d8",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "6acf2457a92b68454fec5ce4f2888bf19fca3fe5638d04ca3f44beb502efd9d8"
+    },
+    {
+      "path": "09-searching/07-sorted-insertion/test_main.py",
+      "sha256": "c733e27d44189ad99d3ad0a573a105e1493d3eb2fe3cfa80b7c91f3ee4135692",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "1fece9afea7314c58bedd92f1c5e485fddcd5818abc3440a9a51728116cf1652"
+    },
+    {
+      "path": "09-searching/07-sorted-insertion/solution/main.py",
+      "sha256": "99a8e2f74507f26578ba25ff949de762425a6590a3fa799a7a8ae379903f49b8",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "99a8e2f74507f26578ba25ff949de762425a6590a3fa799a7a8ae379903f49b8"
+    },
+    {
+      "path": "09-searching/07-sorted-insertion/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "09-searching/07-sorted-insertion/searching-sorted-insertion-trace.svg",
+      "sha256": "d31692a2ee4546a50ae5593cecdb22ef034e5fc95dd7399fc683bdd3b9098f34",
+      "review": "Parsed SVG XML and read labels, values, and alt/caption against the depicted operation; locally rendered thumbnail and byte-verified delivery."
+    },
+    {
+      "path": "09-searching/08-search-comparison-budget/lesson.md",
+      "sha256": "df1f6ef507df0b10a2f3bb5c4213f9a3178e918925f8a6ef3eefda86c1dff8fb",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "df1f6ef507df0b10a2f3bb5c4213f9a3178e918925f8a6ef3eefda86c1dff8fb"
+    },
+    {
+      "path": "09-searching/08-search-comparison-budget/main.py",
+      "sha256": "34ebcf6db9f03a2cae798a88f581ee90f548126417d1abe24b27c1d392b235c6",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "34ebcf6db9f03a2cae798a88f581ee90f548126417d1abe24b27c1d392b235c6"
+    },
+    {
+      "path": "09-searching/08-search-comparison-budget/test_main.py",
+      "sha256": "95a833314737ad40e0b7dad5c8ec602b43cb08dc37ea8dd206c56c143b3a590e",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "95a833314737ad40e0b7dad5c8ec602b43cb08dc37ea8dd206c56c143b3a590e"
+    },
+    {
+      "path": "09-searching/08-search-comparison-budget/solution/main.py",
+      "sha256": "9bef294ec0a2970fce95a8e70e2b52fb6d232bcb32eab9e52e16c06b78b60242",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "9bef294ec0a2970fce95a8e70e2b52fb6d232bcb32eab9e52e16c06b78b60242"
+    },
+    {
+      "path": "09-searching/08-search-comparison-budget/files.yaml",
+      "sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "review": "Read together with this lesson’s prose, task contract, starter, test rows and reference solution.",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+    },
+    {
+      "path": "07-queues-and-deques/quiz/index.yaml",
+      "sha256": "0e3d7a4db350b62e56af24b7264965ac5b3a18d2c99b918c86edd580e4809ea4",
+      "review": "Read in published module-end quiz order; validated parsed answer and explanation."
+    },
+    {
+      "path": "07-queues-and-deques/quiz/q01.md",
+      "sha256": "9039ed76e753e8d39dc38ae2c741563ee3f80adee77994e0d097d3d2ba0f312b",
+      "review": "Read in published module-end quiz order; validated parsed answer and explanation."
+    },
+    {
+      "path": "07-queues-and-deques/quiz/q02.md",
+      "sha256": "a0159bfa06f6af8352c662dd8c82c2b1b501c88d9310c7fc3c088ed47390ab3d",
+      "review": "Read in published module-end quiz order; validated parsed answer and explanation."
+    },
+    {
+      "path": "07-queues-and-deques/quiz/q03.md",
+      "sha256": "b591be93d4d87173b6644ad747a524480a51409326b0ba9d25e01efb588b74bd",
+      "review": "Read in published module-end quiz order; validated parsed answer and explanation."
+    },
+    {
+      "path": "07-queues-and-deques/quiz/q04.md",
+      "sha256": "a185163432fbc4d79c9287c9aa81b3a023882a5bb3d50b12b56e40c4d72d7e72",
+      "review": "Read in published module-end quiz order; validated parsed answer and explanation."
+    },
+    {
+      "path": "08-hash-tables/quiz/index.yaml",
+      "sha256": "59bcac3421c534c81792600c969a33685c6ad28882b56133696fd3658d639a7f",
+      "review": "Read in published module-end quiz order; validated parsed answer and explanation."
+    },
+    {
+      "path": "08-hash-tables/quiz/q01.md",
+      "sha256": "5a15fbf9dec7be246c483eb129fac3c9e5e11005410abceb8ed2249569c1c293",
+      "review": "Read in published module-end quiz order; validated parsed answer and explanation."
+    },
+    {
+      "path": "08-hash-tables/quiz/q02.md",
+      "sha256": "e8c2101fba01fc4dd4a455a66c9bfe08f6c9188c271cb72914ff9fc9895f6d88",
+      "review": "Read in published module-end quiz order; validated parsed answer and explanation."
+    },
+    {
+      "path": "08-hash-tables/quiz/q03.md",
+      "sha256": "352711f10d6e1ab757703ae12b03262cc1dc510491c7de04c6b4a516dcea253d",
+      "review": "Read in published module-end quiz order; validated parsed answer and explanation."
+    },
+    {
+      "path": "08-hash-tables/quiz/q04.md",
+      "sha256": "7016d4f63ed2fbbd04c58ea6c8e8b1cd09d9788e0a344cada61961e0b2591869",
+      "review": "Read in published module-end quiz order; validated parsed answer and explanation."
+    },
+    {
+      "path": "09-searching/quiz/index.yaml",
+      "sha256": "1ed480dec94a4fb721f43465e01fceda59562739251048f142507518f71a4e18",
+      "review": "Read in published module-end quiz order; validated parsed answer and explanation."
+    },
+    {
+      "path": "09-searching/quiz/q01.md",
+      "sha256": "deea5d31a17240add9eb334c59206a0fefce0e2cf32b72188d2993c73e0e34a5",
+      "review": "Read in published module-end quiz order; validated parsed answer and explanation."
+    },
+    {
+      "path": "09-searching/quiz/q02.md",
+      "sha256": "6dc2d698fe1fed48bdb54e1c93723d3174779e35ffe0ddde6fa9fe50420709f1",
+      "review": "Read in published module-end quiz order; validated parsed answer and explanation."
+    },
+    {
+      "path": "09-searching/quiz/q03.md",
+      "sha256": "3bc84c1783b326ca2c3be9722d8fe0d912d6023bca6868d9c84b9ed4f8f9819a",
+      "review": "Read in published module-end quiz order; validated parsed answer and explanation."
+    },
+    {
+      "path": "09-searching/quiz/q04.md",
+      "sha256": "3b52fcc0c261c7a4b5c41ee3540da820b050fe8f3e4a0355ad50702af2302b42",
+      "review": "Read in published module-end quiz order; validated parsed answer and explanation."
+    }
+  ],
+  "lesson_reviews": [
+    {
+      "path": "07-queues-and-deques/01-linked-queue-state",
+      "order": 1,
+      "slug": "linked-queue-state",
+      "task_test_mapping": [
+        {
+          "task": "Set `head` and `tail` on the new queue to `None`.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Set the new queue's `size` to zero.",
+          "test": "test_02_complete_behavior"
+        }
+      ],
+      "note": "Empty head/tail/size and per-instance ownership are separate constructor checks.",
+      "native_starter_vector": [
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "'LinkedQueue' object has no attribute 'head'\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "None None 0\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "07-queues-and-deques/02-enqueue-item",
+      "order": 2,
+      "slug": "enqueue-item",
+      "task_test_mapping": [
+        {
+          "task": "Handle an empty queue in `enqueue`: link the new node as both endpoints and increase size.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Handle a nonempty queue: link after the old tail and advance tail and size.",
+          "test": "test_02_complete_behavior"
+        }
+      ],
+      "note": "Empty singleton and occupied rear link preserve FIFO order and node identity.",
+      "native_starter_vector": [
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "'NoneType' object has no attribute 'value'\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "ticket-A ticket-B 2\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "07-queues-and-deques/03-dequeue-item",
+      "order": 3,
+      "slug": "dequeue-item",
+      "task_test_mapping": [
+        {
+          "task": "Raise `IndexError` when `dequeue` receives an empty queue.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Remove and detach the head of a queue with multiple nodes, returning its value and reducing size.",
+          "test": "test_02_step"
+        },
+        {
+          "task": "Clear tail when removal empties the queue.",
+          "test": "test_03_complete_behavior"
+        }
+      ],
+      "note": "Empty rejection, detach/return, and singleton tail reset have cumulative checks.",
+      "native_starter_vector": [
+        false,
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "None None 2\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "ticket-A ticket-B 0\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "07-queues-and-deques/04-peek-queue",
+      "order": 4,
+      "slug": "peek-queue",
+      "task_test_mapping": [
+        {
+          "task": "Raise `IndexError` when `peek` receives an empty queue.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Return the head value without changing a nonempty queue.",
+          "test": "test_02_complete_behavior"
+        }
+      ],
+      "note": "Read-only peek distinguishes an empty queue from a stored None.",
+      "native_starter_vector": [
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "None None 1\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "ticket-C ticket-C 1\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "07-queues-and-deques/05-deque-basics",
+      "order": 5,
+      "slug": "deque-basics",
+      "task_test_mapping": [
+        {
+          "task": "Implement the `right` command with a rear append.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Implement the `left` command with a front append.",
+          "test": "test_02_step"
+        },
+        {
+          "task": "Implement `take_left`, recording the removed value only when an item exists.",
+          "test": "test_03_step"
+        },
+        {
+          "task": "Implement `take_right` with the same empty-removal policy.",
+          "test": "test_04_step"
+        },
+        {
+          "task": "Raise `ValueError` for an unknown command.",
+          "test": "test_05_complete_behavior"
+        }
+      ],
+      "note": "Four deque end operations and unknown-command rejection each have a row.",
+      "native_starter_vector": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "([], [])\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "(['A'], ['B'])\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "07-queues-and-deques/06-ring-buffer-state",
+      "order": 6,
+      "slug": "ring-buffer-state",
+      "task_test_mapping": [
+        {
+          "task": "Reject an invalid capacity with `ValueError`.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Allocate an independent `data` list containing capacity empty slots.",
+          "test": "test_02_step"
+        },
+        {
+          "task": "Initialize `head` and `size` to zero.",
+          "test": "test_03_complete_behavior"
+        }
+      ],
+      "note": "Exact positive capacity, independent storage, and initial indices are staged.",
+      "native_starter_vector": [
+        false,
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "'RingQueue' object has no attribute 'data'\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "[None, None, None] 0 0\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "07-queues-and-deques/07-ring-enqueue",
+      "order": 7,
+      "slug": "ring-enqueue",
+      "task_test_mapping": [
+        {
+          "task": "Raise `OverflowError` for a full ring without changing it.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Write the value into the wrapped rear slot without moving head.",
+          "test": "test_02_step"
+        },
+        {
+          "task": "Increase size after a successful write.",
+          "test": "test_03_complete_behavior"
+        }
+      ],
+      "note": "Full rejection, modulo rear write, and size update preserve fixed capacity.",
+      "native_starter_vector": [
+        false,
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "[None, None] 0\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "['north', 'south'] 2\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "07-queues-and-deques/08-ring-dequeue",
+      "order": 8,
+      "slug": "ring-dequeue",
+      "task_test_mapping": [
+        {
+          "task": "Raise `IndexError` for an empty ring without changing it.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Save, clear, and return the value in the head slot.",
+          "test": "test_02_step"
+        },
+        {
+          "task": "Advance head with wraparound and reduce size after removal.",
+          "test": "test_03_complete_behavior"
+        }
+      ],
+      "note": "Empty rejection, clearing the old slot, and modulo head/size transitions are staged.",
+      "native_starter_vector": [
+        false,
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "None\nfull queue\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "first\nsecond third\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "07-queues-and-deques/09-round-robin",
+      "order": 9,
+      "slug": "round-robin",
+      "task_test_mapping": [
+        {
+          "task": "Complete `validate_jobs` to reject negative, boolean, and noninteger work counts.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Complete `queue_jobs` to enqueue only positive-work pairs in arrival order.",
+          "test": "test_02_step"
+        },
+        {
+          "task": "Complete `round_robin` to service one unit per turn and requeue unfinished jobs.",
+          "test": "test_03_complete_behavior"
+        }
+      ],
+      "note": "Validation, positive-job queueing, and fair one-unit turns are isolated helpers.",
+      "native_starter_vector": [
+        false,
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "[]\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "['scan', 'stamp', 'file', 'scan', 'file', 'scan']\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "07-queues-and-deques/10-sliding-window-maximum",
+      "order": 10,
+      "slug": "sliding-window-maximum",
+      "task_test_mapping": [
+        {
+          "task": "Complete `validate_window` with the width and empty-input rules.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Complete `advance_candidates` to expire old indices, discard dominated rear candidates, and append the current index.",
+          "test": "test_02_step"
+        },
+        {
+          "task": "Complete `window_maxima` to call both helpers and collect the front value after each full window.",
+          "test": "test_03_complete_behavior"
+        }
+      ],
+      "note": "Width check, dominated/expired candidate transition, and full-window collection are staged.",
+      "native_starter_vector": [
+        false,
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "[]\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "[8, 9, 9]\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "08-hash-tables/01-hash-to-bucket",
+      "order": 1,
+      "slug": "hash-to-bucket",
+      "task_test_mapping": [
+        {
+          "task": "Complete `validate_capacity` to accept positive integers other than bool and reject everything else with `ValueError`.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Complete `bucket_index` to call validation and fold the string characters into a rolling bucket index.",
+          "test": "test_02_complete_behavior"
+        }
+      ],
+      "note": "Capacity validation precedes a deterministic rolling Unicode hash.",
+      "native_starter_vector": [
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "None None\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "1 0\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "08-hash-tables/02-collision-buckets",
+      "order": 2,
+      "slug": "collision-buckets",
+      "task_test_mapping": [
+        {
+          "task": "Complete `empty_buckets` to validate capacity and return independent empty bucket lists.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Complete `collision_buckets` to append every key occurrence to its computed bucket.",
+          "test": "test_02_complete_behavior"
+        }
+      ],
+      "note": "Independent bucket allocation precedes occurrence-preserving distribution.",
+      "native_starter_vector": [
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "[]\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "[['red', 'red'], ['blue'], []]\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "08-hash-tables/03-table-state",
+      "order": 3,
+      "slug": "table-state",
+      "task_test_mapping": [
+        {
+          "task": "Allocate independent empty buckets in `HashTable.__init__` after the supplied capacity check.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Initialize the distinct-key count `size` to zero.",
+          "test": "test_02_complete_behavior"
+        }
+      ],
+      "note": "Fresh nested bucket lists and distinct-key counter are separate changes.",
+      "native_starter_vector": [
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "'HashTable' object has no attribute 'buckets'\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "[[], [], [], []] 0\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "08-hash-tables/04-insert-or-update",
+      "order": 4,
+      "slug": "insert-or-update",
+      "task_test_mapping": [
+        {
+          "task": "Append a pair and increase size when its key is not already in the bucket.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Replace the value of an equal key without adding a pair or changing size.",
+          "test": "test_02_complete_behavior"
+        }
+      ],
+      "note": "No-match insertion precedes equal-key replacement without size growth.",
+      "native_starter_vector": [
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "[[]] 0\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "[[('bolt', 9), ('nut', 6)]] 2\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "08-hash-tables/05-lookup-key",
+      "order": 5,
+      "slug": "lookup-key",
+      "task_test_mapping": [
+        {
+          "task": "Raise `KeyError(key)` after a bucket scan finds no equal key.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Return the value from an equal pair without changing the table.",
+          "test": "test_02_complete_behavior"
+        }
+      ],
+      "note": "Absent-key KeyError precedes read-only retrieval of false-looking values.",
+      "native_starter_vector": [
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "None None\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "4 None\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "08-hash-tables/06-delete-key",
+      "order": 6,
+      "slug": "delete-key",
+      "task_test_mapping": [
+        {
+          "task": "Return `False` when no equal key exists.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Remove the matching pair and return `True` when it exists.",
+          "test": "test_02_step"
+        },
+        {
+          "task": "Decrease size once for each successful removal.",
+          "test": "test_03_complete_behavior"
+        }
+      ],
+      "note": "Miss, one-pair removal, and success-only size change are separately checked.",
+      "native_starter_vector": [
+        false,
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "None None 6\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "True False 6\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "08-hash-tables/07-list-entries",
+      "order": 7,
+      "slug": "list-entries",
+      "task_test_mapping": [
+        {
+          "task": "Collect the bucket pairs into a new shallow list in traversal order.",
+          "test": "test_01_complete_behavior"
+        }
+      ],
+      "note": "Fresh shallow snapshot follows bucket traversal order; one cohesive operation.",
+      "native_starter_vector": [
+        false
+      ],
+      "native_solution_vector": [
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false
+        ],
+        [
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "None\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "[('bolt', 4), ('nut', 6)]\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 0
+    },
+    {
+      "path": "08-hash-tables/08-load-factor",
+      "order": 8,
+      "slug": "load-factor",
+      "task_test_mapping": [
+        {
+          "task": "Return `size / len(buckets)` from `load_factor`.",
+          "test": "test_01_complete_behavior"
+        }
+      ],
+      "note": "Single ratio calculation counts keys over all buckets; no gratuitous split.",
+      "native_starter_vector": [
+        false
+      ],
+      "native_solution_vector": [
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false
+        ],
+        [
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "None\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "0.5\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "08-hash-tables/09-rehash-table",
+      "order": 9,
+      "slug": "rehash-table",
+      "task_test_mapping": [
+        {
+          "task": "Complete `redistribute_entries` to put each stored pair into fresh buckets using its key.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Complete `rehash` to validate first, snapshot the pairs, and replace the bucket collection with the helper result.",
+          "test": "test_02_complete_behavior"
+        }
+      ],
+      "note": "Fresh redistribution precedes validated replacement; keys rehash under new capacity.",
+      "native_starter_vector": [
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "4 6 1.0\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "4 6 0.2857142857142857\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "08-hash-tables/10-linear-probing",
+      "order": 10,
+      "slug": "linear-probing",
+      "task_test_mapping": [
+        {
+          "task": "Complete `probe_slot` to wrap a home index plus an offset into the slot range.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Report a missing key at an untouched slot or after a full unsuccessful probe cycle.",
+          "test": "test_02_step"
+        },
+        {
+          "task": "Return an equal live pair's value, continuing past collisions and tombstones.",
+          "test": "test_03_complete_behavior"
+        }
+      ],
+      "note": "Wrapped probe index, bounded miss, and collision/tombstone success have separate checks.",
+      "native_starter_vector": [
+        false,
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "list indices must be integers or slices, not NoneType\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "10 20\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "08-hash-tables/11-tombstone-deletion",
+      "order": 11,
+      "slug": "tombstone-deletion",
+      "task_test_mapping": [
+        {
+          "task": "Return `False` when a bounded probe finds no live equal key.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Replace an equal live pair with `_DELETED` and return `True`.",
+          "test": "test_02_step"
+        },
+        {
+          "task": "Reduce size only when a live pair was marked deleted.",
+          "test": "test_03_complete_behavior"
+        }
+      ],
+      "note": "Miss, tombstone replacement, and live-key count preserve probe reachability.",
+      "native_starter_vector": [
+        false,
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "None 20\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "True 20\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "08-hash-tables/12-frequency-index",
+      "order": 12,
+      "slug": "frequency-index",
+      "task_test_mapping": [
+        {
+          "task": "Complete `increment_count` to create a count of one or increase an existing count.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Complete `frequency_index` to create the sized table and apply that helper to each word.",
+          "test": "test_02_complete_behavior"
+        }
+      ],
+      "note": "One count increment precedes new-table allocation and the word loop.",
+      "native_starter_vector": [
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "'NoneType' object has no attribute 'get'\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "2 1 3\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 0
+    },
+    {
+      "path": "09-searching/01-linear-search",
+      "order": 1,
+      "slug": "linear-search",
+      "task_test_mapping": [
+        {
+          "task": "Return `-1` after the scan finishes without a match.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Return the first equal item's index from inside the scan.",
+          "test": "test_02_complete_behavior"
+        }
+      ],
+      "note": "Missing -1 and first-match return are separate loop checkpoints.",
+      "native_starter_vector": [
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "None\nNone\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "0\n-1\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "09-searching/02-search-with-key",
+      "order": 2,
+      "slug": "search-with-key",
+      "task_test_mapping": [
+        {
+          "task": "Return `-1` when no extracted key matches the target.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Return the first matching record index while calling the key function once per visited record.",
+          "test": "test_02_complete_behavior"
+        }
+      ],
+      "note": "Missing case and first match check callback order and one call per visited row.",
+      "native_starter_vector": [
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "None\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "0\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 0
+    },
+    {
+      "path": "09-searching/03-binary-search-loop",
+      "order": 3,
+      "slug": "binary-search-loop",
+      "task_test_mapping": [
+        {
+          "task": "Return `-1` when the candidate interval is empty.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Replace the loop pause with midpoint comparison, strict interval updates, and an equal-index return.",
+          "test": "test_02_complete_behavior"
+        }
+      ],
+      "note": "Empty interval precedes bounded midpoint halving and any-match policy.",
+      "native_starter_vector": [
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "None\nNone\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "2\n-1\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "09-searching/04-binary-search-boundaries",
+      "order": 4,
+      "slug": "binary-search-boundaries",
+      "task_test_mapping": [
+        {
+          "task": "Complete `validate_bounds` with the half-open integer-bound rules.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Return `-1` for a valid empty search interval.",
+          "test": "test_02_step"
+        },
+        {
+          "task": "Replace the loop pause with a binary search confined to the supplied bounds.",
+          "test": "test_03_complete_behavior"
+        }
+      ],
+      "note": "Bound validation, empty region, and confined search preserve original indices.",
+      "native_starter_vector": [
+        false,
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "None\nNone\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "2\n-1\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "09-searching/05-lower-bound",
+      "order": 5,
+      "slug": "lower-bound",
+      "task_test_mapping": [
+        {
+          "task": "Complete `lower_step` to return the next half-open bounds for one nonempty interval.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Complete `lower_bound` to repeat that step until the bounds meet and return the boundary.",
+          "test": "test_02_complete_behavior"
+        }
+      ],
+      "note": "One interval transition precedes repeated first-greater-or-equal search.",
+      "native_starter_vector": [
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "None\nNone\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "1\n4\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "09-searching/06-upper-bound",
+      "order": 6,
+      "slug": "upper-bound",
+      "task_test_mapping": [
+        {
+          "task": "Complete `upper_step` to move equality into the left partition when returning new bounds.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Complete `upper_bound` to repeat the step and return the first strictly-greater position.",
+          "test": "test_02_complete_behavior"
+        }
+      ],
+      "note": "Equality-right transition precedes the first-strictly-greater boundary.",
+      "native_starter_vector": [
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "1 None\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "1 4\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "09-searching/07-sorted-insertion",
+      "order": 7,
+      "slug": "sorted-insertion",
+      "task_test_mapping": [
+        {
+          "task": "Complete `shift_right` to add a temporary slot and move the suffix right, copying backward.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Complete `insert_sorted` to find the upper bound, call the shift helper, write target, and return its position.",
+          "test": "test_02_complete_behavior"
+        }
+      ],
+      "note": "Backward shift helper precedes upper-bound insertion; repaired delegation check.",
+      "native_starter_vector": [
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "None [1, 5, 5, 9]\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "3 [1, 5, 5, 5, 9]\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 1
+    },
+    {
+      "path": "09-searching/08-search-comparison-budget",
+      "order": 8,
+      "slug": "search-comparison-budget",
+      "task_test_mapping": [
+        {
+          "task": "Complete `compare_at` to call the comparator once for the requested item and return its relation.",
+          "test": "test_01_step"
+        },
+        {
+          "task": "Complete `measured_binary_search` to halve the interval and count the actual calls to that helper.",
+          "test": "test_02_complete_behavior"
+        }
+      ],
+      "note": "One comparator invocation per midpoint is isolated from measured halving loop.",
+      "native_starter_vector": [
+        false,
+        false
+      ],
+      "native_solution_vector": [
+        true,
+        true
+      ],
+      "native_prefix_vectors": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "native_run": {
+        "main.py": {
+          "returncode": 0,
+          "stdout": "None\nNone\n",
+          "stderr": ""
+        },
+        "solution/main.py": {
+          "returncode": 0,
+          "stdout": "(2, 1)\n(-1, 3)\n",
+          "stderr": ""
+        }
+      },
+      "diagram_count": 0
+    }
+  ],
+  "quizzes": [
+    {
+      "module": "07-queues-and-deques",
+      "files": [
+        "07-queues-and-deques/quiz/index.yaml",
+        "07-queues-and-deques/quiz/q01.md",
+        "07-queues-and-deques/quiz/q02.md",
+        "07-queues-and-deques/quiz/q03.md",
+        "07-queues-and-deques/quiz/q04.md"
+      ],
+      "question_count": 4
+    },
+    {
+      "module": "08-hash-tables",
+      "files": [
+        "08-hash-tables/quiz/index.yaml",
+        "08-hash-tables/quiz/q01.md",
+        "08-hash-tables/quiz/q02.md",
+        "08-hash-tables/quiz/q03.md",
+        "08-hash-tables/quiz/q04.md"
+      ],
+      "question_count": 4
+    },
+    {
+      "module": "09-searching",
+      "files": [
+        "09-searching/quiz/index.yaml",
+        "09-searching/quiz/q01.md",
+        "09-searching/quiz/q02.md",
+        "09-searching/quiz/q03.md",
+        "09-searching/quiz/q04.md"
+      ],
+      "question_count": 4
+    }
+  ],
+  "repairs": [
+    {
+      "path": "09-searching/07-sorted-insertion/test_main.py",
+      "change": "Assert upper_bound is followed by shift_right on the original list, with restored spies; reject a correct-output implementation that bypasses the taught helper.",
+      "verification": "Reference vector [true,true], correct-output/helper-bypass mutant [true,false]; all cumulative prefixes still pass."
+    }
+  ],
+  "preexisting_partial_edits": "The interrupted review had already changed prose in 26 lessons and the sorted-insertion test before this pass; those edits were read and retained. The author audit is a before-hash baseline, not final-source acceptance.",
+  "verification": {
+    "method": "Actual backend ContentLoader plus isolated native CPython 3.12.12 Submit-style synchronous test functions; not the browser Pyodide worker.",
+    "lessons": 30,
+    "task_tests": 71,
+    "quiz_questions": 12,
+    "starters_runnable": 30,
+    "starters_all_tasks_failing": 30,
+    "solutions_runnable_and_all_tasks_passing": 30,
+    "cumulative_prefix_states": 101,
+    "prefix_vectors_matching": 101,
+    "svg_xml_parsed_and_labels_checked": 26,
+    "svg_thumbnails_rendered_locally": 26,
+    "svg_visually_inspected_samples": [
+      "07-queues-and-deques/07-ring-enqueue/ring-buffer-wraparound.svg",
+      "08-hash-tables/02-collision-buckets/hash-collision-chains.svg",
+      "09-searching/07-sorted-insertion/searching-sorted-insertion-trace.svg"
+    ],
+    "asset_copier": "Frontend copy-lesson-images.mjs run from scratch; all 26 scoped images match published copies byte-for-byte.",
+    "quiz_answers": "Backend loader discovered four questions per scoped module; the question files and author audit answer keys were read."
+  },
+  "remaining_issues": [
+    "Browser/Worker Run, Submit and navigation were excluded by the user and are not claimed.",
+    "Visual layout at actual lesson-pane widths was not tested; local thumbnails are not UI acceptance."
+  ],
+  "source_issues_found_after_repairs": []
+}

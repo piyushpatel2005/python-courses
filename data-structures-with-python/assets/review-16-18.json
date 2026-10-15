@@ -1,0 +1,1800 @@
+{
+  "scope": "modules 16-18; native CPython and backend loader, no browser",
+  "lessons": [
+    {
+      "path": "16-bits-and-sets/01-test-a-bit",
+      "files_sha256": {
+        "lesson.md": "be5908e4101db666f94b52ac22d668d77ea9e2f8e219d1cf338f3bfafd9d98f2",
+        "main.py": "f571220f818a39a499e575fd6ec070d8d88487e77069a3d0754194feee981629",
+        "test_main.py": "26ee3d781079c20150c4c25ccb59ec9b1e45addfaf46ccf4a5117ea22bf1227a",
+        "solution/main.py": "cddec6d02edc35c8127272c3b4b5414c018b3b449f777ba463f84ca465a05131",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 3,
+      "test_names": [
+        "test_validate_value",
+        "test_validate_position",
+        "test_isolate_bit"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "f571220f818a39a499e575fd6ec070d8d88487e77069a3d0754194feee981629",
+          "test_vector": [
+            false,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "19c7e216a93617a2bdf642de6a9a5d463f4ba03d01f2533be8cea1ee04b550e0",
+          "test_vector": [
+            true,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "3e0ea336c3e374b5b600a44353d73e7f25e0627b4374dad4b48bed720cc7bc55",
+          "test_vector": [
+            true,
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 3,
+          "sha256": "cddec6d02edc35c8127272c3b4b5414c018b3b449f777ba463f84ca465a05131",
+          "test_vector": [
+            true,
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Bits: None None\n",
+      "solution_stdout": "Bits: 1 0\n",
+      "diagrams": [
+        {
+          "path": "bits-and-sets-test-a-bit-trace.svg",
+          "alt": "Reading position 3 of 45 shifts to 5 and isolates integer 1; positions 1 and 6 return 0.",
+          "sha256": "1f56383c9282eab4d36a31abd935fd91304a0d19919c5949f6caf433f6ac6f17"
+        }
+      ]
+    },
+    {
+      "path": "16-bits-and-sets/02-set-clear-toggle",
+      "files_sha256": {
+        "lesson.md": "8cf52b35fe3ab8681036f717c45215a1cb43015c2cad091f67702ffc3cc64b57",
+        "main.py": "1a86b9e20755d6f35ae607c550ab1414e7772d41f2368e1ca44536175b57baf9",
+        "test_main.py": "67416238ef7b4502b28b3832be7f34c1ecfbfbd126ef78f58abc7bf29f6a4eca",
+        "solution/main.py": "ecfcec44b43042b8e4c0ac29767a5b2704e8a3bec92c3b5769a1143e993d5329",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 4,
+      "test_names": [
+        "test_validate_flags",
+        "test_set_flag",
+        "test_clear_flag",
+        "test_toggle_flag"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "1a86b9e20755d6f35ae607c550ab1414e7772d41f2368e1ca44536175b57baf9",
+          "test_vector": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "5afe28a01941fd54ad09550d37f77c61a36811c036314d43bc6256f4ef3bb102",
+          "test_vector": [
+            true,
+            false,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "0cfc402d05cc49ac81a348dbdd185f39394e171f18c4d9fb4ad03d39520341cb",
+          "test_vector": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 3,
+          "sha256": "8e2779e49d081d1fd30a3d0490728d1cc84e2ba7315e13fcdb6a832575e10920",
+          "test_vector": [
+            true,
+            true,
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 4,
+          "sha256": "ecfcec44b43042b8e4c0ac29767a5b2704e8a3bec92c3b5769a1143e993d5329",
+          "test_vector": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Changed: None\n",
+      "solution_stdout": "Changed: 3\n",
+      "diagrams": [
+        {
+          "path": "bits-and-sets-set-clear-toggle-trace.svg",
+          "alt": "Independent operations on 45 at bit 1 return 47 for set, 45 for clear, and 47 for toggle.",
+          "sha256": "37ebe974931b73c566e762f4ce96dc8fccffaa396bd0fc04d53d42da8ae3cc25"
+        }
+      ]
+    },
+    {
+      "path": "16-bits-and-sets/03-bit-count",
+      "files_sha256": {
+        "lesson.md": "f5556aa00ded2840cceeb95d79bc34185fc2a6ed6a0bc2e38d7dc8ae46164c8e",
+        "main.py": "7beede18c158861183e593d0c97eacd30865f0051f72a77c8144302f5b960ab5",
+        "test_main.py": "41b522e5e38d37327704ace152f3fa5dd46c0f949667b945f94658e1babe1f05",
+        "solution/main.py": "12af9b53c071962442ca4f12489037ced231785f0015c8366b7bd1a8c86ff2cd",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 2,
+      "test_names": [
+        "test_validate_count",
+        "test_count_active_bits"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "7beede18c158861183e593d0c97eacd30865f0051f72a77c8144302f5b960ab5",
+          "test_vector": [
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "dc212c0b3436d9f76c793c7b8333f216903a0932ae33c5a2c439e755f0fd0600",
+          "test_vector": [
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "12af9b53c071962442ca4f12489037ced231785f0015c8366b7bd1a8c86ff2cd",
+          "test_vector": [
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Active flags: 0\n",
+      "solution_stdout": "Active flags: 4\n",
+      "diagrams": [
+        {
+          "path": "bits-and-sets-bit-count-trace.svg",
+          "alt": "Clearing the lowest set bit repeatedly changes 45 to 44, 40, 32, then zero, giving a count of four.",
+          "sha256": "df7c5df72f55c065d7bc5c156161ef03c2e9cfb134a8b638802e0d2df55a3c8d"
+        }
+      ]
+    },
+    {
+      "path": "16-bits-and-sets/04-power-of-two",
+      "files_sha256": {
+        "lesson.md": "028e2b0f92f937c82b1a06c4afacd4d2b63a320853f04530638c5450e02104be",
+        "main.py": "f4d067570603f1f29663803e9902137164386defe242c0783cc095696c906595",
+        "test_main.py": "6e81a5e3704df6b41134dd447d843bcb6da93091b70b6d886ad90ac4440345c8",
+        "solution/main.py": "6d402d5dfee69a583d24f24eb2958222b7d272228f59c0d259a9fc8544a7bf84",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 2,
+      "test_names": [
+        "test_validate_power_input",
+        "test_recognize_one_bit"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "f4d067570603f1f29663803e9902137164386defe242c0783cc095696c906595",
+          "test_vector": [
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "b0885dbfa640fb95874f5458878deb92ed83518fe51f020620325bc4d8231602",
+          "test_vector": [
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "6d402d5dfee69a583d24f24eb2958222b7d272228f59c0d259a9fc8544a7bf84",
+          "test_vector": [
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Capacities: [None, None, None, None]\n",
+      "solution_stdout": "Capacities: [False, True, True, False]\n",
+      "diagrams": [
+        {
+          "path": "bits-and-sets-power-of-two-trace.svg",
+          "alt": "16 has one set bit and qualifies; 20 has two and fails; zero fails the positive-value guard.",
+          "sha256": "f6f8a554c7673a3a10df41788a9593b6c6f9bca913ff7984ad8a1beda014bcd5"
+        }
+      ]
+    },
+    {
+      "path": "16-bits-and-sets/05-fixed-width-masks",
+      "files_sha256": {
+        "lesson.md": "d01771fe9cae191d2309af846e3099cc7306004060c9987cf51ce4e229165a5d",
+        "main.py": "a667e6a1857acb4fe4a96d4b6ab1cd5ed564389bee2ca6d360f9a569fe45cb9b",
+        "test_main.py": "d144b9c7fb06f910a43ba5cf3d0c08fefc86615cf9c55eda07fbec9b5b9d5793",
+        "solution/main.py": "33209873b8fa0b893b07b9213e8154a8e9fd0db821b1eef0bd6c03e24eed0ff9",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 3,
+      "test_names": [
+        "test_validate_field_value",
+        "test_validate_field_width",
+        "test_invert_low_field"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "a667e6a1857acb4fe4a96d4b6ab1cd5ed564389bee2ca6d360f9a569fe45cb9b",
+          "test_vector": [
+            false,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "dab2e4a61942cbdcc4b49c8affc6ccbaea7bd4fedf4ef251ca577971cff63a39",
+          "test_vector": [
+            true,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "8f1c5be783efa13970f0a598cb0a1288c4381c3071051bc03494cfde0ece565f",
+          "test_vector": [
+            true,
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 3,
+          "sha256": "33209873b8fa0b893b07b9213e8154a8e9fd0db821b1eef0bd6c03e24eed0ff9",
+          "test_vector": [
+            true,
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Five bits: None\n",
+      "solution_stdout": "Five bits: 18\n",
+      "diagrams": [
+        {
+          "path": "fixed-width-bit-mask.svg",
+          "alt": "An eight-bit mask turns the complement of 45 into 210, with bit zero at the right.",
+          "sha256": "2905ea0a8d991aef7f6da0a2f55b4af8d1e89359a8f6582bc3e431e27944df3d"
+        }
+      ]
+    },
+    {
+      "path": "16-bits-and-sets/06-set-algebra",
+      "files_sha256": {
+        "lesson.md": "59f47d6c242b40c4afe04051f7dc4c54707d7faa90eaa88488cfb0bdefc95604",
+        "main.py": "9a55fda2ff35830d6314f21b2f2c47b2a985e1047415d487c69a63447bc183c3",
+        "test_main.py": "7f9781fbc481c84479f2eff233f4c558b136b61bebeb730840d8f00dc42494e7",
+        "solution/main.py": "3caa0b0f4c647ec9f84c82696ba6fd06cfaf48e4db19026e24f5e741c97c3cc3",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 4,
+      "test_names": [
+        "test_group_either",
+        "test_group_both",
+        "test_group_left_only",
+        "test_group_exclusive"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "9a55fda2ff35830d6314f21b2f2c47b2a985e1047415d487c69a63447bc183c3",
+          "test_vector": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "a325e53874bec244bca24f4b8b05da836fafed3cc84e0585b889f47f728123e0",
+          "test_vector": [
+            true,
+            false,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "3a1f2de6d379c15e417b95435dbfea17978ab5c2b663e335eadbbcdf1cf5a367",
+          "test_vector": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 3,
+          "sha256": "57587fd188c552a41c1c7a92f0e805692fe50f0150a7e5127bc523bc384842fb",
+          "test_vector": [
+            true,
+            true,
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 4,
+          "sha256": "3caa0b0f4c647ec9f84c82696ba6fd06cfaf48e4db19026e24f5e741c97c3cc3",
+          "test_vector": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Group comparison: {'either': None, 'both': None, 'left_only': None, 'exclusive': None}\n",
+      "solution_stdout": "Group comparison: {'either': {9, 2, 4}, 'both': {4}, 'left_only': {2}, 'exclusive': {9, 2}}\n",
+      "diagrams": [
+        {
+          "path": "bits-and-sets-set-algebra-trace.svg",
+          "alt": "The groups containing 3 and 7, and 7 and 11, share only 7; their symmetric difference contains 3 and 11.",
+          "sha256": "e4c23816af1ccad2cb3b5bbcd9d9d7115f253ad10961b56de7a650150f9dd013"
+        }
+      ]
+    },
+    {
+      "path": "16-bits-and-sets/07-frozenset-keys",
+      "files_sha256": {
+        "lesson.md": "f8fae91bd736ba1afe9950438e96b9f552bb5e87141e816805abf71a4dc75824",
+        "main.py": "6220b363e10745f9c750a65620385d69ef625b20f183ed98079c7a9b6b1e89da",
+        "test_main.py": "af4c356259adca89c059603e5dc0ad0129523341d50355a2452659d16ade264d",
+        "solution/main.py": "678e7493584f5d3b40bc78dfd342898801f1518e15b379a8e4a3430b6630eb1b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 2,
+      "test_names": [
+        "test_bundle_keys",
+        "test_bundle_counts"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "6220b363e10745f9c750a65620385d69ef625b20f183ed98079c7a9b6b1e89da",
+          "test_vector": [
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "01dde536ad5924e8977f0505da6df794fb830dff31742871e5eddb7f74565974",
+          "test_vector": [
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "678e7493584f5d3b40bc78dfd342898801f1518e15b379a8e4a3430b6630eb1b",
+          "test_vector": [
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Bundle count: None\n",
+      "solution_stdout": "Bundle count: 2\n",
+      "diagrams": []
+    },
+    {
+      "path": "16-bits-and-sets/08-permission-flags",
+      "files_sha256": {
+        "lesson.md": "7a9720cd753855779b73cd7bf1449c557e276ca655b914d939a5e9c7e16e8bba",
+        "main.py": "0936da021997e01fb53d28b20ac41be8481d515ba52bb01ded36d40c1e0894d5",
+        "test_main.py": "f33dec7eb1595e64da92ce0f718f7a133cddcd606d36727b997f59166206c1ff",
+        "solution/main.py": "e83635949ba1c1727194503e372013a1e5ec17ec3f0b2dbcc7a6381a55f0ff2a",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 2,
+      "test_names": [
+        "test_validate_permissions",
+        "test_all_requested_bits"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "0936da021997e01fb53d28b20ac41be8481d515ba52bb01ded36d40c1e0894d5",
+          "test_vector": [
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "a94535b95d11a9707351888115d5c2ee00cb78bc19628d7219a62e69020517f7",
+          "test_vector": [
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "e83635949ba1c1727194503e372013a1e5ec17ec3f0b2dbcc7a6381a55f0ff2a",
+          "test_vector": [
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Edit allowed: None\n",
+      "solution_stdout": "Edit allowed: False\n",
+      "diagrams": [
+        {
+          "path": "bits-and-sets-permission-flags-trace.svg",
+          "alt": "Held permissions VIEW and EDIT overlap a request for EDIT and EXPORT, but the missing EXPORT makes the all-permissions check false.",
+          "sha256": "2a99b8fd6b743e9560937c9e0c8059164b7010fc86c7e83f984bd17f8edb91ed"
+        }
+      ]
+    },
+    {
+      "path": "17-tries/01-trie-node",
+      "files_sha256": {
+        "lesson.md": "8eeb109e6f3e8081f1fead5a6ad868b5f91d0dbf61563052b15cf472f6cd0514",
+        "main.py": "4c8b80f63bd4d74bc45f57c1b09531f00f24b4bc5de078a7654f074920439736",
+        "test_main.py": "d0c46a47fada6a894e65c254ce10078ba9a838392d76499f47c34acc8aac8ea0",
+        "solution/main.py": "a8775ad2ed36fde133d32902e6142af624da154e92643db247b3bc05f2e749f8",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 2,
+      "test_names": [
+        "test_fresh_children",
+        "test_terminal_flag"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "4c8b80f63bd4d74bc45f57c1b09531f00f24b4bc5de078a7654f074920439736",
+          "test_vector": [
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "9b15c4be80346e69f2f406afe7663e9ba414f68f9f98a19d0950c05bdd11cfb1",
+          "test_vector": [
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "a8775ad2ed36fde133d32902e6142af624da154e92643db247b3bc05f2e749f8",
+          "test_vector": [
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "'NoneType' object does not support item assignment\n",
+      "solution_stdout": "Independent: True\n",
+      "diagrams": [
+        {
+          "path": "tries-trie-node-trace.svg",
+          "alt": "Adding a b child to node A leaves node B empty because each node owns a separate child dictionary.",
+          "sha256": "c7f2da2ceac3947018225917676c95f08b45a8b616d220095f42a1ffbe378d59"
+        }
+      ]
+    },
+    {
+      "path": "17-tries/02-insert-word",
+      "files_sha256": {
+        "lesson.md": "85559f26b7ffd8da313872a901eb99e1a5cac26bcb8244047916025b1ff9f8f9",
+        "main.py": "6feb4ab448d90532892faf09961498cba668e060ca89b1199f3a3d65ff896af2",
+        "test_main.py": "01df0eef3297891fe4d1ac0c670a1997ff634f188829135096189894be8365ec",
+        "solution/main.py": "444ab06c44741c6824d3f7fc141e80b3e0df985aaba8eb1485a51456ef6bfa99",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 2,
+      "test_names": [
+        "test_insert_path",
+        "test_mark_word_end"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "6feb4ab448d90532892faf09961498cba668e060ca89b1199f3a3d65ff896af2",
+          "test_vector": [
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "e91ec324c4aabaec18033896ac8d08a395e98cc8729ebeb18091ba057fbf8741",
+          "test_vector": [
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "444ab06c44741c6824d3f7fc141e80b3e0df985aaba8eb1485a51456ef6bfa99",
+          "test_vector": [
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Root edges: []\n",
+      "solution_stdout": "Root edges: ['r']\n",
+      "diagrams": [
+        {
+          "path": "tries-insert-word-trace.svg",
+          "alt": "Inserting bet beside bee reuses the b and e edges, adds a t child, and marks only the new word ending.",
+          "sha256": "33977eb634065a25d515825d543e160aaa172dc3d8e4551fa890a1a604c309e9"
+        }
+      ]
+    },
+    {
+      "path": "17-tries/03-contains-word",
+      "files_sha256": {
+        "lesson.md": "825a1b5e2c1d92e443a9d847795491e91bbb4b3f89bab563cf6e4cff0e3b207a",
+        "main.py": "a5418b6c51df627ac14d9bda8fc5922e663b14a79ddf9b5787c2c66bd9af0f00",
+        "test_main.py": "33bb03b7a2f304d499853d15a163a669b4070d5d2169134f00ac9e1767f49009",
+        "solution/main.py": "99283dd00f9f35dde0f8ecf0de2a3db34a8d8f5d2fe83ce54a9645adc035f156",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 2,
+      "test_names": [
+        "test_follow_word",
+        "test_finish_contains"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "a5418b6c51df627ac14d9bda8fc5922e663b14a79ddf9b5787c2c66bd9af0f00",
+          "test_vector": [
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "a06373fab96e9ca012f10b6c2717fb0b4fd2eeeaa2af87e85c369c7f330a53bb",
+          "test_vector": [
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "99283dd00f9f35dde0f8ecf0de2a3db34a8d8f5d2fe83ce54a9645adc035f156",
+          "test_vector": [
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Whole words: None None\n",
+      "solution_stdout": "Whole words: False True\n",
+      "diagrams": [
+        {
+          "path": "tries-contains-word-trace.svg",
+          "alt": "A trie storing bee contains bee but not its unmarked prefix be, the missing word bo, or the empty word.",
+          "sha256": "fda19828075f0b0a06e63e0863d3377d19e542a1b53f44fbd1a607b3bf440499"
+        }
+      ]
+    },
+    {
+      "path": "17-tries/04-starts-with",
+      "files_sha256": {
+        "lesson.md": "dceffd36869216d8adacfc2a40f69f0f70bc92c84c0468f9c4dcf6c1d22576e9",
+        "main.py": "2a9c2e0c2811a0aff98ef0664cd410531dedd22bdaa9859cc6fa46ca2139543a",
+        "test_main.py": "abab53fb693a0ecd2db50088466abfa9747376fe7d5ce3ce960b54914c6f59d4",
+        "solution/main.py": "8a0a8e04e22c7bea47259f4e5b683a12dc7d6a3884950ab566f24cde40f16eca",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 2,
+      "test_names": [
+        "test_follow_prefix",
+        "test_finish_starts_with"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "2a9c2e0c2811a0aff98ef0664cd410531dedd22bdaa9859cc6fa46ca2139543a",
+          "test_vector": [
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "18cb0df5f61f570ea24ba9a0e4dcdf21b224eea207ec22bc51f4aa0e1e291782",
+          "test_vector": [
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "8a0a8e04e22c7bea47259f4e5b683a12dc7d6a3884950ab566f24cde40f16eca",
+          "test_vector": [
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Prefix: None False\n",
+      "solution_stdout": "Prefix: True False\n",
+      "diagrams": [
+        {
+          "path": "tries-starts-with-trace.svg",
+          "alt": "A trie storing bee has paths for be, bee, and the empty prefix, but no path for bo.",
+          "sha256": "1db1d5f3a0e1848e085b9da9bf034489cda40f944995a962de4b3b7598e9832e"
+        }
+      ]
+    },
+    {
+      "path": "17-tries/05-collect-prefix-words",
+      "files_sha256": {
+        "lesson.md": "08babdd6b66e6490664d13b88900b89e07122b341a18d44226dd7aefeb59d61f",
+        "main.py": "f708545b46453a199b4b63ff1aa0a62743359f39587f03c7ea59ab0806ab692d",
+        "test_main.py": "3e6d7a9b237826697c8ec0296e360c1f7a394afadc059333320698b4b8067b4f",
+        "solution/main.py": "3642d9a9731851113b35ddffd52e1fa0e426605f8be2b075009478068ccc9f13",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 3,
+      "test_names": [
+        "test_locate_collection_prefix",
+        "test_append_current_word",
+        "test_collect_terminal_words"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "f708545b46453a199b4b63ff1aa0a62743359f39587f03c7ea59ab0806ab692d",
+          "test_vector": [
+            false,
+            false,
+            false
+          ],
+          "source": "from __future__ import annotations\n\nclass TrieNode:\n\n    def __init__(self: TrieNode) -> None:\n        self.children: dict[str, TrieNode] = {}\n        self.terminal: bool = False\n\nclass Trie:\n\n    def __init__(self: Trie) -> None:\n        self.root: TrieNode = TrieNode()\n\n    def insert(self: Trie, word: str) -> None:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                node.children[char] = TrieNode()\n            node = node.children[char]\n        node.terminal = True\n\n    def contains(self: Trie, word: str) -> bool:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return node.terminal\n\n    def starts_with(self: Trie, prefix: str) -> bool:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return True\n\n    def collect(self: Trie, prefix: str) -> list[str]:\n        node = self.root\n        raise NotImplementedError('Locate the prefix first')\n        result: list[str] = []\n\n        def visit(node: TrieNode, word: str) -> None:\n            pass  # TODO: append this spelling if the node ends a word\n            pass  # TODO: visit child edges in sorted order\n        visit(node, prefix)\n        return result\nif __name__ == '__main__':\n    try:\n        index = Trie()\n        for word in ['reef', 'reed', 'red']:\n            index.insert(word)\n        print('Suggestions:', index.collect('ree'))\n    except (NotImplementedError, AttributeError, TypeError, IndexError) as error:\n        print(error)\n"
+        },
+        {
+          "completed": 1,
+          "sha256": "6bc7f6c1a3563a4be730b6dc89f2553eee25e7f222dcfd8f114f8e9652c3ea15",
+          "test_vector": [
+            true,
+            false,
+            false
+          ],
+          "source": "from __future__ import annotations\n\nclass TrieNode:\n\n    def __init__(self: TrieNode) -> None:\n        self.children: dict[str, TrieNode] = {}\n        self.terminal: bool = False\n\nclass Trie:\n\n    def __init__(self: Trie) -> None:\n        self.root: TrieNode = TrieNode()\n\n    def insert(self: Trie, word: str) -> None:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                node.children[char] = TrieNode()\n            node = node.children[char]\n        node.terminal = True\n\n    def contains(self: Trie, word: str) -> bool:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return node.terminal\n\n    def starts_with(self: Trie, prefix: str) -> bool:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return True\n\n    def collect(self: Trie, prefix: str) -> list[str]:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return []\n            node = node.children[char]\n        result: list[str] = []\n\n        def visit(node: TrieNode, word: str) -> None:\n            pass  # TODO: append this spelling if the node ends a word\n            pass  # TODO: visit child edges in sorted order\n        visit(node, prefix)\n        return result\nif __name__ == '__main__':\n    try:\n        index = Trie()\n        for word in ['reef', 'reed', 'red']:\n            index.insert(word)\n        print('Suggestions:', index.collect('ree'))\n    except (NotImplementedError, AttributeError, TypeError, IndexError) as error:\n        print(error)\n"
+        },
+        {
+          "completed": 2,
+          "sha256": "a4368a45b21e4f6e38dc3c50dd932ea8f79771dab9b38c075c28e58a57fd9321",
+          "test_vector": [
+            true,
+            true,
+            false
+          ],
+          "source": "from __future__ import annotations\n\nclass TrieNode:\n\n    def __init__(self: TrieNode) -> None:\n        self.children: dict[str, TrieNode] = {}\n        self.terminal: bool = False\n\nclass Trie:\n\n    def __init__(self: Trie) -> None:\n        self.root: TrieNode = TrieNode()\n\n    def insert(self: Trie, word: str) -> None:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                node.children[char] = TrieNode()\n            node = node.children[char]\n        node.terminal = True\n\n    def contains(self: Trie, word: str) -> bool:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return node.terminal\n\n    def starts_with(self: Trie, prefix: str) -> bool:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return True\n\n    def collect(self: Trie, prefix: str) -> list[str]:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return []\n            node = node.children[char]\n        result: list[str] = []\n\n        def visit(node: TrieNode, word: str) -> None:\n            if node.terminal:\n                result.append(word)\n            pass  # TODO: visit child edges in sorted order\n        visit(node, prefix)\n        return result\nif __name__ == '__main__':\n    try:\n        index = Trie()\n        for word in ['reef', 'reed', 'red']:\n            index.insert(word)\n        print('Suggestions:', index.collect('ree'))\n    except (NotImplementedError, AttributeError, TypeError, IndexError) as error:\n        print(error)\n"
+        },
+        {
+          "completed": 3,
+          "sha256": "3642d9a9731851113b35ddffd52e1fa0e426605f8be2b075009478068ccc9f13",
+          "test_vector": [
+            true,
+            true,
+            true
+          ],
+          "source": "from __future__ import annotations\n\nclass TrieNode:\n\n    def __init__(self: TrieNode) -> None:\n        self.children: dict[str, TrieNode] = {}\n        self.terminal: bool = False\n\nclass Trie:\n\n    def __init__(self: Trie) -> None:\n        self.root: TrieNode = TrieNode()\n\n    def insert(self: Trie, word: str) -> None:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                node.children[char] = TrieNode()\n            node = node.children[char]\n        node.terminal = True\n\n    def contains(self: Trie, word: str) -> bool:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return node.terminal\n\n    def starts_with(self: Trie, prefix: str) -> bool:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return True\n\n    def collect(self: Trie, prefix: str) -> list[str]:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return []\n            node = node.children[char]\n        result: list[str] = []\n\n        def visit(node: TrieNode, word: str) -> None:\n            if node.terminal:\n                result.append(word)\n            for char in sorted(node.children):\n                visit(node.children[char], word + char)\n        visit(node, prefix)\n        return result\nif __name__ == '__main__':\n    try:\n        index = Trie()\n        for word in ['reef', 'reed', 'red']:\n            index.insert(word)\n        print('Suggestions:', index.collect('ree'))\n    except (NotImplementedError, AttributeError, TypeError, IndexError) as error:\n        print(error)\n"
+        }
+      ],
+      "starter_stdout": "Locate the prefix first\n",
+      "solution_stdout": "Suggestions: ['reed', 'reef']\n",
+      "diagrams": [
+        {
+          "path": "tries-collect-prefix-words-trace.svg",
+          "alt": "A sorted traversal below be returns be itself, then bee and bet, without changing the trie.",
+          "sha256": "b4f42073a5cec551159eca7bf3a4dd7a710be21d0ba1ea749ca49d8c9fb69eb7"
+        }
+      ]
+    },
+    {
+      "path": "17-tries/06-delete-word",
+      "files_sha256": {
+        "lesson.md": "ab9528972c7e53cec17f80470bff3c080ebb125c76198366058d935460745fa6",
+        "main.py": "946f7f480b3305c39ce1407481053e66e1a16b702879c89e24732e157bd8171d",
+        "test_main.py": "c564c05612efdbddb027fabc0d8d9f9cb2835d2f2857b069e1b569f25ac0bc7a",
+        "solution/main.py": "4dec930f83f0527f794f58affe38fd8771e313797e46a22459e511171a2ed67a",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 3,
+      "test_names": [
+        "test_find_deletion_target",
+        "test_unmark_deleted_word",
+        "test_prune_unused_suffix"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "946f7f480b3305c39ce1407481053e66e1a16b702879c89e24732e157bd8171d",
+          "test_vector": [
+            false,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "7664ffe2efaa6885ebf4d674a22b5b0a36a8b4ef96dd9ebaca7d8d5c5aa629ac",
+          "test_vector": [
+            true,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "a29e188d827c644b43c00b59c8aca0bb5d93aceb9a3a68282b068f639a7d79a1",
+          "test_vector": [
+            true,
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 3,
+          "sha256": "4dec930f83f0527f794f58affe38fd8771e313797e46a22459e511171a2ed67a",
+          "test_vector": [
+            true,
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Find the stored word first\n",
+      "solution_stdout": "Preserved: ['reeds', 'reef']\n",
+      "diagrams": [
+        {
+          "path": "trie-shared-prefix-deletion.svg",
+          "alt": "Deleting map prunes its p edge while preserving the shared m and a path to mat.",
+          "sha256": "16317cd360c66b698fab52aecc396f782164f932cac9ff346a516ac3df91d773"
+        }
+      ]
+    },
+    {
+      "path": "17-tries/07-prefix-counts",
+      "files_sha256": {
+        "lesson.md": "ef4b8ac34e5833b53ba7b6cd23733c34206a6062dc01264db09df57ff2060322",
+        "main.py": "ad95aa37481e70698e41767f16f619e1cdb5be13f40b1db25b2998201d7804d1",
+        "test_main.py": "6eb2123dd753039bc3fa61e627f499583bd2cec8d345e3b7d1d79c9ae93f619a",
+        "solution/main.py": "cd5901fb246e195ae77b5b571359abae19ffdbe5a5d125231f08187cf8bae40b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 3,
+      "test_names": [
+        "test_find_count_prefix",
+        "test_count_current_node",
+        "test_count_terminal_nodes"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "ad95aa37481e70698e41767f16f619e1cdb5be13f40b1db25b2998201d7804d1",
+          "test_vector": [
+            false,
+            false,
+            false
+          ],
+          "source": "from __future__ import annotations\n\nclass TrieNode:\n\n    def __init__(self: TrieNode) -> None:\n        self.children: dict[str, TrieNode] = {}\n        self.terminal: bool = False\n\nclass Trie:\n\n    def __init__(self: Trie) -> None:\n        self.root: TrieNode = TrieNode()\n\n    def insert(self: Trie, word: str) -> None:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                node.children[char] = TrieNode()\n            node = node.children[char]\n        node.terminal = True\n\n    def contains(self: Trie, word: str) -> bool:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return node.terminal\n\n    def starts_with(self: Trie, prefix: str) -> bool:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return True\n\n    def collect(self: Trie, prefix: str) -> list[str]:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return []\n            node = node.children[char]\n        result: list[str] = []\n\n        def visit(node: TrieNode, word: str) -> None:\n            if node.terminal:\n                result.append(word)\n            for char in sorted(node.children):\n                visit(node.children[char], word + char)\n        visit(node, prefix)\n        return result\n\n    def delete(self: Trie, word: str) -> bool:\n        node = self.root\n        trail: list[tuple[TrieNode, str]] = []\n        for char in word:\n            if char not in node.children:\n                return False\n            trail.append((node, char))\n            node = node.children[char]\n        if not node.terminal:\n            return False\n        node.terminal = False\n        for parent, char in reversed(trail):\n            child = parent.children[char]\n            if child.terminal or child.children:\n                break\n            del parent.children[char]\n        return True\n\n    def count_prefix(self: Trie, prefix: str) -> int:\n        node = self.root\n        raise NotImplementedError('Locate the prefix first')\n        stack: list[TrieNode] = [node]\n        count = 0\n        while stack:\n            current = stack.pop()\n            pass  # TODO: count this node if terminal\n            pass  # TODO: enqueue its children\n        return count\nif __name__ == '__main__':\n    try:\n        index = Trie()\n        for word in ['reed', 'reeds', 'reef']:\n            index.insert(word)\n        print('Matching words:', index.count_prefix('ree'))\n    except (NotImplementedError, AttributeError, TypeError, IndexError) as error:\n        print(error)\n"
+        },
+        {
+          "completed": 1,
+          "sha256": "49e29ad20596ab3aafa500164560c49b41d390a3c50294d45a701919434b7a16",
+          "test_vector": [
+            true,
+            false,
+            false
+          ],
+          "source": "from __future__ import annotations\n\nclass TrieNode:\n\n    def __init__(self: TrieNode) -> None:\n        self.children: dict[str, TrieNode] = {}\n        self.terminal: bool = False\n\nclass Trie:\n\n    def __init__(self: Trie) -> None:\n        self.root: TrieNode = TrieNode()\n\n    def insert(self: Trie, word: str) -> None:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                node.children[char] = TrieNode()\n            node = node.children[char]\n        node.terminal = True\n\n    def contains(self: Trie, word: str) -> bool:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return node.terminal\n\n    def starts_with(self: Trie, prefix: str) -> bool:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return True\n\n    def collect(self: Trie, prefix: str) -> list[str]:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return []\n            node = node.children[char]\n        result: list[str] = []\n\n        def visit(node: TrieNode, word: str) -> None:\n            if node.terminal:\n                result.append(word)\n            for char in sorted(node.children):\n                visit(node.children[char], word + char)\n        visit(node, prefix)\n        return result\n\n    def delete(self: Trie, word: str) -> bool:\n        node = self.root\n        trail: list[tuple[TrieNode, str]] = []\n        for char in word:\n            if char not in node.children:\n                return False\n            trail.append((node, char))\n            node = node.children[char]\n        if not node.terminal:\n            return False\n        node.terminal = False\n        for parent, char in reversed(trail):\n            child = parent.children[char]\n            if child.terminal or child.children:\n                break\n            del parent.children[char]\n        return True\n\n    def count_prefix(self: Trie, prefix: str) -> int:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return 0\n            node = node.children[char]\n        stack: list[TrieNode] = [node]\n        count = 0\n        while stack:\n            current = stack.pop()\n            pass  # TODO: count this node if terminal\n            pass  # TODO: enqueue its children\n        return count\nif __name__ == '__main__':\n    try:\n        index = Trie()\n        for word in ['reed', 'reeds', 'reef']:\n            index.insert(word)\n        print('Matching words:', index.count_prefix('ree'))\n    except (NotImplementedError, AttributeError, TypeError, IndexError) as error:\n        print(error)\n"
+        },
+        {
+          "completed": 2,
+          "sha256": "3ff96ca4b594f05c9631186bdb8a9927cbf5e5c62718285995b8e26de5093f6f",
+          "test_vector": [
+            true,
+            true,
+            false
+          ],
+          "source": "from __future__ import annotations\n\nclass TrieNode:\n\n    def __init__(self: TrieNode) -> None:\n        self.children: dict[str, TrieNode] = {}\n        self.terminal: bool = False\n\nclass Trie:\n\n    def __init__(self: Trie) -> None:\n        self.root: TrieNode = TrieNode()\n\n    def insert(self: Trie, word: str) -> None:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                node.children[char] = TrieNode()\n            node = node.children[char]\n        node.terminal = True\n\n    def contains(self: Trie, word: str) -> bool:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return node.terminal\n\n    def starts_with(self: Trie, prefix: str) -> bool:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return True\n\n    def collect(self: Trie, prefix: str) -> list[str]:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return []\n            node = node.children[char]\n        result: list[str] = []\n\n        def visit(node: TrieNode, word: str) -> None:\n            if node.terminal:\n                result.append(word)\n            for char in sorted(node.children):\n                visit(node.children[char], word + char)\n        visit(node, prefix)\n        return result\n\n    def delete(self: Trie, word: str) -> bool:\n        node = self.root\n        trail: list[tuple[TrieNode, str]] = []\n        for char in word:\n            if char not in node.children:\n                return False\n            trail.append((node, char))\n            node = node.children[char]\n        if not node.terminal:\n            return False\n        node.terminal = False\n        for parent, char in reversed(trail):\n            child = parent.children[char]\n            if child.terminal or child.children:\n                break\n            del parent.children[char]\n        return True\n\n    def count_prefix(self: Trie, prefix: str) -> int:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return 0\n            node = node.children[char]\n        stack: list[TrieNode] = [node]\n        count = 0\n        while stack:\n            current = stack.pop()\n            count += int(current.terminal)\n            pass  # TODO: enqueue its children\n        return count\nif __name__ == '__main__':\n    try:\n        index = Trie()\n        for word in ['reed', 'reeds', 'reef']:\n            index.insert(word)\n        print('Matching words:', index.count_prefix('ree'))\n    except (NotImplementedError, AttributeError, TypeError, IndexError) as error:\n        print(error)\n"
+        },
+        {
+          "completed": 3,
+          "sha256": "cd5901fb246e195ae77b5b571359abae19ffdbe5a5d125231f08187cf8bae40b",
+          "test_vector": [
+            true,
+            true,
+            true
+          ],
+          "source": "from __future__ import annotations\n\nclass TrieNode:\n\n    def __init__(self: TrieNode) -> None:\n        self.children: dict[str, TrieNode] = {}\n        self.terminal: bool = False\n\nclass Trie:\n\n    def __init__(self: Trie) -> None:\n        self.root: TrieNode = TrieNode()\n\n    def insert(self: Trie, word: str) -> None:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                node.children[char] = TrieNode()\n            node = node.children[char]\n        node.terminal = True\n\n    def contains(self: Trie, word: str) -> bool:\n        node = self.root\n        for char in word:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return node.terminal\n\n    def starts_with(self: Trie, prefix: str) -> bool:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return False\n            node = node.children[char]\n        return True\n\n    def collect(self: Trie, prefix: str) -> list[str]:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return []\n            node = node.children[char]\n        result: list[str] = []\n\n        def visit(node: TrieNode, word: str) -> None:\n            if node.terminal:\n                result.append(word)\n            for char in sorted(node.children):\n                visit(node.children[char], word + char)\n        visit(node, prefix)\n        return result\n\n    def delete(self: Trie, word: str) -> bool:\n        node = self.root\n        trail: list[tuple[TrieNode, str]] = []\n        for char in word:\n            if char not in node.children:\n                return False\n            trail.append((node, char))\n            node = node.children[char]\n        if not node.terminal:\n            return False\n        node.terminal = False\n        for parent, char in reversed(trail):\n            child = parent.children[char]\n            if child.terminal or child.children:\n                break\n            del parent.children[char]\n        return True\n\n    def count_prefix(self: Trie, prefix: str) -> int:\n        node = self.root\n        for char in prefix:\n            if char not in node.children:\n                return 0\n            node = node.children[char]\n        stack: list[TrieNode] = [node]\n        count = 0\n        while stack:\n            node = stack.pop()\n            count += int(node.terminal)\n            stack.extend(node.children.values())\n        return count\nif __name__ == '__main__':\n    try:\n        index = Trie()\n        for word in ['reed', 'reeds', 'reef']:\n            index.insert(word)\n        print('Matching words:', index.count_prefix('ree'))\n    except (NotImplementedError, AttributeError, TypeError, IndexError) as error:\n        print(error)\n"
+        }
+      ],
+      "starter_stdout": "Locate the prefix first\n",
+      "solution_stdout": "Matching words: 3\n",
+      "diagrams": [
+        {
+          "path": "tries-prefix-counts-trace.svg",
+          "alt": "Three terminal nodes below be count the distinct words be, bee, and bet; duplicate insertion does not increase the count.",
+          "sha256": "5684f37e80a8602cec1c627247605d37553208b06e2412ed75183c925a2ca238"
+        }
+      ]
+    },
+    {
+      "path": "17-tries/08-autocomplete-project",
+      "files_sha256": {
+        "lesson.md": "296b8705f9d33691153dc42cf76688aca63c32dbcf41eb620deb1d4acacc868b",
+        "main.py": "0255c49c3a07044b06e70d9494d664ab6f398946df9281bfd7502137e8c1c845",
+        "test_main.py": "e648c12fb1bbf5208249128f9c6eea860561aaa93902c7cd80f3d31188fff2cf",
+        "solution/main.py": "2d7a799c10441278d85f8e732948a0430a9ee53c0bdf24c7e6ef1bbd83af6d34",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 4,
+      "test_names": [
+        "test_suggest_limit_type",
+        "test_suggest_limit_range",
+        "test_suggest_total",
+        "test_suggest_list"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "0255c49c3a07044b06e70d9494d664ab6f398946df9281bfd7502137e8c1c845",
+          "test_vector": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "193c2471217504e49a6991db84ab420d6e1af91d5e0086ca7750435f9041e17f",
+          "test_vector": [
+            true,
+            false,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "fc6edf364f87765f2d695a79cbc557d3d7e8424f9594047fb6c89f89067fad3e",
+          "test_vector": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 3,
+          "sha256": "5e0e2959ab440b07db33f39dd4e9411161da455878661938ea595e312c80bb7d",
+          "test_vector": [
+            true,
+            true,
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 4,
+          "sha256": "2d7a799c10441278d85f8e732948a0430a9ee53c0bdf24c7e6ef1bbd83af6d34",
+          "test_vector": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Report: (None, None)\n",
+      "solution_stdout": "Report: (3, ['reed', 'reeds'])\n",
+      "diagrams": [
+        {
+          "path": "tries-autocomplete-project-trace.svg",
+          "alt": "Autocomplete for be with limit two reports three matches but displays only be and bee; deleting bee preserves be and bet.",
+          "sha256": "f9cad09021c81326d7c68bc34f79fbf7eda0769ee5cc497b9d82537c8c14d43f"
+        }
+      ]
+    },
+    {
+      "path": "18-range-structures/01-fenwick-lowbit",
+      "files_sha256": {
+        "lesson.md": "9b5b37a267e35eff301735c876769ede4dae3817e9ea30f4c47ad2be6e98bd71",
+        "main.py": "733b15b0a2c1114bb7cb75fdf4da08614afd974fa7cbedee69d4d07d6a702072",
+        "test_main.py": "cf28f33808a8c4bdc420057f1daad7088cd3c9244ca7576f80608b1cec9dacc8",
+        "solution/main.py": "03c50b26214639433a8c4f559ea77601ed9668acd611867aaaac8103a83b5f5b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 2,
+      "test_names": [
+        "test_validate_lowbit",
+        "test_isolate_lowbit"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "733b15b0a2c1114bb7cb75fdf4da08614afd974fa7cbedee69d4d07d6a702072",
+          "test_vector": [
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "7d7dd5cbcab0ad64366a72d1d2fbecf68c3902368072ed2e1323eab2b33bb009",
+          "test_vector": [
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "03c50b26214639433a8c4f559ea77601ed9668acd611867aaaac8103a83b5f5b",
+          "test_vector": [
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Steps: [None, None, None, None]\n",
+      "solution_stdout": "Steps: [0, 1, 2, 8]\n",
+      "diagrams": [
+        {
+          "path": "range-structures-fenwick-lowbit-trace.svg",
+          "alt": "The lowest set bit of 12 is 4; subtracting lowbits visits boundaries 12, 8, and zero.",
+          "sha256": "200c4291b7344351338deb4864bc79c97e79529a987fa937db95bfb312b3b66e"
+        }
+      ]
+    },
+    {
+      "path": "18-range-structures/02-fenwick-state",
+      "files_sha256": {
+        "lesson.md": "f6f38fbbf8bea68169169f5f821ec499a4935aa37b31f569cef85669f2d73e98",
+        "main.py": "08b39036af79407d4cb3f8c440c15646c21b0307f9962b1bde58c680a2bee21c",
+        "test_main.py": "eaae96b13ccd5c9b48be3b1eb4a9659a1e134d3dd8fd7b6e681970721bd80f3e",
+        "solution/main.py": "f074015e256b7af75560646d2bb1b9a9d99de57e98f35a65e68c402b4357e56b",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 3,
+      "test_names": [
+        "test_validate_size",
+        "test_store_length",
+        "test_allocate_cells"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "08b39036af79407d4cb3f8c440c15646c21b0307f9962b1bde58c680a2bee21c",
+          "test_vector": [
+            false,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "3cb28e36274c4294efd5aed99d7f690c54aa2fc77032c7192e319c4bbfcdce3b",
+          "test_vector": [
+            true,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "b39859d6100e5311c2c528c2b6f7baac12e6dd4ff438fd4a4c9ee3b22ccfe753",
+          "test_vector": [
+            true,
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 3,
+          "sha256": "f074015e256b7af75560646d2bb1b9a9d99de57e98f35a65e68c402b4357e56b",
+          "test_vector": [
+            true,
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Internal cells: None\n",
+      "solution_stdout": "Internal cells: [0, 0, 0, 0]\n",
+      "diagrams": [
+        {
+          "path": "range-structures-fenwick-state-trace.svg",
+          "alt": "Fenwick size four allocates five zero cells, reserving cell zero and giving the remaining cells different half-open blocks.",
+          "sha256": "f23f731a67713c52da29739a998cd366e52f53103bfd5ee6588d720a37340d2a"
+        }
+      ]
+    },
+    {
+      "path": "18-range-structures/03-fenwick-add",
+      "files_sha256": {
+        "lesson.md": "ae3713b51b891d8e3b25684c586335655f835670ef2a69f2d1df39e438e45f02",
+        "main.py": "064b2131ea8136c4f072c8507290495166c8cbb0c89dced8157519ec8ed50824",
+        "test_main.py": "259f1eeccc2259ece69e4aa2128160ae14ce743eec2c7581758e9a6799652551",
+        "solution/main.py": "dbfd3b3222f47ff42ce3d61c49aaf3c4fdaea67c12b1e071c4b543fdcd1677e2",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 2,
+      "test_names": [
+        "test_validate_add_arguments",
+        "test_propagate_delta"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "064b2131ea8136c4f072c8507290495166c8cbb0c89dced8157519ec8ed50824",
+          "test_vector": [
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "8075bd79ac6c89715d4fa588f32a064589636a546f962a45b0889a4904a608f6",
+          "test_vector": [
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "dbfd3b3222f47ff42ce3d61c49aaf3c4fdaea67c12b1e071c4b543fdcd1677e2",
+          "test_vector": [
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Blocks: [0, 0, 0, 0, 0, 0]\n",
+      "solution_stdout": "Blocks: [0, 4, 4, 0, 4, 9]\n",
+      "diagrams": [
+        {
+          "path": "range-structures-fenwick-add-trace.svg",
+          "alt": "Adding seven at public position two updates internal cells three and four, then stops at cursor eight.",
+          "sha256": "83e790f3b7abe58d151db20b4754f76935a2e90a53179ac4bfd74e653fba8b0f"
+        }
+      ]
+    },
+    {
+      "path": "18-range-structures/04-fenwick-prefix",
+      "files_sha256": {
+        "lesson.md": "9c289f960972eb6d030655a2aca125f7a939cc4d8dc00a08b5cca1fbca2fc01c",
+        "main.py": "2ee700a6a4e8aa455052bfa692bc7eddd2b7cd60eca41306dca1cfd8482e4e74",
+        "test_main.py": "f4466041b255a4ba60b8f388c08abdb847072be8b31f38bca05a3bb689b5d0aa",
+        "solution/main.py": "f0a7c7a52b2912f9c728237fb9b5cf92717669c50bf697dad019fb25a2e5cf46",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 2,
+      "test_names": [
+        "test_validate_prefix_boundary",
+        "test_accumulate_prefix_blocks"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "2ee700a6a4e8aa455052bfa692bc7eddd2b7cd60eca41306dca1cfd8482e4e74",
+          "test_vector": [
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "1b3632ef6b133f4bfd938e313eaa5a7354f4fa4068e4a314cf629b6bd7b83870",
+          "test_vector": [
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "f0a7c7a52b2912f9c728237fb9b5cf92717669c50bf697dad019fb25a2e5cf46",
+          "test_vector": [
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Prefixes: [0, 0, 0, 0]\n",
+      "solution_stdout": "Prefixes: [0, 4, 2, 9]\n",
+      "diagrams": [
+        {
+          "path": "fenwick-prefix-blocks.svg",
+          "alt": "Fenwick prefix 7 visits cells 7, 6, and 4, whose sums 5, 9, and 14 total 28.",
+          "sha256": "25f294e21516487ba8d3255083e84ccb136c292385c9f353cad04d8fdfbf6f02"
+        }
+      ]
+    },
+    {
+      "path": "18-range-structures/05-fenwick-range",
+      "files_sha256": {
+        "lesson.md": "e73ccbac783caa181e29866da8a6711bb5c2b1ecef2930d4b177dff8aa1cb68a",
+        "main.py": "031818c24174830a1e4eb3caf139430349f81937f7227af4505f8e4b7c7c4842",
+        "test_main.py": "e9c75c5b2b51cee8637215481fa9eb9f7dd70b74f2d851b9df1eca6926e47fdc",
+        "solution/main.py": "5e8fa8b3b9092de7a7b474116ab9ebd337e750aee91ff4fe7fc12fc72446ae06",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 2,
+      "test_names": [
+        "test_validate_interval",
+        "test_subtract_prefixes"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "031818c24174830a1e4eb3caf139430349f81937f7227af4505f8e4b7c7c4842",
+          "test_vector": [
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "ce7d130a0d0fb6b0b7974c9edc24434c016163a9d813a1079db2350b3b7e88bb",
+          "test_vector": [
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "5e8fa8b3b9092de7a7b474116ab9ebd337e750aee91ff4fe7fc12fc72446ae06",
+          "test_vector": [
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Middle to end: None\n",
+      "solution_stdout": "Middle to end: 5\n",
+      "diagrams": [
+        {
+          "path": "range-structures-fenwick-range-trace.svg",
+          "alt": "For values 6, negative 3, 8, and 2, prefix totals 11 and 6 subtract to give range sum 5 for positions 1 through 2.",
+          "sha256": "58eddbc2fd1c02cbffd9d158d4f9a646d2b93f184b3f8f268dbdc3c13e3fb6bd"
+        }
+      ]
+    },
+    {
+      "path": "18-range-structures/06-fenwick-build",
+      "files_sha256": {
+        "lesson.md": "4d57d4c1bb3813c4caa754f12542da379655de525f88355b103247fc53d4cef7",
+        "main.py": "a2e6006fabd9292d6569aefe593b2a9319c9d8468125516a8f5a95344fd908a6",
+        "test_main.py": "9089ed37bb520de3081b7e583ee25fb8d6aec7cfaeab151c43304609a62328e2",
+        "solution/main.py": "70bad15314576d8458137d7046a8836a31f21f3aa32f7c0d5075b7fcaf4fd750",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 2,
+      "test_names": [
+        "test_allocate_new_fenwick",
+        "test_populate_fenwick"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "a2e6006fabd9292d6569aefe593b2a9319c9d8468125516a8f5a95344fd908a6",
+          "test_vector": [
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "86303062ae92c0dcbb56f145d62277ce99cc35e0d7099cf0a0c8715a4d4111b8",
+          "test_vector": [
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "70bad15314576d8458137d7046a8836a31f21f3aa32f7c0d5075b7fcaf4fd750",
+          "test_vector": [
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "'NoneType' object has no attribute 'range_sum'\n",
+      "solution_stdout": "All values: 13\n",
+      "diagrams": [
+        {
+          "path": "range-structures-fenwick-build-trace.svg",
+          "alt": "Adding each of 6, negative 3, 8, and 2 into an empty Fenwick tree produces internal cells 0, 6, 3, 8, and 13.",
+          "sha256": "effe916be59d8682c46b54a69d11b5033f07c9208fed8a12cb7601338a38b4bf"
+        }
+      ]
+    },
+    {
+      "path": "18-range-structures/07-segment-layout",
+      "files_sha256": {
+        "lesson.md": "bf65c83414026e3891ca40a4bb06b73692214b1fffc2ebdaef4972c401f72c13",
+        "main.py": "468d632bdf590c9a7a828b227f8a2ce183c92e5da3ae50c59fc80c79948463a5",
+        "test_main.py": "710a11cc9512930b209e6d0b1935ef0a0d767cfe6b87dde0626d9d6aab96d6e3",
+        "solution/main.py": "699049955729fc2a64111f9274114cb3fd322af52378f854a0ea77ea38e62047",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 4,
+      "test_names": [
+        "test_segment_real_length",
+        "test_segment_capacity",
+        "test_segment_storage",
+        "test_segment_real_leaves"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "468d632bdf590c9a7a828b227f8a2ce183c92e5da3ae50c59fc80c79948463a5",
+          "test_vector": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "f7ce8dc875f1d9a7e42448f92e793c72aa73fefad7ad68d42a5510eadbdb5f63",
+          "test_vector": [
+            true,
+            false,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "5376f26bef984666d6bd121c1ad418d8bf709f6cbb5822172f3ad36220cb13fd",
+          "test_vector": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 3,
+          "sha256": "a4173f985e62bf8ac0b71095becb62afcee25b938a03926f682c66745e220364",
+          "test_vector": [
+            true,
+            true,
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 4,
+          "sha256": "699049955729fc2a64111f9274114cb3fd322af52378f854a0ea77ea38e62047",
+          "test_vector": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Length and capacity: 0 1\n",
+      "solution_stdout": "Length and capacity: 5 8\n",
+      "diagrams": [
+        {
+          "path": "range-structures-segment-layout-trace.svg",
+          "alt": "Three values occupy leaves four through six of a capacity-four tree; leaf seven is zero padding and parents remain unbuilt.",
+          "sha256": "8cdd0b5364306f07b729dc2ad3d301e0314ce54e3ab6bf37bb37d634fb9b27a3"
+        }
+      ]
+    },
+    {
+      "path": "18-range-structures/08-segment-build",
+      "files_sha256": {
+        "lesson.md": "5af8ada7274710886a1a63739537249c33bb456d9833841032c543c8ea99af63",
+        "main.py": "cfc5c5913690e85a6f3ad7f26ee45fd5bcf56193e9081403e84c1b09df508dc7",
+        "test_main.py": "abd357ea4adcdaa42352fd267c7ee8b7df31aab6b9c771e6cbf202a7b6a94783",
+        "solution/main.py": "ec50f8e7f008f33b192966ee7994cc1bdd430c0093a3b2bba046e05b893e9cd3",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 1,
+      "test_names": [
+        "test_combine_parent"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "cfc5c5913690e85a6f3ad7f26ee45fd5bcf56193e9081403e84c1b09df508dc7",
+          "test_vector": [
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "ec50f8e7f008f33b192966ee7994cc1bdd430c0093a3b2bba046e05b893e9cd3",
+          "test_vector": [
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Root sum: 0\n",
+      "solution_stdout": "Root sum: 13\n",
+      "diagrams": [
+        {
+          "path": "range-structures-segment-build-trace.svg",
+          "alt": "Combining leaves 6, negative 3, 8, and zero padding builds parent sums 3 and 8, then root sum 11.",
+          "sha256": "9ef8be9977155b8243a38e1dde494f65aa6a0939332d07887db6ad1ef9b33248"
+        }
+      ]
+    },
+    {
+      "path": "18-range-structures/09-segment-query",
+      "files_sha256": {
+        "lesson.md": "e84aa6114e54d5db7ad2f891ec24f758aecbcc62e4b8f4688780879ad644340c",
+        "main.py": "2ffc32a50ca3d64af972c1460b0bf0e6b20f760c484d5b483b89b8d4cd2ea0b7",
+        "test_main.py": "0ccf03715033bd8f118c88efd165d98d7294a0bd9d84ec1f72034cde6535bdf6",
+        "solution/main.py": "98a01057daabc7be4026878d7f6614245f4940c06c8d49f3bfee73dcd80a6234",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 3,
+      "test_names": [
+        "test_validate_segment_interval",
+        "test_consume_left_block",
+        "test_consume_right_block"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "2ffc32a50ca3d64af972c1460b0bf0e6b20f760c484d5b483b89b8d4cd2ea0b7",
+          "test_vector": [
+            false,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "66a7319bf1ebcf805d723b07126d64d3104b863223fd6e7f084c8f172cb29863",
+          "test_vector": [
+            true,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "01e1a8020ab45120d318d89972243e4cc375bdbe35aed5a647570746194a0680",
+          "test_vector": [
+            true,
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 3,
+          "sha256": "98a01057daabc7be4026878d7f6614245f4940c06c8d49f3bfee73dcd80a6234",
+          "test_vector": [
+            true,
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Range: 0\n",
+      "solution_stdout": "Range: 6\n",
+      "diagrams": [
+        {
+          "path": "segment-tree-range-decomposition.svg",
+          "alt": "The segment query from 1 to 4 combines the leaf value 8 with the adjacent block sum 7 to return 15.",
+          "sha256": "4e6b86dbacf681964bea5ebe0fe30a23d6e98197935675ad222dcab847f816cc"
+        }
+      ]
+    },
+    {
+      "path": "18-range-structures/10-segment-update",
+      "files_sha256": {
+        "lesson.md": "665024ffa3aaec2ef3ee363057164baf1f618ace945277da9337d9aabafc9573",
+        "main.py": "24ef3a64cf4bcb897fa1bf40e25ca58c29981e6a707c48f55502f720fd0d19e9",
+        "test_main.py": "5fdb8db17e1a340bd7ee7e0be26ebc8629dbb7833479822e1268ab4753bdf4a3",
+        "solution/main.py": "69e236e6154323e5dfa605ccc81e2b4fb2cc76b506eba63b47970d833d51a574",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 3,
+      "test_names": [
+        "test_validate_replacement",
+        "test_replace_leaf",
+        "test_repair_ancestors"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "24ef3a64cf4bcb897fa1bf40e25ca58c29981e6a707c48f55502f720fd0d19e9",
+          "test_vector": [
+            false,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "e80c4cd626884223b0fbb1a2962b0b6daf09c0cb9e5b03bf77f730ec8099eac1",
+          "test_vector": [
+            true,
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "e3830b3fff01dfa869f8686a9137032bdac3e771800c95a2bd81db3e5edb3c55",
+          "test_vector": [
+            true,
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 3,
+          "sha256": "69e236e6154323e5dfa605ccc81e2b4fb2cc76b506eba63b47970d833d51a574",
+          "test_vector": [
+            true,
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "New total: 13\n",
+      "solution_stdout": "New total: 1\n",
+      "diagrams": [
+        {
+          "path": "range-structures-segment-update-trace.svg",
+          "alt": "Replacing negative 3 with 5 changes leaf five, its parent to 11, and the root to 19, leaving other branches unchanged.",
+          "sha256": "04e846b95de9e9cb27bf8f5d1abc1b1f6ab853f0801e0378a41078d48f4aef7b"
+        }
+      ]
+    },
+    {
+      "path": "18-range-structures/11-range-minimum",
+      "files_sha256": {
+        "lesson.md": "4e27ea35705b5b372d7113e3a31c3a9a30de67a0de5738c2c93acd3e3b8bdd43",
+        "main.py": "86d832bf4e469f7423b5fd9254c1292ef862e9746615d46d3276e802b24fd9fc",
+        "test_main.py": "2307b48885ecc770e810907b291b7b985ffb714fbf26b6c6071456f46d315188",
+        "solution/main.py": "fce47da33c39ce840bae5c03dedc31d5fb08c38e9df223a968e4b47a117f06a3",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 1,
+      "test_names": [
+        "test_minimum_combination"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "86d832bf4e469f7423b5fd9254c1292ef862e9746615d46d3276e802b24fd9fc",
+          "test_vector": [
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "fce47da33c39ce840bae5c03dedc31d5fb08c38e9df223a968e4b47a117f06a3",
+          "test_vector": [
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Combine two minima\n",
+      "solution_stdout": "Minimum: -2\n",
+      "diagrams": [
+        {
+          "path": "range-structures-range-minimum-trace.svg",
+          "alt": "A minimum tree uses infinity for its padded leaf; the interval from 1 to 3 returns negative 3, and an empty interval returns infinity.",
+          "sha256": "ad5a535b463e8411855ea4e04dcccc094f36dcc7e550a2aa0c52ab1c719c9eff"
+        }
+      ]
+    },
+    {
+      "path": "18-range-structures/12-range-dashboard",
+      "files_sha256": {
+        "lesson.md": "2125d2ade0ddacede2cba6d63bb29ab9934c4eede2dd36908c9d738b9c88452d",
+        "main.py": "f98cc752a754b321bd76f4c5808cc5fa93ed7d8c88081e4100a4438e5dd04eec",
+        "test_main.py": "7299472b2d39a87b786feae2c4107c8bf5de03a5e5be25c6fdb141fde81c0bd3",
+        "solution/main.py": "9e30e7c4abdc745026975e2496ffc0386b4a6620482a7b8451ebbce0e45217cf",
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36"
+      },
+      "task_count": 2,
+      "test_names": [
+        "test_dashboard_sum",
+        "test_dashboard_minimum"
+      ],
+      "prefixes": [
+        {
+          "completed": 0,
+          "sha256": "f98cc752a754b321bd76f4c5808cc5fa93ed7d8c88081e4100a4438e5dd04eec",
+          "test_vector": [
+            false,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 1,
+          "sha256": "1110aca15221a3d21c4ff6a3b069f07c331278f7aae95ba076e1600812b517a1",
+          "test_vector": [
+            true,
+            false
+          ],
+          "source": null
+        },
+        {
+          "completed": 2,
+          "sha256": "9e30e7c4abdc745026975e2496ffc0386b4a6620482a7b8451ebbce0e45217cf",
+          "test_vector": [
+            true,
+            true
+          ],
+          "source": null
+        }
+      ],
+      "starter_stdout": "Report: {'sum': None, 'minimum': None}\n",
+      "solution_stdout": "Report: {'sum': 14, 'minimum': 1}\n",
+      "diagrams": []
+    }
+  ],
+  "quiz": [
+    {
+      "module": "16-bits-and-sets",
+      "questions": [
+        {
+          "path": "16-bits-and-sets/quiz/q01.md",
+          "answer": "a",
+          "sha256": "c545bbd15a0d919e7fb53b5b9af11c4d1aeabc01520bc5632d659f17d3d30f27"
+        },
+        {
+          "path": "16-bits-and-sets/quiz/q02.md",
+          "answer": "b",
+          "sha256": "5516e3ce38b99a9b7d948ba550584aee8ec86200a4f377dc64463ffb1d924267"
+        },
+        {
+          "path": "16-bits-and-sets/quiz/q03.md",
+          "answer": "c",
+          "sha256": "af28c27cdbfa233c4c157557eb32db48711d2fbb536dc32ffba9a12e464c1c42"
+        },
+        {
+          "path": "16-bits-and-sets/quiz/q04.md",
+          "answer": "a",
+          "sha256": "f220e6d89e9123a2ca3527c3a360b26000514ed60d294f62e9ff83798da2dd3d"
+        }
+      ],
+      "index_sha256": "4826061494ba907d99fa1417d355431474d9fc3925d066c885e4b1bcdf1a19b3"
+    },
+    {
+      "module": "17-tries",
+      "questions": [
+        {
+          "path": "17-tries/quiz/q01.md",
+          "answer": "b",
+          "sha256": "ebeb96ec63307648eaac63adfaaf1107ce48ade4e74519255ccc3f2c87367dee"
+        },
+        {
+          "path": "17-tries/quiz/q02.md",
+          "answer": "c",
+          "sha256": "9221cf59c9ae193c7fcb7c8283fda2c9e43d451f786354614138bdafc7f6f1af"
+        },
+        {
+          "path": "17-tries/quiz/q03.md",
+          "answer": "a",
+          "sha256": "73db9a477f9c986942313f3e1c14d22379861b58b8cb3e123c36dd9417396256"
+        },
+        {
+          "path": "17-tries/quiz/q04.md",
+          "answer": "b",
+          "sha256": "e6c9d070d78d3161d6a34796df48675a64c3e1cee42c0d3a4c11c2a505f31ff8"
+        }
+      ],
+      "index_sha256": "96e8efd49befac9c26fc492c26f792e0f37d97140279c686265cdbab296ed3cf"
+    },
+    {
+      "module": "18-range-structures",
+      "questions": [
+        {
+          "path": "18-range-structures/quiz/q01.md",
+          "answer": "b",
+          "sha256": "d81a85018589701cb50a33c8cd2f7bfd1b8f89cdfe4e99c5667ade9f442b1571"
+        },
+        {
+          "path": "18-range-structures/quiz/q02.md",
+          "answer": "a",
+          "sha256": "a9cd7d4d0daeb8693bfac64f2198e471f985e3825195c746bafc97769421dad0"
+        },
+        {
+          "path": "18-range-structures/quiz/q03.md",
+          "answer": "c",
+          "sha256": "ac1c746d0e9c0581b9363cdfa8d5229ac98e79fb39bde1bc3d3522a45ea75d58"
+        },
+        {
+          "path": "18-range-structures/quiz/q04.md",
+          "answer": "b",
+          "sha256": "7b0e53d9ac7cbb1760a889e7c5c55afdc79d593525d8fdfa5ea51a299deae681"
+        }
+      ],
+      "index_sha256": "87b898e3fa889b75e36eae870d0cad2bed4b119cf705441f4c1e744d162c1527"
+    }
+  ],
+  "repairs": [
+    {
+      "path": "16-bits-and-sets/06-set-algebra",
+      "change": "Starter Run now displays the four placeholder entries instead of raising a sorting error; solution probe matches."
+    },
+    {
+      "path": "17-tries/05-collect-prefix-words",
+      "change": "Split terminal collection from ordered child traversal with independent graded checks and runnable cumulative milestones."
+    },
+    {
+      "path": "17-tries/07-prefix-counts",
+      "change": "Supply bounded stack loop; grade terminal counting separately from descending to children."
+    }
+  ],
+  "remaining_issues": [
+    {
+      "scope": "verification limit",
+      "detail": "No browser/Pyodide/editor import or full-size rendered diagram acceptance was performed; four SVGs were spot-checked via local QuickLook thumbnails."
+    },
+    {
+      "scope": "historical evidence",
+      "detail": "assets/audit-16-18.json has stale hashes and 68-task vectors from before this review; use this final 70-task review report instead."
+    }
+  ],
+  "verification": {
+    "lesson_count": 28,
+    "task_count": 70,
+    "prefix_states": 98,
+    "quiz_questions": 12,
+    "loader": "backend ContentLoader parsed all 28 assigned lessons and 12 quiz questions",
+    "native": "Each starter and all cumulative task prefixes had exact expected test vector; each solution passed all tests; Run executed in isolated CPython",
+    "diagrams": "26 lesson-local SVGs have nonempty alt, valid SVG source, canonical/local byte equality, and byte-identical outputs from the native image copier; four representative QuickLook thumbnail renders inspected, no browser/editor acceptance",
+    "whole_course_native": "verify_native.py: all 210 lessons and 466 tasks passed with zero errors; 84 quiz questions counted",
+    "whole_course_structure": "verify_structure.py found no annotation gaps, but 28 diagram-reference errors exclusively outside assigned modules"
+  }
+}

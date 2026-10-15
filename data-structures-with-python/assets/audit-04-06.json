@@ -1,0 +1,4156 @@
+{
+  "scope": "04-06",
+  "runtime_target": "InterCourses Pyodide",
+  "verification": "Native CPython plus actual backend loader; browser verification delegated to parent",
+  "lessons": [
+    {
+      "path": "04-singly-linked-lists/01-node-and-link",
+      "target": "Node.__init__",
+      "starter_run": {
+        "stdout": "None None None\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "Dawn Harbor None\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_node_keeps_payload_reference",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "name": "test_node_keeps_successor_reference",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_node_keeps_payload_reference",
+            "passed": true
+          },
+          {
+            "name": "test_node_keeps_successor_reference",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "node-and-link",
+        "order": 1,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "bab0d0222bb1e2240daaa7c7dc12e96e9ad693151b03ccbe70fd1bf308a34159",
+        "main.py": "c5dc228e3d82c353ec7f55d8be5669e15f91c941feb863ca60d05b0da8146167",
+        "solution/main.py": "a40c8650473b27b0742c1dac88fa19386d62c90cfc38c3fb23fb0fe48a1a80bf",
+        "test_main.py": "ac2b56f1e9e29b0e276424d172e043c141f2be8827d50de9a23bf38ed03d82b4"
+      },
+      "word_count": 465,
+      "task_count": 2,
+      "partial_states_verified": true
+    },
+    {
+      "path": "04-singly-linked-lists/02-traverse-nodes",
+      "target": "values",
+      "starter_run": {
+        "stdout": "Complete values\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "['Dawn', 'Harbor']\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_values_walk",
+            "passed": false,
+            "error": "NotImplementedError: Complete values"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_values_walk",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "traverse-nodes",
+        "order": 2,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "7632fd8eb139637edc7d6795224630de93368a792ed72bab2f1de2ea7c4cd3e9",
+        "main.py": "14e101d3b5a45a8e4031e9b7319ed490c1fc829be29e6aea65346aef95f75b19",
+        "solution/main.py": "da88e595ae9e436a8a11aec4b8dca64613df2f3fd305def334eef1f776369f84",
+        "test_main.py": "c44dcf00d00b90c97112486406cb1e65473026c69661e8354194950330079710"
+      },
+      "word_count": 398,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "04-singly-linked-lists/03-list-state",
+      "target": "LinkedList.__init__",
+      "starter_run": {
+        "stdout": "unfinished unfinished -1\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "None None 0\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_empty_list_endpoints",
+            "passed": false,
+            "error": "AttributeError: 'LinkedList' object has no attribute 'head'"
+          },
+          {
+            "name": "test_empty_list_count",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_empty_list_endpoints",
+            "passed": true
+          },
+          {
+            "name": "test_empty_list_count",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "list-state",
+        "order": 3,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "675125e495010ae0898c90ab320f5cd85e19542d6a448d4d1882b02285a44488",
+        "main.py": "bce162d34d0b3d8962975f9ea59e91b7ca3aa674eabf39dbfbfa4dd6fe4eca7c",
+        "solution/main.py": "a5719fb659f9d1d1316e69c590fa67a34aebf15193e7e39b6b0d44e2696640ba",
+        "test_main.py": "722eccbcce7e64194e3965cc45fd139f95597ed2a5233f0e744c12b857e04505"
+      },
+      "word_count": 389,
+      "task_count": 2,
+      "partial_states_verified": true
+    },
+    {
+      "path": "04-singly-linked-lists/04-prepend-node",
+      "target": "LinkedList.prepend",
+      "starter_run": {
+        "stdout": "Complete LinkedList.prepend\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "['Dawn', 'Harbor'] 2\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_prepend_preserves_chain",
+            "passed": false,
+            "error": "NotImplementedError: Complete LinkedList.prepend"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_prepend_preserves_chain",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "prepend-node",
+        "order": 4,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "ac3de40c0884ac7916af6b86baeb77060a20819a6a7295bc5049e703d8e09853",
+        "main.py": "67178595430e9fb3e7860b39f37b2b5ff42315b52529dae79493514b3a11fbe4",
+        "solution/main.py": "28cbe49562ba77253bfb10f2e827049a4edcfa0721e53e9880e4bc723e7dd35b",
+        "test_main.py": "ccd483b7c6112161681b7d9d7e276eb6488fdbc9b564e7ff8cc491760c691f7a"
+      },
+      "word_count": 370,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "04-singly-linked-lists/05-append-node",
+      "target": "LinkedList.append",
+      "starter_run": {
+        "stdout": "Complete LinkedList.append\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "['Dawn', 'Harbor'] Harbor\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_append_uses_endpoints",
+            "passed": false,
+            "error": "NotImplementedError: Complete LinkedList.append"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_append_uses_endpoints",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "append-node",
+        "order": 5,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "6eed2c6691e82c02459992a6c4edce6e3e47395eb4e3f9dde610bb3f5d1920ec",
+        "main.py": "7cec337952ba6b8c0590019698e8179079a8abf39dc5b413ab70db1dff0845be",
+        "solution/main.py": "4b20029a83c654b10fbe2bad0945d8600954f959d57e01c4be3604705f5b747e",
+        "test_main.py": "9c6f284b31e1dd9a82e2f4266657224c36850eb15da076f86905aec9005a691c"
+      },
+      "word_count": 379,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "04-singly-linked-lists/06-find-node",
+      "target": "LinkedList.find",
+      "starter_run": {
+        "stdout": "Complete LinkedList.find\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "Harbor\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_find_returns_first_identity",
+            "passed": false,
+            "error": "NotImplementedError: Complete LinkedList.find"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_find_returns_first_identity",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "find-node",
+        "order": 6,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "87a3cf2feede263eb625561bc8b057314f71eaf6afb1cb7c3f476ccc86d1a60f",
+        "main.py": "54f1a0bab5b4ae3388117d363bdd300026033312b1879136365aecd7264e1163",
+        "solution/main.py": "1f9f875d5e4cf4c3842812669984a2c66a408d8e306060f26e2067c9677f70d4",
+        "test_main.py": "5bd530ca6aca9212dfa9582c6d0be169238b3dc65c8758f4a06ce830202ae55b"
+      },
+      "word_count": 359,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "04-singly-linked-lists/07-insert-after-node",
+      "target": "LinkedList.insert_after",
+      "starter_run": {
+        "stdout": "Complete LinkedList.insert_after\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "['Dawn', 'Rain', 'Harbor']\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_insert_after_splices",
+            "passed": false,
+            "error": "NotImplementedError: Complete LinkedList.insert_after"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_insert_after_splices",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "insert-after-node",
+        "order": 7,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "ad2273378e4a73ebd07d4a648a55e9b314785814d0c4f0a40292db50e1776603",
+        "main.py": "86912b268e9c4124787db04c4b0551234b23e5830140b70999deb8adb73f88e0",
+        "solution/main.py": "71e499579b1855adf6199ad17d9ec286cf3a8a2548821fa070082a7918b6e35c",
+        "test_main.py": "040873a99ef87812c4d4613090372a5204a5f78c4c357ccdcd726e441ac2ceb4"
+      },
+      "word_count": 366,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "04-singly-linked-lists/08-remove-head",
+      "target": "LinkedList.remove_head",
+      "starter_run": {
+        "stdout": "Complete LinkedList.remove_head\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "Dawn ['Harbor'] None\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_remove_head_detaches",
+            "passed": false,
+            "error": "NotImplementedError: Complete LinkedList.remove_head"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_remove_head_detaches",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "remove-head",
+        "order": 8,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "6ee522b7bc65af842751ded33926633757663df91d574a087c6fc21cf3dde1a1",
+        "main.py": "a8d22c67a7493a245bc29e27a8c302d7ac0579789439f0aef5151d7df0c32c49",
+        "solution/main.py": "afe585c445484ab27996be52db3a5f517ae1a7b17b3547b8b2cec6d62fef8f85",
+        "test_main.py": "65b0209b68b57b520d9172312358b953c1b76e211578f3bdc980e7aa781dac6f"
+      },
+      "word_count": 354,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "04-singly-linked-lists/09-remove-tail",
+      "target": "LinkedList.remove_tail",
+      "starter_run": {
+        "stdout": "Complete LinkedList.remove_tail\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "Harbor ['Dawn']\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_remove_tail_finds_predecessor",
+            "passed": false,
+            "error": "NotImplementedError: Complete LinkedList.remove_tail"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_remove_tail_finds_predecessor",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "remove-tail",
+        "order": 9,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "abc0a0ed8135548dabbc3e20cb29ab5ebdebd1f804ba75e5d614c83a7a36f357",
+        "main.py": "dc266a9ee9223af6c41372f86c71490ac6e3f5314fd1eb81a425a2c4b76869e0",
+        "solution/main.py": "3f81b24fb91079cb6db491e69d014a3acaaf78948d7a0a457879691d9035f359",
+        "test_main.py": "54411e3382debd86c8174a2468b329f02b98a1d497e8a4aa03ca2c2ff62246eb"
+      },
+      "word_count": 356,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "04-singly-linked-lists/10-remove-first-match",
+      "target": "LinkedList.remove_first",
+      "starter_run": {
+        "stdout": "Complete LinkedList.remove_first\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "Rain ['Dawn', 'Rain']\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_remove_first_duplicate_policy",
+            "passed": false,
+            "error": "NotImplementedError: Complete LinkedList.remove_first"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_remove_first_duplicate_policy",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "remove-first-match",
+        "order": 10,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "1d5c497a7a009d940c893397562ec47d203729e219354b4dd1011e010b7c909d",
+        "main.py": "28c7e7a8f2702a4eaf0db6f8f5789fb35051be9593947127d629b163d5532f51",
+        "solution/main.py": "3895b5cf13e663c8787510e07e818f5798994ef02c9feeaf9cc75ceb72c68b87",
+        "test_main.py": "2e3f5cc60279faba724eca62e86168c704dbbc89178ba72aeeb4edb168aea8cf"
+      },
+      "word_count": 357,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "04-singly-linked-lists/11-reverse-links",
+      "target": "LinkedList.reverse",
+      "starter_run": {
+        "stdout": "Complete LinkedList.reverse\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "['Harbor', 'Rain', 'Dawn']\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_reverse_preserves_node_identity",
+            "passed": false,
+            "error": "NotImplementedError: Complete LinkedList.reverse"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_reverse_preserves_node_identity",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "reverse-links",
+        "order": 11,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "7108dd0b0db22f0d4e76435712dbb325f64b4d2388ac42df9a3eb7a8969da0e8",
+        "main.py": "0a034c1234b94ae1af96eec07d80e15cd981403f372565a337a98bc993bc32c1",
+        "solution/main.py": "a7a66f9cb87f069c33d22cdc2a5645e750434bfd866664dc9f3fce5a5858c000",
+        "test_main.py": "75609584c9d1d5f82e3fd34815d55fb9873e145273e82efca5192270d4c874cc"
+      },
+      "word_count": 383,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "04-singly-linked-lists/12-playlist-project",
+      "target": "LinkedList.play_next",
+      "starter_run": {
+        "stdout": "Complete LinkedList.play_next\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "Playing: Dawn\nRemaining: ['Rain', 'Harbor']\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_play_next_delegates_and_drains",
+            "passed": false,
+            "error": "NotImplementedError: Complete LinkedList.play_next"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_play_next_delegates_and_drains",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "playlist-project",
+        "order": 12,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "527135996b37334335c5d97888a803a12e33b24f13ae3960b70fd5a888184d50",
+        "main.py": "7a3b10f4adff2bd9dbfb86ce41474846b9b0617831344407dee7b9702765f013",
+        "solution/main.py": "007a451ead2af7a329a0506d268cf089182336bd6830658eeb137a836e165a96",
+        "test_main.py": "02a4d33e373beae7877dac20b368b8a216875416d43ec5351103901717b404ed"
+      },
+      "word_count": 375,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "05-linked-list-variants/01-doubly-linked-node",
+      "target": "DoubleNode.__init__",
+      "starter_run": {
+        "stdout": "None unfinished unfinished\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "Archive None None\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_double_node_keeps_payload_reference",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "name": "test_double_node_starts_detached",
+            "passed": false,
+            "error": "AttributeError: 'DoubleNode' object has no attribute 'prev'"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_double_node_keeps_payload_reference",
+            "passed": true
+          },
+          {
+            "name": "test_double_node_starts_detached",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "doubly-linked-node",
+        "order": 1,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "403d7045fdd7de7202760c2b119b22b8bc8381488a1391e4268169a884e8909a",
+        "main.py": "9a48527a91fb727057eaec78998cf7ecc0f2260df00293ceb9c8bd7bccfc974f",
+        "solution/main.py": "bff62e466e9a966dcf552fa24e54a0c91c8af9005d6f4ddf34e10372b00bd204",
+        "test_main.py": "2ef443be84140561742a105e3258023d315179515625cdeeb6a6ffd2a19b3e75"
+      },
+      "word_count": 389,
+      "task_count": 2,
+      "partial_states_verified": true
+    },
+    {
+      "path": "05-linked-list-variants/02-doubly-prepend",
+      "target": "DoublyList.prepend",
+      "starter_run": {
+        "stdout": "Complete DoublyList.prepend\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "Home Home 2\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_double_prepend_links",
+            "passed": false,
+            "error": "NotImplementedError: Complete DoublyList.prepend"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_double_prepend_links",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "doubly-prepend",
+        "order": 2,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "9a1258c1be27392b9acdc85a6f195a659cb3bbdf81c0844493c9dce39098fa22",
+        "main.py": "9b9842cb6b59efb8b6c2e9a27094b6a3963a2cdff4fe33cdf29b343c2eca755c",
+        "solution/main.py": "146870d7dd55031c9e686ecad5484525915f3f87522206856446e1d05fab77f6",
+        "test_main.py": "71a08fe26c73600d501a39b4a58ab8414566a0599d30bbd5a8ccd68f8fc6208b"
+      },
+      "word_count": 352,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "05-linked-list-variants/03-doubly-append",
+      "target": "DoublyList.append",
+      "starter_run": {
+        "stdout": "Complete DoublyList.append\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "Archive Home\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_double_append_links",
+            "passed": false,
+            "error": "NotImplementedError: Complete DoublyList.append"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_double_append_links",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "doubly-append",
+        "order": 3,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "cd9d1403ef3a4495c70f4a807e32e334148ae12f88eaac9da11df8c037d67d50",
+        "main.py": "77db51ebaffc1e3825eb1d60a5ee15e4133de96a5541e336658111adf29756c4",
+        "solution/main.py": "07303583054c5f4f8da547dd32093d33325c7f7b8769e82ea3286953a1e54445",
+        "test_main.py": "ad122d2051667ab0ec988e77f863847475c66425dbbbf6df928009cec47a116c"
+      },
+      "word_count": 346,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "05-linked-list-variants/04-doubly-remove",
+      "target": "DoublyList.remove",
+      "starter_run": {
+        "stdout": "Complete DoublyList.remove\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "Home Home None None\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_double_remove_repairs_neighbors",
+            "passed": false,
+            "error": "NotImplementedError: Complete DoublyList.remove"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_double_remove_repairs_neighbors",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "doubly-remove",
+        "order": 4,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "94e9ec582a24565f210094f1fda5bfed68cb201caad83a378eaf562f48f48bd0",
+        "main.py": "fda49c0f5db02c18f02b1ad1354ae20abab23cec7646f922be4860cc47c389b5",
+        "solution/main.py": "f8a5cd14d3365b856da9935f2918a426437903ce66cf7889bf0db6e0056a78c7",
+        "test_main.py": "45ea53f1ae4ca12046d94a0b40bcbe26c081fa8b5074de46ac6e7ccc4b44eaff"
+      },
+      "word_count": 378,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "05-linked-list-variants/05-browser-history",
+      "target": "BrowserHistory.visit",
+      "starter_run": {
+        "stdout": "Complete BrowserHistory.visit\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "Contact 2 Home\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_visit_replaces_forward_branch",
+            "passed": false,
+            "error": "NotImplementedError: Complete BrowserHistory.visit"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_visit_replaces_forward_branch",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "browser-history",
+        "order": 5,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "68ec7e6ce44e86fec79f4cf113c14b05947a240b4f0c9a2717319ca8448936b3",
+        "main.py": "b313ba325cd6420faf3163e52505bccc67853329b967f295796f80bb6cdb8885",
+        "solution/main.py": "9945da73fd31a68fe11bff02f7646bf00c4db99982aa7938f31fa89bbfdaeade",
+        "test_main.py": "ff70d470d2be110bb742044c6a35c71615fa5eb6570aecdcaa1135179732b83c"
+      },
+      "word_count": 392,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "05-linked-list-variants/06-circular-append",
+      "target": "CircularList.append",
+      "starter_run": {
+        "stdout": "Complete CircularList.append\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "Ari Bo True\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_circular_append_closes_ring",
+            "passed": false,
+            "error": "NotImplementedError: Complete CircularList.append"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_circular_append_closes_ring",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "circular-append",
+        "order": 6,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "b7b871f39e2b003672adc59762cc01f9a7aa188157f97c17ffc519fac02d3cee",
+        "main.py": "56f04cfcaaa34761163a130a1230b3e4d30b89f12349b052fa5634480eaf27cb",
+        "solution/main.py": "ff7b2fb1a46ebf5af81e62ea67a9729281a0b49b1a9a9fa147e1b1069327c467",
+        "test_main.py": "25421502fe9bbe3f567b823aa516dc2c3cbb6fd685f4b44cbe1973b3d851a3b4"
+      },
+      "word_count": 374,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "05-linked-list-variants/07-circular-traversal",
+      "target": "CircularList.values",
+      "starter_run": {
+        "stdout": "Complete CircularList.values\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "['Ari', 'Bo', 'Ari']\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_circular_values_one_lap",
+            "passed": false,
+            "error": "NotImplementedError: Complete CircularList.values"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_circular_values_one_lap",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "circular-traversal",
+        "order": 7,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "4424c92ad2417d87eb49982502d257a57e3128738bebda30eb2a83ed560abe80",
+        "main.py": "9b93dd38fafa4d7fd1593adf84c81a8bf72e93e1b9436ed97b5db2c41bde9d2a",
+        "solution/main.py": "7ce80d86ad107feaaea76470f997a729d931ca1904dfef3a5c1b036a7aa2249a",
+        "test_main.py": "dd676f4707ef21dfae97f7b68a1e1dc42e1d2fee3fa2f4a0a205250096eb87a5"
+      },
+      "word_count": 371,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "05-linked-list-variants/08-circular-remove",
+      "target": "CircularList.remove_first",
+      "starter_run": {
+        "stdout": "Complete CircularList.remove_first\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "Ari ['Bo', 'Cy']\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_circular_remove_repairs_closure",
+            "passed": false,
+            "error": "NotImplementedError: Complete CircularList.remove_first"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_circular_remove_repairs_closure",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "circular-remove",
+        "order": 8,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "d8b2bf3d06791159d11ebf4b865022b423a1b2fb86be82f3973740c02cb0f77e",
+        "main.py": "ecc8c3a47f2898afc271e47f1f0d7ee13327d64db6dfbe4495d50f58245c54f1",
+        "solution/main.py": "c88d50fe51ba845b913ec1124f41193e882d802c3fe8b46b2eb946505c013ea0",
+        "test_main.py": "3efc961d9f7f4ed668c4d439a4e6665eadb3bd00c70248bd8324d16a52648094"
+      },
+      "word_count": 388,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "05-linked-list-variants/09-skip-levels",
+      "target": "SkipNode.__init__",
+      "starter_run": {
+        "stdout": "24 []\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "24 [None, None, None]\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_height_validation",
+            "passed": false,
+            "error": "AssertionError: Expected ValueError"
+          },
+          {
+            "name": "test_skip_node_slots",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_height_validation",
+            "passed": true
+          },
+          {
+            "name": "test_skip_node_slots",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "skip-levels",
+        "order": 9,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "77c4f1cc4d12512c773c21fdbf54bae5cf0f74cbd0b154f3a71261162a470f8d",
+        "main.py": "eea616657ba14872e61f6d92b2122590554e2c90139dedd5a99644ddf3084ca4",
+        "solution/main.py": "ce54642b2588d6ed64d2e721d908e9cb0d4296ca07f20b8740e7b023f24a6b32",
+        "test_main.py": "ecbc8dbd415a2a626ad5b7bd6404c835eb47810e5578642cd8333c0f4aa4408a"
+      },
+      "word_count": 463,
+      "task_count": 2,
+      "partial_states_verified": true
+    },
+    {
+      "path": "05-linked-list-variants/10-skip-predecessors",
+      "target": "SkipList.predecessors",
+      "starter_run": {
+        "stdout": "Complete SkipList.predecessors\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "[24, 24, 24, None]\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_predecessor_identity",
+            "passed": false,
+            "error": "NotImplementedError: Complete SkipList.predecessors"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_predecessor_identity",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "skip-predecessors",
+        "order": 10,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "28ca69db00761b0e7dcfa1a9fefe29b05abeae866022d6037d2c1682fef3ea67",
+        "main.py": "9d120408cce0a4dcb7c7a82bd9947301e86ebb42c122a5dfef74fd8f5d12aec1",
+        "solution/main.py": "b57f37b0cadfb1eeff71d73b49d64819af4e452128a151cad7f0a5baa4137bb4",
+        "test_main.py": "e390c60c27dacce87aa980d57e197ef2a85bca3eae8629bbe7b15cbdfff92334"
+      },
+      "word_count": 418,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "05-linked-list-variants/11-skip-search",
+      "target": "SkipList.search",
+      "starter_run": {
+        "stdout": "Complete SkipList.search\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "24 None\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_search_exact_match",
+            "passed": false,
+            "error": "NotImplementedError: Complete SkipList.search"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_search_exact_match",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "skip-search",
+        "order": 11,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "3469bf95fc24d934d6cb2621f6fc5cf4fda086fda7ed0ebb69c71de3856007dd",
+        "main.py": "da58d1a09343e36401d1160dc8beeb197348979ebc90e7232e2e1db76bf66cdf",
+        "solution/main.py": "4aa52a159be78606862f369d0e4ce567ce9d99b429a9ebc526dff5f15c14b2a9",
+        "test_main.py": "e2bd61f25f679568460a814b7780ea472c9cef0ec7845e897b9b1daf58170665"
+      },
+      "word_count": 380,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "05-linked-list-variants/12-skip-insert",
+      "target": "SkipList.insert",
+      "starter_run": {
+        "stdout": "Complete SkipList.insert\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "3 24 39\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_insert_towers_and_duplicates",
+            "passed": false,
+            "error": "NotImplementedError: Complete SkipList.insert"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_insert_towers_and_duplicates",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "skip-insert",
+        "order": 12,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "f4e7e967d54a627dee87423892e9801b33998dcfeec1547bfdad29e6ad6447d4",
+        "main.py": "85c9d4e29d77d21fcb8b926f389417c8515861006ddb4fa5edf96ea3e7d0794c",
+        "solution/main.py": "5507fc2519f056d33467d9a0e66d8d123527e92d52229c23d17850d367b97ae0",
+        "test_main.py": "d89790cae4e6612398f4a082c38014b39e4d2e7e0a9244b7b2bde643c2b60d5f"
+      },
+      "word_count": 422,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "05-linked-list-variants/13-skip-remove",
+      "target": "SkipList.remove",
+      "starter_run": {
+        "stdout": "Complete SkipList.remove\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "True None 2\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_remove_all_levels",
+            "passed": false,
+            "error": "NotImplementedError: Complete SkipList.remove"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_remove_all_levels",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "skip-remove",
+        "order": 13,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "383b5ada6325df67bb4403e1ea5e3a8a3febd7563ec4f9ebef43d006f0f5aade",
+        "main.py": "63cbe0e0b1882751234eb7fc20ba57038b0382e4c7b0e5cc029e83df53da4e19",
+        "solution/main.py": "2cc868cbad81a99acecb74c3bc88aa7292edc36250a462e73cec819fac08fa61",
+        "test_main.py": "95b79b27c83656874d658df81004538c8b5ab4491286752d28c774c7ea0ef84c"
+      },
+      "word_count": 387,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "target": "SkipList.search_steps",
+      "starter_run": {
+        "stdout": "Complete SkipList.search_steps\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "Flat: (True, 6)\nTowers: (True, 5)\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_work_metric_and_shape",
+            "passed": false,
+            "error": "NotImplementedError: Complete SkipList.search_steps"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_work_metric_and_shape",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "skip-list-tradeoffs",
+        "order": 14,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "5bd4c8d3e1696ec00e98502c5904b52a89a3a55df6bc3b1787f50b12ba912ff1",
+        "main.py": "e8f2284afc9a27d8d902878375ac9d36c78255c6a0454199874f1396aeec39b7",
+        "solution/main.py": "0647fae9f581cb4a0da4ca67cb32be039346dc0160ae70d8d69b1466dd51ce08",
+        "test_main.py": "9ec14bcb621ea227e5e967c7d4698d7af56b980fba49d449ad3f48496bfd2762"
+      },
+      "word_count": 464,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "06-stacks/01-stack-state",
+      "target": "Stack.__init__",
+      "starter_run": {
+        "stdout": "Complete Stack.__init__\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "[] 0 False\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_stack_independent_storage",
+            "passed": false,
+            "error": "NotImplementedError: Complete Stack.__init__"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_stack_independent_storage",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "stack-state",
+        "order": 1,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "875b8dd64d7202da9867e08b33e390131dc8639b89f6213336793c243c6c693b",
+        "main.py": "de84b2a8ea0befdb2c6f5f25806ada306320af171c7d93aedea01fc4ade055c3",
+        "solution/main.py": "d3d1a23a192ef1560d4570a71ecb6fb802a24f2b6d7165cc2585023851af9c3b",
+        "test_main.py": "3ada190f7960208a187856c67483806325562e8d0f8ca53b574f4186a1148090"
+      },
+      "word_count": 433,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "06-stacks/02-push-item",
+      "target": "Stack.push",
+      "starter_run": {
+        "stdout": "Complete Stack.push\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "['draft', 'review'] 2\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_push_appends_references",
+            "passed": false,
+            "error": "NotImplementedError: Complete Stack.push"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_push_appends_references",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "push-item",
+        "order": 2,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "797a8357d6ae75fd9145a93dfb6189d8e76d425541f66b2269899f6ec84af748",
+        "main.py": "4ba275d3c3807453929e730f702feea0eabed509de3ee2020f2e6e025afe124c",
+        "solution/main.py": "8980e4c3047972fe95b1c77711b6c0cbd29ab27f74a7a7b592f1c13056680a4d",
+        "test_main.py": "743f3731f4dad6540f01b870265001295b7f78bec9f02e38a6471e63aacc1694"
+      },
+      "word_count": 359,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "06-stacks/03-peek-item",
+      "target": "Stack.peek",
+      "starter_run": {
+        "stdout": "Complete Stack.peek\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "review ['draft', 'review']\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_peek_is_read_only",
+            "passed": false,
+            "error": "NotImplementedError: Complete Stack.peek"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_peek_is_read_only",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "peek-item",
+        "order": 3,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "69701bf4720c0646936e07518e0bf736282a695a389566e4513fc0dd5eea62b4",
+        "main.py": "9be3d4004fe946edd07f1c6c32561fecb3c9492cbd03b25b39d3e599f49b9905",
+        "solution/main.py": "c6e0b762f9ae725d1849f93506bcd0e3f88c49b4336b3143b927e0c8cd80982d",
+        "test_main.py": "28d54a3c2deec7255a1ee080f9e88a1efc0f9c663d4ef85d79e438f0c249806c"
+      },
+      "word_count": 345,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "06-stacks/04-pop-item",
+      "target": "Stack.pop",
+      "starter_run": {
+        "stdout": "Complete Stack.pop\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "review draft 1\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_pop_lifo_and_underflow",
+            "passed": false,
+            "error": "NotImplementedError: Complete Stack.pop"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_pop_lifo_and_underflow",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "pop-item",
+        "order": 4,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "9a45db43ecfdde1ff0b430fa3ac60cd70b243c767414c4996a2615165f77d7d3",
+        "main.py": "8ea88f7a59c860b37bae53a74dc5f22dd7dae6df1856e89b16962726e8a15087",
+        "solution/main.py": "ca3320a8a10f8440b9feb5188ec113f76bd7e31599181daa5935a4e94c64011c",
+        "test_main.py": "4c684a371cdd7aea16f175211f1e94e43af653272ef232a1937832d94cc93191"
+      },
+      "word_count": 352,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "06-stacks/05-balanced-brackets",
+      "target": "balanced",
+      "starter_run": {
+        "stdout": "Complete balanced\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "True\nFalse\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_balanced_nested_types",
+            "passed": false,
+            "error": "NotImplementedError: Complete balanced"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_balanced_nested_types",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "balanced-brackets",
+        "order": 5,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "b40557321d4639546a05bc892310e2d8dd225d9013f1fadba57d4e8618c33c84",
+        "main.py": "67fc6cf2f5cef16d90374b59a81976c4df9c7cab3e3bea48071b78c37331a3e9",
+        "solution/main.py": "be789eccb95f83675e105264b14a4de9442fac457ff3e0952b54b906153f3ce2",
+        "test_main.py": "66678d3ba5c011f22f26423c347804dbd4922f9fab9a619903c3dfd6c88574be"
+      },
+      "word_count": 390,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "06-stacks/06-postfix-evaluation",
+      "target": "postfix",
+      "starter_run": {
+        "stdout": "Complete postfix\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "15\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_postfix_order_and_errors",
+            "passed": false,
+            "error": "NotImplementedError: Complete postfix"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_postfix_order_and_errors",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "postfix-evaluation",
+        "order": 6,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "0c6458d55c6f52de24986c40bb0b820954a1193ae7897bf6082d61d9f92e2067",
+        "main.py": "d0fb87a092d99cb92cf6235186286081b11a07f115266645b1cfaff022240386",
+        "solution/main.py": "d8fe2baedef0020fcb01395d304e03e6979f437a57be496499de23ec89c255e3",
+        "test_main.py": "89361ba7d1967f919f6f3dcad5b5aa4c197b71cc1f91a8cffe02a4f445ad1441"
+      },
+      "word_count": 412,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "06-stacks/07-undo-history",
+      "target": "UndoHistory.undo",
+      "starter_run": {
+        "stdout": "Complete UndoHistory.undo\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "True revised\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_undo_restores_and_exhausts",
+            "passed": false,
+            "error": "NotImplementedError: Complete UndoHistory.undo"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_undo_restores_and_exhausts",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "undo-history",
+        "order": 7,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "af136e99c0e4c45ca5d95d1c9b5ca7878ed0331d7af638ef85496bedb8d18c31",
+        "main.py": "20ad87deecc7f1b5b4a2ff081be7066aeb5784ddaef94fd314bfa4ed45db6caa",
+        "solution/main.py": "b3ce2e57093f01f2aa2d9acb634f39b1d93f0102ce4f076827ac20ff8d17288a",
+        "test_main.py": "cd6a2890e0f4b236ca3a78cd25ba45ce0a8c4e05e223b0a1f5a38cbd5d19eb8f"
+      },
+      "word_count": 404,
+      "task_count": 1,
+      "partial_states_verified": true
+    },
+    {
+      "path": "06-stacks/08-minimum-stack",
+      "target": "MinStack.push",
+      "starter_run": {
+        "stdout": "Complete MinStack.push\n",
+        "rows": []
+      },
+      "solution_run": {
+        "stdout": "2 9 2\n",
+        "rows": []
+      },
+      "starter_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_minimum_stack_prefix_summaries",
+            "passed": false,
+            "error": "NotImplementedError: Complete MinStack.push"
+          }
+        ]
+      },
+      "solution_submit": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_minimum_stack_prefix_summaries",
+            "passed": true
+          }
+        ]
+      },
+      "loader": {
+        "slug": "minimum-stack",
+        "order": 8,
+        "runtime": "pyodide",
+        "tabs": [
+          "main.py"
+        ]
+      },
+      "source_hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "6763df5ca6f57ce30af4db8c6795957660ce3be45e3663dbf7b067cf881e6cc8",
+        "main.py": "b049404681fda68d537b89f653c39f7287ce3d548b5c3b6c91142e7cdcdcf2f7",
+        "solution/main.py": "de6e40065aa9d11734a2fcf2f059db1749b9eea6b216beeb7db334b3c6338d2b",
+        "test_main.py": "ea1dcf31d22a93b29dec960af3efe8a8c2a1c9569c78cc5611772e337e30ee88"
+      },
+      "word_count": 407,
+      "task_count": 1,
+      "partial_states_verified": true
+    }
+  ],
+  "quizzes": [
+    {
+      "path": "04-singly-linked-lists/quiz",
+      "questions": 4,
+      "valid": true
+    },
+    {
+      "path": "05-linked-list-variants/quiz",
+      "questions": 4,
+      "valid": true
+    },
+    {
+      "path": "06-stacks/quiz",
+      "questions": 4,
+      "valid": true
+    }
+  ],
+  "mutants": [
+    {
+      "path": "04-singly-linked-lists/01-node-and-link",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "04-singly-linked-lists/02-traverse-nodes",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "04-singly-linked-lists/03-list-state",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "04-singly-linked-lists/04-prepend-node",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "04-singly-linked-lists/05-append-node",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "04-singly-linked-lists/06-find-node",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "04-singly-linked-lists/07-insert-after-node",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "04-singly-linked-lists/08-remove-head",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "04-singly-linked-lists/09-remove-tail",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "04-singly-linked-lists/10-remove-first-match",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "04-singly-linked-lists/11-reverse-links",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "04-singly-linked-lists/12-playlist-project",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "05-linked-list-variants/01-doubly-linked-node",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "05-linked-list-variants/02-doubly-prepend",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "05-linked-list-variants/03-doubly-append",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "05-linked-list-variants/04-doubly-remove",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "05-linked-list-variants/05-browser-history",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "05-linked-list-variants/06-circular-append",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "05-linked-list-variants/07-circular-traversal",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "05-linked-list-variants/08-circular-remove",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "05-linked-list-variants/09-skip-levels",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "05-linked-list-variants/10-skip-predecessors",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "05-linked-list-variants/11-skip-search",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "05-linked-list-variants/12-skip-insert",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "05-linked-list-variants/13-skip-remove",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "06-stacks/01-stack-state",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "06-stacks/02-push-item",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "06-stacks/03-peek-item",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "06-stacks/04-pop-item",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "06-stacks/05-balanced-brackets",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "06-stacks/06-postfix-evaluation",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "06-stacks/07-undo-history",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "06-stacks/08-minimum-stack",
+      "kind": "target no-op",
+      "rejected": true
+    },
+    {
+      "path": "04-singly-linked-lists/01-node-and-link",
+      "kind": "semantic invariant mutant",
+      "change": "self.value: object = value => self.value: object = str(value)",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_node_keeps_payload_reference",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "name": "test_node_keeps_successor_reference",
+            "passed": true
+          }
+        ]
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/02-traverse-nodes",
+      "kind": "semantic invariant mutant",
+      "change": "return result => return result[::-1]",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_values_walk",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/03-list-state",
+      "kind": "semantic invariant mutant",
+      "change": "self.size: int = 0 => self.size: int = 1",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_empty_list_endpoints",
+            "passed": true
+          },
+          {
+            "name": "test_empty_list_count",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/04-prepend-node",
+      "kind": "semantic invariant mutant",
+      "change": "if self.tail is None: => if True:",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_prepend_preserves_chain",
+            "passed": false,
+            "error": "AssertionError: tail must be the last reachable node"
+          }
+        ]
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/05-append-node",
+      "kind": "semantic invariant mutant",
+      "change": "self.tail.next = node => self.tail.next = None",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_append_uses_endpoints",
+            "passed": false,
+            "error": "AssertionError: broken link or early cycle"
+          }
+        ]
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/06-find-node",
+      "kind": "semantic invariant mutant",
+      "change": "current.value == value => current.value != value",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_find_returns_first_identity",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/07-insert-after-node",
+      "kind": "semantic invariant mutant",
+      "change": "Node(value, previous.next) => Node(value)",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_insert_after_splices",
+            "passed": false,
+            "error": "AssertionError: broken link or early cycle"
+          }
+        ]
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/08-remove-head",
+      "kind": "semantic invariant mutant",
+      "change": "removed.next = None => pass",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_remove_head_detaches",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/09-remove-tail",
+      "kind": "semantic invariant mutant",
+      "change": "self.head is self.tail => self.head.value == self.tail.value",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_remove_tail_finds_predecessor",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/10-remove-first-match",
+      "kind": "semantic invariant mutant",
+      "change": "current.next = None => pass",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_remove_first_duplicate_policy",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/11-reverse-links",
+      "kind": "semantic invariant mutant",
+      "change": "self.tail = self.head => pass",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_reverse_preserves_node_identity",
+            "passed": false,
+            "error": "AssertionError: tail must be the last reachable node"
+          }
+        ]
+      }
+    },
+    {
+      "path": "04-singly-linked-lists/12-playlist-project",
+      "kind": "semantic invariant mutant",
+      "change": "return None => return \"\"",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_play_next_delegates_and_drains",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "05-linked-list-variants/01-doubly-linked-node",
+      "kind": "semantic invariant mutant",
+      "change": "self.prev: DoubleNode | None = None => self.prev: DoubleNode | None = self",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_double_node_keeps_payload_reference",
+            "passed": true
+          },
+          {
+            "name": "test_double_node_starts_detached",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "05-linked-list-variants/02-doubly-prepend",
+      "kind": "semantic invariant mutant",
+      "change": "self.head.prev = node => pass",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_double_prepend_links",
+            "passed": false,
+            "error": "AssertionError: backward link must mirror forward link"
+          }
+        ]
+      }
+    },
+    {
+      "path": "05-linked-list-variants/03-doubly-append",
+      "kind": "semantic invariant mutant",
+      "change": "node.prev = self.tail => pass",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_double_append_links",
+            "passed": false,
+            "error": "AssertionError: backward link must mirror forward link"
+          }
+        ]
+      }
+    },
+    {
+      "path": "05-linked-list-variants/04-doubly-remove",
+      "kind": "semantic invariant mutant",
+      "change": "node.next.prev = node.prev => pass",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_double_remove_repairs_neighbors",
+            "passed": false,
+            "error": "AssertionError: backward link must mirror forward link"
+          }
+        ]
+      }
+    },
+    {
+      "path": "05-linked-list-variants/05-browser-history",
+      "kind": "semantic invariant mutant",
+      "change": "while self.pages.tail is not self.current: => while False:",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_visit_replaces_forward_branch",
+            "passed": false,
+            "error": "AssertionError: size must count reachable nodes"
+          }
+        ]
+      }
+    },
+    {
+      "path": "05-linked-list-variants/06-circular-append",
+      "kind": "semantic invariant mutant",
+      "change": "node.next = self.head => node.next = None",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_circular_append_closes_ring",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "05-linked-list-variants/07-circular-traversal",
+      "kind": "semantic invariant mutant",
+      "change": "range(self.size) => range(max(0, self.size - 1))",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_circular_values_one_lap",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "05-linked-list-variants/08-circular-remove",
+      "kind": "semantic invariant mutant",
+      "change": "self.tail = previous => self.tail = current",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_circular_remove_repairs_closure",
+            "passed": false,
+            "error": "AssertionError: tail must be the last reachable node"
+          }
+        ]
+      }
+    },
+    {
+      "path": "05-linked-list-variants/09-skip-levels",
+      "kind": "semantic invariant mutant",
+      "change": "[None] * height => [None] * (height - 1)",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_height_validation",
+            "passed": true
+          },
+          {
+            "name": "test_skip_node_slots",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "05-linked-list-variants/10-skip-predecessors",
+      "kind": "semantic invariant mutant",
+      "change": ".key < key => .key <= key",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_predecessor_identity",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "05-linked-list-variants/11-skip-search",
+      "kind": "semantic invariant mutant",
+      "change": "return candidate => return self.predecessors(key)[0]",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_search_exact_match",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "05-linked-list-variants/12-skip-insert",
+      "kind": "semantic invariant mutant",
+      "change": "range(height) => range(1)",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_insert_towers_and_duplicates",
+            "passed": false,
+            "error": "AssertionError: Every tower must occur on each of its levels"
+          }
+        ]
+      }
+    },
+    {
+      "path": "05-linked-list-variants/13-skip-remove",
+      "kind": "semantic invariant mutant",
+      "change": "range(len(candidate.forward)) => range(1)",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_remove_all_levels",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "kind": "semantic invariant mutant",
+      "change": "moves += 1\n        candidate => moves += 0\n        candidate",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_work_metric_and_shape",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "06-stacks/01-stack-state",
+      "kind": "semantic invariant mutant",
+      "change": "self.items: list[Any] = [] => self.items: list[Any] = [None]",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_stack_independent_storage",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "06-stacks/02-push-item",
+      "kind": "semantic invariant mutant",
+      "change": "self.items.append(value) => self.items.insert(0, value)",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_push_appends_references",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "06-stacks/03-peek-item",
+      "kind": "semantic invariant mutant",
+      "change": "self.items[-1] => self.items[0]",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_peek_is_read_only",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "06-stacks/04-pop-item",
+      "kind": "semantic invariant mutant",
+      "change": "self.items.pop() => self.items.pop(0)",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_pop_lifo_and_underflow",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "06-stacks/05-balanced-brackets",
+      "kind": "semantic invariant mutant",
+      "change": "openings.pop() != pairs[character] => openings.pop() not in '([{'",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_balanced_nested_types",
+            "passed": false,
+            "error": "AssertionError: ([)]"
+          }
+        ]
+      }
+    },
+    {
+      "path": "06-stacks/06-postfix-evaluation",
+      "kind": "semantic invariant mutant",
+      "change": "left - right => right - left",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_postfix_order_and_errors",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "06-stacks/07-undo-history",
+      "kind": "semantic invariant mutant",
+      "change": "self.text = self.previous.pop() => self.text = self.previous.peek()",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_undo_restores_and_exhausts",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "06-stacks/08-minimum-stack",
+      "kind": "semantic invariant mutant",
+      "change": "min(value, self.entries.peek()[1]) => value",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_minimum_stack_prefix_summaries",
+            "passed": false,
+            "error": "AssertionError: "
+          }
+        ]
+      }
+    },
+    {
+      "path": "05-linked-list-variants/10-skip-predecessors",
+      "kind": "scan each level from head instead of top-down",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_skip_predecessor_identity",
+            "passed": false,
+            "error": "AssertionError: Use upper levels instead of scanning the base chain"
+          }
+        ]
+      }
+    },
+    {
+      "path": "06-stacks/08-minimum-stack",
+      "kind": "linear scan instead of saved minimum",
+      "rejected": true,
+      "result": {
+        "stdout": "",
+        "rows": [
+          {
+            "name": "test_minimum_stack_prefix_summaries",
+            "passed": false,
+            "error": "AssertionError: Use the previous minimum; do not scan entries"
+          }
+        ]
+      }
+    }
+  ],
+  "regressions": [
+    {
+      "later": "04-singly-linked-lists/02-traverse-nodes",
+      "contract": "04-singly-linked-lists/01-node-and-link",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/03-list-state",
+      "contract": "04-singly-linked-lists/01-node-and-link",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/03-list-state",
+      "contract": "04-singly-linked-lists/02-traverse-nodes",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/04-prepend-node",
+      "contract": "04-singly-linked-lists/01-node-and-link",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/04-prepend-node",
+      "contract": "04-singly-linked-lists/02-traverse-nodes",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/04-prepend-node",
+      "contract": "04-singly-linked-lists/03-list-state",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/05-append-node",
+      "contract": "04-singly-linked-lists/01-node-and-link",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/05-append-node",
+      "contract": "04-singly-linked-lists/02-traverse-nodes",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/05-append-node",
+      "contract": "04-singly-linked-lists/03-list-state",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/05-append-node",
+      "contract": "04-singly-linked-lists/04-prepend-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/06-find-node",
+      "contract": "04-singly-linked-lists/01-node-and-link",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/06-find-node",
+      "contract": "04-singly-linked-lists/02-traverse-nodes",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/06-find-node",
+      "contract": "04-singly-linked-lists/03-list-state",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/06-find-node",
+      "contract": "04-singly-linked-lists/04-prepend-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/06-find-node",
+      "contract": "04-singly-linked-lists/05-append-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/07-insert-after-node",
+      "contract": "04-singly-linked-lists/01-node-and-link",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/07-insert-after-node",
+      "contract": "04-singly-linked-lists/02-traverse-nodes",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/07-insert-after-node",
+      "contract": "04-singly-linked-lists/03-list-state",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/07-insert-after-node",
+      "contract": "04-singly-linked-lists/04-prepend-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/07-insert-after-node",
+      "contract": "04-singly-linked-lists/05-append-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/07-insert-after-node",
+      "contract": "04-singly-linked-lists/06-find-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/08-remove-head",
+      "contract": "04-singly-linked-lists/01-node-and-link",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/08-remove-head",
+      "contract": "04-singly-linked-lists/02-traverse-nodes",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/08-remove-head",
+      "contract": "04-singly-linked-lists/03-list-state",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/08-remove-head",
+      "contract": "04-singly-linked-lists/04-prepend-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/08-remove-head",
+      "contract": "04-singly-linked-lists/05-append-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/08-remove-head",
+      "contract": "04-singly-linked-lists/06-find-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/08-remove-head",
+      "contract": "04-singly-linked-lists/07-insert-after-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/09-remove-tail",
+      "contract": "04-singly-linked-lists/01-node-and-link",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/09-remove-tail",
+      "contract": "04-singly-linked-lists/02-traverse-nodes",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/09-remove-tail",
+      "contract": "04-singly-linked-lists/03-list-state",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/09-remove-tail",
+      "contract": "04-singly-linked-lists/04-prepend-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/09-remove-tail",
+      "contract": "04-singly-linked-lists/05-append-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/09-remove-tail",
+      "contract": "04-singly-linked-lists/06-find-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/09-remove-tail",
+      "contract": "04-singly-linked-lists/07-insert-after-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/09-remove-tail",
+      "contract": "04-singly-linked-lists/08-remove-head",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/10-remove-first-match",
+      "contract": "04-singly-linked-lists/01-node-and-link",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/10-remove-first-match",
+      "contract": "04-singly-linked-lists/02-traverse-nodes",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/10-remove-first-match",
+      "contract": "04-singly-linked-lists/03-list-state",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/10-remove-first-match",
+      "contract": "04-singly-linked-lists/04-prepend-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/10-remove-first-match",
+      "contract": "04-singly-linked-lists/05-append-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/10-remove-first-match",
+      "contract": "04-singly-linked-lists/06-find-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/10-remove-first-match",
+      "contract": "04-singly-linked-lists/07-insert-after-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/10-remove-first-match",
+      "contract": "04-singly-linked-lists/08-remove-head",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/10-remove-first-match",
+      "contract": "04-singly-linked-lists/09-remove-tail",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/11-reverse-links",
+      "contract": "04-singly-linked-lists/01-node-and-link",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/11-reverse-links",
+      "contract": "04-singly-linked-lists/02-traverse-nodes",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/11-reverse-links",
+      "contract": "04-singly-linked-lists/03-list-state",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/11-reverse-links",
+      "contract": "04-singly-linked-lists/04-prepend-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/11-reverse-links",
+      "contract": "04-singly-linked-lists/05-append-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/11-reverse-links",
+      "contract": "04-singly-linked-lists/06-find-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/11-reverse-links",
+      "contract": "04-singly-linked-lists/07-insert-after-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/11-reverse-links",
+      "contract": "04-singly-linked-lists/08-remove-head",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/11-reverse-links",
+      "contract": "04-singly-linked-lists/09-remove-tail",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/11-reverse-links",
+      "contract": "04-singly-linked-lists/10-remove-first-match",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/12-playlist-project",
+      "contract": "04-singly-linked-lists/01-node-and-link",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/12-playlist-project",
+      "contract": "04-singly-linked-lists/02-traverse-nodes",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/12-playlist-project",
+      "contract": "04-singly-linked-lists/03-list-state",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/12-playlist-project",
+      "contract": "04-singly-linked-lists/04-prepend-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/12-playlist-project",
+      "contract": "04-singly-linked-lists/05-append-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/12-playlist-project",
+      "contract": "04-singly-linked-lists/06-find-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/12-playlist-project",
+      "contract": "04-singly-linked-lists/07-insert-after-node",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/12-playlist-project",
+      "contract": "04-singly-linked-lists/08-remove-head",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/12-playlist-project",
+      "contract": "04-singly-linked-lists/09-remove-tail",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/12-playlist-project",
+      "contract": "04-singly-linked-lists/10-remove-first-match",
+      "passed": true
+    },
+    {
+      "later": "04-singly-linked-lists/12-playlist-project",
+      "contract": "04-singly-linked-lists/11-reverse-links",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/02-doubly-prepend",
+      "contract": "05-linked-list-variants/01-doubly-linked-node",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/03-doubly-append",
+      "contract": "05-linked-list-variants/01-doubly-linked-node",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/03-doubly-append",
+      "contract": "05-linked-list-variants/02-doubly-prepend",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/04-doubly-remove",
+      "contract": "05-linked-list-variants/01-doubly-linked-node",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/04-doubly-remove",
+      "contract": "05-linked-list-variants/02-doubly-prepend",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/04-doubly-remove",
+      "contract": "05-linked-list-variants/03-doubly-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/05-browser-history",
+      "contract": "05-linked-list-variants/01-doubly-linked-node",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/05-browser-history",
+      "contract": "05-linked-list-variants/02-doubly-prepend",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/05-browser-history",
+      "contract": "05-linked-list-variants/03-doubly-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/05-browser-history",
+      "contract": "05-linked-list-variants/04-doubly-remove",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/06-circular-append",
+      "contract": "05-linked-list-variants/01-doubly-linked-node",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/06-circular-append",
+      "contract": "05-linked-list-variants/02-doubly-prepend",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/06-circular-append",
+      "contract": "05-linked-list-variants/03-doubly-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/06-circular-append",
+      "contract": "05-linked-list-variants/04-doubly-remove",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/06-circular-append",
+      "contract": "05-linked-list-variants/05-browser-history",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/07-circular-traversal",
+      "contract": "05-linked-list-variants/01-doubly-linked-node",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/07-circular-traversal",
+      "contract": "05-linked-list-variants/02-doubly-prepend",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/07-circular-traversal",
+      "contract": "05-linked-list-variants/03-doubly-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/07-circular-traversal",
+      "contract": "05-linked-list-variants/04-doubly-remove",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/07-circular-traversal",
+      "contract": "05-linked-list-variants/05-browser-history",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/07-circular-traversal",
+      "contract": "05-linked-list-variants/06-circular-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/08-circular-remove",
+      "contract": "05-linked-list-variants/01-doubly-linked-node",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/08-circular-remove",
+      "contract": "05-linked-list-variants/02-doubly-prepend",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/08-circular-remove",
+      "contract": "05-linked-list-variants/03-doubly-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/08-circular-remove",
+      "contract": "05-linked-list-variants/04-doubly-remove",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/08-circular-remove",
+      "contract": "05-linked-list-variants/05-browser-history",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/08-circular-remove",
+      "contract": "05-linked-list-variants/06-circular-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/08-circular-remove",
+      "contract": "05-linked-list-variants/07-circular-traversal",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/09-skip-levels",
+      "contract": "05-linked-list-variants/01-doubly-linked-node",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/09-skip-levels",
+      "contract": "05-linked-list-variants/02-doubly-prepend",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/09-skip-levels",
+      "contract": "05-linked-list-variants/03-doubly-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/09-skip-levels",
+      "contract": "05-linked-list-variants/04-doubly-remove",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/09-skip-levels",
+      "contract": "05-linked-list-variants/05-browser-history",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/09-skip-levels",
+      "contract": "05-linked-list-variants/06-circular-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/09-skip-levels",
+      "contract": "05-linked-list-variants/07-circular-traversal",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/09-skip-levels",
+      "contract": "05-linked-list-variants/08-circular-remove",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/10-skip-predecessors",
+      "contract": "05-linked-list-variants/01-doubly-linked-node",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/10-skip-predecessors",
+      "contract": "05-linked-list-variants/02-doubly-prepend",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/10-skip-predecessors",
+      "contract": "05-linked-list-variants/03-doubly-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/10-skip-predecessors",
+      "contract": "05-linked-list-variants/04-doubly-remove",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/10-skip-predecessors",
+      "contract": "05-linked-list-variants/05-browser-history",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/10-skip-predecessors",
+      "contract": "05-linked-list-variants/06-circular-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/10-skip-predecessors",
+      "contract": "05-linked-list-variants/07-circular-traversal",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/10-skip-predecessors",
+      "contract": "05-linked-list-variants/08-circular-remove",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/10-skip-predecessors",
+      "contract": "05-linked-list-variants/09-skip-levels",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/11-skip-search",
+      "contract": "05-linked-list-variants/01-doubly-linked-node",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/11-skip-search",
+      "contract": "05-linked-list-variants/02-doubly-prepend",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/11-skip-search",
+      "contract": "05-linked-list-variants/03-doubly-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/11-skip-search",
+      "contract": "05-linked-list-variants/04-doubly-remove",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/11-skip-search",
+      "contract": "05-linked-list-variants/05-browser-history",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/11-skip-search",
+      "contract": "05-linked-list-variants/06-circular-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/11-skip-search",
+      "contract": "05-linked-list-variants/07-circular-traversal",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/11-skip-search",
+      "contract": "05-linked-list-variants/08-circular-remove",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/11-skip-search",
+      "contract": "05-linked-list-variants/09-skip-levels",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/11-skip-search",
+      "contract": "05-linked-list-variants/10-skip-predecessors",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/12-skip-insert",
+      "contract": "05-linked-list-variants/01-doubly-linked-node",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/12-skip-insert",
+      "contract": "05-linked-list-variants/02-doubly-prepend",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/12-skip-insert",
+      "contract": "05-linked-list-variants/03-doubly-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/12-skip-insert",
+      "contract": "05-linked-list-variants/04-doubly-remove",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/12-skip-insert",
+      "contract": "05-linked-list-variants/05-browser-history",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/12-skip-insert",
+      "contract": "05-linked-list-variants/06-circular-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/12-skip-insert",
+      "contract": "05-linked-list-variants/07-circular-traversal",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/12-skip-insert",
+      "contract": "05-linked-list-variants/08-circular-remove",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/12-skip-insert",
+      "contract": "05-linked-list-variants/09-skip-levels",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/12-skip-insert",
+      "contract": "05-linked-list-variants/10-skip-predecessors",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/12-skip-insert",
+      "contract": "05-linked-list-variants/11-skip-search",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/13-skip-remove",
+      "contract": "05-linked-list-variants/01-doubly-linked-node",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/13-skip-remove",
+      "contract": "05-linked-list-variants/02-doubly-prepend",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/13-skip-remove",
+      "contract": "05-linked-list-variants/03-doubly-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/13-skip-remove",
+      "contract": "05-linked-list-variants/04-doubly-remove",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/13-skip-remove",
+      "contract": "05-linked-list-variants/05-browser-history",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/13-skip-remove",
+      "contract": "05-linked-list-variants/06-circular-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/13-skip-remove",
+      "contract": "05-linked-list-variants/07-circular-traversal",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/13-skip-remove",
+      "contract": "05-linked-list-variants/08-circular-remove",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/13-skip-remove",
+      "contract": "05-linked-list-variants/09-skip-levels",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/13-skip-remove",
+      "contract": "05-linked-list-variants/10-skip-predecessors",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/13-skip-remove",
+      "contract": "05-linked-list-variants/11-skip-search",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/13-skip-remove",
+      "contract": "05-linked-list-variants/12-skip-insert",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "contract": "05-linked-list-variants/01-doubly-linked-node",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "contract": "05-linked-list-variants/02-doubly-prepend",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "contract": "05-linked-list-variants/03-doubly-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "contract": "05-linked-list-variants/04-doubly-remove",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "contract": "05-linked-list-variants/05-browser-history",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "contract": "05-linked-list-variants/06-circular-append",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "contract": "05-linked-list-variants/07-circular-traversal",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "contract": "05-linked-list-variants/08-circular-remove",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "contract": "05-linked-list-variants/09-skip-levels",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "contract": "05-linked-list-variants/10-skip-predecessors",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "contract": "05-linked-list-variants/11-skip-search",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "contract": "05-linked-list-variants/12-skip-insert",
+      "passed": true
+    },
+    {
+      "later": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "contract": "05-linked-list-variants/13-skip-remove",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/02-push-item",
+      "contract": "06-stacks/01-stack-state",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/03-peek-item",
+      "contract": "06-stacks/01-stack-state",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/03-peek-item",
+      "contract": "06-stacks/02-push-item",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/04-pop-item",
+      "contract": "06-stacks/01-stack-state",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/04-pop-item",
+      "contract": "06-stacks/02-push-item",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/04-pop-item",
+      "contract": "06-stacks/03-peek-item",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/05-balanced-brackets",
+      "contract": "06-stacks/01-stack-state",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/05-balanced-brackets",
+      "contract": "06-stacks/02-push-item",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/05-balanced-brackets",
+      "contract": "06-stacks/03-peek-item",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/05-balanced-brackets",
+      "contract": "06-stacks/04-pop-item",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/06-postfix-evaluation",
+      "contract": "06-stacks/01-stack-state",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/06-postfix-evaluation",
+      "contract": "06-stacks/02-push-item",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/06-postfix-evaluation",
+      "contract": "06-stacks/03-peek-item",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/06-postfix-evaluation",
+      "contract": "06-stacks/04-pop-item",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/06-postfix-evaluation",
+      "contract": "06-stacks/05-balanced-brackets",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/07-undo-history",
+      "contract": "06-stacks/01-stack-state",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/07-undo-history",
+      "contract": "06-stacks/02-push-item",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/07-undo-history",
+      "contract": "06-stacks/03-peek-item",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/07-undo-history",
+      "contract": "06-stacks/04-pop-item",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/07-undo-history",
+      "contract": "06-stacks/05-balanced-brackets",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/07-undo-history",
+      "contract": "06-stacks/06-postfix-evaluation",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/08-minimum-stack",
+      "contract": "06-stacks/01-stack-state",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/08-minimum-stack",
+      "contract": "06-stacks/02-push-item",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/08-minimum-stack",
+      "contract": "06-stacks/03-peek-item",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/08-minimum-stack",
+      "contract": "06-stacks/04-pop-item",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/08-minimum-stack",
+      "contract": "06-stacks/05-balanced-brackets",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/08-minimum-stack",
+      "contract": "06-stacks/06-postfix-evaluation",
+      "passed": true
+    },
+    {
+      "later": "06-stacks/08-minimum-stack",
+      "contract": "06-stacks/07-undo-history",
+      "passed": true
+    }
+  ],
+  "continuity": [
+    {
+      "path": "04-singly-linked-lists/02-traverse-nodes",
+      "preserved_definitions": 1,
+      "passed": true
+    },
+    {
+      "path": "04-singly-linked-lists/03-list-state",
+      "preserved_definitions": 2,
+      "passed": true
+    },
+    {
+      "path": "04-singly-linked-lists/04-prepend-node",
+      "preserved_definitions": 3,
+      "passed": true
+    },
+    {
+      "path": "04-singly-linked-lists/05-append-node",
+      "preserved_definitions": 4,
+      "passed": true
+    },
+    {
+      "path": "04-singly-linked-lists/06-find-node",
+      "preserved_definitions": 5,
+      "passed": true
+    },
+    {
+      "path": "04-singly-linked-lists/07-insert-after-node",
+      "preserved_definitions": 6,
+      "passed": true
+    },
+    {
+      "path": "04-singly-linked-lists/08-remove-head",
+      "preserved_definitions": 7,
+      "passed": true
+    },
+    {
+      "path": "04-singly-linked-lists/09-remove-tail",
+      "preserved_definitions": 8,
+      "passed": true
+    },
+    {
+      "path": "04-singly-linked-lists/10-remove-first-match",
+      "preserved_definitions": 9,
+      "passed": true
+    },
+    {
+      "path": "04-singly-linked-lists/11-reverse-links",
+      "preserved_definitions": 10,
+      "passed": true
+    },
+    {
+      "path": "04-singly-linked-lists/12-playlist-project",
+      "preserved_definitions": 11,
+      "passed": true
+    },
+    {
+      "path": "05-linked-list-variants/02-doubly-prepend",
+      "preserved_definitions": 2,
+      "passed": true
+    },
+    {
+      "path": "05-linked-list-variants/03-doubly-append",
+      "preserved_definitions": 3,
+      "passed": true
+    },
+    {
+      "path": "05-linked-list-variants/04-doubly-remove",
+      "preserved_definitions": 4,
+      "passed": true
+    },
+    {
+      "path": "05-linked-list-variants/05-browser-history",
+      "preserved_definitions": 5,
+      "passed": true
+    },
+    {
+      "path": "05-linked-list-variants/06-circular-append",
+      "preserved_definitions": 9,
+      "passed": true
+    },
+    {
+      "path": "05-linked-list-variants/07-circular-traversal",
+      "preserved_definitions": 12,
+      "passed": true
+    },
+    {
+      "path": "05-linked-list-variants/08-circular-remove",
+      "preserved_definitions": 13,
+      "passed": true
+    },
+    {
+      "path": "05-linked-list-variants/09-skip-levels",
+      "preserved_definitions": 14,
+      "passed": true
+    },
+    {
+      "path": "05-linked-list-variants/10-skip-predecessors",
+      "preserved_definitions": 16,
+      "passed": true
+    },
+    {
+      "path": "05-linked-list-variants/11-skip-search",
+      "preserved_definitions": 18,
+      "passed": true
+    },
+    {
+      "path": "05-linked-list-variants/12-skip-insert",
+      "preserved_definitions": 19,
+      "passed": true
+    },
+    {
+      "path": "05-linked-list-variants/13-skip-remove",
+      "preserved_definitions": 20,
+      "passed": true
+    },
+    {
+      "path": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "preserved_definitions": 21,
+      "passed": true
+    },
+    {
+      "path": "06-stacks/02-push-item",
+      "preserved_definitions": 2,
+      "passed": true
+    },
+    {
+      "path": "06-stacks/03-peek-item",
+      "preserved_definitions": 3,
+      "passed": true
+    },
+    {
+      "path": "06-stacks/04-pop-item",
+      "preserved_definitions": 4,
+      "passed": true
+    },
+    {
+      "path": "06-stacks/05-balanced-brackets",
+      "preserved_definitions": 5,
+      "passed": true
+    },
+    {
+      "path": "06-stacks/06-postfix-evaluation",
+      "preserved_definitions": 6,
+      "passed": true
+    },
+    {
+      "path": "06-stacks/07-undo-history",
+      "preserved_definitions": 7,
+      "passed": true
+    },
+    {
+      "path": "06-stacks/08-minimum-stack",
+      "preserved_definitions": 10,
+      "passed": true
+    }
+  ],
+  "model_regressions": [
+    {
+      "structure": "LinkedList",
+      "mixed_operations": 300,
+      "passed": true
+    },
+    {
+      "structure": "DoublyList",
+      "mixed_operations": 300,
+      "passed": true
+    },
+    {
+      "structure": "CircularList",
+      "mixed_operations": 300,
+      "passed": true
+    },
+    {
+      "structure": "SkipList",
+      "mixed_operations": 400,
+      "search_checks_per_operation": 63,
+      "passed": true
+    },
+    {
+      "structure": "Stack",
+      "mixed_operations": 300,
+      "passed": true
+    },
+    {
+      "structure": "MinStack",
+      "mixed_operations": 300,
+      "passed": true
+    }
+  ],
+  "atomic_task_review": [
+    {
+      "path": "04-singly-linked-lists/01-node-and-link",
+      "before_tasks": 1,
+      "after_tasks": 2,
+      "rationale": "Independent initialization outcomes split into ordered checks."
+    },
+    {
+      "path": "04-singly-linked-lists/02-traverse-nodes",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "04-singly-linked-lists/03-list-state",
+      "before_tasks": 1,
+      "after_tasks": 2,
+      "rationale": "Independent initialization outcomes split into ordered checks."
+    },
+    {
+      "path": "04-singly-linked-lists/04-prepend-node",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "04-singly-linked-lists/05-append-node",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "04-singly-linked-lists/06-find-node",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "04-singly-linked-lists/07-insert-after-node",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "04-singly-linked-lists/08-remove-head",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "04-singly-linked-lists/09-remove-tail",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "04-singly-linked-lists/10-remove-first-match",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "04-singly-linked-lists/11-reverse-links",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "04-singly-linked-lists/12-playlist-project",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "05-linked-list-variants/01-doubly-linked-node",
+      "before_tasks": 1,
+      "after_tasks": 2,
+      "rationale": "Independent initialization outcomes split into ordered checks."
+    },
+    {
+      "path": "05-linked-list-variants/02-doubly-prepend",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "05-linked-list-variants/03-doubly-append",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "05-linked-list-variants/04-doubly-remove",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "05-linked-list-variants/05-browser-history",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "05-linked-list-variants/06-circular-append",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "05-linked-list-variants/07-circular-traversal",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "05-linked-list-variants/08-circular-remove",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "05-linked-list-variants/09-skip-levels",
+      "before_tasks": 1,
+      "after_tasks": 2,
+      "rationale": "Independent initialization outcomes split into ordered checks."
+    },
+    {
+      "path": "05-linked-list-variants/10-skip-predecessors",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "05-linked-list-variants/11-skip-search",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "05-linked-list-variants/12-skip-insert",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "05-linked-list-variants/13-skip-remove",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "05-linked-list-variants/14-skip-list-tradeoffs",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "06-stacks/01-stack-state",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "06-stacks/02-push-item",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "06-stacks/03-peek-item",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "06-stacks/04-pop-item",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "06-stacks/05-balanced-brackets",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "06-stacks/06-postfix-evaluation",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "06-stacks/07-undo-history",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    },
+    {
+      "path": "06-stacks/08-minimum-stack",
+      "before_tasks": 1,
+      "after_tasks": 1,
+      "rationale": "One coherent algorithm; full edge/return/invariant contract moved outside short checkbox."
+    }
+  ],
+  "cumulative_partial_states": [
+    {
+      "path": "04-singly-linked-lists/01-node-and-link",
+      "states": [
+        {
+          "state": "starter",
+          "expected": [
+            false,
+            false
+          ],
+          "observed": [
+            false,
+            false
+          ],
+          "run_stdout": "None None None\n",
+          "source_sha256": "c5dc228e3d82c353ec7f55d8be5669e15f91c941feb863ca60d05b0da8146167",
+          "source": null
+        },
+        {
+          "state": "first_task_only",
+          "expected": [
+            true,
+            false
+          ],
+          "observed": [
+            true,
+            false
+          ],
+          "run_stdout": "Dawn None None\n",
+          "source_sha256": "3f192b471bf20f7e2228b8557db8e54c129f0f949ec7a3c99c881a2997a0fe50",
+          "source": "from __future__ import annotations\n\nclass Node:\n\n    def __init__(self: Node, value: object, next_node: Node | None=None) -> None:\n        self.value: object = value\n        self.next: Node | None = None\nif __name__ == '__main__':\n    try:\n        end = Node('Harbor')\n        start = Node('Dawn', end)\n        print(start.value, start.next.value if start.next is not None else None, end.next)\n    except NotImplementedError as error:\n        print(error)\n"
+        },
+        {
+          "state": "solution",
+          "expected": [
+            true,
+            true
+          ],
+          "observed": [
+            true,
+            true
+          ],
+          "run_stdout": "Dawn Harbor None\n",
+          "source_sha256": "a40c8650473b27b0742c1dac88fa19386d62c90cfc38c3fb23fb0fe48a1a80bf",
+          "source": null
+        }
+      ]
+    },
+    {
+      "path": "04-singly-linked-lists/03-list-state",
+      "states": [
+        {
+          "state": "starter",
+          "expected": [
+            false,
+            false
+          ],
+          "observed": [
+            false,
+            false
+          ],
+          "run_stdout": "unfinished unfinished -1\n",
+          "source_sha256": "bce162d34d0b3d8962975f9ea59e91b7ca3aa674eabf39dbfbfa4dd6fe4eca7c",
+          "source": null
+        },
+        {
+          "state": "first_task_only",
+          "expected": [
+            true,
+            false
+          ],
+          "observed": [
+            true,
+            false
+          ],
+          "run_stdout": "None None -1\n",
+          "source_sha256": "720338c3beb38866c2c6d77f4c8ff1c0ef62b0ee8629ca3d152b5851724b8d27",
+          "source": "from __future__ import annotations\n\nclass Node:\n\n    def __init__(self: Node, value: object, next_node: Node | None=None) -> None:\n        self.value: object = value\n        self.next: Node | None = next_node\n\ndef values(head: Node | None) -> list[object]:\n    result = []\n    current = head\n    while current is not None:\n        result.append(current.value)\n        current = current.next\n    return result\n\nclass LinkedList:\n\n    def __init__(self: LinkedList) -> None:\n        self.head: Node | None = None\n        self.tail: Node | None = None\n        self.size: int = -1\nif __name__ == '__main__':\n    try:\n        playlist = LinkedList()\n        print(getattr(playlist, 'head', 'unfinished'), getattr(playlist, 'tail', 'unfinished'), playlist.size)\n    except NotImplementedError as error:\n        print(error)\n"
+        },
+        {
+          "state": "solution",
+          "expected": [
+            true,
+            true
+          ],
+          "observed": [
+            true,
+            true
+          ],
+          "run_stdout": "None None 0\n",
+          "source_sha256": "a5719fb659f9d1d1316e69c590fa67a34aebf15193e7e39b6b0d44e2696640ba",
+          "source": null
+        }
+      ]
+    },
+    {
+      "path": "05-linked-list-variants/01-doubly-linked-node",
+      "states": [
+        {
+          "state": "starter",
+          "expected": [
+            false,
+            false
+          ],
+          "observed": [
+            false,
+            false
+          ],
+          "run_stdout": "None unfinished unfinished\n",
+          "source_sha256": "9a48527a91fb727057eaec78998cf7ecc0f2260df00293ceb9c8bd7bccfc974f",
+          "source": null
+        },
+        {
+          "state": "first_task_only",
+          "expected": [
+            true,
+            false
+          ],
+          "observed": [
+            true,
+            false
+          ],
+          "run_stdout": "Archive unfinished unfinished\n",
+          "source_sha256": "78d17edc3fed51e5ecb5337a9aaa21ebe11750ba594cb0d73af8020156616fda",
+          "source": "from __future__ import annotations\n\nclass DoubleNode:\n\n    def __init__(self: DoubleNode, value: object) -> None:\n        self.value: object = value\n        self.prev: DoubleNode | None\n        self.next: DoubleNode | None\n\nclass DoublyList:\n\n    def __init__(self: DoublyList) -> None:\n        self.head: DoubleNode | None = None\n        self.tail: DoubleNode | None = None\n        self.size: int = 0\nif __name__ == '__main__':\n    try:\n        node = DoubleNode('Archive')\n        print(node.value, getattr(node, 'prev', 'unfinished'), getattr(node, 'next', 'unfinished'))\n    except NotImplementedError as error:\n        print(error)\n"
+        },
+        {
+          "state": "solution",
+          "expected": [
+            true,
+            true
+          ],
+          "observed": [
+            true,
+            true
+          ],
+          "run_stdout": "Archive None None\n",
+          "source_sha256": "bff62e466e9a966dcf552fa24e54a0c91c8af9005d6f4ddf34e10372b00bd204",
+          "source": null
+        }
+      ]
+    },
+    {
+      "path": "05-linked-list-variants/09-skip-levels",
+      "states": [
+        {
+          "state": "starter",
+          "expected": [
+            false,
+            false
+          ],
+          "observed": [
+            false,
+            false
+          ],
+          "run_stdout": "24 []\n",
+          "source_sha256": "eea616657ba14872e61f6d92b2122590554e2c90139dedd5a99644ddf3084ca4",
+          "source": null
+        },
+        {
+          "state": "first_task_only",
+          "expected": [
+            true,
+            false
+          ],
+          "observed": [
+            true,
+            false
+          ],
+          "run_stdout": "24 []\n",
+          "source_sha256": "bd957964efb5979a690d5cfda8e54926fc95b1fa071a88ff50e3b0f0cbd6ad15",
+          "source": "from __future__ import annotations\n\nclass DoubleNode:\n\n    def __init__(self: DoubleNode, value: object) -> None:\n        self.value: object = value\n        self.prev: DoubleNode | None = None\n        self.next: DoubleNode | None = None\n\nclass DoublyList:\n\n    def __init__(self: DoublyList) -> None:\n        self.head: DoubleNode | None = None\n        self.tail: DoubleNode | None = None\n        self.size: int = 0\n\n    def prepend(self: DoublyList, value: object) -> DoubleNode:\n        node = DoubleNode(value)\n        node.next = self.head\n        if self.head is None:\n            self.tail = node\n        else:\n            self.head.prev = node\n        self.head = node\n        self.size += 1\n        return node\n\n    def append(self: DoublyList, value: object) -> DoubleNode:\n        node = DoubleNode(value)\n        node.prev = self.tail\n        if self.tail is None:\n            self.head = node\n        else:\n            self.tail.next = node\n        self.tail = node\n        self.size += 1\n        return node\n\n    def remove(self: DoublyList, node: DoubleNode | None) -> DoubleNode:\n        if node is None:\n            raise ValueError('A live node is required')\n        if node.prev is None:\n            self.head = node.next\n        else:\n            node.prev.next = node.next\n        if node.next is None:\n            self.tail = node.prev\n        else:\n            node.next.prev = node.prev\n        self.size -= 1\n        node.prev = None\n        node.next = None\n        return node\n\nclass BrowserHistory:\n\n    def __init__(self: BrowserHistory, first_page: str) -> None:\n        self.pages: DoublyList = DoublyList()\n        self.current: DoubleNode = self.pages.append(first_page)\n\n    def back(self: BrowserHistory) -> str:\n        if self.current.prev is not None:\n            self.current = self.current.prev\n        return self.current.value\n\n    def forward(self: BrowserHistory) -> str:\n        if self.current.next is not None:\n            self.current = self.current.next\n        return self.current.value\n\n    def visit(self: BrowserHistory, page: str) -> str:\n        while self.pages.tail is not self.current:\n            self.pages.remove(self.pages.tail)\n        self.current = self.pages.append(page)\n        return page\n\nclass RingNode:\n\n    def __init__(self: RingNode, value: object) -> None:\n        self.value: object = value\n        self.next: RingNode | None = None\n\nclass CircularList:\n\n    def __init__(self: CircularList) -> None:\n        self.head: RingNode | None = None\n        self.tail: RingNode | None = None\n        self.size: int = 0\n\n    def append(self: CircularList, value: object) -> RingNode:\n        node = RingNode(value)\n        if self.head is None:\n            self.head = node\n            node.next = node\n        else:\n            node.next = self.head\n            self.tail.next = node\n        self.tail = node\n        self.size += 1\n        return node\n\n    def values(self: CircularList) -> list[object]:\n        result = []\n        current = self.head\n        for _ in range(self.size):\n            result.append(current.value)\n            current = current.next\n        return result\n\n    def remove_first(self: CircularList, value: object) -> RingNode | None:\n        previous = self.tail\n        current = self.head\n        for _ in range(self.size):\n            if current.value == value:\n                if self.size == 1:\n                    self.head = None\n                    self.tail = None\n                else:\n                    previous.next = current.next\n                    if current is self.head:\n                        self.head = current.next\n                    if current is self.tail:\n                        self.tail = previous\n                    self.tail.next = self.head\n                self.size -= 1\n                current.next = None\n                return current\n            previous, current = (current, current.next)\n        return None\n\nclass SkipNode:\n\n    def __init__(self: SkipNode, key: int | None, height: int) -> None:\n        # TODO: reject invalid heights before changing state\n        if type(height) is not int or height < 1:\n            raise ValueError(\"Height must be a positive integer\")\n        self.key: int | None = key\n        self.forward: list[SkipNode | None] = []\n\nclass SkipList:\n\n    def __init__(self: SkipList, max_level: int=4) -> None:\n        if type(max_level) is not int or max_level < 1:\n            raise ValueError('max_level must be a positive integer')\n        self.max_level: int = max_level\n        self.head: SkipNode = SkipNode(None, max_level)\n        self.tail: SkipNode | None = None\n        self.size: int = 0\nif __name__ == '__main__':\n    try:\n        node = SkipNode(24, 3)\n        print(node.key, node.forward)\n    except NotImplementedError as error:\n        print(error)\n"
+        },
+        {
+          "state": "solution",
+          "expected": [
+            true,
+            true
+          ],
+          "observed": [
+            true,
+            true
+          ],
+          "run_stdout": "24 [None, None, None]\n",
+          "source_sha256": "ce54642b2588d6ed64d2e721d908e9cb0d4296ca07f20b8740e7b023f24a6b32",
+          "source": null
+        }
+      ]
+    }
+  ],
+  "source_review_passes": [
+    {
+      "pass": 1,
+      "coverage": [
+        "04-singly-linked-lists/01-node-and-link",
+        "04-singly-linked-lists/02-traverse-nodes",
+        "04-singly-linked-lists/03-list-state",
+        "04-singly-linked-lists/04-prepend-node",
+        "04-singly-linked-lists/05-append-node",
+        "04-singly-linked-lists/06-find-node",
+        "04-singly-linked-lists/07-insert-after-node",
+        "04-singly-linked-lists/08-remove-head",
+        "04-singly-linked-lists/09-remove-tail",
+        "04-singly-linked-lists/10-remove-first-match",
+        "04-singly-linked-lists/11-reverse-links",
+        "04-singly-linked-lists/12-playlist-project",
+        "05-linked-list-variants/01-doubly-linked-node",
+        "05-linked-list-variants/02-doubly-prepend",
+        "05-linked-list-variants/03-doubly-append",
+        "05-linked-list-variants/04-doubly-remove",
+        "05-linked-list-variants/05-browser-history",
+        "05-linked-list-variants/06-circular-append",
+        "05-linked-list-variants/07-circular-traversal",
+        "05-linked-list-variants/08-circular-remove",
+        "05-linked-list-variants/09-skip-levels",
+        "05-linked-list-variants/10-skip-predecessors",
+        "05-linked-list-variants/11-skip-search",
+        "05-linked-list-variants/12-skip-insert",
+        "05-linked-list-variants/13-skip-remove",
+        "05-linked-list-variants/14-skip-list-tradeoffs",
+        "06-stacks/01-stack-state",
+        "06-stacks/02-push-item",
+        "06-stacks/03-peek-item",
+        "06-stacks/04-pop-item",
+        "06-stacks/05-balanced-brackets",
+        "06-stacks/06-postfix-evaluation",
+        "06-stacks/07-undo-history",
+        "06-stacks/08-minimum-stack"
+      ],
+      "focus": "Read all lesson prose, new/scaffolded definitions, starter targets and hidden tests; AST-verified carried definitions. Reviewed traces, empty/singleton states, endpoint identity and costs.",
+      "repairs": [
+        "Corrected explanation of broken backward append links",
+        "Corrected range bound explanation in circular deletion",
+        "Clarified integer key precondition versus sentinel",
+        "Specified logarithmic level-cap premise for expected skip-list costs",
+        "Separated trace fixtures from assessment fixtures"
+      ]
+    },
+    {
+      "pass": 2,
+      "coverage": [
+        "04-singly-linked-lists/01-node-and-link",
+        "04-singly-linked-lists/02-traverse-nodes",
+        "04-singly-linked-lists/03-list-state",
+        "04-singly-linked-lists/04-prepend-node",
+        "04-singly-linked-lists/05-append-node",
+        "04-singly-linked-lists/06-find-node",
+        "04-singly-linked-lists/07-insert-after-node",
+        "04-singly-linked-lists/08-remove-head",
+        "04-singly-linked-lists/09-remove-tail",
+        "04-singly-linked-lists/10-remove-first-match",
+        "04-singly-linked-lists/11-reverse-links",
+        "04-singly-linked-lists/12-playlist-project",
+        "05-linked-list-variants/01-doubly-linked-node",
+        "05-linked-list-variants/02-doubly-prepend",
+        "05-linked-list-variants/03-doubly-append",
+        "05-linked-list-variants/04-doubly-remove",
+        "05-linked-list-variants/05-browser-history",
+        "05-linked-list-variants/06-circular-append",
+        "05-linked-list-variants/07-circular-traversal",
+        "05-linked-list-variants/08-circular-remove",
+        "05-linked-list-variants/09-skip-levels",
+        "05-linked-list-variants/10-skip-predecessors",
+        "05-linked-list-variants/11-skip-search",
+        "05-linked-list-variants/12-skip-insert",
+        "05-linked-list-variants/13-skip-remove",
+        "05-linked-list-variants/14-skip-list-tradeoffs",
+        "06-stacks/01-stack-state",
+        "06-stacks/02-push-item",
+        "06-stacks/03-peek-item",
+        "06-stacks/04-pop-item",
+        "06-stacks/05-balanced-brackets",
+        "06-stacks/06-postfix-evaluation",
+        "06-stacks/07-undo-history",
+        "06-stacks/08-minimum-stack"
+      ],
+      "focus": "Reassessed every task after atomicity correction; reread final contracts, short numbered tasks, exact target stubs and execution-derived checkpoints.",
+      "repairs": [
+        "Split four initializer lessons into independent tasks",
+        "Guarded incomplete initialization probes without unconditional raises",
+        "Added exact 00/10/11 cumulative partial evidence for every multi-task lesson",
+        "Added explicit supplied-height assertions and comparison/read budgets",
+        "Added final Run output copied from actual native execution"
+      ]
+    }
+  ],
+  "known_limits": [
+    "This report is native CPython plus the actual backend loader, not browser Pyodide or UI acceptance. Parent owns actual InterCourses Worker/Submit acceptance and diagram integration.",
+    "Finite invariant/model/mutant checks do not prove every asymptotic bound for every possible submission.",
+    "One attempted circular-removal mutant deleted a redundant tail.next=head assignment and was behaviorally equivalent; it was accepted as a valid alternative and replaced by a genuinely incorrect tail update."
+  ],
+  "diagram_suggestions": [
+    "Singly linked prepend/insert and three-cursor reversal, with head/tail labels.",
+    "Doubly linked reciprocal links; circular singleton self-link and bounded traversal.",
+    "Skip-list shared towers at levels 0..2, including a top-down predecessor trace.",
+    "Stack top-at-end, bracket nesting, and per-depth minimum summaries."
+  ],
+  "runtime_type_hints": {
+    "explicit_runtime": "pyodide",
+    "all_learner_functions_annotated": true,
+    "forward_references": "from __future__ import annotations",
+    "payloads": "object for generic linked nodes; Any for reusable Stack; integer keys and heights for skip lists",
+    "annotations_graded": false
+  },
+  "harness_files": [
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/audit_04_06.py",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/adversarial_04_06.py",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/partials_04_06.py"
+  ],
+  "harness_source_sha256": {
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/audit_04_06.py": "5ab0afe56043e94c107d9414e10160bcbed53f4a9ac22ff1e957fdb6a44fc1b6",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/adversarial_04_06.py": "4ec710be6936619ab2413a7672101cf1a8a2ac819c22e3e4f48ee15986ef7e91",
+    "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/partials_04_06.py": "fb9de3aecfa6d3d3eab8edfbd1c96b1be9b6bba33e0eea9fb64daaaf69e92616"
+  },
+  "quiz_source_hashes": {
+    "04-singly-linked-lists/quiz/q02.md": "25ce5db22d0a69e6f384af81c44c8a2e641aa90de51cb62d6d0debac3c189128",
+    "04-singly-linked-lists/quiz/q03.md": "37d5ffe0d663b6378f2e9b0f8a2986fe0149dc0786f6054e2f14897236081687",
+    "04-singly-linked-lists/quiz/q04.md": "5e89fc2f1352f3fc80d31ede776e1444dd55586e381ada6035602c0a0b12ffc1",
+    "04-singly-linked-lists/quiz/q01.md": "4968c94ccd0b27fd2a78f17d0056d2aeb5e97de4d026476ac5f5fa2e6cb0a041",
+    "04-singly-linked-lists/quiz/index.yaml": "798e4baa40ad395ae57d55d026ac5507b61aeb7ffcea7d082047d3f36d7871b5",
+    "05-linked-list-variants/quiz/q02.md": "4a73f41e0c52dd2c0e91ab934a6d3386ff10d3e8eb147f11d77b5f93719a5498",
+    "05-linked-list-variants/quiz/q03.md": "006cc6dca01d4cf7e235f33c414817469bc3cebfb1db6249e2a9b014d01379c0",
+    "05-linked-list-variants/quiz/q04.md": "a52dc72af3a18bf9bac51d8c8c54a1e8eedc4146273e99454436fef7699d8934",
+    "05-linked-list-variants/quiz/q01.md": "0a1ee51693c44e03abfb66e23a1f667616efc353c881fef192a78232148fd4c6",
+    "05-linked-list-variants/quiz/index.yaml": "67557d19a3fafb1d5fbeb7e7f120fd19093dd398b7fbc469be11dabd32f9ffe3",
+    "06-stacks/quiz/q02.md": "930c361d6d136665a187b87ee9a6fd625ee835221ad40738ea7c59694a6459ca",
+    "06-stacks/quiz/q03.md": "b79914659ce6c2258b9286dbba27e2243a91c57560bb14fd2c5f61182040a5d4",
+    "06-stacks/quiz/q04.md": "85e92ee58a65d25f3986c93b5c9e9868c97b8b3e4c9263c8dba0f1dd5679c4a1",
+    "06-stacks/quiz/q01.md": "20fbdb05967fddd559e1e8421b2f9792a269a739bec385028a09719785fc85a1",
+    "06-stacks/quiz/index.yaml": "9fc0c0c145be769e0502f435b24abb64bc0ff99adc09b134c7232a6121a99c9d"
+  },
+  "totals": {
+    "coding_lessons": 34,
+    "tasks": 38,
+    "quiz_questions": 12,
+    "starter_runs": 34,
+    "solution_runs": 34,
+    "starter_passed_checks": 0,
+    "solution_passed_checks": 38,
+    "cumulative_definition_edges": 31,
+    "earlier_contract_regression_pairs": 185,
+    "mutants_rejected": 70,
+    "mixed_model_operations": 1900,
+    "multi_task_partial_sequences": 4
+  }
+}

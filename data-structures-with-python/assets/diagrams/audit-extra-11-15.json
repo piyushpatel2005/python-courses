@@ -1,0 +1,2391 @@
+{
+  "libraryVersion": "0.18.1",
+  "browser": "155.0.8059.40",
+  "externalRequestsBlocked": true,
+  "canonicalSVG": 40,
+  "canonicalEditable": 40,
+  "lessonSVG": 40,
+  "lessonEditable": 40,
+  "algorithmChecks": [
+    {
+      "check": "computed binary links",
+      "actual": [
+        18,
+        9,
+        27,
+        null
+      ],
+      "expected": [
+        18,
+        9,
+        27,
+        null
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed count/height/base cases",
+      "actual": [
+        6,
+        3,
+        0,
+        0,
+        1
+      ],
+      "expected": [
+        6,
+        3,
+        0,
+        0,
+        1
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed search 13",
+      "actual": [
+        18,
+        9,
+        13
+      ],
+      "expected": [
+        18,
+        9,
+        13
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed found 13",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "check": "computed search 12",
+      "actual": [
+        18,
+        9,
+        13
+      ],
+      "expected": [
+        18,
+        9,
+        13
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed found 12",
+      "actual": false,
+      "expected": false,
+      "pass": true
+    },
+    {
+      "check": "computed minimum path",
+      "actual": [
+        18,
+        9,
+        4
+      ],
+      "expected": [
+        18,
+        9,
+        4
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed duplicate insertion",
+      "actual": 6,
+      "expected": 6,
+      "pass": true
+    },
+    {
+      "check": "computed leaf deletion",
+      "actual": [
+        9,
+        13,
+        18,
+        27,
+        32
+      ],
+      "expected": [
+        9,
+        13,
+        18,
+        27,
+        32
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed one-child deletion",
+      "actual": [
+        4,
+        9,
+        13,
+        18,
+        32
+      ],
+      "expected": [
+        4,
+        9,
+        13,
+        18,
+        32
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed singleton deletion",
+      "actual": null,
+      "expected": null,
+      "pass": true
+    },
+    {
+      "check": "computed tree BFS",
+      "actual": [
+        18,
+        9,
+        27,
+        4,
+        13,
+        32
+      ],
+      "expected": [
+        18,
+        9,
+        27,
+        4,
+        13,
+        32
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed tree frontier",
+      "actual": [
+        [
+          9,
+          27
+        ],
+        [
+          27,
+          4,
+          13
+        ]
+      ],
+      "expected": [
+        [
+          9,
+          27
+        ],
+        [
+          27,
+          4,
+          13
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed graph BFS",
+      "actual": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "expected": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed graph queue",
+      "actual": [
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D"
+        ],
+        []
+      ],
+      "expected": [
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D"
+        ],
+        []
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed BFS predecessor",
+      "actual": {
+        "A": null,
+        "B": "A",
+        "C": "A",
+        "D": "B"
+      },
+      "expected": {
+        "A": null,
+        "B": "A",
+        "C": "A",
+        "D": "B"
+      },
+      "pass": true
+    },
+    {
+      "check": "computed BFS path",
+      "actual": [
+        "A",
+        "B",
+        "D"
+      ],
+      "expected": [
+        "A",
+        "B",
+        "D"
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed BFS unreachable",
+      "actual": [],
+      "expected": [],
+      "pass": true
+    },
+    {
+      "check": "computed recursive DFS",
+      "actual": [
+        "A",
+        "B",
+        "D",
+        "C"
+      ],
+      "expected": [
+        "A",
+        "B",
+        "D",
+        "C"
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed recursive parent C",
+      "actual": "D",
+      "expected": "D",
+      "pass": true
+    },
+    {
+      "check": "computed iterative DFS",
+      "actual": [
+        "A",
+        "B",
+        "D",
+        "C"
+      ],
+      "expected": [
+        "A",
+        "B",
+        "D",
+        "C"
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed iterative parent C",
+      "actual": "A",
+      "expected": "A",
+      "pass": true
+    },
+    {
+      "check": "computed undirected cycle",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "check": "computed components",
+      "actual": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "expected": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "Z"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed initial indegrees",
+      "actual": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "expected": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed Kahn order",
+      "actual": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "expected": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed directed matrix",
+      "actual": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "expected": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed Dijkstra settled order",
+      "actual": [
+        "A",
+        "C",
+        "D",
+        "B"
+      ],
+      "expected": [
+        "A",
+        "C",
+        "D",
+        "B"
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed relaxation states",
+      "actual": [
+        [
+          0,
+          6,
+          2,
+          "inf",
+          "inf"
+        ],
+        [
+          0,
+          6,
+          2,
+          5,
+          "inf"
+        ]
+      ],
+      "expected": [
+        [
+          0,
+          6,
+          2,
+          "inf",
+          "inf"
+        ],
+        [
+          0,
+          6,
+          2,
+          5,
+          "inf"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed weighted path",
+      "actual": [
+        "A",
+        "C",
+        "D"
+      ],
+      "expected": [
+        "A",
+        "C",
+        "D"
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed zero edges",
+      "actual": [
+        0,
+        0,
+        4,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        4,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed unreachable",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "check": "computed independent lists",
+      "actual": 3,
+      "expected": 3,
+      "pass": true
+    },
+    {
+      "check": "computed add edge",
+      "actual": {
+        "A": [
+          "B"
+        ],
+        "B": [
+          "A"
+        ],
+        "C": []
+      },
+      "expected": {
+        "A": [
+          "B"
+        ],
+        "B": [
+          "A"
+        ],
+        "C": []
+      },
+      "pass": true
+    },
+    {
+      "check": "computed remove edge",
+      "actual": {
+        "A": [],
+        "B": [],
+        "C": []
+      },
+      "expected": {
+        "A": [],
+        "B": [],
+        "C": []
+      },
+      "pass": true
+    },
+    {
+      "check": "computed remove vertex",
+      "actual": {
+        "B": [
+          "D"
+        ],
+        "C": [],
+        "D": [
+          "B"
+        ]
+      },
+      "expected": {
+        "B": [
+          "D"
+        ],
+        "C": [],
+        "D": [
+          "B"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "check": "computed lazy physical heap",
+      "actual": [
+        [
+          1,
+          "A"
+        ],
+        [
+          2,
+          "B"
+        ],
+        [
+          5,
+          "C"
+        ],
+        [
+          7,
+          "A"
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          "A"
+        ],
+        [
+          2,
+          "B"
+        ],
+        [
+          5,
+          "C"
+        ],
+        [
+          7,
+          "A"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed lazy valid pops",
+      "actual": [
+        "A",
+        "B",
+        "C"
+      ],
+      "expected": [
+        "A",
+        "B",
+        "C"
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed stale skip",
+      "actual": [
+        "A"
+      ],
+      "expected": [
+        "A"
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed max pop",
+      "actual": [
+        14,
+        12,
+        9,
+        5,
+        7
+      ],
+      "expected": [
+        14,
+        12,
+        9,
+        5,
+        7
+      ],
+      "pass": true
+    },
+    {
+      "check": "computed heap extraction sort",
+      "actual": [
+        5,
+        7,
+        9,
+        12,
+        14,
+        16
+      ],
+      "expected": [
+        5,
+        7,
+        9,
+        12,
+        14,
+        16
+      ],
+      "pass": true
+    },
+    {
+      "check": "count-nodes",
+      "actual": 6,
+      "expected": 6,
+      "pass": true
+    },
+    {
+      "check": "tree-height",
+      "actual": 3,
+      "expected": 3,
+      "pass": true
+    },
+    {
+      "check": "preorder-traversal",
+      "actual": [
+        18,
+        9,
+        4,
+        13,
+        27,
+        32
+      ],
+      "expected": [
+        18,
+        9,
+        4,
+        13,
+        27,
+        32
+      ],
+      "pass": true
+    },
+    {
+      "check": "inorder-traversal",
+      "actual": [
+        4,
+        9,
+        13,
+        18,
+        27,
+        32
+      ],
+      "expected": [
+        4,
+        9,
+        13,
+        18,
+        27,
+        32
+      ],
+      "pass": true
+    },
+    {
+      "check": "level-order-traversal",
+      "actual": [
+        18,
+        9,
+        27,
+        4,
+        13,
+        32
+      ],
+      "expected": [
+        18,
+        9,
+        27,
+        4,
+        13,
+        32
+      ],
+      "pass": true
+    },
+    {
+      "check": "bst-search",
+      "actual": [
+        18,
+        9,
+        13
+      ],
+      "expected": [
+        18,
+        9,
+        13
+      ],
+      "pass": true
+    },
+    {
+      "check": "bst-insert",
+      "actual": [
+        4,
+        9,
+        13,
+        18,
+        27,
+        32
+      ],
+      "expected": [
+        4,
+        9,
+        13,
+        18,
+        27,
+        32
+      ],
+      "pass": true
+    },
+    {
+      "check": "bst-minimum",
+      "actual": 4,
+      "expected": 4,
+      "pass": true
+    },
+    {
+      "check": "bst-delete-leaf",
+      "actual": [
+        9,
+        13,
+        18,
+        27,
+        32
+      ],
+      "expected": [
+        9,
+        13,
+        18,
+        27,
+        32
+      ],
+      "pass": true
+    },
+    {
+      "check": "bst-delete-one-child",
+      "actual": [
+        4,
+        9,
+        13,
+        18,
+        32
+      ],
+      "expected": [
+        4,
+        9,
+        13,
+        18,
+        32
+      ],
+      "pass": true
+    },
+    {
+      "check": "validate-bst",
+      "actual": false,
+      "expected": false,
+      "pass": true
+    },
+    {
+      "check": "heap-order",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "check": "sift-up",
+      "actual": [
+        1,
+        3,
+        6,
+        15,
+        8,
+        10
+      ],
+      "expected": [
+        1,
+        3,
+        6,
+        15,
+        8,
+        10
+      ],
+      "pass": true
+    },
+    {
+      "check": "heap-push",
+      "actual": [
+        2,
+        8,
+        3,
+        15,
+        11,
+        10,
+        6
+      ],
+      "expected": [
+        2,
+        8,
+        3,
+        15,
+        11,
+        10,
+        6
+      ],
+      "pass": true
+    },
+    {
+      "check": "heap-pop",
+      "actual": [
+        3,
+        [
+          6,
+          8,
+          10,
+          15,
+          11
+        ]
+      ],
+      "expected": [
+        3,
+        [
+          6,
+          8,
+          10,
+          15,
+          11
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "check": "bottom-up-heapify",
+      "actual": [
+        2,
+        5,
+        4,
+        7,
+        12,
+        9
+      ],
+      "expected": [
+        2,
+        5,
+        4,
+        7,
+        12,
+        9
+      ],
+      "pass": true
+    },
+    {
+      "check": "max-heap",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "check": "heap-sort",
+      "actual": [
+        5,
+        7,
+        9,
+        12,
+        14,
+        16
+      ],
+      "expected": [
+        5,
+        7,
+        9,
+        12,
+        14,
+        16
+      ],
+      "pass": true
+    },
+    {
+      "check": "priority-updates",
+      "actual": [
+        "A",
+        "B",
+        "C"
+      ],
+      "expected": [
+        "A",
+        "B",
+        "C"
+      ],
+      "pass": true
+    },
+    {
+      "check": "top-k-stream",
+      "actual": [
+        9,
+        12,
+        14
+      ],
+      "expected": [
+        9,
+        12,
+        14
+      ],
+      "pass": true
+    },
+    {
+      "check": "adjacency-list",
+      "actual": [
+        "A",
+        "B",
+        "C"
+      ],
+      "expected": [
+        "A",
+        "B",
+        "C"
+      ],
+      "pass": true
+    },
+    {
+      "check": "add-vertex",
+      "actual": 3,
+      "expected": 3,
+      "pass": true
+    },
+    {
+      "check": "add-undirected-edge",
+      "actual": {
+        "A": [
+          "B"
+        ],
+        "B": [
+          "A"
+        ],
+        "C": []
+      },
+      "expected": {
+        "A": [
+          "B"
+        ],
+        "B": [
+          "A"
+        ],
+        "C": []
+      },
+      "pass": true
+    },
+    {
+      "check": "remove-edge",
+      "actual": [
+        [
+          "A",
+          "C"
+        ]
+      ],
+      "expected": [
+        [
+          "A",
+          "C"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "check": "remove-vertex",
+      "actual": false,
+      "expected": false,
+      "pass": true
+    },
+    {
+      "check": "directed-edges",
+      "actual": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "expected": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "check": "bfs-frontier",
+      "actual": [
+        "C",
+        "D"
+      ],
+      "expected": [
+        "C",
+        "D"
+      ],
+      "pass": true
+    },
+    {
+      "check": "bfs-traversal",
+      "actual": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "expected": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pass": true
+    },
+    {
+      "check": "bfs-path",
+      "actual": 2,
+      "expected": 2,
+      "pass": true
+    },
+    {
+      "check": "connected-components",
+      "actual": 3,
+      "expected": 3,
+      "pass": true
+    },
+    {
+      "check": "dfs-recursive",
+      "actual": [
+        "A",
+        "B",
+        "D",
+        "C"
+      ],
+      "expected": [
+        "A",
+        "B",
+        "D",
+        "C"
+      ],
+      "pass": true
+    },
+    {
+      "check": "dfs-iterative",
+      "actual": [
+        "A",
+        "B",
+        "D",
+        "C"
+      ],
+      "expected": [
+        "A",
+        "B",
+        "D",
+        "C"
+      ],
+      "pass": true
+    },
+    {
+      "check": "undirected-cycle",
+      "actual": 4,
+      "expected": 4,
+      "pass": true
+    },
+    {
+      "check": "topological-order",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "check": "weighted-adjacency",
+      "actual": 4,
+      "expected": 4,
+      "pass": true
+    },
+    {
+      "check": "path-cost",
+      "actual": [
+        7,
+        5
+      ],
+      "expected": [
+        7,
+        5
+      ],
+      "pass": true
+    },
+    {
+      "check": "dijkstra-scan",
+      "actual": [
+        0,
+        6,
+        2,
+        5
+      ],
+      "expected": [
+        0,
+        6,
+        2,
+        5
+      ],
+      "pass": true
+    },
+    {
+      "check": "reconstruct-weighted-path",
+      "actual": [
+        "A",
+        "C",
+        "D"
+      ],
+      "expected": [
+        "A",
+        "C",
+        "D"
+      ],
+      "pass": true
+    },
+    {
+      "check": "unreachable-and-zero-weights",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    }
+  ],
+  "diagrams": [
+    {
+      "name": "trees-and-bst-binary-node-trace.excalidraw",
+      "elements": 18,
+      "text": 11,
+      "rectangles": 5,
+      "arrows": 2,
+      "boundArrowEnds": 4,
+      "boundTexts": 4,
+      "groups": 4,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/trees-and-bst-binary-node-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/01-binary-node/trees-and-bst-binary-node-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-binary-node-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-binary-node-trace-editor.png",
+      "sha256SVG": "2fc3566220f0408032e3ba2a6ef4ca5f04ff156f8799a07dd6891f2866669bc6",
+      "sha256Editable": "3a3fe4a627fed612d4ee20f48c4f7e6d050d001bf8f2adbb730c9c1c9e147255",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "trees-and-bst-count-nodes-trace.excalidraw",
+      "elements": 40,
+      "text": 17,
+      "rectangles": 13,
+      "arrows": 10,
+      "boundArrowEnds": 20,
+      "boundTexts": 12,
+      "groups": 12,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/trees-and-bst-count-nodes-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/02-count-nodes/trees-and-bst-count-nodes-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-count-nodes-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-count-nodes-trace-editor.png",
+      "sha256SVG": "88bfa4ee0123f7a9a04d363e26694239c9936dae9021682e4242bb3fc670ceac",
+      "sha256Editable": "c536507cd7a8cf521c01f18c44476d99e9bf7a052f92baea83fcff84ec86f5df",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "trees-and-bst-tree-height-trace.excalidraw",
+      "elements": 40,
+      "text": 17,
+      "rectangles": 13,
+      "arrows": 10,
+      "boundArrowEnds": 20,
+      "boundTexts": 12,
+      "groups": 12,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/trees-and-bst-tree-height-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/03-tree-height/trees-and-bst-tree-height-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-tree-height-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-tree-height-trace-editor.png",
+      "sha256SVG": "44522f275a4d7bdb2dc94237a4314eeaf9448691c50393091a5591fcb71f13c7",
+      "sha256Editable": "3f4a4439a5dd062542caa488da627916d42c64b3de4ef7dba01760b84dd86aef",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "trees-and-bst-preorder-traversal-trace.excalidraw",
+      "elements": 52,
+      "text": 31,
+      "rectangles": 16,
+      "arrows": 5,
+      "boundArrowEnds": 10,
+      "boundTexts": 15,
+      "groups": 15,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/trees-and-bst-preorder-traversal-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/04-preorder-traversal/trees-and-bst-preorder-traversal-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-preorder-traversal-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-preorder-traversal-trace-editor.png",
+      "sha256SVG": "55aff92316bc1f90f38b4816b444536b905df4e51c0193caff802718162b3a27",
+      "sha256Editable": "34c66f0772f366068383a6d4b603bf895194c105d87aab17e8b41b303be0bdbe",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "trees-and-bst-inorder-traversal-trace.excalidraw",
+      "elements": 52,
+      "text": 31,
+      "rectangles": 16,
+      "arrows": 5,
+      "boundArrowEnds": 10,
+      "boundTexts": 15,
+      "groups": 15,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/trees-and-bst-inorder-traversal-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/05-inorder-traversal/trees-and-bst-inorder-traversal-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-inorder-traversal-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-inorder-traversal-trace-editor.png",
+      "sha256SVG": "823c17b4b3d989b469db1b4e811f1a8e7fc3b289f9d5fcdf394a5a53c55058c8",
+      "sha256Editable": "dc0b9117fc1f256265c1f7d38908118e9ba57c7d3589d162f771a0455e5216ad",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "trees-and-bst-level-order-traversal-trace.excalidraw",
+      "elements": 57,
+      "text": 34,
+      "rectangles": 18,
+      "arrows": 5,
+      "boundArrowEnds": 10,
+      "boundTexts": 17,
+      "groups": 17,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/trees-and-bst-level-order-traversal-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/07-level-order-traversal/trees-and-bst-level-order-traversal-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-level-order-traversal-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-level-order-traversal-trace-editor.png",
+      "sha256SVG": "baabc057270d0a1dbbedf428ec582ed4b878c42c45d51c376a31860f67e0b07d",
+      "sha256Editable": "bf1fa1cb12c4487b9d1bd3e926ef500f81aaad086e4cd764f4404e3175ed1787",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "trees-and-bst-bst-search-trace.excalidraw",
+      "elements": 35,
+      "text": 20,
+      "rectangles": 10,
+      "arrows": 5,
+      "boundArrowEnds": 10,
+      "boundTexts": 9,
+      "groups": 9,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/trees-and-bst-bst-search-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/08-bst-search/trees-and-bst-bst-search-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-bst-search-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-bst-search-trace-editor.png",
+      "sha256SVG": "64ab68fa27e9c632ff0f9f617d0793fa4c80cb9ca263a76ed01f94c74119ff1c",
+      "sha256Editable": "90078e355736173172f89561820a1afae956e461fb935b7bd62e6743ff597be2",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "trees-and-bst-bst-insert-trace.excalidraw",
+      "elements": 39,
+      "text": 18,
+      "rectangles": 12,
+      "arrows": 9,
+      "boundArrowEnds": 18,
+      "boundTexts": 11,
+      "groups": 11,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/trees-and-bst-bst-insert-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/09-bst-insert/trees-and-bst-bst-insert-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-bst-insert-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-bst-insert-trace-editor.png",
+      "sha256SVG": "ec7a993cfef92cdaacdfcd863e4e1b1440ee8bdd6d642d626c233ba3bdafef34",
+      "sha256Editable": "ff1af7a6d78018a7a817ea093b9dd188c83e8ec9996fa082307aa6ba8d657f20",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "trees-and-bst-bst-minimum-trace.excalidraw",
+      "elements": 35,
+      "text": 20,
+      "rectangles": 10,
+      "arrows": 5,
+      "boundArrowEnds": 10,
+      "boundTexts": 9,
+      "groups": 9,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/trees-and-bst-bst-minimum-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/10-bst-minimum/trees-and-bst-bst-minimum-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-bst-minimum-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-bst-minimum-trace-editor.png",
+      "sha256SVG": "8f8b3fa574519075dd9054b3f79a62ce1ae660ce10bd0aa062d55b101938985f",
+      "sha256Editable": "3698d39e71321cecb1c2ebece3a6d538189068a529f90a1d9e1898e978f32c66",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "trees-and-bst-bst-delete-leaf-trace.excalidraw",
+      "elements": 39,
+      "text": 18,
+      "rectangles": 12,
+      "arrows": 9,
+      "boundArrowEnds": 18,
+      "boundTexts": 11,
+      "groups": 11,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/trees-and-bst-bst-delete-leaf-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/11-bst-delete-leaf/trees-and-bst-bst-delete-leaf-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-bst-delete-leaf-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-bst-delete-leaf-trace-editor.png",
+      "sha256SVG": "17b5584721c80c757fa2d55e191caff64ebc73cb8ca8b7b2c11f9930dbf7a7b0",
+      "sha256Editable": "ca3150bd3f91337ef20a225c9b33b0020a723e00f50d03bc3c57f4b5b17f3d14",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "trees-and-bst-bst-delete-one-child-trace.excalidraw",
+      "elements": 39,
+      "text": 18,
+      "rectangles": 12,
+      "arrows": 9,
+      "boundArrowEnds": 18,
+      "boundTexts": 11,
+      "groups": 11,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/trees-and-bst-bst-delete-one-child-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/12-bst-delete-one-child/trees-and-bst-bst-delete-one-child-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-bst-delete-one-child-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-bst-delete-one-child-trace-editor.png",
+      "sha256SVG": "7072421689231c72bfd3fdf2e24acd2248dfad591b70e8365c280854ca737c0f",
+      "sha256Editable": "f310caca13f8c83a32faaed821d5819d78bb628b3474eb177240bc35423a7db2",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "trees-and-bst-validate-bst-trace.excalidraw",
+      "elements": 33,
+      "text": 20,
+      "rectangles": 9,
+      "arrows": 4,
+      "boundArrowEnds": 8,
+      "boundTexts": 8,
+      "groups": 8,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/trees-and-bst-validate-bst-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/11-trees-and-bst/14-validate-bst/trees-and-bst-validate-bst-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-validate-bst-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/trees-and-bst-validate-bst-trace-editor.png",
+      "sha256SVG": "d741f066cc20bd0a805d38025cc504b6f089fa1fe6488db989f3e84a88df0c44",
+      "sha256Editable": "b736f38bc80ad6e5bed10d1efb257fc9b13f658e5ee50d5eb4bc1b028ed7f64d",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "heaps-and-priority-heap-order-trace.excalidraw",
+      "elements": 43,
+      "text": 25,
+      "rectangles": 13,
+      "arrows": 5,
+      "boundArrowEnds": 10,
+      "boundTexts": 12,
+      "groups": 12,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/heaps-and-priority-heap-order-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/02-heap-order/heaps-and-priority-heap-order-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-heap-order-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-heap-order-trace-editor.png",
+      "sha256SVG": "d68973810bf8e54bc44b073e9f6ac4af07c3bfcf39a8604b5aabba7ef1298f42",
+      "sha256Editable": "8028327a44e30e0530a358bed781fa1823d7fc8c4784bdf3bef81934fb3ef072",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "heaps-and-priority-sift-up-trace.excalidraw",
+      "elements": 79,
+      "text": 49,
+      "rectangles": 25,
+      "arrows": 5,
+      "boundArrowEnds": 10,
+      "boundTexts": 24,
+      "groups": 24,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/heaps-and-priority-sift-up-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/03-sift-up/heaps-and-priority-sift-up-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-sift-up-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-sift-up-trace-editor.png",
+      "sha256SVG": "a01d8712405412e171ae962d89ae75bcd8024a1215ab75c62f4e66cc02e33a60",
+      "sha256Editable": "cb581c677c0dfb24571cbd877d1417b3fa388dab1b686e04564b8e34a7fa8c29",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "heaps-and-priority-heap-push-trace.excalidraw",
+      "elements": 71,
+      "text": 43,
+      "rectangles": 22,
+      "arrows": 6,
+      "boundArrowEnds": 12,
+      "boundTexts": 21,
+      "groups": 21,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/heaps-and-priority-heap-push-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/05-heap-push/heaps-and-priority-heap-push-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-heap-push-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-heap-push-trace-editor.png",
+      "sha256SVG": "61f69db56d0cc30d0fd702c1bd67873e6f838dfe1451f7735fe2fd89f9a54c29",
+      "sha256Editable": "abf3acf910109e68ea38ca6eeeb42e1fecfa5bd8a45ce46d9dc7bd36c4826d7b",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "heaps-and-priority-heap-pop-trace.excalidraw",
+      "elements": 38,
+      "text": 23,
+      "rectangles": 11,
+      "arrows": 4,
+      "boundArrowEnds": 8,
+      "boundTexts": 10,
+      "groups": 10,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/heaps-and-priority-heap-pop-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/06-heap-pop/heaps-and-priority-heap-pop-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-heap-pop-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-heap-pop-trace-editor.png",
+      "sha256SVG": "18e538fb83258680afb1d408a1a34436a8e71c4a8722ba6073384ea8e0ff7794",
+      "sha256Editable": "352cac3fa167649fae9864b64ffa6894bacbe6eb46ff6d75485aadb3e425318a",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "heaps-and-priority-bottom-up-heapify-trace.excalidraw",
+      "elements": 79,
+      "text": 49,
+      "rectangles": 25,
+      "arrows": 5,
+      "boundArrowEnds": 10,
+      "boundTexts": 24,
+      "groups": 24,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/heaps-and-priority-bottom-up-heapify-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/07-bottom-up-heapify/heaps-and-priority-bottom-up-heapify-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-bottom-up-heapify-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-bottom-up-heapify-trace-editor.png",
+      "sha256SVG": "a3d6be7941fba4ce52acee4dce9f65330f45b8836a7749d47a0264a73708965f",
+      "sha256Editable": "257cca1bbe5d4d515c24a7872c57dc465e17a8ea39b8307d9d1c9edadbcd81de",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "heaps-and-priority-max-heap-trace.excalidraw",
+      "elements": 58,
+      "text": 35,
+      "rectangles": 18,
+      "arrows": 5,
+      "boundArrowEnds": 10,
+      "boundTexts": 17,
+      "groups": 17,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/heaps-and-priority-max-heap-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/08-max-heap/heaps-and-priority-max-heap-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-max-heap-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-max-heap-trace-editor.png",
+      "sha256SVG": "54110e6a790cdf90acc600c0d19b32f6d46bf20b64a93c95ec89f5cdb9c43fdf",
+      "sha256Editable": "dcf24f33431f3983ff540643a98a0c8c2898ea7653f264b3cc20db0924338c65",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "heaps-and-priority-heap-sort-trace.excalidraw",
+      "elements": 78,
+      "text": 48,
+      "rectangles": 25,
+      "arrows": 5,
+      "boundArrowEnds": 10,
+      "boundTexts": 24,
+      "groups": 24,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/heaps-and-priority-heap-sort-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/09-heap-sort/heaps-and-priority-heap-sort-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-heap-sort-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-heap-sort-trace-editor.png",
+      "sha256SVG": "bc4cade3eab717091f117e0f2270e2cd8bb46bbef763666dbb6f558aee96396e",
+      "sha256Editable": "58eb272016c61210d00f241a3fbc696ef059845262fd823986ddb670d79b7aeb",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "heaps-and-priority-priority-updates-trace.excalidraw",
+      "elements": 38,
+      "text": 25,
+      "rectangles": 11,
+      "arrows": 2,
+      "boundArrowEnds": 4,
+      "boundTexts": 10,
+      "groups": 10,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/heaps-and-priority-priority-updates-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/12-priority-updates/heaps-and-priority-priority-updates-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-priority-updates-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-priority-updates-trace-editor.png",
+      "sha256SVG": "11988723eb5a7074c5566871c08af4307795d765ea470f305b01a1d5dde938d8",
+      "sha256Editable": "e6622ef9d108bc4fbe2220c701a747141bb2d1f9c6c97df65ac9a45bb07e6f8c",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "heaps-and-priority-top-k-stream-trace.excalidraw",
+      "elements": 43,
+      "text": 28,
+      "rectangles": 13,
+      "arrows": 2,
+      "boundArrowEnds": 4,
+      "boundTexts": 12,
+      "groups": 12,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/heaps-and-priority-top-k-stream-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/12-heaps-and-priority/13-top-k-stream/heaps-and-priority-top-k-stream-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-top-k-stream-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/heaps-and-priority-top-k-stream-trace-editor.png",
+      "sha256SVG": "fbb4109bc2ff0f049588ee94dec93e86751681ec3188b5c1a1f35bd9bed93f0d",
+      "sha256Editable": "807df10869b372e375bbb0581d2de28239fae0d5c491482c3ae6dbde12233ed4",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "graph-models-adjacency-list-trace.excalidraw",
+      "elements": 17,
+      "text": 13,
+      "rectangles": 4,
+      "arrows": 0,
+      "boundArrowEnds": 0,
+      "boundTexts": 3,
+      "groups": 3,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/graph-models-adjacency-list-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/13-graph-models/01-adjacency-list/graph-models-adjacency-list-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-models-adjacency-list-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-models-adjacency-list-trace-editor.png",
+      "sha256SVG": "11fce92b8b83f391c111264078b23c6f511ec13ca4ab9b9ac0bb593ac50191b7",
+      "sha256Editable": "acceddc62bb3eaa6532cc9f407cc5473cad3ce9e5136dfaba55c77e459843bdc",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "graph-models-add-vertex-trace.excalidraw",
+      "elements": 19,
+      "text": 11,
+      "rectangles": 6,
+      "arrows": 2,
+      "boundArrowEnds": 4,
+      "boundTexts": 5,
+      "groups": 5,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/graph-models-add-vertex-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/13-graph-models/02-add-vertex/graph-models-add-vertex-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-models-add-vertex-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-models-add-vertex-trace-editor.png",
+      "sha256SVG": "a15b6a23fba8016f389d1f8d92c3cb5a618d074e73eb701c17ed699a6d196ad6",
+      "sha256Editable": "7af96ba88871c7ad566bbf90c6c635d4bc3374ff339214ba95d58602de325e53",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "graph-models-add-undirected-edge-trace.excalidraw",
+      "elements": 21,
+      "text": 13,
+      "rectangles": 7,
+      "arrows": 1,
+      "boundArrowEnds": 2,
+      "boundTexts": 6,
+      "groups": 6,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/graph-models-add-undirected-edge-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/13-graph-models/03-add-undirected-edge/graph-models-add-undirected-edge-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-models-add-undirected-edge-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-models-add-undirected-edge-trace-editor.png",
+      "sha256SVG": "3177d781bfa30e4319cb9199db33fcc7e0fd7070564af76f852dd512b7056463",
+      "sha256Editable": "a0f01c579038c0ca4318d9709bbef97bee7f432a4067eab7deff28bf88990eb5",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "graph-models-remove-edge-trace.excalidraw",
+      "elements": 22,
+      "text": 12,
+      "rectangles": 7,
+      "arrows": 3,
+      "boundArrowEnds": 6,
+      "boundTexts": 6,
+      "groups": 6,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/graph-models-remove-edge-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/13-graph-models/04-remove-edge/graph-models-remove-edge-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-models-remove-edge-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-models-remove-edge-trace-editor.png",
+      "sha256SVG": "adee25b673dbb6b94e387f7e072fcd08dd2db3b2511ccfd6f64f2400d3a587c9",
+      "sha256Editable": "19720c6c6966263174f0a8b58d098b8fba76ecbac71086b7e1bae8d05a164622",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "graph-models-remove-vertex-trace.excalidraw",
+      "elements": 26,
+      "text": 14,
+      "rectangles": 8,
+      "arrows": 4,
+      "boundArrowEnds": 8,
+      "boundTexts": 7,
+      "groups": 7,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/graph-models-remove-vertex-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/13-graph-models/05-remove-vertex/graph-models-remove-vertex-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-models-remove-vertex-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-models-remove-vertex-trace-editor.png",
+      "sha256SVG": "8c7ecea3cb9867a83591ac4080b3423a54a028421179e1ccdbb9ad3b9217188f",
+      "sha256Editable": "9b0ba8886e6bfb816e9de2df09ab7ceca5df78401f81da480fb399ae547208c1",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "graph-models-directed-edges-trace.excalidraw",
+      "elements": 42,
+      "text": 26,
+      "rectangles": 14,
+      "arrows": 2,
+      "boundArrowEnds": 4,
+      "boundTexts": 13,
+      "groups": 13,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/graph-models-directed-edges-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/13-graph-models/06-directed-edges/graph-models-directed-edges-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-models-directed-edges-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-models-directed-edges-trace-editor.png",
+      "sha256SVG": "8bebe8301ca55f838f0c3ab8a2556c02dea9a04c4a80c8eddbfdfb73daa4f6b8",
+      "sha256Editable": "85064acb72760bc7d26a042904cdfe4d1a87659f3e6d1fc9b7a5964bd3be3136",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "graph-traversal-bfs-frontier-trace.excalidraw",
+      "elements": 35,
+      "text": 21,
+      "rectangles": 10,
+      "arrows": 4,
+      "boundArrowEnds": 8,
+      "boundTexts": 9,
+      "groups": 9,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/graph-traversal-bfs-frontier-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/14-graph-traversal/01-bfs-frontier/graph-traversal-bfs-frontier-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-traversal-bfs-frontier-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-traversal-bfs-frontier-trace-editor.png",
+      "sha256SVG": "bb3cffec8731c9d3f38d1ac65207bcc042aad1725801939d8800a1471823f95f",
+      "sha256Editable": "bd4e772f80ad90eb9cff4c94c50b7fbb22bece264c141a50811d848cf937f845",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "graph-traversal-bfs-traversal-trace.excalidraw",
+      "elements": 46,
+      "text": 28,
+      "rectangles": 14,
+      "arrows": 4,
+      "boundArrowEnds": 8,
+      "boundTexts": 13,
+      "groups": 13,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/graph-traversal-bfs-traversal-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/14-graph-traversal/02-bfs-traversal/graph-traversal-bfs-traversal-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-traversal-bfs-traversal-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-traversal-bfs-traversal-trace-editor.png",
+      "sha256SVG": "8817c2737bb169df506013e2db5c9c3cb07ca8aa2f39a423ba47b4e10f3cce35",
+      "sha256Editable": "afd5d954303cb600e7165fdea6dcd5e6eab905cbd817ad564c5d4d40c311c722",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "graph-traversal-bfs-path-trace.excalidraw",
+      "elements": 44,
+      "text": 27,
+      "rectangles": 13,
+      "arrows": 4,
+      "boundArrowEnds": 8,
+      "boundTexts": 12,
+      "groups": 12,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/graph-traversal-bfs-path-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/14-graph-traversal/04-bfs-path/graph-traversal-bfs-path-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-traversal-bfs-path-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-traversal-bfs-path-trace-editor.png",
+      "sha256SVG": "460a556f7a42f0c2bd5e562c12966fcacb70ec9063ecb85eba7cb8500e79df6a",
+      "sha256Editable": "41b53578d5f376d746c631a5007ab2da11da7540c862e2501f48ab81e5124023",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "graph-traversal-connected-components-trace.excalidraw",
+      "elements": 29,
+      "text": 18,
+      "rectangles": 9,
+      "arrows": 2,
+      "boundArrowEnds": 4,
+      "boundTexts": 8,
+      "groups": 8,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/graph-traversal-connected-components-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/14-graph-traversal/05-connected-components/graph-traversal-connected-components-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-traversal-connected-components-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-traversal-connected-components-trace-editor.png",
+      "sha256SVG": "592283996d8a4ee90875e3636dd5001296b5f32b43ac1e177a575cc4bcb46586",
+      "sha256Editable": "94b26cd7c4ad6ec319e29a71e2ab5c9abbc5e25828db20607b0a14092af14733",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "graph-traversal-dfs-recursive-trace.excalidraw",
+      "elements": 47,
+      "text": 29,
+      "rectangles": 14,
+      "arrows": 4,
+      "boundArrowEnds": 8,
+      "boundTexts": 13,
+      "groups": 13,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/graph-traversal-dfs-recursive-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/14-graph-traversal/06-dfs-recursive/graph-traversal-dfs-recursive-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-traversal-dfs-recursive-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-traversal-dfs-recursive-trace-editor.png",
+      "sha256SVG": "4cfaae553cf7fcbf659a5361e9d816b86fe2b78d60ede99cef78571d65b7c598",
+      "sha256Editable": "5fade5e542621bd3b5d7081acba16a00ae8e24557a1d0d9984e0ad79a62299b6",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "graph-traversal-dfs-iterative-trace.excalidraw",
+      "elements": 35,
+      "text": 21,
+      "rectangles": 10,
+      "arrows": 4,
+      "boundArrowEnds": 8,
+      "boundTexts": 9,
+      "groups": 9,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/graph-traversal-dfs-iterative-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/14-graph-traversal/07-dfs-iterative/graph-traversal-dfs-iterative-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-traversal-dfs-iterative-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-traversal-dfs-iterative-trace-editor.png",
+      "sha256SVG": "008fec77f3c0f2a8ba821853e727c65075fffa3d5f93887c563a8a0dea92561d",
+      "sha256Editable": "1e0d35d1865bb81290a3e083f3e4a85a0025724ba0914631d9bc474e0ff2a166",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "graph-traversal-undirected-cycle-trace.excalidraw",
+      "elements": 33,
+      "text": 20,
+      "rectangles": 9,
+      "arrows": 4,
+      "boundArrowEnds": 8,
+      "boundTexts": 8,
+      "groups": 8,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/graph-traversal-undirected-cycle-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/14-graph-traversal/08-undirected-cycle/graph-traversal-undirected-cycle-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-traversal-undirected-cycle-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-traversal-undirected-cycle-trace-editor.png",
+      "sha256SVG": "afbac44f22971ef95b2d2ef728482d9147da43d62cbd3fb9364876d0cc14fd11",
+      "sha256Editable": "e0f76361950cae481b22aeeccd552e14f7e6f6f4b14818b71e869cd1ce6ffc80",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "graph-traversal-topological-order-trace.excalidraw",
+      "elements": 50,
+      "text": 31,
+      "rectangles": 15,
+      "arrows": 4,
+      "boundArrowEnds": 8,
+      "boundTexts": 14,
+      "groups": 14,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/graph-traversal-topological-order-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/14-graph-traversal/10-topological-order/graph-traversal-topological-order-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-traversal-topological-order-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/graph-traversal-topological-order-trace-editor.png",
+      "sha256SVG": "b85c9b7c6e8889aab023b935b7825fbdb96996a8d75720d3a83ace6c614fbe29",
+      "sha256Editable": "4cad717354d915a86e3ff252b8ac2eae086b240502cb0b96812a761a8614627d",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "shortest-paths-weighted-adjacency-trace.excalidraw",
+      "elements": 30,
+      "text": 20,
+      "rectangles": 6,
+      "arrows": 4,
+      "boundArrowEnds": 8,
+      "boundTexts": 5,
+      "groups": 5,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/shortest-paths-weighted-adjacency-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/15-shortest-paths/01-weighted-adjacency/shortest-paths-weighted-adjacency-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/shortest-paths-weighted-adjacency-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/shortest-paths-weighted-adjacency-trace-editor.png",
+      "sha256SVG": "abf6cb9118988a4cb02e224b8a9c41b884f5037637ce60ee944cf7312c7f496b",
+      "sha256Editable": "2d86525cf55e3b0520c111ea5fb110e28eba62ac4724475c394f6f51cd31bf0f",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "shortest-paths-path-cost-trace.excalidraw",
+      "elements": 45,
+      "text": 29,
+      "rectangles": 12,
+      "arrows": 4,
+      "boundArrowEnds": 8,
+      "boundTexts": 11,
+      "groups": 11,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/shortest-paths-path-cost-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/15-shortest-paths/02-path-cost/shortest-paths-path-cost-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/shortest-paths-path-cost-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/shortest-paths-path-cost-trace-editor.png",
+      "sha256SVG": "a1200f9ac56a4c1272186f88aee07720d20d04a317c5f6c3eabd9b157c640daf",
+      "sha256Editable": "77185921d1ac38a447794148132af3d78e07ad401d84b431ae3522b81c3bdfe1",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "shortest-paths-dijkstra-scan-trace.excalidraw",
+      "elements": 68,
+      "text": 44,
+      "rectangles": 20,
+      "arrows": 4,
+      "boundArrowEnds": 8,
+      "boundTexts": 19,
+      "groups": 19,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/shortest-paths-dijkstra-scan-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/15-shortest-paths/04-dijkstra-scan/shortest-paths-dijkstra-scan-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/shortest-paths-dijkstra-scan-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/shortest-paths-dijkstra-scan-trace-editor.png",
+      "sha256SVG": "a60c03911fb20fa8af7f659307439dacc576876f17b26c80ccaea4cdb1d91353",
+      "sha256Editable": "afd82a29b42b6f4fb5a8c7be5838ef2e66e42d8fdf34593d995feb16020e608e",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "shortest-paths-reconstruct-weighted-path-trace.excalidraw",
+      "elements": 59,
+      "text": 38,
+      "rectangles": 17,
+      "arrows": 4,
+      "boundArrowEnds": 8,
+      "boundTexts": 16,
+      "groups": 16,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/shortest-paths-reconstruct-weighted-path-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/15-shortest-paths/06-reconstruct-weighted-path/shortest-paths-reconstruct-weighted-path-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/shortest-paths-reconstruct-weighted-path-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/shortest-paths-reconstruct-weighted-path-trace-editor.png",
+      "sha256SVG": "7e2f4d817350bc95c983c56e90935c1b0d8b5cff57284b1de291f5caad0fab2d",
+      "sha256Editable": "5e8227dbce6303c13442d68d82ac976cb5b0c0592f445a12a156a5923056bccb",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    },
+    {
+      "name": "shortest-paths-unreachable-and-zero-weights-trace.excalidraw",
+      "elements": 49,
+      "text": 32,
+      "rectangles": 14,
+      "arrows": 3,
+      "boundArrowEnds": 6,
+      "boundTexts": 13,
+      "groups": 13,
+      "import": true,
+      "editorRender": true,
+      "textEditExport": true,
+      "editedFileReload": true,
+      "nativeTextBoundsPass": true,
+      "nativeTextNonOverlapPass": true,
+      "svgTextBoundsPass": true,
+      "svgTextNonOverlapPass": true,
+      "source": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/assets/diagrams/shortest-paths-unreachable-and-zero-weights-trace.excalidraw",
+      "lesson": "/Users/piyush.patel/IdeaProjects/python-courses/data-structures-with-python/15-shortest-paths/07-unreachable-and-zero-weights/shortest-paths-unreachable-and-zero-weights-trace.excalidraw",
+      "byteIdentical": true,
+      "svgByteIdentical": true,
+      "svgPreview": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/shortest-paths-unreachable-and-zero-weights-trace-500px.png",
+      "editorScreenshot": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/shortest-paths-unreachable-and-zero-weights-trace-editor.png",
+      "sha256SVG": "f29760a2132dff02b3a2cf667dac2077f278cf77bcea3e8646096c7d78393db5",
+      "sha256Editable": "6726eeacf1e29b6c242ad4f569a3c38cde793780cc1d979fe9899d3926e81b83",
+      "visualSVGPass": true,
+      "visualNativePass": true
+    }
+  ],
+  "visualReview": {
+    "svgScenesInspected": 40,
+    "nativeEditorScenesInspected": 40,
+    "readingWidthPx": 500,
+    "contactSheets": [
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-svg-01.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-svg-02.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-svg-03.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-svg-04.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-svg-05.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-svg-06.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-svg-07.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-svg-08.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-svg-09.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-svg-10.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-native-01.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-native-02.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-native-03.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-native-04.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-native-05.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-native-06.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-native-07.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-native-08.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-native-09.png",
+      "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/ds-extra-11-15/evidence/sheet-native-10.png"
+    ],
+    "result": "PASS: legible text, correct links, no clipped captions. Revised heapify additionally inspected as full SVG and editor screenshots.",
+    "notes": [
+      "Array indices are secondary labels (15px at 500px reading width).",
+      "Native elements use editable text, shapes and bound connectors; no embedded images.",
+      "Node boxes are intentionally compact single-value data slots, not prose cards.",
+      "Moving nodes retains bound endpoints; larger text or major layout changes need manual resizing."
+    ]
+  },
+  "contractReview": {
+    "availableAtBuild": [
+      "13-graph-models/01-adjacency-list",
+      "13-graph-models/02-add-vertex",
+      "13-graph-models/03-add-undirected-edge",
+      "13-graph-models/04-remove-edge",
+      "13-graph-models/05-remove-vertex",
+      "13-graph-models/06-directed-edges"
+    ],
+    "notYetAuthoredAtBuild": "Planned module 11, 12, 14 and 15 lessons. Diagrams explicitly state chosen conventions; parent should align future contracts.",
+    "heightConvention": "Height in nodes: None=0, leaf=1",
+    "graphOrder": "B before C; DFS recursive uses alphabetical neighbors; iterative marks on push",
+    "priorityUpdates": "Lazy stale-entry example; no in-place key mutation"
+  }
+}

@@ -1,0 +1,2103 @@
+{
+  "scope": "first 20 entries only",
+  "libraryVersion": "0.18.1",
+  "browser": "156.0.8078.4",
+  "externalRequestsBlocked": true,
+  "canonicalSvgCount": 20,
+  "canonicalExcalidrawCount": 20,
+  "lessonLocalSvgCount": 20,
+  "lessonLocalExcalidrawCount": 20,
+  "totalArtifactCount": 80,
+  "evidenceDirectory": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/data-structures-first-half/evidence",
+  "errors": [],
+  "geometryFailures": [],
+  "visualReview": {
+    "status": "passed",
+    "originalSvgRendersReviewed": 20,
+    "actualEditorScenesReviewed": 20,
+    "nativeSvgExportsReviewed": 20,
+    "contactSheets": [
+      "contact-original-1.png",
+      "contact-original-2.png",
+      "contact-original-3.png",
+      "contact-original-4.png",
+      "contact-original-5.png",
+      "contact-editor-1.png",
+      "contact-editor-2.png",
+      "contact-editor-3.png",
+      "contact-editor-4.png",
+      "contact-editor-5.png",
+      "contact-export-1.png",
+      "contact-export-2.png",
+      "contact-export-3.png",
+      "contact-export-4.png",
+      "contact-export-5.png"
+    ],
+    "method": "Direct visual inspection of all fifteen four-panel contact sheets, plus geometric intersection/bounds checks on SVG and mounted native scene coordinates."
+  },
+  "limitations": [
+    "Native Arial text has no bold weight; source SVG is retained unchanged.",
+    "Cells intentionally smaller than general architecture-card guidelines: short numeric/node labels remain at 16px at native 500px SVG width.",
+    "Non-elbow arrows support native endpoint bindings; complex bends may need manual adjustment after large moves."
+  ],
+  "diagrams": [
+    {
+      "file": "shared-reference-map.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 24,
+      "text": 12,
+      "rectangles": 8,
+      "arrows": 4,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 8,
+      "geometry": {
+        "width": 500,
+        "height": 430,
+        "textCount": 12,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "shared-reference-map-original.png",
+        "editor": "shared-reference-map-editor.png",
+        "export": "shared-reference-map-export.svg",
+        "editedExport": "shared-reference-map-edited.svg",
+        "editedReimport": "shared-reference-map-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Shared incoming references and separate rebinding targets are unambiguous."
+      }
+    },
+    {
+      "file": "shallow-copy-nested-lists.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 24,
+      "text": 12,
+      "rectangles": 8,
+      "arrows": 4,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 8,
+      "geometry": {
+        "width": 500,
+        "height": 480,
+        "textCount": 12,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "shallow-copy-nested-lists-original.png",
+        "editor": "shallow-copy-nested-lists-editor.png",
+        "export": "shallow-copy-nested-lists-export.svg",
+        "editedExport": "shallow-copy-nested-lists-edited.svg",
+        "editedReimport": "shallow-copy-nested-lists-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Distinct outer reference slots, shared inner list, and independent inner mutation remain visible."
+      }
+    },
+    {
+      "file": "algorithm-growth-comparison.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 42,
+      "text": 25,
+      "rectangles": 17,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 430,
+        "textCount": 25,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "algorithm-growth-comparison-original.png",
+        "editor": "algorithm-growth-comparison-editor.png",
+        "export": "algorithm-growth-comparison-export.svg",
+        "editedExport": "algorithm-growth-comparison-edited.svg",
+        "editedReimport": "algorithm-growth-comparison-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Exact counts and input column are readable; no timing claim."
+      }
+    },
+    {
+      "file": "recursive-call-and-return.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 24,
+      "text": 12,
+      "rectangles": 7,
+      "arrows": 5,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 10,
+      "geometry": {
+        "width": 500,
+        "height": 470,
+        "textCount": 12,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "recursive-call-and-return-original.png",
+        "editor": "recursive-call-and-return-editor.png",
+        "export": "recursive-call-and-return-export.svg",
+        "editedExport": "recursive-call-and-return-edited.svg",
+        "editedReimport": "recursive-call-and-return-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Downward calls, upward returns, and the zero base case are separated."
+      }
+    },
+    {
+      "file": "fibonacci-repeated-subproblems.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 52,
+      "text": 24,
+      "rectangles": 20,
+      "arrows": 8,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 16,
+      "geometry": {
+        "width": 500,
+        "height": 580,
+        "textCount": 24,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "fibonacci-repeated-subproblems-original.png",
+        "editor": "fibonacci-repeated-subproblems-editor.png",
+        "export": "fibonacci-repeated-subproblems-export.svg",
+        "editedExport": "fibonacci-repeated-subproblems-edited.svg",
+        "editedReimport": "fibonacci-repeated-subproblems-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Nine-call tree has the correct repeated f(2) nodes; cache values match local recursion."
+      }
+    },
+    {
+      "file": "array-insertion-shifts.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 56,
+      "text": 39,
+      "rectangles": 17,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 535,
+        "textCount": 39,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "array-insertion-shifts-original.png",
+        "editor": "array-insertion-shifts-editor.png",
+        "export": "array-insertion-shifts-export.svg",
+        "editedExport": "array-insertion-shifts-edited.svg",
+        "editedReimport": "array-insertion-shifts-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "All four buffer states and every index are visible; right-to-left copies preserve values."
+      }
+    },
+    {
+      "file": "prefix-sum-half-open-range.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 34,
+      "text": 24,
+      "rectangles": 10,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 405,
+        "textCount": 24,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "prefix-sum-half-open-range-original.png",
+        "editor": "prefix-sum-half-open-range-editor.png",
+        "export": "prefix-sum-half-open-range-export.svg",
+        "editedExport": "prefix-sum-half-open-range-edited.svg",
+        "editedReimport": "prefix-sum-half-open-range-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Highlighted half-open selection and the two prefix boundaries yield 10."
+      }
+    },
+    {
+      "file": "linked-list-splice.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 29,
+      "text": 15,
+      "rectangles": 9,
+      "arrows": 5,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 10,
+      "geometry": {
+        "width": 500,
+        "height": 590,
+        "textCount": 15,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "linked-list-splice-original.png",
+        "editor": "linked-list-splice-editor.png",
+        "export": "linked-list-splice-export.svg",
+        "editedExport": "linked-list-splice-edited.svg",
+        "editedReimport": "linked-list-splice-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Intermediate B.next preserves C while A still points at C; final A–B–C links are correct."
+      }
+    },
+    {
+      "file": "linked-list-bypass.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 32,
+      "text": 17,
+      "rectangles": 10,
+      "arrows": 5,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 10,
+      "geometry": {
+        "width": 500,
+        "height": 650,
+        "textCount": 17,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "linked-list-bypass-original.png",
+        "editor": "linked-list-bypass-editor.png",
+        "export": "linked-list-bypass-export.svg",
+        "editedExport": "linked-list-bypass-edited.svg",
+        "editedReimport": "linked-list-bypass-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Middle bypass, head replacement, tail replacement, and singleton clearing are distinct cases."
+      }
+    },
+    {
+      "file": "linked-list-three-pointer-reversal.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 29,
+      "text": 20,
+      "rectangles": 7,
+      "arrows": 2,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 4,
+      "geometry": {
+        "width": 500,
+        "height": 530,
+        "textCount": 20,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "linked-list-three-pointer-reversal-original.png",
+        "editor": "linked-list-three-pointer-reversal-editor.png",
+        "export": "linked-list-three-pointer-reversal-export.svg",
+        "editedExport": "linked-list-three-pointer-reversal-edited.svg",
+        "editedReimport": "linked-list-three-pointer-reversal-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "One B link reverses; prev/current labels advance without losing the saved C suffix."
+      }
+    },
+    {
+      "file": "doubly-linked-removal.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 25,
+      "text": 12,
+      "rectangles": 7,
+      "arrows": 6,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 12,
+      "geometry": {
+        "width": 500,
+        "height": 460,
+        "textCount": 12,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "doubly-linked-removal-original.png",
+        "editor": "doubly-linked-removal-editor.png",
+        "export": "doubly-linked-removal-export.svg",
+        "editedExport": "doubly-linked-removal-edited.svg",
+        "editedReimport": "doubly-linked-removal-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Reciprocal arrows use separate lanes; B is visibly detached after removal."
+      }
+    },
+    {
+      "file": "circular-list-stop-condition.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 25,
+      "text": 12,
+      "rectangles": 7,
+      "arrows": 6,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 11,
+      "geometry": {
+        "width": 500,
+        "height": 510,
+        "textCount": 12,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "circular-list-stop-condition-original.png",
+        "editor": "circular-list-stop-condition-editor.png",
+        "export": "circular-list-stop-condition-export.svg",
+        "editedExport": "circular-list-stop-condition-edited.svg",
+        "editedReimport": "circular-list-stop-condition-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Ring edge returns to head without intersecting nodes; one-lap stopping differs from None termination."
+      }
+    },
+    {
+      "file": "skip-list-search-lanes.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 32,
+      "text": 16,
+      "rectangles": 9,
+      "arrows": 7,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 14,
+      "geometry": {
+        "width": 500,
+        "height": 460,
+        "textCount": 16,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "skip-list-search-lanes-original.png",
+        "editor": "skip-list-search-lanes-editor.png",
+        "export": "skip-list-search-lanes-export.svg",
+        "editedExport": "skip-list-search-lanes-edited.svg",
+        "editedReimport": "skip-list-search-lanes-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Sorted lanes align key 18 across levels; drop and predecessor stop are correct."
+      }
+    },
+    {
+      "file": "stack-lifo-operations.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 25,
+      "text": 17,
+      "rectangles": 8,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 450,
+        "textCount": 17,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "stack-lifo-operations-original.png",
+        "editor": "stack-lifo-operations-editor.png",
+        "export": "stack-lifo-operations-export.svg",
+        "editedExport": "stack-lifo-operations-edited.svg",
+        "editedReimport": "stack-lifo-operations-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Top marks align with stack height before push, after push, and after pop."
+      }
+    },
+    {
+      "file": "bracket-stack-trace.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 32,
+      "text": 20,
+      "rectangles": 12,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 590,
+        "textCount": 20,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "bracket-stack-trace-original.png",
+        "editor": "bracket-stack-trace-editor.png",
+        "export": "bracket-stack-trace-export.svg",
+        "editedExport": "bracket-stack-trace-edited.svg",
+        "editedReimport": "bracket-stack-trace-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Expected-closer stack has top on the right; mismatch retains the required closing bracket."
+      }
+    },
+    {
+      "file": "queue-head-tail-transition.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 23,
+      "text": 14,
+      "rectangles": 6,
+      "arrows": 3,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 6,
+      "geometry": {
+        "width": 500,
+        "height": 540,
+        "textCount": 14,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "queue-head-tail-transition-original.png",
+        "editor": "queue-head-tail-transition-editor.png",
+        "export": "queue-head-tail-transition-export.svg",
+        "editedExport": "queue-head-tail-transition-edited.svg",
+        "editedReimport": "queue-head-tail-transition-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Head and tail converge on the final node before both become None."
+      }
+    },
+    {
+      "file": "ring-buffer-wraparound.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 39,
+      "text": 28,
+      "rectangles": 11,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 480,
+        "textCount": 28,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "ring-buffer-wraparound-original.png",
+        "editor": "ring-buffer-wraparound-editor.png",
+        "export": "ring-buffer-wraparound-export.svg",
+        "editedExport": "ring-buffer-wraparound-edited.svg",
+        "editedReimport": "ring-buffer-wraparound-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Physical slots, head, size, modulo write index, and logical FIFO order agree."
+      }
+    },
+    {
+      "file": "monotonic-deque-window.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 29,
+      "text": 20,
+      "rectangles": 9,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 580,
+        "textCount": 20,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "monotonic-deque-window-original.png",
+        "editor": "monotonic-deque-window-editor.png",
+        "export": "monotonic-deque-window-export.svg",
+        "editedExport": "monotonic-deque-window-edited.svg",
+        "editedReimport": "monotonic-deque-window-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Front expiry and weaker-back deletion are separate candidate states; index 3 becomes max."
+      }
+    },
+    {
+      "file": "hash-collision-chains.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 25,
+      "text": 16,
+      "rectangles": 7,
+      "arrows": 2,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 4,
+      "geometry": {
+        "width": 500,
+        "height": 470,
+        "textCount": 16,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "hash-collision-chains-original.png",
+        "editor": "hash-collision-chains-editor.png",
+        "export": "hash-collision-chains-export.svg",
+        "editedExport": "hash-collision-chains-edited.svg",
+        "editedReimport": "hash-collision-chains-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Equal illustrative hashes lead to one bucket containing distinct string-key records."
+      }
+    },
+    {
+      "file": "probing-tombstone-search.svg",
+      "nativeGeometry": {
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": []
+      },
+      "nativeElements": 41,
+      "text": 30,
+      "rectangles": 11,
+      "arrows": 0,
+      "images": 0,
+      "textParity": true,
+      "import": true,
+      "editorMounted": true,
+      "export": true,
+      "textEditExport": true,
+      "editedFileReimport": true,
+      "editedFileRemounted": true,
+      "boundArrowEnds": 0,
+      "geometry": {
+        "width": 500,
+        "height": 570,
+        "textCount": 30,
+        "outOfBounds": [],
+        "textOverlaps": [],
+        "arrowCrossings": [],
+        "accessibleTitle": true,
+        "accessibleDescription": true
+      },
+      "byteIdentical": {
+        "svg": true,
+        "excalidraw": true
+      },
+      "evidence": {
+        "original": "probing-tombstone-search-original.png",
+        "editor": "probing-tombstone-search-editor.png",
+        "export": "probing-tombstone-search-export.svg",
+        "editedExport": "probing-tombstone-search-edited.svg",
+        "editedReimport": "probing-tombstone-search-edited.excalidraw"
+      },
+      "visualReview": {
+        "originalAt500px": "pass",
+        "actualEditorScene": "pass",
+        "nativeExportAt500px": "pass",
+        "notes": "Tombstone and never-used states are visually distinct; found and missing probe paths are accurate."
+      }
+    }
+  ],
+  "artifactManifest": [
+    {
+      "path": "assets/diagrams/shared-reference-map.svg",
+      "bytes": 3382,
+      "sha256": "afb2162e0c4e2dd6eaee8f9e4a02ced90704b713f35810fe772f74a1a9770b4a"
+    },
+    {
+      "path": "01-memory-and-cost/01-references-and-aliases/shared-reference-map.svg",
+      "bytes": 3382,
+      "sha256": "afb2162e0c4e2dd6eaee8f9e4a02ced90704b713f35810fe772f74a1a9770b4a"
+    },
+    {
+      "path": "assets/diagrams/shared-reference-map.excalidraw",
+      "bytes": 22253,
+      "sha256": "d3afa5c769159dafc2e69a10203414a937988fa5b6531044945040125183ed96"
+    },
+    {
+      "path": "01-memory-and-cost/01-references-and-aliases/shared-reference-map.excalidraw",
+      "bytes": 22253,
+      "sha256": "d3afa5c769159dafc2e69a10203414a937988fa5b6531044945040125183ed96"
+    },
+    {
+      "path": "assets/diagrams/shallow-copy-nested-lists.svg",
+      "bytes": 3541,
+      "sha256": "3a33a7386db44d21985fdde5c03be02e7d1ace31d40390a395240c30a1894f90"
+    },
+    {
+      "path": "01-memory-and-cost/04-nested-copy-boundaries/shallow-copy-nested-lists.svg",
+      "bytes": 3541,
+      "sha256": "3a33a7386db44d21985fdde5c03be02e7d1ace31d40390a395240c30a1894f90"
+    },
+    {
+      "path": "assets/diagrams/shallow-copy-nested-lists.excalidraw",
+      "bytes": 22527,
+      "sha256": "c9de88c837e8f21a88bc80b7dd76042276b5c079e57bf9d893fde4efe6d9a2a8"
+    },
+    {
+      "path": "01-memory-and-cost/04-nested-copy-boundaries/shallow-copy-nested-lists.excalidraw",
+      "bytes": 22527,
+      "sha256": "c9de88c837e8f21a88bc80b7dd76042276b5c079e57bf9d893fde4efe6d9a2a8"
+    },
+    {
+      "path": "assets/diagrams/algorithm-growth-comparison.svg",
+      "bytes": 5483,
+      "sha256": "2050f6e896ac128f619fe4c2887250576ffe6e753f5a51180e325c1b9b9c57fd"
+    },
+    {
+      "path": "01-memory-and-cost/08-compare-growth/algorithm-growth-comparison.svg",
+      "bytes": 5483,
+      "sha256": "2050f6e896ac128f619fe4c2887250576ffe6e753f5a51180e325c1b9b9c57fd"
+    },
+    {
+      "path": "assets/diagrams/algorithm-growth-comparison.excalidraw",
+      "bytes": 35134,
+      "sha256": "b0edb8e23a3a78e0b82851eff7ca8fc1c0bafb39f91442ed2c1f87a3aa7bacb0"
+    },
+    {
+      "path": "01-memory-and-cost/08-compare-growth/algorithm-growth-comparison.excalidraw",
+      "bytes": 35134,
+      "sha256": "b0edb8e23a3a78e0b82851eff7ca8fc1c0bafb39f91442ed2c1f87a3aa7bacb0"
+    },
+    {
+      "path": "assets/diagrams/recursive-call-and-return.svg",
+      "bytes": 3445,
+      "sha256": "371ccffa65ac026a8678755c9570f90ca675f7d03a85cf8d1ebf18292b7d0408"
+    },
+    {
+      "path": "02-recursion/02-countdown-trace/recursive-call-and-return.svg",
+      "bytes": 3445,
+      "sha256": "371ccffa65ac026a8678755c9570f90ca675f7d03a85cf8d1ebf18292b7d0408"
+    },
+    {
+      "path": "assets/diagrams/recursive-call-and-return.excalidraw",
+      "bytes": 22802,
+      "sha256": "7c0de4c7b55cf4f904547de4a247620f9aa1ce61d9f5c21c4b2f38ec92d83ab7"
+    },
+    {
+      "path": "02-recursion/02-countdown-trace/recursive-call-and-return.excalidraw",
+      "bytes": 22802,
+      "sha256": "7c0de4c7b55cf4f904547de4a247620f9aa1ce61d9f5c21c4b2f38ec92d83ab7"
+    },
+    {
+      "path": "assets/diagrams/fibonacci-repeated-subproblems.svg",
+      "bytes": 6737,
+      "sha256": "054d9354eb32e07df7d2e84e787c6fc892e77e76e1103f43379cb8616dd366f0"
+    },
+    {
+      "path": "02-recursion/07-memoized-fibonacci/fibonacci-repeated-subproblems.svg",
+      "bytes": 6737,
+      "sha256": "054d9354eb32e07df7d2e84e787c6fc892e77e76e1103f43379cb8616dd366f0"
+    },
+    {
+      "path": "assets/diagrams/fibonacci-repeated-subproblems.excalidraw",
+      "bytes": 47020,
+      "sha256": "ac7e9e7f2943f0399f90e6fb0199e5521c3c40b841e4854084f35c4e863b730f"
+    },
+    {
+      "path": "02-recursion/07-memoized-fibonacci/fibonacci-repeated-subproblems.excalidraw",
+      "bytes": 47020,
+      "sha256": "ac7e9e7f2943f0399f90e6fb0199e5521c3c40b841e4854084f35c4e863b730f"
+    },
+    {
+      "path": "assets/diagrams/array-insertion-shifts.svg",
+      "bytes": 7094,
+      "sha256": "d2a68941a42e7ee7a2367af7d2705714a885dd2c4a0501261c2c6ce5916b4eba"
+    },
+    {
+      "path": "03-arrays-and-sequences/03-insert-and-shift/array-insertion-shifts.svg",
+      "bytes": 7094,
+      "sha256": "d2a68941a42e7ee7a2367af7d2705714a885dd2c4a0501261c2c6ce5916b4eba"
+    },
+    {
+      "path": "assets/diagrams/array-insertion-shifts.excalidraw",
+      "bytes": 47318,
+      "sha256": "249ded71182074cc34423f2abebfea72f6acffe7756f26252bba9da9ca3410ff"
+    },
+    {
+      "path": "03-arrays-and-sequences/03-insert-and-shift/array-insertion-shifts.excalidraw",
+      "bytes": 47318,
+      "sha256": "249ded71182074cc34423f2abebfea72f6acffe7756f26252bba9da9ca3410ff"
+    },
+    {
+      "path": "assets/diagrams/prefix-sum-half-open-range.svg",
+      "bytes": 4554,
+      "sha256": "6f3e2bde84e311c1c7fdc9bb8591da3db93a3cc14119813808fdd1aca3a9d633"
+    },
+    {
+      "path": "03-arrays-and-sequences/08-range-sum-queries/prefix-sum-half-open-range.svg",
+      "bytes": 4554,
+      "sha256": "6f3e2bde84e311c1c7fdc9bb8591da3db93a3cc14119813808fdd1aca3a9d633"
+    },
+    {
+      "path": "assets/diagrams/prefix-sum-half-open-range.excalidraw",
+      "bytes": 28979,
+      "sha256": "c0c0580d8c2b32a35fb09879a8f9a76c8b5557fba089fa1fcafb96377e0fad2e"
+    },
+    {
+      "path": "03-arrays-and-sequences/08-range-sum-queries/prefix-sum-half-open-range.excalidraw",
+      "bytes": 28979,
+      "sha256": "c0c0580d8c2b32a35fb09879a8f9a76c8b5557fba089fa1fcafb96377e0fad2e"
+    },
+    {
+      "path": "assets/diagrams/linked-list-splice.svg",
+      "bytes": 4028,
+      "sha256": "9561cb27b8d40f067d70e5dd3c1a178ce9f3318aaa123601b31cc4cd61601570"
+    },
+    {
+      "path": "04-singly-linked-lists/07-insert-after-node/linked-list-splice.svg",
+      "bytes": 4028,
+      "sha256": "9561cb27b8d40f067d70e5dd3c1a178ce9f3318aaa123601b31cc4cd61601570"
+    },
+    {
+      "path": "assets/diagrams/linked-list-splice.excalidraw",
+      "bytes": 26920,
+      "sha256": "f9f1b5b137325ab6b409d6feb0f701ef7b0cb1bfa0555f3493eb789efaad0d16"
+    },
+    {
+      "path": "04-singly-linked-lists/07-insert-after-node/linked-list-splice.excalidraw",
+      "bytes": 26920,
+      "sha256": "f9f1b5b137325ab6b409d6feb0f701ef7b0cb1bfa0555f3493eb789efaad0d16"
+    },
+    {
+      "path": "assets/diagrams/linked-list-bypass.svg",
+      "bytes": 4460,
+      "sha256": "a6ba3b797cc0ad5d43fabef5ed34839260bf4e71d55c2a55c5d7ccd4ac4d379c"
+    },
+    {
+      "path": "04-singly-linked-lists/10-remove-first-match/linked-list-bypass.svg",
+      "bytes": 4460,
+      "sha256": "a6ba3b797cc0ad5d43fabef5ed34839260bf4e71d55c2a55c5d7ccd4ac4d379c"
+    },
+    {
+      "path": "assets/diagrams/linked-list-bypass.excalidraw",
+      "bytes": 29413,
+      "sha256": "da976f6811ad619be8f94b6f17b6627f648eec3f6963f1bdd5771ced79d021cb"
+    },
+    {
+      "path": "04-singly-linked-lists/10-remove-first-match/linked-list-bypass.excalidraw",
+      "bytes": 29413,
+      "sha256": "da976f6811ad619be8f94b6f17b6627f648eec3f6963f1bdd5771ced79d021cb"
+    },
+    {
+      "path": "assets/diagrams/linked-list-three-pointer-reversal.svg",
+      "bytes": 4146,
+      "sha256": "e76943bab7fd7e605567ae9cda50f55ab9dc2e2ed47c3873ca3ff86f544eae87"
+    },
+    {
+      "path": "04-singly-linked-lists/11-reverse-links/linked-list-three-pointer-reversal.svg",
+      "bytes": 4146,
+      "sha256": "e76943bab7fd7e605567ae9cda50f55ab9dc2e2ed47c3873ca3ff86f544eae87"
+    },
+    {
+      "path": "assets/diagrams/linked-list-three-pointer-reversal.excalidraw",
+      "bytes": 25804,
+      "sha256": "3e1fd172d6636d8387c9524edd37294c1811a5a227d629a661ebc95e2b02a695"
+    },
+    {
+      "path": "04-singly-linked-lists/11-reverse-links/linked-list-three-pointer-reversal.excalidraw",
+      "bytes": 25804,
+      "sha256": "3e1fd172d6636d8387c9524edd37294c1811a5a227d629a661ebc95e2b02a695"
+    },
+    {
+      "path": "assets/diagrams/doubly-linked-removal.svg",
+      "bytes": 3604,
+      "sha256": "b921b2338253105f772436625c5c67e544019088739d10918c443cb69e6ea89f"
+    },
+    {
+      "path": "05-linked-list-variants/04-doubly-remove/doubly-linked-removal.svg",
+      "bytes": 3604,
+      "sha256": "b921b2338253105f772436625c5c67e544019088739d10918c443cb69e6ea89f"
+    },
+    {
+      "path": "assets/diagrams/doubly-linked-removal.excalidraw",
+      "bytes": 24238,
+      "sha256": "665d539d5a5c81d3f19e83004f2783635f747ff84b9de8481545fc1cb5ffefa6"
+    },
+    {
+      "path": "05-linked-list-variants/04-doubly-remove/doubly-linked-removal.excalidraw",
+      "bytes": 24238,
+      "sha256": "665d539d5a5c81d3f19e83004f2783635f747ff84b9de8481545fc1cb5ffefa6"
+    },
+    {
+      "path": "assets/diagrams/circular-list-stop-condition.svg",
+      "bytes": 3632,
+      "sha256": "cdd26be443af9a189b70d034e34b15e00789092796fbd535db0757598479b019"
+    },
+    {
+      "path": "05-linked-list-variants/07-circular-traversal/circular-list-stop-condition.svg",
+      "bytes": 3632,
+      "sha256": "cdd26be443af9a189b70d034e34b15e00789092796fbd535db0757598479b019"
+    },
+    {
+      "path": "assets/diagrams/circular-list-stop-condition.excalidraw",
+      "bytes": 23985,
+      "sha256": "b05f681aefc41e7643e15bbb7e8a83f3b2c0bc2cc8cc8e3ac8c544a288ec4333"
+    },
+    {
+      "path": "05-linked-list-variants/07-circular-traversal/circular-list-stop-condition.excalidraw",
+      "bytes": 23985,
+      "sha256": "b05f681aefc41e7643e15bbb7e8a83f3b2c0bc2cc8cc8e3ac8c544a288ec4333"
+    },
+    {
+      "path": "assets/diagrams/skip-list-search-lanes.svg",
+      "bytes": 4541,
+      "sha256": "c1c651629cc94d8a1fed37f92bc7d3a01981ae40d8c180534020be5c2f06d76a"
+    },
+    {
+      "path": "05-linked-list-variants/10-skip-predecessors/skip-list-search-lanes.svg",
+      "bytes": 4541,
+      "sha256": "c1c651629cc94d8a1fed37f92bc7d3a01981ae40d8c180534020be5c2f06d76a"
+    },
+    {
+      "path": "assets/diagrams/skip-list-search-lanes.excalidraw",
+      "bytes": 30444,
+      "sha256": "dd0af5a0f4723cd57357d73df5c37749096a74d72b25c3f7915af878836d872d"
+    },
+    {
+      "path": "05-linked-list-variants/10-skip-predecessors/skip-list-search-lanes.excalidraw",
+      "bytes": 30444,
+      "sha256": "dd0af5a0f4723cd57357d73df5c37749096a74d72b25c3f7915af878836d872d"
+    },
+    {
+      "path": "assets/diagrams/stack-lifo-operations.svg",
+      "bytes": 3473,
+      "sha256": "7aadc00d11a4e59de42725908e29ec4a99c58a334fb45b4c84f848af85f13237"
+    },
+    {
+      "path": "06-stacks/04-pop-item/stack-lifo-operations.svg",
+      "bytes": 3473,
+      "sha256": "7aadc00d11a4e59de42725908e29ec4a99c58a334fb45b4c84f848af85f13237"
+    },
+    {
+      "path": "assets/diagrams/stack-lifo-operations.excalidraw",
+      "bytes": 21164,
+      "sha256": "6dc50cb9fe40029390a2a4c30c0f029b5961049b0ee50350396e5fec3f9cdf3c"
+    },
+    {
+      "path": "06-stacks/04-pop-item/stack-lifo-operations.excalidraw",
+      "bytes": 21164,
+      "sha256": "6dc50cb9fe40029390a2a4c30c0f029b5961049b0ee50350396e5fec3f9cdf3c"
+    },
+    {
+      "path": "assets/diagrams/bracket-stack-trace.svg",
+      "bytes": 4426,
+      "sha256": "559d38df7e676e26c6bf17f368342d3e89d27241d788f5faac501fd6094ad680"
+    },
+    {
+      "path": "06-stacks/05-balanced-brackets/bracket-stack-trace.svg",
+      "bytes": 4426,
+      "sha256": "559d38df7e676e26c6bf17f368342d3e89d27241d788f5faac501fd6094ad680"
+    },
+    {
+      "path": "assets/diagrams/bracket-stack-trace.excalidraw",
+      "bytes": 26967,
+      "sha256": "dd4ffc3e9ebe44da8ca9911f864868fa9a180f415f91ffd1800383603c79fe20"
+    },
+    {
+      "path": "06-stacks/05-balanced-brackets/bracket-stack-trace.excalidraw",
+      "bytes": 26967,
+      "sha256": "dd4ffc3e9ebe44da8ca9911f864868fa9a180f415f91ffd1800383603c79fe20"
+    },
+    {
+      "path": "assets/diagrams/queue-head-tail-transition.svg",
+      "bytes": 3417,
+      "sha256": "c4160bfc08579b501328920340eaef85a9341e2a686b78c4240fb31c266fb8a1"
+    },
+    {
+      "path": "07-queues-and-deques/03-dequeue-item/queue-head-tail-transition.svg",
+      "bytes": 3417,
+      "sha256": "c4160bfc08579b501328920340eaef85a9341e2a686b78c4240fb31c266fb8a1"
+    },
+    {
+      "path": "assets/diagrams/queue-head-tail-transition.excalidraw",
+      "bytes": 21222,
+      "sha256": "2802e59d44a2daa74e2340f601beb54d12156793e03082f09945eb06d33eee76"
+    },
+    {
+      "path": "07-queues-and-deques/03-dequeue-item/queue-head-tail-transition.excalidraw",
+      "bytes": 21222,
+      "sha256": "2802e59d44a2daa74e2340f601beb54d12156793e03082f09945eb06d33eee76"
+    },
+    {
+      "path": "assets/diagrams/ring-buffer-wraparound.svg",
+      "bytes": 5249,
+      "sha256": "48d3ff3f3cc951c5f7d11992b1bfe536f197dd630e50d0f7b558f95c1d469fb7"
+    },
+    {
+      "path": "07-queues-and-deques/07-ring-enqueue/ring-buffer-wraparound.svg",
+      "bytes": 5249,
+      "sha256": "48d3ff3f3cc951c5f7d11992b1bfe536f197dd630e50d0f7b558f95c1d469fb7"
+    },
+    {
+      "path": "assets/diagrams/ring-buffer-wraparound.excalidraw",
+      "bytes": 33293,
+      "sha256": "7f9a9fa7887692a220495f4f09f1e279ac807d03677fd8a39f6d958c2ccb6c96"
+    },
+    {
+      "path": "07-queues-and-deques/07-ring-enqueue/ring-buffer-wraparound.excalidraw",
+      "bytes": 33293,
+      "sha256": "7f9a9fa7887692a220495f4f09f1e279ac807d03677fd8a39f6d958c2ccb6c96"
+    },
+    {
+      "path": "assets/diagrams/monotonic-deque-window.svg",
+      "bytes": 4154,
+      "sha256": "fc8b6dc156d4f9cb354bb761a86ce578409c5e09261b56105e97b3b0f0df259e"
+    },
+    {
+      "path": "07-queues-and-deques/10-sliding-window-maximum/monotonic-deque-window.svg",
+      "bytes": 4154,
+      "sha256": "fc8b6dc156d4f9cb354bb761a86ce578409c5e09261b56105e97b3b0f0df259e"
+    },
+    {
+      "path": "assets/diagrams/monotonic-deque-window.excalidraw",
+      "bytes": 24809,
+      "sha256": "7ed19445a6c5a1750e51c137d542f2799315c933e8cd4859e5377761f3771f51"
+    },
+    {
+      "path": "07-queues-and-deques/10-sliding-window-maximum/monotonic-deque-window.excalidraw",
+      "bytes": 24809,
+      "sha256": "7ed19445a6c5a1750e51c137d542f2799315c933e8cd4859e5377761f3771f51"
+    },
+    {
+      "path": "assets/diagrams/hash-collision-chains.svg",
+      "bytes": 3657,
+      "sha256": "944116670ca584ed3b7c20351f903f81d48cbf43f72a5448a1ccd47f2990160c"
+    },
+    {
+      "path": "08-hash-tables/02-collision-buckets/hash-collision-chains.svg",
+      "bytes": 3657,
+      "sha256": "944116670ca584ed3b7c20351f903f81d48cbf43f72a5448a1ccd47f2990160c"
+    },
+    {
+      "path": "assets/diagrams/hash-collision-chains.excalidraw",
+      "bytes": 22354,
+      "sha256": "6452f66a020d4c2fa0ab586c0fedbaf02beec5be0f463d3a3762bca471e0fe20"
+    },
+    {
+      "path": "08-hash-tables/02-collision-buckets/hash-collision-chains.excalidraw",
+      "bytes": 22354,
+      "sha256": "6452f66a020d4c2fa0ab586c0fedbaf02beec5be0f463d3a3762bca471e0fe20"
+    },
+    {
+      "path": "assets/diagrams/probing-tombstone-search.svg",
+      "bytes": 5627,
+      "sha256": "307be8da13e17a6c0e15ed5056546f1413772b6d4c54257079a98cc6ba76b159"
+    },
+    {
+      "path": "08-hash-tables/11-tombstone-deletion/probing-tombstone-search.svg",
+      "bytes": 5627,
+      "sha256": "307be8da13e17a6c0e15ed5056546f1413772b6d4c54257079a98cc6ba76b159"
+    },
+    {
+      "path": "assets/diagrams/probing-tombstone-search.excalidraw",
+      "bytes": 35130,
+      "sha256": "c082df3c84d97e8f409546070830c39acc8e1ed6dd30dfefa11b7ca5c64cd8bb"
+    },
+    {
+      "path": "08-hash-tables/11-tombstone-deletion/probing-tombstone-search.excalidraw",
+      "bytes": 35130,
+      "sha256": "c082df3c84d97e8f409546070830c39acc8e1ed6dd30dfefa11b7ca5c64cd8bb"
+    }
+  ],
+  "sourceScripts": [
+    "assets/diagrams/build-first-half.py",
+    "assets/diagrams/build-first-half.mjs"
+  ],
+  "reusability": {
+    "python": "Import via importlib; Figure.text/box/arrow/cells/chain/finish are side-effect-free drawing helpers. main() generates only assigned first twenty. Import tested without file writes.",
+    "native": "Set DIAGRAM_PLACEMENTS, DIAGRAM_AUDIT, DIAGRAM_EVIDENCE_DIR for another placement batch; same original SVG grammar. EXCALIDRAW_DEPENDENCIES can point to a separate dependency installation."
+  },
+  "computedTraceSource": "assets/diagrams/placements-first-half.json:computed_trace",
+  "computedModelRerunPreservedReviewedSvgHashes": true,
+  "evidenceManifest": [
+    {
+      "file": "algorithm-growth-comparison-edited.excalidraw",
+      "sha256": "80161fc55b965c23aba30571bb9c58a713157e28e5c3acb7f7653a32669dad6e",
+      "bytes": 35105
+    },
+    {
+      "file": "algorithm-growth-comparison-edited.svg",
+      "sha256": "4a361320edd2c98c322fdd24ba6c011d6b9b766a6dc71e6189a8327aa424c576",
+      "bytes": 23199
+    },
+    {
+      "file": "algorithm-growth-comparison-editor.png",
+      "sha256": "a70a6575e1c1c7baf965fbe54fd5b753a583dd09385a1493b7e5d99572bfdbe1",
+      "bytes": 57346
+    },
+    {
+      "file": "algorithm-growth-comparison-export.png",
+      "sha256": "0257475df91d3ff2c2fc5d12b66759f2d7abdf4fd0a67a40bc85c06b54b05d03",
+      "bytes": 38204
+    },
+    {
+      "file": "algorithm-growth-comparison-export.svg",
+      "sha256": "f2f63cade7e678387638d2bf30ba37a2040f88eefb5ce9a412c067881ed794b1",
+      "bytes": 23187
+    },
+    {
+      "file": "algorithm-growth-comparison-original.png",
+      "sha256": "be2ce50d5222c7a473665261a933f6609a910ab79ba1c9a2492bf862c1e1f8b6",
+      "bytes": 34094
+    },
+    {
+      "file": "array-insertion-shifts-edited.excalidraw",
+      "sha256": "57b405e96573bce49e3ed2d49f15b8b010bd022bef3d263b5c1e6134060b763c",
+      "bytes": 47261
+    },
+    {
+      "file": "array-insertion-shifts-edited.svg",
+      "sha256": "31c2df0e4322e421df6bb3ef0345578db8904dbb9e9dbc65748770081c95405c",
+      "bytes": 27620
+    },
+    {
+      "file": "array-insertion-shifts-editor.png",
+      "sha256": "2675b515e80a70d1a2db3080ab2e0a81904a8c5f553efbdcc7f70cb7b50b5383",
+      "bytes": 62329
+    },
+    {
+      "file": "array-insertion-shifts-export.png",
+      "sha256": "25b2ffb4610ecbcdc3fadbbde1083639487cd20ffab24dcca49e88eb379c445f",
+      "bytes": 43140
+    },
+    {
+      "file": "array-insertion-shifts-export.svg",
+      "sha256": "13173194714a64a1949f549882810162d89f12df5487c409d23a334b37d88674",
+      "bytes": 27608
+    },
+    {
+      "file": "array-insertion-shifts-original.png",
+      "sha256": "e5f1ee1cd33d8c20e08d912ed3afd6dc299722a015065dd1eeb468dceb5566c0",
+      "bytes": 40240
+    },
+    {
+      "file": "bracket-stack-trace-edited.excalidraw",
+      "sha256": "24754fe94684a35d99c794056f41e03316ea4ffacb96ec372f77f2526af116dd",
+      "bytes": 26948
+    },
+    {
+      "file": "bracket-stack-trace-edited.svg",
+      "sha256": "9b90baea98b0dfa0679942b46cac97612eff61093b051453fc50d9b60a6e009d",
+      "bytes": 16603
+    },
+    {
+      "file": "bracket-stack-trace-editor.png",
+      "sha256": "3aad35a328ffd9d6aac64f4f87624d53d68c94d26bc3276b643cb02cfd911437",
+      "bytes": 57683
+    },
+    {
+      "file": "bracket-stack-trace-export.png",
+      "sha256": "fa1d2285db6b51b522d8e71a5aa3ceb889f3da1a8ead110b0a22d1cd2df9fa06",
+      "bytes": 39145
+    },
+    {
+      "file": "bracket-stack-trace-export.svg",
+      "sha256": "0a0efe24c6ab6169fc03c794ca49bb95d43b7ab91cb8d90121355af6a55235a9",
+      "bytes": 16591
+    },
+    {
+      "file": "bracket-stack-trace-original.png",
+      "sha256": "1d7a41cbd5038ed509a9152b11bd84ccd7464440cbb756139ec7082f2d9cd723",
+      "bytes": 36110
+    },
+    {
+      "file": "circular-list-stop-condition-edited.excalidraw",
+      "sha256": "3462544d1f23afd5951a6def88925af67971aa94746f970834e75e7052b3f18b",
+      "bytes": 23965
+    },
+    {
+      "file": "circular-list-stop-condition-edited.svg",
+      "sha256": "e86801b9d7f4e4eef7235bd9b29a421c8099b41c6ebb4d09420887717bfb0d06",
+      "bytes": 15171
+    },
+    {
+      "file": "circular-list-stop-condition-editor.png",
+      "sha256": "ca9f1e4671ba9bee177516b7bb84530f11821942850e4565d6b40a79ff3a9f7d",
+      "bytes": 48386
+    },
+    {
+      "file": "circular-list-stop-condition-export.png",
+      "sha256": "187cbaf748052b19d1eb1831b10a9ed8c247f3cec5ea5b519888896176a64572",
+      "bytes": 30399
+    },
+    {
+      "file": "circular-list-stop-condition-export.svg",
+      "sha256": "7ca42b694f83c92708eaebd5eca264ffa00d49e5f66fe87c8def6af3090b96ff",
+      "bytes": 15159
+    },
+    {
+      "file": "circular-list-stop-condition-original.png",
+      "sha256": "da1822894e5854976756a3b61f3ee71b3677f6e7c2ec55aea799a2e965ee8085",
+      "bytes": 27758
+    },
+    {
+      "file": "contact-editor-1.png",
+      "sha256": "975a6fec29eb6839143ad3a94149e71445f612b193eb6e400ff950e04d9feb49",
+      "bytes": 101817
+    },
+    {
+      "file": "contact-editor-2.png",
+      "sha256": "f81ab85b088caab81a80d2322c2dc11df85850aa64b5856459fa39e2acaa473f",
+      "bytes": 118150
+    },
+    {
+      "file": "contact-editor-3.png",
+      "sha256": "40e94bd84b1642bc258e5ed265fc7d28bc5dabefe69519dda7d3aa964d409459",
+      "bytes": 107414
+    },
+    {
+      "file": "contact-editor-4.png",
+      "sha256": "981f83d69a09db0cc3975ecf8822e22d53bdefe8bd6e5f4e4c3ed6ceaa6b2770",
+      "bytes": 108044
+    },
+    {
+      "file": "contact-editor-5.png",
+      "sha256": "b557a146e3961958541abfb0ef763437a232698d306d6ad9e43a1fae04a120ac",
+      "bytes": 126767
+    },
+    {
+      "file": "contact-export-1.png",
+      "sha256": "24e100b7a0054eb23670ebd458adba3fe9c4315096f8ad6e33c39012801dafa4",
+      "bytes": 147745
+    },
+    {
+      "file": "contact-export-2.png",
+      "sha256": "2f4d3d99b5bd15d1b6eee44cb8a132c4fe4d6df5bf19d30b42dada8c657c6d49",
+      "bytes": 168601
+    },
+    {
+      "file": "contact-export-3.png",
+      "sha256": "98cf98b5595492aacd0c6c81891c5f036303fe0c7b1eb241430bec54be9c9fe4",
+      "bytes": 153192
+    },
+    {
+      "file": "contact-export-4.png",
+      "sha256": "ee3a7fde16faccd5d24b49d2b6320e9315cda22f871a7a6673e6b2c5e3cc3f7f",
+      "bytes": 150503
+    },
+    {
+      "file": "contact-export-5.png",
+      "sha256": "5b9b279873a351ae61cdde14e0ee51b4ba35476e1e9a836a916220dc75afa22b",
+      "bytes": 186663
+    },
+    {
+      "file": "contact-original-1.png",
+      "sha256": "9cba243d0c7f8139eff9caea0842ce50f9700dfe07d5cebae9a50329a137fcff",
+      "bytes": 131507
+    },
+    {
+      "file": "contact-original-2.png",
+      "sha256": "1a06cb98a3d01941e9d4efe38fce75fa65a0d9fddc4f80521c6fab2027289790",
+      "bytes": 154495
+    },
+    {
+      "file": "contact-original-3.png",
+      "sha256": "44b17e8d7ed218fc6160337849e3b07b19f44643fd2a694fddece8fd9dde0cc0",
+      "bytes": 142246
+    },
+    {
+      "file": "contact-original-4.png",
+      "sha256": "3f6bd92c5807027310c70e0e71089fc91c9f25fb7a9cfed1fc7bb8c94bececbf",
+      "bytes": 138235
+    },
+    {
+      "file": "contact-original-5.png",
+      "sha256": "9e00131fd5fd3dadcd72b2e9f683a7f4c3f6a40af3f1c085525ad16d29ee018c",
+      "bytes": 178637
+    },
+    {
+      "file": "doubly-linked-removal-edited.excalidraw",
+      "sha256": "7663825ac4bca8dc6e3e2a1747dd3265dd9703d2bdc8a3c7833a6be56c19d183",
+      "bytes": 24208
+    },
+    {
+      "file": "doubly-linked-removal-edited.svg",
+      "sha256": "3938c5b0e9159e12fb05474c6eeb98f77015a9b205bfae82a33932dc4ccddee9",
+      "bytes": 15034
+    },
+    {
+      "file": "doubly-linked-removal-editor.png",
+      "sha256": "d1fe752f84ecf310d399c823190b36ec26e25d4daf53e101993c597407e937bb",
+      "bytes": 49243
+    },
+    {
+      "file": "doubly-linked-removal-export.png",
+      "sha256": "e4da32df1d4087bd39b6730dbf03721a2a7d6152f7cf56fb85fea2d43390a025",
+      "bytes": 30612
+    },
+    {
+      "file": "doubly-linked-removal-export.svg",
+      "sha256": "b69319564077dcbff72ed3411c8464261c664c81a1903eedf1fb494b4074592e",
+      "bytes": 15022
+    },
+    {
+      "file": "doubly-linked-removal-original.png",
+      "sha256": "01342ed0dc6ea6b423bf80594a8954b00d2a90d09a082b17a67cc62f35d44861",
+      "bytes": 27816
+    },
+    {
+      "file": "fibonacci-repeated-subproblems-edited.excalidraw",
+      "sha256": "5cb1e2ecdf12778bf745ee34e21a676ecb7aa516545bd594b29129bd79fd768d",
+      "bytes": 46941
+    },
+    {
+      "file": "fibonacci-repeated-subproblems-edited.svg",
+      "sha256": "0583b6ce7486305dd80e9d75ed734e97b185cce2741fb327184133c87d7adc89",
+      "bytes": 32834
+    },
+    {
+      "file": "fibonacci-repeated-subproblems-editor.png",
+      "sha256": "1e1e3fdf92b6d0aa9b3e585e48bcf3fdac7219f84de53bc8b8e1881641e2f595",
+      "bytes": 63863
+    },
+    {
+      "file": "fibonacci-repeated-subproblems-export.png",
+      "sha256": "73fcf724326bec4f2a9f3134b0181d15ed039ed90524418a37970bad56019763",
+      "bytes": 45124
+    },
+    {
+      "file": "fibonacci-repeated-subproblems-export.svg",
+      "sha256": "4960877b0e36978d7d2e9736dfc86d6a92da8e0105a8f741df31aa03a23219bd",
+      "bytes": 32822
+    },
+    {
+      "file": "fibonacci-repeated-subproblems-original.png",
+      "sha256": "a268590cff8ee14f3068b78f45048ca41493a7f358881c57f36878859668109f",
+      "bytes": 38912
+    },
+    {
+      "file": "hash-collision-chains-edited.excalidraw",
+      "sha256": "be00f5a54e85edf08bc76b9c3dd1964543c4e9f9e577e96e63912169729df7fb",
+      "bytes": 22335
+    },
+    {
+      "file": "hash-collision-chains-edited.svg",
+      "sha256": "fd4fda9ae9a0c877ab3db8102761a0dc2ce0a37ab8b97f57e41466420333c64e",
+      "bytes": 12924
+    },
+    {
+      "file": "hash-collision-chains-editor.png",
+      "sha256": "ef83915d07a0f116c2449c30b8708b292b47b08536fd8836b812ddce2a75fa0a",
+      "bytes": 60127
+    },
+    {
+      "file": "hash-collision-chains-export.png",
+      "sha256": "7984b8a4e8be37e78802e952217c1d2666d320dd39e722c66f3717ae5887b393",
+      "bytes": 40631
+    },
+    {
+      "file": "hash-collision-chains-export.svg",
+      "sha256": "81ad94b73b400a1304f7864cac901a11715d37f8a969a12b0d991b056df3f564",
+      "bytes": 12912
+    },
+    {
+      "file": "hash-collision-chains-original.png",
+      "sha256": "8bc0289cb0978c32658be39907dc9c9b96d64fbee4f9adbd132b9a95b50f4d1f",
+      "bytes": 38376
+    },
+    {
+      "file": "linked-list-bypass-edited.excalidraw",
+      "sha256": "51a5c11bfdceb01dd3cb6173c37479a220cd98b3b0d92935cb107401666f3b29",
+      "bytes": 29380
+    },
+    {
+      "file": "linked-list-bypass-edited.svg",
+      "sha256": "85c907ee0f9291e988d46f9fe8972ca43651e2189b36216f84b58bb4198c17dc",
+      "bytes": 18448
+    },
+    {
+      "file": "linked-list-bypass-editor.png",
+      "sha256": "bc26c33efd5fdc3c14c2eae2b22d1e6507d10df68d63eb940a1a637eba781ff9",
+      "bytes": 60026
+    },
+    {
+      "file": "linked-list-bypass-export.png",
+      "sha256": "0bd4747ab8c8dd13812d197e24d9d82e8afa87ee61982155e52d087d8efa341b",
+      "bytes": 41937
+    },
+    {
+      "file": "linked-list-bypass-export.svg",
+      "sha256": "160d786713a9b0adc5195a992c12b37be62658d3930f0b1d406116271cc9cde5",
+      "bytes": 18436
+    },
+    {
+      "file": "linked-list-bypass-original.png",
+      "sha256": "34649fbc6c80074fafbbabd0a00840cec5152eed1102623b65c1e19651b8dc9e",
+      "bytes": 38433
+    },
+    {
+      "file": "linked-list-splice-edited.excalidraw",
+      "sha256": "e11ebd5a5dc5a4ea9330f78f9ab4363af79eda670733bdf8e08fddfa6aaaeca5",
+      "bytes": 26894
+    },
+    {
+      "file": "linked-list-splice-edited.svg",
+      "sha256": "4bfe6fe832f39e466102a5d4debc9cf615c39801a3914b3759c3838e02066ab7",
+      "bytes": 17045
+    },
+    {
+      "file": "linked-list-splice-editor.png",
+      "sha256": "b1657b1584913e29ccbe2bf1d6e1ad5b3f395f7543e3735f20c3a2a9b2003204",
+      "bytes": 52613
+    },
+    {
+      "file": "linked-list-splice-export.png",
+      "sha256": "fa78f0cbf86ef0f596a7ce8656d27f617723fcc1024aa54afb3d8872b4dcdb7f",
+      "bytes": 34456
+    },
+    {
+      "file": "linked-list-splice-export.svg",
+      "sha256": "f3aeffe99d4c00e02fe4a83628c1cf64f672659e33e5edbcd5b54ac8bdfd4dee",
+      "bytes": 17033
+    },
+    {
+      "file": "linked-list-splice-original.png",
+      "sha256": "ec7a75a1736e34f7fc0375936d336d0758d54c665ff17f769b252fe465e4f6d8",
+      "bytes": 31127
+    },
+    {
+      "file": "linked-list-three-pointer-reversal-edited.excalidraw",
+      "sha256": "c5505495a98febeca81a95aa87c40333d271ac9a321ace3d769f532cf3e5b203",
+      "bytes": 25776
+    },
+    {
+      "file": "linked-list-three-pointer-reversal-edited.svg",
+      "sha256": "afa27973f27111f1bcaef55b601c015b541c375cdcf81e7cd077eb86b71b9c52",
+      "bytes": 13958
+    },
+    {
+      "file": "linked-list-three-pointer-reversal-editor.png",
+      "sha256": "f6229e0ce0c2924c2f722f9348e54238883fd42b09beb420c3c9f354adf810a2",
+      "bytes": 59923
+    },
+    {
+      "file": "linked-list-three-pointer-reversal-export.png",
+      "sha256": "2e7d3b9c1fbb30349291f26d481c5957ee59bc64a928cefd13e4508814d1b52e",
+      "bytes": 40424
+    },
+    {
+      "file": "linked-list-three-pointer-reversal-export.svg",
+      "sha256": "28cdbedef2c14dc2d18d5c8409d382505362225f90d2d3d5b2300ae7625f26c5",
+      "bytes": 13946
+    },
+    {
+      "file": "linked-list-three-pointer-reversal-original.png",
+      "sha256": "29859850b0f6ae02257826ff4f20e87f604f928b321a2789436143efe4b1e072",
+      "bytes": 38453
+    },
+    {
+      "file": "monotonic-deque-window-edited.excalidraw",
+      "sha256": "329f119ac5e27b637ef23e47d3e8112ad36e1f40194494e9e4c522399f59236c",
+      "bytes": 24790
+    },
+    {
+      "file": "monotonic-deque-window-edited.svg",
+      "sha256": "0b751b1b921f4d647077c35e4b98baa62d80261d51adfb84499088fe8bcf4f5b",
+      "bytes": 14580
+    },
+    {
+      "file": "monotonic-deque-window-editor.png",
+      "sha256": "d0d109cd36322558d844eeee35ea1bce52a79cf6ff9ed0fb3a61b09d51685bf2",
+      "bytes": 62670
+    },
+    {
+      "file": "monotonic-deque-window-export.png",
+      "sha256": "9e480389407089dd59f84dc6ff867e3e6cdd1597d1aa8c6567f8526146ab86da",
+      "bytes": 43199
+    },
+    {
+      "file": "monotonic-deque-window-export.svg",
+      "sha256": "82dd649ca02fbba56cedf80ad921aa85387aabfab00659a9ec18769870011624",
+      "bytes": 14568
+    },
+    {
+      "file": "monotonic-deque-window-original.png",
+      "sha256": "2566053a506348176fc26df5b61b678a7fb688de38e4a87adce22ef5798842d3",
+      "bytes": 41088
+    },
+    {
+      "file": "prefix-sum-half-open-range-edited.excalidraw",
+      "sha256": "02839635fbf7f0b64247eab38f2b18e39c65aa960799451bcd7f452b2534a3d4",
+      "bytes": 28952
+    },
+    {
+      "file": "prefix-sum-half-open-range-edited.svg",
+      "sha256": "4feba8ef3958b1d008b9bb0739e572d484ccf8383f0d09f0bbdaac0d263ee11c",
+      "bytes": 16624
+    },
+    {
+      "file": "prefix-sum-half-open-range-editor.png",
+      "sha256": "2c875b2e0ff7467f31046677407938a50b8d60cd9f1c529d8cc8ddef9f697b8c",
+      "bytes": 51340
+    },
+    {
+      "file": "prefix-sum-half-open-range-export.png",
+      "sha256": "da679c1f57b731a15d9a40c3f73d799c4d6a255944ef2673cab3f148c277fb24",
+      "bytes": 32416
+    },
+    {
+      "file": "prefix-sum-half-open-range-export.svg",
+      "sha256": "2439a860d412d913ad3c4622c26f0b58c7acdbef9485ed34fe3df1c781e81883",
+      "bytes": 16612
+    },
+    {
+      "file": "prefix-sum-half-open-range-original.png",
+      "sha256": "0091bbdaf4d88ea2fed0b0afd921cb3c8f79b0a9b7deb3563d1073ad7ff53e7e",
+      "bytes": 30966
+    },
+    {
+      "file": "probing-tombstone-search-edited.excalidraw",
+      "sha256": "b6ae4cfb563f0efa1066eaaeb510ef35174ccf12777413ab58b93864dee1a5a7",
+      "bytes": 35091
+    },
+    {
+      "file": "probing-tombstone-search-edited.svg",
+      "sha256": "b885ebcd0d956fac561d41dc923b75e99badffb28771b611b25fa6a2e9289f5c",
+      "bytes": 19287
+    },
+    {
+      "file": "probing-tombstone-search-editor.png",
+      "sha256": "9780ff419e22306fcb6da855eecc157162d2d6e3208213fccdc066d64863abe6",
+      "bytes": 68608
+    },
+    {
+      "file": "probing-tombstone-search-export.png",
+      "sha256": "abbf3d0650f4552c9d119db6fafef40f1f0eba6884b98a646d898674f905a43a",
+      "bytes": 49130
+    },
+    {
+      "file": "probing-tombstone-search-export.svg",
+      "sha256": "5a976adf1a66dce4883c622d54338c88401c9eb1b215b64451ec916bbd8170b8",
+      "bytes": 19275
+    },
+    {
+      "file": "probing-tombstone-search-original.png",
+      "sha256": "bd17d5b8d015d943c10948e4c3e8a225a51898d8a6f40ca9c930be7ee83ad24b",
+      "bytes": 47784
+    },
+    {
+      "file": "queue-head-tail-transition-edited.excalidraw",
+      "sha256": "0cc82c3baf42a4eb44d6d10b9b9bc90316dd0fc44c6b80a05d7812b1b67ab114",
+      "bytes": 21211
+    },
+    {
+      "file": "queue-head-tail-transition-edited.svg",
+      "sha256": "d9d44b92d85e048203fb1c896b1c0773544b6ffa835390ad75082170f00c6351",
+      "bytes": 12369
+    },
+    {
+      "file": "queue-head-tail-transition-editor.png",
+      "sha256": "00c8162ca999dd1ae887740c587d6321a72bed5c55bba70d7fb9a60595f2e92b",
+      "bytes": 55568
+    },
+    {
+      "file": "queue-head-tail-transition-export.png",
+      "sha256": "9f6a016c53f6ccf24d1a596ffff7a5e738e08c3c423984e6e5c6d6bb11f02aca",
+      "bytes": 36582
+    },
+    {
+      "file": "queue-head-tail-transition-export.svg",
+      "sha256": "b1a5868330a110ea501b5db0712735ae81911cba0dfc322dff405f98688b981d",
+      "bytes": 12357
+    },
+    {
+      "file": "queue-head-tail-transition-original.png",
+      "sha256": "baa3fc1f8c17019b09d1dcb1980ea0fa53953c338727dc6eaa0e407f5dd5e3d4",
+      "bytes": 34198
+    },
+    {
+      "file": "recursive-call-and-return-edited.excalidraw",
+      "sha256": "c643d41d0fa490efc4f61833ea279e39a7b989cae3f82f7edb8386a1ddf56ffc",
+      "bytes": 22777
+    },
+    {
+      "file": "recursive-call-and-return-edited.svg",
+      "sha256": "8cc266d908a3665fcdb672dcdc99501029b02498fd4c5142faa13e9c9c976272",
+      "bytes": 13628
+    },
+    {
+      "file": "recursive-call-and-return-editor.png",
+      "sha256": "f15a57eee0c6fa230acf2150eeb9e420c40277a6c25da8c17daf482119d67d15",
+      "bytes": 53304
+    },
+    {
+      "file": "recursive-call-and-return-export.png",
+      "sha256": "3b66186949f7b7c7fb61055384e207c0e8675ebfd7fff5b6cfcb8db3e21f26c7",
+      "bytes": 33845
+    },
+    {
+      "file": "recursive-call-and-return-export.svg",
+      "sha256": "e6e8fb29aa289b8dd72f04b4551d8fa3009e5ff02bccebf54d111bd4ca290043",
+      "bytes": 13616
+    },
+    {
+      "file": "recursive-call-and-return-original.png",
+      "sha256": "89fbcadd6a1104a4232ac3e963f4522b3d72ab5256b99928178069dda5ca6a1e",
+      "bytes": 30850
+    },
+    {
+      "file": "ring-buffer-wraparound-edited.excalidraw",
+      "sha256": "90f7c973f32244e80f58d9e4fe23a49eac426e4ea765cebe182c5e20a947877e",
+      "bytes": 33258
+    },
+    {
+      "file": "ring-buffer-wraparound-edited.svg",
+      "sha256": "5f2ac803f32e429bb9c2cb369fc1ac58577e2780fa40c566f6e970189840c475",
+      "bytes": 18717
+    },
+    {
+      "file": "ring-buffer-wraparound-editor.png",
+      "sha256": "988083b621dc1bb77b87989d8e6a86909cfd1de38b2b5939f4af889d107bc745",
+      "bytes": 61939
+    },
+    {
+      "file": "ring-buffer-wraparound-export.png",
+      "sha256": "d8e6c63e78bda0690ac495b170ea6ee6f07ddfb5862c31068a3a8395c7ab4b00",
+      "bytes": 41968
+    },
+    {
+      "file": "ring-buffer-wraparound-export.svg",
+      "sha256": "bbb07fdc7e2fe9ffa1f9bc4f63ef45b9e93037ca7304b2404e0d714754af3426",
+      "bytes": 18705
+    },
+    {
+      "file": "ring-buffer-wraparound-original.png",
+      "sha256": "e2fd11fb43cccdf8dfbcce6f3ef5c849a757ab561410342f212805f7b0a684ec",
+      "bytes": 40299
+    },
+    {
+      "file": "shallow-copy-nested-lists-edited.excalidraw",
+      "sha256": "3decbff045971e148a2f0e823fa344d7ca6010fa7f974e43d12f7628d3c70bf6",
+      "bytes": 22516
+    },
+    {
+      "file": "shallow-copy-nested-lists-edited.svg",
+      "sha256": "5c61b43361c9c51975e654bf5098bbf263eaa3fe7a755ac022fe95796215d54f",
+      "bytes": 15553
+    },
+    {
+      "file": "shallow-copy-nested-lists-editor.png",
+      "sha256": "5855a2d5318ca911dc2ec1d742f39951886f4b827b7675af51ea8136f41d77bc",
+      "bytes": 56554
+    },
+    {
+      "file": "shallow-copy-nested-lists-export.png",
+      "sha256": "b7bc52ec4cb23bf7bf2e80e21261d3a4e3f29992c9d4a4db00e91439ca5981e5",
+      "bytes": 37080
+    },
+    {
+      "file": "shallow-copy-nested-lists-export.svg",
+      "sha256": "cf9e1f432ef1303ea2c28afec8fe455544879483bb5cae6fec911f6084535530",
+      "bytes": 15541
+    },
+    {
+      "file": "shallow-copy-nested-lists-original.png",
+      "sha256": "263405ca4d1cd0d2364500eb7d5f056c0932f02e6f90ecc9dd4674577aa2e57d",
+      "bytes": 33483
+    },
+    {
+      "file": "shared-reference-map-edited.excalidraw",
+      "sha256": "f6da78a0719fba0b11e651b2921c65cb3ad0f725ffa01a9fd1bc14727f582139",
+      "bytes": 22242
+    },
+    {
+      "file": "shared-reference-map-edited.svg",
+      "sha256": "7c0dc6f8320823a10494a8ea8ab17d12e9bfa058ff289cb0c11fcc0f0c113db3",
+      "bytes": 14574
+    },
+    {
+      "file": "shared-reference-map-editor.png",
+      "sha256": "40d22dbc7996c1075eb33d4319336f9f14c97e4e8921989e558fa98214443ca6",
+      "bytes": 43398
+    },
+    {
+      "file": "shared-reference-map-export.png",
+      "sha256": "3f1d7ebc60724064d6966f88e16deb7b93b68646913b8d30fc98b055b8911394",
+      "bytes": 25005
+    },
+    {
+      "file": "shared-reference-map-export.svg",
+      "sha256": "9be5fb9d03b06ee5c47d1bd978152b33cf83c1fa44d08851322e8213b2e32878",
+      "bytes": 14562
+    },
+    {
+      "file": "shared-reference-map-original.png",
+      "sha256": "800d64ca3295bf4e78e6488e049f5b6256a5a726508d42a01b971b95b454be7d",
+      "bytes": 21493
+    },
+    {
+      "file": "skip-list-search-lanes-edited.excalidraw",
+      "sha256": "dadbf5fadc5655c44d61d05fca7787eea16fffc26a81c4c643b49ef98f9defb1",
+      "bytes": 30404
+    },
+    {
+      "file": "skip-list-search-lanes-edited.svg",
+      "sha256": "4c3960249f25c1a79a694bd92a3182eb241284f2ccca071a954166caab062870",
+      "bytes": 18735
+    },
+    {
+      "file": "skip-list-search-lanes-editor.png",
+      "sha256": "7e170ab89d62a6f016085d845386de6fa1d08a3cfb475dbb6b6d7fc8c0b5ba1b",
+      "bytes": 57364
+    },
+    {
+      "file": "skip-list-search-lanes-export.png",
+      "sha256": "7c8a165100993343cac03373c4e3a72b28eaee3817ab700c3241a8a0625a1094",
+      "bytes": 38382
+    },
+    {
+      "file": "skip-list-search-lanes-export.svg",
+      "sha256": "f947d40db278ee991a86db92330e9375e45f1133402af8aa9d8bc783759bb0eb",
+      "bytes": 18723
+    },
+    {
+      "file": "skip-list-search-lanes-original.png",
+      "sha256": "c0e13b12d63049ddc2a37ddfa522192a8a1d9f7bd7694b7acd8a5e3d300d732e",
+      "bytes": 34999
+    },
+    {
+      "file": "stack-lifo-operations-edited.excalidraw",
+      "sha256": "ae25bcdaaa6968545b6a3b971a800139e784d928956f5cede1cf041d9eee55a4",
+      "bytes": 21151
+    },
+    {
+      "file": "stack-lifo-operations-edited.svg",
+      "sha256": "a10600e3979f2e6ed2b90d7f9132440f116dda92716b52ec936140fe8f9e89d5",
+      "bytes": 12653
+    },
+    {
+      "file": "stack-lifo-operations-editor.png",
+      "sha256": "221e67e0129e81bb8afdcebfa9f1be5c6d978cd9e10780fb0f61d0c3185b11f9",
+      "bytes": 47298
+    },
+    {
+      "file": "stack-lifo-operations-export.png",
+      "sha256": "83f69b1a6ce9a23ce02c144e91d3336bc373d95f2a0f0cda8cc7d55bb9f55c2b",
+      "bytes": 28563
+    },
+    {
+      "file": "stack-lifo-operations-export.svg",
+      "sha256": "4cab2ce6b7f9a0aac81ecbbebb6e870d42cd2c1e5dca7344bbaa5ac078fdb37c",
+      "bytes": 12641
+    },
+    {
+      "file": "stack-lifo-operations-original.png",
+      "sha256": "7a3d3a4b944ae25475c1f2f604cad1e35494b32dc674028226d25b1ff9763c59",
+      "bytes": 27051
+    }
+  ],
+  "evidenceFileCount": 135,
+  "nativeElementTotals": {
+    "nativeElements": 642,
+    "text": 385,
+    "rectangles": 200,
+    "arrows": 57,
+    "images": 0,
+    "boundArrowEnds": 113
+  }
+}

@@ -1,0 +1,4895 @@
+{
+  "placement_file": "placements-extra-11-15.json",
+  "checked_count": 40,
+  "svg_read_count": 40,
+  "identity_fields": [
+    "lesson",
+    "file",
+    "editable"
+  ],
+  "identity_and_order_unchanged": true,
+  "briefs_unchanged": true,
+  "all_alt_replaced": true,
+  "all_captions_added": true,
+  "svg_and_editable_hashes_match_prior_audit": true,
+  "existing_algorithm_checks_file": "checks-extra-11-15.json",
+  "existing_algorithm_check_count": 80,
+  "existing_algorithm_checks_pass": true,
+  "algorithm_checks_rerun": false,
+  "scope": "Metadata review against complete parsed SVG titles, descriptions when present, visible text, and existing computed checks. No lessons or image sources modified.",
+  "maintenance": "This audit is the maintained alt/caption backup. After a generator rewrites placements, reapply entries by the exact (lesson, file, editable) triple only after confirming SVG hashes still match. Lesson integration is deferred to the parent after authoring freezes.",
+  "notes": [
+    "SVG titles repeat generic authoring briefs; no SVG desc elements are present. Concrete metadata comes from actual visible SVG labels and computed checks.",
+    "The computed remove edge check uses an isolated three-vertex fixture; the diagram and named remove-edge check preserve A-C. Metadata follows the diagram, not the different fixture."
+  ],
+  "entries": [
+    {
+      "lesson": "11-trees-and-bst/01-binary-node",
+      "file": "trees-and-bst-binary-node-trace.svg",
+      "editable": "trees-and-bst-binary-node-trace.excalidraw",
+      "svg_sha256": "2fc3566220f0408032e3ba2a6ef4ca5f04ff156f8799a07dd6891f2866669bc6",
+      "editable_sha256": "3a3fe4a627fed612d4ee20f48c4f7e6d050d001bf8f2adbb730c9c1c9e147255",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for binary node in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Binary node"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "root.value = 18"
+        },
+        {
+          "tag": "text",
+          "text": "root.left → 9     root.right → 27"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "Leaf 9: left = None; right = None"
+        },
+        {
+          "tag": "text",
+          "text": "Empty tree: root = None"
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Root 18 points left to node 9 and right to node 27. Leaf 9 has left and right set to None; an empty tree has root None.",
+      "caption": "Binary nodes store separate child references; None means no node.",
+      "reviewed": true,
+      "existing_check_names": [
+        "computed binary links"
+      ]
+    },
+    {
+      "lesson": "11-trees-and-bst/02-count-nodes",
+      "file": "trees-and-bst-count-nodes-trace.svg",
+      "editable": "trees-and-bst-count-nodes-trace.excalidraw",
+      "svg_sha256": "88bfa4ee0123f7a9a04d363e26694239c9936dae9021682e4242bb3fc670ceac",
+      "editable_sha256": "c536507cd7a8cf521c01f18c44476d99e9bf7a052f92baea83fcff84ec86f5df",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for count nodes in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Count nodes"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "13"
+        },
+        {
+          "tag": "text",
+          "text": "32"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "Same links below; labels become subtree counts"
+        },
+        {
+          "tag": "text",
+          "text": "1 + left + right; None contributes 0"
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "The six-node tree rooted at 18 yields subtree counts 3 at node 9 and 2 at node 27, then 1 + 3 + 2 = 6 at the root. Each leaf contributes 1; None contributes 0.",
+      "caption": "Count uses 1 + left count + right count; links stay unchanged.",
+      "reviewed": true,
+      "existing_check_names": [
+        "count-nodes"
+      ]
+    },
+    {
+      "lesson": "11-trees-and-bst/03-tree-height",
+      "file": "trees-and-bst-tree-height-trace.svg",
+      "editable": "trees-and-bst-tree-height-trace.excalidraw",
+      "svg_sha256": "44522f275a4d7bdb2dc94237a4314eeaf9448691c50393091a5591fcb71f13c7",
+      "editable_sha256": "3f4a4439a5dd062542caa488da627916d42c64b3de4ef7dba01760b84dd86aef",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for tree height in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Tree height"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "13"
+        },
+        {
+          "tag": "text",
+          "text": "32"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "Same links below; labels become heights in nodes"
+        },
+        {
+          "tag": "text",
+          "text": "1 + max(left, right); None has height 0"
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Leaves 4, 13 and 32 have height 1; nodes 9 and 27 have height 2; root 18 has height 3. Each height is 1 plus the larger child height.",
+      "caption": "Height counts nodes, not edges; an empty subtree has height 0.",
+      "reviewed": true,
+      "existing_check_names": [
+        "tree-height"
+      ]
+    },
+    {
+      "lesson": "11-trees-and-bst/04-preorder-traversal",
+      "file": "trees-and-bst-preorder-traversal-trace.svg",
+      "editable": "trees-and-bst-preorder-traversal-trace.excalidraw",
+      "svg_sha256": "55aff92316bc1f90f38b4816b444536b905df4e51c0193caff802718162b3a27",
+      "editable_sha256": "34c66f0772f366068383a6d4b603bf895194c105d87aab17e8b41b303be0bdbe",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for preorder traversal in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Preorder: node, left, right"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "13"
+        },
+        {
+          "tag": "text",
+          "text": "32"
+        },
+        {
+          "tag": "text",
+          "text": "Visit sequence"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "13"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "32"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "Active recursive frames, root at left"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "Emit on entry"
+        },
+        {
+          "tag": "text",
+          "text": "An empty subtree emits nothing."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Preorder emits [18, 9, 4, 13, 27, 32]. Active frames [18, 9, 4] show descent into the left subtree; each node is emitted before its children.",
+      "caption": "Visit node, then left, then right; empty subtrees emit nothing.",
+      "reviewed": true,
+      "existing_check_names": [
+        "preorder-traversal"
+      ]
+    },
+    {
+      "lesson": "11-trees-and-bst/05-inorder-traversal",
+      "file": "trees-and-bst-inorder-traversal-trace.svg",
+      "editable": "trees-and-bst-inorder-traversal-trace.excalidraw",
+      "svg_sha256": "823c17b4b3d989b469db1b4e811f1a8e7fc3b289f9d5fcdf394a5a53c55058c8",
+      "editable_sha256": "dc0b9117fc1f256265c1f7d38908118e9ba57c7d3589d162f771a0455e5216ad",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for inorder traversal in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Inorder: left, node, right"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "13"
+        },
+        {
+          "tag": "text",
+          "text": "32"
+        },
+        {
+          "tag": "text",
+          "text": "Visit sequence"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "13"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "32"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "Active recursive frames, root at left"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "Emit after the left subtree returns"
+        },
+        {
+          "tag": "text",
+          "text": "An empty subtree emits nothing."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Inorder emits [4, 9, 13, 18, 27, 32]. Frames [18, 9, 4] show the left descent; each node is emitted after its left subtree returns.",
+      "caption": "Visit left, then node, then right; the illustrated tree is a BST.",
+      "reviewed": true,
+      "existing_check_names": [
+        "inorder-traversal"
+      ]
+    },
+    {
+      "lesson": "11-trees-and-bst/07-level-order-traversal",
+      "file": "trees-and-bst-level-order-traversal-trace.svg",
+      "editable": "trees-and-bst-level-order-traversal-trace.excalidraw",
+      "svg_sha256": "baabc057270d0a1dbbedf428ec582ed4b878c42c45d51c376a31860f67e0b07d",
+      "editable_sha256": "bf1fa1cb12c4487b9d1bd3e926ef500f81aaad086e4cd764f4404e3175ed1787",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for level order traversal in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Level order uses a queue"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "13"
+        },
+        {
+          "tag": "text",
+          "text": "32"
+        },
+        {
+          "tag": "text",
+          "text": "Visit sequence"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "13"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "32"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "Queue after removing 18 (front at left)"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "After 9: both old and new levels coexist"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "13"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Level order emits [18, 9, 27, 4, 13, 32]. The queue changes from [9, 27] after visiting 18 to [27, 4, 13] after visiting 9, mixing adjacent levels.",
+      "caption": "FIFO queue, front at left; enqueue left child before right child.",
+      "reviewed": true,
+      "existing_check_names": [
+        "level-order-traversal"
+      ]
+    },
+    {
+      "lesson": "11-trees-and-bst/08-bst-search",
+      "file": "trees-and-bst-bst-search-trace.svg",
+      "editable": "trees-and-bst-bst-search-trace.excalidraw",
+      "svg_sha256": "64ab68fa27e9c632ff0f9f617d0793fa4c80cb9ca263a76ed01f94c74119ff1c",
+      "editable_sha256": "90078e355736173172f89561820a1afae956e461fb935b7bd62e6743ff597be2",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for bst search in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Bst search"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "13"
+        },
+        {
+          "tag": "text",
+          "text": "32"
+        },
+        {
+          "tag": "text",
+          "text": "Search 13: compare, choose one branch"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "13"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "13 < 18: left; 13 > 9: right; found"
+        },
+        {
+          "tag": "text",
+          "text": "Missing 12: 18 → 9 → 13 → None"
+        },
+        {
+          "tag": "text",
+          "text": "Only the searched path is followed."
+        },
+        {
+          "tag": "text",
+          "text": "Cost depends on height, not just node count."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Searching for 13 follows 18 left to 9, then right to 13 and finds it. Searching for 12 follows the same nodes, then reaches None; only one branch is followed at each comparison.",
+      "caption": "The tree obeys BST ordering; search cost depends on its height.",
+      "reviewed": true,
+      "existing_check_names": [
+        "bst-search"
+      ]
+    },
+    {
+      "lesson": "11-trees-and-bst/09-bst-insert",
+      "file": "trees-and-bst-bst-insert-trace.svg",
+      "editable": "trees-and-bst-bst-insert-trace.excalidraw",
+      "svg_sha256": "ec7a993cfef92cdaacdfcd863e4e1b1440ee8bdd6d642d626c233ba3bdafef34",
+      "editable_sha256": "ff1af7a6d78018a7a817ea093b9dd188c83e8ec9996fa082307aa6ba8d657f20",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for bst insert in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Bst insert"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "32"
+        },
+        {
+          "tag": "text",
+          "text": "Before ↑     After ↓"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "13"
+        },
+        {
+          "tag": "text",
+          "text": "32"
+        },
+        {
+          "tag": "text",
+          "text": "Insert 13 along 18 → 9 → empty right"
+        },
+        {
+          "tag": "text",
+          "text": "Set 9.right to the new node 13."
+        },
+        {
+          "tag": "text",
+          "text": "Empty root: insert 13 makes root = 13."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Inserting 13 follows 18 to 9 and replaces 9.right, previously None, with a new node 13. The other links stay unchanged; inserting into an empty tree makes 13 the root.",
+      "caption": "BST insertion attaches at the first empty link on the search path.",
+      "reviewed": true,
+      "existing_check_names": [
+        "bst-insert"
+      ]
+    },
+    {
+      "lesson": "11-trees-and-bst/10-bst-minimum",
+      "file": "trees-and-bst-bst-minimum-trace.svg",
+      "editable": "trees-and-bst-bst-minimum-trace.excalidraw",
+      "svg_sha256": "8f8b3fa574519075dd9054b3f79a62ce1ae660ce10bd0aa062d55b101938985f",
+      "editable_sha256": "3698d39e71321cecb1c2ebece3a6d538189068a529f90a1d9e1898e978f32c66",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for bst minimum in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Bst minimum"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "13"
+        },
+        {
+          "tag": "text",
+          "text": "32"
+        },
+        {
+          "tag": "text",
+          "text": "Follow left links; stop at the leftmost"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "4.left = None; return value 4"
+        },
+        {
+          "tag": "text",
+          "text": "No links change; 13 is not examined."
+        },
+        {
+          "tag": "text",
+          "text": "An empty tree has no minimum."
+        },
+        {
+          "tag": "text",
+          "text": "Cost depends on height, not just node count."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Minimum follows left links 18 to 9 to 4, stops because 4.left is None, and returns value 4. No links change, and node 13 is not examined.",
+      "caption": "BST ordering makes the leftmost value smallest; an empty tree has no minimum.",
+      "reviewed": true,
+      "existing_check_names": [
+        "bst-minimum"
+      ]
+    },
+    {
+      "lesson": "11-trees-and-bst/11-bst-delete-leaf",
+      "file": "trees-and-bst-bst-delete-leaf-trace.svg",
+      "editable": "trees-and-bst-bst-delete-leaf-trace.excalidraw",
+      "svg_sha256": "17b5584721c80c757fa2d55e191caff64ebc73cb8ca8b7b2c11f9930dbf7a7b0",
+      "editable_sha256": "ca3150bd3f91337ef20a225c9b33b0020a723e00f50d03bc3c57f4b5b17f3d14",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for bst delete leaf in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Bst delete leaf"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "13"
+        },
+        {
+          "tag": "text",
+          "text": "32"
+        },
+        {
+          "tag": "text",
+          "text": "Before ↑     After ↓"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "13"
+        },
+        {
+          "tag": "text",
+          "text": "32"
+        },
+        {
+          "tag": "text",
+          "text": "Delete leaf 4: set 9.left = None."
+        },
+        {
+          "tag": "text",
+          "text": "No child subtree needs reconnecting."
+        },
+        {
+          "tag": "text",
+          "text": "Singleton deletion makes root = None."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Deleting leaf 4 sets 9.left to None, leaving nodes 9, 13, 18, 27 and 32 connected. No child needs reconnecting; deleting a singleton sets root to None.",
+      "caption": "The deleted node has no children; other BST links remain unchanged.",
+      "reviewed": true,
+      "existing_check_names": [
+        "bst-delete-leaf"
+      ]
+    },
+    {
+      "lesson": "11-trees-and-bst/12-bst-delete-one-child",
+      "file": "trees-and-bst-bst-delete-one-child-trace.svg",
+      "editable": "trees-and-bst-bst-delete-one-child-trace.excalidraw",
+      "svg_sha256": "7072421689231c72bfd3fdf2e24acd2248dfad591b70e8365c280854ca737c0f",
+      "editable_sha256": "f310caca13f8c83a32faaed821d5819d78bb628b3474eb177240bc35423a7db2",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for bst delete one child in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Bst delete one child"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "13"
+        },
+        {
+          "tag": "text",
+          "text": "32"
+        },
+        {
+          "tag": "text",
+          "text": "Before ↑     After ↓"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "32"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "13"
+        },
+        {
+          "tag": "text",
+          "text": "Delete 27: replace its parent link by 32."
+        },
+        {
+          "tag": "text",
+          "text": "Set 18.right to the existing child 32."
+        },
+        {
+          "tag": "text",
+          "text": "Deleting a one-child root promotes its child."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Deleting 27 redirects 18.right to its existing child 32, preserving the subtree rooted at 9. If the deleted node were the root, its only child would become the root.",
+      "caption": "The deleted BST node has exactly one child, which replaces it.",
+      "reviewed": true,
+      "existing_check_names": [
+        "bst-delete-one-child"
+      ]
+    },
+    {
+      "lesson": "11-trees-and-bst/14-validate-bst",
+      "file": "trees-and-bst-validate-bst-trace.svg",
+      "editable": "trees-and-bst-validate-bst-trace.excalidraw",
+      "svg_sha256": "d741f066cc20bd0a805d38025cc504b6f089fa1fe6488db989f3e84a88df0c44",
+      "editable_sha256": "b736f38bc80ad6e5bed10d1efb257fc9b13f658e5ee50d5eb4bc1b028ed7f64d",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for validate bst in Binary trees and search trees. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Validate bst"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "18"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "27"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "21"
+        },
+        {
+          "tag": "text",
+          "text": "21 > 9 passes its direct-parent comparison."
+        },
+        {
+          "tag": "text",
+          "text": "But 21 belongs to the LEFT subtree of 18."
+        },
+        {
+          "tag": "text",
+          "text": "Bounds inherited down 18 → 9 → 21"
+        },
+        {
+          "tag": "text",
+          "text": "< 18"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "9 < x"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "x < 18"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "Required interval at 21: 9 < x < 18"
+        },
+        {
+          "tag": "text",
+          "text": "21 violates the upper bound: invalid BST."
+        },
+        {
+          "tag": "text",
+          "text": "Strict bounds reject duplicate keys too."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Node 21 is right of 9 but still in the left subtree of 18. It passes 21 > 9 yet violates the inherited interval 9 < x < 18, so validation returns False.",
+      "caption": "Strict ancestor bounds apply to every descendant and reject duplicate keys.",
+      "reviewed": true,
+      "existing_check_names": [
+        "validate-bst"
+      ]
+    },
+    {
+      "lesson": "12-heaps-and-priority/02-heap-order",
+      "file": "heaps-and-priority-heap-order-trace.svg",
+      "editable": "heaps-and-priority-heap-order-trace.excalidraw",
+      "svg_sha256": "d68973810bf8e54bc44b073e9f6ac4af07c3bfcf39a8604b5aabba7ef1298f42",
+      "editable_sha256": "8028327a44e30e0530a358bed781fa1823d7fc8c4784bdf3bef81934fb3ef072",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for heap order in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Heap order"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "8"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "15"
+        },
+        {
+          "tag": "text",
+          "text": "11"
+        },
+        {
+          "tag": "text",
+          "text": "10"
+        },
+        {
+          "tag": "text",
+          "text": "Array slots are level order, not sorted"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "8"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "15"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "11"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "10"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "Each parent ≤ each child; 8 > 6 is allowed."
+        },
+        {
+          "tag": "text",
+          "text": "For i = 1: children at 3 and 4 hold 15, 11."
+        },
+        {
+          "tag": "text",
+          "text": "A missing right child is not a violation."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Array [3, 8, 6, 15, 11, 10] is a valid min-heap: each parent is at most its children. Index 1 holds 8 with children 15 and 11; sibling order 8 > 6 is allowed.",
+      "caption": "Zero-based slots follow level order, not sorted order; a right child may be absent.",
+      "reviewed": true,
+      "existing_check_names": [
+        "heap-order"
+      ]
+    },
+    {
+      "lesson": "12-heaps-and-priority/03-sift-up",
+      "file": "heaps-and-priority-sift-up-trace.svg",
+      "editable": "heaps-and-priority-sift-up-trace.excalidraw",
+      "svg_sha256": "a01d8712405412e171ae962d89ae75bcd8024a1215ab75c62f4e66cc02e33a60",
+      "editable_sha256": "cb581c677c0dfb24571cbd877d1417b3fa388dab1b686e04564b8e34a7fa8c29",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for sift up in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Sift up"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "8"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "15"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "10"
+        },
+        {
+          "tag": "text",
+          "text": "Decrease index 4 to 1; compare with parent 8"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "8"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "15"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "10"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "Swap 4↔1; compare 1 with root 3"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "15"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "8"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "10"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "Swap 1↔0; stop at root"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "15"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "8"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "10"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "Parent index = (i - 1) // 2; repair one path."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "After index 4 decreases to 1, [3, 8, 6, 15, 1, 10] swaps indices 4 and 1, then 1 and 0, producing [1, 3, 6, 15, 8, 10]. Only the path to the root is repaired.",
+      "caption": "Min-heap sift-up uses parent index (i - 1) // 2 and stops at the root.",
+      "reviewed": true,
+      "existing_check_names": [
+        "sift-up"
+      ]
+    },
+    {
+      "lesson": "12-heaps-and-priority/05-heap-push",
+      "file": "heaps-and-priority-heap-push-trace.svg",
+      "editable": "heaps-and-priority-heap-push-trace.excalidraw",
+      "svg_sha256": "61f69db56d0cc30d0fd702c1bd67873e6f838dfe1451f7735fe2fd89f9a54c29",
+      "editable_sha256": "abf3acf910109e68ea38ca6eeeb42e1fecfa5bd8a45ce46d9dc7bd36c4826d7b",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for heap push in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Heap push"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "8"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "15"
+        },
+        {
+          "tag": "text",
+          "text": "11"
+        },
+        {
+          "tag": "text",
+          "text": "10"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "Append 2 at index 6"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "8"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "15"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "11"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "10"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "Swap 6↔2, then 2↔0"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "8"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "15"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "11"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "10"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "Parent index is (i - 1) // 2."
+        },
+        {
+          "tag": "text",
+          "text": "Stop at root or when parent ≤ child."
+        },
+        {
+          "tag": "text",
+          "text": "Push into [] gives [2]; no swaps."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Push appends 2 at index 6 of [3, 8, 6, 15, 11, 10], then swaps indices 6 with 2 and 2 with 0, yielding [2, 8, 3, 15, 11, 10, 6]. Pushing into [] gives [2].",
+      "caption": "Min-heap push stops at the root or when parent is at most child.",
+      "reviewed": true,
+      "existing_check_names": [
+        "heap-push"
+      ]
+    },
+    {
+      "lesson": "12-heaps-and-priority/06-heap-pop",
+      "file": "heaps-and-priority-heap-pop-trace.svg",
+      "editable": "heaps-and-priority-heap-pop-trace.excalidraw",
+      "svg_sha256": "18e538fb83258680afb1d408a1a34436a8e71c4a8722ba6073384ea8e0ff7794",
+      "editable_sha256": "352cac3fa167649fae9864b64ffa6894bacbe6eb46ff6d75485aadb3e425318a",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for heap pop in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Heap pop"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "10"
+        },
+        {
+          "tag": "text",
+          "text": "8"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "15"
+        },
+        {
+          "tag": "text",
+          "text": "11"
+        },
+        {
+          "tag": "text",
+          "text": "Return 3; move last value 10 to root."
+        },
+        {
+          "tag": "text",
+          "text": "Swap with smaller child 6"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "8"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "10"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "15"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "11"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "Stop: both remaining subtrees satisfy order."
+        },
+        {
+          "tag": "text",
+          "text": "Singleton [3] → []; return 3."
+        },
+        {
+          "tag": "text",
+          "text": "Empty pop has no value (IndexError)."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Pop returns 3, moves the last value 10 to the root, then swaps it with smaller child 6 to leave [6, 8, 10, 15, 11]. Popping [3] returns 3 and leaves [].",
+      "caption": "Min-heap pop restores parent-child order; popping an empty heap raises IndexError.",
+      "reviewed": true,
+      "existing_check_names": [
+        "heap-pop"
+      ]
+    },
+    {
+      "lesson": "12-heaps-and-priority/07-bottom-up-heapify",
+      "file": "heaps-and-priority-bottom-up-heapify-trace.svg",
+      "editable": "heaps-and-priority-bottom-up-heapify-trace.excalidraw",
+      "svg_sha256": "a3d6be7941fba4ce52acee4dce9f65330f45b8836a7749d47a0264a73708965f",
+      "editable_sha256": "257cca1bbe5d4d515c24a7872c57dc465e17a8ea39b8307d9d1c9edadbcd81de",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for bottom up heapify in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Build a heap from the bottom"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "12"
+        },
+        {
+          "tag": "text",
+          "text": "7"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "i = 2: swap 9 with its only child 4"
+        },
+        {
+          "tag": "text",
+          "text": "12"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "7"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "i = 1: swap 7 with smaller child 2"
+        },
+        {
+          "tag": "text",
+          "text": "12"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "7"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "i = 0: 12 moves down through 2, then 5"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "7"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "12"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "Leaves need no repair; bottom-up build is O(n)."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Heapify starts with [12, 7, 9, 2, 5, 4]. At index 2, 9 swaps with 4; at index 1, 7 swaps with 2; at index 0, 12 moves through 2 then 5, yielding [2, 5, 4, 7, 12, 9].",
+      "caption": "Bottom-up min-heap construction repairs parents after their children; leaves need no repair.",
+      "reviewed": true,
+      "existing_check_names": [
+        "bottom-up-heapify"
+      ]
+    },
+    {
+      "lesson": "12-heaps-and-priority/08-max-heap",
+      "file": "heaps-and-priority-max-heap-trace.svg",
+      "editable": "heaps-and-priority-max-heap-trace.excalidraw",
+      "svg_sha256": "54110e6a790cdf90acc600c0d19b32f6d46bf20b64a93c95ec89f5cdb9c43fdf",
+      "editable_sha256": "dcf24f33431f3983ff540643a98a0c8c2898ea7653f264b3cc20db0924338c65",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for max heap in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Max heap"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "16"
+        },
+        {
+          "tag": "text",
+          "text": "12"
+        },
+        {
+          "tag": "text",
+          "text": "14"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "7"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "Max-heap array: parent ≥ children"
+        },
+        {
+          "tag": "text",
+          "text": "16"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "12"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "14"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "7"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "Remove 16; move 9 up; swap with 14"
+        },
+        {
+          "tag": "text",
+          "text": "14"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "12"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "7"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "Choose the LARGER child while sifting down."
+        },
+        {
+          "tag": "text",
+          "text": "A max-heap is still not a sorted array."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Max-heap [16, 12, 14, 5, 7, 9] removes 16, moves 9 to the root, then swaps with larger child 14, leaving [14, 12, 9, 5, 7]. Each parent remains at least its children.",
+      "caption": "Max-heap sift-down chooses the larger child; the array is not sorted.",
+      "reviewed": true,
+      "existing_check_names": [
+        "max-heap"
+      ]
+    },
+    {
+      "lesson": "12-heaps-and-priority/09-heap-sort",
+      "file": "heaps-and-priority-heap-sort-trace.svg",
+      "editable": "heaps-and-priority-heap-sort-trace.excalidraw",
+      "svg_sha256": "bc4cade3eab717091f117e0f2270e2cd8bb46bbef763666dbb6f558aee96396e",
+      "editable_sha256": "58eb272016c61210d00f241a3fbc696ef059845262fd823986ddb670d79b7aeb",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for heap sort in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Heap sort"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "16"
+        },
+        {
+          "tag": "text",
+          "text": "12"
+        },
+        {
+          "tag": "text",
+          "text": "14"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "7"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "Swap root with last; exclude last slot"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "12"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "14"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "7"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "16"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "Repair only the active prefix"
+        },
+        {
+          "tag": "text",
+          "text": "14"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "12"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "7"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "16"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "Repeat: ascending sorted result"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "7"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "12"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "14"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "16"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "From max-heap [16, 12, 14, 5, 7, 9], heap sort swaps 16 to the last slot and repairs the active prefix to [14, 12, 9, 5, 7]. Repeating yields [5, 7, 9, 12, 14, 16].",
+      "caption": "The sorted suffix is excluded from further heap repairs.",
+      "reviewed": true,
+      "existing_check_names": [
+        "heap-sort"
+      ]
+    },
+    {
+      "lesson": "12-heaps-and-priority/12-priority-updates",
+      "file": "heaps-and-priority-priority-updates-trace.svg",
+      "editable": "heaps-and-priority-priority-updates-trace.excalidraw",
+      "svg_sha256": "11988723eb5a7074c5566871c08af4307795d765ea470f305b01a1d5dde938d8",
+      "editable_sha256": "e6622ef9d108bc4fbe2220c701a747141bb2d1f9c6c97df65ac9a45bb07e6f8c",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for priority updates in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Priority updates"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "2:B"
+        },
+        {
+          "tag": "text",
+          "text": "7:A"
+        },
+        {
+          "tag": "text",
+          "text": "5:C"
+        },
+        {
+          "tag": "text",
+          "text": "New priority A=1; old (7,A) stays stale"
+        },
+        {
+          "tag": "text",
+          "text": "1:A"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "2:B"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "5:C"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "7:A"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "Current priorities: A=1, B=2, C=5"
+        },
+        {
+          "tag": "text",
+          "text": "Pop 1:A, then 2:B, then 5:C."
+        },
+        {
+          "tag": "text",
+          "text": "When 7:A reaches root, discard it."
+        },
+        {
+          "tag": "text",
+          "text": "Valid removal order"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Updating A from priority 7 to 1 leaves heap [(1,A), (2,B), (5,C), (7,A)]. Valid pops return A, B, C; the stale (7,A) entry is discarded when it reaches the root.",
+      "caption": "Lazy priority updates retain old entries and check them against current priorities.",
+      "reviewed": true,
+      "existing_check_names": [
+        "priority-updates"
+      ]
+    },
+    {
+      "lesson": "12-heaps-and-priority/13-top-k-stream",
+      "file": "heaps-and-priority-top-k-stream-trace.svg",
+      "editable": "heaps-and-priority-top-k-stream-trace.excalidraw",
+      "svg_sha256": "fbb4109bc2ff0f049588ee94dec93e86751681ec3188b5c1a1f35bd9bed93f0d",
+      "editable_sha256": "807df10869b372e375bbb0581d2de28239fae0d5c491482c3ae6dbde12233ed4",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for top k stream in Heaps and priority queues. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Top k stream"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "7"
+        },
+        {
+          "tag": "text",
+          "text": "12"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "k=3: retain largest values; minimum is 7"
+        },
+        {
+          "tag": "text",
+          "text": "7"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "12"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "Incoming 5 rejected: heap unchanged"
+        },
+        {
+          "tag": "text",
+          "text": "7"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "12"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "Incoming 14 replaces minimum 7"
+        },
+        {
+          "tag": "text",
+          "text": "9"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "12"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "14"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "Before k values arrive, push without evicting."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "With k=3, min-heap [7, 12, 9] rejects incoming 5 without change. Incoming 14 replaces minimum 7, producing [9, 12, 14], the three largest retained values.",
+      "caption": "Before k values arrive, push without eviction; afterward compare against the minimum.",
+      "reviewed": true,
+      "existing_check_names": [
+        "top-k-stream"
+      ]
+    },
+    {
+      "lesson": "13-graph-models/01-adjacency-list",
+      "file": "graph-models-adjacency-list-trace.svg",
+      "editable": "graph-models-adjacency-list-trace.excalidraw",
+      "svg_sha256": "11fce92b8b83f391c111264078b23c6f511ec13ca4ab9b9ac0bb593ac50191b7",
+      "editable_sha256": "acceddc62bb3eaa6532cc9f407cc5473cad3ce9e5136dfaba55c77e459843bdc",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for adjacency list in Represent and build graphs. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Adjacency list"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "A: []"
+        },
+        {
+          "tag": "text",
+          "text": "B: []"
+        },
+        {
+          "tag": "text",
+          "text": "C: []"
+        },
+        {
+          "tag": "text",
+          "text": "Input labels: A, B, A, C"
+        },
+        {
+          "tag": "text",
+          "text": "One key per distinct vertex; no edges yet."
+        },
+        {
+          "tag": "text",
+          "text": "Three independent empty neighbor lists."
+        },
+        {
+          "tag": "text",
+          "text": "Isolated C is present; missing Z is absent."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Labels A, B, A, C create keys A, B and C, each with its own empty neighbor list. Duplicate A adds no key; isolated C exists while missing Z does not.",
+      "caption": "Adjacency-list construction deduplicates labels and creates no edges.",
+      "reviewed": true,
+      "existing_check_names": [
+        "adjacency-list"
+      ]
+    },
+    {
+      "lesson": "13-graph-models/02-add-vertex",
+      "file": "graph-models-add-vertex-trace.svg",
+      "editable": "graph-models-add-vertex-trace.excalidraw",
+      "svg_sha256": "a15b6a23fba8016f389d1f8d92c3cb5a618d074e73eb701c17ed699a6d196ad6",
+      "editable_sha256": "7af96ba88871c7ad566bbf90c6c635d4bc3374ff339214ba95d58602de325e53",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for add vertex in Represent and build graphs. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Add vertex"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "Before: A:[B], B:[A]"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "Add C → True; C gets a fresh empty list."
+        },
+        {
+          "tag": "text",
+          "text": "Add A again → False; preserve A:[B]."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Starting with A:[B] and B:[A], adding C returns True and creates C:[]. Adding A again returns False and preserves A:[B], so the existing edge is not lost.",
+      "caption": "Each new vertex gets a fresh list; adding an existing vertex leaves its neighbors intact.",
+      "reviewed": true,
+      "existing_check_names": [
+        "add-vertex"
+      ]
+    },
+    {
+      "lesson": "13-graph-models/03-add-undirected-edge",
+      "file": "graph-models-add-undirected-edge-trace.svg",
+      "editable": "graph-models-add-undirected-edge-trace.excalidraw",
+      "svg_sha256": "3177d781bfa30e4319cb9199db33fcc7e0fd7070564af76f852dd512b7056463",
+      "editable_sha256": "a0f01c579038c0ca4318d9709bbef97bee7f432a4067eab7deff28bf88990eb5",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for add undirected edge in Represent and build graphs. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Store both edge directions"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "Before: A:[], B:[], C:[]"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "Add A—B → True: A:[B], B:[A], C:[]"
+        },
+        {
+          "tag": "text",
+          "text": "Repeat B—A → False; no parallel edge."
+        },
+        {
+          "tag": "text",
+          "text": "Missing endpoint / self-loop: reject first."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Adding A-B to A:[], B:[], C:[] returns True and stores A:[B], B:[A], C:[]. Repeating B-A returns False without adding a parallel edge.",
+      "caption": "Simple undirected graph: reject missing endpoints and self-loops before mutation.",
+      "reviewed": true,
+      "existing_check_names": [
+        "add-undirected-edge"
+      ]
+    },
+    {
+      "lesson": "13-graph-models/04-remove-edge",
+      "file": "graph-models-remove-edge-trace.svg",
+      "editable": "graph-models-remove-edge-trace.excalidraw",
+      "svg_sha256": "adee25b673dbb6b94e387f7e072fcd08dd2db3b2511ccfd6f64f2400d3a587c9",
+      "editable_sha256": "19720c6c6966263174f0a8b58d098b8fba76ecbac71086b7e1bae8d05a164622",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for remove edge in Represent and build graphs. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Remove edge"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "Remove A—B, but keep both vertex keys."
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "After: A:[C], B:[], C:[A]"
+        },
+        {
+          "tag": "text",
+          "text": "Repeat removal → False; state unchanged."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Removing A-B leaves A:[C], B:[], C:[A]: both directions of A-B disappear, but vertex B and edge A-C remain. Repeating the removal returns False without changing the graph.",
+      "caption": "Undirected edge removal keeps vertex keys and removes both neighbor references.",
+      "reviewed": true,
+      "existing_check_names": [
+        "remove-edge"
+      ]
+    },
+    {
+      "lesson": "13-graph-models/05-remove-vertex",
+      "file": "graph-models-remove-vertex-trace.svg",
+      "editable": "graph-models-remove-vertex-trace.excalidraw",
+      "svg_sha256": "8c7ecea3cb9867a83591ac4080b3423a54a028421179e1ccdbb9ad3b9217188f",
+      "editable_sha256": "9b0ba8886e6bfb816e9de2df09ab7ceca5df78401f81da480fb399ae547208c1",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for remove vertex in Represent and build graphs. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Remove vertex"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "Remove A: snapshot its neighbors [B, C]."
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "Remove A from B and C; then delete key A."
+        },
+        {
+          "tag": "text",
+          "text": "After: B:[D], C:[], D:[B]"
+        },
+        {
+          "tag": "text",
+          "text": "Do not iterate the live shrinking list."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Removing A snapshots neighbors [B, C], removes A from both lists, then deletes key A. The result is B:[D], C:[], D:[B], with edge B-D preserved and C isolated.",
+      "caption": "Use a neighbor snapshot rather than iterating a list while shrinking it.",
+      "reviewed": true,
+      "existing_check_names": [
+        "remove-vertex"
+      ]
+    },
+    {
+      "lesson": "13-graph-models/06-directed-edges",
+      "file": "graph-models-directed-edges-trace.svg",
+      "editable": "graph-models-directed-edges-trace.excalidraw",
+      "svg_sha256": "8bebe8301ca55f838f0c3ab8a2556c02dea9a04c4a80c8eddbfdfb73daa4f6b8",
+      "editable_sha256": "85064acb72760bc7d26a042904cdfe4d1a87659f3e6d1fc9b7a5964bd3be3136",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for directed edges in Represent and build graphs. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Directed edges"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "A: ['B']"
+        },
+        {
+          "tag": "text",
+          "text": "B: ['D']"
+        },
+        {
+          "tag": "text",
+          "text": "C: []"
+        },
+        {
+          "tag": "text",
+          "text": "D: []"
+        },
+        {
+          "tag": "text",
+          "text": "Only outgoing neighbors are stored."
+        },
+        {
+          "tag": "text",
+          "text": "A → B does not imply B → A."
+        },
+        {
+          "tag": "text",
+          "text": "Adjacency matrix (rows → columns A B D)"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Directed edges A to B and B to D give A:[B], B:[D], C:[], D:[]. The A,B,D matrix is [[0,1,0],[0,0,1],[0,0,0]]; reverse edges are absent.",
+      "caption": "Lists store outgoing neighbors; the displayed matrix omits isolated C.",
+      "reviewed": true,
+      "existing_check_names": [
+        "directed-edges"
+      ]
+    },
+    {
+      "lesson": "14-graph-traversal/01-bfs-frontier",
+      "file": "graph-traversal-bfs-frontier-trace.svg",
+      "editable": "graph-traversal-bfs-frontier-trace.excalidraw",
+      "svg_sha256": "bb3cffec8731c9d3f38d1ac65207bcc042aad1725801939d8800a1471823f95f",
+      "editable_sha256": "bd4e772f80ad90eb9cff4c94c50b7fbb22bece264c141a50811d848cf937f845",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for bfs frontier in Breadth-first and depth-first traversal. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Bfs frontier"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "Z"
+        },
+        {
+          "tag": "text",
+          "text": "After A: queue front → back"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "After B: C was already waiting"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "Mark D on enqueue; C must not enqueue D again."
+        },
+        {
+          "tag": "text",
+          "text": "The frontier spans adjacent distance layers."
+        },
+        {
+          "tag": "text",
+          "text": "Queue memory follows breadth, not depth."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "BFS from A has queue [B, C] after A, then [C, D] after B. D is marked when enqueued, so C does not enqueue it again; the queue spans adjacent distance layers.",
+      "caption": "FIFO frontier has its front at left; discover B before C and mark on enqueue.",
+      "reviewed": true,
+      "existing_check_names": [
+        "bfs-frontier"
+      ]
+    },
+    {
+      "lesson": "14-graph-traversal/02-bfs-traversal",
+      "file": "graph-traversal-bfs-traversal-trace.svg",
+      "editable": "graph-traversal-bfs-traversal-trace.excalidraw",
+      "svg_sha256": "8817c2737bb169df506013e2db5c9c3cb07ca8aa2f39a423ba47b4e10f3cce35",
+      "editable_sha256": "afd5d954303cb600e7165fdea6dcd5e6eab905cbd817ad564c5d4d40c311c722",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for bfs traversal in Breadth-first and depth-first traversal. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Bfs traversal"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "Z"
+        },
+        {
+          "tag": "text",
+          "text": "Visit order from A; B before C"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "Queue after each visit"
+        },
+        {
+          "tag": "text",
+          "text": "B C"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "C D"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "empty"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "Visited on discovery: A, B, C, D"
+        },
+        {
+          "tag": "text",
+          "text": "Z is unreachable from A and never enqueued."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "BFS from A visits [A, B, C, D]. After each visit the queue is [B,C], [C,D], [D], then []; isolated Z is never enqueued.",
+      "caption": "Visit B before C and mark vertices on discovery; traverse only A's reachable component.",
+      "reviewed": true,
+      "existing_check_names": [
+        "bfs-traversal"
+      ]
+    },
+    {
+      "lesson": "14-graph-traversal/04-bfs-path",
+      "file": "graph-traversal-bfs-path-trace.svg",
+      "editable": "graph-traversal-bfs-path-trace.excalidraw",
+      "svg_sha256": "460a556f7a42f0c2bd5e562c12966fcacb70ec9063ecb85eba7cb8500e79df6a",
+      "editable_sha256": "41b53578d5f376d746c631a5007ab2da11da7540c862e2501f48ab81e5124023",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for bfs path in Breadth-first and depth-first traversal. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Bfs path"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "Z"
+        },
+        {
+          "tag": "text",
+          "text": "Predecessors of (A, B, C, D)"
+        },
+        {
+          "tag": "text",
+          "text": "None"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "Follow D → B → A, then reverse"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "Shortest path has 2 edges; A—C—D ties."
+        },
+        {
+          "tag": "text",
+          "text": "First discovery with B first chooses B."
+        },
+        {
+          "tag": "text",
+          "text": "A to A: [A]; A to Z: no path."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Predecessors for A,B,C,D are [None,A,A,B]. Following D to B to A and reversing gives [A,B,D], a shortest path of two edges; A-C-D ties. A to A gives [A]; Z is unreachable.",
+      "caption": "Unweighted BFS records first discovery; exploring B before C resolves the tie.",
+      "reviewed": true,
+      "existing_check_names": [
+        "bfs-path"
+      ]
+    },
+    {
+      "lesson": "14-graph-traversal/05-connected-components",
+      "file": "graph-traversal-connected-components-trace.svg",
+      "editable": "graph-traversal-connected-components-trace.excalidraw",
+      "svg_sha256": "592283996d8a4ee90875e3636dd5001296b5f32b43ac1e177a575cc4bcb46586",
+      "editable_sha256": "94b26cd7c4ad6ec319e29a71e2ab5c9abbc5e25828db20607b0a14092af14733",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for connected components in Breadth-first and depth-first traversal. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Restart for each component"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "Z"
+        },
+        {
+          "tag": "text",
+          "text": "Outer scan restarts at unvisited C, then Z"
+        },
+        {
+          "tag": "text",
+          "text": "A B"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "C D"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "Z"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "Three components; Z counts despite no edges."
+        },
+        {
+          "tag": "text",
+          "text": "Reuse one visited set across all starts."
+        },
+        {
+          "tag": "text",
+          "text": "Empty graph has zero components."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "A shared visited set groups vertices into [A,B], [C,D] and [Z]. After finishing A's component, the outer scan restarts at C and then Z, giving three components.",
+      "caption": "Undirected graph; isolated vertices count, and an empty graph has zero components.",
+      "reviewed": true,
+      "existing_check_names": [
+        "connected-components"
+      ]
+    },
+    {
+      "lesson": "14-graph-traversal/06-dfs-recursive",
+      "file": "graph-traversal-dfs-recursive-trace.svg",
+      "editable": "graph-traversal-dfs-recursive-trace.excalidraw",
+      "svg_sha256": "4cfaae553cf7fcbf659a5361e9d816b86fe2b78d60ede99cef78571d65b7c598",
+      "editable_sha256": "5fade5e542621bd3b5d7081acba16a00ae8e24557a1d0d9984e0ad79a62299b6",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for dfs recursive in Breadth-first and depth-first traversal. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Dfs recursive"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "Z"
+        },
+        {
+          "tag": "text",
+          "text": "Active calls at deepest point"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "Discovery order (neighbors alphabetical)"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "C sees only visited neighbors; return to D."
+        },
+        {
+          "tag": "text",
+          "text": "Then return to B and A; skip visited C."
+        },
+        {
+          "tag": "text",
+          "text": "Mark before recursing to avoid cycling."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Recursive DFS discovers [A,B,D,C], with all four calls active at the deepest point. C has only visited neighbors, so calls return to D, B and A; A then skips visited C.",
+      "caption": "Alphabetical neighbors; mark a vertex before recursion to avoid cycling.",
+      "reviewed": true,
+      "existing_check_names": [
+        "dfs-recursive"
+      ]
+    },
+    {
+      "lesson": "14-graph-traversal/07-dfs-iterative",
+      "file": "graph-traversal-dfs-iterative-trace.svg",
+      "editable": "graph-traversal-dfs-iterative-trace.excalidraw",
+      "svg_sha256": "008fec77f3c0f2a8ba821853e727c65075fffa3d5f93887c563a8a0dea92561d",
+      "editable_sha256": "1e0d35d1865bb81290a3e083f3e4a85a0025724ba0914631d9bc474e0ff2a166",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for dfs iterative in Breadth-first and depth-first traversal. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Dfs iterative"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "Z"
+        },
+        {
+          "tag": "text",
+          "text": "Stack bottom → top; pop from right"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "Pop B; push D (mark on push)"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "Pop D: C already discovered; do not push again."
+        },
+        {
+          "tag": "text",
+          "text": "Visit order: A, B, D, C; parent(C) stays A."
+        },
+        {
+          "tag": "text",
+          "text": "Same visit order need not mean same DFS tree."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Iterative DFS changes stack [C,B] to [C,D] after popping B. D does not push already discovered C; visits are [A,B,D,C], but C's parent remains A rather than D.",
+      "caption": "Stack top is at right; mark on push. Equal visit orders need not give equal DFS trees.",
+      "reviewed": true,
+      "existing_check_names": [
+        "dfs-iterative"
+      ]
+    },
+    {
+      "lesson": "14-graph-traversal/08-undirected-cycle",
+      "file": "graph-traversal-undirected-cycle-trace.svg",
+      "editable": "graph-traversal-undirected-cycle-trace.excalidraw",
+      "svg_sha256": "afbac44f22971ef95b2d2ef728482d9147da43d62cbd3fb9364876d0cc14fd11",
+      "editable_sha256": "e0f76361950cae481b22aeeccd552e14f7e6f6f4b14818b71e869cd1ce6ffc80",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for undirected cycle in Breadth-first and depth-first traversal. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Undirected cycle"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "DFS active path (root at left)"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "At C: D is its parent, so ignore C—D."
+        },
+        {
+          "tag": "text",
+          "text": "A is visited and is NOT the parent of C."
+        },
+        {
+          "tag": "text",
+          "text": "C—A closes cycle A—B—D—C—A."
+        },
+        {
+          "tag": "text",
+          "text": "A single edge to a parent is not a cycle."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "On DFS path A-B-D-C, C ignores its edge to parent D but finds visited non-parent A. Edge C-A closes cycle A-B-D-C-A, so cycle detection returns True.",
+      "caption": "Simple undirected graph; the edge back to a node's parent alone is not a cycle.",
+      "reviewed": true,
+      "existing_check_names": [
+        "undirected-cycle"
+      ]
+    },
+    {
+      "lesson": "14-graph-traversal/10-topological-order",
+      "file": "graph-traversal-topological-order-trace.svg",
+      "editable": "graph-traversal-topological-order-trace.excalidraw",
+      "svg_sha256": "b85c9b7c6e8889aab023b935b7825fbdb96996a8d75720d3a83ace6c614fbe29",
+      "editable_sha256": "4cad717354d915a86e3ff252b8ac2eae086b240502cb0b96812a761a8614627d",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for topological order in Breadth-first and depth-first traversal. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Topological order"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "Initial indegrees (A, B, C, D)"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "After removing A: ready queue (front left)"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "Remove B then C; D becomes ready"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "If output has fewer than V nodes: a cycle."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Indegrees for A,B,C,D start at [0,1,1,2]. Removing A makes [B,C] ready; removing B then C makes D ready, producing topological order [A,B,C,D].",
+      "caption": "Kahn's algorithm processes zero-indegree vertices; fewer than V outputs signals a directed cycle.",
+      "reviewed": true,
+      "existing_check_names": [
+        "topological-order"
+      ]
+    },
+    {
+      "lesson": "15-shortest-paths/01-weighted-adjacency",
+      "file": "shortest-paths-weighted-adjacency-trace.svg",
+      "editable": "shortest-paths-weighted-adjacency-trace.excalidraw",
+      "svg_sha256": "abf6cb9118988a4cb02e224b8a9c41b884f5037637ce60ee944cf7312c7f496b",
+      "editable_sha256": "2d86525cf55e3b0520c111ea5fb110e28eba62ac4724475c394f6f51cd31bf0f",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for weighted adjacency in Weighted graphs and shortest paths. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Weighted adjacency"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "Z"
+        },
+        {
+          "tag": "text",
+          "text": "A: [('B', 6), ('C', 2)]"
+        },
+        {
+          "tag": "text",
+          "text": "B: [('D', 1)]"
+        },
+        {
+          "tag": "text",
+          "text": "C: [('D', 3)]"
+        },
+        {
+          "tag": "text",
+          "text": "D: []"
+        },
+        {
+          "tag": "text",
+          "text": "Z: []"
+        },
+        {
+          "tag": "text",
+          "text": "Each outgoing entry stores neighbor AND weight."
+        },
+        {
+          "tag": "text",
+          "text": "D has incoming edges, but no outgoing edges."
+        },
+        {
+          "tag": "text",
+          "text": "Z is isolated. No missing reverse arcs are added."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Outgoing weighted lists are A:[(B,6),(C,2)], B:[(D,1)], C:[(D,3)], D:[] and Z:[]. D has incoming edges but no outgoing edges; Z is isolated.",
+      "caption": "Directed adjacency entries pair neighbor with weight; do not add reverse arcs.",
+      "reviewed": true,
+      "existing_check_names": [
+        "weighted-adjacency"
+      ]
+    },
+    {
+      "lesson": "15-shortest-paths/02-path-cost",
+      "file": "shortest-paths-path-cost-trace.svg",
+      "editable": "shortest-paths-path-cost-trace.excalidraw",
+      "svg_sha256": "a1200f9ac56a4c1272186f88aee07720d20d04a317c5f6c3eabd9b157c640daf",
+      "editable_sha256": "77185921d1ac38a447794148132af3d78e07ad401d84b431ae3522b81c3bdfe1",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for path cost in Weighted graphs and shortest paths. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Path cost"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "Z"
+        },
+        {
+          "tag": "text",
+          "text": "A → B → D: cumulative costs"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "7"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "A → C → D: cumulative costs"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "Both paths use 2 edges; weights break the tie."
+        },
+        {
+          "tag": "text",
+          "text": "Cost sums edges, not visited vertices."
+        },
+        {
+          "tag": "text",
+          "text": "A one-vertex path has cost 0."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Path A-B-D accumulates costs [0,6,7]; A-C-D accumulates [0,2,5]. Both use two edges, but A-C-D costs 5 rather than 7; a one-vertex path costs 0.",
+      "caption": "Path cost sums directed edge weights, not vertices or edge count.",
+      "reviewed": true,
+      "existing_check_names": [
+        "path-cost"
+      ]
+    },
+    {
+      "lesson": "15-shortest-paths/04-dijkstra-scan",
+      "file": "shortest-paths-dijkstra-scan-trace.svg",
+      "editable": "shortest-paths-dijkstra-scan-trace.excalidraw",
+      "svg_sha256": "a60c03911fb20fa8af7f659307439dacc576876f17b26c80ccaea4cdb1d91353",
+      "editable_sha256": "afd82a29b42b6f4fb5a8c7be5838ef2e66e42d8fdf34593d995feb16020e608e",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for dijkstra scan in Weighted graphs and shortest paths. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Dijkstra scan"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "Z"
+        },
+        {
+          "tag": "text",
+          "text": "Distances after settling A (A B C D Z)"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "∞"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "∞"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "Scan chooses C=2; relax C→D (2+3)"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "5"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "∞"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "Settle D=5 before B=6; stop at ∞"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "Require nonnegative weights; scan costs O(V²+E)."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "After settling A, distances for A,B,C,D,Z are [0,6,2,infinity,infinity]. Settling C relaxes D to 5; settlement order is A,C,D,B. Z stays at infinity and the scan stops.",
+      "caption": "Dijkstra requires nonnegative weights and selects the smallest unsettled distance.",
+      "reviewed": true,
+      "existing_check_names": [
+        "dijkstra-scan"
+      ]
+    },
+    {
+      "lesson": "15-shortest-paths/06-reconstruct-weighted-path",
+      "file": "shortest-paths-reconstruct-weighted-path-trace.svg",
+      "editable": "shortest-paths-reconstruct-weighted-path-trace.excalidraw",
+      "svg_sha256": "7e2f4d817350bc95c983c56e90935c1b0d8b5cff57284b1de291f5caad0fab2d",
+      "editable_sha256": "5e8227dbce6303c13442d68d82ac976cb5b0c0592f445a12a156a5923056bccb",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for reconstruct weighted path in Weighted graphs and shortest paths. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Recover the weighted path"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "6"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "Z"
+        },
+        {
+          "tag": "text",
+          "text": "Predecessor table (A B C D Z)"
+        },
+        {
+          "tag": "text",
+          "text": "None"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "None"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "Walk backward from D"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "Reverse once: returned path"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "Check reachability before following predecessors."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Predecessors for A,B,C,D,Z are [None,A,A,C,None]. Walking backward from D gives [D,C,A]; reversing once returns [A,C,D]. Reachability must be checked before following predecessors.",
+      "caption": "Use the weighted search's predecessor table; None alone does not distinguish source from unreachable.",
+      "reviewed": true,
+      "existing_check_names": [
+        "reconstruct-weighted-path"
+      ]
+    },
+    {
+      "lesson": "15-shortest-paths/07-unreachable-and-zero-weights",
+      "file": "shortest-paths-unreachable-and-zero-weights-trace.svg",
+      "editable": "shortest-paths-unreachable-and-zero-weights-trace.excalidraw",
+      "svg_sha256": "f29760a2132dff02b3a2cf667dac2077f278cf77bcea3e8646096c7d78393db5",
+      "editable_sha256": "6726eeacf1e29b6c242ad4f569a3c38cde793780cc1d979fe9899d3926e81b83",
+      "source_text": [
+        {
+          "tag": "title",
+          "text": "Operation-specific worked trace for unreachable and zero weights in Weighted graphs and shortest paths. Show concrete values and state before/after, actual pointers/indices/frontier when relevant, edge case where it reveals invariant. Peek MUST show unchanged structure and returned value; insert/delete show head/tail updates, including empty/singleton transitions. Do not use generic process boxes or repeat prior art without a distinct mechanism."
+        },
+        {
+          "tag": "text",
+          "text": "Zero weight is still an edge"
+        },
+        {
+          "tag": "text",
+          "text": "Worked trace • original illustrative values"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "C"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "Z"
+        },
+        {
+          "tag": "text",
+          "text": "Final distance from A (A B C D Z)"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "3"
+        },
+        {
+          "tag": "text",
+          "text": "∞"
+        },
+        {
+          "tag": "text",
+          "text": "4"
+        },
+        {
+          "tag": "text",
+          "text": "Zero-cost path still contains real edges"
+        },
+        {
+          "tag": "text",
+          "text": "A"
+        },
+        {
+          "tag": "text",
+          "text": "0"
+        },
+        {
+          "tag": "text",
+          "text": "B"
+        },
+        {
+          "tag": "text",
+          "text": "1"
+        },
+        {
+          "tag": "text",
+          "text": "D"
+        },
+        {
+          "tag": "text",
+          "text": "2"
+        },
+        {
+          "tag": "text",
+          "text": "A→B has weight 0; absent A→Z is not 0."
+        },
+        {
+          "tag": "text",
+          "text": "Z stays ∞ with no predecessor; no path."
+        },
+        {
+          "tag": "text",
+          "text": "Relax only strict improvements to avoid repeats."
+        },
+        {
+          "tag": "text",
+          "text": "Independent example • not an exercise fixture"
+        }
+      ],
+      "alt": "Distances from A for A,B,C,D,Z are [0,0,4,0,infinity]. Real zero-weight edges form path A-B-D at cost 0; absent A-Z leaves Z unreachable with no predecessor.",
+      "caption": "Zero weight is a valid edge, not absence; relax only strict distance improvements.",
+      "reviewed": true,
+      "existing_check_names": [
+        "unreachable-and-zero-weights"
+      ]
+    }
+  ]
+}
