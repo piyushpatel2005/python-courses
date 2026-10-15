@@ -1,4 +1,4 @@
-class Tool:
+class GameItem:
     def __init__(self, asset_code, name):
         self._asset_code = asset_code
         self.name = name
@@ -9,7 +9,7 @@ class Tool:
 # Supplied console probe: keep this below your implementation.
 if __name__ == "__main__":
     try:
-        sample = Tool("A-7", "drill")
+        sample = GameItem("A-7", "lantern")
         print("Asset code:", sample.asset_code)
         try:
             sample.asset_code = "replacement"

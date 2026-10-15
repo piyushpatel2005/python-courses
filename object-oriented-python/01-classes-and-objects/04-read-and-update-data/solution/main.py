@@ -1,19 +1,19 @@
-class Tool:
+class GameItem:
     pass
 
-def make_tool(uses):
-    tool = Tool()
-    tool.uses = uses
-    return tool
+def make_item(uses):
+    item = GameItem()
+    item.uses = uses
+    return item
 
-def record_uses(tool, amount):
-    tool.uses += amount
+def record_uses(item, amount):
+    item.uses += amount
 
 
 # Supplied console probe: keep this below your implementation.
 if __name__ == "__main__":
     try:
-        sample = make_tool(3)
+        sample = make_item(3)
         record_uses(sample, 2)
         record_uses(sample, 4)
         print("Recorded uses:", sample.uses)

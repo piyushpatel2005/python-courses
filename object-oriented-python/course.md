@@ -1,7 +1,7 @@
 ---
 slug: object-oriented-python
 title: Object Oriented Programming with Python
-description: Learn Python object-oriented programming by writing classes, implementing protocols, and building animal rescue, banking, and console shop projects.
+description: Learn Python object-oriented programming through game-studio examples, then apply the same ideas in animal rescue, banking, and console shop projects.
 language: python
 summary: Build useful Python objects through 112 coding lessons, with focused tasks, tests, reference solutions, and three staged projects.
 seo_title: Object Oriented Programming with Python
@@ -47,9 +47,11 @@ modules:
 
 # Object Oriented Programming with Python
 
-A rescue register needs to remember each animal's needs. A bank account needs to protect its balance. A shopping cart needs to keep an order accurate even after the cart changes. These are the kinds of problems you will work on here.
+Mosslight Studio is building Lantern Vale, a small exploration game. An item needs to remember how often it has been used. A player needs an inventory that belongs to them alone. A quest needs a clear state, and a character's stats need rules that keep invalid values out. You will build these kinds of objects while learning Python OOP.
 
-You will write the code in every lesson. Start with a small class, then give objects data and behavior, choose clear interfaces, and connect several objects into a working program. The explanations introduce the syntax beside the editor; the starter leaves the lesson's new behavior for you to implement.
+The studio and game are fictional. You do not need to know a game engine or write graphics code: the exercises use small Python objects and console output so you can see exactly what changes.
+
+You will write code in every lesson. Start with a simple game item, give objects data and behavior, then connect them through clear interfaces. The explanations introduce the syntax beside the editor; the starter leaves the new behavior for you to implement. The projects deliberately try other settings, including a rescue register, a banking model, and an e-commerce shop. Those changes of setting let you use the same OOP ideas without relying on familiar game names.
 
 ## Before you start
 
@@ -69,10 +71,10 @@ Each lesson is self-contained. In a project, the next starter includes the prece
 
 ## Course route
 
-Classes and object state come first. Properties, factories, and methods help you design a usable interface. Special methods connect your objects to Python operations such as addition, comparison, formatting, and length.
+Classes and object state come first: two game items can share a class without sharing their changing data. Properties, factories, and methods give the studio a consistent way to work with those objects. Special methods let game values participate in ordinary Python operations such as addition, comparison, formatting, and length.
 
-Inheritance comes before the animal project so you can build its hierarchy with tools you have already practiced. Composition provides an alternative when an object needs a helper rather than a parent. The banking project puts both ideas to work.
+Inheritance and composition show two different ways to reuse behavior. You will practice them with game objects before applying them to the animal and banking projects. Each project supplies the earlier completed stages, so the change of setting does not require starting from an empty file.
 
-Enums give a fixed set of states names. Dataclasses reduce repetitive record code. Descriptors explain how managed attributes work, including properties and bound methods. Exceptions and abstract contracts prepare you to make errors and expectations explicit in the final shop project.
+Back at the studio, enums name the states an object can be in, and dataclasses describe small game records. Descriptors explain managed attributes, including properties and bound methods. Exceptions and abstract contracts help you make failures and expectations explicit. The final console shop brings these ideas together in an e-commerce setting.
 
 The course has 112 coding lessons across ten sections. Some lessons ask for only one method; later project stages ask you to connect behavior you have already built. The aim is to make each new responsibility small enough to reason about and test.

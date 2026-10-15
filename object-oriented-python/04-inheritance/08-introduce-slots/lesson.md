@@ -6,14 +6,14 @@ language: "python"
 lesson_type: "coding"
 summary: "Declare a fixed attribute layout and reject accidental extra fields."
 seo_title: "Reserve attributes with slots | Object-oriented Python"
-seo_description: "Declare a fixed attribute layout and reject accidental extra fields. Practice with runnable Python code and behavioral checks."
+seo_description: "Declare a fixed attribute layout and reject accidental extra fields."
 seo_keywords: ["python", "introduce slots", "object oriented programming"]
 hints: ["Declare the names in the class body; do not change the initializer."]
 ---
 
 # Reserve attributes with slots
 
-A coordinate record should hold exactly two named values. A misspelled assignment such as `point.colum = 8` ought to fail rather than silently create an unrelated field. Add `__slots__` to give this small class a fixed instance layout.
+A map cell should hold exactly a row and column. A typo such as `cell.colum = 8` should fail instead of creating an unrelated field. Use `__slots__` to give `MapCell` a fixed layout.
 
 Ordinary user-defined instances usually store their attributes in a dictionary named `__dict__`. A class-level `__slots__` declaration names storage locations instead. For a plain class whose bases do not already supply a dictionary, declaring slots without `__dict__` prevents arbitrary additional attributes. The initializer can still assign the listed fields normally.
 
@@ -41,6 +41,6 @@ print(control.position)
 
 ## Your Tasks
 
-1. Add `__slots__` to `GridPoint` for exactly `row` and `column`, without an instance dictionary. Both fields must remain assignable, while extra attributes raise `AttributeError`.
+1. Add `__slots__` to `MapCell` for exactly `row` and `column`, without an instance dictionary. Both fields must remain assignable, while extra attributes raise `AttributeError`.
 
-Edit `main.py`, then press Run to inspect the supplied probe. A `Not ready` message means the unfinished operation raised an exception; it does not complete the task. Press Submit to check the behavior with additional values. You do not need to edit the probe.
+Edit `main.py` and use Run to inspect the supplied check. Leave that check unchanged; Submit tests your method with other values too.

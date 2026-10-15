@@ -1,4 +1,4 @@
-class GridPoint:
+class MapCell:
     pass  # TODO: complete the requested behavior.
 
     def __init__(self, row, column):
@@ -8,7 +8,7 @@ class GridPoint:
 
 if __name__ == "__main__":
     try:
-        point = GridPoint(2, 5)
+        point = MapCell(2, 5)
         print("Coordinates:", point.row, point.column)
         try:
             point.colum = 9

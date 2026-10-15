@@ -2,16 +2,16 @@ from solution import *
 
 
 def test_descriptor_write():
-    first, second = Stock(), Stock()
+    first, second = ManaPool(), ManaPool()
     for value in [7, 0, 2.5]:
-        first.quantity = value
-        assert first.quantity == value
+        first.mana = value
+        assert first.mana == value
         try:
-            first.quantity = -3
+            first.mana = -3
         except ValueError:
             pass
         else:
-            assert False, "Reject negative quantities"
-        assert first.quantity == value
-    second.quantity = 12
-    assert first.quantity == 2.5 and second.quantity == 12
+            assert False, "Reject negative mana amounts"
+        assert first.mana == value
+    second.mana = 12
+    assert first.mana == 2.5 and second.mana == 12

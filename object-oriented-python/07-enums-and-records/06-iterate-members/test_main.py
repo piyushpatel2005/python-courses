@@ -3,7 +3,7 @@ from solution import *
 
 def test_iterate_members():
     from enum import Enum
-    assert member_rows(Theme) == [("LIGHT", "light"), ("DARK", "dark")]
+    assert member_rows(GameTheme) == [("LIGHT", "light"), ("DARK", "dark")]
     class Size(Enum):
         LARGE = 8
         SMALL = 2

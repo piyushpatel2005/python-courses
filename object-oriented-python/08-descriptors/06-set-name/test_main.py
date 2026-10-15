@@ -2,10 +2,10 @@ from solution import *
 
 
 def test_set_name():
-    assert Contact.city.key == "_city" and Contact.region.key == "_region"
-    a, b = Contact(), Contact()
-    a.city, a.region, b.city = "Oslo", "East", "Lima"
-    assert (a.city, a.region, b.city, b.region) == ("Oslo", "East", "Lima", None)
+    assert Loadout.weapon.key == "_weapon" and Loadout.armor.key == "_armor"
+    a, b = Loadout(), Loadout()
+    a.weapon, a.armor, b.weapon = "Bow", "Leather", "Spear"
+    assert (a.weapon, a.armor, b.weapon, b.armor) == ("Bow", "Leather", "Spear", None)
     class Other:
         zone = NamedField()
         code = NamedField()

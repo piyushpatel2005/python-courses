@@ -2,8 +2,8 @@ from solution import *
 
 
 def test_record_use_updates_its_receiver():
-    first, second = make_tool(4), make_tool(20)
-    assert callable(getattr(first, "record_use", None)), "Define record_use inside Tool with self as its parameter."
+    first, second = make_item(4), make_item(20)
+    assert callable(getattr(first, "record_use", None)), "Define record_use inside GameItem with self as its parameter."
     first.record_use()
     first.record_use()
     assert first.uses == 6 and second.uses == 20

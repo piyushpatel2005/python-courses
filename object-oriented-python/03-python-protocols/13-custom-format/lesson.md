@@ -6,14 +6,14 @@ language: "python"
 lesson_type: "coding"
 summary: "Implement a small __format__ language with explicit invalid-spec handling."
 seo_title: "Customize formatted output | Object-oriented Python"
-seo_description: "Implement a small __format__ language with explicit invalid-spec handling. Practice with runnable Python code and behavioral checks."
+seo_description: "Implement a small __format__ language with explicit invalid-spec handling."
 seo_keywords: ["python", "custom format", "object oriented programming"]
 hints: ["Handle the empty specification explicitly before rejecting unknown options."]
 ---
 
 # Customize formatted output
 
-A route report needs a compact distance in one column and a sentence-friendly version in another. Give `Distance` two named formatting options while keeping the raw metres unchanged.
+The map interface needs a compact trail distance in one label and a longer version in another. Give `TrailDistance` two formatting options without changing its stored metres. These are returned strings, not rendered graphics.
 
 `format(value, spec)` calls `value.__format__(spec)`. An f-string also passes the text after its colon as the format specification: `f"{value:long}"` sends `"long"`. The specification is a string interpreted by the object's class. Numeric types support a large formatting language, but your class can define a small, documented set of choices instead.
 
@@ -35,6 +35,6 @@ print(f"{reading:.1f}")
 
 ## Your Tasks
 
-1. Implement `Distance.__format__`: empty spec or `short` returns `<metres> m`; `long` returns `<metres> metres`; any other spec raises `ValueError`. Do not modify `metres`.
+1. Implement `TrailDistance.__format__`: empty spec or `short` returns `<metres> m`; `long` returns `<metres> metres`; any other spec raises `ValueError`. Do not modify `metres`.
 
-Edit `main.py`, then press Run to inspect the supplied probe. A `Not ready` message means the unfinished operation raised an exception; it does not complete the task. Press Submit to check the behavior with additional values. You do not need to edit the probe.
+Edit `main.py` and use Run to inspect the supplied check. Leave that check unchanged; Submit tests your method with other values too.

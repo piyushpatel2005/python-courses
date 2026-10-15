@@ -1,6 +1,6 @@
 from enum import Enum
 
-class Signal(Enum):
+class ScreenShake(Enum):
     OFF = 0
     LOW = 2
     HIGH = 5
@@ -11,6 +11,6 @@ class Signal(Enum):
 
 if __name__ == "__main__":
     try:
-        print(bool(Signal.OFF), bool(Signal.LOW), bool(Signal.HIGH))
+        print(bool(ScreenShake.OFF), bool(ScreenShake.LOW), bool(ScreenShake.HIGH))
     except (AttributeError, TypeError, ValueError, KeyError, NameError) as error:
         print("Not ready:", type(error).__name__, str(error))

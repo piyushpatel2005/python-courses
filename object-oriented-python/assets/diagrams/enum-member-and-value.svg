@@ -1,26 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="590" viewBox="0 0 600 590" role="img" aria-labelledby="title desc">
-<title id="title">An Enum Member Is Not Its Value</title><desc id="desc">For plain Enum Status with PAID equal to the string paid, application code uses Status.PAID. The name is PAID and value is paid. Persist the explicit value and reconstruct the member with Status(&quot;paid&quot;).</desc>
+<title id="title">An Enum Member Is Not Its Value</title><desc id="desc">For plain Enum QuestState with DONE equal to the string done, application code uses QuestState.DONE. The name is DONE and value is done. Persist the explicit value and reconstruct the member with QuestState(&quot;done&quot;).</desc>
 <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#40566f"/></marker></defs>
 <rect width="600" height="590" rx="18" fill="#f8fafd"/>
 <rect x="24" y="24" width="552" height="5" rx="2" fill="#3974bd"/>
 <text x="300" y="62" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#172c46">An Enum Member Is Not Its Value</text>
 <text x="300" y="91" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#40566f">CONCEPTUAL MODEL · ILLUSTRATIVE EXAMPLE</text>
 <g data-card="true"><rect x="80" y="120" width="440" height="80" rx="12" fill="#eee8ff" stroke="#91a7bd" stroke-width="1.5"/>
-<text x="300.0" y="153.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Application: Status.PAID</text>
+<text x="300.0" y="153.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Application: QuestState.DONE</text>
 <text x="300.0" y="181.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">A member of a plain Enum</text>
 </g>
 <path data-connector="true" d="M300 200 L300 258" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
 <text x="434" y="236" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#172c46">Read .value</text>
 <g data-card="true"><rect x="80" y="258" width="440" height="80" rx="12" fill="#ddf5ee" stroke="#91a7bd" stroke-width="1.5"/>
-<text x="300.0" y="291.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Storage: &quot;paid&quot;</text>
+<text x="300.0" y="291.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Storage: &quot;done&quot;</text>
 <text x="300.0" y="319.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">A string, not an enum member</text>
 </g>
 <path data-connector="true" d="M300 338 L300 396" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="430" y="374" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#172c46">Status(&quot;paid&quot;)</text>
+<text x="430" y="374" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#172c46">QuestState(&quot;done&quot;)</text>
 <g data-card="true"><rect x="80" y="396" width="440" height="80" rx="12" fill="#eee8ff" stroke="#91a7bd" stroke-width="1.5"/>
-<text x="300.0" y="429.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Application: Status.PAID</text>
+<text x="300.0" y="429.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Application: QuestState.DONE</text>
 <text x="300.0" y="457.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">Reconstruct the named member</text>
 </g>
-<text x="300" y="541" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">.name is &quot;PAID&quot;; .value is &quot;paid&quot;.</text>
-<text x="300" y="566" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">For plain Enum: Status.PAID != &quot;paid&quot;.</text>
+<text x="300" y="541" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">.name is &quot;DONE&quot;; .value is &quot;done&quot;.</text>
+<text x="300" y="566" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">For plain Enum: QuestState.DONE != &quot;done&quot;.</text>
 </svg>

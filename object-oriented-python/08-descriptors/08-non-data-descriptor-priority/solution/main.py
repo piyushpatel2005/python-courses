@@ -4,7 +4,7 @@ class Greeting:
             return self
         return "Hello, " + instance.name
 
-class Profile:
+class PlayerProfile:
     greeting = Greeting()
 
     def __init__(self, name):
@@ -13,7 +13,7 @@ class Profile:
 
 if __name__ == "__main__":
     try:
-        first, second = Profile("Mina"), Profile("Oren")
+        first, second = PlayerProfile("Mina"), PlayerProfile("Oren")
         print(first.greeting)
         first.greeting = "Welcome back"
         print(first.greeting, second.greeting)

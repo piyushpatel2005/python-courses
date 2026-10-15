@@ -27,7 +27,9 @@ node build_excalidraw.mjs
 
 The converter starts a loopback-only Vite server, mounts the actual React Excalidraw editor in headless Chromium, and blocks all browser requests outside 127.0.0.1. No course content is uploaded. Each file is constructed and serialized with the official library, imported through `loadFromBlob`, rendered by the editor, and exported with `exportToSvg`. A text element is then edited through the editor API, its exported SVG checked for the change, and the edited serialized file reimported; this test edit is not saved to the deliverable. Source text equality, native element types, element counts, and identical lesson copies are asserted.
 
-Evidence: `$EXCALIDRAW_SCRATCH/evidence/report.json` records exact paths, versions, element/binding counts and acceptance outcomes; `*-editor.png` shows the actual editor; `*.svg` and `*-edited.svg` show library exports before/after the test edit. Scratch artifacts may eventually be pruned; rerun to reproduce. All eight screenshots were visually inspected, with the MRO diagram additionally inspected at full size.
+Historical pre-game-theme evidence (not current acceptance): `$EXCALIDRAW_SCRATCH/evidence/report.json` records exact paths, versions, element/binding counts and acceptance outcomes; `*-editor.png` shows the actual editor; `*.svg` and `*-edited.svg` show library exports before/after the test edit. Scratch artifacts may eventually be pruned; rerun to reproduce. All eight screenshots were visually inspected, with the MRO diagram additionally inspected at full size.
+
+Current game-theme verification is recorded in `../gaming-diagrams.json`: SVGs were rendered locally without a browser; native text, geometry, grouping, and reciprocal bindings were checked structurally. The real-editor interaction suite above was not rerun for the label-only update. The converter reads current SVG labels, so regeneration retains the new theme.
 
 ## Fidelity and editing limitations
 

@@ -4,10 +4,9 @@ slug: cleanup-with-finally
 order: 6
 language: python
 lesson_type: coding
-summary: Close a supplied reader after either a successful read or a failed one.
+summary: Close a replay reader whether reading succeeds or fails.
 seo_title: Release a resource with finally | Python OOP practice
-seo_description: Close a supplied reader after either a successful read or a failed
-  one.
+seo_description: Close a replay reader whether reading succeeds or fails.
 seo_keywords:
   - Python
   - cleanup with finally
@@ -18,7 +17,7 @@ hints:
 
 # Release a resource with finally
 
-Close a supplied reader after either a successful read or a failed one.
+Lantern Vale records events for a replay viewer. Once the viewer has tried to read an event, it must close the reader, even if the event is missing.
 
 A `finally` block runs when control leaves its `try` block, including when a return value is ready or an exception is travelling to the caller. Put cleanup there instead of duplicating it in each path. Do not return from `finally`: that can replace the result or suppress the error. The fixture is an in-memory object, not a file or a network connection.
 
@@ -39,8 +38,8 @@ print(events)
 
 ## Your Tasks
 
-1. Implement `read_and_close(reader)` to return `reader.read()` and always call `reader.close()` exactly once in a `finally` block. A read error must still propagate.
+1. Implement `read_replay_and_close(reader)` to return `reader.read()` and always call `reader.close()` exactly once in a `finally` block. A read error must still propagate.
 
 ## Run and check
 
-Edit `main.py`, then press **Run**. The supplied probe catches unfinished-code errors so you can inspect the Console before submitting. A finished probe shows the chapter followed by `Closed: True`. Press **Submit** to check the behavior with other inputs.
+Edit `main.py`, then press **Run**. The supplied probe catches unfinished-code errors so you can inspect the Console before submitting. A finished probe prints `entered the moss cave`, followed by `Closed: True`. Press **Submit** to check the behavior with other inputs.

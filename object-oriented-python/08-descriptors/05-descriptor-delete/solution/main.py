@@ -1,5 +1,5 @@
-class CachedLabel:
-    key = "_label"
+class CachedBadge:
+    key = "_badge"
 
     def __get__(self, instance, owner):
         if instance is None:
@@ -12,15 +12,15 @@ class CachedLabel:
     def __delete__(self, instance):
         instance.__dict__.pop(self.key, None)
 
-class Draft:
-    label = CachedLabel()
+class PlayerProfile:
+    badge = CachedBadge()
 
 
 if __name__ == "__main__":
     try:
-        first, second = Draft(), Draft()
-        first.label, second.label = "old", "keep"
-        del first.label
-        print(first.label, second.label)
+        first, second = PlayerProfile(), PlayerProfile()
+        first.badge, second.badge = "Scout", "Guide"
+        del first.badge
+        print(first.badge, second.badge)
     except (AttributeError, TypeError, ValueError, KeyError, NameError) as error:
         print("Not ready:", type(error).__name__, str(error))

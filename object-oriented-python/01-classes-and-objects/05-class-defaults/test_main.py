@@ -1,13 +1,13 @@
 from solution import *
 
 
-def test_tools_use_the_class_default():
-    assert getattr(Tool, "loan_days", None) == 7, "Set loan_days in the class body."
-    first, second = Tool(), Tool()
-    assert "loan_days" not in vars(first) and "loan_days" not in vars(second)
-    original = Tool.loan_days
+def test_items_use_the_class_default():
+    assert getattr(GameItem, "cooldown_turns", None) == 7, "Set cooldown_turns in the class body."
+    first, second = GameItem(), GameItem()
+    assert "cooldown_turns" not in vars(first) and "cooldown_turns" not in vars(second)
+    original = GameItem.cooldown_turns
     try:
-        Tool.loan_days = 12
-        assert first.loan_days == second.loan_days == Tool().loan_days == 12, "Instances should consult the shared class default."
+        GameItem.cooldown_turns = 12
+        assert first.cooldown_turns == second.cooldown_turns == GameItem().cooldown_turns == 12, "Instances should consult the shared class default."
     finally:
-        Tool.loan_days = original
+        GameItem.cooldown_turns = original

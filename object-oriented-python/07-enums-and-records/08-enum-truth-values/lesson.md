@@ -4,9 +4,9 @@ slug: enum-truth-values
 order: 8
 language: python
 lesson_type: coding
-summary: A signal enum includes a zero-valued inactive state. Decide explicitly whether that state should behave as false in a condition.
+summary: A screen-shake setting enum includes a zero-valued inactive state. Decide explicitly whether that state should behave as false in a condition.
 seo_title: Choose an enum truth rule | Object-oriented Python
-seo_description: A signal enum includes a zero-valued inactive state. Decide explicitly whether that state should behave as false in a condition.
+seo_description: A screen-shake setting enum includes a zero-valued inactive state. Decide explicitly whether that state should behave as false in a condition.
 seo_keywords:
   - Python
   - enum truth values
@@ -15,7 +15,7 @@ hints:
   - Call bool on self.value so the method returns a real Boolean.
 ---
 
-A signal enum includes a zero-valued inactive state. Decide explicitly whether that state should behave as false in a condition.
+A screen-shake setting enum includes a zero-valued inactive state. Decide explicitly whether that state should behave as false in a condition.
 
 A plain `Enum` member is truthy by default, even if its `.value` is zero, an empty string, or another false value. The member is a distinct object; Python does not automatically delegate its truth test to the stored value. Do not assume that numeric-looking member values behave like integers.
 
@@ -32,18 +32,18 @@ This lesson uses plain `Enum`, not `IntEnum` or flags, whose numeric behavior in
 ```python
 from enum import Enum
 
-class Access(Enum):
+class PortalAccess(Enum):
     BLOCKED = "blocked"
     OPEN = "open"
 
     def __bool__(self):
-        return self is not Access.BLOCKED
+        return self is not PortalAccess.BLOCKED
 
-print(bool(Access.BLOCKED), bool(Access.OPEN))
+print(bool(PortalAccess.BLOCKED), bool(PortalAccess.OPEN))
 ```
 
 ## Your Tasks
 
-1. Implement `Signal.__bool__` so each member has the truth value of its stored numeric value: zero is false and nonzero is true.
+1. Implement `ScreenShake.__bool__` so each member has the truth value of its stored numeric value: zero is false and nonzero is true.
 
 Edit `main.py`, then press Run to inspect the supplied probe. Submit checks the task with additional cases. You do not need to change the probe.

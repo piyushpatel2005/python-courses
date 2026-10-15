@@ -1,15 +1,15 @@
-class Tool:
+class GameItem:
     pass
 
-def make_tool(name):
-    tool = Tool()
-    tool.name = name
-    return tool
+def make_item(name):
+    item = GameItem()
+    item.name = name
+    return item
 
 
 # Supplied console probe: keep this below your implementation.
 if __name__ == "__main__":
     try:
-        print("Tool names:", make_tool("drill").name, make_tool("saw").name)
+        print("GameItem names:", make_item("lantern").name, make_item("shield").name)
     except (NameError, AttributeError, TypeError, ValueError) as error:
         print("Not ready yet:", error)

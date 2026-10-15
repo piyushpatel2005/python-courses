@@ -1,4 +1,4 @@
-class TrailMarker:
+class MapMarker:
     def __init__(self, destination, km):
         self.destination = destination
         self.km = km
@@ -9,6 +9,6 @@ class TrailMarker:
 
 if __name__ == "__main__":
     try:
-        print(str(TrailMarker("Lake", 4)))
+        print(str(MapMarker("Lake", 4)))
     except Exception as error:
         print("Not ready:", type(error).__name__, str(error))

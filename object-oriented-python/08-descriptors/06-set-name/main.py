@@ -12,15 +12,15 @@ class NamedField:
     def __set__(self, instance, value):
         instance.__dict__[self.key] = value
 
-class Contact:
-    city = NamedField()
-    region = NamedField()
+class Loadout:
+    weapon = NamedField()
+    armor = NamedField()
 
 
 if __name__ == "__main__":
     try:
-        person = Contact()
-        person.city, person.region = "Leeds", "Yorkshire"
-        print(person.city, person.region)
+        loadout = Loadout()
+        loadout.weapon, loadout.armor = "Lantern staff", "Moss cloak"
+        print(loadout.weapon, loadout.armor)
     except (AttributeError, TypeError, ValueError, KeyError, NameError) as error:
         print("Not ready:", type(error).__name__, str(error))

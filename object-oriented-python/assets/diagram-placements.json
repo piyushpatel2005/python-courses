@@ -2,14 +2,14 @@
   {
     "file": "class-and-instance-state.svg",
     "lesson": "01-classes-and-objects/11-independent-instance-lists",
-    "alt": "One class supplies shared behavior while two instances own independent lists; changing one leaves the other unchanged.",
-    "sha256": "1a9c81179b9958283c48e0c0b47e9ba6153d4fd08a5f7ffa2efff4225eb929e4"
+    "alt": "A shared QuestLog class supplies behavior. Two QuestLog objects have separate entries lists. Appending to a.entries does not change b.entries.",
+    "sha256": "3167b542ab51763264226a26c192580f8ec62a8341520316ae86b3249029299d"
   },
   {
     "file": "bound-method-self.svg",
     "lesson": "02-object-interfaces/01-bound-methods",
-    "alt": "A bound method remembers its receiver: a.deposit(5) calls Account.deposit(a, 5).",
-    "sha256": "5edeb34185ff77a388f643ae8b2e1f22dcb3e2d3fb20e6350520cda1a772bb9a"
+    "alt": "For an ordinary instance method, item.record_use() calls GameItem.record_use(item). The bound method holds the original function and the receiving instance.",
+    "sha256": "ef7b8ca3c73d60e954ae24d48d727eedafd3652375a35bd4f34d4668e1e99481"
   },
   {
     "file": "reflected-operator-dispatch.svg",
@@ -26,14 +26,14 @@
   {
     "file": "composed-service-delegation.svg",
     "lesson": "04-inheritance/07-compose-a-service",
-    "alt": "A service delegates charging to an injected real or fake gateway without inheriting from it.",
-    "sha256": "97fb9f98c272549a07628b770d27086c8d48f12b506ca66d754ce7cc9ab9d606"
+    "alt": "A local MatchService keeps an injected ScoreRule object and delegates score(points) to it. Standard and fake rules share the score method. This is local game logic, not a network service.",
+    "sha256": "0356ac6eef25895a8cb532c5859103d4e6f487544543c71b40b22a84a3348308"
   },
   {
     "file": "enum-member-and-value.svg",
     "lesson": "07-enums-and-records/02-explicit-enum-values",
-    "alt": "Status.PAID converts to the stored string paid through .value; Status(\"paid\") reconstructs the enum member.",
-    "sha256": "2fa13cd0e37175d42385caed66861ba574fb6241fe9c700e81ccc3643c87d506"
+    "alt": "For plain Enum QuestState with DONE equal to the string done, application code uses QuestState.DONE. The name is DONE and value is done. Persist the explicit value and reconstruct the member with QuestState(\"done\").",
+    "sha256": "af9a578cf58c4f7fba02ac4af7a520932810eb1942b4df76d87db78cdf252661"
   },
   {
     "file": "descriptor-lookup-precedence.svg",

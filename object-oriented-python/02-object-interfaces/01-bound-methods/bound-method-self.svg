@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="560" viewBox="0 0 600 560" role="img" aria-labelledby="title desc">
-<title id="title">A Bound Method Remembers self</title><desc id="desc">For an ordinary instance method, a.deposit(5) calls Account.deposit(a, 5). The bound method holds the original function and the receiving instance.</desc>
+<title id="title">A Bound Method Remembers self</title><desc id="desc">For an ordinary instance method, item.record_use() calls GameItem.record_use(item). The bound method holds the original function and the receiving instance.</desc>
 <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#40566f"/></marker></defs>
 <rect width="600" height="560" rx="18" fill="#f8fafd"/>
 <rect x="24" y="24" width="552" height="5" rx="2" fill="#3974bd"/>
 <text x="300" y="62" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#172c46">A Bound Method Remembers self</text>
 <text x="300" y="91" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#40566f">CONCEPTUAL MODEL · ILLUSTRATIVE EXAMPLE</text>
 <g data-card="true"><rect x="110" y="120" width="380" height="72" rx="12" fill="#e8f1ff" stroke="#91a7bd" stroke-width="1.5"/>
-<text x="300.0" y="163.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">a.deposit(5)</text>
+<text x="300.0" y="163.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">item.record_use()</text>
 </g>
 <path data-connector="true" d="M300 192 L300 229" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
 <g data-card="true"><rect x="65" y="229" width="470" height="128" rx="12" fill="#eee8ff" stroke="#91a7bd" stroke-width="1.5"/>
-<text x="300.0" y="272.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Bound Method: a.deposit</text>
-<text x="300.0" y="300.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">__self__ is a</text>
-<text x="300.0" y="328.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">__func__ is Account.deposit</text>
+<text x="300.0" y="272.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Bound Method: item.record_use</text>
+<text x="300.0" y="300.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">__self__ is item</text>
+<text x="300.0" y="328.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">__func__ is GameItem.record_use</text>
 </g>
 <path data-connector="true" d="M300 357 L300 394" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
 <g data-card="true"><rect x="80" y="394" width="440" height="88" rx="12" fill="#ddf5ee" stroke="#91a7bd" stroke-width="1.5"/>
-<text x="300.0" y="431.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Account.deposit(a, 5)</text>
-<text x="300.0" y="459.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">self receives a; amount receives 5</text>
+<text x="300.0" y="431.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">GameItem.record_use(item)</text>
+<text x="300.0" y="459.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">self receives item; no extra argument</text>
 </g>
-<text x="300" y="536" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">Do not pass a again in a.deposit(5).</text>
+<text x="300" y="536" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">Do not pass item again in item.record_use().</text>
 </svg>

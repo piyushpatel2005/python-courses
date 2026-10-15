@@ -1,4 +1,4 @@
-class Tool:
+class GameItem:
     def __init__(self, uses=0):
         self.uses = uses
 
@@ -6,14 +6,14 @@ class Tool:
         self.uses += 1
         return self.uses
 
-def deferred_use(tool):
+def deferred_use(item):
     pass
 
 
 # Supplied console probe: keep this below your implementation.
 if __name__ == "__main__":
     try:
-        sample = Tool(3)
+        sample = GameItem(3)
         action = deferred_use(sample)
         print("Before action:", sample.uses)
         print("Action result:", action())

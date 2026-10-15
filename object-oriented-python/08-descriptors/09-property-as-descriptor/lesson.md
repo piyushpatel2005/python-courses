@@ -4,9 +4,9 @@ slug: property-as-descriptor
 order: 9
 language: python
 lesson_type: coding
-summary: A rectangle exposes its area as an attribute. Revisit `property` now that you can explain why reading that attribute runs a getter and why an instance entry cannot replace it.
+summary: A sprite hitbox exposes its area as an attribute. Revisit `property` now that you can explain why reading that attribute runs a getter and why an instance entry cannot replace it.
 seo_title: Recognize property as a descriptor | Object-oriented Python
-seo_description: A rectangle exposes its area as an attribute. Revisit `property` now that you can explain why reading that attribute runs a getter and why an instance entry cannot replace it.
+seo_description: A sprite hitbox exposes its area as an attribute. Revisit `property` now that you can explain why reading that attribute runs a getter and why an instance entry cannot replace it.
 seo_keywords:
   - Python
   - property as descriptor
@@ -15,7 +15,7 @@ hints:
   - Read both dimensions from self inside the property getter.
 ---
 
-A rectangle exposes its area as an attribute. Revisit `property` now that you can explain why reading that attribute runs a getter and why an instance entry cannot replace it.
+A sprite hitbox exposes its area as an attribute. Revisit `property` now that you can explain why reading that attribute runs a getter and why an instance entry cannot replace it.
 
 The built-in `property` is a descriptor type. `property(getter)` constructs a descriptor from a function, and assigning it in a class gives the public attribute its behavior. The `@property` decorator is a shorter way to perform that arrangement with the same name.
 
@@ -30,7 +30,7 @@ The starter already contains the decorator and constructor. You only change the 
 ## A small example
 
 ```python
-class Number:
+class DamageRoll:
     def __init__(self, value):
         self.value = value
 
@@ -39,11 +39,11 @@ class Number:
 
     double = property(get_double)
 
-print(Number(6).double)
+print(DamageRoll(6).double)
 ```
 
 ## Your Tasks
 
-1. Complete `Rectangle.area` so the supplied read-only property returns the current width multiplied by the current height.
+1. Complete `Hitbox.area` so the supplied read-only property returns the current width multiplied by the current height.
 
 Edit `main.py`, then press Run to inspect the supplied probe. Submit checks the task with additional cases. You do not need to change the probe.

@@ -1,4 +1,4 @@
-class Tool:
+class GameItem:
     def __init__(self, name):
         self.name = name
         self.notes = []
@@ -10,9 +10,9 @@ class Tool:
 # Supplied console probe: keep this below your implementation.
 if __name__ == "__main__":
     try:
-        first, second = Tool("drill"), Tool("saw")
-        first.add_note("battery checked")
-        print("Drill notes:", first.notes)
-        print("Saw notes:", second.notes)
+        first, second = GameItem("lantern"), GameItem("shield")
+        first.add_note("glow checked")
+        print("Lantern notes:", first.notes)
+        print("Shield notes:", second.notes)
     except (NameError, AttributeError, TypeError, ValueError) as error:
         print("Not ready yet:", error)

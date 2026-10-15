@@ -1,18 +1,18 @@
-class Tool:
+class GameItem:
     def summary(self):
         pass
 
-def make_tool(name, uses):
-    tool = Tool()
-    tool.name = name
-    tool.uses = uses
-    return tool
+def make_item(name, uses):
+    item = GameItem()
+    item.name = name
+    item.uses = uses
+    return item
 
 
 # Supplied console probe: keep this below your implementation.
 if __name__ == "__main__":
     try:
-        sample = make_tool("drill", 2)
+        sample = make_item("lantern", 2)
         print(sample.summary())
         sample.uses = 3
         print(sample.summary())

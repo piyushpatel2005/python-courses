@@ -1,0 +1,777 @@
+{
+  "module": "09-errors-and-contracts",
+  "scope": "Eight core lessons and four quiz questions only; project modules unchanged.",
+  "mappings": {
+    "01": [
+      [
+        "Reservation",
+        "Lobby"
+      ],
+      [
+        "set_seats",
+        "set_slots"
+      ],
+      [
+        "seats",
+        "slots"
+      ],
+      [
+        "Seats:",
+        "Slots:"
+      ],
+      [
+        "Reject an invalid reservation",
+        "Reject an invalid lobby size"
+      ],
+      [
+        "seat count",
+        "slot count"
+      ],
+      [
+        "reservation",
+        "lobby"
+      ]
+    ],
+    "02": [
+      [
+        "locker_label",
+        "player_label"
+      ],
+      [
+        "number",
+        "player_id"
+      ],
+      [
+        "Unknown locker",
+        "Unknown player"
+      ],
+      [
+        "locker",
+        "player"
+      ],
+      [
+        "sensor offline",
+        "player directory unavailable"
+      ],
+      [
+        "Noor",
+        "Fern"
+      ],
+      [
+        "Mira",
+        "Wren"
+      ],
+      [
+        "Sol",
+        "Ash"
+      ]
+    ],
+    "03": [
+      [
+        "SoldOutError",
+        "LobbyFullError"
+      ],
+      [
+        "reserve",
+        "join_lobby"
+      ],
+      [
+        "workshop is full",
+        "lobby is full"
+      ],
+      [
+        "sold-out workshop",
+        "full lobby"
+      ],
+      [
+        "full workshop",
+        "full lobby"
+      ],
+      [
+        "business condition",
+        "game condition"
+      ]
+    ],
+    "04": [
+      [
+        "StockShortage",
+        "InventoryShortage"
+      ],
+      [
+        "requested {requested}; available {available}",
+        "inventory requested {requested}; available {available}"
+      ],
+      [
+        "requested R; available A",
+        "inventory requested R; available A"
+      ],
+      [
+        "requested 6; available 2",
+        "inventory requested 6; available 2"
+      ]
+    ],
+    "05": [
+      [
+        "QuantityError",
+        "ItemQuantityError"
+      ],
+      [
+        "parse_quantity",
+        "parse_item_quantity"
+      ],
+      [
+        "quantity must be an integer",
+        "item quantity must be an integer"
+      ],
+      [
+        "Quantity:",
+        "Item quantity:"
+      ]
+    ],
+    "06": [
+      [
+        "read_and_close",
+        "read_replay_and_close"
+      ],
+      [
+        "class Reader:",
+        "class ReplayReader:"
+      ],
+      [
+        "r = Reader()",
+        "r = ReplayReader()"
+      ],
+      [
+        "chapter one",
+        "entered the moss cave"
+      ],
+      [
+        "alternate chapter",
+        "lit the watchtower beacon"
+      ],
+      [
+        "lost page",
+        "missing replay event"
+      ],
+      [
+        "shows the chapter",
+        "shows the replay event"
+      ]
+    ],
+    "07": [
+      [
+        "DeliveryPolicy",
+        "CreditFeePolicy"
+      ],
+      [
+        "fee_cents",
+        "fee_credits"
+      ],
+      [
+        "subtotal_cents",
+        "subtotal_credits"
+      ],
+      [
+        "delivery policies",
+        "credit purchase fee policies"
+      ]
+    ],
+    "08": [
+      [
+        "ThresholdDelivery",
+        "ThresholdFee"
+      ],
+      [
+        "DeliveryPolicy",
+        "CreditFeePolicy"
+      ],
+      [
+        "fee_cents",
+        "fee_credits"
+      ],
+      [
+        "subtotal_cents",
+        "subtotal_credits"
+      ],
+      [
+        "threshold_cents",
+        "threshold_credits"
+      ],
+      [
+        "flat_cents",
+        "flat_credits"
+      ],
+      [
+        "Implement a delivery policy",
+        "Implement a credit fee policy"
+      ],
+      [
+        "Provide a concrete delivery fee policy with a free-delivery threshold.",
+        "Implement a purchase fee that is waived at a credit threshold."
+      ],
+      [
+        "free delivery",
+        "a waived fee"
+      ],
+      [
+        "Delivery:",
+        "Fee (credits):"
+      ]
+    ]
+  },
+  "original_hashes": {
+    "09-errors-and-contracts/08-implement-a-contract/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "09-errors-and-contracts/08-implement-a-contract/lesson.md": "fd91a9b79e4c4e3ce9abfd76fc1e91671cac42125a477d6970e7b5f448f9e4d3",
+    "09-errors-and-contracts/08-implement-a-contract/main.py": "b984b237f0ad96fb257bac32b94745e6d3e3d7da2c301930ec7d722a40e41593",
+    "09-errors-and-contracts/08-implement-a-contract/test_main.py": "ebcdc9384926819a809aa2847151f9493c6c880b8dac018eee353c7e02b8e2fb",
+    "09-errors-and-contracts/06-cleanup-with-finally/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "09-errors-and-contracts/06-cleanup-with-finally/lesson.md": "a7935e31bd9788f07741ba1241069cd9aa9c2b1a7420291c7961296fb9cb36d0",
+    "09-errors-and-contracts/06-cleanup-with-finally/main.py": "af2da979258fb142cd6aa4a824c1507518f34b9270ba7fb7a1ad3bccdd7940f9",
+    "09-errors-and-contracts/06-cleanup-with-finally/test_main.py": "8551512dcea1a61e96dd04c71e6710baf1f6691cf5fc81575fc5b81b232e8613",
+    "09-errors-and-contracts/01-raise-a-built-in-error/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "09-errors-and-contracts/01-raise-a-built-in-error/lesson.md": "97043a5625701cbf6d447355428e3784b296ae60fa0d3cf2052558ba299de97c",
+    "09-errors-and-contracts/01-raise-a-built-in-error/main.py": "601e7226b0db5eb4f355a34ad0aa6a39a0f96b3953e16800595f9702459bbb05",
+    "09-errors-and-contracts/01-raise-a-built-in-error/test_main.py": "2e88f582929fa8b595b7a20052c5c550f23922c903c94931140a1150e2bceb2a",
+    "09-errors-and-contracts/07-abstract-contract/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "09-errors-and-contracts/07-abstract-contract/lesson.md": "ca48ac8ddcfb4d099bc939d54fb4703b1208c2404771fa542cf553ed6f661249",
+    "09-errors-and-contracts/07-abstract-contract/main.py": "45f79b6b2143ee514c8f33d3a5219a9558e15767d2d130ee150b47b54c12a56f",
+    "09-errors-and-contracts/07-abstract-contract/test_main.py": "5d1ae343201ea18334cff6cc0a0859531c422b7880dc955f707f6405e7c84265",
+    "09-errors-and-contracts/03-custom-domain-error/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "09-errors-and-contracts/03-custom-domain-error/lesson.md": "7328077c61b1b21b3e288cf16faf14cec998ad6a4c8aed41f5db6ecd2cdd1759",
+    "09-errors-and-contracts/03-custom-domain-error/main.py": "ef9851bc88a7302d32db919f69806edf2322d3ae50551080803a558b7ee05b07",
+    "09-errors-and-contracts/03-custom-domain-error/test_main.py": "f13a428e2e113c858f9305217750ecf7041db44a92bd38534fc857bb95e969d7",
+    "09-errors-and-contracts/quiz/q02.md": "a18be595eb54f722235ae1e9bf48b4024f46f50a671904f7cf2bd3bb3a5c7619",
+    "09-errors-and-contracts/quiz/q03.md": "bb7e5fe2cb953b90ae000e1aafcf19532ab6880c3627f5ae21d65f35f68c8f9b",
+    "09-errors-and-contracts/quiz/q04.md": "4c9119f90fda3c6f15fc60740808f0d6ff0f2647048c2e4f39955eeb8c841b9f",
+    "09-errors-and-contracts/quiz/q01.md": "a1220e07a8cbc1c14946351a2a9b09ac4b3f7d857005c7852ee093939c4313e8",
+    "09-errors-and-contracts/quiz/index.yaml": "a1312c60c93590147a22d6d39a61bcdc94ef8f7ade9dfb5c9e52201cf1094d3c",
+    "09-errors-and-contracts/05-chain-a-cause/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "09-errors-and-contracts/05-chain-a-cause/lesson.md": "a315cd7789224daabbaefb13b332641fe24cb6e3f23b3c183aae2416d530cdc4",
+    "09-errors-and-contracts/05-chain-a-cause/main.py": "1ef762bb47b29a8ee20de3df241b9d2d893c4c5a3fa7e880976a2dd27e432ef0",
+    "09-errors-and-contracts/05-chain-a-cause/test_main.py": "b3692090f917d45c6b0f752110dad42137259ffcd87bcc3ecd43ce81e2c663d4",
+    "09-errors-and-contracts/02-catch-a-specific-error/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "09-errors-and-contracts/02-catch-a-specific-error/lesson.md": "bc37ee762fd5c717deb76f42b0ae75d549daad00f6066e12047882be4d765f20",
+    "09-errors-and-contracts/02-catch-a-specific-error/main.py": "4bf300534a3f7be7fc078c818e4d098e5990b5c1b43db40e9b468dee36ddc2f8",
+    "09-errors-and-contracts/02-catch-a-specific-error/test_main.py": "b8daecfe3b43c4e64b9f680b23604e3a338eb52592e1e2d5bb9d1942f01e06d5",
+    "09-errors-and-contracts/04-exception-details/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "09-errors-and-contracts/04-exception-details/lesson.md": "96cd2112f6a7243c9bcf2daedf0ce823988696ccbfe28e87da504dcb3b41071e",
+    "09-errors-and-contracts/04-exception-details/main.py": "a4b9f5cac8cae0a5d8806d322e0e1524614eebd1b72f106312c45a97cf3cdfbd",
+    "09-errors-and-contracts/04-exception-details/test_main.py": "82eab0b0aea588b5771de361636e65dc0d4984f77070215090286f00d6cdde0e",
+    "09-errors-and-contracts/04-exception-details/solution/main.py": "36d11fd198a62685e828fc02c587202988e4bf97ed10070c60d3a2162cba5714",
+    "09-errors-and-contracts/02-catch-a-specific-error/solution/main.py": "3bbce92eded42ec4e87d441324d009e0036212f95ad616621bf478facc8cc371",
+    "09-errors-and-contracts/05-chain-a-cause/solution/main.py": "1e60d753b54424eea8723fb6371bf44dd36cb942f37e11c92e9b4f042e4124ef",
+    "09-errors-and-contracts/03-custom-domain-error/solution/main.py": "7132cdf7d53d53087a11353e99cc7a9f0fb5077808f301e9f0040dc574b31434",
+    "09-errors-and-contracts/07-abstract-contract/solution/main.py": "2a2979459679016a2fdd066fb96f0de9a039df3593b96d8d3b1492ecc1ba87ae",
+    "09-errors-and-contracts/01-raise-a-built-in-error/solution/main.py": "408454c76adc151a3238308524bab80b25ff11ccd87bf543c860596aa3083961",
+    "09-errors-and-contracts/06-cleanup-with-finally/solution/main.py": "864053f38b80100fd35a084f29712e71a8cea660fea78ca8a7e4f82ed229c1ef",
+    "09-errors-and-contracts/08-implement-a-contract/solution/main.py": "30108f29769bca7451f503874aaa463e990895b7e14a9f0f4f659431c00ce294"
+  },
+  "original_navigation": {
+    "09-errors-and-contracts/08-implement-a-contract/lesson.md": {
+      "slug": "implement-a-contract",
+      "order": "8"
+    },
+    "09-errors-and-contracts/06-cleanup-with-finally/lesson.md": {
+      "slug": "cleanup-with-finally",
+      "order": "6"
+    },
+    "09-errors-and-contracts/01-raise-a-built-in-error/lesson.md": {
+      "slug": "raise-a-built-in-error",
+      "order": "1"
+    },
+    "09-errors-and-contracts/07-abstract-contract/lesson.md": {
+      "slug": "abstract-contract",
+      "order": "7"
+    },
+    "09-errors-and-contracts/03-custom-domain-error/lesson.md": {
+      "slug": "custom-domain-error",
+      "order": "3"
+    },
+    "09-errors-and-contracts/05-chain-a-cause/lesson.md": {
+      "slug": "chain-a-cause",
+      "order": "5"
+    },
+    "09-errors-and-contracts/02-catch-a-specific-error/lesson.md": {
+      "slug": "catch-a-specific-error",
+      "order": "2"
+    },
+    "09-errors-and-contracts/04-exception-details/lesson.md": {
+      "slug": "exception-details",
+      "order": "4"
+    }
+  },
+  "unit_change": {
+    "old": "integer cents in DeliveryPolicy",
+    "new": "whole fictional game credits in CreditFeePolicy",
+    "fixtures": "ThresholdFee(500, 35); varied policies (120, 7) and (1, 9)",
+    "project": "Following independent ecommerce project remains in cents"
+  },
+  "browser": "Not run, as requested",
+  "environment": "3.12.12 (main, Jan 27 2026, 23:41:44) [Clang 21.1.4 ]",
+  "lessons": [
+    {
+      "lesson": "09-errors-and-contracts/01-raise-a-built-in-error",
+      "slug": "raise-a-built-in-error",
+      "order": 1,
+      "loader_passed": true,
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "6d3fbc6ee3702db07c055ec519e4955b4e806d8bb10bf19761916d1f47bb0629",
+        "main.py": "f9c42d2abe99c0465894a72473ad47281a3d6f01bac13215d6c158c1079d4e97",
+        "solution/main.py": "c7cc1f1fd2f19938ad0b4f41ac791fe5401cfbfe97830fe901e1b6ff5288ca54",
+        "test_main.py": "40f63b3c171673772899c8baabb5a73dde2aa05d41ac39da0e195cd023da2013"
+      },
+      "starter": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": false,
+            "message": ""
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "Slots: 1\n"
+      },
+      "solution": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "Slots: 4\n"
+      },
+      "prose_examples_passed": 1
+    },
+    {
+      "lesson": "09-errors-and-contracts/02-catch-a-specific-error",
+      "slug": "catch-a-specific-error",
+      "order": 2,
+      "loader_passed": true,
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "240d42ecb6a75c5ffa9de1db38d8dedf0d2fb1d79a4eca9a204c29b1daee8072",
+        "main.py": "730bfcb3d97b773e74a4bfd9cb68813a91c5b3d50743f7cadecc7212840b9af5",
+        "solution/main.py": "2371a6a14c5e4363e40c2e732950e26a7c1036862338199d7aae1170d48f7de3",
+        "test_main.py": "4be95736a5b528d82dd4e701b1dd4ce1c6113816d9e2c441b190d2dfb544f2e0"
+      },
+      "starter": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": false,
+            "message": ""
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "None\n"
+      },
+      "solution": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "Unknown player\n"
+      },
+      "prose_examples_passed": 1
+    },
+    {
+      "lesson": "09-errors-and-contracts/03-custom-domain-error",
+      "slug": "custom-domain-error",
+      "order": 3,
+      "loader_passed": true,
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "09a74c511a2df9f495cd84502354590f9d1d93407c2b744f8e0ded772abdf55d",
+        "main.py": "c8826619b062f6f048972a097358414c6ed1f01ad11f238e725360e6d20af9cc",
+        "solution/main.py": "542b261d25f5c4cc46b1f7a99474d4e58fe82b2e49e981fa013b5fd447276bda",
+        "test_main.py": "10444844ce2ffbf3e273d8e3ecf4f188e8a35db8ad1bd8ed243e7a836c88ac88"
+      },
+      "starter": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": false,
+            "message": ""
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "Probe: TypeError LobbyFullError() takes no arguments\n"
+      },
+      "solution": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "Probe: LobbyFullError lobby is full\n"
+      },
+      "prose_examples_passed": 1
+    },
+    {
+      "lesson": "09-errors-and-contracts/04-exception-details",
+      "slug": "exception-details",
+      "order": 4,
+      "loader_passed": true,
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "1ce177c8c96bd4a5ff8c6814a0d686a4722596c972d0bf38b1e6900dfea5e130",
+        "main.py": "08a191cc59a0cf698439f8048d039a82e2a00088a547371d036b586723e34260",
+        "solution/main.py": "04dd7b8931dfd7b895197835acd931a4d8cb13b5193c4efa6bf178e8a32d28f7",
+        "test_main.py": "3668c2900dd86a698508515245f4b5834b1863a80c158d67587e7cba0b9a4f33"
+      },
+      "starter": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": false,
+            "message": "'InventoryShortage' object has no attribute 'requested'"
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "(6, 2)\n"
+      },
+      "solution": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "inventory requested 6; available 2\n"
+      },
+      "prose_examples_passed": 1
+    },
+    {
+      "lesson": "09-errors-and-contracts/05-chain-a-cause",
+      "slug": "chain-a-cause",
+      "order": 5,
+      "loader_passed": true,
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "a05f44c861140641e04e0a713782898dfce5c0f5c011671120d830cbaa0177d1",
+        "main.py": "5d45a2df800c18958774ba7d83887727958c3603a67d1d7f10bcaf603e7814a9",
+        "solution/main.py": "948875afa66a5989eaaddb1ed4adf7f6423713bde646972c40fa1a9117207611",
+        "test_main.py": "a50f66b87725c316cb0b31bc247440ace8b081facd7baf21dfbb1df01d0813d1"
+      },
+      "starter": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": false,
+            "message": ""
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "Item quantity: None\n"
+      },
+      "solution": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "Item quantity: 8\n"
+      },
+      "prose_examples_passed": 1
+    },
+    {
+      "lesson": "09-errors-and-contracts/06-cleanup-with-finally",
+      "slug": "cleanup-with-finally",
+      "order": 6,
+      "loader_passed": true,
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "48e111f51f462d29ca01e461cafdc300b5606ba6bce67dfdda9fc730cd47287d",
+        "main.py": "96feb230e8f1b46b4c09f15e02c26726390a4675ceac5a5cdb3b981177224068",
+        "solution/main.py": "7a1fb69d501b1821889441b620a3553db98c2a55a53b3bfb008f4f81b3af799a",
+        "test_main.py": "994ae55cb19c6f7e49e0a38308b5d03b027ade0c354a46f43ddfb9235e603db2"
+      },
+      "starter": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": false,
+            "message": ""
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "None\nClosed: False\n"
+      },
+      "solution": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "entered the moss cave\nClosed: True\n"
+      },
+      "prose_examples_passed": 1
+    },
+    {
+      "lesson": "09-errors-and-contracts/07-abstract-contract",
+      "slug": "abstract-contract",
+      "order": 7,
+      "loader_passed": true,
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "2317ab76348d20c18500766688e9370981dc202743ac25b67b760ea74bcf50ae",
+        "main.py": "d18d4ad746e569ce18c181ed5b76dd85248af0ed9fe9b8d3a57dd8f9aec6c683",
+        "solution/main.py": "00e4a8e48c27c07432bcaa172b7497591ee8202f32f46731dbcde20edef94386",
+        "test_main.py": "13ea5e6c5f35b6fcfe002b34a475bb705f98458e9f1e2dfeff7d1eafcd6ac31e"
+      },
+      "starter": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": false,
+            "message": ""
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "Created: CreditFeePolicy\n"
+      },
+      "solution": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "Probe: TypeError Can't instantiate abstract class CreditFeePolicy without an implementation for abstract method 'fee_credits'\n"
+      },
+      "prose_examples_passed": 1
+    },
+    {
+      "lesson": "09-errors-and-contracts/08-implement-a-contract",
+      "slug": "implement-a-contract",
+      "order": 8,
+      "loader_passed": true,
+      "hashes": {
+        "files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+        "lesson.md": "512f4eeaf96386657d875c88113fecc4ebbc948d8e077f60bd64ad55ca520b06",
+        "main.py": "a0441d812d57e7bf4837e45d89f34f460aedd77b95b6c4934b4e3f629c7dd520",
+        "solution/main.py": "e7a78bfdfcaff090fb810261da841c22bb082e9f3fe301134b4f496e5d5d9b5c",
+        "test_main.py": "6b2f5d66a7b417297c6007c68278acd69fd9d43e05ebe83469bc3e95c15ae80d"
+      },
+      "starter": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": false,
+            "message": ""
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "Fee (credits): None\n"
+      },
+      "solution": {
+        "rows": [
+          {
+            "name": "test_behavior",
+            "passed": true
+          }
+        ],
+        "run_error": null,
+        "import_error": null,
+        "stdout": "Fee (credits): 0\n"
+      },
+      "prose_examples_passed": 1
+    }
+  ],
+  "quiz": [
+    {
+      "file": "09-errors-and-contracts/quiz/q01.md",
+      "sha256": "0a7bfb27be84cb72fb8df98bb8180829ba9fd2b3cebc307345a85e49c7be7268",
+      "correct": "b",
+      "yaml_passed": true
+    },
+    {
+      "file": "09-errors-and-contracts/quiz/q02.md",
+      "sha256": "0ebffa4e8ba1843474df3aceb863a767ce1b64e632bef51b8bdae1b202d093a2",
+      "correct": "a",
+      "yaml_passed": true
+    },
+    {
+      "file": "09-errors-and-contracts/quiz/q03.md",
+      "sha256": "e93cbf22b687103b8ec73c4b87e59974500128263e36c269329ee7e3c03a7412",
+      "correct": "b",
+      "yaml_passed": true
+    },
+    {
+      "file": "09-errors-and-contracts/quiz/q04.md",
+      "sha256": "b2951f391ce13d540724d50b62c1de23975d78dc21e84eff51a3bca3fd518eab",
+      "correct": "c",
+      "yaml_passed": true
+    }
+  ],
+  "hashes": {
+    "09-errors-and-contracts/01-raise-a-built-in-error/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "09-errors-and-contracts/01-raise-a-built-in-error/lesson.md": "6d3fbc6ee3702db07c055ec519e4955b4e806d8bb10bf19761916d1f47bb0629",
+    "09-errors-and-contracts/01-raise-a-built-in-error/main.py": "f9c42d2abe99c0465894a72473ad47281a3d6f01bac13215d6c158c1079d4e97",
+    "09-errors-and-contracts/01-raise-a-built-in-error/solution/main.py": "c7cc1f1fd2f19938ad0b4f41ac791fe5401cfbfe97830fe901e1b6ff5288ca54",
+    "09-errors-and-contracts/01-raise-a-built-in-error/test_main.py": "40f63b3c171673772899c8baabb5a73dde2aa05d41ac39da0e195cd023da2013",
+    "09-errors-and-contracts/02-catch-a-specific-error/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "09-errors-and-contracts/02-catch-a-specific-error/lesson.md": "240d42ecb6a75c5ffa9de1db38d8dedf0d2fb1d79a4eca9a204c29b1daee8072",
+    "09-errors-and-contracts/02-catch-a-specific-error/main.py": "730bfcb3d97b773e74a4bfd9cb68813a91c5b3d50743f7cadecc7212840b9af5",
+    "09-errors-and-contracts/02-catch-a-specific-error/solution/main.py": "2371a6a14c5e4363e40c2e732950e26a7c1036862338199d7aae1170d48f7de3",
+    "09-errors-and-contracts/02-catch-a-specific-error/test_main.py": "4be95736a5b528d82dd4e701b1dd4ce1c6113816d9e2c441b190d2dfb544f2e0",
+    "09-errors-and-contracts/03-custom-domain-error/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "09-errors-and-contracts/03-custom-domain-error/lesson.md": "09a74c511a2df9f495cd84502354590f9d1d93407c2b744f8e0ded772abdf55d",
+    "09-errors-and-contracts/03-custom-domain-error/main.py": "c8826619b062f6f048972a097358414c6ed1f01ad11f238e725360e6d20af9cc",
+    "09-errors-and-contracts/03-custom-domain-error/solution/main.py": "542b261d25f5c4cc46b1f7a99474d4e58fe82b2e49e981fa013b5fd447276bda",
+    "09-errors-and-contracts/03-custom-domain-error/test_main.py": "10444844ce2ffbf3e273d8e3ecf4f188e8a35db8ad1bd8ed243e7a836c88ac88",
+    "09-errors-and-contracts/04-exception-details/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "09-errors-and-contracts/04-exception-details/lesson.md": "1ce177c8c96bd4a5ff8c6814a0d686a4722596c972d0bf38b1e6900dfea5e130",
+    "09-errors-and-contracts/04-exception-details/main.py": "08a191cc59a0cf698439f8048d039a82e2a00088a547371d036b586723e34260",
+    "09-errors-and-contracts/04-exception-details/solution/main.py": "04dd7b8931dfd7b895197835acd931a4d8cb13b5193c4efa6bf178e8a32d28f7",
+    "09-errors-and-contracts/04-exception-details/test_main.py": "3668c2900dd86a698508515245f4b5834b1863a80c158d67587e7cba0b9a4f33",
+    "09-errors-and-contracts/05-chain-a-cause/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "09-errors-and-contracts/05-chain-a-cause/lesson.md": "a05f44c861140641e04e0a713782898dfce5c0f5c011671120d830cbaa0177d1",
+    "09-errors-and-contracts/05-chain-a-cause/main.py": "5d45a2df800c18958774ba7d83887727958c3603a67d1d7f10bcaf603e7814a9",
+    "09-errors-and-contracts/05-chain-a-cause/solution/main.py": "948875afa66a5989eaaddb1ed4adf7f6423713bde646972c40fa1a9117207611",
+    "09-errors-and-contracts/05-chain-a-cause/test_main.py": "a50f66b87725c316cb0b31bc247440ace8b081facd7baf21dfbb1df01d0813d1",
+    "09-errors-and-contracts/06-cleanup-with-finally/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "09-errors-and-contracts/06-cleanup-with-finally/lesson.md": "48e111f51f462d29ca01e461cafdc300b5606ba6bce67dfdda9fc730cd47287d",
+    "09-errors-and-contracts/06-cleanup-with-finally/main.py": "96feb230e8f1b46b4c09f15e02c26726390a4675ceac5a5cdb3b981177224068",
+    "09-errors-and-contracts/06-cleanup-with-finally/solution/main.py": "7a1fb69d501b1821889441b620a3553db98c2a55a53b3bfb008f4f81b3af799a",
+    "09-errors-and-contracts/06-cleanup-with-finally/test_main.py": "994ae55cb19c6f7e49e0a38308b5d03b027ade0c354a46f43ddfb9235e603db2",
+    "09-errors-and-contracts/07-abstract-contract/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "09-errors-and-contracts/07-abstract-contract/lesson.md": "2317ab76348d20c18500766688e9370981dc202743ac25b67b760ea74bcf50ae",
+    "09-errors-and-contracts/07-abstract-contract/main.py": "d18d4ad746e569ce18c181ed5b76dd85248af0ed9fe9b8d3a57dd8f9aec6c683",
+    "09-errors-and-contracts/07-abstract-contract/solution/main.py": "00e4a8e48c27c07432bcaa172b7497591ee8202f32f46731dbcde20edef94386",
+    "09-errors-and-contracts/07-abstract-contract/test_main.py": "13ea5e6c5f35b6fcfe002b34a475bb705f98458e9f1e2dfeff7d1eafcd6ac31e",
+    "09-errors-and-contracts/08-implement-a-contract/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "09-errors-and-contracts/08-implement-a-contract/lesson.md": "512f4eeaf96386657d875c88113fecc4ebbc948d8e077f60bd64ad55ca520b06",
+    "09-errors-and-contracts/08-implement-a-contract/main.py": "a0441d812d57e7bf4837e45d89f34f460aedd77b95b6c4934b4e3f629c7dd520",
+    "09-errors-and-contracts/08-implement-a-contract/solution/main.py": "e7a78bfdfcaff090fb810261da841c22bb082e9f3fe301134b4f496e5d5d9b5c",
+    "09-errors-and-contracts/08-implement-a-contract/test_main.py": "6b2f5d66a7b417297c6007c68278acd69fd9d43e05ebe83469bc3e95c15ae80d",
+    "09-errors-and-contracts/quiz/index.yaml": "a1312c60c93590147a22d6d39a61bcdc94ef8f7ade9dfb5c9e52201cf1094d3c",
+    "09-errors-and-contracts/quiz/q01.md": "0a7bfb27be84cb72fb8df98bb8180829ba9fd2b3cebc307345a85e49c7be7268",
+    "09-errors-and-contracts/quiz/q02.md": "0ebffa4e8ba1843474df3aceb863a767ce1b64e632bef51b8bdae1b202d093a2",
+    "09-errors-and-contracts/quiz/q03.md": "e93cbf22b687103b8ec73c4b87e59974500128263e36c269329ee7e3c03a7412",
+    "09-errors-and-contracts/quiz/q04.md": "b2951f391ce13d540724d50b62c1de23975d78dc21e84eff51a3bca3fd518eab"
+  },
+  "changed_files": [
+    "09-errors-and-contracts/01-raise-a-built-in-error/lesson.md",
+    "09-errors-and-contracts/01-raise-a-built-in-error/main.py",
+    "09-errors-and-contracts/01-raise-a-built-in-error/solution/main.py",
+    "09-errors-and-contracts/01-raise-a-built-in-error/test_main.py",
+    "09-errors-and-contracts/02-catch-a-specific-error/lesson.md",
+    "09-errors-and-contracts/02-catch-a-specific-error/main.py",
+    "09-errors-and-contracts/02-catch-a-specific-error/solution/main.py",
+    "09-errors-and-contracts/02-catch-a-specific-error/test_main.py",
+    "09-errors-and-contracts/03-custom-domain-error/lesson.md",
+    "09-errors-and-contracts/03-custom-domain-error/main.py",
+    "09-errors-and-contracts/03-custom-domain-error/solution/main.py",
+    "09-errors-and-contracts/03-custom-domain-error/test_main.py",
+    "09-errors-and-contracts/04-exception-details/lesson.md",
+    "09-errors-and-contracts/04-exception-details/main.py",
+    "09-errors-and-contracts/04-exception-details/solution/main.py",
+    "09-errors-and-contracts/04-exception-details/test_main.py",
+    "09-errors-and-contracts/05-chain-a-cause/lesson.md",
+    "09-errors-and-contracts/05-chain-a-cause/main.py",
+    "09-errors-and-contracts/05-chain-a-cause/solution/main.py",
+    "09-errors-and-contracts/05-chain-a-cause/test_main.py",
+    "09-errors-and-contracts/06-cleanup-with-finally/lesson.md",
+    "09-errors-and-contracts/06-cleanup-with-finally/main.py",
+    "09-errors-and-contracts/06-cleanup-with-finally/solution/main.py",
+    "09-errors-and-contracts/06-cleanup-with-finally/test_main.py",
+    "09-errors-and-contracts/07-abstract-contract/lesson.md",
+    "09-errors-and-contracts/07-abstract-contract/main.py",
+    "09-errors-and-contracts/07-abstract-contract/solution/main.py",
+    "09-errors-and-contracts/07-abstract-contract/test_main.py",
+    "09-errors-and-contracts/08-implement-a-contract/lesson.md",
+    "09-errors-and-contracts/08-implement-a-contract/main.py",
+    "09-errors-and-contracts/08-implement-a-contract/solution/main.py",
+    "09-errors-and-contracts/08-implement-a-contract/test_main.py",
+    "09-errors-and-contracts/quiz/q01.md",
+    "09-errors-and-contracts/quiz/q02.md",
+    "09-errors-and-contracts/quiz/q03.md",
+    "09-errors-and-contracts/quiz/q04.md"
+  ],
+  "counts": {
+    "lessons": 8,
+    "starter_failed": 8,
+    "solution_passed": 8,
+    "quiz_questions": 4,
+    "changed_module_files": 36
+  },
+  "verification": {
+    "native": "Eight isolated CPython starter/reference pairs using existing assets/verify_native.py RUNNER; all starter assessments fail and all reference assessments pass.",
+    "loader": "All eight lesson directories parsed by actual backend loader with coding/Pyodide runtime, one starter and one reference file, matching hidden tests, unchanged slugs and orders.",
+    "quiz": "Four valid question front matters and correct option IDs.",
+    "examples": "All eight non-interactive Python examples executed successfully.",
+    "diff_check": "git diff --check passed for assigned module.",
+    "browser": "Not run (explicitly excluded)."
+  },
+  "semantic_mappings": [
+    {
+      "lesson": 1,
+      "before": "Reservation.set_seats / seats",
+      "after": "Lobby.set_slots / slots"
+    },
+    {
+      "lesson": 2,
+      "before": "locker_label(directory, number) / Unknown locker",
+      "after": "player_label(directory, player_id) / Unknown player"
+    },
+    {
+      "lesson": 3,
+      "before": "SoldOutError / reserve / workshop is full",
+      "after": "LobbyFullError / join_lobby / lobby is full"
+    },
+    {
+      "lesson": 4,
+      "before": "StockShortage",
+      "after": "InventoryShortage with requested and available attributes"
+    },
+    {
+      "lesson": 5,
+      "before": "QuantityError / parse_quantity",
+      "after": "ItemQuantityError / parse_item_quantity"
+    },
+    {
+      "lesson": 6,
+      "before": "Reader / read_and_close / chapters",
+      "after": "ReplayReader / read_replay_and_close / game replay events"
+    },
+    {
+      "lesson": 7,
+      "before": "DeliveryPolicy.fee_cents(subtotal_cents)",
+      "after": "CreditFeePolicy.fee_credits(subtotal_credits)"
+    },
+    {
+      "lesson": 8,
+      "before": "ThresholdDelivery / threshold_cents / flat_cents",
+      "after": "ThresholdFee / threshold_credits / flat_credits"
+    }
+  ]
+}

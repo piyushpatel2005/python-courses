@@ -1,4 +1,4 @@
-class RaceTime:
+class TrailTime:
     def __init__(self, seconds):
         self.seconds = seconds
 
@@ -8,7 +8,7 @@ class RaceTime:
 
 if __name__ == "__main__":
     try:
-        times = [RaceTime(64), RaceTime(59), RaceTime(62)]
+        times = [TrailTime(64), TrailTime(59), TrailTime(62)]
         print("Sorted seconds:", [time.seconds for time in sorted(times)])
     except Exception as error:
         print("Not ready:", type(error).__name__, str(error))

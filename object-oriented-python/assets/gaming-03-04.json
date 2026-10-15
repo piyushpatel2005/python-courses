@@ -1,0 +1,2553 @@
+{
+  "scope": [
+    "03-python-protocols",
+    "04-inheritance"
+  ],
+  "setting": {
+    "studio": "Mosslight Studio",
+    "game": "Lantern Vale",
+    "fictional": true
+  },
+  "verification": "Native CPython only; no app or browser execution.",
+  "counts": {
+    "scoped_lessons": 26,
+    "whole_course_lessons": 112,
+    "files_reviewed": 140,
+    "files_changed": 112,
+    "quiz_questions": 8,
+    "native_runs": 52,
+    "solutions_all_tests_pass": 26,
+    "starters_all_tests_fail": 26,
+    "worked_examples_executed": 26
+  },
+  "mappings": [
+    {
+      "lesson": "03-python-protocols/01-friendly-str",
+      "classes": {
+        "TrailMarker": "MapMarker"
+      },
+      "scoped_term_mapping": {
+        "TrailMarker": "MapMarker",
+        "trail marker": "map marker",
+        "trail markers": "map markers",
+        "trail notice": "map notice"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/02-developer-repr",
+      "classes": {
+        "Parcel": "LootBundle"
+      },
+      "scoped_term_mapping": {
+        "Parcel": "LootBundle",
+        "parcels": "loot bundles",
+        "parcel": "loot bundle"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/03-add-value-objects",
+      "classes": {
+        "Cable": "MovementOffset"
+      },
+      "scoped_term_mapping": {
+        "Cable": "MovementOffset",
+        "cables": "movement offsets",
+        "cable": "movement offset",
+        "metres": "steps",
+        "measurement": "offset"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/04-subtract-value-objects",
+      "classes": {
+        "Offset": "MovementOffset"
+      },
+      "scoped_term_mapping": {
+        "Offset": "MovementOffset",
+        "readings": "offsets",
+        "reading": "offset"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/05-multiply-by-a-scalar",
+      "classes": {
+        "SheetBatch": "ScoreDelta"
+      },
+      "scoped_term_mapping": {
+        "SheetBatch": "ScoreDelta",
+        "sheets": "points",
+        "sheet count": "point adjustment",
+        "batch": "score adjustment",
+        "batches": "score adjustments"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/06-reflected-multiplication",
+      "classes": {
+        "TokenPack": "ScoreDelta"
+      },
+      "scoped_term_mapping": {
+        "TokenPack": "ScoreDelta",
+        "pack": "score adjustment",
+        "packs": "score adjustments",
+        "count": "points"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/07-value-equality",
+      "classes": {
+        "Seat": "SaveSlot"
+      },
+      "scoped_term_mapping": {
+        "Seat": "SaveSlot",
+        "seats": "save slots",
+        "seat": "save slot",
+        "row": "profile",
+        "rows": "profiles"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/08-order-value-objects",
+      "classes": {
+        "RaceTime": "TrailTime"
+      },
+      "scoped_term_mapping": {
+        "RaceTime": "TrailTime",
+        "race": "trail challenge"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/09-sized-objects",
+      "classes": {
+        "LibraryCart": "Inventory"
+      },
+      "scoped_term_mapping": {
+        "LibraryCart": "Inventory",
+        "cart": "inventory",
+        "carts": "inventories",
+        "titles": "items",
+        "title": "item",
+        "Titles": "Items",
+        "Maps": "Map",
+        "Birds": "Lantern",
+        "Trees": "Rope",
+        "book": "potion"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/10-truthy-objects",
+      "classes": {
+        "Battery": "Stamina"
+      },
+      "scoped_term_mapping": {
+        "Battery": "Stamina",
+        "battery": "stamina",
+        "batteries": "stamina pools",
+        "charge": "points",
+        "Charged": "Ready"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/11-hashable-keys",
+      "classes": {
+        "BinKey": "SaveSlotKey"
+      },
+      "scoped_term_mapping": {
+        "BinKey": "SaveSlotKey",
+        "zone": "profile",
+        "warehouse": "save registry",
+        "bin": "save slot",
+        "seat": "save slot",
+        "stock": "saves",
+        "cables": "checkpoint"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/12-callable-objects",
+      "classes": {
+        "Scaler": "ScoreMultiplier"
+      },
+      "scoped_term_mapping": {
+        "Scaler": "ScoreMultiplier",
+        "scalers": "multipliers",
+        "scaler": "multiplier",
+        "conversion": "score calculation",
+        "converts": "scales",
+        "Scaled": "Scores"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/13-custom-format",
+      "classes": {
+        "Distance": "TrailDistance"
+      },
+      "scoped_term_mapping": {
+        "Distance": "TrailDistance"
+      }
+    },
+    {
+      "lesson": "03-python-protocols/14-explicit-cleanup",
+      "classes": {
+        "Lease": "GameSession"
+      },
+      "scoped_term_mapping": {
+        "Lease": "GameSession",
+        "lease": "session",
+        "leases": "sessions"
+      }
+    },
+    {
+      "lesson": "04-inheritance/01-inherit-a-method",
+      "classes": {
+        "Locker": "GameEntity",
+        "ColdLocker": "SupplyChest"
+      },
+      "scoped_term_mapping": {
+        "ColdLocker": "SupplyChest",
+        "Locker": "GameEntity",
+        "locker": "game entity",
+        "lockers": "game entities"
+      }
+    },
+    {
+      "lesson": "04-inheritance/02-the-object-base",
+      "classes": {
+        "Record": "Pickup",
+        "DetailedRecord": "QuestPickup"
+      },
+      "scoped_term_mapping": {
+        "DetailedRecord": "QuestPickup",
+        "Record": "Pickup",
+        "record": "pickup"
+      }
+    },
+    {
+      "lesson": "04-inheritance/03-extend-initialization",
+      "classes": {
+        "Ticket": "Ability",
+        "TimedTicket": "CooldownAbility"
+      },
+      "scoped_term_mapping": {
+        "TimedTicket": "CooldownAbility",
+        "Ticket": "Ability",
+        "ticket": "ability",
+        "tickets": "abilities",
+        "hour": "cooldown",
+        "Exhibit": "Dash",
+        "Tour": "Glide"
+      }
+    },
+    {
+      "lesson": "04-inheritance/04-override-a-method",
+      "classes": {
+        "Alarm": "Beacon",
+        "QuietAlarm": "LightBeacon"
+      },
+      "scoped_term_mapping": {
+        "QuietAlarm": "LightBeacon",
+        "Alarm": "Beacon",
+        "alarm": "beacon",
+        "alarms": "beacons"
+      }
+    },
+    {
+      "lesson": "04-inheritance/05-reuse-with-super",
+      "classes": {
+        "Shipment": "Quest",
+        "InsuredShipment": "RewardQuest"
+      },
+      "scoped_term_mapping": {
+        "InsuredShipment": "RewardQuest",
+        "Shipment": "Quest",
+        "shipment": "quest",
+        "shipments": "quests",
+        "tracking": "code",
+        "insured": "reward",
+        "insurance": "reward",
+        "amount": "points"
+      }
+    },
+    {
+      "lesson": "04-inheritance/06-substitution-in-a-loop",
+      "classes": {
+        "Delivery": "Ability",
+        "BikeDelivery": "GlideAbility"
+      },
+      "scoped_term_mapping": {
+        "BikeDelivery": "GlideAbility",
+        "Delivery": "Ability",
+        "dispatch_messages": "ability_messages",
+        "deliveries": "abilities",
+        "delivery": "ability",
+        "dispatch": "activate",
+        "Road": "Walk",
+        "Bike": "Glide"
+      }
+    },
+    {
+      "lesson": "04-inheritance/07-compose-a-service",
+      "classes": {
+        "BracketFormatter": "BracketFormatter",
+        "NoticeBoard": "QuestHUD"
+      },
+      "scoped_term_mapping": {
+        "NoticeBoard": "QuestHUD",
+        "notice board": "quest HUD",
+        "board": "hud",
+        "Board": "HUD",
+        "Workshop at noon": "Lantern found"
+      }
+    },
+    {
+      "lesson": "04-inheritance/08-introduce-slots",
+      "classes": {
+        "GridPoint": "MapCell"
+      },
+      "scoped_term_mapping": {
+        "GridPoint": "MapCell"
+      }
+    },
+    {
+      "lesson": "04-inheritance/09-slots-in-subclasses",
+      "classes": {
+        "Point": "Waypoint",
+        "LabeledPoint": "NamedWaypoint"
+      },
+      "scoped_term_mapping": {
+        "LabeledPoint": "NamedWaypoint",
+        "Point": "Waypoint"
+      }
+    },
+    {
+      "lesson": "04-inheritance/10-multiple-inheritance",
+      "classes": {
+        "PrintableCode": "LabelMixin",
+        "TrackableCode": "JournalMixin",
+        "InventoryCard": "QuestCard"
+      },
+      "scoped_term_mapping": {
+        "InventoryCard": "QuestCard",
+        "PrintableCode": "LabelMixin",
+        "TrackableCode": "JournalMixin",
+        "tracking_path": "journal_path",
+        "/track/": "/journal/",
+        "tracking URL": "journal lookup path",
+        "inventory card": "quest card"
+      }
+    },
+    {
+      "lesson": "04-inheritance/11-inspect-the-mro",
+      "classes": {
+        "Document": "Entity",
+        "Signed": "GlowMixin",
+        "Dated": "TrailMixin",
+        "Report": "LanternSprite"
+      },
+      "scoped_term_mapping": {
+        "Document": "Entity",
+        "Signed": "GlowMixin",
+        "Dated": "TrailMixin",
+        "Report": "LanternSprite",
+        "report": "sprite",
+        "formatting capabilities": "entity capabilities"
+      }
+    },
+    {
+      "lesson": "04-inheritance/12-cooperative-diamond",
+      "classes": {
+        "Document": "Entity",
+        "Signed": "GlowMixin",
+        "Dated": "TrailMixin",
+        "Report": "LanternSprite"
+      },
+      "scoped_term_mapping": {
+        "ReverseReport": "ReverseSprite",
+        "Document": "Entity",
+        "Signed": "GlowMixin",
+        "Dated": "TrailMixin",
+        "Report": "LanternSprite",
+        "document": "entity",
+        "signed": "glow",
+        "dated": "trail",
+        "report": "sprite",
+        "signing": "glow",
+        "dating": "trail"
+      }
+    }
+  ],
+  "identities": [
+    {
+      "file": "03-python-protocols/07-value-equality/lesson.md",
+      "slug": "value-equality",
+      "order": 7
+    },
+    {
+      "file": "03-python-protocols/12-callable-objects/lesson.md",
+      "slug": "callable-objects",
+      "order": 12
+    },
+    {
+      "file": "03-python-protocols/06-reflected-multiplication/lesson.md",
+      "slug": "reflected-multiplication",
+      "order": 6
+    },
+    {
+      "file": "03-python-protocols/10-truthy-objects/lesson.md",
+      "slug": "truthy-objects",
+      "order": 10
+    },
+    {
+      "file": "03-python-protocols/14-explicit-cleanup/lesson.md",
+      "slug": "explicit-cleanup",
+      "order": 14
+    },
+    {
+      "file": "03-python-protocols/13-custom-format/lesson.md",
+      "slug": "custom-format",
+      "order": 13
+    },
+    {
+      "file": "03-python-protocols/03-add-value-objects/lesson.md",
+      "slug": "add-value-objects",
+      "order": 3
+    },
+    {
+      "file": "03-python-protocols/11-hashable-keys/lesson.md",
+      "slug": "hashable-keys",
+      "order": 11
+    },
+    {
+      "file": "03-python-protocols/08-order-value-objects/lesson.md",
+      "slug": "order-value-objects",
+      "order": 8
+    },
+    {
+      "file": "03-python-protocols/02-developer-repr/lesson.md",
+      "slug": "developer-repr",
+      "order": 2
+    },
+    {
+      "file": "03-python-protocols/09-sized-objects/lesson.md",
+      "slug": "sized-objects",
+      "order": 9
+    },
+    {
+      "file": "03-python-protocols/05-multiply-by-a-scalar/lesson.md",
+      "slug": "multiply-by-a-scalar",
+      "order": 5
+    },
+    {
+      "file": "03-python-protocols/01-friendly-str/lesson.md",
+      "slug": "friendly-str",
+      "order": 1
+    },
+    {
+      "file": "03-python-protocols/04-subtract-value-objects/lesson.md",
+      "slug": "subtract-value-objects",
+      "order": 4
+    },
+    {
+      "file": "04-inheritance/11-inspect-the-mro/lesson.md",
+      "slug": "inspect-the-mro",
+      "order": 11
+    },
+    {
+      "file": "04-inheritance/08-introduce-slots/lesson.md",
+      "slug": "introduce-slots",
+      "order": 8
+    },
+    {
+      "file": "04-inheritance/04-override-a-method/lesson.md",
+      "slug": "override-a-method",
+      "order": 4
+    },
+    {
+      "file": "04-inheritance/06-substitution-in-a-loop/lesson.md",
+      "slug": "substitution-in-a-loop",
+      "order": 6
+    },
+    {
+      "file": "04-inheritance/09-slots-in-subclasses/lesson.md",
+      "slug": "slots-in-subclasses",
+      "order": 9
+    },
+    {
+      "file": "04-inheritance/02-the-object-base/lesson.md",
+      "slug": "the-object-base",
+      "order": 2
+    },
+    {
+      "file": "04-inheritance/05-reuse-with-super/lesson.md",
+      "slug": "reuse-with-super",
+      "order": 5
+    },
+    {
+      "file": "04-inheritance/07-compose-a-service/lesson.md",
+      "slug": "compose-a-service",
+      "order": 7
+    },
+    {
+      "file": "04-inheritance/03-extend-initialization/lesson.md",
+      "slug": "extend-initialization",
+      "order": 3
+    },
+    {
+      "file": "04-inheritance/01-inherit-a-method/lesson.md",
+      "slug": "inherit-a-method",
+      "order": 1
+    },
+    {
+      "file": "04-inheritance/10-multiple-inheritance/lesson.md",
+      "slug": "multiple-inheritance",
+      "order": 10
+    },
+    {
+      "file": "04-inheritance/12-cooperative-diamond/lesson.md",
+      "slug": "cooperative-diamond",
+      "order": 12
+    }
+  ],
+  "native_results": [
+    {
+      "lesson": "03-python-protocols/01-friendly-str",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Not ready: TypeError __str__ returned non-string (type NoneType)\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_friendly_str",
+          "passed": false,
+          "error": "TypeError: __str__ returned non-string (type NoneType)"
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/01-friendly-str",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Lake: 4 km\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_friendly_str",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/02-developer-repr",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Not ready: TypeError __repr__ returned non-string (type NoneType)\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_developer_repr",
+          "passed": false,
+          "error": "TypeError: __repr__ returned non-string (type NoneType)"
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/02-developer-repr",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "LootBundle(code=\"A'7\", count=3)\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_developer_repr",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/03-add-value-objects",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Not ready: AttributeError 'NoneType' object has no attribute 'steps'\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_add_value_objects",
+          "passed": false,
+          "error": "AssertionError: Addition must return a MovementOffset."
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/03-add-value-objects",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Combined steps: 10\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_add_value_objects",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/04-subtract-value-objects",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Not ready: AttributeError 'NoneType' object has no attribute 'steps'\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_subtract_value_objects",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/04-subtract-value-objects",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Difference: -5\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_subtract_value_objects",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/05-multiply-by-a-scalar",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Not ready: AttributeError 'NoneType' object has no attribute 'points'\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_multiply_by_a_scalar",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/05-multiply-by-a-scalar",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Scaled points: 21\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_multiply_by_a_scalar",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/06-reflected-multiplication",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Not ready: AttributeError 'NoneType' object has no attribute 'points'\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_reflected_multiplication",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/06-reflected-multiplication",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Both orders: 20 20\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_reflected_multiplication",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/07-value-equality",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Equal save slots: None\nDifferent profiles: None\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_value_equality",
+          "passed": false,
+          "error": "AssertionError: Compare both stored fields."
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/07-value-equality",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Equal save slots: True\nDifferent profiles: False\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_value_equality",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/08-order-value-objects",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Sorted seconds: [64, 59, 62]\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_order_value_objects",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/08-order-value-objects",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Sorted seconds: [59, 62, 64]\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_order_value_objects",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/09-sized-objects",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Not ready: TypeError 'NoneType' object cannot be interpreted as an integer\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_sized_objects",
+          "passed": false,
+          "error": "TypeError: 'NoneType' object cannot be interpreted as an integer"
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/09-sized-objects",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Items: 2\nAfter adding: 3\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_sized_objects",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/10-truthy-objects",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Not ready: TypeError __bool__ should return bool, returned NoneType\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_truthy_objects",
+          "passed": false,
+          "error": "AssertionError: Return a bool for the complete usability rule."
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/10-truthy-objects",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Ready: True\nSwitched off: False\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_truthy_objects",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/11-hashable-keys",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Not ready: TypeError cannot use 'SaveSlotKey' as a dict key (__hash__ method should return an integer)\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_hashable_keys",
+          "passed": false,
+          "error": "TypeError: __hash__ method should return an integer"
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/11-hashable-keys",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Found: checkpoint\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_hashable_keys",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/12-callable-objects",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Scores: None None None\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_callable_objects",
+          "passed": false,
+          "error": "AssertionError: Use this call's value and this instance's factor."
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/12-callable-objects",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Scores: 24 60 6\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_callable_objects",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/13-custom-format",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Not ready: TypeError __format__ must return a str, not NoneType\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_custom_format",
+          "passed": false,
+          "error": "TypeError: __format__ must return a str, not NoneType"
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/13-custom-format",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Compact: 18 m\nExpanded: 18 metres\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_custom_format",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/14-explicit-cleanup",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "After explicit hook: False []\nAfter explicit close: ['closed:preview']\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_explicit_cleanup",
+          "passed": false,
+          "error": "AssertionError: Delegate the hook to close()."
+        }
+      ]
+    },
+    {
+      "lesson": "03-python-protocols/14-explicit-cleanup",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "After explicit hook: True ['closed:preview']\nAfter explicit close: ['closed:preview']\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_explicit_cleanup",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/01-inherit-a-method",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Not ready: NameError name 'SupplyChest' is not defined\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_inherit_a_method",
+          "passed": false,
+          "error": "NameError: name 'SupplyChest' is not defined"
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/01-inherit-a-method",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "GameEntity B7\nIs a game entity: True\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_inherit_a_method",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/02-the-object-base",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Plain: None\nSubclass: None\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_the_object_base",
+          "passed": false,
+          "error": "AssertionError: Inspect the actual class's direct bases."
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/02-the-object-base",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Plain: True\nSubclass: False\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_the_object_base",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/03-extend-initialization",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Not ready: AttributeError 'CooldownAbility' object has no attribute 'title'\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_extend_initialization",
+          "passed": false,
+          "error": "AttributeError: 'CooldownAbility' object has no attribute 'title'"
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/03-extend-initialization",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Ability: Dash 14\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_extend_initialization",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/04-override-a-method",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Sound at door\nNone\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_override_a_method",
+          "passed": false,
+          "error": "AssertionError: Override the subclass signal."
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/04-override-a-method",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Sound at door\nLight at door\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_override_a_method",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/05-reuse-with-super",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "None\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_reuse_with_super",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/05-reuse-with-super",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Quest Q8 | reward 200\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_reuse_with_super",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/06-substitution-in-a-loop",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "None\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_substitution_in_a_loop",
+          "passed": false,
+          "error": "AssertionError: Empty input returns an empty list."
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/06-substitution-in-a-loop",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "['Walk A', 'Glide B']\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_substitution_in_a_loop",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/07-compose-a-service",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "None\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_compose_a_service",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/07-compose-a-service",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "[Lantern found]\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_compose_a_service",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/08-introduce-slots",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Coordinates: 2 5\nExtra attribute accepted; add slots.\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_introduce_slots",
+          "passed": false,
+          "error": "AttributeError: type object 'MapCell' has no attribute '__slots__'"
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/08-introduce-slots",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Coordinates: 2 5\nExtra attribute rejected.\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_introduce_slots",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/09-slots-in-subclasses",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "4 7 gate\nExtra attribute accepted; add subclass slots.\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_slots_in_subclasses",
+          "passed": false,
+          "error": "AssertionError: Declare only the new field."
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/09-slots-in-subclasses",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "4 7 gate\nSubclass layout remains restricted.\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_slots_in_subclasses",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/10-multiple-inheritance",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Not ready: AttributeError 'QuestCard' object has no attribute 'print_label'\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_multiple_inheritance",
+          "passed": false,
+          "error": "AssertionError: Use the two bases in the requested order."
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/10-multiple-inheritance",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Item K9\n/journal/K9\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_multiple_inheritance",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/11-inspect-the-mro",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Direct bases: ['GlowMixin', 'TrailMixin']\nFull order: None\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_inspect_the_mro",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/11-inspect-the-mro",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Direct bases: ['GlowMixin', 'TrailMixin']\nFull order: ['LanternSprite', 'GlowMixin', 'TrailMixin', 'Entity', 'object']\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_inspect_the_mro",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/12-cooperative-diamond",
+      "variant": "starter",
+      "returncode": 0,
+      "stdout": "Build order: None\nShared list: []\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_cooperative_diamond",
+          "passed": false,
+          "error": "AssertionError: "
+        }
+      ]
+    },
+    {
+      "lesson": "04-inheritance/12-cooperative-diamond",
+      "variant": "solution",
+      "returncode": 0,
+      "stdout": "Build order: ['glow', 'trail', 'entity']\nShared list: ['glow', 'trail', 'entity']\n",
+      "stderr": "",
+      "tests": [
+        {
+          "name": "test_01_cooperative_diamond",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "example_results": [
+    {
+      "lesson": "03-python-protocols/07-value-equality",
+      "index": 0,
+      "stdout": "True\nFalse\n",
+      "passed": true
+    },
+    {
+      "lesson": "03-python-protocols/12-callable-objects",
+      "index": 0,
+      "stdout": "Doors open.\n",
+      "passed": true
+    },
+    {
+      "lesson": "03-python-protocols/06-reflected-multiplication",
+      "index": 0,
+      "stdout": "24\n",
+      "passed": true
+    },
+    {
+      "lesson": "03-python-protocols/10-truthy-objects",
+      "index": 0,
+      "stdout": "False\n",
+      "passed": true
+    },
+    {
+      "lesson": "03-python-protocols/14-explicit-cleanup",
+      "index": 0,
+      "stdout": "False\n",
+      "passed": true
+    },
+    {
+      "lesson": "03-python-protocols/13-custom-format",
+      "index": 0,
+      "stdout": "8.12\n8.1\n",
+      "passed": true
+    },
+    {
+      "lesson": "03-python-protocols/03-add-value-objects",
+      "index": 0,
+      "stdout": "20\n",
+      "passed": true
+    },
+    {
+      "lesson": "03-python-protocols/11-hashable-keys",
+      "index": 0,
+      "stdout": "spare lamps\n",
+      "passed": true
+    },
+    {
+      "lesson": "03-python-protocols/08-order-value-objects",
+      "index": 0,
+      "stdout": "[180, 200, 210]\n[210, 180, 200]\n",
+      "passed": true
+    },
+    {
+      "lesson": "03-python-protocols/02-developer-repr",
+      "index": 0,
+      "stdout": "[Reading(value=18)]\n",
+      "passed": true
+    },
+    {
+      "lesson": "03-python-protocols/09-sized-objects",
+      "index": 0,
+      "stdout": "2\n0\n",
+      "passed": true
+    },
+    {
+      "lesson": "03-python-protocols/05-multiply-by-a-scalar",
+      "index": 0,
+      "stdout": "400\n",
+      "passed": true
+    },
+    {
+      "lesson": "03-python-protocols/01-friendly-str",
+      "index": 0,
+      "stdout": "Timer: 7 min\n",
+      "passed": true
+    },
+    {
+      "lesson": "03-python-protocols/04-subtract-value-objects",
+      "index": 0,
+      "stdout": "-3\n",
+      "passed": true
+    },
+    {
+      "lesson": "04-inheritance/11-inspect-the-mro",
+      "index": 0,
+      "stdout": "['Leaf', 'Root', 'object']\n",
+      "passed": true
+    },
+    {
+      "lesson": "04-inheritance/08-introduce-slots",
+      "index": 0,
+      "stdout": "5\n",
+      "passed": true
+    },
+    {
+      "lesson": "04-inheritance/04-override-a-method",
+      "index": 0,
+      "stdout": "small drum: tap\n",
+      "passed": true
+    },
+    {
+      "lesson": "04-inheritance/06-substitution-in-a-loop",
+      "index": 0,
+      "stdout": "['ARRIVAL', 'DEPARTURE']\n",
+      "passed": true
+    },
+    {
+      "lesson": "04-inheritance/09-slots-in-subclasses",
+      "index": 0,
+      "stdout": "True\n",
+      "passed": true
+    },
+    {
+      "lesson": "04-inheritance/02-the-object-base",
+      "index": 0,
+      "stdout": "True\nTrue\n",
+      "passed": true
+    },
+    {
+      "lesson": "04-inheritance/05-reuse-with-super",
+      "index": 0,
+      "stdout": "Welcome this morning\n",
+      "passed": true
+    },
+    {
+      "lesson": "04-inheritance/07-compose-a-service",
+      "index": 0,
+      "stdout": "Playing Rain\n",
+      "passed": true
+    },
+    {
+      "lesson": "04-inheritance/03-extend-initialization",
+      "index": 0,
+      "stdout": "5\n",
+      "passed": true
+    },
+    {
+      "lesson": "04-inheritance/01-inherit-a-method",
+      "index": 0,
+      "stdout": "REMINDER\n",
+      "passed": true
+    },
+    {
+      "lesson": "04-inheritance/10-multiple-inheritance",
+      "index": 0,
+      "stdout": "HELLO hello\n",
+      "passed": true
+    },
+    {
+      "lesson": "04-inheritance/12-cooperative-diamond",
+      "index": 0,
+      "stdout": "['prepared', 'finished']\n",
+      "passed": true
+    }
+  ],
+  "python_structure_checks": [
+    {
+      "file": "03-python-protocols/07-value-equality/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/07-value-equality/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/12-callable-objects/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/12-callable-objects/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/06-reflected-multiplication/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/06-reflected-multiplication/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/10-truthy-objects/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/10-truthy-objects/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/14-explicit-cleanup/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/14-explicit-cleanup/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/13-custom-format/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/13-custom-format/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/03-add-value-objects/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/03-add-value-objects/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/11-hashable-keys/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/11-hashable-keys/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/08-order-value-objects/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/08-order-value-objects/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/02-developer-repr/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/02-developer-repr/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/09-sized-objects/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/09-sized-objects/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/05-multiply-by-a-scalar/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/05-multiply-by-a-scalar/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/01-friendly-str/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/01-friendly-str/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/04-subtract-value-objects/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/04-subtract-value-objects/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/04-subtract-value-objects/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/01-friendly-str/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/05-multiply-by-a-scalar/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/09-sized-objects/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/02-developer-repr/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/08-order-value-objects/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/11-hashable-keys/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/03-add-value-objects/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/13-custom-format/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/14-explicit-cleanup/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/10-truthy-objects/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/06-reflected-multiplication/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/12-callable-objects/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "03-python-protocols/07-value-equality/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/11-inspect-the-mro/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/11-inspect-the-mro/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/08-introduce-slots/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/08-introduce-slots/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/04-override-a-method/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/04-override-a-method/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/06-substitution-in-a-loop/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/06-substitution-in-a-loop/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/09-slots-in-subclasses/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/09-slots-in-subclasses/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/02-the-object-base/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/02-the-object-base/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/05-reuse-with-super/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/05-reuse-with-super/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/07-compose-a-service/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/07-compose-a-service/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/03-extend-initialization/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/03-extend-initialization/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/01-inherit-a-method/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/01-inherit-a-method/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/10-multiple-inheritance/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/10-multiple-inheritance/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/12-cooperative-diamond/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/12-cooperative-diamond/test_main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/12-cooperative-diamond/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/10-multiple-inheritance/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/01-inherit-a-method/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/03-extend-initialization/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/07-compose-a-service/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/05-reuse-with-super/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/02-the-object-base/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/09-slots-in-subclasses/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/06-substitution-in-a-loop/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/04-override-a-method/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/08-introduce-slots/solution/main.py",
+      "same_ast_shape": true
+    },
+    {
+      "file": "04-inheritance/11-inspect-the-mro/solution/main.py",
+      "same_ast_shape": true
+    }
+  ],
+  "files": [
+    {
+      "file": "03-python-protocols/01-friendly-str/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "03-python-protocols/01-friendly-str/lesson.md",
+      "before_sha256": "32bf4bf6eb4e7a7898dbdc6af3dc3cc74e656a73f69d7a19b650d2d784b63826",
+      "final_sha256": "a6cf5c443c211d35780083859dc1b6682bd79a1c36241083aafba9f4c34de37b",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/01-friendly-str/main.py",
+      "before_sha256": "c1ee79a543ff08bc3e726c3d88e0fb7a317095ff2fa623256d5c208a99238bc7",
+      "final_sha256": "73a300ea3266a32576f8bf3f5daa0a320768f810d29055d55d7311346e46b690",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/01-friendly-str/solution/main.py",
+      "before_sha256": "43b9ab1cabcc8db7f55db9f376d7976beace99bb20b7897f187f89b287b58f91",
+      "final_sha256": "903fbffab90aa1c289d7e5b84fa69a86c2e90a091aac11d61fc1e37864d29917",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/01-friendly-str/test_main.py",
+      "before_sha256": "8a3b4c72bc3b43e9c268497a8a396a7c1d0e3c1d764300b75c414236a7dcacb0",
+      "final_sha256": "396d41c9da39613feacefeaa15fd8de47b39e58c660ec72f4921aa50231fb32c",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/02-developer-repr/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "03-python-protocols/02-developer-repr/lesson.md",
+      "before_sha256": "805ff7f8016dc0d6080ca6944079a70315f1de3b78149d1c31155dc83e7ee7f6",
+      "final_sha256": "1957667204d328fb639da9ff6098b05d12ca7aff96f7b3d6a0839c8be7bb0284",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/02-developer-repr/main.py",
+      "before_sha256": "7fcd1684dbbaa5d9928ea1cafe694e7550531a60940c17a06f75665c5aa8f506",
+      "final_sha256": "647eb7f1b63e9d4a1e50c23861fd352efa6cbd93f931d8d361245e3a79d08e95",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/02-developer-repr/solution/main.py",
+      "before_sha256": "ab75a3321bd6977c5bc0dc359440db48bb1000e2d06e6b2310c8248d29dd8b14",
+      "final_sha256": "f2d2d29b2b13031bdf02f111107126a0f80425391a6cc8228988d46e79b47887",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/02-developer-repr/test_main.py",
+      "before_sha256": "700f48b136b0b35b7524f31c3d8756c12a968a52fd0eb2d7e134fe396fb7566a",
+      "final_sha256": "fc205730df70596e48b2dd0bc55c0ac41c1c43b9daf68d40bdf83ff5d9b163fd",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/03-add-value-objects/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "03-python-protocols/03-add-value-objects/lesson.md",
+      "before_sha256": "b9409f753e7d1ae32f2767336e0f962d7024b46a854d220b5a5e9cf6dfc3da5b",
+      "final_sha256": "a99feb7616634d0308049b513a243fe3572c0269174828fb7fdda8268bf50c24",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/03-add-value-objects/main.py",
+      "before_sha256": "b8dffd4bcda3b41fe0d2c74c5a7de284164890c72cd0346ff96e064a68d3f8c5",
+      "final_sha256": "3615119751605a6df7c1767b113b9ec00f0fa308cecbda2d7d48a1d1ccf7ba64",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/03-add-value-objects/solution/main.py",
+      "before_sha256": "d1c07e90c5b0ba401b6cdd6fcbdad03618616a7b566216c6433cda19487580aa",
+      "final_sha256": "e7835969b4c8b62e9d243def57ce2c48ede14b6a203e3160067276f7c8775b0e",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/03-add-value-objects/test_main.py",
+      "before_sha256": "7ca9b12ee21d9554be82b53d46dd75c745bf0aadf2a694a2d58cd8103290110b",
+      "final_sha256": "8187d44d2b354dc291bb8ece848da1b129a0a27376a5b05e30d731b2c947c82c",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/04-subtract-value-objects/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "03-python-protocols/04-subtract-value-objects/lesson.md",
+      "before_sha256": "22c4fa97d7a5b3d839334a082420ffc890b18e1e2749e0ffed5cc212258e0a63",
+      "final_sha256": "3fdb53173e2dbec83fb7a335111ac1023907da58e3978308c776d8a902ca53c3",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/04-subtract-value-objects/main.py",
+      "before_sha256": "dd8f38a26accf8b0734a6484b0dbaff081bdf41e05e56f9e4472af5b06cd31fd",
+      "final_sha256": "385c5c2149343223fce147216d5b415214eac59d33cd187e1cc1be2007a2eff2",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/04-subtract-value-objects/solution/main.py",
+      "before_sha256": "d5cd2ea24e116432979113a9c08b7fcf6bdb87a35da9cf51fac21c2c06ee1afd",
+      "final_sha256": "9136efd756e82910c037dc89f4d5652ddaeeadc976cc73c638679f1dcff5e11d",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/04-subtract-value-objects/test_main.py",
+      "before_sha256": "b7b00507704e1319869a5c3cd84b7a4eeaa2a635427b8b07214f891adecc82ba",
+      "final_sha256": "0aa5ac670bc00d2838cd394dff15c094040085e5fe888f3989748236381e6087",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/05-multiply-by-a-scalar/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "03-python-protocols/05-multiply-by-a-scalar/lesson.md",
+      "before_sha256": "8e0718cd165a1ada4fdc25fb35cd6347572c47635b30f766abe0da52b23ccc4a",
+      "final_sha256": "66881e55a2cffd70db5180f2f8bec1c0addde9940442bfdfd72e312ca327bb17",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/05-multiply-by-a-scalar/main.py",
+      "before_sha256": "314ad92363d68e484d57ecbad0b17f87c1dd69944f5f2fbfc6f7f68612d71c43",
+      "final_sha256": "f161b293634e50125eb80cc1b129ac16f722b7690e5a0b366e8fcfd7d4bfd2de",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/05-multiply-by-a-scalar/solution/main.py",
+      "before_sha256": "1c65fbbb176391f85623b0d7e53283dd0770693fb2d97ffd0c960b4186c5df3f",
+      "final_sha256": "287f03d7fd0d1ae4837bb87961cb3532f5744e10754b15157e0fa14134494152",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/05-multiply-by-a-scalar/test_main.py",
+      "before_sha256": "bb8011888088e5d7ac22fe5ab1a46eec3d83595d0da4ee56cf57f065b2899192",
+      "final_sha256": "0f03e800b3748b54169bb3502038af4b93f106ec1c00e6fb3a77ef69937ef39e",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/06-reflected-multiplication/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "03-python-protocols/06-reflected-multiplication/lesson.md",
+      "before_sha256": "58bc397e6c76970d3d56c70ce0cd51070a49e5538d5f669be6f634c558d0dcef",
+      "final_sha256": "eacb9e70145feea305941b743bfec9c7fdf07ea80a0455570fc036e2e932fd6b",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/06-reflected-multiplication/main.py",
+      "before_sha256": "94012a41ecae86c8059e5697d39421645e1a8e598667372be690e8820c26f6a1",
+      "final_sha256": "242b5509639a13c27b6e393085a4181950a8588210a565bd01a09365ca997d3e",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/06-reflected-multiplication/solution/main.py",
+      "before_sha256": "d7a66ad2f0a90da76c87d45d51ae4024123a02bf56f06e81abec20593f8e9133",
+      "final_sha256": "2ebfc4c0f8266f982eceea8431f647bef43a728c1dfbced5d6a2c5b0f028d1f4",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/06-reflected-multiplication/test_main.py",
+      "before_sha256": "7b4699fca51c82b15d5de1d139a764129717987d0931743ec165f899e392cbc1",
+      "final_sha256": "b90418d9d88c6191b0da17b8edbe7143f98f1f1181e8e5572ec5aa971b19c938",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/07-value-equality/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "03-python-protocols/07-value-equality/lesson.md",
+      "before_sha256": "4ff9d5a69a24f0b6436d2b61538d30717f827681c82fdbf047d6aba1efe1710e",
+      "final_sha256": "4d6f08daa649d10de4fe4c9b97334a721c96079b6dc0027db0eece5ec0e250ff",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/07-value-equality/main.py",
+      "before_sha256": "c8113489bc3e6ce0ad4f3559b32c09cea5d22234944f475d8636a815b83225b9",
+      "final_sha256": "ae45cba70423ce3eade5ebf5354c54db9d4ab5e2fb7f2184fe52029442aea45d",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/07-value-equality/solution/main.py",
+      "before_sha256": "e760c0e9fbc28f24dfe2008b7cdc8b9fb3d94dfe13432d224d96d2b080433925",
+      "final_sha256": "0574aee13df81fb71ae19723031b3787316a30ad86d05c65933afe927f141d23",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/07-value-equality/test_main.py",
+      "before_sha256": "9871aba9edee20cecfc479bf3d91f030d20d3953327a2ea939b5c3667c0c603b",
+      "final_sha256": "465207a38a5b5b5d42439c27a91bc36f21ed3d613d9648d18bea208e1aa9d264",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/08-order-value-objects/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "03-python-protocols/08-order-value-objects/lesson.md",
+      "before_sha256": "cee2dfd6bad067c14d62b2e4df2d47a24c9dfb7911348a4f4283529f27b1f154",
+      "final_sha256": "4c56a7efd8288e19634b40764d7d2298b03050af070a9826937a9fe5ec92f51f",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/08-order-value-objects/main.py",
+      "before_sha256": "a1b63592f23a94fee5a1fd8051e62060c6e0852b72571a455d0fd06be3d6f81d",
+      "final_sha256": "334e7fabb625e87a17b5aa0e13e54b3c6469cb1fca303a661d9fc0ac5947b8d5",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/08-order-value-objects/solution/main.py",
+      "before_sha256": "66549b3bc59c751842913ed0cc23b2645c5455ec45941875ebb1f41e2e913a49",
+      "final_sha256": "763943d11f964c1996c1eb6f8269f7ddc09bc1b76d7c393e9781024d42a428a1",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/08-order-value-objects/test_main.py",
+      "before_sha256": "406157a1fd54bc58632e2d9d5122a80dc643a98f9476e7ab57bb292273a93eb2",
+      "final_sha256": "7f7c1dcd2e5f4148a28da5a56c66da14f9340014f91298aaefe2251af1df3488",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/09-sized-objects/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "03-python-protocols/09-sized-objects/lesson.md",
+      "before_sha256": "d536cad291a29cc9d867341117f6d4c607edc98218838c981c5084f5153fbab6",
+      "final_sha256": "499629821209de7252d81ac920a013104023ad161975d2cf199aa9f8ec4ff562",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/09-sized-objects/main.py",
+      "before_sha256": "002a024a1c79fbd0611306dece6983f7c2e5c197cee5849e2d3134c404c63690",
+      "final_sha256": "14354d166ee7fff06aed44caf9f997e87c053167cedca2e61ed61746cc70d471",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/09-sized-objects/solution/main.py",
+      "before_sha256": "cd236948fac43a7569f38863e55695b16774eca157beb1d378dde7fc95a2c697",
+      "final_sha256": "7c167a0cb8868e954a11d7572289efffee06aabad3b2b8f7e4868c629fbeabf6",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/09-sized-objects/test_main.py",
+      "before_sha256": "7c4843654a935056a5890525a249dd9d60f3a55ab1aeeb13d19c9cb36a93175f",
+      "final_sha256": "7dbaa7859e36a5d0e91f2f4ac0e2364d0972e64e026f0c929e484c20d1c1028c",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/10-truthy-objects/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "03-python-protocols/10-truthy-objects/lesson.md",
+      "before_sha256": "2872af18360aa99af54d296a30e80290482e132c03692ffe1b57ce1267e79bb6",
+      "final_sha256": "72a49729da5bd11b3e299c0787a4b123cfb0f9ec180b3293ba08611ff64c8a9f",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/10-truthy-objects/main.py",
+      "before_sha256": "7efa6aace2043e0e70f43ce8182927144d895af1185d6f63d70e2aa810269d4f",
+      "final_sha256": "b14a639f0aafe80ec1dd8d8e1a3ea59cb13be5fd3101cf09ceabdfe83ebdf0b1",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/10-truthy-objects/solution/main.py",
+      "before_sha256": "bd397482cf566e7c26bfd382fc67bf8ecf9d076565301f0573e840ee8f53487f",
+      "final_sha256": "e87092d3b9c53db8dde743da016b0283a21bd4b8713cb53ce0c66c60f6d858f4",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/10-truthy-objects/test_main.py",
+      "before_sha256": "c932a390001a14060d6884eaaebd4451001a60ac1104dae79283f389b32484aa",
+      "final_sha256": "e3e2999cd4cb2103b1734994fd38dc418dfbbaff6d69c1f1cf41fc6506b37288",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/11-hashable-keys/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "03-python-protocols/11-hashable-keys/lesson.md",
+      "before_sha256": "56e31116b167c008557d46d20740c9d9290c1a8262a2661558cf7b626e6208ed",
+      "final_sha256": "ca2958e4e7ebb684eb0389412aa89f4b89a86dbc7953bd800a6d3d6e02a88b20",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/11-hashable-keys/main.py",
+      "before_sha256": "84e43bf2acba01fce0b3aa6ea39097ff41c551a7d995ea9c1c228fde03672f49",
+      "final_sha256": "c49493982594935ad8ca0991f29e8559d6d7c680ab517772a2239758dd071ece",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/11-hashable-keys/solution/main.py",
+      "before_sha256": "807471a3b3c648452383a2978d62784ec035c86095497571742aa967bb7b7099",
+      "final_sha256": "ae738e963b1e2396549eba4ca384a85c7e54554ac3c3fb571c2c337462c9ee6c",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/11-hashable-keys/test_main.py",
+      "before_sha256": "ba791ab5b0c0260c2e659cc48dbe4c562c00c2081b7fcf3086963c12685d7adc",
+      "final_sha256": "a13f9b047634da2e7c7211ab4bfae991a052737196f5f71a22ad50c1d6605b42",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/12-callable-objects/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "03-python-protocols/12-callable-objects/lesson.md",
+      "before_sha256": "f2fac0478e0fc22224e95127fd73cf4a983eeb70e24c3beb453c94c5bf889888",
+      "final_sha256": "17528a17543c99324cc5fa9cf856d726c3e822b375aa7cc70a8547a9e6ac2e4c",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/12-callable-objects/main.py",
+      "before_sha256": "80c7b55f3957e891ecb87cdb2eac99bb94875e88988dab777d3c4c8783bdab10",
+      "final_sha256": "b66c4a88a984ebf3e7be3fb4d2fb7a21aabffcba1338936ce294486099b1cb37",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/12-callable-objects/solution/main.py",
+      "before_sha256": "f0fce4899c7b1607d27029709bfe9801e06bb9ec75c66d66783820960bca0973",
+      "final_sha256": "2667db6256a983362731c24d9a35078315920e0465aa7ba6764757cd3742637e",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/12-callable-objects/test_main.py",
+      "before_sha256": "be70067a62a2cbef6d6a7be4175e9908f4f23a1a8c0373310b5970e4b78836df",
+      "final_sha256": "95cf218a76a5acf73b6b04462113951d53b5c99ff7c40530d16b0423a62d71b8",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/13-custom-format/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "03-python-protocols/13-custom-format/lesson.md",
+      "before_sha256": "2c3e1ea72115397652318de1f90db919fba75957ef68c0e4731e3684562f1150",
+      "final_sha256": "20dadd3abb5e7a08d1f5ca76a905324ef49297cec9809843b609461ba7fa12c0",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/13-custom-format/main.py",
+      "before_sha256": "eb1ef257a375de282523a22ad2f0acfed8ad14bb21bf63e974490ae0a3bb6111",
+      "final_sha256": "0e856d1a42236922e6aa2835d22d6a7c70978bb94576f253bff98aebb1154fba",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/13-custom-format/solution/main.py",
+      "before_sha256": "6730d19de0959b07cc4f93957260074002b3a7440d17ecf3440127a8776561c3",
+      "final_sha256": "783cf9f116ae2ccfbe8524edf2023af10d5cefb07b89e891823642608b1061bd",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/13-custom-format/test_main.py",
+      "before_sha256": "a8537b1cbbb3bcd95fba15ebb201ed2abfb3acdc2b38827c0b398613a19ae7ee",
+      "final_sha256": "e631d7973a023a4a8fbdddcaf353ec7807839811f61699316577b3c5d0e77ce7",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/14-explicit-cleanup/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "03-python-protocols/14-explicit-cleanup/lesson.md",
+      "before_sha256": "db38bdef3650706f942060f945889674a97532979172cbc93394cfdf9394ef4e",
+      "final_sha256": "2ef552f1a337dc15553a2cffe29f46be425159641c491488cc8628b6ff39ffc7",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/14-explicit-cleanup/main.py",
+      "before_sha256": "90ec7b10534de670ad2b3c2276b6da3d7f035e0c49a0518030cdfc379c733554",
+      "final_sha256": "2b15dc64deddc9e16a9eb6778ad2e8632ebd79ace973206b86dcf978aaa8fc41",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/14-explicit-cleanup/solution/main.py",
+      "before_sha256": "6ab71561b28e6d8bd3b00e4fbec4434621aad2fb0844bf12387c4517c9e42776",
+      "final_sha256": "0d1a9de9bb7c53694a48931262812ede3f35a61e36e0bc5360ad630f7e1e6cd0",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/14-explicit-cleanup/test_main.py",
+      "before_sha256": "43025867be54f4b44bdd051ca2919e87d95a4bc1afd0ddcdd8bf59dfb238961c",
+      "final_sha256": "fe97e8c488c5f2bf215b9201c320d4aae08ee6f9d3a4c00cf76cf9a42271a4be",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/quiz/index.yaml",
+      "before_sha256": "5e0d5d7e7c2643238c34ef2cccdc6fc1fc23d6b1f0da947c4192fab529806514",
+      "final_sha256": "5e0d5d7e7c2643238c34ef2cccdc6fc1fc23d6b1f0da947c4192fab529806514",
+      "changed": false
+    },
+    {
+      "file": "03-python-protocols/quiz/q01.md",
+      "before_sha256": "9b3d9ad9ad046d6fbf2eefb0d64c4637036be13763813f8ada37f27e043676fb",
+      "final_sha256": "8b3decda7aa30ddb6a85d7c1239169aef665c96a854ea2b5b5e16bb9372832fd",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/quiz/q02.md",
+      "before_sha256": "fce415b4a06e2f7b1ad5de744682cf0388ebb82999f169f719fccf8bfa9715b4",
+      "final_sha256": "b3422b1b9de4027b6391e3239740434f74f575c2d9420ae06d0e5e819bd561b1",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/quiz/q03.md",
+      "before_sha256": "a94ec011ac427a33d53fee0a8f56283c555ec43190646f17331ee91df909deda",
+      "final_sha256": "c2c9f92ade3a8ec0b40c23a13cf16af5e6e18f4a418ada1fbb167d7af8f660fe",
+      "changed": true
+    },
+    {
+      "file": "03-python-protocols/quiz/q04.md",
+      "before_sha256": "f1393cedbfa5ec89dd7841d94e74900d4d84557247036671e05ebbb5e57a54d9",
+      "final_sha256": "fddb467a05a34d527ed7dd68e06c92f67d9cebe718fd631f1949f62d32aa7971",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/01-inherit-a-method/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "04-inheritance/01-inherit-a-method/lesson.md",
+      "before_sha256": "a093550657305f882d635e7ae7dc3c54d65bc02de338775abe44345c4fef6b9d",
+      "final_sha256": "d1e267c754e2ccf8cbcf16352be79cdb55fe2c1395c72177a1e6b9221cbbbb9e",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/01-inherit-a-method/main.py",
+      "before_sha256": "fb24371af05bb6a4174a29c4844f00e17727a7f13f26f12a84ba88fc26d44c60",
+      "final_sha256": "bc8bc70ac06d4b734f93aef0b46897bba50b730398345c61c3563c91861e8aa6",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/01-inherit-a-method/solution/main.py",
+      "before_sha256": "34a98e18dadd98e640ea254b52c84c55d25db34156635894171216ed07e83a65",
+      "final_sha256": "4819587ac8e34ef5f4248fc0630dfc32fbf8005c6cc278ae7bebe273c2d361b9",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/01-inherit-a-method/test_main.py",
+      "before_sha256": "ad0654f22203b3f1ddb3e5dda79de3a091eb6312f550a307301f52bb977daf97",
+      "final_sha256": "85617d4a1985b799d3b1f450b17a7f3de924f28c66d70bb2135790f2a540bed7",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/02-the-object-base/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "04-inheritance/02-the-object-base/lesson.md",
+      "before_sha256": "fed07f9d3ba16841d633039a5a73595930bf209be9dd563b9cbc5f0496ed1787",
+      "final_sha256": "b70286d16bcf9aacb20472f64b67090071a6e7b09d63b08cdecd849fc8978fe7",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/02-the-object-base/main.py",
+      "before_sha256": "c4f28484b599f388ab99bf047a8f5dfef0a4fa9e6628073796942b986b34abe4",
+      "final_sha256": "98169aa8f1e2858bfbad1929c815c0ce817eef3dae0588b47ab7683e75d0d936",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/02-the-object-base/solution/main.py",
+      "before_sha256": "dc6586d5a93deba5c95e5361c9d68e75edf0aa0709d260ef1f12c9c0b67e89a4",
+      "final_sha256": "44e0c23d8c9b1bbe4de39d0aca04eb7e08a87a73ccd0e117452e5564761faa92",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/02-the-object-base/test_main.py",
+      "before_sha256": "9d39e4aef180af5509bf98752a438a710a99b41b3bc9f526094e3710a6da9af2",
+      "final_sha256": "97d22fd84725927896525c8e839161cea9596514edca458e60a4f3fe085d3e8e",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/03-extend-initialization/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "04-inheritance/03-extend-initialization/lesson.md",
+      "before_sha256": "abf27b1ae09994af69013f7b09a671a705f4582d255681e54a39854ef2f19e36",
+      "final_sha256": "8af0e98310191c324c33de0b1efd427be34014cceb6f738c0beb344481c88781",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/03-extend-initialization/main.py",
+      "before_sha256": "e0dde30011261ade2fad9dcef31ab6be926fb37f621db2500486ccfd888a3298",
+      "final_sha256": "8b23a6ef75cf598db2e834d3fd42be66ba4a8211c9f74da441def2f08bd4f015",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/03-extend-initialization/solution/main.py",
+      "before_sha256": "c598b310336cba931b4d132fd61179ef98107d9d361ea7cbcc8d2784cd870bb9",
+      "final_sha256": "fb26c25cddc0ab7eb20c8930efc80a299891f642788ea40d40423c1b5aa43c3d",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/03-extend-initialization/test_main.py",
+      "before_sha256": "0cd293e746dc8af265aa487bd047e7076984ba10b50fc781569d01f8e6019041",
+      "final_sha256": "c1044e9ad2c935949683b921a14a2fe91f41c3c731c35c111f8f688d1bb42399",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/04-override-a-method/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "04-inheritance/04-override-a-method/lesson.md",
+      "before_sha256": "c4dc7c1fab128daf8a81ef431aa138157aa1d012af712bac35876279eccfdf76",
+      "final_sha256": "c648eae41db338ecb74a9b5d6b361d9225a28186347ed1a4087dd9e5cfe08c24",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/04-override-a-method/main.py",
+      "before_sha256": "045a56af13a05c846e37ce416106b40d001fb0874514d563c7dd7b7f6b01219b",
+      "final_sha256": "8eb539639edde5f96944f3e88c63a3b43a3e286c972ce34fff8b7d566c309050",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/04-override-a-method/solution/main.py",
+      "before_sha256": "c4768bc6b56965659cc00fdd5444ac563b233ad2906f5ab89740f638aa56b725",
+      "final_sha256": "0ef69a357c878e21d4fa58c49830a2734d231445ea5d2efc0b0852d82943d1eb",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/04-override-a-method/test_main.py",
+      "before_sha256": "048aefef8e873b01e5ba0cbe8e2d32d885cb7936ede48960ba67cd614f01973a",
+      "final_sha256": "37a78b52767ab30d69542a0fa1c3bde4d1a7557f388a251758c686706799b6bb",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/05-reuse-with-super/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "04-inheritance/05-reuse-with-super/lesson.md",
+      "before_sha256": "4cbe2630a92b630ed544bd1b91aca7c55e50b98359b7de1a5cb98329e6c21996",
+      "final_sha256": "115b6fd464f74e8d71bc37167171c93977e2ecec5c73a5fe3cb86508ead6a3fb",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/05-reuse-with-super/main.py",
+      "before_sha256": "178bacc4559f9743dfcdd2f001feb67f3330017f5687d7e9b8198d9c80c7128d",
+      "final_sha256": "8d08d738e47fb9e1c75be6fef00fcedfd90de9a9484e27d9c2e215601213c9c0",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/05-reuse-with-super/solution/main.py",
+      "before_sha256": "5276f7a86704169f21ae0c5eefd6096ed40480d23d76a27738635704f5a383e7",
+      "final_sha256": "00f934b198b4cb0840e0741248788891bf0d2f019a69f8461ee5d02be1a9e44a",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/05-reuse-with-super/test_main.py",
+      "before_sha256": "418640ebd73e54e9e8343b7eeb06c80f4f4ec9078663c032d4b8c0dc0f549752",
+      "final_sha256": "b229ff38954627fcf1c38e6a5048d48a2db16c2d10fd9b79e7a1ce66c66405fe",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/06-substitution-in-a-loop/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "04-inheritance/06-substitution-in-a-loop/lesson.md",
+      "before_sha256": "1d2ccaa9a520457d9e3ee1d7d03105cc0dc279e755c4f1560a1562e283623fbd",
+      "final_sha256": "d83998c7969b63653d3f3129c4b69a271a34abbfcf65f8e052c09121e921fc53",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/06-substitution-in-a-loop/main.py",
+      "before_sha256": "acd0b7a6736949f6d8f23466782b8cea6dfc64f545b7143510098399cf1fdcc5",
+      "final_sha256": "25ce3205d9df9bdf228b9096c55b3fab4c44f29452506a5723835f9b6f744b8a",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/06-substitution-in-a-loop/solution/main.py",
+      "before_sha256": "fd0c0fd0904b2b815578f17c2214b48a004400312073a3506da91355f0131434",
+      "final_sha256": "d0bccea9c76c80826651e9e5508c064f69bb8522e6ad62ac58604245be145c14",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/06-substitution-in-a-loop/test_main.py",
+      "before_sha256": "2872f19fefea0145586177f56681a0282bca9ea77ca59a1a0e5973736ac3ea40",
+      "final_sha256": "b31ed828b32293d6a2c15681f66a8f132638a60e85fcf9b57669cb8e785305b1",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/07-compose-a-service/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "04-inheritance/07-compose-a-service/lesson.md",
+      "before_sha256": "8e1187df9a5f29b7b3310abbdb4575309be5c82e8962b4219cb5496d2fb30e2f",
+      "final_sha256": "ec14516c3f77a183b3baa8fc5b9c1b9dd27891412d99648867c03db0c6498a07",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/07-compose-a-service/main.py",
+      "before_sha256": "fae3fa453764b78e6c81d64945e670a26d275962d75e12819435e84fda456abb",
+      "final_sha256": "31f627617c575356645048090014c8e26895477f3082865e569b1d88a7bc3a2c",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/07-compose-a-service/solution/main.py",
+      "before_sha256": "2822c31cc418ea94be6c103fa88f94647cffa8bd45751e8f1d7254c5f5055276",
+      "final_sha256": "2ac62fc4b807c92c0be978f4a9e310ddd6c3705a135a22bc14989b640cb9eeab",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/07-compose-a-service/test_main.py",
+      "before_sha256": "7fab606bcaf0e8aedd109f8d5797f8acd8292b836c3a3ebf01cacce9b4764a56",
+      "final_sha256": "e31abb9e3617b5095415911e8cd769b177c1c8e3e009f2d02b1bfc6a86311700",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/08-introduce-slots/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "04-inheritance/08-introduce-slots/lesson.md",
+      "before_sha256": "31bbb721991f30e5c82ee9893428c952769cb921d4bde0d16c2fb5b93070d6af",
+      "final_sha256": "c1398ddcd05c0e382ef27fc7775be16b42eb2194978da871dce6c6a2e1cf2006",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/08-introduce-slots/main.py",
+      "before_sha256": "e1b84427cd739e515bb2e3d5309e2ba6c953d30596b49b622106ecf73747ee50",
+      "final_sha256": "d8fdd3050b776c59852dbb7f8bc57cec927f49ec0f4c4fece343545b989de9ce",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/08-introduce-slots/solution/main.py",
+      "before_sha256": "201ecadd00e3bfdc597600341bc1325edc54da48dbb02d7c38c2184a7b014287",
+      "final_sha256": "24726ddb5ab0898d1bb6e91ed066ba3d3246f27a93fded9248325c8eaf47d158",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/08-introduce-slots/test_main.py",
+      "before_sha256": "2162dcd7d78052c1365680f4260c5146c2f7721fd612e8592b4482b68b1a8560",
+      "final_sha256": "fd8368aca27a9a1e1a3b6ddb1beafa0ba673d9b541a5e16b0bfd286d2dd0172f",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/09-slots-in-subclasses/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "04-inheritance/09-slots-in-subclasses/lesson.md",
+      "before_sha256": "b6b56d335a29363d7425bff90499c2e9c36c90a649b2699ba333b03fd80af25d",
+      "final_sha256": "3f8105e99ca809aada8fd35052a6a6a5220836262a0940f55f7f4ec837fb0e45",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/09-slots-in-subclasses/main.py",
+      "before_sha256": "306ed4c0d45dbf64490fb98a60dba82a5fbb59eefe0d5f447f6e7a4860f69a91",
+      "final_sha256": "a023c119157ba58728fc5dd32b45f7f0a4750fde6054a036e3e52d02d520a567",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/09-slots-in-subclasses/solution/main.py",
+      "before_sha256": "fe5ba180b02fc124e7c54b94551552ce865a4d2225ad48ef94dfe45f0460b419",
+      "final_sha256": "797f2d60b6b7bf512796ef4fcc7ecf78942ab2e47afd44d672b7f5fe78c76ca9",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/09-slots-in-subclasses/test_main.py",
+      "before_sha256": "bd9950b454c294fa68103b0068daf11b2921965cfcc88baf9f7fcf8fe2206748",
+      "final_sha256": "2dfd10c97aa8e6ab45c1bd9293ac19e42b81ac2ffd4eafd17092bf81f6d8a3d1",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/10-multiple-inheritance/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "04-inheritance/10-multiple-inheritance/lesson.md",
+      "before_sha256": "d46d2e8a8b0764f5e2935c75787f329f6211ac7fcbb5f2393f94923c512210ea",
+      "final_sha256": "acd153d3883010b6fe8d4f8c66b18562336c11fd0c3196b7a33045200bbbf0fd",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/10-multiple-inheritance/main.py",
+      "before_sha256": "1cd78ffb283412f4e878e454c43cfce42b8c312544d9475d41a20c3a5c8451a8",
+      "final_sha256": "a8d3c53066e2980f304b39d5a8d1c1a9e83913d32e77ffd514f6ffdd2127af90",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/10-multiple-inheritance/solution/main.py",
+      "before_sha256": "cb6ba6080628789581081a9bf6d500d97bc55da0ecec73fa153f668dc63409ba",
+      "final_sha256": "dec8e76f1816fc6c7ff1b94e5fe76f5bd2b4cba43197e36f56dea4d853566231",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/10-multiple-inheritance/test_main.py",
+      "before_sha256": "ab308dfe3a801416db490002713763ca08c91506cbf6a5942bccdad61fbb2c51",
+      "final_sha256": "f500042238fdc863b38dccc8c831d4a2717dbc3b57342433884ceead91b68c37",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/11-inspect-the-mro/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "04-inheritance/11-inspect-the-mro/lesson.md",
+      "before_sha256": "52baa51e239b531eeedcc3832a77b6a3a21f20a5d40c3a46b3823baa68675b21",
+      "final_sha256": "e51057c5d38650eca08af3c68fec4a1d35ab6db8f5d751cf665d3494e338a32f",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/11-inspect-the-mro/main.py",
+      "before_sha256": "7218e853812a5f6989ea5b021b4810d6321f3fb8d21e515ea06334873e415338",
+      "final_sha256": "9c2d622e886323a769d3d14916a44a89f06328773d155177e30cb70807a65dc5",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/11-inspect-the-mro/solution/main.py",
+      "before_sha256": "715feacf7772cc7ee232e164f96ff0fbe54dd7224799e1ef4d4abdc94360cc50",
+      "final_sha256": "ec14637197560e97f61ba9d7b0556a67fbe6e3a4160014151877aea866f0bd18",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/11-inspect-the-mro/test_main.py",
+      "before_sha256": "da6f65b77612458a28e3d9fba337ac8b351de1f971098a87fd3284c875e0a64f",
+      "final_sha256": "f997042d2469565e540d13d8bf3c65d4d258b6d314477329c3baf5d426c550b1",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/12-cooperative-diamond/files.yaml",
+      "before_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "final_sha256": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+      "changed": false
+    },
+    {
+      "file": "04-inheritance/12-cooperative-diamond/lesson.md",
+      "before_sha256": "8b64f4ed22ec7aaa7bcf1bd47bbe7f726c7f417cf76962a40361bc01ce3d8d3b",
+      "final_sha256": "a8e0b4a13e7139170f547df1448ff701506a12d5e67dcd6fe9cac19210c58fa2",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/12-cooperative-diamond/main.py",
+      "before_sha256": "008e78f29247a360e13cd30b2cc71bcf40b1d20a3cce8056a33cb2cfeb5c2523",
+      "final_sha256": "bd137e9ea8708e1be0d0e9bfb8b4b1ebbad93792e1427d5ed4951c1b122aff66",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/12-cooperative-diamond/solution/main.py",
+      "before_sha256": "5e19dc0210bb09101176fd99084b43860abcb57a2c64b0fee3dd96deef5d37a7",
+      "final_sha256": "eca731cc9ef64c57d8a8bf438546f389fff02e6e6eabb1573e0eb86df3443ade",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/12-cooperative-diamond/test_main.py",
+      "before_sha256": "18b37ce98b1f2ef9b87045f11efcaaca95c5466bbad8b4706269ac8f5f575b7a",
+      "final_sha256": "8c84994c94ca044b13115cac95a351ef63ff81930294c854c55d98bcb8a9228b",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/quiz/index.yaml",
+      "before_sha256": "1d4f782fff19e31dd84ceefa1cbf3f4e175c76fd25b4f07ec0bac0c0c196a6a8",
+      "final_sha256": "1d4f782fff19e31dd84ceefa1cbf3f4e175c76fd25b4f07ec0bac0c0c196a6a8",
+      "changed": false
+    },
+    {
+      "file": "04-inheritance/quiz/q01.md",
+      "before_sha256": "9dd80d5274bacf16adb0d1cf1d7057783a684f2c1488bef662cf053d6add3484",
+      "final_sha256": "a0289dc5fe288b0936837d9903c5b0bd73916a34b744687a0df2e4b8975423af",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/quiz/q02.md",
+      "before_sha256": "56cf1d41500661b39d6a562339007b351256bcfa7c18b72856abd11dec522dee",
+      "final_sha256": "7a0290ace0ec42cfacbcfd98ec0d049a19c1dfd00896a4ba08fb8ab9b78ca1b2",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/quiz/q03.md",
+      "before_sha256": "7b407ff87535c834255df4a8600d7c366acd7d45ed7a0ea5c82cc4177be1af3f",
+      "final_sha256": "98748288c59bd4d11e9e18df5ab8c0ef70f24de40b63264f28796cbf7378714e",
+      "changed": true
+    },
+    {
+      "file": "04-inheritance/quiz/q04.md",
+      "before_sha256": "fdbd620dc3f3ed66e7991edfc575bb7825faba3be9ffd0a3972e4d101c18e98b",
+      "final_sha256": "77b88577d176d423a5f9c0e3d230c25365c1a71daef5a0da7c4bee1d68e39fab",
+      "changed": true
+    }
+  ],
+  "invariants": [
+    "Route slugs, directories, order and 112-lesson course count preserved.",
+    "All Markdown frontmatter key sets and quiz correct answers preserved.",
+    "All 78 Python files retain the original AST structure modulo identifier and text changes.",
+    "All numeric fixtures, unsupported-type checks, delegation checks and mutation constraints retained.",
+    "NotImplemented versus NotImplementedError, equality/hash stability, slots caveats and nondeterministic finalization explanations retained.",
+    "Task counts match native test function counts.",
+    "git diff --check passed for both scoped modules."
+  ],
+  "diagram_notes": [
+    {
+      "file": "03-python-protocols/06-reflected-multiplication/reflected-operator-dispatch.svg",
+      "status": "Generic Vector dispatch deliberately distinct from ScoreDelta exercise; existing caption explains this."
+    },
+    {
+      "file": "04-inheritance/07-compose-a-service/composed-service-delegation.svg",
+      "status": "Parent-owned diagram uses MatchService/ScoreRule/score(points). Lesson caption and alt text updated to identify this separate in-memory example, distinct from QuestHUD/BracketFormatter."
+    },
+    {
+      "file": "04-inheritance/12-cooperative-diamond/cooperative-mro-order.svg",
+      "status": "Generic D/B/C/A diamond deliberately distinct from LanternSprite/GlowMixin/TrailMixin/Entity; caption explains lookup versus direct inheritance."
+    }
+  ],
+  "excluded": "No edits to root, diagrams, application, other course modules, or projects 05/06/10; diagrams are being updated by the parent-owned diagram agent.",
+  "issues": []
+}

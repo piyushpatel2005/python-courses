@@ -4,9 +4,9 @@ slug: abstract-contract
 order: 7
 language: python
 lesson_type: coding
-summary: Prevent unfinished delivery policies from being instantiated.
+summary: Require a fee method before a game purchase policy can be instantiated.
 seo_title: Declare an abstract contract | Python OOP practice
-seo_description: Prevent unfinished delivery policies from being instantiated.
+seo_description: Require a fee method before a game purchase policy can be instantiated.
 seo_keywords:
   - Python
   - abstract contract
@@ -17,7 +17,7 @@ hints:
 
 # Declare an abstract contract
 
-Prevent unfinished delivery policies from being instantiated.
+Lantern Vale purchases use fictional credits earned in the game. Different purchase fee policies will share `fee_credits(subtotal_credits)`, which returns a fee in whole credits. Before implementing a fee rule, make unfinished policies impossible to instantiate. No real money or payment service is involved.
 
 Duck typing lets compatible objects work without a shared base class. An abstract base class adds an earlier check: Python refuses to instantiate it while abstract methods remain unimplemented. Import `ABC` and `abstractmethod` from `abc`, inherit from `ABC`, and decorate the required method. This checks that a concrete override exists; it does not prove the override calculates a sensible result.
 
@@ -38,7 +38,7 @@ class SoundSource(ABC):
 
 ## Your Tasks
 
-1. Make `DeliveryPolicy` inherit from `ABC` and mark its supplied `fee_cents(self, subtotal_cents)` method with `@abstractmethod`. Both this class and a subclass that omits the method must reject instantiation with `TypeError`.
+1. Make `CreditFeePolicy` inherit from `ABC` and mark its supplied `fee_credits(self, subtotal_credits)` method with `@abstractmethod`. Both this class and a subclass that omits the method must reject instantiation with `TypeError`.
 
 ## Run and check
 

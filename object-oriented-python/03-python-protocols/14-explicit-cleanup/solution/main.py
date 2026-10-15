@@ -1,4 +1,4 @@
-class Lease:
+class GameSession:
     def __init__(self, name, events):
         self.name = name
         self.events = events
@@ -16,10 +16,10 @@ class Lease:
 if __name__ == "__main__":
     try:
         events = []
-        lease = Lease("preview", events)
-        lease.__del__()  # Explicit hook demonstration, not GC timing.
-        print("After explicit hook:", lease.closed, events)
-        lease.close()
+        session = GameSession("preview", events)
+        session.__del__()  # Explicit hook demonstration, not GC timing.
+        print("After explicit hook:", session.closed, events)
+        session.close()
         print("After explicit close:", events)
     except Exception as error:
         print("Not ready:", type(error).__name__, str(error))

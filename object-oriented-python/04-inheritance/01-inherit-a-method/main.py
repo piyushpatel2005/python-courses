@@ -1,9 +1,9 @@
-class Locker:
+class GameEntity:
     def __init__(self, code):
         self.code = code
 
     def label(self):
-        return f"Locker {self.code}"
+        return f"GameEntity {self.code}"
 
 # TODO: define the requested subclass here.
 pass
@@ -11,8 +11,8 @@ pass
 
 if __name__ == "__main__":
     try:
-        item = ColdLocker("B7")
+        item = SupplyChest("B7")
         print(item.label())
-        print("Is a locker:", isinstance(item, Locker))
+        print("Is a game entity:", isinstance(item, GameEntity))
     except Exception as error:
         print("Not ready:", type(error).__name__, str(error))

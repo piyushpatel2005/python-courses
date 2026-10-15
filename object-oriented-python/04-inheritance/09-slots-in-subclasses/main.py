@@ -1,11 +1,11 @@
-class Point:
+class Waypoint:
     __slots__ = ("x", "y")
 
     def __init__(self, x, y):
         self.x = x
         self.y = y
 
-class LabeledPoint(Point):
+class NamedWaypoint(Waypoint):
     pass  # TODO: complete the requested behavior.
 
     def __init__(self, x, y, label):
@@ -15,7 +15,7 @@ class LabeledPoint(Point):
 
 if __name__ == "__main__":
     try:
-        point = LabeledPoint(4, 7, "gate")
+        point = NamedWaypoint(4, 7, "gate")
         print(point.x, point.y, point.label)
         try:
             point.note = "extra"

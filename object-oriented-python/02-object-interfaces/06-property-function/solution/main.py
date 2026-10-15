@@ -1,4 +1,4 @@
-class Tool:
+class GameItem:
     def __init__(self, name):
         self.name = name
 
@@ -11,9 +11,9 @@ class Tool:
 # Supplied console probe: keep this below your implementation.
 if __name__ == "__main__":
     try:
-        sample = Tool("drill")
+        sample = GameItem("lantern")
         print("Label:", sample.label)
-        sample.name = "saw"
+        sample.name = "shield"
         print("Updated label:", sample.label)
     except (NameError, AttributeError, TypeError, ValueError) as error:
         print("Not ready yet:", error)

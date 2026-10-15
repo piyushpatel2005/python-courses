@@ -1,0 +1,474 @@
+{
+  "theme": "Fictional Mosslight Studio developing Lantern Vale",
+  "scope": "Only four conceptual illustrations; projects 05/06/10 and other four diagrams unchanged. No lesson prose/code/app edits.",
+  "diagrams": [
+    {
+      "name": "class-and-instance-state",
+      "svg": "assets/diagrams/class-and-instance-state.svg",
+      "excalidraw": "assets/diagrams/class-and-instance-state.excalidraw",
+      "sha256_before": {
+        "svg": "1a9c81179b9958283c48e0c0b47e9ba6153d4fd08a5f7ffa2efff4225eb929e4",
+        "excalidraw": "0a94d6415dd416333097cf6954b6b4816e092891fecf4ef9ba4942733294c110"
+      },
+      "sha256": {
+        "svg": "3167b542ab51763264226a26c192580f8ec62a8341520316ae86b3249029299d",
+        "excalidraw": "a603b8eb3f93daf26c209c29503b1e4e8de1c903e1ce3022df316a06b278f65c"
+      },
+      "label_changes": [
+        {
+          "element_id": "e7",
+          "before": "Notebook Class",
+          "after": "QuestLog Class"
+        },
+        {
+          "element_id": "e8",
+          "before": "Shared method: add_page(self, text)",
+          "after": "Shared method: add_entry(self, text)"
+        },
+        {
+          "element_id": "e14",
+          "before": "a.pages = [\"Hello\"]",
+          "after": "a.entries = [\"Map\"]"
+        },
+        {
+          "element_id": "e19",
+          "before": "b.pages = []",
+          "after": "b.entries = []"
+        },
+        {
+          "element_id": "e23",
+          "before": "a.add_page(\"Hello\") changes only a",
+          "after": "a.add_entry(\"Map\") changes only a"
+        },
+        {
+          "element_id": "e24",
+          "before": "Initialize self.pages = [] inside __init__.",
+          "after": "Initialize self.entries = [] inside __init__."
+        }
+      ],
+      "copies": [
+        {
+          "path": "01-classes-and-objects/11-independent-instance-lists/class-and-instance-state.svg",
+          "sha256_before": "1a9c81179b9958283c48e0c0b47e9ba6153d4fd08a5f7ffa2efff4225eb929e4",
+          "sha256": "3167b542ab51763264226a26c192580f8ec62a8341520316ae86b3249029299d",
+          "byte_identical": true
+        },
+        {
+          "path": "01-classes-and-objects/11-independent-instance-lists/class-and-instance-state.excalidraw",
+          "sha256_before": "0a94d6415dd416333097cf6954b6b4816e092891fecf4ef9ba4942733294c110",
+          "sha256": "a603b8eb3f93daf26c209c29503b1e4e8de1c903e1ce3022df316a06b278f65c",
+          "byte_identical": true
+        }
+      ],
+      "tests": {
+        "generator_exact": true,
+        "svg_native_text_exact": true,
+        "native_geometry_ids_groups_bindings_preserved": true,
+        "center_anchors_preserved": true,
+        "native_no_images": true,
+        "reciprocal_bindings": true,
+        "svg_Arial_ink_bounds_fit_canvas_and_cards": true,
+        "svg_pairwise_text_overlaps": 0,
+        "native_text_bounds_fit_canvas_and_cards": true,
+        "local_copies_identical": true
+      },
+      "renders": [
+        {
+          "path": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/oop-gaming-diagrams/class-and-instance-state.600.png",
+          "sha256": "c94ec7faa9b88c9a6330c1190b47bc003ba42beec38e8cfedf832c6ec7fc97e2"
+        },
+        {
+          "path": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/oop-gaming-diagrams/class-and-instance-state.500.png",
+          "sha256": "62c4d78c2c1bc83af8f84b621afc8967aa9993d8390f54cba80ae0d2ac3cd59c"
+        }
+      ]
+    },
+    {
+      "name": "bound-method-self",
+      "svg": "assets/diagrams/bound-method-self.svg",
+      "excalidraw": "assets/diagrams/bound-method-self.excalidraw",
+      "sha256_before": {
+        "svg": "5edeb34185ff77a388f643ae8b2e1f22dcb3e2d3fb20e6350520cda1a772bb9a",
+        "excalidraw": "582e57584e0a83e1fead8eea1bfd6dd8dfea56de78805e02ef9e1449b25fdafc"
+      },
+      "sha256": {
+        "svg": "ef7b8ca3c73d60e954ae24d48d727eedafd3652375a35bd4f34d4668e1e99481",
+        "excalidraw": "51e506be3fcd7344d921c26b8e3cbad0116e017171fc35ed12ee3745bebb531a"
+      },
+      "label_changes": [
+        {
+          "element_id": "e7",
+          "before": "a.deposit(5)",
+          "after": "item.record_use()"
+        },
+        {
+          "element_id": "e11",
+          "before": "Bound Method: a.deposit",
+          "after": "Bound Method: item.record_use"
+        },
+        {
+          "element_id": "e12",
+          "before": "__self__ is a",
+          "after": "__self__ is item"
+        },
+        {
+          "element_id": "e13",
+          "before": "__func__ is Account.deposit",
+          "after": "__func__ is GameItem.record_use"
+        },
+        {
+          "element_id": "e17",
+          "before": "Account.deposit(a, 5)",
+          "after": "GameItem.record_use(item)"
+        },
+        {
+          "element_id": "e18",
+          "before": "self receives a; amount receives 5",
+          "after": "self receives item; no extra argument"
+        },
+        {
+          "element_id": "e19",
+          "before": "Do not pass a again in a.deposit(5).",
+          "after": "Do not pass item again in item.record_use()."
+        }
+      ],
+      "copies": [
+        {
+          "path": "02-object-interfaces/01-bound-methods/bound-method-self.svg",
+          "sha256_before": "5edeb34185ff77a388f643ae8b2e1f22dcb3e2d3fb20e6350520cda1a772bb9a",
+          "sha256": "ef7b8ca3c73d60e954ae24d48d727eedafd3652375a35bd4f34d4668e1e99481",
+          "byte_identical": true
+        },
+        {
+          "path": "02-object-interfaces/01-bound-methods/bound-method-self.excalidraw",
+          "sha256_before": "582e57584e0a83e1fead8eea1bfd6dd8dfea56de78805e02ef9e1449b25fdafc",
+          "sha256": "51e506be3fcd7344d921c26b8e3cbad0116e017171fc35ed12ee3745bebb531a",
+          "byte_identical": true
+        }
+      ],
+      "tests": {
+        "generator_exact": true,
+        "svg_native_text_exact": true,
+        "native_geometry_ids_groups_bindings_preserved": true,
+        "center_anchors_preserved": true,
+        "native_no_images": true,
+        "reciprocal_bindings": true,
+        "svg_Arial_ink_bounds_fit_canvas_and_cards": true,
+        "svg_pairwise_text_overlaps": 0,
+        "native_text_bounds_fit_canvas_and_cards": true,
+        "local_copies_identical": true
+      },
+      "renders": [
+        {
+          "path": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/oop-gaming-diagrams/bound-method-self.600.png",
+          "sha256": "ca2931e1df50461fa025915ee5773a90f75728ab0e0b7a3fbfae449f231e1abc"
+        },
+        {
+          "path": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/oop-gaming-diagrams/bound-method-self.500.png",
+          "sha256": "298997d98e08c1a5266129a6e96543bff85a8e21ee8b1310ea749bd08c5accd3"
+        }
+      ]
+    },
+    {
+      "name": "composed-service-delegation",
+      "svg": "assets/diagrams/composed-service-delegation.svg",
+      "excalidraw": "assets/diagrams/composed-service-delegation.excalidraw",
+      "sha256_before": {
+        "svg": "97fb9f98c272549a07628b770d27086c8d48f12b506ca66d754ce7cc9ab9d606",
+        "excalidraw": "a358b8ba7d45f8793705c326cd81bef7fd480d339440d3225994c72be03109d5"
+      },
+      "sha256": {
+        "svg": "0356ac6eef25895a8cb532c5859103d4e6f487544543c71b40b22a84a3348308",
+        "excalidraw": "bbc2d54e54b924877f63d623c147d92f258ed568098ef4333e0f3ffacd19b4dc"
+      },
+      "label_changes": [
+        {
+          "element_id": "e7",
+          "before": "CheckoutService",
+          "after": "MatchService"
+        },
+        {
+          "element_id": "e8",
+          "before": "self.gateway = gateway",
+          "after": "self.rule = rule"
+        },
+        {
+          "element_id": "e10",
+          "before": "Delegates charge",
+          "after": "Delegates score"
+        },
+        {
+          "element_id": "e13",
+          "before": "Injected Gateway Object",
+          "after": "Injected ScoreRule Object"
+        },
+        {
+          "element_id": "e14",
+          "before": "self.gateway.charge(total)",
+          "after": "self.rule.score(points)"
+        },
+        {
+          "element_id": "e15",
+          "before": "Choose the collaborator when constructing the service",
+          "after": "Choose the rule when constructing the match service"
+        },
+        {
+          "element_id": "e18",
+          "before": "Real Gateway",
+          "after": "Standard Rule"
+        },
+        {
+          "element_id": "e19",
+          "before": "Used in production",
+          "after": "Local game scoring"
+        },
+        {
+          "element_id": "e22",
+          "before": "Fake Gateway",
+          "after": "Fake Rule"
+        },
+        {
+          "element_id": "e24",
+          "before": "The service has a gateway; it is not a gateway.",
+          "after": "The service has a rule; it is not a rule."
+        }
+      ],
+      "copies": [
+        {
+          "path": "04-inheritance/07-compose-a-service/composed-service-delegation.svg",
+          "sha256_before": "97fb9f98c272549a07628b770d27086c8d48f12b506ca66d754ce7cc9ab9d606",
+          "sha256": "0356ac6eef25895a8cb532c5859103d4e6f487544543c71b40b22a84a3348308",
+          "byte_identical": true
+        },
+        {
+          "path": "04-inheritance/07-compose-a-service/composed-service-delegation.excalidraw",
+          "sha256_before": "a358b8ba7d45f8793705c326cd81bef7fd480d339440d3225994c72be03109d5",
+          "sha256": "bbc2d54e54b924877f63d623c147d92f258ed568098ef4333e0f3ffacd19b4dc",
+          "byte_identical": true
+        }
+      ],
+      "tests": {
+        "generator_exact": true,
+        "svg_native_text_exact": true,
+        "native_geometry_ids_groups_bindings_preserved": true,
+        "center_anchors_preserved": true,
+        "native_no_images": true,
+        "reciprocal_bindings": true,
+        "svg_Arial_ink_bounds_fit_canvas_and_cards": true,
+        "svg_pairwise_text_overlaps": 0,
+        "native_text_bounds_fit_canvas_and_cards": true,
+        "local_copies_identical": true
+      },
+      "renders": [
+        {
+          "path": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/oop-gaming-diagrams/composed-service-delegation.600.png",
+          "sha256": "65c7b9eb1ecef56450b1f26784e24587d20bce9cca9debfe5a6af77423a4cf99"
+        },
+        {
+          "path": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/oop-gaming-diagrams/composed-service-delegation.500.png",
+          "sha256": "4913d50dd28e0537679da9f4cc6964ed8fe5d47e28b5ee988e38abe8f2f03da7"
+        }
+      ]
+    },
+    {
+      "name": "enum-member-and-value",
+      "svg": "assets/diagrams/enum-member-and-value.svg",
+      "excalidraw": "assets/diagrams/enum-member-and-value.excalidraw",
+      "sha256_before": {
+        "svg": "2fa13cd0e37175d42385caed66861ba574fb6241fe9c700e81ccc3643c87d506",
+        "excalidraw": "447306b47442448b2256221049231a1c8fe5e0bac24be4983f750f22a560b59c"
+      },
+      "sha256": {
+        "svg": "af9a578cf58c4f7fba02ac4af7a520932810eb1942b4df76d87db78cdf252661",
+        "excalidraw": "5f4cf3f964e01cd44e1182a76a3de83421dec6a85577b0b4744bff7984eb8199"
+      },
+      "label_changes": [
+        {
+          "element_id": "e7",
+          "before": "Application: Status.PAID",
+          "after": "Application: QuestState.DONE"
+        },
+        {
+          "element_id": "e13",
+          "before": "Storage: \"paid\"",
+          "after": "Storage: \"done\""
+        },
+        {
+          "element_id": "e16",
+          "before": "Status(\"paid\")",
+          "after": "QuestState(\"done\")"
+        },
+        {
+          "element_id": "e19",
+          "before": "Application: Status.PAID",
+          "after": "Application: QuestState.DONE"
+        },
+        {
+          "element_id": "e21",
+          "before": ".name is \"PAID\"; .value is \"paid\".",
+          "after": ".name is \"DONE\"; .value is \"done\"."
+        },
+        {
+          "element_id": "e22",
+          "before": "For plain Enum: Status.PAID != \"paid\".",
+          "after": "For plain Enum: QuestState.DONE != \"done\"."
+        }
+      ],
+      "copies": [
+        {
+          "path": "07-enums-and-records/02-explicit-enum-values/enum-member-and-value.svg",
+          "sha256_before": "2fa13cd0e37175d42385caed66861ba574fb6241fe9c700e81ccc3643c87d506",
+          "sha256": "af9a578cf58c4f7fba02ac4af7a520932810eb1942b4df76d87db78cdf252661",
+          "byte_identical": true
+        },
+        {
+          "path": "07-enums-and-records/02-explicit-enum-values/enum-member-and-value.excalidraw",
+          "sha256_before": "447306b47442448b2256221049231a1c8fe5e0bac24be4983f750f22a560b59c",
+          "sha256": "5f4cf3f964e01cd44e1182a76a3de83421dec6a85577b0b4744bff7984eb8199",
+          "byte_identical": true
+        }
+      ],
+      "tests": {
+        "generator_exact": true,
+        "svg_native_text_exact": true,
+        "native_geometry_ids_groups_bindings_preserved": true,
+        "center_anchors_preserved": true,
+        "native_no_images": true,
+        "reciprocal_bindings": true,
+        "svg_Arial_ink_bounds_fit_canvas_and_cards": true,
+        "svg_pairwise_text_overlaps": 0,
+        "native_text_bounds_fit_canvas_and_cards": true,
+        "local_copies_identical": true
+      },
+      "renders": [
+        {
+          "path": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/oop-gaming-diagrams/enum-member-and-value.600.png",
+          "sha256": "95a87ed9c267f08f59a522c0190768624621727c936ef6b98786b549e9881119"
+        },
+        {
+          "path": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/oop-gaming-diagrams/enum-member-and-value.500.png",
+          "sha256": "de33b8eeeec2677f32eaf457967f577a40315bc6a10fe5d4546384d8c11ef493"
+        }
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "path": "assets/diagrams/reflected-operator-dispatch.svg",
+      "sha256": "dd5507f4164a569d1a74faafc944c36c1c770762e7e82c5fcb28ddcfec7bceb3"
+    },
+    {
+      "path": "03-python-protocols/06-reflected-multiplication/reflected-operator-dispatch.svg",
+      "sha256": "dd5507f4164a569d1a74faafc944c36c1c770762e7e82c5fcb28ddcfec7bceb3"
+    },
+    {
+      "path": "assets/diagrams/reflected-operator-dispatch.excalidraw",
+      "sha256": "f8ac04e7ce704cabefa37129ff0412d171867ef3abf8d8f106c557cf1572e586"
+    },
+    {
+      "path": "03-python-protocols/06-reflected-multiplication/reflected-operator-dispatch.excalidraw",
+      "sha256": "f8ac04e7ce704cabefa37129ff0412d171867ef3abf8d8f106c557cf1572e586"
+    },
+    {
+      "path": "assets/diagrams/cooperative-mro-order.svg",
+      "sha256": "ae9cd48386353271464438200b64e31ac9a9978c73fba7f294e1bf53fa29a01e"
+    },
+    {
+      "path": "04-inheritance/12-cooperative-diamond/cooperative-mro-order.svg",
+      "sha256": "ae9cd48386353271464438200b64e31ac9a9978c73fba7f294e1bf53fa29a01e"
+    },
+    {
+      "path": "assets/diagrams/cooperative-mro-order.excalidraw",
+      "sha256": "9aeead71383826f7d9289be2a33feaabb9907eb5f61972d60d7b1e572652be77"
+    },
+    {
+      "path": "04-inheritance/12-cooperative-diamond/cooperative-mro-order.excalidraw",
+      "sha256": "9aeead71383826f7d9289be2a33feaabb9907eb5f61972d60d7b1e572652be77"
+    },
+    {
+      "path": "assets/diagrams/descriptor-lookup-precedence.svg",
+      "sha256": "7f7ef18666d8411080e49a18f033a29c765152c024c3a20a004f461087898e2a"
+    },
+    {
+      "path": "08-descriptors/08-non-data-descriptor-priority/descriptor-lookup-precedence.svg",
+      "sha256": "7f7ef18666d8411080e49a18f033a29c765152c024c3a20a004f461087898e2a"
+    },
+    {
+      "path": "assets/diagrams/descriptor-lookup-precedence.excalidraw",
+      "sha256": "b064b34253043a34f590f3507e7c4d680ba8b5c748a68652395b6b936f63d3f3"
+    },
+    {
+      "path": "08-descriptors/08-non-data-descriptor-priority/descriptor-lookup-precedence.excalidraw",
+      "sha256": "b064b34253043a34f590f3507e7c4d680ba8b5c748a68652395b6b936f63d3f3"
+    },
+    {
+      "path": "assets/diagrams/cart-order-invoice-snapshot.svg",
+      "sha256": "47064e86d01abf86c8e7d292353afc840d99ef12c7f7aaeb9b0517150d2dc301"
+    },
+    {
+      "path": "10-ecommerce-project/07-order-snapshot/cart-order-invoice-snapshot.svg",
+      "sha256": "47064e86d01abf86c8e7d292353afc840d99ef12c7f7aaeb9b0517150d2dc301"
+    },
+    {
+      "path": "assets/diagrams/cart-order-invoice-snapshot.excalidraw",
+      "sha256": "946ab5f4dbc7319191b9a8f6dd524f5f8183f47d37473d9679d3fb6120b6f98a"
+    },
+    {
+      "path": "10-ecommerce-project/07-order-snapshot/cart-order-invoice-snapshot.excalidraw",
+      "sha256": "946ab5f4dbc7319191b9a8f6dd524f5f8183f47d37473d9679d3fb6120b6f98a"
+    }
+  ],
+  "tests": {
+    "four_illustrative_python_models": "passed (independent assertions, not exercise implementations)",
+    "unchanged_files_hash_verified": 16,
+    "browser_used": false,
+    "real_editor_suite": "not rerun; previous results explicitly historical",
+    "rendering": "@resvg/resvg-js, local Arial fonts, 600px and 500px per changed SVG"
+  },
+  "historical_reports": {
+    "status": "Historical pre-game-theme evidence; not current acceptance",
+    "paths": [
+      "assets/image-delivery-audit.json",
+      "assets/verification-summary.json",
+      "assets/final-review-01-06.json",
+      "assets/final-review-07-10.json",
+      "assets/audit-*.json",
+      "scratch/oop-diagram-review/*",
+      "scratch/oop-excalidraw/evidence/*"
+    ]
+  },
+  "visual_review": {
+    "status": "passed",
+    "reviewed": "All four changed canonical SVGs at 500px in contact-sheet.png; labels legible, no clipping or overlaps, clear connectors.",
+    "contact_sheet": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/oop-gaming-diagrams/contact-sheet.png",
+    "sha256": "7677f2b5263a35d02b52cc2ea39d7978d8c8e9d431c12320a23892cf7785f1be",
+    "source_hashes": {
+      "class-and-instance-state": "3167b542ab51763264226a26c192580f8ec62a8341520316ae86b3249029299d",
+      "bound-method-self": "ef7b8ca3c73d60e954ae24d48d727eedafd3652375a35bd4f34d4668e1e99481",
+      "composed-service-delegation": "0356ac6eef25895a8cb532c5859103d4e6f487544543c71b40b22a84a3348308",
+      "enum-member-and-value": "af9a578cf58c4f7fba02ac4af7a520932810eb1942b4df76d87db78cdf252661"
+    }
+  },
+  "evidence_scripts": [
+    {
+      "path": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/oop-gaming-diagrams/render.cjs",
+      "sha256": "499afce5df3a00371f51277a3cdb00f30049a1551753f52667e1d4c1fc8ffed8"
+    },
+    {
+      "path": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/oop-gaming-diagrams/verify.py",
+      "sha256": "b38eef09d24000fd9cd6dfebd4abcf37e31dfe092909a00137e28e0d429b7fd1"
+    }
+  ],
+  "generator": {
+    "path": "assets/diagrams/build_diagrams.py",
+    "sha256": "c88a290ee7875f9b066fdffe19ccab434d96130d50163e3691f468181b3b298e",
+    "svg_generation": "Exact comparison of all eight outputs passed; only four changed",
+    "companion_generator": "build_excalidraw.mjs consumes current SVG labels; no hardcoded old theme, unchanged"
+  },
+  "metadata_modified": [
+    "assets/diagram-placements.json",
+    "assets/diagrams/README.md",
+    "assets/diagrams/EDITING-EXCALIDRAW.md",
+    "assets/image-delivery-audit.json"
+  ]
+}

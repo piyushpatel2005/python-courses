@@ -1,18 +1,18 @@
 from enum import Enum, unique
 
-def make_choices(first, second):
+def make_abilities(first, second):
     @unique
-    class Choice(Enum):
+    class AbilityChoice(Enum):
         FIRST = first
         SECOND = second
-    return Choice
+    return AbilityChoice
 
 
 if __name__ == "__main__":
     try:
-        print([item.value for item in make_choices("tea", "juice")])
+        print([item.value for item in make_abilities("dash", "heal")])
         try:
-            make_choices("tea", "tea")
+            make_abilities("dash", "dash")
         except ValueError:
             print("Duplicate rejected")
         else:

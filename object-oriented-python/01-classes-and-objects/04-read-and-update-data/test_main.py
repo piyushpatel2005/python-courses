@@ -2,7 +2,7 @@ from solution import *
 
 
 def test_usage_updates_accumulate():
-    first, other = make_tool(7), make_tool(2)
+    first, other = make_item(7), make_item(2)
     for amount, expected in ((4, 11), (0, 11), (6, 17)):
         record_uses(first, amount)
         assert first.uses == expected, "Add to the existing count rather than replacing it."

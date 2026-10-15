@@ -4,9 +4,9 @@ slug: set-name
 order: 6
 language: python
 lesson_type: coding
-summary: A record has two managed fields. Let Python tell each descriptor its public name instead of manually configuring a backing key for every assignment.
+summary: A character loadout has two managed fields for its weapon and armor. Let Python tell each descriptor its public name instead of manually configuring a backing key for every assignment.
 seo_title: Let the class supply a field name | Object-oriented Python
-seo_description: A record has two managed fields. Let Python tell each descriptor its public name instead of manually configuring a backing key for every assignment.
+seo_description: A character loadout has two managed fields for its weapon and armor. Let Python tell each descriptor its public name instead of manually configuring a backing key for every assignment.
 seo_keywords:
   - Python
   - set name
@@ -15,7 +15,7 @@ hints:
   - Use the name parameter; do not hardcode either of the sample field names.
 ---
 
-A record has two managed fields. Let Python tell each descriptor its public name instead of manually configuring a backing key for every assignment.
+A character loadout has two managed fields for its weapon and armor. Let Python tell each descriptor its public name instead of manually configuring a backing key for every assignment.
 
 When a class is created, Python calls `__set_name__(self, owner, name)` on objects in its class namespace that define the hook. `owner` is the newly created class and `name` is the attribute name used in that class body. The hook runs during class creation, before you instantiate a record.
 
@@ -34,10 +34,10 @@ class Named:
     def __set_name__(self, owner, name):
         self.public_name = name
 
-class Shelf:
-    location = Named()
+class SpawnPoint:
+    zone = Named()
 
-print(Shelf.location.public_name)
+print(SpawnPoint.zone.public_name)
 ```
 
 ## Your Tasks

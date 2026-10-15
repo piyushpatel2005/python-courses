@@ -2,11 +2,11 @@ from solution import *
 
 
 def test_01_slots_in_subclasses():
-    slots = vars(LabeledPoint).get("__slots__", ())
+    slots = vars(NamedWaypoint).get("__slots__", ())
     names = (slots,) if isinstance(slots, str) else tuple(slots)
     assert names == ("label",), "Declare only the new field."
     for x, y, label in ((4, 7, "gate"), (0, -2, "origin")):
-        point = LabeledPoint(x, y, label)
+        point = NamedWaypoint(x, y, label)
         assert (point.x, point.y, point.label) == (x, y, label)
         assert not hasattr(point, "__dict__")
         point.x, point.y, point.label = y, x, "changed"

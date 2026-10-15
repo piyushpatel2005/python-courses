@@ -1,0 +1,1076 @@
+{
+  "scope": [
+    "01-classes-and-objects",
+    "02-object-interfaces"
+  ],
+  "theme": {
+    "studio": "Mosslight Studio",
+    "game": "Lantern Vale",
+    "context": "small exploration game"
+  },
+  "mapping": {
+    "ToolBatch": "ItemPool",
+    "AssetLabel": "ItemLabel",
+    "Tool": "GameItem",
+    "Member": "Player",
+    "make_tool": "make_item",
+    "list_tools": "list_items",
+    "loan_days": "cooldown_turns",
+    "loaned": "equipped",
+    "extend_loan": "set_cooldown",
+    "tools": "items",
+    "tool": "item",
+    "member": "player",
+    "drill": "lantern",
+    "saw": "shield",
+    "clamp": "compass",
+    "router": "bow",
+    "hand plane": "signal horn",
+    "plane": "horn",
+    "vice": "flute",
+    "DRILL": "LANTERN",
+    "SAW": "SHIELD",
+    "HAND PLANE": "SIGNAL HORN",
+    "Drill": "Lantern",
+    "Saw": "Shield",
+    "TOOL": "ITEM",
+    "LOAN": "QUEST",
+    "REPAIR": "RARE"
+  },
+  "additional_contracts": {
+    "loan_days": "cooldown_turns",
+    "_loan_days": "_cooldown_turns",
+    "days": "turns",
+    "uses": "item activation count",
+    "label_and_code_attribute_names": "unchanged",
+    "default_cooldown": "7 turns"
+  },
+  "changed_paths": [
+    "01-classes-and-objects/01-define-a-class/lesson.md",
+    "01-classes-and-objects/01-define-a-class/main.py",
+    "01-classes-and-objects/01-define-a-class/solution/main.py",
+    "01-classes-and-objects/01-define-a-class/test_main.py",
+    "01-classes-and-objects/02-create-two-objects/lesson.md",
+    "01-classes-and-objects/02-create-two-objects/main.py",
+    "01-classes-and-objects/02-create-two-objects/solution/main.py",
+    "01-classes-and-objects/02-create-two-objects/test_main.py",
+    "01-classes-and-objects/03-attach-instance-data/lesson.md",
+    "01-classes-and-objects/03-attach-instance-data/main.py",
+    "01-classes-and-objects/03-attach-instance-data/solution/main.py",
+    "01-classes-and-objects/03-attach-instance-data/test_main.py",
+    "01-classes-and-objects/04-read-and-update-data/lesson.md",
+    "01-classes-and-objects/04-read-and-update-data/main.py",
+    "01-classes-and-objects/04-read-and-update-data/solution/main.py",
+    "01-classes-and-objects/04-read-and-update-data/test_main.py",
+    "01-classes-and-objects/05-class-defaults/lesson.md",
+    "01-classes-and-objects/05-class-defaults/main.py",
+    "01-classes-and-objects/05-class-defaults/solution/main.py",
+    "01-classes-and-objects/05-class-defaults/test_main.py",
+    "01-classes-and-objects/06-shadow-a-class-default/lesson.md",
+    "01-classes-and-objects/06-shadow-a-class-default/main.py",
+    "01-classes-and-objects/06-shadow-a-class-default/solution/main.py",
+    "01-classes-and-objects/06-shadow-a-class-default/test_main.py",
+    "01-classes-and-objects/07-write-an-instance-method/lesson.md",
+    "01-classes-and-objects/07-write-an-instance-method/main.py",
+    "01-classes-and-objects/07-write-an-instance-method/solution/main.py",
+    "01-classes-and-objects/07-write-an-instance-method/test_main.py",
+    "01-classes-and-objects/08-return-a-value/lesson.md",
+    "01-classes-and-objects/08-return-a-value/main.py",
+    "01-classes-and-objects/08-return-a-value/solution/main.py",
+    "01-classes-and-objects/08-return-a-value/test_main.py",
+    "01-classes-and-objects/09-initialize-an-object/lesson.md",
+    "01-classes-and-objects/09-initialize-an-object/main.py",
+    "01-classes-and-objects/09-initialize-an-object/solution/main.py",
+    "01-classes-and-objects/09-initialize-an-object/test_main.py",
+    "01-classes-and-objects/10-constructor-defaults/lesson.md",
+    "01-classes-and-objects/10-constructor-defaults/main.py",
+    "01-classes-and-objects/10-constructor-defaults/solution/main.py",
+    "01-classes-and-objects/10-constructor-defaults/test_main.py",
+    "01-classes-and-objects/11-independent-instance-lists/lesson.md",
+    "01-classes-and-objects/11-independent-instance-lists/main.py",
+    "01-classes-and-objects/11-independent-instance-lists/solution/main.py",
+    "01-classes-and-objects/11-independent-instance-lists/test_main.py",
+    "01-classes-and-objects/12-class-body-scope/lesson.md",
+    "01-classes-and-objects/12-class-body-scope/main.py",
+    "01-classes-and-objects/12-class-body-scope/solution/main.py",
+    "01-classes-and-objects/12-class-body-scope/test_main.py",
+    "01-classes-and-objects/quiz/q01.md",
+    "01-classes-and-objects/quiz/q02.md",
+    "01-classes-and-objects/quiz/q03.md",
+    "02-object-interfaces/01-bound-methods/lesson.md",
+    "02-object-interfaces/01-bound-methods/main.py",
+    "02-object-interfaces/01-bound-methods/solution/main.py",
+    "02-object-interfaces/01-bound-methods/test_main.py",
+    "02-object-interfaces/02-function-attributes/lesson.md",
+    "02-object-interfaces/02-function-attributes/main.py",
+    "02-object-interfaces/02-function-attributes/solution/main.py",
+    "02-object-interfaces/02-function-attributes/test_main.py",
+    "02-object-interfaces/03-classes-are-callable/lesson.md",
+    "02-object-interfaces/03-classes-are-callable/main.py",
+    "02-object-interfaces/03-classes-are-callable/solution/main.py",
+    "02-object-interfaces/03-classes-are-callable/test_main.py",
+    "02-object-interfaces/04-class-method-factory/lesson.md",
+    "02-object-interfaces/04-class-method-factory/main.py",
+    "02-object-interfaces/04-class-method-factory/solution/main.py",
+    "02-object-interfaces/04-class-method-factory/test_main.py",
+    "02-object-interfaces/05-static-methods/lesson.md",
+    "02-object-interfaces/05-static-methods/main.py",
+    "02-object-interfaces/05-static-methods/solution/main.py",
+    "02-object-interfaces/05-static-methods/test_main.py",
+    "02-object-interfaces/06-property-function/lesson.md",
+    "02-object-interfaces/06-property-function/main.py",
+    "02-object-interfaces/06-property-function/solution/main.py",
+    "02-object-interfaces/06-property-function/test_main.py",
+    "02-object-interfaces/07-property-decorator/lesson.md",
+    "02-object-interfaces/07-property-decorator/main.py",
+    "02-object-interfaces/07-property-decorator/solution/main.py",
+    "02-object-interfaces/07-property-decorator/test_main.py",
+    "02-object-interfaces/08-computed-properties/lesson.md",
+    "02-object-interfaces/08-computed-properties/main.py",
+    "02-object-interfaces/08-computed-properties/solution/main.py",
+    "02-object-interfaces/08-computed-properties/test_main.py",
+    "02-object-interfaces/09-read-only-properties/lesson.md",
+    "02-object-interfaces/09-read-only-properties/main.py",
+    "02-object-interfaces/09-read-only-properties/solution/main.py",
+    "02-object-interfaces/09-read-only-properties/test_main.py",
+    "02-object-interfaces/10-property-setters/lesson.md",
+    "02-object-interfaces/10-property-setters/main.py",
+    "02-object-interfaces/10-property-setters/solution/main.py",
+    "02-object-interfaces/10-property-setters/test_main.py",
+    "02-object-interfaces/quiz/q01.md",
+    "02-object-interfaces/quiz/q03.md",
+    "02-object-interfaces/quiz/q04.md"
+  ],
+  "final_sha256": {
+    "01-classes-and-objects/01-define-a-class/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "01-classes-and-objects/01-define-a-class/lesson.md": "dc50506dd3f305bea99de9305d46ec0548deb5caff4f2efb8b9b448a6b5dfa8b",
+    "01-classes-and-objects/01-define-a-class/main.py": "30d8416a7aef435bb96880c16de6628d028d1c81faa84969d4a6de1944fbcf32",
+    "01-classes-and-objects/01-define-a-class/solution/main.py": "b2d4cc160fd2be076007ff0fa152df89b71f122e6cb2fb1735390ba4a73ea845",
+    "01-classes-and-objects/01-define-a-class/test_main.py": "cd6ccd7d4472852972b25f4329d44914e6fd9f9561acc70d877a876e54787ad0",
+    "01-classes-and-objects/02-create-two-objects/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "01-classes-and-objects/02-create-two-objects/lesson.md": "6b061816cc343b1b67ddce4b5cc8daf7f552f257a49f9e05f4189e2af50dd93a",
+    "01-classes-and-objects/02-create-two-objects/main.py": "f0a4129fc488f05f4808bdb9fe07b8cc914718480ede83c17258619cf11e9f74",
+    "01-classes-and-objects/02-create-two-objects/solution/main.py": "814bec150922f52751e71b035af02c6d90cb9309b49e30e514a81c5c40ac7455",
+    "01-classes-and-objects/02-create-two-objects/test_main.py": "6ba89eb6d402f4d1b05284532a0dc34a455d9ed0e93bd61107b106dd774c0ade",
+    "01-classes-and-objects/03-attach-instance-data/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "01-classes-and-objects/03-attach-instance-data/lesson.md": "74a3f2a4e861fbe2507adce7622102ec551f6010cd1e4afece850da8e093ea6c",
+    "01-classes-and-objects/03-attach-instance-data/main.py": "b6f4f54efef85e8917290f4bdc847a5d70068ff14a3c51d4b309f0cc6ff11bd9",
+    "01-classes-and-objects/03-attach-instance-data/solution/main.py": "aaaadc06dfaadfcd4f371e5539cf42f1df45499c73d94029c119e81ff9f93392",
+    "01-classes-and-objects/03-attach-instance-data/test_main.py": "1c84f96d5ed8566b47a73cf6204cc07f5c68b8c1d11f77310e06523cedcf2883",
+    "01-classes-and-objects/04-read-and-update-data/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "01-classes-and-objects/04-read-and-update-data/lesson.md": "6d973586742086ec3f1e7b72d83d639a08b4e30f02f39410dc98c649e48010d2",
+    "01-classes-and-objects/04-read-and-update-data/main.py": "6c542f95509898147bade2a4f2ce425723bf533d046f0a7829b5920595e42fa8",
+    "01-classes-and-objects/04-read-and-update-data/solution/main.py": "b393f5ed84fee21b75ca01b9fc57b66f3556506bdcff7ca60a565c65770c541f",
+    "01-classes-and-objects/04-read-and-update-data/test_main.py": "f091e5aa8971aef25415636771f4bafab40ec400ff5b16d3636ab31a9db8c260",
+    "01-classes-and-objects/05-class-defaults/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "01-classes-and-objects/05-class-defaults/lesson.md": "d8ca7bbd02b45818a9ac5d46037e52e953546b24879f8c9fbf80b48708865128",
+    "01-classes-and-objects/05-class-defaults/main.py": "b5713b2f9f6f2ccfd31d1c37f5ccb56d72347cf5f61a48e18f06b3b012ded19f",
+    "01-classes-and-objects/05-class-defaults/solution/main.py": "a9ac6b1e3468a9390c14fba8ae8dd9252f56ebe042da14b364acc376603066f8",
+    "01-classes-and-objects/05-class-defaults/test_main.py": "d2bb3b7474d56aea58f2019742b69c23bd6776f40211afcdea8dcd8c4bb40794",
+    "01-classes-and-objects/06-shadow-a-class-default/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "01-classes-and-objects/06-shadow-a-class-default/lesson.md": "94b121be93200f4665398eb7401ee64460686e7108909618f3964abffbb0fdb1",
+    "01-classes-and-objects/06-shadow-a-class-default/main.py": "1947c3bdf0bc5fca918a9aca92340fea2f8ca0033a4085033eb19470a87de427",
+    "01-classes-and-objects/06-shadow-a-class-default/solution/main.py": "a5e62a9712639bdb7043ad8fe041225ec67430dc7bb6961f1a6bd4f85718ec34",
+    "01-classes-and-objects/06-shadow-a-class-default/test_main.py": "4fa9118eddeee88b2b60c1390fea73ed10d52b7141d731e47af99844668218dc",
+    "01-classes-and-objects/07-write-an-instance-method/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "01-classes-and-objects/07-write-an-instance-method/lesson.md": "805586bee32aab4a53730fb3917b4041b3ba21d1ef045179e0a653255fcac384",
+    "01-classes-and-objects/07-write-an-instance-method/main.py": "acdf8705cbf85cef67464f44fef82bf436afefcdbfee4992961dfe945a49370a",
+    "01-classes-and-objects/07-write-an-instance-method/solution/main.py": "1a6718e454b49a2f2d5af8b7efb00f7b8f029998bc43d5bffdd241f36e563b6d",
+    "01-classes-and-objects/07-write-an-instance-method/test_main.py": "4ab67756c62419f8cc58578242dfb6ea14dd7de4bee496d5a2cb1213cc2a430a",
+    "01-classes-and-objects/08-return-a-value/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "01-classes-and-objects/08-return-a-value/lesson.md": "a24319ded6f48b6c92b8e8ea8a2ac8e9da98631d77480fdd6d7fbd08dfc37cca",
+    "01-classes-and-objects/08-return-a-value/main.py": "eb4112a3a37f6e1856355010a7434773629a3c2fe60ca8f6cc54b900c4be4ab3",
+    "01-classes-and-objects/08-return-a-value/solution/main.py": "b8459b5c4d20578dd7b879b3b432199af5ee3df7a2194d019706b2b350904f47",
+    "01-classes-and-objects/08-return-a-value/test_main.py": "1eb68463e58c880b633a2d11cb1b9ab9090b26f3f0d467c3fdd765ec6278d1b4",
+    "01-classes-and-objects/09-initialize-an-object/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "01-classes-and-objects/09-initialize-an-object/lesson.md": "89789ba411a8ca784fa10ddb128898873e6f9746d73bb2c199d88d3007928b3c",
+    "01-classes-and-objects/09-initialize-an-object/main.py": "4c6cc778e54d7427fa67b293f9a3d76a0d5c7469a0a09220a39e4c3bb1668ca0",
+    "01-classes-and-objects/09-initialize-an-object/solution/main.py": "3be657d2fd4045c3dad75b004e10cc9b6b178812c3dc3583f2ec20a245a6516d",
+    "01-classes-and-objects/09-initialize-an-object/test_main.py": "34f39d4ce5a253f371e4e3a9eeddd21fac2601181e0dd7fafc7bd52ee6789476",
+    "01-classes-and-objects/10-constructor-defaults/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "01-classes-and-objects/10-constructor-defaults/lesson.md": "27fe7f7f922e5bd7f8bbac9bc1cbe36ea97cb464cd7315512aecc43e8960ddf1",
+    "01-classes-and-objects/10-constructor-defaults/main.py": "d76e056ab1eabececc63da5116ca9ffc10a611420cedcda268ce769c722b57c8",
+    "01-classes-and-objects/10-constructor-defaults/solution/main.py": "25a433d8fa8b985ee498ce52c9802cdaa673ed80a34cb0b0bf9c5b51ca792030",
+    "01-classes-and-objects/10-constructor-defaults/test_main.py": "f32883e11f79078201049af77d09f1ea4ffadff0e1eb7c6620c895f0a7d9016e",
+    "01-classes-and-objects/11-independent-instance-lists/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "01-classes-and-objects/11-independent-instance-lists/lesson.md": "ae70d35ec0e08e580cc99cc02b6c51a74f231713fe16f8edf4ad48a240b7b7b3",
+    "01-classes-and-objects/11-independent-instance-lists/main.py": "43e3a2773acf1e6479354438f2ad0741d1fb1f897b8b830d1740553aabc06e04",
+    "01-classes-and-objects/11-independent-instance-lists/solution/main.py": "4a2c57fda2370567bb8988ffd3ef50c09935f55ba26a6f15821f1b1591a8a3f4",
+    "01-classes-and-objects/11-independent-instance-lists/test_main.py": "a4b38d43f7ee53f1be9d0ecadf591c0a7d02b4c8032ab4637f296a3f234b6ea2",
+    "01-classes-and-objects/12-class-body-scope/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "01-classes-and-objects/12-class-body-scope/lesson.md": "51ee8407388d371ba7187a44c356a5f2e7ec387dd0c213d2ec87feb5f8435f08",
+    "01-classes-and-objects/12-class-body-scope/main.py": "f6b1a29a340f6d684cbc9115c8e98eaa37721436b82f8cfebdfcb15d5f8d7f7d",
+    "01-classes-and-objects/12-class-body-scope/solution/main.py": "24f75838c4983608c333ebe10e9de798a6419a8eb3d7969abc5aa420fd032837",
+    "01-classes-and-objects/12-class-body-scope/test_main.py": "c20354f5408198ee81554fa0485d8fd2944d83bee7e9783b1ca00b82684f668e",
+    "01-classes-and-objects/quiz/index.yaml": "ca929720aba9fcb123b9c9c1543719fd1218f22664772b4f976444c195e6cc58",
+    "01-classes-and-objects/quiz/q01.md": "f61a395bdbb98ea74bead38933fc5c7d79363a0b5c0ac22df460f9e68a1547ac",
+    "01-classes-and-objects/quiz/q02.md": "eedaa4e19d256689ae0fe83e8772e797eb49f8e04fc5d32a9a2db92134c4313e",
+    "01-classes-and-objects/quiz/q03.md": "a4a0268f7125ab49c2dcda72fd40bb6eac57bbddfe5e21160159db8dc6af797b",
+    "01-classes-and-objects/quiz/q04.md": "f9ba06e13e4d827cfba268cb79df74767e4cc22b70a74d1505e9afd11f55b720",
+    "02-object-interfaces/01-bound-methods/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "02-object-interfaces/01-bound-methods/lesson.md": "d3b367ec0ac084905b4e9e57fabe4b381418ff001551383991953bb6d0da88fb",
+    "02-object-interfaces/01-bound-methods/main.py": "e52239d99b0799bba489b532f3b8e8e34288a69e44d5de54e06f93b145953f53",
+    "02-object-interfaces/01-bound-methods/solution/main.py": "f834caef6802e3e6d37c36e23224253f0de0a98ed16b6f0dd94163000c39c6e4",
+    "02-object-interfaces/01-bound-methods/test_main.py": "e0b218b12651d8cf019a8c945371562b3cf6e44014ebd309930ed48396d9830d",
+    "02-object-interfaces/02-function-attributes/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "02-object-interfaces/02-function-attributes/lesson.md": "068f135c6c8c5794f2900de7ce44ca0617074282f1aed1db3241bc9a168de5f6",
+    "02-object-interfaces/02-function-attributes/main.py": "043f797f6bcf9df21fbadfab81ff02a88a9569872df36bc196c792e0f5f5033c",
+    "02-object-interfaces/02-function-attributes/solution/main.py": "ce42b431a3a18809c975c1e286b393846bd17e2f53ac235c87dd42ded2a77222",
+    "02-object-interfaces/02-function-attributes/test_main.py": "dabda5b52668148d6b24b56f48e2d2b1e1b510b226ab3cb81a5a58bd25e66efd",
+    "02-object-interfaces/03-classes-are-callable/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "02-object-interfaces/03-classes-are-callable/lesson.md": "29d21df46eea91636043e338b41fb5682210ccb870b65f6c8bae03f196110bcd",
+    "02-object-interfaces/03-classes-are-callable/main.py": "6091daadc9f08dfb2c06ab39b87cd4ee9b13bac9e3b0e1b5987bfe14358ab001",
+    "02-object-interfaces/03-classes-are-callable/solution/main.py": "6568354c5eec6ee70d31cf39bfb30a44c64882feefb8a9bd00bb0f37fe58194a",
+    "02-object-interfaces/03-classes-are-callable/test_main.py": "0af30e4902c103d5b698d241fe58e5efa7f8c48a1a3ff6032c55a9218bb004cc",
+    "02-object-interfaces/04-class-method-factory/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "02-object-interfaces/04-class-method-factory/lesson.md": "0883351aa3c61972f8769ffa370e6a84bebaeb0b0d0958046a0153a1a95d8a3a",
+    "02-object-interfaces/04-class-method-factory/main.py": "967988510900cf64ad69fa4bcacfa23165c1243b72d081a19cdc1e177d464e2e",
+    "02-object-interfaces/04-class-method-factory/solution/main.py": "907d9a4e6ce7e0555e5ab404f6265eda6fe096f69a53c585122561b449cfbdbb",
+    "02-object-interfaces/04-class-method-factory/test_main.py": "5edb8bb7931c6f9de6d034a14cb476a7008830f95137c863abe4f4997bd0c2aa",
+    "02-object-interfaces/05-static-methods/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "02-object-interfaces/05-static-methods/lesson.md": "397d8395ac871928f6e202202fc690c8df3d2017ddaa0f211a933e28fd45d217",
+    "02-object-interfaces/05-static-methods/main.py": "7eb938d57cb0d7d161f21c38b5c33ec7b64c28529139f825f3177240b4c0e1cd",
+    "02-object-interfaces/05-static-methods/solution/main.py": "78740b3c2195854b389844ef4d9f68c2c6fda342bbe2d5853590ba6f8718e059",
+    "02-object-interfaces/05-static-methods/test_main.py": "9d12d4141bd1682b03103add06ab8a078c755c4dc73690fd6afc091ec5f5d995",
+    "02-object-interfaces/06-property-function/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "02-object-interfaces/06-property-function/lesson.md": "20462d3c65f0c1320d6369446506a85f19da239015a0d303716a8ce100b128c3",
+    "02-object-interfaces/06-property-function/main.py": "f42890e8239aea95d4b23ad606e9c6b3f23637cbe51658aedb28d6182f1d3fd2",
+    "02-object-interfaces/06-property-function/solution/main.py": "89585972ae54174d83f0363ce121ea1cdf24056feb1ce17e3cd636a73db3ead8",
+    "02-object-interfaces/06-property-function/test_main.py": "585ddc1b6a38a9da6c3a86b07e98e1b5038380e26ea99949ef18bf61205bf40c",
+    "02-object-interfaces/07-property-decorator/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "02-object-interfaces/07-property-decorator/lesson.md": "262a3e44fbafa677f4412a517e309cc299617f6ccb45191a27731b91d734c9fd",
+    "02-object-interfaces/07-property-decorator/main.py": "ae357d47fe3a5c9ad989f65587f8807bf01c12d7d9a35b9a0d3bec35305b0103",
+    "02-object-interfaces/07-property-decorator/solution/main.py": "20a2add0ef213cf65cc38b66f3e3c447bf6a5e46202d3c3ed5a7fbbf56708b9d",
+    "02-object-interfaces/07-property-decorator/test_main.py": "982a5f5e615c84ff157dfdf93f0af3b45b545bace4b74f371b85086cc05b746c",
+    "02-object-interfaces/08-computed-properties/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "02-object-interfaces/08-computed-properties/lesson.md": "beb1c43f1820400a56115d0f30fb50575d13f6b0c7f8d0fb553c90bcfba8838b",
+    "02-object-interfaces/08-computed-properties/main.py": "784652b0f540b89027c2e41f32c25ee8e85bd85406f13a8d6e835bf941ef2dd6",
+    "02-object-interfaces/08-computed-properties/solution/main.py": "a5efa115c2f99cfc137fb264a1cd55e61c1a5dd055cd6a08da6174dea9d57f68",
+    "02-object-interfaces/08-computed-properties/test_main.py": "1d8a9bd56651518a451d54d2e251a252d3f26de8edf6f67842d2ffbbfd44ee4b",
+    "02-object-interfaces/09-read-only-properties/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "02-object-interfaces/09-read-only-properties/lesson.md": "2e283ab593718deb74db44736742d8cbc4261cc8063b444686acba3ca49771f8",
+    "02-object-interfaces/09-read-only-properties/main.py": "0bc960ec7821a4632e7cda4882a652d7001b934690bd8892309f7a5f5de5af96",
+    "02-object-interfaces/09-read-only-properties/solution/main.py": "a6f84d6e1dc04f35602adc5bc7eb11c5157e38c37cab06edc1f6e98822e38a54",
+    "02-object-interfaces/09-read-only-properties/test_main.py": "36f8f84b7b2c9c5c9255fed2a0281812ce4181f0722e682ab248035415bf46c1",
+    "02-object-interfaces/10-property-setters/files.yaml": "b984f2d6e1800bad90b117c5ebef75701f7391e264946bacb431fd4942f10e36",
+    "02-object-interfaces/10-property-setters/lesson.md": "8b6e87b02d616e3954a3cffa82240cecd24be3fef340acee06e3ea0b81847678",
+    "02-object-interfaces/10-property-setters/main.py": "26fa61618d8ce0bb1ba8d2147bfa3ced080db7cfcc0051e775a25343ceb4990c",
+    "02-object-interfaces/10-property-setters/solution/main.py": "ac5861ef015d96f0c3a7eff78c5d486a5191d0447befadf07b01ad26e67570f4",
+    "02-object-interfaces/10-property-setters/test_main.py": "d5f5f0ab769a9b67c643d83789916729ba2f5621791246ce23591311553cf830",
+    "02-object-interfaces/quiz/index.yaml": "0f3079e9d93be59ed7e18e7e76371713fce817315d4b062c34fac758012bf61b",
+    "02-object-interfaces/quiz/q01.md": "12b2554474d6d5dd5ead720d04b7db554c6c9bd2fcfe93004d2e36013b00274c",
+    "02-object-interfaces/quiz/q02.md": "ddbf88c1e08fedb9eb4b8657668595cb8d0b4b3474eb1ea45003075742454f82",
+    "02-object-interfaces/quiz/q03.md": "a4ba8b2887124989b925c35383f5a7e2783a0316f86957bdc0ac730901dbf72a",
+    "02-object-interfaces/quiz/q04.md": "f256744d44bb5dc792c8489cd8cbbc23bdf2765886172d3e395ad502e46c658d"
+  },
+  "verification": {
+    "runtime": "native CPython 3.14.7",
+    "lesson_count": 22,
+    "starter_tests_passed": 0,
+    "solution_tests_passed": 22,
+    "quiz_questions_parsed": 8,
+    "task_test_mapping_preserved": true,
+    "slug_order_paths_preserved": true,
+    "all_source_yaml_parsed": true,
+    "example_fences_checked": 25,
+    "supplemental_example_probes": 7,
+    "browser_app_execution": "not requested; not performed",
+    "results": [
+      {
+        "lesson": "01-classes-and-objects/01-define-a-class",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_item_is_a_class",
+                "pass": false,
+                "error": "AssertionError: Define the GameItem class above the console probe."
+              }
+            ],
+            "stdout": "Not ready yet: name 'GameItem' is not defined\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_item_is_a_class",
+                "pass": true
+              }
+            ],
+            "stdout": "GameItem instance: True\n"
+          }
+        }
+      },
+      {
+        "lesson": "01-classes-and-objects/02-create-two-objects",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_two_separate_items",
+                "pass": false,
+                "error": "AssertionError: Create lantern with a GameItem call."
+              }
+            ],
+            "stdout": "Both items: False\nSeparate objects: False\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_two_separate_items",
+                "pass": true
+              }
+            ],
+            "stdout": "Both items: True\nSeparate objects: True\n"
+          }
+        }
+      },
+      {
+        "lesson": "01-classes-and-objects/03-attach-instance-data",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_each_item_keeps_its_name",
+                "pass": false,
+                "error": "AssertionError: Store the name parameter on each item."
+              }
+            ],
+            "stdout": "Not ready yet: 'GameItem' object has no attribute 'name'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_each_item_keeps_its_name",
+                "pass": true
+              }
+            ],
+            "stdout": "GameItem names: lantern shield\n"
+          }
+        }
+      },
+      {
+        "lesson": "01-classes-and-objects/04-read-and-update-data",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_usage_updates_accumulate",
+                "pass": false,
+                "error": "AssertionError: Add to the existing count rather than replacing it."
+              }
+            ],
+            "stdout": "Recorded uses: 3\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_usage_updates_accumulate",
+                "pass": true
+              }
+            ],
+            "stdout": "Recorded uses: 9\n"
+          }
+        }
+      },
+      {
+        "lesson": "01-classes-and-objects/05-class-defaults",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_items_use_the_class_default",
+                "pass": false,
+                "error": "AssertionError: Set cooldown_turns in the class body."
+              }
+            ],
+            "stdout": "Not ready yet: type object 'GameItem' has no attribute 'cooldown_turns'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_items_use_the_class_default",
+                "pass": true
+              }
+            ],
+            "stdout": "Class cooldown: 7\nInstance cooldown: 7\n"
+          }
+        }
+      },
+      {
+        "lesson": "01-classes-and-objects/06-shadow-a-class-default",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_one_item_overrides_the_default",
+                "pass": false,
+                "error": "AssertionError: Assign the override on the supplied item."
+              }
+            ],
+            "stdout": "Cooldown turns: 7 7 7\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_one_item_overrides_the_default",
+                "pass": true
+              }
+            ],
+            "stdout": "Cooldown turns: 14 7 7\n"
+          }
+        }
+      },
+      {
+        "lesson": "01-classes-and-objects/07-write-an-instance-method",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_record_use_updates_its_receiver",
+                "pass": false,
+                "error": "AssertionError: Define record_use inside GameItem with self as its parameter."
+              }
+            ],
+            "stdout": "Not ready yet: 'GameItem' object has no attribute 'record_use'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_record_use_updates_its_receiver",
+                "pass": true
+              }
+            ],
+            "stdout": "Uses after two calls: 7\n"
+          }
+        }
+      },
+      {
+        "lesson": "01-classes-and-objects/08-return-a-value",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_summary_returns_current_data",
+                "pass": false,
+                "error": "AssertionError: Return the formatted string instead of printing it."
+              }
+            ],
+            "stdout": "None\nNone\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_summary_returns_current_data",
+                "pass": true
+              }
+            ],
+            "stdout": "lantern: 2 uses\nlantern: 3 uses\n"
+          }
+        }
+      },
+      {
+        "lesson": "01-classes-and-objects/09-initialize-an-object",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_initialization_stores_each_items_data",
+                "pass": false,
+                "error": "AssertionError: Store both constructor arguments on self."
+              }
+            ],
+            "stdout": "Not ready yet: 'GameItem' object has no attribute 'name'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_initialization_stores_each_items_data",
+                "pass": true
+              }
+            ],
+            "stdout": "lantern: 4 uses\nshield: 1 uses\n"
+          }
+        }
+      },
+      {
+        "lesson": "01-classes-and-objects/10-constructor-defaults",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_default_and_explicit_usage_counts",
+                "pass": false,
+                "error": "TypeError: GameItem.__init__() missing 1 required positional argument: 'uses'"
+              }
+            ],
+            "stdout": "Not ready yet: GameItem.__init__() missing 1 required positional argument: 'uses'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_default_and_explicit_usage_counts",
+                "pass": true
+              }
+            ],
+            "stdout": "New item uses: 0\nImported item uses: 6\n"
+          }
+        }
+      },
+      {
+        "lesson": "01-classes-and-objects/11-independent-instance-lists",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_notes_are_independent_lists",
+                "pass": false,
+                "error": "AssertionError: Create an empty notes list in __init__."
+              }
+            ],
+            "stdout": "Not ready yet: 'GameItem' object has no attribute 'notes'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_notes_are_independent_lists",
+                "pass": true
+              }
+            ],
+            "stdout": "Lantern notes: ['glow checked']\nShield notes: []\n"
+          }
+        }
+      },
+      {
+        "lesson": "01-classes-and-objects/12-class-body-scope",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_label_uses_receiver_attribute_lookup",
+                "pass": false,
+                "error": "AssertionError: Read prefix through self, not the global name."
+              }
+            ],
+            "stdout": "Default: None\nOverride: None\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_label_uses_receiver_attribute_lookup",
+                "pass": true
+              }
+            ],
+            "stdout": "Default: ITEM-A1\nOverride: RARE-B2\n"
+          }
+        }
+      },
+      {
+        "lesson": "02-object-interfaces/01-bound-methods",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_deferred_method_remembers_its_item",
+                "pass": false,
+                "error": "AssertionError: Return item.record_use without parentheses."
+              }
+            ],
+            "stdout": "Before action: 3\nNot ready yet: 'NoneType' object is not callable\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_deferred_method_remembers_its_item",
+                "pass": true
+              }
+            ],
+            "stdout": "Before action: 3\nAction result: 4\n"
+          }
+        }
+      },
+      {
+        "lesson": "02-object-interfaces/02-function-attributes",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_description_is_attached_without_execution",
+                "pass": false,
+                "error": "AssertionError: Attach metadata to the function object."
+              }
+            ],
+            "stdout": "Not ready yet: 'function' object has no attribute 'description'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_description_is_attached_without_execution",
+                "pass": true
+              }
+            ],
+            "stdout": "Description: Show inventory\nCommand result: Available items\n"
+          }
+        }
+      },
+      {
+        "lesson": "02-object-interfaces/03-classes-are-callable",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_record_creation_calls_the_supplied_factory_once",
+                "pass": false,
+                "error": "AssertionError: Construct using the factory parameter."
+              }
+            ],
+            "stdout": "Not ready yet: 'NoneType' object has no attribute 'name'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_record_creation_calls_the_supplied_factory_once",
+                "pass": true
+              }
+            ],
+            "stdout": "GameItem: lantern\nPlayer: Ari\n"
+          }
+        }
+      },
+      {
+        "lesson": "02-object-interfaces/04-class-method-factory",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_class_factory_parses_and_constructs",
+                "pass": false,
+                "error": "AssertionError: Decorate from_text with @classmethod."
+              }
+            ],
+            "stdout": "Not ready yet: type object 'GameItem' has no attribute 'from_text'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_class_factory_parses_and_constructs",
+                "pass": true
+              }
+            ],
+            "stdout": "Parsed record: lantern 8\nInteger count: True\n"
+          }
+        }
+      },
+      {
+        "lesson": "02-object-interfaces/05-static-methods",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_static_normalization_needs_no_receiver",
+                "pass": false,
+                "error": "AssertionError: Use @staticmethod for a helper with no self or cls."
+              }
+            ],
+            "stdout": "Not ready yet: type object 'GameItem' has no attribute 'normalize_code'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_static_normalization_needs_no_receiver",
+                "pass": true
+              }
+            ],
+            "stdout": "Normalized code: AB-7\n"
+          }
+        }
+      },
+      {
+        "lesson": "02-object-interfaces/06-property-function",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_label_property_uses_the_getter",
+                "pass": false,
+                "error": "AssertionError: Create label with the property function."
+              }
+            ],
+            "stdout": "Not ready yet: 'GameItem' object has no attribute 'label'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_label_property_uses_the_getter",
+                "pass": true
+              }
+            ],
+            "stdout": "Label: LANTERN\nUpdated label: SHIELD\n"
+          }
+        }
+      },
+      {
+        "lesson": "02-object-interfaces/07-property-decorator",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_display_name_is_a_live_property",
+                "pass": false,
+                "error": "AssertionError: Place @property immediately above the getter."
+              }
+            ],
+            "stdout": "Display name: <bound method Player.display_name of <__main__.Player object at 0x108dbb770>>\nUpdated name: <bound method Player.display_name of <__main__.Player object at 0x108dbb770>>\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_display_name_is_a_live_property",
+                "pass": true
+              }
+            ],
+            "stdout": "Display name: Ari Shah\nUpdated name: Ari Patel\n"
+          }
+        }
+      },
+      {
+        "lesson": "02-object-interfaces/08-computed-properties",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_available_is_derived_from_current_counts",
+                "pass": false,
+                "error": "AssertionError: Define a getter-only property."
+              }
+            ],
+            "stdout": "Not ready yet: 'ItemPool' object has no attribute 'available'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_available_is_derived_from_current_counts",
+                "pass": true
+              }
+            ],
+            "stdout": "Available: 7\nAfter equipping more: 4\n"
+          }
+        }
+      },
+      {
+        "lesson": "02-object-interfaces/09-read-only-properties",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_asset_code_is_publicly_read_only",
+                "pass": false,
+                "error": "AssertionError: Expose asset_code with a getter and no setter."
+              }
+            ],
+            "stdout": "Not ready yet: 'GameItem' object has no attribute 'asset_code'\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_asset_code_is_publicly_read_only",
+                "pass": true
+              }
+            ],
+            "stdout": "Asset code: A-7\nPublic reassignment rejected\n"
+          }
+        }
+      },
+      {
+        "lesson": "02-object-interfaces/10-property-setters",
+        "tasks": 1,
+        "versions": {
+          "starter": {
+            "tests": [
+              {
+                "test": "test_cooldown_setter_validates_before_storing",
+                "pass": false,
+                "error": "AssertionError: Add a setter to the cooldown_turns property."
+              }
+            ],
+            "stdout": "Not ready yet: property 'cooldown_turns' of 'GameItem' object has no setter\n"
+          },
+          "solution": {
+            "tests": [
+              {
+                "test": "test_cooldown_setter_validates_before_storing",
+                "pass": true
+              }
+            ],
+            "stdout": "Accepted cooldown: 14\nInvalid cooldown rejected\nCooldown after rejection: 14\n"
+          }
+        }
+      }
+    ],
+    "examples": [
+      {
+        "lesson": "01-classes-and-objects/01-define-a-class/lesson.md",
+        "block": 0,
+        "stdout": "",
+        "expected": "",
+        "pass": true
+      },
+      {
+        "lesson": "01-classes-and-objects/01-define-a-class/lesson.md",
+        "block": 1,
+        "stdout": "True",
+        "expected": "True",
+        "pass": true
+      },
+      {
+        "lesson": "01-classes-and-objects/02-create-two-objects/lesson.md",
+        "block": 0,
+        "stdout": "False",
+        "expected": "False",
+        "pass": true
+      },
+      {
+        "lesson": "01-classes-and-objects/02-create-two-objects/lesson.md",
+        "block": 1,
+        "stdout": "True",
+        "expected": "True",
+        "pass": true
+      },
+      {
+        "lesson": "01-classes-and-objects/03-attach-instance-data/lesson.md",
+        "block": 0,
+        "stdout": "clearing",
+        "expected": "clearing",
+        "pass": true
+      },
+      {
+        "lesson": "01-classes-and-objects/04-read-and-update-data/lesson.md",
+        "block": 0,
+        "stdout": "11",
+        "expected": "11",
+        "pass": true
+      },
+      {
+        "lesson": "01-classes-and-objects/05-class-defaults/lesson.md",
+        "block": 0,
+        "stdout": "30\n30",
+        "expected": "30\n30",
+        "pass": true
+      },
+      {
+        "lesson": "01-classes-and-objects/05-class-defaults/lesson.md",
+        "block": 1,
+        "stdout": "45",
+        "expected": "45",
+        "pass": true
+      },
+      {
+        "lesson": "01-classes-and-objects/06-shadow-a-class-default/lesson.md",
+        "block": 0,
+        "stdout": "2\n10\n2",
+        "expected": "2\n10\n2",
+        "pass": true
+      },
+      {
+        "lesson": "01-classes-and-objects/07-write-an-instance-method/lesson.md",
+        "block": 0,
+        "stdout": "True",
+        "expected": "True",
+        "pass": true
+      },
+      {
+        "lesson": "01-classes-and-objects/08-return-a-value/lesson.md",
+        "block": 0,
+        "stdout": "ZONE C",
+        "expected": "ZONE C",
+        "pass": true
+      },
+      {
+        "lesson": "01-classes-and-objects/09-initialize-an-object/lesson.md",
+        "block": 0,
+        "stdout": "North Grove",
+        "expected": "North Grove",
+        "pass": true
+      },
+      {
+        "lesson": "01-classes-and-objects/10-constructor-defaults/lesson.md",
+        "block": 0,
+        "stdout": "",
+        "expected": "",
+        "pass": true
+      },
+      {
+        "lesson": "01-classes-and-objects/10-constructor-defaults/lesson.md",
+        "supplemental_probe": "print(start.stage, later.stage)",
+        "stdout": "1 24",
+        "expected": "1 24",
+        "pass": true
+      },
+      {
+        "lesson": "01-classes-and-objects/11-independent-instance-lists/lesson.md",
+        "block": 0,
+        "stdout": "[]",
+        "expected": "[]",
+        "pass": true
+      },
+      {
+        "lesson": "01-classes-and-objects/12-class-body-scope/lesson.md",
+        "block": 0,
+        "stdout": "mana",
+        "expected": "mana",
+        "pass": true
+      },
+      {
+        "lesson": "02-object-interfaces/01-bound-methods/lesson.md",
+        "block": 0,
+        "stdout": "ding",
+        "expected": "ding",
+        "pass": true
+      },
+      {
+        "lesson": "02-object-interfaces/02-function-attributes/lesson.md",
+        "block": 0,
+        "stdout": "navigation\nclearing",
+        "expected": "navigation\nclearing",
+        "pass": true
+      },
+      {
+        "lesson": "02-object-interfaces/03-classes-are-callable/lesson.md",
+        "block": 0,
+        "stdout": "Quest for Nia",
+        "expected": "Quest for Nia",
+        "pass": true
+      },
+      {
+        "lesson": "02-object-interfaces/04-class-method-factory/lesson.md",
+        "block": 0,
+        "stdout": "",
+        "expected": "",
+        "pass": true
+      },
+      {
+        "lesson": "02-object-interfaces/04-class-method-factory/lesson.md",
+        "supplemental_probe": "p = MapPosition.from_pair(\"3,5\"); print(p.x, p.y)",
+        "stdout": "3 5",
+        "expected": "3 5",
+        "pass": true
+      },
+      {
+        "lesson": "02-object-interfaces/05-static-methods/lesson.md",
+        "block": 0,
+        "stdout": "AB12",
+        "expected": "AB12",
+        "pass": true
+      },
+      {
+        "lesson": "02-object-interfaces/06-property-function/lesson.md",
+        "block": 0,
+        "stdout": "",
+        "expected": "",
+        "pass": true
+      },
+      {
+        "lesson": "02-object-interfaces/06-property-function/lesson.md",
+        "supplemental_probe": "print(QuestRoute(\"grove\", \"tower\").heading)",
+        "stdout": "grove to tower",
+        "expected": "grove to tower",
+        "pass": true
+      },
+      {
+        "lesson": "02-object-interfaces/07-property-decorator/lesson.md",
+        "block": 0,
+        "stdout": "",
+        "expected": "",
+        "pass": true
+      },
+      {
+        "lesson": "02-object-interfaces/07-property-decorator/lesson.md",
+        "supplemental_probe": "print(LootBundle(2500).kilograms)",
+        "stdout": "2.5",
+        "expected": "2.5",
+        "pass": true
+      },
+      {
+        "lesson": "02-object-interfaces/08-computed-properties/lesson.md",
+        "block": 0,
+        "stdout": "",
+        "expected": "",
+        "pass": true
+      },
+      {
+        "lesson": "02-object-interfaces/08-computed-properties/lesson.md",
+        "supplemental_probe": "print(QuestProgress(12, 5).remaining)",
+        "stdout": "7",
+        "expected": "7",
+        "pass": true
+      },
+      {
+        "lesson": "02-object-interfaces/09-read-only-properties/lesson.md",
+        "block": 0,
+        "stdout": "",
+        "expected": "",
+        "pass": true
+      },
+      {
+        "lesson": "02-object-interfaces/09-read-only-properties/lesson.md",
+        "supplemental_probe": "print(SaveSlot(\"B2\").number)",
+        "stdout": "B2",
+        "expected": "B2",
+        "pass": true
+      },
+      {
+        "lesson": "02-object-interfaces/10-property-setters/lesson.md",
+        "block": 0,
+        "stdout": "",
+        "expected": "",
+        "pass": true
+      },
+      {
+        "lesson": "02-object-interfaces/10-property-setters/lesson.md",
+        "supplemental_probe": "effect = SoundEffect(3); effect.level = 4; print(effect.level)",
+        "stdout": "4",
+        "expected": "4",
+        "pass": true
+      }
+    ]
+  },
+  "figure_conflicts": [
+    {
+      "lesson": "01-classes-and-objects/11-independent-instance-lists/lesson.md",
+      "figure": "01-classes-and-objects/11-independent-instance-lists/class-and-instance-state.svg",
+      "exists": true,
+      "coordination": "Parent/diagram agent owns figure files; caption coordinated to QuestLog.entries/add_entry or Player.gain_xp. No figure edits by this agent."
+    },
+    {
+      "lesson": "02-object-interfaces/01-bound-methods/lesson.md",
+      "figure": "02-object-interfaces/01-bound-methods/bound-method-self.svg",
+      "exists": true,
+      "coordination": "Parent/diagram agent owns figure files; caption coordinated to QuestLog.entries/add_entry or Player.gain_xp. No figure edits by this agent."
+    }
+  ],
+  "notes": [
+    "Only assigned module text/Python files changed; root manifest, shared/local diagrams, and projects 05/06/10 left to their owners.",
+    "Initial four lessons have requested natural Your Tasks lead-in and unnumbered Run/Submit instruction; task count remains one per test.",
+    "All lessons, starters, solutions, tests, manifests and quiz files in scope read."
+  ]
+}

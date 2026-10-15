@@ -4,18 +4,18 @@ slug: data-descriptor-priority
 order: 7
 language: python
 lesson_type: coding
-summary: A field that must stay read-only should not be bypassed by an instance attribute with the same public name. Make its descriptor a data descriptor.
+summary: A player badge serial that must stay read-only should not be bypassed by an instance attribute with the same public name. Make its descriptor a data descriptor.
 seo_title: Give a data descriptor priority | Object-oriented Python
-seo_description: A field that must stay read-only should not be bypassed by an instance attribute with the same public name. Make its descriptor a data descriptor.
+seo_description: A player badge serial that must stay read-only should not be bypassed by an instance attribute with the same public name. Make its descriptor a data descriptor.
 seo_keywords:
   - Python
   - data descriptor priority
   - object-oriented programming
 hints:
-  - Define the setter on Serial itself, not on Badge or an individual object.
+  - Define the setter on Serial itself, not on PlayerBadge or an individual object.
 ---
 
-A field that must stay read-only should not be bypassed by an instance attribute with the same public name. Make its descriptor a data descriptor.
+A player badge serial that must stay read-only should not be bypassed by an instance attribute with the same public name. Make its descriptor a data descriptor.
 
 A descriptor whose type defines `__set__` or `__delete__` is a data descriptor. For normal instance reads, a data descriptor that defines `__get__` takes priority over a same-named entry in the instance dictionary. A getter-only descriptor has lower priority; the next lesson explores that case.
 

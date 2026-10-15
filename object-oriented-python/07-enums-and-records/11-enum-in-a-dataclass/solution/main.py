@@ -1,19 +1,19 @@
 from dataclasses import dataclass
 from enum import Enum
 
-class CaseState(Enum):
-    OPEN = "open"
-    CLOSED = "closed"
+class QuestState(Enum):
+    NEW = "new"
+    DONE = "done"
 
 @dataclass
-class SupportCase:
-    subject: str
-    state: CaseState = CaseState.OPEN
+class QuestEntry:
+    title: str
+    state: QuestState = QuestState.NEW
 
 
 if __name__ == "__main__":
     try:
-        case = SupportCase("Missing label")
-        print(case.state, isinstance(case.state, CaseState))
+        entry = QuestEntry("Find the lantern")
+        print(entry.state, isinstance(entry.state, QuestState))
     except (AttributeError, TypeError, ValueError, KeyError, NameError) as error:
         print("Not ready:", type(error).__name__, str(error))

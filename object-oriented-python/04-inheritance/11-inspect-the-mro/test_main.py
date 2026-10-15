@@ -2,8 +2,8 @@ from solution import *
 
 
 def test_01_inspect_the_mro():
-    assert mro_names(Report) == ["Report", "Signed", "Dated", "Document", "object"]
-    assert mro_names(Document) == ["Document", "object"]
+    assert mro_names(LanternSprite) == ["LanternSprite", "GlowMixin", "TrailMixin", "Entity", "object"]
+    assert mro_names(Entity) == ["Entity", "object"]
     assert mro_names(object) == ["object"]
     class Root:
         pass

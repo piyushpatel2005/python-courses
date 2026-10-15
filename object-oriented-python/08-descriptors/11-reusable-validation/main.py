@@ -10,19 +10,19 @@ class Positive:
     def __set__(self, instance, value):
         pass
 
-class Parcel:
-    mass = Positive()
-    length = Positive()
+class Hitbox:
+    width = Positive()
+    height = Positive()
 
 
 if __name__ == "__main__":
     try:
-        parcel = Parcel()
-        parcel.mass, parcel.length = 2.5, 30
-        print(parcel.mass, parcel.length)
+        hitbox = Hitbox()
+        hitbox.width, hitbox.height = 2.5, 30
+        print(hitbox.width, hitbox.height)
         try:
-            parcel.mass = 0
+            hitbox.width = 0
         except ValueError:
-            print("Rejected:", parcel.mass)
+            print("Rejected:", hitbox.width)
     except (AttributeError, TypeError, ValueError, KeyError, NameError) as error:
         print("Not ready:", type(error).__name__, str(error))

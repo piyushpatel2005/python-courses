@@ -1,6 +1,6 @@
-class SheetBatch:
-    def __init__(self, sheets):
-        self.sheets = sheets
+class ScoreDelta:
+    def __init__(self, points):
+        self.points = points
 
     def __mul__(self, factor):
         pass  # TODO: complete the requested behavior.
@@ -8,6 +8,6 @@ class SheetBatch:
 
 if __name__ == "__main__":
     try:
-        print("Scaled sheets:", (SheetBatch(7) * 3).sheets)
+        print("Scaled points:", (ScoreDelta(7) * 3).points)
     except Exception as error:
         print("Not ready:", type(error).__name__, str(error))

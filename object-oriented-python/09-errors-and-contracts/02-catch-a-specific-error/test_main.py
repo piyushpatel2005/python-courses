@@ -3,14 +3,14 @@ from solution import *
 
 def test_behavior():
     """Catch only the expected lookup error."""
-    assert locker_label({2: "Mira", 8: "Sol"}, 8) == "Sol"
-    assert locker_label({}, 8) == "Unknown locker"
-    assert locker_label({1: ""}, 1) == ""
+    assert player_label({2: "Wren", 8: "Ash"}, 8) == "Ash"
+    assert player_label({}, 8) == "Unknown player"
+    assert player_label({1: ""}, 1) == ""
     class Broken:
         def __getitem__(self, key):
-            raise RuntimeError("sensor offline")
+            raise RuntimeError("player directory unavailable")
     try:
-        locker_label(Broken(), 3)
+        player_label(Broken(), 3)
     except RuntimeError:
         pass
     else:

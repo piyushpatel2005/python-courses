@@ -4,9 +4,9 @@ slug: function-binding
 order: 10
 language: python
 lesson_type: coding
-summary: A function stored on a class becomes a bound method when read through an instance. Use the function's descriptor hook explicitly to see which object supplies `self`.
+summary: A player welcome function stored on a class becomes a bound method when read through a player instance. Use the function's descriptor hook explicitly to see which object supplies `self`.
 seo_title: Connect function binding to descriptors | Object-oriented Python
-seo_description: A function stored on a class becomes a bound method when read through an instance. Use the function's descriptor hook explicitly to see which object supplies `self`.
+seo_description: A player welcome function stored on a class becomes a bound method when read through a player instance. Use the function's descriptor hook explicitly to see which object supplies `self`.
 seo_keywords:
   - Python
   - function binding
@@ -15,7 +15,7 @@ hints:
   - Call function.__get__ with the receiver and its class; return the result without calling it.
 ---
 
-A function stored on a class becomes a bound method when read through an instance. Use the function's descriptor hook explicitly to see which object supplies `self`.
+A player welcome function stored on a class becomes a bound method when read through a player instance. Use the function's descriptor hook explicitly to see which object supplies `self`.
 
 Ordinary Python functions implement `__get__`, so they are non-data descriptors when stored on a class. Reading a function through an instance creates a bound method: calling it automatically supplies that instance as the first argument. Reading the function through the class leaves it unbound in normal class access.
 
@@ -33,13 +33,13 @@ Your helper should return the bound method, not call it immediately. The caller 
 def caption(self, suffix):
     return self.title + suffix
 
-class Note:
-    title = "River"
+class Quest:
+    title = "Lantern"
 
-note = Note()
-method = caption.__get__(note, Note)
-print(method(" map"))
-print(method.__self__ is note)
+quest = Quest()
+method = caption.__get__(quest, Quest)
+print(method(" quest"))
+print(method.__self__ is quest)
 ```
 
 ## Your Tasks

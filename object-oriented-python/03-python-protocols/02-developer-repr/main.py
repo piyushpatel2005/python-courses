@@ -1,4 +1,4 @@
-class Parcel:
+class LootBundle:
     def __init__(self, code, count):
         self.code = code
         self.count = count
@@ -9,6 +9,6 @@ class Parcel:
 
 if __name__ == "__main__":
     try:
-        print(repr(Parcel("A'7", 3)))
+        print(repr(LootBundle("A'7", 3)))
     except Exception as error:
         print("Not ready:", type(error).__name__, str(error))

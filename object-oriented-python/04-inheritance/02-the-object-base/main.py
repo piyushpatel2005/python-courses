@@ -1,7 +1,7 @@
-class Record:
+class Pickup:
     pass
 
-class DetailedRecord(Record):
+class QuestPickup(Pickup):
     pass
 
 
@@ -11,7 +11,7 @@ def direct_object_base(value):
 
 if __name__ == "__main__":
     try:
-        print("Plain:", direct_object_base(Record()))
-        print("Subclass:", direct_object_base(DetailedRecord()))
+        print("Plain:", direct_object_base(Pickup()))
+        print("Subclass:", direct_object_base(QuestPickup()))
     except Exception as error:
         print("Not ready:", type(error).__name__, str(error))

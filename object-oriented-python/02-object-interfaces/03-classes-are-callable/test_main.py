@@ -2,7 +2,7 @@ from solution import *
 
 
 def test_record_creation_calls_the_supplied_factory_once():
-    for factory, name in ((Tool, "drill"), (Member, "Imani"), (Tool, "plane")):
+    for factory, name in ((GameItem, "lantern"), (Player, "Imani"), (GameItem, "horn")):
         record = create_record(factory, name)
         assert isinstance(record, factory), "Construct using the factory parameter."
         assert record.name == name

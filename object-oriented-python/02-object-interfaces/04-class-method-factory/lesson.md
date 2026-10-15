@@ -4,10 +4,10 @@ slug: class-method-factory
 order: 4
 language: python
 lesson_type: coding
-summary: Add `Tool.from_text(cls, text)` decorated with `@classmethod`; parse valid `"name:uses"` text, convert `uses` to
+summary: Add `GameItem.from_text(cls, text)` decorated with `@classmethod`; parse valid `"name:uses"` text, convert `uses` to
   an integer, and return a new instance by calling `cls(name, uses)`.
 seo_title: A class method factory | Python OOP practice
-seo_description: Add `Tool.from_text(cls, text)` decorated with `@classmethod`; parse valid `"name:uses"` text, convert `uses`
+seo_description: Add `GameItem.from_text(cls, text)` decorated with `@classmethod`; parse valid `"name:uses"` text, convert `uses`
   to an integer, and return a new instance by calling `cls(name, uses)`.
 seo_keywords:
 - Python OOP
@@ -17,7 +17,7 @@ seo_keywords:
 
 # A class method factory
 
-Tool records arrive as text such as `drill:8`. Keep the ordinary initializer for direct values and add a named alternative constructor for that text format. The method belongs to the class because there is no existing tool to receive it yet.
+A saved item record may arrive as text such as `lantern:8`. Add a named constructor for that format while keeping the ordinary initializer for separate values. No item exists yet, so the new method receives the class instead of an instance.
 
 ## The first decorator
 
@@ -26,7 +26,7 @@ A **decorator** is written as an `@` line immediately before a function definiti
 `@classmethod` changes how Python supplies the first argument: it passes the class rather than an instance. That parameter is conventionally named `cls`.
 
 ```python
-class Coordinate:
+class MapPosition:
     def __init__(self, x, y):
         self.x = x
         self.y = y
@@ -37,15 +37,15 @@ class Coordinate:
         return cls(int(x), int(y))
 ```
 
-Call `Coordinate.from_pair("3,5")`. Python supplies `Coordinate` for `cls`; your string becomes `text`. The method splits the string, converts the pieces to integers, and calls the class to build a new instance. Unlike `__init__`, this method must return the created object.
+Call `MapPosition.from_pair("3,5")`. Python supplies `MapPosition` for `cls`; your string becomes `text`. The method splits the string, converts the pieces to integers, and calls the class to build a new instance. Unlike `__init__`, this method must return the created object.
 
 Place the decorator at the same indentation as `def`, inside the class. The body still needs another level of indentation. `cls(...)` is an ordinary call through the class parameter, like calling a factory argument in the previous lesson.
 
-For the workshop format, assume the input contains one colon, a nonempty name, and a nonnegative integer count. You do not need error handling yet. Use the existing initializer rather than manually attaching attributes in the factory. The two entry points should lead to the same kind of ready-to-use object; only their input formats differ.
+For this saved-item format, assume the input contains one colon, a nonempty name, and a nonnegative integer count. You do not need error handling yet. Use the existing initializer rather than manually attaching attributes in the factory. The two entry points should lead to the same kind of ready-to-use object; only their input formats differ.
 
 ## Your Tasks
 
-1. Add `Tool.from_text(cls, text)` decorated with `@classmethod`; parse valid `"name:uses"` text, convert `uses` to an integer, and return a new instance by calling `cls(name, uses)`.
+1. Add `GameItem.from_text(cls, text)` decorated with `@classmethod`; parse valid `"name:uses"` text, convert `uses` to an integer, and return a new instance by calling `cls(name, uses)`.
 
 ## Run and check
 

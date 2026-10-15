@@ -3,48 +3,64 @@
     "lesson": "01-classes-and-objects/11-independent-instance-lists",
     "published_image": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/public/images/object-oriented-python/classes-and-objects/independent-instance-lists/class-and-instance-state.svg",
     "sha256": "1a9c81179b9958283c48e0c0b47e9ba6153d4fd08a5f7ffa2efff4225eb929e4",
-    "ok": true
+    "ok": true,
+    "evidence_status": "historical_pre_game_theme",
+    "current_diagram_report": "assets/gaming-diagrams.json"
   },
   {
     "lesson": "02-object-interfaces/01-bound-methods",
     "published_image": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/public/images/object-oriented-python/object-interfaces/bound-methods/bound-method-self.svg",
     "sha256": "5edeb34185ff77a388f643ae8b2e1f22dcb3e2d3fb20e6350520cda1a772bb9a",
-    "ok": true
+    "ok": true,
+    "evidence_status": "historical_pre_game_theme",
+    "current_diagram_report": "assets/gaming-diagrams.json"
   },
   {
     "lesson": "03-python-protocols/06-reflected-multiplication",
     "published_image": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/public/images/object-oriented-python/python-protocols/reflected-multiplication/reflected-operator-dispatch.svg",
     "sha256": "dd5507f4164a569d1a74faafc944c36c1c770762e7e82c5fcb28ddcfec7bceb3",
-    "ok": true
+    "ok": true,
+    "evidence_status": "historical_pre_game_theme",
+    "current_diagram_report": "assets/gaming-diagrams.json"
   },
   {
     "lesson": "04-inheritance/12-cooperative-diamond",
     "published_image": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/public/images/object-oriented-python/inheritance/cooperative-diamond/cooperative-mro-order.svg",
     "sha256": "ae9cd48386353271464438200b64e31ac9a9978c73fba7f294e1bf53fa29a01e",
-    "ok": true
+    "ok": true,
+    "evidence_status": "historical_pre_game_theme",
+    "current_diagram_report": "assets/gaming-diagrams.json"
   },
   {
     "lesson": "04-inheritance/07-compose-a-service",
     "published_image": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/public/images/object-oriented-python/inheritance/compose-a-service/composed-service-delegation.svg",
     "sha256": "97fb9f98c272549a07628b770d27086c8d48f12b506ca66d754ce7cc9ab9d606",
-    "ok": true
+    "ok": true,
+    "evidence_status": "historical_pre_game_theme",
+    "current_diagram_report": "assets/gaming-diagrams.json"
   },
   {
     "lesson": "07-enums-and-records/02-explicit-enum-values",
     "published_image": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/public/images/object-oriented-python/enums-and-records/explicit-enum-values/enum-member-and-value.svg",
     "sha256": "2fa13cd0e37175d42385caed66861ba574fb6241fe9c700e81ccc3643c87d506",
-    "ok": true
+    "ok": true,
+    "evidence_status": "historical_pre_game_theme",
+    "current_diagram_report": "assets/gaming-diagrams.json"
   },
   {
     "lesson": "08-descriptors/08-non-data-descriptor-priority",
     "published_image": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/public/images/object-oriented-python/descriptors/non-data-descriptor-priority/descriptor-lookup-precedence.svg",
     "sha256": "7f7ef18666d8411080e49a18f033a29c765152c024c3a20a004f461087898e2a",
-    "ok": true
+    "ok": true,
+    "evidence_status": "historical_pre_game_theme",
+    "current_diagram_report": "assets/gaming-diagrams.json"
   },
   {
     "lesson": "10-ecommerce-project/07-order-snapshot",
     "published_image": "/Users/piyush.patel/.hermes/profiles/curriculum-dev/cache/scratch/public/images/object-oriented-python/ecommerce-project/order-snapshot/cart-order-invoice-snapshot.svg",
     "sha256": "47064e86d01abf86c8e7d292353afc840d99ef12c7f7aaeb9b0517150d2dc301",
-    "ok": true
+    "ok": true,
+    "evidence_status": "historical_pre_game_theme",
+    "current_diagram_report": "assets/gaming-diagrams.json"
   }
 ]

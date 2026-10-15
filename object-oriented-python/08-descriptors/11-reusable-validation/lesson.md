@@ -4,9 +4,9 @@ slug: reusable-validation
 order: 11
 language: python
 lesson_type: coding
-summary: A parcel has a mass and a length, and both must stay positive. Reuse a descriptor class while giving each field its own descriptor object and storage key.
+summary: A hitbox has a width and a height, and both must stay positive. Reuse a descriptor class while giving each field its own descriptor object and storage key.
 seo_title: Reuse one validation rule across fields | Object-oriented Python
-seo_description: A parcel has a mass and a length, and both must stay positive. Reuse a descriptor class while giving each field its own descriptor object and storage key.
+seo_description: A hitbox has a width and a height, and both must stay positive. Reuse a descriptor class while giving each field its own descriptor object and storage key.
 seo_keywords:
   - Python
   - reusable validation
@@ -15,7 +15,7 @@ hints:
   - Perform the type check, then the range check, then the write.
 ---
 
-A parcel has a mass and a length, and both must stay positive. Reuse a descriptor class while giving each field its own descriptor object and storage key.
+A hitbox has a width and a height, and both must stay positive. Reuse a descriptor class while giving each field its own descriptor object and storage key.
 
 A descriptor can hold field configuration while each owner instance holds its own values. `__set_name__` supplies a distinct backing key for each descriptor object. `__set__` applies the common validation rule and saves accepted data in the selected owner's dictionary.
 
@@ -39,11 +39,11 @@ class NamedStorage:
             return self
         return instance.__dict__.get(self.key)
 
-class Measurements:
-    depth = NamedStorage()
+class SpriteMetrics:
+    scale = NamedStorage()
     width = NamedStorage()
 
-print(Measurements.depth is Measurements.width)
+print(SpriteMetrics.scale is SpriteMetrics.width)
 ```
 
 ## Your Tasks

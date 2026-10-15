@@ -3,22 +3,22 @@ from solution import *
 
 def test_01_cooperative_diamond():
     events = []
-    assert Report().build(events) is events
-    assert events == ["signed", "dated", "document"], "Each participant must run once in MRO order."
+    assert LanternSprite().build(events) is events
+    assert events == ["glow", "trail", "entity"], "Each participant must run once in MRO order."
     events = ["start"]
-    assert Signed().build(events) is events
-    assert events == ["start", "signed", "document"]
-    class ReverseReport(Dated, Signed):
+    assert GlowMixin().build(events) is events
+    assert events == ["start", "glow", "entity"]
+    class ReverseSprite(TrailMixin, GlowMixin):
         pass
     events = []
-    assert ReverseReport().build(events) is events
-    assert events == ["dated", "signed", "document"]
-    class Extra(Document):
+    assert ReverseSprite().build(events) is events
+    assert events == ["trail", "glow", "entity"]
+    class Extra(Entity):
         def build(self, events):
             events.append("extra")
             return super().build(events)
-    class Extended(Signed, Extra):
+    class Extended(GlowMixin, Extra):
         pass
     events = []
     assert Extended().build(events) is events
-    assert events == ["signed", "extra", "document"]
+    assert events == ["glow", "extra", "entity"]

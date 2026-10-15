@@ -14,18 +14,18 @@ class Positive:
             raise ValueError("Value must be positive")
         instance.__dict__[self.key] = value
 
-class Plant:
-    height = Positive()
-    water = Positive()
+class CharacterStats:
+    max_health = Positive()
+    max_mana = Positive()
 
-    def __init__(self, height, water):
+    def __init__(self, max_health, max_mana):
         pass
 
 
 if __name__ == "__main__":
     try:
-        first, second = Plant(12, 3), Plant(20, 5)
-        first.height = 14
-        print(first.height, first.water, second.height, second.water)
+        first, second = CharacterStats(12, 3), CharacterStats(20, 5)
+        first.max_health = 14
+        print(first.max_health, first.max_mana, second.max_health, second.max_mana)
     except (AttributeError, TypeError, ValueError, KeyError, NameError) as error:
         print("Not ready:", type(error).__name__, str(error))

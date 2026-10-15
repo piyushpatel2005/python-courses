@@ -1,4 +1,4 @@
-class Distance:
+class TrailDistance:
     def __init__(self, metres):
         self.metres = metres
 
@@ -8,7 +8,7 @@ class Distance:
 
 if __name__ == "__main__":
     try:
-        distance = Distance(18)
+        distance = TrailDistance(18)
         print(f"Compact: {distance:short}")
         print(f"Expanded: {distance:long}")
     except Exception as error:

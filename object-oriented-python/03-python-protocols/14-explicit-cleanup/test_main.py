@@ -4,30 +4,30 @@ from solution import *
 def test_01_explicit_cleanup():
     for name in ("first", "second", ""):
         events = []
-        lease = Lease(name, events)
-        assert not lease.closed and events == []
-        lease.__del__()  # Explicit invocation only.
-        assert lease.closed, "Delegate the hook to close()."
+        session = GameSession(name, events)
+        assert not session.closed and events == []
+        session.__del__()  # Explicit invocation only.
+        assert session.closed, "Delegate the hook to close()."
         assert events == [f"closed:{name}"]
-        lease.__del__()
-        lease.close()
+        session.__del__()
+        session.close()
         assert events == [f"closed:{name}"], "Cleanup must be idempotent."
     events = []
-    first, second = Lease("A", events), Lease("B", events)
+    first, second = GameSession("A", events), GameSession("B", events)
     first.__del__()
     assert first.closed and not second.closed
     second.close()
     assert events == ["closed:A", "closed:B"]
     calls = []
-    original = Lease.close
-    probe = Lease("delegation", [])
+    original = GameSession.close
+    probe = GameSession("delegation", [])
     try:
         def tracked(self):
             calls.append(self)
             original(self)
-        Lease.close = tracked
+        GameSession.close = tracked
         probe.__del__()
         assert calls == [probe], "Delegate to close() once instead of duplicating its cleanup policy."
     finally:
-        Lease.close = original
+        GameSession.close = original
         probe.close()

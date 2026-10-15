@@ -1,19 +1,19 @@
-class Ticket:
+class Ability:
     def __init__(self, title):
         self.title = title
 
     def label(self):
-        return f"Ticket: {self.title}"
+        return f"Ability: {self.title}"
 
-class TimedTicket(Ticket):
-    def __init__(self, title, hour):
+class CooldownAbility(Ability):
+    def __init__(self, title, cooldown):
         super().__init__(title)
-        self.hour = hour
+        self.cooldown = cooldown
 
 
 if __name__ == "__main__":
     try:
-        ticket = TimedTicket("Exhibit", 14)
-        print(ticket.label(), ticket.hour)
+        ability = CooldownAbility("Dash", 14)
+        print(ability.label(), ability.cooldown)
     except Exception as error:
         print("Not ready:", type(error).__name__, str(error))

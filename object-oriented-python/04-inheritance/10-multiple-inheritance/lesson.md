@@ -6,14 +6,14 @@ language: "python"
 lesson_type: "coding"
 summary: "Use two bases with distinct stateless methods."
 seo_title: "Combine small inherited capabilities | Object-oriented Python"
-seo_description: "Use two bases with distinct stateless methods. Practice with runnable Python code and behavioral checks."
+seo_description: "Use two bases with distinct stateless methods."
 seo_keywords: ["python", "multiple inheritance", "object oriented programming"]
 hints: ["The concrete class owns the data; its two bases supply the capabilities."]
 ---
 
 # Combine small inherited capabilities
 
-An inventory card needs a printable identifier and a tracking URL. Those are separate small capabilities, and the supplied classes already implement them without owning initialization. Combine them in one card through multiple inheritance.
+A quest card needs a label and a journal lookup path. The supplied mixins provide those separate capabilities without owning initialization. Combine them in `QuestCard`; the path is just a string, not a network request.
 
 Python permits several bases in a class declaration: `class Child(First, Second):`. The child can inherit methods from both. The order of bases matters when more than one class supplies the same attribute, but this exercise avoids a conflict by giving each capability a distinct method name. The next lesson inspects how Python resolves the general case.
 
@@ -45,6 +45,6 @@ print(voice.loud(), voice.quiet())
 
 ## Your Tasks
 
-1. Change the supplied `InventoryCard` declaration to inherit from `PrintableCode` then `TrackableCode`, in that order. Keep its initializer and inherit `print_label()` and `tracking_path()` without redefining them.
+1. Change the supplied `QuestCard` declaration to inherit from `LabelMixin` then `JournalMixin`, in that order. Keep its initializer and inherit `print_label()` and `journal_path()` without redefining them.
 
-Edit `main.py`, then press Run to inspect the supplied probe. A `Not ready` message means the unfinished operation raised an exception; it does not complete the task. Press Submit to check the behavior with additional values. You do not need to edit the probe.
+Edit `main.py` and use Run to inspect the supplied check. Leave that check unchanged; Submit tests your method with other values too.

@@ -4,9 +4,9 @@ slug: create-two-objects
 order: 2
 language: python
 lesson_type: coding
-summary: Set `drill` and `saw` to two distinct instances of the supplied `Tool` class.
+summary: Set `lantern` and `shield` to two distinct instances of the supplied `GameItem` class.
 seo_title: Create two objects | Python OOP practice
-seo_description: Set `drill` and `saw` to two distinct instances of the supplied `Tool` class.
+seo_description: Set `lantern` and `shield` to two distinct instances of the supplied `GameItem` class.
 seo_keywords:
 - Python OOP
 - create two objects
@@ -15,31 +15,31 @@ seo_keywords:
 
 # Create two objects
 
-The workshop owns two tools of the same kind. Defining a class once is enough, but you must call it twice to represent two separate items. The `Tool` class is supplied; your edit creates the objects.
+A lantern and a shield belong to the same category in the inventory, but they need separate objects. The supplied `GameItem` class describes that category. Call it once for each item so changing one will not change the other.
 
 ## Calls create; assignments name
 
 ```python
-class Ticket:
+class Portal:
     pass
 
-morning = Ticket()
-evening = Ticket()
-print(morning is evening)  # False
+forest = Portal()
+cave = Portal()
+print(forest is cave)  # False
 ```
 
-Each call to `Ticket()` creates a new instance. The `is` operator asks whether two expressions refer to the very same object. It does not compare descriptions, labels, or other data. Here there are two calls, so there are two objects.
+Each call to `Portal()` creates a new instance. The `is` operator asks whether two expressions refer to the very same object. It does not compare descriptions, labels, or other data. Here there are two calls, so there are two objects.
 
 An assignment by itself does not create another instance:
 
 ```python
-spare_name = morning
-print(spare_name is morning)  # True
+spare_name = forest
+print(spare_name is forest)  # True
 ```
 
-Both names now refer to the morning ticket. This is called an alias. If you later attach data through one name, the other name will see it because there is only one object involved. By contrast, the evening ticket remains a separate object.
+Both names now refer to the forest portal. This is called an alias. If you later attach data through one name, the other name will see it because there is only one object involved. By contrast, the cave portal remains a separate object.
 
-You might be used to reading `=` as mathematical equality. In Python assignment binds a name to an object. The expression on the right runs first, then the name on the left refers to its result. That is why `Ticket()` and `morning` behave differently on the right side of an assignment.
+You might be used to reading `=` as mathematical equality. In Python assignment binds a name to an object. The expression on the right runs first, then the name on the left refers to its result. That is why `Portal()` and `forest` behave differently on the right side of an assignment.
 
 Use `is` for this identity question. Later lessons will explain how objects can compare their values; two separate objects may represent equal values without being the same object.
 
@@ -47,8 +47,8 @@ In the editor, leave the supplied empty class alone. Replace the two placeholder
 
 ## Your Tasks
 
-1. Set `drill` and `saw` to two distinct instances of the supplied `Tool` class.
+Now it’s your turn to write some code.
 
-## Run and check
+1. Set `lantern` and `shield` to two distinct instances of the supplied `GameItem` class.
 
-Edit `main.py`. Press **Run** to inspect the supplied console probe, then **Submit** to check your implementation. The completed probe prints `True` for both checks.
+Click **Run** to inspect the results in the console, then click **Submit** when you’re done. The completed probe prints `True` for both checks.

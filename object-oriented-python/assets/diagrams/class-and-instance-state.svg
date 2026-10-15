@@ -1,28 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="560" viewBox="0 0 600 560" role="img" aria-labelledby="title desc">
-<title id="title">One Class, Separate Instance State</title><desc id="desc">A shared Notebook class supplies behavior. Two Notebook objects have separate pages lists. Appending to a.pages does not change b.pages.</desc>
+<title id="title">One Class, Separate Instance State</title><desc id="desc">A shared QuestLog class supplies behavior. Two QuestLog objects have separate entries lists. Appending to a.entries does not change b.entries.</desc>
 <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#40566f"/></marker></defs>
 <rect width="600" height="560" rx="18" fill="#f8fafd"/>
 <rect x="24" y="24" width="552" height="5" rx="2" fill="#3974bd"/>
 <text x="300" y="62" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#172c46">One Class, Separate Instance State</text>
 <text x="300" y="91" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#40566f">CONCEPTUAL MODEL · ILLUSTRATIVE EXAMPLE</text>
 <g data-card="true"><rect x="100" y="120" width="400" height="98" rx="12" fill="#eee8ff" stroke="#91a7bd" stroke-width="1.5"/>
-<text x="300.0" y="162.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Notebook Class</text>
-<text x="300.0" y="190.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">Shared method: add_page(self, text)</text>
+<text x="300.0" y="162.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">QuestLog Class</text>
+<text x="300.0" y="190.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">Shared method: add_entry(self, text)</text>
 </g>
 <path data-connector="true" d="M300 218 L300 249 L160 249 L160 280" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
 <path data-connector="true" d="M300 218 L300 249 L440 249 L440 280" fill="none" stroke="#40566f" stroke-width="2" marker-end="url(#arrow)"/>
 <g data-card="true"><rect x="40" y="280" width="240" height="122" rx="12" fill="#ddf5ee" stroke="#91a7bd" stroke-width="1.5"/>
 <text x="160.0" y="320.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Instance a</text>
-<text x="160.0" y="348.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">a.pages = [&quot;Hello&quot;]</text>
+<text x="160.0" y="348.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">a.entries = [&quot;Map&quot;]</text>
 <text x="160.0" y="376.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">One list object</text>
 </g>
 <g data-card="true"><rect x="320" y="280" width="240" height="122" rx="12" fill="#e8f1ff" stroke="#91a7bd" stroke-width="1.5"/>
 <text x="440.0" y="320.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">Instance b</text>
-<text x="440.0" y="348.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">b.pages = []</text>
+<text x="440.0" y="348.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">b.entries = []</text>
 <text x="440.0" y="376.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#172c46">A different list object</text>
 </g>
 <g data-card="true"><rect x="70" y="433" width="460" height="62" rx="12" fill="#fff1d7" stroke="#91a7bd" stroke-width="1.5"/>
-<text x="300.0" y="471.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">a.add_page(&quot;Hello&quot;) changes only a</text>
+<text x="300.0" y="471.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#172c46">a.add_entry(&quot;Map&quot;) changes only a</text>
 </g>
-<text x="300" y="536" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">Initialize self.pages = [] inside __init__.</text>
+<text x="300" y="536" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#40566f">Initialize self.entries = [] inside __init__.</text>
 </svg>

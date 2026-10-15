@@ -1,15 +1,15 @@
-class Tool:
-    loan_days = 7
+class GameItem:
+    cooldown_turns = 7
 
-def extend_loan(tool, days):
-    tool.loan_days = days
+def set_cooldown(item, turns):
+    item.cooldown_turns = turns
 
 
 # Supplied console probe: keep this below your implementation.
 if __name__ == "__main__":
     try:
-        first, second = Tool(), Tool()
-        extend_loan(first, 14)
-        print("Loan periods:", first.loan_days, second.loan_days, Tool.loan_days)
+        first, second = GameItem(), GameItem()
+        set_cooldown(first, 14)
+        print("Cooldown turns:", first.cooldown_turns, second.cooldown_turns, GameItem.cooldown_turns)
     except (NameError, AttributeError, TypeError, ValueError) as error:
         print("Not ready yet:", error)

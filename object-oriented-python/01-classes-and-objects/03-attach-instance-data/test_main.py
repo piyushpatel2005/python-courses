@@ -1,9 +1,9 @@
 from solution import *
 
 
-def test_each_tool_keeps_its_name():
-    tools = [make_tool(value) for value in ("drill", "saw", "", "clamp")]
-    assert all(isinstance(tool, Tool) for tool in tools)
-    assert [getattr(tool, "name", None) for tool in tools] == ["drill", "saw", "", "clamp"], "Store the name parameter on each tool."
-    tools[0].name = "changed"
-    assert tools[1].name == "saw", "Names belong to separate instances."
+def test_each_item_keeps_its_name():
+    items = [make_item(value) for value in ("lantern", "shield", "", "compass")]
+    assert all(isinstance(item, GameItem) for item in items)
+    assert [getattr(item, "name", None) for item in items] == ["lantern", "shield", "", "compass"], "Store the name parameter on each item."
+    items[0].name = "changed"
+    assert items[1].name == "shield", "Names belong to separate instances."

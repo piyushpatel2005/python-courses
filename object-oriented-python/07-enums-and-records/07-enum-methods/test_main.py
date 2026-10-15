@@ -2,7 +2,7 @@ from solution import *
 
 
 def test_enum_methods():
-    assert [member.name for member in Shipping] == ["GROUND", "AIR"]
-    for member, rate in [(Shipping.GROUND, 3), (Shipping.AIR, 8)]:
-        for boxes in [0, 1, 2, 7]:
-            assert member.cost(boxes) == rate * boxes
+    assert [member.name for member in Ability] == ["DASH", "HEAL"]
+    for member, rate in [(Ability.DASH, 3), (Ability.HEAL, 8)]:
+        for casts in [0, 1, 2, 7]:
+            assert member.cost(casts) == rate * casts

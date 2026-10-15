@@ -1,4 +1,4 @@
-class Rectangle:
+class Hitbox:
     def __init__(self, width, height):
         self.width = width
         self.height = height
@@ -10,9 +10,9 @@ class Rectangle:
 
 if __name__ == "__main__":
     try:
-        rectangle = Rectangle(3, 4)
-        print(rectangle.area)
-        rectangle.width = 5
-        print(rectangle.area)
+        hitbox = Hitbox(3, 4)
+        print(hitbox.area)
+        hitbox.width = 5
+        print(hitbox.area)
     except (AttributeError, TypeError, ValueError, KeyError, NameError) as error:
         print("Not ready:", type(error).__name__, str(error))

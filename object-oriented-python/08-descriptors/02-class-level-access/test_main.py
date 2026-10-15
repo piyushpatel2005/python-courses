@@ -2,10 +2,10 @@ from solution import *
 
 
 def test_class_level_access():
-    descriptor = Record.__dict__["heading"]
-    assert Record.heading is descriptor
-    assert Record().heading == "Record heading"
-    class Child(Record):
+    descriptor = PlayerSave.__dict__["heading"]
+    assert PlayerSave.heading is descriptor
+    assert PlayerSave().heading == "Player save"
+    class Child(PlayerSave):
         pass
     assert Child.heading is descriptor
     class Other:

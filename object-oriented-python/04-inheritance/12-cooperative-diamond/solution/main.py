@@ -1,26 +1,26 @@
-class Document:
+class Entity:
     def build(self, events):
-        events.append("document")
+        events.append("entity")
         return events
 
-class Signed(Document):
+class GlowMixin(Entity):
     def build(self, events):
-        events.append("signed")
+        events.append("glow")
         return super().build(events)
 
-class Dated(Document):
+class TrailMixin(Entity):
     def build(self, events):
-        events.append("dated")
+        events.append("trail")
         return super().build(events)
 
-class Report(Signed, Dated):
+class LanternSprite(GlowMixin, TrailMixin):
     pass
 
 
 if __name__ == "__main__":
     try:
         events = []
-        print("Build order:", Report().build(events))
+        print("Build order:", LanternSprite().build(events))
         print("Shared list:", events)
     except Exception as error:
         print("Not ready:", type(error).__name__, str(error))

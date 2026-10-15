@@ -6,24 +6,24 @@ language: "python"
 lesson_type: "coding"
 summary: "Delegate __rmul__ to an existing multiplication policy."
 seo_title: "Support reflected multiplication | Object-oriented Python"
-seo_description: "Delegate __rmul__ to an existing multiplication policy. Practice with runnable Python code and behavioral checks."
+seo_description: "Delegate __rmul__ to an existing multiplication policy."
 seo_keywords: ["python", "reflected multiplication", "object oriented programming"]
 hints: ["Call the existing multiplication method on self and return what it returns."]
 ---
 
 # Support reflected multiplication
 
-A caller naturally writes either `pack * 3` or `3 * pack`. The previous lesson implemented only the first form. This time the regular multiplication method is supplied, and your task is to make the reversed spelling follow exactly the same policy.
+The score code should accept both `delta * 3` and `3 * delta`. The previous lesson added the first form. This starter supplies that multiplication policy; make the reversed spelling reuse it.
 
 When an integer cannot multiply a custom object, Python can ask the custom object's `__rmul__` method to handle the operation. The letter r means reflected. The object is still `self`; the other operand arrives as the method's argument. Reflected dispatch is how a class cooperates with types it does not control. You do not need to edit Python's integer class.
 
-Our `TokenPack.__mul__` already creates a new pack and accepts exact integers only. Reusing that method from `__rmul__` avoids maintaining a second copy of the type check and calculation. Delegation means asking an existing operation to do the work, then returning its result. It also carries the existing `NotImplemented` behavior into the reflected path.
+Our `ScoreDelta.__mul__` already creates a new delta and accepts exact integers only. Reusing that method from `__rmul__` avoids maintaining a second copy of the type check and calculation. Delegation means asking an existing operation to do the work, then returning its result. It also carries the existing `NotImplemented` behavior into the reflected path.
 
-Do not implement the reflected method by writing the same reversed expression again. An expression such as `factor * self` inside `__rmul__` requests the operation that led into the method and can recurse repeatedly. Call the existing method directly instead. Recursion means a function calls itself, directly or indirectly; an endless chain eventually raises an error rather than producing a pack.
+Do not implement the reflected method by writing the same reversed expression again. An expression such as `factor * self` inside `__rmul__` requests the operation that led into the method and can recurse repeatedly. Call the existing method directly instead. Recursion means a function calls itself, directly or indirectly; an endless chain eventually raises an error rather than producing a delta.
 
 The example uses a named convenience method to delegate a measurement calculation. Its second method does not duplicate the arithmetic. Apply that relationship to the two multiplication hooks in the starter.
 
-After editing, compare the counts from both operand orders and check that the source count stays unchanged. The tests also use zero and a negative factor, because delegating correctly should preserve the whole contract rather than only the visible sample.
+After editing, compare the point totals from both operand orders and check that the source points stay unchanged. The tests also use zero and a negative factor, because delegating correctly should preserve the whole contract rather than only the visible sample.
 
 ## A small example
 
@@ -49,6 +49,6 @@ This diagram traces the same dispatch rule with a vector. `NotImplemented` lets 
 
 ## Your Tasks
 
-1. Implement `TokenPack.__rmul__` by delegating to the supplied `__mul__`, so exact integer factors work on either side and unsupported factors return `NotImplemented`.
+1. Implement `ScoreDelta.__rmul__` by delegating to the supplied `__mul__`, so exact integer factors work on either side and unsupported factors return `NotImplemented`.
 
-Edit `main.py`, then press Run to inspect the supplied probe. A `Not ready` message means the unfinished operation raised an exception; it does not complete the task. Press Submit to check the behavior with additional values. You do not need to edit the probe.
+Edit `main.py` and use Run to inspect the supplied check. Leave that check unchanged; Submit tests your method with other values too.

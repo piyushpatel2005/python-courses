@@ -2,12 +2,12 @@ from solution import *
 
 
 def test_01_multiple_inheritance():
-    assert InventoryCard.__bases__ == (PrintableCode, TrackableCode), "Use the two bases in the requested order."
-    assert "print_label" not in InventoryCard.__dict__
-    assert "tracking_path" not in InventoryCard.__dict__
+    assert QuestCard.__bases__ == (LabelMixin, JournalMixin), "Use the two bases in the requested order."
+    assert "print_label" not in QuestCard.__dict__
+    assert "journal_path" not in QuestCard.__dict__
     for code in ("K9", "A-12", "sample"):
-        item = InventoryCard(code)
+        item = QuestCard(code)
         assert item.code == code
         assert item.print_label() == f"Item {code}"
-        assert item.tracking_path() == f"/track/{code}"
-        assert isinstance(item, PrintableCode) and isinstance(item, TrackableCode)
+        assert item.journal_path() == f"/journal/{code}"
+        assert isinstance(item, LabelMixin) and isinstance(item, JournalMixin)

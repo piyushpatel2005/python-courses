@@ -1,22 +1,22 @@
-class Reader:
+class ReplayReader:
     def __init__(self):
         self.closed = False
 
     def read(self):
-        return "chapter one"
+        return "entered the moss cave"
 
     def close(self):
         self.closed = True
 
 
-def read_and_close(reader):
+def read_replay_and_close(reader):
     pass
 
 
 if __name__ == "__main__":
     try:
-        r = Reader()
-        print(read_and_close(r))
-        print("Closed:", r.closed)
+        replay = ReplayReader()
+        print(read_replay_and_close(replay))
+        print("Closed:", replay.closed)
     except Exception as error:
         print("Probe:", type(error).__name__, str(error))

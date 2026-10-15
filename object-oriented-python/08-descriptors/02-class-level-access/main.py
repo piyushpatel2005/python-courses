@@ -7,12 +7,12 @@ class FieldLabel:
             return None
         return self.label
 
-class Record:
-    heading = FieldLabel("Record heading")
+class PlayerSave:
+    heading = FieldLabel("Player save")
 
 
 if __name__ == "__main__":
     try:
-        print(Record.heading is Record.__dict__["heading"], Record().heading)
+        print(PlayerSave.heading is PlayerSave.__dict__["heading"], PlayerSave().heading)
     except (AttributeError, TypeError, ValueError, KeyError, NameError) as error:
         print("Not ready:", type(error).__name__, str(error))

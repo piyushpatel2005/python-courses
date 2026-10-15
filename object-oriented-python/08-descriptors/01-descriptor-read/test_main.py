@@ -2,10 +2,10 @@ from solution import *
 
 
 def test_descriptor_read():
-    assert isinstance(Sensor.__dict__["reading"], ScaledReading)
-    assert Sensor.reading is Sensor.__dict__["reading"]
-    for raw in [0, 3, -2, 11]:
-        sensor = Sensor(raw)
-        assert sensor.reading == raw * 10
-        sensor.raw = raw + 1
-        assert sensor.reading == (raw + 1) * 10
+    assert isinstance(CharacterStats.__dict__["power"], ScaledPower)
+    assert CharacterStats.power is CharacterStats.__dict__["power"]
+    for base_power in [0, 3, -2, 11]:
+        character = CharacterStats(base_power)
+        assert character.power == base_power * 10
+        character.base_power = base_power + 1
+        assert character.power == (base_power + 1) * 10

@@ -23,6 +23,14 @@ Each numbered task corresponds to one synchronous test function. Supplied code a
 | Python errors, handling, custom errors | 09 Errors and contracts | Add exception details, chaining, cleanup, and optional abstract contracts after concrete inheritance experience. |
 | Ecommerce CLI with product/cart/order/invoice workflows | 10 Console shop project | Use deterministic scripted console commands through main.py, not a blocking input prompt or network service. |
 
+## Narrative setting
+
+The core lessons take place at the fictional Mosslight Studio, building the exploration game Lantern Vale. Use game items, player data, quest states, inventories, and game rules to make OOP behavior concrete. Keep the story light: explain a real code decision rather than adding lore or repeatedly announcing a mission. Examples, tests, starter probes, solutions, quiz wording, and diagram labels must agree on renamed concepts.
+
+Projects deliberately retain their own settings: animal rescue, a simplified banking model, and an e-commerce console shop. They provide transfer practice rather than becoming game features. Preserve existing course/module/lesson slugs, directories, ordering, and teaching objectives; a narrative refresh does not authorize URL or progress-ID changes.
+
+The earlier authoring audits and browser records describe the pre-refresh source. They are historical evidence, not verification of the gaming rewrite. Consult the `gaming-*.json` reports and final gaming summary for the new source; browser verification is not part of this refresh.
+
 ## Project continuity
 
 Project lessons must carry the previous reference implementation into the next starter, except for an explicitly explained refactor. Each stage adds one focused responsibility. Tests for the current task use fresh fixtures and varied values rather than relying on the demonstration printout. The final shop is an in-memory educational application; no payment processing, durable database, or external service is implied.

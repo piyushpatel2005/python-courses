@@ -2,7 +2,7 @@ from solution import *
 
 
 def test_function_binding():
-    a, b = Greeter("Ari"), Greeter("Bo")
+    a, b = Player("Ari"), Player("Bo")
     first, second = bind_to(welcome, a), bind_to(welcome, b)
     assert first.__self__ is a and second.__self__ is b
     assert first.__func__ is welcome

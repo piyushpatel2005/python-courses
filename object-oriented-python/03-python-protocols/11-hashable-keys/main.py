@@ -1,21 +1,21 @@
-class BinKey:
+class SaveSlotKey:
     __slots__ = ("_parts",)
 
-    def __init__(self, zone, number):
+    def __init__(self, profile, number):
         if hasattr(self, "_parts"):
-            raise AttributeError("BinKey is already initialized")
-        if type(zone) is not str or type(number) is not int:
-            raise TypeError("zone must be str and number must be int")
-        object.__setattr__(self, "_parts", (zone, number))
+            raise AttributeError("SaveSlotKey is already initialized")
+        if type(profile) is not str or type(number) is not int:
+            raise TypeError("profile must be str and number must be int")
+        object.__setattr__(self, "_parts", (profile, number))
 
     def __setattr__(self, name, value):
-        raise AttributeError("BinKey is immutable")
+        raise AttributeError("SaveSlotKey is immutable")
 
     def __delattr__(self, name):
-        raise AttributeError("BinKey is immutable")
+        raise AttributeError("SaveSlotKey is immutable")
 
     @property
-    def zone(self):
+    def profile(self):
         return self._parts[0]
 
     @property
@@ -33,7 +33,7 @@ class BinKey:
 
 if __name__ == "__main__":
     try:
-        stock = {BinKey("west", 4): "cables"}
-        print("Found:", stock[BinKey("west", 4)])
+        saves = {SaveSlotKey("west", 4): "checkpoint"}
+        print("Found:", saves[SaveSlotKey("west", 4)])
     except Exception as error:
         print("Not ready:", type(error).__name__, str(error))

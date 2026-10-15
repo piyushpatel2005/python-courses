@@ -6,7 +6,7 @@ class Serial:
 
     # Add the rejecting setter here.
 
-class Badge:
+class PlayerBadge:
     serial = Serial()
 
     def __init__(self, number):
@@ -15,7 +15,7 @@ class Badge:
 
 if __name__ == "__main__":
     try:
-        badge = Badge("R17")
+        badge = PlayerBadge("R17")
         badge.__dict__["serial"] = "shadow"
         print(badge.serial)
     except (AttributeError, TypeError, ValueError, KeyError, NameError) as error:

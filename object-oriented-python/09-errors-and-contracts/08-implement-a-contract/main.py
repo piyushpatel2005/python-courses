@@ -1,24 +1,24 @@
 from abc import ABC, abstractmethod
 
 
-class DeliveryPolicy(ABC):
+class CreditFeePolicy(ABC):
     @abstractmethod
-    def fee_cents(self, subtotal_cents):
+    def fee_credits(self, subtotal_credits):
         pass
 
 
-class ThresholdDelivery(DeliveryPolicy):
-    def __init__(self, threshold_cents, flat_cents):
-        self.threshold_cents = threshold_cents
-        self.flat_cents = flat_cents
+class ThresholdFee(CreditFeePolicy):
+    def __init__(self, threshold_credits, flat_credits):
+        self.threshold_credits = threshold_credits
+        self.flat_credits = flat_credits
 
-    def fee_cents(self, subtotal_cents):
+    def fee_credits(self, subtotal_credits):
         pass
 
 
 if __name__ == "__main__":
     try:
-        policy = ThresholdDelivery(5000, 350)
-        print("Delivery:", policy.fee_cents(5000))
+        policy = ThresholdFee(500, 35)
+        print("Fee (credits):", policy.fee_credits(500))
     except Exception as error:
         print("Probe:", type(error).__name__, str(error))
