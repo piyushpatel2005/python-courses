@@ -6,11 +6,11 @@ language: python
 lesson_type: coding
 summary: Build three small branches to choose a gate signal from its remaining charge.
 seo_title: Python if, elif, else Exercise | Python Basics
-seo_description: Practice one conditional branch at a time while Adi checks a beacon gate.
+seo_description: Practice one conditional branch at a time while Adam checks a beacon gate.
 seo_keywords: [python if else, python elif, python conditions]
 hints:
   - Keep gate_signal = "Not set" above your branches so unfinished cases still run.
-  - Align if, elif, and else. End each branch heading with a colon and indent its assignment by four spaces.
+  - Align if, elif, and else. End each branch heAdamng with a colon and indent its assignment by four spaces.
   - Check zero first. Zero is also less than four, but Python runs only the first matching branch.
 ---
 
@@ -41,7 +41,7 @@ The result is `Dim`. Follow the checks from top to bottom:
 
 Only one branch runs. Once Python finds a true condition, it skips the remaining branches in that chain.
 
-Put a colon at the end of each branch heading. Indent its assignment by four spaces. Keep `if`, `elif`, and `else` aligned; `else` has no condition.
+Put a colon at the end of each branch heAdamng. Indent its assignment by four spaces. Keep `if`, `elif`, and `else` aligned; `else` has no condition.
 
 ## Set up your gate
 

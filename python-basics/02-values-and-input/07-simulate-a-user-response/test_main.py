@@ -27,4 +27,4 @@ def _output():
 
 def test_pathfinder():
     """Display the new prefilled pathfinder response"""
-    assert pathfinder == "Adi" and _output() == ["Gear ready for Adi"] and any(isinstance(n, _ast.JoinedStr) and _uses_name(n, "pathfinder") for n in _ast.walk(_source_tree())), "Set pathfinder to Adi"
+    assert pathfinder == "Adam" and _output() == ["Gear ready for Adam"] and any(isinstance(n, _ast.JoinedStr) and _uses_name(n, "pathfinder") for n in _ast.walk(_source_tree())), "Set pathfinder to Adam"

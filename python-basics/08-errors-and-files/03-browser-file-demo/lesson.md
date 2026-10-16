@@ -11,7 +11,7 @@ seo_description: 'Write and read a temporary shrine note with open().'
 seo_keywords: [python file handling, with open, temporary browser files]
 ---
 
-Leave a short save note at the shrine, then read it back. `open(path, "w")` creates a file or replaces its contents. `open(path, "r")` opens an existing file for reading.
+Leave a short save note at the shrine, then read it back. `open(path, "w")` creates a file or replaces its contents. `open(path, "r")` opens an existing file for reAdamng.
 
 A `with` block closes the file when the block ends. These files are temporary browser files, not downloads to your device. The starter writes before it reads so each Run has the file it needs.
 

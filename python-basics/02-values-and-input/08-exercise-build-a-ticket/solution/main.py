@@ -1,4 +1,4 @@
-player_text = "Adi"
+player_text = "Adam"
 flares_text = "3"
 flare_cost = 6.0
 flare_count = int(flares_text)

@@ -11,7 +11,7 @@ seo_description: "Combine branching, loops, skipping, and a route limit to unloc
 seo_keywords: [python basics, control flow, lantern atlas]
 ---
 
-Adi needs two safe steps to reach this level's exit beacon. Tile 2 is broken. Map the other tiles in order, stop once you have enough steps, and report whether the gate can open.
+Adam needs two safe steps to reach this level's exit beacon. Tile 2 is broken. Map the other tiles in order, stop once you have enough steps, and report whether the gate can open.
 
 This project combines the loop, skip, stop, and branch patterns you have practiced. The starter supplies the route limit and print calls. In **main.py**, build the path above the `gate_status` assignment, then replace that placeholder with a decision after the loop.
 

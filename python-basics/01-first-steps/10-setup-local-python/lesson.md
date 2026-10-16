@@ -92,7 +92,7 @@ If you get a Python 3 version, try the test in step 4. You can skip installation
 
 ### 2. Make Homebrew available
 
-Homebrew is a package manager: you name the software you want, and it handles downloading and installing it.
+Homebrew is a package manager: you name the software you want, and it handles downloAdamng and installing it.
 
 Check whether you already have it:
 

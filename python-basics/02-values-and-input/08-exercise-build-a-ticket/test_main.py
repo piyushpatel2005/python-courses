@@ -24,4 +24,4 @@ def test_energy_cost():
 
 def test_gear_hud():
     """Format the completed gear HUD"""
-    assert hud_line == "Gear for Adi: 3 flares, 18.00 energy" and isinstance(_assignment("hud_line"), _ast.JoinedStr) and all(_uses_name(_assignment("hud_line"), name) for name in ("player_text", "flare_count", "energy_cost")) and any(isinstance(n, _ast.FormattedValue) and n.format_spec is not None for n in _ast.walk(_assignment("hud_line"))), "Use an f-string and format energy_cost with :.2f"
+    assert hud_line == "Gear for Adam: 3 flares, 18.00 energy" and isinstance(_assignment("hud_line"), _ast.JoinedStr) and all(_uses_name(_assignment("hud_line"), name) for name in ("player_text", "flare_count", "energy_cost")) and any(isinstance(n, _ast.FormattedValue) and n.format_spec is not None for n in _ast.walk(_assignment("hud_line"))), "Use an f-string and format energy_cost with :.2f"

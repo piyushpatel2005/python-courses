@@ -7,7 +7,7 @@ lesson_type: informational
 runtime: pyodide
 summary: Recognize recursion’s base case and fixed named choices in a beacon mission.
 seo_title: Recursion and Enums at a Glance | Python Basics
-seo_description: Introduce recursive base cases and enum choices without requiring either in Adi’s final mission.
+seo_description: Introduce recursive base cases and enum choices without requiring either in Adam’s final mission.
 seo_keywords: [python recursion, base case, python enum, beginner concepts]
 ---
 
@@ -26,7 +26,7 @@ Imagine calling `count_down(2)`. That call asks `count_down(1)` for its result, 
 
 The stopping condition is the **base case**. Each call needs to move toward it. This example expects a non-negative integer: starting with a negative number would keep moving away from zero until Python raises `RecursionError`.
 
-For the small lists in Adi's final mission, use a `for` loop. You don't need recursion to write the report.
+For the small lists in Adam's final mission, use a `for` loop. You don't need recursion to write the report.
 
 ## Named choices with enums
 

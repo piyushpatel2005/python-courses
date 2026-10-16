@@ -5,15 +5,15 @@ order: 6
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: 'Find common and Adi-only stops with set operations.'
+summary: 'Find common and Adam-only stops with set operations.'
 seo_title: 'Exercise: Compare Atlas Routes | Python Basics'
-seo_description: 'Find common and Adi-only stops with set operations.'
+seo_description: 'Find common and Adam-only stops with set operations.'
 seo_keywords:
 - python sets
 - beginner sets exercise
 ---
 
-Compare Adi's route with a scout's route. The starter calls the first route `ari_stops` and the second `scout_stops`; keep those variable names as you work.
+Compare Adam's route with a scout's route. The starter calls the first route `ari_stops` and the second `scout_stops`; keep those variable names as you work.
 
 Convert the lists to sets before comparing them. The intersection operator `&` keeps stops in both sets. The difference operator `-` keeps stops in the left set but not the right, so the order matters.
 

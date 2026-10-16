@@ -4,9 +4,9 @@ slug: inspect-data-types
 order: 8
 language: python
 lesson_type: coding
-summary: "Inspect string, integer, and float values in Adi’s kit."
+summary: "Inspect string, integer, and float values in Adam’s kit."
 seo_title: "Demo: Inspect Lantern Types | Python Basics"
-seo_description: "Inspect string, integer, and float values in Adi’s kit."
+seo_description: "Inspect string, integer, and float values in Adam’s kit."
 seo_keywords: [python basics, first steps, lantern atlas]
 ---
 

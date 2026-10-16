@@ -3,7 +3,7 @@ from solution import *
 
 def test_energy_total():
     """Count shard energy from a list."""
-    assert energy_total([2, 1, 3]) == 6, "Add all energy readings."
+    assert energy_total([2, 1, 3]) == 6, "Add all energy reAdamngs."
     assert energy_total([]) == 0, "The empty list totals zero."
 
 

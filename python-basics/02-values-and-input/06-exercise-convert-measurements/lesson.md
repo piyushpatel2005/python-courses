@@ -1,16 +1,16 @@
 ---
-title: "Exercise: Convert Charge Readings"
+title: "Exercise: Convert Charge ReAdamngs"
 slug: exercise-convert-measurements
 order: 6
 language: python
 lesson_type: coding
-summary: "Parse prefilled whole and decimal gear readings."
-seo_title: "Exercise: Convert Charge Readings | Python Basics"
-seo_description: "Parse prefilled whole and decimal gear readings."
+summary: "Parse prefilled whole and decimal gear reAdamngs."
+seo_title: "Exercise: Convert Charge ReAdamngs | Python Basics"
+seo_description: "Parse prefilled whole and decimal gear reAdamngs."
 seo_keywords: [python basics, values and input, lantern atlas]
 ---
 
-Two gear readings arrive as text: `"9"` cells and `"1.5"` charge per cell. Convert each to a number using the type that fits it.
+Two gear reAdamngs arrive as text: `"9"` cells and `"1.5"` charge per cell. Convert each to a number using the type that fits it.
 
 The strings in **main.py** stand in for responses a person might type. They are already filled in, so **Run** does not wait for input. Leave `cell_text` and `charge_text` unchanged and replace the numeric placeholders below them.
 

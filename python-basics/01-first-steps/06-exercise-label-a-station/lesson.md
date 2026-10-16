@@ -4,9 +4,9 @@ slug: exercise-label-a-station
 order: 6
 language: python
 lesson_type: coding
-summary: "Assign a beacon name and number for Adi’s map."
+summary: "Assign a beacon name and number for Adam’s map."
 seo_title: "Exercise: Label a Beacon | Python Basics"
-seo_description: "Assign a beacon name and number for Adi’s map."
+seo_description: "Assign a beacon name and number for Adam’s map."
 seo_keywords: [python basics, first steps, lantern atlas]
 ---
 

@@ -18,7 +18,7 @@ These four types will appear throughout the next few lessons:
 | --- | --- | --- |
 | `int` | A whole number | `25` |
 | `float` | A floating-point number, often written with a decimal point | `75.5` |
-| `str` | Text | `"Adi"` |
+| `str` | Text | `"Adam"` |
 | `bool` | A true-or-false value | `True` |
 
 An age or a score is often a whole number. Run this integer example:
@@ -38,7 +38,7 @@ print(temperature)
 Names and addresses are strings. Even the digits inside this address are part of its text:
 
 ```python run
-name = "Adi"
+name = "Adam"
 address = "123 Nucleus Sky Station"
 print(name)
 print(address)

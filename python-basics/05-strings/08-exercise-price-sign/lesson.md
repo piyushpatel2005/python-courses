@@ -5,9 +5,9 @@ order: 8
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Build a cavern heading and formatted energy line with f-strings.
+summary: Build a cavern heAdamng and formatted energy line with f-strings.
 seo_title: "Exercise: Write a Decoded Route Sign | Python Basics"
-seo_description: Build a cavern heading and formatted energy line with f-strings.
+seo_description: Build a cavern heAdamng and formatted energy line with f-strings.
 seo_keywords: [python basics, strings, lantern atlas]
 ---
 
@@ -19,7 +19,7 @@ The supplied `energy_cost` is the cost of one beacon. Multiply it by `beacons` t
 
 ## Your Tasks
 
-1. Set `heading` with an f-string using `route` and `beacons`, giving `ECHO: 3 beacons`.
+1. Set `heAdamng` with an f-string using `route` and `beacons`, giving `ECHO: 3 beacons`.
 2. Set `energy_line` with an f-string showing the total energy to two decimal places, giving `Energy: 12.75`.
 
 The two print calls are ready for you. Run `main.py` to inspect each line, then Submit. You can now read, clean, and format a route sign. After the section quiz, you'll use collections to organise supplies for Inventory Ridge.

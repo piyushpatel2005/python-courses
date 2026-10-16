@@ -12,7 +12,7 @@ def test_write_note():
 
 
 def test_read_note():
-    """Reading returns the full shrine note."""
+    """ReAdamng returns the full shrine note."""
     with open("atlas-save.txt", "w") as file:
         file.write("Find the map\nLight the beacon")
     assert read_note() == "Find the map\nLight the beacon", "Read the complete clue and return it."

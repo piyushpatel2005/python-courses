@@ -14,7 +14,7 @@ def _assignment(name):
 def _uses_name(expr, name):
     return any(isinstance(node, _ast.Name) and node.id == name for node in _ast.walk(expr))
 
-def test_heading():
+def test_heAdamng():
     """Build the forge gear line from its values"""
     assert gear_line == "4 flares for Gear Forge" and isinstance(_assignment("gear_line"), _ast.JoinedStr) and _uses_name(_assignment("gear_line"), "flare_count") and _uses_name(_assignment("gear_line"), "forge"), "Use flare_count and forge in an f-string"
 

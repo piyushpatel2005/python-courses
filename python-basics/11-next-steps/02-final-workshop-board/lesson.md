@@ -5,13 +5,13 @@ order: 2
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Build a text game that restores every beacon and opens Adi’s exit gate.
+summary: Build a text game that restores every beacon and opens Adam’s exit gate.
 seo_title: "Final Game Mission: Open the Exit Gate | Python Basics"
-seo_description: Build a text game that restores every beacon and opens Adi’s exit gate.
+seo_description: Build a text game that restores every beacon and opens Adam’s exit gate.
 seo_keywords: [python final game mission, beacon signals, functions loops dictionaries]
 ---
 
-The Exit Gate stays locked until every beacon has enough signal strength. Your final program will read commands, charge the known beacons, and report whether Adi can leave the Atlas. The starter supplies a list of player commands, so Run does not wait for keyboard input.
+The Exit Gate stays locked until every beacon has enough signal strength. Your final program will read commands, charge the known beacons, and report whether Adam can leave the Atlas. The starter supplies a list of player commands, so Run does not wait for keyboard input.
 
 A command looks like `"north:2"`. Accept spaces and lowercase names, but ignore a malformed command, an unknown beacon, or a strength of zero or less. Repeated valid commands add strength. The supplied `beacons` dictionary gives each beacon's required charge.
 
@@ -50,7 +50,7 @@ For your game, also reject an empty name and strengths of zero or less. Build an
 
 `play_mission` uses your helpers and returns a list of lines. Keep dictionary order and format each beacon as `"<NAME>: <charge>/<required>"`. Add one final line:
 
-- On a win: `"Exit Gate: OPEN - Adi leaves the Lantern Atlas with every beacon bright."`
+- On a win: `"Exit Gate: OPEN - Adam leaves the Lantern Atlas with every beacon bright."`
 - Otherwise: `"Exit Gate: LOCKED - Restore every beacon to continue."`
 
 ## Your Tasks

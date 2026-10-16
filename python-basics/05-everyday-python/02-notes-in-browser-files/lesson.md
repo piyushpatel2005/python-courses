@@ -5,18 +5,18 @@ order: 2
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Write and read Adi’s shrine note in a temporary browser file.
+summary: Write and read Adam’s shrine note in a temporary browser file.
 seo_title: Python File Handling in Pyodide | Python Basics
-seo_description: Practice with open for Adi’s save-shrine note in Pyodide’s in-memory filesystem.
+seo_description: Practice with open for Adam’s save-shrine note in Pyodide’s in-memory filesystem.
 seo_keywords: [python file handling, with open, pyodide filesystem, read write file]
 hints:
   - Use with open("atlas-save.txt", "w") as file: and file.write(text).
-  - For reading, use mode "r" and return file.read().
+  - For reAdamng, use mode "r" and return file.read().
 ---
 
 # Save a note at the shrine
 
-Adi needs to leave a clue at the save shrine. You'll write the clue to a text file, then read it back.
+Adam needs to leave a clue at the save shrine. You'll write the clue to a text file, then read it back.
 
 Files in this exercise are temporary and stay inside the browser workspace. They may disappear when the workspace resets. Writing a note here does not download a file or change files on your device.
 

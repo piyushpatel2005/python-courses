@@ -19,7 +19,7 @@ def test_charge_label():
         return 37
     try:
         charge_label.__globals__["charge_value"] = tracked
-        assert charge_label("new reading") == "Charge: 37"
-        assert calls == ["new reading"], "Build the label using charge_value(text)."
+        assert charge_label("new reAdamng") == "Charge: 37"
+        assert calls == ["new reAdamng"], "Build the label using charge_value(text)."
     finally:
         charge_label.__globals__["charge_value"] = original

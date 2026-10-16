@@ -1,7 +1,7 @@
 route = "ECHO"
 beacons = 3
 energy_cost = 4.25
-heading = None
+heAdamng = None
 energy_line = None
-print(heading)
+print(heAdamng)
 print(energy_line)

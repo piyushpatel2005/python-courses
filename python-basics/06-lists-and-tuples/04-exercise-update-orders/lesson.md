@@ -5,9 +5,9 @@ order: 4
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Replace, append, and remove items in Adi’s mutable loadout.
+summary: Replace, append, and remove items in Adam’s mutable loadout.
 seo_title: "Exercise: Repair the Loadout | Python Basics"
-seo_description: Replace, append, and remove items in Adi’s mutable loadout.
+seo_description: Replace, append, and remove items in Adam’s mutable loadout.
 seo_keywords: [python basics, lists and tuples, lantern atlas]
 ---
 

@@ -4,50 +4,43 @@ slug: welcome-to-python
 order: 1
 language: python
 lesson_type: interactive
-summary: "Learn to run Python and print the first lines of Adi’s route."
+summary: "Learn to run Python and print the first lines of Adam’s route."
 seo_title: "Level 1: Spawn Camp | Python Basics"
-seo_description: "Learn to run Python and print the first lines of Adi’s route."
+seo_description: "Learn to run Python and print the first lines of Adam’s route."
 seo_keywords: [python basics, first steps, lantern atlas]
 ---
 
-Adi is a pathfinder in **The Lantern Atlas**, a text-based game whose beacons have gone dark. You will write the messages and small programs that help Adi find the way. At Spawn Camp, start with output, variables, and a few supplies.
+Adam is a pathfinder in **The Lantern Atlas**, a text-based game whose beacons have gone dark. You will write the messages and small programs that help Adam find the way. At Spawn Camp, start with output, variables, and a few supplies.
 
-## A little background
+## A Little History
 
-Guido van Rossum created Python in the early 1990s. This course uses Python 3. Older tutorials may use Python 2, which is no longer supported; use Python 3 examples as you learn.
+Guido van Rossum created Python in the early 1990s. This course uses Python 3. You might also come across Python 2, which is no longer supported.
 
-Python is a general-purpose language. People use it for websites, data analysis and machine learning, image processing, desktop applications, networking, automation, and games. Here, a small text-based game gives us a reason to practice without needing graphics or a game engine.
+Python is a general-purpose language. People use it for websites, data analysis and machine learning, image processing, desktop applications, networking, automation, and games. In this course, a small text-based game gives us a way to practice Python concepts without needing to learn Game development.
 
 ## What working in Python feels like
 
-Python code often reads closely to the steps you want a program to take. You can run a short program, inspect its output, and change one line to see what happens.
+Python code often reads closely to the steps you want a program to take. As a software developer, the basic flow will be something like this. You write some lines of code. You run this short program, inspect its output, and change some lines based on the outputs you see.
 
-A few features are worth knowing now. The later lessons will give you practice with them:
-
-- You can assign a value to a variable without declaring its type first. This is called **dynamic typing**; it does not mean dynamic programming, which is a different idea.
-- Python is open source and free to use. Programs can run on Windows, macOS, and Linux, though operating-system-specific code may need changes.
-- A Python interpreter runs your code. You do not normally perform a separate compilation step yourself. The usual Python implementation does compile code to an intermediate form internally, so it is more than a line-by-line translation into machine code.
-- Python manages memory automatically, including reclaiming objects that are no longer needed.
-- Its standard library and additional packages provide tools for common jobs, so you do not have to write everything yourself.
-
-You do not need to memorize that list before writing your first line.
+Now let's get to practical aspect of Python. Let's see simple Python code.
 
 ## Print a message
 
-`print()` displays a value in the console, the area where program output appears. Put text inside quotation marks and place it between the parentheses.
+`print()` displays a value in the console. Put text inside quotation marks and place it between the parentheses.
+When learning programming, it's standard first Hello World program that you start with. So, we will continue this trAdamtion.
 
-Press **Run** below. You should see `Hello there`, without quotation marks.
-
-```python run
-print("Hello there")
-```
-
-The quotation marks tell Python where the text begins and ends. They are part of the code, not part of the message it prints.
-
-Run this example too:
+Press **Run** button below. You should see `Hello World`, without quotation marks.
 
 ```python run
-print("Hey Adi, Welcome to Spawn Camp")
+print("Hello World")
 ```
 
-The next lesson gives you an editor so you can change the camp message yourself.
+The quotation marks tell Python where the text begins and ends. They are part of the code, but those quotation marks are not printed in the output.
+
+Let's change the text a little bit and run below code.
+
+```python run
+print("Hey Adam, Welcome to Spawn Camp")
+```
+
+The next lesson gives you an editor so you can change the camp message yourself and get a feel for it.

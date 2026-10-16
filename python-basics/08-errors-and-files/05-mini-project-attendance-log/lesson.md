@@ -11,9 +11,9 @@ seo_description: 'Recover charges, write a shrine save, and read it back.'
 seo_keywords: [python mini project, error handling, file handling]
 ---
 
-Collect several shrine readings into one save. Some readings are faded; treat those as zero and add the valid numbers. Then write the total to `beacon-save.txt` and read it back in the same run.
+Collect several shrine reAdamngs into one save. Some reAdamngs are faded; treat those as zero and add the valid numbers. Then write the total to `beacon-save.txt` and read it back in the same run.
 
-The save is a temporary browser file. The starter supplies the readings, so you do not need `input()`.
+The save is a temporary browser file. The starter supplies the reAdamngs, so you do not need `input()`.
 
 Build the helpers in `main.py` in task order and Submit after each one. Run shows `Charge: 5` once the save and read helpers work; unfinished helpers may still print `None`.
 

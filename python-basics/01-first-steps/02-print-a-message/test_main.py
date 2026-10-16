@@ -12,4 +12,4 @@ def _output():
 
 def test_greeting():
     """Print the new welcome message"""
-    assert _output() == ["Adi enters Spawn Camp"], "Change the text inside print's quotes"
+    assert _output() == ["Adam enters Spawn Camp"], "Change the text inside print's quotes"

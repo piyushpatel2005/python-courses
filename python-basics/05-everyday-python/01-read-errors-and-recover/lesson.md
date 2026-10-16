@@ -13,9 +13,9 @@ hints:
   - Put int(text) inside try and return 0 in except ValueError.
 ---
 
-# Recover a beacon reading
+# Recover a beacon reAdamng
 
-At the save shrine, Adi finds an energy reading stored as text. A reading of `"3"` can become a number, but `"unknown"` cannot. You'll give the game a fallback value of zero when a reading is unreadable.
+At the save shrine, Adam finds an energy reAdamng stored as text. A reAdamng of `"3"` can become a number, but `"unknown"` cannot. You'll give the game a fallback value of zero when a reAdamng is unreadable.
 
 When Python stops with an error, start at the last line of the traceback. It names the error and explains what went wrong. Then look at the line of code it points to.
 
@@ -39,7 +39,7 @@ print(flame)  # 0
 
 Python tries the conversion first. If it fails with `ValueError`, the `except` block sets `flame` to zero. Other kinds of errors still surface, so you can find and fix them.
 
-Edit `main.py`. The supplied print calls currently show `None` because the function has no return value. After your change, Run should show `Valid energy: 3` and `Invalid energy: 0`. Use Submit to check the function with other readings too.
+Edit `main.py`. The supplied print calls currently show `None` because the function has no return value. After your change, Run should show `Valid energy: 3` and `Invalid energy: 0`. Use Submit to check the function with other reAdamngs too.
 
 ## Your Task
 

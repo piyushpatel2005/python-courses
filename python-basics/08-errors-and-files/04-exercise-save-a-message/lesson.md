@@ -15,7 +15,7 @@ Turn the previous write-and-read example into two reusable helpers. One saves a 
 
 Use `"w"` to replace the previous contents and `"r"` to read them. Keep each file operation inside a `with open` block. As before, the file is temporary and does not download to your device.
 
-Edit `main.py`. The supplied calls save a signal before loading it. Run to see the restored text, then Submit.
+Edit `main.py`. The supplied calls save a signal before loAdamng it. Run to see the restored text, then Submit.
 
 ## Your Tasks
 

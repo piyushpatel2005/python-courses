@@ -8,7 +8,7 @@ level: Beginner
 format: Guided coding, exercises, and quizzes
 sort_order: 5
 seo_title: Python Basics Course | Learn Python Programming by Doing
-seo_description: Help Adi restore the beacons in an original text-based game while learning Python fundamentals through browser coding challenges, level projects, and quizzes.
+seo_description: Help Adam restore the beacons in an original text-based game while learning Python fundamentals through browser coding challenges, level projects, and quizzes.
 seo_keywords: [python basics, learn python, beginner python course, python game coding exercises]
 modules:
   - slug: first-steps
@@ -48,7 +48,7 @@ modules:
 
 # The Lantern Atlas
 
-The beacons in The Lantern Atlas have gone dark. Adi, a pathfinder, needs a route to the Exit Gate. You will write the small Python programs behind that route, beginning with a message at Spawn Camp and working toward a final text-based mission.
+The beacons in The Lantern Atlas have gone dark. Adam, a pathfinder, needs a route to the Exit Gate. You will write the small Python programs behind that route, beginning with a message at Spawn Camp and working toward a final text-based mission.
 
 You do not need programming experience or a game engine. Each level introduces an idea through a small example, gives you an editable demo, and asks you to use the idea with different data. Along the way, you will calculate gear costs, choose routes, manage an inventory, and save information.
 
@@ -68,4 +68,4 @@ Most of the work happens in the browser. An optional lesson shows you how to run
 10. Echo Tower: Try optional recursion and functional patterns.
 11. Exit Gate: Build a final text-based level and meet classes and objects as vocabulary for future study.
 
-In a coding lesson, read the explanation, edit **main.py**, and use **Run** to inspect the output. **Submit** checks the numbered tasks and tells you what still needs work. Some short reading lessons have runnable examples instead of an editor. Each level ends with a quiz.
+In a coding lesson, read the explanation, edit **main.py**, and use **Run** to inspect the output. **Submit** checks the numbered tasks and tells you what still needs work. Some short reAdamng lessons have runnable examples instead of an editor. Each level ends with a quiz.

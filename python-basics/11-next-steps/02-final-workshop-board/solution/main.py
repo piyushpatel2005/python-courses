@@ -43,7 +43,7 @@ def play_mission(beacons, commands):
     for name, required in beacons.items():
         lines.append(f"{name}: {charges[name]}/{required}")
     if gate_open(beacons, charges):
-        lines.append("Exit Gate: OPEN - Adi leaves the Lantern Atlas with every beacon bright.")
+        lines.append("Exit Gate: OPEN - Adam leaves the Lantern Atlas with every beacon bright.")
     else:
         lines.append("Exit Gate: LOCKED - Restore every beacon to continue.")
     return lines

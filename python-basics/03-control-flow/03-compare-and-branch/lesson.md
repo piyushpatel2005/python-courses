@@ -5,9 +5,9 @@ order: 3
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: "Use comparisons and branches to advise Adi at a gate."
+summary: "Use comparisons and branches to advise Adam at a gate."
 seo_title: "Demo: Choose a Lit Route | Python Basics"
-seo_description: "Use comparisons and branches to advise Adi at a gate."
+seo_description: "Use comparisons and branches to advise Adam at a gate."
 seo_keywords: [python basics, control flow, lantern atlas]
 ---
 
@@ -19,7 +19,7 @@ The starter chooses a route from the beacon signal and the weather. Read its bra
 - `elif signal < 16 and not foggy:` checks another possibility, but only if the first check was false. Both the signal comparison and `not foggy` must be true.
 - `else:` handles any case that did not match either check. It has no condition of its own.
 
-Only the first matching branch runs. Each branch heading ends with a colon, and its assignment is indented by four spaces. The unindented print call runs after the choice is made.
+Only the first matching branch runs. Each branch heAdamng ends with a colon, and its assignment is indented by four spaces. The unindented print call runs after the choice is made.
 
 With `signal = 12` and `foggy = False`, **Run** shows `Follow lit path`. Change just the signal in **main.py**, run again to see `Repair beacon`, then **Submit**.
 

@@ -1,12 +1,12 @@
 ---
-title: "Exit Gate: Reading Object Vocabulary"
+title: "Exit Gate: ReAdamng Object Vocabulary"
 slug: classes-objects-and-enums
 order: 1
 language: python
 lesson_type: informational
 runtime: pyodide
 summary: Recognize classes, objects, attributes, methods, and enums without implementing them.
-seo_title: "Exit Gate: Reading Object Vocabulary | Python Basics"
+seo_title: "Exit Gate: ReAdamng Object Vocabulary | Python Basics"
 seo_description: Recognize classes, objects, attributes, methods, and enums without implementing them.
 seo_keywords: [python class object vocabulary, attribute, enum]
 ---

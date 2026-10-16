@@ -3,7 +3,7 @@ import solution as _solution
 
 def test_supply_name():
     """Use text for the supply name"""
-    assert type(supply_name) is str and supply_name == "Gladiator Gloves", "Use the quoted text Gladiator Gloves"
+    assert type(supply_name) is str and supply_name == "GlAdamator Gloves", "Use the quoted text GlAdamator Gloves"
 
 def test_supply_count():
     """Use a whole number for supply count"""

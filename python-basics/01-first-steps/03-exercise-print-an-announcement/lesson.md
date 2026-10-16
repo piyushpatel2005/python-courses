@@ -4,9 +4,9 @@ slug: exercise-print-an-announcement
 order: 3
 language: python
 lesson_type: coding
-summary: "Write two separate output lines for Adi’s opening route."
+summary: "Write two separate output lines for Adam’s opening route."
 seo_title: "Exercise: Open the Lantern Map | Python Basics"
-seo_description: "Write two separate output lines for Adi’s opening route."
+seo_description: "Write two separate output lines for Adam’s opening route."
 seo_keywords: [python basics, first steps, lantern atlas]
 ---
 

@@ -16,8 +16,8 @@ These browser exercises use prefilled values instead of waiting at a prompt. In 
 
 This distinction matters for numbers too. A terminal user who types digits still gives `input()` a string. You would convert that text with `int()` or `float()` before doing arithmetic, just as you did in the previous exercise.
 
-Keep the supplied f-string and change the name. Press **Run** to see `Gear ready for Adi`, then **Submit**.
+Keep the supplied f-string and change the name. Press **Run** to see `Gear ready for Adam`, then **Submit**.
 
 ## Your Tasks
 
-1. Set `pathfinder` to `"Adi"`.
+1. Set `pathfinder` to `"Adam"`.

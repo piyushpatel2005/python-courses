@@ -35,11 +35,11 @@ def _uses(technique):
     return False
 
 def test_01():
-    """Set heading to ECHO: 3 beacons with an f-string."""
-    assert heading == "ECHO: 3 beacons", "Set heading to ECHO: 3 beacons with an f-string."
+    """Set heAdamng to ECHO: 3 beacons with an f-string."""
+    assert heAdamng == "ECHO: 3 beacons", "Set heAdamng to ECHO: 3 beacons with an f-string."
     assert _uses('JoinedStr'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('heading == "MIST: 2 beacons"', varied), "Check this task with a different input too."
+    assert eval('heAdamng == "MIST: 2 beacons"', varied), "Check this task with a different input too."
 
 def test_02():
     """Set energy_line to Energy: 12.75 using an f-string and two-decimal formatting."""
