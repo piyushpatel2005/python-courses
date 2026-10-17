@@ -17,33 +17,36 @@ modules:
   - slug: values-and-input
     title: "Level 2: Gear Forge — Values and Input"
     sort_order: 2
-  - slug: control-flow
-    title: "Level 3: Gate Trials — Decisions and Loops"
+  - slug: conditionals
+    title: "Level 3: Gate Trials — Decisions"
     sort_order: 3
-  - slug: functions-and-reuse
-    title: "Level 4: Ability Workshop — Functions and Scope"
+  - slug: loops
+    title: "Level 4: Gate Trials — Loops, going in circles"
     sort_order: 4
-  - slug: strings
-    title: "Level 5: Cipher Caverns — Strings"
+  - slug: functions-and-reuse
+    title: "Level 5: Ability Workshop — Functions and Scope"
     sort_order: 5
-  - slug: lists-and-tuples
-    title: "Level 6: Inventory Ridge — Lists and Tuples"
+  - slug: strings
+    title: "Level 6: Cipher Caverns — Strings"
     sort_order: 6
-  - slug: dictionaries-and-sets
-    title: "Level 7: Map Archive — Dictionaries and Sets"
+  - slug: lists-and-tuples
+    title: "Level 7: Inventory Ridge — Lists and Tuples"
     sort_order: 7
-  - slug: errors-and-files
-    title: "Level 8: Save Shrine — Errors and Files"
+  - slug: dictionaries-and-sets
+    title: "Level 8: Map Archive — Dictionaries and Sets"
     sort_order: 8
-  - slug: modules-and-packages
-    title: "Level 9: Tool Library — Modules and Packages"
+  - slug: errors-and-files
+    title: "Level 9: Save Shrine — Errors and Files"
     sort_order: 9
-  - slug: more-function-patterns
-    title: "Level 10: Echo Tower — More Function Patterns"
+  - slug: modules-and-packages
+    title: "Level 10: Tool Library — Modules and Packages"
     sort_order: 10
-  - slug: next-steps
-    title: "Level 11: Exit Gate — Putting It Together"
+  - slug: more-function-patterns
+    title: "Level 11: Echo Tower — More Function Patterns"
     sort_order: 11
+  - slug: next-steps
+    title: "Level 12: Exit Gate — Putting It Together"
+    sort_order: 12
 ---
 
 # The Lantern Atlas
@@ -58,14 +61,15 @@ Most of the work happens in the browser. An optional lesson shows you how to run
 
 1. Spawn Camp: Name values with variables and print messages in the console.
 2. Gear Forge: Calculate resources, format a gear display, and convert text to numbers.
-3. Gate Trials: Check conditions, choose a branch, and repeat actions with loops.
-4. Ability Workshop: Write reusable actions with functions and learn where variables are available.
-5. Cipher Caverns: Read, slice, clean, and format text.
-6. Inventory Ridge: Work with ordered gear and fixed checkpoint records.
-7. Map Archive: Look up records by key and track unique locations.
-8. Save Shrine: Handle bad data and read and write temporary save files.
-9. Tool Library: Import tools and organize code in local modules.
-10. Echo Tower: Try optional recursion and functional patterns.
-11. Exit Gate: Build a final text-based level and meet classes and objects as vocabulary for future study.
+3. Gate Trials: Check conditions, choose your path wisely.
+4. Gate Trials: Loops, repeat an action multiple times.
+5. Ability Workshop: Write reusable actions with functions and learn where variables are available.
+6. Cipher Caverns: Read, slice, clean, and format text.
+7. Inventory Ridge: Work with ordered gear and fixed checkpoint records.
+8. Map Archive: Look up records by key and track unique locations.
+9. Save Shrine: Handle bad data and read and write temporary save files.
+10. Tool Library: Import tools and organize code in local modules.
+11. Echo Tower: Try optional recursion and functional patterns.
+12. Exit Gate: Build a final text-based level and meet classes and objects as vocabulary for future study.
 
 In a coding lesson, read the explanation, edit **main.py**, and use **Run** to inspect the output. **Submit** checks the numbered tasks and tells you what still needs work. Some short reAdamng lessons have runnable examples instead of an editor. Each level ends with a quiz.
