@@ -1,0 +1,9 @@
+player_text = "Adam"
+flares_text = "3"
+flare_cost = 6.0
+flare_count = 0  # TODO: convert flares_text
+energy_cost = 0.0  # TODO: multiply the flare count by flare_cost
+display_line = "TODO"  # TODO: format the gear HUD
+print("Flares:", flare_count)
+print("Energy:", energy_cost)
+print(display_line)
