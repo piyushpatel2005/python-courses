@@ -1,12 +1,12 @@
 ---
-title: 'Demo: Write a Shrine Save'
+title: 'Write a Shrine Save'
 slug: browser-file-demo
 order: 3
 language: python
 lesson_type: coding
 runtime: pyodide
 summary: 'Write and read a temporary shrine note with open().'
-seo_title: 'Demo: Write a Shrine Save | Python Basics'
+seo_title: 'Write a Shrine Save | Python Basics'
 seo_description: 'Write and read a temporary shrine note with open().'
 seo_keywords: [python file handling, with open, temporary browser files]
 ---

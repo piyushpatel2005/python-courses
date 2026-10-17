@@ -1,12 +1,12 @@
 ---
-title: 'Demo: Follow a Dotted Package Import'
+title: 'Follow a Dotted Package Import'
 slug: packages-and-dotted-imports
 order: 5
 language: python
 runtime: pyodide
 lesson_type: coding
 summary: 'Use ElementTree from a standard-library package.'
-seo_title: 'Demo: Follow a Dotted Package Import | Python Basics'
+seo_title: 'Follow a Dotted Package Import | Python Basics'
 seo_description: 'Use ElementTree from a standard-library package.'
 seo_keywords: [python basics, packages and dotted imports, python practice]
 hints:

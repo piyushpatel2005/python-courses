@@ -1,12 +1,12 @@
 ---
-title: "Demo: Skip a Hazard, Stop at a Gate"
+title: "Skip a Hazard, Stop at a Gate"
 slug: skip-and-stop
 order: 9
 language: python
 runtime: pyodide
 lesson_type: coding
 summary: "Compare continue and break along a short route."
-seo_title: "Demo: Skip a Hazard, Stop at a Gate | Python Basics"
+seo_title: "Skip a Hazard, Stop at a Gate | Python Basics"
 seo_description: "Compare continue and break along a short route."
 seo_keywords: [python basics, control flow, lantern atlas]
 ---

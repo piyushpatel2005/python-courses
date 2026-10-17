@@ -1,12 +1,12 @@
 ---
-title: 'Demo: Summarize Beacon Finds'
+title: 'Summarize Beacon Finds'
 slug: demo-library-summary
 order: 7
 language: python
 lesson_type: coding
 runtime: pyodide
 summary: 'Combine map records, dictionary counts, and distinct locations.'
-seo_title: 'Demo: Summarize Beacon Finds | Python Basics'
+seo_title: 'Summarize Beacon Finds | Python Basics'
 seo_description: 'Combine map records, dictionary counts, and distinct locations.'
 seo_keywords:
 - python collections-project

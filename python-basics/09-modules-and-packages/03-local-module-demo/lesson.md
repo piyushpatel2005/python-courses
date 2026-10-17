@@ -1,12 +1,12 @@
 ---
-title: 'Demo: Import a Local Beacon Rule'
+title: 'Import a Local Beacon Rule'
 slug: local-module-demo
 order: 3
 language: python
 runtime: pyodide
 lesson_type: coding
 summary: 'Import a reusable helper from a local Python module.'
-seo_title: 'Demo: Import a Local Beacon Rule | Python Basics'
+seo_title: 'Import a Local Beacon Rule | Python Basics'
 seo_description: 'Import a reusable helper from a local Python module.'
 seo_keywords: [python basics, local module demo, python practice]
 hints:

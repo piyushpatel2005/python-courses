@@ -1,12 +1,12 @@
 ---
-title: "Demo: Pulse a Beacon with while"
+title: "Pulse a Beacon with while"
 slug: repeat-with-while
 order: 5
 language: python
 runtime: pyodide
 lesson_type: coding
 summary: "Watch a bounded countdown restore a beacon."
-seo_title: "Demo: Pulse a Beacon with while | Python Basics"
+seo_title: "Pulse a Beacon with while | Python Basics"
 seo_description: "Watch a bounded countdown restore a beacon."
 seo_keywords: [python basics, control flow, lantern atlas]
 ---

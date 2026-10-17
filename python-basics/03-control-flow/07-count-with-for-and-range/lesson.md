@@ -1,12 +1,12 @@
 ---
-title: "Demo: Mark a Route with range"
+title: "Mark a Route with range"
 slug: count-with-for-and-range
 order: 7
 language: python
 runtime: pyodide
 lesson_type: coding
 summary: "Extend a for-loop route by one map marker."
-seo_title: "Demo: Mark a Route with range | Python Basics"
+seo_title: "Mark a Route with range | Python Basics"
 seo_description: "Extend a for-loop route by one map marker."
 seo_keywords: [python basics, control flow, lantern atlas]
 ---

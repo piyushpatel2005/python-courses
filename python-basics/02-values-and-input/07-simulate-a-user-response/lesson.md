@@ -1,11 +1,11 @@
 ---
-title: "Demo: Read a Pathfinder Name"
+title: "Read a Pathfinder Name"
 slug: simulate-a-user-response
 order: 7
 language: python
 lesson_type: coding
 summary: "Use a browser-safe prefilled response as a name."
-seo_title: "Demo: Read a Pathfinder Name | Python Basics"
+seo_title: "Read a Pathfinder Name | Python Basics"
 seo_description: "Use a browser-safe prefilled response as a name."
 seo_keywords: [python basics, values and input, lantern atlas]
 ---

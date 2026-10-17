@@ -1,11 +1,11 @@
 ---
-title: "Demo: Convert Shard Text"
+title: "Convert Shard Text"
 slug: convert-text-to-numbers
 order: 5
 language: python
 lesson_type: coding
 summary: "Convert a text count before adding bonus shards."
-seo_title: "Demo: Convert Shard Text | Python Basics"
+seo_title: "Convert Shard Text | Python Basics"
 seo_description: "Convert a text count before adding bonus shards."
 seo_keywords: [python basics, values and input, lantern atlas]
 ---

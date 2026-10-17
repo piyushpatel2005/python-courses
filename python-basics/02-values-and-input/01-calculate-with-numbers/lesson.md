@@ -1,11 +1,11 @@
 ---
-title: "Demo: Divide Beacon Shards"
+title: "Divide Beacon Shards"
 slug: calculate-with-numbers
 order: 1
 language: python
 lesson_type: coding
 summary: "Use floor division and remainder to fill lamps."
-seo_title: "Demo: Divide Beacon Shards | Python Basics"
+seo_title: "Divide Beacon Shards | Python Basics"
 seo_description: "Use floor division and remainder to fill lamps."
 seo_keywords: [python basics, values and input, lantern atlas]
 ---

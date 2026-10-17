@@ -1,12 +1,12 @@
 ---
-title: 'Demo: Calculate Beacon Capacity'
+title: 'Calculate Beacon Capacity'
 slug: math-module-demo
 order: 1
 language: python
 runtime: pyodide
 lesson_type: coding
 summary: 'Use math.ceil to round up a beacon capacity calculation.'
-seo_title: 'Demo: Calculate Beacon Capacity | Python Basics'
+seo_title: 'Calculate Beacon Capacity | Python Basics'
 seo_description: 'Use math.ceil to round up a beacon capacity calculation.'
 seo_keywords: [python basics, math module demo, python practice]
 hints:

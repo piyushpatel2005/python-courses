@@ -1,12 +1,12 @@
 ---
-title: "Demo: Choose a Lit Route"
+title: "Choose a Lit Route"
 slug: compare-and-branch
 order: 3
 language: python
 runtime: pyodide
 lesson_type: coding
 summary: "Use comparisons and branches to advise Adam at a gate."
-seo_title: "Demo: Choose a Lit Route | Python Basics"
+seo_title: "Choose a Lit Route | Python Basics"
 seo_description: "Use comparisons and branches to advise Adam at a gate."
 seo_keywords: [python basics, control flow, lantern atlas]
 ---

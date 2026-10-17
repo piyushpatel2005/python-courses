@@ -1,5 +1,5 @@
 ---
-title: "Demo: Compare Workshop Supplies"
+title: "Compare Workshop Supplies"
 slug: comparisons-and-booleans
 order: 1
 language: python

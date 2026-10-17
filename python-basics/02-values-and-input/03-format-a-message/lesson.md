@@ -1,11 +1,11 @@
 ---
-title: "Demo: Format a Gear Label"
+title: "Format a Gear Label"
 slug: format-a-message
 order: 3
 language: python
 lesson_type: coding
 summary: "Use a two-decimal f-string to display a gear cost."
-seo_title: "Demo: Format a Gear Label | Python Basics"
+seo_title: "Format a Gear Label | Python Basics"
 seo_description: "Use a two-decimal f-string to display a gear cost."
 seo_keywords: [python basics, values and input, lantern atlas]
 ---

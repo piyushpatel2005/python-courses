@@ -1,11 +1,11 @@
 ---
-title: "Demo: Light the Camp Message"
+title: "Light the Camp Message"
 slug: print-a-message
 order: 2
 language: python
 lesson_type: coding
 summary: "Edit one print string to announce Adam’s arrival."
-seo_title: "Demo: Light the Camp Message | Python Basics"
+seo_title: "Print output | Python Basics"
 seo_description: "Edit one print string to announce Adam’s arrival."
 seo_keywords: [python basics, first steps, lantern atlas]
 ---

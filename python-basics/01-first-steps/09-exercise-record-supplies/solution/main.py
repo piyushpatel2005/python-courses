@@ -1,4 +1,4 @@
-supply_name = "GlAdamator Gloves"
+supply_name = "Gladiator Gloves"
 supply_count = 1
 supply_weight = 2.2
 print(supply_name, type(supply_name).__name__)

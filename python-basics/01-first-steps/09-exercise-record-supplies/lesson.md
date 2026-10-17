@@ -10,14 +10,13 @@ seo_description: "Record three typed values for Adam’s supplies."
 seo_keywords: [python basics, first steps, lantern atlas]
 ---
 
-Pack a pair of GlAdamator Gloves using the types you just inspected. The item name is text, the count is a whole number, and the weight has a decimal part.
-
-Replace the placeholder values in **main.py**. Keep the supplied print calls so you can read each value beside its type. Press **Run** after each edit, then **Submit** when the three values match the tasks.
+You're going on your mission and you need to pack your supplies for it. Pack a pair of Gladiator Gloves using the types you just inspected. The item name is text, the count is a whole number, and the weight has a decimal part.
 
 ## Your Tasks
+Replace the placeholder values in **main.py**. Press **Run** after each edit, then **Submit** when the three values match the tasks.
 
-1. Set `supply_name` to `"GlAdamator Gloves"`.
+1. Set `supply_name` to `"Gladiator Gloves"`.
 2. Set `supply_count` to the integer `1`.
 3. Set `supply_weight` to the float `2.2`.
 
-Your starting supplies are recorded. Before the quiz, you can take an optional detour to run a saved Python file on your own computer.
+Your starting supplies are recorded. Before the quiz for the module, we'll take a slight detour on some theory and how you can run Python on your local system.
