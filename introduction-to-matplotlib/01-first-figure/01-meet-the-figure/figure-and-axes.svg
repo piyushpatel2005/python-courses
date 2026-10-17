@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 255" role="img" aria-labelledby="t d">
+<title id="t">Figure, axes, and plotted readings</title>
+<desc id="d">A large figure frame encloses one axes plotting area with a three-point garden line. Labels outside the frames distinguish the figure from its axes.</desc>
+<rect width="620" height="255" rx="16" fill="#101c2b"/>
+<rect x="36" y="32" width="548" height="190" rx="8" fill="#1d3242" stroke="#79d8bb" stroke-width="3"/>
+<text x="49" y="57" fill="#bdf5df" font-family="sans-serif" font-size="16">Figure: the whole chart</text>
+<rect x="130" y="74" width="392" height="122" fill="#fcfbf4" stroke="#6d91ad" stroke-width="2"/>
+<text x="146" y="97" fill="#26374a" font-family="sans-serif" font-size="16">Axes: where values meet</text>
+<path d="M174 158 L270 138 L369 149 L470 113" fill="none" stroke="#137267" stroke-width="4"/>
+<g fill="#137267"><circle cx="174" cy="158" r="5"/><circle cx="270" cy="138" r="5"/><circle cx="369" cy="149" r="5"/><circle cx="470" cy="113" r="5"/></g>
+</svg>

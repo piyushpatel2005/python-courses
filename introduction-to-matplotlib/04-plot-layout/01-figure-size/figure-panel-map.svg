@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" role="img" aria-labelledby="title desc">
+<title id="title">One figure holds separate panels</title>
+<desc id="desc">A wide figure contains two separate plotting areas: one for garden temperatures and one for library visits. Each area has its own title and vertical units.</desc>
+<rect x="0" y="0" width="900" height="340" rx="22" fill="#f1f5f9"/>
+<text x="450" y="37" font-size="23" font-family="Arial" font-weight="bold" text-anchor="middle" fill="#17344d">Figure: the entire canvas</text>
+<rect x="34" y="56" width="832" height="260" rx="13" fill="#fff" stroke="#355d7c" stroke-width="3"/>
+<rect x="67" y="100" width="355" height="178" rx="8" fill="#edf7f1" stroke="#59a576" stroke-width="2"/>
+<rect x="478" y="100" width="355" height="178" rx="8" fill="#eef3fc" stroke="#6087bd" stroke-width="2"/>
+<g font-family="Arial" text-anchor="middle" font-size="18" font-weight="bold"><text x="245" y="88" fill="#256044">Axes (a): garden</text><text x="655" y="88" fill="#385e94">Axes (b): library</text></g>
+<g fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path stroke="#36815b" d="M104 230L164 211L224 175L284 193L344 149L389 164"/><path stroke="#477bb8" d="M515 222L575 188L635 201L695 148L755 160L801 132"/></g>
+<g font-family="Arial" font-size="15" fill="#214259" text-anchor="middle"><text x="245" y="258">temperature (°C)</text><text x="655" y="258">visits (people)</text><text x="450" y="299">Each Axes owns its data and labels.</text></g>
+</svg>

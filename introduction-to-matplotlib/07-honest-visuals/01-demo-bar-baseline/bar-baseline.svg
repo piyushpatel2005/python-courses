@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="260" viewBox="0 0 720 260" role="img" aria-labelledby="t d">
+<title id="t">The baseline changes the apparent bar difference</title>
+<desc id="d">Left panel has bars measured from zero, while right panel begins at four and exaggerates their visual difference. Horizontal guides stay below labels.</desc>
+<rect width="720" height="260" rx="16" fill="#101e30"/>
+<text x="36" y="35" fill="white" font-size="18">Start at zero</text><text x="398" y="35" fill="white" font-size="18">Clipped at four</text>
+<path d="M45 211 H325 M405 211 H685" stroke="#a7b9c9" stroke-width="2"/>
+<rect x="95" y="111" width="65" height="100" fill="#6fd3be"/><rect x="200" y="51" width="65" height="160" fill="#f5ba69"/>
+<rect x="455" y="161" width="65" height="50" fill="#6fd3be"/><rect x="560" y="51" width="65" height="160" fill="#f5ba69"/>
+<text x="44" y="232" fill="#e7eff7" font-size="14">0</text><text x="405" y="232" fill="#e7eff7" font-size="14">4</text>
+<text x="118" y="102" fill="white" font-size="15">5</text><text x="223" y="44" fill="white" font-size="15">8</text>
+<text x="478" y="153" fill="white" font-size="15">5</text><text x="583" y="44" fill="white" font-size="15">8</text>
+</svg>

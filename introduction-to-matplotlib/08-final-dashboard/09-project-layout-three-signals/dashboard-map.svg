@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="390" viewBox="0 0 720 390" role="img" aria-labelledby="t d">
+<title id="t">Neighborhood Signals dashboard plan</title>
+<desc id="d">A two by two grid assigns the upper left to garden temperatures, upper right to library visits, lower left to transit rides, and lower right to paired garden and library observations.</desc>
+<rect width="720" height="390" rx="16" fill="#101e30"/>
+<text x="32" y="33" font-size="20" fill="white">One day, several signals</text>
+<g fill="#203a51" stroke="#83b9c4" stroke-width="2"><rect x="32" y="55" width="310" height="140" rx="12"/><rect x="378" y="55" width="310" height="140" rx="12"/><rect x="32" y="215" width="310" height="140" rx="12"/><rect x="378" y="215" width="310" height="140" rx="12"/></g>
+<g fill="white" font-size="18"><text x="55" y="88">Garden · line</text><text x="401" y="88">Library · bars</text><text x="55" y="248">Transit · line</text><text x="401" y="248">Garden × library · scatter</text></g>
+<g fill="none" stroke-width="4"><path d="M65 167 L125 151 L185 160 L245 118 L310 130" stroke="#6fd3be"/><path d="M410 168 V140 H456 V168 M485 168 V121 H531 V168 M560 168 V104 H606 V168" stroke="#f5ba69"/><path d="M65 324 L120 308 L185 316 L245 283 L310 289" stroke="#9ab6ff"/></g>
+<g fill="#f5ba69"><circle cx="435" cy="318" r="5"/><circle cx="482" cy="309" r="5"/><circle cx="544" cy="289" r="5"/><circle cx="590" cy="270" r="5"/></g>
+</svg>

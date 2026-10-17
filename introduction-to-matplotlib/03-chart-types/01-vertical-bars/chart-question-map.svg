@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" role="img" aria-labelledby="title desc">
+<title id="title">Three questions, three chart shapes</title>
+<desc id="desc">Category comparison uses bars, paired measures use points, and frequencies in numeric ranges use a histogram.</desc>
+<rect x="0" y="0" width="900" height="300" rx="22" fill="#f1f5f9"/>
+<text x="450" y="38" fill="#132f4c" font-size="24" font-family="Arial" font-weight="bold" text-anchor="middle">Start with the question</text>
+<g fill="#fff" stroke="#64829a" stroke-width="2"><rect x="30" y="62" width="260" height="210" rx="14"/><rect x="320" y="62" width="260" height="210" rx="14"/><rect x="610" y="62" width="260" height="210" rx="14"/></g>
+<g fill="#183a52" font-family="Arial" text-anchor="middle"><text x="160" y="94" font-size="17" font-weight="bold">Compare named groups</text><text x="450" y="94" font-size="17" font-weight="bold">Relate two measures</text><text x="740" y="94" font-size="17" font-weight="bold">Count numeric ranges</text><text x="160" y="249" font-size="16">Bars</text><text x="450" y="249" font-size="16">Scatter</text><text x="740" y="249" font-size="16">Histogram</text></g>
+<g fill="#3e936b"><rect x="76" y="177" width="36" height="47"/><rect x="142" y="140" width="36" height="84"/><rect x="208" y="159" width="36" height="65"/></g>
+<g stroke="#8babc1" stroke-width="2"><path d="M365 224H535M365 224V122"/><path d="M655 224H825M655 224V122"/></g>
+<g fill="#bd5b3f"><circle cx="395" cy="187" r="7"/><circle cx="423" cy="167" r="9"/><circle cx="462" cy="175" r="6"/><circle cx="500" cy="137" r="12"/></g>
+<g fill="#4a80ad"><rect x="676" y="167" width="28" height="57"/><rect x="704" y="144" width="28" height="80"/><rect x="732" y="183" width="28" height="41"/><rect x="760" y="132" width="28" height="92"/><rect x="788" y="196" width="28" height="28"/></g>
+</svg>
