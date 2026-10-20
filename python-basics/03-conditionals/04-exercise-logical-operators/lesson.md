@@ -10,7 +10,7 @@ seo_description: "Use and, or, and not to check flour, milk, and whether a store
 seo_keywords: [python logical operators exercise, boolean expressions, grocery stock]
 ---
 
-The grocery store can take an order only when it has enough flour **and** at least one milk carton. It also needs to know when either item needs restocking. The supplied `store_closed` boolean records whether the shop is shut.
+The bakery store can take an order for cookies only when it has enough flour **and** at least one milk carton. It also needs to know when either item needs restocking. The supplied `store_closed` boolean records whether the shop is shut.
 
 In `main.py`, the quantities are counts of bags and cartons. `enough_flour` is already calculated. Replace the other three placeholders with expressions that depend on the supplied values; the tests will also try different stock levels and opening states.
 

@@ -1,7 +1,7 @@
 ---
 title: "Choose a Stock Message"
 slug: compare-and-branch
-order: 5
+order: 6
 language: python
 runtime: pyodide
 lesson_type: coding
@@ -13,13 +13,24 @@ seo_keywords: [python if else, python elif, stock levels]
 
 A bakery checks how many loaves remain before printing a stock message. A comparison produces `True` or `False`; an `if` statement uses that result to choose which assignment runs.
 
+The basic structure of `if..elif..else` looks like this.
+
+```python
+if condition1:
+    ... ...
+elif condition2:
+    ... ...
+else:
+    ... ...
+```
+
+In this case, Python interpreter checks one condition at a time and flows from top to bottom. If one of the condition is met, that code blocks is executed. If none of the conditions met, finally, it will execute the `else` block. Again, remember the code block is the code indented after the colon (`:`) symbol in Python.
+
 Read the branches in `main.py` from top to bottom:
 
-- `if loaves_left < 8:` asks for more bread when fewer than eight loaves remain.
-- `elif loaves_left < 16 and not delivery_today:` checks the next case only if the first was false. Both parts must be true.
-- `else:` covers all remaining cases, including a delivery day. It has no condition.
-
-Only the first matching branch runs. Each branch heading ends in a colon, and its assignment is indented four spaces. The unindented `print(stock_message)` runs afterward. With 12 loaves and no delivery today, **Run** prints `Check the bread shelf`.
+- `if loaves_left < 8:` asks to bake more breads
+- `elif loaves_left < 16 and not delivery_today:` asks to check the bread shelf
+- `else:` asks to count inventory
 
 ## Your Tasks
 
