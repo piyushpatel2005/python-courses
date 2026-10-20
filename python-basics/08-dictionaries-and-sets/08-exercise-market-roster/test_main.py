@@ -1,15 +1,93 @@
 from solution import *
-
 import ast
 import contextlib
 import io
 import solution
 
-# Replace only the supplied top-level fixtures; never replace learner logic.
+
+def _tree():
+    with open(solution.__file__, encoding="utf-8") as file:
+        return ast.parse(file.read())
+
+
+def _assignment(name):
+    for node in _tree().body:
+        if isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id == name for t in node.targets):
+            return node.value
+    return None
+
+
+def indexed(name, source):
+    value = _assignment(name)
+    return isinstance(value, ast.Subscript) and isinstance(value.value, ast.Name) and value.value.id == source
+
+
+def sliced(name, source):
+    value = _assignment(name)
+    return indexed(name, source) and isinstance(value.slice, ast.Slice)
+
+
+def list_literal(name):
+    return isinstance(_assignment(name), ast.List)
+
+
+def unpacked(names, source):
+    return any(isinstance(node, ast.Assign) and len(node.targets) == 1
+               and isinstance(node.targets[0], ast.Tuple)
+               and [e.id for e in node.targets[0].elts if isinstance(e, ast.Name)] == list(names)
+               and isinstance(node.value, ast.Name) and node.value.id == source
+               for node in _tree().body)
+
+
+def index_write(name, index):
+    return any(isinstance(node, ast.Assign) and any(isinstance(t, ast.Subscript)
+               and isinstance(t.value, ast.Name) and t.value.id == name
+               and isinstance(t.slice, ast.Constant) and t.slice.value == index
+               for t in node.targets) for node in _tree().body)
+
+
+def calls(name, method):
+    return any(isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute)
+               and isinstance(node.func.value, ast.Name) and node.func.value.id == name
+               and node.func.attr == method for node in ast.walk(_tree()))
+
+
+def get_with_default(target, source, key, fallback):
+    value = _assignment(target)
+    return isinstance(value, ast.Call) and isinstance(value.func, ast.Attribute) and isinstance(value.func.value, ast.Name) and value.func.value.id == source and value.func.attr == "get" and len(value.args) == 2 and all(isinstance(arg, ast.Constant) and arg.value == expected for arg, expected in zip(value.args, [key, fallback]))
+
+
+def loop_appends(name):
+    return any(isinstance(node, ast.For) and any(isinstance(part, ast.Call)
+               and isinstance(part.func, ast.Attribute) and isinstance(part.func.value, ast.Name)
+               and part.func.value.id == name and part.func.attr == "append"
+               for statement in node.body for part in ast.walk(statement)) for node in _tree().body)
+
+
+def loop_method(method, name):
+    return any(isinstance(node, ast.For) and isinstance(node.iter, ast.Call)
+               and isinstance(node.iter.func, ast.Attribute) and node.iter.func.attr == method
+               and any(isinstance(part, ast.Name) and part.id == name
+                       for statement in node.body for part in ast.walk(statement)) for node in _tree().body)
+
+
+def set_from(name, source):
+    value = _assignment(name)
+    return isinstance(value, ast.Call) and isinstance(value.func, ast.Name) and value.func.id == "set" and len(value.args) == 1 and isinstance(value.args[0], ast.Name) and value.args[0].id == source
+
+
+def set_op(name, operator):
+    value = _assignment(name)
+    return isinstance(value, ast.BinOp) and type(value.op).__name__ == operator
+
+
+def fstring(name):
+    return isinstance(_assignment(name), ast.JoinedStr)
+
+
 def _variant():
-    with open(solution.__file__, encoding="utf-8") as source_file:
-        tree = ast.parse(source_file.read())
-    replacements = {'discoveries': [{'location': 'Arch', 'treasure': 'gem'}, {'location': 'Vale', 'treasure': 'scroll'}, {'location': 'Arch', 'treasure': 'scroll'}, {'location': 'Dune', 'treasure': 'scroll'}], 'location': ('Hidden Annex', 'dusk')}
+    tree = _tree()
+    replacements = VARIANTS
     for node in tree.body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
             name = node.targets[0].id
@@ -21,43 +99,32 @@ def _variant():
         exec(compile(tree, "changed_fixture.py", "exec"), result)
     return result
 
-
-def _uses(technique):
-    with open(solution.__file__, encoding="utf-8") as source_file:
-        tree = ast.parse(source_file.read())
-    for node in ast.walk(tree):
-        if type(node).__name__ == technique:
-            return True
-        if isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute) and node.func.attr == technique:
-            return True
-        if isinstance(node, ast.Call) and isinstance(node.func, ast.Name) and node.func.id == technique:
-            return True
-    return False
+VARIANTS = {'registrations': [{'name': 'Ivy', 'session': 'Writing'}, {'name': 'Noah', 'session': 'Music'}, {'name': 'Ivy', 'session': 'Music'}, {'name': 'Sam', 'session': 'Music'}], 'event': ('Public Library', 'Sunday')}
 
 def test_01():
-    """Loop over discoveries and append each location in discovery order to locations."""
-    assert locations == ["Ridge", "Cove", "Ridge"], "Loop over discoveries and append each location in discovery order to locations."
-    assert _uses('For'), "Use the requested Python technique."
-    varied = _variant()
-    assert eval('locations == ["Arch", "Vale", "Arch", "Dune"]', varied), "Check this task with a different input too."
+    """Check task 1 with the supplied and changed data."""
+    assert names == ["Maya", "Luis", "Maya"], "Check task 1 with the supplied data."
+    assert loop_appends("names"), "Use the requested collection operation in task 1."
+    changed = _variant()
+    assert eval('names == ["Ivy", "Noah", "Ivy", "Sam"]', changed), "Check task 1 with different data."
 
 def test_02():
-    """Set unique_locations to a set of the locations in locations."""
-    assert type(unique_locations) is set and unique_locations == {"Ridge", "Cove"}, "Set unique_locations to a set of the locations in locations."
-    assert _uses('set'), "Use the requested Python technique."
-    varied = _variant()
-    assert eval('unique_locations == {"Arch", "Vale", "Dune"}', varied), "Check this task with a different input too."
+    """Check task 2 with the supplied and changed data."""
+    assert type(unique_names) is set and unique_names == {"Maya", "Luis"}, "Check task 2 with the supplied data."
+    assert set_from("unique_names", "names"), "Use the requested collection operation in task 2."
+    changed = _variant()
+    assert eval('unique_names == {"Ivy", "Noah", "Sam"}', changed), "Check task 2 with different data."
 
 def test_03():
-    """Count each discovery treasure in treasure_counts using its current count (or zero) plus one."""
-    assert treasure_counts == {"chest": 1, "compass": 2}, "Count each discovery treasure in treasure_counts using its current count (or zero) plus one."
-    assert _uses('get'), "Use the requested Python technique."
-    varied = _variant()
-    assert eval('treasure_counts == {"gem": 1, "scroll": 3}', varied), "Check this task with a different input too."
+    """Check task 3 with the supplied and changed data."""
+    assert session_counts == {"Python": 1, "Drawing": 2}, "Check task 3 with the supplied data."
+    assert calls("session_counts", "get"), "Use the requested collection operation in task 3."
+    changed = _variant()
+    assert eval('session_counts == {"Writing": 1, "Music": 3}', changed), "Check task 3 with different data."
 
 def test_04():
-    """Set report with an f-string to Map Archive at dawn: 2 places, 3 finds."""
-    assert report == "Map Archive at dawn: 2 places, 3 finds", "Set report with an f-string to Map Archive at dawn: 2 places, 3 finds."
-    assert _uses('JoinedStr'), "Use the requested Python technique."
-    varied = _variant()
-    assert eval('report == "Hidden Annex at dusk: 3 places, 4 finds"', varied), "Check this task with a different input too."
+    """Check task 4 with the supplied and changed data."""
+    assert report == "Community Workshop on Saturday: 2 attendees, 3 registrations", "Check task 4 with the supplied data."
+    assert fstring("report"), "Use the requested collection operation in task 4."
+    changed = _variant()
+    assert eval('report == "Public Library on Sunday: 3 attendees, 4 registrations"', changed), "Check task 4 with different data."

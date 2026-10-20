@@ -1,5 +1,6 @@
 from solution import *
 
 def test_01():
-    """Read map_card['landmark'] into landmark."""
-    assert landmark == "lens", "Read map_card['landmark'] into landmark."
+    """Look up notebooks by their key."""
+    assert notebook_count == 12
+    assert stock["pens"] == 9

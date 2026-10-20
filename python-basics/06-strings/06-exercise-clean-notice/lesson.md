@@ -1,26 +1,26 @@
 ---
-title: "Exercise: Decode a Rune Notice"
+title: "Exercise: Update a Shop Notice"
 slug: exercise-clean-notice
 order: 6
 language: python
-lesson_type: coding
 runtime: pyodide
-summary: Clean a rune notice, replace its state, and check its prefix.
-seo_title: "Exercise: Decode a Rune Notice | Python Basics"
-seo_description: Clean a rune notice, replace its state, and check its prefix.
-seo_keywords: [python basics, strings, lantern atlas]
+lesson_type: coding
+summary: Clean a shop notice, replace its status and check its prefix.
+seo_title: "Exercise: Update a Shop Notice | Python Basics"
+seo_description: Clean a shop notice, replace its status and check its prefix.
+seo_keywords: [python basics, strings, python strings, replace, startswith]
 ---
 
-# Exercise: Decode a Rune Notice
+# Exercise: update a shop notice
 
-Clean the notice from the cavern wall, then prepare a message for the restored beacon. You'll also check whether the text starts with the word `beacon`.
+The printed notice has inconsistent spaces and capitalization: `"  SHOP CLOSED  "`. Make a clean copy, prepare the open version, and check which business the notice belongs to.
 
-Keep `raw_notice` as it is. Each result belongs in its own variable, so you can inspect what changed.
+Keep `raw_notice` unchanged. Store each result separately so you can compare them.
 
 ## Your Tasks
 
 1. Set `notice` to `raw_notice` with surrounding whitespace removed and letters lowercased.
-2. Set `lit_notice` to a copy of `notice` with `dim` replaced by `lit`.
-3. Set `is_beacon_notice` to the result of checking whether `notice` starts with `beacon`.
+2. Set `updated_notice` to a copy of `notice` with `closed` replaced by `open`.
+3. Set `is_shop_notice` to whether `notice` starts with `shop`.
 
-Use the string methods from the previous lesson. Run `main.py` after each task; unfinished values will still show `None`. The completed output should be `beacon dim beacon lit True`. Submit to check the three results.
+Use the methods from the previous lesson. Run after each task; unfinished results show `None`. The finished line reads `shop closed shop open True`. Submit to check all three results.

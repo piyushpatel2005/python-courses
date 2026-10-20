@@ -1,6 +1,6 @@
 import math
 
-def beacons_needed(sparks):
-    return math.ceil(sparks / 4)
+def boxes_needed(length):
+    return math.ceil(length / 4)
 
-print(beacons_needed(11))
+print(boxes_needed(11))

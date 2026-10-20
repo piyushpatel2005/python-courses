@@ -1,22 +1,22 @@
 ---
-title: "Echo Tower: Sum the Signals"
+title: "Add daily deliveries recursively"
 slug: exercise-recursive-ticket-sum
 order: 2
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Combine short beacon signals with a recursive sum.
-seo_title: "Echo Tower: Sum the Signals | Python Basics"
-seo_description: Combine short beacon signals with a recursive sum.
-seo_keywords: [python recursive sum, beacon signals, base case]
+summary: Sum a short list of daily delivery counts with a recursive function.
+seo_title: "Recursive List Sum Exercise | Python Basics"
+seo_description: Write a recursive sum that stops at an empty list and adds each daily delivery count.
+seo_keywords: [python recursive sum, list slicing, base case]
 ---
 
-This time the tower receives a list of signal strengths, and you need one total. The recursive idea is to add the first strength to the total of the remaining list. An empty list returns zero and ends the calls.
+A coordinator records how many supply boxes arrive each day. To total a short list recursively, add the first day's count to the total for the remaining days. An empty list contributes zero and stops the calls: `[4, 2]` becomes `4 + 2 + 0`.
 
-For example, `[4, 2]` reduces to `4 + 2 + 0`. Use indexing for the first value and a slice for the remaining values.
-
-Complete the helper in `main.py`. Run should show `Beacon signal: 6`, then Submit. Use short lists while you practise tracing the calls.
+Use `[0]` to read the first count and `[1:]` to pass along a shorter list. This makes a useful recursion exercise; for a large list, a loop or `sum()` avoids making many calls and copies.
 
 ## Your Task
 
-1. Complete `signal_total(signals)`: return `0` for an empty list; otherwise return the first signal plus a recursive call on the remaining slice, `signals[1:]`.
+1. Complete `delivery_total(daily_deliveries)` so an empty list returns `0`; otherwise return the first count plus `delivery_total(daily_deliveries[1:])`.
+
+Edit `main.py`, press **Run** to check for `Boxes delivered: 6`, and then **Submit**.

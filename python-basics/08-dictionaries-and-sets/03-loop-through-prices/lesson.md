@@ -1,24 +1,20 @@
 ---
-title: 'Loop Through Beacon Map Entries'
+title: "Loop through a price list"
 slug: loop-through-prices
 order: 3
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: 'Use dictionary items() to inspect keyed beacon marks.'
-seo_title: 'Loop Through Beacon Map Entries | Python Basics'
-seo_description: 'Use dictionary items() to inspect keyed beacon marks.'
-seo_keywords:
-- python dictionary-loop
-- beginner dictionary-loop exercise
+summary: "Read dictionary keys and values together with items()."
+seo_title: "Loop through a price list | Python Basics"
+seo_description: "Read dictionary keys and values together with items()."
+seo_keywords: [python basics, python collections, beginner python]
 ---
 
-A dictionary loop can read a key and its value together. `beacon_marks.items()` produces pairs, and `for landmark, marks in ...` unpacks each pair into two names. This is the same unpacking idea you used with tuples.
+A small price list maps product names to dollar amounts. Calling `prices.items()` gives you key-value pairs. The loop `for product, price in prices.items():` unpacks each pair into two names, just as you unpacked a tuple. Use `.keys()` when you only need product names, or `.values()` when you only need prices.
 
-Use `.keys()` when you only need keys, or `.values()` when you only need values.
-
-The starter currently collects mark counts. Edit `main.py` to collect landmarks instead. Run should print `['ridge', 'cove']`, then Submit.
+The starter collects the prices, but you need the product names. Change the append call in `main.py`. **Run** should print `['apple', 'banana']`; then **Submit**.
 
 ## Your Task
 
-1. Loop through `beacon_marks.items()` and append each key to `landmarks`.
+1. Loop through `prices.items()` and append each product name to `products`.

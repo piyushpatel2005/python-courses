@@ -1,10 +1,10 @@
-def save_signal(text):
-    # Write text to shrine-save.txt.
+def save_message(text):
+    # Write text to message.txt.
     pass
 
-def load_signal():
-    # Return the text from shrine-save.txt.
+def load_message():
+    # Return all text from message.txt.
     pass
 
-save_signal("Beacon restored")
-print("Signal:", load_signal())
+save_message("Please call before delivery")
+print("Message:", load_message())

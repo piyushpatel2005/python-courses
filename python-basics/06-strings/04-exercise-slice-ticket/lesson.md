@@ -1,25 +1,25 @@
 ---
-title: "Exercise: Decode Route Fields"
+title: "Exercise: Slice a Stock Label"
 slug: exercise-slice-ticket
 order: 4
 language: python
-lesson_type: coding
 runtime: pyodide
-summary: Slice a cavern sign into a route prefix and beacon code.
-seo_title: "Exercise: Decode Route Fields | Python Basics"
-seo_description: Slice a cavern sign into a route prefix and beacon code.
-seo_keywords: [python basics, strings, lantern atlas]
+lesson_type: coding
+summary: Slice a stock label into its category and item code.
+seo_title: "Exercise: Slice a Stock Label | Python Basics"
+seo_description: Slice a stock label into its category and item code.
+seo_keywords: [python basics, strings, python strings, slicing, stock code]
 ---
 
-# Exercise: Decode Route Fields
+# Exercise: slice a stock label
 
-The sign `ARC:2048` contains two pieces of information: a three-letter route and a four-digit beacon code. The colon at index `3` separates them.
+A stock label reads `BOX:2048`. The first three letters describe the category and the four digits after the colon identify the item. The colon is at index `3`.
 
-Keep `ticket` unchanged and read each piece with a slice. The beacon code should stay a string; there's no calculation to do with it here.
+Keep `record` unchanged and use slices to read the two fields. Leave the item code as text: you are identifying an item, not doing arithmetic with its number.
 
 ## Your Tasks
 
-1. Set `route_name` to a slice containing the first three characters of `ticket`.
-2. Set `number` to a slice containing the four characters after the colon.
+1. Set `category` to a slice containing the first three characters of `record`.
+2. Set `item_code` to a slice containing the four digits after the colon.
 
-Run `main.py` as you work. The first task should give `ARC None`; both tasks should give `ARC 2048`. Submit to check the two slices separately.
+After the first task, Run shows `BOX None`. After both, it shows `BOX 2048`. Submit to check the slices with another record.

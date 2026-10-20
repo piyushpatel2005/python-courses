@@ -13,25 +13,25 @@ def _check(name, expected):
                        and any(isinstance(t, ast.Name) and t.id == name for t in n.targets)), None)
     assert assignment is not None and isinstance(assignment.value, ast.Compare), \
         f"Write a comparison for {name}"
-    for oil, keys in ((6, 1), (3, 1), (4, 0), (4, 1), (8, 3)):
+    for flour, cartons in ((6, 1), (3, 1), (4, 0), (4, 1), (8, 3)):
         variant = ast.parse(source)
         for node in variant.body:
             if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
-                if node.targets[0].id == "oil_units":
-                    node.value = ast.Constant(value=oil)
-                elif node.targets[0].id == "key_count":
-                    node.value = ast.Constant(value=keys)
+                if node.targets[0].id == "flour_bags":
+                    node.value = ast.Constant(value=flour)
+                elif node.targets[0].id == "milk_cartons":
+                    node.value = ast.Constant(value=cartons)
         scope = {}
         with redirect_stdout(StringIO()):
             exec(compile(ast.fix_missing_locations(variant), "variant.py", "exec"), scope)
-        assert scope.get(name) is expected(oil, keys), f"Check {name} with oil={oil} and keys={keys}"
+        assert scope.get(name) is expected(flour, cartons), f"Check {name} with flour={flour} and cartons={cartons}"
 
 
-def test_enough_oil():
-    """1. Compare oil with the minimum."""
-    _check("enough_oil", lambda oil, keys: oil >= 4)
+def test_enough_flour():
+    """1. Compare flour with the minimum."""
+    _check("enough_flour", lambda flour, cartons: flour >= 4)
 
 
-def test_has_key():
-    """2. Compare keys with the minimum."""
-    _check("has_key", lambda oil, keys: keys >= 1)
+def test_has_milk():
+    """2. Compare cartons with the minimum."""
+    _check("has_milk", lambda flour, cartons: cartons >= 1)

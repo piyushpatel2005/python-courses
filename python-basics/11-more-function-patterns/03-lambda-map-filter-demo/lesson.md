@@ -1,22 +1,22 @@
 ---
-title: "Echo Tower: Tune the Frequencies"
+title: "Adjust prices with map and filter"
 slug: lambda-map-filter-demo
 order: 3
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Use lambda, map, and filter to tune beacon frequencies.
-seo_title: "Echo Tower: Tune the Frequencies | Python Basics"
-seo_description: Use lambda, map, and filter to tune beacon frequencies.
-seo_keywords: [python lambda, map, filter, Echo Tower]
+summary: Adjust delivery prices with a lambda, then filter the resulting prices.
+seo_title: "Python Lambda, Map, and Filter | Python Basics"
+seo_description: Use a short lambda to adjust each price with map and select prices with filter.
+seo_keywords: [python lambda, map, filter, price list]
 ---
 
-The receiver adjusts each frequency, then keeps only strong signals. The starter uses a lambda, a short function written as a single expression. In `lambda value: value + 1`, `value` is the input and the expression after the colon supplies the result.
+A shop adds a delivery fee to each listed price, then checks which totals exceed $6. A `lambda` is a short function written as one expression: in `lambda price: price + 1`, `price` is the input and the expression after the colon gives the result.
 
-`map(function, items)` applies the function to each item. `filter(function, items)` keeps an item when the function returns a true value. Both produce iterators; wrapping them in `list(...)` collects their values so you can print them.
-
-In `main.py`, change only the adjustment in the `map` lambda from `1` to `2`. Run should show `Tuned: [5, 7, 9]` and `Strong: [7, 9]`. Leave the filter rule unchanged, then Submit. For a longer operation, a regular function or loop may be easier to read.
+`map(function, items)` applies a function to every item. `filter(function, items)` keeps an item if the function returns a true value. Both return iterators; `list(...)` collects the results for printing. Here the filter reads the **adjusted** prices, not the original ones.
 
 ## Your Task
 
-1. Change the `map` lambda to add `2` to every frequency, leaving the `filter` rule unchanged.
+1. Change the fee in the `map` lambda from $1 to $2. Leave the filter rule unchanged.
+
+Edit `main.py`, press **Run**, and check for `With delivery: [5, 7, 9]` and `Over $6: [7, 9]`. Then **Submit**. For a longer calculation, an ordinary function or loop may be easier to read.

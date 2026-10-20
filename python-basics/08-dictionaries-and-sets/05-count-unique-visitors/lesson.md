@@ -1,24 +1,22 @@
 ---
-title: 'Count Unique Atlas Stops'
+title: "Count unique attendees"
 slug: count-unique-visitors
 order: 5
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: 'Turn repeated location visits into a set of unique stops.'
-seo_title: 'Count Unique Atlas Stops | Python Basics'
-seo_description: 'Turn repeated location visits into a set of unique stops.'
-seo_keywords:
-- python sets
-- beginner sets exercise
+summary: "Use a set to remove duplicate attendee names."
+seo_title: "Count unique attendees | Python Basics"
+seo_description: "Use a set to remove duplicate attendee names."
+seo_keywords: [python basics, python collections, beginner python]
 ---
 
-A route can visit the same stop more than once. A set keeps only distinct values, so `set(visited_stops)` gives you the places visited without counting repeats.
+The event sign-in sheet can include a name more than once if someone returns. A set keeps each distinct name only once. `set(sign_ins)` converts the list to a set, and `len()` then counts people rather than sign-in entries.
 
-Sets do not have a dependable display order. If you want to display the values in order, use `sorted()`; this demo prints only their count. To create an empty set, use `set()`; `{}` creates an empty dictionary.
+Sets do not preserve a reliable display order. Use `sorted()` if you need names in order; here you only print the count. An empty set is `set()`; `{}` makes an empty dictionary.
 
-Edit `main.py` to count distinct stops. Run should print `2`, then Submit.
+The starter counts every sign-in. Edit `main.py` so `unique_attendees` is a set. **Run** should print `2` rather than `3`; then **Submit**.
 
 ## Your Task
 
-1. Set `unique` to a set built from `visited_stops`.
+1. Set `unique_attendees` to a set built from `sign_ins`.

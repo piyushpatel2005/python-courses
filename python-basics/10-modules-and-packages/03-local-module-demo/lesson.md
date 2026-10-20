@@ -1,24 +1,24 @@
 ---
-title: 'Import a Local Beacon Rule'
+title: 'Import a local shipping helper'
 slug: local-module-demo
 order: 3
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: 'Import a reusable helper from a local Python module.'
-seo_title: 'Import a Local Beacon Rule | Python Basics'
-seo_description: 'Import a reusable helper from a local Python module.'
-seo_keywords: [python basics, local module demo, python practice]
+summary: 'Call a shipping helper imported from a local module.'
+seo_title: 'Import a local shipping helper | Python Basics'
+seo_description: 'Call a shipping helper imported from a local module.'
+seo_keywords: [python local module, from import, shipping helper]
 hints:
-  - Change only the argument to the final imported-function call.
+  - Change the argument to the final imported-function call.
 ---
 
-You can import your own code too. The supplied setup writes a short file named `beacon_rules.py`, which defines `signal_strength`. The line `from beacon_rules import signal_strength` brings that function into this program, so you can call it by name.
+You can import code from your own files. The supplied setup writes a small `shipping_rules.py` file with a `shipping_cost(weight)` function. It charges five dollars per kilogram. The line `from shipping_rules import shipping_cost` brings the function into `main.py` so you can call it directly.
 
-In a local project, you would keep that `.py` file beside `main.py`. This browser example creates the temporary file for you before importing it. Leave that setup in place.
-
-Change only the final call in `main.py` from `2` to `3` marks. Run should show `15`, then Submit.
+In a local project, you would keep `shipping_rules.py` beside `main.py`. This browser exercise creates the file in its temporary Python environment before the import, because the editor only exposes `main.py`. Leave that setup in place; it is not a permanent file on your device.
 
 ## Your Task
 
-1. Change the final `signal_strength` call to use `3` marks.
+1. Change the final `shipping_cost` call from `2` to `3` kilograms.
+
+Edit `main.py`, then **Run** to see the cost change from `10` to `15`. Press **Submit** to check it.

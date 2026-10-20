@@ -1,4 +1,4 @@
-queue = []
-first_gear = None
-last_gear = None
-print(queue, first_gear, last_gear)
+shopping_list = []
+first_item = None
+last_item = None
+print(shopping_list, first_item, last_item)

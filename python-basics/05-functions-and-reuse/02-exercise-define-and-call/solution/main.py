@@ -1,4 +1,4 @@
 def announce():
-    print("Beacon restored")
+    print("Registration is open")
 
 announce()

@@ -1,28 +1,28 @@
 ---
-title: "Slice a Cavern Route: Demo"
+title: "Slice a Store Status: Demo"
 slug: slice-a-route
 order: 3
 language: python
-lesson_type: coding
 runtime: pyodide
-summary: Use a stop-exclusive slice to read a route prefix.
-seo_title: "Slice a Cavern Route: Demo | Python Basics"
-seo_description: Use a stop-exclusive slice to read a route prefix.
-seo_keywords: [python basics, strings, lantern atlas]
+lesson_type: coding
+summary: Use a stop-exclusive slice to read a status word.
+seo_title: "Slice a Store Status: Demo | Python Basics"
+seo_description: Use a stop-exclusive slice to read a status word.
+seo_keywords: [python basics, strings, python strings, slicing, stop index]
 ---
 
-# Slice a Cavern Route: Demo
+# Slice a store status
 
-One character isn't enough to read the route name in `GLOW:TRAM`. A **slice** reads a stretch of characters instead.
+A store-hours entry reads `OPEN:0900`. You want the status word without the colon or the opening time. A **slice** reads a stretch of characters.
 
-The pattern is `text[start:stop]`. Python includes the character at `start` and stops before the character at `stop`. Leaving out `start` means "begin at zero."
+The pattern is `text[start:stop]`. Python includes `start` and stops *before* `stop`. Omitting `start` begins at zero.
 
-![Characters at indexes zero through three form GLOW; the stop index four is excluded](string-slicing.svg "String slicing: start included, stop excluded")
+![The slice includes OPEN at indexes zero through three and excludes the colon at four](string-slicing.svg "Stop-exclusive slice of a store-hours entry")
 
-The starter uses `route[:2]`, so Run prints `GL`. The colon in the string is at index `4`; it doesn't belong in the route name.
+The starter uses `entry[:2]`, so Run prints `OP`. The colon is at index `4` and is not part of the status.
 
 ## Your Task
 
-1. Change the slice assigned to `district` so it reads `GLOW` from `route`.
+1. Change the slice assigned to `status` so it reads `OPEN` from `entry`.
 
-Run `main.py` to check that the colon is left out, then Submit. Unlike a single index, a slice can extend past the end of a string: Python returns the available characters rather than raising `IndexError`.
+Run `main.py` to check that the colon stays out, then Submit. Unlike a single index, a slice may extend past the string's end without raising `IndexError`.

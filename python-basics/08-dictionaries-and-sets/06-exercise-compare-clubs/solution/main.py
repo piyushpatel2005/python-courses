@@ -1,6 +1,6 @@
-ari_stops = ["Ridge", "Cove", "Ridge", "Grove"]
-scout_stops = ["Cove", "Basin"]
-ari_route = set(ari_stops)
-overlap = ari_route & set(scout_stops)
-ari_only = ari_route - set(scout_stops)
-print(sorted(ari_route), sorted(overlap), sorted(ari_only))
+morning_sign_ins = ["Maya", "Luis", "Maya", "Ava"]
+afternoon_sign_ins = ["Luis", "Nia"]
+morning_attendees = set(morning_sign_ins)
+both_sessions = morning_attendees & set(afternoon_sign_ins)
+morning_only = morning_attendees - set(afternoon_sign_ins)
+print(sorted(morning_attendees), sorted(both_sessions), sorted(morning_only))

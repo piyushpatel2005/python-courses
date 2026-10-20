@@ -1,5 +1,5 @@
-raw_notice = "  BEACON DIM  "
+raw_notice = "  SHOP CLOSED  "
 notice = None
-lit_notice = None
-is_beacon_notice = None
-print(notice, lit_notice, is_beacon_notice)
+updated_notice = None
+is_shop_notice = None
+print(notice, updated_notice, is_shop_notice)

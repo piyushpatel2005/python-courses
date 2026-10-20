@@ -1,32 +1,32 @@
 ---
-title: "Change a Gear List: Demo"
+title: "Change an order list"
 slug: change-a-playlist
 order: 3
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Replace an item in a mutable gear list.
-seo_title: "Change a Gear List: Demo | Python Basics"
-seo_description: Replace an item in a mutable gear list.
-seo_keywords: [python basics, lists and tuples, lantern atlas]
+summary: "Replace an item at a known list index."
+seo_title: "Change an order list | Python Basics"
+seo_description: "Replace an item at a known list index."
+seo_keywords: [python basics, python collections, beginner python]
 ---
 
-The loadout has a faulty lantern. A list lets you replace an item without rebuilding the whole list: `gear[0] = "Lantern"` changes the item at index zero. Strings do not allow this kind of assignment.
+A customer changed the first item in an order. Lists are mutable: you can assign a new value to one position without building a new list. For example, `order[1] = "Tea"` replaces the second item. Strings themselves do not support assignment to a character position.
 
-You can also add and remove items with list methods. Run this separate packing example and watch the list change:
+You can also grow and shrink a list. Run this separate grocery example:
 
 ```python run
-pack = ["map", "snack"]
-pack.append("water")
-print(pack)
-pack.remove("snack")
-print(pack)
+basket = ["rice", "tea"]
+basket.append("milk")
+print(basket)
+basket.remove("tea")
+print(basket)
 ```
 
-`append()` adds at the end. `remove()` removes the first matching value; `pop()` removes and returns the last item when you give it no index.
+`append()` puts one item at the end. `remove()` removes the first matching value; if it is absent, Python raises `ValueError`. `pop()` removes and returns the last item when no index is given.
 
-In `main.py`, the starter replaces the wrong item. Change the assignment to replace the first item, then Run and Submit.
+In `main.py`, the starter changes the wrong position in the order. Change its index so the first item becomes `Pasta`. Press **Run** to inspect the order, then **Submit**.
 
 ## Your Task
 
-1. Replace the first item in `gear` with `Lantern`.
+1. Replace the first item of `order` with `Pasta` using an index assignment.

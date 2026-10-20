@@ -1,6 +1,6 @@
-map_card = {"landmark": "lens", "marks": 4}
-landmark = map_card["landmark"]
-print(landmark)
-map_card["marks"] = 9
-print("Marks:", map_card["marks"])
-print("Route:", map_card.get("route", "unknown"))
+stock = {"notebooks": 12, "pens": 4}
+notebook_count = stock["notebooks"]
+print(notebook_count)
+stock["pens"] = 9
+print("Pens:", stock["pens"])
+print("Folders:", stock.get("folders", 0))

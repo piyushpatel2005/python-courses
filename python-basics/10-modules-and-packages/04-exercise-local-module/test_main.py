@@ -1,31 +1,31 @@
-from solution import prepare_seals
-import solution
-import inspect
 import ast
+import inspect
+import solution
+from solution import tax_for_order
 
 def test_module_import():
-    """The named helper comes from the local module"""
+    """Import sales_tax from the local tax_rules module."""
     tree = ast.parse(inspect.getsource(solution))
     assert any(
         isinstance(node, ast.ImportFrom)
-        and node.module == "shrine_rules"
-        and any(alias.name == "seal_count" and alias.asname is None for alias in node.names)
+        and node.module == "tax_rules"
+        and any(alias.name == "sales_tax" and alias.asname is None for alias in node.names)
         for node in tree.body
-    ), "Import seal_count from shrine_rules, not just in a comment."
-    assert callable(solution.seal_count)
+    ), "Import sales_tax from tax_rules in main.py."
+    assert callable(solution.sales_tax)
 
-def test_prepare_seals():
-    """The wrapper delegates to the reusable helper"""
-    original = solution.seal_count
+def test_tax_for_order():
+    """Delegate the calculation to sales_tax."""
+    original = solution.sales_tax
     calls = []
-    def tracked(runes):
-        calls.append(runes)
-        return original(runes)
+    def tracked(subtotal):
+        calls.append(subtotal)
+        return original(subtotal)
     try:
-        solution.seal_count = tracked
-        assert prepare_seals(9) == 3
-        assert prepare_seals(4) == 1
-        assert prepare_seals(0) == 0
-        assert calls == [9, 4, 0], "Call the imported seal_count(runes) helper."
+        solution.sales_tax = tracked
+        assert tax_for_order(40) == 4.0
+        assert tax_for_order(100) == 10.0
+        assert tax_for_order(0) == 0.0
+        assert calls == [40, 100, 0], "Call sales_tax(subtotal)."
     finally:
-        solution.seal_count = original
+        solution.sales_tax = original

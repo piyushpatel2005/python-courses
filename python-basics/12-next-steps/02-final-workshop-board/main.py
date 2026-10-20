@@ -1,30 +1,30 @@
 def parse_command(command):
-    # Split once at the colon; handle bad numbers without crashing.
+    # Split once at the colon; handle bad quantities without crashing.
     pass
 
 
-def charge_beacons(beacons, commands):
-    # Begin with zero charge for each known beacon; process commands in order.
+def book_seats(workshops, commands):
+    # Start each workshop at zero bookings; refuse requests over capacity.
     pass
 
 
-def gate_open(beacons, charges):
-    # An empty beacon dictionary cannot open the gate.
+def all_full(workshops, bookings):
+    # There must be at least one workshop, and every one must be full.
     pass
 
 
-def play_mission(beacons, commands):
-    # Build the beacon lines, then add the win or locked ending.
+def registration_report(workshops, commands):
+    # List each workshop, add combined totals, then choose a status.
     pass
 
 
-beacons = {"NORTH": 3, "SOUTH": 2}
-commands = ["north:2", "bad command", "NORTH:1", "south:2", "WEST:9"]
-report = play_mission(beacons, commands)
-if report is None:  # Supplied checkpoints work before the full game is built.
-    print("Parsed sample:", parse_command(" north:2 "))
-    print("Charged sample:", charge_beacons({"NORTH": 3}, ["north:2"]))
-    print("Gate sample:", gate_open({"NORTH": 3}, {"NORTH": 3}))
+workshops = {"POTTERY": 3, "DRAWING": 2}
+commands = ["pottery:2", "bad command", "POTTERY:1", "drawing:2", "DANCE:9"]
+report = registration_report(workshops, commands)
+if report is None:  # Checkpoints work before the full report is built.
+    print("Parsed sample:", parse_command(" pottery:2 "))
+    print("Bookings sample:", book_seats({"POTTERY": 3}, ["pottery:2"]))
+    print("Full sample:", all_full({"POTTERY": 3}, {"POTTERY": 3}))
 else:
     for line in report:
         print(line)

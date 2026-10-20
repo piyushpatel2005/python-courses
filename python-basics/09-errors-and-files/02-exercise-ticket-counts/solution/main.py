@@ -1,11 +1,11 @@
-def charge_value(text):
+def quantity_value(text):
     try:
         return int(text)
     except ValueError:
         return 0
 
-def charge_label(text):
-    return f"Charge: {charge_value(text)}"
+def quantity_label(text):
+    return f"Quantity: {quantity_value(text)}"
 
-print(charge_label("3"))
-print(charge_label("faded"))
+print(quantity_label("3"))
+print(quantity_label("unknown"))

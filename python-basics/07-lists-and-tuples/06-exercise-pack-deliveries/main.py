@@ -1,5 +1,5 @@
-checkpoints = ["Pass", "Bridge", "Beacon", "Exit"]
+orders = ["order 101", "order 102", "order 103", "order 104"]
 today = None
 labels = []
-# Loop over the first three checkpoints and append a label like "For Pass".
+# Add one packing label for each of the first three orders.
 print(today, labels)

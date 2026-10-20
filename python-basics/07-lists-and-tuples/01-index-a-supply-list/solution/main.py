@@ -1,3 +1,3 @@
-gear = ["rope", "flint", "lens"]
-last_gear = gear[-1]
-print(last_gear)
+groceries = ["rice", "milk", "apples"]
+last_item = groceries[-1]
+print(last_item)

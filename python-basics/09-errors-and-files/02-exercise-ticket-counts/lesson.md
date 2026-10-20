@@ -1,23 +1,23 @@
 ---
-title: 'Exercise: Label Beacon Charge'
+title: 'Exercise: Label a receipt quantity'
 slug: exercise-ticket-counts
 order: 2
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: 'Convert valid charge text and recover from invalid values.'
-seo_title: 'Exercise: Label Beacon Charge | Python Basics'
-seo_description: 'Convert valid charge text and recover from invalid values.'
-seo_keywords: [python try except exercise, traceback, ValueError]
+summary: 'Convert quantity text safely and make a receipt label.'
+seo_title: 'Exercise: Label a receipt quantity | Python Basics'
+seo_description: 'Convert quantity text safely and make a receipt label.'
+seo_keywords: [python try except exercise, ValueError, receipt quantity]
 ---
 
-A charge label should still be readable when its source text is blurred. First write a helper that turns text into a number, using zero for invalid text. Then let a second helper use that result in a label.
+A receipt label should show `0` rather than crash if a quantity field contains invalid text. Write a conversion helper first, then use it to build a label. For example, `quantity_label("2")` should return `"Quantity: 2"`.
 
-Catch `ValueError` specifically. A bare `except` can hide a different bug that you need to see.
-
-Edit `main.py` and Submit after each helper; the tests check them separately. Run shows the label examples once the second helper is complete.
+Use `try` and `except ValueError` around `int(text)`. Catching this specific error keeps unrelated mistakes visible. The second helper should call the first; that way both valid and invalid values follow the same rule.
 
 ## Your Tasks
 
-1. Complete `charge_value(text)` to return `int(text)` or `0` when it raises `ValueError`, using `try`/`except ValueError`.
-2. Complete `charge_label(text)` to return `"Charge: <count>"` using `charge_value(text)`.
+1. Complete `quantity_value(text)` to return `int(text)` or `0` when conversion raises `ValueError`.
+2. Complete `quantity_label(text)` to return `"Quantity: <count>"` using `quantity_value(text)`.
+
+Edit `main.py`, press **Run** to inspect the two example labels, then **Submit**. You can submit after each task; the tests check the helpers separately.

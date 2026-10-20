@@ -1,22 +1,22 @@
 ---
-title: 'Recover a Faded Beacon ReAdamng'
+title: 'Recover from a bad quantity'
 slug: traceback-and-recovery-demo
 order: 1
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: 'Catch ValueError when a shrine reAdamng is not numeric.'
-seo_title: 'Recover a Faded Beacon ReAdamng | Python Basics'
-seo_description: 'Catch ValueError when a shrine reAdamng is not numeric.'
+summary: 'Catch ValueError when a receipt quantity is not a number.'
+seo_title: 'Recover from a bad quantity | Python Basics'
+seo_description: 'Catch ValueError when a receipt quantity is not a number.'
 seo_keywords: [python traceback, ValueError, try except]
 ---
 
-Some charge reAdamngs at the Save Shrine have faded. `int("4")` returns a number, but `int("faded")` raises `ValueError`. If nothing catches that error, Python stops and prints a traceback showing where it happened.
+A receipt has a quantity stored as text. `int("4")` gives the number `4`, but `int("unknown")` raises a `ValueError`. Without a handler, Python stops and shows a traceback pointing to the failed conversion.
 
-The starter catches this specific error. Python tries the conversion inside `try`. If conversion fails, it skips to `except ValueError` and returns the fallback. A valid reAdamng never enters that `except` block.
-
-Edit only the fallback in `main.py`. Run should print `4` for the valid reAdamng and `-1` for the faded one. Submit to check both paths.
+The starter already uses `try` for the conversion and `except ValueError` for the fallback. A valid quantity returns from `try`; only invalid integer text reaches `except`. Change the fallback to `-1` to mark a quantity that needs correction. Keep the conversion intact.
 
 ## Your Task
 
-1. Change only the `ValueError` fallback to `-1`; numeric text must still convert.
+1. Change the `ValueError` fallback in `safe_quantity(text)` to `-1`.
+
+Edit `main.py` and press **Run**. You should see `Quantity: 4` and `Needs review: -1`. Then press **Submit**.

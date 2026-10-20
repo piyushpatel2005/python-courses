@@ -1,26 +1,24 @@
 ---
-title: 'Read an Atlas Map Card'
+title: "Read a stock record"
 slug: read-a-stock-card
 order: 1
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: 'Read keyed landmarks and update marks in an atlas dictionary.'
-seo_title: 'Read an Atlas Map Card | Python Basics'
-seo_description: 'Read keyed landmarks and update marks in an atlas dictionary.'
-seo_keywords:
-- python dictionary-fields
-- beginner dictionary-fields exercise
+summary: "Look up and update quantities by dictionary key."
+seo_title: "Read a stock record | Python Basics"
+seo_description: "Look up and update quantities by dictionary key."
+seo_keywords: [python basics, python collections, beginner python]
 ---
 
-In the Map Archive, a dictionary gives each field a name. You can look up a landmark without remembering which position holds it.
+A shop records quantities by product name. In a dictionary, each key points to a value: `"notebooks"` points to `12` notebooks in stock. You read `stock["notebooks"]` without needing to know the order of the entries. Assigning to `stock["pens"]` changes that product's count.
 
-`map_card["landmark"]` reads a value by its key. An assignment to `map_card["marks"]` updates that field. If a key is missing, bracket lookup raises `KeyError`; `map_card.get("route", "unknown")` returns the fallback instead.
+A bracket lookup for a missing key raises `KeyError`. Use `stock.get("folders", 0)` to return zero if folders have no entry. This does not add folders to the dictionary.
 
-![Map card key-to-value lookup and missing-key fallback](dictionary-lookup.svg)
+![Stock dictionary with notebooks mapped to 12 and pens mapped to 4; get returns zero for a missing product](dictionary-lookup.svg)
 
-Edit `main.py` so the first line reads the landmark. Run should print `lens` instead of `4`; the supplied later lines still show `Marks: 9` and `Route: unknown`. Then Submit.
+The starter reads the pen count instead of the notebook count. Edit `main.py` to read notebooks. **Run** should print `12`, then `Pens: 9` and `Folders: 0`. **Submit** to check your lookup.
 
 ## Your Task
 
-1. Read `map_card["landmark"]` into `landmark`.
+1. Read `stock["notebooks"]` into `notebook_count`.

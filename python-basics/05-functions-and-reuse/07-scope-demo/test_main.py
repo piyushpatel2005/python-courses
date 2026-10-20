@@ -1,6 +1,6 @@
-from solution import preview_pulse, energy
+from solution import preview_chairs, chairs
 
-def test_local_energy():
-    """Only the local energy changes"""
-    assert preview_pulse() == 15
-    assert energy == 20
+def test_local_chairs():
+    """Only the local chair count changes."""
+    assert preview_chairs() == 15
+    assert chairs == 20

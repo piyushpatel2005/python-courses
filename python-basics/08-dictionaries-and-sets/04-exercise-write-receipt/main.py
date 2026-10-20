@@ -1,8 +1,8 @@
-caches = {"ridge": 3, "cove": 5}
+stock_counts = {"notebooks": 3, "pens": 5}
 lines = []
-for landmark, marks in caches.items():
-    pass  # Append a line like "ridge: 3 marks".
-total_marks = 0
-for marks in caches.values():
-    pass  # Add each count to total_marks.
-print(lines, total_marks)
+for product, count in stock_counts.items():
+    pass  # Add one line for this product.
+total_units = 0
+for count in stock_counts.values():
+    pass  # Add this count to the total.
+print(lines, total_units)

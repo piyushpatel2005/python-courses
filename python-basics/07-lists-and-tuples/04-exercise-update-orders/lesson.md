@@ -1,22 +1,22 @@
 ---
-title: "Exercise: Repair the Loadout"
+title: "Exercise: Update an order"
 slug: exercise-update-orders
 order: 4
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Replace, append, and remove items in Adam’s mutable loadout.
-seo_title: "Exercise: Repair the Loadout | Python Basics"
-seo_description: Replace, append, and remove items in Adam’s mutable loadout.
-seo_keywords: [python basics, lists and tuples, lantern atlas]
+summary: "Correct, add, and remove items in an order list."
+seo_title: "Exercise: Update an order | Python Basics"
+seo_description: "Correct, add, and remove items in an order list."
+seo_keywords: [python basics, python collections, beginner python]
 ---
 
-This loadout has a typo, a missing lens, and a spent shard. Make each repair on the supplied `gear` list rather than replacing the list with a finished answer.
+An order needs three small corrections: the drink is wrong, a cookie is missing, and one cancelled item remains. Keep the supplied list and change it in place. Use index assignment for the drink, `append()` for the cookie, and `remove()` for the cancelled item.
 
-Use indexing for the typo, `append()` for the new item, and `remove()` for the spent one. Edit `main.py`; Run after each change to see its effect, then Submit.
+Edit `main.py`. Press **Run** after each edit to see how the order changes, then **Submit** to check each task.
 
 ## Your Tasks
 
-1. Replace `torhc` at index 1 with `torch`.
-2. Append `lens` to `gear`.
-3. Remove `spent shard` from `gear` by value.
+1. Replace `soda` at index `1` with `water`.
+2. Append `cookie` to `order`.
+3. Remove `cancelled item` from `order` by value.

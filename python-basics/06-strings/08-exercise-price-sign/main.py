@@ -1,7 +1,7 @@
-route = "ECHO"
-beacons = 3
-energy_cost = 4.25
-heAdamng = None
-energy_line = None
-print(heAdamng)
-print(energy_line)
+item = "Pens"
+quantity = 3
+unit_price = 4.25
+heading = None
+price_line = None
+print(heading)
+print(price_line)

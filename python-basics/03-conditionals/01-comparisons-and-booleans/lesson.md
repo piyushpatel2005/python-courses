@@ -4,15 +4,17 @@ slug: comparisons-and-booleans
 order: 1
 language: python
 lesson_type: coding
-summary: "Use comparison operators to check workshop supplies and read boolean results."
+summary: "Compare paint-tube counts and read True or False results."
 seo_title: "Python Comparison Operators | Python Basics"
-seo_description: "Compare numbers and text with ==, !=, <, >, <=, and >= to get True or False."
+seo_description: "Use ==, !=, <, >, <=, and >= to compare values and produce booleans."
 seo_keywords: [python comparisons, comparison operators, python booleans]
 ---
 
-At the Golden Gate, a decision starts with a question: are there enough supplies? A comparison gives a boolean result, either `True` or `False`. You have used `=` to assign a value to a name. To ask whether two values are equal, use `==` instead.
+A community art workshop needs at least five tubes of paint. A comparison lets its organizer check the supply count. The result is a boolean: `True` or `False`. A single `=` is used to assign a value whereas `==` is used to verify if two values are equal.
 
-## Comparison operators
+## Comparison Operators
+
+What good is a programming language if it cannot compare two numbers? So, that's why Python provides comparison operators.
 
 | Operator | Meaning | Example |
 | --- | --- | --- |
@@ -23,7 +25,7 @@ At the Golden Gate, a decision starts with a question: are there enough supplies
 | `>=` | greater than or equal to | `4 >= 4` is `True` |
 | `<=` | less than or equal to | `4 <= 4` is `True` |
 
-Press **Run** to compare numbers and text:
+Try these comparisons with **Run**:
 
 ```python run
 print(4 < 2)
@@ -32,10 +34,10 @@ print("hi" == "Hello")
 print("Hi" != "hi")
 ```
 
-The results are `False`, `True`, `False`, and `True`. Text comparisons are case-sensitive: `"Hi"` and `"hi"` differ. The editable `main.py` asks two questions about paint tubes: is the supply at least five, and is it exactly five? With six tubes, the answers are `True` and `False`.
+They print `False`, `True`, `False`, `True`. Text is case-sensitive, so `"Hi"` differs from `"hi"`. In the code editor, six paint tubes make `paint_tubes >= 5` true and `paint_tubes == 5` false.
 
 ## Your Tasks
 
-1. Change `paint_tubes` to `4` while keeping both comparisons. The two answers should now be `False` and `False`.
+1. Change `paint_tubes` to `4` without removing either comparison. Both lines should now print `False`.
 
-Edit `main.py`, press **Run** to see both answers, then **Submit**. The next exercise lets you write comparisons yourself. Logical operators, which combine boolean results, have their own lesson after that.
+Edit `main.py`, press **Run** to see the results, then **Submit**. You'll write your own comparisons next.

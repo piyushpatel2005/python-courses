@@ -1,72 +1,48 @@
 ---
-title: Choose a Gate Signal
+title: "Exercise: Report Available Seats"
 slug: exercise-compare-and-branch
 order: 6
 language: python
 lesson_type: coding
-summary: Build three small branches to choose a gate signal from its remaining charge.
-seo_title: Python if, elif, else Exercise | Python Basics
-seo_description: Practice one conditional branch at a time while Adam checks a beacon gate.
-seo_keywords: [python if else, python elif, python conditions]
+summary: "Write three branches for available seats at an event."
+seo_title: "Python if, elif, else Exercise | Python Basics"
+seo_description: "Practice ordered branches with an event's remaining seat count."
+seo_keywords: [python if else, python elif, event seats]
 hints:
-  - Keep gate_signal = "Not set" above your branches so unfinished cases still run.
-  - Align if, elif, and else. End each branch heAdamng with a colon and indent its assignment by four spaces.
-  - Check zero first. Zero is also less than four, but Python runs only the first matching branch.
+  - Keep seat_message = "Not set" above the branches so unfinished cases can still run.
+  - Align if, elif, and else; end each heading with a colon and indent the assignment.
+  - Check zero before fewer than four, because zero also meets the second comparison.
 ---
 
-A gate uses its remaining charge to choose a signal: **Sealed**, **Flickering**, or **Open**. You will add each branch separately so you can check one case before writing the next.
+An event organizer wants a short message about remaining seats: `Sold out` at zero, `Few seats left` for one to three, or `Seats available` for four or more. The input `seats_left` counts seats, not people already signed up.
 
-You have used comparisons to get `True` or `False`. An `if` statement uses that result to choose what happens next.
-
-## See how a choice works
-
-This lantern uses a different set of values. Predict its message, then press **Run** below.
+Here's a separate example about parking spaces. Press **Run** to see the message:
 
 ```python run
-wicks = 2
-if wicks == 0:
-    message = "Dark"
-elif wicks < 3:
-    message = "Dim"
+parking_spots = 2
+if parking_spots == 0:
+    message = "Full"
+elif parking_spots < 3:
+    message = "Almost full"
 else:
-    message = "Bright"
+    message = "Spaces available"
 print(message)
 ```
 
-The result is `Dim`. Follow the checks from top to bottom:
+It prints `Almost full`. Python skips the first branch because two is not zero, takes the second, and skips `else`. Put a colon after each heading and indent the matching assignment. Keep `if`, `elif`, and `else` aligned.
 
-- `if wicks == 0`: false, so Python skips `"Dark"`.
-- `elif wicks < 3`: true, so Python chooses `"Dim"`.
-- `else`: skipped because a previous branch already matched.
-
-Only one branch runs. Once Python finds a true condition, it skips the remaining branches in that chain.
-
-Put a colon at the end of each branch heAdamng. Indent its assignment by four spaces. Keep `if`, `elif`, and `else` aligned; `else` has no condition.
-
-## Set up your gate
-
-In **main.py**, the charge is already set to `2`. The `"Not set"` value is a temporary message for cases you have not written yet. Keep that assignment, add your branches below it, and leave `print(gate_signal)` at the end with no indentation.
-
-Build one branch at a time. Press **Submit** after each task: its matching check can pass even while later branches are unfinished.
+In `main.py`, the starting seat count is `2`. Keep the temporary `"Not set"` message so unwritten cases still run, and put your branches before the unindented print call. **Submit** after each task to check your progress.
 
 ## Your Tasks
 
-1. Add an `if charge_left == 0:` branch that sets `gate_signal` to `"Sealed"`.
-2. Add an `elif charge_left < 4:` branch that sets `gate_signal` to `"Flickering"`.
-3. Add an `else:` branch that sets `gate_signal` to `"Open"`.
+1. Add `if seats_left == 0:` and set `seat_message` to `"Sold out"`.
+2. Add `elif seats_left < 4:` and set `seat_message` to `"Few seats left"`.
+3. Add `else:` and set `seat_message` to `"Seats available"`.
 
-## Try each route
-
-Change only the supplied `charge_left` value and press **Run**:
-
-| After completing | Try this charge | You should see |
+| After completing | Try `seats_left` | Expected message |
 | --- | --- | --- |
-| Task 1 | `0` | `Sealed` |
-| Task 2 | `2` | `Flickering` |
-| Task 3 | `4` | `Open` |
+| Task 1 | `0` | `Sold out` |
+| Task 2 | `2` | `Few seats left` |
+| Task 3 | `4` | `Seats available` |
 
-While a branch is unfinished, seeing `Not set` for its charge is expected. Restore `charge_left` to `2` when you finish, then **Submit** to check all three routes.
-
-Notice the boundary: `3` is still `Flickering`, but `4` is `Open`. Zero must be checked first because it also satisfies `< 4`.
-
-The gate now has a message for each charge range. Next, put these decisions together in a FizzBuzz project before learning to write loops in the following section.
+Change only `seats_left` to try each case with **Run**. Restore it to `2` before the final **Submit**. Three seats still gives the middle message; four gives the last. Next is FizzBuzz, a short project that practices branch order.

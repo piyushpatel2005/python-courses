@@ -1,6 +1,7 @@
-from solution import pulse_steps, sample
+from solution import days_left, sample
 
-def test_sample_pulses():
-    """The tower pulses down to zero"""
+
+def test_sample_countdown():
+    """The opening-day countdown stops at zero."""
     assert sample == [3, 2, 1, 0]
-    assert pulse_steps(0) == [0]
+    assert days_left(0) == [0]

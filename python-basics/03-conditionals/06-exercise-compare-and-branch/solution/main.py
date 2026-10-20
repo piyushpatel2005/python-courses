@@ -1,10 +1,10 @@
-charge_left = 2
-gate_signal = "Not set"
+seats_left = 2
+seat_message = "Not set"
 
-if charge_left == 0:
-    gate_signal = "Sealed"
-elif charge_left < 4:
-    gate_signal = "Flickering"
+if seats_left == 0:
+    seat_message = "Sold out"
+elif seats_left < 4:
+    seat_message = "Few seats left"
 else:
-    gate_signal = "Open"
-print(gate_signal)
+    seat_message = "Seats available"
+print(seat_message)

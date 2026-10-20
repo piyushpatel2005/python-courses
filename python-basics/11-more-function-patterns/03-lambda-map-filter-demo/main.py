@@ -1,5 +1,5 @@
-frequencies = [3, 5, 7]
-tuned = list(map(lambda frequency: frequency + 1, frequencies))  # Change 1 to 2.
-strong = list(filter(lambda frequency: frequency > 6, tuned))
-print("Tuned:", tuned)
-print("Strong:", strong)
+prices = [3, 5, 7]
+with_delivery = list(map(lambda price: price + 1, prices))  # Change the fee to 2.
+over_six = list(filter(lambda price: price > 6, with_delivery))
+print("With delivery:", with_delivery)
+print("Over $6:", over_six)

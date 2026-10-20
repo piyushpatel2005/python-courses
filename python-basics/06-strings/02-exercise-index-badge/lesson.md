@@ -1,25 +1,25 @@
 ---
-title: "Exercise: Read Rune Edges"
+title: "Exercise: Read a Desk Label"
 slug: exercise-index-badge
 order: 2
 language: python
-lesson_type: coding
 runtime: pyodide
-summary: Use string indexes to inspect both ends of a route rune.
-seo_title: "Exercise: Read Rune Edges | Python Basics"
-seo_description: Use string indexes to inspect both ends of a route rune.
-seo_keywords: [python basics, strings, lantern atlas]
+lesson_type: coding
+summary: Use indexes to read both ends of a desk label.
+seo_title: "Exercise: Read a Desk Label | Python Basics"
+seo_description: Use indexes to read both ends of a desk label.
+seo_keywords: [python basics, strings, python strings, first character, last character]
 ---
 
-# Exercise: Read Rune Edges
+# Exercise: read a desk label
 
-The next sign reads `EMBER-7`. Extract its first and last characters without changing the supplied `badge` string.
+The label `DESK-7` starts with the item name and ends with its desk number. Read its first and last characters without changing the supplied `label`.
 
-Use square brackets to read from `badge`, rather than assigning the letters directly. That way, the same code can read a different sign later.
+Use indexes rather than writing `D` and `7` directly. Then the same code works when the label changes.
 
 ## Your Tasks
 
-1. Set `first_mark` to the first character of `badge` using an index.
-2. Set `last_mark` to the last character of `badge` using an index.
+1. Set `first_char` to the first character of `label` using an index.
+2. Set `last_char` to the last character of `label` using an index.
 
-Edit `main.py`. After the first task, Run shows `E None`; `None` is the placeholder for the unfinished value. After both tasks, it should show `E 7`. Submit to check each result.
+Edit `main.py`. After the first task, Run shows `D None`; `None` is the unfinished value. After both tasks, it shows `D 7`. Submit to check each result.

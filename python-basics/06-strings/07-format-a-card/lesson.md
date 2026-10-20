@@ -1,28 +1,28 @@
 ---
-title: "Format a Route Card: Demo"
+title: "Format a Price Tag: Demo"
 slug: format-a-card
 order: 7
 language: python
-lesson_type: coding
 runtime: pyodide
-summary: Format a decoded route card with an f-string.
-seo_title: "Format a Route Card: Demo | Python Basics"
-seo_description: Format a decoded route card with an f-string.
-seo_keywords: [python basics, strings, lantern atlas]
+lesson_type: coding
+summary: Use an f-string to display a price with two decimal places.
+seo_title: "Format a Price Tag: Demo | Python Basics"
+seo_description: Use an f-string to display a price with two decimal places.
+seo_keywords: [python basics, strings, python f-strings, decimal formatting, prices]
 ---
 
-# Format a Route Card: Demo
+# Format a price tag
 
-The route card already contains a name and an energy amount. Give the amount a consistent format so `7.5` appears as `7.50`.
+A price tag has a product name and a dollar amount. Display `7.5` as `$7.50` so the amount reads like a price.
 
-An **f-string** has an `f` before its opening quote. Expressions inside braces supply the values: `{name}` inserts the name, and `{energy:.2f}` displays the energy with two digits after the decimal point.
+An **f-string** starts with `f` before the quote. Braces insert values: `{name}` inserts the product name, and `{price:.2f}` displays the price with two digits after the decimal point.
 
-![An f-string inserts the route name and formats energy with two decimal places](f-string-anatomy.svg "f-string prefix, expression and two-decimal specifier")
+![An f-string inserts a product name and formats its price to two decimal places](f-string-anatomy.svg "f-string prefix, expression and price format")
 
-The formatting changes the text on the card, not the number stored in `energy`.
+The formatting changes the displayed text, not the number stored in `price`.
 
 ## Your Task
 
-1. Update the f-string assigned to `card` so it displays `energy` to two decimal places.
+1. Update the f-string assigned to `card` so it displays `price` to two decimal places.
 
-Keep the name and the word `energy` in the card. Run `main.py` to see `GLOW: 7.50 energy`, then Submit.
+Keep the name and the dollar sign. Run `main.py` to see `Notebook: $7.50`, then Submit.

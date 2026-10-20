@@ -1,4 +1,4 @@
-ticket = "ARC:2048"
-route_name = None
-number = None
-print(route_name, number)
+record = "BOX:2048"
+category = None
+item_code = None
+print(category, item_code)

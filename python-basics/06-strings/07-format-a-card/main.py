@@ -1,4 +1,4 @@
-name = "GLOW"
-energy = 7.5
-card = f"{name}: {energy} energy"
+name = "Notebook"
+price = 7.5
+card = f"{name}: ${price}"
 print(card)

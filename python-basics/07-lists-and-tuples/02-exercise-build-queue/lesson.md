@@ -1,22 +1,22 @@
 ---
-title: "Exercise: Build a Gear Queue"
+title: "Exercise: Build a shopping list"
 slug: exercise-build-queue
 order: 2
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Build a gear list and read its first and last items.
-seo_title: "Exercise: Build a Gear Queue | Python Basics"
-seo_description: Build a gear list and read its first and last items.
-seo_keywords: [python basics, lists and tuples, lantern atlas]
+summary: "Create an ordered grocery list and read its two ends."
+seo_title: "Exercise: Build a shopping list | Python Basics"
+seo_description: "Create an ordered grocery list and read its two ends."
+seo_keywords: [python basics, python collections, beginner python]
 ---
 
-Build a fresh gear list for the ridge crossing. This time, you'll create the list yourself and read an item from each end. Put quotes around each gear name: these are strings.
+Now make your own shopping list. Put each item in quotes because these items are strings. A comma separates one item from the next: `["tea", "lemons"]`. You can use `[0]` for the first item and `[-1]` for the last without having to count the list length.
 
-Work in `main.py`. Run after each task to inspect the supplied printout, then Submit to check your progress.
+Edit `main.py`, press **Run** to see the list and the two selected items, then **Submit**. The list and both lookups are separate tasks.
 
 ## Your Tasks
 
-1. Set `queue` to a list containing `rope`, `torch`, `compass` in that order.
-2. Set `first_gear` to the first item of `queue`.
-3. Set `last_gear` to the last item of `queue`.
+1. Set `shopping_list` to a list containing `bread`, `eggs`, and `oranges`, in that order.
+2. Set `first_item` by indexing the first item of `shopping_list`.
+3. Set `last_item` by indexing the last item of `shopping_list`.

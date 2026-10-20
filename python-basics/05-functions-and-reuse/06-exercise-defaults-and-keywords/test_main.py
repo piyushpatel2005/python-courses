@@ -1,4 +1,4 @@
-from solution import ability_label
+from solution import event_label
 import ast
 import inspect
 import io
@@ -9,11 +9,11 @@ import solution
 def test_default_label():
     """An omitted mark uses a period"""
     try:
-        default = ability_label("Flare")
+        default = event_label("Fair")
     except TypeError:
         raise AssertionError('Give mark the default value "." in the function definition.') from None
-    assert default == "Flare.", "Return name + mark so the default period appears."
-    assert ability_label("Pulse", "?") == "Pulse?", "Use the supplied mark rather than a fixed ending."
+    assert default == "Fair.", "Return name + mark so the default period appears."
+    assert event_label("Market day", "?") == "Market day?", "Use the supplied mark rather than a fixed ending."
 
 
 def test_keyword_call():
@@ -28,7 +28,7 @@ def test_keyword_call():
     assert len(prints) >= 2, "Keep both supplied print calls."
     assert any(
         isinstance(call, ast.Call) and isinstance(call.func, ast.Name)
-        and call.func.id == "ability_label"
+        and call.func.id == "event_label"
         and any(keyword.arg == "mark" and isinstance(keyword.value, ast.Constant)
                 and keyword.value.value == "!" for keyword in call.keywords)
         for call in prints[1].args
@@ -37,4 +37,4 @@ def test_keyword_call():
     with redirect_stdout(output):
         exec(compile(source, "solution.py", "exec"), {})
     lines = output.getvalue().strip().splitlines()
-    assert len(lines) >= 2 and lines[1] == "Pulse!", "The second call should print Pulse!."
+    assert len(lines) >= 2 and lines[1] == "Market day!", "The second call should print Market day!."

@@ -1,8 +1,8 @@
-energy = 20
+sheets = 40
 
-def pulse_energy():
-    energy = 15
-    return energy
+def preview_sheets():
+    sheets = 30
+    return sheets
 
-print(pulse_energy())
-print(energy)
+print(preview_sheets())
+print(sheets)

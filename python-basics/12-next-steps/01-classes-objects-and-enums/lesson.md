@@ -1,20 +1,18 @@
 ---
-title: "Exit Gate: ReAdamng Object Vocabulary"
+title: "Classes, objects, and enums: a first look"
 slug: classes-objects-and-enums
 order: 1
 language: python
 lesson_type: informational
 runtime: pyodide
-summary: Recognize classes, objects, attributes, methods, and enums without implementing them.
-seo_title: "Exit Gate: ReAdamng Object Vocabulary | Python Basics"
-seo_description: Recognize classes, objects, attributes, methods, and enums without implementing them.
-seo_keywords: [python class object vocabulary, attribute, enum]
+summary: Recognize classes, objects, attributes, methods, and enums in Python code.
+seo_title: "Python Class, Object, and Enum Vocabulary | Python Basics"
+seo_description: Learn what Python classes, objects, attributes, methods, and enum choices mean before studying them in depth.
+seo_keywords: [python class, object, attribute, method, enum]
 ---
 
-The maintenance notes at the Exit Gate mention classes and objects. You only need to recognize these words here. The next mission does not ask you to write a class.
+You have used objects throughout this course, even though you have not written a class. A class describes a kind of value; an object is one particular value of that kind. For instance, `"pottery"` is a string object. Its `.upper()` method returns `"POTTERY"`.
 
-A class describes a kind of value. An object is an individual value of that kind. An attribute is data attached to an object, and a method is a function you call on it.
+An attribute is data attached to an object. In a program that defines a `Workshop` class, `workshop.name` could read one workshop object's name, while `workshop.remaining_seats()` could call a method to calculate its open seats. That class is only an illustration; you do not need to implement it in the final project. You can keep the workshop capacities in a dictionary instead.
 
-You've already used methods: `"north".upper()` calls a string method and returns `"NORTH"`. In another program, `beacon.name` might read an attribute. Our final mission will keep beacon information in a dictionary instead.
-
-An enum gives names to a fixed set of choices, such as `DIM` and `LIT`. Python uses class syntax to define custom enums, but that can wait for a later course. For now, bring the functions, strings, conditions, loops, and collections you've practised to the Exit Gate.
+An enum names a fixed set of choices, such as `OPEN` and `FULL` for registration status. Python uses class syntax to define custom enums. For now, it is enough to recognize the term; the next lesson uses ordinary strings for status messages.

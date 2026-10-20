@@ -1,4 +1,4 @@
-def combine_energy(shard, reserve):
-    return shard + reserve
+def total_pages(read, added):
+    return read + added
 
-print(combine_energy(8, 3))
+print(total_pages(8, 3))

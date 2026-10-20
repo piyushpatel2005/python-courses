@@ -1,8 +1,8 @@
-caches = {"ridge": 3, "cove": 5}
+stock_counts = {"notebooks": 3, "pens": 5}
 lines = []
-for landmark, marks in caches.items():
-    lines.append(f"{landmark}: {marks} marks")
-total_marks = 0
-for marks in caches.values():
-    total_marks += marks
-print(lines, total_marks)
+for product, count in stock_counts.items():
+    lines.append(f"{product}: {count} in stock")
+total_units = 0
+for count in stock_counts.values():
+    total_units += count
+print(lines, total_units)

@@ -1,40 +1,40 @@
 ---
-title: "Clean a Rune Message: Demo"
+title: "Clean a Meeting Message: Demo"
 slug: clean-a-message
 order: 5
 language: python
-lesson_type: coding
 runtime: pyodide
-summary: Normalize a rune message with strip and lower.
-seo_title: "Clean a Rune Message: Demo | Python Basics"
-seo_description: Normalize a rune message with strip and lower.
-seo_keywords: [python basics, strings, lantern atlas]
+lesson_type: coding
+summary: Remove surrounding whitespace and lowercase a meeting update.
+seo_title: "Clean a Meeting Message: Demo | Python Basics"
+seo_description: Remove surrounding whitespace and lowercase a meeting update.
+seo_keywords: [python basics, strings, strip, lower, text messages]
 ---
 
-# Clean a Rune Message: Demo
+# Clean a meeting message
 
-A message can contain the right words but still be awkward to compare: `"  Beacon Dim  "` has extra spaces and mixed capitalization.
+A meeting update arrives as `"  Meeting Delayed  "`. Those surrounding spaces and capital letters make a direct text comparison unreliable.
 
-A string **method** is an operation called after the string, using a dot. Here are two that help:
+A string **method** is called with a dot after a string:
 
-- `strip()` removes whitespace from the beginning and end.
-- `lower()` turns uppercase letters into lowercase letters.
+- `strip()` removes whitespace at the beginning and end.
+- `lower()` converts uppercase letters to lowercase.
 
-You can chain them. In `message.strip().lower()`, Python strips the spaces first, then lowercases that result. It doesn't change the original `message`.
+You can chain them: `message.strip().lower()` strips first, then lowercases the result. The original `message` stays unchanged.
 
 ## Your Task
 
-1. Set `cleaned` to `message` with its surrounding whitespace removed and its letters lowercased.
+1. Set `cleaned` to `message` without surrounding whitespace and with lowercase letters.
 
-In `main.py`, the `.strip()` call is already supplied. Add the remaining method, Run to see `beacon dim`, then Submit.
+The `.strip()` call is supplied in `main.py`. Add the remaining method, Run to see `meeting delayed`, then Submit.
 
-Two more methods will help with the next notice. `replace(old, new)` returns a string with matching text replaced; `startswith(prefix)` returns `True` or `False`.
+Two more methods help with the next notice. `replace(old, new)` returns a copy with matching text replaced; `startswith(prefix)` reports `True` or `False`.
 
 ```python run
-status = "gate closed"
+status = "door closed"
 print(status.replace("closed", "open"))
-print(status.startswith("gate"))
+print(status.startswith("door"))
 print(status)
 ```
 
-Run this example to see `gate open`, `True`, and the unchanged `gate closed`. Replacing text creates a new string; it doesn't rewrite `status`.
+Run this separate example to see `door open`, `True`, then the unchanged `door closed`.

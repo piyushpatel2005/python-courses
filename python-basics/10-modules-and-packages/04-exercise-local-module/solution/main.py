@@ -1,9 +1,9 @@
-with open("shrine_rules.py", "w") as module_file:
-    module_file.write("def seal_count(runes):\n    return (runes + 3) // 4\n")
+with open("tax_rules.py", "w", encoding="utf-8") as module_file:
+    module_file.write("def sales_tax(subtotal):\n    return subtotal * 0.10\n")
 
-from shrine_rules import seal_count
+from tax_rules import sales_tax
 
-def prepare_seals(runes):
-    return seal_count(runes)
+def tax_for_order(subtotal):
+    return sales_tax(subtotal)
 
-print(prepare_seals(9))
+print(tax_for_order(40))

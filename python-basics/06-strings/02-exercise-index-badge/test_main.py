@@ -9,7 +9,7 @@ import solution
 def _variant():
     with open(solution.__file__, encoding="utf-8") as source_file:
         tree = ast.parse(source_file.read())
-    replacements = {'badge': 'GLOW-9'}
+    replacements = {'label': 'TABLE-9'}
     for node in tree.body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
             name = node.targets[0].id
@@ -35,15 +35,15 @@ def _uses(technique):
     return False
 
 def test_01():
-    """Set first_mark to the first character of badge."""
-    assert first_mark == "E", "Set first_mark to the first character of badge."
+    """Set first_char to the first character of label."""
+    assert first_char == "D", "Set first_char to the first character of label."
     assert _uses('Subscript'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('first_mark == "G"', varied), "Check this task with a different input too."
+    assert eval('first_char == "T"', varied), "Check this task with a different input too."
 
 def test_02():
-    """Set last_mark to the last character of badge."""
-    assert last_mark == "7", "Set last_mark to the last character of badge."
+    """Set last_char to the last character of label."""
+    assert last_char == "7", "Set last_char to the last character of label."
     assert _uses('Subscript'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('last_mark == "9"', varied), "Check this task with a different input too."
+    assert eval('last_char == "9"', varied), "Check this task with a different input too."

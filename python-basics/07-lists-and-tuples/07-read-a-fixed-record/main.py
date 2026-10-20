@@ -1,5 +1,5 @@
-checkpoint_record = ("Blue Beacon", "09:00")
-marker = checkpoint_record[1]
-print(marker)
-marker_name, signal_time = checkpoint_record
-print("Checkpoint:", marker_name, signal_time)
+sign_in = ("Maya", "09:00")
+attendee = sign_in[1]
+print(attendee)
+name, arrival_time = sign_in
+print("Sign-in:", name, arrival_time)

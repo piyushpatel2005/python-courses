@@ -1,4 +1,4 @@
-badge = "EMBER-7"
-first_mark = None
-last_mark = None
-print(first_mark, last_mark)
+label = "DESK-7"
+first_char = None
+last_char = None
+print(first_char, last_char)

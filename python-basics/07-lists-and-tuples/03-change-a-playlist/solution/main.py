@@ -1,3 +1,3 @@
-gear = ["Old lantern", "Spare rope"]
-gear[0] = "Lantern"
-print(gear)
+order = ["Soup", "Salad"]
+order[0] = "Pasta"
+print(order)

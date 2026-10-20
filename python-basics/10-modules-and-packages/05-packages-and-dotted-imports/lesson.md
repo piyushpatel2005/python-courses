@@ -1,24 +1,24 @@
 ---
-title: 'Follow a Dotted Package Import'
+title: 'Read a tag with a package import'
 slug: packages-and-dotted-imports
 order: 5
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: 'Use ElementTree from a standard-library package.'
-seo_title: 'Follow a Dotted Package Import | Python Basics'
-seo_description: 'Use ElementTree from a standard-library package.'
-seo_keywords: [python basics, packages and dotted imports, python practice]
+summary: 'Read the outer XML tag using a standard-library package.'
+seo_title: 'Read a tag with a package import | Python Basics'
+seo_description: 'Read the outer XML tag using a standard-library package.'
+seo_keywords: [python package, dotted import, ElementTree]
 hints:
-  - Keep the import; replace the tag inside the quoted string.
+  - Keep the import; change the tag in the final quoted string.
 ---
 
-A package organizes related modules. The dotted name `xml.etree.ElementTree` follows that organization to a module in Python's standard library. The starter imports it `as ET`: `ET` is just a shorter name for the same module.
+A package groups related Python modules. The dotted name `xml.etree.ElementTree` identifies the `ElementTree` module inside the standard-library `xml` package. The import uses `as ET` to give the module a shorter name in this file.
 
-This module reads XML, a text format with tags such as `<trail />`. `ET.fromstring(xml_text)` reads the text into an object. Its `.tag` attribute gives the name of the outermost tag, such as `trail`. You do not need to install anything for this example.
-
-In `main.py`, change the final call's text from `<trail />` to `<beacon />`. Run should print `beacon`, then Submit.
+XML is text marked with tags. For example, `<order />` is an empty element whose tag name is `order`. `ET.fromstring(xml_text)` parses that text, and `.tag` reads the outer element's name. This standard-library module is already available; no extra installation is needed.
 
 ## Your Task
 
-1. Change the tag in the final `tag_name` call to `<beacon />`.
+1. Change the text in the final `tag_name` call from `<draft />` to `<order />`.
+
+Edit `main.py`, **Run** to see `order`, then **Submit**.

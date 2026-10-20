@@ -1,8 +1,8 @@
-energy = 20
+sheets = 40
 
-def pulse_energy():
-    # Create a local energy and return it.
+def preview_sheets():
+    # Create a local sheet count and return it.
     pass
 
-print(pulse_energy())
-print(energy)
+print(preview_sheets())
+print(sheets)

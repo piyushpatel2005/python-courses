@@ -1,6 +1,7 @@
-def signal_total(signals):
-    if not signals:
+def delivery_total(daily_deliveries):
+    if not daily_deliveries:
         return 0
-    return signals[0] + signal_total(signals[1:])
+    return daily_deliveries[0] + delivery_total(daily_deliveries[1:])
 
-print("Beacon signal:", signal_total([2, 3, 1]))
+
+print("Boxes delivered:", delivery_total([2, 3, 1]))

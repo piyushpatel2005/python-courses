@@ -1,15 +1,93 @@
 from solution import *
-
 import ast
 import contextlib
 import io
 import solution
 
-# Replace only the supplied top-level fixtures; never replace learner logic.
+
+def _tree():
+    with open(solution.__file__, encoding="utf-8") as file:
+        return ast.parse(file.read())
+
+
+def _assignment(name):
+    for node in _tree().body:
+        if isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id == name for t in node.targets):
+            return node.value
+    return None
+
+
+def indexed(name, source):
+    value = _assignment(name)
+    return isinstance(value, ast.Subscript) and isinstance(value.value, ast.Name) and value.value.id == source
+
+
+def sliced(name, source):
+    value = _assignment(name)
+    return indexed(name, source) and isinstance(value.slice, ast.Slice)
+
+
+def list_literal(name):
+    return isinstance(_assignment(name), ast.List)
+
+
+def unpacked(names, source):
+    return any(isinstance(node, ast.Assign) and len(node.targets) == 1
+               and isinstance(node.targets[0], ast.Tuple)
+               and [e.id for e in node.targets[0].elts if isinstance(e, ast.Name)] == list(names)
+               and isinstance(node.value, ast.Name) and node.value.id == source
+               for node in _tree().body)
+
+
+def index_write(name, index):
+    return any(isinstance(node, ast.Assign) and any(isinstance(t, ast.Subscript)
+               and isinstance(t.value, ast.Name) and t.value.id == name
+               and isinstance(t.slice, ast.Constant) and t.slice.value == index
+               for t in node.targets) for node in _tree().body)
+
+
+def calls(name, method):
+    return any(isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute)
+               and isinstance(node.func.value, ast.Name) and node.func.value.id == name
+               and node.func.attr == method for node in ast.walk(_tree()))
+
+
+def get_with_default(target, source, key, fallback):
+    value = _assignment(target)
+    return isinstance(value, ast.Call) and isinstance(value.func, ast.Attribute) and isinstance(value.func.value, ast.Name) and value.func.value.id == source and value.func.attr == "get" and len(value.args) == 2 and all(isinstance(arg, ast.Constant) and arg.value == expected for arg, expected in zip(value.args, [key, fallback]))
+
+
+def loop_appends(name):
+    return any(isinstance(node, ast.For) and any(isinstance(part, ast.Call)
+               and isinstance(part.func, ast.Attribute) and isinstance(part.func.value, ast.Name)
+               and part.func.value.id == name and part.func.attr == "append"
+               for statement in node.body for part in ast.walk(statement)) for node in _tree().body)
+
+
+def loop_method(method, name):
+    return any(isinstance(node, ast.For) and isinstance(node.iter, ast.Call)
+               and isinstance(node.iter.func, ast.Attribute) and node.iter.func.attr == method
+               and any(isinstance(part, ast.Name) and part.id == name
+                       for statement in node.body for part in ast.walk(statement)) for node in _tree().body)
+
+
+def set_from(name, source):
+    value = _assignment(name)
+    return isinstance(value, ast.Call) and isinstance(value.func, ast.Name) and value.func.id == "set" and len(value.args) == 1 and isinstance(value.args[0], ast.Name) and value.args[0].id == source
+
+
+def set_op(name, operator):
+    value = _assignment(name)
+    return isinstance(value, ast.BinOp) and type(value.op).__name__ == operator
+
+
+def fstring(name):
+    return isinstance(_assignment(name), ast.JoinedStr)
+
+
 def _variant():
-    with open(solution.__file__, encoding="utf-8") as source_file:
-        tree = ast.parse(source_file.read())
-    replacements = {'exit_record': ('North Gate', '08:15')}
+    tree = _tree()
+    replacements = VARIANTS
     for node in tree.body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
             name = node.targets[0].id
@@ -21,42 +99,18 @@ def _variant():
         exec(compile(tree, "changed_fixture.py", "exec"), result)
     return result
 
-
-def _uses(technique):
-    with open(solution.__file__, encoding="utf-8") as source_file:
-        tree = ast.parse(source_file.read())
-    for node in ast.walk(tree):
-        if type(node).__name__ == technique:
-            return True
-        if isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute) and node.func.attr == technique:
-            return True
-        if isinstance(node, ast.Call) and isinstance(node.func, ast.Name) and node.func.id == technique:
-            return True
-    return False
+VARIANTS = {'session_record': ('Room C', '10:15')}
 
 def test_01():
-    """Set marker_name to the first element of exit_record by indexing."""
-    assert marker_name == "Exit Beacon", "Set marker_name to the first element of exit_record by indexing."
-    assert _uses('Subscript'), "Use the requested Python technique."
-    varied = _variant()
-    assert eval('marker_name == "North Gate"', varied), "Check this task with a different input too."
+    """Check task 1 with the supplied and changed data."""
+    assert room_name == "Room B", "Check task 1 with the supplied data."
+    assert indexed("room_name", "session_record"), "Use the requested collection operation in task 1."
+    changed = _variant()
+    assert eval('room_name == "Room C"', changed), "Check task 1 with different data."
 
 def test_02():
-    """Unpack exit_record into marker and signal_time."""
-    assert (marker, signal_time) == exit_record, "Unpack exit_record into marker and signal_time."
-    source_path = solution.__file__
-    assert source_path is not None
-    with open(source_path, encoding="utf-8") as source_file:
-        tree = ast.parse(source_file.read())
-    assert any(
-        isinstance(node, ast.Assign)
-        and len(node.targets) == 1
-        and isinstance(node.targets[0], (ast.Tuple, ast.List))
-        and [part.id for part in node.targets[0].elts if isinstance(part, ast.Name)] == ["marker", "signal_time"]
-        and len(node.targets[0].elts) == 2
-        and isinstance(node.value, ast.Name)
-        and node.value.id == "exit_record"
-        for node in ast.walk(tree)
-    ), "Unpack exit_record directly into marker and signal_time."
-    varied = _variant()
-    assert eval('(marker, signal_time) == exit_record', varied), "Check this task with a different input too."
+    """Check task 2 with the supplied and changed data."""
+    assert (room, start_time) == session_record, "Check task 2 with the supplied data."
+    assert unpacked(("room", "start_time"), "session_record"), "Use the requested collection operation in task 2."
+    changed = _variant()
+    assert eval('(room, start_time) == session_record', changed), "Check task 2 with different data."

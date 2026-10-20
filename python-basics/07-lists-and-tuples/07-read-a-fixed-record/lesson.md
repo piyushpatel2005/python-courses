@@ -1,22 +1,22 @@
 ---
-title: "Read a Fixed Checkpoint Record: Demo"
+title: "Read a sign-in record"
 slug: read-a-fixed-record
 order: 7
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Index and unpack an unchanging checkpoint tuple.
-seo_title: "Read a Fixed Checkpoint Record: Demo | Python Basics"
-seo_description: Index and unpack an unchanging checkpoint tuple.
-seo_keywords: [python basics, lists and tuples, lantern atlas]
+summary: "Index and unpack a fixed event sign-in tuple."
+seo_title: "Read a sign-in record | Python Basics"
+seo_description: "Index and unpack a fixed event sign-in tuple."
+seo_keywords: [python basics, python collections, beginner python]
 ---
 
-A checkpoint's marker and time belong together. Here they form a tuple: an ordered collection whose items you cannot replace. Assigning to `record[0]` would raise `TypeError`.
+A sign-in record pairs one attendee name with the time they arrived. A tuple keeps these fields in a fixed order: `("Maya", "09:00")`. Like a list, it supports indexing. Unlike a list, it does not let you replace an element; `sign_in[0] = "Luis"` raises `TypeError`.
 
-You can still read a tuple by index. You can also unpack it: `marker, time = record` assigns the first value to `marker` and the second to `time`. The number of names must match the number of values. For a one-item tuple, keep the comma: `(42,)`.
+You can unpack a tuple into names: `name, arrival_time = sign_in`. The number of names must match the number of values. For a one-item tuple, keep the comma: `("Maya",)`.
 
-The starter already prints the unpacked fields. Change `marker` in `main.py` to read the first item. Run should show `Blue Beacon`, then `Checkpoint: Blue Beacon 09:00`. Submit to check your edit.
+The starter already unpacks both fields. Change `attendee` in `main.py` to read the first field by index. **Run** should print `Maya` and then `Sign-in: Maya 09:00`. **Submit** when it does.
 
 ## Your Task
 
-1. Set `marker` to the first element of `checkpoint_record`.
+1. Set `attendee` to the first item of `sign_in` by indexing.

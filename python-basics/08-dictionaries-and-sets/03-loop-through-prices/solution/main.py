@@ -1,5 +1,5 @@
-beacon_marks = {"ridge": 2, "cove": 4}
-landmarks = []
-for landmark, marks in beacon_marks.items():
-    landmarks.append(landmark)
-print(landmarks)
+prices = {"apple": 2, "banana": 3}
+products = []
+for product, price in prices.items():
+    products.append(product)
+print(products)

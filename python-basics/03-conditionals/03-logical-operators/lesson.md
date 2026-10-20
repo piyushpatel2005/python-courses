@@ -4,23 +4,23 @@ slug: logical-operators
 order: 3
 language: python
 lesson_type: coding
-summary: "Combine boolean checks with and, or, and not."
+summary: "Combine stock checks with and, or, and not."
 seo_title: "Python Logical Operators | Python Basics"
-seo_description: "Learn when and, or, and not make combined checks true or false."
+seo_description: "See how and, or, and not combine or reverse boolean results."
 seo_keywords: [python logical operators, and or not, boolean checks]
 ---
 
-A single comparison answers one question. A gate may need to ask more than one: are the markers ready **and** is there enough paper? Python's logical operators combine or reverse boolean checks.
+A workshop may need both markers and paper before it can start. Python combines comparisons with logical operators.
 
-## `and`, `or`, and `not`
+## Logical Operators
 
 | Operator | Result |
 | --- | --- |
-| `and` | `True` only when both checks are true |
-| `or` | `True` when at least one check is true |
-| `not` | Reverses `True` and `False` |
+| `and` | `True` only if both checks are true |
+| `or` | `True` if at least one check is true |
+| `not` | Reverses a boolean result |
 
-Try this separate example. The first check passes because both supplies meet their minimum; the second passes because at least one supply is low.
+The example below checks whether a repair kit has enough rope and hooks:
 
 ```python run
 ropes = 3
@@ -30,13 +30,13 @@ print(ropes < 2 or hooks < 1)
 print(not (hooks == 0))
 ```
 
-It prints `False`, `True`, `False`. The parentheses around `hooks == 0` show which result `not` reverses. `not` applies to a boolean expression; it does not change `hooks` itself.
+It prints `False`, `True`, `False`. There aren't enough hooks. Notice you put parentheses around the third line check. Python evaluates the expression inside the parentheses first and then applies the `not` operator to the result. It's always a good idea to put parentheses to make it clear.
 
-In the editable `main.py`, the workshop starts with eight markers and two paper packs. Its three combined checks print `True`, `False`, `True`. Changing one supply at a time lets you see which answers change.
+The code in the editor starts with eight markers and two packs of paper. Its three lines print `True`, `False`, `True`. Change one supply at a time to see which results depend on it.
 
 ## Your Tasks
 
-1. Set `paper_packs` to `1`. The `and` and `or` lines should print `False` and `True`.
-2. Set `markers` to `0`. The final `not` line should print `False`.
+1. Set `paper_packs` to `1`. The `and` and `or` results become `False` and `True`.
+2. Set `markers` to `0`. The final `not` result becomes `False`.
 
-Edit `main.py`, press **Run** after each change, then **Submit**. The next exercise asks you to write these operators yourself.
+Edit `main.py`, press **Run** after each change, then **Submit**. Next you'll write the expressions instead of changing their inputs.

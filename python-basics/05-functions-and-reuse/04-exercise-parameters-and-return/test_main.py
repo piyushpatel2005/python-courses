@@ -1,6 +1,6 @@
-from solution import combine_energy
+from solution import total_pages
 
-def test_combine_energy():
-    """The result uses both inputs"""
-    assert combine_energy(8, 3) == 11
-    assert combine_energy(1, 9) == 10
+def test_total_pages():
+    """The result uses both page counts."""
+    assert total_pages(8, 3) == 11
+    assert total_pages(1, 9) == 10

@@ -1,8 +1,8 @@
-energy = 20
+chairs = 20
 
-def preview_pulse():
-    energy = 15
-    return energy
+def preview_chairs():
+    chairs = 15
+    return chairs
 
-print(preview_pulse())
-print(energy)
+print(preview_chairs())
+print(chairs)

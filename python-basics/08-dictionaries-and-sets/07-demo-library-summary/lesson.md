@@ -1,24 +1,20 @@
 ---
-title: 'Summarize Beacon Finds'
+title: "Summarize library loans"
 slug: demo-library-summary
 order: 7
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: 'Combine map records, dictionary counts, and distinct locations.'
-seo_title: 'Summarize Beacon Finds | Python Basics'
-seo_description: 'Combine map records, dictionary counts, and distinct locations.'
-seo_keywords:
-- python collections-project
-- beginner collections-project exercise
+summary: "Combine a list of records, book counts, and unique borrowers."
+seo_title: "Summarize library loans | Python Basics"
+seo_description: "Combine a list of records, book counts, and unique borrowers."
+seo_keywords: [python basics, python collections, beginner python]
 ---
 
-Each find is a dictionary with a `location` and a `beacon`. The list keeps all the finds, including repeated visits to one location.
+A library's loan log is a list of dictionaries. Each entry records a `member` and a `book`; the list keeps every loan, including two loans by the same person. In `main.py`, the supplied loop collects member names and counts loans by book with `book_counts.get(book, 0) + 1`. The first loan for a book starts at zero and becomes one; a later loan raises its count.
 
-Read the supplied loop in `main.py`. It collects locations and counts each beacon with `.get(beacon, 0) + 1`. For a new beacon, `get()` returns zero and the count becomes one. When that beacon appears again, its stored count of one becomes two.
-
-The last calculation counts visits rather than distinct places. Change it to count unique locations. Run should show `2 locations` instead of `3`, then Submit.
+The final calculation currently counts loans rather than distinct members. Change only that calculation to count unique borrowers. **Run** should show `2 members` rather than `3`; then **Submit**.
 
 ## Your Task
 
-1. Set `places` to the number of distinct values in `locations`.
+1. Set `borrowers` to the number of distinct names in `members`.

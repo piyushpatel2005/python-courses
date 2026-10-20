@@ -1,4 +1,4 @@
-queue = ["rope", "torch", "compass"]
-first_gear = queue[0]
-last_gear = queue[-1]
-print(queue, first_gear, last_gear)
+shopping_list = ["bread", "eggs", "oranges"]
+first_item = shopping_list[0]
+last_item = shopping_list[-1]
+print(shopping_list, first_item, last_item)

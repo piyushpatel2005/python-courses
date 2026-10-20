@@ -9,7 +9,7 @@ import solution
 def _variant():
     with open(solution.__file__, encoding="utf-8") as source_file:
         tree = ast.parse(source_file.read())
-    replacements = {'ticket': 'ORB:9876'}
+    replacements = {'record': 'BAG:9876'}
     for node in tree.body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
             name = node.targets[0].id
@@ -35,15 +35,15 @@ def _uses(technique):
     return False
 
 def test_01():
-    """Set route_name to the first three characters of ticket."""
-    assert route_name == "ARC", "Set route_name to the first three characters of ticket."
+    """Set category to the first three characters of record."""
+    assert category == "BOX", "Set category to the first three characters of record."
     assert _uses('Slice'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('route_name == "ORB"', varied), "Check this task with a different input too."
+    assert eval('category == "BAG"', varied), "Check this task with a different input too."
 
 def test_02():
-    """Set number to the four characters after the colon using a slice."""
-    assert number == "2048", "Set number to the four characters after the colon using a slice."
+    """Set item_code to the four characters after the colon using a slice."""
+    assert item_code == "2048", "Set item_code to the four characters after the colon using a slice."
     assert _uses('Slice'), "Use the requested Python technique."
     varied = _variant()
-    assert eval('number == "9876"', varied), "Check this task with a different input too."
+    assert eval('item_code == "9876"', varied), "Check this task with a different input too."

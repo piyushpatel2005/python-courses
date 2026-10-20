@@ -1,28 +1,28 @@
 ---
-title: "Default Ability Marks: Demo"
+title: "Default Endings and Keyword Arguments: Demo"
 slug: defaults-and-keywords-demo
 order: 5
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: Use a default ability mark and override it with a keyword argument.
-seo_title: "Default Ability Marks: Demo | Python Basics"
-seo_description: Use a default ability mark and override it with a keyword argument.
-seo_keywords: [python basics, functions and reuse, lantern atlas]
+summary: Change a default message ending while retaining an explicit override.
+seo_title: "Default Endings and Keyword Arguments: Demo | Python Basics"
+seo_description: Change a default message ending while retaining an explicit override.
+seo_keywords: [python basics, functions and reuse, default parameters, keyword arguments, functions]
 hints:
-  - Change the quoted suffix in the function definition, not the call.
+  - Change the quoted suffix in the function definition, not the calls.
 ---
 
-# Default Ability Marks: Demo
+# Default endings and keyword arguments
 
-Most ability labels use the same ending, so you shouldn't need to supply it every time.
+A short pickup message usually ends with a period, but sometimes you want an exclamation mark. Put the usual ending in the function definition so callers can omit it.
 
-In `def ability_mark(name, suffix="."):`, the `suffix` parameter has a **default value**. Calling `ability_mark("Glow")` uses that period. Calling `ability_mark("Glow", suffix="!")` supplies a different ending by name; `suffix="!"` is a **keyword argument**.
+In `def message(text, suffix="."):`, `suffix` has a **default value**. Calling `message("Pickup at noon")` uses the period. Calling `message("Pickup at noon", suffix="!")` supplies a **keyword argument**, naming the parameter to override.
 
-Run the starter and compare its two lines: `Glow.` and `Glow!`.
+Run the starter to compare `Pickup at noon.` with `Pickup at noon!`.
 
 ## Your Tasks
 
-1. Change the default value of `suffix` from `"."` to `"?"` in the function definition.
+1. Change the default `suffix` from `"."` to `"?"` in the function definition.
 
-Keep both calls unchanged. Run `main.py` again: the first line should become `Glow?`, while the second stays `Glow!`. The explicit argument wins over the default. Submit to check your change.
+Keep both calls unchanged. Run again: the first line becomes `Pickup at noon?`, a question about the time; the explicit exclamation mark on the second line still wins. Submit to check your change.

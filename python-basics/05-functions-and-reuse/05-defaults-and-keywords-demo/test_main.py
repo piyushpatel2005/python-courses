@@ -1,6 +1,6 @@
-from solution import ability_mark
+from solution import message
 
 def test_changed_default():
-    """Omitting suffix uses the new default"""
-    assert ability_mark("Glow") == "Glow?"
-    assert ability_mark("Glow", suffix="!") == "Glow!"
+    """Omitting suffix uses the new default."""
+    assert message("Pickup at noon") == "Pickup at noon?"
+    assert message("Pickup at noon", suffix="!") == "Pickup at noon!"

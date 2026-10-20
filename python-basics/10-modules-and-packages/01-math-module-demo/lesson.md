@@ -1,24 +1,24 @@
 ---
-title: 'Calculate Beacon Capacity'
+title: 'Size a row of floor tiles'
 slug: math-module-demo
 order: 1
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: 'Use math.ceil to round up a beacon capacity calculation.'
-seo_title: 'Calculate Beacon Capacity | Python Basics'
-seo_description: 'Use math.ceil to round up a beacon capacity calculation.'
-seo_keywords: [python basics, math module demo, python practice]
+summary: 'Use math.ceil to round up a tile calculation.'
+seo_title: 'Size a row of floor tiles | Python Basics'
+seo_description: 'Use math.ceil to round up a tile calculation.'
+seo_keywords: [python math module, math ceil, import math]
 hints:
-  - Change the number in the bottom call, not the divisor.
+  - Change the number in the final call, not the metres-per-box calculation.
 ---
 
-The Tool Library has code you can reuse. Python's standard library includes `math`, a module of mathematical tools. `import math` makes the name `math` available; the dot in `math.ceil(...)` selects its `ceil` function.
+A row of floor tiles needs enough boxes to cover its full length. Each box covers four metres; an eleven-metre row needs three boxes because two would leave part of the row uncovered.
 
-`ceil` rounds up. Each beacon holds four sparks, so eleven sparks need three beacons even though the third is only partly full.
-
-Change the final call in `main.py` from `8` to `11`. Run should change from `2` to `3`, then Submit.
+Python's standard library includes the `math` module. `import math` makes it available, and the dot in `math.ceil(...)` selects its `ceil` function. `ceil` rounds a number up to the next whole number, so `math.ceil(11 / 4)` is `3`. The starter already imports the module and defines the calculation.
 
 ## Your Task
 
-1. Change the final `beacons_needed` call to use `11` sparks.
+1. Change the final `boxes_needed` call in `main.py` from `8` to `11` metres.
+
+Press **Run** to see the result change from `2` to `3`, then **Submit**.

@@ -1,12 +1,9 @@
-# The gate supplies its current charge. Try 0, 2, and 4 as you build.
-charge_left = 2
+# Seats remaining at the event. Try 0, 2, and 4 as you build.
+seats_left = 2
 
-# Keep this temporary message for branches you have not added yet.
-gate_signal = "Not set"
+# Keep this temporary message until each case has a branch.
+seat_message = "Not set"
 
-# Add your if branch here (task 1).
+# Add if here, then extend the chain with elif and else.
 
-# Extend it with elif (task 2), then else (task 3).
-
-# Keep this line after the branches, without indentation.
-print(gate_signal)
+print(seat_message)

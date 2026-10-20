@@ -1,28 +1,28 @@
 ---
-title: "Choose a Lit Route"
+title: "Choose a Stock Message"
 slug: compare-and-branch
 order: 5
 language: python
 runtime: pyodide
 lesson_type: coding
-summary: "Use comparisons and branches to advise Adam at a gate."
-seo_title: "Choose a Lit Route | Python Basics"
-seo_description: "Use comparisons and branches to advise Adam at a gate."
-seo_keywords: [python basics, control flow, lantern atlas]
+summary: "Use if, elif, and else to choose a message for remaining bread stock."
+seo_title: "Python if, elif, else Branches | Python Basics"
+seo_description: "Read an ordered conditional chain for bread-stock levels and change its input."
+seo_keywords: [python if else, python elif, stock levels]
 ---
 
-A boolean tells you whether a check is true. An **if statement** uses that result to choose which code runs.
+A bakery checks how many loaves remain before printing a stock message. A comparison produces `True` or `False`; an `if` statement uses that result to choose which assignment runs.
 
-The starter chooses a route from the beacon signal and the weather. Read its branches from top to bottom:
+Read the branches in `main.py` from top to bottom:
 
-- `if signal < 8:` chooses the repair message when the signal is too low.
-- `elif signal < 16 and not foggy:` checks another possibility, but only if the first check was false. Both the signal comparison and `not foggy` must be true.
-- `else:` handles any case that did not match either check. It has no condition of its own.
+- `if loaves_left < 8:` asks for more bread when fewer than eight loaves remain.
+- `elif loaves_left < 16 and not delivery_today:` checks the next case only if the first was false. Both parts must be true.
+- `else:` covers all remaining cases, including a delivery day. It has no condition.
 
-Only the first matching branch runs. Each branch heAdamng ends with a colon, and its assignment is indented by four spaces. The unindented print call runs after the choice is made.
-
-With `signal = 12` and `foggy = False`, **Run** shows `Follow lit path`. Change just the signal in **main.py**, run again to see `Repair beacon`, then **Submit**.
+Only the first matching branch runs. Each branch heading ends in a colon, and its assignment is indented four spaces. The unindented `print(stock_message)` runs afterward. With 12 loaves and no delivery today, **Run** prints `Check the bread shelf`.
 
 ## Your Tasks
 
-1. Set `signal` to `4`.
+1. Set `loaves_left` to `4` while keeping the branches. **Run** should now print `Bake more bread`.
+
+Edit `main.py`, press **Run**, then **Submit**. Next you'll write the branches yourself.

@@ -1,5 +1,4 @@
-gear = ["rope", "torhc", "spent shard"]
-# Fix the typo at index 1.
-# Append "lens".
-# Remove "spent shard" by value.
-print(gear)
+order = ["sandwich", "soda", "cancelled item"]
+# Correct the drink at index 1.
+# Add the cookie, then remove the cancelled item.
+print(order)

@@ -1,65 +1,71 @@
 import ast
 import inspect
 import textwrap
-from solution import parse_command, charge_beacons, gate_open, play_mission
+from solution import parse_command, book_seats, all_full, registration_report
 
 
 def test_parse_command():
-    """Valid commands decode; invalid signals do not crash"""
-    assert parse_command(" north:2 ") == ("NORTH", 2)
-    assert parse_command("SOUTH:5") == ("SOUTH", 5)
-    for bad in ("oops", ":3", "NORTH:no", "NORTH:0", "NORTH:-2"):
+    """Valid requests decode; invalid quantities do not crash."""
+    assert parse_command(" pottery:2 ") == ("POTTERY", 2)
+    assert parse_command("DRAWING:5") == ("DRAWING", 5)
+    for bad in ("oops", ":3", "POTTERY:no", "POTTERY:0", "POTTERY:-2", "POTTERY:3:4"):
         assert parse_command(bad) is None, f"Ignore {bad!r}."
     tree = ast.parse(textwrap.dedent(inspect.getsource(parse_command)))
     assert any(isinstance(node, ast.Try) and any(isinstance(handler.type, ast.Name)
                and handler.type.id == "ValueError" for handler in node.handlers if handler.type)
-               for node in ast.walk(tree)), "Catch ValueError for a bad signal number."
+               for node in ast.walk(tree)), "Catch ValueError for a bad quantity."
 
 
-def test_charge_beacons():
-    """Repeated valid commands charge only known beacons"""
-    beacons = {"NORTH": 3, "SOUTH": 2, "EAST": 4}
-    assert charge_beacons(beacons, ["north:2", "bad", "NORTH:1", "west:9", "south:2"]) == {
-        "NORTH": 3, "SOUTH": 2, "EAST": 0}
-    assert charge_beacons({"WEST": 8}, ["west:4", "west:-2", "west:1"]) == {"WEST": 5}
-    namespace = charge_beacons.__globals__
+def test_book_seats():
+    """Only valid known requests are booked, without overselling."""
+    workshops = {"POTTERY": 3, "DRAWING": 2, "SEWING": 4}
+    assert book_seats(workshops, ["pottery:2", "bad", "POTTERY:1", "dance:9", "drawing:2"]) == {
+        "POTTERY": 3, "DRAWING": 2, "SEWING": 0}
+    assert book_seats({"PAINTING": 5}, ["painting:4", "painting:2", "painting:-2", "painting:1"]) == {"PAINTING": 5}
+    assert book_seats({"POTTERY": 3}, ["POTTERY:4", "POTTERY:2"]) == {"POTTERY": 2}
+    assert workshops == {"POTTERY": 3, "DRAWING": 2, "SEWING": 4}
+    namespace = book_seats.__globals__
     original = namespace["parse_command"]
     try:
-        namespace["parse_command"] = lambda command: ("NORTH", 7) if command == "probe" else None
-        assert charge_beacons({"NORTH": 9}, ["probe"]) == {"NORTH": 7}, (
-            "Use parse_command inside charge_beacons.")
+        namespace["parse_command"] = lambda command: ("POTTERY", 2) if command == "probe" else None
+        assert book_seats({"POTTERY": 3}, ["probe"]) == {"POTTERY": 2}, (
+            "Use parse_command inside book_seats.")
     finally:
         namespace["parse_command"] = original
 
 
-def test_gate_open():
-    """The gate needs every beacon, not merely one"""
-    assert gate_open({"NORTH": 3, "SOUTH": 2}, {"NORTH": 3, "SOUTH": 2}) is True
-    assert gate_open({"NORTH": 3, "SOUTH": 2}, {"NORTH": 9, "SOUTH": 1}) is False
-    assert gate_open({"NORTH": 3}, {}) is False
-    assert gate_open({}, {}) is False
-    tree = ast.parse(textwrap.dedent(inspect.getsource(gate_open)))
-    assert any(isinstance(n, ast.For) for n in ast.walk(tree)), "Check each beacon with a loop."
-    assert any(isinstance(n, ast.If) for n in ast.walk(tree)), "Use a condition for the gate."
+def test_all_full():
+    """Every listed workshop needs all its seats booked."""
+    assert all_full({"POTTERY": 3, "DRAWING": 2}, {"POTTERY": 3, "DRAWING": 2}) is True
+    assert all_full({"POTTERY": 3, "DRAWING": 2}, {"POTTERY": 3, "DRAWING": 1}) is False
+    assert all_full({"POTTERY": 3}, {}) is False
+    assert all_full({}, {}) is False
+    tree = ast.parse(textwrap.dedent(inspect.getsource(all_full)))
+    assert any(isinstance(n, ast.For) for n in ast.walk(tree)), "Check every workshop with a loop."
+    assert any(isinstance(n, ast.If) for n in ast.walk(tree)), "Use a condition for capacity."
 
 
-def test_play_mission():
-    """A complete game has both a win and a graceful locked ending"""
-    beacons = {"NORTH": 3, "SOUTH": 2}
-    assert play_mission(beacons, ["north:2", "NORTH:1", "south:2"]) == [
-        "NORTH: 3/3", "SOUTH: 2/2",
-        "Exit Gate: OPEN - Adam leaves the Lantern Atlas with every beacon bright."]
-    assert play_mission(beacons, ["north:3", "south:1"]) == [
-        "NORTH: 3/3", "SOUTH: 1/2",
-        "Exit Gate: LOCKED - Restore every beacon to continue."]
-    assert play_mission({}, []) == ["Exit Gate: LOCKED - Restore every beacon to continue."]
-    namespace = play_mission.__globals__
-    original_charge, original_gate = namespace["charge_beacons"], namespace["gate_open"]
+def test_registration_report():
+    """The report shows workshop and overall totals with the right status."""
+    workshops = {"POTTERY": 3, "DRAWING": 2}
+    assert registration_report(workshops, ["pottery:2", "POTTERY:1", "drawing:2"]) == [
+        "POTTERY: 3/3 seats booked", "DRAWING: 2/2 seats booked",
+        "Total seats: 5/5 booked",
+        "Registration: FULL - All workshop seats are booked."]
+    assert registration_report(workshops, ["pottery:3", "drawing:1"]) == [
+        "POTTERY: 3/3 seats booked", "DRAWING: 1/2 seats booked",
+        "Total seats: 4/5 booked",
+        "Registration: OPEN - Seats are still available."]
+    assert registration_report({}, []) == [
+        "Total seats: 0/0 booked", "Registration: NO WORKSHOPS - Add a workshop first."]
+    namespace = registration_report.__globals__
+    original_book, original_full = namespace["book_seats"], namespace["all_full"]
     try:
-        namespace["charge_beacons"] = lambda beacons, commands: {"NORTH": 7}
-        namespace["gate_open"] = lambda beacons, charges: charges["NORTH"] == 7
-        assert play_mission({"NORTH": 9}, ["probe"]) == [
-            "NORTH: 7/9", "Exit Gate: OPEN - Adam leaves the Lantern Atlas with every beacon bright."], (
-            "Reuse charge_beacons and gate_open inside play_mission.")
+        namespace["book_seats"] = lambda workshops, commands: {"POTTERY": 2}
+        namespace["all_full"] = lambda workshops, bookings: False
+        assert registration_report({"POTTERY": 9}, ["probe"]) == [
+            "POTTERY: 2/9 seats booked", "Total seats: 2/9 booked",
+            "Registration: OPEN - Seats are still available."], (
+            "Reuse book_seats and all_full inside registration_report.")
     finally:
-        namespace["charge_beacons"], namespace["gate_open"] = original_charge, original_gate
+        namespace["book_seats"], namespace["all_full"] = original_book, original_full

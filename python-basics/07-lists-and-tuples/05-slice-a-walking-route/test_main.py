@@ -1,5 +1,6 @@
 from solution import *
 
 def test_01():
-    """Set near_checkpoints to a slice of the first two checkpoints."""
-    assert near_checkpoints == ["Pass", "Bridge"], "Set near_checkpoints to a slice of the first two checkpoints."
+    """Slice the first two addresses without changing the list."""
+    assert next_addresses == ["Oak Street", "Main Street"]
+    assert addresses == ["Oak Street", "Main Street", "Hill Road"]

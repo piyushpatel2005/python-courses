@@ -1,24 +1,22 @@
 ---
-title: 'Exercise: Update a Map Entry'
+title: "Exercise: Update a contact"
 slug: exercise-update-contact
 order: 2
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: 'Read, update, and safely look up fields in an atlas map entry.'
-seo_title: 'Exercise: Update a Map Entry | Python Basics'
-seo_description: 'Read, update, and safely look up fields in an atlas map entry.'
-seo_keywords:
-- python dictionary-fields
-- beginner dictionary-fields exercise
+summary: "Read, edit, and safely look up contact details."
+seo_title: "Exercise: Update a contact | Python Basics"
+seo_description: "Read, edit, and safely look up contact details."
+seo_keywords: [python basics, python collections, beginner python]
 ---
 
-The Moss Gate entry needs one more mark. Use the dictionary keys to read its landmark and update its count. Its clue is optional, so use `get()` to supply a fallback when that key is absent.
+A contact record has named fields rather than numbered positions. The starter stores a person's name and phone number. Read the name with brackets; assign a new phone number under the existing `"phone"` key. The email address is optional, so use `get()` with a fallback when `"email"` is absent.
 
-Make the changes in `main.py`. Run to inspect the three results, then Submit.
+Edit `main.py`. **Run** to inspect the name, updated contact, and email; **Submit** to check each step.
 
 ## Your Tasks
 
-1. Set `landmark` from `map_entry["landmark"]`.
-2. Update `map_entry["marks"]` to `3`.
-3. Set `clue` using `map_entry.get("clue", "unmarked")`.
+1. Set `name` from `contact["name"]`.
+2. Update `contact["phone"]` to `555-0130`.
+3. Set `email` using `contact.get("email", "not provided")`.

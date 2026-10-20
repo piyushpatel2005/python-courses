@@ -1,24 +1,24 @@
 ---
-title: "Index a Gear List: Demo"
+title: "Index a grocery list"
 slug: index-a-supply-list
 order: 1
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: Read the last item of Adam’s ordered gear list.
-seo_title: "Index a Gear List: Demo | Python Basics"
-seo_description: Read the last item of Adam’s ordered gear list.
-seo_keywords: [python basics, lists and tuples, lantern atlas]
+summary: "Read the final item in an ordered grocery list."
+seo_title: "Index a grocery list | Python Basics"
+seo_description: "Read the final item in an ordered grocery list."
+seo_keywords: [python basics, python collections, beginner python]
 ---
 
-Welcome to Inventory Ridge. You have a route; now you need an ordered list of gear. Python lists use the same index positions you saw with strings: `0` selects the first item and `-1` selects the last.
+A grocery list has an order: the first item is the one you plan to pick up first. In Python, a list puts values between square brackets. Each value has an index, starting at `0`. A negative index counts back from the end, so `groceries[-1]` reads the last item. This works like indexing a string, but returns a whole list item rather than one character.
 
-`len(gear)` tells you how many items the list holds. An index outside the list raises `IndexError`.
+`len(groceries)` gives the number of items. Reading an index outside the list raises `IndexError`. For an empty list, there is no last item.
 
-![Positive and negative indexes on Adam's gear list](list-indexing.svg "First item at 0, last at -1")
+![Three grocery items with indexes 0, 1, 2 and -3, -2, -1; apples are at -1](list-indexing.svg "List indexes from either end")
 
-The starter reads the first item. Edit `main.py` to read the last one instead. Press Run and look for `lens`, then Submit to check your change.
+The starter reads the first item. In `main.py`, change the index to read the last one. Press **Run** to see `apples`, then **Submit** to check your change.
 
 ## Your Task
 
-1. Set `last_gear` to the last item of `gear`.
+1. Set `last_item` to the last item in `groceries`.

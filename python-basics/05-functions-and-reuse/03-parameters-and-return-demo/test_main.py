@@ -1,4 +1,4 @@
-from solution import boost_energy
+from solution import add_minutes
 import ast
 import inspect
 import io
@@ -6,9 +6,9 @@ from contextlib import redirect_stdout
 import solution
 
 
-def test_ticket_argument():
-    """The call passes the new energy"""
-    assert boost_energy(12) == 14, "Keep the supplied function: it adds 2 to its input."
+def test_duration_argument():
+    """The call passes the new minutes"""
+    assert add_minutes(12) == 14, "Keep the supplied function: it adds 2 to its input."
     source = inspect.getsource(solution)
     tree = ast.parse(source)
     print_calls = [
@@ -18,7 +18,7 @@ def test_ticket_argument():
     ]
     assert any(
         isinstance(arg, ast.Call) and isinstance(arg.func, ast.Name)
-        and arg.func.id == "boost_energy" and len(arg.args) == 1
+        and arg.func.id == "add_minutes" and len(arg.args) == 1
         and isinstance(arg.args[0], ast.Constant) and arg.args[0].value == 12
         for call in print_calls for arg in call.args
     ), "Change the argument in the supplied print call to 12."

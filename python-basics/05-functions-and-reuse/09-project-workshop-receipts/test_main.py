@@ -1,11 +1,11 @@
-from solution import loadout_energy, loadout_note
+from solution import receipt_total, receipt_line
 
-def test_loadout_energy():
-    """Count and cost make a reusable total"""
-    assert loadout_energy(3, 4) == 12
-    assert loadout_energy(2, 9) == 18
+def test_receipt_total():
+    """Quantity and unit price give a reusable dollar total."""
+    assert receipt_total(3, 4) == 12
+    assert receipt_total(2, 9) == 18
 
-def test_loadout_note():
-    """A loadout_note labels any amount"""
-    assert loadout_note("Lantern pulse", 12) == "Lantern pulse: 12 energy"
-    assert loadout_note("Spark", 5) == "Spark: 5 energy"
+def test_receipt_line():
+    """The receipt line labels any item and dollar amount."""
+    assert receipt_line("Notebooks", 12) == "Notebooks: $12"
+    assert receipt_line("Folders", 5) == "Folders: $5"

@@ -1,23 +1,23 @@
 ---
-title: "Exercise: Check Gate Readiness"
+title: "Exercise: Check Store Stock"
 slug: exercise-logical-operators
 order: 4
 language: python
 lesson_type: coding
-summary: "Use and, or, and not to combine gate-supply checks."
+summary: "Combine grocery-stock and store-opening checks with and, or, and not."
 seo_title: "Python Logical Operators Exercise | Python Basics"
-seo_description: "Practice and, or, and not with supplied oil, keys, and gate state."
-seo_keywords: [python logical operators exercise, boolean expressions, gate supplies]
+seo_description: "Use and, or, and not to check flour, milk, and whether a store is open."
+seo_keywords: [python logical operators exercise, boolean expressions, grocery stock]
 ---
 
-The gate needs enough oil **and** a key before someone can enter. It also needs to report if **either** supply is missing. Finally, its open state is the opposite of its closed state.
+The grocery store can take an order only when it has enough flour **and** at least one milk carton. It also needs to know when either item needs restocking. The supplied `store_closed` boolean records whether the shop is shut.
 
-The supplied `oil_units`, `key_count`, and `gate_closed` are your inputs. `enough_oil` already compares oil with the minimum, as you did two lessons ago. Replace each placeholder in `main.py` with an expression using the named values. A fixed `True` or `False` will not work when the inputs change.
+In `main.py`, the quantities are counts of bags and cartons. `enough_flour` is already calculated. Replace the other three placeholders with expressions that depend on the supplied values; the tests will also try different stock levels and opening states.
 
 ## Your Tasks
 
-1. Set `can_enter` using `and` to require `enough_oil` and `key_count >= 1`.
-2. Set `needs_supplies` using `or` to check `oil_units < 4` or `key_count == 0`.
-3. Set `gate_open` using `not` to reverse `gate_closed`.
+1. Set `can_take_order` using `and` with `enough_flour` and `milk_cartons >= 1`.
+2. Set `needs_restock` using `or` with `flour_bags < 4` and `milk_cartons == 0`.
+3. Set `store_open` using `not` to reverse `store_closed`.
 
-Press **Run** after each edit and **Submit** to check it. For the supplied values, the three new lines print `True`, `False`, `False`. Completing one task should earn its check even while the other placeholders remain unfinished. Next, `if` will use these boolean results to choose a route.
+Press **Run** and then **Submit**. With the supplied values, the four lines (including `enough_flour`) print `True`, `True`, `False`, `False`. Each completed expression can pass on its own. The next lesson uses `if` to act on a check.

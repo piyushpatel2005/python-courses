@@ -1,5 +1,6 @@
-def signal_total(signals):
-    # Empty list: zero. Otherwise add the first signal to the rest.
+def delivery_total(daily_deliveries):
+    # Return zero for no deliveries; otherwise add today to the remaining days.
     pass
 
-print("Beacon signal:", signal_total([2, 3, 1]))
+
+print("Boxes delivered:", delivery_total([2, 3, 1]))

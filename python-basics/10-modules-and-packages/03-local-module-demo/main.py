@@ -1,5 +1,5 @@
-with open("beacon_rules.py", "w") as module_file:
-    module_file.write("def signal_strength(marks):\n    return marks * 5\n")
+with open("shipping_rules.py", "w", encoding="utf-8") as module_file:
+    module_file.write("def shipping_cost(weight):\n    return weight * 5\n")
 
-from beacon_rules import signal_strength
-print(signal_strength(2))
+from shipping_rules import shipping_cost
+print(shipping_cost(2))

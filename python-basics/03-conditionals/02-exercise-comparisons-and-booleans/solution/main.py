@@ -1,6 +1,6 @@
-oil_units = 6
-key_count = 1
-enough_oil = oil_units >= 4
-has_key = key_count >= 1
-print(enough_oil)
-print(has_key)
+flour_bags = 6
+milk_cartons = 1
+enough_flour = flour_bags >= 4
+has_milk = milk_cartons >= 1
+print(enough_flour)
+print(has_milk)

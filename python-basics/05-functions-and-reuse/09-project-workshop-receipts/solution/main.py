@@ -1,8 +1,8 @@
-def loadout_energy(charges, cost):
-    return charges * cost
+def receipt_total(quantity, price):
+    return quantity * price
 
-def loadout_note(name, amount):
-    return f"{name}: {amount} energy"
+def receipt_line(item, amount):
+    return item + ": $" + str(amount)
 
-print("Loadout energy:", loadout_energy(3, 4))
-print(loadout_note("Lantern pulse", loadout_energy(3, 4)))
+print("Total: $" + str(receipt_total(3, 4)))
+print(receipt_line("Notebooks", receipt_total(3, 4)))

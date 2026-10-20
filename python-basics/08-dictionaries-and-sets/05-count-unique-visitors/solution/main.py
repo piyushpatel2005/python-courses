@@ -1,3 +1,3 @@
-visited_stops = ["Ridge", "Cove", "Ridge"]
-unique = set(visited_stops)
-print(len(unique))
+sign_ins = ["Maya", "Luis", "Maya"]
+unique_attendees = set(sign_ins)
+print(len(unique_attendees))

@@ -1,9 +1,9 @@
-finds = [{"location": "Pine Pass", "beacon": "North"}, {"location": "Pine Pass", "beacon": "West"}, {"location": "Salt Cove", "beacon": "North"}]
-locations = []
-beacon_counts = {}
-for find in finds:
-    locations.append(find["location"])
-    beacon = find["beacon"]
-    beacon_counts[beacon] = beacon_counts.get(beacon, 0) + 1
-places = len(set(locations))
-print(f"{places} locations; {beacon_counts}")
+loans = [{"member": "Maya", "book": "Gardening"}, {"member": "Maya", "book": "Cooking"}, {"member": "Luis", "book": "Gardening"}]
+members = []
+book_counts = {}
+for loan in loans:
+    members.append(loan["member"])
+    book = loan["book"]
+    book_counts[book] = book_counts.get(book, 0) + 1
+borrowers = len(set(members))
+print(f"{borrowers} members; {book_counts}")

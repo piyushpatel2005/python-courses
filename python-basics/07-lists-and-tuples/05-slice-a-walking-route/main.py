@@ -1,5 +1,5 @@
-checkpoints = ["Pass", "Bridge", "Beacon"]
-for checkpoint in checkpoints:
-    print(checkpoint)
-near_checkpoints = checkpoints[:1]
-print(near_checkpoints)
+addresses = ["Oak Street", "Main Street", "Hill Road"]
+for address in addresses:
+    print(address)
+next_addresses = addresses[:1]
+print(next_addresses)

@@ -1,7 +1,8 @@
-def pulse_steps(number):
-    if number == 0:  # Stop here: no further call.
+def days_left(number):
+    if number == 0:  # Stop here instead of calling days_left again.
         return [0]
-    return [number] + pulse_steps(number - 1)
+    return [number] + days_left(number - 1)
 
-sample = pulse_steps(2)  # Change the argument to 3.
-print("Tower pulses:", sample)
+
+sample = days_left(2)  # Change the argument to 3.
+print("Days until opening:", sample)

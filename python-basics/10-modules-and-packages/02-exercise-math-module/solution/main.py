@@ -1,6 +1,6 @@
 import math
 
-def lanterns_needed(sparks):
-    return math.ceil(sparks / 6)
+def boards_needed(length):
+    return math.ceil(length / 6)
 
-print(lanterns_needed(13))
+print(boards_needed(13))

@@ -1,6 +1,6 @@
-oil_units = 6
-key_count = 1
-enough_oil = False  # Compare oil_units with 4.
-has_key = False  # Compare key_count with 1.
-print(enough_oil)
-print(has_key)
+flour_bags = 6
+milk_cartons = 1
+enough_flour = False  # Compare flour_bags with 4.
+has_milk = False  # Compare milk_cartons with 1.
+print(enough_flour)
+print(has_milk)

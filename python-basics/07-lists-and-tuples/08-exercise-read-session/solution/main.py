@@ -1,4 +1,4 @@
-exit_record = ("Exit Beacon", "16:45")
-marker_name = exit_record[0]
-marker, signal_time = exit_record
-print(marker_name, marker, signal_time)
+session_record = ("Room B", "14:30")
+room_name = session_record[0]
+room, start_time = session_record
+print(room_name, room, start_time)

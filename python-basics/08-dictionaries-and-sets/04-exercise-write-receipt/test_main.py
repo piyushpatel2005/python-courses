@@ -1,15 +1,93 @@
 from solution import *
-
 import ast
 import contextlib
 import io
 import solution
 
-# Replace only the supplied top-level fixtures; never replace learner logic.
+
+def _tree():
+    with open(solution.__file__, encoding="utf-8") as file:
+        return ast.parse(file.read())
+
+
+def _assignment(name):
+    for node in _tree().body:
+        if isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id == name for t in node.targets):
+            return node.value
+    return None
+
+
+def indexed(name, source):
+    value = _assignment(name)
+    return isinstance(value, ast.Subscript) and isinstance(value.value, ast.Name) and value.value.id == source
+
+
+def sliced(name, source):
+    value = _assignment(name)
+    return indexed(name, source) and isinstance(value.slice, ast.Slice)
+
+
+def list_literal(name):
+    return isinstance(_assignment(name), ast.List)
+
+
+def unpacked(names, source):
+    return any(isinstance(node, ast.Assign) and len(node.targets) == 1
+               and isinstance(node.targets[0], ast.Tuple)
+               and [e.id for e in node.targets[0].elts if isinstance(e, ast.Name)] == list(names)
+               and isinstance(node.value, ast.Name) and node.value.id == source
+               for node in _tree().body)
+
+
+def index_write(name, index):
+    return any(isinstance(node, ast.Assign) and any(isinstance(t, ast.Subscript)
+               and isinstance(t.value, ast.Name) and t.value.id == name
+               and isinstance(t.slice, ast.Constant) and t.slice.value == index
+               for t in node.targets) for node in _tree().body)
+
+
+def calls(name, method):
+    return any(isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute)
+               and isinstance(node.func.value, ast.Name) and node.func.value.id == name
+               and node.func.attr == method for node in ast.walk(_tree()))
+
+
+def get_with_default(target, source, key, fallback):
+    value = _assignment(target)
+    return isinstance(value, ast.Call) and isinstance(value.func, ast.Attribute) and isinstance(value.func.value, ast.Name) and value.func.value.id == source and value.func.attr == "get" and len(value.args) == 2 and all(isinstance(arg, ast.Constant) and arg.value == expected for arg, expected in zip(value.args, [key, fallback]))
+
+
+def loop_appends(name):
+    return any(isinstance(node, ast.For) and any(isinstance(part, ast.Call)
+               and isinstance(part.func, ast.Attribute) and isinstance(part.func.value, ast.Name)
+               and part.func.value.id == name and part.func.attr == "append"
+               for statement in node.body for part in ast.walk(statement)) for node in _tree().body)
+
+
+def loop_method(method, name):
+    return any(isinstance(node, ast.For) and isinstance(node.iter, ast.Call)
+               and isinstance(node.iter.func, ast.Attribute) and node.iter.func.attr == method
+               and any(isinstance(part, ast.Name) and part.id == name
+                       for statement in node.body for part in ast.walk(statement)) for node in _tree().body)
+
+
+def set_from(name, source):
+    value = _assignment(name)
+    return isinstance(value, ast.Call) and isinstance(value.func, ast.Name) and value.func.id == "set" and len(value.args) == 1 and isinstance(value.args[0], ast.Name) and value.args[0].id == source
+
+
+def set_op(name, operator):
+    value = _assignment(name)
+    return isinstance(value, ast.BinOp) and type(value.op).__name__ == operator
+
+
+def fstring(name):
+    return isinstance(_assignment(name), ast.JoinedStr)
+
+
 def _variant():
-    with open(solution.__file__, encoding="utf-8") as source_file:
-        tree = ast.parse(source_file.read())
-    replacements = {'caches': {'grove': 7, 'basin': 2, 'ridge': 4}}
+    tree = _tree()
+    replacements = VARIANTS
     for node in tree.body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
             name = node.targets[0].id
@@ -21,29 +99,18 @@ def _variant():
         exec(compile(tree, "changed_fixture.py", "exec"), result)
     return result
 
-
-def _uses(technique):
-    with open(solution.__file__, encoding="utf-8") as source_file:
-        tree = ast.parse(source_file.read())
-    for node in ast.walk(tree):
-        if type(node).__name__ == technique:
-            return True
-        if isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute) and node.func.attr == technique:
-            return True
-        if isinstance(node, ast.Call) and isinstance(node.func, ast.Name) and node.func.id == technique:
-            return True
-    return False
+VARIANTS = {'stock_counts': {'folders': 7, 'markers': 2, 'pens': 4}}
 
 def test_01():
-    """Loop over caches.items() and append each landmark and marks label to lines."""
-    assert lines == ["ridge: 3 marks", "cove: 5 marks"], "Append each landmark and its count in marks."
-    assert _uses('items'), "Use the requested Python technique."
-    varied = _variant()
-    assert eval('lines == ["grove: 7 marks", "basin: 2 marks", "ridge: 4 marks"]', varied), "Check this task with a different input too."
+    """Check task 1 with the supplied and changed data."""
+    assert lines == ["notebooks: 3 in stock", "pens: 5 in stock"], "Check task 1 with the supplied data."
+    assert loop_method("items", "lines"), "Use the requested collection operation in task 1."
+    changed = _variant()
+    assert eval('lines == ["folders: 7 in stock", "markers: 2 in stock", "pens: 4 in stock"]', changed), "Check task 1 with different data."
 
 def test_02():
-    """Loop over caches.values() and add each count to total_marks."""
-    assert total_marks == 8, "Loop over caches.values() and add each count to total_marks."
-    assert _uses('values'), "Use the requested Python technique."
-    varied = _variant()
-    assert eval('total_marks == 13', varied), "Check this task with a different input too."
+    """Check task 2 with the supplied and changed data."""
+    assert total_units == 8, "Check task 2 with the supplied data."
+    assert loop_method("values", "total_units"), "Use the requested collection operation in task 2."
+    changed = _variant()
+    assert eval('total_units == 13', changed), "Check task 2 with different data."

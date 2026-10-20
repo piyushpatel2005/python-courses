@@ -1,4 +1,4 @@
-def boost_energy(energy):
-    return energy + 2
+def add_minutes(minutes):
+    return minutes + 2
 
-print(boost_energy(12))
+print(add_minutes(12))

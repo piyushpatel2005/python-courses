@@ -1,5 +1,6 @@
 from solution import *
 
 def test_01():
-    """Set unique to a set of the distinct stops in visited_stops."""
-    assert type(unique) is set and unique == {"Ridge", "Cove"}, "Set unique to a set of the distinct stops in visited_stops."
+    """Count people once even if they sign in twice."""
+    assert type(unique_attendees) is set
+    assert unique_attendees == {"Maya", "Luis"}

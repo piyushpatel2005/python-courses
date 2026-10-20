@@ -1,7 +1,7 @@
-route = "ECHO"
-beacons = 3
-energy_cost = 4.25
-heAdamng = f"{route}: {beacons} beacons"
-energy_line = f"Energy: {beacons * energy_cost:.2f}"
-print(heAdamng)
-print(energy_line)
+item = "Pens"
+quantity = 3
+unit_price = 4.25
+heading = f"{item}: {quantity} packs"
+price_line = f"Total: ${quantity * unit_price:.2f}"
+print(heading)
+print(price_line)

@@ -1,7 +1,8 @@
-def pulse_steps(number):
+def days_left(number):
     if number == 0:
         return [0]
-    return [number] + pulse_steps(number - 1)
+    return [number] + days_left(number - 1)
 
-sample = pulse_steps(3)
-print("Tower pulses:", sample)
+
+sample = days_left(3)
+print("Days until opening:", sample)

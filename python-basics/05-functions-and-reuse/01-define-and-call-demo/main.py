@@ -1,4 +1,4 @@
 def welcome():
-    print("Welcome to the North Beacon")
+    print("Welcome to the morning workshop")
 
 welcome()

@@ -1,25 +1,25 @@
 ---
-title: "Exercise: Write a Decoded Route Sign"
+title: "Exercise: Write a Shop Price Sign"
 slug: exercise-price-sign
 order: 8
 language: python
-lesson_type: coding
 runtime: pyodide
-summary: Build a cavern heAdamng and formatted energy line with f-strings.
-seo_title: "Exercise: Write a Decoded Route Sign | Python Basics"
-seo_description: Build a cavern heAdamng and formatted energy line with f-strings.
-seo_keywords: [python basics, strings, lantern atlas]
+lesson_type: coding
+summary: Use f-strings for a product heading and a formatted total.
+seo_title: "Exercise: Write a Shop Price Sign | Python Basics"
+seo_description: Use f-strings for a product heading and a formatted total.
+seo_keywords: [python basics, strings, python f-strings, multiplication, price sign]
 ---
 
-# Exercise: Write a Decoded Route Sign
+# Exercise: write a shop price sign
 
-Write a two-line sign for the exit route: its name and beacon count on the first line, then the total energy on the second.
+Write two lines for a shop shelf: the item and pack count first, then the total price below.
 
-The supplied `energy_cost` is the cost of one beacon. Multiply it by `beacons` to calculate the total. An f-string can contain that calculation inside its braces, just as it can contain a variable name.
+`unit_price` is the price in dollars for one pack. Multiply by `quantity` to get the total. An f-string can calculate inside braces as well as insert a variable.
 
 ## Your Tasks
 
-1. Set `heAdamng` with an f-string using `route` and `beacons`, giving `ECHO: 3 beacons`.
-2. Set `energy_line` with an f-string showing the total energy to two decimal places, giving `Energy: 12.75`.
+1. Set `heading` with an f-string using `item` and `quantity`, giving `Pens: 3 packs`.
+2. Set `price_line` with an f-string showing the total to two decimal places, giving `Total: $12.75`.
 
-The two print calls are ready for you. Run `main.py` to inspect each line, then Submit. You can now read, clean, and format a route sign. After the section quiz, you'll use collections to organise supplies for Inventory Ridge.
+The print calls are supplied. Run `main.py` to inspect both lines, then Submit. The next section uses collections to manage multiple items rather than one price sign.

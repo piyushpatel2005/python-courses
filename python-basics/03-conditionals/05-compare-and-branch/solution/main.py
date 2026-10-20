@@ -1,9 +1,9 @@
-signal = 4
-foggy = False
-if signal < 8:
-    route_hint = "Repair beacon"
-elif signal < 16 and not foggy:
-    route_hint = "Follow lit path"
+loaves_left = 4
+delivery_today = False
+if loaves_left < 8:
+    stock_message = "Bake more bread"
+elif loaves_left < 16 and not delivery_today:
+    stock_message = "Check the bread shelf"
 else:
-    route_hint = "Scout ahead"
-print(route_hint)
+    stock_message = "Count inventory"
+print(stock_message)

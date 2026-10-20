@@ -1,3 +1,3 @@
-route = "GLOW:TRAM"
-district = route[:4]
-print(district)
+entry = "OPEN:0900"
+status = entry[:4]
+print(status)

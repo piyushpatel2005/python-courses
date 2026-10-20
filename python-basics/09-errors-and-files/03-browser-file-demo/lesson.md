@@ -1,22 +1,22 @@
 ---
-title: 'Write a Shrine Save'
+title: 'Write and read a temporary note'
 slug: browser-file-demo
 order: 3
 language: python
 lesson_type: coding
 runtime: pyodide
-summary: 'Write and read a temporary shrine note with open().'
-seo_title: 'Write a Shrine Save | Python Basics'
-seo_description: 'Write and read a temporary shrine note with open().'
-seo_keywords: [python file handling, with open, temporary browser files]
+summary: 'Write a note with open() and read it back in the same run.'
+seo_title: 'Write and read a temporary note | Python Basics'
+seo_description: 'Write a note with open() and read it back in the same run.'
+seo_keywords: [python file handling, with open, temporary file]
 ---
 
-Leave a short save note at the shrine, then read it back. `open(path, "w")` creates a file or replaces its contents. `open(path, "r")` opens an existing file for reAdamng.
+A short pickup note can be written to a file and read back. `open(path, "w")` creates a file or replaces its contents. `open(path, "r")` reads an existing file. Inside each `with` block, the name `file` refers to the open file; Python closes it when the block ends.
 
-A `with` block closes the file when the block ends. These files are temporary browser files, not downloads to your device. The starter writes before it reads so each Run has the file it needs.
-
-Change `note` in `main.py` to `"Light the east beacon"`. Run to see the text read back from the file, then Submit.
+The starter writes before reading, so it has a file to read each time you run it. In this browser exercise, the file is held in the running Python environment. It is not a download or a lasting file on your computer. Keep the write and read steps so `saved_note` comes from the file, not a copy of the text variable.
 
 ## Your Task
 
-1. Change `note` to `"Light the east beacon"` while preserving the write/read flow.
+1. Change `note` to `"Order ready for pickup"` while keeping the write/read flow.
+
+Edit `main.py`, press **Run** to see the note read back, then **Submit**.

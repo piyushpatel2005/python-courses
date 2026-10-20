@@ -1,5 +1,5 @@
-def ability_mark(name, suffix="?"):
-    return name + suffix
+def message(text, suffix="?"):
+    return text + suffix
 
-print(ability_mark("Glow"))
-print(ability_mark("Glow", suffix="!"))
+print(message("Pickup at noon"))
+print(message("Pickup at noon", suffix="!"))

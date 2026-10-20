@@ -1,6 +1,6 @@
 import math
 
-def lanterns_needed(sparks):
+def boards_needed(length):
     pass
 
-print(lanterns_needed(13))
+print(boards_needed(13))
