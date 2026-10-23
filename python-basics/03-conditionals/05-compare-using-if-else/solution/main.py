@@ -1,9 +1,7 @@
-loaves_left = 4
-delivery_today = False
-if loaves_left < 8:
-    stock_message = "Bake more bread"
-elif loaves_left < 16 and not delivery_today:
-    stock_message = "Check the bread shelf"
+player_health = 20
+enemy_health = 0
+
+if player_health > 10 and enemy_health < 10:
+    print("Congratulations! You win")
 else:
-    stock_message = "Count inventory"
-print(stock_message)
+    print("Sorry, you lost!")

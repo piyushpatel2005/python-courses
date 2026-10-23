@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 650" role="img" aria-labelledby="title desc">
+  <title id="title">Check, Act, Repeat</title>
+  <desc id="desc">Start with three tickets. Check whether any tickets remain. Yes leads to printing one label and subtracting one ticket, then returning to the check along the right-hand path. No leaves the loop along the left-hand path and continues after it.</desc>
+  <rect width="480" height="650" rx="16" fill="#f8fafc"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" markerWidth="8" markerHeight="8" refX="10" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#5874a0"/>
+    </marker>
+  </defs>
+  <text x="240" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#17233c">Check, Act, Repeat</text>
+  <rect id="start" x="120" y="65" width="240" height="60" rx="12" fill="#e8f1ff" stroke="#5874a0" stroke-width="2"/>
+  <text data-container="start" x="240" y="103" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#17233c">Start With 3 Tickets</text>
+  <path data-from="start" data-to="check" d="M240 125 V185" fill="none" stroke="#5874a0" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect id="check" x="120" y="185" width="240" height="70" rx="12" fill="#fff1d6" stroke="#5874a0" stroke-width="2"/>
+  <text data-container="check" x="240" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#17233c">Any Tickets Left?</text>
+  <path data-from="check" data-to="act" d="M240 255 V320" fill="none" stroke="#5874a0" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="270" y="293" font-family="Arial, sans-serif" font-size="20" fill="#455777">Yes</text>
+  <rect id="act" x="120" y="320" width="240" height="60" rx="12" fill="#e8f1ff" stroke="#5874a0" stroke-width="2"/>
+  <text data-container="act" x="240" y="358" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#17233c">Print One Label</text>
+  <path data-from="act" data-to="update" d="M240 380 V430" fill="none" stroke="#5874a0" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect id="update" x="120" y="430" width="240" height="60" rx="12" fill="#e8f1ff" stroke="#5874a0" stroke-width="2"/>
+  <text data-container="update" x="240" y="468" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#17233c">Subtract One Ticket</text>
+  <path data-from="update" data-to="check" d="M360 460 H430 V220 H360" fill="none" stroke="#5874a0" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+  <path data-from="check" data-to="after" d="M120 220 H40 V570 H120" fill="none" stroke="#5874a0" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+  <text x="68" y="204" font-family="Arial, sans-serif" font-size="20" fill="#455777">No</text>
+  <rect id="after" x="120" y="540" width="240" height="60" rx="12" fill="#e5f6ea" stroke="#5874a0" stroke-width="2"/>
+  <text data-container="after" x="240" y="578" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#17233c">Continue After Loop</text>
+  <text x="240" y="632" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#17233c">3 → 2 → 1 → 0, then leave the loop.</text>
+</svg>

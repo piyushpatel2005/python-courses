@@ -1,7 +1,7 @@
 ---
 title: "Count Days with for and range"
 slug: count-with-for-and-range
-order: 3
+order: 4
 language: python
 runtime: pyodide
 lesson_type: coding

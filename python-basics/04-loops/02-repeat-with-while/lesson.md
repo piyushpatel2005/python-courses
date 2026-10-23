@@ -1,7 +1,7 @@
 ---
 title: "Count Down with while"
 slug: repeat-with-while
-order: 1
+order: 2
 language: python
 runtime: pyodide
 lesson_type: coding

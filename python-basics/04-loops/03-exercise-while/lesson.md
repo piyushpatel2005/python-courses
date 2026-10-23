@@ -1,7 +1,7 @@
 ---
 title: "Exercise: Pack Boxes with while"
 slug: exercise-while
-order: 2
+order: 3
 language: python
 runtime: pyodide
 lesson_type: coding

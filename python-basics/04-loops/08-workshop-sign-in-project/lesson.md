@@ -1,7 +1,7 @@
 ---
 title: "Project: Check In Event Attendees"
 slug: workshop-sign-in-project
-order: 7
+order: 8
 language: python
 runtime: pyodide
 lesson_type: coding

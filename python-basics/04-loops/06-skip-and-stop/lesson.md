@@ -1,7 +1,7 @@
 ---
 title: "Skip an Order and Stop Packing"
 slug: skip-and-stop
-order: 5
+order: 6
 language: python
 runtime: pyodide
 lesson_type: coding

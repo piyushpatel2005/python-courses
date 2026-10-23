@@ -1,7 +1,7 @@
 ---
 title: "Exercise: List Every Other Hour"
 slug: exercise-for-and-range
-order: 4
+order: 5
 language: python
 runtime: pyodide
 lesson_type: coding

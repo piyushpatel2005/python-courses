@@ -1,7 +1,7 @@
 ---
 title: "Exercise: Process a Limited Number of Orders"
 slug: exercise-skip-and-stop
-order: 6
+order: 7
 language: python
 runtime: pyodide
 lesson_type: coding
